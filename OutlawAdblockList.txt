@@ -33603,6 +33603,16 @@ www.wsj.com##div[class*="adContainer"]
 www.wsj.com##div[class*="staticAd"]
 www.wsj.com##+js(aopr, adOptions)
 www.wsj.com##+js(aopw, adOptions)
+down.mdiaload.com##div[data-ad]
+down.mdiaload.com##div[class="btn btn-success"]
+!down.mdiaload.com##div[class="download-option-btn"]
+down.mdiaload.com##input[id="adblock_detected"]:remove()
+down.mdiaload.com##a[class="btn btn-dow"]
+www.gamedeveloper.com##div[class*="cookie-popup"]
+www.gamedeveloper.com##div[id="cookie-popup-wrapper"]
+www.encodedna.com##ins[data-ad-client]
+www.encodedna.com##+js(aopr, _gaq)
+www.encodedna.com##+js(aopw, _gaq)
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
