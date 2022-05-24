@@ -27888,7 +27888,6 @@ windowsmatters.com##html:style(overflow: scroll; !important;)
 forum.acronis.com##div[class^="cookies-notification"]
 www.pluralsight.com##div[class="jsx-1227599814 banner"]
 ||sc.lfeeder.com/lftracker_v1_YEgkB8lZQKW4ep3Z.js*
-!||js.hs-analytics.net/analytics/1617528600000/4854285.js*
 ||s.easyredircdn.com/analytics.js*
 www.easyredir.com##+js(abort-on-property-read.js, window.shouldEmitAnalytics)
 www.easyredir.com##+js(abort-on-property-write.js, window.shouldEmitAnalytics)
@@ -33200,7 +33199,9 @@ www.theguardian.com##div[id^="dfp-ad-"]
 www.theguardian.com##gu-island[name="TopRightAdSlot"]
 www.theguardian.com##section:has(span:has-text(/Support high-impact, independent journalism/i))
 www.theguardian.com##section[class="css-1u8qly9"]
-www.theguardian.com##html,body:style(overflow: scroll !important; overflow-y: scroll !important;)
+!www.theguardian.com##html,body:style(overflow: scroll !important; overflow-y: scroll !important;)
+www.theguardian.com##*[class*="sp-message-open"]
+www.theguardian.com##gu-island[name="SlotBodyEnd"]
 ||ownerfacinglung.com/$all
 ||ruokareseptit.online/$all
 upload-star.com##div[id="cookie-pop"]
@@ -33613,6 +33614,238 @@ www.gamedeveloper.com##div[id="cookie-popup-wrapper"]
 www.encodedna.com##ins[data-ad-client]
 www.encodedna.com##+js(aopr, _gaq)
 www.encodedna.com##+js(aopw, _gaq)
+www.lego.com##div[class^="CookieModal"]
+www.lego.com##span[class^="CookieModal"]
+www.lego.com##div[aria-label="Cookie Settings"]
+www.lego.com##div[data-focus-lock-disabled="false"]
+www.lego.com##scrollbar[disabled="true"]
+||www.lego.com/api/graphql/CookieModalSettings$all
+plaid.com##div[data-testid="consent-manager-banner"]
+||ernedassiu.com/$all
+||rtunitytostar.com/$all
+www.npr.org##div[data-ad-config]
+www.npr.org##aside[id^="ad-standard-"]
+||dyrfxuvraq0fk.cloudfront.net/$all
+||d3mxt5v3yxgcsr.cloudfront.net/$all
+www.nydailynews.com##div[data-pb-name="DFP Ad"]
+www.nydailynews.com##div[class*="pb-ad"]
+www.nydailynews.com##zeus-ad
+www.nydailynews.com##+js(aopr, ad.dataset.optimeraMeasure)
+www.nydailynews.com##+js(aopw, ad.dataset.optimeraMeasure)
+www.nydailynews.com##+js(aopr, trb.data.ads.optimera)
+www.nydailynews.com##+js(aopw, trb.data.ads.optimera)
+www.nydailynews.com##+js(aopr, optimeraId)
+www.nydailynews.com##+js(aopw, optimeraId)
+||insights.zeustechnology.com/$all
+lawnmowerguru.com##span[class*="ezoic-ad"]
+lawnmowerguru.com##div[class*="ezo_ad"]
+lawnmowerguru.com##+js(aopr, ez_ad_units)
+lawnmowerguru.com##+js(aopw, ez_ad_units)
+lawnmowerguru.com##span[class="ezoic-adpicker-ad"]
+lawnmowerguru.com##span[class*="adtester-container"]
+www.foxbusiness.com##div[class="pre-content"]:has(div[class*="ad-container"])
+www.foxbusiness.com##div[class*="ad-container"]
+www.foxbusiness.com##div[id="desk-ad-"]
+www.foxbusiness.com##div[data-ad-init]
+www.foxbusiness.com##div[data-ad-size]
+www.howtosolutions.net##span[class*="ezoic-ad"]
+www.howtosolutions.net##div[class*="ezo_ad"]
+www.howtosolutions.net##+js(aopr, ez_ad_units)
+www.howtosolutions.net##+js(aopw, ez_ad_units)
+www.howtosolutions.net##+js(aopr, __advertiserRule)
+www.howtosolutions.net##+js(aopw, __advertiserRule)
+www.howtosolutions.net##span[class="ezoic-adpicker-ad"]
+www.howtosolutions.net##span[class*="adtester-container"]
+www.howtosolutions.net##div[class="leadad"]
+www.eurogamer.net##div[class^="advert"]
+www.eurogamer.net##div[class*="advert_container"]
+www.eurogamer.net##div[class="paywall"]
+www.eurogamer.net##+js(aopr, o.d.abp)
+www.eurogamer.net##+js(aopw, o.d.abp)
+www.eurogamer.net##+js(aopr, adConfig)
+www.eurogamer.net##+js(aopw, adConfig)
+www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true)
+||taracareewitu.xyz/$all
+||fefashionis.com/$all
+||opolicycrea.xyz/$all
+||d3oy68whu51rnt.cloudfront.net/$all
+||hinlargecons.xyz/$all
+||dyj8pbcnat4xv.cloudfront.net/$all
+||tmenttogeth.xyz/$all
+||s3.us-east-1.amazonaws.com/635e47e248fe90616d8d87e013fcd4b05d7cbd3feb18df7c16047f735f8/$all
+www.adbusbdriver.com##ins[data-ad-client]
+www.adbusbdriver.com##+js(aopr, adsbygoogle)
+www.adbusbdriver.com##+js(aopw, adsbygoogle)
+www.thecustomdroid.com##div[class^="code-block"]:has(ins[data-ad-client])
+www.thecustomdroid.com##ins[data-ad-client]
+www.thecustomdroid.com##+js(aopr, adsbygoogle)
+www.thecustomdroid.com##+js(aopw, adsbygoogle)
+iir.ai##+js(remove-attr, #invisibleCaptchaShortlink, onclick)
+iir.ai##+js(remove-class, #go-submit, hidden)
+iir.ai##+js(remove-attr, #go-submit, disabled)
+iir.ai##a[href*="/taghaugh.com/"]
+iir.ai##a[href*="//tickmatureparties.com/"]
+iir.ai##div[id^="div-gpt-ad"]
+||hb.adpone.com/$all
+iir.ai##script[id="zkmvrv"]
+iir.ai##+js(remove-attr, a.btn.btn-success.btn-lg.get-link, onclick, stay)
+iir.ai##+js(remove-class, a.btn.btn-success.btn-lg.get-link, disabled, stay)
+||flashnetic.com/$all
+||praterswhally.com/$all
+tei.ai##a[href*="//tickmatureparties.com/"]
+tei.ai##+js(remove-attr, a.btn.btn-success.btn-lg.get-link, onclick, stay)
+tei.ai##+js(remove-class, a.btn.btn-success.btn-lg.get-link, disabled, stay)
+iir.ai##+js(aopr, gdprAppliesGlobally)
+iir.ai##+js(aopw, gdprAppliesGlobally)
+tei.ai##+js(aopw, gdprAppliesGlobally)
+tei.ai##+js(aopr, gdprAppliesGlobally)
+tny.so##+js(remove-attr, #get_link, disabled, stay)
+tny.so##+js(remove-class, #get_link, disabled, stay)
+www.shadertoy.com##div[id="compliance"]
+www.netgear.com##span[id="cookie-close"]:upward(1)
+www.netgear.com##div[class*="cookiealert"]
+www.t-mobile.com##div[class="xpr-cookieModal"]
+www.t-mobile.com##div[id="phx-cookie-modal"]
+!||www.t-mobile.com/etc.clientlibs/digx/phoenix-analytics/clientlibs/vendor-clientlibs/webvitals.js*
+||www.t-mobile.com/etc.clientlibs/digx/phoenix-analytics/$all
+||tmobile.demdex.net/$all
+!||www.t-mobile.com/etc.clientlibs/digx/experience/components/content/cookieModal/v1/cookieModal/clientlib.js*
+||www.t-mobile.com/etc.clientlibs/digx/experience/components/content/cookieModal/$all*
+||www.t-mobile.com/etc.clientlibs/digx/experience/clientlibs/vendor-clientlibs/body-scroll-lock.js*
+||h-ups.online-metrix.net/$all
+||koalaups.com/$all
+||analytics.zinlab.com/$all
+filecr.com##script[id="filec-ready"]
+filecr.com##+js(aopw, window.advads_admin_bar_items)
+filecr.com##+js(aopr, window.advads_admin_bar_items)
+filecr.com##+js(set-constant, ShPublic.disable_server_downloads, 0, stay)
+www.thenorthernecho.co.uk##iframe[id="rufous-sandbox"]
+www.thenorthernecho.co.uk##div[id="sp_message_container_525293"]
+www.thenorthernecho.co.uk##div[id="sp_message_iframe_525293"]
+www.thenorthernecho.co.uk##div[class*="leaderboard-ad"]
+www.thenorthernecho.co.uk##div[class*="dfp-ad"]
+www.thenorthernecho.co.uk##div[class*="mar-block-ad"]
+www.thenorthernecho.co.uk##script[id*="cookieBanner-"]
+!www.thenorthernecho.co.uk##body,html:style(overflow: auto)
+!||macro.adnami.io/macro/spec/adsm.macro.bf4c2c7d-29a1-4c5d-9bf3-ca59eb58ccb0.js*
+||macro.adnami.io/$all
+||uatu.newsquestdigital.co.uk/collector.php*
+||a02342.thenorthernecho.co.uk/wrapper/tcfv2/v1/gdpr/$all
+dilbert.com##div[class*="ad-leaderboard"]
+dilbert.com##div[data-ad-type]
+dilbert.com##div[class*="ad-container"]
+www.tutorialsteacher.com##div[class="videoAd"]
+www.tutorialsteacher.com##pubguru[data-pg-ad]
+www.tutorialsteacher.com##div[class="lb-ad"]
+www.tutorialsteacher.com##div[id^="rightbarAd"]
+www.tutorialsteacher.com##div[id="stickyAdDiv"]
+www.csharp-examples.net##ins[data-ad-client]
+blog.jongallant.com##ins[data-ad-client]
+blog.jongallant.com##div[class="banner-ad"]
+www.axios.com##div[data-vars-category="ad"]
+||fnyfiexpectth.xyz/$all
+||transmith.xyz/$all
+dotnetfiddle.net##div[id="ukraine"]
+dotnetfiddle.net##div[id^="sponsor-"]
+dirask.com##div[id="main_page_cookie_bar"]
+csharp.hotexamples.com##div[id="ezmobfooter"]
+csharp.hotexamples.com##span[class*="ezoic-autoinsert-ad"]
+csharp.hotexamples.com##span[class*="ezoic-ad"]
+csharp.hotexamples.com##span[class*="adtester-container"]
+||sf.ezoiccdn.com/tardisrocinante/cash.js*
+||csharp.hotexamples.com/detroitchicago/imp.gif*
+www.codemag.com##div[id^="cookieConsent"]
+www.codemag.com##div[id^="div-gpt-ad-"]
+www.codemag.com##div[class*="advertisement"]
+www.codemag.com##div[class*="leaderboard-ad"]
+||dooloust.net/$all
+www.bestprog.net##ins[data-ad-client]
+clicknupload.to##+js(aopr, document.onmousedown)
+clicknupload.to##+js(aopw, document.onmousedown)
+clicknupload.to##+js(aeld, /^(?:mousedown)$/)
+community.developer.visa.com##div[id="CookieReportsPanel"]
+developer.visa.com##div[id="CookieReportsPanel"]
+www.nextpit.com##div[id="sticky-footer-ad"]
+||adengine.snigelweb.com/$all
+www.anoopcnair.com##ins[data-ad-client]
+www.anoopcnair.com##+js(aopr, adsbygoogle)
+www.anoopcnair.com##+js(aopw, adsbygoogle)
+www.anoopcnair.com##ins[class="dcmads"]
+pastebin.com##div[data-ad-slot]
+||phicmune.net/$all
+||5hjdbfjfd5.monster/$all
+||tiwhaiph.net/$all
+apk4free.org##a[href*="://5hjdbfjfd5.monster/"]
+apkmos.com##ins[data-ad-client]
+apkmos.com##div[class="apkmo-adlabel"]
+apkmos.com##div[id="apkmo-1914913151"]
+apkmos.com##div[id="apkmo-2087922620"]
+apkmos.com##div[id^="ezoic-pub-ad-placeholder"]
+||pseekree.com/$all
+||chedrive.com/sw.js*
+||cdn.adsenseguard.com/$all
+chedrive.com##span[class^="adsdk-"]
+chedrive.com##input[id="adblock_detected"]:remove()
+chedrive.com##a[href*="//1frozenthrone1.com/"]
+||fp.metricswpsh.com/$all
+||js.wpadmngr.com/$all
+||rtbrennab.com/$all
+||3f9716d108.4e381657ad.com/$all
+||d9b5a8db72.468a044700.com/$all
+||ma-adx.ctrip.com/$all
+||webresource.c-ctrip.com/NFES/mfe_marketAdvert/$all
+||webresource.c-ctrip.com/NFES/mfe_platformAdvertStairs/$all
+||s.c-ctrip.com/bee/collect$all
+||chedrive.com/uploadrar_style/js/countdown.js*
+||btvuyafjsosnyom.com/$all
+||eehuzaih.com/$all
+short.katflys.com##+js(aeld, DOMNodeRemoved)
+short.katflys.com^$script,3p
+up-load.io##+js(aeld, DOMNodeRemoved)
+||hoppedobscurefame.com/$all
+||ytgfmxrchvn.com/$all
+snakify.org##ins[data-ad-client]:upward(1)
+snakify.org##ins[data-ad-client]
+||cinemensenoy.xyz/$all
+||atmyeducat.xyz/$all
+||femindexkilog.xyz/$all
+||gruencyaloe.xyz/$all
+||ionakasulba.xyz/$all
+www.nylas.com##aside[id="moove_gdpr_cookie_info_bar"]
+www.nylas.com##div[class*="moove-gdpr-"]
+www.nylas.com##div[id="moove_gdpr_cookie_modal"]
+www.nylas.com##script[id*="gdpr_"]
+!||www.nylas.com/wp-content/plugins/gdpr-cookie-compliance-addon/assets/js/gdpr_cc_addon.js*
+!||www.nylas.com/wp-content/plugins/gdpr-cookie-compliance/dist/scripts/main.js*
+||www.nylas.com/wp-content/plugins/gdpr-cookie-compliance$all
+net-informations.com##ins[data-ad-client]
+net-informations.com##div[data-type="ad"]
+www.codespeedy.com##div[id="vi-sticky-ad"]
+www.codespeedy.com##+js(aopr, adElemSticky)
+www.codespeedy.com##+js(aopw, adElemSticky)
+||zeechumy.com/$all
+gyazo.com##div[class*="lower-ad"]
+gyazo.com##div[class*="sticker-gdpr"]
+gyazo.com##div[class*="direct-ad-frame"]
+code-maze.com##div[data-freestar-ad]
+dotnetfoundation.org##*[class*="cc_dialog"]
+dotnetfoundation.org##section[class^="flash"]:has(div[class^="alert"]):has(a[href*="//novaukraine.org"])
+www.febooti.com##div[id="cc"]
+www.lambdatest.com##div[class*="cookies__bar"]
+toolslick.com##div[id="cookie-consent"]
+www.pythontutorial.net##section[id^="textblockswidget-"]:has(iradsdiv)
+www.pythontutorial.net##div[class^="ad ad-"]:has(iradsdiv)
+www.pythontutorial.net##div[ir-ads-unit]
+www.pythontutorial.net##div[id^="div-gpt-ad-"]
+www.pythontutorial.net##iradsdiv
+secureads.increaserev.com/$all
+www.i-programmer.info##div[id="iptop"]
+||imp.pxf.io/$all
+!||a.impactradius-go.com/display-ad/$all
+||a.impactradius-go.com/$all
+||imp.i115008.net/$all
+www.i-programmer.info##iframe[id^="dm-gpt-iframe-"]
+www.i-programmer.info##div[id^="div-gpt-ad"]
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
