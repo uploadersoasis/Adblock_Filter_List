@@ -2835,7 +2835,6 @@ www.dailymotion.com###top_banner
 ||www.delish.com/ams/page-ads.js*
 ||mp.link-smart.com/page/view^*
 ||www.gratisjuegos.org/wp-content/plugins/wp-followme/flash/$all
-||t.dtscout.com/$all
 ||fileoogle.com/$all
 ||dl.downloadahsaequouzet.com/$all
 ||www.fudzilla.com/openx/www/delivery/$all
@@ -33989,6 +33988,12 @@ hd.crichd.run##div[id="UnMutePlayer"]:remove()
 !streamgo.to##+js(aopr, dto_krispl1)
 !streamgo.to##+js(aopw, dto_krispl1)
 ||fclnmqhwc.com/$all
+||t.dtscout.com/$all
+||a.dtssrv.com/$all
+||www.sportrar.tv/js/cookiepop.js*
+theappstore.org##div[id="ad123"]:remove()
+theappstore.org##div[id="divalert"]:remove()
+theappstore.org##div[id="bodypanel"]:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
