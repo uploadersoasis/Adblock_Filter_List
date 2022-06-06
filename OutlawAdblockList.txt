@@ -34093,6 +34093,44 @@ daddylive.eu##+js(aopr, document.oncontextmenu)
 ||www.mlsfxuvs.com/$all
 ||mlsfxuvs.com/$all
 ||analytics.livestream.com/$all
+||livenewsof.com/wp-content/cache/min/1/wp-content/uploads/slwjbx.js*
+livenewsof.com##ins[data-ad-client]
+livenewsof.com##script[id^="adunblocker-js"]
+daddylive.eu##^script:has-text(-parseInt)
+streamgo.to##^script:has-text(-parseInt)
+rkc.primetubsub.xyz##^script:has-text(-parseInt)
+send.cm##+js(abort-current-inline-script, FingerprintJS)
+||send.cm/cdn-cgi/challenge-platform/h/g/scripts/pica.js*
+||www.nexusmods.com/Contents/Scripts/adblocker.js*
+www.nexusmods.com##div[id^="div-gpt-ad-"]
+www.nexusmods.com##div[class*="ad-unit"]
+www.nexusmods.com##div[class*="video-ad"]
+www.nexusmods.com##+js(abort-current-inline-script, areAdsBlocked())
+||majorgeeks.com/images/mg/ads/$all
+www.memtest.org##div[aria-label="cookieconsent"]
+rsload.net##a[href*="//go.webredir.net/"]
+www.nexusmods.com##+js(set-constant, timeout, 0)
+!www.nexusmods.com##+js(nano-stb, /^/, *, 0.01)
+www.nexusmods.com##+js(nano-stb, /function ()/, *, 0.01)
+www.nexusmods.com##+js(set-constant, window.blockingAds, false, stay)
+www.nexusmods.com##+js(set-constant, isBlocked, false, stay)
+||api.permutive.com/v2.0/identify?*
+||api.permutive.com/sdk-errors/v2/errors?*
+uk.pcmag.com##div[class*="advsticky"]
+uk.pcmag.com##div[class="zad top"]
+uk.pcmag.com##div[class="zad sidebar"]
+www.tomsguide.com##div[class^="dfp-leaderboard-"]
+www.tomsguide.com##div[class*="ad-unit"]
+www.steamidfinder.com##div[id="nn_bfa_wrapper"]
+www.csharpcodi.com##div[id="ezmobfooter"]
+www.csharpcodi.com##div[class*="ezo_ad"]
+www.csharpcodi.com##span[class*="ezoic-ad"]
+www.csharpcodi.com##span[class*="adtester-container"]
+www.csharpcodi.com##+js(aopw, ez_ad_units)
+www.csharpcodi.com##+js(aopr, ez_ad_units)
+www.ungeek.ph##div[id="AdAAnchor"]
+www.ungeek.ph##span[class="td-adspot-title"]
+www.ungeek.ph##div[id="div-gpt-ad-"]
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
