@@ -32,6 +32,43 @@
 !        button on its pages is:
 ! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 
+! blocks both inline and external scripts
+!||techydino.net^$inline-script,script
+! an in-line script(s) is preventing techydino.net from working properly
+!||techydino.net^$inline-script
+!||techydino.net^$script,redirect=noopjs blocks Cloudflare
+||techydino.net^$3p,script,domain=arc.io
+||techydino.net^$3p,script,redirect=noopjs
+!||techydino.net/arc-sw.js* does not work for some reason
+!||techydino.net/arc-sw.js*
+techydino.net##ins[data-ad-client]
+techydino.net##+js(acis, adsbygoogle)
+techydino.net##+js(aopr, adsbygoogle)
+techydino.net##+js(aopw, adsbygoogle)
+techydino.net##div[id="overlay"]:remove()
+techydino.net##div[id^="div-gpt-ad-"]
+techydino.net##div[id^="hbagency_space_"]
+techydino.net##div[id="Modalad"]:remove()
+techydino.net##+js(acis, window.googletag)
+techydino.net##+js(aopr, window.googletag)
+techydino.net##+js(aopw, window.googletag)
+techydino.net##ins[data-sizes-desktop]
+techydino.net##^script[onerror]
+!techydino.net##+js(remove-attr, onerror, script, stay)
+techydino.net##+js(remove-attr, onerror)
+techydino.net##^script:has-text(decodeURIComponent)
+techydino.net##+js(acis, decodeURIComponent)
+techydino.net##+js(nowoif, !/techydino.net/i, log)
+techydino.net##+js(acis, anchorSlot)
+techydino.net##+js(aopr, anchorSlot)
+techydino.net##+js(aopw, anchorSlot)
+techydino.net##+js(acis, interstitialSlot)
+techydino.net##+js(aopr, interstitialSlot)
+techydino.net##+js(aopw, interstitialSlot)
+techydino.net##+js(nobab)
+techydino.net##+js(nobab2)
+techydino.net##+js(nofab)
+||techydino.net/filesadblock/$all
 ||fw.adsafeprotected.com/$all
 ||cluster.adultadworld.com/$all
 ||ad.z5x.net/$all
@@ -35071,29 +35108,15 @@ cut-y.net##+js(remove-attr, disabled, #submit-button, stay)
 ||cmp.quantcast.com/choice/$all
 !||static.smilewanted.com/js/decode_consent/decode_consent.js*
 ||static.smilewanted.com/$all
-||techydino.net/arc-sw.js*
 ||intake.pbstck.com/$all
 ||chingmathecia.website/$all
 !||id.a-mx.com/sync/$all
 ||id.a-mx.com/$all
 !||stats-dev.brid.tv/ping.gif*
 ||stats-dev.brid.tv/$all
-||techydino.net/filesadblock/$all
 !||browser.sentry-cdn.com/6.2.2/bundle.min.js*
 ||browser.sentry-cdn.com/$all
 ||cdn.thisiswaldo.com/static/js/$all
-techydino.net##ins[data-ad-client]
-techydino.net##+js(acis, adsbygoogle)
-techydino.net##+js(aopr, adsbygoogle)
-techydino.net##+js(aopw, adsbygoogle)
-techydino.net##div[id="overlay"]:remove()
-techydino.net##div[id^="div-gpt-ad-"]
-techydino.net##+js(acis, window.googletag)
-techydino.net##+js(aopr, window.googletag)
-techydino.net##+js(aopw, window.googletag)
-techydino.net##ins[data-sizes-desktop]
-!techydino.net##+js(remove-attr, onerror, script, stay)
-techydino.net##+js(remove-attr, onerror)
 ||track.blufpartners.com/$all
 forex-gold.net##div[id="con_me"]
 forex-gold.net##*[data-ad-client]
@@ -35196,15 +35219,135 @@ mobi2c.com##+js(remove-attr, style, #devozon-wait1)
 mobi2c.com##+js(remove-attr, style, .content)
 mobi2c.com##div[id="devozon-wait1"]:style(display: none;)
 mobi2c.com##div[id="devozon-snp"]:style(display: block;)
-!bcvc.xyz##+js(acis, mtx_id )
-!bcvc.xyz##+js(aopr, mtx_id )
-!bcvc.xyz##+js(aopw, mtx_id )
+!bcvc.xyz##+js(acis, mtx_id)
+!bcvc.xyz##+js(aopr, mtx_id)
+!bcvc.xyz##+js(aopw, mtx_id)
 bcvc.xyz##+js(acis, bFzZsNLbns)
 ||jounaque.com/$all
 ||prebid.media.net/rtb/prebid/analytics/$all
 ||log.ncaudienceexchange.com/$all
 !||cdn.ampproject.org/v0/amp-story-auto-ads-0.1.mjs*
 ||cdn.ampproject.org/v0/amp-story-auto-ads-*
+clk.asia##div[id="cookie-pop"]
+||clk.asia/sw.js*
+||bringsconserve.com/$all
+||s3.amazonaws.com/2b0675ae7da5382f956e699a6346d225dadeb2694138231a237336c79/$all
+||cdn.tapioni.com/ip-push.js*
+||starkshrewd.com/$all
+||clk.asia/ads/$all
+||semiglorifyseek.com/$all
+||track.wargaming-aff.com/$all
+||lyjegushe.pro/$all
+||p.clk.asia/clkadtrue.php*
+||d13k7prax1yi04.cloudfront.net/$all
+tlin.me##+js(acis, adsurfebe)
+tlin.me##+js(aopr, adsurfebe)
+tlin.me##+js(aopw, adsurfebe)
+tlin.me##+js(acis, ad_idzone)
+tlin.me##+js(aopr, ad_idzone)
+tlin.me##+js(aopw, ad_idzone)
+tlin.me##+js(acis, AdProvider)
+tlin.me##+js(aopr, AdProvider)
+tlin.me##ins[class="adsbyexoclick"]
+tlin.me##+js(acis, fromCharCode)
+tlin.me##+js(acis, _0x3e66)
+tlin.me##+js(aopr, _0x3e66)
+tlin.me##+js(aopw, _0x3e66)
+tlin.me##div[id="cookie-pop"]
+tlin.me##a[href*="://taghaugh.com/"]:remove()
+tlin.me##a[href*="://mauchopt.net/"]:remove()
+||toenailtrishaw.com/$all
+||srt.am/sw.js*
+||www.ecybnxxpeq.com/$all
+||ecybnxxpeq.com/$all
+||pl15095977.bestcpmnetwork.com/$all
+||www.yctamonieomgb.com/$all
+||yctamonieomgb.com/$all
+||visors-airminal.com/$all
+||pertfair.com/$all
+||www.yasmwesikz.com/$all
+||z.cdn.ftd.agency/$all
+||www.cdn4ads.com/$all
+||pierremarkeraffliction.com/$all
+||pathosacetals.com/$all
+||arbourrenewal.com/$all
+||www.ucbnxsmgdf.com/$all
+||www.zifjgjddpy.com/$all
+||cdn.ftd.agency/libs/e.js*
+7apple.net##div[id="tvzxwme-blanket"]
+||7apple.net/wp-content/plugins/wp-safelink/assets/fuckadblock.js*
+7apple.net##+js(set, count, 0 ,stay)
+7apple.net##div[id="adb"]
+7apple.net##script[id="adunblocker-js-extra"]
+illink.net##div[id="cookie-pop"]
+||gceqihdij.com/$all
+||www.zaomavzcoww.com/$all
+||www.uyechyymr.com/$all
+||clik.pw/js/ga.js*
+||aghtag.tech/$all
+||okayarab.com/$all
+||xml.bidderads.com/$all
+||dingholog.com/$all
+||xml.blueparrot.media/$all
+||xml.rtbfactory.com/$all
+||xml.serving-pass.com/$all
+stores.filmyzilla-in.xyz##div[id="Arpian-ads"]:remove()
+||dz4ad.com/display/$all
+||dz4ad.com/track/$all
+deportealdia.live##h3[id="adb-enabled"]:remove()
+||rreqljiklad.com/$all
+||static.adbull.me/$all
+||boudutoo.net/$all
+||apps.elfsight.com/$all
+||static.elfsight.com/$all
+||themeillogical.com/$all
+deportealdia.live##+js(remove-attr, onClick, .btn-main.get-link, stay)
+deportealdia.live##+js(acis, document.oncontextmenu)
+deportealdia.live##+js(aopr, document.oncontextmenu)
+deportealdia.live##+js(aopw, document.oncontextmenu)
+deportealdia.live##+js(set, window.adblockDetector, 0, stay)
+noweconomy.live##ins[data-ad-client]
+noweconomy.live##+js(aopr, adsbygoogle)
+noweconomy.live##+js(aopw, adsbygoogle)
+noweconomy.live##+js(remove-attr, onClick, .btn-main.get-link, stay)
+noweconomy.live##+js(acis, document.oncontextmenu)
+noweconomy.live##+js(aopr, document.oncontextmenu)
+noweconomy.live##+js(aopw, document.oncontextmenu)
+noweconomy.live##+js(set, window.adblockDetector, 0, stay)
+||s3.us-east-1.amazonaws.com/2b0675ae7da5382f956e699a6346d225dadeb2694138231a237336c79/$all
+||www.wteicogfeyhjk.com/$all
+||www.prbtqjujwzwepv.com/$all
+aylink.co##a[href*="://sht.ms/aff.php"]
+||tr.link/webroot/img/imgpsh_fullsize_anim.gif*
+||kiiw.icu/mysw.js*
+||webanalysis.dev/$all
+atrrscoursecatalog.org##div[id="cmplz-cookiebanner-container"]
+||osspalkiaom.com/$all
+||psaudous.com/$all
+kiiw.icu##+js(set, navigator.webdriver, false, stay)
+kiiw.icu##+js(acis, navigator.webdriver)
+kiiw.icu##+js(aopr, navigator.webdriver)
+kiiw.icu##+js(aopw, navigator.webdriver)
+||kiiw.icu/advertising/rd.php*
+kiiw.icu##+js(acis, checkAdBlocker)
+||eblaqebixinq.top/$all
+kiiw.icu##+js(acis, _0xf62sadc)
+kiiw.icu##+js(aopr, _0xf62sadc)
+kiiw.icu##+js(aopw, _0xf62sadc)
+kiiw.icu##+js(acis, osspalkiaom.com)
+kiiw.icu##^script:has-text(osspalkiaom.com)
+birdurls.com##body > div.container > div > div > script:nth-child(5)
+birdurls.com##div[class="alert alert-danger"]
+birdurls.com##+js(acis, b13f67b4741a3b743cd66cf5acfa61b2)
+birdurls.com##+js(aopr, b13f67b4741a3b743cd66cf5acfa61b2)
+birdurls.com##+js(aopw, b13f67b4741a3b743cd66cf5acfa61b2)
+birdurls.com##+js(acis, blocker)
+birdurls.com##^script:has-text(blocker)
+!birdurls.com##+js(nostif.js, checkAdblockUser())
+birdurls.com##+js(nostif.js, checkAdblockUser)
+birdurls.com##+js(nostif.js, /^/, 1000)
+||noxiousrecklesssuspected.com/$all
+||deceittoured.com/$all
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
