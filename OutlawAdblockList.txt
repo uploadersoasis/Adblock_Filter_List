@@ -23664,6 +23664,7 @@ themehunt.com##div[id="sp-cookie-consent"]
 !||crrepo.com/extban/208189020/creatives/$all
 ||upgulpinon.com/$all
 ||www.dexpredict.com/a/display.php*
+||dexpredict.com/a/display.php*
 ||www.dexpredict.com/script/i.php*
 www.geeksforgeeks.org##div[class="cookie-consent hide-consent show-consent"]
 www.veryload.com##div[aria-label="cookieconsent"]
@@ -28592,22 +28593,6 @@ noticiasesports.live##^script[src*="/ads.adshort.media/"]
 noticiasesports.live##+js(set-constant.js, window.adblockDetector, false)
 ||vignerez.net/$all
 ||forzubatr.com/$all
-exey.io##div[id="adb_detected"]
-exey.io##^script:has-text(importFAB)
-exey.io##+js(abort-on-property-read.js, fuckAdBlock)
-exey.io##+js(abort-on-property-write.js, fuckAdBlock)
-exey.io##+js(abort-on-property-read.js, importFAB)
-exey.io##+js(abort-on-property-write.js, importFAB)
-exey.io##iframe[src*="/vignerez.net/"]
-!||exey.io/vulaj_theme/js/vendor/popper.min.js*
-!||exey.io/js/ads.js*
-exey.io##div[id^="div-gpt-ad"]
-exey.io##div[class="adq"]
-exey.io##div:style(visibility: visible; !important;)
-!||exey.io/js/src/alert.js*
-exey.io##+js(nostif.js, /^/, 1000)
-exey.io##+js(set-constant.js, force_disable_adblock, 0, stay)
-exey.io##+js(set-constant.js, document.cookie, ab=0;, stay)
 www.myvirtualserver.com##div[aria-label="cookieconsent"]
 www.myvirtualserver.com##span[id="cookieconsent:desc"]
 www.websitebuilderexpert.com##div[class="consent-holder consent-show"]
@@ -29012,7 +28997,7 @@ crypto.stackexchange.com##div[class="adsbox"]
 ||cdn-a.yieldlove.com/$all
 www.dcode.fr##+js(aopr, insertAds)
 www.dcode.fr##+js(aopw, insertAds)
-||quantcast.mgr.consensu.org/choice/$all
+!||quantcast.mgr.consensu.org/choice/$all
 www.dcode.fr##ins[class="adsbygoogle"]
 ! breaks playback of all youtube videos
 !||*.googlevideo.com/videoplayback?expire=*
@@ -34374,18 +34359,6 @@ community.companyofheroes.com##div[id="cookies-settings"]
 tei.ai##div[class="_1e3i4 or-Gy"]
 ||ig.lurefuleuryon.com/$all
 ||dbosowwfgb.com/$all
-mobi2c.com##div[id="content"]
-mobi2c.com##div[id="adb_detected"]
-mobi2c.com##+js(set-constant, count, -1, stay)
-mobi2c.com##div[data-ad]
-mobi2c.com##+js(abort-current-inline-script, getalladblocks())
-mobi2c.com##+js(abort-current-inline-script, checkAdBlocker())
-mobi2c.com##+js(nano-stb, counter, *, 0.01)
-mobi2c.com##^script:has-text(/getalladblocks()/i)
-mobi2c.com##^script:has-text(/checkAdBlocker()/i)
-mobi2c.com##+js(set-constant, usingBlocker, null)
-mobi2c.com##+js(remove-class, d-none, #go_d)
-mobi2c.com##div[id="devozon-wait1"]
 newforex.online##div[id="content"]
 newforex.online##div[id="adb_detected"]
 newforex.online##+js(set-constant, count, -1, stay)
@@ -34458,7 +34431,6 @@ zegtrends.com##ins[class*="adCreator"]
 ||7bc3cd7987c512539cc6bb1b0678fa8d39abf608bdc70f64188295f9de.s3.amazonaws.com/7897dc3cb7*
 ||whizduly.com/$all
 ||stagetortoiseinfatuated.com/$all
-techmody.io##div[id="adb_detected"]:remove()
 ||notificationnewsspace.com/$all
 ||notfcompreviews.com/$all
 ||track.avotelive.com/$all
@@ -34994,6 +34966,245 @@ www.purexbox.com##div[id="onetrust-consent-sdk"]
 www.purexbox.com##div[data-dfp-id]
 ||kclykjjbkdituln.com/$all
 ||zebumpes.net/$all
+||www.instagram.com/logging/$all
+www.disneyplusinformer.com##div[class*="adthrive"]
+asia.nikkei.com##*[class^="cookie-banner"]
+asia.nikkei.com##div[ng-show="!terminalError"]:remove()
+asia.nikkei.com##div[data-o-ads-name]
+asia.nikkei.com##div[id="GD04_01"]:remove()
+asia.nikkei.com##body[id="ng-app"]
+asia.nikkei.com##section[class="advertorial"]
+currently.att.yahoo.com##div[class*="caas-iframe-"]
+!currently.att.yahoo.com##div[class="caas-content-wrapper"]
+currently.att.yahoo.com##div[class*="adsStreamWrapper"]
+!currently.att.yahoo.com##div[class*="enableAdSlotsOneSlot"]
+currently.att.yahoo.com##div[ata-wf-sticky-target="#adsStream"]
+||currently.att.yahoo.com/_td_api/beacon/reporting-observer*
+||warp.media.net/rtb/resource/adperformance.js*
+||qsearch-a.akamaihd.net/log*
+||hblg.media.net/clog*
+!||trace.mediago.io/api/bidder/track*
+||trace.mediago.io/$all
+||gw.geoedge.be/api/stats*
+||julolecalve.website/$all
+||nh.eugeniecor.com/$all
+||s3.us-east-1.amazonaws.com/c78bb5934b7b4e4cde3a8c1ffd6178accc4250416a4bbf2f2ed6adf56/$all
+||d2r2yqcp8sshc6.cloudfront.net/$all
+||ufundentofi.xyz/$all
+||ertyvaluation.lol/$all
+exey.io##div[id="adb_detected"]:remove()
+exey.io##^script:has-text(importFAB)
+exey.io##+js(abort-on-property-read.js, fuckAdBlock)
+exey.io##+js(abort-on-property-write.js, fuckAdBlock)
+exey.io##+js(abort-on-property-read.js, importFAB)
+exey.io##+js(abort-on-property-write.js, importFAB)
+exey.io##iframe[src*="/vignerez.net/"]
+!||exey.io/vulaj_theme/js/vendor/popper.min.js*
+!||exey.io/js/ads.js*
+exey.io##div[id^="div-gpt-ad"]
+exey.io##div[class="adq"]
+exey.io##div:style(visibility: visible; !important;)
+!||exey.io/js/src/alert.js*
+exey.io##+js(nostif.js, /^/, 1000)
+exey.io##+js(set-constant.js, force_disable_adblock, 0, stay)
+exey.io##+js(set-constant.js, document.cookie, ab=0;, stay)
+exey.io##+js(acis, disableItToContinue)
+exey.io##+js(acis, fuckAdBlock)
+exey.io##+js(acis, importFAB)
+sevenjournals.com##div[id="ad-left"]
+sevenjournals.com##div[id="banner_ad"]
+sevenjournals.com##div[id^="div-gpt-ad-"]
+||sevenjournals.com/cdn-cgi/challenge-platform/h/g/scripts/pica.js*
+||jscdn.greeter.me/sevenjournals.comdynamic.js*
+||jscdn.greeter.me/sevenjournals.comhead.js*
+!||sevenjournals.com/wp-content/uploads/hupslbyj.js*
+||sevenjournals.com/wp-content/uploads/hupslbyj.*
+birdurls.com##div[id="cookie-pop"]
+||napsiguk.com/$all
+||qnaeyveutylnj.com/$all
+||adbit.biz/$all
+||www.ddrsemxv.com/$all
+||www.qvorcqfon.com/$all
+||birdurls.com/js/ads.js*
+fc-lc.com##div[id="ignielAdBlock"]
+fc-lc.com##a[href*="://6jhsbdfsdf66.monster/"]
+||6jhsbdfsdf66.monster/$all
+||www.collegiat.net/wp-content/themes/zoxpress/js/lozad.min.js*
+||gloolrey.com/$all
+||bclikeqt.com/$all
+||bmpolnqkgdw.com/$all
+||yahoo.adclixx.net/$all
+||owllink.net/js/ads.js*
+||www.intelligenceadx.com/flac.min.js*
+owllink.net##+js(acis, decodeURIComponent)
+owllink.net##+js(acis, gdprApplies)
+owllink.net##+js(aopr, gdprApplies)
+owllink.net##+js(aopw, gdprApplies)
+owllink.net##div[data-adspace-id]
+owllink.net##+js(acis, _0xad09)
+owllink.net##+js(aopr, _0xad09)
+owllink.net##+js(aopw, _0xad09)
+owllink.net##div[id="cookie-pop"]
+||accedenonre.xyz/$all
+||cut-y.net/sw.js*
+||foreukandth.xyz/$all
+cut-y.net##ins[data-ad-client]
+cut-y.net##+js(acis, adsbygoogle)
+cut-y.net##+js(aopr, adsbygoogle)
+cut-y.net##+js(aopw, adsbygoogle)
+cut-y.net##+js(remove-attr, disabled, #submit-button, stay)
+||egotizeoxgall.com/$all
+||tls-ech-experiment.cloudflareresearch.com/$all
+||katukaunamiss.com/$all
+!||static.surfe.pro/js/net.js*
+||static.surfe.pro/$all
+||cdn.hooliganmedia.com/hmads0.js*
+||d3u598arehftfk.cloudfront.net/$all
+||scripts.cleverwebserver.com/$all
+||camarondo.com/$all
+||markkasgrosses.com/$all
+||surfe.pro/net/id*
+||thisiswaldo.com/js/track-impression*
+||hbagency.it/cdn/tcf2_cmp_hbagency.js*
+||ui.cleverwebserver.com/$all
+||hbagency.it/cdn/prebid_*
+||cmp.quantcast.com/choice/$all
+!||static.smilewanted.com/js/decode_consent/decode_consent.js*
+||static.smilewanted.com/$all
+||techydino.net/arc-sw.js*
+||intake.pbstck.com/$all
+||chingmathecia.website/$all
+!||id.a-mx.com/sync/$all
+||id.a-mx.com/$all
+!||stats-dev.brid.tv/ping.gif*
+||stats-dev.brid.tv/$all
+||techydino.net/filesadblock/$all
+!||browser.sentry-cdn.com/6.2.2/bundle.min.js*
+||browser.sentry-cdn.com/$all
+||cdn.thisiswaldo.com/static/js/$all
+techydino.net##ins[data-ad-client]
+techydino.net##+js(acis, adsbygoogle)
+techydino.net##+js(aopr, adsbygoogle)
+techydino.net##+js(aopw, adsbygoogle)
+techydino.net##div[id="overlay"]:remove()
+techydino.net##div[id^="div-gpt-ad-"]
+techydino.net##+js(acis, window.googletag)
+techydino.net##+js(aopr, window.googletag)
+techydino.net##+js(aopw, window.googletag)
+techydino.net##ins[data-sizes-desktop]
+!techydino.net##+js(remove-attr, onerror, script, stay)
+techydino.net##+js(remove-attr, onerror)
+||track.blufpartners.com/$all
+forex-gold.net##div[id="con_me"]
+forex-gold.net##*[data-ad-client]
+forex-gold.net##+js(set, timeleft, 0, stay)
+forex-gold.net##+js(remove-attr, disabled, #submitBtn, stay)
+forex-gold.net##+js(remove-class, dnone, #con_mee, stay)
+try2link.com##+js(acis, adsurfebe)
+try2link.com##+js(aopr, adsurfebe)
+try2link.com##+js(aopw, adsurfebe)
+try2link.com##+js(remove-class, hidden, #go-submit, stay)
+try2link.com##+js(remove-attr, disabled, #go-submit, stay)
+try2link.com##div[style="display:none;"]:style(display:inline;)
+try2link.com##+js(acis, getalladblocks)
+shrinke.me##div[id="imgAddDirectLink"]
+shrinke.me##+js(acis, adtrue_tags)
+shrinke.me##+js(aopr, adtrue_tags)
+shrinke.me##+js(aopw, adtrue_tags)
+||xf1lenewma.com/$all
+!||bcvc.xyz/prebid-ads.js*
+||punosy.top/$all
+||punosy.best/$all
+||cdn.unibots.in/headerbidding/$all
+||cdn.jsdelivr.net/gh/unib0ts/unibots@latest/main/script/adScript.js*
+||cdn.jsdelivr.net/gh/unib0ts/unibots@latest/main/script/adScriptTechmody.min.js*
+techmody.io##+js(acis, window.googletag)
+techmody.io##+js(aopr, window.googletag)
+techmody.io##+js(aopw, window.googletag)
+techmody.io##+js(set, count, -1, stay)
+techmody.io##+js(remove-class, disabled, #invisibleCaptchaShortlink, stay)
+techmody.io##+js(remove-attr, disabled, #invisibleCaptchaShortlink, stay)
+techmody.io##+js(acis, adBlockDetected)
+techmody.io##div[id="adb_detected"]:remove()
+techmody.io##+js(acis, fuckAdBlock)
+techmody.io##+js(aopr, fuckAdBlock)
+techmody.io##+js(aopw, fuckAdBlock)
+techmody.io##+js(acis, importFAB)
+techmody.io##+js(aopr, importFAB)
+techmody.io##+js(aopw, importFAB)
+ez4short.com##div[id="cookie-pop"]
+!||lwgadm.com/analytics/$all
+||lwgadm.com/$all
+||onetag-sys.com/match/$all
+||newsharsh.com/arc-sw.js*
+!||content.lwgadm.com/hop/6.22.1/prebid.js*
+||content.lwgadm.com/$all
+newsharsh.com##div[id="babasbmsgx"]
+newsharsh.com##+js(acis, lwhb)
+newsharsh.com##+js(aopr, lwhb)
+newsharsh.com##+js(aopw, lwhb)
+||crazyblog.in/arc-sw.js*
+!||c.jcbsrv.com/player/ad-units.2.1.js*
+||c.jcbsrv.com/player/ad-units*
+||crazyblog.in/detroitchicago/cmbdv2.js*
+crazyblog.in##div[id^="crazyblog_"]
+||bastingestival.com/$all
+||wandererbashful.com/$all
+||dronedgentile.com/$all
+||arsonunemployedcask.com/$all
+!||ser2.crazyblog.in/$all
+!ser3.crazyblog.in##div[id="cookie-pop"]
+crazyblog.in##div[id="cookie-pop"]
+||informaxonline.com/wp-content/plugins/wp-safelink/assets/fuckadblock.js*
+informaxonline.com##div[id="adb"]
+informaxonline.com##div[class="adb"]
+informaxonline.com##*[id^="cookie-law-info-"]:remove()
+informaxonline.com##div[id="cliSettingsPopup"]:remove()
+informaxonline.com##ins[data-ad-client]
+informaxonline.com##div[id^="div-gpt-ad-"]
+informaxonline.com##+js(acis, window.googletag)
+informaxonline.com##+js(aopr, window.googletag)
+informaxonline.com##+js(aopw, window.googletag)
+!informaxonline.com##+js(set, fuckAdBlock, 0)
+informaxonline.com##+js(set, count, 0, stay)
+gaminplay.com##div[id="cliSettingsPopup"]:remove()
+||paypal66.notesbook.in/$all
+||cdn.intergient.com/ramp.js*
+||zegtrends.com/cdn-cgi/apps/head/8VXJ5Q6i8LCGfwED5evyRK8Mugw.js*
+zegtrends.com##ins[data-sizes-desktop]
+zegtrends.com##div[data-ad]
+||fstatic.netpub.media/static/af45af18a2c8e5a5f49920c6bb346b12.min.js*
+||fingerprinter-production.herokuapp.com/$all
+icutlink.com##+js(remove-class, hidden, #go-link, stay)
+icutlink.com##+js(remove-class, hidden, #go-submit, stay)
+icutlink.com##+js(remove-attr, disabled, #go-submit, stay)
+!mobi2c.com##div[class="adb_detected"]
+!mobi2c.com##div[id="content"]
+mobi2c.com##div[id="adb_detected"]
+mobi2c.com##+js(set-constant, count, -1, stay)
+mobi2c.com##div[data-ad]:remove()
+mobi2c.com##+js(abort-current-inline-script, getalladblocks)
+mobi2c.com##+js(abort-current-inline-script, checkAdBlocker)
+!mobi2c.com##+js(nano-stb, counter, *, 0.01)
+mobi2c.com##^script:has-text(/getalladblocks()/i)
+mobi2c.com##^script:has-text(/checkAdBlocker()/i)
+mobi2c.com##+js(set-constant, usingBlocker, null)
+mobi2c.com##+js(remove-class, d-none, #go_d, stay)
+mobi2c.com##+js(remove-class, disabled, .submitBtn, stay)
+mobi2c.com##+js(remove-class, disabled, #submitBtn, stay)
+mobi2c.com##+js(remove-attr, style, #devozon-wait1)
+mobi2c.com##+js(remove-attr, style, .content)
+mobi2c.com##div[id="devozon-wait1"]:style(display: none;)
+mobi2c.com##div[id="devozon-snp"]:style(display: block;)
+!bcvc.xyz##+js(acis, mtx_id )
+!bcvc.xyz##+js(aopr, mtx_id )
+!bcvc.xyz##+js(aopw, mtx_id )
+bcvc.xyz##+js(acis, bFzZsNLbns)
+||jounaque.com/$all
+||prebid.media.net/rtb/prebid/analytics/$all
+||log.ncaudienceexchange.com/$all
+!||cdn.ampproject.org/v0/amp-story-auto-ads-0.1.mjs*
+||cdn.ampproject.org/v0/amp-story-auto-ads-*
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
