@@ -34457,14 +34457,12 @@ yoshare.net##div[id="ignielAdBlock"]
 ||zegtrends.com/contest.js*
 down.fast-down.com##a[class="create"][href*="//down.fast-down.com/download30.htm"]:remove()
 down.fast-down.com##a[class="create"][href*="//down.fast-down.com/download31.htm"]:remove()
-shrinke.me##div[id="cookie-pop"]
 zegtrends.com##ins[class*="adCreator"]
 ||dexpredict.com/script/i.php*
 ||dexpredict.com/ad/display.php*
 ||fbcdn2.com/script/ut.js*
 ||fbcdn2.com/script/suv4.js*
 ||icutlink.com/js/ads.js*
-!||shrinke.me/js/ads.js*
 ||venisonhumridicule.com/$all
 ||livetellsspatter.com/$all
 ||7bc3cd7987c512539cc6bb1b0678fa8d39abf608bdc70f64188295f9de.s3.amazonaws.com/7897dc3cb7*
@@ -35133,8 +35131,10 @@ shrinke.me##+js(aopw, adtrue_tags)
 shrinke.me##+js(aopr, adPos)
 shrinke.me##+js(aopw, adPos)
 shrinke.me##div[data-ad-slot]
+shrinke.me##div[id="cookie-pop"]
 !shrinke.me##+js(set, e, 0, stay)
-shrinke.me##+js(nano-sib, function, *, 0.5)
+!shrinke.me##+js(nano-sib, function, *, 0.5)
+!||shrinke.me/js/ads.js*
 ||8aea065fbccab55609563f46a85c82a0fc50c437e4e3f34a0ef4c8d69.s3.amazonaws.com/cbf560aea8*
 ||xf1lenewma.com/$all
 !||bcvc.xyz/prebid-ads.js*
@@ -35963,6 +35963,25 @@ tutorialsplanet.net##+js(acis, decodeURIComponent)
 ||waredscots.casa/$all
 ||nu.ginnersinfanta.com/$all
 ||vb.fructushumble.com/$all
+google.com##div[id="bottomads"]
+community.chocolatey.org##div[id="cookieNoticeAlert"]
+||aorta.clickagy.com/pixel.gif*
+||eu.gtrxlnd.com/$all
+||ukdliketobepa.monster/$all
+www.syncs.online##div[aria-label="cookieconsent"]
+||tv.gourdycortes.com/$all
+||hhklc.com/$all
+||marfeelrev.com/$all
+||s3.us-east-1.amazonaws.com/30d790af5967d68d0dc1af24c052cc253df6f03b8e1426777a35dc23/$all
+eio.io##div[id="adb_detected"]:remove()
+||eio.io/js/scripts/nr.js*
+eio.io##+js(aopr, fuckAdBlock)
+eio.io##+js(aopw, fuckAdBlock)
+eio.io##+js(aopr, importFAB)
+eio.io##+js(aopw, importFAB)
+eio.io##+js(acis, disableItToContinue)
+eio.io##^script:has-text(disableItToContinue)
+||unitystr.com/?wmcAction=wmcTrack&*
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
