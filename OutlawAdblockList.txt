@@ -33554,7 +33554,7 @@ regex101.com##div[class]:has-text(/^If you're running an ad blocker/i)
 regex101.com##div[class]:has-text(/^Sponsors/)
 !regex101.com##div[class]:has-text(/^Sponsors/):upward(1)
 www.geeksforgeeks.org##div[class="textBasedMannualAds"]
-www.freecodecamp.org##div[class="ad-container"]
+www.freecodecamp.org##div[class^="ad-container"]
 www.freecodecamp.org##ins[data-ad-client]
 www.freecodecamp.org##div[class="banner-ad"]
 www.sqlitetutorial.net##div[class^="donation"]
@@ -36466,6 +36466,21 @@ yourtehzeeb.com##+js(acis, debugger)
 st.chatango.com##div[id="taboola-chat-article-thumbnails"]
 st.chatango.com##div[class="sdlg-title-bg-hidden"]
 ||ivexjkwo.com/$all
+||strollcurepinching.com/$all
+||reapinject.com/$all
+||cadencecovetousfireplace.com/$all
+||d18myvrsrzjrd7.cloudfront.net/$all
+||pogothere.xyz/$all
+||ktobedirectu.autos/$all
+||tefections.xyz/$all
+||junemy.com/$all
+||jfbhxkwpsbndq.com/$all
+||ewoutosh.com/$all
+||trk.trotrot.one/$all
+||mscreview.com/$all
+||hehe.heptix.net/$all
+||opensuperoriginaltheproduct.vip/$all
+||espotl.com/$all
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
