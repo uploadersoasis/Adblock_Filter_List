@@ -34615,7 +34615,6 @@ www.whatismyip.com##+js(aopr, googletag)
 www.zerohedge.com##div[class^="AdvertisingSlot_"]
 www.syncfusion.com##div[id="CookieNotification"]
 ||cdn.syncfusion.com/scripts/albacross/track-new-v2.js*
-||snap.licdn.com/li.lms-analytics/$all
 www.w3docs.com##ins[data-ad-client]
 www.w3docs.com##a[class*="cta-secux"]
 ||gudupp.com/$all
@@ -36259,9 +36258,6 @@ userscloud.com##+js(aopw, FingerprintJS)
 bowfile.com##div[class*="advert-wrapper"]
 bowfile.com##div[class*="top-advert"]
 ||bowfile.com/js/xads.js*
-bowfile.com##div[id="adblockinfo"]
-bowfile.com##div[class*="cookiealert"]
-||bowfile.com/themes/spirit/assets/frontend/js/cookiealert.js*
 uploadhub.to##div[class*="advert-wrapper"]
 uploadhub.to##div[class*="top-advert"]
 ||metrics1.citibankonline.com/$all
@@ -36347,7 +36343,6 @@ www.uploadcloud.pro##div[class^="cookieinfo"]
 www.uploadcloud.pro##a[title="Putin, Stop the War in Ukraine!"]
 www.uploadcloud.pro##+js(acis, debugger)
 www.nydailynews.com##div[class*="ad_container"]
-www.nydailynews.com##zeus-ad
 !www.nydailynews.com##div[class="top_ad_wrapper"]
 www.nydailynews.com##div[class*="ad_wrapper"]
 www.nydailynews.com##div[aria-label="Paywall"]
@@ -36493,6 +36488,63 @@ jokersplayer.xyz##div[id="ad"]
 jokersplayer.xyz##div[class="snackbar message bottom center slideUp"]:has(img[src="/snack/video-hd-2-xxl.png"])
 nw.freestreams-live1.com##+js(aopr, window.googletag)
 nw.freestreams-live1.com##+js(aopw, window.googletag)
+www.whattowatch.com##div[class*="ad-unit"]
+www.whattowatch.com##div[class="dfp-leaderboard-container"]
+||trkn.us/pixel/$all
+||pubads.g.doubleclick.net/pagead/interaction/$all
+open.spotify.com##a[data-context-item-type="ad"]
+open.spotify.com##footer[data-testadtype="ad-type-ad"]
+!||data.adxcel-ec2.com/pixel/$all
+||data.adxcel-ec2.com/$all
+||k.clarity.ms/collect*
+||aywfsjpglvhzdk.com/$all
+||www.bonmrpwrl32.xyz/$all
+||hapinessii.offerstrack.net/$all
+||ps5.fusecloudnational.com/$all
+||ecched.com/$all
+||nbuuhmxvzgrgu.com/$all
+www.pluralsight.com##div[class*="cookie-notification-"]
+||staixooh.com/$all
+||fuylufrn.com/$all
+||trafficbooster.xyz/$all
+||ebodyfairesra.xyz/$all
+||rnoddenkn.asia/$all
+||d2sp5g360gsxjh.cloudfront.net/$all
+||s3.us-east-1.amazonaws.com/f7d83c504bee3c500e2fdcef6fc5a5a6c63c48ed56792a90dce945a/b405c38d7f*
+||treatycalculator.com/$all
+||tiltfastest.com/$all
+||cdn.hooliganmedia.com/hmrads.js*
+||ruootirq.com/$all
+||visit.nordvpn.com/$all
+||aviole.com/prod/ngo.html*
+!||fivern.com/script/i.php*
+!||fivern.com/ts.php*
+||fivern.com/$all
+||www.pxolp.xyz/$all
+||ad.ipredictive.com/$all
+||record.webpartners.co/$all
+||metrics1.thankyou.com/$all
+||www.betus.com.pa/sw.js*
+||acdn.adnxs.com/dmp/up/pixie.js*
+!||bm.adentifi.com/pixel/conv/$all
+||bm.adentifi.com/$all
+||acuityplatform.com/Adserver/$all
+!||px.adentifi.com/Pixels*
+||px.adentifi.com/$all
+!||up.pixel.ad/assets/up.js*
+||up.pixel.ad/$all
+||eiteribesshaints.com/$all
+||komarchlupoid.com/$all
+||www.aexp-static.com/cdaas/one/rum-telemetry/$all
+||dcf.espn.com/privacy/$all
+www.espn.com##div[title="Advertisement"]
+||premium-uploaded.net/$all
+||last0nef1le.com/$all
+fc-lc.com##iframe[id="iframe_id"]
+||downloadfreexx1.com/$all
+webhostingpost.com##iframe[id="iframe_id"]
+||tovanillitechan.com/$all
+||jevtguexebyt.com/$all
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
