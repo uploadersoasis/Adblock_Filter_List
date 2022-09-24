@@ -36783,6 +36783,20 @@ www.thedrive.com##div[class*="tadm_ad_unit"]
 ||trellix.tt.omtrdc.net/$all
 ||musarubra.demdex.net/$all
 ||amazon.partners.tremorhub.com/$all
+forums.tomshardware.com##div[id="header_leaderboard"]
+forums.tomshardware.com##div[id="jwplayer-container-div"]
+forums.tomshardware.com##div[id="rightcol_top"]
+forums.tomshardware.com##div[id="rightcol_bottom"]
+forums.tomshardware.com##div[id="footer_leaderboard"]
+||rum-http-intake.logs.datadoghq.com/$all
+||events.launchdarkly.com/events/diagnostic/$all
+||hosteagle.club/pagead/$all
+||hosteagle.club/adsid/$all
+dualless.dllplayer.com##div[data-ad-client]:remove()
+dualless.dllplayer.com##ins[data-ad-client]:remove()
+www.digieffects.com##div[class*="atf_adWrapper"]
+www.digieffects.com##div[class*="wgAd-loaded"]
+www.digieffects.com##div[id^="wgAdPlacement"]
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
