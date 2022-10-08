@@ -32,6 +32,40 @@
 !        button on its pages is:
 ! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 
+! Title: Custom uBlock Origin Filters
+! Expires: rolling release/continually updated
+! Description: Filters optimized for uBlock to be used along with the built-in uBlock filters except main one, i.e. 4 of 5.
+! Homepage: https://github.com/uploadersoasis/Adblock_Filter_List/blob/master/OutlawAdblockList.txt
+! License: public domain
+!
+! While the rules in this list were tested at the time of inclusion in this list,
+! given that websites on the Internet are continually changing, some may not work
+! now or in the future.
+! Therefore regularly update your filters in uBlock, and report any websites which
+! do not work to https://github.com/uploadersoasis/Adblock_Filter_List/issues .
+! 
+! NOTES:
+!
+!	1.  Filters in this list block ads on YouTube.com, but this causes a black,
+!        screen to appear for each ad that would otherwise be played along with
+!        an associated delay.  The video will play or continue to play after
+!        this pause so patiently wait for it.  The delay may still be shorter
+!        than the ad(s) would have been.
+!
+!    2.  The countdown period of some file hosts has been removed or shortened.
+!        In some of these cases the countdown may not display, so press the
+!        button to perform the download anyway.  For file hosts that do
+!        server-side checks on the countdown, you will still have to wait the
+!        normal period before downloading.
+!
+!    3.  A relative few websites still require the use of a custom Javascript
+!        snippet to be fully functional.  Such a script can be saved as a
+!        bookmark in the web browser and selected when on the webpage which
+!        requires it.
+!        One such website is filecr.com.  The script to activate the download
+!        button on its pages is:
+! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
+
 ! blocks both inline and external scripts
 !||techydino.net^$inline-script,script
 ! an in-line script(s) is preventing techydino.net from working properly
@@ -29966,7 +30000,6 @@ www.phonearena.com##div[id="adOverlay"]
 www.phonearena.com##+js(aopr, abTestingId)
 www.phonearena.com##+js(aopw, abTestingId)
 ||s-cdn.phonearena.com/js/prebidjs/phones_adhesion_desktop.js*
-||macro.adnami.io/macro/spec/adsm.macro.*
 ||phone-arena-d.openx.net/$all
 xdarom.com##^script[id="mdp-deblocker-js-extra"]
 xdarom.com##div[class^="mdp-deblocker-"]
@@ -33730,7 +33763,7 @@ www.thenorthernecho.co.uk##div[class*="dfp-ad"]
 www.thenorthernecho.co.uk##div[class*="mar-block-ad"]
 www.thenorthernecho.co.uk##script[id*="cookieBanner-"]
 !www.thenorthernecho.co.uk##body,html:style(overflow: auto)
-!||macro.adnami.io/macro/spec/adsm.macro.bf4c2c7d-29a1-4c5d-9bf3-ca59eb58ccb0.js*
+!||macro.adnami.io/macro/spec/adsm.macro.*
 ||macro.adnami.io/$all
 ||uatu.newsquestdigital.co.uk/collector.php*
 ||a02342.thenorthernecho.co.uk/wrapper/tcfv2/v1/gdpr/$all
@@ -36850,7 +36883,6 @@ www.arcadepunks.com##div[class*="penci-google-adsense"]
 www.arcadepunks.com##div[class*="penci_archive_ad_"]
 techdows.com##span[class*="ezoic-ad"]
 techdows.com##span[class*="adtester-container"]
-techdows.com##ins[data-ad-client]
 techdows.com##+js(aopr, ez_ad_units)
 techdows.com##+js(aopw, ez_ad_units)
 techdows.com##+js(aopr, __ez)
@@ -36862,6 +36894,254 @@ collider.com##div[id^="div-gpt-ad"]
 !||cdn.resonate.com/analytics.js/v1/200302733/analytics.min.js*
 ||cdn.resonate.com/analytics.js/$all
 ||mbid.marfeelrev.com/$all
+www.linkedin.com##div[id="artdeco-global-alert-container"]
+www.linkedin.com##div[class*="_notice_1ywt5s"]:upward(1)
+www.dexerto.com##div[data-placeholder="ad"]
+www.dexerto.com##div[data-cy="GoogleAd"]
+www.dexerto.com##div[data-openweb-ad="true"]
+www.dexerto.com##div[class*="adhesiveAdWrapper"]
+!||0f73e92f-4074-4fe3-85d3-ed3fc969859e.edge.permutive.app/$all
+||*.edge.permutive.app/$all
+www.imdb.com##^script:has-text(adCustomAction):remove()
+www.imdb.com##script[type="text/javascript"]:has-text(adCustomAction):remove()
+blog.youtube##div[id="cookieBar"]
+gameloop.en.softonic.com##div[id="top-leaderboard-article-page-desktop-wrapper"]
+gameloop.en.softonic.com##div[id="top-banner-article-page-desktop-wrapper"]
+gameloop.en.softonic.com##div[id="bottom-leaderboard-article-page-desktop-wrapper"]
+gameloop.en.softonic.com##div[class="sam-slot__wrapper sam-slot--sticky"]
+||ms-ads-monitoring-events.presage.io/$all
+mybrowseraddon.com##div[id="mybrowseraddon-cookie-container"]
+www.psd2html.com##div[class="war-in-ukraine"]
+||evermoto.xyz/$all
+||d3numuoibysgi8.cloudfront.net/$all
+||hisgames.org/sw.js*
+||d3rb9wasp2y8gw.cloudfront.net/$all
+||reswsentativ.xyz/$all
+||andamafraidt.xyz/$all
+||s3.us-east-1.amazonaws.com/3810d90e85c66f40a674e4475f3ada9ed843bfea898d724849426ba/$all
+www.artec3d.com##div[id="modal_cookie"]
+www.artec3d.com##div[id="sliding-popup"]
+spectrum.ieee.org##div[class*="gdpr-cookie"]
+spectrum.ieee.org##div[id^="rblad-"]
+spectrum.ieee.org##div[class*="rblad-"]
+spectrum.ieee.org##div[class*="rbl-ad"]
+spectrum.ieee.org##div[id="sSS_Default_Post_0_0_20_0_0_1_1"]
+||user-stats.rbl.ms/$all
+||pages-stats.rbl.ms/$all
+||irene-eux.com/$all
+clipchamp.com##a[href="/en/legal/cookies/"]:upward(4)
+clipchamp.com##+js(aopr, enableFacebookPixelSnippet)
+clipchamp.com##+js(aopw, enableFacebookPixelSnippet)
+||app.clipchamp.com/v2/location*
+www.sonantic.io##div[class^="cookieConsent"]
+www.javascripttutorial.net##div[class*="ad-"]:has(div[id^="Ad.Plus-"])
+www.javascripttutorial.net##div[id="carbon-block"]
+www.javascripttutorial.net##div[class*="carbon-ads"]
+www.javascripttutorial.net##+js(aopr, carbonScript)
+www.javascripttutorial.net##+js(aopw, carbonScript)
+wccftech.com##figure[class*="ad noskim"]
+wccftech.com##a[rel="sponsored"]
+wccftech.com##h2:has-text(A message from our sponsor):remove()
+recvfanremake.webnode.es##section[id="cookiebar"]
+||code-boxx.com/detroitchicago/greenoaks.gif*
+||www.youtube-nocookie.com/youtubei/v1/log_event*
+crimsontech.jp##div[id^="cookie-law-info"]
+crimsontech.jp##div[id="cliSettingsPopup"]
+courseclub.me##div[id^="mdp-deblocker-"]:remove()
+courseclub.me##+js(acis, decodeURIComponent)
+courseclub.me##ins[data-ad-client]:remove()
+courseclub.me##div[class*="adloc-show-"]
+courseclub.me##div[id="better-ads-"]:remove()
+courseclub.me##div[class*="widget_better-ads"]
+livsavr.co##div[id="ezmobfooter"]
+livsavr.co##span[class*="ezoic-ad"]
+livsavr.co##span[class*="adtester-container"]
+livsavr.co##+js(aopr, ez_ad_units)
+livsavr.co##+js(aopw, ez_ad_units)
+livsavr.co##span[id^="ezoic-pub-ad"]
+livsavr.co##div[class*="idblog-floatbanner"]
+!livsavr.co##+js(acis, decodeURIComponent)
+livsavr.co##+js(aopr, __ez_fad_floatshowd)
+livsavr.co##+js(aopw, __ez_fad_floatshowd)
+livsavr.co##div[class$="-wrapper"]:has(div[class*="-modal"])
+livsavr.co##div[class$="-blackout active"]
+livsavr.co##+js(acis, debugger)
+livsavr.co##^script:has-text(debugger)
+livsavr.co##+js(aopr, _audins_dom)
+livsavr.co##+js(aopw, _audins_dom)
+livsavr.co##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+www.awwwards.com##div[id="banner-cookies"]
+||tracker.metricool.com/$all
+||livsavr.co/detroitchicago/grapefruit.gif*
+||mansernema.com/$all
+||fhisladyloveh.xyz/$all
+||syenitetatler.tech/$all
+||xml-v4.fastdmr.com/$all
+||medadelem.xyz/$all
+devicetests.com##div[data-position="bottom_adhesive"]
+! remove() is necessary for these to prevent lazy load of ad banners
+devicetests.com##div[data-adid]:remove()
+devicetests.com##div[id^="adngin-"]:remove()
+windows10gadgets.pro##div[class*="uawar"]
+windows10gadgets.pro##div[id="flyingads"]
+windows10gadgets.pro##ins[data-ad-client]
+windows10gadgets.pro##img[src*="advertisement.gif"]
+windows10gadgets.pro##+js(aopr, adsbygoogle)
+windows10gadgets.pro##+js(aopw, adsbygoogle)
+www.androidauthority.com##div[class*="ad-banner"]
+www.androidauthority.com##div[class*="adBanner"]
+||aab.devicetests.com/$all
+||cdn.snigelweb.com/adengine/$all
+||sp.chip.de/com.snowplowanalytics.snowplow/$all
+||ssl.1.damoh.chip.de/hic_qos?ads&adserv=*
+!||cdn.privacy-mgmt.com/consent/tcfv2/vendor-list/$all
+||cdn.privacy-mgmt.com/consent/$all
+www.chip.de##div[id="notice"]:upward(1):remove()
+www.chip.de##div[id^="contentad-topbanner-"]:upward(1):remove()
+www.chip.de##div[class*="contentad-topbanner"]
+www.chip.de##div[class*="contentad-commercial"]
+www.chip.de##div[class*="contentad-top-adsense"]
+oldgamesdownload.com##div[class*="cmplz-cookiebanner"]
+oldgamesdownload.com/wp-content/plugins/complianz-gdpr-premium/$all
+||tracking.digitalocean.com/$all
+!||ats-wrapper.privacymanager.io/ats-modules/$all
+||ats-wrapper.privacymanager.io/$all
+!||launchpad.privacymanager.io/latest/launchpad.bundle.js*
+||launchpad.privacymanager.io/$all
+||www.samsclub.com/px/PXsLC3j22K/xhr/b/s/beacon*
+||samsclub-app.quantummetric.com/$all
+!||beacon.samsclub.com/rum.js*
+||beacon.samsclub.com/$all
+!||cdn.quantummetric.com/instrumentation/1.32.11/quantum-samsclub.js*
+||cdn.quantummetric.com/instrumentation/*/quantum-samsclub.js*
+||cdn.quantummetric.com/bootstrap/quantum-samsclub.js*
+disqus.com##div[data-role="ad-content"]
+disqus.com##div[class*="ad-slot-wrapper"]
+disqus.com##div[class*="ad__"]
+||video.ktkjmp.com/adsbygoogle.js*
+!||creative.xlivrdr.com/widgets/Spot/$all
+||creative.xlivrdr.com/$all
+||kemono.party/onomek*
+||www.nextpit.com/mod_pagespeed_beacon*
+||o1089883.ingest.sentry.io/api/6106537/envelope/$all
+||gsinspiring.xyz/$all
+||mywifecon.xyz/$all
+!||enit.in/js/ads.js*
+!||enit.in/ads/footer.js*
+!||lanza.me/pag/inter/$all
+||cdn.exmarketplace.com/bidder/$all
+||yahoo.adtrackers.net/$all
+azmath.info##+js(aopw, document.onkeydown)
+azmath.info##+js(aopr, document.onkeydown)
+scratch247.info##+js(aopw, document.onkeydown)
+scratch247.info##+js(aopr, document.onkeydown)
+scratch247.info##+js(aeld, contextmenu)
+azmath.info##+js(aeld, contextmenu)
+azmath.info##div[data-adunitid]
+scratch247.info##div[data-adunitid]
+azmath.info##div[id="adb_detected"]
+scratch247.info##div[id="adb_detected"]
+azmath.info##+js(aopw, e.d7b2)
+azmath.info##+js(aopr, e.d7b2)
+scratch247.info##+js(aopw, e.d7b2)
+scratch247.info##+js(aopr, e.d7b2)
+azmath.info##+js(aopw, _0x623e)
+azmath.info##+js(aopr, _0x623e)
+scratch247.info##+js(aopw, _0x623e)
+scratch247.info##+js(aopr, _0x623e)
+azmath.info##+js(acis, _0x967ex2)
+scratch247.info##+js(acis, _0x967ex2)
+scratch247.info##script[id^="vidcrunchJS"]
+azmath.info##script[id^="vidcrunchJS"]
+azmath.info##div[id="d7b2"]
+scratch247.info##div[id="d7b2"]
+azmath.info##+js(remove-attr, oncontextmenu, body)
+scratch247.info##+js(remove-attr, oncontextmenu, body)
+azmath.info##+js(remove-attr, onclick, #proceed)
+scratch247.info##+js(remove-attr, onclick, #proceed)
+scratch247.info##div[class="form-group"]:style(display: inline-block !important;)
+azmath.info##div[class="form-group"]:style(display: inline-block !important;)
+azmath.info##div[id="a11y-label"]:style(display: inline-block !important;)
+scratch247.info##div[id="a11y-label"]:style(display: inline-block !important;)
+scratch247.info##input[id="proceed"]:style(display: inline-block !important;)
+azmath.info##input[id="proceed"]:style(display: inline-block !important;)
+azmath.info##+js(remove-attr, disabled, #link)
+scratch247.info##+js(remove-attr, disabled, #link)
+azmath.info##+js(remove-attr, disabled, #proceed)
+scratch247.info##+js(remove-attr, disabled, #proceed)
+azmath.info##+js(set, currentTime, 0, stay)
+scratch247.info##+js(set, currentTime, 0, stay)
+scratch247.info##button[id="proceed"]:style(display: inline-block !important;)
+azmath.info##button[id="proceed"]:style(display: inline-block !important;)
+||scratch247.info/wp-content/plugins/chp-ads-block-detector/$all
+||azmath.info/wp-content/plugins/chp-ads-block-detector/$all
+azmath.info##div[id="content"]:style(display: inline-block !important;)
+scratch247.info##div[id="content"]:style(display: inline-block !important;)
+azmath.info##+js(acis, ftsgjuVNAhxR)
+scratch247.info##+js(acis, ftsgjuVNAhxR)
+scratch247.info##img[src$="/wp-content/plugins/chp-ads-block-detector/assets/img/icon.png"]:upward(6):remove()
+azmath.info##img[src$="/wp-content/plugins/chp-ads-block-detector/assets/img/icon.png"]:upward(6):remove()
+||scratch247.info/wpsafelink.js*
+||azmath.info/wpsafelink.js*
+||n33d0nem0re.com/$all
+||cdn.vidcrunch.com/integrations/*/Monetiza_*.js*
+financerites.in##iframe[id^="adsbox_ex_"]
+||financerites.in/wp-content/plugins/ad-inserter/$all
+www.darkhorizons.com##ins[data-ad-client]:remove()
+www.darkhorizons.com##+js(aopw, adsbygoogle)
+www.darkhorizons.com##+js(aopr, adsbygoogle)
+||activation.cyberlink.com/$all
+||analytics.wondershare.cc/$all
+||antipiracy.wondershare.com/$all
+www.onmsft.com##div[class*="header-ad"]
+www.onmsft.com##div[class*="sidebar-ad"]
+deluxe.news##iframe[id^="google_ads_"]
+deluxe.news##ins[data-ad-client]:remove()
+deluxe.news##+js(aopw, adsbygoogle)
+deluxe.news##+js(aopr, adsbygoogle)
+||pureinfotech.com/wp-content/plugins/google-analytics-for-wordpress/$all
+pureinfotech.com##+js(aopw, bsa_optimize)
+pureinfotech.com##+js(aopr, bsa_optimize)
+pureinfotech.com##+js(aopw, mi_track_user)
+pureinfotech.com##+js(aopr, mi_track_user)
+pureinfotech.com##div[id^="bsa-zone_"]
+||duscleouphes.com/$all
+||singlwirre.click/$all
+game3rb.com##a[href*="://singlwirre.click/"]
+||fyncenter.com/$all
+! breaks 1cloudfile.com
+||pelagicmismate.com/$all
+||wirratailage.com/$all
+||d38rrxgee6j9l3.cloudfront.net/$all
+||avellingand.xyz/$all
+||efarketingplan.xyz/$all
+||rhearthinkchlo.xyz/$all
+||mployeesihi.xyz/$all
+||d2jp87c2eoduan.cloudfront.net/$all
+||econtinue.xyz/$all
+||s3.us-east-1.amazonaws.com/6e4672faa78012eba338bd7e27d4359e11f171e46745cc9c78b50c/$all
+! block Pega platform web browser sharing (co-browse)
+||us.cobrowse.pega.com/$all
+educatiocenter.online##div[id="modalpop"]
+educatiocenter.online##+js(remove-attr, oncontextmenu, body)
+||tmp.a2zapk.com/adspopup.js*
+||tmp.a2zapk.com/adddds.js*
+www.minitool.com##div[id^="page-top-ad"]:remove()
+www.minitool.com##div[id^="article-sidebar-ad"]:remove()
+www.minitool.com##div[id^="page-bottom-fixed-ad"]:remove()
+www.minitool.com##pxf[id^="pxft-ad-"]:remove()
+www.minitool.com##*[class*="bottom-cookie-"]:remove()
+www.minitool.com##+js(aopw, window.googletag)
+www.minitool.com##+js(aopr, window.googletag)
+||serv-vdo.pixfuture.com/vpaid/ads.js*
+www.advancedinstaller.com##div[id="cookies"]:remove()
+opengapps.org##div[class*="mdl-snackbar"]
+opengapps.org##div[id="bota"]
+opengapps.org##div[id="topa"]
+||s3.amazonaws.com/400651840f45a747f3747721fe56c1cb68f22e9fd3e1a6e207630c/$all
+||d1hgdmbgioknig.cloudfront.net/$all
+||urtseysadm.one/$all
+||theappyrinc.buzz/$all
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
