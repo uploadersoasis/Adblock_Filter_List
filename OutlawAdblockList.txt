@@ -30769,7 +30769,7 @@ www.sbasite.com##div[id="cookieAcceptBar"]
 venturebeat.com##div[class*="adslot"]
 ||ccpa-wrapper.privacymanager.io/$all
 ||gdpr-wrapper.privacymanager.io/$all
-www.forbes.com##fbs-ad
+www.forbes.com##fbs-ad:remove()
 www.forbes.com##div[class*="fbs-ad-"]
 www.forbes.com##div[class*="top-ad"]
 www.cnet.com##div[data-ad]
@@ -37142,6 +37142,78 @@ opengapps.org##div[id="topa"]
 ||d1hgdmbgioknig.cloudfront.net/$all
 ||urtseysadm.one/$all
 ||theappyrinc.buzz/$all
+!||ghb.platform.vidcrunch.com/adunit/tracking*
+||ghb.platform.vidcrunch.com/adunit/$all
+||techacode.com/wpsafelink.js*
+||api-js.mixpanel.com/track/$all
+filen.io##div[id="cookie-consent"]
+||archeswethers.live/$all
+||detinetcallant.com/$all
+||taxedborley.com/$all
+||syringekineses.website/$all
+||prolatecyclus.com/$all
+||cdn.adsfirm.com/$all
+||cdn.adsfcdn.com/$all
+||serve.adtrackers.net/$all
+djxmaza.in##ins[data-ad-client]:remove()
+djxmaza.in##+js(aopw, adsbygoogle)
+djxmaza.in##+js(aopr, adsbygoogle)
+djxmaza.in##+js(acis, unescape)
+djxmaza.in##+js(remove-class, disabled, #formpost, stay)
+djxmaza.in##+js(remove-attr, onmouseover, body, stay)
+djxmaza.in##+js(set, TIME_LIMIT, 0)
+djxmaza.in##+js(set, timeLeft, 0)
+djxmaza.in##+js(acis, _0x49fcx2)
+djxmaza.in##+js(aopw, _0x57e0)
+djxmaza.in##+js(aopr, _0x57e0)
+||linkszia.co/js/ads.js*
+!||cdn.ergadx.com/js/2176/ads.js*
+||cdn.ergadx.com/$all
+||app.web3ads.net/$all
+||webtrafic.ru/ads.php*
+||dvypar.com/$all
+||renomeeguze.com/$all
+||au.web3ads.net/$all
+!||torrentz.adtrackers.net/mgid/ad.js*
+||torrentz.adtrackers.net/$all
+!||zoover.bannertrack.net/shared/bannerpages/darttagsbanner.aspx*
+||zoover.bannertrack.net/$all
+!||udbaa.com/bnr.php*
+||udbaa.com/$all
+||c2shb.pubgw.yahoo.com/admax/$all
+||ajxx98.online/$all
+||grefutiwhe.com/$all
+!||data.adop.cc/collect.php*
+||data.adop.cc/$all
+!||compass.adop.cc/RE/$all
+||compass.adop.cc/$all
+||adopdmp.adop.cc/$all
+||serv.ergadx.com/$all
+||servt.ergadx.com/$all
+||tg1.ergadx.com/$all
+||p29116.nonotro.name/$all
+!||tracot.com/v2/a/prl/vst/204566*
+||tracot.com/$all
+||examtadka.com/ads/$all
+examtadka.com##+js(aopw, _0x57e0)
+examtadka.com##+js(aopr, _0x57e0)
+lazyadmin.nl##div[class*="adthrive-ad"]
+store.rg-adguard.net##ins[data-ad-client]:remove()
+store.rg-adguard.net##+js(aopw, adsbygoogle)
+store.rg-adguard.net##+js(aopr, adsbygoogle)
+www.ign.com##div[data-mix-name="leaderboardOnly"]
+www.sciencealert.com##span[class*="ad-desktop"]
+www.xsplit.com##div[id="cookiebar"]:remove()
+||d.email.forbes.com/track.v2.js*
+www.forbes.com##div[class*="vestpocket"]:style(min-height: 0px !important;)
+www.forbes.com##*[class*="cnx-ad-"]
+stealthoptional.com##div[class*="ad-wrapper"]:remove()
+stealthoptional.com##div[class*="ad-container"]:remove()
+||mcuxdyyvoqooqpl.com/$all
+||russiaroman.com/$all
+||spellingunacceptable.com/$all
+||invaderannihilationperky.com/$all
+||intimidatekerneljames.com/$all
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
