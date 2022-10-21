@@ -34199,7 +34199,7 @@ outlook.live.com##div[aria-label="advertisement"]
 ||res.cdn.office.net/owamail/20220527002.09/resources/images/nativeadicon_adsense.svg*
 outlook.live.com##div[class*="fbAdSubtitle"]
 outlook.live.com##div[class*="fbAdTitle"]
-outlook.live.com##div[class*="fbAdLink"]
+outlook.live.com##div[class*="fbAdLink"]:remove()
 outlook.live.com##div[class*="fbAdBody"]
 outlook.live.com##div[class="full UsCOa"]
 ||outlook.live.com/ows/v1.0/OutlookOptions/AdsAggregate?$all
@@ -37281,9 +37281,83 @@ www.dexerto.com##div[class*="adhesiveAdWrapper"]:remove()
 !||macro.adnami.io/macro/hosts/adsm.macro.dexerto.com.js*
 ||macro.adnami.io/$all
 ||adsm.macro.dexerto.com/$all
+www.codingem.com##+js(aopw, __ez)
+www.codingem.com##+js(aopr, __ez)
+www.codingem.com##+js(aopw, __ez.fads)
+www.codingem.com##+js(aopr, __ez.fads)
+www.codingem.com##+js(aopw, ezorbf)
+www.codingem.com##+js(aopr, ezorbf)
+www.codingem.com##+js(aopw, __banger_pmp_deals)
+www.codingem.com##+js(aopr, __banger_pmp_deals)
+www.codingem.com##+js(aopw, __advertiserRule)
+www.codingem.com##+js(aopr, __advertiserRule)
+www.codingem.com##+js(aopw, window.ezogetbrkey)
+www.codingem.com##+js(aopr, window.ezogetbrkey)
+www.codingem.com##+js(aopw, _ezaq)
+www.codingem.com##+js(aopr, _ezaq)
+||www.codingem.com/porpoiseant/fads.js*
+||www.codingem.com/porpoiseant/banger.js*
+www.codingem.com##div[id="ezmobfooter"]:remove()
+www.codingem.com##script[src^="/detroitchicago/"]:remove()
+www.codingem.com##*[class*="cnx-ad-"]:remove()
+www.codingem.com##span[class*="ezoic-ad"]:remove()
+www.codingem.com##span[class*="adtester-container"]:remove()
+||track.mailerlite.com/$all
+thispointer.com##ins[data-ad-client]:remove()
+thispointer.com##h2[class="widget-title"]:has-text(/Advertisements/i)
+thispointer.com##+js(aopw, adsbygoogle )
+thispointer.com##+js(aopr, adsbygoogle )
+deadline.com##div[data-is-adhesion-ad]:remove()
+deadline.com##div[class*="rail-ads-"]:remove()
+deadline.com##div[class*="ad-text"]:remove()
+learn.pluralsight.com##div[class="cookie-notification-wrapper"]:remove()
+wccftech.com##div[id^="div-gpt-ad-"]:remove()
+wccftech.com##div[class="bg-horizontal"]
+wccftech.com##.bg-square:before
+wccftech.com##.bg-vertical:before
+venturebeat.com##div[class="tude-cw-wrap"]:has(span[class="tude-cw-label"]:has-text(advertisement)):remove()
+!outlook.live.com##i[data-icon-name="Delete"]:has(div[class="_2Frh JMe1C"]):remove()
+outlook.live.com##div[class="_2Frh JMe1C"]:remove()
+outlook.live.com##div[class="Tovoi"]:upward(6):remove()
+www.thefocus.news##div[data-ad-type]:remove()
+www.thefocus.news##iframe[src*="://pre.ads.justpremium.com/"]:remove()
+||hereisthecity-d.openx.net/$all
+pakstech.com##ins[data-ad-client]:remove()
+pakstech.com##div[class*="ezo_ad"]:remove()
+pakstech.com##span[class*="ezoic-ad"]:remove()
+pakstech.com##+js(aopw, __ez.fads)
+pakstech.com##+js(aopr, __ez.fads)
+pakstech.com##+js(aopw, window.ezmadspc)
+pakstech.com##+js(aopr, window.ezmadspc)
+pakstech.com##+js(aopw, __ez_fad_gpt)
+pakstech.com##+js(aopr, __ez_fad_gpt)
+pakstech.com##+js(aopw, ezorbf)
+pakstech.com##+js(aopr, ezorbf)
+pakstech.com##+js(aopw, window.isEZABL)
+pakstech.com##+js(aopr, window.isEZABL)
+pakstech.com##+js(aopw, __inScopeForCCPA)
+pakstech.com##+js(aopr, __inScopeForCCPA)
+pakstech.com##script[src*="/detroitchicago/"]:remove()
+! blocks lazy loaded images
+!||pakstech.com/detroitchicago/$all
+!||pakstech.com/porpoiseant/fads.js*
+||pakstech.com/porpoiseant/$all
+!||zn3aqbinqfptmrq5w-citifeedback.siteintercept.qualtrics.com/$all
+||*-citifeedback.siteintercept.qualtrics.com/$all
+www.bestbuy.com##div[id^="shop-display-ad"]:remove()
+www.bestbuy.com##div[id*="shop-pushdown-ad"]:remove()
+||assets.bbystatic.com/shop/display-ad/$all
+||assets.bbystatic.com/shop/pushdown-ad/$all
+||www.bestbuy.com/~assets/bby/_com/analytics-dotcom/$all
+www.gamesindustry.biz##div[class^="advert"]
+www.gamesindustry.biz##+js(remove-attr, data-ads, body)
+www.pluralsightone.org##div[class="cookie-notification-wrapper"]
+www.skillshare.com##div[id="usercentrics-root"]:remove()
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
+!@@||aa.online-metrix.net/$all
+@@||citicorpcreditservic.tt.omtrdc.net/$all
 @@||linkvertise.com^$ghide
 @@.jpg$image,domain=dropgalaxy.*|techssting.com
 @@.png$image,domain=dropgalaxy.*|techssting.com
