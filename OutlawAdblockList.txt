@@ -12,7 +12,7 @@
 ! 
 ! NOTES:
 !
-!	1.  Filters in this list block ads on YouTube.com, but this causes a black,
+!    1.  Filters in this list block ads on YouTube.com, but this causes a black,
 !        screen to appear for each ad that would otherwise be played along with
 !        an associated delay.  The video will play or continue to play after
 !        this pause so patiently wait for it.  The delay may still be shorter
@@ -66,6 +66,8 @@
 !        button on its pages is:
 ! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 
+! Brave's native adblocking does not use $all so use * or ^ (without preceding forward slash) instead.
+! Brave also does not support upward() nor remove().
 ! blocks both inline and external scripts
 !||techydino.net^$inline-script,script
 ! an in-line script(s) is preventing techydino.net from working properly
@@ -30265,7 +30267,6 @@ gsmusbdriver.com##+js(acis, document.oncontextmenu)
 ||www.effectivedisplayformat.com/$all
 ||ambientaboveboard.com/$all
 ||events.audioplace.me/$all
-||cdn.shortpixel.ai/$all
 !||yield-op-idsync.live.streamtheworld.com/idsync.js*
 ||yield-op-idsync.live.streamtheworld.com/$all
 !||playerservices.live.streamtheworld.com/api/idsync.js*
@@ -33763,8 +33764,6 @@ www.thenorthernecho.co.uk##div[class*="dfp-ad"]
 www.thenorthernecho.co.uk##div[class*="mar-block-ad"]
 www.thenorthernecho.co.uk##script[id*="cookieBanner-"]
 !www.thenorthernecho.co.uk##body,html:style(overflow: auto)
-!||macro.adnami.io/macro/spec/adsm.macro.*
-||macro.adnami.io/$all
 ||uatu.newsquestdigital.co.uk/collector.php*
 ||a02342.thenorthernecho.co.uk/wrapper/tcfv2/v1/gdpr/$all
 dilbert.com##div[class*="ad-leaderboard"]
@@ -37279,6 +37278,7 @@ www.dexerto.com##div[id^="browsi_adContainer"]:remove()
 www.dexerto.com##div[data-ad-unit-id]:remove()
 www.dexerto.com##div[class*="adhesiveAdWrapper"]:remove()
 !||macro.adnami.io/macro/hosts/adsm.macro.dexerto.com.js*
+!||macro.adnami.io/macro/spec/adsm.macro.*
 ||macro.adnami.io/$all
 ||adsm.macro.dexerto.com/$all
 www.codingem.com##+js(aopw, __ez)
@@ -37354,9 +37354,54 @@ www.gamesindustry.biz##+js(remove-attr, data-ads, body)
 www.pluralsightone.org##div[class="cookie-notification-wrapper"]
 www.skillshare.com##div[id="usercentrics-root"]:remove()
 ||store.epicgames.com/epic-analytics-worker.js*
+www.programiz.com##div[id="summer-sale-popup"]
+! remove() does not work on Brave's native adblocking
+!outlook.live.com##a[href*="://windows.microsoft.com/outlook/ad-free-outlook"]
+outlook.live.com##a[href*="://windows.microsoft.com/outlook/ad-free-outlook"]:remove()
+outlook.live.com##img[src$="/resources/images/adbarmetrosprite.png"]
+! Brave does not have has-text(); -abp-contains() doesn't work either
+outlook.live.com##span:has-text(It looks like you're using an ad blocker.):upward(3)
+adblockplus.org##form[class="cookie cookieprompt"]
+adblockplus.org##div[id="cookiebar"]
+adblockplus.org##+js(remove-class, show-cookies-notice, body)
+||ads.brave.software/$all
+||ads-admin.bravesoftware.com/$all
+||ads.bravesoftware.com/$all
+||ads-admin.brave.com/$all
+||ads-admin.brave.software/$all
+||stats.brave.com/$all
+www.pythontutorial.net##div[class="whitelist"]
+www.pythontutorial.net##div[data-aa-adunit]
+www.pythontutorial.net##div[class="ad ad-336"]
+||target.georiot.com/$all
+||ads.resetsrv.com/$all
+!||increaserev.com/ads/$all
+||increaserev.com/$all
+send.cm##div[class*="increaserev"]
+||pl17142106.profitablegatetocontent.com/$all
+computersciencehub.io##span[class*="ezoic-ad"]
+computersciencehub.io##span[class*="adtester-container"]
+computersciencehub.io##span[class*="ezoic-autoinsert-ad"]
+computersciencehub.io##+js(aopw, window.ezoAdBackFill)
+computersciencehub.io##+js(aopr, window.ezoAdBackFill)
+computersciencehub.io##+js(aopw, __ez.fads)
+computersciencehub.io##+js(aopr, __ez.fads)
+computersciencehub.io##+js(aopw, __ez_fad_gptd)
+computersciencehub.io##+js(aopr, __ez_fad_gptd)
+computersciencehub.io##+js(aopw, ez_ad_units)
+computersciencehub.io##+js(aopr, ez_ad_units)
+computersciencehub.io##div[id="ezmobfooter"]
+computersciencehub.io##script[src*="/porpoiseant/fads.js"]
+||37.1.209.213/$all
+||topawardhere.life/$all
+||2221.misstarbone.live/$all
+||repappcloud.com/$all
+! blocks CSS on some websites
+!||cdn.shortpixel.ai/$all
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
+!@@||track.adtraction.com^
 !@@||aa.online-metrix.net/$all
 @@||citicorpcreditservic.tt.omtrdc.net/$all
 @@||linkvertise.com^$ghide
