@@ -66,7 +66,12 @@
 !        button on its pages is:
 ! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 
-! Brave's native adblocking does not use $all so use * or ^ (without preceding forward slash) instead.
+! Brave's native adblocking does not support "$all" so use * or ^ (without preceding forward slash) instead.
+! uBlock Origin does not use * as a universal catchall like Brave, so using
+! "/$popup,document,inline-script,inline-font,popunder,subdocument,script,other"
+! instead of "/$all" or "/*" is the functional equivalent choice that works with
+! both Ublock Origin and Brave's native adblocking EXCEPT when just a hostname is being blocked.
+! In that case use "^$popup,document,inline-script,inline-font,popunder,subdocument,script,other" instead.
 ! Brave also does not support upward() nor remove().
 ! blocks both inline and external scripts
 !||techydino.net^$inline-script,script
@@ -34198,6 +34203,7 @@ outlook.live.com##div[aria-label="advertisement"]
 ||res.cdn.office.net/owamail/20220527002.09/resources/images/nativeadicon_adsense.svg*
 outlook.live.com##div[class*="fbAdSubtitle"]
 outlook.live.com##div[class*="fbAdTitle"]
+outlook.live.com##div[class*="fbAdLink"]
 outlook.live.com##div[class*="fbAdLink"]:remove()
 outlook.live.com##div[class*="fbAdBody"]
 outlook.live.com##div[class="full UsCOa"]
@@ -37392,12 +37398,283 @@ computersciencehub.io##+js(aopw, ez_ad_units)
 computersciencehub.io##+js(aopr, ez_ad_units)
 computersciencehub.io##div[id="ezmobfooter"]
 computersciencehub.io##script[src*="/porpoiseant/fads.js"]
-||37.1.209.213/$all
 ||topawardhere.life/$all
 ||2221.misstarbone.live/$all
 ||repappcloud.com/$all
 ! blocks CSS on some websites
 !||cdn.shortpixel.ai/$all
+||www.essvote.net/analytics/$all
+www.voterview.ar-nova.org##+js(aopw, TrackerURL)
+www.voterview.ar-nova.org##+js(aopr, TrackerURL)
+www.voterview.ar-nova.org##div[id="ModalCookiesMustBeEnabled"]:remove()
+||weblog.e-himart.co.kr/$all
+||*.adtouch.adbirx.io/$all
+3dm-games.com##script[src^="data:text/javascript;base64,"]
+3dm-games.com##div[id^="eu_cookie_law_"]
+android-zone.ws##div[id="elGuestTerms"]
+||payce-google.com/$all
+||snanpckat-apk.com/$all
+||vidmates-app.com/$all
+||paltpal-apk.com/$all
+||m-apkpures.com/$all
+||tlktok-apk.link/$all
+||notepads-plus-plus.org/$all
+||tocproject.com/$all
+||thundersbird.org/$all
+||codevisualstudio.org/$all
+||braves-browsers.org/$all
+||ethersmine.com/$all
+kiktu.com##js(acis, detectADB)
+kiktu.com##js(acis, as15v6d9999gg)
+kiktu.com##div[id="as15v6d9999gg"]
+||adstargets.com/myAdstargets/$all
+memtest.org##div[aria-label="cookieconsent"]
+slidedog.com##section[id="cookiereminder"]
+www.penfed.org##*[class*="banner-cookies"]
+constexpr.org##body::before
+constexpr.org##body::after
+www.ocinside.de##div[id="cookie_box"]
+barcode.tec-it.com##div[class^="cookieConsent"]
+www.tec-it.com##div[class^="cookieConsent"]
+whois-history.whoisxmlapi.com##div[id="bottom-cookie-message-block"]
+www.domainiq.com##+js(remove-class, blur, span)
+www.domainiq.com##+js(remove-class, blur, div)
+www.slingbox.com##div[id="cookie_policy"]
+www.gigabyte.com##div[id="policy-div"]
+||miszonepionic.space/$all
+!||macroschauth.com/rf/$all
+||macroschauth.com/$all
+!||euouaeslurped.com/rIcBic4Le3xZFKg/$all
+||euouaeslurped.com/$all
+!||violondeaf.guru/gd/$all
+||violondeaf.guru/$all
+www.piecex.com##div[class*="cookie-consent"]
+www.dennys.com##cookie-banner-placeholder
+www.linuxcapable.com##div[id="top-article"]
+www.linuxcapable.com##div[class*="code-block-top-side-ads"]
+www.cpuid.com##div[class*="widget-advert"]
+www.cpuid.com##ins[data-ad-client]
+!outlook.live.com##span[class="z22gV"]:has-text(/It looks like you're using an ad blocker. To maximize the space in your inbox, sign up for/i)
+outlook.live.com##span[class="z22gV"]
+outlook.live.com##image[aria-label="Set your advertising preferences"]:upward(2)
+outlook.live.com##image[aria-label="Set your advertising preferences"]
+outlook.live.com##div[class="GssDD"]
+outlook.live.com##+js(remove-class, disableTextSelection, body)
+outlook.live.com##div[class="full cJ3F3"]
+www.ubackup.com##div[class="ensureCookie"]
+gparted.org##div[aria-label="cookieconsent"]
+||download-msetup.org/$all
+!||healthyteeth.tips/$all
+||mp-download.org/$all
+healthyteeth.tips##div[id="cookie-notice"]
+healthyteeth.tips/wp-content/plugins/cookie-notice/$all
+www.nucleustechnologies.com##div[id="cookieNotice"]
+www.easeus.com##div[class="usernotice_pop"]
+www.thekitchn.com##div[class*="Ad--"]
+www.thekitchn.com##div[class*="Post__ad"]
+mxlinux.org##div[id="webarx-cookie-notice"]
+||8d861e4c-056c-43c1-b98b-3f58271dcf26.s3.ap-northeast-2.amazonaws.com/$all
+||qanatn.com/$all
+||gaut-hil.com/$all
+www.how2shout.com##div[class="text-ads"]
+www.how2shout.com##div[class="adsbyvli"]
+www.how2shout.com##div[class*="box_ads_content_"]
+||godpvqnszo.com/$all
+fortune.com##+js(remove-class, paywallActive, div)
+fortune.com##+js(remove-class, paywall-selector, div)
+fortune.com##+js(remove-class, paywall, div)
+www.asrock.com##section[id="AcceptCookies"]
+!||turbobitnet1669361143305.delikatsov.com/$all
+||*.delikatsov.com/$all
+www.openmediavault.org##div[id="cmplz-cookiebanner-container"]
+kiktu.com##ins[data-ad-client]
+kiktu.com##+js(aopw, adsbygoogle)
+kiktu.com##+js(aopr, adsbygoogle)
+upshrink.com##+js(aopw, globeAdb)
+upshrink.com##+js(aopr, globeAdb)
+||azmath.info/kampyle.js*
+||distinctbelieverjustify.com/$all
+||refpa4903566.top/$all
+||coinmarketbag.com/$all
+!||svibeacon.onezapp.com/analytics/$all
+||svibeacon.onezapp.com/$all
+forum.sbenny.com##iframe[id^="google_ads_frame"]
+||interviewdegenerateperspective.com/$all
+www.modbaixar.com##div[class="fot-fixd"]
+||rating.downloadatoz.com/cookie/$all
+www.nextpit.com##div[id="jobbio-horizontal"]
+wirelessjoint.com##div[aria-label="cookieconsent"]
+wirelessjoint.com##div[data-phpbb-ads-id]
+||wirelessjoint.com/assets/cookieconsent/$all
+download.apkmody.fun##+js(remove-attr, onclick, #download-button)
+mega4upload.com##+js(remove-attr, onclick, a.btn.btn-sm.btn-dark)
+||dipaka-ead.com/$all
+||managecompletelyquickinfo-file.info/$all
+usersdownload.com##h5[id="title_12324323"]
+||js.mobileoffers-7-o-download.com/$all
+semiconductor.samsung.com##div[id="cookie_component"]
+www.razer.com##div[class*="tos-cookies-container"]
+||analytics.300624.com/$all
+www.realvnc.com##div[id="elementor-popup-modal-7516"]
+www.draytek.com##div[class="cookie"]
+www.rapidseedbox.com##div[id="cookie-notice"]
+proxybros.com##div[data-cookies]
+linuxtechlab.com##+js(aopw, ez_ad_units)
+linuxtechlab.com##+js(aopr, ez_ad_units)
+||linuxtechlab.com/porpoiseant/fads.js*
+linuxtechlab.com##div[data-ad-slot]
+linuxtechlab.com##span[class*="ezoic-ad"]
+linuxtechlab.com##span[class*="adtester-container"]
+||advice-ads.s3.amazonaws.com/$all
+||advertising-api-eu.amazon.com/$all
+||affiliationjs.s3.amazonaws.com/$all
+||analytics.facebook.com/$all
+||ads-api.twitter.com/$all
+||ads.facebook.com/$all
+||ads.youtube.com/$all
+||ads.reddit.com/$all
+||advertising.twitter.com/$all
+||an.facebook.com/$all
+www.windows7download.com##ins[data-ad-client]:upward(1)
+www.windows7download.com##ins[data-ad-client]
+www.patreon.com##div[class="root__XMKIj bottomLeft__O0HMt"]
+nordvpn.com##div[class*="CookieConsentV2"]
+blog.matrixpost.net##div[id="dsgvomiddlewrap"]
+pixonic.com##div[id="cmpbox"]
+||adoto.net/dashboard/display/items.php*
+dropgalaxy.com##div[id^="adm-container-"]
+dropgalaxy.com##+js(remove-attr, style, #method_free)
+!||fastly.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js*
+!||fastly.jsdelivr.net/npm/disable-devtool*/$all
+! just disable the scripts not all content
+||fastly.jsdelivr.net/npm/disable-devtool*/*.ts$all
+||fastly.jsdelivr.net/npm/disable-devtool*/*.js$all
+!||fastly.jsdelivr.net/npm/disable-devtool*/*.ts$popup,document,inline-script,inline-font,popunder,subdocument,script,other
+!||fastly.jsdelivr.net/npm/disable-devtool*/*.js$popup,document,inline-script,inline-font,popunder,subdocument,script,other
+rapidrar.com##+js(remove-attr, disabled, #btn_download, stay)
+rapidrar.cr##+js(remove-attr, disabled, #btn_download, stay)
+rapidrar.cr##div[id="adb-alert"]
+rapidrar.com##div[id="adb-alert"]
+||rapidrar.cr/js/fuckadblock.js*
+||rapidrar.com/js/fuckadblock.js*
+||rapidrar.cr/js/rapidrar3.js*
+||rapidrar.com/js/rapidrar3.js*
+||ermin-oxj.info/$all
+||kzsfip3v.cfd/$all
+||techthematter.xyz/adsby.js*
+techthematter.xyz##+js(remove-attr, onclick, #dl, stay)
+techthematter.xyz##ins[data-ad-client]
+techthematter.xyz##+js(aopw, adsbygoogle)
+techthematter.xyz##+js(aopr, adsbygoogle)
+||tmp.a2zapk.com/js/techadsns.js*
+nordpass.com##div[id="cookie-consent"]
+||cm.nordpass.com/nordaddy/?event_name=adblock_detection*
+!||monitor.clickcease.com/stats/stats.aspx*
+||monitor.clickcease.com/$all
+||www.clickcease.com/monitor/stat.js*
+||cm.nordpass.com/ads-min.js*
+filecr.com##+js(aopw, MseGfqdihwXY78e)
+filecr.com##+js(aopr, MseGfqdihwXY78e)
+filecr.com##div[class*="ubrk-sygu-"]
+filecr.com##script[id^="advanced-ads-"]
+myaccount.summitutilities.com##div[id="VTX_BrandingHeader"]
+myaccount.summitutilities.com##div[id="VTX_Footer"]
+fm.solewe.com##div[id="babasbmsgx"]
+!fm.solewe.com##div[id="banner_ad"]
+fm.solewe.com^script:has-text(banner_ad)
+www.cablefree.net##div[id="cmplz-cookiebanner-container"]
+!||www.cablefree.net/wp-content/uploads/complianz/css/banner-1-optin.css*
+||www.cablefree.net/wp-content/uploads/complianz/$all
+rmprepusb.com##div[id^="cookie-law"]
+rmprepusb.com##div[id="cliSettingsPopup"]
+discussion.fedoraproject.org##div[aria-label="cookieconsent"]
+!||r.apkpure.net/report?project=channelReport*
+||r.apkpure.net/$all
+www.emtec-international.com##div[class*="cookiealert"]
+speedify.com##*[id^="cookie-notice-"]
+||speedify.com/wp-content/plugins/cookie-notice/$all
+www.sberbank.com##div[data-pid^="KomCookieWarning"]
+games.digipen.edu##div[id="cookieToast"]
+www.lawyer-turkey.com##div[id="buton"]
+www.openpr.com##div[id="cmpbox2"]
+www.openpr.com##div[id="cmpbox"]
+www.openpr.com##div[id="ad-leaderboard"]
+www.openpr.com##ins[data-ad-client]
+www.openpr.com##body:style(overflow: scroll; !important)
+!||cdn.consentmanager.net/delivery/$all
+||cdn.consentmanager.net/$all
+||venge.io/adblock.js*
+||c.amazon-adsystem.com/aax2/apstag.js*
+!||api.poki.com/ads/settings*
+||api.poki.com/ads/$all
+gofile.io##div[id="adplus-anchor"]
+gofile.io##img[alt="adplus-dvertising"]
+gofile.io##div[id="adsNordvpn"]
+gofile.io##div[id="adsGoogleH"]
+gofile.io##div[id="adsAads"]
+gofile.io##div[id="adsPlaywire"]
+gofile.io##div[id="adsGoogleSquare"]
+gofile.io##div[id="adsPix"]
+gofile.io##ins[data-ad-client]
+www.technopediasite.com##ins[data-ad-client]
+www.technopediasite.com##iframe[id^="google_ads_frame"]
+www.technopediasite.com##div[aria-label="Close Ads"]
+disqus.com##div[class="osano-cm-window__dialog osano-cm-dialog osano-cm-dialog--position_bottom osano-cm-dialog--type_bar"]
+support.jdownloader.org##div[class*="cc_banner"]
+us.7digital.com##div[data-notice-id="cookie-opt-in"]
+maclookup.app##div[id="cc_div"]
+www.utomik.com##div[id^="cookiescript_"]
+www.programmersmusic.com##div[aria-label="cookieconsent"]
+www.highresaudio.com##div[aria-label="cookieconsent"]
+www.intrepiduniverse.com##div[id="permission-bar"]
+||lobbydesires.com/$all
+||letsmakeparty3.ga/$all
+||deliverygoodstrategies.com/$all
+||gabriellalovecats.com/$all
+||css.digestcolect.com/$all
+||clon.collectfasttracks.com/$all
+||Count.trackstatisticsss.com
+www.enttec.com##div[id="show-gdpr"]
+www.enttec.com##div[id="gdpr-notice"]
+tv247us.com##div[class*="adsbyvli"]
+tv247us.com##div[class*="hantads"]
+tv247us.com##div[data-ad-slot]
+tv247us.com##div[id="banner_ad"]
+tv247us.com##+js(remove-class, hantads, div)
+tv247us.com##div[id^="afc_sidebar"]
+tv247us.com##+js(acis, eval)
+tv247us.com##+js(noeval)
+#tv247us.com##+js(acis, loadAd)
+#tv247us.com##+js(set-constant, timead, 0, stay)
+#tv247us.com##+js(aopw, timead)
+#tv247us.com##+js(aopr, timead)
+||www.xadsmart.com/two.min.js*
+||nginx-cf.maxcdn.info/country_blocker.js*
+#www.ustream.to##+js(acis, eval)
+#www.ustream.to##+js(noeval)
+www.ustream.to##+js(aopw, f6d8301657cfd12894120288e019af08)
+www.ustream.to##+js(aopr, f6d8301657cfd12894120288e019af08)
+||c.popsads.net/$all
+||adblock-pro-download.com/$all
+||fumuluckt.com/$all
+||rentingimmoderatereflecting.com/$all
+||tutuads97.g2afse.com/$all
+||time4tv.stream/top.php*
+||yourtehzeeb.com/fsembed.js*
+time4tv.stream##div[id="floatLayer1"]
+time4tv.stream##+js(acis, debugger)
+time4tv.stream##+js(acis, anonymous)
+time4tv.stream##+js(remove-attr, style, .seek-time, stay)
+time4tv.stream##+js(remove-class, seek-disabled, div, stay)
+time4tv.stream##+js(remove-class, volume-bar-hide, div, stay)
+||racingorchestra.com/$all
+||123ecast.me/blast.js*
+||waufooke.com/tag.min.js*
+||extrafreetv.com/images/x1.png*
+||extrafreetv.com/camp1.php*
+portal.av-atlas.org##div[id="cdk-overlay-0"]:upward(2)
+portal.av-atlas.org##div[id="cdk-overlay-0"]
+portal.av-atlas.org##div[class="cdk-overlay-container"]
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
@@ -37475,3 +37752,4 @@ blogspot.com#@#+js(no-floc)
 gitlab.io#@#+js(no-floc)
 gitlab.com#@#+js(no-floc)
 @@||sentry.gitlab.net/api/$other,domain=gitlab.com
+@@||go.redirectingat.com^
