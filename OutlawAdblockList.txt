@@ -34068,7 +34068,9 @@ streamgo.to##iframe[id^="ifre"]
 ||acacdn.com/script/suv4.js*
 ||imstore.bet365affiliates.com/$all
 ||becorsolaom.com/$all
-||embedstream.me/cash.min.js*
+!||embedstream.me/cash.min.js*
+!||embedstream.me/cash.min.js$all
+||embedstream.me/cash.min.js$popup,document,inline-script,inline-font,popunder,subdocument,script,other
 ||unseenreport.com/$all
 ||janglemysticalpiggy.com/$all
 ||admida.xml.ak-is2.net/$all
@@ -36430,7 +36432,6 @@ www.statnews.com##div[data-ad-unit]
 ||peciet.com/$all
 ||momentcleanpitch.com/$all
 !||key.seckeyserv.me/$all
-||embedstream.me/cash.min.js
 ||playoffsstream.com/ts.php*
 ||ardslediana.com/$all
 ||www.hacbfyvvsw.com/$all
@@ -37664,6 +37665,7 @@ www.ustream.to##+js(aopr, f6d8301657cfd12894120288e019af08)
 time4tv.stream##div[id="floatLayer1"]
 time4tv.stream##+js(acis, debugger)
 time4tv.stream##+js(acis, anonymous)
+time4tv.stream##+js(acis, detectDevTool)
 time4tv.stream##+js(remove-attr, style, .seek-time, stay)
 time4tv.stream##+js(remove-class, seek-disabled, div, stay)
 time4tv.stream##+js(remove-class, volume-bar-hide, div, stay)
@@ -37751,6 +37753,8 @@ toolslick.com##div[id="tool-top-right-ad"]
 ||nmetrics.samsung.com^$all
 ||adtago.s3.amazonaws.com^$all
 1l1l.to##div[id="adsclose"]
+||dlem1deojpcg7.cloudfront.net^$all
+||ctoziphius.com^$all
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
