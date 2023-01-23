@@ -31,6 +31,14 @@
 !        One such website is filecr.com.  The script to activate the download
 !        button on its pages is:
 ! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
+!
+!    4.  Due to the way that Wikipedia's responsive website design currently
+!        works or rather doesn't work, these rules force a style suited to a
+!        1920 pixel width screen.  If you screen is a different size, adjust the
+!        three rules which set this style:
+!wikipedia.org##html:style(width: 100% !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
+!wikipedia.org##div[class="mw-page-container"]:style(width: 100% !important; height: 100% !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
+!wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
 
 ! Title: Custom uBlock Origin Filters
 ! Expires: rolling release/continually updated
@@ -37755,6 +37763,42 @@ toolslick.com##div[id="tool-top-right-ad"]
 1l1l.to##div[id="adsclose"]
 ||dlem1deojpcg7.cloudfront.net^$all
 ||ctoziphius.com^$all
+www.cyberciti.biz##div[data-ad-client]:upward(1)
+www.cyberciti.biz##div:has(div[data-ad-client])
+||chematernicate.com^$all
+||toprecodeclub.com^$all
+||f.frequentvisitor.com^$all
+!||667350.directcpmfwr.com/bdvfrd.dbm*
+||667350.directcpmfwr.com^$all
+!||directcpmrev.com/bdv_rd3.dbm*
+||directcpmrev.com^$all
+filerio.in##a[id="handle"]
+!||matomo.uptobox.com/matomo.js*
+||matomo.uptobox.com^$all
+regex101.com##div[class="_gHmG"]
+regex101.com##div[class="ZHUJ9"]
+||regex101.com/buysellads$all
+docs.bibisco.com##div[data-rnwrdesktop-1moh23t-e1k2in="true"][data-rnwr700-1moh23t-e1k2in-tceitz="true"]
+||rhemistdimyary.tech^$all
+||pyxiscablese.com^$all
+||theodyscreams.store^$all
+!!en.wikipedia.org##html:style(width: 100%; height: 100%; margin-left: 0; margin-right: 0; !important)
+! for 3440 pixels width monitor
+!wikipedia.org##html:style(width: 100% !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3400px !important; max-width: 3400px !important)
+!wikipedia.org##div[class="mw-page-container"]:style(width: 100% !important; height: 100% !important; margin-left: 50px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3400px !important; max-width: 3400px !important)
+!wikipedia.org##div[class="mw-content-container"]:style(width: 3070px !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3070px !important; max-width: 3070px !important)
+!!wikipedia.org##div[class="mw-body"]:style(width: 3070px !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3070px !important; max-width: 3070px !important)
+! for 1920 pixels width monitor
+wikipedia.org##html:style(width: 100% !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
+wikipedia.org##div[class="mw-page-container"]:style(width: 100% !important; height: 100% !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
+wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
+!wikipedia.org##div[class="mw-body"]:style(width: 1190px !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
+sosmediacorp.com##div[id="cookie"]
+www.cnn.com##div[class^="terms-of-service"]
+!||www.cnn.com/media/sites/js/bundles/business-adfuel.min.js
+!||www.cnn.com/media/sites/js/bundles/business-adfuel-body.min.js*
+||www.cnn.com/media/sites/js/bundles/business-adfuel*
+||6093eccf-6734-4877-ac8b-83d6d0e27b46.edge.permutive.app^$all
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
