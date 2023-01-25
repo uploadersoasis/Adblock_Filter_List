@@ -1,6 +1,8 @@
 # Copy this firefox.desktop file into /usr/share/applications regardless of where Firefox is installed.
 [Desktop Entry]
-#Version=1.0
+Encoding=UTF-8
+# version of desktop file NOT of the application it launches
+Version=1.0
 Name=Mozilla Firefox
 GenericName=Web Browser
 Comment=Use to View Websites
@@ -18,6 +20,8 @@ StartupNotify=true
 X-Ubuntu-Gettext-Domain=firefox
 StartupWMClass=Firefox
 MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
+# Hidden means hide form the Applications menu.
+Hidden=false
 Exec=/usr/share/firefox/firefox %u
 #Exec=/usr/share/firefox/firefox-bin %u
 # /opt/firefox is another valid location for manually installed Firefox
