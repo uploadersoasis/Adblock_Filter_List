@@ -74,6 +74,7 @@
 !        button on its pages is:
 ! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 
+! Brave's native adblocking does not support the "has-text()" filter.
 ! Brave's native adblocking does not support "$all" so use * or ^ (without preceding forward slash) instead.
 ! uBlock Origin does not use * as a universal catchall like Brave, so using
 ! "/$popup,document,inline-script,inline-font,popunder,subdocument,script,other"
@@ -16715,7 +16716,7 @@ www.svg.com##.str-adunit-img-left.str-card-exp.str-adunit
 ||rtr21adc.download/$all
 ||rtrza3.download/$all
 ||rtb.adentifi.com/$all
-||wildbearads.go2affise.com/$all
+||wildbearads.go2affise.com^$all
 www.getpaint.net###adcontainer
 ||owl.hopto.org/$all
 !||plutos-capital.com/entertainedo.html*
@@ -37488,7 +37489,7 @@ mxlinux.org##div[id="webarx-cookie-notice"]
 www.how2shout.com##div[class="text-ads"]
 www.how2shout.com##div[class="adsbyvli"]
 www.how2shout.com##div[class*="box_ads_content_"]
-||godpvqnszo.com/$all
+||godpvqnszo.com^$all
 fortune.com##+js(remove-class, paywallActive, div)
 fortune.com##+js(remove-class, paywall-selector, div)
 fortune.com##+js(remove-class, paywall, div)
@@ -37799,12 +37800,97 @@ www.cnn.com##div[class^="terms-of-service"]
 !||www.cnn.com/media/sites/js/bundles/business-adfuel-body.min.js*
 ||www.cnn.com/media/sites/js/bundles/business-adfuel*
 ||6093eccf-6734-4877-ac8b-83d6d0e27b46.edge.permutive.app^$all
+www.fosslinux.com##div[id="div-pw-1648737234"]
+www.cyberciti.biz##ins[data-ad-client]:upward(1)
+www.cyberciti.biz##ins[data-ad-client]
+venturebeat.com##div[id^="tude-cw-aa-"]
+venturebeat.com##div[class="tude-cw-wrap"]
+www.bbc.com##div[class^="dotcom-ad"]
+www.bbc.com##div[id="sticky-mpu"]
+!||emupedia.net/emupedia-app-vscode/static/vs/platform/telemetry/common/telemetryService.js*
+!||emupedia.net/emupedia-app-vscode/static/vs/platform/telemetry/common/telemetryUtils.js*
+||emupedia.net/emupedia-app-vscode/static/vs/platform/telemetry/$all
+www.gog-games.com##+js(remove-class, no-js-hide, , stay)
+gog-games.com##+js(remove-class, no-js-hide, , stay)
+www.fosslinux.com##div[id="penci-adblocker-popup-adblock"]
+www.fosslinux.com##*[class*="penci-adblocker-"]
+www.fosslinux.com##div[class*="penci-promo-popup-wrapper"]
+www.fosslinux.com##html:style(overflow:scroll !important;)
+www.fosslinux.com##div[class*="penci-google-adsense"]
+www.fosslinux.com##ins[data-ad-client]
+||www.fosslinux.com/wp-content/themes/soledad/js/detector.js*
+||files-downloader-express.com^$all
+||media.incues.com^$all
+||operarymishear.store^$all
+||bo.yoginsnorland.com^$all
+||filedownloadapp.com^$all
+||tragicbeyond.com^$all
+||babup.com/page.js*
+||engine.adlogists.com^$all
+||nudgeworry.com^$all
+||friendshipmale.com^$all
+||equitydefault.com^$all
+||shaggyselectmast.com^$all
+||outbursttones.com^$all
+||excretekings.com^$all
+||www.babup.com/page1.js*
+||www.babup.com/page2.js*
+www.babup.com##ins[data-ad-client]
+www.gositestat.com##a[class="eaagpd68rp"]
+beamtic.com##div[id="_overlay"]
+beamtic.com##script[onerror^="adBlockFunction"]:remove()
+beamtic.com##script[onerror^="adBlockFunction"]
+beamtic.com##+js(acis, adBlockFunction)
+beamtic.com##+js(aopw, adsbygoogle)
+beamtic.com##+js(aopr, adsbygoogle)
+!||beamtic.com/consent/area*
+||beamtic.com/consent/$all
+www.cpuagent.com##div[id="placeholder_sticky_bottom"]
+www.cpuagent.com##div[id="placeholder_sticky_top"]
+www.cpuagent.com##div[data-ad-slot]
+||s.nitropay.com/ads-1200.js*
+||www.bh-dm.com/admgr_cpuagent.js*
+||factor1right.com^$all
+||pizzapeppino.com.mx^$all
+||flymylife.info^$all
+||start3dfile33.com^all
+||22filexstarted22.com^$all
+||apk4all.io/wp-content/cache/min/1/pu-script.js*
+||messagereceiver.com^$all
+||sv.muoxx.icu^$all
+||bam.eu01.nr-data.net/jserrors/$all
+||tls12.eu01.nr-data.net.cdn.cloudflare.net/jserrors/$all
+||csp.withgoogle.com/csp/lcreport/$all
+www.w3schools.com##a[id="lowerfeatureshowcaselink"]
+www.w3schools.com##a[id="upperfeatureshowcaselink"]
+www.w3schools.com##div[id="nucamp_upperadtext"]
+www.w3schools.com##div[class="sn_ad_label"]
+||ws.cs.1worldsync.com/log*
+||scripts.agilone.com/latest/a1.js*
+||4e548839-5202-4337-be17-4c34e368b541.s3.ap-northeast-2.amazonaws.com^$all
+||kumpulbagi.id^$all
+!||0redire.com/jr.php*
+||0redire.com^$all
+!||mybettermb.com/aS/sfclick?*
+||mybettermb.com^$all
+||www10.securybrowseapp.com^$all
+||coundt.com/script/vppdzdrw.js*
+www.apriorit.com##nav[id="header"]
+##a[href*="://war.ukraine.ua/"]
+##a[href*="://payproglobal.com/ukraine-help"]
+||www.host-tracker.com/Content/img/UA2.png*
+www.udemy.com##span[data-purpose="smart-bar-title"]:has-text(/Black History Month/i)
+www.udemy.com##a[href*="://about.udemy.com/udemy-news/honoring-black-history-month-with-transparency/"]
+www.udemy.com##+js(aopw, window.__onConsentChanged)
+www.udemy.com##+js(aopr, window.__onConsentChanged)
+www.belloflostsouls.net##div[id^="ad-container-"]
 
 !Whitelisted
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
-!@@||track.adtraction.com^
-!@@||aa.online-metrix.net/$all
-@@||citicorpcreditservic.tt.omtrdc.net/$all
+!@@||track.adtraction.com^$all
+!@@||aa.online-metrix.net^$all
+@@||redirect.viglink.com^$all
+@@||citicorpcreditservic.tt.omtrdc.net^$all
 @@||linkvertise.com^$ghide
 @@.jpg$image,domain=dropgalaxy.*|techssting.com
 @@.png$image,domain=dropgalaxy.*|techssting.com
@@ -37859,12 +37945,12 @@ pinterest.*#@#.FullPageModal__scroller
 @@||www.gstatic.com/recaptcha/api2/v1561357937155/recaptcha__en.js$script,domain=ouo.io
 filecrypt.co#@#li[class="buttons"]
 @@||connect.facebook.net/en_us/sdk.js$script,domain=textnow.com
-@@||ads.arkansasonline.com/$all
-@@||ads.nwaonline.com/$all
-@@||about.ads.microsoft.com/$all
-@@||ui.ads.microsoft.com/$all
+@@||ads.arkansasonline.com^$all
+@@||ads.nwaonline.com^$all
+@@||about.ads.microsoft.com^$all
+@@||ui.ads.microsoft.com^$all
 dailyuploads.net#@#iframe[title="recaptcha challenge"]
-!@@||sstats.kroger.com/$all
+!@@||sstats.kroger.com^$all
 @@||dpm.demdex.net^$domain=kroger.com
 faststore.org#@#+js(no-floc)
 blogspot.com#@#+js(no-floc)
@@ -37876,4 +37962,4 @@ blogspot.com#@#+js(no-floc)
 gitlab.io#@#+js(no-floc)
 gitlab.com#@#+js(no-floc)
 @@||sentry.gitlab.net/api/$other,domain=gitlab.com
-@@||go.redirectingat.com^
+@@||go.redirectingat.com^$all
