@@ -28,8 +28,8 @@
 !        snippet to be fully functional.  Such a script can be saved as a
 !        bookmark in the web browser and selected when on the webpage which
 !        requires it.
-!        One such website is filecr.com.  The script to activate the download
-!        button on its pages is:
+!        The following no longer works for filecr.com.
+!        The script to activate the download button @ filecr.com is:
 ! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 !
 !    4.  Due to the way that Wikipedia's responsive website design currently
@@ -39,40 +39,6 @@
 !wikipedia.org##html:style(width: 100% !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
 !wikipedia.org##div[class="mw-page-container"]:style(width: 100% !important; height: 100% !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
 !wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
-
-! Title: Custom uBlock Origin Filters
-! Expires: rolling release/continually updated
-! Description: Filters optimized for uBlock to be used along with the built-in uBlock filters except main one, i.e. 4 of 5.
-! Homepage: https://github.com/uploadersoasis/Adblock_Filter_List/blob/master/OutlawAdblockList.txt
-! License: public domain
-!
-! While the rules in this list were tested at the time of inclusion in this list,
-! given that websites on the Internet are continually changing, some may not work
-! now or in the future.
-! Therefore regularly update your filters in uBlock, and report any websites which
-! do not work to https://github.com/uploadersoasis/Adblock_Filter_List/issues .
-! 
-! NOTES:
-!
-!	1.  Filters in this list block ads on YouTube.com, but this causes a black,
-!        screen to appear for each ad that would otherwise be played along with
-!        an associated delay.  The video will play or continue to play after
-!        this pause so patiently wait for it.  The delay may still be shorter
-!        than the ad(s) would have been.
-!
-!    2.  The countdown period of some file hosts has been removed or shortened.
-!        In some of these cases the countdown may not display, so press the
-!        button to perform the download anyway.  For file hosts that do
-!        server-side checks on the countdown, you will still have to wait the
-!        normal period before downloading.
-!
-!    3.  A relative few websites still require the use of a custom Javascript
-!        snippet to be fully functional.  Such a script can be saved as a
-!        bookmark in the web browser and selected when on the webpage which
-!        requires it.
-!        One such website is filecr.com.  The script to activate the download
-!        button on its pages is:
-! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 
 ! Brave's native adblocking does not support the "has-text()" filter.
 ! Brave's native adblocking does not support "$all" so use * or ^ (without preceding forward slash) instead.
@@ -5437,7 +5403,6 @@ www.blogsolute.com###aswift_0
 ||rum-collector.pingdom.net/$all
 !||www.adcash.com/ad/display.php*
 ||www.adcash.com/ad/$all
-||multiup.org/img/sonyoutube_long.gif*
 www.gossipcop.com##.str-adunit.hosted-video.str-collapsed
 ||qks6bv.security2015.pw/$all
 ||a1.vdna-assets.com/analytics.js*
@@ -6372,7 +6337,6 @@ mediafree.co##body > div:nth-of-type(1)
 ||a.adquantix.com/$all
 ||redir1507.net/$all
 ||www.link365.info/impression.gif*
-||www.multiup.org/js/blockadblock.js*
 ||keyupgrade.software-update.info/$all
 ||www.newad4.com/$all
 ||get.file117desktop.info/$all
@@ -9832,8 +9796,6 @@ www.majorgeeks.com###onscroll-ad-major-geeks-sky-left-sky
 !||mediapage2111.pw/popscpm14_1/scripts/pop-packcpm.php*
 !||mediapage2111.pw/popscpm14_1/server-redir.php*
 ||mediapage2111.pw/$all
-!||stats.multiup.org/piwik.*
-||stats.multiup.org/$all
 !||bspjagxietut.com/PyjbI.php*
 ||bspjagxietut.com/$all
 ||mg.adskeeper.co.uk/$all
@@ -11927,7 +11889,6 @@ ngdevelopers.altervista.org###abd0
 ||wiorcewmylbe.com/$all
 ||hcggkyhzxzsv.com/$all
 ||www.hcggkyhzxzsv.com/$all
-||gorin.multiup.org/pop.js*
 ||www.odplbueosuzw.com/$all
 ||odplbueosuzw.com/$all
 ||ovfbwavekglf.com/$all
@@ -12886,7 +12847,7 @@ www.msn.com###_mN_dy_353566216
 ||www.fox5ny.com/html/js/endplay/analytics/$all
 !||amclicks.com/clk.php*
 !||amclicks.com/go.php*
-||amclicks.com/$all
+||amclicks.com^$all
 !||primerewardz.com/go/to/$all
 !||primerewardz.com/js/pop_window.js*
 ||primerewardz.com/$all
@@ -19885,8 +19846,6 @@ mylink.love##ins[class="adsbygoogle"]
 www.bleepingcomputer.com##div.ipsAd
 ||sqyvhynwl.com
 ||www.sqyvhynwl.com
-multiup.org###\31 559867835934160694
-multiup.org###\31 559867835934159591
 ||load.jsecoin.com/$all
 ||adx.jsecoin.com/$all
 ||api.tiledesk.com/v1/5c52f31ccee59a0016ab02c3/publicanalytics/$all
@@ -24498,7 +24457,6 @@ x265movies.cc##div[class^="mysticky-welcomebar-"]
 ||grid.bidswitch.net/$all
 letsupload.org##^script:has-text(document.createElement('script'),_)
 letsupload.org##+js(abort-current-inline-script.js, document.createElement('script'),_)
-||www.multiup.org/welcome-message*
 ||ssc.33across.com/api/v1/hb*
 ||www.thwhilecom.club/$all
 ||thwhilecom.club/$all
@@ -24509,7 +24467,6 @@ letsupload.org##+js(abort-current-inline-script.js, document.createElement('scri
 ||eleastsessm.space/$all
 ||www.fsisolpouupevs.com/$all
 ||fsisolpouupevs.com/$all
-multiup.org##div[class="mfp-preloader"]
 forum.torrminatorr.com##div[aria-label="cookieconsent"]
 www.konstantinkanin.com##div[id="catapult-cookie-bar"]
 ||exchange.buzzoola.com/adv/$all
@@ -24645,8 +24602,6 @@ www.nvidia.com##div[id="cookiePolicy-layer"]
 ||bnmjjwinf292.com/$all
 ||xbno.silitaly.it/$all
 ||propermedia-d.openx.net/$all
-www.multiup.org##.mfp-auto-cursor.mfp-wrap
-www.multiup.org##.mfp-ready.mfp-bg
 www.hongkiat.com##div[id="promote-bottom"]
 !www.usatoday.com##div[id^="ad-slot-"]
 !www.usatoday.com##div[id^="\~ad-slot-"]
@@ -24931,10 +24886,6 @@ www.curve-digital.com##div[id="onetrust-banner-sdk"]
 ||www.erevtljvo.com/$all
 ||www.lutcdiimmeze.com/$all
 ||www.zbdvvwpia.com/$all
-multiup.org##div[id="custom-content"]
-multiup.org##div[class="mfp-bg mfp-ready"]
-multiup.org##div[class="mfp-container mfp-ajax-holder mfp-s-ready"]
-multiup.org##div[class="mfp-wrap mfp-auto-cursor mfp-ready"]
 www.cbr.com##div[class*="ad-zone-container"]
 ||hipfowlzeal.icu/$all
 ||whimsoplynx.com/$all
@@ -25444,10 +25395,6 @@ fc.lc##div[class="cookie-message"]
 ||itnuzleafan.com/$all
 !||a.optimizesrv.com/popunder1000.js*
 ||a.optimizesrv.com/$all
-www.multiup.eu###custom-content > section
-www.multiup.eu##.mfp-container
-www.multiup.eu##.mfp-wrap
-www.multiup.eu##.mfp-bg
 chocolatey.org##div[class^="cookies-popup"]
 arstechnica.com##.ad_wrapper
 www.rarlab.com##div[id="cookiewarning"]
@@ -25872,10 +25819,6 @@ symless.com##div[aria-label="cookieconsent"]
 !||demdex.net/$all
 !||usbank.demdex.net/dest5.html*
 ||usbank.demdex.net/$all
-!||tags.tiqcdn.com/utag/cbsi/cbsnewssite/prod/utag.*
-!||tags.tiqcdn.com/utag/tiqapp/utag.v.js*
-!does NOT block www.oculus.com
-||tags.tiqcdn.com/$all
 !||pr0002-1.glance.net/visitorws*
 !||presence.glance.net/presence^*
 ||pr0002-1.glance.net/$all
@@ -27709,8 +27652,6 @@ userscloud.com##button[id="btn_download"]:style(display:block !important)
 userscloud.com##iframe[style="display: none;"]
 userscloud.com##+js(set-constant.js, window.__cfRLUnblockHandlers, true, stay)
 userscloud.com##^script:has-text(/astancerta\.fun|esusivebe\.top|dtv5loup63fac\.cloudfront.net/)
-!multiup.org,multiup.eu##+js(remove-attr, type, input)
-multiup.org,multiup.eu##+js(remove-attr, type, input[value^="http"])
 ||annelinterv.fun/$all
 ||meetsourhig.biz/$all
 ||d1ac2du043ydir.cloudfront.net/$all
@@ -28724,7 +28665,7 @@ www.couponxoo.com##+js(abort-on-property-read.js, window.googletag)
 www.couponxoo.com##+js(abort-on-property-write.js, window.googletag)
 ||www.ukslphcgs.com/$all
 ||ukslphcgs.com/$all
-mirrorace.org##^script:has-text(UIkit[)
+mirrorace.org##^script:has-text(/UIkit\[/)
 ||discountbyte.xyz/$all
 ||script.4dex.io/adagio.js*
 sharemods.com##^script[id="cookieinfo"]
@@ -32101,77 +32042,6 @@ hot4share.com##+js(remove-attr, disabled, #downloadbtn, stay)
 ||blyckidxmuq.com/$all
 ||voonogoa.net/$all
 ||othxgfawwmambdx.xyz/$all
-filecr.com##div[class="top-header-ad"]
-filecr.com##ins[data-ad-client]
-filecr.com##ins[class="adsbygoogle"]
-filecr.com##div.filec-widget
-filecr.com##div[class$="-blackout active"]
-filecr.com##div[class$="-adblock-wrap"]
-filecr.com##div[class$="-wrapper"]
-filecr.com##div[class^="ad_unit"]
-filecr.com##div[id="mdp-deblocker-js-disabled"]
-filecr.com##+js(abort-on-property-write.js, advanced_ads_ready)
-filecr.com##+js(abort-on-property-read.js, advanced_ads_ready)
-filecr.com##+js(abort-on-property-write.js, enable_page_level_ads)
-filecr.com##+js(abort-on-property-write.js, google_ad_client)
-filecr.com##+js(abort-on-property-write.js, adsbygoogle)
-filecr.com##+js(abort-on-property-read.js, enable_page_level_ads)
-filecr.com##+js(abort-on-property-read.js, google_ad_client)
-filecr.com##+js(abort-on-property-read.js, adsbygoogle)
-filecr.com##+js(aopr, advadsCfpExpHours)
-filecr.com##+js(aopr, advadsCfpClickLimit)
-filecr.com##+js(aopr, advadsCfpBan)
-filecr.com##+js(aopr, advadsCfpPath)
-filecr.com##+js(aopr, advadsCfpDomain)
-filecr.com##+js(aopr, advadsCfpQueue)
-filecr.com##+js(aopr, advadsCfpAd)
-filecr.com##+js(aopr, adID)
-filecr.com##+js(aopw, advadsCfpExpHours)
-filecr.com##+js(aopw, advadsCfpClickLimit)
-filecr.com##+js(aopw, advadsCfpBan)
-filecr.com##+js(aopw, advadsCfpPath)
-filecr.com##+js(aopw, advadsCfpDomain)
-filecr.com##+js(aopw, advadsCfpQueue)
-filecr.com##+js(aopw, advadsCfpAd)
-filecr.com##+js(aopw, adID)
-filecr.com##+js(aopr, adsbygoogle)
-filecr.com##+js(aopw, adsbygoogle)
-filecr.com##.promo.form-popup.main-adblock-wrap
-!||filecr.com/wp-content/plugins/advanced-ads-pro/assets/advanced-ads-pro.js*
-!||filecr.com/wp-content/plugins/advanced-ads-pro/modules/cache-busting/inc/base.min.js*
-||filecr.com/wp-content/plugins/advanced-ads-pro/$all
-!||filecr.com/wp-content/plugins/advanced-ads/public/assets/js/advanced.js*
-||filecr.com/wp-content/plugins/advanced-ads/$all
-!||filecr.com/wp-content/plugins/advanced-ads-responsive/public/assets/js/script.js*
-||filecr.com/wp-content/plugins/advanced-ads-responsive/$all
-!||filecr.com/wp-content/plugins/deblocker/js/deblocker.js*
-||filecr.com/wp-content/plugins/deblocker/$all
-filecr.com##+js(abort-on-property-write.js, advanced_ads_responsive)
-filecr.com##+js(abort-on-property-read.js, advanced_ads_responsive)
-filecr.com##+js(abort-on-property-write.js, advanced_ads_pro_ajax_object)
-filecr.com##+js(abort-on-property-read.js, advanced_ads_pro_ajax_object)
-filecr.com##^script[id='advanced-ads-responsive-js-extra']
-filecr.com##^script[id='advanced-ads-advanced-js-js-extra']
-filecr.com##^script[id='advanced-ads-pro/cache_busting-js-extra']
-filecr.com##^script[id^="advanced-ads-"]
-filecr.com##^script[data-ad-client^="ca-pub-"]
-filecr.com##+js(abort-on-property-write.js, window.advads_has_ads)
-filecr.com##+js(abort-on-property-read.js, window.advads_has_ads)
-filecr.com##+js(abort-on-property-write.js, var advanced_ads_ga_UID)
-filecr.com##+js(abort-on-property-read.js, var advanced_ads_ga_UID)
-filecr.com##+js(abort-on-property-write.js, advanced_ads_ga_anonymIP)
-filecr.com##+js(abort-on-property-read.js, advanced_ads_ga_anonymIP)
-filecr.com##+js(abort-on-property-write.js, advanced_ads_check_adblocker)
-filecr.com##+js(abort-on-property-read.js, advanced_ads_check_adblocker)
-filecr.com##+js(abort-on-property-write.js, _stq)
-filecr.com##+js(abort-on-property-read.js, _stq)
-filecr.com##+js(abort-on-property-write.js, window.advanced_ads_ready)
-filecr.com##+js(abort-on-property-read.js, window.advanced_ads_ready)
-filecr.com##+js(remove-attr, href, a.download_submit.download_allow.btn-primary_dark.full)
-filecr.com##+js(remove-class, download_submit, a.download_submit.download_allow.btn-primary_dark.full)
-filecr.com##div[id="site-alert"]
-filecr.com##+js(aopw, advadsProCfp)
-filecr.com##+js(aopr, advadsProCfp)
 oxy.st##div[id="cookies"]
 ||cdn.adlook.me/$all
 ||d.gcdn.co/js/rlf.js*
@@ -32615,7 +32485,6 @@ newatlas.com##div[class*="OcelotAdModule"]
 ||ogxbvyeynymsx.xyz/$all
 ||vcrlaitlihy.com/$all
 ||up-load.io/ds1/js/nt.js*
-outlook.live.com##span:has-text(/It looks like you're using an ad blocker./i):upward(3)
 service.engelmann.com##+js(remove-attr, disabled, .btn.btn-primary)
 litgu.ru##a[href^="https://usnd.to/"]
 ||xhhocfwarxfh.xyz/$all
@@ -33277,10 +33146,6 @@ www.vlchelp.com##div[id="cliSettingsPopup"]
 ||techwap335.pushalert.co/$all
 www.techwap.net##div[id="pa-push-notification-subscription"]
 ibit.to##a[data-tooltip="Sponsor download"]
-!www.multiup.org##+js(remove-attr, disabled, button.btn.btn-primary)
-!www.multiup.eu##+js(remove-attr, disabled, button.btn.btn-primary)
-multiup.org##+js(remove-attr, disabled, button.btn.btn-primary)
-multiup.eu##+js(remove-attr, disabled, button.btn.btn-primary)
 ||disturbedaccruesurfaces.com/$all
 ||manofmany.com/wp-content/cache/min/1/wp-content/plugins/webtoffee-gdpr-cookie-consent/$all
 !||au-script.dotmetrics.net/hit.gif*
@@ -33295,10 +33160,6 @@ www.steinberg.net##div[id="usercentrics-root"]
 www.steinberg.net##body,html:style(overflow:auto;)
 ||privacy-proxy.usercentrics.eu/$all
 www.neverware.com##div[class*="sqs-cookie-banner"]
-filecr.com##+js(acis, advadsCfpAd)
-filecr.com##^script:has-text(advadsCfpAd)
-filecr.com##div[class*="filec-sticky-ad"]
-filecr.com##^script:has-text(/decodeURIComponent\(escape\(r\)\)/i)
 ||7896543.s3.amazonaws.com/001.js*
 ||www.pagespeed-mod.com/v1/taas?*
 !||dc.ads.linkedin.com/collect/$all
@@ -33598,7 +33459,7 @@ www.post-gazette.com##div[id="csadspot"]
 www.post-gazette.com##+js(aopr, adpath)
 www.post-gazette.com##+js(aopw, adpath)
 www.post-gazette.com##div[class="pgevoke-story-mobileads"]
-regex101.com##div[class]:has-text(/^If you're running an ad blocker/i)
+regex101.com##div[class]:has-text(/^If you\'re running an ad blocker/i)
 regex101.com##div[class]:has-text(/^Sponsors/)
 !regex101.com##div[class]:has-text(/^Sponsors/):upward(1)
 www.geeksforgeeks.org##div[class="textBasedMannualAds"]
@@ -33766,10 +33627,6 @@ www.t-mobile.com##div[id="phx-cookie-modal"]
 ||h-ups.online-metrix.net/$all
 ||koalaups.com/$all
 ||analytics.zinlab.com/$all
-filecr.com##script[id="filec-ready"]
-filecr.com##+js(aopw, window.advads_admin_bar_items)
-filecr.com##+js(aopr, window.advads_admin_bar_items)
-filecr.com##+js(set-constant, ShPublic.disable_server_downloads, 0, stay)
 www.thenorthernecho.co.uk##iframe[id="rufous-sandbox"]
 www.thenorthernecho.co.uk##div[id="sp_message_container_525293"]
 www.thenorthernecho.co.uk##div[id="sp_message_iframe_525293"]
@@ -34548,7 +34405,6 @@ www.blackhatworld.com##ins[class*="adsbygoogle"]
 www.blackhatworld.com##+js(abort-current-inline-script, a.initEvent("AdBlockOn"))
 www.blackhatworld.com##^script:has-text(/AdBlockOn/i)
 www.blackhatworld.com##li[class="notice js-notice notice--warning"]
-||filecr.com/wp-content/plugins/advanced-ads-sticky-ads/$all
 !||plausible.zinlab.com/js/plausible.js*
 ||plausible.zinlab.com/$all
 ||eeshemto.com/$all
@@ -34972,11 +34828,6 @@ www.washingtontimes.com##div[data-ad-settings]
 1fichier.com##+js(remove-attr, disabled, #dlw, stay)
 ||lingamretene.com/$all
 ||bailifftent.com/$all
-!www.multiup.org,www.multiup.eu##div[id="cookie-bar"]
-!multiup.org,multiup.eu##div[id="cookie-bar"]
-multiup.org,multiup.eu##div[id^="cookie-"]
-!multiup.org,multiup.eu##+js(remove-attr, action, form)
-multiup.org,multiup.eu##+js(remove-attr, onsubmit, form)
 ||c.sf-syn.com/conversion_outbound_tracker/sf*
 www.racked.com##div[id="privacy-options"]
 !||stats.hprofits.com/advertisement.js*
@@ -36386,7 +36237,7 @@ youfiles.herokuapp.com##+js(aopr, google_ad_client)
 youfiles.herokuapp.com##+js(aopw, google_ad_client)
 youfiles.herokuapp.com##+js(set, gadb, false, stay)
 ||s3.us-east-1.amazonaws.com/b4b440d028f3fc1ad5b19d48e9275714aa3b75065e7876da08589dba/820d044b4b*
-||lephaush.net/$all
+||lephaush.net^$all
 www.uploadcloud.pro##div[class^="cookieinfo"]
 www.uploadcloud.pro##a[title="Putin, Stop the War in Ukraine!"]
 www.uploadcloud.pro##+js(acis, debugger)
@@ -36399,18 +36250,11 @@ www.nydailynews.com##div[id="zephr-overlay"]
 ||d15kdpgjg3unno.cloudfront.net/oPS.js*
 !||www.tribdss.com/meter/assets/nydnarc-reaction-1q2w3-4227101563976737884.min.js*
 ||www.tribdss.com/meter/$all
-pluto.tv##+js(remove-class, vjs-controls-disabled, , stay)
-pluto.tv##+js(remove-class, vjs-user-inactive, , stay)
-pluto.tv^$xhr,domain=pubads.g.doubleclick.net|pagead2.googlesyndication.com
 ||pubads.g.doubleclick.net/adsid/integrator.json*
 !||pagead2.googlesyndication.com/getconfig/sodar?tid=pal&tv=1.0*
 !||7ceb0.v.fwmrm.net/ad/$all
 !||7f077.v.fwmrm.net/ad/$all
 ||*.v.fwmrm.net/ad/$all
-!||siloh.pluto.tv/679_53_ad/creative/$all
-!||siloh-aka.plutotv.net/318_79_ad/creative/$all
-||siloh-aka.plutotv.net/*_ad/creative/$all
-||siloh.pluto.tv/*_ad/creative/$all
 www.heyitsfree.net##div[id^="AdThrive_"]
 www.heyitsfree.net##div[class*="adthrive-"]
 puffer.stanford.edu##+js(remove-attr, style, #tv-container, stay)
@@ -36465,7 +36309,7 @@ nw.freestreams-live1.com##+js(acis, anonymous)
 nw.freestreams-live1.com##script[cdnd="acacdn.com"]
 nw.freestreams-live1.com##a[class="pf-br-icon"]:upward(1)
 nw.freestreams-live1.com##div[id^="pf-"]
-||thiem-csl.com/$all
+||thiem-csl.com^$all
 ||fyngood.com/$all
 ||virginyoungestrust.com/$all
 ||pl16164575.highperformancegate.com/$all
@@ -37038,7 +36882,6 @@ disqus.com##div[class*="ad__"]
 ||creative.xlivrdr.com/$all
 ||kemono.party/onomek*
 ||www.nextpit.com/mod_pagespeed_beacon*
-||o1089883.ingest.sentry.io/api/6106537/envelope/$all
 ||gsinspiring.xyz/$all
 ||mywifecon.xyz/$all
 !||enit.in/js/ads.js*
@@ -37098,7 +36941,7 @@ scratch247.info##img[src$="/wp-content/plugins/chp-ads-block-detector/assets/img
 azmath.info##img[src$="/wp-content/plugins/chp-ads-block-detector/assets/img/icon.png"]:upward(6):remove()
 ||scratch247.info/wpsafelink.js*
 ||azmath.info/wpsafelink.js*
-||n33d0nem0re.com/$all
+||n33d0nem0re.com^$all
 ||cdn.vidcrunch.com/integrations/*/Monetiza_*.js*
 financerites.in##iframe[id^="adsbox_ex_"]
 ||financerites.in/wp-content/plugins/ad-inserter/$all
@@ -37329,8 +37172,8 @@ deadline.com##div[class*="ad-text"]:remove()
 learn.pluralsight.com##div[class="cookie-notification-wrapper"]:remove()
 wccftech.com##div[id^="div-gpt-ad-"]:remove()
 wccftech.com##div[class="bg-horizontal"]
-wccftech.com##.bg-square:before
-wccftech.com##.bg-vertical:before
+wccftech.com##div[class="bg-square"]:before
+wccftech.com##div[class="bg-vertical"]:before
 venturebeat.com##div[class="tude-cw-wrap"]:has(span[class="tude-cw-label"]:has-text(advertisement)):remove()
 !outlook.live.com##i[data-icon-name="Delete"]:has(div[class="_2Frh JMe1C"]):remove()
 outlook.live.com##div[class="_2Frh JMe1C"]:remove()
@@ -37376,7 +37219,8 @@ www.programiz.com##div[id="summer-sale-popup"]
 outlook.live.com##a[href*="://windows.microsoft.com/outlook/ad-free-outlook"]:remove()
 outlook.live.com##img[src$="/resources/images/adbarmetrosprite.png"]
 ! Brave does not have has-text(); -abp-contains() doesn't work either
-outlook.live.com##span:has-text(It looks like you're using an ad blocker.):upward(3)
+outlook.live.com##span:has-text(/It looks like you\'re using an ad blocker./i)
+outlook.live.com##span:has-text(/It looks like you\'re using an ad blocker./i):upward(3)
 adblockplus.org##form[class="cookie cookieprompt"]
 adblockplus.org##div[id="cookiebar"]
 adblockplus.org##+js(remove-class, show-cookies-notice, body)
@@ -37434,8 +37278,8 @@ android-zone.ws##div[id="elGuestTerms"]
 ||codevisualstudio.org/$all
 ||braves-browsers.org/$all
 ||ethersmine.com/$all
-kiktu.com##js(acis, detectADB)
-kiktu.com##js(acis, as15v6d9999gg)
+kiktu.com##+js(acis, detectADB)
+kiktu.com##+js(acis, as15v6d9999gg)
 kiktu.com##div[id="as15v6d9999gg"]
 ||adstargets.com/myAdstargets/$all
 memtest.org##div[aria-label="cookieconsent"]
@@ -37583,10 +37427,6 @@ nordpass.com##div[id="cookie-consent"]
 ||monitor.clickcease.com/$all
 ||www.clickcease.com/monitor/stat.js*
 ||cm.nordpass.com/ads-min.js*
-filecr.com##+js(aopw, MseGfqdihwXY78e)
-filecr.com##+js(aopr, MseGfqdihwXY78e)
-filecr.com##div[class*="ubrk-sygu-"]
-filecr.com##script[id^="advanced-ads-"]
 myaccount.summitutilities.com##div[id="VTX_BrandingHeader"]
 myaccount.summitutilities.com##div[id="VTX_Footer"]
 fm.solewe.com##div[id="babasbmsgx"]
@@ -37654,14 +37494,14 @@ tv247us.com##+js(remove-class, hantads, div)
 tv247us.com##div[id^="afc_sidebar"]
 tv247us.com##+js(acis, eval)
 tv247us.com##+js(noeval)
-#tv247us.com##+js(acis, loadAd)
-#tv247us.com##+js(set-constant, timead, 0, stay)
-#tv247us.com##+js(aopw, timead)
-#tv247us.com##+js(aopr, timead)
+!tv247us.com##+js(acis, loadAd)
+!tv247us.com##+js(set-constant, timead, 0, stay)
+!tv247us.com##+js(aopw, timead)
+!tv247us.com##+js(aopr, timead)
 ||www.xadsmart.com/two.min.js*
 ||nginx-cf.maxcdn.info/country_blocker.js*
-#www.ustream.to##+js(acis, eval)
-#www.ustream.to##+js(noeval)
+!www.ustream.to##+js(acis, eval)
+!www.ustream.to##+js(noeval)
 www.ustream.to##+js(aopw, f6d8301657cfd12894120288e019af08)
 www.ustream.to##+js(aopr, f6d8301657cfd12894120288e019af08)
 ||c.popsads.net/$all
@@ -37678,7 +37518,7 @@ time4tv.stream##+js(acis, detectDevTool)
 time4tv.stream##+js(remove-attr, style, .seek-time, stay)
 time4tv.stream##+js(remove-class, seek-disabled, div, stay)
 time4tv.stream##+js(remove-class, volume-bar-hide, div, stay)
-||racingorchestra.com/$all
+||racingorchestra.com^$all
 ||123ecast.me/blast.js*
 ||waufooke.com/tag.min.js*
 ||extrafreetv.com/images/x1.png*
@@ -37764,8 +37604,9 @@ toolslick.com##div[id="tool-top-right-ad"]
 1l1l.to##div[id="adsclose"]
 ||dlem1deojpcg7.cloudfront.net^$all
 ||ctoziphius.com^$all
-www.cyberciti.biz##div[data-ad-client]:upward(1)
-www.cyberciti.biz##div:has(div[data-ad-client])
+www.cyberciti.biz##ins[data-ad-client]:upward(1)
+www.cyberciti.biz##div:has(ins[data-ad-client])
+www.cyberciti.biz##ins[data-ad-client]
 ||chematernicate.com^$all
 ||toprecodeclub.com^$all
 ||f.frequentvisitor.com^$all
@@ -37801,8 +37642,6 @@ www.cnn.com##div[class^="terms-of-service"]
 ||www.cnn.com/media/sites/js/bundles/business-adfuel*
 ||6093eccf-6734-4877-ac8b-83d6d0e27b46.edge.permutive.app^$all
 www.fosslinux.com##div[id="div-pw-1648737234"]
-www.cyberciti.biz##ins[data-ad-client]:upward(1)
-www.cyberciti.biz##ins[data-ad-client]
 venturebeat.com##div[id^="tude-cw-aa-"]
 venturebeat.com##div[class="tude-cw-wrap"]
 www.bbc.com##div[class^="dotcom-ad"]
@@ -37884,12 +37723,305 @@ www.udemy.com##a[href*="://about.udemy.com/udemy-news/honoring-black-history-mon
 www.udemy.com##+js(aopw, window.__onConsentChanged)
 www.udemy.com##+js(aopr, window.__onConsentChanged)
 www.belloflostsouls.net##div[id^="ad-container-"]
+||gloos-zus.info^$all
+tech-latest.com##div[id="brxe-aimgnb"]
+tech-latest.com##div[id="brxe-agxfna"]
+tech-latest.com##div[id="brxe-vznprt"]
+tech-latest.com##ins[data-ad-client]
+tech-latest.com##iframe[id^="google_ads_frame"]
+blog.desdelinux.net##ins[data-ad-client]
+blog.desdelinux.net##aside[id="abn_singlestealer"]
+ubuntuguide.net##div[id="ad1"]
+www.mcvuk.com##div[class="theme-notice"]
+!||ads.datateam.co.uk/www/delivery/$all
+||ads.datateam.co.uk^$all
+www.tumblr.com##div[role="dialog"][class="Lq1wm"]
+www.tumblr.com##div[id="adBanner"]
+www.tumblr.com##div[data-testid="adBlockTest"]
+www.tumblr.com##body:style(overflow: scroll !important;)
+!github.com/pieroproietti/penguins-eggs##a[href*="://vshymanskyy.github.io/StandWithUkraine"]
+*##a[href*="://vshymanskyy.github.io/StandWithUkraine"]
+||raw.githubusercontent.com/vshymanskyy/StandWithUkraine/$all
+||odestech.com^$all
+||www.highperformancegate.com^$all
+!www.thomas-krenn.com##div[class*="xtx-privacy-cookie"]:upward(1)
+www.thomas-krenn.com##div[class*="xtx-privacy-cookie"]
+www.thomas-krenn.com##div[class*="xtxNavigationOffCanvasOverlayCookie"]
+www.thomas-krenn.com##div[data-toggle="xtxNavigationOffCookiePolicy"]
+www.thomas-krenn.com##div[id="xtxNavigationOffCookiePolicy"]
+www.thomas-krenn.com##+js(remove-attr, data-disabled-over-scrolling)
+www.thomas-krenn.com##+js(remove-attr, data-gtm-tracking-id)
+www.thomas-krenn.com##+js(remove-attr, data-xtx-default-gtm-tracking-event-name-generic)
+www.thomas-krenn.com##+js(remove-attr, data-xtx-default-gtm-tracking-event-name-virtual-page-view)
+www.thomas-krenn.com##+js(remove-attr, data-xtx-default-gtm-tracking)
+haydenjames.io##div[id^="advads_ad_widget"]
+haydenjames.io##div[id^="hayden-"]
+up-load.io##a[id="__bgd_link"]
+||amazingfilehosting.com/wp-content/plugins/cookie-law-info/$all
+cs.rin.ru##a[href$="/ucp.php?i=pm&folder=inbox"]:style(color:red !important; font-weight:bold)
+csrinrutkb3tshptdctl5lyei4et35itl22qvk5ktdcat6aeavy6nhid.onion##a[href$="/ucp.php?i=pm&folder=inbox"]:style(color:red !important; font-weight:bold)
+||orangefreesounds.com/wp-content/plugins/cookie-law-info/$all
+||www.androidacy.com/st/$all
+online-fix.me##div[class="sidebar-block"]
+||rovno.xyz^$all
+||maggotpolity.com^$all
+||spritzawapuhi.guru^$all
+||knowledgesnooper.com^$all
+||dansanttina.com^$all
+||topadvdomdesign.com^$all
+||transitnotice.com^$all
+||tiffanypinworm.tech^$all
+||multiup.org/img/sonyoutube_long.gif*
+||www.multiup.org/js/blockadblock.js*
+||www.multiup.org/welcome-message*
+||multiup.eu/img/sonyoutube_long.gif*
+||www.multiup.eu/js/blockadblock.js*
+||www.multiup.eu/welcome-message*
+!||stats.multiup.org/piwik.*
+!||stats.multiup.eu/piwik.*
+||stats.multiup.org^$all
+||stats.multiup.eu^$all
+||gorin.multiup.org/pop.js*
+multiup.org,multiup.eu##div[class="mfp-preloader"]
+multiup.org,multiup.eu##div[id="custom-content"]
+multiup.org,multiup.eu##div[class="mfp-bg mfp-ready"]
+multiup.org,multiup.eu##div[class="mfp-container mfp-ajax-holder mfp-s-ready"]
+multiup.org,multiup.eu##div[class="mfp-wrap mfp-auto-cursor mfp-ready"]
+!www.multiup.org##+js(remove-attr, disabled, button.btn.btn-primary)
+!www.multiup.eu##+js(remove-attr, disabled, button.btn.btn-primary)
+multiup.org##+js(remove-attr, disabled, button.btn.btn-primary)
+multiup.eu##+js(remove-attr, disabled, button.btn.btn-primary)
+!www.multiup.org,www.multiup.eu##div[id="cookie-bar"]
+!multiup.org,multiup.eu##div[id="cookie-bar"]
+!multiup.org,multiup.eu##div[id="cookie-plugin-modal"]
+multiup.org,multiup.eu##div[id^="cookie-"]
+!multiup.org,multiup.eu##+js(remove-attr, type, input)
+multiup.org,multiup.eu##+js(remove-attr, type, input[value^="http"])
+!multiup.org,multiup.eu##+js(remove-attr, action, form)
+!multiup.org,multiup.eu##+js(remove-attr, onsubmit, form)
+||cjvdfw.com^$all
+||thecloudvantnow.com^$all
+streamingsites.com##div[class^="styles_adverticementBlock"]
+streamingsites.com##div[class^="styles_desktopAds"]
+||streamingsites.com/images/adverticement/$all
+streamingsites.com##a[href="https://streamingsites.app/nordvpn2"]
+!streamingsites.com##div[class^="styles_backdrop_"]
+!streamingsites.com##div[class^="styles_popup_"]
+streamingsites.com##div[class^="styles_vpnRow_"]
+streamingsites.com##a[class^="styles_getVpn_"]
+||www.qjwglnuwqvr.com^$all
+||qjwglnuwqvr.com^$all
+www.ustream.to##div[id="mdp-deblocker-js-disabled"]
+www.ustream.to##+js(acis, mdpUnGrabber)
+www.ustream.to##+js(aopw, mdpUnGrabber)
+www.ustream.to##+js(aopr, mdpUnGrabber)
+www.ustream.to##a[class="tgme_widget_message_bubble_logo"]
+||www.ustream.to/src/func.js*
+www.ustream.to##+js(set, country_blocked, 0)
+||nginx-cf.maxcdn.info/country_blocker.js*
+www.ustream.to$script,domain=nginx-cf.maxcdn.info
+www.ustream.to##+js(set, isMobile, noopFunc)
+!www.ustream.to##+js(acis, isMobile)
+||analytics.tiendaenoferta.com^$all
+time4tv.stream##div[class="chatBox"]
+time4tv.stream##iframe[id="rufous-sandbox"]
+time4tv.stream$script,domain=www.intellipopup.com
+!||www.intellipopup.com/processing.min.js*
+!time4tv.stream$script,domain=chatango.com
+time4tv.stream$all,domain=chatango.com
+time4tv.stream##div[id="UnMutePlayer"]:style(display: none;)
+time4tv.stream##div[id="UnMutePlayer"]:remove()
+time4tv.stream##div[id="UnMutePlayer"]
+stream2watch.games##+js(remove-attr, onclick, .player4)
+stream2watch.games##+js(remove-attr, onclick, .btn_comant_box2)
+stream2watch.games##+js(acis, xurl)
+stream2watch.games##+js(aopw, xurl)
+stream2watch.games##+js(aopr, xurl)
+stream2watch.games##div[id="1234"]
+!stream2watch.games##div[id="1234"]:style(display: block !important;)
+stream2watch.games##div[id="blacks"]
+!stream2watch.games##div[id="blacks"]:style(display: block !important;)
+stream2watch.games##div[id="load"]
+!stream2watch.games##div[id="load"]:style(display: block !important;)
+stream2watch.games##div[id="left-play"]:style(display: block !important;)
+!stream2watch.games##div[id="green_b"][class="video-box2"]
+stream2watch.games##div[class="top_comant_box"]:has-text(VPN Player)
+stream2watch.games##div[class="midel_comant_box"]
+www.cxtvlive.com##div[class*="ad-titulo"]
+www.cxtvlive.com##ins[data-ad-client]
+www.cxtvlive.com##iframe[id^="aswift_"]
+daddylivehd.sx##iframe[src^="https://st.chatango.com/"]
+daddylivehd.sx##+js(aopw, _chatangoTagserver)
+daddylivehd.sx##+js(aopr, _chatangoTagserver)
+daddylivehd.sx##script[id="tsjson"]
+daddylivehd.sx##div[id="footer"]
+daddylivehd.sx$script,domain=www.google-analytics.com
+daddylivehd.sx$script,domain=st.chatango.com
+daddylivehd.sx$all,domain=chatango.com
+daddylivehd.sx##div[id="sidebar"]
+daddylivehd.sx##+js(aopw, document.oncontextmenu)
+daddylivehd.sx##+js(aopr, document.oncontextmenu)
+daddylivehd.sx##+js(aopw, document.onkeypress)
+daddylivehd.sx##+js(aopr, document.onkeypress)
+daddylivehd.sx##+js(aopw, document.onmousedown)
+daddylivehd.sx##+js(aopr, document.onmousedown)
+daddylivehd.sx##div[id="UnMutePlayer"]
+daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
+daddylivehd.sx##textarea[id="txtarea"]
+ntuplay.xyz##+js(remove-attr, disabled, input[type=button], stay)
+ntuplay.xyz##+js(aopw, document.oncontextmenu)
+ntuplay.xyz##+js(aopr, document.oncontextmenu)
+ntuplay.xyz##div[id="UnMutePlayer"]
+||armoryleaseholder.com^$all
+||santstipule.com^$all
+!tv.ustvgo.live##object[id="ai-adb-dblclk"]
+!tv.ustvgo.live##object[id="ai-adb-ga"]
+tv.ustvgo.live##object[id^="ai-adb-"]
+tv.ustvgo.live##script[id^="ai-adb-"]
+tv.ustvgo.live##ins[data-ad-client]
+tv.ustvgo.live##iframe[id^="aswift_"]
+tv.ustvgo.live##+js(aopw, adsbygoogle)
+tv.ustvgo.live##+js(aopr, adsbygoogle)
+tv.ustvgo.live##div[id="cdbc5ac9afd3"]
+tv.ustvgo.live##div[id="NR-Ads"]
+||tv.ustvgo.live/wp-content/uploads/ad-inserter/$all
+||tv.ustvgo.live/wp-content/plugins/ad-inserter-pro/$all
+tv.ustvgo.live##+js(aopw, ai_adb)
+tv.ustvgo.live##+js(aopr, ai_adb)
+tv.ustvgo.live##+js(acis, ai_adb)
+tv.ustvgo.live##+js(aopw, ai_check_block)
+tv.ustvgo.live##+js(aopr, ai_check_block)
+tv.ustvgo.live##+js(acis, ai_check_block)
+tv.ustvgo.live##div[class="advertisement_above_footer"]
+tv.ustvgo.live##div:has-text(Please disable your ad blocker)
+tv.ustvgo.live##div:has-text(Please disable your ad blocker):remove()
+tv.ustvgo.live##header:has-text(Please disable your ad blocker)
+tv.ustvgo.live##header:has-text(Please disable your ad blocker):remove()
+tv.ustvgo.live##nav:has-text(Please disable your ad blocker)
+tv.ustvgo.live##nav:has-text(Please disable your ad blocker):remove()
+tv.ustvgo.live##section:has-text(Please disable your ad blocker)
+tv.ustvgo.live##section:has-text(Please disable your ad blocker):remove()
+tv.ustvgo.live##^script:has-text(dccf14c3)
+tv.ustvgo.live##+js(acis, dccf14c3)
+tv.ustvgo.live##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+!tv.ustvgo.live##body > script:nth-child(40):remove()
+!tv.ustvgo.live##body > script:nth-child(41):remove()
+tv.ustvgo.live##img[id="nielsen-s2s-audit-ping"]
+!tv.ustvgo.live##div[class^="ai-"][data-code]
+!tv.ustvgo.live##div[id="banner-advert-container"]
+tv.ustvgo.live##*[class*="ads-wrapper"]
+||d2v02itv0y9u9t.cloudfront.net^$all
+player.twitch.tv##button[data-a-target="follow-button"]
+player.twitch.tv##figure[aria-label="foxnewsgo"]
+player.twitch.tv##figure[aria-label="espnewsgo"]
+!||jewisk.com/script/tailwind.js*
+||jewisk.com^$all
+!||tugust.com/deity.php*
+||tugust.com^$all
+iptvwire.com##div[class*="mysticky-welcomebar-"]
+iptvwire.com##a[href="https://iptvwire.com/vpn-sidebar"]
+iptvwire.com##div[class="su-box su-box-style-default"]:has(a[href="https://iptvwire.com/vpn-tracked"])
+iptvwire.com##div[class="su-button-center"]:has(a[href="https://iptvwire.com/vpn-riskfree"])
+www.ustream.to##div[class*="adblockz-alert"]
+||www.revenuenetworkcpm.com^$all
+la.freestreams-live1.tv##aside[id="custom_html-71"]
+la.freestreams-live1.tv##iframe[src^="https://st.chatango.com"]
+la.freestreams-live1.tv##div[id="footer-widgets"]
+www.9now.com.au##input[id="toggle_notification_notification-ad-blocker"]
+www.9now.com.au##input[id="toggle_notification_notification-ad-blocker"]:remove()
+||www.insurancehealth.info^$all
+||insurancehealth.info^$all
+chowmain.software##div[role="presentation"][class^="MuiModal-root MuiDialog-root"]
+chowmain.software##body:style(overflow: scroll !important;)
+www.fanatical.com##div[class^="PrivacyChecker"]
+||chlign.com/script/tailwind.js*
+||www.betus.com.pa/miscellaneous/landing?offer*
+!||bgcold.com/deity.php*
+!||bgcold.com/script/i.php*
+||bgcold.com^$all
+||livecdn.pro/in.php?source=*
+||www.wedxuaksargvlf.com^$all
+||wedxuaksargvlf.com^$all
+||www.evzxlgstwcai.com^$all
+||evzxlgstwcai.com^$all
+em.tgo-tv.co##iframe[src^="https://st.chatango.com/"]
+em.tgo-tv.co##a[href^="https://tgo-tv.co/vpn/vpn.php"]
+em.tgo-tv.co##div[style="background:white; max-width: 800px;"]:has(a[href^="https://tgo-tv.co/vpn/vpn.php"])
+!||cdn.fedykr.com/app.js*
+||cdn.fedykr.com^$all
+||ntuplay.xyz/blast.js*
+||www.tgo-tv.co/js/chat.js*
+||tgo-tv.co/tgochat.php*
+!||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js*
+||cdn.jsdelivr.net/npm/disable-devtool/$all
+||www.sqydhgubsy.com^$all
+||sqydhgubsy.com^$all
+||inoculateexplosionpostman.com^$all
+reddit-tv1-streams.blogspot.com##+js(aopw, block)
+reddit-tv1-streams.blogspot.com##+js(aopr, block)
+||incues.com^$all
+||ak.roudoduor.com^$all
+!||for-j.com/tds3.html*
+||for-j.com^$all
+!||tags.tiqcdn.com/utag/cbsi/cbsnewssite/prod/utag.*
+!||tags.tiqcdn.com/utag/tiqapp/utag.v.js*
+! blocks pluto.tv video streams
+!||tags.tiqcdn.com/$all
+pluto.tv##div[class^="clickableAd"]
+pluto.tv##div[aria-labelledby="terms-of-use-heading"]
+pluto.tv##div[aria-labelledby="terms-of-use-heading"]:remove()
+||sp.pluto.tv/com.snowplowanalytics.snowplow/$all
+!||siloh.pluto.tv/679_53_ad/creative/$all
+!||siloh-aka.plutotv.net/318_79_ad/creative/$all
+||siloh-aka.plutotv.net/*_ad/creative/$all
+||siloh.pluto.tv/*_ad/creative/$all
+pluto.tv##+js(remove-class, vjs-controls-disabled, , stay)
+pluto.tv##+js(remove-class, vjs-user-inactive, , stay)
+pluto.tv^$xhr,domain=pubads.g.doubleclick.net|pagead2.googlesyndication.com
+pluto.tv##div[data-role="adContainer"]
+pluto.tv##div[data-role="adClickEl"]
+||production-cmp.isgprivacy.cbsi.com/dist/optanon-*.js*
+||g.bidbrain.app^$all
+! Javascript must also be disabled for filecr.com as it uses webpack now which ublock origin apparently can't affect/modify.
+!filecr.com##div[class^="ishtehar"]:has(ins[data-ad-client])
+!filecr.com##div[class^="ishtehar"]
+! "ishtehar " division must exist or download post won't work.
+filecr.com##div[class="ishtehar "]:style(min-height: 0px !important; min-width: 0px !important; max-height: 0px !important; max-width: 0px !important;)
+!filecr.com##div[class^="ishtehar"]:has(ins[data-ad-client]):remove()
+!filecr.com##div[class^="ishtehar"]:remove()
+filecr.com##div[id="ishtehar-popup"]
+filecr.com##div[class="alert fixed"]:has(div[class="alert-wrap"])
+filecr.com##ins[data-ad-client]
+filecr.com##ins[data-ad-client]:remove()
+filecr.com##ins[data-adsbygoogle-status]
+filecr.com##ins[data-adsbygoogle-status]:remove()
+filecr.com##div[class^="adblock_wrap"]
+filecr.com##div[id="premium-modal"]
+! https://www.reddit.com/r/uBlockOrigin/comments/minihc/filecrcom_detecting_ublockorigin/
+filecr.com##div.filec-widget
+filecr.com##div[class*="filec-sticky-ad"]
+filecr.com^$inline-script
+!||o1089883.ingest.sentry.io/api/6106537/envelope/$all
+||o*.ingest.sentry.io/api/*/envelope/$all
+||pingpepa.xyz^$all
 
 !Whitelisted
+! Pluto.tv requires access to scripts @ tags.tiqcdn.com
+!@@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.*$script,domain=pluto.tv
+@@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/$script,domain=pluto.tv
+!@@||idsync.rlcdn.com/$xhr,domain=pluto.tv
+!@@||sync.search.spotxchange.com/partner?adv_id=$xhr,domain=pluto.tv
+!@@||tpc.googlesyndication.com/sodar/$all,domain=pluto.tv
+!@@||*.v.fwmrm.net/ad/$xhr,domain=pluto.tv
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
 !@@||track.adtraction.com^$all
 !@@||aa.online-metrix.net^$all
+! filecr.com needs to allow o*.ingest.sentry.io domains
+@@||o*.ingest.sentry.io/api/*/envelope/?sentry_key=*$xhr,domain=www.filecr.com|filecr.com
+!@@||o*.ingest.sentry.io/api/*/envelope/?sentry_key=*
 @@||redirect.viglink.com^$all
+!@@||redirect.viglink.com^$first-party
+@@||click.pstmrk.it^$first-party
 @@||citicorpcreditservic.tt.omtrdc.net^$all
 @@||linkvertise.com^$ghide
 @@.jpg$image,domain=dropgalaxy.*|techssting.com
