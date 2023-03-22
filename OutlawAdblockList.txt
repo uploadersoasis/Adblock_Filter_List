@@ -28,7 +28,7 @@
 !        snippet to be fully functional.  Such a script can be saved as a
 !        bookmark in the web browser and selected when on the webpage which
 !        requires it.
-!        The following no longer works for filecr.com.
+!        One such website is filecr.com.
 !        The script to activate the download button @ filecr.com is:
 ! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 !
@@ -111,7 +111,7 @@ techydino.net##+js(nofab)
 !||pagead2.googlesyndication.com/pagead/show_companion_ad.js*
 !||pagead2.googlesyndication.com/pagead/show_ads.js*
 !||pagead2.googlesyndication.com/pagead/osd.js*
-!||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+!||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js*
 !||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js*
 !||pagead2.googlesyndication.com/pagead/js/$all
 ||pagead2.googlesyndication.com/pagead/$all
@@ -32133,7 +32133,6 @@ www.fosshub.com##aside[class="ad"][aria-label="Advertisement"]
 ||pagead2.googlesyndication.com/pagead/managed/js/adsense/$all
 ||googleads.g.doubleclick.net/pagead/html/*/zrt_lookup.html*
 ||www.fosshub.com/media/js/adblock.js*
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js*
 ||mpuxzyuiyejwe.com/$all
 modgameapk.net##ins[data-ad-client]
 ||cart00.xyz/$all
@@ -37996,6 +37995,8 @@ filecr.com##ins[data-ad-client]:remove()
 filecr.com##ins[data-adsbygoogle-status]
 filecr.com##ins[data-adsbygoogle-status]:remove()
 filecr.com##div[class^="adblock_wrap"]
+filecr.com##div[class^="main-adblock-wrap"]
+filecr.com##div[class^="wp-"][class$="-content"]:has(div[class^="main-adblock-wrap"])
 filecr.com##div[id="premium-modal"]
 ! https://www.reddit.com/r/uBlockOrigin/comments/minihc/filecrcom_detecting_ublockorigin/
 filecr.com##div.filec-widget
@@ -38004,6 +38005,36 @@ filecr.com^$inline-script
 !||o1089883.ingest.sentry.io/api/6106537/envelope/$all
 ||o*.ingest.sentry.io/api/*/envelope/$all
 ||pingpepa.xyz^$all
+www.audioholics.com##div[id="sitemodal"]
+filecr.com##+js(abort-on-property-write.js, advanced_ads_ga_UID)
+filecr.com##+js(abort-on-property-read.js, advanced_ads_ga_UID)
+filecr.com##+js(abort-on-property-write.js, advanced_ads_ga_anonymIP)
+filecr.com##+js(abort-on-property-read.js, advanced_ads_ga_anonymIP)
+filecr.com##+js(abort-on-property-write.js, window.advanced_ads_ready)
+filecr.com##+js(abort-on-property-read.js, window.advanced_ads_ready)
+filecr.com##+js(abort-on-property-write.js, window.advanced_ads_sticky_items)
+filecr.com##+js(abort-on-property-read.js, window.advanced_ads_sticky_items)
+filecr.com##+js(aopr, advadsCfpAd)
+filecr.com##+js(aopw, advadsCfpAd)
+filecr.com##+js(acis, advadsCfpAd)
+filecr.com##^script:has-text(advadsCfpAd)
+filecr.com##div[class*="ads-wrapper-footer"]
+!||filecr.com/wp-content/plugins/advanced-ads-pro/assets/advanced-ads-pro.js*
+!||filecr.com/wp-content/plugins/advanced-ads-pro/assets/js/advanced-ads-pro.min.js?*
+!||filecr.com/wp-content/plugins/advanced-ads-pro/modules/cache-busting/inc/base.min.js*
+||filecr.com/wp-content/plugins/advanced-ads-pro/$all
+!||filecr.com/wp-content/plugins/advanced-ads-responsive/public/assets/js/script.js*
+||filecr.com/wp-content/plugins/advanced-ads-responsive/$all
+!||filecr.com/wp-content/plugins/advanced-ads-sticky-ads/public/assets/js/sticky.js*
+||filecr.com/wp-content/plugins/advanced-ads-sticky-ads/$all
+!||filecr.com/wp-content/plugins/advanced-ads/public/assets/js/advanced.js*
+||filecr.com/wp-content/plugins/advanced-ads/$all
+!||filecr.com/wp-content/plugins/deblocker/js/ads.js*
+!||filecr.com/wp-content/plugins/deblocker/js/deblocker.js*
+||filecr.com/wp-content/plugins/deblocker/$all
+||filecr.com^$3p,domain=pagead2.googlesyndication.com
+filecr.com##+js(aopr, adsbygoogle)
+filecr.com##+js(aopw, adsbygoogle)
 
 !Whitelisted
 ! Pluto.tv requires access to scripts @ tags.tiqcdn.com
