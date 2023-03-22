@@ -37981,7 +37981,8 @@ pluto.tv##div[data-role="adContainer"]
 pluto.tv##div[data-role="adClickEl"]
 ||production-cmp.isgprivacy.cbsi.com/dist/optanon-*.js*
 ||g.bidbrain.app^$all
-! Javascript must also be disabled for filecr.com as it uses webpack now which ublock origin apparently can't affect/modify.
+||pingpepa.xyz^$all
+www.audioholics.com##div[id="sitemodal"]
 !filecr.com##div[class^="ishtehar"]:has(ins[data-ad-client])
 !filecr.com##div[class^="ishtehar"]
 ! "ishtehar " division must exist or download post won't work.
@@ -37995,17 +37996,16 @@ filecr.com##ins[data-ad-client]:remove()
 filecr.com##ins[data-adsbygoogle-status]
 filecr.com##ins[data-adsbygoogle-status]:remove()
 filecr.com##div[class^="adblock_wrap"]
-filecr.com##div[class^="wp-"][class$="-content"]:has(div[class^="main-adblock-wrap"])
 filecr.com##div[class^="main-adblock-wrap"]
 filecr.com##div[id="premium-modal"]
 ! https://www.reddit.com/r/uBlockOrigin/comments/minihc/filecrcom_detecting_ublockorigin/
-filecr.com##div.filec-widget
+!filecr.com##div.filec-widget
+filecr.com##div[class*="filec-widget"]
 filecr.com##div[class*="filec-sticky-ad"]
+! Inline scripts must be blocked on filecr.com, but allowed on https://filecr.com/download/*
 filecr.com^$inline-script
 !||o1089883.ingest.sentry.io/api/6106537/envelope/$all
 ||o*.ingest.sentry.io/api/*/envelope/$all
-||pingpepa.xyz^$all
-www.audioholics.com##div[id="sitemodal"]
 filecr.com##+js(abort-on-property-write.js, advanced_ads_ga_UID)
 filecr.com##+js(abort-on-property-read.js, advanced_ads_ga_UID)
 filecr.com##+js(abort-on-property-write.js, advanced_ads_ga_anonymIP)
@@ -38040,9 +38040,21 @@ filecr.com##+js(aopw, advadsCfpInfo)
 !filecr.com##div[id="mdp-deblocker-js-disabled"]
 !filecr.com##div[id="mdp-deblocker-ads"]
 filecr.com##div[id^="mdp-deblocker-"]
-filecr.com##div[class="ads-wrapper"]
+filecr.com##div[class*="ads-wrapper"]
+filecr.com##div[class="top-header-ad"]
+filecr.com##+js(set-constant, ShPublic.disable_server_downloads, 0, stay)
+filecr.com##ins[data-ad-client]
+filecr.com##^script:has-text(/decodeURIComponent\(escape\(r\)\)/i)
+filecr.com##^script[id^="advanced-ads-"]
+filecr.com##div[class$="-blackout active"]
+filecr.com##div[class^="wp-"][class$="-content"]:has(div[class^="main-adblock-wrap"])
+!filecr.com##div[class^="wp-"][class$="-wrapper"]
+filecr.com##div[class$="-wrapper"]
+||filecr.com/wp-content/uploads/2019/12/ADBLOACK-WARNING.jpg*
 
 !Whitelisted
+! Inline scripts must be blocked on filecr.com, but allowed on https://filecr.com/download/*
+@@filecr.com/download/$inline-script
 ! Pluto.tv requires access to scripts @ tags.tiqcdn.com
 !@@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.*$script,domain=pluto.tv
 @@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/$script,domain=pluto.tv
