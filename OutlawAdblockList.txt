@@ -37995,8 +37995,8 @@ filecr.com##ins[data-ad-client]:remove()
 filecr.com##ins[data-adsbygoogle-status]
 filecr.com##ins[data-adsbygoogle-status]:remove()
 filecr.com##div[class^="adblock_wrap"]
-filecr.com##div[class^="main-adblock-wrap"]
 filecr.com##div[class^="wp-"][class$="-content"]:has(div[class^="main-adblock-wrap"])
+filecr.com##div[class^="main-adblock-wrap"]
 filecr.com##div[id="premium-modal"]
 ! https://www.reddit.com/r/uBlockOrigin/comments/minihc/filecrcom_detecting_ublockorigin/
 filecr.com##div.filec-widget
@@ -38035,6 +38035,12 @@ filecr.com##div[class*="ads-wrapper-footer"]
 ||filecr.com^$3p,domain=pagead2.googlesyndication.com
 filecr.com##+js(aopr, adsbygoogle)
 filecr.com##+js(aopw, adsbygoogle)
+filecr.com##+js(aopr, advadsCfpInfo)
+filecr.com##+js(aopw, advadsCfpInfo)
+!filecr.com##div[id="mdp-deblocker-js-disabled"]
+!filecr.com##div[id="mdp-deblocker-ads"]
+filecr.com##div[id^="mdp-deblocker-"]
+filecr.com##div[class="ads-wrapper"]
 
 !Whitelisted
 ! Pluto.tv requires access to scripts @ tags.tiqcdn.com
