@@ -28,7 +28,9 @@
 !        snippet to be fully functional.  Such a script can be saved as a
 !        bookmark in the web browser and selected when on the webpage which
 !        requires it.
-!        One such website is filecr.com.
+!        filecr.com currently doesn't require the following script for the
+!        download button to work IF uBlock Origin is used and Brave's native
+!        adblocking is disabled for filecr.com.
 !        The script to activate the download button @ filecr.com is:
 ! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 !
@@ -38043,7 +38045,6 @@ filecr.com##div[id^="mdp-deblocker-"]
 filecr.com##div[class*="ads-wrapper"]
 filecr.com##div[class="top-header-ad"]
 filecr.com##+js(set-constant, ShPublic.disable_server_downloads, 0, stay)
-filecr.com##ins[data-ad-client]
 filecr.com##^script:has-text(/decodeURIComponent\(escape\(r\)\)/i)
 filecr.com##^script[id^="advanced-ads-"]
 filecr.com##div[class$="-blackout active"]
@@ -38051,6 +38052,10 @@ filecr.com##div[class^="wp-"][class$="-content"]:has(div[class^="main-adblock-wr
 !filecr.com##div[class^="wp-"][class$="-wrapper"]
 filecr.com##div[class$="-wrapper"]
 ||filecr.com/wp-content/uploads/2019/12/ADBLOACK-WARNING.jpg*
+||wfimhtwg.xyz^$all
+||whoostoo.xyz^$all
+||agouajbi.xyz^$all
+||ffxpfkbro.xyz^$all
 
 !Whitelisted
 ! Inline scripts must be blocked on filecr.com, but allowed on https://filecr.com/download/*
