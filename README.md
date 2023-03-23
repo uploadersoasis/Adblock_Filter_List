@@ -25,8 +25,9 @@ NOTES:
         snippet to be fully functional.  Such a script can be saved as a
         bookmark in the web browser and selected when on the webpage which
         requires it.
-        One such website is filecr.com.  The script to activate the download
-        button on its pages is:
+        filecr.com currently doesn't require the following script for the
+        download button to work IF uBlock Origin is used and Brave's native
+        adblocking is disabled for filecr.com.
 javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 
     4.  Due to the way that Wikipedia's responsive website design currently
