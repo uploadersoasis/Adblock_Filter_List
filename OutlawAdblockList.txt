@@ -28046,7 +28046,7 @@ apnews.com##div[class^="Component-placeholderWrapper"]
 clicknupload.*##+js(set-constant.js, timeout, 0)
 clicknupload.*##+js(set-constant.js, tick, 0)
 clicknupload.*##+js(remove-class.js, captcha_code)
-clicknupload.*##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
+!clicknupload.*##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
 clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
 clicknupload.*##style[id^="__web-inspector-hide"]
 clicknupload.*##div[class^="__web-inspector-hide"]
@@ -29740,7 +29740,7 @@ bowfile.com##+js(aopr, adblockEnabled)
 bowfile.com##+js(aopw, adblockEnabled)
 bowfile.com##+js(aopr, adElement)
 bowfile.com##+js(aopw, adElement)
-||waust.at/$all
+||waust.at^$all
 ||rt.ad-score.com/$all
 ||d3o49rridkfcxi.cloudfront.net/$all
 !push-decdbgj-177.boustahe.com##div[class*="push-notice"]
@@ -33935,9 +33935,6 @@ streamgo.to##iframe[id^="ifre"]
 ||acacdn.com/script/suv4.js*
 ||imstore.bet365affiliates.com/$all
 ||becorsolaom.com/$all
-!||embedstream.me/cash.min.js*
-!||embedstream.me/cash.min.js$all
-||embedstream.me/cash.min.js$popup,document,inline-script,inline-font,popunder,subdocument,script,other
 ||unseenreport.com/$all
 ||janglemysticalpiggy.com/$all
 ||admida.xml.ak-is2.net/$all
@@ -36293,7 +36290,6 @@ www.statnews.com##div[data-ad-unit]
 ||bzwdksdngjhay.com/$all
 ||www.blockadsnot.com/agency.min.js*
 ||www.bzwdksdngjhay.com/$all
-embedstream.me##+js(acis, sandDetect)
 ||nordeela.com/$all
 ||ojjavpljruu.com/$all
 ||ad.kubiadserv.icu/$all
@@ -37173,8 +37169,8 @@ deadline.com##div[class*="ad-text"]:remove()
 learn.pluralsight.com##div[class="cookie-notification-wrapper"]:remove()
 wccftech.com##div[id^="div-gpt-ad-"]:remove()
 wccftech.com##div[class="bg-horizontal"]
-wccftech.com##div[class="bg-square"]:before
-wccftech.com##div[class="bg-vertical"]:before
+wccftech.com##div[class="bg-square"]::before
+wccftech.com##div[class="bg-vertical"]::before
 venturebeat.com##div[class="tude-cw-wrap"]:has(span[class="tude-cw-label"]:has-text(advertisement)):remove()
 !outlook.live.com##i[data-icon-name="Delete"]:has(div[class="_2Frh JMe1C"]):remove()
 outlook.live.com##div[class="_2Frh JMe1C"]:remove()
@@ -37510,20 +37506,9 @@ www.ustream.to##+js(aopr, f6d8301657cfd12894120288e019af08)
 ||fumuluckt.com/$all
 ||rentingimmoderatereflecting.com/$all
 ||tutuads97.g2afse.com/$all
-||time4tv.stream/top.php*
-||yourtehzeeb.com/fsembed.js*
-time4tv.stream##div[id="floatLayer1"]
-time4tv.stream##+js(acis, debugger)
-time4tv.stream##+js(acis, anonymous)
-time4tv.stream##+js(acis, detectDevTool)
-time4tv.stream##+js(remove-attr, style, .seek-time, stay)
-time4tv.stream##+js(remove-class, seek-disabled, div, stay)
-time4tv.stream##+js(remove-class, volume-bar-hide, div, stay)
 ||racingorchestra.com^$all
 ||123ecast.me/blast.js*
 ||waufooke.com/tag.min.js*
-||extrafreetv.com/images/x1.png*
-||extrafreetv.com/camp1.php*
 portal.av-atlas.org##div[id="cdk-overlay-0"]:upward(2)
 portal.av-atlas.org##div[id="cdk-overlay-0"]
 portal.av-atlas.org##div[class="cdk-overlay-container"]
@@ -37819,20 +37804,10 @@ www.ustream.to##+js(aopr, mdpUnGrabber)
 www.ustream.to##a[class="tgme_widget_message_bubble_logo"]
 ||www.ustream.to/src/func.js*
 www.ustream.to##+js(set, country_blocked, 0)
-||nginx-cf.maxcdn.info/country_blocker.js*
 www.ustream.to$script,domain=nginx-cf.maxcdn.info
 www.ustream.to##+js(set, isMobile, noopFunc)
 !www.ustream.to##+js(acis, isMobile)
 ||analytics.tiendaenoferta.com^$all
-time4tv.stream##div[class="chatBox"]
-time4tv.stream##iframe[id="rufous-sandbox"]
-time4tv.stream$script,domain=www.intellipopup.com
-!||www.intellipopup.com/processing.min.js*
-!time4tv.stream$script,domain=chatango.com
-time4tv.stream$all,domain=chatango.com
-time4tv.stream##div[id="UnMutePlayer"]:style(display: none;)
-time4tv.stream##div[id="UnMutePlayer"]:remove()
-time4tv.stream##div[id="UnMutePlayer"]
 stream2watch.games##+js(remove-attr, onclick, .player4)
 stream2watch.games##+js(remove-attr, onclick, .btn_comant_box2)
 stream2watch.games##+js(acis, xurl)
@@ -38056,6 +38031,152 @@ filecr.com##div[class$="-wrapper"]
 ||whoostoo.xyz^$all
 ||agouajbi.xyz^$all
 ||ffxpfkbro.xyz^$all
+parkingpage.namecheap.com##div[class="trackingcontainer"]
+parkingpage.namecheap.com##+js(aopr, policywnd)
+parkingpage.namecheap.com##+js(aopw, policywnd)
+parkingpage.namecheap.com##+js(aopr, replacementLink)
+parkingpage.namecheap.com##+js(aopw, replacementLink)
+parkingpage.namecheap.com##div[id="ads"]
+parkingpage.namecheap.com##^script[src*="://parkingcrew.net/jsparkcaf.php"]
+||parkingcrew.net/jsparkcaf.php*
+securitytrails.com##+js(remove-class, text-preview, td, stay)
+foxnews.com##div[class*="amp-ad"]
+foxnews.com##div[id="desktop_desk-peak-interstitial-1x1"]
+foxnews.com##div[id="desk-interstitial-1x1"]
+foxnews.com##+js(set, authenticated, true)
+foxnews.com##+js(set, data, {authenticated: true})
+foxnews.com##+js(aopr, window.location.href.indexOf('video-embed'))
+foxnews.com##+js(aopw, window.location.href.indexOf('video-embed'))
+!||foxnewsplayer-a.akamaihd.net/player/9.0.23/akamai/amp/mediaanalytics/Mediaanalytics.min.js*
+||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/mediaanalytics/$script
+!||foxnewsplayer-a.akamaihd.net/player/9.0.23/akamai/amp/amazonbidder/Amazonbidder.min.js*
+||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/amazonbidder/$script
+!||79423.analytics.edgekey.net/ma_library/javascript/javascript_malibrary.js*
+||79423.analytics.edgekey.net/ma_library/javascript/$script
+||pro-swapper.com^$all
+||downloadnature.space^$all
+||downloadnature.com^$all
+||fast-redirect.host^$all
+||bragi-studio.com^$all
+||plplme.site^$all
+||fenzor.com^$all
+||universe-photo.com^$all
+||rainway-gaming.com^$all
+||awaken1337.xyz^$all
+||pixelka.fun^$all
+||vortex-cloudgaming.com^$all
+||vontex.tech^$all
+||user52406.majorcore.space^$all
+||voneditor.tech^$all
+||spaceditor.space^$all
+||roudar.com^$all
+||peoplep.site^$all
+||anypon.online^$all
+||zeneditor.tech^$all
+||yourworld.site^$all
+||playerupbo.xyz^$all
+||dizzify.me^$all
+||appfree.club^$all
+||dolala.xyz^$all
+||micbig.top^$all
+||mictobig.xyz^$all
+||napala.top^$all
+||neuka.top^$all
+||neukoo.top^$all
+||shopproxy.live^$all
+||papazz.xyz^$all
+||poloke.top^$all
+||programe.top^$all
+||progriu.top^$all
+||puname.top^$all
+||ubutun.xyz^$all
+||pdlickwvqucbg.xyz^$all
+||eymprvikdld.xyz^$all
+userupload.net##+js(aopr, _gaq)
+userupload.net##+js(aopw, _gaq)
+userupload.net##+js(aopr, x.withCredentials)
+userupload.net##+js(aopw, x.withCredentials)
+userupload.net##iframe[id^="google_ads_frame"]
+userupload.net##amp-auto-ads
+userupload.net##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+userupload.net##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+userupload.in##+js(aopr, _gaq)
+userupload.in##+js(aopw, _gaq)
+userupload.in##+js(aopr, x.withCredentials)
+userupload.in##+js(aopw, x.withCredentials)
+userupload.in##iframe[id^="google_ads_frame"]
+userupload.in##amp-auto-ads
+userupload.in##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+userupload.in##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+||mutjrvxlldyrbyg.xyz^$all
+||beggarlyfilmingabreast.com^$all
+||xijgedjgg5f55.com^$all
+||law-schools-online2.top^$all
+||www.mjtwoqupix.com^$all
+||mjtwoqupix.com^$all
+||2734478852^$all
+||insurancesize.com^$all
+||besluor.com^$all
+||ww38.qfind.net^$all
+||qfind.net^$all
+||www.csrmohcym.com^$all
+||csrmohcym.com^$all
+!||duriot.com/deity.php*
+||duriot.com^$all
+||www.lycnxmfecctutt.com^$all
+||lycnxmfecctutt.com^$all
+||cdn.discordapp.com/attachments/1089155711889584169/1089155794794188830/AppFile.exe*
+||xstats.net/js/plausible.js*
+||yourtehzeeb.com/fsembed.js*
+||www.betteradsystem.com/responsive-nav.min.js*
+||time4tv.stream/top.php*
+time4tv.stream##a[href^="https://xijgedjgg5f55.com/"]
+time4tv.stream##+js(remove-attr, oncontextmenu, body)
+time4tv.stream##div[id="floatLayer1"]
+time4tv.stream##+js(acis, debugger)
+time4tv.stream##+js(acis, anonymous)
+time4tv.stream##+js(acis, detectDevTool)
+time4tv.stream##+js(remove-attr, style, .seek-time, stay)
+time4tv.stream##+js(remove-class, seek-disabled, div, stay)
+time4tv.stream##+js(remove-class, volume-bar-hide, div, stay)
+time4tv.stream##div[class="chatBox"]
+time4tv.stream##iframe[id="rufous-sandbox"]
+time4tv.stream$script,domain=www.intellipopup.com
+!||www.intellipopup.com/processing.min.js*
+!time4tv.stream$script,domain=chatango.com
+time4tv.stream$all,domain=chatango.com
+time4tv.stream##div[id="UnMutePlayer"]:style(display: none;)
+time4tv.stream##div[id="UnMutePlayer"]:remove()
+time4tv.stream##div[id="UnMutePlayer"]
+time4tv.stream^$all,domain=st.chatango.com
+!time4tv.stream##iframe[src^="https://www.sports-stream.click/s2w/spsch.php"]
+time4tv.stream##iframe[src^="https://st.chatango.com/"]
+||extrafreetv.com/images/x1.png*
+!||extrafreetv.com/camp1.php*
+!extrafreetv.com##+js(set, top.location, '')
+extrafreetv.com##+js(acis, top.location)
+extrafreetv.com##+js(remove-attr, OnContextMenu, body, stay)
+! div[id="UnMutePlayer"] has to be on embedded stream/iframe not root page
+gocast2.com##div[id="UnMutePlayer"]
+gocast2.com##div[id="UnMutePlayer"]:remove()
+cricplay2.xyz^script[id="_waumnk"]
+cricplay2.xyz##script[id="_waumnk"]
+||empied.com/script/clock.js*
+||www.premiumvertising.com/twilio.min.js*
+||dm7ii62qkhy9z.cloudfront.net^$all
+||d333p98mzatwjz.cloudfront.net^$all
+||tpeoplesho.info^$all
+!||embedstream.me/cash.min.js*
+!||embedstream.me/cash.min.js$all
+||embedstream.me/cash.min.js$popup,document,inline-script,inline-font,popunder,subdocument,script,other
+||embedstream.me/deity.php*
+embedstream.me##+js(acis, sandDetect)
+embedstream.me##+js(acis, autoloadMarker)
+embedstream.me##+js(aopr, autoloadMarker)
+embedstream.me##+js(aopw, autoloadMarker)
+||aarghwoning.digital^$all
+||nheappyrincenev.com^$all
+||augailou.com^$all
 
 !Whitelisted
 ! Inline scripts must be blocked on filecr.com, but allowed on https://filecr.com/download/*
