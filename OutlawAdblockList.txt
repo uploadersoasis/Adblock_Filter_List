@@ -37830,15 +37830,21 @@ daddylivehd.sx$script,domain=www.google-analytics.com
 daddylivehd.sx$script,domain=st.chatango.com
 daddylivehd.sx$all,domain=chatango.com
 daddylivehd.sx##div[id="sidebar"]
+daddylivehd.sx##iframe[id="stats"]
 daddylivehd.sx##+js(aopw, document.oncontextmenu)
 daddylivehd.sx##+js(aopr, document.oncontextmenu)
 daddylivehd.sx##+js(aopw, document.onkeypress)
 daddylivehd.sx##+js(aopr, document.onkeypress)
 daddylivehd.sx##+js(aopw, document.onmousedown)
 daddylivehd.sx##+js(aopr, document.onmousedown)
+daddylivehd.sx##+js(aopw, x.withCredentials)
+daddylivehd.sx##+js(aopr, x.withCredentials)
 daddylivehd.sx##div[id="UnMutePlayer"]
 daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
 daddylivehd.sx##textarea[id="txtarea"]
+||daddylivehd.sx/embed/adblock.php*
+daddylivehd.sx##+js(aopw, _Hasync)
+daddylivehd.sx##+js(aopr, _Hasync)
 ||armoryleaseholder.com^$all
 ||santstipule.com^$all
 !tv.ustvgo.live##object[id="ai-adb-dblclk"]
@@ -38197,9 +38203,10 @@ ntuplay.xyz##+js(aopw, autoloadMarker)
 ||waufooke.com^$all
 ! poscitech.click is a streaming tv website
 !||poscitech.click^$all
+||www.cdn4ads.com/rot.min.js*
+||coonandeg.xyz^$all
 
 !Whitelisted
-! Inline scripts must be blocked on filecr.com, but allowed on https://filecr.com/download/*
 @@filecr.com/download/$inline-script
 ! Pluto.tv requires access to scripts @ tags.tiqcdn.com
 !@@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.*$script,domain=pluto.tv
