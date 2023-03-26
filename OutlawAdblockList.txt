@@ -19990,26 +19990,6 @@ www.omaredomex.org###fbox-background
 ||www.rxksulmbu.com/$all
 ||bhlusdvadp.com/$all
 ||www.bhlusdvadp.com/$all
-userupload.net##+js(abort-on-property-read.js, adblockinfo)
-userupload.net##+js(abort-current-inline-script.js, adblockinfo)
-userupload.net##+js(abort-on-property-read.js, bannerad)
-userupload.net##+js(abort-current-inline-script.js, bannerad)
-userupload.net##+js(abort-on-property-read.js, adblock_detected)
-userupload.net##+js(abort-current-inline-script.js, adblock_detected)
-userupload.net##+js(abort-on-property-read.js, adsbox)
-userupload.net##+js(abort-current-inline-script.js, adsbox)
-userupload.net##+js(abort-on-property-read.js, adsbygoogle)
-userupload.net##+js(abort-current-inline-script.js, adsbygoogle)
-userupload.net##div[class="ad-unit hidden-xs"]
-userupload.net##div[class="ad-unit visible-xs"]
-userupload.net##div[class="ad-unit"]
-userupload.net##div[class="adsbox"]
-userupload.net##div[id="adblockinfo"]
-userupload.net##div[id="mobGo"]
-userupload.net##input[id="adblock_detected"]
-userupload.net##ins[class="adsbygoogle"]
-||userupload.net/assets/js/advertisement.js*
-||userupload.net/assets/js/clipboard.min.js*
 ||pixel.maranhesduve.club/$all
 !||maranhesduve.club/$all
 !||www.maranhesduve.club/$all
@@ -26649,8 +26629,6 @@ www.cox.com##^script[id="cookie-notice-mark-up"]
 www.cox.com##div[class="cookie-notice-container"]
 www.cox.com##+js(set-constant.js, shouldShowCookieNotice, false)
 !||coxcommunications.tt.omtrdc.net/$all
-!userupload.net##div[class="ads mb-4"]
-userupload.net##div[class^="ads mb-"]
 doodrive.com##div[class="uk-card uk-card-default uk-card-body uk-text-center"]
 ||doodrive.com/assets/js/cookieconsent.js*
 doodrive.com##ins[class="adsbygoogle"]
@@ -26793,8 +26771,6 @@ www.acrylicwifi.com##div[class^="tar_cookiesBar"]
 ||d2znr2yi078d75.cloudfront.net/$all
 ||d3oiwf0xhhk8m1.cloudfront.net/$all
 ||d1r0ldx4ccoewq.cloudfront.net/$all
-||userupload.net/ds2/js/fuckadblock.js*
-||userupload.net/ds2/js/1.min.js*
 !||youradexchange.com/script/$all
 ||youradexchange.com/$all
 ||www.zhkquyvfndeker.com/$all
@@ -27163,7 +27139,6 @@ androidapksdl.com##ins[class="adsbygoogle"]
 freeupload.info##+js(remove-attr.js, disabled, #at-btn-download)
 ||s3.amazonaws.com/93c2badb0ef152b5e53b4384ed2a864ee159475a62a0efd880873192fd906/$all
 ||riminghoggoofy.com/$all
-userupload.net##.btn-danger.btn
 currently.att.yahoo.com##amp-ad
 currently.att.yahoo.com##amp-analytics
 playacademy.exceedlms.com##div[id="gdpr-consent"]
@@ -28023,8 +27998,6 @@ jaanmusic.in##+js(abort-on-property-write.js, adsbygoogle)
 !jaanmusic.in##+js(abort-on-property-write.js, _0x3344)
 jaanmusic.in##div[id="alertmsg"]
 jaanmusic.in##+js(set-constant.js, datat, "")
-||userupload.in/assets/js/1.min.js*
-userupload.in##.btn-danger.btn
 www.windowscentral.com##div[class*="adunit"]
 www.windowscentral.com##div[class="mobile-leaderboard-320-50"]
 www.accuweather.com##div[class="privacy-policy-banner"]
@@ -32799,8 +32772,8 @@ linkifier.com##div[id="cookie-notice"]
 eizone.info##aside[id="moove_gdpr_cookie_info_bar"]
 ||s5.cnnx.io/s2static/*/js/ads.js*
 ||lvhkkkrjyhv.com/$all
-!up-load.io##^script:has-text(y=JSON.parse(atob()
-!up-load.io##+js(acis, y=JSON.parse(atob()
+!up-load.io##^script:has-text(y=JSON.parse(atob()))
+!up-load.io##+js(acis, y=JSON.parse(atob()))
 ||popgecusljq.xyz/$all
 ||onomousw.xyz/$all
 beebom.com##div[class="_ap_apex_ad"]
@@ -36217,9 +36190,7 @@ www.seventeen.com##div[class*="breaker-ad"]
 ||duplicatepowerquay.com/$all
 ||parachuteeffectedotter.com/$all
 ||vilereasoning.com/$all
-userupload.net##a[href*="//betzapdoson.com/"]
 ||betzapdoson.com/$all
-userupload.in##input[id="addon"]:remove()
 ||atebilaterde.one/$all
 ||d1of5w8unlzqtg.cloudfront.net/$all
 ||pectthatmye.shop/$all
@@ -38082,6 +38053,31 @@ foxnews.com##+js(aopw, window.location.href.indexOf('video-embed'))
 ||ubutun.xyz^$all
 ||pdlickwvqucbg.xyz^$all
 ||eymprvikdld.xyz^$all
+||userupload.net/assets/js/advertisement.js*
+||userupload.net/ds2/js/fuckadblock.js*
+||userupload.net/ds2/js/1.min.js*
+userupload.net##+js(abort-on-property-read.js, adblockinfo)
+userupload.net##+js(abort-current-inline-script.js, adblockinfo)
+userupload.net##+js(abort-on-property-read.js, bannerad)
+userupload.net##+js(abort-current-inline-script.js, bannerad)
+userupload.net##+js(abort-on-property-read.js, adblock_detected)
+userupload.net##+js(abort-current-inline-script.js, adblock_detected)
+userupload.net##+js(abort-on-property-read.js, adsbox)
+userupload.net##+js(abort-current-inline-script.js, adsbox)
+userupload.net##+js(abort-on-property-read.js, adsbygoogle)
+userupload.net##+js(abort-current-inline-script.js, adsbygoogle)
+userupload.net##div[class="ad-unit hidden-xs"]
+userupload.net##div[class="ad-unit visible-xs"]
+userupload.net##div[class="ad-unit"]
+userupload.net##div[class="adsbox"]
+userupload.net##div[id="adblockinfo"]
+userupload.net##div[id="mobGo"]
+userupload.net##input[id="adblock_detected"]
+userupload.net##ins[class="adsbygoogle"]
+!userupload.net##div[class="ads mb-4"]
+userupload.net##div[class^="ads mb-"]
+userupload.net##.btn-danger.btn
+userupload.net##a[href*="//betzapdoson.com/"]
 userupload.net##+js(aopr, _gaq)
 userupload.net##+js(aopw, _gaq)
 userupload.net##+js(aopr, x.withCredentials)
@@ -38090,14 +38086,19 @@ userupload.net##iframe[id^="google_ads_frame"]
 userupload.net##amp-auto-ads
 userupload.net##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 userupload.net##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+userupload.net##:xpath(/html/body/div/div/form/div[2]/div[2]/div[2]/div[2]/script[2])
+||userupload.in/assets/js/1.min.js*
+userupload.in##input[id="addon"]:remove()
+userupload.in##.btn-danger.btn
+userupload.in##:xpath(/html/body/div/div/form/div[2]/div[2]/div[2]/script[1])
+userupload.in##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+userupload.in##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 userupload.in##+js(aopr, _gaq)
 userupload.in##+js(aopw, _gaq)
 userupload.in##+js(aopr, x.withCredentials)
 userupload.in##+js(aopw, x.withCredentials)
 userupload.in##iframe[id^="google_ads_frame"]
 userupload.in##amp-auto-ads
-userupload.in##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
-userupload.in##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 ||mutjrvxlldyrbyg.xyz^$all
 ||beggarlyfilmingabreast.com^$all
 ||xijgedjgg5f55.com^$all
@@ -38175,7 +38176,8 @@ embedstream.me##+js(aopw, window.dataLayer)
 ||dffhncwicaqm.com^$all
 !||grosfy.com/ts.php*
 ||grosfy.com^$all
-||www.greatdexchange.com/a/display.php*
+!||www.greatdexchange.com/a/display.php*
+||greatdexchange.com/a/display.php*
 ||greatdexchange.com/script/i.php*
 ||nsomedidm.xyz^$all
 ||ntuplay.xyz/blast.js*
@@ -38207,15 +38209,53 @@ sportskart.click##+js(aopw, x.withCredentials)
 wikisport.click##a[href="//pubfuture.com"][class="pf-br-icon"]
 wikisport.click##+js(aopr, window.top)
 wikisport.click##+js(aopw, window.top)
+wikisport.click##+js(acis, window.top)
+wikisport.click##+js(noeval)
+wikisport.click##+js(acis, debugger)
+wikisport.click##^script:has-text(/debugger/i)
+wikisport.click##^script:has-text(/window.top/i)
+wikisport.click##+js(remove-attr, oncontextmenu, body, stay)
+wikisport.click##+js(remove-attr, oncontextmenu, html, stay)
+wikisport.click##+js(aopr, time)
+wikisport.click##+js(aopw, time)
+wikisport.click##+js(aopr, document.onkeypress)
+wikisport.click##+js(aopw, document.onkeypress)
+wikisport.click##+js(acis, document.onkeypress)
+wikisport.click##+js(aopr, document.oncontextmenu)
+wikisport.click##+js(aopw, document.oncontextmenu)
+wikisport.click##+js(acis, document.oncontextmenu)
+wikisport.click##+js(aopr, onlyOnImages)
+wikisport.click##+js(aopw, onlyOnImages)
+wikisport.click##+js(acis, onlyOnImages)
+wikisport.click##+js(set, keepChecking, noopFunc)
+wikisport.click##+js(set, addScript, noopFunc)
+!wikisport.click##+js(no-setTimeout-if, keepChecking)
+!wikisport.click##+js(no-setTimeout-if, addScript)
 ||www.redditstatic.com/ads/pixel.js*
-! don't stay on removing muted attribute so it can be manually reapplied; doesn't actually unmute the video
-!puffer.stanford.edu##+js(remove-attr, muted, #tv-video)
-! The following would leave the play button up forever
+! The following three lines would leave the play button up forever
 !puffer.stanford.edu##div[id="tv-play-button"]:style(display: inline !important;)
 !puffer.stanford.edu##+js(remove-attr, style, #tv-play-button, stay)
-puffer.stanford.edu##+js(remove-attr, style, #tv-container, stay)
-puffer.stanford.edu##div[pseudo="-webkit-media-controls"]:style(display: inline !important;)
-puffer.stanford.edu##+js(set, mute_button.muted, false)
+!puffer.stanford.edu##div[id="tv-play-button"]:watch-attr(style):remove-attr(style)
+!puffer.stanford.edu##+js(remove-attr, style, #tv-container, stay)
+!puffer.stanford.edu##div[id="tv-container"]:watch-attr(style):remove-attr(style)
+! a javascript continually sets div[pseudo="-webkit-media-controls"] to style="display: none;" and ublock Origin does not overcome this.
+!puffer.stanford.edu##div[pseudo="-webkit-media-controls"]:style(display: inline !important;)
+!puffer.stanford.edu##div[pseudo="-webkit-media-controls-panel"]:watch-attr(style):remove-attr(style)
+!puffer.stanford.edu##div[pseudo="-webkit-media-controls-panel"][class="transparent"]:watch-attr(style,class):remove-attr(style,class)
+! removing muted doesn't restore the audio
+! Don't stay on removing muted attribute so it can be manually reapplied.
+!puffer.stanford.edu##video[id="tv-video"]:remove-attr(muted)
+!puffer.stanford.edu##+js(remove-attr, muted, #tv-video)
+! Setting the following two items for some reason prevents the audio from ever being enabled.
+!puffer.stanford.edu##+js(set, video.muted, false)
+!puffer.stanford.edu##+js(set, video.volume, 1)
+puffer.stanford.edu##+js(aopr, window.dataLayer)
+puffer.stanford.edu##+js(aopw, window.dataLayer)
+puffer.stanford.edu##+js(aopr, w.rdt)
+puffer.stanford.edu##+js(aopw, w.rdt)
+! blocks alert if too many (500) users
+!puffer.stanford.edu##div[class*="alert"][role="alert"]
+||puffer.stanford.edu/error_reporting/$xhr
 !la.freestreams-live1.tv##aside[id="custom_html-71"]
 !la.freestreams-live1.tv##iframe[src^="https://st.chatango.com"]
 !la.freestreams-live1.tv##div[id="footer-widgets"]
@@ -38227,10 +38267,31 @@ freestreams-live1.tv##iframe[src^="https://st.chatango.com"]
 freestreams-live1.tv##div[id="footer-widgets"]
 freestreams-live1.tv##+js(aopr, window.dataLayer)
 freestreams-live1.tv##+js(aopw, window.dataLayer)
+! freestreams-live1.tv uses a generated javascript to check for the debugger so use (noeval) to bypass this.
+freestreams-live1.tv##+js(noeval)
+freestreams-live1.tv##+js(set, keepChecking, noopFunc)
+freestreams-live1.tv##div[id="primary"]:style(left: 0px !important; right: 0px !important; width: 100% !important; height: 100% !important;)
 ||st.chatango.com^$script,domain=freestreams-live1.tv
+||cdn.jsdelivr.net/gh/fz6m/console-ban$script
+||isprocessingnow.com^$all
+!||rdrsec.com/hp$script
+||rdrsec.com^$all
+!||grunoaph.net/?rb=*
+||grunoaph.net^$all
+||superfastcdn.com/script/clock.js$script,domain=www.nolive.me|embedstream.me
+||bugits.com/script/clock.js$script,domain=embedstream.me
+||onvictinitor.com^$all
+||offergate-apps-pubrel.com^$all
+||www.ujhhfgbbhs.com^$all
+||ijdprmdriueyq.com^$all
+||ohdrgrpfyvughty.xyz^$all
+||cbyjpnjua.xyz^$all
+||123-4567.to^$all
+||xyz123.online^$all
 
 !Whitelisted
-@@filecr.com/download/$inline-script
+@@||aminhaconta.xl.pt/Campaigns/Blockers/ads.html*
+@@||filecr.com/download/$inline-script
 ! Pluto.tv requires access to scripts @ tags.tiqcdn.com
 !@@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.*$script,domain=pluto.tv
 @@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/$script,domain=pluto.tv
