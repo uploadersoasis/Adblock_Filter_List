@@ -32261,7 +32261,7 @@ dropgalaxy.com##button[id="dl"]:style(display:block !important;)
 ||zicyqbpqsg.com/$all
 ||www.vahfzpfyg.com/$all
 ||vahfzpfyg.com/$all
-||sanet.st^$script,third-party,domain=rsc.cdn77.org
+||rsc.cdn77.org^$script,domain=sanet.st
 lapelotita.com##ins[data-ad-client]
 lapelotita.com##+js(remove-class, hidden, #go-submit, stay)
 lapelotita.com##+js(remove-class, disabled, a)
@@ -36254,9 +36254,6 @@ www.nydailynews.com##div[id="zephr-overlay"]
 ||*.v.fwmrm.net/ad/$all
 www.heyitsfree.net##div[id^="AdThrive_"]
 www.heyitsfree.net##div[class*="adthrive-"]
-puffer.stanford.edu##+js(remove-attr, style, #tv-container, stay)
-puffer.stanford.edu##+js(remove-attr, style, #tv-play-button, stay)
-puffer.stanford.edu##div[id="tv-play-button"]:style(display: inline;)
 ustvgo.tv##+js(remove-class, seek-disabled, , stay)
 ustvgo.tv##div[data-ad-slot]:remove()
 ! enable show all controls to see video controls when the following rule is used.
@@ -36291,7 +36288,7 @@ www.statnews.com##div[data-ad-unit]
 ||www.bzwdksdngjhay.com/$all
 ||nordeela.com/$all
 ||ojjavpljruu.com/$all
-||ad.kubiadserv.icu/$all
+||ad.kubiadserv.icu^$all
 csoft.com##div[id="pvc"]
 www.linkedin.com##+js(aopr, window.impressionTracking)
 www.linkedin.com##+js(aopw, window.impressionTracking)
@@ -36465,7 +36462,6 @@ www.myabandonware.com##div[data-b911-ad]
 ||superfastcdn.com/script/ut.js*
 ||9efb810f2e.aeb33be3f8.com/$all
 ||f38fd28823.111d140e96.com/$all
-wikisport.click##a[href="//pubfuture.com"][class="pf-br-icon"]
 ||www.antiadblocksystems.com/bootstrap-markdown-editor.js*
 ||antiadblocksystems.com/$all
 ||www.zadcyacitht.com/$all
@@ -37799,7 +37795,7 @@ www.ustream.to##+js(aopr, mdpUnGrabber)
 www.ustream.to##a[class="tgme_widget_message_bubble_logo"]
 ||www.ustream.to/src/func.js*
 www.ustream.to##+js(set, country_blocked, 0)
-www.ustream.to$script,domain=nginx-cf.maxcdn.info
+nginx-cf.maxcdn.info^$script,domain=www.ustream.to
 www.ustream.to##+js(set, isMobile, noopFunc)
 !www.ustream.to##+js(acis, isMobile)
 ||analytics.tiendaenoferta.com^$all
@@ -37826,9 +37822,9 @@ daddylivehd.sx##+js(aopw, _chatangoTagserver)
 daddylivehd.sx##+js(aopr, _chatangoTagserver)
 daddylivehd.sx##script[id="tsjson"]
 daddylivehd.sx##div[id="footer"]
-daddylivehd.sx$script,domain=www.google-analytics.com
-daddylivehd.sx$script,domain=st.chatango.com
-daddylivehd.sx$all,domain=chatango.com
+www.google-analytics.com^$script,domain=daddylivehd.sx
+!st.chatango.com^$script,domain=daddylivehd.sx
+st.chatango.com^$all,domain=daddylivehd.sx
 daddylivehd.sx##div[id="sidebar"]
 daddylivehd.sx##iframe[id="stats"]
 daddylivehd.sx##+js(aopw, document.oncontextmenu)
@@ -37897,9 +37893,6 @@ iptvwire.com##div[class="su-box su-box-style-default"]:has(a[href="https://iptvw
 iptvwire.com##div[class="su-button-center"]:has(a[href="https://iptvwire.com/vpn-riskfree"])
 www.ustream.to##div[class*="adblockz-alert"]
 ||www.revenuenetworkcpm.com^$all
-la.freestreams-live1.tv##aside[id="custom_html-71"]
-la.freestreams-live1.tv##iframe[src^="https://st.chatango.com"]
-la.freestreams-live1.tv##div[id="footer-widgets"]
 www.9now.com.au##input[id="toggle_notification_notification-ad-blocker"]
 www.9now.com.au##input[id="toggle_notification_notification-ad-blocker"]:remove()
 ||www.insurancehealth.info^$all
@@ -37949,7 +37942,8 @@ pluto.tv##div[aria-labelledby="terms-of-use-heading"]:remove()
 ||siloh.pluto.tv/*_ad/creative/$all
 pluto.tv##+js(remove-class, vjs-controls-disabled, , stay)
 pluto.tv##+js(remove-class, vjs-user-inactive, , stay)
-pluto.tv^$xhr,domain=pubads.g.doubleclick.net|pagead2.googlesyndication.com
+pubads.g.doubleclick.net^$xhr,domain=pluto.tv
+pagead2.googlesyndication.com^$xhr,domain=pluto.tv
 pluto.tv##div[data-role="adContainer"]
 pluto.tv##div[data-role="adClickEl"]
 ||production-cmp.isgprivacy.cbsi.com/dist/optanon-*.js*
@@ -38005,7 +37999,7 @@ filecr.com##div[class*="ads-wrapper-footer"]
 !||filecr.com/wp-content/plugins/deblocker/js/ads.js*
 !||filecr.com/wp-content/plugins/deblocker/js/deblocker.js*
 ||filecr.com/wp-content/plugins/deblocker/$all
-||filecr.com^$3p,domain=pagead2.googlesyndication.com
+||pagead2.googlesyndication.com^$script,domain=filecr.com
 filecr.com##+js(aopr, adsbygoogle)
 filecr.com##+js(aopw, adsbygoogle)
 filecr.com##+js(aopr, advadsCfpInfo)
@@ -38137,14 +38131,13 @@ time4tv.stream##+js(remove-class, seek-disabled, div, stay)
 time4tv.stream##+js(remove-class, volume-bar-hide, div, stay)
 time4tv.stream##div[class="chatBox"]
 time4tv.stream##iframe[id="rufous-sandbox"]
-time4tv.stream$script,domain=www.intellipopup.com
+||www.intellipopup.com^$script,domain=time4tv.stream
 !||www.intellipopup.com/processing.min.js*
-!time4tv.stream$script,domain=chatango.com
-time4tv.stream$all,domain=chatango.com
+!||st.chatango.com^$script,domain=time4tv.stream
+||st.chatango.com^$all,domain=time4tv.stream
 time4tv.stream##div[id="UnMutePlayer"]:style(display: none;)
 time4tv.stream##div[id="UnMutePlayer"]:remove()
 time4tv.stream##div[id="UnMutePlayer"]
-time4tv.stream^$all,domain=st.chatango.com
 !time4tv.stream##iframe[src^="https://www.sports-stream.click/s2w/spsch.php"]
 time4tv.stream##iframe[src^="https://st.chatango.com/"]
 ||extrafreetv.com/images/x1.png*
@@ -38184,14 +38177,13 @@ embedstream.me##+js(aopw, window.dataLayer)
 ||grosfy.com^$all
 ||www.greatdexchange.com/a/display.php*
 ||greatdexchange.com/script/i.php*
-sportskart.click##iframe[id="stats"]
-sportskart.click##+js(aopr, _gaq)
-sportskart.click##+js(aopw, _gaq)
 ||nsomedidm.xyz^$all
 ||ntuplay.xyz/blast.js*
-ntuplay.xyz##+js(remove-attr, disabled, input[type=button], stay)
+ntuplay.xyz##+js(remove-attr, oncontextmenu, body, stay)
 ntuplay.xyz##+js(aopw, document.oncontextmenu)
 ntuplay.xyz##+js(aopr, document.oncontextmenu)
+ntuplay.xyz##+js(aopr, document.onkeypress)
+ntuplay.xyz##+js(aopw, document.onkeypress)
 ntuplay.xyz##div[id="UnMutePlayer"]
 ntuplay.xyz##+js(aopr, autoloadMarker)
 ntuplay.xyz##+js(aopw, autoloadMarker)
@@ -38205,6 +38197,37 @@ ntuplay.xyz##+js(aopw, autoloadMarker)
 !||poscitech.click^$all
 ||www.cdn4ads.com/rot.min.js*
 ||coonandeg.xyz^$all
+sportskart.click##iframe[id="stats"]
+sportskart.click##+js(aopr, _gaq)
+sportskart.click##+js(aopw, _gaq)
+sportskart.click##+js(aopr, _Hasync)
+sportskart.click##+js(aopw, _Hasync)
+sportskart.click##+js(aopr, x.withCredentials)
+sportskart.click##+js(aopw, x.withCredentials)
+wikisport.click##a[href="//pubfuture.com"][class="pf-br-icon"]
+wikisport.click##+js(aopr, window.top)
+wikisport.click##+js(aopw, window.top)
+||www.redditstatic.com/ads/pixel.js*
+! don't stay on removing muted attribute so it can be manually reapplied; doesn't actually unmute the video
+!puffer.stanford.edu##+js(remove-attr, muted, #tv-video)
+! The following would leave the play button up forever
+!puffer.stanford.edu##div[id="tv-play-button"]:style(display: inline !important;)
+!puffer.stanford.edu##+js(remove-attr, style, #tv-play-button, stay)
+puffer.stanford.edu##+js(remove-attr, style, #tv-container, stay)
+puffer.stanford.edu##div[pseudo="-webkit-media-controls"]:style(display: inline !important;)
+puffer.stanford.edu##+js(set, mute_button.muted, false)
+!la.freestreams-live1.tv##aside[id="custom_html-71"]
+!la.freestreams-live1.tv##iframe[src^="https://st.chatango.com"]
+!la.freestreams-live1.tv##div[id="footer-widgets"]
+!gs.freestreams-live1.tv##aside[id="custom_html-71"]
+!gs.freestreams-live1.tv##iframe[src^="https://st.chatango.com"]
+!gs.freestreams-live1.tv##div[id="footer-widgets"]
+freestreams-live1.tv##aside[id="custom_html-71"]
+freestreams-live1.tv##iframe[src^="https://st.chatango.com"]
+freestreams-live1.tv##div[id="footer-widgets"]
+freestreams-live1.tv##+js(aopr, window.dataLayer)
+freestreams-live1.tv##+js(aopw, window.dataLayer)
+||st.chatango.com^$script,domain=freestreams-live1.tv
 
 !Whitelisted
 @@filecr.com/download/$inline-script
