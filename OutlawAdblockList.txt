@@ -37832,6 +37832,10 @@ tv.ustvgo.live##+js(acis, ai_adb)
 tv.ustvgo.live##+js(aopw, ai_check_block)
 tv.ustvgo.live##+js(aopr, ai_check_block)
 tv.ustvgo.live##+js(acis, ai_check_block)
+tv.ustvgo.live##^script:has-text(ai_check)
+tv.ustvgo.live##+js(acis, ai_check)
+tv.ustvgo.live##+js(aopw, ai_check)
+tv.ustvgo.live##+js(aopr, ai_check)
 tv.ustvgo.live##div[class="advertisement_above_footer"]
 tv.ustvgo.live##div:has-text(Please disable your ad blocker)
 tv.ustvgo.live##div:has-text(Please disable your ad blocker):remove()
@@ -37841,15 +37845,16 @@ tv.ustvgo.live##nav:has-text(Please disable your ad blocker)
 tv.ustvgo.live##nav:has-text(Please disable your ad blocker):remove()
 tv.ustvgo.live##section:has-text(Please disable your ad blocker)
 tv.ustvgo.live##section:has-text(Please disable your ad blocker):remove()
-tv.ustvgo.live##^script:has-text(dccf14c3)
-tv.ustvgo.live##+js(acis, dccf14c3)
-tv.ustvgo.live##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+tv.ustvgo.live##^script:has-text(ai_check)
+tv.ustvgo.live##+js(set, ai_run_scripts, noopFunc)
+!tv.ustvgo.live##*:style(opacity: 1.0 !important; filter: blur(0px) brightness(100%) !important; -webkit-filter: blur(0px) brightness(100%) !important)
 !tv.ustvgo.live##body > script:nth-child(40):remove()
 !tv.ustvgo.live##body > script:nth-child(41):remove()
 tv.ustvgo.live##img[id="nielsen-s2s-audit-ping"]
 !tv.ustvgo.live##div[class^="ai-"][data-code]
 !tv.ustvgo.live##div[id="banner-advert-container"]
 tv.ustvgo.live##*[class*="ads-wrapper"]
+tv.ustvgo.live##div[id="primary"]:style(width: 100% !important;)
 ||d2v02itv0y9u9t.cloudfront.net^$all
 player.twitch.tv##button[data-a-target="follow-button"]
 player.twitch.tv##figure[aria-label="foxnewsgo"]
@@ -38291,6 +38296,8 @@ freestreams-live1.tv##div[id="primary"]:style(left: 0px !important; right: 0px !
 ||cbyjpnjua.xyz^$all
 ||123-4567.to^$all
 ||xyz123.online^$all
+||mebfylxqbhjbx.xyz^$all
+||hyvmflsclweae.xyz^$all
 
 !Whitelisted
 @@||aminhaconta.xl.pt/Campaigns/Blockers/ads.html*
