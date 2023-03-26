@@ -38229,8 +38229,9 @@ wikisport.click##+js(aopw, onlyOnImages)
 wikisport.click##+js(acis, onlyOnImages)
 wikisport.click##+js(set, keepChecking, noopFunc)
 wikisport.click##+js(set, addScript, noopFunc)
-!wikisport.click##+js(no-setTimeout-if, keepChecking)
-!wikisport.click##+js(no-setTimeout-if, addScript)
+! also need no-setTimeout-if to prevent running keepChecking() and addScript() on a loop
+wikisport.click##+js(no-setTimeout-if, keepChecking)
+wikisport.click##+js(no-setTimeout-if, addScript)
 ||www.redditstatic.com/ads/pixel.js*
 ! The following three lines would leave the play button up forever
 !puffer.stanford.edu##div[id="tv-play-button"]:style(display: inline !important;)
@@ -38270,6 +38271,8 @@ freestreams-live1.tv##+js(aopw, window.dataLayer)
 ! freestreams-live1.tv uses a generated javascript to check for the debugger so use (noeval) to bypass this.
 freestreams-live1.tv##+js(noeval)
 freestreams-live1.tv##+js(set, keepChecking, noopFunc)
+! also need no-setTimeout-if to prevent running keepChecking() on a loop
+freestreams-live1.tv##+js(no-setTimeout-if, keepChecking)
 freestreams-live1.tv##div[id="primary"]:style(left: 0px !important; right: 0px !important; width: 100% !important; height: 100% !important;)
 ||st.chatango.com^$script,domain=freestreams-live1.tv
 ||cdn.jsdelivr.net/gh/fz6m/console-ban$script
