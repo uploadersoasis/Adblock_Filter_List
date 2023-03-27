@@ -33707,8 +33707,11 @@ apk4all.com##[href*="//mobileoffers-7-m-download.com/"]
 ||dinterperson.xyz/$all
 ||img1.wsimg.com/parking-lander/$all
 ||narsap.com/$all
+!||uptimecdn.com/script/ut.js$script,domain=ntuplay.xyz
 ||uptimecdn.com/script/ut.js*
 ||uptimecdn.com/script/nesu.js*
+||uptimecdn.com/script/ksoxqhlw.js*
+||uptimecdn.com/script/clock.js$script,domain=sportsembed.su|trustexploration.com
 ||solitudeslander.com/$all
 ||unbeedrillom.com/$all
 ||supersedeforbes.com/$all
@@ -33729,7 +33732,6 @@ apk4all.com##[href*="//mobileoffers-7-m-download.com/"]
 ||separatecolonist.com/$all
 ||torrent-protection.com/$all
 ||gisttorn.com/$all
-||uptimecdn.com/script/ksoxqhlw.js*
 mspoweruser.com##div[id="ezmobfooter"]
 mspoweruser.com##div[class*="ezo_ad"]
 mspoweruser.com##+js(aopr, __inScopeForCCPA)
@@ -37821,7 +37823,6 @@ tv.ustvgo.live##nav:has-text(Please disable your ad blocker)
 tv.ustvgo.live##nav:has-text(Please disable your ad blocker):remove()
 tv.ustvgo.live##section:has-text(Please disable your ad blocker)
 tv.ustvgo.live##section:has-text(Please disable your ad blocker):remove()
-tv.ustvgo.live##^script:has-text(ai_check)
 tv.ustvgo.live##+js(set, ai_run_scripts, noopFunc)
 !tv.ustvgo.live##*:style(opacity: 1.0 !important; filter: blur(0px) brightness(100%) !important; -webkit-filter: blur(0px) brightness(100%) !important)
 !tv.ustvgo.live##body > script:nth-child(40):remove()
@@ -37867,12 +37868,10 @@ www.fanatical.com##div[class^="PrivacyChecker"]
 ||www.tgo-tv.co/js/chat.js*
 ||tgo-tv.co/tgochat.php*
 !||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js*
-||cdn.jsdelivr.net/npm/disable-devtool/$all
+||cdn.jsdelivr.net/npm/disable-devtool/$script
 ||www.sqydhgubsy.com^$all
 ||sqydhgubsy.com^$all
 ||inoculateexplosionpostman.com^$all
-reddit-tv1-streams.blogspot.com##+js(aopw, block)
-reddit-tv1-streams.blogspot.com##+js(aopr, block)
 ||incues.com^$all
 ||ak.roudoduor.com^$all
 !||for-j.com/tds3.html*
@@ -38161,6 +38160,8 @@ ntuplay.xyz##+js(aopw, document.onkeypress)
 ntuplay.xyz##div[id="UnMutePlayer"]
 ntuplay.xyz##+js(aopr, autoloadMarker)
 ntuplay.xyz##+js(aopw, autoloadMarker)
+ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]
+ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]:remove()
 1l1l.to##div[id="adholder"]
 1l1l.to##div[id="adsclose"]
 ||neewhoum.net^$all
@@ -38312,7 +38313,6 @@ trustexploration.com##+js(aopw, autoloadMarker)
 !trustexploration.com##+js(set, startMuted, falseFunc)
 ! startMuted as false is enough for the audio to work on initial video play.
 trustexploration.com##+js(set, startMuted, false)
-||uptimecdn.com/script/clock.js$script,domain=sportsembed.su|trustexploration.com
 sportsembed.su##div[id="html1"]
 sportsembed.su##div[id="html1"]:remove()
 sportsembed.su##:xpath(/html/body/script[9])
@@ -38330,6 +38330,22 @@ em.tgo-tv.co##+js(aopr, document.oncontextmenu)
 em.tgo-tv.co##+js(aopw, document.oncontextmenu)
 ||cdn.norymo.com/app.js*
 www.hlsplayer.net##script[data-ad-client]
+||xkcgjkwjbmki.xyz^$all
+||pl18296191.highcpmrevenuenetwork.com^$all
+||pl16407580.highcpmrevenuenetwork.com^$all
+reddit-tv1-streams.blogspot.com##+js(aopw, block)
+reddit-tv1-streams.blogspot.com##+js(aopr, block)
+reddit-tv1-streams.blogspot.com##+js(aopr, window.location)
+reddit-tv1-streams.blogspot.com##+js(aopw, window.location)
+!reddit-tv1-streams.blogspot.com##+js(noeval)
+! Need to set height and width attributes of iframe NOT the style properties.
+reddit-tv1-streams.blogspot.com##iframe[src^="http://r-strm.blogspot.com/p/"]:style(height: 100% !important; width: 100% !important;)
+reddit-tv1-streams.blogspot.com##div[id="main"]:style(height: 100% !important; width: 100% !important;)
+! Don't remove height unless can set it too.
+!reddit-tv1-streams.blogspot.com##iframe[src^="http://r-strm.blogspot.com/p/"]:remove-attr(height)
+!r-strm.blogspot.com##iframe[src^="https://worldstreams.click/embed/stream-"]:remove-attr(height)
+!r-strm.blogspot.com##iframe[src^="https://sportskart.click/embed/stream-"]:remove-attr(height)
+!r-strm.blogspot.com##iframe[src^="https://daddylivehd.sx/embed/stream-"]:remove-attr(height)
 
 !Whitelisted
 @@||aminhaconta.xl.pt/Campaigns/Blockers/ads.html*
