@@ -38180,7 +38180,8 @@ sportskart.click##+js(aopr, x.withCredentials)
 sportskart.click##+js(aopw, x.withCredentials)
 wikisport.click##a[href="//pubfuture.com"][class="pf-br-icon"]
 !||wikisport.click/iptv2/$inline-script
-||wikisport.click##:xpath(/html/head/script[10])
+wikisport.click##:xpath(/html/head/script[10])
+wikisport.click##:xpath(/html/head/script[10]):remove()
 wikisport.click##+js(aopr, window.top)
 wikisport.click##+js(aopw, window.top)
 wikisport.click##+js(acis, window.top)
@@ -38190,6 +38191,7 @@ wikisport.click##^script:has-text(/debugger/i)
 wikisport.click##^script:has-text(/window.top/i)
 wikisport.click##+js(remove-attr, oncontextmenu, body, stay)
 wikisport.click##+js(remove-attr, oncontextmenu, html, stay)
+wikisport.click##+js(set, time, 0)
 wikisport.click##+js(aopr, time)
 wikisport.click##+js(aopw, time)
 wikisport.click##+js(aopr, document.onkeypress)
@@ -38327,6 +38329,7 @@ em.tgo-tv.co##div[style="background:white; max-width: 800px;"]:has(a[href^="http
 em.tgo-tv.co##+js(aopr, document.oncontextmenu)
 em.tgo-tv.co##+js(aopw, document.oncontextmenu)
 ||cdn.norymo.com/app.js*
+www.hlsplayer.net##script[data-ad-client]
 
 !Whitelisted
 @@||aminhaconta.xl.pt/Campaigns/Blockers/ads.html*
