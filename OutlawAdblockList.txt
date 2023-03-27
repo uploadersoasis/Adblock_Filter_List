@@ -25192,8 +25192,10 @@ www.4shared.com##+js(abort-on-property-write.js, targetElemID)
 ||easy-bars.com/$all
 ||hornsgrid.com/$all
 ||naggingrugcolossal.com/$all
-||www.xadsmart.com/$all
-||xadsmart.com/$all
+!||www.xadsmart.com/two.min.js$script
+!||www.xadsmart.com/countrySelect.min.js$script
+||www.xadsmart.com^$all
+||xadsmart.com^$all
 ||yourwebbars.com/$all
 mixdrop.co##div[id="rn_native_bqupr"]
 mixdrop.co##+js(abort-current-inline-script.js, fromCharCode, charCodeAt)
@@ -27403,7 +27405,7 @@ stfly.me##div[class="ad-banner"]
 ||www.jggqgavrqkudu.com/$all
 ||jggqgavrqkudu.com/$all
 !||d11enq2rymy0yl.cloudfront.net/base.js*
-||d11enq2rymy0yl.cloudfront.net/$all
+||d11enq2rymy0yl.cloudfront.net^$all
 get-to.link##^script:has-text(window.open)
 get-to.link##+js(set-constant.js, ai_js_code, false)
 get-to.link##^script:has-text(ai_adb_process_blocks)
@@ -31372,7 +31374,6 @@ usfinf.net##div[id="fade"]
 !networklessons.com##div[class*="block--content-teaser"]
 mynewsmedia.co##div[class="modal-backdrop fade show"]
 ||owlerydominos.cam/$all
-||vmuid.com/uid/send*
 ||philyraauklet.com/$all
 ||cinglecitrals.com/$all
 ||aptimorph.com/$all
@@ -33711,7 +33712,7 @@ apk4all.com##[href*="//mobileoffers-7-m-download.com/"]
 ||uptimecdn.com/script/ut.js*
 ||uptimecdn.com/script/nesu.js*
 ||uptimecdn.com/script/ksoxqhlw.js*
-||uptimecdn.com/script/clock.js$script,domain=sportsembed.su|trustexploration.com
+||uptimecdn.com/script/clock.js$script,domain=sportsembed.su|trustexploration.com|ntuplay.xyz
 ||solitudeslander.com/$all
 ||unbeedrillom.com/$all
 ||supersedeforbes.com/$all
@@ -37437,7 +37438,6 @@ tv247us.com##+js(noeval)
 !tv247us.com##+js(set-constant, timead, 0, stay)
 !tv247us.com##+js(aopw, timead)
 !tv247us.com##+js(aopr, timead)
-||www.xadsmart.com/two.min.js*
 ||nginx-cf.maxcdn.info/country_blocker.js*
 !www.ustream.to##+js(acis, eval)
 !www.ustream.to##+js(noeval)
@@ -38103,8 +38103,6 @@ time4tv.stream##+js(remove-class, seek-disabled, div, stay)
 time4tv.stream##+js(remove-class, volume-bar-hide, div, stay)
 time4tv.stream##div[class="chatBox"]
 time4tv.stream##iframe[id="rufous-sandbox"]
-||www.intellipopup.com^$script,domain=time4tv.stream
-!||www.intellipopup.com/processing.min.js*
 !||st.chatango.com^$script,domain=time4tv.stream
 ||st.chatango.com^$all,domain=time4tv.stream
 time4tv.stream##div[id="UnMutePlayer"]:style(display: none;)
@@ -38339,13 +38337,32 @@ reddit-tv1-streams.blogspot.com##+js(aopr, window.location)
 reddit-tv1-streams.blogspot.com##+js(aopw, window.location)
 !reddit-tv1-streams.blogspot.com##+js(noeval)
 ! Need to set height and width attributes of iframe NOT the style properties.
-reddit-tv1-streams.blogspot.com##iframe[src^="http://r-strm.blogspot.com/p/"]:style(height: 100% !important; width: 100% !important;)
-reddit-tv1-streams.blogspot.com##div[id="main"]:style(height: 100% !important; width: 100% !important;)
+!reddit-tv1-streams.blogspot.com##iframe[src^="http://r-strm.blogspot.com/p/"]:style(height: 100% !important; width: 100% !important;)
+!reddit-tv1-streams.blogspot.com##div[id="main"]:style(height: 100% !important; width: 100% !important;)
 ! Don't remove height unless can set it too.
 !reddit-tv1-streams.blogspot.com##iframe[src^="http://r-strm.blogspot.com/p/"]:remove-attr(height)
 !r-strm.blogspot.com##iframe[src^="https://worldstreams.click/embed/stream-"]:remove-attr(height)
 !r-strm.blogspot.com##iframe[src^="https://sportskart.click/embed/stream-"]:remove-attr(height)
 !r-strm.blogspot.com##iframe[src^="https://daddylivehd.sx/embed/stream-"]:remove-attr(height)
+||felied.com^$all
+||nanouwho.com^$all
+||obstry.com^$all
+!||origunix.com^$all
+||potsaglu.net^$all
+||unemploymentmaddenmiddleaged.com^$all
+||witchcraftbarterexploded.com^$all
+||acdcdn.com/script/suv4.js*
+||acdcdn.com/script/ut.js*
+||nbidqsoy.xyz^$all
+||pughoomo.xyz^$all
+!||vmuid.com/uid/send*
+!||vmuid.com/script.js$script
+||vmuid.com^$all
+||nannyamplify.com^$all
+||tournamentsevenhung.com^$all
+!||www.intellipopup.com/processing.min.js*
+||www.intellipopup.com^$script,domain=time4tv.stream|sportskart.click
+||pl15806485.highcpmrevenuenetwork.com^$all
 
 !Whitelisted
 @@||aminhaconta.xl.pt/Campaigns/Blockers/ads.html*
