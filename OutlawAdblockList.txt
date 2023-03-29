@@ -35363,7 +35363,6 @@ myshrinker.com##+js(aopw, _ezaq)
 ||worrycrevicewholly.com/$all
 ||ascensionpatterbearable.com/$all
 torrentgalaxy.to##div[id^="atContainer-"]
-||track.adtraction.com/$all
 ||hosteagle.club/analytics.js*
 ||hosteagle.club/www/delivery/$all
 ||hosteagle.club/script/suv4.js*
@@ -37836,6 +37835,8 @@ tv.ustvgo.live##img[id="nielsen-s2s-audit-ping"]
 !tv.ustvgo.live##div[id="banner-advert-container"]
 tv.ustvgo.live##*[class*="ads-wrapper"]
 tv.ustvgo.live##div[id="primary"]:style(width: 100% !important;)
+tv.ustvgo.live##video:remove-attr(disableremoteplayback)
+!tv.ustvgo.live##video:watch-attr(disableremoteplayback):remove-attr(disableremoteplayback)
 ||d2v02itv0y9u9t.cloudfront.net^$all
 player.twitch.tv##button[data-a-target="follow-button"]
 player.twitch.tv##figure[aria-label="foxnewsgo"]
@@ -38392,12 +38393,83 @@ financerites.*##p:has-text(\[ad_)
 ||ldbboacmenwy.com^$all
 ||daddylivehd.sx/stream/adblock.php*
 ||d29mxewlidfjg1.cloudfront.net^$all
-||gorkt.com/script/clock.js$script,domain=sharecast.ws
+||gorkt.com/script/clock.js$script,domain=sharecast.ws|tv247.us
 ||10865.ru^$all
 ||gforanythingam.com^$all
 ||lywasnothycant.info^$all
 !||xml-v4.frdjs-2.co/click?i=*
 ||xml-v4.frdjs-2.co^$all
+||horsiergalchic.com^$all
+||tolterunrout.com^$all
+!||ssl.p.jwpcdn.com/player/v/8.26.8/googima.js$script
+||ssl.p.jwpcdn.com/player/v/*/googima.js$script
+||cdnfalse.comcast.com/cmp/css/cookie-consent.css*
+!||valencia-beacons.xumo.com/content/v2/beacon.json*
+! blocking impression causes it to try repeatedly; no it does anyway
+!||valencia-beacons.xumo.com/content/v2/impression.json*
+||valencia-beacons.xumo.com^$all
+!||metrics.newegg.com/g/collect*
+||metrics.newegg.com^$all
+play.xumo.com##div[class="cmp-revoke"]
+play.xumo.com##div[class="cookieConsent"]
+play.xumo.com##div[class="cookieConsent"]:remove()
+play.xumo.com##div[class="privacyConsent"]
+play.xumo.com##div[class="privacyConsent"]:remove()
+play.xumo.com##^script[id="script-gtm-inline"]
+play.xumo.com##^script[id="script-gtm-inline"]:remove()
+play.xumo.com##script[id="script-gtm-inline"]
+play.xumo.com##script[id="script-gtm-inline"]:remove()
+! Do NOT remove the header.
+!play.xumo.com##header
+!play.xumo.com##span[class="header-inner"]:upward(1)
+!play.xumo.com##main[class="pageType-live-guide"]:style(overflow: hidden !important;)
+!play.xumo.com##div[class="epgList-outer"]:style(overflow: scroll !important;)
+! change main.pageType-live-guide .epgPlayer-player width and height to 100% in https://play.xumo.com/_next/static/css/c80ac5485d35d529.css
+! using over 50% for the video container (epgPlayer-player) breaks the guide spacing and scrolling.
+play.xumo.com##div[class="epgPlayer-player"]:style(width: 50% !important; height: 50% !important;)
+! jw-player should be 100% width and 100% height as it is contained within epgPlayer-player and is relative to that container's size.
+play.xumo.com##div[id="jw-player"]:style(width: 100% !important; height: 100% !important;)
+! The comments lines are continually repeated checks and removals
+play.xumo.com##video:remove-attr(disableremoteplayback)
+!play.xumo.com##video:watch-attr(disableremoteplayback):remove-attr(disableremoteplayback)
+play.xumo.com##input[pseudo="-webkit-media-controls-play-button"]:remove-attr(disabled)
+!play.xumo.com##input[pseudo="-webkit-media-controls-play-button"]:watch-attr(disabled):remove-attr(disabled)
+play.xumo.com##input[pseudo="-internal-media-controls-overflow-button"]:remove-attr(disabled)
+!play.xumo.com##input[pseudo="-internal-media-controls-overflow-button"]:watch-attr(disabled):remove-attr(disabled)
+!play.xumo.com##div:remove-class(epgPlayer-hidden)
+!play.xumo.com##.epgPlayer-hidden[class]:watch-attr(class):remove-attr(class)
+||blfxavygs.xyz^$all
+digistatement.com##div[id^="jnews_module_element_ads-"]
+digistatement.com##div[class^="digis-taboola-ads"]
+digistatement.com##div[class="ads-wrapper"]
+digistatement.com##div[data-ad-slot]
+digistatement.com##iframe[id^="google_ads_"]
+digistatement.com##iframe[id="rufous-sandbox"]
+digistatement.com##div[id^="cookie-law-info-"]
+digistatement.com##+js(aopr, window.advanced_ads_ready_queue)
+digistatement.com##+js(aopw, window.advanced_ads_ready_queue)
+!||cdn-prod.securiti.ai/consent/auto_blocking/4b9bbe2a-9c5d-4512-bb76-768a8ea32bc0/af80147c-00a7-40b1-ab3e-ed5c485fb569.js$script
+!||cdn-prod.securiti.ai/consent/cookie-consent-sdk.js$script
+||cdn-prod.securiti.ai/consent/$script
+||gloamucm.xyz^$all
+||vydwjwbul.xyz^$all
+www.theiet.org##+js(aopr, jsCookieConfig)
+www.theiet.org##+js(aopw, jsCookieConfig)
+www.theiet.org##+js(aopr, _gaq)
+www.theiet.org##+js(aopw, _gaq)
+! blocks GOG.com redirection links
+!||track.adtraction.com^$all
+||mediacpm.pl/serve/ads.js$script
+||ss.mndsrv.com^$all
+||d1b9b1cxai2c03.cloudfront.net^$all
+tv247.us##div[class^="afs_ads"]
+tv247.us##^script:has-text(decodeURIComponent)
+tv247.us##+js(acis, decodeURIComponent)
+tv247.us##^script:has-text(decodeURIComponent)
+tv247.us##+js(acis, decodeURIComponent)
+||tv247.us/deity.php*
+tv247.us##article[id="post-1978"]:style(width: 100% !important);
+tv247.us##div[id="tv247-75013289"]
 
 !Whitelisted
 @@||aminhaconta.xl.pt/Campaigns/Blockers/ads.html*
