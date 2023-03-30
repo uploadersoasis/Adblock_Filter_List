@@ -2456,8 +2456,6 @@ www.kotaku.com.au##.ad
 ||excipientfest.com/media/$all
 ||papironi.com/archive/$all
 ||img.techpowerup.com/images/bnnrs/$all
-!||i2.walmartimages.com/webanalytics/omniture/s_code.js*
-||i2.walmartimages.com/webanalytics/$all
 !||tiads.timeinc.net/ads/tii_bk-coretag.js*
 !||tiads.people.com/ads/tgx.js*
 ||tiads.timeinc.net/$all
@@ -2465,7 +2463,24 @@ www.kotaku.com.au##.ad
 !||img.timeinc.net/tii/omniture/h/common.js*
 ||img.timeinc.net/tii/omniture/$all
 ||collect.rewardstyle.com/$all
-||beacon.stage.walmart.com/$all
+||www.walmart.com/px/*/xhr/b/s/beacon*
+!||www.walmart.com/px/PXu6b0qd2S/xhr/api/v2/collector*
+||www.walmart.com/px/*/xhr/api/v2/collector*
+||grocery.walmart.com/grocery-electrode/api/logger*
+||www.walmart.com/topic/api/logger*
+!||i2.walmartimages.com/webanalytics/omniture/s_code.js*
+||i2.walmartimages.com/webanalytics/$all
+||beacon.grocery.walmart.com^$all
+||beacon.walmart.com^$all
+||beacon.lightest.walmart.com^$all
+||beacon.stage.walmart.com^$all
+||csp.walmart.com^$all
+||omniture.walmart.com^$all
+||rfxwalmart.112.2o7.net^$all
+||tracking.walmart.com^$all
+||walmart.112.2o7.net^$all
+||walmartcom.112.2o7.net^$all
+!||rptrcks.walmart.com^$all
 ||account.guildwars2.com.ickyby.tedady.brogvan.deathbys.co.vu/$all
 ||tredir.go.com/capmon/GetDE^*
 ||a.espncdn.com/prod/scripts/analytics/$all
@@ -13060,8 +13075,6 @@ tutoganga.blogspot.com###fanback
 ||www.udrwyjpwjfeg.com/$all
 ||udrwyjpwjfeg.com/$all
 ||b.wal.co/beacon.js*
-||beacon.grocery.walmart.com/$all
-||beacon.walmart.com/$all
 ||ezknqsblzmsl.com/$all
 ||www.ezknqsblzmsl.com/$all
 ||oubibahphzsz.com/$all
@@ -15443,7 +15456,6 @@ cracksnow.com##.entry-content > center > .btn-raised.btn-primary.btn:nth-of-type
 ||snopes-d.openx.net/$all
 ||analytics.m2.ai/$all
 ||www.npttech.com/advertising.js*
-||grocery.walmart.com/grocery-electrode/api/logger*
 !||chachatool.com/r/$all
 ||chachatool.com/$all
 ||www.chachatool.com/$all
@@ -23528,8 +23540,6 @@ www.geeksforgeels.org##div[class^="cookie-consent"]
 !||z.moatads.com/onscrolldisplay537464193061/moatad.js*
 !||z.moatads.com/cbsprebidheader506831276743/moatheader.js* <- allow so zdnet and other cbs network websites videos will play
 ||z.moatads.com/$all
-!||c.go-mpulse.net/boomerang/$all
-||c.go-mpulse.net/$all
 ||turbocap.net/$all
 ||tb.turbocap.net/$all
 srt.leechpremium.link##.BannerInner
@@ -24576,7 +24586,6 @@ www.usatoday.com##aside[aria-label="advertisement"]
 !||qds0l-hvw7s.ads.tremorhub.com/$all
 !||geolocation.onetrust.com/cookieconsentpub/$all
 ||geolocation.onetrust.com/$all
-!||rptrcks.walmart.com/$all
 letsupload.org##^script:has-text(JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
 letsupload.org##+js(abort-current-inline-script.js, JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
 ##+js(abort-current-inline-script.js, JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
@@ -27807,10 +27816,6 @@ iosgods.com##div[id="iGSupport"]
 iosgods.com##.adsbygoogle
 turbobit.net##a[href*="clksite.com/adServe/"]
 ||authqeqbnhkdjjklumailssocl.web.app/$all
-||kroger.softcoin.com/programs/kroger/common/js/s_code_digitalcouponsprod.js*
-||www.kroger.com/web-workers/ww-analytics-sender.js*
-||kroger.com.ssl.sc.omtrdc.net/$all
-||sstats.kroger.com/$all
 www.filepuma.com##div[class="cookiesTip"]
 www.eltima.com##+js(abort-on-property-read.js, gdpr)
 www.eltima.com##+js(abort-on-property-write.js, gdpr)
@@ -28833,7 +28838,6 @@ www.inputmag.com##iframe[style="display: none"]
 ||insanityoh.com/$all
 ||sillyflowermachine.com/$all
 ||podregarddomicile.com/$all
-||www.kroger.com/sa/analyticsSender.*
 !||letsupload.io/js/xadss.js*
 letsupload.io##div[id="adblockinfo"]
 letsupload.io##div[id="iHCIjECYmrkE"]
@@ -29968,7 +29972,6 @@ www.coolblue.nl##html,body:style(overflow: auto;)
 ||www.hiprofitnetworks.com/$all
 ||open.popnc.com/$all
 ||juryinvolving.com/$all
-||www.walmart.com/topic/api/logger*
 www.eurogamer.net##div[class*="advertContainer"]
 www.eurogamer.net##div[class*="ads-rail"]
 www.eurogamer.net##div[class="advert"]
@@ -30509,7 +30512,6 @@ en.usenet.nl##div[class="cookiefirst-root"]
 bytes.com##div[id="bytes-cm-display"]
 bytes.com##div[class="bytes-cm-consent"]
 www.tutorialsteacher.com##div[class="inart-ad"]
-||csp.walmart.com/$all
 www.techdirt.com##div[id="cookienotice"]
 www.ipwatchdog.com##div[class^="gdpr-pn-"]
 www.ipwatchdog.com##script[id^="cookieBanner-"]
@@ -31084,7 +31086,6 @@ hex-rays.com##div[id="cookies-box"]
 dowsfile.com##div[class*="fa-ad"]
 ||sofinpushpile.com/$all
 ||s6.postimg.org/alrty55gx/android_banner.jpg$image
-||www.walmart.com/px/PXu6b0qd2S/xhr/api/v2/collector*
 chomikuj.pl##div[class*="cookiesInfo"]
 chomikuj-pl##div[id^="acceptChomikujTerms"]
 chomikuj-pl.translate.goog##div[class*="cookiesInfo"]
@@ -31291,8 +31292,6 @@ www.nokia.com##+js(remove-class, scroll-lock, , stay)
 www.nokia.com##style[data-emotion-css="17kut7t-CookieScripts"]
 www.nokia.com##html,body:style(overflow: scroll !important;)
 ||www.nokia.com/phones/en_int/external/analytics-helper.js*
-!||www.kroger.com/cdn/analyticsSender.worker.03d274ebd55d1bb4eef6.js*
-||www.kroger.com/cdn/analyticsSender.worker.*
 mcmw.abilitynet.org.uk##div[class*="cookie-bar"]
 www.quora.com##div[class*="qu-zIndex--blocking_wall"]
 www.quora.com##+js(remove-class, qu-overflow--hidden, ,)
@@ -34397,7 +34396,6 @@ marvelcinematicuniverse.fandom.com##+js(aopr, beacon)
 !||p.faspox.com/dcba/$all
 ||p.faspox.com/$all
 ||loameepu.com/$all
-||www.walmart.com/px/*/xhr/b/s/beacon*
 !||globalsiteanalytics.com/service/hdim*
 ||globalsiteanalytics.com/$all
 !||cdn.decibelinsight.net/i/13557/67144/di.js*
@@ -37697,34 +37695,6 @@ online-fix.me##div[class="sidebar-block"]
 ||topadvdomdesign.com^$all
 ||transitnotice.com^$all
 ||tiffanypinworm.tech^$all
-||multiup.org/img/sonyoutube_long.gif*
-||www.multiup.org/js/blockadblock.js*
-||www.multiup.org/welcome-message*
-||multiup.eu/img/sonyoutube_long.gif*
-||www.multiup.eu/js/blockadblock.js*
-||www.multiup.eu/welcome-message*
-!||stats.multiup.org/piwik.*
-!||stats.multiup.eu/piwik.*
-||stats.multiup.org^$all
-||stats.multiup.eu^$all
-||gorin.multiup.org/pop.js*
-multiup.org,multiup.eu##div[class="mfp-preloader"]
-multiup.org,multiup.eu##div[id="custom-content"]
-multiup.org,multiup.eu##div[class="mfp-bg mfp-ready"]
-multiup.org,multiup.eu##div[class="mfp-container mfp-ajax-holder mfp-s-ready"]
-multiup.org,multiup.eu##div[class="mfp-wrap mfp-auto-cursor mfp-ready"]
-!www.multiup.org##+js(remove-attr, disabled, button.btn.btn-primary)
-!www.multiup.eu##+js(remove-attr, disabled, button.btn.btn-primary)
-multiup.org##+js(remove-attr, disabled, button.btn.btn-primary)
-multiup.eu##+js(remove-attr, disabled, button.btn.btn-primary)
-!www.multiup.org,www.multiup.eu##div[id="cookie-bar"]
-!multiup.org,multiup.eu##div[id="cookie-bar"]
-!multiup.org,multiup.eu##div[id="cookie-plugin-modal"]
-multiup.org,multiup.eu##div[id^="cookie-"]
-!multiup.org,multiup.eu##+js(remove-attr, type, input)
-multiup.org,multiup.eu##+js(remove-attr, type, input[value^="http"])
-!multiup.org,multiup.eu##+js(remove-attr, action, form)
-!multiup.org,multiup.eu##+js(remove-attr, onsubmit, form)
 ||cjvdfw.com^$all
 ||thecloudvantnow.com^$all
 streamingsites.com##div[class^="styles_adverticementBlock"]
@@ -38352,7 +38322,6 @@ reddit-tv1-streams.blogspot.com##+js(aopw, window.location)
 ||felied.com^$all
 ||nanouwho.com^$all
 ||obstry.com^$all
-!||origunix.com^$all
 ||potsaglu.net^$all
 ||unemploymentmaddenmiddleaged.com^$all
 ||witchcraftbarterexploded.com^$all
@@ -38468,12 +38437,87 @@ tv247.us##+js(acis, decodeURIComponent)
 tv247.us##^script:has-text(decodeURIComponent)
 tv247.us##+js(acis, decodeURIComponent)
 ||tv247.us/deity.php*
-tv247.us##article[id="post-1978"]:style(width: 100% !important);
+tv247.us##article[id="post-1978"]:style(width: 100% !important;);
 tv247.us##div[id="tv247-75013289"]
+||belittlepads.com^$all
+||tr-monday.xyz^$all
+||pop.admpire.com^$all
+||cueistratting.com^$all
+||hazanuttriazo.life^$all
+||bocoyoutage.com^$all
+||www.origunix.com^$all
+||origunix.com^$all
+||ywmvoacqwb.xyz^$all
+||tyjqvdbdsfguc.xyz^$all
+!www.fox.com##div[class="previewPass__1tXiW"]
+www.fox.com##div[class^="previewPass_"]
+! removing previewPass causes an error
+!www.fox.com##div[class^="previewPass_"]:remove()
+www.fox.com##div[id="video-player-container"]:remove-class(disableMiniPlayer__30kTr)
+!www.fox.com##+js(aopr, analytics)
+!www.fox.com##+js(aopw, analytics)
+www.fox.com##+js(aopr, ccpaCookie)
+www.fox.com##+js(aopw, ccpaCookie)
+www.fox.com##+js(aopr, window.dataLayer)
+www.fox.com##+js(aopw, window.dataLayer)
+!||analytics.nova.fox.com/analytics.js/v1/ZPcMFFdOZ2C5VbfBbO24WBHm6ywOeElz/analytics.min.js$script
+||analytics.nova.fox.com^$all
+||foxentertainment.hb.omtrdc.net^$all
+||multiup.org/img/sonyoutube_long.gif*
+||www.multiup.org/js/blockadblock.js*
+||www.multiup.org/welcome-message*
+||www.multiup.eu/js/blockadblock.js*
+||www.multiup.eu/welcome-message*
+||multiup.eu/img/sonyoutube_long.gif*
+||multiup.org/img/sonyoutube_long.gif*
+!||stats.multiup.org/piwik.*
+!||stats.multiup.eu/piwik.*
+||stats.multiup.org^$all
+||stats.multiup.eu^$all
+||gorin.multiup.org/pop.js*
+multiup.org,multiup.eu##div[class="mfp-preloader"]
+multiup.org,multiup.eu##div[id="custom-content"]
+multiup.org,multiup.eu##div[class="mfp-bg mfp-ready"]
+multiup.org,multiup.eu##div[class="mfp-container mfp-ajax-holder mfp-s-ready"]
+multiup.org,multiup.eu##div[class="mfp-wrap mfp-auto-cursor mfp-ready"]
+!www.multiup.org,www.multiup.eu##div[id="cookie-bar"]
+!multiup.org,multiup.eu##div[id="cookie-bar"]
+!multiup.org,multiup.eu##div[id="cookie-plugin-modal"]
+multiup.org,multiup.eu##div[id^="cookie-"]
+multiup.org,multiup.eu##a[namehost="UseNext"]
+multiup.org,multiup.eu##a[namehost="UseNext"]:remove()
+multiup.org,multiup.eu##input[name="link"]:remove-class(hidden)
+multiup.org,multiup.eu##input[name="link"]:remove-attr(type)
+multiup.org,multiup.eu##form[action*="://multinews.me/"]:remove-attr(action)
+! change button's "link" attribute to "formaction" attribute.
+! also remove the type="submit" for this to work? no since overrides the "action" attribute on the form.
+! blocks Kroger website?
+! It initially fails, but then works on Firefox after a countdown timer popup and then a retry to login.
+! Brave browser fails regardless of disabling the following or not.
+!||c.go-mpulse.net/boomerang/$all
+!||c.go-mpulse.net/api/config.json?key=*
+||c.go-mpulse.net^$all
+||sstats.kroger.com^$all
+||kroger.demdex.net^$all
+||kroger.softcoin.com/programs/kroger/common/js/s_code_digitalcouponsprod.js*
+||kroger.com.ssl.sc.omtrdc.net^$all
+||www.kroger.com/web-workers/ww-analytics-sender.js*
+||www.kroger.com/sa/analyticsSender.*
+!||www.kroger.com/cdn/analyticsSender.worker.03d274ebd55d1bb4eef6.js*
+!||www.kroger.com/cdn/analyticsSender.worker.2ae728f59d53d7bcb0bc.js
+||www.kroger.com/cdn/analyticsSender.worker.*
+!||www.kroger.com/ruxitagentjs_ICA27NVfghjqrtux_10257221222094147.js
+||www.kroger.com/ruxitagentjs$script
+||ct.pinterest.com^$all,domain=kroger.com
 
 !Whitelisted
-@@||aminhaconta.xl.pt/Campaigns/Blockers/ads.html*
-@@||filecr.com/download/$inline-script
+! blocks Kroger website?
+! It initially fails, but then works on Firefox after a countdown timer popup and then a retry to login.
+! Brave browser fails regardless of enabling the following or not.
+!@@||*.fls.doubleclick.net/activityi;$subdocument,domain=kroger.com
+!@@||sstats.kroger.com^$all
+!@@||c.go-mpulse.net^$all,domain=kroger.com
+@@||dpm.demdex.net^$domain=kroger.com
 ! Pluto.tv requires access to scripts @ tags.tiqcdn.com
 !@@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.*$script,domain=pluto.tv
 @@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/$script,domain=pluto.tv
@@ -38487,6 +38531,8 @@ tv247.us##div[id="tv247-75013289"]
 ! filecr.com needs to allow o*.ingest.sentry.io domains
 @@||o*.ingest.sentry.io/api/*/envelope/?sentry_key=*$xhr,domain=www.filecr.com|filecr.com
 !@@||o*.ingest.sentry.io/api/*/envelope/?sentry_key=*
+@@||aminhaconta.xl.pt/Campaigns/Blockers/ads.html*
+@@||filecr.com/download/$inline-script
 @@||redirect.viglink.com^$all
 !@@||redirect.viglink.com^$first-party
 @@||click.pstmrk.it^$first-party
@@ -38550,8 +38596,6 @@ filecrypt.co#@#li[class="buttons"]
 @@||about.ads.microsoft.com^$all
 @@||ui.ads.microsoft.com^$all
 dailyuploads.net#@#iframe[title="recaptcha challenge"]
-!@@||sstats.kroger.com^$all
-@@||dpm.demdex.net^$domain=kroger.com
 faststore.org#@#+js(no-floc)
 blogspot.com#@#+js(no-floc)
 !nfl.com#@#+js(no-floc)
