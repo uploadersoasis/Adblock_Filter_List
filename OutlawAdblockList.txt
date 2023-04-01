@@ -5651,7 +5651,6 @@ www.myce.com/media.ultrafastcdn.com/ads/$all
 ||ads.uniblue.com/$all
 ||freshupdate.videoupdatelive.com/$all
 ||cdn.2xbpub.com/babanetwork/tags/xbanner/$all
-!||rapidrar.com/js/fuckadblock.js*
 ||ad132m.adpdx.com/$all
 ||p.adpdx.com/$all
 !||ao.btrll.com/Pix-1x1.gif*
@@ -6495,8 +6494,6 @@ zorofiles.com###container > .mainag > .contentback > form > table > tbody > tr >
 ||displayincloud.adk2.co/$all
 ||2y7ylbf.warningyou-mighthavean-infection.com/$all
 www.msn.com###main > .loaded.articlecontent > .articlebody > .arsegment:nth-of-type(1) > .show.nativeAd
-||rapidrar.com/wpr.html*
-rapidrar.com###adb-alert
 !||houndprime.com/download/query.php*
 ||houndprime.com/$all
 !||750fcb.textscene.com/$all
@@ -23562,6 +23559,7 @@ news.ubisoft.com##div[id="footer_tc_privacy"]
 ||pubads.g.doubleclick.net/pagead/adview^*
 !||pubads.g.doubleclick.net/pagead/conversion/$all
 !||cdn.cookielaw.org/consent/$all
+!||cdn.cookielaw.org/opt-out/otCCPAiab.js*
 ||cdn.cookielaw.org/$all
 www.onlinecourses.ooo##span[id^="div-gpt-ad-"]
 www.onlinecourses.ooo##span[id^="ezoic-pub-ad-placeholder"]
@@ -28009,8 +28007,6 @@ apnews.com##div[class^="Component-placeholderWrapper"]
 clicknupload.*##+js(set-constant.js, timeout, 0)
 clicknupload.*##+js(set-constant.js, tick, 0)
 clicknupload.*##+js(remove-class.js, captcha_code)
-!clicknupload.*##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
-clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
 clicknupload.*##style[id^="__web-inspector-hide"]
 clicknupload.*##div[class^="__web-inspector-hide"]
 !||e1f95201b19594.site/advert.gif*
@@ -29498,7 +29494,6 @@ gsm9x.in##+js(aopr, document.onmousedown)
 gsm9x.in##ins[class="adsbygoogle"]
 www.wish.com##div[id="consent_blackbar"]
 www.wish.com##div[id="teconsent"]
-||consent.trustarc.com/$all
 ||static.securedtouch.com/sdk/st-ping-1.1.0p.js*
 ||static.securedtouch.com/sdk/pong.js*
 halabtech.com##*[class*="ezoic-ad"]
@@ -37343,14 +37338,6 @@ dropgalaxy.com##+js(remove-attr, style, #method_free)
 ||fastly.jsdelivr.net/npm/disable-devtool*/*.js$all
 !||fastly.jsdelivr.net/npm/disable-devtool*/*.ts$popup,document,inline-script,inline-font,popunder,subdocument,script,other
 !||fastly.jsdelivr.net/npm/disable-devtool*/*.js$popup,document,inline-script,inline-font,popunder,subdocument,script,other
-rapidrar.com##+js(remove-attr, disabled, #btn_download, stay)
-rapidrar.cr##+js(remove-attr, disabled, #btn_download, stay)
-rapidrar.cr##div[id="adb-alert"]
-rapidrar.com##div[id="adb-alert"]
-||rapidrar.cr/js/fuckadblock.js*
-||rapidrar.com/js/fuckadblock.js*
-||rapidrar.cr/js/rapidrar3.js*
-||rapidrar.com/js/rapidrar3.js*
 ||ermin-oxj.info/$all
 ||kzsfip3v.cfd/$all
 ||techthematter.xyz/adsby.js*
@@ -38489,6 +38476,8 @@ multiup.org,multiup.eu##a[namehost="UseNext"]:remove()
 multiup.org,multiup.eu##input[name="link"]:remove-class(hidden)
 multiup.org,multiup.eu##input[name="link"]:remove-attr(type)
 multiup.org,multiup.eu##form[action*="://multinews.me/"]:remove-attr(action)
+!||consent.trustarc.com/notice?domain=*
+||consent.trustarc.com^$all
 ! change button's "link" attribute to "formaction" attribute.
 ! also remove the type="submit" for this to work? no since overrides the "action" attribute on the form.
 ! blocks Kroger website?
@@ -38509,6 +38498,45 @@ multiup.org,multiup.eu##form[action*="://multinews.me/"]:remove-attr(action)
 !||www.kroger.com/ruxitagentjs_ICA27NVfghjqrtux_10257221222094147.js
 ||www.kroger.com/ruxitagentjs$script
 ||ct.pinterest.com^$all,domain=kroger.com
+!||cdn.confiant-integrations.net/gptprebidnative/202303290926/wrap.js*
+||cdn.confiant-integrations.net/gptprebidnative/$script
+katv.com##+js(aopr, usPrivacyEnabled)
+katv.com##+js(aopw, usPrivacyEnabled)
+katv.com##+js(aopr, adsBlocked)
+katv.com##+js(aopw, adsBlocked)
+katv.com##+js(set, isBlocked, false)
+katv.com##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
+||amp.akamaized.net/amp.gif*
+||internetgoals.com^$all
+!||js.alpixtrack.com/alphpixel.js$script
+||js.alpixtrack.com^$all
+||initiatedevelopedextremelyinfo-product.info^$all
+||divedfaraway.com^$all
+||tnaowooruaxkqtr.xyz^$all
+||improviseprofane.com^$all
+||refrigeratemaimbrunette.com^$all
+!||www.arminius.io/bn/12/jump.php*
+||www.arminius.io^$all
+!clicknupload.red##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
+clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
+!clicknupload.*##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
+clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
+clicknupload.*##input[id="adblock_detected"]:remove()
+||rapidrar.com/wpr.html*
+rapidrar.com##+js(remove-attr, disabled, #btn_download, stay)
+rapidrar.cr##+js(remove-attr, disabled, #btn_download, stay)
+rapidrar.cr##div[id="adb-alert"]
+rapidrar.com##div[id="adb-alert"]
+||rapidrar.cr/js/fuckadblock.js*
+||rapidrar.com/js/fuckadblock.js*
+!||rapidrar.cr/js/rapidrar3.js*
+!||rapidrar.com/js/rapidrar3.js*
+rapidrar.com##+js(aopr, _Hasync)
+rapidrar.com##+js(aopw, _Hasync)
+rapidrar.cr##+js(aopr, _Hasync)
+rapidrar.cr##+js(aopw, _Hasync)
+rapidrar.cr##input[id="btn_download"]:style(display: inline !important;)
+rapidrar.com##input[id="btn_download"]:style(display: inline !important;)
 
 !Whitelisted
 ! blocks Kroger website?
@@ -38517,7 +38545,7 @@ multiup.org,multiup.eu##form[action*="://multinews.me/"]:remove-attr(action)
 !@@||*.fls.doubleclick.net/activityi;$subdocument,domain=kroger.com
 !@@||sstats.kroger.com^$all
 !@@||c.go-mpulse.net^$all,domain=kroger.com
-@@||dpm.demdex.net^$domain=kroger.com
+!@@||dpm.demdex.net^$domain=kroger.com
 ! Pluto.tv requires access to scripts @ tags.tiqcdn.com
 !@@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.*$script,domain=pluto.tv
 @@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/$script,domain=pluto.tv
