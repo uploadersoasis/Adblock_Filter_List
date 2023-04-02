@@ -37424,6 +37424,8 @@ tv247us.com##+js(noeval)
 !tv247us.com##+js(set-constant, timead, 0, stay)
 !tv247us.com##+js(aopw, timead)
 !tv247us.com##+js(aopr, timead)
+||tv247us.com/deity.php*
+tv247us.com##video[class*="jw-video"]:remove-attr(disableremoteplayback)
 ||nginx-cf.maxcdn.info/country_blocker.js*
 !www.ustream.to##+js(acis, eval)
 !www.ustream.to##+js(noeval)
@@ -38441,6 +38443,9 @@ tv247.us##div[id="tv247-75013289"]
 www.fox.com##div[class^="previewPass_"]
 ! removing previewPass causes an error
 !www.fox.com##div[class^="previewPass_"]:remove()
+www.fox.com##+js(set, PreviewPassEnabled, true)
+www.fox.com##+js(set, excludePreviewPass, false)
+www.fox.com##+js(set, previewPassExpired, false)
 www.fox.com##div[id="video-player-container"]:remove-class(disableMiniPlayer__30kTr)
 !www.fox.com##+js(aopr, analytics)
 !www.fox.com##+js(aopw, analytics)
@@ -38578,6 +38583,9 @@ lato.sx##iframe[src^="https://switchcast2.com/embedhls.php"]:style(overflow:hidd
 ||superfastcdn.com/script/yzfdmoan.js$script
 ||switchcast2.com/blast.js$script
 ||fox.tagger.opecloud.com^$all
+||statistic-data.com/^$all
+||sacrip.com^$all
+||depigs.com^$all
 
 !Whitelisted
 ! blocks Kroger website?
