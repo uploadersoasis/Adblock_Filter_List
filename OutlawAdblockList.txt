@@ -11745,6 +11745,7 @@ haxdown.com##.bannersinglefot:nth-of-type(2) > a[href^="http://hdwn.siomi.tech/"
 ||api.faranesh.com/v1/ads/$all
 !||app.medyanetads.com/dfp2.js*
 ||app.medyanetads.com/$all
+!||1ff98d3f0df77fc9fdedf4209cc4db4cc1844a69.cws.conviva.com^$all
 !||cws.conviva.com/cws_iframe.html*
 ||cws.conviva.com/$all
 ||kumekqeccmob.com/$all
@@ -38447,6 +38448,10 @@ www.fox.com##+js(aopr, ccpaCookie)
 www.fox.com##+js(aopw, ccpaCookie)
 www.fox.com##+js(aopr, window.dataLayer)
 www.fox.com##+js(aopw, window.dataLayer)
+www.fox.com##+js(aopr, window.NREUM)
+www.fox.com##+js(aopw, window.NREUM)
+www.fox.com##+js(aopr, window.pintrk)
+www.fox.com##+js(aopw, window.pintrk)
 !||analytics.nova.fox.com/analytics.js/v1/ZPcMFFdOZ2C5VbfBbO24WBHm6ywOeElz/analytics.min.js$script
 ||analytics.nova.fox.com^$all
 ||foxentertainment.hb.omtrdc.net^$all
@@ -38497,7 +38502,7 @@ multiup.org,multiup.eu##form[action*="://multinews.me/"]:remove-attr(action)
 ||www.kroger.com/cdn/analyticsSender.worker.*
 !||www.kroger.com/ruxitagentjs_ICA27NVfghjqrtux_10257221222094147.js
 ||www.kroger.com/ruxitagentjs$script
-||ct.pinterest.com^$all,domain=kroger.com
+||ct.pinterest.com^$all,domain=kroger.com|www.fox.com
 !||cdn.confiant-integrations.net/gptprebidnative/202303290926/wrap.js*
 ||cdn.confiant-integrations.net/gptprebidnative/$script
 katv.com##+js(aopr, usPrivacyEnabled)
@@ -38537,6 +38542,42 @@ rapidrar.cr##+js(aopr, _Hasync)
 rapidrar.cr##+js(aopw, _Hasync)
 rapidrar.cr##input[id="btn_download"]:style(display: inline !important;)
 rapidrar.com##input[id="btn_download"]:style(display: inline !important;)
+||razzedwhimsic.website^$all
+||mokibill.com^$all
+||gluondockize.digital^$all
+||abjurecurfs.website^$all
+||andriasmaximus.com^$all
+||improvedbrowser.online^$all
+!||fluese.com/script/yzfdmoan.js$script
+||fluese.com^$all
+!||aesaul.com/deity.php*
+||aesaul.com^$all
+||givill.com^$all
+||cheorg.com^$all
+||mega4upload.com/deity.php*
+mega4upload.com##script[sadbl]
+||www.qtzedmrehcvpe.com^$all
+||qtzedmrehcvpe.com^$all
+||prankdishevelledhurdle.com^$all
+!||gausic.com/script/yzfdmoan.js$script
+||gausic.com^$all
+||www.vmypbrnfijassw.com^$all
+||vmypbrnfijassw.com^$all
+||lato.sx/deity.php*
+lato.sx##+js(aopr, _Hasync)
+lato.sx##+js(aopw, _Hasync)
+lato.sx##+js(aopr, window["s2ss42"])
+lato.sx##+js(aopw, window["s2ss42"])
+lato.sx##+js(set, v_width, 1280)
+lato.sx##+js(set, v_height, 720)
+!lato.sx##+js(set, PlaySize, style="overflow:hidden;height:100%;width:100%")
+lato.sx##+js(no-setTimeout-if, function)
+lato.sx##^script[admn][admc][zid][did]
+lato.sx##script[admn][admc][zid][did]
+lato.sx##iframe[src^="https://switchcast2.com/embedhls.php"]:style(overflow:hidden;height:100% !important;width:100% !important)
+||superfastcdn.com/script/yzfdmoan.js$script
+||switchcast2.com/blast.js$script
+||fox.tagger.opecloud.com^$all
 
 !Whitelisted
 ! blocks Kroger website?
