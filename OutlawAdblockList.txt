@@ -34767,6 +34767,7 @@ vfxdownload.net##+js(set-constant, count, 0, stay)
 www.patrickmin.com##ins[data-ad-client]
 www.neowin.net##span[class="header-banner-advertising"]
 www.neowin.net##div[data-freestar-ad]
+www.neowin.net##div[data-freestar-ad]:remove()
 www.looper.com##div[data-ad-height]
 www.washingtontimes.com##div[id="ad-lead"]
 www.washingtontimes.com##div[data-ad-settings]
@@ -38200,6 +38201,7 @@ puffer.stanford.edu##+js(aopw, w.rdt)
 ! blocks alert if too many (500) users
 !puffer.stanford.edu##div[class*="alert"][role="alert"]
 ||puffer.stanford.edu/error_reporting/$xhr
+puffer.stanford.edu##button[type="button"]:remove-attr(disabled)
 !la.freestreams-live1.tv##aside[id="custom_html-71"]
 !la.freestreams-live1.tv##iframe[src^="https://st.chatango.com"]
 !la.freestreams-live1.tv##div[id="footer-widgets"]
@@ -38241,6 +38243,7 @@ foxnews.com##+js(aopw, window.location.href.indexOf('video-embed'))
 foxnews.com##+js(set, authenticated, true)
 foxnews.com##+js(set, data, {authenticated: true})
 foxnews.com##div[class*="amp-ad"]
+foxnews.com##div[class*="ad-container"]
 foxnews.com##div[id="desk-interstitial-1x1"]
 foxnews.com##div[id="desktop_desk-peak-interstitial-1x1"]
 insider.foxnews.com##div[class="sidebar-ad"]
@@ -38586,6 +38589,23 @@ lato.sx##iframe[src^="https://switchcast2.com/embedhls.php"]:style(overflow:hidd
 ||statistic-data.com/^$all
 ||sacrip.com^$all
 ||depigs.com^$all
+||t.u1pmt.com^$all
+www.neowin.net##+js(acis, freestar.config.enabled_slots.push)
+www.neowin.net##article[class="classes cPost ipsBox ipsComment ipsComment_parent ipsClearfix ipsClear ipsColumns ipsColumns_noSpacing ipsColumns_collapsePhone"]:has(span):has-text(Advertising)
+||trygalaxy.com/assets/ga/tracking.js$script
+||zworker11.me^$all
+||zcode11.me^$all
+||away.trackersline.com^$all
+alvarotrigo.com##div[id="ezmobfooter"]
+alvarotrigo.com##div[id="ezmobfooter"]:remove()
+alvarotrigo.com##+js(aopr, __inScopeForCCPA)
+alvarotrigo.com##+js(aopw, __inScopeForCCPA)
+alvarotrigo.com##span[class*="ezoic-ad"]
+alvarotrigo.com##span[class*="ezoic-ad"]:remove()
+alvarotrigo.com##span[class*="adtester-container"]
+alvarotrigo.com##span[class*="adtester-container"]:remove()
+peakd.com##div[data-v-764c5ebf]
+peakd.com##div[data-v-764c5ebf]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
