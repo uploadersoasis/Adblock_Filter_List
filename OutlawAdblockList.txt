@@ -38805,6 +38805,11 @@ www.vipleague.st##+js(aopw, _0xc84e)
 www.vipleague.st##+js(aopr, adcashMacros)
 www.vipleague.st##+js(aopw, adcashMacros)
 www.vipleague.st##+js(nostif, /^/)
+www.vipleague.st##+js(nosiif, function())
+www.nolive.me##+js(set, detectDevTool, noopFunc)
+www.nolive.me##+js(set, forceKillplayer, noopFunc)
+www.nolive.me##+js(nosiif, function())
+www.nolive.me##+js(no-setTimeout-if, forceKillplayer)
 ||cdn.espn.com/onetrust/otCCPAiab.js$script
 abc.com##script[ccpa-opt-out-ids]
 abc.com##div[id^="vjs_video_"]:remove-class(evp-new-ad-display)
@@ -38871,6 +38876,27 @@ playermyplayer.me##div:has(span[onmouseup="document.getElementById('floatLayer1'
 ||video-ads-module.ad-tech.nbcuni.com^$all
 ||cdn.lr-in.com/logger-1.min.js$script
 ||shutesaroph.com^$all
+www.cbs.com##div[class="video__player-wrapper"]:remove-attr(data-use-freewheel-ads)
+www.cbs.com##button[type="button"]:remove-class(disabled)
+www.cbs.com##div[class^="ad-info-manager"]
+www.cbs.com##div[class^="ad-info-manager"]:remove()
+www.cbs.com##div[class^="controls-manager"]:remove-class(disable-selection)
+www.cbs.com##div[class^="controls-manager"]:remove-class(remove)
+www.cbs.com##div[class^="controls-manager"]:remove-attr(aria-hidden)
+www.cbs.com##div[class^="controls-backplane"]:remove-attr(aria-hidden)
+www.cbs.com##div[class^="controls-backplane"]:remove-class(disable-selection)
+www.cbs.com##div[class^="controls-backplane"]:remove-class(remove)
+! displays the play button but not active
+!www.cbs.com##button[class*="btn-play-pause"][aria-label="Play"]:style(display:inline !important;)
+www.cbs.com##button[pseudo="-webkit-media-controls-panel"]:style(display:inline !important;)
+www.cbs.com##input[aria-label="pause"]:remove-class(disabled)
+! removing div[data-role="adContainer"] prevents the video from playing
+!www.cbs.com##div[data-role="adContainer"]
+!www.cbs.com##div[data-role="adContainer"]:remove()
+www.cbs.com##div[data-role="adClickEl"]
+www.cbs.com##div[data-role="adClickEl"]:remove()
+||pubads.g.doubleclick.net/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/streams$all
+!@@||pubads.g.doubleclick.net/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/streams$all,domain=www.cbs.com
 
 !Whitelisted
 ! blocks Kroger website?
@@ -38900,6 +38926,8 @@ playermyplayer.me##div:has(span[onmouseup="document.getElementById('floatLayer1'
 @@||api.amplitude.com/identify*
 !@@||assets.adobedtm.com/extensions/EP171e731c9ba34f1c950c36d26e3efd61/AppMeasurement_Module_ActivityMap.min.js$script
 @@||assets.adobedtm.com/extensions/*
+!@@||www.cbs.com/assets/build/js/livetv/liveTVTopEdge-14190598f8bca08b1123.min.js$script
+@@||www.cbs.com/assets/build/js/livetv/$all
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
 !@@||track.adtraction.com^$all
 !@@||aa.online-metrix.net^$all
