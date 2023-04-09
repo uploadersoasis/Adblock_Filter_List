@@ -38890,6 +38890,16 @@ playermyplayer.me##div:has(span[onmouseup="document.getElementById('floatLayer1'
 ! www.nbc.com video streaming needs cdn.branch.io/branch-latest.min.js
 !||cdn.branch.io/branch-latest.min.js*
 @@||cdn.branch.io/branch-latest.min.js$script
+! www.nbc.com video streaming also needs the following six exceptions to work especially assets.adobedtm.com/extensions/:
+@@||rum.browser-intake-datadoghq.com
+@@||session-replay.browser-intake-datadoghq.com
+!@@||events.launchdarkly.com/events/bulk/$all
+@@||events.launchdarkly.com
+!@@||map.mp.nbc.com/webevents/v3/JS/*/events*
+@@||map.mp.nbc.com
+@@||api.amplitude.com/identify*
+!@@||assets.adobedtm.com/extensions/EP171e731c9ba34f1c950c36d26e3efd61/AppMeasurement_Module_ActivityMap.min.js$script
+@@||assets.adobedtm.com/extensions/*
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
 !@@||track.adtraction.com^$all
 !@@||aa.online-metrix.net^$all
