@@ -37735,7 +37735,8 @@ daddylivehd.sx##script[id="tsjson"]
 daddylivehd.sx##div[id="footer"]
 www.google-analytics.com^$script,domain=daddylivehd.sx
 !st.chatango.com^$script,domain=daddylivehd.sx
-st.chatango.com^$all,domain=daddylivehd.sx
+!st.chatango.com^$all,domain=daddylivehd.sx
+||st.chatango.com^$all,domain=time4tv.stream|daddylivehd.sx|time4tv.xyz|freestreams-live1.tv
 daddylivehd.sx##div[id="sidebar"]
 daddylivehd.sx##iframe[id="stats"]
 daddylivehd.sx##+js(aopw, document.oncontextmenu)
@@ -38069,8 +38070,6 @@ time4tv.stream##+js(remove-class, seek-disabled, div, stay)
 time4tv.stream##+js(remove-class, volume-bar-hide, div, stay)
 time4tv.stream##div[class="chatBox"]
 time4tv.stream##iframe[id="rufous-sandbox"]
-!||st.chatango.com^$script,domain=time4tv.stream
-||st.chatango.com^$all,domain=time4tv.stream
 time4tv.stream##div[id="UnMutePlayer"]:style(display: none;)
 time4tv.stream##div[id="UnMutePlayer"]:remove()
 time4tv.stream##div[id="UnMutePlayer"]
@@ -38104,6 +38103,15 @@ embedstream.me##+js(aopr, siteConfig)
 embedstream.me##+js(aopw, siteConfig)
 embedstream.me##+js(aopr, window.dataLayer)
 embedstream.me##+js(aopw, window.dataLayer)
+embedstream.me##+js(set, detectDevTool, noopFunc)
+embedstream.me##+js(set, forceKillplayer, noopFunc)
+embedstream.me##+js(set, debounce, noopFunc)
+embedstream.me##+js(aeld, , detectDevTool)
+embedstream.me##+js(nostif, function())
+embedstream.me##+js(nosiif, function())
+embedstream.me##+js(no-setTimeout-if, forceKillplayer)
+||superfastcdn.com/script/clock.js$script,domain=www.nolive.me|embedstream.me
+||bugits.com/script/clock.js$script,domain=embedstream.me
 ||aarghwoning.digital^$all
 ||nheappyrincenev.com^$all
 ||augailou.com^$all
@@ -38219,15 +38227,12 @@ freestreams-live1.tv##+js(set, keepChecking, noopFunc)
 ! also need no-setTimeout-if to prevent running keepChecking() on a loop
 freestreams-live1.tv##+js(no-setTimeout-if, keepChecking)
 freestreams-live1.tv##div[id="primary"]:style(left: 0px !important; right: 0px !important; width: 100% !important; height: 100% !important;)
-||st.chatango.com^$script,domain=freestreams-live1.tv
 ||cdn.jsdelivr.net/gh/fz6m/console-ban$script
 ||isprocessingnow.com^$all
 !||rdrsec.com/hp$script
 ||rdrsec.com^$all
 !||grunoaph.net/?rb=*
 ||grunoaph.net^$all
-||superfastcdn.com/script/clock.js$script,domain=www.nolive.me|embedstream.me
-||bugits.com/script/clock.js$script,domain=embedstream.me
 ||onvictinitor.com^$all
 ||offergate-apps-pubrel.com^$all
 ||www.ujhhfgbbhs.com^$all
@@ -38427,8 +38432,6 @@ www.theiet.org##+js(aopw, _gaq)
 tv247.us##div[class^="afs_ads"]
 tv247.us##^script:has-text(decodeURIComponent)
 tv247.us##+js(acis, decodeURIComponent)
-tv247.us##^script:has-text(decodeURIComponent)
-tv247.us##+js(acis, decodeURIComponent)
 ||tv247.us/deity.php*
 tv247.us##article[id="post-1978"]:style(width: 100% !important;)
 tv247.us##div[id="tv247-75013289"]
@@ -38469,7 +38472,6 @@ www.fox.com##+js(aopw, window.pintrk)
 ||www.multiup.eu/js/blockadblock.js*
 ||www.multiup.eu/welcome-message*
 ||multiup.eu/img/sonyoutube_long.gif*
-||multiup.org/img/sonyoutube_long.gif*
 !||stats.multiup.org/piwik.*
 !||stats.multiup.eu/piwik.*
 ||stats.multiup.org^$all
@@ -38791,6 +38793,8 @@ strayindicate.net##+js(set, ConsoleBan.init, noopFunc)
 ||www.zdjljvsi.com^$all
 www.vipleague.st##+js(set, detectDevTool, noopFunc)
 www.vipleague.st##+js(set, forceKillplayer, noopFunc)
+www.vipleague.st##+js(set, debounce, noopFunc)
+www.vipleague.st##+js(aeld, , detectDevTool)
 !www.vipleague.st##+js(set, startTime, 0)
 !www.vipleague.st##+js(set, stopTime, 0)
 ||woafoame.net^$all
@@ -38804,10 +38808,13 @@ www.vipleague.st##+js(aopr, _0xc84e)
 www.vipleague.st##+js(aopw, _0xc84e)
 www.vipleague.st##+js(aopr, adcashMacros)
 www.vipleague.st##+js(aopw, adcashMacros)
-www.vipleague.st##+js(nostif, /^/)
+www.vipleague.st##+js(nostif, function())
 www.vipleague.st##+js(nosiif, function())
+www.vipleague.st##+js(no-setTimeout-if, forceKillplayer)
 www.nolive.me##+js(set, detectDevTool, noopFunc)
 www.nolive.me##+js(set, forceKillplayer, noopFunc)
+www.nolive.me##+js(set, debounce, noopFunc)
+www.nolive.me##+js(nostif, function())
 www.nolive.me##+js(nosiif, function())
 www.nolive.me##+js(no-setTimeout-if, forceKillplayer)
 ||cdn.espn.com/onetrust/otCCPAiab.js$script
@@ -38816,7 +38823,6 @@ abc.com##div[id^="vjs_video_"]:remove-class(evp-new-ad-display)
 abc.com##div[id^="vjs_video_"]:remove-class(hide-play-button)
 !||prod.gatekeeper.us-abc.symphony.edgedatg.com/api/ws/telemetry/v1/events*
 ||prod.gatekeeper.us-abc.symphony.edgedatg.com/api/ws/telemetry/$all
-www.guru99.com##div[id^="div-gpt-ad-"]
 www.guru99.com##div[id^="div-gpt-ad-"]:remove()
 www.guru99.com##+js(aopr, pubwise)
 www.guru99.com##+js(aopw, pubwise)
@@ -38866,7 +38872,6 @@ bosscast.eu##iframe[src^="https://www.playermyplayer.me/ad_xxx.php"]
 bosscast.eu##iframe[src^="https://www.playermyplayer.me/ad_xxx.php"]:remove()
 bosscast.eu##div[id="floatLayer1"]
 bosscast.eu##div[id="floatLayer1"]:remove()
-bosscast.eu##div[id="floatLayer1"]:remove()
 ||www.intelligenceadx.com/json3.min.js$script
 playermyplayer.me##+js(aopr, document.oncontextmenu)
 playermyplayer.me##+js(aopw, document.oncontextmenu)
@@ -38897,6 +38902,64 @@ www.cbs.com##div[data-role="adClickEl"]
 www.cbs.com##div[data-role="adClickEl"]:remove()
 ||pubads.g.doubleclick.net/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/streams$all
 !@@||pubads.g.doubleclick.net/ssai/event/Sid4xiTQTkCT1SLu6rjUSQ/streams$all,domain=www.cbs.com
+||www.jokerplayer7.online/snack/css/snackbar.css*
+!www.jokerplayer7.online##div[class^="snackbar"]
+!www.jokerplayer7.online##div[class^="snackbar"]:upward(1)
+!www.jokerplayer7.online##div[class^="snackbar"]:remove()
+www.jokerplayer7.online##snackbar
+www.jokerplayer7.online##snackbar:remove()
+||jokerplayer7.online/ad1.php*
+jokerplayer7.online##div[id="close"]
+jokerplayer7.online##div[id="close"]:remove()
+www.jokerplayer7.online##+js(set, setOverlayAds, noopFunc)
+www.jokerplayer7.online##+js(nosiif, /^function/)
+live.harleyquinnwidget.live##div[id="ad_overlay"]
+live.harleyquinnwidget.live##div[id="ad_overlay"]:remove()
+live.harleyquinnwidget.live##div[id="ads"]
+live.harleyquinnwidget.live##div[id="ads"]:remove()
+live.harleyquinnwidget.live##+js(nosiif, vwu())
+live.harleyquinnwidget.live##+js(aopr, mamafooty)
+live.harleyquinnwidget.live##+js(aopw, mamafooty)
+live.harleyquinnwidget.live##+js(set, top.location, self.location)
+||firkedpace.life^$all
+||dimedoncywydd.com^$all
+||rkjnazpgfihz.com^$all
+||www.slqyrvijxviet.com^$all
+||www.ikcdhvbyg.com^$all
+||www.gwcpdvojom.com^$all
+||sunflowerinformed.com^$all
+||www.betteradsystem.com/barba.min.js*
+time4tv.xyz##+js(acis, decodeURIComponent)
+time4tv.xyz##+js(acis, document.oncontextmenu)
+time4tv.xyz##+js(aopr, document.oncontextmenu)
+time4tv.xyz##+js(aopw, document.oncontextmenu)
+time4tv.xyz##iframe[src^="https://st.chatango.com/"]
+time4tv.xyz##iframe[src^="https://st.chatango.com/"]:remove()
+||gluvoob.com^$all
+||tdsdo.com^$all
+||thebestprizes.life^$all
+||0.checkrobotpage.online^$all
+||checkrobotpage.online^$all
+! blocking or removing the terms prevents the top menu bar buttons from functioning.
+!www.samsungtvplus.com##div[id="terms"]
+!www.samsungtvplus.com##div[id="terms"]:remove()
+www.samsungtvplus.com##div[id="oobe-video"]:remove-class(vjs-controls-disabled)
+www.samsungtvplus.com##div[id="oobe-video"]:remove-class(vjs-user-inactive)
+www.samsungtvplus.com##div[id="oobe-video"]:style(width: 100% !important; pointer-events: auto !important;)
+www.samsungtvplus.com##div[class*="vjs-audio-button"]:remove-class(vjs-hidden)
+www.samsungtvplus.com##div[class*="vjs-menu-button"]:remove-class(vjs-hidden)
+www.samsungtvplus.com##input[aria-label="show more media controls"]:remove-attr(disabled)
+www.samsungtvplus.com##input[pseudo="-webkit-media-controls-play-button"]:remove-attr(disabled)
+www.samsungtvplus.com##div[pseudo="-webkit-media-controls-panel"]:style(display: inline !important;)
+www.samsungtvplus.com##button[class="sc-iqseJM jXVPDX"]:remove-attr(disabled)
+www.samsungtvplus.com##div[class="sc-ikJyIC jwMyfy"]
+www.samsungtvplus.com##div[class="sc-ikJyIC jwMyfy"]:remove()
+www.samsungtvplus.com##+js(set, document.oncontextmenu, undefined)
+!www.samsungtvplus.com##+js(acis, document.oncontextmenu)
+!www.samsungtvplus.com##+js(aopr, document.oncontextmenu)
+!www.samsungtvplus.com##+js(aopw, document.oncontextmenu)
+||sync.publica-ctv.com/ssai-sync.js$script,domain=www.samsungtvplus.com
+||qoe.samsungcloudsolution.com/ma/collect/logs?v=*
 
 !Whitelisted
 ! blocks Kroger website?
