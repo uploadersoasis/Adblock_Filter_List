@@ -6788,7 +6788,8 @@ hugefiles.net###content-wrapper > .content-bg-repeat > form > table > tbody > tr
 ||t.mtagmonetizationb.com/$all
 ||instatime.dist-app.com/$all
 !||metrics.brightcove.com/tracker*
-||metrics.brightcove.com/$all
+!||metrics.brightcove.com/v2/tracker?domain=*
+||metrics.brightcove.com^$all
 !||om.cbsi.com/b/ss/cbsigamespotsite,cbsicbsiall/1/JS-1.5.1/$all
 ||om.cbsi.com/$all
 !||js-agent.newrelic.com/nr-100.js*
@@ -30527,7 +30528,6 @@ www.youtube.com##+js(set-constant.js, this.videoInstreamAdBlocks_, [], stay)
 www.youtube.com##+js(set-constant.js, this.displayAdBlocks_, [], stay)
 www.youtube.com##+js(set-constant.js, a.displayAdBlocks_, null, stay)
 www.youtube.com##+js(set-constant.js, a.videoInstreamAdBlocks_, null, stay)
-||cdn.branch.io/branch-latest.min.js*
 serverfault.com##div[class*="js-consent-banner"]
 www.dmarcanalyzer.com##div[id^="cookiescript_"]
 ||accounts.google.com/cspreport*
@@ -36366,7 +36366,6 @@ www.pluralsight.com##div[class*="cookie-notification-"]
 ||eiteribesshaints.com/$all
 ||komarchlupoid.com/$all
 ||www.aexp-static.com/cdaas/one/rum-telemetry/$all
-||dcf.espn.com/privacy/$all
 www.espn.com##div[title="Advertisement"]
 ||premium-uploaded.net/$all
 ||last0nef1le.com/$all
@@ -38431,7 +38430,7 @@ tv247.us##+js(acis, decodeURIComponent)
 tv247.us##^script:has-text(decodeURIComponent)
 tv247.us##+js(acis, decodeURIComponent)
 ||tv247.us/deity.php*
-tv247.us##article[id="post-1978"]:style(width: 100% !important;);
+tv247.us##article[id="post-1978"]:style(width: 100% !important;)
 tv247.us##div[id="tv247-75013289"]
 ||belittlepads.com^$all
 ||tr-monday.xyz^$all
@@ -38757,7 +38756,7 @@ www.sportsbaytv.com##+js(set, hostname, '')
 www.sportsbaytv.com##+js(nosiif, vwu())
 1rowsportz.info##+js(aopr, _Hasync)
 1rowsportz.info##+js(aopw, _Hasync)
-||1rowsportz.info/sbss.js$script
+!||1rowsportz.info/sbss.js$script
 ||1rowsportz.info/deity.php*
 1rowsportz.info##+js(aopr, x.withCredentials)
 1rowsportz.info##+js(aopw, x.withCredentials)
@@ -38787,6 +38786,91 @@ strayindicate.net##+js(set, ConsoleBan.init, noopFunc)
 !||cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js$script
 ||cdn.jsdelivr.net/npm/console-ban@$script
 ||biancasunlit.com^$all
+!||www.hugecouponcodes.net^$all
+||www.hugecouponcodes.net/pop_lp.php*
+||www.zdjljvsi.com^$all
+www.vipleague.st##+js(set, detectDevTool, noopFunc)
+www.vipleague.st##+js(set, forceKillplayer, noopFunc)
+!www.vipleague.st##+js(set, startTime, 0)
+!www.vipleague.st##+js(set, stopTime, 0)
+||woafoame.net^$all
+||xml-v4.kunvertads.com^$all
+||avdpmeated.uno^$all
+||www.vipleague.st/deity.php*
+||www.vipleague.st/script/yzfdmoan.js$script
+www.vipleague.st##div[class="Ad-Container"]
+www.vipleague.st##+js(set, _0xc84e, [])
+www.vipleague.st##+js(aopr, _0xc84e)
+www.vipleague.st##+js(aopw, _0xc84e)
+www.vipleague.st##+js(aopr, adcashMacros)
+www.vipleague.st##+js(aopw, adcashMacros)
+www.vipleague.st##+js(nostif, /^/)
+||cdn.espn.com/onetrust/otCCPAiab.js$script
+abc.com##script[ccpa-opt-out-ids]
+abc.com##div[id^="vjs_video_"]:remove-class(evp-new-ad-display)
+abc.com##div[id^="vjs_video_"]:remove-class(hide-play-button)
+!||prod.gatekeeper.us-abc.symphony.edgedatg.com/api/ws/telemetry/v1/events*
+||prod.gatekeeper.us-abc.symphony.edgedatg.com/api/ws/telemetry/$all
+www.guru99.com##div[id^="div-gpt-ad-"]
+www.guru99.com##div[id^="div-gpt-ad-"]:remove()
+www.guru99.com##+js(aopr, pubwise)
+www.guru99.com##+js(aopw, pubwise)
+www.guru99.com##+js(set, pubwise.enabled, false)
+||assets-cdn.watchdisneyfe.com/delta/assets/abc/nielsen.js$script
+||dcf.espn.com/privacy/$all
+bosscast.eu##iframe[id="rufous-sandbox"]
+bosscast.eu##iframe[id="rufous-sandbox"]:remove()
+||bettingoffer.xyz/js/popup.js$script
+||bettingoffer.xyz/ads.php*
+||www.playermyplayer.me/ad_xxx.php*
+||blokstvs.xyz/js/ar.js$script
+!||myopyrum.digital/rf/$all
+||myopyrum.digital^$all
+bettingoffer.xyz##div[id="advertisement"]
+bettingoffer.xyz##div[id="advertisement"]:remove()
+bettingoffer.xyz##+js(aopr, redlink_url)
+bettingoffer.xyz##+js(aopw, redlink_url)
+lgbtrans.xyz##div[id="advertisement"]
+lgbtrans.xyz##div[id="advertisement"]:remove()
+lgbtrans.xyz##+js(aopr, redlink_url)
+lgbtrans.xyz##+js(aopw, redlink_url)
+||finishnecklace.com^$all
+||www.bkvuiwxqrr.com^$all
+||www.lujvwjsiqhne.com^$all
+||www.sxcbnqubygqekx.com^$all
+||sxcbnqubygqekx.com^$all
+||ruthrequire.com^$all
+||brelif.net/abc/pub113.php*
+!||revenrent.fun/vbsmall/index.php*
+||revenrent.fun^$all
+||web.automatedcomputers.com^$all
+||kepplir.com^$all
+brelif.net##div[id="micast_ads"]
+brelif.net##div[id="micast_ads"]:remove()
+brelif.net##div[id="closebutton"]
+brelif.net##div[id="closebutton"]:remove()
+brelif.net##+js(aopr, google_render_ad)
+brelif.net##+js(aopw, google_render_ad)
+brelif.net##+js(nosiif, secs)
+brelif.net##+js(no-setTimeout-if, showClose)
+www.visiblesafe.com##div[id="obrazek"]
+www.visiblesafe.com##div[id="obrazek"]:remove()
+www.visiblesafe.com##a[id="remove-over"]
+www.visiblesafe.com##a[id="remove-over"]:remove()
+bosscast.eu##iframe[src^="https://www.playermyplayer.me/ad_xxx.php"]
+bosscast.eu##iframe[src^="https://www.playermyplayer.me/ad_xxx.php"]:remove()
+bosscast.eu##div[id="floatLayer1"]
+bosscast.eu##div[id="floatLayer1"]:remove()
+bosscast.eu##div[id="floatLayer1"]:remove()
+||www.intelligenceadx.com/json3.min.js$script
+playermyplayer.me##+js(aopr, document.oncontextmenu)
+playermyplayer.me##+js(aopw, document.oncontextmenu)
+playermyplayer.me##div:has(span[onmouseup="document.getElementById('floatLayer1').style.display='none'"])
+playermyplayer.me##div:has(span[onmouseup="document.getElementById('floatLayer1').style.display='none'"]):remove()
+||e12872de91aaca7a39095801bdf5f168d87912fa.cws.conviva.com^$all
+||video-ads-module.ad-tech.nbcuni.com^$all
+||cdn.lr-in.com/logger-1.min.js$script
+||shutesaroph.com^$all
 
 !Whitelisted
 ! blocks Kroger website?
@@ -38803,6 +38887,9 @@ strayindicate.net##+js(set, ConsoleBan.init, noopFunc)
 !@@||sync.search.spotxchange.com/partner?adv_id=$xhr,domain=pluto.tv
 !@@||tpc.googlesyndication.com/sodar/$all,domain=pluto.tv
 !@@||*.v.fwmrm.net/ad/$xhr,domain=pluto.tv
+! www.nbc.com video streaming needs cdn.branch.io/branch-latest.min.js
+!||cdn.branch.io/branch-latest.min.js*
+@@||cdn.branch.io/branch-latest.min.js$script
 !codingshiksha.com#@#^script:has-text(/ezlazyload/i)
 !@@||track.adtraction.com^$all
 !@@||aa.online-metrix.net^$all
