@@ -33707,6 +33707,7 @@ apk4all.com##[href*="//mobileoffers-7-m-download.com/"]
 ||uptimecdn.com/script/ut.js*
 ||uptimecdn.com/script/nesu.js*
 ||uptimecdn.com/script/ksoxqhlw.js*
+||uptimecdn.com/script/yzfdmoan.js*
 ||uptimecdn.com/script/clock.js$script,domain=sportsembed.su|trustexploration.com|ntuplay.xyz
 ||solitudeslander.com/$all
 ||unbeedrillom.com/$all
@@ -38083,8 +38084,6 @@ extrafreetv.com##+js(remove-attr, OnContextMenu, body, stay)
 ! div[id="UnMutePlayer"] has to be on embedded stream/iframe not root page
 gocast2.com##div[id="UnMutePlayer"]
 gocast2.com##div[id="UnMutePlayer"]:remove()
-cricplay2.xyz^script[id="_waumnk"]
-cricplay2.xyz##script[id="_waumnk"]
 ||empied.com/script/clock.js*
 ||www.premiumvertising.com/twilio.min.js*
 ||dm7ii62qkhy9z.cloudfront.net^$all
@@ -38294,11 +38293,18 @@ sportsembed.su##+js(aopw, _Hasync)
 ||cusecwhitten.com^$all
 ||keidweneth.com^$all
 ||enerativearea.org^$all
+em.tgo-tv.co##div:has(iframe[id="chat"]):remove()
+em.tgo-tv.co##iframe[id="chat"]
+em.tgo-tv.co##iframe[id="chat"]:remove()
 em.tgo-tv.co##iframe[src^="https://st.chatango.com/"]
 em.tgo-tv.co##a[href^="https://tgo-tv.co/vpn/vpn.php"]
 em.tgo-tv.co##div[style="background:white; max-width: 800px;"]:has(a[href^="https://tgo-tv.co/vpn/vpn.php"])
 em.tgo-tv.co##+js(aopr, document.oncontextmenu)
 em.tgo-tv.co##+js(aopw, document.oncontextmenu)
+!em.tgo-tv.co##div:has(iframe[src^="https://extrafreetv.com/embed/em.php"]):style(width: 100% !important; height: 100% !important;)
+!em.tgo-tv.co##div:has(iframe[src^="https://extrafreetv.com/embed/em.php"]):style(width: 1280px !important; height: 720px !important;)
+!em.tgo-tv.co##iframe[src^="https://extrafreetv.com/embed/em.php"]:remove-attr(width)
+!em.tgo-tv.co##iframe[src^="https://extrafreetv.com/embed/em.php"]:remove-attr(height)
 ||cdn.norymo.com/app.js*
 www.hlsplayer.net##script[data-ad-client]
 ||xkcgjkwjbmki.xyz^$all
@@ -38960,6 +38966,41 @@ www.samsungtvplus.com##+js(set, document.oncontextmenu, undefined)
 !www.samsungtvplus.com##+js(aopw, document.oncontextmenu)
 ||sync.publica-ctv.com/ssai-sync.js$script,domain=www.samsungtvplus.com
 ||qoe.samsungcloudsolution.com/ma/collect/logs?v=*
+||taboutricewu.xyz^$all
+cdn.sportcast.life##+js(aopw, emulateStorage)
+cdn.sportcast.life##+js(aopr, emulateStorage)
+cdn.sportcast.life##div[id="stats"]
+cdn.sportcast.life##div[id="stats"]:remove()
+www.digitbin.com##ins[data-ad-client]
+www.digitbin.com##ins[data-ad-client]:remove()
+www.digitbin.com##+js(aopw, adsbygoogle)
+www.digitbin.com##+js(aopr, adsbygoogle)
+www.digitbin.com##div[class^="ai-viewport-"]
+www.digitbin.com##div[class^="ai-viewport-"]:remove()
+www.digitbin.com##div[class^="code-block code-block-"]:has(div:has-text(Advertisement))
+||entrerscab.com^$all
+||www.ujlrvzfws.com^$all
+||nevail.com/script/yzfdmoan.js*
+||nevail.com/script/$script
+cricplay2.xyz##^script[id="_waumnk"]
+cricplay2.xyz##script[id="_waumnk"]
+!cricplay2.xyz##+js(nostif, function())
+cricplay2.xyz##+js(nostif, /^/)
+cricplay2.xyz##+js(set, v_width, "100%")
+cricplay2.xyz##+js(set, v_height, 700)
+cricplay2.xyz##+js(aopr, _Hasync)
+cricplay2.xyz##+js(aopw, _Hasync)
+!||cricplay2.xyz/deity.php*
+||spated.com/deity.php*
+||spated.com/script/i.php*
+||millionscast.com/blast.js*
+||millionscast.com/z-6854882*
+||uptimecdn.com/prod/redirect.html$all,domain=cricplay2.xyz
+millionscast.com##div[id="UnMutePlayer"]
+millionscast.com##div[id="UnMutePlayer"]:remove()
+millionscast.com##+js(acis, decodeURIComponent)
+millionscast.com##a[href^="https://youradexchange.com/ad/visit.php"]
+millionscast.com##a[href^="https://youradexchange.com/ad/visit.php"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
