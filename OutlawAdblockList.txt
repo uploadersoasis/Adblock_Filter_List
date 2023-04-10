@@ -37734,7 +37734,7 @@ daddylivehd.sx##div[id="footer"]
 www.google-analytics.com^$script,domain=daddylivehd.sx
 !st.chatango.com^$script,domain=daddylivehd.sx
 !st.chatango.com^$all,domain=daddylivehd.sx
-||st.chatango.com^$all,domain=time4tv.stream|daddylivehd.sx|time4tv.xyz|freestreams-live1.tv|klubsports.online
+||st.chatango.com^$all,domain=time4tv.stream|daddylivehd.sx|time4tv.xyz|freestreams-live1.tv|klubsports.online|cdn.stream-24.net
 daddylivehd.sx##div[id="sidebar"]
 daddylivehd.sx##iframe[id="stats"]
 daddylivehd.sx##+js(aopw, document.oncontextmenu)
@@ -39052,6 +39052,7 @@ casadelfutbol.info##+js(aopw, x.withCredentials)
 ||d1hogxc58mhzo9.cloudfront.net^$all
 ||fdorxsat.com/XqdBH.htm*
 ||www.fdorxsat.com/c.js*
+||www.fdorxsat.com/yer.js*
 ||voraciousglove.net/deb.js*
 ||tableau123-dev.abla.io/api/collect*
 ||tableau123-dev.abla.io/abla.js*
@@ -39066,7 +39067,7 @@ voraciousglove.net##div[id="btn-unmute"]:remove()
 ||klubsports.online/player/refresh.php*
 ||jinxrussian.com^$all
 ||tucanaldeportivo.com^$all
-||st.chatango.com/js/gz/emb.js$script,domain=klubsports.online​
+||st.chatango.com/js/gz/emb.js$script,domain=klubsports.online​|cdn.stream-24.net
 ||pl14979773.highrevenuegate.com^$all
 klubsports.online##+js(acis, x.withCredentials)
 klubsports.online##+js(aopr, x.withCredentials)
@@ -39083,6 +39084,33 @@ klubsports.online##iframe[src="about:blank"]
 klubsports.online##iframe[src="about:blank"]:remove()
 klubsports.online##+js(aeld, /contextmenu|keydown/)
 ||oprxmqfxhulfl.com^$all
+cdn.stream-24.net##div[class"cdn-advsmedia-player"]
+cdn.stream-24.net##div[class"cdn-advsmedia-player"]:remove()
+cdn.stream-24.net##div[id="chat"]
+cdn.stream-24.net##div[id="chat"]:remove()
+cdn.stream-24.net##div[class="cont_channels"]
+cdn.stream-24.net##div[class="cont_channels"]:remove()
+cdn.stream-24.net##+js(set, pu, noopfunc)
+cdn.stream-24.net##+js(set, stagedTmpFunc, noopfunc)
+cdn.stream-24.net##+js(set, stagedPopUnder, noopfunc)
+cdn.stream-24.net##+js(set, stagedPopFrequency, "")
+cdn.stream-24.net##+js(set, $links, [])
+cdn.stream-24.net##+js(set, $astron_banner, false)
+cdn.stream-24.net##+js(acis, web3)
+cdn.stream-24.net##+js(aopr, web3)
+cdn.stream-24.net##+js(aopw, web3)
+cdn.stream-24.net##+js(acis, pu)
+cdn.stream-24.net##+js(aopr, pu)
+cdn.stream-24.net##+js(aopw, pu)
+maxsport.one##+js(acis, decodeURIComponent)
+maxsport.one##+js(acis, window.c18fe44ffdefee243e858c7444dda370)
+maxsport.one##+js(aopr, window.c18fe44ffdefee243e858c7444dda370)
+maxsport.one##+js(aopw, window.c18fe44ffdefee243e858c7444dda370)
+maxsport.one##+js(acis, _Hasync)
+maxsport.one##+js(aopr, _Hasync)
+maxsport.one##+js(aopw, _Hasync)
+||www.displayvertising.com/index.js*
+||cdn.taboola.com/libtrc/chatango-network/loader.js$script,domain=cdn.stream-24.net|klubsports.online
 
 !Whitelisted
 ! blocks Kroger website?
