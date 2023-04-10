@@ -27385,7 +27385,6 @@ krembol.ga##+js(set-constant.js, logged_impression, true)
 ||ahedsply.com/$all
 !||cdnquality.com/script/suv4.js*
 !||cdnquality.com/script/ut.js*
-!||cdnquality.com/script/yzfdmoan.js*
 !||cdnquality.com/prod/redirect.html*
 ||cdnquality.com/script/$all
 ||onesaimdew.com/$all
@@ -33707,7 +33706,6 @@ apk4all.com##[href*="//mobileoffers-7-m-download.com/"]
 ||uptimecdn.com/script/ut.js*
 ||uptimecdn.com/script/nesu.js*
 ||uptimecdn.com/script/ksoxqhlw.js*
-||uptimecdn.com/script/yzfdmoan.js*
 ||uptimecdn.com/script/clock.js$script,domain=sportsembed.su|trustexploration.com|ntuplay.xyz
 ||solitudeslander.com/$all
 ||unbeedrillom.com/$all
@@ -36242,7 +36240,6 @@ www.linkedin.com##+js(aopw, window.impressionTracking)
 nw.freestreams-live1.com##+js(acis, debugger)
 nw.freestreams-live1.com##+js(acis, anonymous)
 !||speai.com/script/pustrck.js*
-!||speai.com/script/yzfdmoan.js*
 ||speai.com/script/$all
 !nw.freestreams-live1.com##div[id="UnMutePlayer"]:remove()
 ||browsobsolete.com/$all
@@ -38076,10 +38073,24 @@ time4tv.stream##div[id="UnMutePlayer"]:remove()
 time4tv.stream##div[id="UnMutePlayer"]
 !time4tv.stream##iframe[src^="https://www.sports-stream.click/s2w/spsch.php"]
 time4tv.stream##iframe[src^="https://st.chatango.com/"]
-||extrafreetv.com/images/x1.png*
-!||extrafreetv.com/camp1.php*
-!extrafreetv.com##+js(set, top.location, '')
+! None of the following appears to work to stop redirection for extrafreetv.com/embed/em.php URL's
+extrafreetv.com##+js(set, top.location, null)
 extrafreetv.com##+js(acis, top.location)
+extrafreetv.com##^script:has-text(google.com):remove()
+extrafreetv.com##^script:has-text(google.com)
+extrafreetv.com##^script:has-text(google.com):remove()
+extrafreetv.com##script:has-text(google.com)
+extrafreetv.com##script:has-text(google.com):remove()
+extrafreetv.com##+js(acis, google.com)
+extrafreetv.com##+js(acis, channel)
+extrafreetv.come##+js(aopr, channel)
+extrafreetv.come##+js(aopr, channel)
+extrafreetv.com##+js(set, window.b364e002848ea53878a528b3cbf77ffd, "")
+extrafreetv.com##+js(acis, window.b364e002848ea53878a528b3cbf77ffd)
+extrafreetv.com##+js(aopw, window.b364e002848ea53878a528b3cbf77ffd)
+extrafreetv.com##+js(aopw, window.b364e002848ea53878a528b3cbf77ffd)
+!||extrafreetv.com/camp1.php*
+||extrafreetv.com/images/x1.png*
 extrafreetv.com##+js(remove-attr, OnContextMenu, body, stay)
 ! div[id="UnMutePlayer"] has to be on embedded stream/iframe not root page
 gocast2.com##div[id="UnMutePlayer"]
@@ -38089,7 +38100,7 @@ gocast2.com##div[id="UnMutePlayer"]:remove()
 ||dm7ii62qkhy9z.cloudfront.net^$all
 ||d333p98mzatwjz.cloudfront.net^$all
 ||tpeoplesho.info^$all
-!||embedstream.me/cash.min.js*
+||embedstream.me/cash.min.js*
 !||embedstream.me/cash.min.js$all
 ||embedstream.me/cash.min.js$popup,document,inline-script,inline-font,popunder,subdocument,script,other
 ||embedstream.me/deity.php*
@@ -38564,7 +38575,6 @@ rapidrar.com##input[id="btn_download"]:style(display: inline !important;)
 ||abjurecurfs.website^$all
 ||andriasmaximus.com^$all
 ||improvedbrowser.online^$all
-!||fluese.com/script/yzfdmoan.js$script
 ||fluese.com^$all
 !||aesaul.com/deity.php*
 ||aesaul.com^$all
@@ -38575,7 +38585,6 @@ mega4upload.com##script[sadbl]
 ||www.qtzedmrehcvpe.com^$all
 ||qtzedmrehcvpe.com^$all
 ||prankdishevelledhurdle.com^$all
-!||gausic.com/script/yzfdmoan.js$script
 ||gausic.com^$all
 ||www.vmypbrnfijassw.com^$all
 ||vmypbrnfijassw.com^$all
@@ -38591,7 +38600,6 @@ lato.sx##+js(no-setTimeout-if, function)
 lato.sx##^script[admn][admc][zid][did]
 lato.sx##script[admn][admc][zid][did]
 lato.sx##iframe[src^="https://switchcast2.com/embedhls.php"]:style(overflow:hidden;height:100% !important;width:100% !important)
-||superfastcdn.com/script/yzfdmoan.js$script
 ||switchcast2.com/blast.js$script
 ||fox.tagger.opecloud.com^$all
 ||statistic-data.com^$all
@@ -38807,7 +38815,6 @@ www.vipleague.st##+js(aeld, , detectDevTool)
 ||xml-v4.kunvertads.com^$all
 ||avdpmeated.uno^$all
 ||www.vipleague.st/deity.php*
-||www.vipleague.st/script/yzfdmoan.js$script
 www.vipleague.st##div[class="Ad-Container"]
 www.vipleague.st##+js(set, _0xc84e, [])
 www.vipleague.st##+js(aopr, _0xc84e)
@@ -38969,8 +38976,10 @@ www.samsungtvplus.com##+js(set, document.oncontextmenu, undefined)
 ||taboutricewu.xyz^$all
 cdn.sportcast.life##+js(aopw, emulateStorage)
 cdn.sportcast.life##+js(aopr, emulateStorage)
-cdn.sportcast.life##div[id="stats"]
-cdn.sportcast.life##div[id="stats"]:remove()
+cdn.sportcast.life##iframe[id="stats"]
+cdn.sportcast.life##iframe[id="stats"]:remove()
+cdn.sportcast.life##+js(aopw, _Hasync)
+cdn.sportcast.life##+js(aopr, _Hasync)
 www.digitbin.com##ins[data-ad-client]
 www.digitbin.com##ins[data-ad-client]:remove()
 www.digitbin.com##+js(aopw, adsbygoogle)
@@ -38980,7 +38989,6 @@ www.digitbin.com##div[class^="ai-viewport-"]:remove()
 www.digitbin.com##div[class^="code-block code-block-"]:has(div:has-text(Advertisement))
 ||entrerscab.com^$all
 ||www.ujlrvzfws.com^$all
-||nevail.com/script/yzfdmoan.js*
 ||nevail.com/script/$script
 cricplay2.xyz##^script[id="_waumnk"]
 cricplay2.xyz##script[id="_waumnk"]
@@ -39001,6 +39009,32 @@ millionscast.com##div[id="UnMutePlayer"]:remove()
 millionscast.com##+js(acis, decodeURIComponent)
 millionscast.com##a[href^="https://youradexchange.com/ad/visit.php"]
 millionscast.com##a[href^="https://youradexchange.com/ad/visit.php"]:remove()
+||ufojwpgypela.xyz^$all
+||www.xyjaewocysv.com^$all
+||wasgildedall.com^$all
+!||sotchoum.com/tag.min.js*
+||sotchoum.com^$all
+www.playstream.site##+js(aopr, _Hasync)
+www.playstream.site##+js(aopw, _Hasync)
+www.playstream.site###iframe
+www.playstream.site###iframe:remove()
+www.playstream.site##iframe[src*="//www.youtube.com/embed/"]
+www.playstream.site##iframe[src*="//www.youtube.com/embed/"]:remove()
+||widual.com/deity.php*
+||cdn.sportcast.life/scripts/ads.js*
+!||www.tzugumojfm.com/pbt.js*
+||www.tzugumojfm.com^$all
+||tzugumojfm.com^$all
+!||ngcies.com/script/yzfdmoan.js*
+!||fluese.com/script/yzfdmoan.js*
+!||speai.com/script/yzfdmoan.js*
+!||uptimecdn.com/script/yzfdmoan.js*
+!||cdnquality.com/script/yzfdmoan.js*
+!||gausic.com/script/yzfdmoan.js*
+!||superfastcdn.com/script/yzfdmoan.js*
+!||www.vipleague.st/script/yzfdmoan.js*
+!||nevail.com/script/yzfdmoan.js*
+*/script/yzfdmoan.js*
 
 !Whitelisted
 ! blocks Kroger website?
