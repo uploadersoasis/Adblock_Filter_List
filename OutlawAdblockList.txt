@@ -38708,9 +38708,6 @@ www.redbox.com##+js(aopw, axel)
 www.tikilive.com##div[id^="vjs_video_"]:remove-class(vjs-controls-disabled)
 !||www.tikilive.com/watch/assets/ads/videojs.ads.min.js$script
 ||www.tikilive.com/watch/assets/ads/$all
-webapp.airy.tv##+js(aopr, window.googletag)
-webapp.airy.tv##+js(aopw, window.googletag)
-webapp.airy.tv##input[pseudo="-webkit-media-controls-play-button"]:style(display: inline !important;)
 ||tracking.vidgo.com^$all
 www.iptvplayers.com##ins[data-ad-client]
 www.iptvplayers.com##ins[data-ad-client]:remove()
@@ -39084,8 +39081,14 @@ klubsports.online##iframe[src="about:blank"]
 klubsports.online##iframe[src="about:blank"]:remove()
 klubsports.online##+js(aeld, /contextmenu|keydown/)
 ||oprxmqfxhulfl.com^$all
-cdn.stream-24.net##div[class"cdn-advsmedia-player"]
-cdn.stream-24.net##div[class"cdn-advsmedia-player"]:remove()
+! cdn.stream-24.net##div[class="cdn-advsmedia-player"] doesn't get removed because cdn.stream-24.net left out the = after class in the tag.
+cdn.stream-24.net##div[class="cdn-advsmedia-player"]
+cdn.stream-24.net##div[class="cdn-advsmedia-player"]:remove()
+cdn.stream-24.net##:xpath("/html/body/div/div[6]"):has(iframe[src="https://cdn.spo-play.live/sports/vplayer/sf1/?t="])
+cdn.stream-24.net##:xpath("/html/body/div/div[6]"):has(iframe[src="https://cdn.spo-play.live/sports/vplayer/sf1/?t="]):remove()
+! ##iframe removal doesn't work
+!cdn.stream-24.net##iframe[src="https://cdn.spo-play.live/sports/vplayer/sf1/?t="]
+!cdn.stream-24.net##iframe[src="https://cdn.spo-play.live/sports/vplayer/sf1/?t="]:remove()
 cdn.stream-24.net##div[id="chat"]
 cdn.stream-24.net##div[id="chat"]:remove()
 cdn.stream-24.net##div[class="cont_channels"]
@@ -39111,6 +39114,48 @@ maxsport.one##+js(aopr, _Hasync)
 maxsport.one##+js(aopw, _Hasync)
 ||www.displayvertising.com/index.js*
 ||cdn.taboola.com/libtrc/chatango-network/loader.js$script,domain=cdn.stream-24.net|klubsports.online
+wikisport.click##^script:xpath("/html/head/script[1]")
+wikisport.click##^script:has-text(mustave)
+wikisport.click##:xpath("/html/head/script[1]")
+wikisport.click##:xpath("/html/head/script[1]"):remove()
+wikisport.click##+js(set, mustave, atob('L2hscy9zdHJlYW0ubTN1OD9jaD1zcG4='))
+ntuplay.xyz##+js(set, currentReferer, "wikisport.click")
+ntuplay.xyz##+js(set, attr, {})
+ntuplay.xyz##+js(acis, currentReferer)
+ntuplay.xyz##+js(aopr, currentReferer)
+ntuplay.xyz##+js(aopw, currentReferer)
+ntuplay.xyz##+js(acis, window)
+ntuplay.xyz##+js(aopr, window)
+ntuplay.xyz##+js(aopw, window)
+||ntuplay.xyz/resources/scripts/disclaimer.js*
+ntuplay.xyz##div[id="myCookieConsent"]
+pluto.tv###omid_v1_present
+pluto.tv###omid_v1_present:remove()
+pluto.tv##input[aria-label="pause"]:remove-attr(disabled)
+pluto.tv##input[aria-label="pause"]:style(display: inline !important;)
+pluto.tv##input[aria-label="show more media controls"]:remove-attr(disabled)
+||webtech-web-grn-assets.pluto.tv/assets/scripts/omid-session-client-v1-0408776cb37411dedf265f8de876b0bf.js*
+||webtech-web-grn-assets.pluto.tv/assets/scripts/omweb-v1-9a4193fea0612ada0611a8268129d6e5.js*
+||webtech-web-grn-assets.pluto.tv/assets/scripts/$script
+!||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.sync.js*
+!||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.js*
+||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.*
+! blocking window.googletag breaks the website
+!webapp.airy.tv##+js(aopr, window.googletag)
+!webapp.airy.tv##+js(aopw, window.googletag)
+webapp.airy.tv##input[pseudo="-webkit-media-controls-play-button"]:style(display: inline !important;)
+webapp.airy.tv##+js(aeld, , onAdsManagerLoaded)
+webapp.airy.tv##+js(aeld, , onAdError)
+webapp.airy.tv##+js(aeld, , onAdEvent)
+webapp.airy.tv##+js(aeld, , videoClick)
+webapp.airy.tv##+js(aeld, , onAdIsLoaded)
+webapp.airy.tv##+js(aeld, , onAdStarted)
+webapp.airy.tv##+js(aeld, advertisement_event)
+webapp.airy.tv##+js(set, adsRequest, noopfunc)
+webapp.airy.tv##+js(set, playAds, noopfunc)
+webapp.airy.tv##+js(set, adsRequest, false)
+webapp.airy.tv##+js(set, adContainer, null)
+webapp.airy.tv###adContainer
 
 !Whitelisted
 ! blocks Kroger website?
