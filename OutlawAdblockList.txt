@@ -38163,15 +38163,26 @@ sportskart.click##+js(aopr, x.withCredentials)
 sportskart.click##+js(aopw, x.withCredentials)
 wikisport.click##a[href="//pubfuture.com"][class="pf-br-icon"]
 !||wikisport.click/iptv2/$inline-script
+wikisport.click##^script:xpath("/html/head/script[1]")
+wikisport.click##:xpath("/html/head/script[1]")
+wikisport.click##:xpath("/html/head/script[1]"):remove()
 wikisport.click##:xpath(/html/head/script[10])
 wikisport.click##:xpath(/html/head/script[10]):remove()
+wikisport.click##^script:has-text(mustave)
+wikisport.click##^script:has-text(/window.top/i)
 wikisport.click##+js(aopr, window.top)
 wikisport.click##+js(aopw, window.top)
 wikisport.click##+js(acis, window.top)
+wikisport.click##+js(set, mustave, atob('L2hscy9zdHJlYW0ubTN1OD9jaD1zcG4='))
+wikisport.click##+js(set, clearTimeout, noopFunc)
+wikisport.click##+js(set, keepChecking, noopFunc)
+wikisport.click##+js(set, addScript, noopFunc)
+! also need no-setTimeout-if to prevent running keepChecking() and addScript() on a loop
+wikisport.click##+js(no-setTimeout-if, keepChecking)
+wikisport.click##+js(no-setTimeout-if, addScript)
 wikisport.click##+js(noeval)
 wikisport.click##+js(acis, debugger)
 wikisport.click##^script:has-text(/debugger/i)
-wikisport.click##^script:has-text(/window.top/i)
 wikisport.click##+js(remove-attr, oncontextmenu, body, stay)
 wikisport.click##+js(remove-attr, oncontextmenu, html, stay)
 wikisport.click##+js(set, time, 0)
@@ -38188,12 +38199,6 @@ wikisport.click##+js(aopw, onlyOnImages)
 wikisport.click##+js(acis, onlyOnImages)
 wikisport.click##+js(aopr, e.ctrlKey)
 wikisport.click##+js(aopw, e.ctrlKey)
-wikisport.click##+js(set, clearTimeout, noopFunc)
-wikisport.click##+js(set, keepChecking, noopFunc)
-wikisport.click##+js(set, addScript, noopFunc)
-! also need no-setTimeout-if to prevent running keepChecking() and addScript() on a loop
-wikisport.click##+js(no-setTimeout-if, keepChecking)
-wikisport.click##+js(no-setTimeout-if, addScript)
 ||www.redditstatic.com/ads/pixel.js*
 ! The following three lines would leave the play button up forever
 !puffer.stanford.edu##div[id="tv-play-button"]:style(display: inline !important;)
@@ -39114,11 +39119,6 @@ maxsport.one##+js(aopr, _Hasync)
 maxsport.one##+js(aopw, _Hasync)
 ||www.displayvertising.com/index.js*
 ||cdn.taboola.com/libtrc/chatango-network/loader.js$script,domain=cdn.stream-24.net|klubsports.online
-wikisport.click##^script:xpath("/html/head/script[1]")
-wikisport.click##^script:has-text(mustave)
-wikisport.click##:xpath("/html/head/script[1]")
-wikisport.click##:xpath("/html/head/script[1]"):remove()
-wikisport.click##+js(set, mustave, atob('L2hscy9zdHJlYW0ubTN1OD9jaD1zcG4='))
 ntuplay.xyz##+js(set, currentReferer, "wikisport.click")
 ntuplay.xyz##+js(set, attr, {})
 ntuplay.xyz##+js(acis, currentReferer)
@@ -39156,6 +39156,61 @@ webapp.airy.tv##+js(set, playAds, noopfunc)
 webapp.airy.tv##+js(set, adsRequest, false)
 webapp.airy.tv##+js(set, adContainer, null)
 webapp.airy.tv###adContainer
+thoptvs.com##script[id="wpcp_disable_selection"]
+thoptvs.com##script[id="wpcp_disable_selection"]:remove()
+thoptvs.com##script[id="wpcp_disable_Right_Click"]
+thoptvs.com##script[id="wpcp_disable_Right_Click"]:remove()
+thoptvs.com##script[id="wpcp_css_disable_selection"]
+thoptvs.com##script[id="wpcp_css_disable_selection"]:remove()
+thoptvs.com##script[id="generate-a11y"]
+thoptvs.com##script[id="generate-a11y"]:remove()
+thoptvs.com##+js(set, disableEnterKey, noopfunc)
+thoptvs.com##+js(set, disable_copy, noopfunc)
+thoptvs.com##+js(set, disableSelection, noopfunc)
+thoptvs.com##+js(set, disable_copy_ie, noopfunc)
+thoptvs.com##+js(aopr, document.oncontextmenu)
+thoptvs.com##+js(aopw, document.oncontextmenu)
+thoptvs.com##ins[data-ad-client]
+thoptvs.com##ins[data-ad-client]:remove()
+||thoptvs.com/wp-content/plugins/wp-content-copy-protector/$all
+thoptvs.com##+js(aopr, adsbygoogle)
+thoptvs.com##+js(aopw, adsbygoogle)
+fileproinfo.com##div[id="dvtopad"]
+fileproinfo.com##div[id="dvtopad"]:remove()
+fileproinfo.com##ins[data-ad-client]
+fileproinfo.com##ins[data-ad-client]:remove()
+fileproinfo.com##+js(aopr, adsbygoogle)
+fileproinfo.com##+js(aopw, adsbygoogle)
+fileproinfo.com##span:has-text(Advertisement):upward(1)
+fileproinfo.com##span:has-text(Advertisement):upward(1):remove()
+fileproinfo.com##span:has-text(Advertisement)
+fileproinfo.com##script[data-ad-client]
+fileproinfo.com##script[data-ad-client]:remove()
+fileproinfo.com###footerAd
+fileproinfo.com###footerAd:remove()
+fileproinfo.com###cookieAlert
+fileproinfo.com###cookieAlert:remove()
+lsto.me##div[id="tie-popup-adblock"]
+lsto.me##div[id="tie-popup-adblock"]:remove()
+hdstreamzapp.com##script[id="wpcp_disable_selection"]
+hdstreamzapp.com##script[id="wpcp_disable_selection"]:remove()
+hdstreamzapp.com##+js(set, disableEnterKey, noopfunc)
+hdstreamzapp.com##+js(set, disable_copy, noopfunc)
+hdstreamzapp.com##+js(set, disable_copy_ie, noopfunc)
+hdstreamzapp.com##+js(set, disableSelection, noopfunc)
+hdstreamzapp.com##script[id="wpcp_disable_Right_Click"]
+hdstreamzapp.com##script[id="wpcp_disable_Right_Click"]:remove()
+hdstreamzapp.com##script[id="wpcp_css_disable_selection"]
+hdstreamzapp.com##script[id="wpcp_css_disable_selection"]:remove()
+hdstreamzapp.com##+js(aopr, document.oncontextmenu)
+hdstreamzapp.com##+js(aopw, document.oncontextmenu)
+hdstreamzapp.com##ins[data-ad-client]
+hdstreamzapp.com##ins[data-ad-client]:remove()
+hdstreamzapp.com##+js(aopr, adsbygoogle)
+hdstreamzapp.com##+js(aopw, adsbygoogle)
+hdstreamzapp.com##script[id="generate-a11y"]
+hdstreamzapp.com##script[id="generate-a11y"]:remove()
+||hdstreamzapp.com/wp-content/plugins/wp-content-copy-protector/$all
 
 !Whitelisted
 ! blocks Kroger website?
