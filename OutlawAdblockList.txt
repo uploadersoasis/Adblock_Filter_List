@@ -27542,7 +27542,7 @@ www.rcrwireless.com##div[id="branda-cookie-notice"]
 www.rcrwireless.com##div[class="cookie-notice-container"]
 www.rcrwireless.com##li[id^="bunyad_ads_widget-"]
 !||stats.wpmucdn.com/analytics.js*
-||stats.wpmucdn.com/$all
+||stats.wpmucdn.com^$all
 ||stats-juc1ugur1qwqqqo4.stackpathdns.com/$all
 !||melvingarner.xyz/* !blocks video player
 ||iamcdn.net/ban.html*
@@ -38816,9 +38816,17 @@ godzillive.com##+js(aopw, rtclickcheck)
 godzillive.com##+js(aopr, document.onmousedown)
 godzillive.com##+js(aopw, document.onmousedown)
 godzillive.com##div[id="UnMutePlayer"]
-||godzillive.com/z-6741510$script
+godzillive.com##div[id="UnMutePlayer"]:remove()
+||godzillive.com/z-6741510*
+!||godzillive.com/z-6741510$script
 godzillive.com##a[href^="https://youradexchange.com/"]
 godzillive.com##a[href^="https://youradexchange.com/"]:remove()
+godzillive.com##+js(acis, window.c4665c556fc50af4e03a3ea272703352)
+godzillive.com##+js(aopr, window.c4665c556fc50af4e03a3ea272703352)
+godzillive.com##+js(aopw, window.c4665c556fc50af4e03a3ea272703352)
+godzillive.com##+js(acis, _Hasync)
+godzillive.com##+js(aopr, _Hasync)
+godzillive.com##+js(aopw, _Hasync)
 ||www.mmmutajbpalv.com^$all
 ||mmmutajbpalv.com^$all
 ||yxjqoiitt.xyz^$all
@@ -39325,6 +39333,29 @@ en.myshows.me##div[class^="adblock"]
 en.myshows.me##div[class^="adblock"]:remove()
 en.myshows.me##div[class="DefaultLayout-footer-ads"]
 en.myshows.me##div[class="DefaultLayout-footer-ads"]:remove()
+livenewschat.eu##div[id="secondary"]
+livenewschat.eu##div[id="secondary"]:remove()
+livenewschat.eu##div[id="primary"]:style(width: 100% !important)
+livenewschat.eu##main[id="main"]:style(width: 100% !important; height: 100% !important;)
+livenewschat.eu##div[class*="ast-container"]:style(max-width: 100% !important;)
+livenewschat.eu##div[data-freestar-ad]
+livenewschat.eu##div[data-freestar-ad]:remove()
+livenewschat.eu##div[class="AD1"]
+livenewschat.eu##div[class="AD1"]:remove()
+livenewschat.eu##div[class="AD2"]
+livenewschat.eu##div[class="AD2"]:remove()
+livenewschat.eu##div[class="container rbc-is-hidden-on-mobile"]
+livenewschat.eu##div[class="container rbc-is-hidden-on-mobile"]:remove()
+livenewschat.eu##div[class="container container-choice-footer-msg"]
+livenewschat.eu##div[class="container container-choice-footer-msg"]:remove()
+livenewschat.eu##+js(aopr, _paq)
+livenewschat.eu##+js(aopw, _paq)
+livenewschat.eu##+js(set, gtag, noopfunc)
+livenewschat.eu##iframe[name="__tcfapiLocator"]
+livenewschat.eu##iframe[name="__tcfapiLocator"]:remove()
+!livenewschat.eu##+js(nostif, /^/)
+livenewschat.eu##+js(nostif, /location.href/)
+||stats1.wpmudev.com^$all
 
 !Whitelisted
 ! blocks Kroger website?
