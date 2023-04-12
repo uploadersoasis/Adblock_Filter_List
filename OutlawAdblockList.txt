@@ -38154,13 +38154,35 @@ ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]:remove()
 !||poscitech.click^$all
 ||www.cdn4ads.com/rot.min.js*
 ||coonandeg.xyz^$all
+sportskart.click##+js(set, hs, noopFunc)
+sportskart.click##+js(set, window.u_cfg, {})
+sportskart.click##script[data-adel][zid]
+sportskart.click##script[data-adel][zid]:remove()
 sportskart.click##iframe[id="stats"]
+sportskart.click##iframe[id="stats"]:remove()
+sportskart.click###stats:remove()
+sportskart.click##+js(aopr, window.u_cfg)
+sportskart.click##+js(aopw, window.u_cfg)
+sportskart.click##+js(aopr, window.c1702bdd64cd85dc6e4723404569127c)
+sportskart.click##+js(aopw, window.c1702bdd64cd85dc6e4723404569127c)
 sportskart.click##+js(aopr, _gaq)
 sportskart.click##+js(aopw, _gaq)
 sportskart.click##+js(aopr, _Hasync)
 sportskart.click##+js(aopw, _Hasync)
 sportskart.click##+js(aopr, x.withCredentials)
 sportskart.click##+js(aopw, x.withCredentials)
+sportskart.click##+js(acis, window.kkp4a5x5tv)
+sportskart.click##+js(aopr, window.kkp4a5x5tv)
+sportskart.click##+js(aopw, window.kkp4a5x5tv)
+sportskart.click##+js(acis, atob, document, arguments)
+sportskart.click##+js(aopw, $.BD)
+sportskart.click##+js(aopr, $.BD)
+sportskart.click##+js(aopr, $._Eu)
+sportskart.click##+js(aopw, $._Eu)
+sportskart.click##+js(aopr, t.Tn)
+sportskart.click##+js(aopw, t.Tn)
+sportskart.click##^script:has-text(/delete window\[/)
+sportskart.click##^script:has-text(/delete window\[/):remove()
 wikisport.click##a[href="//pubfuture.com"][class="pf-br-icon"]
 !||wikisport.click/iptv2/$inline-script
 wikisport.click##^script:xpath("/html/head/script[1]")
@@ -39051,14 +39073,6 @@ www.playstream.site##iframe[src*="//www.youtube.com/embed/"]:remove()
 warnforlese.net##video-js[id="player2"]:style(display: inline !important;)
 warnforlese.net##div[id="btn-unmute"]
 warnforlese.net##div[id="btn-unmute"]:remove()
-casadelfutbol.info##+js(acis, _Hasync)
-casadelfutbol.info##+js(aopr, _Hasync)
-casadelfutbol.info##+js(aopw, _Hasync)
-casadelfutbol.info##iframe[src="about:blank"]
-casadelfutbol.info##iframe[src="about:blank"]:remove()
-casadelfutbol.info##+js(acis, x.withCredentials)
-casadelfutbol.info##+js(aopr, x.withCredentials)
-casadelfutbol.info##+js(aopw, x.withCredentials)
 ||spannercopyright.com^$all
 ||d1hogxc58mhzo9.cloudfront.net^$all
 ||fdorxsat.com/XqdBH.htm*
@@ -39248,6 +39262,69 @@ directatvhd.me##+js(aopw, _wau)
 ||xvojggwu.com^$all
 ||www.vttyjakvvdce.com^$all
 ||rwwwnevtg.xyz^$all
+kepa.pw##div[id="adcode"]
+kepa.pw##div[id="adcode"]:remove()
+kepa.pw##div[id="unmute"]
+kepa.pw##div[id="unmute"]:remove()
+kepa.pw##.video_ads_overdiv
+kepa.pw##.video_ads_overdiv:remove()
+kepa.pw##+js(aopr, _Hasync)
+kepa.pw##+js(aopw, _Hasync)
+kepa.pw##+js(aopr, window.ca00d5bb33dad2d2351a4ab364ca0ebb)
+kepa.pw##+js(aopw, window.ca00d5bb33dad2d2351a4ab364ca0ebb)
+kepa.pw##+js(aopr, p$00a)
+kepa.pw##+js(aopw, p$00a)
+kepa.pw##+js(set, hs, noopfunc)
+kepa.pw##+js(set, _Hasync, [])
+kepa.pw##+js(set, p$00a, "")
+kepa.pw##+js(acis, zc_865364)
+kepa.pw##div[id="zc_865364"]
+kepa.pw##div[id="zc_865364"]:remove()
+||fnuvsfyylouxwu.com^$all
+casadelfutbol.info##+js(acis, _Hasync)
+casadelfutbol.info##+js(aopr, _Hasync)
+casadelfutbol.info##+js(aopw, _Hasync)
+casadelfutbol.info##iframe[src="about:blank"]
+casadelfutbol.info##iframe[src="about:blank"]:remove()
+casadelfutbol.info##script[data-adel][zid]
+casadelfutbol.info##script[data-adel][zid]:remove()
+casadelfutbol.info##+js(acis, document, arguments, delete)
+casadelfutbol.info##+js(aopw, $.BD)
+casadelfutbol.info##+js(aopr, $.BD)
+casadelfutbol.info##+js(aopr, $._Eu)
+casadelfutbol.info##+js(aopw, $._Eu)
+casadelfutbol.info##+js(aopr, t.Tn)
+casadelfutbol.info##+js(aopw, t.Tn)
+casadelfutbol.info##^script:has-text(/delete window\[/)
+casadelfutbol.info##^script:has-text(/delete window\[/):remove()
+casadelfutbol.info##+js(acis, x.withCredentials)
+casadelfutbol.info##+js(aopr, x.withCredentials)
+casadelfutbol.info##+js(aopw, x.withCredentials)
+casadelfutbol.info##+js(acis, window.kkp4a5x5tv)
+casadelfutbol.info##+js(aopr, window.kkp4a5x5tv)
+casadelfutbol.info##+js(aopw, window.kkp4a5x5tv)
+casadelfutbol.tv##div[id="video_ads_overdiv"]
+casadelfutbol.tv##div[id="video_ads_overdiv"]:remove()
+casadelfutbol.tv##+js(acis, window.kkp4a5x5tv)
+casadelfutbol.tv##+js(aopr, window.kkp4a5x5tv)
+casadelfutbol.tv##+js(aopw, window.kkp4a5x5tv)
+casadelfutbol.tv##+js(acis, atob, document, arguments)
+casadelfutbol.tv##+js(aopw, $.BD)
+casadelfutbol.tv##+js(aopr, $.BD)
+casadelfutbol.tv##+js(aopr, $._Eu)
+casadelfutbol.tv##+js(aopw, $._Eu)
+casadelfutbol.tv##+js(aopr, t.Tn)
+casadelfutbol.tv##+js(aopw, t.Tn)
+casadelfutbol.tv##^script:has-text(/delete window\[/)
+casadelfutbol.tv##^script:has-text(/delete window\[/):remove()
+www.dacast.com##div[class^="styles__MainCookieConsentContainer"]
+www.dacast.com##div[class^="styles__MainCookieConsentContainer"]:remove()
+en.myshows.me##div[id^="adfox_"]
+en.myshows.me##div[id^="adfox_"]:remove()
+en.myshows.me##div[class^="adblock"]
+en.myshows.me##div[class^="adblock"]:remove()
+en.myshows.me##div[class="DefaultLayout-footer-ads"]
+en.myshows.me##div[class="DefaultLayout-footer-ads"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
