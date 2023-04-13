@@ -33482,7 +33482,11 @@ plaid.com##div[data-testid="consent-manager-banner"]
 ||ernedassiu.com/$all
 ||rtunitytostar.com/$all
 www.npr.org##div[data-ad-config]
+www.npr.org##div[data-ad-config]:remove()
 www.npr.org##aside[id^="ad-standard-"]
+www.npr.org##aside[id^="ad-standard-"]:remove()
+www.npr.org##iframe[name^="__privateStripeMetricsController"]
+www.npr.org##iframe[name^="__privateStripeMetricsController"]:remove()
 ||dyrfxuvraq0fk.cloudfront.net/$all
 ||d3mxt5v3yxgcsr.cloudfront.net/$all
 www.nydailynews.com##div[data-pb-name="DFP Ad"]
@@ -38117,8 +38121,14 @@ embedstream.me##+js(set, detectDevTool, noopFunc)
 embedstream.me##+js(set, forceKillplayer, noopFunc)
 embedstream.me##+js(set, debounce, noopFunc)
 embedstream.me##+js(aeld, , detectDevTool)
-embedstream.me##+js(nostif, function())
-embedstream.me##+js(nosiif, function())
+!embedstream.me##+js(nostif, function())
+!embedstream.me##+js(nostif, function)
+!embedstream.me##+js(nostif, /^function()/)
+embedstream.me##+js(nostif, /^function\(\)/)
+!embedstream.me##+js(nosiif, function())
+!embedstream.me##+js(nosiif, function)
+!embedstream.me##+js(nosiif, /^function()/)
+embedstream.me##+js(nosiif, /^function\(\)/)
 embedstream.me##+js(no-setTimeout-if, forceKillplayer)
 ||superfastcdn.com/script/clock.js$script,domain=www.nolive.me|embedstream.me
 ||bugits.com/script/clock.js$script,domain=embedstream.me
@@ -38144,8 +38154,6 @@ ntuplay.xyz##+js(aopr, autoloadMarker)
 ntuplay.xyz##+js(aopw, autoloadMarker)
 ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]
 ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]:remove()
-1l1l.to##div[id="adholder"]
-1l1l.to##div[id="adsclose"]
 ||neewhoum.net^$all
 ||aivdoyvicfn.com^$all
 !||waufooke.com/tag.min.js*
@@ -38861,14 +38869,26 @@ www.vipleague.st##+js(aopr, _0xc84e)
 www.vipleague.st##+js(aopw, _0xc84e)
 www.vipleague.st##+js(aopr, adcashMacros)
 www.vipleague.st##+js(aopw, adcashMacros)
-www.vipleague.st##+js(nostif, function())
-www.vipleague.st##+js(nosiif, function())
+!www.vipleague.st##+js(nostif, function())
+!www.vipleague.st##+js(nostif, function)
+!www.vipleague.st##+js(nostif, /^function()/)
+www.vipleague.st##+js(nostif, /^function\(\)/)
+!www.vipleague.st##+js(nosiif, function())
+!www.vipleague.st##+js(nosiif, function)
+!www.vipleague.st##+js(nosiif, /^function()/)
+www.vipleague.st##+js(nosiif, /^function\(\)/)
 www.vipleague.st##+js(no-setTimeout-if, forceKillplayer)
 www.nolive.me##+js(set, detectDevTool, noopFunc)
 www.nolive.me##+js(set, forceKillplayer, noopFunc)
 www.nolive.me##+js(set, debounce, noopFunc)
-www.nolive.me##+js(nostif, function())
-www.nolive.me##+js(nosiif, function())
+!www.nolive.me##+js(nostif, function())
+!www.nolive.me##+js(nostif, function)
+!www.nolive.me##+js(nostif, /^function()/)
+www.nolive.me##+js(nostif, /^function\(\)/)
+!www.nolive.me##+js(nosiif, function())
+!www.nolive.me##+js(nosiif, function)
+!www.nolive.me##+js(nosiif, /^function()/)
+www.nolive.me##+js(nosiif, /^function\(\)/)
 www.nolive.me##+js(no-setTimeout-if, forceKillplayer)
 ||cdn.espn.com/onetrust/otCCPAiab.js$script
 abc.com##script[ccpa-opt-out-ids]
@@ -39032,8 +39052,11 @@ www.digitbin.com##div[class^="code-block code-block-"]:has(div:has-text(Advertis
 ||nevail.com/script/$script
 cricplay2.xyz##^script[id="_waumnk"]
 cricplay2.xyz##script[id="_waumnk"]
+!cricplay2.xyz##+js(nostif, /^/)
 !cricplay2.xyz##+js(nostif, function())
-cricplay2.xyz##+js(nostif, /^/)
+!cricplay2.xyz##+js(nostif, function)
+!cricplay2.xyz##+js(nostif, /^function()/)
+cricplay2.xyz##+js(nostif, /^function\(\)/)
 cricplay2.xyz##+js(set, v_width, "100%")
 cricplay2.xyz##+js(set, v_height, 700)
 cricplay2.xyz##+js(aopr, _Hasync)
@@ -39356,6 +39379,36 @@ livenewschat.eu##iframe[name="__tcfapiLocator"]:remove()
 !livenewschat.eu##+js(nostif, /^/)
 livenewschat.eu##+js(nostif, /location.href/)
 ||stats1.wpmudev.com^$all
+||dissolveretinue.com^$all
+||dangerouslygluttony.com^$all
+stream.crichd.vip##+js(set, hs, noopfunc)
+||stream.crichd.vip/z-5214935*
+stream.crichd.vip##+js(acis, _Hasync)
+stream.crichd.vip##+js(aopr, _Hasync)
+stream.crichd.vip##+js(aopw, _Hasync)
+1l1l.to##+js(set, cbut, noopfunc)
+1l1l.to##div[id="adholder"]
+1l1l.to##div[id="adholder"]:remove()
+1l1l.to##div[id="adsclose"]
+1l1l.to##div[id="adsclose"]:remove()
+1l1l.to###self
+1l1l.to###self:remove()
+1l1l.to##a[id="cbut"]
+1l1l.to##a[id="cbut"]:remove()
+1l1l.to##div[class="ad"]
+1l1l.to##div[class="ad"]:remove()
+1l1l.to##div[class="overlay_video"]
+1l1l.to##div[class="overlay_video"]:remove()
+1l1l.to##+js(nostif, /location.href/)
+1l1l.to##+js(aeld, click)
+1l1l.to##+js(acis, s2ss413ff, zGlXB)
+1l1l.to##^script:has-text(/s2ss413ff/i)
+1l1l.to##^script:has-text(/s2ss413ff/i):remove()
+!1l1l.to##+js(nostif, /^/)
+!1l1l.to##+js(nostif, function())
+!1l1l.to##+js(nostif, function)
+!1l1l.to##+js(nostif, /^function()/)
+1l1l.to##+js(nostif, /^function\(\)/)
 
 !Whitelisted
 ! blocks Kroger website?
