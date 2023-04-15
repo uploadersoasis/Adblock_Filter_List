@@ -39885,6 +39885,59 @@ mixdrop.co##+js(aeld, click, function(g))
 mixdrop.co##+js(nosiif, function)
 mixdrop.co##body:remove-attr(onclick)
 ||soliads.net^$all
+||dd.tittyptinoid.com^$all
+||ibrapush.com^$all
+||inspirecarriermagnetic.com^$all
+||ryepublisher.com^$all
+||attepigom.com^$all
+||gulsyangtao.guru^$all
+||ossgogoaton.com^$all
+||q.reyden-x.com^$all
+||loosenoutfit.com^$all
+||careless-category.pro^$all
+!||vz.7vid.net/api/spots/$all
+!||vz.7vid.net/api/click/$all
+!||vz.7vid.net/api/users/$all
+||vz.7vid.net^$all
+||vd.7vid.net^$all
+||cdn.tapioni.com/adgpt.js*
+||cdn.o333o.com/vast-im.js*
+||static.addtoany.com/menu/locale/ru.js*
+||vidoza.net/sw.js*
+vidoza.net##+js(set-constant, ownerAdblockLock, 0)
+vidoza.net##^script:has-text(GoogleAnalyticsObject)
+vidoza.net##+js(acis, GoogleAnalyticsObject)
+vidoza.net##^script:has-text(gtm.)
+vidoza.net##+js(acis, gtm., www.googletagmanager.com)
+vidoza.net##+js(set-constant, Ya.Metrika, noopFunc)
+vidoza.net##^script:has-text(/Metrika/i)
+vidoza.net##+js(acis, /Metrika/i)
+vidoza.net##^script[data-spots][data-tag][data-subid1]
+vidoza.net##^script[data-spots][data-tag][data-subid1]:remove()
+vidoza.net##script[data-spots][data-tag][data-subid1]
+vidoza.net##script[data-spots][data-tag][data-subid1]:remove()
+vidoza.net##+js(set-constant, window.asgvastcnf_overlay, {})
+vidoza.net##^script:has-text(window.asgvastcnf_overlay)
+vidoza.net##+js(acis, window.asgvastcnf_overlay)
+vidoza.net##+js(aopw, window.asgvastcnf_overlay)
+vidoza.net##+js(aopr, window.asgvastcnf_overlay)
+vidoza.net##+js(set-constant, a2a_config.locale, "en")
+||vidoza.net/js/ads.js*
+vidoza.net##+js(set-constant, xRds, false)
+vidoza.net##+js(set-constant, cRAds, false)
+||vidoza.net/js/pop.js*
+vidoza.net##div[class="prevent-first-click"]:remove-attr(onclick)
+vidoza.net##div[class="prevent-first-click"]
+vidoza.net##div[class="prevent-first-click"]:remove()
+vidoza.net##+js(set-constant, VIDOZA_PLAY_AND_DOWNLOAD, true)
+vidoza.net##iframe[src*="//vz.7vid.net/api/spots/"]
+vidoza.net##iframe[src*="//vz.7vid.net/api/spots/"]:remove()
+vidoza.net##iframe[src^="https://www.googletagmanager.com/"]
+vidoza.net##iframe[src^="https://www.googletagmanager.com/"]:remove()
+vidoza.net##div[id='ov4166']
+vidoza.net##div[id='ov4166']:remove()
+vidoza.net##div[id='pusl_0']
+vidoza.net##div[id='pusl_0']:remove()
 
 !Whitelisted
 ! blocks Kroger website?
