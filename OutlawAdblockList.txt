@@ -10465,6 +10465,8 @@ www.pinterest.com##div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) 
 ||jwpltx.com/v1/adclient/$all
 ||jwpltx.com/v1/clienta/ping.gif*
 ||jwpltx.com/v1/jwplayer6/ping.gif*
+||prd.jwpltx.com/v1/jwplayer6/ping.gif*
+||ping-meta-prd.jwpltx.com/v1/jwplayer6/ping.gif*
 ||www.sportsmanias.com/js/googleTrackingUniversal.js*
 !||www.zvuespzsdgdq.com/l.js*
 !||zvuespzsdgdq.com/uZPXO.htm*
@@ -14808,7 +14810,6 @@ kisscartoon.es###__cedato_root_container
 ||evaff.com/$all
 !||tmozs.com/jsonp.php*
 ||tmozs.com/$all
-www.tomshardware.com##div[class^="cash absolute contain"]
 ||bridge.sfo1.admarketplace.net/$all
 ||victoriabrides.go2affise.com/$all
 ||www.breaitbart.com/$all
@@ -24427,8 +24428,6 @@ x265movies.cc##div[class^="mysticky-welcomebar-"]
 !||www.ps7894.com/p1.0-SNAPSHOT.*
 !||www.ps7894.com/InterYield/bindevent.do*
 ||www.ps7894.com/$all
-||prd.jwpltx.com/v1/jwplayer6/ping.gif*
-||ping-meta-prd.jwpltx.com/v1/jwplayer6/ping.gif*
 !||grid.bidswitch.net/hbnm^*
 ||grid.bidswitch.net/$all
 letsupload.org##^script:has-text(document.createElement('script'),_)
@@ -25892,8 +25891,6 @@ fearlessrevolution.com##div[aria-label="cookieconsent"]
 ||newsubscribes.com/$all
 www.pcmag.com##div[class^="index__adWrapper-"]
 www.pcmag.com##aside[class="zmgad-full-width"]
-www.tomshardware.com##div[class^="ad-unit"]
-!||uk-script.dotmetrics.net/door.js*
 ||uk-script.dotmetrics.net/door.js*
 ||valid-install.com/$all
 ||adblockorigin.com/$all
@@ -28136,8 +28133,6 @@ www.merriam-webster.com##div[id="fixed-ad-bottom"]
 www.merriam-webster.com##div[class*="mw-ad-slot-"]
 ||stats.merriam-webster.com/$all
 ||telemetry.art19.com/$all
-www.tomshardware.com##div[class="advertisement-label"]
-www.tomshardware.com##div[class="bordeaux-slot-root"]
 www.projects-software.com##div[class="cookie-box"]
 www.projects-software.com##^script[id="BorlabsCookieBoxWrap"]
 www.projects-software.com##div[class="BorlabsCookie"]
@@ -29657,7 +29652,6 @@ www.technologynetworks.com##div[class^="adverts_footer_"]
 www.technologynetworks.com##div[class^="adverts_side_"]
 www.timesys.com##div[id="cookie-notice"]
 www.bleepingcomputer.com##div[id="bleepingcomputer_728x90_970x90_970x250_320x50_ATF"]
-www.tomshardware.com##div[id^="bordeaux-preemptive-ad-"]
 obits.theadvocate.com##+js(aopr, dataLayer)
 obits.theadvocate.com##+js(aopw, dataLayer)
 obits.theadvocate.com##^script:has-text(/blockerDetected/i)
@@ -31693,7 +31687,6 @@ drevitalize.com##div[id="cookie-law-info-bar"]
 drevitalize.com##div[id="cookie-law-info-again"]
 drevitalize.com##div[id="cliSettingsPopup"]
 dailycaller.com##div[class="ad"]
-www.tomshardware.com##div[class*="ad-unit"]
 ||thyourretyequ.com/$all
 ||d11hjbdxxtogg5.cloudfront.net/$all
 ||taspectsofcu.com/$all
@@ -32027,7 +32020,6 @@ www.carifred.com##div[id="cookieChoiceInfo"]
 !||twentyhandful.com/impr.gif*
 ||twentyhandful.com/$all
 ||givekeeperstirring.com/$all
-||streamtape.com/ad.js*
 !||cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.min.js*
 ||opcharizardon.com/$all
 ||static.x-plarium.com/browser/canvas/landings.pp.analytics/$all
@@ -33723,7 +33715,7 @@ apk4all.com##[href*="//mobileoffers-7-m-download.com/"]
 ||1337x.dirproxy.org/app/apx19.js*
 ||undooptimisticsuction.com/$all
 ||saumeechoa.com/$all
-||simplewebanalysis.com/stats$all
+||simplewebanalysis.com/stats*
 ||watchrecentoverlytheproduct.vip/$all
 !||webjscontent.com/dl.min.js*
 ||webjscontent.com/$all
@@ -35991,8 +35983,6 @@ wakelet.com##div[class*="bg-cookie-banner"]:upward(1)
 ||hft76yu.cfd/$all
 ||crackpro.org/$all
 ||gielobraihaelialis.cf/$all
-||cdn.privacy-mgmt.com/unified/3.6.3/gdpr-*
-||cdn.privacy-mgmt.com/unified/3.6.3/ccpa.*
 web.archive.org##iframe[src*="://www.blogger.com/blogin.g"]:remove()
 web.archive.org##div[itemscope="itemscope"]:style(display: inline !important;)
 web.archive.org##+js(remove-attr, style, itemscope)
@@ -36062,13 +36052,20 @@ randomwordgenerator.com##div[class*="google-ad-container"]
 www.fontspring.com##div[id="js_footer_messages"]
 www.free-fonts.com##div[id="notice"]:upward(2)
 www.free-fonts.com##+js(acis, /GdprApplies/i)
-||cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js*
 www.free-fonts.com##+js(aopr, consentStatus)
 www.free-fonts.com##+js(aopw, consentStatus)
+||cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js*
+||cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js*
+!||cdn.privacy-mgmt.com/unified/3.6.3/gdpr-*
+!||cdn.privacy-mgmt.com/unified/3.6.3/ccpa.*
+!||cdn.privacy-mgmt.com/unified/*/gdpr-*
+!||cdn.privacy-mgmt.com/unified/*/ccpa.*
 ||cdn.privacy-mgmt.com/wrapper/tcfv2/v2/gdpr/$all
-||cdn.privacy-mgmt.com/consent/tcfv2/consent/$all
-||cp.free-fonts.com/stats*
+!||cdn.privacy-mgmt.com/consent/tcfv2/consent/$all
+!||cdn.privacy-mgmt.com/consent/tcfv2/vendor-list/$all
+||cdn.privacy-mgmt.com/consent/$all
 ||cdn.privacy-mgmt.com/Notice.*.js*
+||cp.free-fonts.com/stats*
 www.univention.com##link[id^="cookie-law-info"]
 ||www.univention.com/wp-content/cache/min/1/wp-content/plugins/webtoffee-gdpr-cookie-consent/$all
 ||cdn-eu.pagesense.io/$all
@@ -36490,8 +36487,6 @@ smsreceivefree.com##+js(acis, __ez_fad_ezpbinit)
 ||smsreceivefree.com/detroitchicago/cmbv2.js*
 www.defensenews.com##div[class*="AdWrapper-"]
 www.defensenews.com##div[class*="dfp-ad"]
-www.tomshardware.com##footer[id^="taboola-"][id$="-below-article-thumbnails"]
-www.tomshardware.com##div[class="dfp-leaderboard-container"]
 ||usta.d2.sc.omtrdc.net/$all
 www.usta.com##+js(aopr, window.desktopAdSlot)
 www.usta.com##+js(aopw, window.desktopAdSlot)
@@ -36788,8 +36783,6 @@ www.androidauthority.com##div[class*="adBanner"]
 ||cdn.snigelweb.com/adengine/$all
 ||sp.chip.de/com.snowplowanalytics.snowplow/$all
 ||ssl.1.damoh.chip.de/hic_qos?ads&adserv=*
-!||cdn.privacy-mgmt.com/consent/tcfv2/vendor-list/$all
-||cdn.privacy-mgmt.com/consent/$all
 www.chip.de##div[id="notice"]:upward(1):remove()
 www.chip.de##div[id^="contentad-topbanner-"]:upward(1):remove()
 www.chip.de##div[class*="contentad-topbanner"]
@@ -39430,6 +39423,8 @@ amazingstream.net##+js(aopr, _Hasync)
 amazingstream.net##+js(aopw, _Hasync)
 www.primewire.tf##+js(set, sc, noopfunc)
 www.primewire.tf##+js(set, console.clear, noopFunc)
+www.primewire.tf##+js(set, ondevtoolopen, noopFunc)
+www.primewire.tf##+js(set, disableMenu, noopFunc)
 www.primewire.tf##+js(acis, break;case $.)
 www.primewire.tf##^script:has-text(break;case $.)
 www.primewire.tf##+js(acis, /^You ar not allow to use DEVTOOL!/)
@@ -39442,6 +39437,10 @@ www.primewire.tf##div[id="bg_630126816"]
 www.primewire.tf##div[id="bg_630126816"]:remove()
 www.primewire.tf##div[id="bg_630126816_pre"]
 www.primewire.tf##div[id="bg_630126816_pre"]:remove()
+! This script contains devtools
+!||www.primewire.tf/js/app-3c3ee1153f9b26f8b011c8cbca755c53.js*
+! /^(?:mouse|pointer|contextmenu|drag|drop)|click/ is specified in it so these must be set events.
+www.primewire.tf##+js(aeld, /^(?:mouse|pointer|contextmenu|drag|drop)|click/)
 ||platform.bidgear.com/ads.php*
 ||platform.bidgear.com/async.php*
 uploady.io##+js(set, _gaq, [])
@@ -39554,6 +39553,232 @@ abysscdn.com##iframe[src="about:blank"]:remove()
 !||cdn.iamcdn.net/js/$script
 ||sex.rip^$all
 ||jookouky.net^$all
+watchsb.com##+js(set, e, noopFunc)
+watchsb.com##+js(set, check, noopFunc)
+watchsb.com##+js(set, disabledEvent, noopFunc)
+watchsb.com##+js(set, isadb, false)
+watchsb.com##+js(acis, debugger)
+watchsb.com##+js(aeld, /contextmenu|keydown/)
+watchsb.com##+js(nostif, check)
+||appcdn01.xyz/vast.js*
+||lv.chajagibbous.com^$all
+!||ssl.p.jwpcdn.com/player/plugins/vast/v/8.6.2/vast.js*
+||ssl.p.jwpcdn.com/player/plugins/vast/v/*/vast.js*
+||a.adforcast.com^$all
+||zimpolo.com^$all
+||streamtape.com/ad.js*
+streamtape.com##+js(acis, debugger)
+||streamtape.com/adgpt.js*
+streamtape.com##+js(set, googleAd, false)
+streamtape.com##+js(set, rFrx, false)
+streamtape.com##div[id="adb"]
+streamtape.com##div[id="adb"]:remove()
+streamtape.com##+js(aeld, contextmenu)
+streamtape.com##+js(nostif, function)
+streamtape.com##+js(acis, document.write, unescape)
+streamtape.com##^script[class="nunush"]
+streamtape.com##^script[class="nunush"]:remove()
+streamtape.com##script[class="nunush"]
+streamtape.com##script[class="nunush"]:remove()
+||bobabillydirect.org^$all
+||mscoldness.com^$all
+stapadblockuser.xyz##+js(set, googleAd, false)
+||stapadblockuser.xyz/adgpt.js*
+stapadblockuser.xyz##+js(acis, document.write, unescape)
+stapadblockuser.xyz##+js(acis, debugger)
+stapadblockuser.xyz##div[id="adb"]
+stapadblockuser.xyz##div[id="adb"]:remove()
+stapadblockuser.xyz##+js(aeld, contextmenu)
+stapadblockuser.xyz##^script[class="nunush"]
+stapadblockuser.xyz##^script[class="nunush"]:remove()
+stapadblockuser.xyz##script[class="nunush"]
+stapadblockuser.xyz##script[class="nunush"]:remove()
+||allvideometrika.com^$all
+||bebloommulvel.com^$all
+||cdn.staticmoly.me/metric.php*
+!||cdn.jsdelivr.net/gh/InteractiveAdvertisingBureau/AdBlockDetection/adblockDetector.js*
+||cdn.jsdelivr.net/gh/InteractiveAdvertisingBureau/AdBlockDetection/$all
+!||ping.staticmoly.me/ads/be/99/ads.js*
+||ping.staticmoly.me/ads/$all
+||ping.staticmoly.me/set/reportsp.php*
+!||ping.staticmoly.me^$all
+||cdn.staticmoly.me/set/reporta.php*
+||cdn.staticmoly.me/vadch.php*
+||cdn.staticmoly.me/deskademeta.php*
+||cdn.staticmoly.me/vlock.php*
+||cdn.staticmoly.me/weston.php*
+||vidmoly.to/static/vastAD.js*
+||vidmoly.me/static/vastAD.js*
+vidmoly.to,vidmoly.me##+js(set, adsBlocked, noopFunc)
+! Do NOT noop the adBlockControl() function or the embedded video player will not  be displayed.
+!vidmoly.to,vidmoly.me##+js(set, adBlockControl, noopFunc)
+vidmoly.to,vidmoly.me##+js(set, blocked, false)
+vidmoly.to,vidmoly.me##+js(set, block, 0)
+vidmoly.to,vidmoly.me##+js(set, adb, 0)
+vidmoly.to,vidmoly.me##+js(set, vmAdBlocked, 0)
+vidmoly.to,vidmoly.me##+js(set, igetas, noopFunc)
+vidmoly.to,vidmoly.me##+js(set, wdsc3, noopFunc)
+vidmoly.to,vidmoly.me##+js(set, mg_vd, noopFunc)
+vidmoly.to,vidmoly.me##+js(set, mg_vd2, noopFunc)
+vidmoly.to,vidmoly.me##+js(set, lo_metric, noopFunc)
+vidmoly.to,vidmoly.me##div[id="adsblock"]
+vidmoly.to,vidmoly.me##div[id="adsblock"]:remove()
+vidmoly.to,vidmoly.me##div[id="lo_metric"]
+vidmoly.to,vidmoly.me##div[id="lo_metric"]:remove()
+vidmoly.to,vidmoly.me##+js(aeld, contextmenu)
+vidmoly.to,vidmoly.me##+js(nosiif, mg_vd)
+vidmoly.to,vidmoly.me##+js(nosiif, igetas)
+vidmoly.to,vidmoly.me##+js(nosiif, igetlang)
+!vidmoly.to,vidmoly.me##+js(nosiif, dlwed)
+!vidmoly.to,vidmoly.me##+js(nosiif, igetdl)
+vidmoly.to,vidmoly.me##+js(nosiif, lo_metric)
+vidmoly.to,vidmoly.me###vidmolyadblocktest
+! Do NOT remove the adsBox or the adblock detection script will trigger.
+!vidmoly.to,vidmoly.me##div[class="adsBox"]
+!vidmoly.to,vidmoly.me##div[class="adsBox"]:remove()
+vidmoly.to,vidmoly.me##div[class*="video_ad"]
+vidmoly.to,vidmoly.me##div[class*="video_ad"]:remove()
+vidmoly.to,vidmoly.me###btn_download:remove-attr(disabled)
+vidmoly.to,vidmoly.me##a[href*="://vidmoly.me/dl/"]
+vidmoly.to,vidmoly.me##a[href*="://vidmoly.me/dl/"]:remove()
+vidmoly.to,vidmoly.me##a[href*="://vidmoly.to/dl/"]
+vidmoly.to,vidmoly.me##a[href*="://vidmoly.to/dl/"]:remove()
+vidmoly.to,vidmoly.me##+js(noeval)
+||vidmoly.me/igetm.php*
+||vidmoly.to/igetm.php*
+||vidmoly.me//metric.php*
+||vidmoly.to//metric.php*
+||cdn.staticmoly.me/dlwed2.php*
+!||vidmoly.me/dls.php*
+||pingo.staticmoly.me/logas/reportv.php*
+||ring.staticmoly.me^$all
+||subscriptioneccentric.com^$all
+||tyranbrashore.com^$all
+||russellseemslept.com^$all
+||sootconform.com^$all
+||rusticsnoop.com^$all
+||nelion.me^$all
+||pl18044471.highrevenuegate.com^$all
+||www.vycyqxnbrwz.com^$all
+||vycyqxnbrwz.com^$all
+streamvid.net##+js(set, hab1, noopFunc)
+streamvid.net##+js(set, countDown, noopFunc)
+streamvid.net##+js(set, clickplayer, null)
+streamvid.net##+js(set, cRAds, false)
+streamvid.net##+js(set, googleAd, false)
+streamvid.net##+js(set, xRds, false)
+streamvid.net##^script:has-text(__webpack_exports__)
+streamvid.net##^script:has-text(__webpack_exports__):remove()
+streamvid.net##script:has-text(s3ii)
+streamvid.net##script:has-text(s3ii):remove()
+streamvid.net##div[id="adbd"]
+streamvid.net##div[id="adbd"]:remove()
+streamvid.net##div[id="histats_counter"]
+streamvid.net##div[id="histats_counter"]:remove()
+streamvid.net##div[class*="google-ad"]
+streamvid.net##div[class*="google-ad"]:remove()
+streamvid.net##iframe[src="about:blank"]
+streamvid.net##iframe[src="about:blank"]:remove()
+streamvid.net##iframe[data-aa]
+streamvid.net##iframe[data-aa]:remove()
+!streamvid.net##+js(aeld, click, clickplayer)
+streamvid.net##+js(aeld, click)
+! do not block eval as the script that implements the player is an eval function.
+! That script also disables the developer tools.
+!streamvid.net##+js(noeval)
+streamvid.net##+js(set, _Hasync, [])
+streamvid.net##+js(acis, _Hasync)
+streamvid.net##+js(aopr, _Hasync)
+streamvid.net##+js(aopw, _Hasync)
+streamvid.net##div[id="dl_versions"]:style(display: block !important;)
+streamvid.net##a[id="dl_versions_btn"]
+streamvid.net##a[id="dl_versions_btn"]:remove()
+streamvid.net##span[id="countdown_str"]
+streamvid.net##span[id="countdown_str"]:remove()
+streamvid.net##div[id="alert_msg"]
+streamvid.net##div[id="alert_msg"]:remove()
+streamvid.net##+js(nostif, /countDown/)
+streamvid.net##+js(acis, s3ii, globalThis, debugger)
+streamvid.net##+js(acis, atob, decodeURIComponent)
+streamvid.net##+js(aopr, globalThis)
+streamvid.net##+js(aopw, globalThis)
+streamvid.net##+js(aopr, s3ii)
+streamvid.net##+js(aopw, s3ii)
+streamvid.net##+js(aopr, __webpack_exports__)
+streamvid.net##+js(aopw, __webpack_exports__)
+streamvid.net##input[aria-label="play"]:remove-attr(disabled)
+streamvid.net##div[class="vjs-poster"]
+streamvid.net##div[class="vjs-poster"]:remove()
+!streamvid.net##div[id="vjsplayer"]:remove-class(vjs-user-inactive)
+||streamvid.net/js/pop.js*
+!||sefsdvc.com/en/us/media/dynamic/id*
+||sefsdvc.com^$all
+||t.irtyf.com^$all
+||t.antfa.link^$all
+||ak.oalsauwy.net^$all
+||deneorphan.com^$all
+||d6deij4k3ikap.cloudfront.net^$all
+||trikerboughs.com^$all
+||romivapsi.com^$all
+||track.dalyai.com^$all
+||heinndoorh.com^$all
+||ethecityonata.com^$all
+||alloverwiththinl.com^$all
+||d1azpphj80lavy.cloudfront.net^$all
+||acscdn.com/script/ut.js*
+||acscdn.com/script/atg.js*
+||s3.us-east-1.amazonaws.com/5a8cca0cfc3724b3098015d90738ea10397092fb09bb521efd5f837e2f0d/cfc0acc8a5*
+||thefacux.com^$all
+||rural-patience.com^$all
+||www.simplistic-potato.pro^$all
+||noofigat.net^$all
+||rdtk.chromnius-secure.com^$all
+||ggqppaiglthoq.com^$all
+||nancontrast.com^$all
+!||cdn.yourwebbars.com/sb/interstitial/software/flash/multi/2/index.html*
+||cdn.yourwebbars.com^$all
+||adblock-one-protection.com^$all
+streamhide.to##div[id="adbd"]
+streamhide.to##div[id="adbd"]:remove()
+streamhide.to##+js(set, _ASO.PushOptions, {})
+streamhide.to##+js(aopr, _ASO.PushOptions)
+streamhide.to##+js(aopw, _ASO.PushOptions)
+streamhide.to##ins[class="aso-zone"][data-zone]
+streamhide.to##ins[class="aso-zone"][data-zone]:remove()
+streamhide.to##:xpath("/html/body/div")
+streamhide.to##:xpath("/html/body/div"):remove()
+||streamhide.com/js/dnsads.js*
+||media.dalyai.com/js/code.min.js*
+||track.dalysh.com^$all
+www.tomshardware.com##div[id="top-leaderboard"]
+www.tomshardware.com##div[class="advertisement-label"]
+www.tomshardware.com##div[class="bordeaux-slot-root"]
+www.tomshardware.com##div[class^="cash absolute contain"]
+www.tomshardware.com##div[class*="ad-unit"]
+www.tomshardware.com##div[id^="bordeaux-preemptive-ad-"]
+www.tomshardware.com##footer[id^="taboola-"][id$="-below-article-thumbnails"]
+www.tomshardware.com##div[class="dfp-leaderboard-container"]
+www.tomshardware.com##+js(set, window._sp_, {})
+www.tomshardware.com##+js(set, loadGTM, noopFunc)
+www.tomshardware.com##+js(set, dfp_config, {})
+www.tomshardware.com##+js(set, ccpaApplies, false)
+www.tomshardware.com##+js(set, analytics_ga_data, {})
+www.tomshardware.com##+js(set, window.disableBordeaux, true)
+www.tomshardware.com##+js(set, window.adParameters, {})
+www.tomshardware.com##+js(set, adToolVersion, "")
+www.tomshardware.com##+js(aopr, dfp_config.gallery_refresh_interval)
+www.tomshardware.com##+js(aopw, dfp_config.gallery_refresh_interval)
+www.tomshardware.com##+js(aopr, ccpaApplies)
+www.tomshardware.com##+js(aopw, ccpaApplies)
+www.tomshardware.com##+js(aopr, window.VAN.abTest)
+www.tomshardware.com##+js(aopw, window.VAN.abTest)
+||targetemsecure.blob.core.windows.net/138526d1-8ff9-4de4-b84a-3a11ec020ede/138526d18ff94de4b84a3a11ec020ede_1.js*
+thecubexguide.com##img[id="featuredimage"]
+thecubexguide.com##img[id="featuredimage"]:remove()
+thecubexguide.com##+js(acis, iframenone, iframev)
+devuploads.com##img[id="featuredimage"]
+devuploads.com##img[id="featuredimage"]:remove()
+devuploads.com##+js(acis, iframenone, iframev)
 
 !Whitelisted
 ! blocks Kroger website?
