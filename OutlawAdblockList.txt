@@ -22290,7 +22290,6 @@ crazy4tv.mrunblock.xyz##+js(abort-on-property-read.js, default)
 ||11ccda709b5cdf5.com/$all
 ||lesburghmoloki.site/$all
 ||edlingproteb.info/$all
-||mixdrop.co/sw.js*
 ||phsism.com/$all
 ||pmzer.com/$all
 ||dynamicadx.com/$all
@@ -22307,33 +22306,6 @@ crazy4tv.mrunblock.xyz##+js(abort-on-property-read.js, default)
 ||www.zekcgykv.com/$all
 ||www.rkauzlyh.com/$all
 ||c2af9d3d88.com/$all
-!||mixdrop.co/js/script.min.js*
-mixdrop.co##+js(set-constant.js, adblock, 0)
-mixdrop.co##+js(set-constant.js, blockAB, false)
-mixdrop.co##+js(set-constant.js, popundersPerIP, 0)
-mixdrop.co##+js(abort-current-inline-script.js, mp0p_counter)
-mixdrop.co##+js(abort-current-inline-script.js, lkid)
-mixdrop.co##+js(abort-current-inline-script.js, dynamicadx)
-mixdrop.co##+js(abort-current-inline-script.js, popups)
-mixdrop.co##+js(abort-current-inline-script.js, gearbest)
-mixdrop.co##+js(abort-current-inline-script.js, pmzer)
-mixdrop.co##+js(abort-on-property-write.js, dynamicadx)
-mixdrop.co##+js(abort-on-property-read.js, dynamicadx)
-mixdrop.co##+js(abort-on-property-write.js, popups)
-mixdrop.co##+js(abort-on-property-read.js, popups)
-mixdrop.co##+js(abort-on-property-write.js, gearbest)
-mixdrop.co##+js(abort-on-property-read.js, gearbest)
-mixdrop.co##+js(abort-on-property-write.js, pmzer)
-mixdrop.co##+js(abort-on-property-read.js, pmzer)
-mixdrop.co##+js(abort-on-property-write.js, lkid)
-mixdrop.co##+js(abort-on-property-read.js, lkid)
-mixdrop.co##+js(abort-on-property-write.js, mp0p_counter)
-mixdrop.co##+js(abort-on-property-read.js, mp0p_counter)
-mixdrop.co##+js(abort-on-property-write.js, rn_native_bqupr)
-mixdrop.co##+js(abort-on-property-read.js, rn_native_bqupr)
-mixdrop.co##+js(abort-on-property-write.js, NativeAd)
-mixdrop.co##+js(abort-on-property-read.js, NativeAd)
-||mixdrop.co/js/ads.js*
 ||www.zqydozajw.com/$all
 ||zqydozajw.com/$all
 ||static.uloz.to/javascript/nodus/adverts/$all
@@ -23122,7 +23094,6 @@ www.vg247.com###onetrust-consent-sdk
 ||fgddl9szdof7.com/$all
 !||a4mt150303tl.com/sbar.json*
 ||a4mt150303tl.com/$all
-||mixdrop.to/js/ads.js*
 ||crashreporter.epicgames.com/$all
 ||datarouter-public-service-prod06.ol.epicgames.com/$all
 download.ru###place117
@@ -25205,9 +25176,6 @@ www.4shared.com##+js(abort-on-property-write.js, targetElemID)
 ||www.xadsmart.com^$all
 ||xadsmart.com^$all
 ||yourwebbars.com/$all
-mixdrop.co##div[id="rn_native_bqupr"]
-mixdrop.co##+js(abort-current-inline-script.js, fromCharCode, charCodeAt)
-mixdrop.co##+js(abort-current-inline-script.js, atob)
 ||d4a77d8bc81ae17.com/$all
 ||www.sasha-lab.net/$all
 ||tracking.quicklixads.com/$all
@@ -28167,11 +28135,6 @@ www.blackhatworld.com##div[class*="bhw-banner-"]
 ||ef9af376b7f.com/$all
 ||e23b6d790a5b.com/$all
 ||8c535773f89c8.com/$all
-mixdrop.co##+js(set-constant.js, this.adblock, 0)
-mixdrop.co##+js(set-constant.js, this.blockAB, false)
-mixdrop.co##+js(set-constant.js, MDCore.blockAB, false)
-mixdrop.co##+js(set-constant.js, MDCore.adblock, 0)
-mixdrop.co##+js(window.open-defuser.js)
 ||airairgu.com/$all
 ||believeduphold.com/$all
 ||functionssubqueries.com/$all
@@ -28208,12 +28171,7 @@ www.cybermania.ws##^script:has-text(/Adblock/i)
 www.windowscentral.com##^script:has-text(/GdprApplies/i)
 ||www.gonczpsaceew.com/$all
 ||gonczpsaceew.com/$all
-||mixdrop.co/xvideo-js.js*
 ||53da5b2bba7.com/$all
-mixdrop.co##^script:has-text(/injectP2\(\)/i)
-mixdrop.co##^script:has-text(/plantinscription\.com/i)
-mixdrop.co##^script:has-text(/function\(p,a,c,k,e,d\)/i)
-mixdrop.co##iframe
 www.windowscentral.com##*[id^="parsely-"]
 www.windowscentral.com##+js(set-constant.js, TIMEOUT_DELAY, 0)
 www.windowscentral.com##+js(abort-on-property-read.js, TIMEOUT_DELAY)
@@ -28937,7 +28895,6 @@ www.theblaze.com##div[class^="gdpr-cookie"]
 ||con.tryzens-analytics.com/$all
 ||accesstra.de/$all
 ||immigratethorn.com/$all
-||i.doodcdn.com/ads/$all
 ||practisecolander.com/$all
 ||installerleading.com/$all
 ||glaresling.com/$all
@@ -34102,8 +34059,10 @@ dropgalaxy.com##div[id="analytics"]
 !||www.blockadsnot.com/tabletop.min.js*
 !||www.blockadsnot.com/dynamics.min.js*
 !||www.blockadsnot.com/grade.min.js*
-||www.blockadsnot.com/$all
-||blockadsnot.com/$all
+!||www.blockadsnot.com/agency.min.js*
+!||www.blockadsnot.com/jsoneditor.min.js*
+||www.blockadsnot.com^$all
+||blockadsnot.com^$all
 !||ruokareseptit.online/$all
 !||financemonk.net/$all
 !||educatiocenter.online/$all
@@ -36230,7 +36189,6 @@ www.statnews.com##div[data-ad-unit]
 ||www.hacbfyvvsw.com/$all
 ||hacbfyvvsw.com/$all
 ||bzwdksdngjhay.com/$all
-||www.blockadsnot.com/agency.min.js*
 ||www.bzwdksdngjhay.com/$all
 ||nordeela.com/$all
 ||ojjavpljruu.com/$all
@@ -36424,7 +36382,7 @@ www.myabandonware.com##div[data-b911-ad]
 ||ghskoqhz.com/$all
 ||lockfireshimself.com/$all
 !||banquetunarmedgrater.com/advertisers.js*
-||banquetunarmedgrater.com/$all
+||banquetunarmedgrater.com^$all
 ||forgerylimit.com/$all
 ||earnbearerelectricity.com/$all
 ||bodher.com/$all
@@ -37727,6 +37685,12 @@ daddylivehd.sx##iframe[src^="https://st.chatango.com/"]
 daddylivehd.sx##+js(aopw, _chatangoTagserver)
 daddylivehd.sx##+js(aopr, _chatangoTagserver)
 daddylivehd.sx##script[id="tsjson"]
+daddylivehd.sx##script[data-adel][zid]
+daddylivehd.sx##script[data-adel][zid]:remove()
+daddylivehd.sx##^script[data-adel][zid]
+daddylivehd.sx##^script[data-adel][zid]:remove()
+daddylivehd.sx##+js(acis, atob, decodeURIComponent)
+daddylivehd.sx##+js(acis, document, $._Eu, $.BD)
 daddylivehd.sx##div[id="footer"]
 www.google-analytics.com^$script,domain=daddylivehd.sx
 !st.chatango.com^$script,domain=daddylivehd.sx
@@ -37743,11 +37707,15 @@ daddylivehd.sx##+js(aopr, document.onmousedown)
 daddylivehd.sx##+js(aopw, x.withCredentials)
 daddylivehd.sx##+js(aopr, x.withCredentials)
 daddylivehd.sx##div[id="UnMutePlayer"]
-daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
+!daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
+daddylivehd.sx##input[type=button]:remove-attr(disabled)
 daddylivehd.sx##textarea[id="txtarea"]
-||daddylivehd.sx/embed/adblock.php*
-daddylivehd.sx##+js(aopw, _Hasync)
+daddylivehd.sx##+js(set, hs, noopfunc)
+daddylivehd.sx##+js(acis, _Hasync)
 daddylivehd.sx##+js(aopr, _Hasync)
+daddylivehd.sx##+js(aopw, _Hasync)
+||daddylivehd.sx/embed/adblock.php*
+||daddylivehd.sx/stream/adblock.php*
 ||armoryleaseholder.com^$all
 ||santstipule.com^$all
 !tv.ustvgo.live##object[id="ai-adb-dblclk"]
@@ -38403,7 +38371,6 @@ financerites.*##p:has-text(\[ad_)
 ||nhsmmxtfut.xyz^$all
 ||www.ldbboacmenwy.com^$all
 ||ldbboacmenwy.com^$all
-||daddylivehd.sx/stream/adblock.php*
 ||d29mxewlidfjg1.cloudfront.net^$all
 ||gorkt.com/script/clock.js$script,domain=sharecast.ws|tv247.us
 ||10865.ru^$all
@@ -38883,7 +38850,7 @@ www.nolive.me##+js(nostif, /^function\(\)/)
 !www.nolive.me##+js(nosiif, /^function()/)
 www.nolive.me##+js(nosiif, /^function\(\)/)
 www.nolive.me##+js(no-setTimeout-if, forceKillplayer)
-||cdn.espn.com/onetrust/otCCPAiab.js$script
+||cdn.espn.com/onetrust/otCCPAiab.js*
 abc.com##script[ccpa-opt-out-ids]
 abc.com##div[id^="vjs_video_"]:remove-class(evp-new-ad-display)
 abc.com##div[id^="vjs_video_"]:remove-class(hide-play-button)
@@ -39555,7 +39522,8 @@ abysscdn.com##iframe[src="about:blank"]:remove()
 ||jookouky.net^$all
 watchsb.com##+js(set, e, noopFunc)
 watchsb.com##+js(set, check, noopFunc)
-watchsb.com##+js(set, disabledEvent, noopFunc)
+! disabledEvent() actually removes unwanted event listener
+!watchsb.com##+js(set, disabledEvent, noopFunc)
 watchsb.com##+js(set, isadb, false)
 watchsb.com##+js(acis, debugger)
 watchsb.com##+js(aeld, /contextmenu|keydown/)
@@ -39779,6 +39747,144 @@ thecubexguide.com##+js(acis, iframenone, iframev)
 devuploads.com##img[id="featuredimage"]
 devuploads.com##img[id="featuredimage"]:remove()
 devuploads.com##+js(acis, iframenone, iframev)
+||pl16164575.highrevenuegate.com^$all
+||dxj6cq8hj162l.cloudfront.net^$all
+||www.deqkmzurltovbk.com^$all
+||genetorhebe.website^$all
+||asacdn.com/script/ippg.js*
+||bestsolaris.com/deity.php*
+bestsolaris.com##+js(set, attr, {})
+bestsolaris.com##+js(set, scriptSrc, "")
+bestsolaris.com##+js(aopr, autoloadMarker)
+bestsolaris.com##+js(aopw, autoloadMarker)
+bestsolaris.com##+js(nostif, r)
+||redeemlesson.com^$all
+||streampiay.fun/js/adverts-1.js*
+||jentent.streampiay.fun/jsa.hh*
+||jentent.streampiay.fun/apw.hh*
+||jentent.streampiay.fun/apw.hh$all
+! blocking drh.hh removes the embedded video player
+!||jentent.streampiay.fun/drh.hh*
+streampiay.fun##iframe[id="d0acf"]:remove-class(ad)
+streampiay.fun##+js(set, isAdb, false)
+streampiay.fun##+js(set, script.src, "")
+streampiay.fun##+js(aopr, script.src)
+streampiay.fun##+js(aopw, script.src)
+streampiay.fun##+js(aopr, isAdb)
+streampiay.fun##+js(aopw, isAdb)
+! blocking these keyword in a script prevents the video player from activating.
+!streampiay.fun##+js(acis, atob, decodeURIComponent)
+streampiay.fun##input[aria-label="play"]:remove-attr(disabled)
+streampiay.fun##div[class*="jw-logo-top-right"]
+streampiay.fun##div[class*="jw-logo-top-right"]:remove()
+! This prevents the video player from being clickable/activating.
+!streampiay.fun##span[id="vplayer"]
+!streampiay.fun##span[id="vplayer"]:remove()
+streampiay.fun##div[id="uverlay"]:style(display: block !important;)
+||i.doodcdn.co/ads/ad.js*
+||i.doodcdn.com/ads/$all
+!||dood.re/pass_md5/95713807-99-6-1681567203-1068e9126c189bdde0fa7264f4cfe82c/yjsz6dhz5ie6md0uvjstbb7v
+! This disables the embedded video player.
+!||dood.re/pass_md5/$all
+||dood.re/sw.js*
+dood.re##input[aria-label="play"]:remove-attr(disabled)
+dood.re##iframe[src="about:blank"]
+dood.re##iframe[src="about:blank"]:remove()
+dood.re##div[id="lpcuazk"]
+dood.re##div[id="lpcuazk"]:remove()
+dood.re##a[id="lkf7p"]
+dood.re##a[id="lkf7p"]:remove()
+dood.re##+js(set-constant, check, noopFunc)
+dood.re##+js(acis, debugger, minimalUserResponseInMiliseconds)
+dood.re##+js(aopw, minimalUserResponseInMiliseconds)
+dood.re##+js(aopr, minimalUserResponseInMiliseconds)
+dood.re##+js(nostif, check)
+!dood.re##+js(aeld, /contextmenu|keydown/, function(e))
+dood.re##+js(aeld, /contextmenu|keydown/)
+||dood.re/push_open/$all
+||www.bxczchdxynw.com^$all
+||www.vsyaiejmfooba.com^$all
+||www.hxgqqxopf.com^$all
+||www.ulrzovfukgkljw.com^$all
+||www.rsntcgoowyxsu.com^$all
+||www.crpcruynxxc.com^$all
+||somethingprecursorfairfax.com^$all
+||uenmsnlh.com^$all
+||revolvemockerycopper.com^$all
+||ku2d3a7pa8mdi.com^$all
+||replacementreluctance.com^$all
+||alas4kanmfa6a4mubte.com^$all
+||ajorinryesopert.com^$all
+||llyighaboveth.com^$all
+||pringed.space^$all
+||gqhoosuaqwmqegy.com^$all
+||reedthatm.biz^$all
+||performance.radar.cloudflare.com/beacon.js*
+!||predictiondexchange.com/jump/next.php*
+||predictiondexchange.com^$all
+||medicationneglectedshared.com^$all
+||treatyaccuserevil.com^$all
+||breakfastinvitingdetergent.com^$all
+||acylbirri.digital^$all
+||hewalleges.guru^$all
+||hallucinatebotany.com^$all
+||shredvealdone.com^$all
+||recanesjurel.com^$all
+||go.adstico.io^$all
+||westats.dev/js/plausible.js*
+||q.popbutler.com^$all
+||ak.phumpauk.com^$all
+!||mixdrop.co/js/script.min.js*
+!||mixdrop.co/xvideo-js.js*
+||mixdrop.to/js/ads.js*
+||mixdrop.co/sw.js*
+||mixdrop.co/xads.js*
+!mixdrop.co##iframe
+mixdrop.co##+js(set-constant, adblock, 0)
+mixdrop.co##+js(set-constant, blockAB, false)
+mixdrop.co##+js(set-constant, popundersPerIP, 0)
+mixdrop.co##+js(set-constant, MDCore.blockAB, false)
+mixdrop.co##+js(set-constant, MDCore.adblock, 0)
+mixdrop.co##+js(set-constant, wpn63s, noopFunc)
+mixdrop.co##+js(window.open-defuser.js)
+mixdrop.co##div[id="rn_native_bqupr"]
+mixdrop.co##^script:has-text(/injectP2\(\)/i)
+mixdrop.co##^script:has-text(/plantinscription\.com/i)
+mixdrop.co##^script:has-text(/function\(p,a,c,k,e,d\)/i)
+mixdrop.co##+js(abort-current-inline-script.js, fromCharCode, charCodeAt)
+mixdrop.co##+js(abort-current-inline-script.js, atob, decodeURIComponent)
+mixdrop.co##+js(abort-current-inline-script.js, mp0p_counter)
+mixdrop.co##+js(abort-current-inline-script.js, lkid)
+mixdrop.co##+js(abort-current-inline-script.js, dynamicadx)
+mixdrop.co##+js(abort-current-inline-script.js, popups)
+mixdrop.co##+js(abort-current-inline-script.js, gearbest)
+mixdrop.co##+js(abort-current-inline-script.js, pmzer)
+mixdrop.co##+js(abort-on-property-write.js, dynamicadx)
+mixdrop.co##+js(abort-on-property-read.js, dynamicadx)
+mixdrop.co##+js(abort-on-property-write.js, popups)
+mixdrop.co##+js(abort-on-property-read.js, popups)
+mixdrop.co##+js(abort-on-property-write.js, gearbest)
+mixdrop.co##+js(abort-on-property-read.js, gearbest)
+mixdrop.co##+js(abort-on-property-write.js, pmzer)
+mixdrop.co##+js(abort-on-property-read.js, pmzer)
+mixdrop.co##+js(abort-on-property-write.js, lkid)
+mixdrop.co##+js(abort-on-property-read.js, lkid)
+mixdrop.co##+js(abort-on-property-write.js, mp0p_counter)
+mixdrop.co##+js(abort-on-property-read.js, mp0p_counter)
+mixdrop.co##+js(abort-on-property-write.js, rn_native_bqupr)
+mixdrop.co##+js(abort-on-property-read.js, rn_native_bqupr)
+mixdrop.co##+js(abort-on-property-write.js, NativeAd)
+mixdrop.co##+js(abort-on-property-read.js, NativeAd)
+mixdrop.co##^script:has-text(dtnoppu)
+mixdrop.co##+js(acis, dtnoppu)
+mixdrop.co##+js(aopw, lastTimestamp)
+mixdrop.co##+js(aopr, lastTimestamp)
+mixdrop.co##+js(aopw, wpn63s)
+mixdrop.co##+js(aopr, wpn63s)
+mixdrop.co##+js(aeld, click, function(g))
+mixdrop.co##+js(nosiif, function)
+mixdrop.co##body:remove-attr(onclick)
+||soliads.net^$all
 
 !Whitelisted
 ! blocks Kroger website?
