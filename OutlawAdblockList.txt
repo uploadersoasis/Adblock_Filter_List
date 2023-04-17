@@ -15883,6 +15883,27 @@ askleo.com##.askleo_adblock1
 !||dl.hiapphere.com/static/js/show_ads.js*
 !||www.hiapphere.com/static/js/show_ads.js*
 ||*.hiapphere.com/static/js/show_ads.js*
+www.hiapphere.com##iframe[id^="aswift_"]
+www.hiapphere.com##iframe[id^="aswift_"]:remove()
+www.hiapphere.com##iframe[id^="google_ads_frame"]
+www.hiapphere.com##iframe[id^="google_ads_frame"]:remove()
+www.hiapphere.com##ins[data-ad-client]
+www.hiapphere.com##ins[data-ad-client]:remove()
+www.hiapphere.com##script[data-ad-client]
+www.hiapphere.com##script[data-ad-client]:remove()
+www.hiapphere.com##+js(set-constant.js, fuckAdBlock, null)
+www.hiapphere.com##+js(set-constant.js, importFAB, null)
+www.hiapphere.com##+js(set-constant, adBlockNotDetected, noopFunc)
+www.hiapphere.com##+js(set-constant, adBlockDetected, noopFunc)
+www.hiapphere.com##+js(aopr, fuckAdBlock)
+www.hiapphere.com##+js(aopw, fuckAdBlock)
+www.hiapphere.com##+js(aopr, importFAB)
+www.hiapphere.com##+js(aopw, importFAB)
+www.hiapphere.com##+js(set-constant, adsbygoogle, [])
+www.hiapphere.com##+js(aopr, adsbygoogle)
+www.hiapphere.com##+js(aopw, adsbygoogle)
+www.hiapphere.com##+js(set-constant, gtag, noopFunc)
+www.hiapphere.com##+js(set-constant, t, 0)
 ||ajax.cloudflare.com/cdn-cgi/scripts/c092a58e/cloudflare-static/beacon.min.js*
 ||hawarndorse.info/$all
 ||www.hawarndorse.info/$all
@@ -20663,15 +20684,11 @@ upload4earn.org##ins[class^="adsbygoogle"]
 ||www.xvucprzzwd.com/$all
 ||www.gwywsuemmf.com/$all
 ||gwywsuemmf.com/$all
-||a2zp30.com/js/ads.js*
 ||www.paakkisuvs.com/$all
 ||paakkisuvs.com/$all
 ||ffiiloo0k.c0qlr.xyz/$all
 ||bestdataresu1ts.com/$all
 ||www.bestdataresu1ts.com/$all
-a2zp30.com##ins[class="adsbygoogle"]
-a2zp30.com##+js(abort-on-property-read.js, adsbygoogle)
-a2zp30.com##+js(abort-on-property-write.js, adsbygoogle)
 www.cpuid.com##.widget-advert-336.widget-block > .widget-advert
 www.cpuid.com##.widget-advert-300.widget-block > .widget-advert
 ||xgrwjbui.top/$all
@@ -26792,10 +26809,6 @@ www.dvdnextcopy.com##*[class*="avia-cookie-consent"]
 ||oppositedragonfly.com/$all
 ||f95nkry2nf8o.com/$all
 ||incompatiblemisterfarmer.com/$all
-www.hiapphere.com##ins[class="adsbygoogle"]
-www.hiapphere.com##+js(set-constant.js, importFAB.src, null)
-www.hiapphere.com##+js(set-constant.js, fuckAdBlock, undefined)
-www.hiapphere.com##+js(set-constant.js, importFAB, null)
 www.imdb.com##div[id="top_ad_webbug"]
 www.imdb.com##^script[type="data-doubleclick"]
 www.imdb.com##img[id="mobile-ad-image"]
@@ -29590,7 +29603,6 @@ www.vivo.com##+js(aeld, /^(?:click|keydown|pointerdown|mousedown|MSPointerDown|s
 !www.vivo.com##div[class="reta-top-map"]:style(overflow: scroll !important;)
 !www.vivo.com##html,body:style(overflow: scroll !important;)
 www.vivo.com##+js(remove-class, public_noscroll, , stay)
-www.hiapphere.com##+js(set-constant.js, t, -1)
 mega4up.com##+js(remove-attr, disabled, #downloadbtn, stay)
 tsar3000.com##div[id="cookie-notice"]
 www.frp-tool.com##ins[class="adsbygoogle"]
@@ -30000,7 +30012,6 @@ press.handy-games.com##div[class*="cookie-consent-bar"]
 ||analytics.prezly.com/$all
 pagesix.com##div[class*="billboard-ad"]
 nypost.com##div[class*="billboard-ad"]
-www.hiapphere.com##+js(set-constant.js, t, 30, stay)
 ||molodgytot.biz/$all
 ||w.send.cm/www/d/a.php*
 ||w.send.cm/www/d/aspc.php*
@@ -36868,8 +36879,6 @@ game3rb.com##a[href*="://singlwirre.click/"]
 ||us.cobrowse.pega.com/$all
 educatiocenter.online##div[id="modalpop"]
 educatiocenter.online##+js(remove-attr, oncontextmenu, body)
-||tmp.a2zapk.com/adspopup.js*
-||tmp.a2zapk.com/adddds.js*
 www.minitool.com##div[id^="page-top-ad"]:remove()
 www.minitool.com##div[id^="article-sidebar-ad"]:remove()
 www.minitool.com##div[id^="page-bottom-fixed-ad"]:remove()
@@ -37298,7 +37307,6 @@ techthematter.xyz##+js(remove-attr, onclick, #dl, stay)
 techthematter.xyz##ins[data-ad-client]
 techthematter.xyz##+js(aopw, adsbygoogle)
 techthematter.xyz##+js(aopr, adsbygoogle)
-||tmp.a2zapk.com/js/techadsns.js*
 nordpass.com##div[id="cookie-consent"]
 ||cm.nordpass.com/nordaddy/?event_name=adblock_detection*
 !||monitor.clickcease.com/stats/stats.aspx*
@@ -38698,11 +38706,6 @@ www.redbox.com##+js(aopr, YAHOO.ywa.I13N.fireBeacon)
 www.redbox.com##+js(aopw, YAHOO.ywa.I13N.fireBeacon)
 www.redbox.com##+js(aopr, axel)
 www.redbox.com##+js(aopw, axel)
-!www.tikilive.com##div[id="vjs_video_3"]:remove-class(vjs-controls-disabled)
-!www.tikilive.com##div[id="vjs_video_301"]:remove-class(vjs-controls-disabled)
-www.tikilive.com##div[id^="vjs_video_"]:remove-class(vjs-controls-disabled)
-!||www.tikilive.com/watch/assets/ads/videojs.ads.min.js$script
-||www.tikilive.com/watch/assets/ads/$all
 ||tracking.vidgo.com^$all
 www.iptvplayers.com##ins[data-ad-client]
 www.iptvplayers.com##ins[data-ad-client]:remove()
@@ -39708,6 +39711,7 @@ streamvid.net##div[class="vjs-poster"]:remove()
 ||adblock-one-protection.com^$all
 streamhide.to##div[id="adbd"]
 streamhide.to##div[id="adbd"]:remove()
+streamhide.to##+js(set, _ASO, {})
 streamhide.to##+js(set, _ASO.PushOptions, {})
 streamhide.to##+js(aopr, _ASO.PushOptions)
 streamhide.to##+js(aopw, _ASO.PushOptions)
@@ -39942,6 +39946,14 @@ vidoza.net##+js(aeld, install)
 vidoza.net##+js(aeld, push)
 vidoza.net##+js(aeld, pushsubscriptionchange)
 vidoza.net##+js(aeld, notificationclick)
+! from ublock Origin main list:
+vidoza.net##+js(noeval)
+!vidoza.net##+js(nowoif)
+!vidoza.net##.in-block
+!vidoza.net###plo_0
+!vidoza.net##[id*="ScriptRoot"]
+!vidoza.net##.simpleToast
+!vidoza.net##.download-green
 ||desperationembassy.com^$all
 voe.sx,scatch176duplicities.com##+js(set-constant, c74a68dfbd15fcd6f23a6b26879bc82e, noopFunc)
 voe.sx,scatch176duplicities.com##+js(set-constant, adbStatus, 1)
@@ -39954,6 +39966,7 @@ upstream.to##+js(set-constant, gtag, noopFunc)
 upstream.to##+js(set-constant, FabUtils, noopFunc)
 upstream.to##+js(set-constant, FabPlugin, noopFunc)
 upstream.to##+js(set-constant, Fab, noopFunc)
+upstream.to##+js(set-constant, FabPluginHttp, noopFunc)
 upstream.to##+js(set-constant, googlejs, {})
 upstream.to##+js(set-constant, googlejs.add, noopFunc)
 upstream.to##+js(set-constant, showADBOverlay, noopFunc)
@@ -40051,6 +40064,258 @@ vtube.to,vtbe.net,vtplay.net##body[id="top"]:remove-attr(data-aos-duration)
 ||cs.cdnbit.com/s4code.php*
 ||queue.coinlist.co^$all
 ||hiveon.com^$all
+||eephaush.com^$all
+||www.dgxmvglp.com^$all
+||resetoccultkeeper.com^$all
+||la3c05lr3o.com^$all
+||www.vhrtgvzcmrfoo.com^$all
+||maw5r7y9s9helley.com^$all
+||whoursie.com^$all
+||thutsish.xyz^$all
+||cpyefqautjam.xyz^$all
+||kqofnvtsv.com^$all
+||nultoaly.net^$all
+||cirsepuh.net^$all
+||xchqxdiplpcugc.com^$all
+||tndfkyqjrva.com^$all
+||e335udnv6drg78b7.com^$all
+||handsenvious.com^$all
+||fembedta.com^$all
+||zx.inclusadeicer.com^$all
+||uy.mawseednoblest.com^$all
+||cdn.uponelectabuzzor.club^$all
+||belickitungchan.com^$all
+||outsliggooa.com^$all
+||cdn.itskiddien.club^$all
+||ak.whookroo.com^$all
+||variationaspenjaunty.com^$all
+||qoanbextkvfmjr.com^$all
+||mkgdfymr.com^$all
+!||ssl.p.jwpcdn.com/player/v/8.25.8/googima.js*
+||ssl.p.jwpcdn.com/player/v/*/googima.js*
+||crowdedmass.com^$all
+||tautqnuxgjraavl.com^$all
+||cantstopplaying.com^$all
+||ishku-wbq.com^$all
+||xp.apple.com/report/2/xp_amp_web_exp*
+www.distro.tv##div[id="shadow-overlay"]
+www.distro.tv##div[id="shadow-overlay"]:remove()
+www.distro.tv##+js(set, window._qevents, [])
+www.distro.tv##+js(acis, window._qevents)
+www.distro.tv##+js(aopw, window._qevents)
+www.distro.tvo##+js(aopr, window._qevents)
+www.distro.tvo##div[id="content_video_ima-ad-container"]
+www.distro.tvo##div[id="content_video_ima-ad-container"]:remove()
+www.distro.tvo##div[id="content_video_ima-countdown-div"]
+www.distro.tvo##div[id="content_video_ima-countdown-div"]:remove()
+www.distro.tv##+js(set, debug, noopFunc)
+www.distro.tv##+js(set, window.dsvalidator, noopFunc)
+www.distro.tvo##.videoAdUiFloatingLayer
+www.distro.tvo##.videoAdUiFloatingLayer:remove()
+!www.distro.tvo##div[aria-label="Video Player"]:remove-class(vjs-user-inactive)
+www.distro.tvo##div[id="content_video"]:remove-class(vjs-user-inactive)
+!www.tikilive.com##div[id="vjs_video_3"]:remove-class(vjs-controls-disabled)
+!www.tikilive.com##div[id="vjs_video_301"]:remove-class(vjs-controls-disabled)
+www.tikilive.com##div[id^="vjs_video_"]:remove-class(vjs-controls-disabled)
+www.tikilive.com##div[id^="vjs_video_"]:style(user-select: all !important;)
+www.tikilive.com##div[pseudo="-webkit-media-controls-panel"]:style(user-select: all !important;)
+www.tikilive.com##div[pseudo="-internal-media-controls-button-panel"]:style(user-select: all !important;)
+www.tikilive.com##input[aria-label="play"][type="button"]:style(user-select: all !important;)
+www.tikilive.com##div[class="channelPlayerBanner__12kSj"]
+www.tikilive.com##div[class="channelPlayerBanner__12kSj"]:remove()
+!||www.tikilive.com/watch/assets/ads/videojs.ads.min.js$script
+||www.tikilive.com/watch/assets/ads/$all
+forum.husham.com##div[class="u-bottomFixer js-bottomFixTarget"]:has(div[class="notice-content"]:has-text(This site uses cookies))
+forum.husham.com##div[class="u-bottomFixer js-bottomFixTarget"]:has(div[class="notice-content"]:has-text(This site uses cookies)):remove()
+||tmp.a2zapk.com/js/techadsns.js*
+||tmp.a2zapk.com/adspopup.js*
+||tmp.a2zapk.com/adddds.js*
+a2zp30.com##ins[class="adsbygoogle"]
+a2zp30.com##+js(abort-on-property-read.js, adsbygoogle)
+a2zp30.com##+js(abort-on-property-write.js, adsbygoogle)
+||a2zp30.com/js/ads.js*
+a2zapk.io##+js(set, e.preventDefault, noopFunc)
+a2zapk.io##+js(set, gtag, noopFunc)
+||a2zapk.io/adsbyg.js*
+a2zapk.io##div[class="ad-container"]
+a2zapk.io##div[class="ad-container"]:remove()
+a2zapk.io##a[id^="a-ads"]
+a2zapk.io##a[id^="a-ads"]:remove()
+a2zapk.io##iframe[data-aa]
+a2zapk.io##iframe[data-aa]:remove()
+a2zapk.io##+js(set, klTMzGavigaAYbvNGZjGGrvdaBvPrf, noopFunc)
+a2zapk.io##+js(set, $imgg, null)
+a2zapk.io##+js(acis, $imgg)
+a2zapk.io##+js(aopw, $imgg)
+a2zapk.io##+js(aopr, $imgg)
+a2zapk.io##+js(set, $img, null)
+a2zapk.io##+js(acis, $img)
+a2zapk.io##+js(aopw, $img)
+a2zapk.io##+js(aopr, $img)
+a2zapk.io##input[id="adx"]
+a2zapk.io##input[id="adx"]:remove()
+a2zapk.io##+js(set, divalerttag, "")
+a2zapk.io##+js(acis, divalerttag)
+a2zapk.io##+js(aopw, divalerttag)
+a2zapk.io##+js(aopr, divalerttag)
+a2zapk.io##div[id^="galax"]
+a2zapk.io##div[id^="galax"]:remove()
+a2zapk.io##+js(set, countad, noopFunc)
+a2zapk.io##html,body:remove-attr(oncontextmenu)
+a2zapk.io##+js(aeld, contextmenu)
+||tmp.isavetube.com/js/advertisement/$all
+||js.mobileoffers-ep-download.com^$all
+123chill.to##iframe[src="about:blank"]
+123chill.to##iframe[src="about:blank"]:remove()
+123chill.to##iframe[id="rufous-sandbox"]
+123chill.to##iframe[id="rufous-sandbox"]:remove()
+123chill.to##iframe[title="Twitter settings iframe"]
+123chill.to##iframe[title="Twitter settings iframe"]:remove()
+123chill.to##div[class="ann-home alert text-center"]
+123chill.to##div[class="ann-home alert text-center"]:remove()
+123chill.to##+js(acis, window.kkp4a5x5tv)
+123chill.to##+js(aopw, window.kkp4a5x5tv)
+123chill.to##+js(aopr, window.kkp4a5x5tv)
+123chill.to##+js(set, window.twttr, noopFunc)
+123chill.to##+js(acis, window.twttr)
+123chill.to##+js(aopw, window.twttr)
+123chill.to##+js(aopr, window.twttr)
+123chill.to##+js(set, t.I, "")
+123chill.to##+js(acis, _njwno)
+123chill.to##+js(aopw, _njwno)
+123chill.to##+js(aopr, _njwno)
+123chill.to##+js(set, getAdBlock, noopFunc)
+123chill.to##+js(set, checkAdBlock, noopFunc)
+dood.wf##+js(acis, fromCharCode, charCodeAt)
+dood.wf##+js(acis, decodeURIComponent, atob)
+dood.wf##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+dood.wf##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+dood.wf##+js(set, ca0967284e67bc53cb5b626985619403, "")
+dood.wf##+js(aopw, ca0967284e67bc53cb5b626985619403)
+dood.wf##+js(aopr, ca0967284e67bc53cb5b626985619403)
+dood.wf##^script[data-adel][cdnd][zid]
+dood.wf##^script[data-adel][cdnd][zid]:remove()
+dood.wf##script[data-adel][cdnd][zid]
+dood.wf##script[data-adel][cdnd][zid]:remove()
+dood.wf##^script[src*="//la3c05lr3o.com/"]
+dood.wf##^script[src*="//la3c05lr3o.com/"]:remove()
+dood.wf##script[src*="//la3c05lr3o.com/"]:remove-attr(onerror)
+dood.wf##script[src*="//la3c05lr3o.com/"]:remove-attr(onloaded)
+dood.wf##script[src*="//la3c05lr3o.com/"]
+dood.wf##script[src*="//la3c05lr3o.com/"]:remove()
+dood.wf##+js(nostif, c3)
+www.2embed.to##^script[src*="//whoursie.com/"]
+www.2embed.to##^script[src*="//whoursie.com/"]:remove()
+www.2embed.to##script[src*="//whoursie.com/"]:remove-attr(onerror)
+www.2embed.to##script[src*="//whoursie.com/"]:remove-attr(onloaded)
+www.2embed.to##script[src*="//whoursie.com/"]
+www.2embed.to##script[src*="//whoursie.com/"]:remove()
+www.2embed.to##+js(acis, $._Eu, $.BD)
+www.2embed.to##+js(aopw, $._Eu)
+www.2embed.to##+js(aopr, $._Eu)
+www.2embed.to##+js(aopw, $.BD)
+www.2embed.to##+js(aopr, $.BD)
+www.2embed.to##+js(set-constant, gtag, noopFunc)
+www.2embed.to##+js(acis, gtag)
+rabbitstream.net##vid[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
+rabbitstream.net##+js(set-constant, gtag, noopFunc)
+rabbitstream.net##+js(acis, gtag)
+!||rabbitstream.net/embed-5/$all
+membed1.com##+js(set-constant, gtag, noopFunc)
+membed1.com##+js(acis, gtag)
+membed1.com##+js(set-constant, $pe, "")
+membed1.com##+js(set-constant, _0xd959, [])
+membed1.com##+js(set-constant, isSandboxed, noopFunc)
+membed1.com##+js(set-constant, s.src, "")
+membed1.com##+js(set-constant, s.onerror, noopFunc)
+membed1.com##+js(set-constant, s.onload, noopFunc)
+membed1.com##+js(acis, isSandboxed)
+membed1.com##+js(acis, _umltsm)
+membed1.com##+js(acis, _0xd959, arr, encodeURIComponent)
+membed1.com##+js(aopw, window.kkp4a5x5tv)
+membed1.com##+js(aopr, window.kkp4a5x5tv)
+membed1.com##+js(acis, _uwkpcu, glersakr.com)
+membed1.com##+js(acis, _umltsm, betotodilea.com)
+membed1.com##+js(acis, $._Fa, $.BD, document)
+membed1.com##+js(aopw, $._Fa)
+membed1.com##+js(aopr, $._Fa)
+membed1.com##+js(aopw, $.BD)
+membed1.com##+js(aopr, $.BD)
+membed1.com##+js(aopw, $pe)
+membed1.com##+js(aopr, $pe)
+||embedsito.com/asset/jquery/slim-3.2.min.js*
+embedsito.com##+js(set-constant, devtoolIsOpening, noopFunc)
+embedsito.com##+js(nostif, devtoolIsOpening)
+embedsito.com##+js(acis, console.clear, debugger)
+embedsito.com##+js(acis, USER_ID)
+embedsito.com##^script:has-text(devtoolIsOpening)
+embedsito.com##^script:has-text(devtoolIsOpening):remove()
+embedsito.com##^script:has-text(USER_ID)
+embedsito.com##^script:has-text(USER_ID):remove()
+||moonmov.pro/ad.js*
+||moonmov.pro/js/dnsads.js*
+! baf.js is fuckadblock script
+||moonmov.pro/js/baf.js*
+moonmov.pro##+js(set-constant, FabUtils, noopFunc)
+moonmov.pro##+js(set-constant, FabPlugin, noopFunc)
+moonmov.pro##+js(set-constant, Fab, noopFunc)
+moonmov.pro##+js(set-constant, FabPluginHttp, noopFunc)
+moonmov.pro##+js(set-constant, deploy, noopFunc)
+moonmov.pro##+js(set-constant, dance, noopFunc)
+moonmov.pro##+js(set-constant, phashc, noopFunc)
+moonmov.pro##+js(set-constant, phash, noopFunc)
+moonmov.pro##+js(set-constant, s2i, noopFunc)
+moonmov.pro##+js(set-constant, UserCustomPop, {})
+moonmov.pro##+js(aopw, UserCustomPop)
+moonmov.pro##+js(aopr, UserCustomPop)
+moonmov.pro##+js(set-constant, window.fm6bzy67x3y2cg, {})
+moonmov.pro##+js(aopw, window.fm6bzy67x3y2cg)
+moonmov.pro##+js(aopr, window.fm6bzy67x3y2cg)
+moonmov.pro##+js(aopw, deploy)
+moonmov.pro##+js(aopr, deploy)
+moonmov.pro##+js(aopw, dance)
+moonmov.pro##+js(aopr, dance)
+moonmov.pro##+js(aopw, phashc)
+moonmov.pro##+js(aopr, phashc)
+moonmov.pro##+js(nosiif, /^/)
+moonmov.pro##+js(nostif, /^/)
+moonmov.pro##+js(acis, Zordon)
+moonmov.pro##+js(aopw, Zordon)
+moonmov.pro##+js(aopr, Zordon)
+moonmov.pro##.adblockblock
+moonmov.pro##.adblockblock:remove()
+moonmov.pro##div[id="adb"]
+moonmov.pro##div[id="adb"]:remove()
+moonmov.pro##+js(set-constant, getMainstream1, noopFunc)
+moonmov.pro##+js(set-constant, getMainstream2, noopFunc)
+moonmov.pro##+js(set-constant, getAdult1, noopFunc)
+moonmov.pro##+js(set-constant, getAdult2, noopFunc)
+moonmov.pro##+js(acis, getMainstream1, getMainstream2, getAdult1, getAdult2)
+moonmov.pro##^script:has-text(getMainstream1)
+moonmov.pro##^script:has-text(getMainstream1):remove()
+movhide.pro##+js(set-constant, gtag, noopFunc)
+movhide.pro##+js(acis, gtag)
+movhide.pro##+js(set-constant, ym, noopFunc)
+movhide.pro##div[id="adbd"]
+movhide.pro##div[id="adbd"]:remove()
+||movhide.pro/assets/jquery/main0.js*
+movhide.pro##+js(set, _ASO, {})
+movhide.pro##+js(set-constant, _ASO.loadPushHelper, noopFunc)
+movhide.pro##+js(set-constant, _ASO.PushOptions, {})
+movhide.pro##+js(acis, _ASO.loadPushHelper, _ASO.PushOptions)
+movhide.pro##+js(aopw, _ASO.PushOptions)
+movhide.pro##+js(aopr, _ASO.PushOptions)
+sbnet.one##div[class*="jw-logo-top-right"]
+sbnet.one##div[class*="jw-logo-top-right"]:remove()
+sbnet.one##+js(set-constant, gtag, noopFunc)
+sbnet.one##+js(acis, gtag)
+sbnet.one##+js(set, _ASO, {})
+sbnet.one##+js(set-constant, _ASO.loadPushHelper, noopFunc)
+sbnet.one##+js(set-constant, _ASO.PushOptions, {})
+sbnet.one##+js(acis, _ASO.loadPushHelper, _ASO.PushOptions)
+sbnet.one##+js(aopw, _ASO.PushOptions)
+sbnet.one##+js(aopr, _ASO.PushOptions)
+sbnet.one##+js(acis, decodeURIComponent, window, parseInt)
 
 !Whitelisted
 ! blocks Kroger website?
