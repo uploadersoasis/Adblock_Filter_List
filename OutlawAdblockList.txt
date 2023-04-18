@@ -24638,8 +24638,12 @@ userscloud.com##input[name="adblock_detected"]
 ||factoring.ltd/$all
 ||www.startos.win/$all
 ||gbfeexoyo.com/$all
-||www.displayvertising.com/$all
-||displayvertising.com/$all
+!||www.displayvertising.com/jquery.row-grid.min.js*
+!||www.displayvertising.com/jquery.complexify.min.js*
+!||www.displayvertising.com/repo.min.js*
+!||www.displayvertising.com/index.js*
+||www.displayvertising.com^$all
+||displayvertising.com^$all
 ||ratesphospit.club/$all
 ||jientlysome.top/$all
 tusfiles.com##body > iframe:nth-child(6)
@@ -29640,7 +29644,6 @@ www.insider.com##div[class*="ad-wrapper"]
 ||nimhuemark.com/$all
 ||windscreenregimepros.com/$all
 ||www.vmctzaxkc.com/$all
-!||www.displayvertising.com/jquery.complexify.min.js*
 filelox.com##+js(aopr, atOptions)
 filelox.com##+js(aopw, atOptions)
 uptocloud.co##div[id="gdpr-cookie-notice"]
@@ -30257,7 +30260,6 @@ torrentgalaxy.ultraproxy.info##div[id^="cookieConsent"]
 ||arc.io/arc-sw-core.js*
 ||www.cqxgtafgnc.com/$all
 ||ettv.proxybit.me/arc-sw.js*
-!||www.displayvertising.com/repo.min.js*
 app.pluralsight.com##div[data-css-17e1gtc]
 dotesports.com##.proper-ad-insert
 dotesports.com##.proper-ad-unit
@@ -35083,7 +35085,8 @@ tlin.me##a[href*="://mauchopt.net/"]:remove()
 ||pertfair.com/$all
 ||www.yasmwesikz.com/$all
 ||z.cdn.ftd.agency/$all
-||www.cdn4ads.com/$all
+!||www.cdn4ads.com/rot.min.js*
+||www.cdn4ads.com^$all
 ||pierremarkeraffliction.com/$all
 ||pathosacetals.com/$all
 ||arbourrenewal.com/$all
@@ -38129,7 +38132,6 @@ ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]:remove()
 ||waufooke.com^$all
 ! poscitech.click is a streaming tv website
 !||poscitech.click^$all
-||www.cdn4ads.com/rot.min.js*
 ||coonandeg.xyz^$all
 sportskart.click##+js(set, hs, noopFunc)
 sportskart.click##+js(set, window.u_cfg, {})
@@ -39141,7 +39143,6 @@ maxsport.one##+js(aopw, window.c18fe44ffdefee243e858c7444dda370)
 maxsport.one##+js(acis, _Hasync)
 maxsport.one##+js(aopr, _Hasync)
 maxsport.one##+js(aopw, _Hasync)
-||www.displayvertising.com/index.js*
 ||cdn.taboola.com/libtrc/chatango-network/loader.js$script,domain=cdn.stream-24.net|klubsports.online
 ntuplay.xyz##+js(set, currentReferer, "wikisport.click")
 ntuplay.xyz##+js(set, attr, {})
@@ -40224,6 +40225,14 @@ www.2embed.to##+js(aopr, $.BD)
 www.2embed.to##+js(acis, document, delete, RegExp, window)
 www.2embed.to##+js(set-constant, gtag, noopFunc)
 www.2embed.to##+js(acis, gtag)
+www.2embed.to##+js(set-constant, _0x3787a6, {})
+www.2embed.to##+js(set-constant, _0x2458b9, noopFunc)
+www.2embed.to##+js(acis, _0x3787a6, _0x2458b9)
+www.2embed.to##iframe[src="about:blank"]
+www.2embed.to##iframe[src="about:blank"]:remove()
+! put this script rule last since it uses an absolute xpath and its path could change if nodes above it are removed by other rules.
+www.2embed.to##:xpath("/html/body/script[1]")
+www.2embed.to##:xpath("/html/body/script[1]"):remove()
 rabbitstream.net##vid[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
 rabbitstream.net##+js(set-constant, gtag, noopFunc)
 rabbitstream.net##+js(acis, gtag)
@@ -40413,6 +40422,47 @@ hifi2007reviews.com##iframe[id^="aswift_"]:remove()
 ||mihgqnxfvngq.com^$all
 ||rpnhaykqv.com^$all
 ||mufflealiases.com^$all
+||bumpyremittancecarnivorous.com^$all
+||www.qfind.net^$all
+||igylwxvxgsuvcs.xyz^$all
+! *.ssl0d.com hosts contain the video files for slmaxed.com/streamlare.com
+!||www-hzc9228.ssl0d.com^$all
+!||www-seq40452.ssl0d.com^$all
+||slmaxed.com/js/ad-blocker.js*
+||streamlare.com/js/ad-blocker.js*
+slmaxed.com,streamlare.com##+js(set-constant, window.AdBlock, false)
+||slmaxed.com/blocked.html*
+||streamlare.com/blocked.html*
+! removing file-embed prevents the video from loading.
+!slmaxed.com,streamlare.com##file-embed
+!slmaxed.com,streamlare.com##file-embed:remove()
+! The following two acis lines prevent the video from loading.
+!slmaxed.com,streamlare.com##+js(acis, console.clear, debugger)
+!slmaxed.com,streamlare.com##+js(acis, parseInt, console['clear'])
+slmaxed.com,streamlare.com##+js(set-constant, devtoolIsOpening, noopFunc)
+slmaxed.com,streamlare.com##+js(nostif, devtoolIsOpening)
+slmaxed.com,streamlare.com##+js(set-constant, gtag, noopFunc)
+slmaxed.com,streamlare.com##+js(acis, gtag)
+! The following lines don't prevent the inline anti-adblock script from executing.
+slmaxed.com,streamlare.com##^script:has-text(/blocked\.html/)
+slmaxed.com,streamlare.com##^script:has-text(/blocked\.html/):remove()
+slmaxed.com,streamlare.com##script:has-text(/blocked\.html/)
+slmaxed.com,streamlare.com##script:has-text(/blocked\.html/):remove()
+slmaxed.com,streamlare.com##^script:has-text(ad-blocker)
+slmaxed.com,streamlare.com##^script:has-text(ad-blocker):remove()
+slmaxed.com,streamlare.com##script:has-text(ad-blocker)
+slmaxed.com,streamlare.com##script:has-text(ad-blocker):remove()
+!||slmaxed.com,streamlare.com^$inline-script
+!||velocitycdn.com/script/tbeomspv.js*
+!||expuge.com/script/tbeomspv.js*
+||expuge.com^$all
+!||onaged.com/deity.php*
+||onaged.com^$all
+*/script/tbeomspv.js*
+||www.ahnioppshfwq.com^$all
+||www.tqmibkqlwqdysi.com^$all
+! ww1.educ.top is iframe for www.sawlive.net
+!||ww1.educ.top^$all
 
 !Whitelisted
 ! blocks Kroger website?
