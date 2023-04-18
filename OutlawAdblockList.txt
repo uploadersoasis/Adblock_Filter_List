@@ -40253,6 +40253,18 @@ membed1.com##+js(aopw, $pe)
 membed1.com##+js(aopr, $pe)
 membed1.com##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 membed1.com##+js(acis, adblock, excludes)
+! nostif, /^function\(\)/ triggers an anti-adblocking script and message
+!membed1.com##+js(nostif, /^function\(\)/)
+membed1.com##+js(set-constant, devtoolIsOpening, noopFunc)
+! nostif, devtoolIsOpening triggers an anti-adblocking script and message
+!membed1.com##+js(nostif, devtoolIsOpening)
+! The following does NOT prevent the developer tools check from working.
+membed1.com##+js(acis, console.clear, debugger)
+membed1.com##+js(acis, DevTools)
+membed1.com##^script:has-text(DevTools)
+membed1.com##^script:has-text(DevTools):remove()
+membed1.com##script:has-text(DevTools)
+membed1.com##script:has-text(DevTools):remove()
 ||embedsito.com/asset/jquery/slim-3.2.min.js*
 embedsito.com##+js(set-constant, devtoolIsOpening, noopFunc)
 embedsito.com##+js(nostif, devtoolIsOpening)
@@ -40396,6 +40408,11 @@ hifi2007reviews.com##iframe[id^="google_ads_frame"]
 hifi2007reviews.com##iframe[id^="google_ads_frame"]:remove()
 hifi2007reviews.com##iframe[id^="aswift_"]
 hifi2007reviews.com##iframe[id^="aswift_"]:remove()
+||byfblhtjhhn.com^$all
+||gfkhapiuxjkspbq.xyz^$all
+||mihgqnxfvngq.com^$all
+||rpnhaykqv.com^$all
+||mufflealiases.com^$all
 
 !Whitelisted
 ! blocks Kroger website?
