@@ -40181,11 +40181,16 @@ a2zapk.io##+js(aeld, contextmenu)
 123chill.to##+js(aopw, window.twttr)
 123chill.to##+js(aopr, window.twttr)
 123chill.to##+js(set, t.I, "")
-123chill.to##+js(acis, _njwno)
+123chill.to##+js(acis, _njwno, eephaush.com)
 123chill.to##+js(aopw, _njwno)
 123chill.to##+js(aopr, _njwno)
 123chill.to##+js(set, getAdBlock, noopFunc)
 123chill.to##+js(set, checkAdBlock, noopFunc)
+123chill.to##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+123chill.to##+js(acis, adblock, excludes)
+123chill.to##+js(set-constant, $pe, "")
+123chill.to##+js(aopw, $pe)
+123chill.to##+js(aopr, $pe)
 dood.wf##+js(acis, fromCharCode, charCodeAt)
 dood.wf##+js(acis, decodeURIComponent, atob)
 dood.wf##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
@@ -40210,11 +40215,13 @@ www.2embed.to##script[src*="//whoursie.com/"]:remove-attr(onerror)
 www.2embed.to##script[src*="//whoursie.com/"]:remove-attr(onloaded)
 www.2embed.to##script[src*="//whoursie.com/"]
 www.2embed.to##script[src*="//whoursie.com/"]:remove()
-www.2embed.to##+js(acis, $._Eu, $.BD)
+www.2embed.to##+js(set-constant, $pe, "")
+www.2embed.to##+js(acis, $._Eu, $.BD, $pe)
 www.2embed.to##+js(aopw, $._Eu)
 www.2embed.to##+js(aopr, $._Eu)
 www.2embed.to##+js(aopw, $.BD)
 www.2embed.to##+js(aopr, $.BD)
+www.2embed.to##+js(acis, document, delete, RegExp, window)
 www.2embed.to##+js(set-constant, gtag, noopFunc)
 www.2embed.to##+js(acis, gtag)
 rabbitstream.net##vid[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
@@ -40236,13 +40243,16 @@ membed1.com##+js(aopw, window.kkp4a5x5tv)
 membed1.com##+js(aopr, window.kkp4a5x5tv)
 membed1.com##+js(acis, _uwkpcu, glersakr.com)
 membed1.com##+js(acis, _umltsm, betotodilea.com)
-membed1.com##+js(acis, $._Fa, $.BD, document)
+membed1.com##+js(acis, $._Fa, $.BD, $pe)
+membed1.com##+js(acis, $._FH, $.BC, $pe)
 membed1.com##+js(aopw, $._Fa)
 membed1.com##+js(aopr, $._Fa)
-membed1.com##+js(aopw, $.BD)
-membed1.com##+js(aopr, $.BD)
+membed1.com##+js(aopw, $.BC)
+membed1.com##+js(aopr, $.BC)
 membed1.com##+js(aopw, $pe)
 membed1.com##+js(aopr, $pe)
+membed1.com##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+membed1.com##+js(acis, adblock, excludes)
 ||embedsito.com/asset/jquery/slim-3.2.min.js*
 embedsito.com##+js(set-constant, devtoolIsOpening, noopFunc)
 embedsito.com##+js(nostif, devtoolIsOpening)
@@ -40256,6 +40266,11 @@ embedsito.com##^script:has-text(USER_ID):remove()
 ||moonmov.pro/js/dnsads.js*
 ! baf.js is fuckadblock script
 ||moonmov.pro/js/baf.js*
+moonmov.pro##^script:has-text(blockadblock)
+moonmov.pro##^script:has-text(blockadblock):remove()
+moonmov.pro##script:has-text(blockadblock)
+moonmov.pro##script:has-text(blockadblock):remove()
+moonmov.pro##+js(acis, blockadblock)
 moonmov.pro##+js(set-constant, FabUtils, noopFunc)
 moonmov.pro##+js(set-constant, FabPlugin, noopFunc)
 moonmov.pro##+js(set-constant, Fab, noopFunc)
@@ -40268,9 +40283,6 @@ moonmov.pro##+js(set-constant, s2i, noopFunc)
 moonmov.pro##+js(set-constant, UserCustomPop, {})
 moonmov.pro##+js(aopw, UserCustomPop)
 moonmov.pro##+js(aopr, UserCustomPop)
-moonmov.pro##+js(set-constant, window.fm6bzy67x3y2cg, {})
-moonmov.pro##+js(aopw, window.fm6bzy67x3y2cg)
-moonmov.pro##+js(aopr, window.fm6bzy67x3y2cg)
 moonmov.pro##+js(aopw, deploy)
 moonmov.pro##+js(aopr, deploy)
 moonmov.pro##+js(aopw, dance)
@@ -40278,10 +40290,13 @@ moonmov.pro##+js(aopr, dance)
 moonmov.pro##+js(aopw, phashc)
 moonmov.pro##+js(aopr, phashc)
 moonmov.pro##+js(nosiif, /^/)
+moonmov.pro##+js(nostif, deploy)
 moonmov.pro##+js(nostif, /^/)
 moonmov.pro##+js(acis, Zordon)
 moonmov.pro##+js(aopw, Zordon)
 moonmov.pro##+js(aopr, Zordon)
+moonmov.pro##+js(aopw, window.ZorDon)
+moonmov.pro##+js(aopr, window.ZorDon)
 moonmov.pro##.adblockblock
 moonmov.pro##.adblockblock:remove()
 moonmov.pro##div[id="adb"]
@@ -40293,6 +40308,12 @@ moonmov.pro##+js(set-constant, getAdult2, noopFunc)
 moonmov.pro##+js(acis, getMainstream1, getMainstream2, getAdult1, getAdult2)
 moonmov.pro##^script:has-text(getMainstream1)
 moonmov.pro##^script:has-text(getMainstream1):remove()
+moonmov.pro##^script:has-text(sandbox)
+moonmov.pro##^script:has-text(sandbox):remove()
+moonmov.pro##+js(acis, parseInt, localStorage, setTimeout)
+moonmov.pro##+js(aopw, config.ampallow)
+moonmov.pro##+js(aopr, config.ampallow)
+moonmov.pro##+js(acis, location.protocol, document.domain, config.ampallow)
 movhide.pro##+js(set-constant, gtag, noopFunc)
 movhide.pro##+js(acis, gtag)
 movhide.pro##+js(set-constant, ym, noopFunc)
@@ -40305,6 +40326,7 @@ movhide.pro##+js(set-constant, _ASO.PushOptions, {})
 movhide.pro##+js(acis, _ASO.loadPushHelper, _ASO.PushOptions)
 movhide.pro##+js(aopw, _ASO.PushOptions)
 movhide.pro##+js(aopr, _ASO.PushOptions)
+movhide.pro##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
 sbnet.one##div[class*="jw-logo-top-right"]
 sbnet.one##div[class*="jw-logo-top-right"]:remove()
 sbnet.one##+js(set-constant, gtag, noopFunc)
@@ -40316,6 +40338,64 @@ sbnet.one##+js(acis, _ASO.loadPushHelper, _ASO.PushOptions)
 sbnet.one##+js(aopw, _ASO.PushOptions)
 sbnet.one##+js(aopr, _ASO.PushOptions)
 sbnet.one##+js(acis, decodeURIComponent, window, parseInt)
+sbnet.one##+js(set-constant, isadb, false)
+sbnet.one##+js(set-constant, check, noopFunc)
+sbnet.one##+js(acis, debugger, minimalUserResponseInMiliseconds, console.clear)
+sbnet.one##+js(aopw, minimalUserResponseInMiliseconds)
+sbnet.one##+js(aopr, minimalUserResponseInMiliseconds)
+sbnet.onee##+js(nostif, check)
+!sbnet.one##+js(aeld, /contextmenu|keydown/, function(e))
+sbnet.one##+js(aeld, /contextmenu|keydown/)
+! put this at the end of sbnet.one entries since it is a hard-coded path and removed elements above it would affect it.
+sbnet.one##:xpath("/html/body/div[4]")
+sbnet.one##:xpath("/html/body/div[4]"):remove()
+||houseofblogger.com^$all
+||r3chedwiki.cfd^$all
+||vtlyycqqfrrtp.com^$all
+||raunowhy.xyz^$all
+||syqtoqhjkmu.xyz^$all
+||itdalmhykude.com^$all
+||justmysocks.net^$all
+||py.pl^$all
+||www.vultr.com^$all
+||cheapenleaving.com^$all
+chedrives.com##script[jstcache]
+chedrives.com##+js(acis, jstcache)
+chedrives.com##+js(aopw, window.JsEvalContext)
+chedrives.com##+js(aopr, window.JsEvalContext)
+chedrives.com##+js(set-constant, gtag, noopFunc)
+chedrives.com##+js(set-constant, atOptions, {})
+chedrives.com##+js(aopw, atOptions)
+chedrives.com##+js(aopr, atOptions)
+chedrives.com##+js(acis, gtag)
+chedrives.com##iframe[src^="https://www.hostmonster.com/track/"]
+chedrives.com##iframe[src^="https://www.hostmonster.com/track/"]:remove()
+chedrives.com##div[id="gdpr-cookie-notice"]
+chedrives.com##div[id="gdpr-cookie-notice"]:remove()
+chedrives.com##a[role="button"][href^="https://start3dfile33.com/"]
+chedrives.com##a[role="button"][href^="https://start3dfile33.com/"]:remove()
+||chedrives.com/sw.js*
+||www.hostmonster.com/track/liusufang2/$all
+||www.bluehost.com/track/$all
+||start3dfile33.com^$all
+||88847aa1c0.8353e36c2a.com^$all
+||lumpbackstage.com^$all
+hifi2007reviews.com##html:remove-class(mh-disable-sb)
+hifi2007reviews.com##html:remove-attr(nighteyeplgn)
+||hifi2007reviews.com/cdn-cgi/zaraz/s.js*
+hifi2007reviews.com##+js(set-constant, cO, {})
+hifi2007reviews.com##+js(set-constant, cO.zaraz, noopFunc)
+hifi2007reviews.com##+js(aopw, cO.zaraz)
+hifi2007reviews.com##+js(aopr, cO.zaraz)
+hifi2007reviews.com##+js(set-constant, adsbygoogle, [])
+hifi2007reviews.com##+js(aopw, adsbygoogle)
+hifi2007reviews.com##+js(aopr, adsbygoogle)
+hifi2007reviews.com##ins[data-ad-client]
+hifi2007reviews.com##ins[data-ad-client]:remove()
+hifi2007reviews.com##iframe[id^="google_ads_frame"]
+hifi2007reviews.com##iframe[id^="google_ads_frame"]:remove()
+hifi2007reviews.com##iframe[id^="aswift_"]
+hifi2007reviews.com##iframe[id^="aswift_"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
