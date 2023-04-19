@@ -3169,7 +3169,7 @@ abclocal.go.com##.ad_130x90
 abclocal.go.com###bannerTop
 ||1phads.com/afr.php*
 !||go.oclasrv.com/apu.php*
-||go.oclasrv.com/$all
+||go.oclasrv.com^$all
 ||1phads.com/www/images/$all
 ||udc.msn.com/c.gif*
 ||9cc85d.se/$all
@@ -37706,7 +37706,7 @@ daddylivehd.sx##div[id="footer"]
 www.google-analytics.com^$script,domain=daddylivehd.sx
 !st.chatango.com^$script,domain=daddylivehd.sx
 !st.chatango.com^$all,domain=daddylivehd.sx
-||st.chatango.com^$all,domain=time4tv.stream|daddylivehd.sx|time4tv.xyz|freestreams-live1.tv|klubsports.online|cdn.stream-24.net
+||st.chatango.com^$all,domain=time4tv.stream,time4tv.xyz|daddylivehd.sx|time4tv.stream,time4tv.xyz|freestreams-live1.tv|klubsports.online|cdn.stream-24.net
 daddylivehd.sx##div[id="sidebar"]
 daddylivehd.sx##iframe[id="stats"]
 daddylivehd.sx##+js(aopw, document.oncontextmenu)
@@ -37721,7 +37721,7 @@ daddylivehd.sx##div[id="UnMutePlayer"]
 !daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
 daddylivehd.sx##input[type=button]:remove-attr(disabled)
 daddylivehd.sx##textarea[id="txtarea"]
-daddylivehd.sx##+js(set, hs, noopFunc)
+daddylivehd.sx##+js(set, hs, {})
 daddylivehd.sx##+js(acis, _Hasync)
 daddylivehd.sx##+js(aopr, _Hasync)
 daddylivehd.sx##+js(aopw, _Hasync)
@@ -38032,23 +38032,60 @@ userupload.in##amp-auto-ads
 ||yourtehzeeb.com/fsembed.js*
 ||www.betteradsystem.com/responsive-nav.min.js*
 ||time4tv.stream/top.php*
-time4tv.stream##a[href^="https://xijgedjgg5f55.com/"]
-time4tv.stream##+js(remove-attr, oncontextmenu, body)
-time4tv.stream##div[id="floatLayer1"]
+||time4tv.xyz/top.php*
+!time4tv.stream,time4tv.xyz##iframe[src^="https://www.sports-stream.click/s2w/spsch.php"]
+time4tv.stream,time4tv.xyz##+js(acis, decodeURIComponent, window)
+time4tv.stream,time4tv.xyz##+js(acis, document.oncontextmenu)
+time4tv.stream,time4tv.xyz##+js(aopr, document.oncontextmenu)
+time4tv.stream,time4tv.xyz##+js(aopw, document.oncontextmenu)
+time4tv.stream,time4tv.xyz##iframe[src^="https://st.chatango.com/"]
+time4tv.stream,time4tv.xyz##iframe[src^="https://st.chatango.com/"]:remove()
+time4tv.stream,time4tv.xyz##a[href^="https://xijgedjgg5f55.com/"]
+time4tv.stream,time4tv.xyz##+js(remove-attr, oncontextmenu, body)
+time4tv.stream,time4tv.xyz##div[id="floatLayer1"]
 ! the debugger detector is in a generated function so use noeval instead.
-time4tv.stream##+js(noeval)
-!time4tv.stream##+js(acis, debugger)
-time4tv.stream##+js(acis, detectDevTool)
-time4tv.stream##+js(remove-attr, style, .seek-time, stay)
-time4tv.stream##+js(remove-class, seek-disabled, div, stay)
-time4tv.stream##+js(remove-class, volume-bar-hide, div, stay)
-time4tv.stream##div[class="chatBox"]
-time4tv.stream##iframe[id="rufous-sandbox"]
-time4tv.stream##div[id="UnMutePlayer"]:style(display: none;)
-time4tv.stream##div[id="UnMutePlayer"]:remove()
-time4tv.stream##div[id="UnMutePlayer"]
-!time4tv.stream##iframe[src^="https://www.sports-stream.click/s2w/spsch.php"]
-time4tv.stream##iframe[src^="https://st.chatango.com/"]
+time4tv.stream,time4tv.xyz##+js(noeval)
+!time4tv.stream,time4tv.xyz##+js(acis, debugger)
+time4tv.stream,time4tv.xyz##+js(acis, detectDevTool)
+time4tv.stream,time4tv.xyz##+js(remove-attr, style, .seek-time, stay)
+time4tv.stream,time4tv.xyz##+js(remove-class, seek-disabled, div, stay)
+time4tv.stream,time4tv.xyz##+js(remove-class, volume-bar-hide, div, stay)
+time4tv.stream,time4tv.xyz##div[class="chatBox"]
+time4tv.stream,time4tv.xyz##div[class="chatBox"]:remove()
+time4tv.stream,time4tv.xyz##iframe[id="rufous-sandbox"]
+time4tv.stream,time4tv.xyz##div[id="UnMutePlayer"]:style(display: none;)
+time4tv.stream,time4tv.xyz##div[id="UnMutePlayer"]:remove()
+time4tv.stream,time4tv.xyz##div[id="UnMutePlayer"]
+time4tv.stream,time4tv.xyz##+js(set, atOptions, {})
+time4tv.stream,time4tv.xyz##+js(aopr, atOptions)
+time4tv.stream,time4tv.xyz##+js(aopw, atOptions)
+time4tv.stream,time4tv.xyz##+js(set, f1V2u, {})
+time4tv.stream,time4tv.xyz##+js(acis, f1V2u, zfgaabversion, zfgloadedpopup)
+time4tv.stream,time4tv.xyz##^script:has-text(zfgaabversion)
+time4tv.stream,time4tv.xyz##^script:has-text(zfgloadedpopup)
+time4tv.stream,time4tv.xyz##^script:has-text(f1V2u)
+time4tv.stream,time4tv.xyz##^script:has-text(zfgaabversion):remove()
+time4tv.stream,time4tv.xyz##^script:has-text(zfgloadedpopup):remove()
+time4tv.stream,time4tv.xyz##^script:has-text(f1V2u):remove()
+time4tv.stream,time4tv.xyz##script:has-text(zfgaabversion)
+time4tv.stream,time4tv.xyz##script:has-text(zfgloadedpopup)
+time4tv.stream,time4tv.xyz##script:has-text(f1V2u)
+time4tv.stream,time4tv.xyz##script:has-text(zfgaabversion):remove()
+time4tv.stream,time4tv.xyz##script:has-text(zfgloadedpopup):remove()
+time4tv.stream,time4tv.xyz##script:has-text(f1V2u):remove()
+time4tv.stream,time4tv.xyz##+js(set, hs, {})
+time4tv.stream,time4tv.xyz##+js(set, _Hasync, [])
+time4tv.stream,time4tv.xyz##+js(acis, _Hasync)
+time4tv.stream,time4tv.xyz##+js(aopr, _Hasync)
+time4tv.stream,time4tv.xyz##+js(aopw, _Hasync)
+time4tv.stream,time4tv.xyz##+js(set, _jnwlwxy, noopFunc)
+time4tv.stream,time4tv.xyz##+js(set, _aisdow, noopFunc)
+time4tv.stream,time4tv.xyz##^script[src*="/go.oclasrv.com/apu.php"]:remove-attr(onerror)
+time4tv.stream,time4tv.xyz##^script[src*="/go.oclasrv.com/apu.php"]:remove-attr(onload)
+time4tv.stream,time4tv.xyz##^script[src*="/go.oclasrv.com/apu.php"]:remove()
+time4tv.stream,time4tv.xyz##script[src*="/go.oclasrv.com/apu.php"]:remove-attr(onerror)
+time4tv.stream,time4tv.xyz##script[src*="/go.oclasrv.com/apu.php"]:remove-attr(onload)
+time4tv.stream,time4tv.xyz##script[src*="/go.oclasrv.com/apu.php"]:remove()
 ! None of the following appears to work to stop redirection for extrafreetv.com/embed/em.php URL's
 extrafreetv.com##+js(set, top.location, null)
 extrafreetv.com##+js(acis, top.location)
@@ -38133,7 +38170,7 @@ ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]:remove()
 ! poscitech.click is a streaming tv website
 !||poscitech.click^$all
 ||coonandeg.xyz^$all
-sportskart.click##+js(set, hs, noopFunc)
+sportskart.click##+js(set, hs, {})
 sportskart.click##+js(set, window.u_cfg, {})
 sportskart.click##script[data-adel][zid]
 sportskart.click##script[data-adel][zid]:remove()
@@ -38356,7 +38393,7 @@ reddit-tv1-streams.blogspot.com##+js(aopw, window.location)
 ||nannyamplify.com^$all
 ||tournamentsevenhung.com^$all
 !||www.intellipopup.com/processing.min.js*
-||www.intellipopup.com^$script,domain=time4tv.stream|sportskart.click
+||www.intellipopup.com^$script,domain=time4tv.stream,time4tv.xyz|sportskart.click
 ||pl15806485.highcpmrevenuenetwork.com^$all
 ||qyfkarotggyk.xyz^$all
 ||umjsxysoehop.xyz^$all
@@ -38782,8 +38819,10 @@ www.sportsbaytv.com##+js(nosiif, vwu())
 1rowsportz.info##+js(acis, window.kkp4a5x5tv)
 1rowsportz.info##+js(aopr, window.kkp4a5x5tv)
 1rowsportz.info##+js(aopw, window.kkp4a5x5tv)
-||sawlive.tv/avurcfq3.js$script
-||godzillive.com/blast.js$script
+!||sawlive.tv/avurcfq3.js$script
+||sawlive.tv/avurcfq3.js*
+!||godzillive.com/blast.js$script
+||godzillive.com/blast.js*
 godzillive.com##+js(aopr, rtclickcheck)
 godzillive.com##+js(aopw, rtclickcheck)
 godzillive.com##+js(aopr, document.onmousedown)
@@ -38865,14 +38904,17 @@ www.guru99.com##div[id^="div-gpt-ad-"]:remove()
 www.guru99.com##+js(aopr, pubwise)
 www.guru99.com##+js(aopw, pubwise)
 www.guru99.com##+js(set, pubwise.enabled, false)
-||assets-cdn.watchdisneyfe.com/delta/assets/abc/nielsen.js$script
+||assets-cdn.watchdisneyfe.com/delta/assets/abc/nielsen.js*
+!||assets-cdn.watchdisneyfe.com/delta/assets/abc/nielsen.js$script
 ||dcf.espn.com/privacy/$all
 bosscast.eu##iframe[id="rufous-sandbox"]
 bosscast.eu##iframe[id="rufous-sandbox"]:remove()
-||bettingoffer.xyz/js/popup.js$script
+||bettingoffer.xyz/js/popup.js*
+!||bettingoffer.xyz/js/popup.js$script
 ||bettingoffer.xyz/ads.php*
 ||www.playermyplayer.me/ad_xxx.php*
-||blokstvs.xyz/js/ar.js$script
+||blokstvs.xyz/js/ar.js*
+!||blokstvs.xyz/js/ar.js$script
 !||myopyrum.digital/rf/$all
 ||myopyrum.digital^$all
 bettingoffer.xyz##div[id="advertisement"]
@@ -38910,7 +38952,8 @@ bosscast.eu##iframe[src^="https://www.playermyplayer.me/ad_xxx.php"]
 bosscast.eu##iframe[src^="https://www.playermyplayer.me/ad_xxx.php"]:remove()
 bosscast.eu##div[id="floatLayer1"]
 bosscast.eu##div[id="floatLayer1"]:remove()
-||www.intelligenceadx.com/json3.min.js$script
+||www.intelligenceadx.com/json3.min.js*
+!||www.intelligenceadx.com/json3.min.js$script
 playermyplayer.me##+js(aopr, document.oncontextmenu)
 playermyplayer.me##+js(aopw, document.oncontextmenu)
 playermyplayer.me##div:has(span[onmouseup="document.getElementById('floatLayer1').style.display='none'"])
@@ -38967,12 +39010,6 @@ live.harleyquinnwidget.live##+js(set, top.location, self.location)
 ||www.gwcpdvojom.com^$all
 ||sunflowerinformed.com^$all
 ||www.betteradsystem.com/barba.min.js*
-time4tv.xyz##+js(acis, decodeURIComponent)
-time4tv.xyz##+js(acis, document.oncontextmenu)
-time4tv.xyz##+js(aopr, document.oncontextmenu)
-time4tv.xyz##+js(aopw, document.oncontextmenu)
-time4tv.xyz##iframe[src^="https://st.chatango.com/"]
-time4tv.xyz##iframe[src^="https://st.chatango.com/"]:remove()
 ||gluvoob.com^$all
 ||tdsdo.com^$all
 ||thebestprizes.life^$all
@@ -39037,7 +39074,7 @@ millionscast.com##div[id="UnMutePlayer"]:remove()
 millionscast.com##a[href^="https://youradexchange.com/ad/visit.php"]
 millionscast.com##a[href^="https://youradexchange.com/ad/visit.php"]:remove()
 millionscast.com##+js(acis, decodeURIComponent, atob)
-millionscast.com##+js(set, hs, noopFunc)
+millionscast.com##+js(set, hs, {})
 millionscast.com##+js(acis, _Hasync)
 millionscast.com##+js(aopr, _Hasync)
 millionscast.com##+js(aopw, _Hasync)
@@ -39115,11 +39152,11 @@ klubsports.online##+js(aeld, /contextmenu|keydown/)
 ! cdn.stream-24.net##div[class="cdn-advsmedia-player"] doesn't get removed because cdn.stream-24.net left out the = after class in the tag.
 cdn.stream-24.net##div[class="cdn-advsmedia-player"]
 cdn.stream-24.net##div[class="cdn-advsmedia-player"]:remove()
-cdn.stream-24.net##:xpath("/html/body/div/div[6]"):has(iframe[src="https://cdn.spo-play.live/sports/vplayer/sf1/?t="])
-cdn.stream-24.net##:xpath("/html/body/div/div[6]"):has(iframe[src="https://cdn.spo-play.live/sports/vplayer/sf1/?t="]):remove()
+cdn.stream-24.net##:xpath("/html/body/div/div[6]"):has(iframe[src^="https://cdn.spo-play.live/sports/vplayer/sf1/?t="])
+cdn.stream-24.net##:xpath("/html/body/div/div[6]"):has(iframe[src^="https://cdn.spo-play.live/sports/vplayer/sf1/?t="]):remove()
 ! ##iframe removal doesn't work
-!cdn.stream-24.net##iframe[src="https://cdn.spo-play.live/sports/vplayer/sf1/?t="]
-!cdn.stream-24.net##iframe[src="https://cdn.spo-play.live/sports/vplayer/sf1/?t="]:remove()
+!cdn.stream-24.net##iframe[src^="https://cdn.spo-play.live/sports/vplayer/sf1/?t="]
+!cdn.stream-24.net##iframe[src^="https://cdn.spo-play.live/sports/vplayer/sf1/?t="]:remove()
 cdn.stream-24.net##div[id="chat"]
 cdn.stream-24.net##div[id="chat"]:remove()
 cdn.stream-24.net##div[class="cont_channels"]
@@ -39276,7 +39313,7 @@ kepa.pw##+js(aopr, window.ca00d5bb33dad2d2351a4ab364ca0ebb)
 kepa.pw##+js(aopw, window.ca00d5bb33dad2d2351a4ab364ca0ebb)
 kepa.pw##+js(aopr, p$00a)
 kepa.pw##+js(aopw, p$00a)
-kepa.pw##+js(set, hs, noopFunc)
+kepa.pw##+js(set, hs, {})
 kepa.pw##+js(set, _Hasync, [])
 kepa.pw##+js(set, p$00a, "")
 kepa.pw##+js(acis, zc_865364)
@@ -39352,7 +39389,7 @@ livenewschat.eu##+js(nostif, /location.href/)
 ||stats1.wpmudev.com^$all
 ||dissolveretinue.com^$all
 ||dangerouslygluttony.com^$all
-stream.crichd.vip##+js(set, hs, noopFunc)
+stream.crichd.vip##+js(set, hs, {})
 ||stream.crichd.vip/z-5214935*
 stream.crichd.vip##+js(acis, _Hasync)
 stream.crichd.vip##+js(aopr, _Hasync)
@@ -39388,7 +39425,7 @@ vikistream.com##+js(aopr, window.ab3aa346af6eed01ae8b3084faed5174)
 vikistream.com##+js(aopw, window.ab3aa346af6eed01ae8b3084faed5174)
 ! filiatefinbone.uno hosts script which checks for web browser developer tools
 ||filiatefinbone.uno^$all
-amazingstream.net##+js(set, hs, noopFunc)
+amazingstream.net##+js(set, hs, {})
 amazingstream.net##+js(acis, _Hasync)
 amazingstream.net##+js(aopr, _Hasync)
 amazingstream.net##+js(aopw, _Hasync)
@@ -39618,6 +39655,7 @@ vidmoly.to,vidmoly.me##a[href*="://vidmoly.to/dl/"]:remove()
 vidmoly.to,vidmoly.me##+js(noeval)
 ||vidmoly.me/igetm.php*
 ||vidmoly.to/igetm.php*
+! two forward slashes?
 ||vidmoly.me//metric.php*
 ||vidmoly.to//metric.php*
 ||cdn.staticmoly.me/dlwed2.php*
@@ -40463,6 +40501,15 @@ slmaxed.com,streamlare.com##script:has-text(ad-blocker):remove()
 ||www.tqmibkqlwqdysi.com^$all
 ! ww1.educ.top is iframe for www.sawlive.net
 !||ww1.educ.top^$all
+||alsindustrateb.info^$all
+||vesofefinego.info^$all
+||d2fhrdu08h12cc.cloudfront.net^$all
+||dolatiaschan.com^$all
+||www.ohwhdspj.com^$all
+||zighoacm.com^$all
+||lp.pickmysearch.com^$all
+||www.edqbparlheuj.com^$all
+||edqbparlheuj.com^$all
 
 !Whitelisted
 ! blocks Kroger website?
