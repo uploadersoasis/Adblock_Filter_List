@@ -38056,6 +38056,15 @@ time4tv.stream,time4tv.xyz##div[id="UnMutePlayer"]
 time4tv.stream,time4tv.xyz##+js(set, atOptions, {})
 time4tv.stream,time4tv.xyz##+js(aopr, atOptions)
 time4tv.stream,time4tv.xyz##+js(aopw, atOptions)
+time4tv.stream,time4tv.xyz##^script:has-text(p$00a)
+time4tv.stream,time4tv.xyz##^script:has-text(p$00a):remove()
+time4tv.stream,time4tv.xyz##script:has-text(p$00a)
+time4tv.stream,time4tv.xyz##script:has-text(p$00a):remove()
+time4tv.stream,time4tv.xyz##+js(set, p$00a, "")
+time4tv.stream,time4tv.xyz##+js(set, _0x5d4b, [])
+time4tv.stream,time4tv.xyz##+js(acis, p$00a, _0x5d4b)
+time4tv.stream,time4tv.xyz##+js(aopr, p$00a, _0x5d4b)
+time4tv.stream,time4tv.xyz##+js(aopw, p$00a, _0x5d4b)
 time4tv.stream,time4tv.xyz##+js(set, f1V2u, {})
 time4tv.stream,time4tv.xyz##+js(acis, f1V2u, zfgaabversion, zfgloadedpopup)
 time4tv.stream,time4tv.xyz##^script:has-text(zfgaabversion)
@@ -40508,8 +40517,8 @@ slmaxed.com,streamlare.com##script:has-text(ad-blocker):remove()
 ||edqbparlheuj.com^$all
 !st.chatango.com^$script,domain=daddylivehd.sx
 !st.chatango.com^$all,domain=daddylivehd.sx
-||st.chatango.com/js/gz/emb.js$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|time4tv.stream|time4tv.xyz|freestreams-live1.tv|klubsports.online|cdn.stream-24.net
-||st.chatango.com^$all,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|time4tv.stream|time4tv.xyz|freestreams-live1.tv|klubsports.online|cdn.stream-24.net
+!||st.chatango.com/js/gz/emb.js$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|freestreams-live1.tv|klubsports.online|cdn.stream-24.net
+||st.chatango.com^$all,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|freestreams-live1.tv|klubsports.online|cdn.stream-24.net
 
 !Whitelisted
 ! blocks Kroger website?
