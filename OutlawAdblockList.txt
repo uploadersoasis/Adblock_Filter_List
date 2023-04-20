@@ -20986,7 +20986,7 @@ guidedhacking.com##.notice--cookie.notice--primary.js-notice.notice
 ||www.gamecopyworld.com/ddd/ii/kgn/fifa20_lb.png$image
 ||srvtrck.com/$all
 ||medianewtab.com/$all
-||expansion.wavesarch.icu​/$all
+||expansion.wavesarch.icu^$all
 ||d31j93rd8oukbv.cloudfront.net/metrika/$all
 ||imovepics.com/images/banners/download-15.png*
 ||www.hopesandaspiration.com/$all
@@ -28368,8 +28368,11 @@ indishare.org##a[href*="//9xlust.in"]
 igg-games.com##a[href*="//tm-offers.gamingadult.com/"]
 igg-games.com##div[class*="widget-advads-ad-widget"]
 ||rdifferenco.club/$all
-!||bluemediafiles.com/$all
+!||bluemediafiles.com^$all
 !||bluemediafiles.com/wp-content/plugins/exit-strategy-pro/count.js*
+||bluemediafiles.com/sw.js*
+bluemediafiles.com^$popup
+bluemediafiles.com^$popunder
 !bluemediafiles.com##+js(nano-sib, function(), 1000, 0.10)
 bluemediafiles.com##+js(abort-on-property-read.js, FingerprintJS)
 bluemediafiles.com##+js(abort-on-property-write.js, FingerprintJS)
@@ -28668,8 +28671,6 @@ skidrowfull.com##+js(abort-on-property-write.js, adsbygoogle)
 ||eu.rollmeout.xyz/$all
 www.komando.com##.ad-leaderboard
 www.komando.com##.ad-in-content-wrapper
-bluemediafiles.com​^$popup
-bluemediafiles.com​^$popunder
 mw5mercs.com##div[id="cconsent-bar"]
 onlineproxy.eu##div[id="cookieChoiceInfo"]
 ||s3.amazonaws.com/dae9fb0f106b5a243abbf9fb77d1d5138d0c9c84541bfa3001e9c183e61/$all
@@ -28923,7 +28924,6 @@ www.theblaze.com##div[class^="gdpr-cookie"]
 ||ipp1s.xyz/$all
 ||cessyntactu.fun/$all
 ||echnolog.club/$all
-||bluemediafiles.com/sw.js*
 ||sensationaleducate.com/$all
 ||muffinyourself.com/$all
 ||hadsimz.com^$script
@@ -38031,10 +38031,24 @@ userupload.in##amp-auto-ads
 ||time4tv.stream/top.php*
 ||time4tv.xyz/top.php*
 !time4tv.stream,time4tv.xyz##iframe[src^="https://www.sports-stream.click/s2w/spsch.php"]
-time4tv.stream,time4tv.xyz##+js(acis, decodeURIComponent, window)
 time4tv.stream,time4tv.xyz##+js(acis, document.oncontextmenu)
 time4tv.stream,time4tv.xyz##+js(aopr, document.oncontextmenu)
 time4tv.stream,time4tv.xyz##+js(aopw, document.oncontextmenu)
+time4tv.stream,time4tv.xyz##body:remove-attr(oncontextmenu)
+time4tv.stream,time4tv.xyz##+js(acis, decodeURIComponent, window)
+time4tv.stream,time4tv.xyz##:xpath(//script[contains(text(), 'top.location')])
+time4tv.stream,time4tv.xyz##:xpath(//script[contains(text(), 'top.location')]):remove()
+time4tv.stream,time4tv.xyz##^script:has-text(www.google.com)
+time4tv.stream,time4tv.xyz##^script:has-text(top.location)
+time4tv.stream,time4tv.xyz##^script:has-text(www.google.com):remove()
+time4tv.stream,time4tv.xyz##^script:has-text(top.location):remove()
+time4tv.stream,time4tv.xyz##script:has-text(www.google.com)
+time4tv.stream,time4tv.xyz##script:has-text(top.location)
+time4tv.stream,time4tv.xyz##script:has-text(www.google.com):remove()
+time4tv.stream,time4tv.xyz##script:has-text(top.location):remove()
+time4tv.stream,time4tv.xyz##+js(acis, top.location)
+time4tv.stream,time4tv.xyz##+js(aopr, top.location)
+time4tv.stream,time4tv.xyz##+js(aopw, top.location)
 time4tv.stream,time4tv.xyz##iframe[src^="https://st.chatango.com/"]
 time4tv.stream,time4tv.xyz##iframe[src^="https://st.chatango.com/"]:remove()
 time4tv.stream,time4tv.xyz##a[href^="https://xijgedjgg5f55.com/"]
@@ -38093,8 +38107,11 @@ time4tv.stream,time4tv.xyz##script[src*="/go.oclasrv.com/apu.php"]:remove-attr(o
 time4tv.stream,time4tv.xyz##script[src*="/go.oclasrv.com/apu.php"]:remove-attr(onload)
 time4tv.stream,time4tv.xyz##script[src*="/go.oclasrv.com/apu.php"]:remove()
 ! None of the following appears to work to stop redirection for extrafreetv.com/embed/em.php URL's
-extrafreetv.com##+js(set, top.location, null)
+extrafreetv.com##:xpath(//script[contains(text(), 'top.location')])
+extrafreetv.com##:xpath(//script[contains(text(), 'top.location')]):remove()
 extrafreetv.com##+js(acis, top.location)
+extrafreetv.come##+js(aopr, top.location)
+extrafreetv.come##+js(aopw, top.location)
 extrafreetv.com##^script:has-text(google.com):remove()
 extrafreetv.com##^script:has-text(google.com)
 extrafreetv.com##^script:has-text(google.com):remove()
@@ -38103,14 +38120,21 @@ extrafreetv.com##script:has-text(google.com):remove()
 extrafreetv.com##+js(acis, google.com)
 extrafreetv.com##+js(acis, channel)
 extrafreetv.come##+js(aopr, channel)
-extrafreetv.come##+js(aopr, channel)
+extrafreetv.come##+js(aopw, channel)
+extrafreetv.com##:xpath(//script[contains(text(), 'window.b364e002848ea53878a528b3cbf77ffd')])
+extrafreetv.com##:xpath(//script[contains(text(), 'window.b364e002848ea53878a528b3cbf77ffd')]):remove()
 extrafreetv.com##+js(set, window.b364e002848ea53878a528b3cbf77ffd, "")
 extrafreetv.com##+js(acis, window.b364e002848ea53878a528b3cbf77ffd)
 extrafreetv.com##+js(aopw, window.b364e002848ea53878a528b3cbf77ffd)
 extrafreetv.com##+js(aopw, window.b364e002848ea53878a528b3cbf77ffd)
+extrafreetv.com##div[id="floatLayer1"]
+extrafreetv.com##div[id="floatLayer1"]:remove()
+extrafreetv.com##iframe[src^="https://extrafreetv.com/camp1.php"]
+extrafreetv.com##iframe[src^="https://extrafreetv.com/camp1.php"]:remove()
 !||extrafreetv.com/camp1.php*
 ||extrafreetv.com/images/x1.png*
-extrafreetv.com##+js(remove-attr, OnContextMenu, body, stay)
+!extrafreetv.com##+js(remove-attr, OnContextMenu, body, stay)
+extrafreetv.com##body:remove-attr(OnContextMenu)
 ! div[id="UnMutePlayer"] has to be on embedded stream/iframe not root page
 gocast2.com##div[id="UnMutePlayer"]
 gocast2.com##div[id="UnMutePlayer"]:remove()
@@ -38399,7 +38423,7 @@ reddit-tv1-streams.blogspot.com##+js(aopw, window.location)
 ||nannyamplify.com^$all
 ||tournamentsevenhung.com^$all
 !||www.intellipopup.com/processing.min.js*
-||www.intellipopup.com^$script,domain=time4tv.stream,time4tv.xyz|sportskart.click
+||www.intellipopup.com^$script,domain=time4tv.stream|time4tv.xyz|sportskart.click
 ||pl15806485.highcpmrevenuenetwork.com^$all
 ||qyfkarotggyk.xyz^$all
 ||umjsxysoehop.xyz^$all
@@ -38827,6 +38851,43 @@ www.sportsbaytv.com##+js(nosiif, vwu())
 1rowsportz.info##+js(aopw, window.kkp4a5x5tv)
 !||sawlive.tv/avurcfq3.js$script
 ||sawlive.tv/avurcfq3.js*
+www.sawlive.tv##body:remove-attr(onclick)
+www.sawlive.tv##+js(set, closeMyAd, noopFunc)
+www.sawlive.tv##+js(set, closeMyAd2, noopFunc)
+www.sawlive.tv##+js(set, display, noopFunc)
+www.sawlive.tv##+js(set, seconds, 0)
+www.sawlive.tv##b[id="closingtext"]
+www.sawlive.tv##b[id="closingtext"]:remove()
+www.sawlive.tv##span[id="closingtimer"]
+www.sawlive.tv##span[id="closingtimer"]:remove()
+www.sawlive.tv###j4qa1s
+www.sawlive.tv###j4qa1s:remove()
+www.sawlive.tv##div[id="hsbv3s"]
+www.sawlive.tv##div[id="s1aqja"]
+www.sawlive.tv##span[id="display300"]
+!www.sawlive.tv##+js(nostif, /^/)
+!www.sawlive.tv##+js(nostif, closeMyAd())
+!www.sawlive.tv##+js(nostif, closeMyAd)
+!www.sawlive.tv##+js(nostif, /^closeMyAd()/)
+www.sawlive.tv##+js(nostif, /^closeMyAd\(\)/)
+!www.sawlive.tv##+js(nostif, closeMyAd2())
+!www.sawlive.tv##+js(nostif, closeMyAd2)
+!www.sawlive.tv##+js(nostif, /^closeMyAd2()/)
+www.sawlive.tv##+js(nostif, /^closeMyAd2\(\)/)
+!www.sawlive.tv##+js(nostif, display())
+!www.sawlive.tv##+js(nostif, display)
+!www.sawlive.tv##+js(nostif, /^display()/)
+www.sawlive.tv##+js(nostif, /^display\(\)/)
+www.sawlive.tv###swd646
+www.sawlive.tv###swd646:remove()
+www.sawlive.tv###adba
+www.sawlive.tv###adba:remove()
+www.sawlive.tv###imgclose
+www.sawlive.tv###imgclose:remove()
+www.sawlive.tv###closingtimer
+www.sawlive.tv###closingtimer:remove()
+www.sawlive.tv###closingtext
+www.sawlive.tv###closingtext:remove()
 !||godzillive.com/blast.js$script
 ||godzillive.com/blast.js*
 godzillive.com##+js(aopr, rtclickcheck)
@@ -38842,6 +38903,7 @@ godzillive.com##a[href^="https://youradexchange.com/"]:remove()
 godzillive.com##+js(acis, window.c4665c556fc50af4e03a3ea272703352)
 godzillive.com##+js(aopr, window.c4665c556fc50af4e03a3ea272703352)
 godzillive.com##+js(aopw, window.c4665c556fc50af4e03a3ea272703352)
+godzillive.com##+js(set, _Hasync, [])
 godzillive.com##+js(acis, _Hasync)
 godzillive.com##+js(aopr, _Hasync)
 godzillive.com##+js(aopw, _Hasync)
@@ -40519,6 +40581,31 @@ slmaxed.com,streamlare.com##script:has-text(ad-blocker):remove()
 !st.chatango.com^$all,domain=daddylivehd.sx
 !||st.chatango.com/js/gz/emb.js$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|freestreams-live1.tv|klubsports.online|cdn.stream-24.net
 ||st.chatango.com^$all,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|freestreams-live1.tv|klubsports.online|cdn.stream-24.net
+||www.facebook.com/ajax/bz?*
+tutorialzine.com##+js(set, _gaq, [])
+tutorialzine.com##+js(abort-on-property-write, _gaq)
+tutorialzine.com##+js(abort-on-property-read, _gaq)
+www.playmods.net##div[class="cookie-fl"]
+www.playmods.net##div[class="cookie-fl"]:remove()
+www.playmods.net##div[class^="cookie-menu"]
+www.playmods.net##div[class^="cookie-menu"]:remove()
+www.playmods.net##+js(set-constant, isCookieAds, 1)
+www.playmods.net##+js(abort-on-property-write, isCookieAds)
+www.playmods.net##+js(abort-on-property-read, isCookieAds)
+www.playmods.net##div[id="banner-ad"]
+www.playmods.net##div[id="banner-ad"]:remove()
+www.playmods.net##div[class^="gpt-banner"]
+www.playmods.net##div[class^="gpt-banner"]:remove()
+www.playmods.net##iframe[id="ads-iframe"]
+www.playmods.net##iframe[id="ads-iframe"]:remove()
+www.playmods.net##+js(set-constant, window.adsTag, {})
+www.playmods.net##+js(set-constant, window.adsTag.renderAds, noopFunc)
+www.playmods.net##+js(acis, window.adsTag.renderAds)
+||sdk.enjoy4fun.com/cdn/prebid/*/prebid.min.js*
+||ce.ditchesteenish.com^$all
+||hm.baidu.com/hm.js*
+||zr.changarreviver.com^$all
+||valvalnumbest.com^$all
 
 !Whitelisted
 ! blocks Kroger website?
