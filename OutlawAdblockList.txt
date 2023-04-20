@@ -29854,7 +29854,7 @@ techssting.com##^script:has-text(/debugger/i)
 dropgalaxy.com##^script:has-text(/debugger/i)
 techssting.com##^script:has-text(__CF$cv$params)
 dropgalaxy.*,techssting.com##+js(aeld, , { [native code] })
-dropgalaxy.*,techssting.com##+js(nosiif, { [native code] })
+dropgalaxy.*,techssting.com##+js(nosiif, [native code])
 dropgalaxy.*,techssting.com##+js(nowoif)
 dropgalaxy.*,techssting.com##+js(ra, onclick|target, .btn-primary.btn-lg.btn-block.btn)
 dropgalaxy.*,techssting.com##[href^="https://bit.ly/"]
@@ -38041,6 +38041,7 @@ userupload.in##amp-auto-ads
 time4tv.stream,time4tv.xyz##+js(acis, document.oncontextmenu)
 time4tv.stream,time4tv.xyz##+js(aopr, document.oncontextmenu)
 time4tv.stream,time4tv.xyz##+js(aopw, document.oncontextmenu)
+time4tv.stream,time4tv.xyz##+js(remove-attr, oncontextmenu, body)
 time4tv.stream,time4tv.xyz##body:remove-attr(oncontextmenu)
 time4tv.stream,time4tv.xyz##+js(acis, decodeURIComponent, window)
 time4tv.stream,time4tv.xyz##:xpath(//script[contains(text(), 'top.location')])
@@ -38059,8 +38060,6 @@ time4tv.stream,time4tv.xyz##+js(aopw, top.location)
 time4tv.stream,time4tv.xyz##iframe[src^="https://st.chatango.com/"]
 time4tv.stream,time4tv.xyz##iframe[src^="https://st.chatango.com/"]:remove()
 time4tv.stream,time4tv.xyz##a[href^="https://xijgedjgg5f55.com/"]
-time4tv.stream,time4tv.xyz##+js(remove-attr, oncontextmenu, body)
-time4tv.stream,time4tv.xyz##body:remove-attr(oncontextmenu)
 time4tv.stream,time4tv.xyz##div[id="floatLayer1"]
 ! the debugger detector is in a generated function so use noeval instead.
 time4tv.stream,time4tv.xyz##+js(noeval)
@@ -38196,6 +38195,7 @@ embedstream.me##+js(no-setTimeout-if, forceKillplayer)
 ||nsomedidm.xyz^$all
 ||ntuplay.xyz/blast.js*
 ntuplay.xyz##+js(remove-attr, oncontextmenu, body, stay)
+ntuplay.xyz##body:remove-attr(oncontextmenu)
 ntuplay.xyz##+js(aopw, document.oncontextmenu)
 ntuplay.xyz##+js(aopr, document.oncontextmenu)
 ntuplay.xyz##+js(aopr, document.onkeypress)
@@ -38205,6 +38205,19 @@ ntuplay.xyz##+js(aopr, autoloadMarker)
 ntuplay.xyz##+js(aopw, autoloadMarker)
 ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]
 ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]:remove()
+ntuplay.xyz##+js(set, currentReferer, "wikisport.click")
+ntuplay.xyz##+js(set, attr, {})
+ntuplay.xyz##+js(acis, currentReferer)
+ntuplay.xyz##+js(aopr, currentReferer)
+ntuplay.xyz##+js(aopw, currentReferer)
+ntuplay.xyz##+js(acis, window)
+ntuplay.xyz##+js(aopr, window)
+ntuplay.xyz##+js(aopw, window)
+||ntuplay.xyz/resources/scripts/disclaimer.js*
+ntuplay.xyz##div[id="myCookieConsent"]
+ntuplay.xyz##+js(set, cookieEl, {})
+ntuplay.xyz##div[id="cookie-alert"]
+ntuplay.xyz##div[id="cookie-alert"]:remove()
 ||neewhoum.net^$all
 ||aivdoyvicfn.com^$all
 !||waufooke.com/tag.min.js*
@@ -39271,16 +39284,6 @@ maxsport.one##+js(acis, _Hasync)
 maxsport.one##+js(aopr, _Hasync)
 maxsport.one##+js(aopw, _Hasync)
 ||cdn.taboola.com/libtrc/chatango-network/loader.js$script,domain=cdn.stream-24.net|klubsports.online
-ntuplay.xyz##+js(set, currentReferer, "wikisport.click")
-ntuplay.xyz##+js(set, attr, {})
-ntuplay.xyz##+js(acis, currentReferer)
-ntuplay.xyz##+js(aopr, currentReferer)
-ntuplay.xyz##+js(aopw, currentReferer)
-ntuplay.xyz##+js(acis, window)
-ntuplay.xyz##+js(aopr, window)
-ntuplay.xyz##+js(aopw, window)
-||ntuplay.xyz/resources/scripts/disclaimer.js*
-ntuplay.xyz##div[id="myCookieConsent"]
 pluto.tv###omid_v1_present
 pluto.tv###omid_v1_present:remove()
 pluto.tv##input[aria-label="pause"]:remove-attr(disabled)
