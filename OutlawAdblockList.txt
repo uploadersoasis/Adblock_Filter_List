@@ -23913,9 +23913,15 @@ www.gog.com##div[ng-hide="floatingBanner.isDismissed"]
 ||ikunselt.com/$all
 www.quora.com##+js(set, enable_sensitive_tribe_blurring, false)
 www.quora.com##+js(abort-current-inline-script.js, AdBlockerCheckerMain)
-letsupload.to##+js(abort-current-inline-script.js, atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='))
 www.quora.com##div[class="q-box ad question_page_ad top_slot"]
 ||ptaulrou.net/$all
+letsupload.org,letsupload.to##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+letsupload.org,letsupload.to##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+letsupload.org,letsupload.to##^script:has-text(JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
+letsupload.org,letsupload.to##+js(abort-current-inline-script.js, atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='))
+letsupload.org,letsupload.to##+js(abort-current-inline-script.js, JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
+www.foxebook.net##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+www.foxebook.net##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 www.foxebook.net##+js(abort-current-inline-script.js, atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='))
 ||graizoah.com/$all
 ||edampeci.com/$all
@@ -24574,9 +24580,6 @@ www.usatoday.com##aside[aria-label="advertisement"]
 !||qds0l-hvw7s.ads.tremorhub.com/$all
 !||geolocation.onetrust.com/cookieconsentpub/$all
 ||geolocation.onetrust.com/$all
-letsupload.org##^script:has-text(JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
-letsupload.org##+js(abort-current-inline-script.js, JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
-##+js(abort-current-inline-script.js, JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
 www.quora.com##div[id$="signup_wall_wrapper"]
 ||qsbr.fs.quoracdn.net/-4-ans_frontend-relay-page-AdInternalCreativeTestLoadable-*
 ||qsbr.fs.quoracdn.net/-4-ans_frontend-relay-page-AdsManager-main-*
@@ -27399,6 +27402,8 @@ stfly.me##div[class="ad-banner"]
 get-to.link##^script:has-text(window.open)
 get-to.link##+js(set-constant.js, ai_js_code, false)
 get-to.link##^script:has-text(ai_adb_process_blocks)
+null-byte.wonderhowto.com##:xpath(//script[contains(text(), 'w.top.location.replace')])
+null-byte.wonderhowto.com##:xpath(//script[contains(text(), 'w.top.location.replace')]):remove()
 null-byte.wonderhowto.com##^script:has-text(w.top.location.replace)
 null-byte.wonderhowto.com##^script:has-text(window.rxMatchDomain)
 ||www.countok.de/cgi-bin/cnt.pl*
@@ -36236,7 +36241,7 @@ nw.freestreams-live1.com##div[id^="pf-"]
 !||specgoal.com/api/v1/$all
 ||specgoal.com/$all
 !||adfpoint.com/api/v1/$all
-||adfpoint.com/$all
+||adfpoint.com^$all
 ||xml-v4.pxfindone.com/$all
 ||www.ldndromaqpnnp.com/$all
 ||ldndromaqpnnp.com/$all
@@ -37992,6 +37997,8 @@ userupload.net##+js(aopr, x.withCredentials)
 userupload.net##+js(aopw, x.withCredentials)
 userupload.net##iframe[id^="google_ads_frame"]
 userupload.net##amp-auto-ads
+userupload.net,userupload.in##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+userupload.net,userupload.in##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 userupload.net##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 userupload.net##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 userupload.net##:xpath(/html/body/div/div/form/div[2]/div[2]/div[2]/div[2]/script[2])
@@ -38053,6 +38060,7 @@ time4tv.stream,time4tv.xyz##iframe[src^="https://st.chatango.com/"]
 time4tv.stream,time4tv.xyz##iframe[src^="https://st.chatango.com/"]:remove()
 time4tv.stream,time4tv.xyz##a[href^="https://xijgedjgg5f55.com/"]
 time4tv.stream,time4tv.xyz##+js(remove-attr, oncontextmenu, body)
+time4tv.stream,time4tv.xyz##body:remove-attr(oncontextmenu)
 time4tv.stream,time4tv.xyz##div[id="floatLayer1"]
 ! the debugger detector is in a generated function so use noeval instead.
 time4tv.stream,time4tv.xyz##+js(noeval)
@@ -38070,6 +38078,8 @@ time4tv.stream,time4tv.xyz##div[id="UnMutePlayer"]
 time4tv.stream,time4tv.xyz##+js(set, atOptions, {})
 time4tv.stream,time4tv.xyz##+js(aopr, atOptions)
 time4tv.stream,time4tv.xyz##+js(aopw, atOptions)
+time4tv.stream,time4tv.xyz##:xpath(//script[contains(text(), 'p$00a')])
+time4tv.stream,time4tv.xyz##:xpath(//script[contains(text(), 'p$00a')]):remove()
 time4tv.stream,time4tv.xyz##^script:has-text(p$00a)
 time4tv.stream,time4tv.xyz##^script:has-text(p$00a):remove()
 time4tv.stream,time4tv.xyz##script:has-text(p$00a)
@@ -38148,6 +38158,8 @@ gocast2.com##div[id="UnMutePlayer"]:remove()
 ||embedstream.me/cash.min.js$popup,document,inline-script,inline-font,popunder,subdocument,script,other
 ||embedstream.me/deity.php*
 embedstream.me##+js(acis, sandDetect)
+embedstream.me##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+embedstream.me##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 embedstream.me##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 embedstream.me##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 embedstream.me##+js(aopr, x.withCredentials)
@@ -38201,7 +38213,12 @@ ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]:remove()
 !||poscitech.click^$all
 ||coonandeg.xyz^$all
 sportskart.click##+js(set, hs, {})
+sportskart.click##+js(set, _Hasync, [])
+sportskart.click##+js(set, _gaq, [])
 sportskart.click##+js(set, window.u_cfg, {})
+sportskart.click##+js(set, window.c1702bdd64cd85dc6e4723404569127c, "")
+sportskart.click##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+sportskart.click##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 sportskart.click##script[data-adel][zid]
 sportskart.click##script[data-adel][zid]:remove()
 sportskart.click##iframe[id="stats"]
@@ -38217,9 +38234,12 @@ sportskart.click##+js(aopr, _Hasync)
 sportskart.click##+js(aopw, _Hasync)
 sportskart.click##+js(aopr, x.withCredentials)
 sportskart.click##+js(aopw, x.withCredentials)
+sportskart.click##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')])
+sportskart.click##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 sportskart.click##+js(acis, window.kkp4a5x5tv)
 sportskart.click##+js(aopr, window.kkp4a5x5tv)
 sportskart.click##+js(aopw, window.kkp4a5x5tv)
+sportskart.click##+js(acis, _djagjn)
 sportskart.click##+js(acis, atob, document, arguments)
 sportskart.click##+js(aopw, $.BD)
 sportskart.click##+js(aopr, $.BD)
@@ -38850,7 +38870,10 @@ www.sportsbaytv.com##+js(nosiif, vwu())
 1rowsportz.info##+js(aopr, window.kkp4a5x5tv)
 1rowsportz.info##+js(aopw, window.kkp4a5x5tv)
 !||sawlive.tv/avurcfq3.js$script
-||sawlive.tv/avurcfq3.js*
+!||sawlive.tv/avurcfq3.js*
+!||sawlive.tv/avurcfww3.js*
+!||sawlive.tv/avurcfww2.js*
+||sawlive.tv/avurcf*.js*
 www.sawlive.tv##body:remove-attr(onclick)
 www.sawlive.tv##+js(set, closeMyAd, noopFunc)
 www.sawlive.tv##+js(set, closeMyAd2, noopFunc)
@@ -39003,7 +39026,6 @@ lgbtrans.xyz##+js(aopw, redlink_url)
 !||revenrent.fun/vbsmall/index.php*
 ||revenrent.fun^$all
 ||web.automatedcomputers.com^$all
-||kepplir.com^$all
 brelif.net##div[id="micast_ads"]
 brelif.net##div[id="micast_ads"]:remove()
 brelif.net##div[id="closebutton"]
@@ -39069,7 +39091,8 @@ live.harleyquinnwidget.live##div[id="ads"]:remove()
 live.harleyquinnwidget.live##+js(nosiif, vwu())
 live.harleyquinnwidget.live##+js(aopr, mamafooty)
 live.harleyquinnwidget.live##+js(aopw, mamafooty)
-live.harleyquinnwidget.live##+js(set, top.location, self.location)
+live.harleyquinnwidget.live##:xpath(//script[contains(text(), 'top.location')])
+live.harleyquinnwidget.live##:xpath(//script[contains(text(), 'top.location')]):remove()
 ||firkedpace.life^$all
 ||dimedoncywydd.com^$all
 ||rkjnazpgfihz.com^$all
@@ -39591,6 +39614,8 @@ thecubexguide.com##^script[disable-devtool-auto]:remove()
 ||cdn.heycdn25.xyz^$all
 !||cdn.heycdn58.xyz/404*
 ||cdn.heycdn58.xyz^$all
+abysscdn.com,abyss.to##:xpath(//script[contains(text(), 'top.location')])
+abysscdn.com,abyss.to##:xpath(//script[contains(text(), 'top.location')]):remove()
 abysscdn.com,abyss.to##+js(acis, top.location)
 abysscdn.com,abyss.to##+js(aopr, top.location)
 abysscdn.com,abyss.to##+js(aopw, top.location)
@@ -40292,6 +40317,8 @@ a2zapk.io##+js(aeld, contextmenu)
 123chill.to##+js(aopr, _njwno)
 123chill.to##+js(set, getAdBlock, noopFunc)
 123chill.to##+js(set, checkAdBlock, noopFunc)
+123chill.to##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+123chill.to##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 123chill.to##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 123chill.to##+js(acis, adblock, excludes)
 123chill.to##+js(set-constant, $pe, "")
@@ -40299,6 +40326,8 @@ a2zapk.io##+js(aeld, contextmenu)
 123chill.to##+js(aopr, $pe)
 dood.wf##+js(acis, fromCharCode, charCodeAt)
 dood.wf##+js(acis, decodeURIComponent, atob)
+dood.wf##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+dood.wf##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 dood.wf##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 dood.wf##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 dood.wf##+js(set, ca0967284e67bc53cb5b626985619403, "")
@@ -40365,6 +40394,8 @@ membed1.com##+js(aopw, $.BC)
 membed1.com##+js(aopr, $.BC)
 membed1.com##+js(aopw, $pe)
 membed1.com##+js(aopr, $pe)
+membed1.com##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+membed1.com##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 membed1.com##+js(acis, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 membed1.com##+js(acis, adblock, excludes)
 ! nostif, /^function\(\)/ triggers an anti-adblocking script and message
@@ -40606,6 +40637,14 @@ www.playmods.net##+js(acis, window.adsTag.renderAds)
 ||hm.baidu.com/hm.js*
 ||zr.changarreviver.com^$all
 ||valvalnumbest.com^$all
+! kepplir.com may serve video files
+!||kepplir.com^$all
+! ww.livemodo.click may serve video files
+!||ww.livemodo.click^$all
+embed2.megaxfer.ru##+js(set-constant, inIframe, trueFunc)
+embed2.megaxfer.ru##+js(acis, inIframe)
+embed2.megaxfer.ru##meta[http-equiv="refresh"]
+embed2.megaxfer.ru##meta[http-equiv="refresh"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
