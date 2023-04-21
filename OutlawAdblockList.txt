@@ -40520,7 +40520,7 @@ techssting.com##+js(remove-attr, name, #downloadBtnClick, stay)
 !techssting.com##+js(remove-attr, disabled, .downloadbtn, stay)
 !techssting.com##[id="downloadBtnClick"]:style(display: none !important;)
 techssting.com##div[id="overlaypop"]
-techssting.com##+js(set-constant.js, adblock_detected, 0, stay)
+techssting.com##+js(set-constant, adblock_detected, 0, stay)
 techssting.com##+js(set-constant, adblock_check, 1, stay)
 techssting.com##div[id="countdown"]
 techssting.com##+js(aopr, 0x2bb9)
@@ -40561,16 +40561,26 @@ dropgalaxy.com,dropgalaxy.in##^script:has-text(setTimeout)
 dropgalaxy.com,dropgalaxy.in##button[id="downloadBtnClick"]:style(visibility: hidden !important; display: none !important;)
 dropgalaxy.com,dropgalaxy.in##button[id="downloadBtnClick"]
 dropgalaxy.com,dropgalaxy.in##button[id="downloadBtnClick"]:remove()
-dropgalaxy.com,dropgalaxy.in##+js(remove-attr, disabled, #downloadbtn, stay)
-dropgalaxy.com,dropgalaxy.in##button[id="downloadbtn"]:remove-attr(disabled)
+! Don't disable the button before the countdown completes or the anti-adblock page will display.
+!dropgalaxy.com,dropgalaxy.in##+js(remove-attr, disabled, #downloadbtn, stay)
+!dropgalaxy.com,dropgalaxy.in##button[id="downloadbtn"]:remove-attr(disabled)
 dropgalaxy.com,dropgalaxy.in##button[id="downloadbtn"]:remove-attr(style)
 dropgalaxy.com,dropgalaxy.in##button[id="downloadbtn"]:style(visibility: visible !important; display: block !important;)
 !dropgalaxy.com,dropgalaxy.in###downloadbtn:style(display: block !important;)
 ! The countdown div tag is needed because the countdown is still used.
-!dropgalaxy.*##div[id="countdown"]
-!dropgalaxy.*##div[id="countdown"]:remove()
+!dropgalaxy.com,dropgalaxy.in##div[id="countdown"]
+!dropgalaxy.com,dropgalaxy.in##div[id="countdown"]:remove()
+dropgalaxy.com,dropgalaxy.in##+js(set-constant, timeleft, 0, stay)
+dropgalaxy.com,dropgalaxy.in##+js(set-constant, downloadTimer, noopFunc)
+dropgalaxy.com,dropgalaxy.in##div[id^="adm-container-"]
+dropgalaxy.com,dropgalaxy.in##div[id^="adm-container-"]:remove()
+dropgalaxy.com,dropgalaxy.in##button[id="method_free2"]
+dropgalaxy.com,dropgalaxy.in##button[id="method_free2"]:remove()
 !dropgalaxy.com,dropgalaxy.in##+js(remove-attr, style, #method_free)
-dropgalaxy.com,dropgalaxy.in###method_free:remove-attr(style)
+dropgalaxy.com,dropgalaxy.in##button[id="method_free"]:remove-attr(style)
+dropgalaxy.com,dropgalaxy.in##button[id="method_free"]:style(display: block !important;)
+dropgalaxy.com,dropgalaxy.in##+js(remove-attr, disabled, #method_free, stay)
+dropgalaxy.com,dropgalaxy.in##button[id="method_free"]:remove-attr(disabled)
 dropgalaxy.com,dropgalaxy.in##.btn-info.btn-sm.btn-block.btn
 dropgalaxy.com,dropgalaxy.in##.btn-info.btn-sm.btn-block.btn:remove()
 dropgalaxy.com,dropgalaxy.in##div[class="alert alert-danger mb-3"]
