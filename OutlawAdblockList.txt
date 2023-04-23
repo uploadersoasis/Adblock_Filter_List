@@ -40562,9 +40562,9 @@ newsindi.com,techssting.com##+js(aopr, absda)
 !dropgalaxy.com,dropgalaxy.in##div[id="stickyunit"]:remove()
 ! changing the ads variable will trigger the anti-adblocking script @ dropgalaxy
 ! setting ads to [] also makes the fetch script continually contact the site
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, ads, [])
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, ads)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, ads)
+!dropgalaxy.com,dropgalaxy.in##+js(set-constant, ads, [])
+!dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, ads)
+!dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, ads)
 ! changing the brute variable will trigger the anti-adblocking script @ dropgalaxy
 ! setting brute to [] also makes the fetch script continually contact the site
 !dropgalaxy.com,dropgalaxy.in##+js(set-constant, brute, [])
