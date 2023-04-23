@@ -23391,8 +23391,6 @@ rssing.com##div[class^="rs-ad"]
 rssing.com##div[class$="sssticky-indx-banner"]
 rssing.com##div[class^="rs-sticky-sidebar-ad"]
 ||static.vliplatform.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
-||logs.vlitag.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
-||tag.vlitag.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 makaka.org##div[id="catapult-cookie-bar"]
 www.onlinefreecourse.net##+js(abort-on-property-write.js, betterads_screen_width)
 www.onlinefreecourse.net##+js(abort-on-property-read.js, betterads_screen_width)
@@ -29866,7 +29864,6 @@ primeuploads.com##div[class*="cookiealert"]
 ||mynewsmedia.co/tech/Linkpage/ads_stats_controller.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||nandlookfo.fun/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||ursegreatm.fun/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
-||stats.vlitag.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||gplinks.in/advertising/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 mynewsmedia.co##p[class="smart-link-banner-ad-container"]
 mynewsmedia.co##a[href*=".clksite.com/adServe/"]
@@ -30194,12 +30191,6 @@ petapixel.com##.instream_ad
 www.ubergizmo.com##div[class="in_article_ad_wrapper"]
 www.ubergizmo.com##div[class*="ad_container"]
 apk-galaxy.site##div[id="cookie-notice"]
-a2zapk.com##+js(acis, document.oncontextmenu)
-a2zapk.com##+js(acis, document.onkeydown)
-a2zapk.com##+js(acis, document.onselectstart)
-a2zapk.com##+js(acis, document.onmousedown)
-a2zapk.com##+js(acis, document.onclick)
-a2zapk.com##+js(acis, document.ondragstart)
 apk-galaxy.site##^script[src="https://cdn.adf.ly/js/link-converter.js"]
 techyneed.com##^script:has-text(/debugger/i)
 techyneed.com##ins[class="adsbygoogle"]
@@ -31640,11 +31631,24 @@ uploadrar.com##iframe
 ||cagothie.net/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||houndfleetmule.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||icycorrection.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
-||tmp.a2zapk.com/js/badip.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||eclogicmeows.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||httplogserver-lb.global.unified-prod.sharethis.net/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 fastclick.to##+js(remove-attr, disabled, .btn-download, stay)
 fastclick.to##+js(remove-class, disabled, .btn-download, stay)
+fastclick.to##button[id="downloadbtn"]:remove-attr(disabled)
+fastclick.to##button[id="downloadbtn"]:remove-class(disabled)
+fastclick.to##+js(set-constant, seconds, 0)
+fastclick.to##+js(set-constant, adsbygoogle, [])
+fastclick.to##+js(aopr, adsbygoogle)
+fastclick.to##+js(aopw, adsbygoogle)
+fastclick.to##+js(set-constant, _gaq, [])
+fastclick.to##+js(aopr, _gaq)
+fastclick.to##+js(aopw, _gaq)
+fastclick.to##ins[data-ad-client]
+fastclick.to##ins[data-ad-client]:remove()
+fastclick.to##inpur[id="adblock_detected"]:remove()
+!fastclick.to##+js(nosiif, /^/)
+fastclick.to##+js(nosiif, /function\(\)/)
 apk4k.fun##div[class="ad_spoiler"]
 apk4k.fun##div[class="ad"]
 ||wildroid.ru/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
@@ -32468,8 +32472,11 @@ up-load.io##+js(acis, s65c)
 ||cdn.barscreative1.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||qaqdojte.xyz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||gjnbhvnbmxxv.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
-||tmp.a2zapk.com/js/countd.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
-||services.vlitag.com/adv1/$script
+||stats.vlitag.com^$document,subdocument,script,inline-script,inline-font,popup,popunder,other
+||logs.vlitag.com^$document,subdocument,script,inline-script,inline-font,popup,popunder,other
+||tag.vlitag.com^$document,subdocument,script,inline-script,inline-font,popup,popunder,other
+||services.vlitag.com/adv1/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
+||dsp.vlitag.com/js/v1/adtag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 !Still need to set adblock_check to 1 and remove random node after #adb/div.adsbox.
 videocardz.com##*[class*="ezoic-ad"]
 videocardz.com##*[class*="adtester-container"]
@@ -40116,6 +40123,8 @@ www.tikilive.com##div[class="channelPlayerBanner__12kSj"]:remove()
 ||www.tikilive.com/watch/assets/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 forum.husham.com##div[class="u-bottomFixer js-bottomFixTarget"]:has(div[class="notice-content"]:has-text(This site uses cookies))
 forum.husham.com##div[class="u-bottomFixer js-bottomFixTarget"]:has(div[class="notice-content"]:has-text(This site uses cookies)):remove()
+||tmp.a2zapk.com/js/badip.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
+||tmp.a2zapk.com/js/countd.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||tmp.a2zapk.com/js/techadsns.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||tmp.a2zapk.com/adspopup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||tmp.a2zapk.com/adddds.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
@@ -40151,7 +40160,17 @@ a2zapk.io##div[id^="galax"]
 a2zapk.io##div[id^="galax"]:remove()
 a2zapk.io##+js(set, countad, noopFunc)
 a2zapk.io##html,body:remove-attr(oncontextmenu)
+! aeld doesn't work for some reason on the contextmenu event listener
 a2zapk.io##+js(aeld, contextmenu)
+! ||a2zapk.io/dload/$inline-script prevents the contextmenu from being disabled on the download screen and doesn't breat the download links
+||a2zapk.io/dload/$inline-script
+! The following don't prevent the contextmenu from being disabled for some reason.
+a2zapk.io,a2zapk.com##+js(acis, document.oncontextmenu)
+a2zapk.io,a2zapk.com##+js(acis, document.onkeydown)
+a2zapk.io,a2zapk.com##+js(acis, document.onselectstart)
+a2zapk.io,a2zapk.com##+js(acis, document.onmousedown)
+a2zapk.io,a2zapk.com##+js(acis, document.onclick)
+a2zapk.io,a2zapk.com##+js(acis, document.ondragstart)
 ||tmp.isavetube.com/js/advertisement/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||js.mobileoffers-ep-download.com^$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 123chill.to##iframe[src="about:blank"]
@@ -40537,6 +40556,23 @@ newsindi.com,techssting.com##+js(aopr, absda)
 !dropgalaxy.com,dropgalaxy.in##+js(acis, usrblock)
 !dropgalaxy.com,dropgalaxy.in##+js(aopr, got)
 !dropgalaxy.com,dropgalaxy.in##+js(aopw, got)
+!dropgalaxy.com##div[class="adsbox"]
+! removing stickyunit triggers the anti-adblock script @ dropgalaxy
+!dropgalaxy.com,dropgalaxy.in##div[id="stickyunit"]
+!dropgalaxy.com,dropgalaxy.in##div[id="stickyunit"]:remove()
+! changing the ads variable will trigger the anti-adblocking script @ dropgalaxy
+! setting ads to [] also makes the fetch script continually contact the site
+dropgalaxy.com,dropgalaxy.in##+js(set-constant, ads, [])
+dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, ads)
+dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, ads)
+! changing the brute variable will trigger the anti-adblocking script @ dropgalaxy
+! setting brute to [] also makes the fetch script continually contact the site
+!dropgalaxy.com,dropgalaxy.in##+js(set-constant, brute, [])
+!dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, brute)
+!dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, brute)
+! The countdown div tag is needed because the countdown is still used.
+!dropgalaxy.com,dropgalaxy.in##div[id="countdown"]
+!dropgalaxy.com,dropgalaxy.in##div[id="countdown"]:remove()
 ! Do not remove any of these input tags as these values are required for the download link to be given:
 ! The id's with a value of 0 probably could be successfully removed, but only would be needed if they are otherwise triggered to a non-zero value.
 !dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="adblock_check"] value="0" name="adblock_check">
@@ -40549,20 +40585,16 @@ newsindi.com,techssting.com##+js(aopr, absda)
 !dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="ag7e3x"] value="0" name="ag7e3x">
 !dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="badipp"] value="0" name="badipp">
 !dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="dgl"] name="dgl" value="1">
-!dropgalaxy.com##div[class="adsbox"]
 dropgalaxy.com,dropgalaxy.in##^script:has-text(setTimeout)
 dropgalaxy.com,dropgalaxy.in##button[id="downloadBtnClick"]:style(visibility: hidden !important; display: none !important;)
 dropgalaxy.com,dropgalaxy.in##button[id="downloadBtnClick"]
 dropgalaxy.com,dropgalaxy.in##button[id="downloadBtnClick"]:remove()
-! Don't disable the button before the countdown completes or the anti-adblock page will display.
+! Don't enable the button before the countdown completes or the anti-adblock page will display.
 !dropgalaxy.com,dropgalaxy.in##+js(remove-attr, disabled, #downloadbtn, stay)
 !dropgalaxy.com,dropgalaxy.in##button[id="downloadbtn"]:remove-attr(disabled)
 dropgalaxy.com,dropgalaxy.in##button[id="downloadbtn"]:remove-attr(style)
 dropgalaxy.com,dropgalaxy.in##button[id="downloadbtn"]:style(visibility: visible !important; display: block !important;)
-!dropgalaxy.com,dropgalaxy.in###downloadbtn:style(display: block !important;)
-! The countdown div tag is needed because the countdown is still used.
-!dropgalaxy.com,dropgalaxy.in##div[id="countdown"]
-!dropgalaxy.com,dropgalaxy.in##div[id="countdown"]:remove()
+!dropgalaxy.com,dropgalaxy.in###downloadbtn:style(visibility: visible !important; display: block !important;)
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, timeleft, 0, stay)
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, downloadTimer, noopFunc)
 dropgalaxy.com,dropgalaxy.in##div[id^="adm-container-"]
@@ -40621,14 +40653,14 @@ dropgalaxy.com,dropgalaxy.in##^script:has-text(/debugger/i)
 ||tmp.dropgalaxy.in/js/badip.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||tmp.dropgalaxy.com/js/badip.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 dropgalaxy.com##+js(set-constant, badip, false, stay)
+!||tmp.dropgalaxy.in/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
+!||tmp.dropgalaxy.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||tmp.dropgalaxy.in/adddds.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||tmp.dropgalaxy.com/adddds.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||tmp.dropgalaxy.in/adspopup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||tmp.dropgalaxy.com/adspopup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||tmp.dropgalaxy.in/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||tmp.dropgalaxy.com/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
-!||tmp.dropgalaxy.in/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
-!||tmp.dropgalaxy.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 !||tmp.dropgalaxy.in/js/countd.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 !||tmp.dropgalaxy.com/js/countd.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 !||dropgalaxy.com/826-tips-on-home-insurance-for-large-families.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other
@@ -40647,14 +40679,17 @@ dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, pageData)
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, ad114caa64152aac18535dbf18d9ed74, "")
 dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, ad114caa64152aac18535dbf18d9ed74)
 dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, ad114caa64152aac18535dbf18d9ed74)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, ads, [])
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, ads)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, ads)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, brute, [])
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, brute)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, brute)
-dropgalaxy.com,dropgalaxy.in##div[id="stickyunit"]
-dropgalaxy.com,dropgalaxy.in##div[id="stickyunit"]:remove()
+dropgalaxy.com,dropgalaxy.in##+js(set-constant, scriptletGlobals, noopFunc)
+dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, scriptletGlobals)
+dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, scriptletGlobals)
+dropgalaxy.com,dropgalaxy.in##+js(set-constant, xhrInstances, noopFunc)
+dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, xhrInstances)
+dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, xhrInstances)
+dropgalaxy.com,dropgalaxy.in##+js(set-constant, noFetchIf, noopFunc)
+dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, noFetchIf)
+dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, noFetchIf)
+dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, deAmpEnabled)
+dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, deAmpEnabled)
 dropgalaxy.com,dropgalaxy.in##iframe[title="Criteo GUM iframe"]:remove()
 dropgalaxy.com,dropgalaxy.in##iframe[src^="https://sync.quantumdex.io/usersync/pbjs"]:remove()
 dropgalaxy.com,dropgalaxy.in##iframe[id="VIEventStats"]:remove()
@@ -40791,6 +40826,8 @@ usersdrive.com##input[id="adblock_detected"]:remove()
 ||usersdrive.com/userdrive/assets/js/countdown.js$popup,document,inline-script,inline-font,popunder,subdocument,script,other
 ||tokofyttes.com^$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 ||d19gkl2iaav80x.cloudfront.net^$document,subdocument,script,inline-script,inline-font,popup,popunder,other
+!||adsystem.pocpoc.io/adv/v1/bidding?$document,subdocument,script,inline-script,inline-font,popup,popunder,other
+||adsystem.pocpoc.io^$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 
 !Whitelisted
 ! blocks Kroger website?
@@ -40920,17 +40957,17 @@ gitlab.com#@#+js(no-floc)
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$script,domain=dropgalaxy.com|dropgalaxy.in
 @@||player.aplhb.adipolo.com/prebidlink/$script,domain=dropgalaxy.com|dropgalaxy.in
 @@||a2zapk.com^$script,xhr,3p,domain=dropgalaxy.com|dropgalaxy.in
-@@||tag.vlitag.com/v1/*$script,domain=dropgalaxy.com|dropgalaxy.in
 !||protagcdn.com/s/dropgalaxy.com/site.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 !||protagcdn.com/s/dropgalaxy.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other
 @@||protagcdn.com/s/dropgalaxy.com/site.js$script,domain=dropgalaxy.com|dropgalaxy.in
 @@||script.4dex.io/localstore.js$script,domain=dropgalaxy.com|dropgalaxy.in
+@@||script.4dex.io/adagio.js$xhr,domain=dropgalaxy.com|dropgalaxy.in
+@@||tag.vlitag.com/v1/$script,domain=dropgalaxy.com|dropgalaxy.in
 @@||services.vlitag.com/adv1/$script,domain=dropgalaxy.com|dropgalaxy.in
+@@||assets.vlitag.com/prebid/default/prebid-$document,subdocument,script,inline-script,inline-font,popup,popunder,other.js$script,domain=dropgalaxy.com|dropgalaxy.in
 @@||static.criteo.net/js/ld/publishertag.prebid.js$script,xhr,domain=dropgalaxy.com|dropgalaxy.in
 @@||protagcdn.com/check-bot/index.html$frame,domain=dropgalaxy.com|dropgalaxy.in
 @@||mp.4dex.io/prebid$xhr,domain=dropgalaxy.com|dropgalaxy.in
-@@||script.4dex.io/adagio.js$xhr,domain=dropgalaxy.com|dropgalaxy.in
 @@||gum.criteo.com/sid/json?origin=prebid&topUrl=$xhr,domain=dropgalaxy.com|dropgalaxy.in
 @@||securepubads.g.doubleclick.net/pagead/ppub_config?ippd=$xhr,domain=dropgalaxy.com|dropgalaxy.in
-@@||assets.vlitag.com/prebid/default/prebid-$document,subdocument,script,inline-script,inline-font,popup,popunder,other.js$script,domain=dropgalaxy.com|dropgalaxy.in
 @@||googletagservices.com/tag/js/gpt.js$script,domain=dropgalaxy.com|dropgalaxy.in
