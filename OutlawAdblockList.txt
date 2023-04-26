@@ -32773,6 +32773,7 @@ www.hackers-arise.com##div[data-testid="colorUnderlay"]
 www.hackers-arise.com##footer[id="SITE_FOOTER_WRAPPER"]
 !||at.adtech.redventures.io/lib/api/v1/zdnet-rv/prod/config/diff?variant=core$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 !||at.adtech.redventures.io/lib/dist/prod/bidbarrel-zdnet-rv.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||at.adtech.redventures.io/lib/api/v1/event^$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 ! Blocks images on zdnet websites
 !||at.adtech.redventures.io^*
 ||www.zdnet.com/a/fly/js/components/track-cwv-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image-rev.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
@@ -39924,11 +39925,6 @@ mixdrop.co##body:remove-attr(onclick)
 ||q.reyden-x.com^*
 ||loosenoutfit.com^*
 ||careless-category.pro^*
-!||vz.7vid.net/api/spots/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
-!||vz.7vid.net/api/click/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
-!||vz.7vid.net/api/users/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
-||vz.7vid.net^*
-||vd.7vid.net^*
 ||cdn.tapioni.com/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 ||cdn.o333o.com/vast-im.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 ||static.addtoany.com/menu/locale/ru.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
@@ -39973,12 +39969,32 @@ vidoza.net##+js(aeld, pushsubscriptionchange)
 vidoza.net##+js(aeld, notificationclick)
 ! from ublock Origin main list:
 vidoza.net##+js(noeval)
-!vidoza.net##+js(nowoif)
+vidoza.net##+js(nowoif)
 !vidoza.net##.in-block
 !vidoza.net###plo_0
 !vidoza.net##[id*="ScriptRoot"]
 !vidoza.net##.simpleToast
 !vidoza.net##.download-green
+!||vz.7vid.net/api/users/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+!||vz.7vid.net/api/settings/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||vz.7vid.net/api/spots/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||vz.7vid.net/api/click/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||vz.7vid.net/LrfK7A3.js
+!||vd.7vid.net/lx4oag1.js
+!||vd.7vid.net/B5s6up1.js
+!||7vid.net/videoads.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+! blocking vz.7vid.net and/or vd.7vid.net entirely may prevent videos from playing
+!||vz.7vid.net^*
+!||vd.7vid.net^*
+! // not a typo on my part
+||7vid.net//ajax.php?p=stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+! just in case website corrects later
+||7vid.net/ajax.php?p=stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+7vid.net##+js(set, gtag, noopFunc)
+7vid.net##+js(set, ya_counter, {})
+7vid.net##div[id="video-js"]:remove-class(vjs-controls-disabled)
+7vid.net##div[class="preroll-ad-url"]
+7vid.net##div[class="preroll-ad-url"]:remove()
 ||desperationembassy.com^*
 voe.sx,scatch176duplicities.com##+js(set-constant, c74a68dfbd15fcd6f23a6b26879bc82e, noopFunc)
 voe.sx,scatch176duplicities.com##+js(set-constant, adbStatus, 1)
@@ -40074,16 +40090,6 @@ vtube.to,vtbe.net,vtplay.net##body[id="top"]:remove-attr(data-aos-duration)
 !||videocdnmetrika.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 ||videocdnmetrika.com^*
 ||mxtads.com^*
-!||7vid.net/videoads.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
-! // not a type on my part
-||7vid.net//ajax.php?p=stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
-! just in case website corrects later
-||7vid.net/ajax.php?p=stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
-7vid.net##+js(set, gtag, noopFunc)
-7vid.net##+js(set, ya_counter, {})
-7vid.net##div[id="video-js"]:remove-class(vjs-controls-disabled)
-7vid.net##div[class="preroll-ad-url"]
-7vid.net##div[class="preroll-ad-url"]:remove()
 ||hiveos.farm^*
 ||coinlist.co^*
 ||localbitcoins.com^*
@@ -40947,6 +40953,42 @@ mega4upload.com##+js(no-xhr-if, method:HEAD)
 ! mega4upload currently only uses xhr not fetch.
 mega4upload.com##+js(no-fetch-if, method:HEAD)
 ||gcxugoksw.com^*
+||abashfireworks.com^*
+||2ahgsd22.com^*
+||www.nulledandroid.com/wp-content/plugins/ad-invalid-click-protector/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+www.channel4.com##div[id="cookie-consent-banner"]
+www.channel4.com##div[id="cookie-consent-banner"]:remove()
+!||monitor.channel4.com/logs/dotcom/client/html5liveplayer$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+!||monitor.channel4.com/logs/dotcom/client/consent$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||monitor.channel4.com^*
+||cdn.buffsports.stream/scripts/ga.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||dissipatebackyarduncle.com^*
+!||bid.bidclickmedia.com/load$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+!||bid.bidclickmedia.com/sub/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||bid.bidclickmedia.com^*
+||verticallydeserve.com^*
+!||rentalrebuild.com/pixel/purst?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||rentalrebuild.com^*
+||filter.highsea.fun^*
+||xml.zeusadx.com^*
+||redir.hightid.xyz^*
+||ib.mndsrv.com^*
+||x5m74.bemobtrcks.com^*
+||warlikesong.com^*
+||ads.bullionyield.com^*
+||go.xlivrdr.com^*
+!||cdn.stripcash.com/video/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||cdn.stripcash.com^*
+!||syndication.realsrv.com/splash.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||syndication.realsrv.com^*
+!||greedseed.world/vast_tag/hdg.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||greedseed.world^*
+||twinrdsrv.com/preroll.engine?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||dyptanaza.com^*
+||vast.yomeno.xyz^*
+!||bulrev.com/show/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||bulrev.com^*
+||warmheartedtackle.pro^*
 
 !Whitelisted
 ! blocks Kroger website?
