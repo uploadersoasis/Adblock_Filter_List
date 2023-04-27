@@ -37249,8 +37249,8 @@ tv247us.com##div[class*="adsbyvli"]
 tv247us.com##div[class*="hantads"]
 tv247us.com##div[data-ad-slot]
 tv247us.com##div[id="banner_ad"]
-tv247us.com##+js(remove-class, hantads, div)
 tv247us.com##div[id^="afc_sidebar"]
+tv247us.com##+js(remove-class, hantads, div)
 tv247us.com##+js(acs, eval)
 tv247us.com##+js(noeval)
 !tv247us.com##+js(acs, loadAd)
@@ -37259,6 +37259,26 @@ tv247us.com##+js(noeval)
 !tv247us.com##+js(aopr, timead)
 ||tv247us.com/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 tv247us.com##video[class*="jw-video"]:remove-attr(disableremoteplayback)
+||tv247us.com/z-6826726$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+tv247.us##div[class^="afs_ads"]
+||tv247.us/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+tv247.us##article[id="post-1978"]:style(width: 100% !important;)
+tv247.us##div[id="tv247-75013289"]
+||tv247.us/z-6775074$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+tv247us.com,tv247.us##^script:has-text(decodeURIComponent)
+tv247us.com,tv247.us##+js(acs, decodeURIComponent)
+tv247us.com,tv247.us##+js(set, gtag, noopFunc)
+tv247us.com,tv247.us##+js(set, b9231331f17013bbdfc6ca79fbe61a84, "")
+tv247us.com,tv247.us##+js(acs, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=')
+tv247us.com,tv247.us##+js(set, advanced_ads_ready, noopFunc)
+tv247us.com,tv247.us##+js(set, advanced_ads_ready_queue, [])
+tv247us.com,tv247.us##+js(set, window.advanced_ads_ready_queue, [])
+tv247us.com,tv247.us##+js(set, window.advanced_ads_ready, [])
+tv247us.com,tv247.us##^script:has-text(advanced_ads_ready)
+tv247us.com,tv247.us##+js(acs, advanced_ads_ready)
+tv247us.com,tv247.us##div[id="vvv"]:remove-class(jw-flag-user-inactive)
+tv247us.com,tv247.us##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
+tv247us.com,tv247.us##input[type="button"][aria-label="play"]:remove-attr(disabled)
 ||nginx-cf.maxcdn.info/country_blocker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 !www.ustream.to##+js(acs, eval)
 !www.ustream.to##+js(noeval)
@@ -38347,7 +38367,7 @@ financerites.*##p:has-text(\[ad_)
 ||www.ldbboacmenwy.com^*
 ||ldbboacmenwy.com^*
 ||d29mxewlidfjg1.cloudfront.net^*
-||gorkt.com/script/clock.js$script,domain=sharecast.ws|tv247.us
+||gorkt.com/script/clock.js$script,domain=sharecast.ws|tv247.us|tv247us.com
 ||10865.ru^*
 ||gforanythingam.com^*
 ||lywasnothycant.info^*
@@ -38416,12 +38436,6 @@ www.theiet.org##+js(aopw, _gaq)
 ||mediacpm.pl/serve/ads.js$script
 ||ss.mndsrv.com^*
 ||d1b9b1cxai2c03.cloudfront.net^*
-tv247.us##div[class^="afs_ads"]
-tv247.us##^script:has-text(decodeURIComponent)
-tv247.us##+js(acs, decodeURIComponent)
-||tv247.us/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
-tv247.us##article[id="post-1978"]:style(width: 100% !important;)
-tv247.us##div[id="tv247-75013289"]
 ||belittlepads.com^*
 ||tr-monday.xyz^*
 ||pop.admpire.com^*
@@ -40989,6 +41003,17 @@ www.channel4.com##div[id="cookie-consent-banner"]:remove()
 !||bulrev.com/show/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 ||bulrev.com^*
 ||warmheartedtackle.pro^*
+||seizecrashsophia.com^*
+||attractivebuilt.com^*
+||overratedtransmissiontwenty.com^*
+||mckensecuryr.info^*
+||click-v4.expdirclk.com^*
+||disadvantagenaturalistrole.com^*
+||click-systems.net^*
+||r.adsilo.net^*
+||www.facebook.com/platform/plugin/page/logging/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
+||getoverenergy.com^*
+||simuld.com^*
 
 !Whitelisted
 ! blocks Kroger website?
@@ -41009,6 +41034,8 @@ www.channel4.com##div[id="cookie-consent-banner"]:remove()
 !||cdn.branch.io/branch-latest.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 @@||cdn.branch.io/branch-latest.min.js$script
 ! www.nbc.com video streaming also needs the following six exceptions to work especially assets.adobedtm.com/extensions/:
+! vidoza.net login needs vue-recaptcha@unpkg.com
+@@unpkg.com/vue-recaptcha@*/dist/vue-recaptcha.js$script,domain=vidoza.net
 @@||rum.browser-intake-datadoghq.com^*
 @@||session-replay.browser-intake-datadoghq.com^*
 !@@||events.launchdarkly.com/events/bulk/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
