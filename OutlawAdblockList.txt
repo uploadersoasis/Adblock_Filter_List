@@ -37279,6 +37279,7 @@ tv247us.com,tv247.us##+js(acs, advanced_ads_ready)
 tv247us.com,tv247.us##div[id="vvv"]:remove-class(jw-flag-user-inactive)
 tv247us.com,tv247.us##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
 tv247us.com,tv247.us##input[type="button"][aria-label="play"]:remove-attr(disabled)
+tv247us.com,tv247.us##div[id="vvv"]:style(width:1280px !important; height: 720px !important)
 ||nginx-cf.maxcdn.info/country_blocker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 !www.ustream.to##+js(acs, eval)
 !www.ustream.to##+js(noeval)
@@ -41014,6 +41015,43 @@ www.channel4.com##div[id="cookie-consent-banner"]:remove()
 ||www.facebook.com/platform/plugin/page/logging/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 ||getoverenergy.com^*
 ||simuld.com^*
+||luddismwebworn.life^*
+||canopicerasion.com^*
+||bergculpae.life^*
+||writhehawm.com^*
+dlapk4all.com##iframe
+dlapk4all.com##iframe:remove()
+! ##script without remove() which only works with ublock Origin not Brave natively may not do anything.
+dlapk4all.com##script[data-domain="22filexstarted22.com"]
+dlapk4all.com##script[data-domain="22filexstarted22.com"]:remove()
+unlockapk.com##+js(set, divalerttag, "") 
+unlockapk.com##+js(set, $imgg, {})
+unlockapk.com##+js(set, pJJgkNhjaebCdgnHVdplQgczJWqjLkVwuz, 1)
+unlockapk.com###pJJgkNhjaebCdgnHVdplQgczJWqjLkVwuz
+unlockapk.com###pJJgkNhjaebCdgnHVdplQgczJWqjLkVwuz:remove()
+unlockapk.com###OBirleurFOzwXZimaGlOonizAZjPEbBw
+unlockapk.com###OBirleurFOzwXZimaGlOonizAZjPEbBw:remove()
+unlockapk.com##+js(acs, divalerttag, $imgg) 
+unlockapk.com##+js(aopr, divalerttag)
+unlockapk.com##+js(aopw, divalerttag)
+unlockapk.com##+js(aopr, $imgg)
+unlockapk.com##+js(aopw, $imgg)
+unlockapk.com##div[id="go"]:remove-attr(style)
+unlockapk.com##div[id="go"]:style(display: block !important;)
+unlockapk.com##div[id="prog"]:remove-attr(style)
+unlockapk.com##div[id="prog"]:style(display: block !important;)
+unlockapk.com##div[data-ad-slot]
+unlockapk.com##div[data-ad-slot]:remove()
+unlockapk.com##+js(set, vitag, {}) 
+unlockapk.com##+js(set, vitag.Init, []) 
+unlockapk.com##+js(aopr, vitag)
+unlockapk.com##+js(aopw, vitag)
+unlockapk.com##+js(set, pageData, {}) 
+unlockapk.com##+js(aopr, pageData)
+unlockapk.com##+js(aopw, pageData)
+unlockapk.com##+js(set, JsEvalContext, noopFunc) 
+unlockapk.com##+js(set, gtag, noopFunc)
+unlockapk.com##+js(acs, gtag)
 
 !Whitelisted
 ! blocks Kroger website?
@@ -41151,7 +41189,7 @@ gitlab.com#@#+js(no-floc)
 @@||script.4dex.io/localstore.js$script,domain=dropgalaxy.com|dropgalaxy.in
 @@||script.4dex.io/adagio.js$xhr,domain=dropgalaxy.com|dropgalaxy.in
 @@||tag.vlitag.com/v1/$script,domain=dropgalaxy.com|dropgalaxy.in
-@@||services.vlitag.com/adv1/$script,domain=dropgalaxy.com|dropgalaxy.in
+@@||services.vlitag.com/adv1/$script,domain=dropgalaxy.com|dropgalaxy.in|unlockapk.com
 @@||assets.vlitag.com/prebid/default/prebid-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image.js$script,domain=dropgalaxy.com|dropgalaxy.in
 @@||static.criteo.net/js/ld/publishertag.prebid.js$script,xhr,domain=dropgalaxy.com|dropgalaxy.in
 @@||protagcdn.com/check-bot/index.html$frame,domain=dropgalaxy.com|dropgalaxy.in
