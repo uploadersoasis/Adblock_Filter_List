@@ -25434,7 +25434,7 @@ fcc.lc##+js(abort-on-property-write.js, window.googletag)
 fcc.lc##^script[id="ads_priv"]
 !fcc.lc##+js(set, document.querySelector("#surl").onclick, "")
 fcc.lc##+js(set, document.querySelector("#surl").onclick, null)
-fcc.lc##+js(set, document.querySelector("#overlay")style, position: absolute; width: 100vw; height: 100%; z-index: 99999; display: inline;)
+fcc.lc##+js(set, document.querySelector("#overlay")style, position: absolute; width: 100vw; height: 100vh; z-index: 99999; display: inline;)
 ||vulturechinamaternity.com^*
 ||click.hooligapps.com^*
 ||luckypushwinner.com^*
@@ -37287,7 +37287,7 @@ tv247us.com,tv247.us##div[id="vvv"]:remove-class(jw-flag-user-inactive)
 tv247us.com,tv247.us##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
 tv247us.com,tv247.us##input[type="button"][aria-label="play"]:remove-attr(disabled)
 !tv247us.com,tv247.us##div[id="vvv"]:style(width:1280px !important; height: 720px !important)
-tv247us.com,tv247.us##div[id="vvv"]:style(width: 100vw !important; height: 720px !important)
+tv247us.com,tv247.us##div[id="vvv"]:style(width: 100vw !important; height: 100vh !important)
 ||nginx-cf.maxcdn.info/country_blocker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !www.ustream.to##+js(acs, eval)
 !www.ustream.to##+js(noeval)
@@ -37400,17 +37400,17 @@ docs.bibisco.com##div[data-rnwrdesktop-1moh23t-e1k2in="true"][data-rnwr700-1moh2
 ||rhemistdimyary.tech^*
 ||pyxiscablese.com^*
 ||theodyscreams.store^*
-!!en.wikipedia.org##html:style(width: 100vw; height: 100%; margin-left: 0; margin-right: 0; !important)
+!!en.wikipedia.org##html:style(width: 100vw; height: 100vh; margin-left: 0; margin-right: 0; !important)
 ! for 3440 pixels width monitor
-!wikipedia.org##html:style(width: 100% !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3400px !important; max-width: 3400px !important)
-!wikipedia.org##div[class="mw-page-container"]:style(width: 100% !important; height: 100% !important; margin-left: 50px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3400px !important; max-width: 3400px !important)
-!wikipedia.org##div[class="mw-content-container"]:style(width: 3070px !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3070px !important; max-width: 3070px !important)
-!!wikipedia.org##div[class="mw-body"]:style(width: 3070px !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3070px !important; max-width: 3070px !important)
+!wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3400px !important; max-width: 3400px !important)
+!wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 50px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3400px !important; max-width: 3400px !important)
+!wikipedia.org##div[class="mw-content-container"]:style(width: 3070px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3070px !important; max-width: 3070px !important)
+!!wikipedia.org##div[class="mw-body"]:style(width: 3070px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3070px !important; max-width: 3070px !important)
 ! for 1920 pixels width monitor
-wikipedia.org##html:style(width: 100% !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
-wikipedia.org##div[class="mw-page-container"]:style(width: 100% !important; height: 100% !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
-wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
-!wikipedia.org##div[class="mw-body"]:style(width: 1190px !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
+wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
+wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
+wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
+!wikipedia.org##div[class="mw-body"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
 sosmediacorp.com##div[id="cookie"]
 www.cnn.com##div[class^="terms-of-service"]
 !||www.cnn.com/media/sites/js/bundles/business-adfuel.min.js
@@ -38214,6 +38214,9 @@ sportskart.click##+js(aopr, t.Tn)
 sportskart.click##+js(aopw, t.Tn)
 sportskart.click##^script:has-text(/delete window\[/)
 sportskart.click##^script:has-text(/delete window\[/):remove()
+wikisport.click##iframe[src^="https://wikisport.click/"]:remove-attr(width)
+wikisport.click##iframe[src^="https://wikisport.click/"]:style(width: 100vw !important; height: 100vh !important;)
+wikisport.click##iframe[src^="https://wikicast.tv/wiki.php?player="]:style(width: 100vw !important; height: 100vh !important;)
 wikisport.click##a[href="//pubfuture.com"][class="pf-br-icon"]
 !||wikisport.click/iptv2/$inline-script
 wikisport.click##^script:xpath("/html/head/script[1]")
@@ -38259,9 +38262,10 @@ wikisport.click##+js(aopw, e.ctrlKey)
 !puffer.stanford.edu##+js(remove-attr, style, #tv-container, stay)
 !puffer.stanford.edu##div[id="tv-container"]:watch-attr(style):remove-attr(style)
 ! a javascript continually sets div[pseudo="-webkit-media-controls"] to style="display: none;" and ublock Origin does not overcome this.
-!puffer.stanford.edu##div[pseudo="-webkit-media-controls"]:style(display: inline !important;)
+puffer.stanford.edu##div[pseudo="-webkit-media-controls"]:style(display: inline !important; appearance: auto !important; user-select: all !important;)
 !puffer.stanford.edu##div[pseudo="-webkit-media-controls-panel"]:watch-attr(style):remove-attr(style)
 !puffer.stanford.edu##div[pseudo="-webkit-media-controls-panel"][class="transparent"]:watch-attr(style,class):remove-attr(style,class)
+puffer.stanford.edu##div[pseudo="-webkit-media-controls-panel"]:style(display:inline !important; appearance: auto !important; user-select: all !important;)
 ! removing muted doesn't restore the audio
 ! Don't stay on removing muted attribute so it can be manually reapplied.
 !puffer.stanford.edu##video[id="tv-video"]:remove-attr(muted)
@@ -38293,7 +38297,7 @@ freestreams-live1.tv##+js(noeval)
 freestreams-live1.tv##+js(set, keepChecking, noopFunc)
 ! also need no-setTimeout-if to prevent running keepChecking() on a loop
 freestreams-live1.tv##+js(no-setTimeout-if, keepChecking)
-freestreams-live1.tv##div[id="primary"]:style(left: 0px !important; right: 0px !important; width: 100vw !important; height: 100% !important;)
+freestreams-live1.tv##div[id="primary"]:style(left: 0px !important; right: 0px !important; width: 100vw !important; height: 100vh !important;)
 freestreams-live1.tv##div[id="headb"]
 freestreams-live1.tv##div[id="headb"]:remove()
 freestreams-live1.tv##div[id="adz1"]
@@ -38373,7 +38377,7 @@ em.tgo-tv.co##a[href^="https://tgo-tv.co/vpn/vpn.php"]
 em.tgo-tv.co##div[style="background:white; max-width: 800px;"]:has(a[href^="https://tgo-tv.co/vpn/vpn.php"])
 em.tgo-tv.co##+js(aopr, document.oncontextmenu)
 em.tgo-tv.co##+js(aopw, document.oncontextmenu)
-!em.tgo-tv.co##div:has(iframe[src^="https://extrafreetv.com/embed/em.php"]):style(width: 100vw !important; height: 100% !important;)
+!em.tgo-tv.co##div:has(iframe[src^="https://extrafreetv.com/embed/em.php"]):style(width: 100vw !important; height: 100vh !important;)
 !em.tgo-tv.co##div:has(iframe[src^="https://extrafreetv.com/embed/em.php"]):style(width: 1280px !important; height: 720px !important;)
 !em.tgo-tv.co##iframe[src^="https://extrafreetv.com/embed/em.php"]:remove-attr(width)
 !em.tgo-tv.co##iframe[src^="https://extrafreetv.com/embed/em.php"]:remove-attr(height)
@@ -38388,8 +38392,8 @@ reddit-tv1-streams.blogspot.com##+js(aopr, window.location)
 reddit-tv1-streams.blogspot.com##+js(aopw, window.location)
 !reddit-tv1-streams.blogspot.com##+js(noeval)
 ! Need to set height and width attributes of iframe NOT the style properties.
-!reddit-tv1-streams.blogspot.com##iframe[src^="http://r-strm.blogspot.com/p/"]:style(height: 100% !important; width: 100vw !important;)
-!reddit-tv1-streams.blogspot.com##div[id="main"]:style(height: 100% !important; width: 100vw !important;)
+!reddit-tv1-streams.blogspot.com##iframe[src^="http://r-strm.blogspot.com/p/"]:style(height: 100vh !important; width: 100vw !important;)
+!reddit-tv1-streams.blogspot.com##div[id="main"]:style(height: 100vh !important; width: 100vw !important;)
 ! Don't remove height unless can set it too.
 !reddit-tv1-streams.blogspot.com##iframe[src^="http://r-strm.blogspot.com/p/"]:remove-attr(height)
 !r-strm.blogspot.com##iframe[src^="https://worldstreams.click/embed/stream-"]:remove-attr(height)
@@ -38468,18 +38472,18 @@ play.xumo.com##script[id="script-gtm-inline"]:remove()
 !play.xumo.com##span[class="header-inner"]:upward(1)
 !play.xumo.com##main[class="pageType-live-guide"]:style(overflow: hidden !important;)
 !play.xumo.com##div[class="epgList-outer"]:style(overflow: scroll !important;)
-! change main.pageType-live-guide .epgPlayer-player width and height to 100% in https://play.xumo.com/_next/static/css/c80ac5485d35d529.css
+! change main.pageType-live-guide .epgPlayer-player width and height to 100vw/100vh in https://play.xumo.com/_next/static/css/c80ac5485d35d529.css
 ! using over 50% for the video container (epgPlayer-player) breaks the guide spacing and scrolling.
-play.xumo.com##div[class="epgPlayer-player"]:style(width: 50vw !important; height: 50% !important;)
-! jw-player should be 100% width and 100% height as it is contained within epgPlayer-player and is relative to that container's size.
-play.xumo.com##div[id="jw-player"]:style(width: 100vw !important; height: 100% !important;)
+play.xumo.com##div[class="epgPlayer-player"]:style(width: 50vw !important; height: 50vh !important;)
+! jw-player should be 100vw width and 100vh height as it is contained within epgPlayer-player and is relative to that container's size.
+play.xumo.com##div[id="jw-player"]:style(width: 100vw !important; height: 100vh !important;)
 ! The comments lines are continually repeated checks and removals
 play.xumo.com##video:remove-attr(disableremoteplayback)
 !play.xumo.com##video:watch-attr(disableremoteplayback):remove-attr(disableremoteplayback)
-play.xumo.com##input[pseudo="-webkit-media-controls-play-button"]:remove-attr(disabled)
-!play.xumo.com##input[pseudo="-webkit-media-controls-play-button"]:watch-attr(disabled):remove-attr(disabled)
-play.xumo.com##input[pseudo="-internal-media-controls-overflow-button"]:remove-attr(disabled)
-!play.xumo.com##input[pseudo="-internal-media-controls-overflow-button"]:watch-attr(disabled):remove-attr(disabled)
+play.xumo.com##input[type="button"][pseudo="-webkit-media-controls-play-button"]:remove-attr(disabled)
+!play.xumo.com##input[type="button"][pseudo="-webkit-media-controls-play-button"]:watch-attr(disabled):remove-attr(disabled)
+play.xumo.com##input[type="button"][pseudo="-internal-media-controls-overflow-button"]:remove-attr(disabled)
+!play.xumo.com##input[type="button"][pseudo="-internal-media-controls-overflow-button"]:watch-attr(disabled):remove-attr(disabled)
 !play.xumo.com##div:remove-class(epgPlayer-hidden)
 !play.xumo.com##.epgPlayer-hidden[class]:watch-attr(class):remove-attr(class)
 ||blfxavygs.xyz^*
@@ -38650,11 +38654,11 @@ lato.sx##+js(aopr, window["s2ss42"])
 lato.sx##+js(aopw, window["s2ss42"])
 lato.sx##+js(set, v_width, 1280)
 lato.sx##+js(set, v_height, 720)
-!lato.sx##+js(set, PlaySize, style="overflow:hidden;height:100%;width:100vw")
+!lato.sx##+js(set, PlaySize, style="overflow:hidden;height:100vh;width:100vw")
 lato.sx##+js(no-setTimeout-if, function)
 lato.sx##^script[admn][admc][zid][did]
 lato.sx##script[admn][admc][zid][did]
-lato.sx##iframe[src^="https://switchcast2.com/embedhls.php"]:style(overflow:hidden;height:100% !important;width:100vw !important)
+lato.sx##iframe[src^="https://switchcast2.com/embedhls.php"]:style(overflow:hidden;height:100vh !important;width:100vw !important)
 ||switchcast2.com/blast.js$script
 ||fox.tagger.opecloud.com^*
 ||statistic-data.com^*
@@ -38794,7 +38798,8 @@ www.thestreameast.to##iframe[id="live-chat-iframe"]:remove()
 www.thestreameast.to##div[id="GelismisReklams"]
 www.thestreameast.to##div[id="GelismisReklams"]:remove()
 ||www.thestreameast.to/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-www.thestreameast.to##div[data-player]:style(height: 720px !important;)
+!www.thestreameast.to##div[data-player]:style(height: 720px !important; width: 1280px !important;)
+www.thestreameast.to##div[data-player]:style(height: 100vh !important; width: 100vw !important;)
 ||apk.rapidstreamz.com^*
 ||milkywaynewspaper.com^*
 ||pizzasaffixt.website^*
@@ -39015,8 +39020,8 @@ www.cbs.com##div[class^="controls-backplane"]:remove-class(disable-selection)
 www.cbs.com##div[class^="controls-backplane"]:remove-class(remove)
 ! displays the play button but not active
 !www.cbs.com##button[class*="btn-play-pause"][aria-label="Play"]:style(display:inline !important;)
-www.cbs.com##button[pseudo="-webkit-media-controls-panel"]:style(display:inline !important;)
-www.cbs.com##input[aria-label="pause"]:remove-class(disabled)
+www.cbs.com##div[pseudo="-webkit-media-controls-panel"]:style(display:inline !important; appearance: auto !important; user-select: all !important;)
+www.cbs.com##input[type="button"][aria-label="pause"]:remove-class(disabled)
 ! removing div[data-role="adContainer"] prevents the video from playing
 !www.cbs.com##div[data-role="adContainer"]
 !www.cbs.com##div[data-role="adContainer"]:remove()
@@ -39066,8 +39071,8 @@ www.samsungtvplus.com##div[id="oobe-video"]:style(width: 100vw !important; point
 www.samsungtvplus.com##div[class*="vjs-audio-button"]:remove-class(vjs-hidden)
 www.samsungtvplus.com##div[class*="vjs-menu-button"]:remove-class(vjs-hidden)
 www.samsungtvplus.com##input[aria-label="show more media controls"]:remove-attr(disabled)
-www.samsungtvplus.com##input[pseudo="-webkit-media-controls-play-button"]:remove-attr(disabled)
-www.samsungtvplus.com##div[pseudo="-webkit-media-controls-panel"]:style(display: inline !important;)
+www.samsungtvplus.com##input[type="button"][pseudo="-webkit-media-controls-play-button"]:remove-attr(disabled)
+www.samsungtvplus.com##div[pseudo="-webkit-media-controls-panel"]:style(display:inline !important; appearance: auto !important; user-select: all !important;)
 www.samsungtvplus.com##button[class="sc-iqseJM jXVPDX"]:remove-attr(disabled)
 www.samsungtvplus.com##div[class="sc-ikJyIC jwMyfy"]
 www.samsungtvplus.com##div[class="sc-ikJyIC jwMyfy"]:remove()
@@ -39101,8 +39106,9 @@ cricplay2.xyz##script[id="_waumnk"]
 !cricplay2.xyz##+js(nostif, function)
 !cricplay2.xyz##+js(nostif, /^function()/)
 cricplay2.xyz##+js(nostif, /^function\(\)/)
-cricplay2.xyz##+js(set, v_width, "100%")
-cricplay2.xyz##+js(set, v_height, 700)
+cricplay2.xyz##+js(set, v_width, "100vw")
+!cricplay2.xyz##+js(set, v_height, 700)
+cricplay2.xyz##+js(set, v_height, "100vh")
 cricplay2.xyz##+js(aopr, _Hasync)
 cricplay2.xyz##+js(aopw, _Hasync)
 !||cricplay2.xyz/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
@@ -39235,7 +39241,7 @@ pluto.tv##input[aria-label="show more media controls"]:remove-attr(disabled)
 ! blocking window.googletag breaks the website
 !webapp.airy.tv##+js(aopr, window.googletag)
 !webapp.airy.tv##+js(aopw, window.googletag)
-webapp.airy.tv##input[pseudo="-webkit-media-controls-play-button"]:style(display: inline !important;)
+webapp.airy.tv##input[type="button"][pseudo="-webkit-media-controls-play-button"]:style(display:inline !important; appearance: auto !important;)
 webapp.airy.tv##+js(aeld, , onAdsManagerLoaded)
 webapp.airy.tv##+js(aeld, , onAdError)
 webapp.airy.tv##+js(aeld, , onAdEvent)
@@ -39397,7 +39403,7 @@ en.myshows.me##div[class="DefaultLayout-footer-ads"]:remove()
 livenewschat.eu##div[id="secondary"]
 livenewschat.eu##div[id="secondary"]:remove()
 livenewschat.eu##div[id="primary"]:style(width: 100vw !important)
-livenewschat.eu##main[id="main"]:style(width: 100vw !important; height: 100% !important;)
+livenewschat.eu##main[id="main"]:style(width: 100vw !important; height: 100vh !important;)
 livenewschat.eu##div[class*="ast-container"]:style(max-width: 100vw !important;)
 livenewschat.eu##div[data-freestar-ad]
 livenewschat.eu##div[data-freestar-ad]:remove()
@@ -39509,80 +39515,80 @@ devuploads.com##+js(acs, iframenone, iframev)
 devuploads.com##img[id="featuredimage"]
 ! removing img[id="featuredimage"] prevents the xd value from being set so the final download will not work.
 !devuploads.com##img[id="featuredimage"]:remove()
-djxmaza.in,thecubexguide.com##img[id="featuredimage"]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##img[id="featuredimage"]
 ! removing img[id="featuredimage"] prevents the xd value from being set so the final download will not work.
-!djxmaza.in,thecubexguide.com##img[id="featuredimage"]:remove()
-djxmaza.in,thecubexguide.com##+js(acs, iframenone, iframev)
-djxmaza.in,thecubexguide.com##+js(set-constant, gtag, noopFunc)
-djxmaza.in,thecubexguide.com##+js(acs, gtag)
-djxmaza.in,thecubexguide.com##ins[data-ad-client]:remove()
-djxmaza.in,thecubexguide.com##+js(aopw, adsbygoogle)
-djxmaza.in,thecubexguide.com##+js(aopr, adsbygoogle)
-djxmaza.in,thecubexguide.com##+js(remove-class, disabled, #formpost, stay)
-djxmaza.in,thecubexguide.com##+js(remove-attr, onmouseover, body, stay)
-djxmaza.in,thecubexguide.com##+js(set, TIME_LIMIT, 0)
-djxmaza.in,thecubexguide.com##+js(set, timeLeft, 0)
-djxmaza.in,thecubexguide.com##+js(set, remaining, 0)
-djxmaza.in,thecubexguide.com##+js(set, antiAdBlockerHandler, noopFunc)
-djxmaza.in,thecubexguide.com##+js(acs, antiAdBlockerHandler)
-djxmaza.in,thecubexguide.com##iframe[data-aa]
-djxmaza.in,thecubexguide.com##iframe[data-aa]:remove()
-djxmaza.in,thecubexguide.com##div[id="div-MWebStickyAds"]
-djxmaza.in,thecubexguide.com##div[id="div-MWebStickyAds"]:remove()
-djxmaza.in,thecubexguide.com##div[id="div-DStickyAds"]
-djxmaza.in,thecubexguide.com##div[id="div-DStickyAds"]:remove()
-djxmaza.in,thecubexguide.com##div[id="adBlocked"]
-djxmaza.in,thecubexguide.com##div[id="adBlocked"]:remove()
-djxmaza.in,thecubexguide.com##div[id^="336x280_"]
-djxmaza.in,thecubexguide.com##div[id^="336x280_"]:remove()
-djxmaza.in,thecubexguide.com##div[id^="300x250_"]
-djxmaza.in,thecubexguide.com##div[id^="300x250_"]:remove()
-djxmaza.in,thecubexguide.com##+js(set, window.googletag, [])
-djxmaza.in,thecubexguide.com##+js(aopr, window.googletag)
-djxmaza.in,thecubexguide.com##+js(aopw, window.googletag)
-djxmaza.in,thecubexguide.com##div[id="plzwait"]
-djxmaza.in,thecubexguide.com##div[id="plzwait"]:remove()
-djxmaza.in,thecubexguide.com##div[id="Blocked"]
-djxmaza.in,thecubexguide.com##div[id="Blocked"]:remove()
-djxmaza.in,thecubexguide.com##div[class^="stickyads_"]
-djxmaza.in,thecubexguide.com##div[class^="stickyads_"]:remove()
-djxmaza.in,thecubexguide.com##script[disable-devtool-auto]
-djxmaza.in,thecubexguide.com##script[disable-devtool-auto]:remove()
-djxmaza.in,thecubexguide.com##^script[disable-devtool-auto]
-djxmaza.in,thecubexguide.com##^script[disable-devtool-auto]:remove()
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##img[id="featuredimage"]:remove()
+dev.miuiflash.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, iframenone, iframev)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, gtag, noopFunc)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, gtag)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##ins[data-ad-client]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, adsbygoogle)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, adsbygoogle)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(remove-class, disabled, #formpost, stay)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(remove-attr, onmouseover, body, stay)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set, TIME_LIMIT, 0)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set, timeLeft, 0)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set, remaining, 0)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set, antiAdBlockerHandler, noopFunc)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, antiAdBlockerHandler)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##iframe[data-aa]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##iframe[data-aa]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="div-MWebStickyAds"]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="div-MWebStickyAds"]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="div-DStickyAds"]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="div-DStickyAds"]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="adBlocked"]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="adBlocked"]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="336x280_"]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="336x280_"]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="300x250_"]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="300x250_"]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set, window.googletag, [])
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, window.googletag)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, window.googletag)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="plzwait"]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="plzwait"]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="Blocked"]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="Blocked"]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[class^="stickyads_"]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[class^="stickyads_"]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##^script[disable-devtool-auto]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##^script[disable-devtool-auto]:remove()
 *$frame,redirect-rule=noopframe,from=djxmaza.in|thecubexguide.com
-djxmaza.in,thecubexguide.com##html.i-amphtml-inabox
-djxmaza.in,thecubexguide.com##button[id="downloadbtnc"]
-djxmaza.in,thecubexguide.com##button[id="downloadbtnc"]:remove()
-djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:style(display: block !important;)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##html.i-amphtml-inabox
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnc"]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnc"]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:style(display: block !important;)
 ! downloadbtnf needs to issue strtd() function (onclick)
-!djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]
-!djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:remove()
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:remove()
 ! adblock_detected needs to be 1 and xd to have a proper value (token) not the default of 1 for the download post submission to work.
-!djxmaza.in,thecubexguide.com##input[id="adblock_detected"]
-!djxmaza.in,thecubexguide.com##input[id="adblock_detected"]:remove()
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="adblock_detected"]
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="adblock_detected"]:remove()
 ! Setting either or both isblocked and isadblock to 0 will prevent the event listener on the final download button from working.
-!djxmaza.in,thecubexguide.com##+js(set, isblocked, 0)
-!djxmaza.in,thecubexguide.com##+js(set, isadblock, 0)
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set, isblocked, 0)
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set, isadblock, 0)
 ! an inline script needs to execute to retrieve the download token so don't abort on "unescape".
-!djxmaza.in,thecubexguide.com##+js(acs, unescape)
-!djxmaza.in,thecubexguide.com##+js(acs, _0x49fcx2)
-!djxmaza.in,thecubexguide.com##+js(aopw, _0x57e0)
-!djxmaza.in,thecubexguide.com##+js(aopr, _0x57e0)
-djxmaza.in,thecubexguide.com##+js(nostif, tick)
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, unescape)
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, _0x49fcx2)
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, _0x57e0)
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, _0x57e0)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nostif, tick)
 ! even though blocking the countdown script, still have to wait for the 10 second countdown for the download link to be generated.
 ||devuploads.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||thecubexguide.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||djxmaza.in/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-djxmaza.in,thecubexguide.com##div[id="downloadNow"]:remove-attr(style)
-djxmaza.in,thecubexguide.com##div[id="downloadNow"]:style(display: block !important;)
-!djxmaza.in,thecubexguide.com###downloadNow:remove-attr(style)
-!djxmaza.in,thecubexguide.com###downloadNow:style(display: block !important;)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="downloadNow"]:remove-attr(style)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="downloadNow"]:style(display: block !important;)
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com###downloadNow:remove-attr(style)
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com###downloadNow:style(display: block !important;)
 ! remove disabled attribute from #downloadbtn but don't make it visible because the #downloadbtnf button needs to be pressed first.
 devuploads.com###downloadbtn:remove-attr(disabled)
-djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(disabled)
-!djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(style)
-!djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:style(display: block !important;)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(disabled)
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(style)
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:style(display: block !important;)
 ||nimrute.com^*
 !||cdn.heycdn25.xyz/404$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||cdn.heycdn25.xyz^*
@@ -40225,8 +40231,8 @@ www.distro.tvo##div[id="content_video"]:remove-class(vjs-user-inactive)
 !www.tikilive.com##div[id="vjs_video_301"]:remove-class(vjs-controls-disabled)
 www.tikilive.com##div[id^="vjs_video_"]:remove-class(vjs-controls-disabled)
 www.tikilive.com##div[id^="vjs_video_"]:style(user-select: all !important;)
-www.tikilive.com##div[pseudo="-webkit-media-controls-panel"]:style(user-select: all !important;)
-www.tikilive.com##div[pseudo="-internal-media-controls-button-panel"]:style(user-select: all !important;)
+www.tikilive.com##div[pseudo="-webkit-media-controls-panel"]:style(display:inline !important; appearance: auto !important; user-select: all !important;)
+www.tikilive.com##div[pseudo="-internal-media-controls-button-panel"]:style(display:inline !important; appearance: auto !important; user-select: all !important;)
 www.tikilive.com##input[aria-label="play"][type="button"]:style(user-select: all !important;)
 www.tikilive.com##div[class="channelPlayerBanner__12kSj"]
 www.tikilive.com##div[class="channelPlayerBanner__12kSj"]:remove()
@@ -41152,6 +41158,7 @@ screenrant.com##iframe[name$="apiLocator"]:remove()
 ! width: 100vw is 100% of the viewport's width".
 ! width: 100% is 100% of the parent element's width which may not be 100% of the viewport.
 ! width must be set before overscroll.
+! height: 100vh is 100% of the viewport's height".
 screenrant.com##article[class="w-article infinite-scroll   article"]:style(width: 100vw !important; max-width: 100vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
 screenrant.com##section[id="article-body"]:style(width: 100vw !important; max-width: 100vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
 !screenrant.com##:xpath('//*[@id="article-body"]/div[1]/div[1]') class["table-container"]:style(width: 100vw !important; max-width: 100vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
@@ -41213,15 +41220,35 @@ www.websitedown.info##+js(aopw, adsbygoogle)
 www.websitedown.info##div[class*="box "]:has(script[src*="//pagead2.googlesyndication.com/"])
 www.websitedown.info##div[class*="box "]:has(script[src*="//pagead2.googlesyndication.com/"]):remove()
 ! The following displays the video player menu items for every domain/website.
-*##div[pseudo="-internal-media-controls-overflow-menu-list"][role="menu"]:style(display: block !important;)
+*##div[pseudo="-internal-media-controls-overflow-menu-list"][role="menu"]:style(display: block !important; appearance: auto !important)
 ! The following line would make all of the menu items shown, but the individual input tags for each one would still need to be displayed the see the icon for each menu.
-!*##label[pseudo="-internal-media-controls-overflow-menu-list-item"][role="menuitem"]:style(display: block !important;)
-*##label[pseudo="-internal-media-controls-overflow-menu-list-item"][role="menuitem"][aria-label="download media"]:style(display: block !important;)
-*##input[type="button"][pseudo="-internal-media-controls-download-button"]:style(display: block !important;)
-*##label[pseudo="-internal-media-controls-overflow-menu-list-item"][role="menuitem"][aria-label="play on remote device"]:style(display: block !important;)
-*##input[type="button"][pseudo="-internal-media-controls-cast-button"]:style(display: block !important;)
-*##label[pseudo="-internal-media-controls-overflow-menu-list-item"][role="menuitem"][aria-label="Play"]:style(display: block !important;)
-*##input[type="button"][pseudo="-webkit-media-controls-play-button"]:style(display: block !important;)
+!*##label[pseudo="-internal-media-controls-overflow-menu-list-item"][role="menuitem"]:style(display: block !important; appearance: auto !important)
+!*##label[pseudo="-internal-media-controls-overflow-menu-list-item"][role="menuitem"][aria-label="download media"]:style(display: block !important; appearance: auto !important)
+!*##input[type="button"][pseudo="-internal-media-controls-download-button"]:style(display: block !important; appearance: square-button !important)
+*##input[type="button"][pseudo="-internal-media-controls-download-button"]:style(display: block !important; appearance: auto !important)
+!*##label[pseudo="-internal-media-controls-overflow-menu-list-item"][role="menuitem"][aria-label="Play"]:style(display: block !important; appearance: auto !important)
+*##input[type="button"][pseudo="-internal-media-controls-overflow-button"]:remove-attr(disabled)
+*##input[type="button"][pseudo="-internal-media-controls-overflow-button"]:style(display: block !important; appearance: auto !important)
+!*##label[pseudo="-internal-media-controls-overflow-menu-list-item"][role="menuitem"][aria-label="play on remote device"]:style(display: block !important; appearance: auto !important)
+!*##input[type="button"][pseudo="-internal-media-controls-cast-button"]:style(display: block !important; appearance: square-button !important)
+*##input[type="button"][pseudo="-internal-media-controls-cast-button"]:style(display: block !important; appearance: auto !important)
+! -internal-media-controls-overlay-cast-button puts the cast button in the upper-left corner of the video element.
+! This button will be an empty square if thew cast button is not actually enabled.
+!*##input[type="button"][pseudo="-internal-media-controls-overlay-cast-button"]:style(display: block !important; appearance: square-button !important)
+!*##input[type="button"][pseudo="-internal-media-controls-overlay-cast-button"]:style(display: block !important; appearance: button !important)
+!*##input[type="button"][pseudo="-internal-media-controls-overlay-cast-button"]:style(display: block !important; appearance: push-button !important)
+!*##input[type="button"][pseudo="-internal-media-controls-overlay-cast-button"]:style(display: block !important; appearance: auto !important)
+*##div[pseudo="-webkit-media-controls-panel"]:style(display:inline !important; appearance: auto !important; user-select: all !important;)
+*##input[type="button"][pseudo="-webkit-media-controls-play-button"]:remove-attr(disabled)
+*##input[type="button"][pseudo="-webkit-media-controls-play-button"]:style(display: block !important; appearance: auto !important)
+!*##input[type="button"][pseudo="-webkit-media-controls-fullscreen-button"]:style(display: block !important; appearance: auto !important)
+*##input[type="button"][pseudo="-webkit-media-controls-fullscreen-button"]:style(display: block !important; appearance: square-button !important)
+!*##input[type="button"][pseudo="-webkit-media-controls-toggle-closed-captions-button"]:style(display: block !important; appearance: auto !important)
+*##input[type="button"][pseudo="-webkit-media-controls-toggle-closed-captions-button"]:style(display: block !important; appearance: square-button !important)
+!*##input[type="button"][pseudo="-internal-media-controls-playback-speed-button]:style(display: block !important; appearance: auto !important)
+*##input[type="button"][pseudo="-internal-media-controls-playback-speed-button]:style(display: block !important; appearance: square-button !important)
+!*##input[type="button"][pseudo="-internal-media-controls-picture-in-picture-button]:style(display: block !important; appearance: auto !important)
+*##input[type="button"][pseudo="-internal-media-controls-picture-in-picture-button]:style(display: block !important; appearance: square-button !important)
 d.tousecurity.com##+js(set, adsbygoogle, []) 
 d.tousecurity.com##+js(aopr, adsbygoogle)
 d.tousecurity.com##+js(aopw, adsbygoogle)
@@ -41253,6 +41280,35 @@ d.tousecurity.com##+js(noeval)
 ||cfehkwjupbrh.com^*
 ||www.jjvzzqwfp.com^*
 ||www.allftbsb.com^*
+||mygoodstream.pw/atag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+www.visualon.com##button[class*="vop-subtitles-button"][data-id="subtitles_button"]:style(display: inline-block !important;)
+www.visualon.com##button[class*="vop-cast-button"][title="chromecast"]:style(display: inline-block !important;)
+www.visualon.com##button[class*="vop-fullscreen-button"][title="fullscreen"]:style(display: inline-block !important;)
+www.visualon.com##button[class*="vop-fast-rewind-button"]:style(display: inline-block !important;)
+www.visualon.com##button[class*="vop-fast-forward-button"]:style(display: inline-block !important;)
+www.visualon.com##+js(set-constant, window[disableStr], true)
+www.visualon.com##+js(set-constant, __gaTrackerIsOptedOut, trueFunc)
+www.visualon.com##+js(set-constant, mi_track_user, false)
+www.visualon.com##+js(set-constant, gaOptout, trueFunc)
+www.visualon.com##+js(set-constant, __gaTracker, noopFunc)
+www.visualon.com##+js(acs, __gaTracker)
+! 100vw sets the video element to ~250 pixels on a 1080p display for some reason; it's because I has the viewport restricted with the developer tools opened.
+www.visualon.com##div[id="player-frame"]:style(width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+!www.visualon.com##div[id="player-frame"]:style(width: 1280px !important; height: 720px !important; user-select: all !important; pointer-events: all !important;)
+www.visualon.com##div[id="TTMLRenderingDiv"]:style(width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+||www.visualon.com/html5/SamplePlayer/libs/voplayer-analytics.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+castable-video.vercel.app##video[id="castable"]:style(max-width: 100vw !important; max-height: 100vh !important; width: 100vw !important; height: 100vh !important; user-select: all !important;)
+! 100vw will make the video element too wide.
+!*##div[class^="MuiBox-root css-c3hhc1"]:style(top: 0px !important; max-width: 100vw !important; max-height: 100vh !important; width: 100vw !important; height: 100vh !important; user-select: all !important;)
+*##div[class^="MuiBox-root css-c3hhc1"]:style(top: 0px !important; max-width: 82vw !important; max-height: 82vh !important; width: 82vw !important; height: 82vh !important; user-select: all !important;)
+! The following isn't actually necessary if the above style is already enacted.
+!*##vm-player[id="vm-player-1"]:style(max-width: 100vw !important; max-height: 100vh !important; width: 100vw !important; height: 100vh !important; user-select: all !important;)
+*##vm-player[id="vm-player-1"]:style(max-width: 82vw !important; max-height: 82vh !important; width: 82vw !important; height: 82vh !important; user-select: all !important;)
+*##header[class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-4uqjma"]:style(min-height: 30px !important; height: 30px !important;)
+*##div[class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-i6s8oy"]:style(min-height: 30px !important; height: 30px !important;)
+*##div[class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-3wafqk"]:style(min-height: 30px !important; height: 30px !important;)
+www.2baksa.ws##div[class^="antiblock"]
+www.2baksa.ws##div[class^="antiblock"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
