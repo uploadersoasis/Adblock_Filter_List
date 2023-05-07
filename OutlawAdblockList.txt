@@ -24680,7 +24680,8 @@ tusfiles.com##+js(abort-on-property-read.js, zfgloadedpopup)
 ||saumooly.net^*
 ||vaia06o630os.com^*
 clicknupload.*##input[id="adblock_detected"]
-clicknupload.*##iframe
+! clicknupload.*##iframe blocks the captcha needed to download
+!clicknupload.*##iframe
 ||vashoaft.net^*
 !clicknupload.*##body > script
 ##iframe[class="padPreload"]
@@ -33503,6 +33504,7 @@ chedrive.com##span[class^="adsdk-"]
 chedrive.com##input[id="adblock_detected"]:remove()
 chedrive.com##a[href*="//1frozenthrone1.com/"]
 ||fp.metricswpsh.com^*
+!||js.wpadmngr.com/static/adManager.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||js.wpadmngr.com^*
 ||rtbrennab.com^*
 ||3f9716d108.4e381657ad.com^*
@@ -41309,6 +41311,58 @@ castable-video.vercel.app##video[id="castable"]:style(max-width: 100vw !importan
 *##div[class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-3wafqk"]:style(min-height: 30px !important; height: 30px !important;)
 www.2baksa.ws##div[class^="antiblock"]
 www.2baksa.ws##div[class^="antiblock"]:remove()
+||deductionkeepingbabysitter.com^*
+||hurry.stream/js/dnsads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||hurry.stream/js/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+hurry.stream##+js(set-constant, xRds, false)
+hurry.stream##+js(set-constant, cRAds, true)
+hurry.stream##+js(aopr, cRAds)
+hurry.stream##+js(aopw, cRAds)
+hurry.stream##+js(set-constant, showADBOverlay, noopFunc)
+hurry.stream##+js(set-constant, checkADB, noopFunc)
+hurry.stream##+js(nostif, checkADB)
+hurry.stream##+js(aopr, window.cRAds)
+hurry.stream##+js(aopw, window.cRAds)
+hurry.stream##a[id="close-teaser"]
+hurry.stream##a[id="close-teaser"]:remove-attr(onclick)
+hurry.stream##a[id="close-teaser"]:remove()
+hurry.stream##div[id="teaser4"]
+hurry.stream##div[id="teaser4"]:remove()
+hurry.stream##iframe[id="pjsfrrsplayerjs"]
+hurry.stream##iframe[id="pjsfrrsplayerjs"]:remove()
+hurry.stream##div[id="play_limit_box"]
+hurry.stream##div[id="play_limit_box"]:remove()
+hurry.stream##div[id="video-content"]:style(width: 100vw !important; height: 100vh !important;)
+hurry.stream##div[id="pdiv"]:style(max-width: 100vw !important; max-height: 100vh !important;width: 100vw !important; height: 100vh !important;)
+hurry.stream##div[id="playerjs"]:style(max-width: 100vw !important; max-height: 100vh !important;width: 100vw !important; height: 100vh !important;)
+hurry.stream##video:remove-attr(disableremoteplayback)
+hurry.stream##video:style(max-width: 100vw !important; max-height: 100vh !important;width: 100vw !important; height: 100vh !important;)
+dooood.com##+js(set-constant, disabledEvent, noopFunc)
+dooood.com##+js(set-constant, check, noopFunc)
+dooood.com##+js(aeld, /keydown|contextmenu/i)
+dooood.com##+js(nostif, check)
+||dooood.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+dooood.com##div[class="player-wrap container"]:style(margin-left: 0px !important; margin-right: 0px !important; padding-left: 0px !important; padding-right: 0px !important;)
+dooood.com##div[id="os_player"]:style(--aspect-ratio: 16/9; max-width: 100vw !important; max-height: 100vh !important;width: 100vw !important; height: 100vh !important;)
+dooood.com##img[id="vjs-logobrand-image"]
+dooood.com##img[id="vjs-logobrand-image"]:remove()
+dooood.com##.vjs-ad-playing
+dooood.com##.vjs-ad-playing:remove()
+! overriding the hab() function AND stopping on hab() execution prevents the video player from starting.
+!dooood.com##+js(set-constant, hab, noopFunc)
+!dooood.com##+js(acs, hab)
+dooood.com##+js(set-constant, window.googleAd, false)
+dooood.com##+js(aopr, window.googleAd)
+dooood.com##+js(aopw, window.googleAd)
+dooood.com##+js(aopr, x.withCredentials)
+dooood.com##+js(aopw, x.withCredentials)
+dooood.com##+js(aopr, tryCount)
+dooood.com##+js(aopw, tryCount)
+dooood.com##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+dooood.com##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+dooood.com##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+dooood.com##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+||www.profitabledisplaynetwork.com/*/invoke.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 
 !Whitelisted
 ! blocks Kroger website?
