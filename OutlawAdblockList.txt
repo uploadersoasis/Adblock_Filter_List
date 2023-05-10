@@ -38709,20 +38709,6 @@ rtxkeeda.com##div[id="overlaypop"]:remove()
 rtxkeeda.com##div[id="modalpop"]
 rtxkeeda.com##div[id="modalpop"]:remove()
 rtxkeeda.com##div[id="modalpop-content"]:has(span:has-text(Adblock Detected!)):remove()
-||pixel.web.roku.com^*
-therokuchannel.roku.com##+js(aopr, dataLayert)
-therokuchannel.roku.com##+js(aopw, dataLayert)
-therokuchannel.roku.com##+js(aopr, window.NREUM)
-therokuchannel.roku.com##+js(aopw, window.NREUM)
-therokuchannel.roku.com##input[type="button"][pseudo="-webkit-media-controls-play-button"]:remove-attr(disabled)
-therokuchannel.roku.com##input[type="button"][pseudo="-webkit-media-controls-play-button"]:style(display: block !important; appearance: -internal-media-control !important; cursor: pointer;)
-||therokuchannel.roku.com/api/v2/logger$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-!||therokuchannel.roku.com/imasdk.googleapis.com/js/sdkloader/ima3.js/ad/banner/_adsense_/_adserver/_adview_.ad.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-! This will prevent the video from playing.
-!||therokuchannel.roku.com/imasdk.googleapis.com/js/sdkloader/ima3.js/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-therokuchannel.roku.com##div[aria-labelledby="notofication-adpolicy-title"]
-therokuchannel.roku.com##div[aria-labelledby="notofication-adpolicy-title"]:remove()
-therokuchannel.roku.com##+js(aeld, contextmenu)
 ||kroegerama.com^*
 userupload.net##div[id="gdpr-cookie-notice"]
 userupload.net##div[id="gdpr-cookie-notice"]:remove()
@@ -41376,6 +41362,9 @@ hurry.stream##div[id="pdiv"]:style(max-width: 100vw !important; max-height: 100v
 hurry.stream##div[id="playerjs"]:style(max-width: 100vw !important; max-height: 100vh !important;width: 100vw !important; height: 100vh !important;)
 hurry.stream##video:remove-attr(disableremoteplayback)
 hurry.stream##video:style(max-width: 100vw !important; max-height: 100vh !important;width: 100vw !important; height: 100vh !important;)
+! hurry.stream/dl?op=view is for tracking views for payments
+!||hurry.stream/dl?op=view&file_code=w4x4pt7q91tu&hash=3016-189-249-1683691218-a6518b62acd73424eb2a644fa51ec8d6&embed=&adb=0
+!||hurry.stream/dl?op=view$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 dooood.com##+js(set-constant, disabledEvent, noopFunc)
 dooood.com##+js(set-constant, check, noopFunc)
 dooood.com##+js(aeld, /keydown|contextmenu/i)
@@ -41430,7 +41419,22 @@ www.shellhacks.com##+js(aopr, advadsCfpQueue)
 www.shellhacks.com##+js(aopw, advadsCfpQueue)
 */wp-content/plugins/advanced-ads-responsive/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 */wp-content/plugins/advanced-ads-pro/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||pixel.web.roku.com^*
+therokuchannel.roku.com##+js(aopr, dataLayert)
+therokuchannel.roku.com##+js(aopw, dataLayert)
+therokuchannel.roku.com##+js(aopr, window.NREUM)
+therokuchannel.roku.com##+js(aopw, window.NREUM)
+therokuchannel.roku.com##input[type="button"][pseudo="-webkit-media-controls-play-button"]:remove-attr(disabled)
+therokuchannel.roku.com##input[type="button"][pseudo="-webkit-media-controls-play-button"]:style(display: block !important; appearance: -internal-media-control !important; cursor: pointer;)
+||therokuchannel.roku.com/api/v2/logger$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||therokuchannel.roku.com/imasdk.googleapis.com/js/sdkloader/ima3.js/ad/banner/_adsense_/_adserver/_adview_.ad.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+! This will prevent the video from playing.
+!||therokuchannel.roku.com/imasdk.googleapis.com/js/sdkloader/ima3.js/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+therokuchannel.roku.com##div[aria-labelledby="notofication-adpolicy-title"]
+therokuchannel.roku.com##div[aria-labelledby="notofication-adpolicy-title"]:remove()
+therokuchannel.roku.com##+js(aeld, contextmenu)
 ||roku.ad-score.com^*
+||logs.roku.com^*
 ||ehg-samsungusa.hitbox.com^*
 ||samsung.com.ssl.sc.omtrdc.net^*
 ||samsungus.tt.omtrdc.net^*
@@ -41438,10 +41442,6 @@ www.shellhacks.com##+js(aopw, advadsCfpQueue)
 ||samsungacr.com^*
 ||ads.samsung.com^*
 ||gpm.samsungqbe.com^*
-||ngfts.lge.com^*
-||us.ad.lgsmartad.com^*
-||us.info.lgsmartad.com^*
-||lgad.cjpowercast.com^*
 ||d28quk6sxoh2w5.cloudfront.net^*
 ||lementwrencespri.info^*
 ||uldthinkhimunpr.info^*
@@ -41449,41 +41449,40 @@ www.shellhacks.com##+js(aopw, advadsCfpQueue)
 ||plosaztduojwbe.com^*
 ||lucrumvirga.life^*
 ||pasoleex.com^*
-||ad.lgappstv.com^
-||ibis.lgappstv.com^
-||lgad.cjpowercast.com.edgesuite.net^
-||lgsmartad.com^
-||ad.nettvservices.com^
-||samsungads.com^
-||device-metrics-us.amazon.com^
-||log.internetat.tv^
-||samsungadhub.com^
-||logs.roku.com^
-||hbbtv-track.redbutton.de^
-||ad.71i.de^
-||adv.ettoday.net^
-||redbutton-adproxy-lb-prod.redbutton.de^
+! LG TV's
+||ngfts.lge.com^*
+||us.ad.lgsmartad.com^*
+||us.info.lgsmartad.com^*
+||lgad.cjpowercast.com^*
+||ad.lgappstv.com^*
+||ibis.lgappstv.com^*
+||lgad.cjpowercast.com.edgesuite.net^*
+||lgsmartad.com^*
+||ad.nettvservices.com^*
+||device-metrics-us.amazon.com^*
+||log.internetat.tv^*
+||hbbtv-track.redbutton.de^*
+||adv.ettoday.net^*
+||redbutton-adproxy-lb-prod.redbutton.de^*
 ! Amazon Fire TV
-||mads-eu.amazon.com^
-||mobileanalytics.us-east-1.amazonaws.com^
-||secure-eu.imrworldwide.com^
-||logs1409.xiti.com^
-||tracksrv.zdf.de^
-||settings.crashlytics.com^
+||mads-eu.amazon.com^*
+||mobileanalytics.us-east-1.amazonaws.com^*
+||secure-eu.imrworldwide.com^*
+||logs1409.xiti.com^*
+||tracksrv.zdf.de^*
+||settings.crashlytics.com^*
 ! Xioami Mi TV
-||mitv.tracking.intl.miui.com^
-||tracking.intl.miui.com^
-||sdkconfig.ad.intl.xiaomi.com^
+||mitv.tracking.intl.miui.com^*
 tecadmin.net##ins[data-ad-client]
 tecadmin.net##ins[data-ad-client]:remove()
 tecadmin.net##div[class^="a-wrap"]
 tecadmin.net##div[class^="a-wrap"]:remove()
 tecadmin.net##+js(aopr, BunyadSchemeKey)
 tecadmin.net##+js(aopw, BunyadSchemeKey)
-tecadmin.net##+js(aopr, adsbygoogle)
-tecadmin.net##+js(aopw, adsbygoogle)
 ||galotop1.com^*
 ||variedpretenceclasped.com^*
+||syringeitch.com^*
+||best-global-apps.com^*
 
 !Whitelisted
 ! blocks Kroger website?
