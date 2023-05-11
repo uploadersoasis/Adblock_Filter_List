@@ -38,9 +38,9 @@
 !        works or rather doesn't work, these rules force a style suited to a
 !        1920 pixel width screen.  If you screen is a different size, adjust the
 !        three rules which set this style:
-!wikipedia.org##html:style(width: 100vw !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
-!wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100% !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
-!wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100% !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
+!wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
+!wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
+!wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
 
 ! Brave's native adblocking does not support the "has-text()" filter.
 ! Brave also does not support upward() nor remove().
@@ -31681,9 +31681,6 @@ androidphone.fr##span[class*="ezoic-ad"]
 androidphone.fr##div[id^="ezwrap_adsense_"]
 androidphone.fr##div[id="text-2"]:has(div[id^="ezwrap_adsense_responsive"])
 ||in.pushmaster-in.xyz^*
-an1.com##+js(set-constant, sec, 0, stay)
-an1.com##span[id="timer"]
-an1.com##a[id="pre_download"]:style(display: inline;)
 ||naucaish.net^*
 ||pseepsie.com^*
 ||apkfap.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
@@ -39566,7 +39563,10 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:style(
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, _0x49fcx2)
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, _0x57e0)
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, _0x57e0)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nostif, tick)
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="ipp"]:remove()
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nostif, tick)
+! defusing intervals breaks the script which creates the token for the download
+!devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nosiif, /function\(\)/)
 ! even though blocking the countdown script, still have to wait for the 10 second countdown for the download link to be generated.
 ||devuploads.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||thecubexguide.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
@@ -41518,6 +41518,16 @@ warren-bank.github.io##div[id="video-player"]:style(padding:0 !important; margin
 !warren-bank.github.io##div[id="video-player"]:style(border-top-width:0px !important; border-right-width:0px !important; border-bottom-width:0px !important; border-left-width:0px !important; margin-top:0px !important; margin-right:0px !important; margin-bottom:0px !important; margin-left:0px !important; padding-top:0px !important; padding-right:0px !important; padding-bottom:0px !important; padding-left:0px !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 warren-bank.github.io##div[data-player]:style(user-select:all !important;)
 warren-bank.github.io##body:style(padding-top:0px !important; padding-right:0px !important; padding-bottom:0px !important; padding-left:7px !important;)
+an1.com##+js(set-constant, sec, 0, stay)
+an1.com##+js(set-constant, countdown, noopFunc)
+an1.com##span[id="timer"]
+an1.com##span[id="timer"]:remove()
+an1.com##a[id="pre_download"]:style(display: inline !important;)
+an1.com##a[id="pre_download"]:remove-attr(onclick)
+an1.com##a[rel="sponsored nofollow"]
+an1.com##a[rel="sponsored nofollow"]:remove()
+an1.com##+js(nostif, /countdown/)
+||ak.uncleffaan.com^*
 
 !Whitelisted
 ! blocks Kroger website?
