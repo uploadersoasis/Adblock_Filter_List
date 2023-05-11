@@ -26684,7 +26684,6 @@ file.dlandroid.com##.xs-btn-dl
 ||gjw5qbyn93b8.com^*
 crowdin.com##div[aria-label="cookieconsent"]
 getoutline.org##div[class="cookie-bar-container"]
-newsindi.com##div[id="alert"]
 ||peskyexecutionyouthful.com^*
 ||sb-inv1.com^*
 ||directoryexertion.com^*
@@ -32282,7 +32281,6 @@ katfile.com##+js(window.open-defuser, 0, /katfile.com/i)
 uploadev.org##+js(window.open-defuser, 0, /uploadev.org/i)
 !||hexagon-analytics.com/images/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||hexagon-analytics.com^*
-||dsh7ky7308k4b.cloudfront.net/publishers/dropgalaxycom.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||rmumuhmcogufc.xyz^*
 epicstream.com##div[class="ad-wrapper"]
 epicstream.com##div[class*="ad-container"]
@@ -33978,7 +33976,6 @@ file-mods.ru##a[href*="//methoxyunpaled.com/"]
 ||p-tracking-1345378198.us-east-1.elb.amazonaws.com^*
 ||cloudflareinsights.com/cdn-cgi/rum$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||hawsuffer.com^*
-||jscdn.greeter.me/dropgalaxy.onlinehead.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||jlsslnsvmuuuu.com^*
 ||nffyhylicio.com^*
 ||ascensionrookieweapon.com^*
@@ -39583,6 +39580,8 @@ devuploads.com###downloadbtn:remove-attr(disabled)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(disabled)
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(style)
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:style(display: block !important;)
+! cookie-remover, /^/ removes all cookies since downloads fail after first download
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(cookie-remover, /^/)
 ||nimrute.com^*
 !||cdn.heycdn25.xyz/404$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||cdn.heycdn25.xyz^*
@@ -40657,7 +40656,10 @@ techssting.com##div[id="warning"]
 techssting.com##^script:has-text(/debugger/i)
 techssting.com##^script:has-text(__CF$cv$params)
 !techssting.com##ins[class="adsbygoogle"]
+newsindi.com##div[id="alert"]
 newsindi.com,techssting.com##+js(aopr, absda)
+||dsh7ky7308k4b.cloudfront.net/publishers/dropgalaxycom.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||jscdn.greeter.me/dropgalaxy.onlinehead.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !dropgalaxy.com,dropgalaxy.in##ins[class="adsbygoogle"]
 !dropgalaxy.com,dropgalaxy.in##.adsbygoogle, .showads
 !dropgalaxy.com,dropgalaxy.in##+js(acs, adblock_check)
@@ -40737,11 +40739,7 @@ dropgalaxy.com,dropgalaxy.in##^script:has-text(_0x)
 dropgalaxy.com,dropgalaxy.in##a:style(display:block !important;)
 dropgalaxy.com,dropgalaxy.in##img[id="load"]
 dropgalaxy.com,dropgalaxy.in##img[id="load"]:remove()
-dropgalaxy.com,dropgalaxy.in##div[id="modalpop"]
-dropgalaxy.com,dropgalaxy.in##div[id="modalpop"]:remove()
 dropgalaxy.com,dropgalaxy.in##div[class^="modalpop"]
-dropgalaxy.com,dropgalaxy.in##div[id="overlaypop"]
-dropgalaxy.com,dropgalaxy.in##div[id="overlaypop"]:remove()
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, adblock_detected, 0, stay)
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, adblock_check, 1, stay)
 dropgalaxy.com,dropgalaxy.in##+js(acs, gdpr-cookie-consent)
@@ -40759,8 +40757,6 @@ dropgalaxy.com,dropgalaxy.in,techssting.com###analytics
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, holymoly, '0', stay)
 dropgalaxy.com,dropgalaxy.in##+js(abort-current-inline-script, fullAdsRendered)
 dropgalaxy.com,dropgalaxy.in##div[id^="ad-section"]
-dropgalaxy.com,dropgalaxy.in##div[id="warning"]
-dropgalaxy.com,dropgalaxy.in##div[id="warning"]:remove()
 dropgalaxy.com,dropgalaxy.in##^script:has-text(/debugger/i)
 ||tmp.dropgalaxy.in/js/badip.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||tmp.dropgalaxy.com/js/badip.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
@@ -40871,6 +40867,24 @@ dropgalaxy.com,dropgalaxy.in##.pgAdWrapper
 dropgalaxy.com,dropgalaxy.in##[src^="//ad.a-ads.com/"]
 dropgalaxy.com,dropgalaxy.in##[id^="apkad"]
 dropgalaxy.com,dropgalaxy.in###nativefluid
+dropgalaxy.com,dropgalaxy.in###dmAZuTknHuCIIWY
+dropgalaxy.com,dropgalaxy.in###dmAZuTknHuCIIWY:remove()
+dropgalaxy.com,dropgalaxy.in##+js(aopr, dmAZuTknHuCIIWY)
+dropgalaxy.com,dropgalaxy.in##+js(aopw, dmAZuTknHuCIIWY)
+! cookie-remover, /^/ removes all cookies since downloads fail after first download
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(cookie-remover, /^/)
+dropgalaxy.com,dropgalaxy.in##+js(set-constant, ads, [""], stay)
+dropgalaxy.com,dropgalaxy.in##+js(set-constant, statusTxt, "success", stay)
+dropgalaxy.com,dropgalaxy.in##div[id="warning"]
+dropgalaxy.com,dropgalaxy.in##div[id="warning"]:remove()
+dropgalaxy.com,dropgalaxy.in##div[id="modalpop"]
+dropgalaxy.com,dropgalaxy.in##div[id="modalpop"]:remove()
+dropgalaxy.com,dropgalaxy.in##div[id="overlaypop"]
+dropgalaxy.com,dropgalaxy.in##div[id="overlaypop"]:remove()
+dropgalaxy.com,dropgalaxy.in##div[id^="vi-smartbanner"]
+dropgalaxy.com,dropgalaxy.in##div[id^="vi-smartbanner"]:remove()
+dropgalaxy.com,dropgalaxy.in##iframe[id="debug_vi-smartbanner-unit"]
+dropgalaxy.com,dropgalaxy.in##iframe[id="debug_vi-smartbanner-unit"]:remove()
 financemonk.net##+js(nowoif)
 financemonk.net##[href^="https://bit.ly/"]
 financemonk.net##iframe[id*="_mN_main_"]
@@ -41551,10 +41565,6 @@ warren-bank.github.io##body:style(padding-top:0px !important; padding-right:0px 
 @@||click.pstmrk.it^$first-party
 @@||citicorpcreditservic.tt.omtrdc.net^*
 @@||linkvertise.com^$ghide
-@@.jpg$image,domain=dropgalaxy.*|techssting.com
-@@.png$image,domain=dropgalaxy.*|techssting.com
-@@||googlesyndication.com^$script,xhr,domain=dropgalaxy.*|techssting.com
-@@||dropgalaxy.*^$ghide
 @@*$ghide,domain=jaanmusic.in|techyneed.com
 @@||googlesyndication.com/pagead/$script,domain=jaanmusic.in|techyneed.com
 @@*$image,domain=jaanmusic.in|techyneed.com
@@ -41620,33 +41630,37 @@ gitlab.io#@#+js(no-floc)
 gitlab.com#@#+js(no-floc)
 @@||sentry.gitlab.net/api/$other,domain=gitlab.com
 @@||go.redirectingat.com^*
+@@.jpg$image,domain=dropgalaxy.*|techssting.com|financemonk.net
+@@.png$image,domain=dropgalaxy.*|techssting.com|financemonk.net
+@@||googlesyndication.com^$script,xhr,domain=dropgalaxy.*|techssting.com|financemonk.net
+@@||dropgalaxy.*^$ghide
 ! Are the following really necessary for dropgalaxy downloads to work?
 @@||dnhfi5nn2dt67.cloudfront.net/ui-bootstrap-tpls.min.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
 @@||contextual.media.net/dmedianet.js?cid=$domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
 @@||contextual.media.net/*/fcmain.js$domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||cloudfront.net/publishers/dropgalaxycom.min.js$domain=dropgalaxy.com|dropgalaxy.in
-@@||cmp.uniconsent.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in
+@@||cloudfront.net/publishers/dropgalaxycom.min.js$domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||cmp.uniconsent.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
 @@||googletagmanager.com/gtag/js$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
 @@||adservice.google.*/adsid/integrator.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
 @@.jpg$image,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net|techthematter.xyz
 @@.png$image,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net|techthematter.xyz
 @@||googlesyndication.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net|techthematter.xyz
-@@||jscdn.greeter.me/dropgalaxy.onlinehead.js$script,domain=dropgalaxy.com|dropgalaxy.in
-@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=dropgalaxy.com|dropgalaxy.in
-@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$script,domain=dropgalaxy.com|dropgalaxy.in
-@@||player.aplhb.adipolo.com/prebidlink/$script,domain=dropgalaxy.com|dropgalaxy.in
-@@||a2zapk.com^$script,xhr,3p,domain=dropgalaxy.com|dropgalaxy.in
+@@||jscdn.greeter.me/dropgalaxy.onlinehead.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||player.aplhb.adipolo.com/prebidlink/$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||a2zapk.com^$script,xhr,3p,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
 !||protagcdn.com/s/dropgalaxy.com/site.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-!||protagcdn.com/s/dropgalaxy.com^*
-@@||protagcdn.com/s/dropgalaxy.com/site.js$script,domain=dropgalaxy.com|dropgalaxy.in
-@@||script.4dex.io/localstore.js$script,domain=dropgalaxy.com|dropgalaxy.in
-@@||script.4dex.io/adagio.js$xhr,domain=dropgalaxy.com|dropgalaxy.in
-@@||tag.vlitag.com/v1/$script,domain=dropgalaxy.com|dropgalaxy.in
-@@||services.vlitag.com/adv1/$script,domain=dropgalaxy.com|dropgalaxy.in|unlockapk.com
-@@||assets.vlitag.com/prebid/default/prebid-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr.js$script,domain=dropgalaxy.com|dropgalaxy.in
-@@||static.criteo.net/js/ld/publishertag.prebid.js$script,xhr,domain=dropgalaxy.com|dropgalaxy.in
-@@||protagcdn.com/check-bot/index.html$frame,domain=dropgalaxy.com|dropgalaxy.in
-@@||mp.4dex.io/prebid$xhr,domain=dropgalaxy.com|dropgalaxy.in
-@@||gum.criteo.com/sid/json?origin=prebid&topUrl=$xhr,domain=dropgalaxy.com|dropgalaxy.in
-@@||securepubads.g.doubleclick.net/pagead/ppub_config?ippd=$xhr,domain=dropgalaxy.com|dropgalaxy.in
-@@||googletagservices.com/tag/js/gpt.js$script,domain=dropgalaxy.com|dropgalaxy.in
+!||protagcdn.com/s/dropgalaxy.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+@@||protagcdn.com/s/dropgalaxy.com/site.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||script.4dex.io/localstore.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||script.4dex.io/adagio.js$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||tag.vlitag.com/v1/$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||services.vlitag.com/adv1/$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net|unlockapk.com
+@@||assets.vlitag.com/prebid/default/prebid-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||static.criteo.net/js/ld/publishertag.prebid.js$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||protagcdn.com/check-bot/index.html$frame,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||mp.4dex.io/prebid$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||gum.criteo.com/sid/json?origin=prebid&topUrl=$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||securepubads.g.doubleclick.net/pagead/ppub_config?ippd=$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||googletagservices.com/tag/js/gpt.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
