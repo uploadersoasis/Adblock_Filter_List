@@ -1792,11 +1792,7 @@ news.yahoo.com##.rmx-ad
 ||www.xdatenow.net/shg/aff.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||xdatenow.net/aff/scripts/rd.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||affiliates.upforitnetworks.com/scripts/rd.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-||www.dailymotion.com/track-boomerang/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-||www.dailymotion.com/logger/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-||mc.dailymotion.com/RealMedia/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||www.google.com/afsonline/show_afs_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-||www.dailymotion.com/track/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !||clients2.google.com/service/update2/crx^*
 ||clients2.google.com/service/update2/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||adsdelta.com/images/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
@@ -2901,14 +2897,9 @@ libreprensa.com##.ads
 ||www.barclayus.com^*
 ||stats.firedrive.com^*
 ||fhbmgwswa1rbq.firedrive.com/file/*^show_ads
-www.dailymotion.com###top_banner
 ||2f01110e.info^*
 ||www.chromeadserver.com^*
 ||www.tcpiputils.com/images/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-!||logger-02.vty.dailymotion.com/dm/desktop-windows/video_sequence/u/play^*
-!||logger-02.vty.dailymotion.com^*
-!||logger-06.vty.dailymotion.com^*
-||logger-*.vty.dailymotion.com^*
 ||www.turnto.com/webEvent/s.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !||www.insecurewire.com/download/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||www.insecurewire.com^*
@@ -5645,7 +5636,6 @@ www.myce.com/media.ultrafastcdn.com/ads/$document,subdocument,script,inline-scri
 ||tracking2.channeladvisor.com^*
 ||t.channeladvisor.com^*
 ||od2.visiblemeasures.com^*
-||www.dailymotion.com/history/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||tofu.dmcdn.net/track/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||ad.visiblemeasures.com^*
 ||buzzcontrol.com/scripts/160_ad_$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
@@ -5679,7 +5669,6 @@ www.myce.com/media.ultrafastcdn.com/ads/$document,subdocument,script,inline-scri
 ||banner.slashcam.de^*
 ||bannerimages.slashcam.de^*
 ||dnkzzz1hlto79.cloudfront.net/assets/vpaid-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr.swf$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-||www.dailymotion.com/widget_chunks/videostats?request=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !||securepaths.com/pixel.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !||securepaths.com/pixel.cgi$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !||securepaths.com/pixel?s=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
@@ -16012,7 +16001,6 @@ thepoliticalinsider.com###ox_2322248832_538143962
 ||pl14474450.puserving.com^*
 !||edilfer.info/qzy6/ppnzd.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||edilfer.info^*
-||www.dailymotion.com/gravity/report^*
 ||d.pub.network/rfm/cookie/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||cdn.lynda.com/static/search/js/search-tracking.min-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !||s1.adform.net/banners/scripts/adx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
@@ -25963,10 +25951,6 @@ www.myplaycity.com##.articleBlock.content-block > div.content-overflow
 !www.myplaycity.com##div[class="cc_banner-wrapper "]
 www.myplaycity.com##div[class^="cc_banner"]
 community.amd.com##div[class="lia-cookie-banner-alert"]
-!www.dailymotion.com##div[class="AdTop__adTop___2XM8O"]
-www.dailymotion.com##div[class^="AdTop_"]
-!www.dailymotion.com##div[class="CookiePopup__popup___3bblb"]
-www.dailymotion.com##div[class^="CookiePopup_"]
 forums.anandtech.com##li[class="notice js-notice notice--primary notice--cookie"]
 www.nexusmods.com##div[id^="div-gpt-ad-"]
 www.nexusmods.com##div[class="video-ad clearfix"]
@@ -26022,7 +26006,6 @@ www.washingtonpost.com##div[class="pb-ad-container-mobile"]
 www.washingtonpost.com##div[class="mobile-fixed ad-hideable"]
 ||cash-apprecovery.com^*
 login.northlane.com##div[class="privacycontainer"]
-!||www.dailymotion.com/logger/video/access/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !||s5.sywcdn.net/static/js/aggregated/wpk.web.analytics.84742bac8d2fe8de147c6bca80cb7fc7.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||s5.sywcdn.net/static/js/aggregated/wpk.web.analytics.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||sears.com.ssl.d1.sc.omtrdc.net^*
@@ -41577,6 +41560,48 @@ restream.io##*[class*="ukraine-banner"]
 restream.io##*[class*="ukraine-banner"]:remove()
 !||fsleeskug.vojenske-prostory.cz^*
 ||vojenske-prostory.cz^*
+||www.dpbolvw.net^*
+||dpbolvw.net^*
+||slwatch.co/js/ad-blocker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+slwatch.co##+js(set, gtag, noopFunc)
+slwatch.co##+js(acs, gtag)
+slwatch.co##+js(acs, '/blocked.html')
+slwatch.co##:xpath(//script[contains(text(), '/blocked.html')])
+slwatch.co##:xpath(//script[contains(text(), '/blocked.html')]):remove()
+!slwatch.co##+js(nostif, _0x5b6c23, 0x64)
+slwatch.co##+js(nostif, /^/)
+||obstructdogcollarblockade.com^*
+||v2.vidsrc.me/sbx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||cdn.hubvisor.io/wrapper/*/hubvisor.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||us-east-1.event.prod.bidr.io/log/act/dm?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||us-east-1.event.prod.bidr.io/log/imp/dm?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||us-east-1.event.prod.bidr.io/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||logger-02.vty.dailymotion.com/dm/desktop-windows/video_sequence/u/play^*
+!||logger-02.vty.dailymotion.com^*
+!||logger-06.vty.dailymotion.com^*
+||logger-*.vty.dailymotion.com^*
+||www.dailymotion.com/track-boomerang/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||www.dailymotion.com/logger/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||mc.dailymotion.com/RealMedia/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||www.dailymotion.com/track/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+www.dailymotion.com###top_banner
+||www.dailymotion.com/history/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||www.dailymotion.com/widget_chunks/videostats?request=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||www.dailymotion.com/gravity/report^*
+!www.dailymotion.com##div[class="AdTop__adTop___2XM8O"]
+www.dailymotion.com##div[class^="AdTop_"]
+!||www.dailymotion.com/logger/video/access/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||www.dailymotion.com/vast/video/x8klrf1.xml$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||www.dailymotion.com/vast/video/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+www.dailymotion.com##+js(set-constant, __GKS__, {})
+www.dailymotion.com##+js(aopr, __GKS__)
+www.dailymotion.com##+js(aopw, __GKS__)
+!www.dailymotion.com##div[class^="CookiePopup_"] erases all contents of the page not just the popup modal.
+!www.dailymotion.com##div[class="CookiePopup__popup___3bblb"]
+!www.dailymotion.com##div[class^="CookiePopup__desktopContainer"][role="dialog"]
+!www.dailymotion.com##div[class^="CookiePopup__desktopContainer"][role="dialog"]:remove()
+||pebed.dm-event.net^*
+||webed.dm-event.net^*
 
 !Whitelisted
 ! blocks Kroger website?
@@ -41587,6 +41612,11 @@ restream.io##*[class*="ukraine-banner"]:remove()
 !!@@||c.go-mpulse.net^$all,domain=kroger.com
 !@@||c.go-mpulse.net^*$domain=kroger.com
 !@@||dpm.demdex.net^$domain=kroger.com
+@@||dmxleo.dailymotion.com^*
+@@||speedtest.dailymotion.com^*
+! The following are bittorrent trackers that are used for web browser torrent client.
+@@||tracker.openwebtorrent.com^*
+@@||tracker.novage.com.ua^*
 ! Pluto.tv requires access to scripts @ tags.tiqcdn.com
 !@@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/utag.*$script,domain=pluto.tv
 @@||tags.tiqcdn.com/utag/cbsi/pluto-tv/prod/$script,domain=pluto.tv
