@@ -8035,8 +8035,6 @@ news.softpedia.com###_wlts_lead
 !||cdn.heapanalytics.com/js/heap-436442284.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||cdn.heapanalytics.com^*
 ||heapanalytics.com^*
-||www.youradexchange.com/rtb/worker.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-||www.youradexchange.com/ts.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||cdn.waframedia8.com/wmedia/tags/xbanner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !||advertisingwouldbegreat.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||advertisingwouldbegreat.com^*
@@ -26739,8 +26737,6 @@ www.acrylicwifi.com##div[class^="tar_cookiesBar"]
 ||d2znr2yi078d75.cloudfront.net^*
 ||d3oiwf0xhhk8m1.cloudfront.net^*
 ||d1r0ldx4ccoewq.cloudfront.net^*
-!||youradexchange.com/script/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-||youradexchange.com^*
 ||www.zhkquyvfndeker.com^*
 ||zhkquyvfndeker.com^*
 ||veration-cellyric.com^*
@@ -38105,6 +38101,11 @@ www.nolive.me##+js(aopw, stopTime)
 !||www.greatdexchange.com/a/display.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||greatdexchange.com/a/display.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||greatdexchange.com/script/i.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||www.youradexchange.com/rtb/worker.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||www.youradexchange.com/ts.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||youradexchange.com/script/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||youradexchange.com/ad/visit.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||youradexchange.com^*
 ||nsomedidm.xyz^*
 ||ntuplay.xyz/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ntuplay.xyz##+js(remove-attr, oncontextmenu, body, stay)
@@ -41600,8 +41601,39 @@ www.dailymotion.com##+js(aopw, __GKS__)
 !www.dailymotion.com##div[class="CookiePopup__popup___3bblb"]
 !www.dailymotion.com##div[class^="CookiePopup__desktopContainer"][role="dialog"]
 !www.dailymotion.com##div[class^="CookiePopup__desktopContainer"][role="dialog"]:remove()
-||pebed.dm-event.net^*
-||webed.dm-event.net^*
+!||pebed.dm-event.net^*
+!||webed.dm-event.net^*
+!||vpaid.pubmatic.com/ads/video/PMAdMgr.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||vpaid.pubmatic.com^*
+dmitripavlutin.com##div[class^="index-module--carbonSection"]
+dmitripavlutin.com##div[class^="index-module--carbonSection"]:remove()
+||wikicast.tv/z-6487758$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||ovemes.com^*
+||slavil.com^*
+||osmanlikaraite.com^*
+||bienlyclatchy.website^*
+||mechaelpaceway.com^*
+||unmistdistune.guru^*
+||aeneasclosure.website^*
+||pl19285596.highrevenuegate.com^*
+||rondureblog.com^*
+||wrangleprickly.com^*
+filerice.com##+js(set-constant, gtag, noopFunc)
+filerice.com##+js(acs, gtag)
+filerice.com##+js(aopr, window.$crisp)
+filerice.com##+js(aopw, window.$crisp)
+filerice.com##div[class="ads"]
+filerice.com##div[class="ads"]:remove()
+||filerice.com/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+filerice.com##+js(set-constant, tick, noopFunc)
+filerice.com##+js(set-constant, remaining, 0)
+filerice.com##+js(nostif, tick)
+filerice.com##button[id="downloadbtn"]:remove-attr(disabled)
+filerice.com##div[id="countdown"]
+filerice.com##div[id="countdown"]:remove()
+filerice.com##div[class="countdown alert alert-success"]
+filerice.com##div[class="countdown alert alert-success"]:remove()
+filerice.com##div[class*="download-btn"]:style(display: block !important;)
 
 !Whitelisted
 ! blocks Kroger website?
