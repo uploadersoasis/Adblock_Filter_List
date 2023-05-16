@@ -38165,6 +38165,7 @@ sportskart.click##+js(aopr, x.withCredentials)
 sportskart.click##+js(aopw, x.withCredentials)
 sportskart.click##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')])
 sportskart.click##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+sportskart.click##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 sportskart.click##+js(acs, window.kkp4a5x5tv)
 sportskart.click##+js(aopr, window.kkp4a5x5tv)
 sportskart.click##+js(aopw, window.kkp4a5x5tv)
@@ -38772,6 +38773,7 @@ www.sportsbaytv.com##+js(nosiif, vwu())
 1rowsportz.info##^script:has-text(/Ly9wb3RzYWdsdS5uZXQvNS81NTQ4OTk0/):remove()
 1rowsportz.info##script:has-text(/Ly9wb3RzYWdsdS5uZXQvNS81NTQ4OTk0/)
 1rowsportz.info##script:has-text(/Ly9wb3RzYWdsdS5uZXQvNS81NTQ4OTk0/):remove()
+1rowsportz.info##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 1rowsportz.info##+js(acs, window.kkp4a5x5tv)
 1rowsportz.info##+js(aopr, window.kkp4a5x5tv)
 1rowsportz.info##+js(aopw, window.kkp4a5x5tv)
@@ -39259,6 +39261,7 @@ hdstreamzapp.com##script[id="generate-a11y"]:remove()
 ||cdn.livetrafficfeed.com/static/v4/live.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 rojatvdirecta.com##+js(aopr, t.Tn)
 rojatvdirecta.com##+js(aopw, t.Tn)
+rojatvdirecta.com##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 rojatvdirecta.com##+js(acs, window.kkp4a5x5tv)
 rojatvdirecta.com##+js(aopr, window.kkp4a5x5tv)
 rojatvdirecta.com##+js(aopw, window.kkp4a5x5tv)
@@ -39296,42 +39299,32 @@ kepa.pw##+js(acs, zc_865364)
 kepa.pw##div[id="zc_865364"]
 kepa.pw##div[id="zc_865364"]:remove()
 ||fnuvsfyylouxwu.com^*
-casadelfutbol.info##+js(acs, _Hasync)
-casadelfutbol.info##+js(aopr, _Hasync)
-casadelfutbol.info##+js(aopw, _Hasync)
-casadelfutbol.info##iframe[src="about:blank"]
-casadelfutbol.info##iframe[src="about:blank"]:remove()
-casadelfutbol.info##script[data-adel][zid]
-casadelfutbol.info##script[data-adel][zid]:remove()
-casadelfutbol.info##+js(acs, document, arguments, delete)
-casadelfutbol.info##+js(aopw, $.BD)
-casadelfutbol.info##+js(aopr, $.BD)
-casadelfutbol.info##+js(aopr, $._Eu)
-casadelfutbol.info##+js(aopw, $._Eu)
-casadelfutbol.info##+js(aopr, t.Tn)
-casadelfutbol.info##+js(aopw, t.Tn)
-casadelfutbol.info##^script:has-text(/delete window\[/)
-casadelfutbol.info##^script:has-text(/delete window\[/):remove()
-casadelfutbol.info##+js(acs, x.withCredentials)
-casadelfutbol.info##+js(aopr, x.withCredentials)
-casadelfutbol.info##+js(aopw, x.withCredentials)
-casadelfutbol.info##+js(acs, window.kkp4a5x5tv)
-casadelfutbol.info##+js(aopr, window.kkp4a5x5tv)
-casadelfutbol.info##+js(aopw, window.kkp4a5x5tv)
-casadelfutbol.tv##div[id="video_ads_overdiv"]
-casadelfutbol.tv##div[id="video_ads_overdiv"]:remove()
-casadelfutbol.tv##+js(acs, window.kkp4a5x5tv)
-casadelfutbol.tv##+js(aopr, window.kkp4a5x5tv)
-casadelfutbol.tv##+js(aopw, window.kkp4a5x5tv)
-casadelfutbol.tv##+js(acs, atob, document, arguments)
-casadelfutbol.tv##+js(aopw, $.BD)
-casadelfutbol.tv##+js(aopr, $.BD)
-casadelfutbol.tv##+js(aopr, $._Eu)
-casadelfutbol.tv##+js(aopw, $._Eu)
-casadelfutbol.tv##+js(aopr, t.Tn)
-casadelfutbol.tv##+js(aopw, t.Tn)
-casadelfutbol.tv##^script:has-text(/delete window\[/)
-casadelfutbol.tv##^script:has-text(/delete window\[/):remove()
+casadelfutbol.info,casadelfutbol.tv##+js(acs, _Hasync)
+casadelfutbol.info,casadelfutbol.tv##+js(aopr, _Hasync)
+casadelfutbol.info,casadelfutbol.tv##+js(aopw, _Hasync)
+casadelfutbol.info,casadelfutbol.tv##iframe[src="about:blank"]
+casadelfutbol.info,casadelfutbol.tv##iframe[src="about:blank"]:remove()
+casadelfutbol.info,casadelfutbol.tv##script[data-adel][zid]
+casadelfutbol.info,casadelfutbol.tv##script[data-adel][zid]:remove()
+casadelfutbol.info,casadelfutbol.tv##+js(acs, document, arguments, delete)
+casadelfutbol.info,casadelfutbol.tv##+js(aopw, $.BD)
+casadelfutbol.info,casadelfutbol.tv##+js(aopr, $.BD)
+casadelfutbol.info,casadelfutbol.tv##+js(aopr, $._Eu)
+casadelfutbol.info,casadelfutbol.tv##+js(aopw, $._Eu)
+casadelfutbol.info,casadelfutbol.tv##+js(aopr, t.Tn)
+casadelfutbol.info,casadelfutbol.tv##+js(aopw, t.Tn)
+casadelfutbol.info,casadelfutbol.tv##^script:has-text(/delete window\[/)
+casadelfutbol.info,casadelfutbol.tv##^script:has-text(/delete window\[/):remove()
+casadelfutbol.info,casadelfutbol.tv##+js(acs, x.withCredentials)
+casadelfutbol.info,casadelfutbol.tv##+js(aopr, x.withCredentials)
+casadelfutbol.info,casadelfutbol.tv##+js(aopw, x.withCredentials)
+casadelfutbol.info,casadelfutbol.tv##+js(set-constant, window.kkp4a5x5tv, noopFunc)
+casadelfutbol.info,casadelfutbol.tv##+js(acs, window.kkp4a5x5tv)
+casadelfutbol.info,casadelfutbol.tv##+js(aopr, window.kkp4a5x5tv)
+casadelfutbol.info,casadelfutbol.tv##+js(aopw, window.kkp4a5x5tv)
+casadelfutbol.info,casadelfutbol.tv##div[id="video_ads_overdiv"]
+casadelfutbol.info,casadelfutbol.tv##div[id="video_ads_overdiv"]:remove()
+casadelfutbol.info,casadelfutbol.tv##+js(acs, atob, document, arguments)
 www.dacast.com##div[class^="styles__MainCookieConsentContainer"]
 www.dacast.com##div[class^="styles__MainCookieConsentContainer"]:remove()
 en.myshows.me##div[id^="adfox_"]
@@ -39904,6 +39897,8 @@ dood.re##+js(aeld, /contextmenu|keydown/)
 mixdrop.co##+js(set-constant, adblock, 0)
 mixdrop.co##+js(set-constant, blockAB, false)
 mixdrop.co##+js(set-constant, popundersPerIP, 0)
+! MDCore is a function defined in https://mixdrop.co/player/videoplayer.min.js
+mixdrop.co##+js(set-constant, MDCore, noopFunc)
 mixdrop.co##+js(set-constant, MDCore.blockAB, false)
 mixdrop.co##+js(set-constant, MDCore.adblock, 0)
 mixdrop.co##+js(set-constant, wpn63s, noopFunc)
@@ -40251,6 +40246,7 @@ a2zapk.io,a2zapk.com##+js(acs, document.ondragstart)
 123chill.to##iframe[title="Twitter settings iframe"]:remove()
 123chill.to##div[class="ann-home alert text-center"]
 123chill.to##div[class="ann-home alert text-center"]:remove()
+123chill.to##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 123chill.to##+js(acs, window.kkp4a5x5tv)
 123chill.to##+js(aopw, window.kkp4a5x5tv)
 123chill.to##+js(aopr, window.kkp4a5x5tv)
@@ -40329,6 +40325,7 @@ membed1.com##+js(set-constant, s.onload, noopFunc)
 membed1.com##+js(acs, isSandboxed)
 membed1.com##+js(acs, _umltsm)
 membed1.com##+js(acs, _0xd959, arr, encodeURIComponent)
+membed1.com##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 membed1.com##+js(aopw, window.kkp4a5x5tv)
 membed1.com##+js(aopr, window.kkp4a5x5tv)
 membed1.com##+js(acs, _uwkpcu, glersakr.com)
@@ -40919,6 +40916,7 @@ usersdrive.com##input[id="adblock_detected"]:remove()
 1stream.buzz##+js(set, _Hasync, [])
 1stream.buzz##+js(aopr, _Hasync)
 1stream.buzz##+js(aopw, _Hasync)
+1stream.buzz##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 1stream.buzz##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')])
 1stream.buzz##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 1stream.buzz##+js(acs, window.kkp4a5x5tv)
@@ -41634,6 +41632,56 @@ filerice.com##div[id="countdown"]:remove()
 filerice.com##div[class="countdown alert alert-success"]
 filerice.com##div[class="countdown alert alert-success"]:remove()
 filerice.com##div[class*="download-btn"]:style(display: block !important;)
+||log.espn.com^*
+!||secure.espncdn.com/combiner/c?js=analytics/adobe/VisitorAPI_312.js,analytics/adobe/AppMeasurement_282.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||secure.espncdn.com/combiner/c?js=analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||insights-collector.newrelic.com/v1/accounts/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||insights-collector.newrelic.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||efeagreatasese.info^*
+||etheappyrincerta.info^*
+||d183xvcith22ty.cloudfront.net^*
+||intorterraon.com^*
+||shartems.com^*
+||uksblfpssubs.com^*
+||imxlwopst.com^*
+putlocker.boo##cookie-notice
+putlocker.boo##cookie-notice:remove()
+putlocker.boo##ad-host
+putlocker.boo##ad-host:remove()
+putlocker.boo##+js(set-constant, FingerprintJS, noopFunc)
+||putlocker.boo/assets/script$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+! redefining _0x39426c prevents the altrernative video hosts/server from being listed on the watch pages
+!putlocker.sb##+js(set-constant, _0x39426c, noopFunc)
+!putlocker.sb##+js(nosiif, /function\(\)/)
+putlocker.sb##+js(nosiif, /^/)
+putlocker.sb##+js(set-constant, window.kkp4a5x5tv, noopFunc)
+putlocker.sb##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')])
+putlocker.sb##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+putlocker.sb##+js(acs, window.kkp4a5x5tv)
+putlocker.sb##+js(aopr, window.kkp4a5x5tv)
+putlocker.sb##+js(aopw, window.kkp4a5x5tv)
+putlocker.sb##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+putlocker.sb##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+putlocker.sb##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+putlocker.sb##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+putlocker.sb##div[id="modalshare"]
+putlocker.sb##div[id="modalshare"]:remove()
+putlocker.sb##div[id="hgiks-top"]
+putlocker.sb##div[id="hgiks-top"]:remove()
+putlocker.sb##div[id="hgiks-top"]
+putlocker.sb##div[id="hgiks-top"]:remove()
+putlocker.sb##div[class="mba-block"]
+putlocker.sb##div[class="mba-block"]:remove()
+||putlocker.sb/ajax/banners$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||putlocker.sb/ajax/banner/vpn$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+putlocker.sb##button:has-text(/submit/i):remove-attr(disabled)
+dokicloud.one##div[class^="adblock-notice"]
+dokicloud.one##div[class^="adblock-notice"]:remove()
+dokicloud.one##+js(set-constant, gtag, noopFunc)
+dokicloud.one##+js(acs, gtag)
+||dokicloud.one/ajax/embed-4/banners$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+dokicloud.one##+js(set-constant, console.clear, noopFunc)
+||oxvhduradsse.com^*
 
 !Whitelisted
 ! blocks Kroger website?
