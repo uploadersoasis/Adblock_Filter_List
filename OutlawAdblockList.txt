@@ -41717,11 +41717,24 @@ www.thebrighterside.news##+js(set-constant, amzn_assoc_region, "")
 www.thebrighterside.news##+js(set-constant, gtag, noopFunc)
 www.thebrighterside.news##+js(acs, gtag)
 www.thebrighterside.news##+js(acs, requestAds)
-www.thebrighterside.news##+js(set-constant, AdPlugg, [])
-www.thebrighterside.news##+js(aopr, AdPlugg)
-www.thebrighterside.news##+js(aopw, AdPlugg)
-www.thebrighterside.news##div[data-adplugg-access-code]
-www.thebrighterside.news##div[data-adplugg-access-code]:remove()
+www.thebrighterside.news##iframe[src*=".usrfiles.com/html/"]
+www.thebrighterside.news##iframe[src*=".usrfiles.com/html/"]:upward(1):remove()
+www.thebrighterside.news##iframe[src*=".filesusr.com/html/"]
+www.thebrighterside.news##iframe[src*=".filesusr.com/html/"]:upward(1):remove()
+!www.thebrighterside.news##div[id^="viewer-"]
+!www.thebrighterside.news##div[id^="viewer-"]:remove()
+www.thebrighterside.news##div[data-hook="divider-single"]
+www.thebrighterside.news##div[data-hook="divider-single"]:remove()
+usrfiles.com##+js(set-constant, AdPlugg, [])
+usrfiles.com##+js(aopr, AdPlugg)
+usrfiles.com##+js(aopw, AdPlugg)
+usrfiles.com##div[data-adplugg-access-code]
+usrfiles.com##div[data-adplugg-access-code]:remove()
+filesusr.com##+js(set-constant, didna, {})
+filesusr.com##+js(aopr, didna)
+filesusr.com##+js(aopw, didna)
+filesusr.co##div[class^="didna-ad-slot"]
+filesusr.co##div[class^="didna-ad-slot"]:remove()
 !||www.thebrighterside.news/_api/wix-code-telemetry-registry-public/v1/sites/c406cecd-9f06-4d1a-940b-654db489bc1a/telemetry/runtime-configuration$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||www.thebrighterside.news/_api/wix-code-telemetry-registry-public/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||sentry-next.wixpress.com^*
