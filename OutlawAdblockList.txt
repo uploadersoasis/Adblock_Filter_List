@@ -40831,7 +40831,6 @@ dropgalaxy.com,dropgalaxy.in###dmAZuTknHuCIIWY
 dropgalaxy.com,dropgalaxy.in###dmAZuTknHuCIIWY:remove()
 dropgalaxy.com,dropgalaxy.in##+js(aopr, dmAZuTknHuCIIWY)
 dropgalaxy.com,dropgalaxy.in##+js(aopw, dmAZuTknHuCIIWY)
-! cookie-remover, /^/ removes all cookies since downloads fail after first download
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(cookie-remover, /^/)
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, ads, [""], stay)
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, statusTxt, "success", stay)
@@ -41547,7 +41546,6 @@ www.quora.com##div[class="q-box qu-zIndex--inline_overlay"]:remove()
 ||production-cmp.isgprivacy.cbsi.com^*
 ! player-services.cbs.com/1.16.0/smart-tag/smart.tag.js handles video ads, but is that all?
 ||player-services.cbs.com/*/smart-tag/smart.tag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
-||powerad.ai/script.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 www.livenewsmag.com##div[id^="popmake-"]
 www.livenewsmag.com##div[id^="popmake-"]:remove()
 www.livenewsmag.com##div[id="pum-3502"]
@@ -41668,8 +41666,6 @@ putlocker.sb##div[id="modalshare"]
 putlocker.sb##div[id="modalshare"]:remove()
 putlocker.sb##div[id="hgiks-top"]
 putlocker.sb##div[id="hgiks-top"]:remove()
-putlocker.sb##div[id="hgiks-top"]
-putlocker.sb##div[id="hgiks-top"]:remove()
 putlocker.sb##div[class="mba-block"]
 putlocker.sb##div[class="mba-block"]:remove()
 ||putlocker.sb/ajax/banners$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
@@ -41682,10 +41678,32 @@ dokicloud.one##+js(acs, gtag)
 ||dokicloud.one/ajax/embed-4/banners$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 dokicloud.one##+js(set-constant, console.clear, noopFunc)
 ||oxvhduradsse.com^*
+!||minkatu.com/1/json.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||minkatu.com^*
+||ae.dmxleo.com/v2/events?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||s.update.dailymotion.com/2/661389/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||s.update.dailymotion.com/*/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||adblock-tester.com/banners/pr_advertising_ads_banner.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||adblock-tester.com^*
+||ghb2.adtelligent.com^*
+||ghb1.adtelligent.com^*
+!||adunit.datawrkz.com/production/prebid/dw_prebid_adaptor/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||adunit.datawrkz.com^*
+!||ib.adnxs.com/ut/v3/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+www.outlookindia.com##div[class="home_ad_title"]
+www.outlookindia.com##div[class="home_ad_title"]:remove()
+www.outlookindia.com##div[class^="ad_unit_"]
+www.outlookindia.com##div[class^="ad_unit_"]:remove()
+www.outlookindia.com##div[id^="div-gpt-ad-"]
+www.outlookindia.com##div[id^="div-gpt-ad-"]:remove()
+www.outlookindia.com##+js(nosiif, /function\(\)/)
+!www.outlookindia.com##+js(nosiif, /^/)
+www.outlookindia.com##+js(set-constant,googletag.cmd.push, noopFunc)
+www.outlookindia.com##+js(acs, googletag)
+www.outlookindia.com##div[id="_snup-rtdx-ldgr1"]
+www.outlookindia.com##div[id="_snup-rtdx-ldgr1"]:remove()
 
 !Whitelisted
-! blocks Kroger website?
-! It initially fails, but then works on Firefox after a countdown timer popup and then a retry to login.
 ! Brave browser fails regardless of enabling the following or not.
 !@@||*.fls.doubleclick.net/activityi;$subdocument,domain=kroger.com
 !@@||sstats.kroger.com^*
