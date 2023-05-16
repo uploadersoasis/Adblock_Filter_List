@@ -40831,6 +40831,7 @@ dropgalaxy.com,dropgalaxy.in###dmAZuTknHuCIIWY
 dropgalaxy.com,dropgalaxy.in###dmAZuTknHuCIIWY:remove()
 dropgalaxy.com,dropgalaxy.in##+js(aopr, dmAZuTknHuCIIWY)
 dropgalaxy.com,dropgalaxy.in##+js(aopw, dmAZuTknHuCIIWY)
+! cookie-remover, /^/ removes all cookies since downloads fail after first download
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(cookie-remover, /^/)
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, ads, [""], stay)
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, statusTxt, "success", stay)
@@ -41387,10 +41388,11 @@ www.hardwin82.com##div[id="BACKGROUND_GROUP"]
 www.hardwin82.com##div[id="BACKGROUND_GROUP"]:remove()
 www.hardwin82.com##a[data-testid="linkElement"]:has(div[data-testid="bannerLogo"])
 www.hardwin82.com##a[data-testid="linkElement"]:has(div[data-testid="bannerLogo"]):remove()
+! The following breaks some websites hosted by WIX by making all of the content invisible.
+!*##div[id="BACKGROUND_GROUP"]
+!*##div[id="BACKGROUND_GROUP"]:remove()
 *##div[id="WIX_ADS"]
 *##div[id="WIX_ADS"]:remove()
-*##div[id="BACKGROUND_GROUP"]
-*##div[id="BACKGROUND_GROUP"]:remove()
 *##a[data-testid="linkElement"]:has(div[data-testid="bannerLogo"])
 *##a[data-testid="linkElement"]:has(div[data-testid="bannerLogo"]):remove()
 www.shellhacks.com##a[href^="https://u24.gov.ua/"][class="stop-war"]
@@ -41698,12 +41700,54 @@ www.outlookindia.com##div[id^="div-gpt-ad-"]
 www.outlookindia.com##div[id^="div-gpt-ad-"]:remove()
 www.outlookindia.com##+js(nosiif, /function\(\)/)
 !www.outlookindia.com##+js(nosiif, /^/)
-www.outlookindia.com##+js(set-constant,googletag.cmd.push, noopFunc)
+www.outlookindia.com##+js(set-constant, googletag.cmd.push, noopFunc)
 www.outlookindia.com##+js(acs, googletag)
 www.outlookindia.com##div[id="_snup-rtdx-ldgr1"]
 www.outlookindia.com##div[id="_snup-rtdx-ldgr1"]:remove()
+www.thebrighterside.news##+js(nosiif, /^/)
+www.thebrighterside.news##+js(acs, browser.sentry-cdn.com, sentry-next.wixpress.com)
+www.thebrighterside.news##+js(aopr, amzn_assoc_ad_type)
+www.thebrighterside.news##+js(aopw, amzn_assoc_ad_type)
+www.thebrighterside.news##+js(set-constant, amzn_assoc_ad_type, "")
+www.thebrighterside.news##+js(set-constant, amzn_assoc_tracking_id, "")
+www.thebrighterside.news##+js(set-constant, amzn_assoc_linkid, "")
+www.thebrighterside.news##+js(set-constant, amzn_assoc_placement, "")
+www.thebrighterside.news##+js(set-constant, amzn_assoc_marketplace, "")
+www.thebrighterside.news##+js(set-constant, amzn_assoc_region, "")
+www.thebrighterside.news##+js(set-constant, gtag, noopFunc)
+www.thebrighterside.news##+js(acs, gtag)
+www.thebrighterside.news##+js(acs, requestAds)
+www.thebrighterside.news##+js(set-constant, AdPlugg, [])
+www.thebrighterside.news##+js(aopr, AdPlugg)
+www.thebrighterside.news##+js(aopw, AdPlugg)
+www.thebrighterside.news##div[data-adplugg-access-code]
+www.thebrighterside.news##div[data-adplugg-access-code]:remove()
+!||www.thebrighterside.news/_api/wix-code-telemetry-registry-public/v1/sites/c406cecd-9f06-4d1a-940b-654db489bc1a/telemetry/runtime-configuration$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||www.thebrighterside.news/_api/wix-code-telemetry-registry-public/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||sentry-next.wixpress.com^*
+||www.adplugg.com/serve/js/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||static.parastorage.com/services/cookie-consent-banner-for-uou/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||cdn.confiant-integrations.net/MbZTQS496EB4Sd27ILU4rbHXnJ8/gpt_and_prebid/config.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||cdn.confiant-integrations.net/*/gpt_and_prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||didna-d.openx.net^*
+||cdn.adnxs-simple.com^*
+! thebrighterside.news domain only for the following four rules
+||ib.adnxs.com/ut/v3/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,domain=thebrighterside.news|www-thebrighterside-news.filesusr.com
+||prebid.media.net/rtb/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,domain=thebrighterside.news|www-thebrighterside-news.filesusr.com
+||fastlane.rubiconproject.com/a/api/fastlane.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,domain=thebrighterside.news|www-thebrighterside-news.filesusr.com
+||btlr.sharethrough.com/universal/v1?supply_id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,domain=thebrighterside.news|www-thebrighterside-news.filesusr.com
+! The following will erase the contents of some WIX hosted websites.
+!||static.parastorage.com/services/wix-thunderbolt/dist/feature-telemetry-wix-code-sdk.a1cb8825.chunk.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||static.parastorage.com/services/wix-thunderbolt/dist/feature-telemetry-wix-code-sdk.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||frog.wix.com/bpm?_msid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||frog.wix.com/bpm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||bcdn.grmtas.com/pub/ga_pub_15168.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+!||storage.googleapis.com/didna_hb/webifacts_llc/webifactsthebrighterside/didna_config.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+||storage.googleapis.com/didna_hb/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 
 !Whitelisted
+! blocks Kroger website?
+! It initially fails, but then works on Firefox after a countdown timer popup and then a retry to login.
 ! Brave browser fails regardless of enabling the following or not.
 !@@||*.fls.doubleclick.net/activityi;$subdocument,domain=kroger.com
 !@@||sstats.kroger.com^*
