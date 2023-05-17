@@ -40531,6 +40531,14 @@ slmaxed.com,streamlare.com##^script:has-text(ad-blocker)
 slmaxed.com,streamlare.com##^script:has-text(ad-blocker):remove()
 slmaxed.com,streamlare.com##script:has-text(ad-blocker)
 slmaxed.com,streamlare.com##script:has-text(ad-blocker):remove()
+slmaxed.com##div[class="container"]:style(margin-left: 0px !important; margin-right: 0px !important; padding-left: 10px !important; padding-right: 10px !important;)
+slmaxed.com##div[class="col-12 mb-2"]:has(div[class="embed-responsive embed-responsive-16by9"]):style(margin-left: 0px !important; margin-right: 0px !important; padding-left: 10px !important; padding-right: 0px !important; width: 99vw !important; height: 99vh !important;)
+slmaxed.com##div[class="embed-responsive embed-responsive-16by9"]:style(margin-left: 0px !important; margin-right: 0px !important; padding-left: 10px !important; padding-right: 0px !important; width: 99vw !important; height: 99vh !important;)
+! The following two style rules are optional is the container above has already been expanded.
+slmaxed.com##iframe[src*="/e/"]:style(width: 99vw !important; height: 99vh !important;)
+slmaxed.com##div[id="player"]:style(width: 99vw !important; height: 99vh !important;)
+slmaxed.com##div[class="alert alert-info mb-2"]
+slmaxed.com##div[class="alert alert-info mb-2"]:remove()
 !||slmaxed.com,streamlare.com^$inline-script
 !||velocitycdn.com/script/tbeomspv.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !||expuge.com/script/tbeomspv.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
@@ -41757,6 +41765,11 @@ filesusr.co##div[class^="didna-ad-slot"]:remove()
 ||bcdn.grmtas.com/pub/ga_pub_15168.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 !||storage.googleapis.com/didna_hb/webifacts_llc/webifactsthebrighterside/didna_config.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
 ||storage.googleapis.com/didna_hb/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr
+! remove CAM quality movies from putlocker results
+putlocker.sb##div[class="flw-item"]:has(div[class="film-poster"]:has(div[class="pick film-poster-quality"]:has-text(CAM)))
+putlocker.sb##div[class="flw-item"]:has(div[class="film-poster"]:has(div[class="pick film-poster-quality"]:has-text(CAM))):remove()
+||fp.weeksth.com^*
+||niftiesrotonde.com^*
 
 !Whitelisted
 ! blocks Kroger website?
