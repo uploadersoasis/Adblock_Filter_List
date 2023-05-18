@@ -40674,9 +40674,17 @@ dropgalaxy.com,dropgalaxy.in##+js(aopr, gdpr-cookie-consent)
 dropgalaxy.com,dropgalaxy.in###gdpr-cookie-notice
 dropgalaxy.com,dropgalaxy.in###gdpr-cookie-notice:remove()
 dropgalaxy.com,dropgalaxy.in##^script:has-text(/document.on/i)
-dropgalaxy.com,dropgalaxy.in##+js(acs, document.oncontextmenu, document.onmousedown, document.onmouseup, document.onkeydown)
-dropgalaxy.com,dropgalaxy.in##+js(aopr, document.oncontextmenu, document.onmousedown, document.onmouseup, document.onkeydown)
-dropgalaxy.com,dropgalaxy.in##+js(aopw, document.oncontextmenu, document.onmousedown, document.onmouseup, document.onkeydown)
+dropgalaxy.com,dropgalaxy.in##+js(set-constant, mousehandler, noopFunc)
+dropgalaxy.com,dropgalaxy.in##+js(set-constant, disableCtrlKeyCombination, noopFunc)
+dropgalaxy.com,dropgalaxy.in##+js(set-constant, forbiddenKeys, [])
+dropgalaxy.com,dropgalaxy.in##+js(acs, document.onkeydown)
+dropgalaxy.com,dropgalaxy.in##+js(aopr, document.onkeydown)
+dropgalaxy.com,dropgalaxy.in##+js(aopw, document.onkeydown)
+dropgalaxy.com,dropgalaxy.in##+js(acs, document.oncontextmenu, document.onmousedown, document.onmouseup)
+dropgalaxy.com,dropgalaxy.in##+js(aopr, document.oncontextmenu, document.onmousedown, document.onmouseup)
+dropgalaxy.com,dropgalaxy.in##+js(aopw, document.oncontextmenu, document.onmousedown, document.onmouseup)
+dropgalaxy.com,dropgalaxy.in##+js(aopr, document.documentElement.clientWidth)
+dropgalaxy.com,dropgalaxy.in##+js(aopw, document.documentElement.clientWidth)
 dropgalaxy.com,dropgalaxy.in##+js(remove-attr, oncontextmenu, body)
 dropgalaxy.com,dropgalaxy.in##body:remove-attr(oncontextmenu)
 dropgalaxy.com,dropgalaxy.in,techssting.com###analytics
@@ -41799,6 +41807,8 @@ www.charlieintel.com##div[class*="adhesiveAdWrapper"]:remove()
 ||embed.reddit.com/svc/shreddit/perfMetrics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static-cdn.spot.im/production/launcher/tags/v3.5.2/launcher/metrics-reporter-bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static-cdn.spot.im/production/launcher/tags/*/launcher/metrics-reporter-bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+m.vk.com##div[class^="PageBottomBanner"]
+m.vk.com##div[class^="PageBottomBanner"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
