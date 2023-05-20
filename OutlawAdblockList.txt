@@ -33011,7 +33011,6 @@ dotesports.com##div[class="proper-ad-unit"]
 !||prebid.ioadx.com/bidRequest/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||prebid.ioadx.com^*
 ||mookiyooki.com^*
-www.dailymail.co.uk##div[class="ad-wrapper"]
 www.apexsql.com##div[id^="cookiesWarning"]
 ||lookofookomooki.com^*
 ||moedgapers.com^*
@@ -35434,23 +35433,9 @@ uploadbuzz.cc##a[href*="://7starhd.love/"]
 ||m7hdh-2damu.ads.tremorhub.com^*
 ||mailonline-us-d.openx.net^*
 ||cmp.dmgmediaprivacy.co.uk/ccpa/consent$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||mads.dailymail.co.uk^*
-www.dailymail.co.uk##span[class*="mol-ads-label"]
-www.dailymail.co.uk##div[data-adverts-ad]
-www.dailymail.co.uk##div[data-track-module]
-www.dailymail.co.uk##+js(set, disableAds, true, stay)
-www.dailymail.co.uk##+js(set, enableAds, false, stay)
-www.dailymail.co.uk##+js(set, useGpt, false, stay)
-www.dailymail.co.uk##+js(aopr, window.adverts)
-www.dailymail.co.uk##+js(aopw, window.adverts)
-!www.dailymail.co.uk##div[id="content"]:remove()
-www.dailymail.co.uk##a[href*="://pubads.g.doubleclick.net/gampad/"]:upward(1)
 ||cmp.dmgmediaprivacy.co.uk/2.8.18-ccpa-31/iife/mol-ads-cmp.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||euasync01.admantx.com/admantx/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||euasync01.admantx.com^*
-||t.dailymail.co.uk^*
-||ted.dailymail.co.uk^*
-||crta.dailymail.co.uk^*
 www.nationalreview.com##div[class*="ad-skeleton"]
 www.nationalreview.com##div[id="zephr-root"]:remove()
 nulledcity.com##ins[data-ad-client]
@@ -35471,8 +35456,10 @@ nulledenvato.com##+js(aopw, adsbygoogle)
 ||m.apkpure.com/sw_v3.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||apkpure.com/workbox-sw.prod.v2.1.3.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.newzit.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.dailymail.co.uk/api/web-push-notification/v1/static/latest/mol-fe-web-push-sw/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.dailymail.co.uk/static/mol-fe/static/mol-fe-sync-bundle/6.19.0/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mads.dailymail.co.uk^*
+||t.dailymail.co.uk^*
+||ted.dailymail.co.uk^*
+||crta.dailymail.co.uk^*
 finance.yahoo.com##div[id="sda-MAST"]
 www.therecord.com##div[class*="leaderboard-ad-component"]
 www.therecord.com##div[class*="adview-"]
@@ -41809,6 +41796,37 @@ www.charlieintel.com##div[class*="adhesiveAdWrapper"]:remove()
 ||static-cdn.spot.im/production/launcher/tags/*/launcher/metrics-reporter-bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 m.vk.com##div[class^="PageBottomBanner"]
 m.vk.com##div[class^="PageBottomBanner"]:remove()
+editor.p5js.org##*[class^="CookieConsent_"]
+editor.p5js.org##*[class^="CookieConsent_"]:remove()
+||www.dailymail.co.uk/api/web-push-notification/v1/static/latest/mol-fe-web-push-sw/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.dailymail.co.uk/static/mol-fe/static/mol-fe-sync-bundle/6.19.0/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.dailymail.co.uk/static/mol-adverts/6.5.1/mol-adverts.desktop.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.dailymail.co.uk/static/mol-adverts/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.dailymail.co.uk##div[class="ad-wrapper"]
+www.dailymail.co.uk##span[class*="mol-ads-label"]
+www.dailymail.co.uk##span[class*="mol-ads-label"]:remove()
+www.dailymail.co.uk##div[data-adverts-ad]
+www.dailymail.co.uk##div[data-track-module]
+www.dailymail.co.uk##+js(set, disableAds, true, stay)
+www.dailymail.co.uk##+js(set, enableAds, false, stay)
+www.dailymail.co.uk##+js(set, useGpt, false, stay)
+www.dailymail.co.uk##+js(set-constant, window.adverts, {})
+www.dailymail.co.uk##+js(set-constant, window.adverts.config, {})
+www.dailymail.co.uk##+js(set-constant, adverts.addToArray, noopFunc)
+www.dailymail.co.uk##+js(acs, adverts)
+www.dailymail.co.uk##+js(aopr, window.adverts)
+www.dailymail.co.uk##+js(aopw, window.adverts)
+!www.dailymail.co.uk##div[id="content"]:remove()
+www.dailymail.co.uk##a[href*="://pubads.g.doubleclick.net/gampad/"]:upward(1)
+www.dailymail.co.uk##div[class^="puff-ad"]
+www.dailymail.co.uk##div[class^="puff-ad"]:remove()
+||xypthe.com^*
+www.yahoo.com##div[id^="sda-MAST2"]:upward(1):remove()
+www.yahoo.com##div[id^="sda-MAST2"]
+www.yahoo.com##div[id^="sda-MAST2"]:remove()
+www.yahoo.com##div[id^="cluster-LDRB2-"]
+www.yahoo.com##div[id^="cluster-LDRB2-"]:remove()
+www.jetbrains.com##div[class^="jetbrains-cookies-banner-"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
