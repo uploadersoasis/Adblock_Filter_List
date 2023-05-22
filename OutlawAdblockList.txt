@@ -16833,6 +16833,20 @@ www.bostonglobe.com##.meter-social-connect__container
 !||spclient.wg.spotify.com/ads/v1/ads/leaderboard^*
 ||spclient.wg.spotify.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||adeventtracker.spotify.com^*
+!||open.spotifycdn.com/cdn/js/gtm.b8054d69.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||open.spotifycdn.com/cdn/js/retargeting-pixels.c038ca53.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||open.spotifycdn.com/cdn/js/gtm.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||open.spotifycdn.com/cdn/js/retargeting-pixels.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! uBlock's Unbreak list nullifies the following rule
+!||spclient.wg.spotify.com/sponsoredplaylist/v1/sponsored?market=from_token$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||spclient.wg.spotify.com/sponsoredplaylist/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+open.spotify.com##div[id="ad-tracking-pixel"]
+open.spotify.com##div[id="ad-tracking-pixel"]:remove()
+open.spotify.com##._28f55dbe6c35681a96ab5d1b11d0b0e1-scss
+open.spotify.com##._668f8eb097574762d66d361cc6d37850-scss > .btn-black.btn--no-margin.btn
+open.spotify.com##[src="/blank"]
+open.spotify.com##a[data-context-item-type="ad"]
+open.spotify.com##footer[data-testadtype="ad-type-ad"]
 !||open.spotify.com/log/pageview$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||open.spotify.com/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||crashdump.spotify.com^*
@@ -16852,7 +16866,6 @@ www.bostonglobe.com##.meter-social-connect__container
 !www.audio2.spotify.com^*
 !desktop.spotify.com^*
 !prod.spotify.map.fastlylb.net^* !blocks music from Spotify?
-!open.spotify.com^* !blocks Spotify web player
 !||d2d1dxiu3v1f2i.cloudfront.net/9e7524f/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping !blocks Spotify login
 !||d2d1dxiu3v1f2i.cloudfront.net^* !blocks Spotify login
 ||p.adsymptotic.com^*
@@ -20639,8 +20652,6 @@ freefilesync.org###alt-banner
 ||quedecsecurity.co.zw/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||whistle.hairbike.info^*
 ||*.hairbike.info^*
-open.spotify.com##._28f55dbe6c35681a96ab5d1b11d0b0e1-scss
-open.spotify.com##._668f8eb097574762d66d361cc6d37850-scss > .btn-black.btn--no-margin.btn
 www.zdnet.com##div[class="ad-intromercial"]
 www.zdnet.com##div[id^="intromercial-"]
 www.zdnet.com##div[class="intromercial"]
@@ -22328,7 +22339,6 @@ ulozto.net##+js(set-constant.js, adblock_detected, false)
 ||b.6sc.co/v1/beacon/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||smetrics.nvidia.com^*
 ||nvidia.tt.omtrdc.net^*
-open.spotify.com##[src="/blank"]
 ||forfile.xyz^*
 ||rowoardog.com^*
 ||mehebborc.com^*
@@ -36078,8 +36088,6 @@ www.whattowatch.com##div[class*="ad-unit"]
 www.whattowatch.com##div[class="dfp-leaderboard-container"]
 ||trkn.us/pixel/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pubads.g.doubleclick.net/pagead/interaction/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-open.spotify.com##a[data-context-item-type="ad"]
-open.spotify.com##footer[data-testadtype="ad-type-ad"]
 !||data.adxcel-ec2.com/pixel/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||data.adxcel-ec2.com^*
 ||k.clarity.ms/collect$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -40664,6 +40672,8 @@ dropgalaxy.com,dropgalaxy.in##^script:has-text(/document.on/i)
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, mousehandler, noopFunc)
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, disableCtrlKeyCombination, noopFunc)
 dropgalaxy.com,dropgalaxy.in##+js(set-constant, forbiddenKeys, [])
+dropgalaxy.com,dropgalaxy.in##+js(aopr, forbiddenKeys)
+dropgalaxy.com,dropgalaxy.in##+js(aopw, forbiddenKeys)
 dropgalaxy.com,dropgalaxy.in##+js(acs, document.onkeydown)
 dropgalaxy.com,dropgalaxy.in##+js(aopr, document.onkeydown)
 dropgalaxy.com,dropgalaxy.in##+js(aopw, document.onkeydown)
@@ -40807,6 +40817,8 @@ dropgalaxy.com,dropgalaxy.in##div[id^="vi-smartbanner"]
 dropgalaxy.com,dropgalaxy.in##div[id^="vi-smartbanner"]:remove()
 dropgalaxy.com,dropgalaxy.in##iframe[id="debug_vi-smartbanner-unit"]
 dropgalaxy.com,dropgalaxy.in##iframe[id="debug_vi-smartbanner-unit"]:remove()
+dropgalaxy.com,dropgalaxy.in##iframe[src^="https://a2zapk.io/dl/postifram.php"]
+dropgalaxy.com,dropgalaxy.in##iframe[src^="https://a2zapk.io/dl/postifram.php"]:remove()
 financemonk.net##+js(nowoif)
 financemonk.net##[href^="https://bit.ly/"]
 financemonk.net##iframe[id*="_mN_main_"]
@@ -41826,7 +41838,19 @@ www.yahoo.com##div[id^="sda-MAST2"]
 www.yahoo.com##div[id^="sda-MAST2"]:remove()
 www.yahoo.com##div[id^="cluster-LDRB2-"]
 www.yahoo.com##div[id^="cluster-LDRB2-"]:remove()
+www.jetbrains.com##div[class^="jetbrains-cookies-banner-"]
 www.jetbrains.com##div[class^="jetbrains-cookies-banner-"]:remove()
+||arttrk.com/pixel/?ad_log=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.secplicity.org/wp-content/plugins/wp-gdpr-compliance/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/wp-content/plugins/wp-gdpr-compliance/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+fikper.com##button[class*="Mui-disabled"]:remove-attr(disabled)
+fikper.com##button[class*="Mui-disabled"]:remove-class(Mui-disabled)
+||weaponsnondescriptperceive.com^*
+||wasverymuch.info^*
+||pl15633759.highrevenuegate.com^*
+||gforanythingamgl.info^*
+||d1rp4yowwe587e.cloudfront.net^*
+||qisaqojjmmsjo.xyz^*
 
 !Whitelisted
 ! blocks Kroger website?
