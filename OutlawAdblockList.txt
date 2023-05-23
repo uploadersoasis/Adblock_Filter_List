@@ -41530,10 +41530,10 @@ filerice.com##div[class="countdown alert alert-success"]
 filerice.com##div[class="countdown alert alert-success"]:remove()
 filerice.com##div[class*="download-btn"]:style(display: block !important;)
 filerice.com##+js(set-constant, arr, [])
-filerice.com##+js(set-constant, count, 1)
-filerice.com##+js(aopr, arr)
-filerice.com##+js(aopw, arr)
-filerice.com##+js(aeld, click)
+filerice.com##+js(set-constant, count, 3)
+!filerice.com##+js(aopr, arr)
+!filerice.com##+js(aopw, arr)
+!filerice.com##+js(aeld, click)
 filerice.com##input[id="adblock_detected"]:remove()
 filerice.com##+js(set-constant, document.querySelector('button[id="downloadbtn"]').type, submit)
 ||log.espn.com^*
@@ -41870,8 +41870,8 @@ www.up-4ever.net,www.up-4ever.org##ins[data-ad-client]
 www.up-4ever.net,www.up-4ever.org##ins[data-ad-client]:remove()
 www.up-4ever.net,www.up-4ever.org##iframe[id^="aswift_"]
 www.up-4ever.net,www.up-4ever.org##iframe[id^="aswift_"]:remove()
-www.up-4ever.net,www.up-4ever.org##iframe[id^="id="google_ads_frame"]
-www.up-4ever.net,www.up-4ever.org##iframe[id^="id="google_ads_frame"]:remove()
+www.up-4ever.net,www.up-4ever.org##iframe[id^="google_ads_frame"]
+www.up-4ever.net,www.up-4ever.org##iframe[id^="google_ads_frame"]:remove()
 www.up-4ever.net,www.up-4ever.org##ins[id="adblock_detected"]
 www.up-4ever.net,www.up-4ever.org##+js(set-constant, document.querySelector("#downloadbtn").type, submit)
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, 'allowed_countries')
@@ -41881,6 +41881,11 @@ www.up-4ever.net,www.up-4ever.org##+js(nostif, /function\(\)/)
 www.up-4ever.net,www.up-4ever.org##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
 www.up-4ever.net,www.up-4ever.org##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+www.up-4ever.net,www.up-4ever.org##+js(href-sanitizer, a[href="javascript:void(0)"][id="downLoadLinkButton"], [data-target])
+www.up-4ever.net,www.up-4ever.org##+js(aeld, click, window.open)
+!www.up-4ever.net,www.up-4ever.org##+js(aeld, click, onclick)
+||prinksoncotic.com^*
+||slnxbkskw.com^*
 
 !Whitelisted
 ! blocks Kroger website?
