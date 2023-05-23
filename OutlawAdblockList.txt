@@ -12413,7 +12413,6 @@ www.imagerzone.com###pe27 > td > center > a[href^="probanners.php"]
 ||social-login.cnn.com/gscounters.sendReport$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||z.cdn.turner.com/xslo/aspen/config/theo/cnn/aspenanalytics.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||z.cdn.turner.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.up-4ever.com##div[id^="hiddensection"]
 ||s10-cmobads.com^*
 ||static.s10-cmobads.com^*
 ||5cf3af8aba4293a8.com^*
@@ -19771,24 +19770,12 @@ apk4all.com##.more-link
 ||i3j3u3u9.ssl.hwcdn.net^*
 ||latchemt.top^*
 ||www.latchemt.top^*
-www.up-4ever.net##div[class="adsbox"]
-www.up-4ever.net##+js(abort-on-property-read.js, adblock_detected)
-www.up-4ever.net##+js(abort-on-property-read.js, adsbox)
-www.up-4ever.net##+js(abort-on-property-read.js, player_ads)
-www.up-4ever.net##+js(abort-current-script, adblock_detected)
-www.up-4ever.net##+js(abort-current-script, adsbox)
-www.up-4ever.net##+js(abort-current-script, player_ads)
 ||www.c1vk.online^*
 ||c1vk.online^*
 ||www.code313pay.com^*
 ||code313pay.com^*
 ||track.shigella.host/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||t.afftrackr.com^*
-||www.up-4ever.net/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.up-4ever.net##span[id="countdown"]
-www.up-4ever.net##div[class="alert alert-danger"]
-www.up-4ever.net##+js(abort-on-property-read.js, modal-image-wrapper)
-www.up-4ever.net##+js(abort-current-script, modal-image-wrapper)
 ||fcwpxsmiyy.com^*
 ||www.fcwpxsmiyy.com^*
 ||kojywvexdq.com^*
@@ -20455,12 +20442,6 @@ www.thepostmillennial.com##div[class*="afw_ad"]
 ||gsafe.getawesome2.com^*
 !||lp.searchmulty.com/redirect.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lp.searchmulty.com^*
-www.up-4ever.org##+js(abort-on-property-read.js, adsbygoogle)
-www.up-4ever.org##+js(abort-on-property-read.js, google_ad_client)
-www.up-4ever.org##+js(abort-on-property-read.js, enable_page_level_ads)
-www.up-4ever.org##+js(abort-on-property-write.js, adsbygoogle)
-www.up-4ever.org##+js(abort-on-property-write.js, google_ad_client)
-www.up-4ever.org##+js(abort-on-property-write.js, enable_page_level_ads)
 earn4files.com##+js(abort-on-property-read.js, adblockers)
 earn4files.com##+js(abort-on-property-read.js, adsbygoogle)
 earn4files.com##+js(abort-on-property-read.js, banner_ad)
@@ -24972,16 +24953,7 @@ rsload.net##a[href^="https://click.1k3web.net"]
 ||geelfone.xyz^*
 www.sadeempc.com##button:nth-of-type(2)
 www.sadeempc.com##button:nth-of-type(1)
-www.up-4ever.org##div[id="gdpr-cookie-notice"]
 ||www.advinci.uno^*
-www.up-4ever.org##+js(abort-current-script, zfgloadedpopup)
-www.up-4ever.org##+js(abort-on-property-read.js, zfgloadedpopup)
-www.up-4ever.org##+js(abort-current-script, adsbygoogle)
-www.up-4ever.org##ins[class="adsbygoogle"]
-www.up-4ever.org##ins[id="adblock_detected"]
-www.up-4ever.org##+js(set, document.querySelector("#downloadbtn").type, submit)
-www.up-4ever.org##+js(set, document.querySelector("#downLoadLinkButton").onclick, null)
-www.up-4ever.org##+js(abort-current-script, 'allowed_countries')
 amistacx.com##div[id="catapult-cookie-bar"]
 ##+js(set-constant.js, __cfRLUnblockHandlers, 1)
 ||kqaoe.ritishdeliv.top^*
@@ -41606,6 +41578,13 @@ filerice.com##div[id="countdown"]:remove()
 filerice.com##div[class="countdown alert alert-success"]
 filerice.com##div[class="countdown alert alert-success"]:remove()
 filerice.com##div[class*="download-btn"]:style(display: block !important;)
+filerice.com##+js(set-constant, arr, [])
+filerice.com##+js(set-constant, count, 1)
+filerice.com##+js(aopr, arr)
+filerice.com##+js(aopw, arr)
+filerice.com##+js(aeld, click)
+filerice.com##input[id="adblock_detected"]:remove()
+filerice.com##+js(set-constant, document.querySelector('button[id="downloadbtn"]').type, submit)
 ||log.espn.com^*
 !||secure.espncdn.com/combiner/c?js=analytics/adobe/VisitorAPI_312.js,analytics/adobe/AppMeasurement_282.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||secure.espncdn.com/combiner/c?js=analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -41851,6 +41830,43 @@ fikper.com##button[class*="Mui-disabled"]:remove-class(Mui-disabled)
 ||gforanythingamgl.info^*
 ||d1rp4yowwe587e.cloudfront.net^*
 ||qisaqojjmmsjo.xyz^*
+||tsyndicate.com^*
+||www.somvprqshxr.com^*
+||bestmaxfield.com^*
+||ugripaid.com^*
+||dnqlunngvdmfam.com^*
+||theronadforyou24.com^*
+||okcquqjuu.com^*
+||www.up-4ever.net/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.up-4ever.net,www.up-4ever.org##span[id="countdown"]
+www.up-4ever.net,www.up-4ever.org##div[class="alert alert-danger"]
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, modal-image-wrapper)
+www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, modal-image-wrapper)
+www.up-4ever.net,www.up-4ever.orgt##div[class="adsbox"]
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, adblock_detected)
+www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, adblock_detected)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, adsbox)
+www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, adsbox)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, player_ads)
+www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, player_ads)
+www.up-4ever.net,www.up-4ever.org##div[id^="hiddensection"]
+www.up-4ever.net,www.up-4ever.org##+js(acs, lhzzbthn.kn)
+www.up-4ever.net,www.up-4ever.org##a[id="downLoadLinkButton"]:remove-attr(onclick)
+!www.up-4ever.net,www.up-4ever.org##+js(set-constant, document.querySelector("#downLoadLinkButton").onclick, null)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, adsbygoogle)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, google_ad_client)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, enable_page_level_ads)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write.js, adsbygoogle)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write.js, google_ad_client)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write.js, enable_page_level_ads)
+www.up-4ever.net,www.up-4ever.org##div[id="gdpr-cookie-notice"]
+www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, zfgloadedpopup)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, zfgloadedpopup)
+www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, adsbygoogle)
+www.up-4ever.net,www.up-4ever.org##ins[class="adsbygoogle"]
+www.up-4ever.net,www.up-4ever.org##ins[id="adblock_detected"]
+www.up-4ever.net,www.up-4ever.org##+js(set-constant, document.querySelector("#downloadbtn").type, submit)
+www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, 'allowed_countries')
 
 !Whitelisted
 ! blocks Kroger website?
