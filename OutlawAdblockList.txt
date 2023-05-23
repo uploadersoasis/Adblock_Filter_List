@@ -16828,45 +16828,6 @@ www.ebay.com###gf-mrecs-ads
 www.wikihow.com###rightrail0 > .whad
 www.wikihow.com###introad-outer
 www.bostonglobe.com##.meter-social-connect__container
-||spotifymembershipaccount.com^*
-!||spclient.wg.spotify.com/ads/v1/ads/leaderboard^*
-||spclient.wg.spotify.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||adeventtracker.spotify.com^*
-!||open.spotifycdn.com/cdn/js/gtm.b8054d69.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||open.spotifycdn.com/cdn/js/retargeting-pixels.c038ca53.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||open.spotifycdn.com/cdn/js/gtm.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||open.spotifycdn.com/cdn/js/retargeting-pixels.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! uBlock's Unbreak list nullifies the following rule
-!||spclient.wg.spotify.com/sponsoredplaylist/v1/sponsored?market=from_token$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||spclient.wg.spotify.com/sponsoredplaylist/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-open.spotify.com##div[id="ad-tracking-pixel"]
-open.spotify.com##div[id="ad-tracking-pixel"]:remove()
-open.spotify.com##._28f55dbe6c35681a96ab5d1b11d0b0e1-scss
-open.spotify.com##._668f8eb097574762d66d361cc6d37850-scss > .btn-black.btn--no-margin.btn
-open.spotify.com##[src="/blank"]
-open.spotify.com##a[data-context-item-type="ad"]
-open.spotify.com##footer[data-testadtype="ad-type-ad"]
-!||open.spotify.com/log/pageview$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||open.spotify.com/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||crashdump.spotify.com^*
-!||spclient.wg.spotify.com/metrics-backend/v1/metric$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||spclient.wg.spotify.com/metrics-backend/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||guc-spclient.spotify.com/melody/v1/logging/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||ads-fa.spotify.com^*
-||analytics.spotify.com^*
-||log.spotify.com^*
-||heads-ec.spotify.com^*
-!upgrade.spotify.com^*
-!spclient.wg.spotify.com^*
-!sto3.spotify.com^*
-!audio-ec.spotify.com^*
-!audio2.spotify.com^*
-!weblb-wg.gslb.spotify.com^*
-!www.audio2.spotify.com^*
-!desktop.spotify.com^*
-!prod.spotify.map.fastlylb.net^* !blocks music from Spotify?
-!||d2d1dxiu3v1f2i.cloudfront.net/9e7524f/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping !blocks Spotify login
-!||d2d1dxiu3v1f2i.cloudfront.net^* !blocks Spotify login
 ||p.adsymptotic.com^*
 ||ads-west-colo.adsymptotic.com^*
 !||8328.bapi.adsafeprotected.com^*
@@ -17458,9 +17419,6 @@ www.foxebook.net##div[id^="id"][id*="close"]
 !||vt.myvisualiq.net/2/afTxMmlGwCNRJiC5Bd75ug%3D%3D/vt-150.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vt.myvisualiq.net^*
 ||www.fastly-insights.com/insights.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||spclient.wg.spotify.com/melody/v1/logging/jssdk_playback_stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||spclient.wg.spotify.com/melody/v1/logging/track_stream_verification$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||spclient.wg.spotify.com/melody/v1/logging/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||qnfpskgtzkw.com^*
 ||www.qnfpskgtzkw.com^*
 ||gjmlseezqjy.com^*
@@ -17648,9 +17606,6 @@ kotaku.com##.tp-active.tp-backdrop
 ||d3rt1990lpmkn.cloudfront.net^*
 ||ds.serving-sys.com^*
 ||partnerad.l.doubleclick.net^*
-||spclient.wg.spotify.com/melody/v1/time$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||spclient.wg.spotify.com/storage-resolve/files/audio/interactive/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping !blocks all music not just ads
-!||spclient.wg.spotify.com/track-playback/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping !blocks playback after current song
 ||zmkihizd.com^*
 ||www.zmkihizd.com^*
 ||kygozmlrr.com^*
@@ -24155,9 +24110,7 @@ www.skylinesoft.com##div[id="hs-eu-cookie-confirmation"]
 chromeenterprise.google##section[class="ce-cookie-banner visible"]
 chromeenterprise.google##div[class^="ce-cookie-banner"]
 ||www.gstatic.com/external_hosted/intersectionobserver_polyfill/intersection-observer.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-engineering.atspotify.com##div[class="wpcc-pushdown-wrap"]
 ||img.scupio.com/html/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-community.spotify.com###js-message-bar-cookie-notice
 benchlife.info##.scupioadslot
 chrunos.com##div[id="cookie-notice"]
 chrunos.com##div[class="cookie-notice-container"]
@@ -24195,7 +24148,6 @@ www.searchpeoplefree.com##div[class^="google-ad"]
 www.searchpeoplefree.com##div[class="cookie-terms-block"]
 www.searchpeoplefree.com##div[class="cookie-terms"]
 howtechhack.com##div[id="cookie-notice"]
-developer.spotify.com##div[id="cookies-alert"]
 ||lgmsekxqwxe.com^*
 ||www.lgmsekxqwxe.com^*
 ||capi.connatix.com/rtb/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -28733,7 +28685,6 @@ letsupload.io##div[id="iHCIjECYmrkE"]
 letsupload.io##+js(remove-class, clear-adblock, , stay)
 letsupload.io##div[class*="bottom-advert"]
 letsupload.io##div[class*="advert-wrapper"]
-||spclient.wg.spotify.com/ad-logic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.howtogeek.com^script:has-text(/tmntag\.adTag/i)
 ||selfishsnake.com^$3p
 www.varonis.com##div[id="cookie_consent_container"]
@@ -41627,6 +41578,7 @@ putlocker.sb##div[class="mba-block"]:remove()
 ||putlocker.sb/ajax/banners$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||putlocker.sb/ajax/banner/vpn$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 putlocker.sb##button:has-text(/submit/i):remove-attr(disabled)
+! remove CAM quality movies from putlocker results
 putlocker.sb##div[class="flw-item"]:has(div[class="film-poster"]:has(div[class="pick film-poster-quality"]:has-text(CAM)))
 putlocker.sb##div[class="flw-item"]:has(div[class="film-poster"]:has(div[class="pick film-poster-quality"]:has-text(CAM))):remove()
 dokicloud.one##div[class^="adblock-notice"]
@@ -41713,7 +41665,57 @@ filesusr.co##div[class^="didna-ad-slot"]:remove()
 ||bcdn.grmtas.com/pub/ga_pub_15168.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||storage.googleapis.com/didna_hb/webifacts_llc/webifactsthebrighterside/didna_config.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||storage.googleapis.com/didna_hb/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! remove CAM quality movies from putlocker results
+||spotifymembershipaccount.com^*
+!||spclient.wg.spotify.com/ads/v1/ads/leaderboard^*
+||spclient.wg.spotify.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||adeventtracker.spotify.com^*
+!||open.spotifycdn.com/cdn/js/gtm.b8054d69.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||open.spotifycdn.com/cdn/js/retargeting-pixels.c038ca53.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||open.spotifycdn.com/cdn/js/gtm.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||open.spotifycdn.com/cdn/js/retargeting-pixels.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! uBlock's Unbreak list nullifies the following rule
+!||spclient.wg.spotify.com/sponsoredplaylist/v1/sponsored?market=from_token$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||spclient.wg.spotify.com/sponsoredplaylist/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+open.spotify.com##div[id="ad-tracking-pixel"]
+open.spotify.com##div[id="ad-tracking-pixel"]:remove()
+open.spotify.com##._28f55dbe6c35681a96ab5d1b11d0b0e1-scss
+open.spotify.com##._668f8eb097574762d66d361cc6d37850-scss > .btn-black.btn--no-margin.btn
+open.spotify.com##[src="/blank"]
+open.spotify.com##a[data-context-item-type="ad"]
+open.spotify.com##footer[data-testadtype="ad-type-ad"]
+!||open.spotify.com/log/pageview$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||open.spotify.com/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||crashdump.spotify.com^*
+!||spclient.wg.spotify.com/metrics-backend/v1/metric$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||spclient.wg.spotify.com/metrics-backend/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||guc-spclient.spotify.com/melody/v1/logging/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ads-fa.spotify.com^*
+||analytics.spotify.com^*
+||log.spotify.com^*
+||heads-ec.spotify.com^*
+!upgrade.spotify.com^*
+!spclient.wg.spotify.com^*
+!sto3.spotify.com^*
+!audio-ec.spotify.com^*
+!audio2.spotify.com^*
+!weblb-wg.gslb.spotify.com^*
+!www.audio2.spotify.com^*
+!desktop.spotify.com^*
+!prod.spotify.map.fastlylb.net^* !blocks music from Spotify?
+!||d2d1dxiu3v1f2i.cloudfront.net/9e7524f/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping !blocks Spotify login
+!||d2d1dxiu3v1f2i.cloudfront.net^* !blocks Spotify login
+!||spclient.wg.spotify.com/storage-resolve/files/audio/interactive/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping !blocks all music not just ads
+!||spclient.wg.spotify.com/track-playback/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping !blocks playback after current song
+!||spclient.wg.spotify.com/melody/v1/logging/jssdk_playback_stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||spclient.wg.spotify.com/melody/v1/logging/track_stream_verification$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||spclient.wg.spotify.com/melody/v1/logging/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||spclient.wg.spotify.com/melody/v1/time$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||spclient.wg.spotify.com/ad-logic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+engineering.atspotify.com##div[class="wpcc-pushdown-wrap"]
+community.spotify.com###js-message-bar-cookie-notice
+developer.spotify.com##div[id="cookies-alert"]
+||akamaized.net/audio/$media,redirect=noop-1s.mp4:10,from=open.spotify.com
+||scdn.co/audio/$media,redirect=noop-1s.mp4:10,domain=open.spotify.com
 ||fp.weeksth.com^*
 ||niftiesrotonde.com^*
 filecrypt.co,filecrypt.cc##+js(acs, absda)
@@ -41860,13 +41862,25 @@ www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write.js, adsbygoogle)
 www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write.js, google_ad_client)
 www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write.js, enable_page_level_ads)
 www.up-4ever.net,www.up-4ever.org##div[id="gdpr-cookie-notice"]
+www.up-4ever.net,www.up-4ever.org##div[id="gdpr-cookie-notice"]:remove()
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, zfgloadedpopup)
 www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, zfgloadedpopup)
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, adsbygoogle)
-www.up-4ever.net,www.up-4ever.org##ins[class="adsbygoogle"]
+www.up-4ever.net,www.up-4ever.org##ins[data-ad-client]
+www.up-4ever.net,www.up-4ever.org##ins[data-ad-client]:remove()
+www.up-4ever.net,www.up-4ever.org##iframe[id^="aswift_"]
+www.up-4ever.net,www.up-4ever.org##iframe[id^="aswift_"]:remove()
+www.up-4ever.net,www.up-4ever.org##iframe[id^="id="google_ads_frame"]
+www.up-4ever.net,www.up-4ever.org##iframe[id^="id="google_ads_frame"]:remove()
 www.up-4ever.net,www.up-4ever.org##ins[id="adblock_detected"]
 www.up-4ever.net,www.up-4ever.org##+js(set-constant, document.querySelector("#downloadbtn").type, submit)
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, 'allowed_countries')
+www.up-4ever.net,www.up-4ever.org##+js(set-constant, cookiesAgree, noopFunc)
+www.up-4ever.net,www.up-4ever.org##+js(nostif, /function\(\)/)
+!www.up-4ever.net,www.up-4ever.org##+js(nostif, /^/)
+www.up-4ever.net,www.up-4ever.org##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+www.up-4ever.net,www.up-4ever.org##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 
 !Whitelisted
 ! blocks Kroger website?
