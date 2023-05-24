@@ -28196,7 +28196,6 @@ www.gmx.com##+js(set-constant.js, window.ui.consentPageUrl, "")
 www.gmx.com##^script:has-text(/checkIfConsentCookieIsPresent\(\)/i)
 ||videoroll.net/js/vid_vpaut_script.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 davidwalsh.name##^script:has-text(/analyticsID/i)
-||cdn.requestmetrics.com/agent/current/rm.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||davidwalsh.name/demo/gofast-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.filecad.com/js/xads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.filecad.com/themes/spirit/assets/frontend/js/cookiealert.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -41855,16 +41854,16 @@ www.up-4ever.net,www.up-4ever.org##div[id^="hiddensection"]
 www.up-4ever.net,www.up-4ever.org##+js(acs, lhzzbthn.kn)
 www.up-4ever.net,www.up-4ever.org##a[id="downLoadLinkButton"]:remove-attr(onclick)
 !www.up-4ever.net,www.up-4ever.org##+js(set-constant, document.querySelector("#downLoadLinkButton").onclick, null)
-www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, adsbygoogle)
-www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, google_ad_client)
-www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, enable_page_level_ads)
-www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write.js, adsbygoogle)
-www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write.js, google_ad_client)
-www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write.js, enable_page_level_ads)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, adsbygoogle)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, google_ad_client)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, enable_page_level_ads)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write, adsbygoogle)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write, google_ad_client)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-write, enable_page_level_ads)
 www.up-4ever.net,www.up-4ever.org##div[id="gdpr-cookie-notice"]
 www.up-4ever.net,www.up-4ever.org##div[id="gdpr-cookie-notice"]:remove()
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, zfgloadedpopup)
-www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, zfgloadedpopup)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, zfgloadedpopup)
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, adsbygoogle)
 www.up-4ever.net,www.up-4ever.org##ins[data-ad-client]
 www.up-4ever.net,www.up-4ever.org##ins[data-ad-client]:remove()
@@ -41886,6 +41885,53 @@ www.up-4ever.net,www.up-4ever.org##+js(aeld, click, window.open)
 !www.up-4ever.net,www.up-4ever.org##+js(aeld, click, onclick)
 ||prinksoncotic.com^*
 ||slnxbkskw.com^*
+||cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||kumo.network-n.com/dist/*/gpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||kumo.network-n.com/dist/*/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||kumo.network-n.com/dist/*/gpt-positions.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||kumo.network-n.com/dist/*/celtra-bfab.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+techraptor.net##div[class="optin"]
+techraptor.net##div[class="optin"]:remove()
+techraptor.net##div:remove-class(optIn)
+techraptor.net##div:remove-class(cookieChecked-false)
+techraptor.net##div:remove-class(overlay)
+! removing modal and splash are optional in activating the quiz
+!techraptor.net##div:remove-class(modal)
+!techraptor.net##div:remove-class(splash)
+techraptor.net##div[class="screen c00105 active"]:has(div[class="screeninterior"])
+techraptor.net##div[class="screen c00105 active"]:has(div[class="screeninterior"]):remove()
+techraptor.net##div[id="nn_player"]
+techraptor.net##div[id="nn_player"]:upward(1)
+! remove() causes the upward() to be ignored even though upward() precedes the remove statement.
+!techraptor.net##div[id="nn_player"]:remove()
+techraptor.net##div[class*="insticator-ads"]
+techraptor.net##div[class*="insticator-ads"]:remove()
+techraptor.net##div[id^="div-insticator-ad-"]
+techraptor.net##div[id^="div-insticator-ad-"]:remove()
+||d3lcz8vpax4lo2.cloudfront.net/ads-code/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||techraptor.net/sites/default/files/google_analytics/gtag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||techraptor.net/sites/default/files/google_analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.requestmetrics.com/agent/current/rm.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.requestmetrics.com^*
+||event.instiengage.com^*
+||geoip.instiengage.com^*
+!availedsmallest.com##+js(nostif, /function\(\)/)
+availedsmallest.com##+js(nostif, /^/)
+availedsmallest.com##+js(acs, i.Logger.log, o.console)
+availedsmallest.com##+js(set-constant, window.a7c07e85bedf339753, "")
+availedsmallest.com##+js(abort-on-property-read, window.a7c07e85bedf339753)
+availedsmallest.com##+js(abort-on-property-write, window.a7c07e85bedf339753)
+availedsmallest.com##+js(set-constant, e3f65599c9290e11014f9d5f3b877411, noopFunc)
+availedsmallest.com##+js(set-constant, adbStatus, 0)
+availedsmallest.com##+js(set-constant, iOS, noopFunc)
+availedsmallest.com##+js(acs, i.Logger.log, o.console)
+availedsmallest.com##+js(acs, debugger)
+availedsmallest.com##+js(acs, sandbox)
+availedsmallest.com##:xpath(//script[contains(text(), 'debugger')])
+availedsmallest.com##:xpath(//script[contains(text(), 'debugger')]):remove()
+availedsmallest.com##:xpath(//script[contains(text(), 'sandbox')])
+availedsmallest.com##:xpath(//script[contains(text(), 'sandbox')]):remove()
+||parentlargevia.com^*
 
 !Whitelisted
 ! blocks Kroger website?
