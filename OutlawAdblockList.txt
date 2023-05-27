@@ -1818,6 +1818,7 @@ www.facebook.com##.ego_column
 ||q1mediahydraplatform.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||track.creafi-online-media.com^*
 ||track.hubrus.com^*
+!||dp.g.doubleclick.net/apps/domainpark/domainpark.cgi$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dp.g.doubleclick.net^*
 ||ads.lanistaads.com^*
 ||ads.stickyadstv.com^*
@@ -27453,20 +27454,19 @@ sourceforge.net##div[id="dlp-voip-quote"]
 dailyuploads.net###dlink
 dailyuploads.net##+js(abort-current-script, zfgloadedpopup)
 dailyuploads.net##+js(abort-current-script, zfgloadedpushopt)
-dailyuploads.net##+js(abort-on-property-read.js, hs)
-dailyuploads.net##+js(abort-on-property-read.js, openlink)
-dailyuploads.net##+js(abort-on-property-read.js, zfgloadedpopup)
-dailyuploads.net##+js(abort-on-property-read.js, zfgloadedpushopt)
-dailyuploads.net##+js(abort-on-property-write.js, hs)
-dailyuploads.net##+js(abort-on-property-write.js, openlink)
-dailyuploads.net##+js(abort-on-property-write.js, zfgloadedpopup)
-dailyuploads.net##+js(abort-on-property-write.js, zfgloadedpushopt)
-dailyuploads.net##+js(abort-on-property-read.js, {"adblock":{},"excludes":""})
-dailyuploads.net##+js(abort-on-property-write.js, {"adblock":{},"excludes":""})
-dailyuploads.net##+js(abort-on-property-read.js, _Hasync)
-dailyuploads.net##+js(abort-on-property-write.js, _Hasync)
-dailyuploads.net##+js(abort-on-property-read.js, _gaq)
-dailyuploads.net##+js(abort-on-property-write.js, _gaq)
+dailyuploads.net##+js(abort-current-script, {"adblock":{},"excludes":""})
+dailyuploads.net##+js(abort-on-property-read, hs)
+dailyuploads.net##+js(abort-on-property-read, openlink)
+dailyuploads.net##+js(abort-on-property-read, zfgloadedpopup)
+dailyuploads.net##+js(abort-on-property-read, zfgloadedpushopt)
+dailyuploads.net##+js(abort-on-property-write, hs)
+dailyuploads.net##+js(abort-on-property-write, openlink)
+dailyuploads.net##+js(abort-on-property-write, zfgloadedpopup)
+dailyuploads.net##+js(abort-on-property-write, zfgloadedpushopt)
+dailyuploads.net##+js(abort-on-property-read, _Hasync)
+dailyuploads.net##+js(abort-on-property-write, _Hasync)
+dailyuploads.net##+js(abort-on-property-read, _gaq)
+dailyuploads.net##+js(abort-on-property-write, _gaq)
 dailyuploads.net##.ziggy_763505
 dailyuploads.net##input[type="hidden"][id="addLinkBtn"][value="#"][class="sufyan"]
 dailyuploads.net##input[value^="Download From Server"]
@@ -27481,6 +27481,8 @@ dailyuploads.net##^script:has-text(player_start)
 ||dailyuploads.net/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dailyuploads.net/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !dailyuploads.net##button[id="downloadBtnClick"] !Removed since the script to hide this button is disabled.
+dailyuploads.net##button[id="downloadBtnClick"]
+dailyuploads.net##button[id="downloadBtnClick"]:remove()
 dailyuploads.net##div[id="addLinkBtn"]
 dailyuploads.net##input[id="chkIsAdd"]
 dailyuploads.net##+js(remove-attr.js, checked, #chkIsAdd, stay)
@@ -27489,10 +27491,11 @@ dailyuploads.net##^script:has-text(#downloadBtnClick)
 dailyuploads.net##^script:has-text(#addLinkBtn)
 !dailyuploads.net##^script:has-text(document.createElement('script'))
 dailyuploads.net##^script:has-text(document.createElement)
-dailyuploads.net##button[id="downloadBtnClickOrignal"]:style(display: block; !important;)
-dailyuploads.net##[id="downloadBtnClickOrignal"]:style(display: block; !important;)
-dailyuploads.net###downloadBtnClickOrignal:style(display: block; !important;)
-dailyuploads.net##+js(set, document.querySelector("#downloadBtnClickOrignal").style, 'display:block;')
+dailyuploads.net##button[id="downloadBtnClickOrignal"]:style(display: block !important;)
+!dailyuploads.net##+js(set, document.querySelector("#downloadBtnClickOrignal").style, 'display:block;')
+dailyuploads.net##button[class*="button-"][data-user="518"]
+dailyuploads.net##button[class*="button-"][data-user="518"]:remove()
+dailyuploads.net##button[id="downloadBtnClick"]
 outlook.live.com##span[class="N3k7EN5vRGTrONWBPg250"]
 zamunda.net##div[class^="gdprcookie"]
 ||advertere.zamunda.net^*
@@ -39392,7 +39395,8 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:style(
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, _0x49fcx2)
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, _0x57e0)
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, _0x57e0)
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="ipp"]:remove()
+! Do NOT remove ipp!
+!devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="ipp"]:remove()
 devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nostif, tick)
 ! defusing intervals breaks the script which creates the token for the download
 !devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nosiif, /function\(\)/)
@@ -39411,6 +39415,14 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:style(display: block !important;)
 ! cookie-remover, /^/ removes all cookies since downloads fail after first download
 devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(cookie-remover, /^/)
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, parseInt)
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'parseInt')])
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'parseInt')]):remove()
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="div-gpt-ad-"]
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="div-gpt-ad-"]:remove()
+||adoto.net/dashboard/common/js/common.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.jsdelivr.net/gh/devuploads/devfiles@main/fonts/wp-content/plugins/best-ads-block-detector/main.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.jsdelivr.net/gh/devuploads/devfiles@main/fonts/wp-content/plugins/best-ads-block-detector/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||nimrute.com^*
 !||cdn.heycdn25.xyz/404$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.heycdn25.xyz^*
@@ -41940,6 +41952,20 @@ availedsmallest.com##+js(set-constant, console.clear, noopFunc)
 availedsmallest.com##+js(window.open-defuser, /parentlargevia.com/)
 availedsmallest.com##+js(nosiif, /^/)
 ||parentlargevia.com^*
+||dolatiaschan.com^*
+||rnynacj.erichorne.net^*
+*##html[data-adblockkey]:remove-attr(data-adblockkey)
+||d38psrni17bvxu.cloudfront.net^*
+nypost.com##iframe[id="zephr-component-1"]
+nypost.com##iframe[id="zephr-component-1"]:remove()
+nypost.com##div[class="sitewide-notice"]
+nypost.com##div[class="sitewide-notice"]:remove()
+||myfrank.xyz^*
+||mucinyak.com^*
+||dec22.live^*
+||owletguide.com^*
+||suctionautomobile.com^*
+||presentationathletefoundation.com^*
 
 !Whitelisted
 ! blocks Kroger website?
