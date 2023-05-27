@@ -38,9 +38,9 @@
 !        works or rather doesn't work, these rules force a style suited to a
 !        1920 pixel width screen.  If you screen is a different size, adjust the
 !        three rules which set this style:
-!wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
-!wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
-!wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
+!wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
+!wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
+!wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important;)
 
 ! Brave's native adblocking does not support the "has-text()" filter.
 ! Brave also does not support upward() nor remove().
@@ -24087,7 +24087,7 @@ dl.tech-story.net##+js(set-constant.js, Bt, 1)
 ||vipicmou.net^*
 ||zoaheeth.com^*
 ||udookrou.com^*
-simplywall.st##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+simplywall.st##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 ||www.umfxefqtqd.com^*
 ||umfxefqtqd.com^*
 ||www.ufmmtncv.com^*
@@ -26029,7 +26029,7 @@ nulljungle.com##+js(abort-on-property-read.js, adsbygoogle)
 !nulljungle.com##.wp-vwnsbm-axvu-blur
 !nulljungle.com##*[class*="enable-lazy-adsense"]
 !nulljungle.com##*[class*="wp-vwnsbm-axvu-blur"]
-nulljungle.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+nulljungle.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 ||log.hitsteps.net^*
 www.darkng.com##div[class="notice-content"]
 nulled.link##div[class="notice-content"]
@@ -26538,7 +26538,7 @@ doodrive.com##+js(abort-on-property-write.js, _stq)
 doodrive.com##+js(abort-on-property-read.js, _stq)
 doodrive.com##+js(abort-on-property-write.js, adsbygoogle)
 doodrive.com##+js(abort-on-property-read.js, adsbygoogle)
-doodrive.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+doodrive.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 !doodrive.com###human-verification
 !realmike.org##aside[class="widget widget_eu_cookie_law_widget"]
 realmike.org##aside[class$="widget_eu_cookie_law_widget"]
@@ -27099,7 +27099,7 @@ www.nulled-scripts.info##svg:style(overflow: scroll !important; overflow-y: scro
 !www.nulled-scripts.info##*:style(overflow: scroll !important;)
 !www.nulled-scripts.info##+js(set-constant.js, h.overflow, 'scroll')
 !www.nulled-scripts.info##+js(set-constant.js, n.overflow, 'scroll')
-www.nulled-scripts.info##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+www.nulled-scripts.info##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 !www.nulled-scripts.info##scrollbar[disabled="true"]
 !www.nulled-scripts.info##scrollbarbutton[disabled="true"]
 !www.nulled-scripts.info##slider[disabled="true"]
@@ -27242,7 +27242,7 @@ www.perlego.com##div[aria-label="cookie banner"]
 www.upload-4ever.com##+js(set-constant.js, remaining, 0)
 www.upload-4ever.com##+js(set-constant.js, timeout, 0)
 www.upload-4ever.com##+js(remove-attr.js, disabled, #downloadbtn)
-www.upload-4ever.com##button[id="downloadbtn"]:style(display:block !important)
+www.upload-4ever.com##button[id="downloadbtn"]:style(display:block !important;)
 ebookreader.best##div[id="cookieNotice"]
 bbooks.info##div[class*="cookiealert"]
 ||stawhoph.com^*
@@ -27518,10 +27518,10 @@ send.cm##iframe[style*="display: none;"]:remove()
 send.cm##iframe[style*="width: 1px;"]:remove()
 send.cm##iframe[style*="height: 1px;"]:remove()
 send.cm##+js(remove-attr, class, #fileinfo, stay)
-tusfiles.com##button[id="btn_download"]:style(display:block !important)
+tusfiles.com##button[id="btn_download"]:style(display:block !important;)
 tusfiles.com##+js(set, document.querySelector("#btn_download").disabled, false)
 userscloud.com##+js(set, document.querySelector("#btn_download").disabled, false)
-userscloud.com##button[id="btn_download"]:style(display:block !important)
+userscloud.com##button[id="btn_download"]:style(display:block !important;)
 userscloud.com##iframe[style="display: none;"]
 userscloud.com##+js(set-constant.js, window.__cfRLUnblockHandlers, true, stay)
 userscloud.com##^script:has-text(/astancerta\.fun|esusivebe\.top|dtv5loup63fac\.cloudfront.net/)
@@ -29838,7 +29838,7 @@ uploadhaven.com##button[id="submitFree"]
 !megaup.net##[id^="AdskeeperComposite"]:style(transform:translate(-999999px,0))
 !megaup.net##div[id*="AdskeeperComposite"]
 !megaup.net##.mgbox:style(transform:translate(-999999px,0))
-megaup.net##[id*="ScriptRootC"]:upward(1):style(position:absolute !important;right:3000px !important)
+megaup.net##[id*="ScriptRootC"]:upward(1):style(position:absolute !important;right:3000px !important;)
 !megaup.net##div[id="M458395ScriptRootC703218"]
 megaup.net##.metaRedirectWrapperBottomAds:style(height:100px)
 !megaup.net##div[class="metaRedirectWrapperBottomAds"]
@@ -30736,7 +30736,7 @@ www.softmaker.com##div[class="cookieconsent"]
 www.softmaker.com##div[id="CookiePopup"]
 www.lightbrick.com##div[class*="sqs-cookie-banner-v2"]
 careerkarma.com##div[id^="takeover"]
-careerkarma.com##html,body:style(overflow: scroll !important)
+careerkarma.com##html,body:style(overflow: scroll !important;)
 careerkarma.com##div[class="close-banner-btn"]
 careerkarma.com##button[id="keep-reading"]
 careerkarma.com##+js(set-constant.js, keepReading, true, stay)
@@ -32657,7 +32657,7 @@ coursesghar.com##div[class*="-blackout"]
 coursesghar.com##div[class*="-wrapper"]
 coursesghar.com##+js(aeld, blur)
 !coursesghar.com##+js(aeld, blur, function(n){if(e.bypassEventsInProxies||a.indexOf(t)<0)return s.call(this,n)})
-coursesghar.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+coursesghar.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 !linkvertise.com##*[class*="ng-star-inserted"]
 linkvertise.com##div[class^="ad-dp"]
 linkvertise.com##div[id="headerTopAd"]
@@ -32695,7 +32695,7 @@ www.pornhub.com##a[class="ad-link"]
 www.tutsgalaxys.com##+js(aeld, blur)
 www.tutsgalaxys.com##ins[data-ad-client]
 !www.tutsgalaxys.com##div:has-text(Advertisement)
-www.tutsgalaxys.com##a[id="download"]:style(display:inline !important)
+www.tutsgalaxys.com##a[id="download"]:style(display:inline !important;)
 ||firsthanddisagree.com^*
 ||analytics.1ove.club^*
 !||freecoursesite.com/wp-content/plugins/deblocker/js/ads.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -32706,7 +32706,7 @@ www.tutsgalaxys.com##a[id="download"]:style(display:inline !important)
 ||freecoursesite.com/cdn-cgi/challenge-platform/h/g/scripts/invisible.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 freecoursesite.com##div[class*="-blackout"]
 freecoursesite.com##div[class*="-wrapper"]
-freecoursesite.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+freecoursesite.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 freecoursesite.com##.adcontainer
 freecoursesite.com##.adsbygoogle
 ! This line prevents the need to block all inline scripts in dynamic filter for freecoursesite.com.
@@ -32731,7 +32731,7 @@ myshrinker.com##a[id="366813813"]
 ||www.free-tutorials.us/wp-content/uploads/erzsjtnao.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.free-tutorials.us##ins[data-ad-client]
 !www.free-tutorials.us##+js(set, counter, -1, stay)
-!www.free-tutorials.us##a[id="download"]:style(display:inline !important)
+!www.free-tutorials.us##a[id="download"]:style(display:inline !important;)
 www.free-tutorials.us##+js(acs, downloadButton)
 www.free-tutorials.us##+js(aopr, downloadButton)
 www.free-tutorials.us##+js(aopw, downloadButton)
@@ -33554,7 +33554,7 @@ hd.crichd.run##div[id="UnMutePlayer"]:remove()
 ||www.sportrar.tv/js/cookiepop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 theappstore.org##div[id="ad123"]:remove()
 theappstore.org##div[id="divalert"]:remove()
-theappstore.org##div[id="bodypanel"]:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+theappstore.org##div[id="bodypanel"]:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 ||yudmhvxfwbjnny.com^*
 ||erebelfare.xyz^*
 ||www.vanjyvsr.com^*
@@ -34118,7 +34118,7 @@ apkmagic.com.ar##+js(aopw, zWZwPTh1e)
 apkmagic.com.ar##+js(aopr, zWZwPTh1e)
 apkmagic.com.ar##+js(set-constant, tquavhigkypwrload, true, stay)
 apkmagic.com.ar##+js(set-constant, zWZwPTh1e, null, stay)
-apkmagic.com.ar##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+apkmagic.com.ar##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 book.hacktricks.xyz##a[href$="//policies.gitbook.com/privacy/cookies"]:upward(7)
 coderslegacy.com##span[class*="ezoic-ad"]
 coderslegacy.com##span[class*="adtester-container"]
@@ -34256,7 +34256,7 @@ dlsite.win##div[id="frameContainer"]
 dlsite.win##+js(remove-attr, disabled, #go-submit, stay)
 dlsite.win##+js(remove-class, hidden, #go-submit, stay)
 dlsite.win##+js(remove-class, hidden, #go-link, stay)
-dlsite.win##button[id="go-submit"]:style(display:block !important)
+dlsite.win##button[id="go-submit"]:style(display:block !important;)
 ||interbuzznews.com^*
 ||xml.ppctraffic.co^*
 ||apathylahuli.website^*
@@ -34924,7 +34924,7 @@ freeudemycourse.com##div[class^="wp-"][class*="-modal"]:remove()
 freeudemycourse.com##div[class^="wp-"][class*="-wrapper"]:remove()
 freeudemycourse.com##div[class^="wp-"][class*="-blackout"]:remove()
 freeudemycourse.com##ins[data-ad-client]
-freeudemycourse.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+freeudemycourse.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 !||d3t3bxixsojwre.cloudfront.net^*
 ||dby7kx9z9yzse.cloudfront.net^*
 courses99.com##+js(nano-sib, , *, 0.01)
@@ -35009,7 +35009,7 @@ freecoursesites.com##+js(aopr, window.OneSignal)
 freecoursesites.com##+js(aopw, window.OneSignal)
 ||freecoursesites.com/wp-content/cache/minify/e66a8.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !freecoursesites.com##+js(remove-class, ebjcvuifjsgz-blur, body, stay)
-freecoursesites.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+freecoursesites.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 www.freetutorialseu.com##ins[data-ad-client]
 ||stylishblock.com^*
 ||glaivoun.net^*
@@ -35164,7 +35164,7 @@ techlivo.com##script[src^="data:text/javascript;base64,"]
 !||techlivo.com/wp-content/litespeed/js/eda7f087c666fba13a9546a007488a76.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 raabta.net##div[id="tie-popup-adblock"]
 raabta.net##html:style(overflow: scroll !important; overflow-y: scroll !important;)
-raabta.net##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+raabta.net##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 raabta.net##script[id^="google_gtagjs-js"]
 raabta.net##ins[data-ad-client]
 raabta.net##+js(aopr, adsbygoogle)
@@ -35455,7 +35455,7 @@ whncourses.com##div[class*="-blackout"]
 whncourses.com##div[class*="-wrapper"]
 whncourses.com##script[id^="google_gtagjs"]
 whncourses.com##+js(remove-class, /wp-\w+-blur/, body) 
-whncourses.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+whncourses.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 ||pingback.giphy.com^*
 www.techwhoop.com##div[class*="ezo_ad"]
 www.techwhoop.com##span[class*="ezoic-ad"]
@@ -35489,7 +35489,7 @@ tutorialsplanet.net##ins[data-ad-client]
 tutorialsplanet.net##div[class$="-blackout active"]:remove()
 tutorialsplanet.net##div[class$="-wrapper"]:remove()
 tutorialsplanet.net##div[class$="-modal active"]:remove()
-tutorialsplanet.net##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+tutorialsplanet.net##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 tutorialsplanet.net##+js(remove-class, jwych-pubadban, div)
 tutorialsplanet.net##+js(acs, decodeURIComponent)
 ||uklyeconnected.monster/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -36448,7 +36448,7 @@ livsavr.co##+js(acs, debugger)
 livsavr.co##^script:has-text(debugger)
 livsavr.co##+js(aopr, _audins_dom)
 livsavr.co##+js(aopw, _audins_dom)
-livsavr.co##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+livsavr.co##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 www.awwwards.com##div[id="banner-cookies"]
 ||tracker.metricool.com^*
 ||livsavr.co/detroitchicago/grapefruit.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -37044,7 +37044,7 @@ www.openpr.com##div[id="cmpbox2"]
 www.openpr.com##div[id="cmpbox"]
 www.openpr.com##div[id="ad-leaderboard"]
 www.openpr.com##ins[data-ad-client]
-www.openpr.com##body:style(overflow: scroll !important)
+www.openpr.com##body:style(overflow: scroll !important;)
 !||cdn.consentmanager.net/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.consentmanager.net^*
 ||venge.io/adblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -37114,8 +37114,8 @@ tv247us.com,tv247.us##+js(acs, advanced_ads_ready)
 tv247us.com,tv247.us##div[id="vvv"]:remove-class(jw-flag-user-inactive)
 tv247us.com,tv247.us##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
 tv247us.com,tv247.us##input[type="button"][aria-label="play"]:remove-attr(disabled)
-!tv247us.com,tv247.us##div[id="vvv"]:style(width:1280px !important; height: 720px !important)
-tv247us.com,tv247.us##div[id="vvv"]:style(width: 100vw !important; height: 100vh !important)
+!tv247us.com,tv247.us##div[id="vvv"]:style(width:1280px !important; height: 720px !important;)
+tv247us.com,tv247.us##div[id="vvv"]:style(width: 100vw !important; height: 100vh !important;)
 ||nginx-cf.maxcdn.info/country_blocker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !www.ustream.to##+js(acs, eval)
 !www.ustream.to##+js(noeval)
@@ -37230,15 +37230,15 @@ docs.bibisco.com##div[data-rnwrdesktop-1moh23t-e1k2in="true"][data-rnwr700-1moh2
 ||theodyscreams.store^*
 !!en.wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important;)
 ! for 3440 pixels width monitor
-!wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3400px !important; max-width: 3400px !important)
-!wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 50px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3400px !important; max-width: 3400px !important)
-!wikipedia.org##div[class="mw-content-container"]:style(width: 3070px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3070px !important; max-width: 3070px !important)
-!!wikipedia.org##div[class="mw-body"]:style(width: 3070px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3070px !important; max-width: 3070px !important)
+!wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3400px !important; max-width: 3400px !important;)
+!wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 50px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3400px !important; max-width: 3400px !important;)
+!wikipedia.org##div[class="mw-content-container"]:style(width: 3070px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3070px !important; max-width: 3070px !important;)
+!!wikipedia.org##div[class="mw-body"]:style(width: 3070px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 3070px !important; max-width: 3070px !important;)
 ! for 1920 pixels width monitor
-wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
-wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important)
-wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
-!wikipedia.org##div[class="mw-body"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important)
+wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
+wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
+wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important;)
+!wikipedia.org##div[class="mw-body"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important;)
 sosmediacorp.com##div[id="cookie"]
 www.cnn.com##div[class^="terms-of-service"]
 !||www.cnn.com/media/sites/js/bundles/business-adfuel.min.js
@@ -37485,7 +37485,7 @@ tv.ustvgo.live##nav:has-text(Please disable your ad blocker):remove()
 tv.ustvgo.live##section:has-text(Please disable your ad blocker)
 tv.ustvgo.live##section:has-text(Please disable your ad blocker):remove()
 tv.ustvgo.live##+js(set, ai_run_scripts, noopFunc)
-!tv.ustvgo.live##*:style(opacity: 1.0 !important; filter: blur(0px) brightness(100%) !important; -webkit-filter: blur(0px) brightness(100%) !important)
+!tv.ustvgo.live##*:style(opacity: 1.0 !important; filter: blur(0px) brightness(100%) !important; -webkit-filter: blur(0px) brightness(100%) !important;)
 !tv.ustvgo.live##body > script:nth-child(40):remove()
 !tv.ustvgo.live##body > script:nth-child(41):remove()
 tv.ustvgo.live##img[id="nielsen-s2s-audit-ping"]
@@ -38487,7 +38487,7 @@ lato.sx##+js(set, v_height, 720)
 lato.sx##+js(no-setTimeout-if, function)
 lato.sx##^script[admn][admc][zid][did]
 lato.sx##script[admn][admc][zid][did]
-lato.sx##iframe[src^="https://switchcast2.com/embedhls.php"]:style(overflow:hidden;height:100vh !important;width:100vw !important)
+lato.sx##iframe[src^="https://switchcast2.com/embedhls.php"]:style(overflow:hidden;height:100vh !important;width:100vw !important;)
 ||switchcast2.com/blast.js$script
 ||fox.tagger.opecloud.com^*
 ||statistic-data.com^*
@@ -39212,7 +39212,7 @@ en.myshows.me##div[class="DefaultLayout-footer-ads"]
 en.myshows.me##div[class="DefaultLayout-footer-ads"]:remove()
 livenewschat.eu##div[id="secondary"]
 livenewschat.eu##div[id="secondary"]:remove()
-livenewschat.eu##div[id="primary"]:style(width: 100vw !important)
+livenewschat.eu##div[id="primary"]:style(width: 100vw !important;)
 livenewschat.eu##main[id="main"]:style(width: 100vw !important; height: 100vh !important;)
 livenewschat.eu##div[class*="ast-container"]:style(max-width: 100vw !important;)
 livenewschat.eu##div[data-freestar-ad]
@@ -40579,7 +40579,7 @@ dropgalaxy.com,dropgalaxy.in##button[id="method_free"]:remove-attr(disabled)
 dropgalaxy.com,dropgalaxy.in##.btn-info.btn-sm.btn-block.btn
 dropgalaxy.com,dropgalaxy.in##.btn-info.btn-sm.btn-block.btn:remove()
 dropgalaxy.com,dropgalaxy.in##div[class="alert alert-danger mb-3"]
-dropgalaxy.com,dropgalaxy.in#@#div[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important)
+dropgalaxy.com,dropgalaxy.in#@#div[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important;)
 dropgalaxy.com,dropgalaxy.in##div[id^="div-gpt-ad-"]
 dropgalaxy.com,dropgalaxy.in##div[id^="div-gpt-ad-"]:remove()
 dropgalaxy.com,dropgalaxy.in##+js(aopr, data-ad-client)
@@ -41426,12 +41426,12 @@ www.quora.com##div[id$="signup_wall_wrapper"]
 www.quora.com##.qu-zIndex--alert.qu-overflow--hidden.qu-justifyContent--center.qu-alignItems--center.q-flex
 www.quora.com##+js(remove-class, js-focus-visible)
 www.quora.com##+js(remove-attr, data-js-focus-visible)
-www.quora.com##div[class="q-box qu-overflow--hidden"]:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+www.quora.com##div[class="q-box qu-overflow--hidden"]:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 !www.quora.com##div[id="flexbox-root"]:style(overflow:scroll;)
 www.quora.com##div[id="flexbox-root"]
 www.quora.com##div[class*="qu-zIndex--blocking_wall"]
 www.quora.com##+js(remove-class, qu-overflow--hidden, ,)
-www.quora.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important)
+www.quora.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 www.quora.com##button[class="q-click-wrapper qu-active--textDecoration--none qu-focus--textDecoration--none ClickWrapper___StyledClickWrapperBox-zoqi4f-0 bIwtPb base___StyledClickWrapper-lx6eke-1 fURggN puppeteer_test_read_more_button  qu-borderRadius--pill qu-alignItems--center qu-justifyContent--center qu-whiteSpace--nowrap qu-userSelect--none qu-display--inline-flex qu-bg--gray_ultralight qu-tapHighlight--white qu-textAlign--center qu-cursor--pointer qu-hover--textDecoration--none"]
 www.quora.com##div[class*="question_page_ad"]
 www.quora.com##iframe[name^="__privateStripeMetricsController"]
