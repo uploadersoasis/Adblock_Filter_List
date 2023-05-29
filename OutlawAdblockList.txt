@@ -11767,6 +11767,7 @@ haxdown.com##.bannersinglefot:nth-of-type(2) > a[href^="http://hdwn.siomi.tech/"
 !||secure.p04.eloqua.com/visitor/v200/svrGP$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||*.eloqua.com/visitor/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.criteo.net/js/ld/publishertag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.criteo.net/js/ld/publishertag.prebid.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.cash-duck.com/AF_TA/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||silrfbopbobw.com^*
 ||www.silrfbopbobw.com^*
@@ -38917,18 +38918,25 @@ www.digitbin.com##div[class^="code-block code-block-"]:has(div:has-text(Advertis
 ||www.ujlrvzfws.com^*
 ||nevail.com/script/$script
 cricplay2.xyz##^script[id="_waumnk"]
+cricplay2.xyz##^script[id="_waumnk"]:remove()
 cricplay2.xyz##script[id="_waumnk"]
+cricplay2.xyz##script[id="_waumnk"]:remove()
 !cricplay2.xyz##+js(nostif, /^/)
 !cricplay2.xyz##+js(nostif, function())
 !cricplay2.xyz##+js(nostif, function)
 !cricplay2.xyz##+js(nostif, /^function()/)
 cricplay2.xyz##+js(nostif, /^function\(\)/)
-cricplay2.xyz##+js(set, v_width, "100vw")
-!cricplay2.xyz##+js(set, v_height, 700)
-cricplay2.xyz##+js(set, v_height, "100vh")
+! These v_width and v_height values are being ignored for some reason.
+cricplay2.xyz##+js(set-constant, v_width, "100vw")
+!cricplay2.xyz##+js(set-constant, v_width, "100%")
+cricplay2.xyz##+js(set-constant, v_height, "100vh")
+!cricplay2.xyz##+js(set-constant, v_height, "100%")
+!cricplay2.xyz##+js(set-constant, v_height, 700)
 cricplay2.xyz##+js(aopr, _Hasync)
 cricplay2.xyz##+js(aopw, _Hasync)
-!||cricplay2.xyz/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cricplay2.xyz/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+cricplay2.xyz##iframe[src*="://millionscast.com/embedcr.php"]:style(width: 100% !important; height: 100% !important;)
+cricplay2.xyz##+js(aeld, click)
 ||spated.com/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||spated.com/script/i.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||uptimecdn.com/prod/redirect.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,domain=cricplay2.xyz
@@ -38946,6 +38954,13 @@ millionscast.com##+js(aopw, _Hasync)
 millionscast.com##+js(acs, window.f82f079c58b9ae7bdad78f9cd5659934)
 millionscast.com##+js(aopr, window.f82f079c58b9ae7bdad78f9cd5659934)
 millionscast.com##+js(aopw, window.f82f079c58b9ae7bdad78f9cd5659934)
+! Set these v_width and v_height values @ millionscast.com instead where the script which uses them is hosted; doesn't appear to work here either although values are reflected in console.
+millionscast.com##+js(set-constant, v_width, "100vw")
+!millionscast.com##+js(set-constant, v_width, "100%")
+millionscast.com##+js(set-constant, v_height, "100vh")
+!millionscast.com##+js(set-constant, v_height, "100%")
+!millionscast.com##+js(set-constant, v_height, 700)
+millionscast.com##div[id="player"]:style(width: 100vw !important; height: 100vh !important;)
 ||ufojwpgypela.xyz^*
 ||www.xyjaewocysv.com^*
 ||wasgildedall.com^*
@@ -40717,6 +40732,8 @@ dropgalaxy.*,techssting.com##[target="_blank"]:has-text(Download)
 dropgalaxy.com,dropgalaxy.in##div[id="proxymsg"]
 dropgalaxy.com,dropgalaxy.in##script[onerror="absda()"]
 dropgalaxy.com,dropgalaxy.in##div[id="analytics"]
+dropgalaxy.com,dropgalaxy.in##script[id="interactive_js_adcode"]
+dropgalaxy.com,dropgalaxy.in##script[id="interactive_js_adcode"]:remove()
 dropgalaxy.*,financemonk.net###operadata + br + [href][target="_blank"]
 dropgalaxy.*,financemonk.net##body > div[style^="position: fixed; display: block"]
 dropgalaxy.*,financemonk.net##.adsbygoogle:style(max-height: 1px !important;)
@@ -41966,6 +41983,26 @@ nypost.com##div[class="sitewide-notice"]:remove()
 ||owletguide.com^*
 ||suctionautomobile.com^*
 ||presentationathletefoundation.com^*
+||nllrhlpeasix.xyz^*
+||sync.quantumdex.io/usersync/pbjs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||1437953666.rsc.cdn77.org/publisher/8235c396-1489-11ed-a103-371449b6c804/pubAds.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||1437953666.rsc.cdn77.org/publisher/*/pubAds.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||lcwyxbxevu.xyz^*
+!||cdn.jsdelivr.net/gh/fineshop/plus-ui@2.7/main/ads/adsbygoogle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.jsdelivr.net/gh/fineshop/plus-ui@*/main/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.jsdelivr.net/gh/devuploads/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||1437953666.rsc.cdn77.org/publisher/8235c396-1489-11ed-a103-371449b6c804/truereachAdRender.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||1437953666.rsc.cdn77.org/publisher/*/truereachAdRender.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||annrgyvv.xyz^*
+||vhydgqplmbbrdq.com^*
+||woovoree.net^*
+||shugnais.net^*
+||paluedudd.com^*
+||ustive.com^*
+!||lumos.vmware.com/plugin/analytics/assets/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||lumos.vmware.com/plugin/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||docs.vmware.com/uicontent/scripts/analytics/tech-pub-analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||docs.vmware.com/uicontent/scripts/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! blocks Kroger website?
