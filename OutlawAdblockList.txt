@@ -40353,7 +40353,6 @@ sbnet.one##+js(aeld, /contextmenu|keydown/)
 ! put this at the end of sbnet.one entries since it is a hard-coded path and removed elements above it would affect it.
 sbnet.one##:xpath("/html/body/div[4]")
 sbnet.one##:xpath("/html/body/div[4]"):remove()
-||houseofblogger.com^*
 ||r3chedwiki.cfd^*
 ||vtlyycqqfrrtp.com^*
 ||raunowhy.xyz^*
@@ -40770,6 +40769,8 @@ dropgalaxy.com,dropgalaxy.in##iframe[id="debug_vi-smartbanner-unit"]
 dropgalaxy.com,dropgalaxy.in##iframe[id="debug_vi-smartbanner-unit"]:remove()
 dropgalaxy.com,dropgalaxy.in##iframe[src^="https://a2zapk.io/dl/postifram.php"]
 dropgalaxy.com,dropgalaxy.in##iframe[src^="https://a2zapk.io/dl/postifram.php"]:remove()
+dropgalaxy.com##div[id="analytics"]
+dropgalaxy.com##div[id="analytics"]:remove()
 financemonk.net##+js(nowoif)
 financemonk.net##[href^="https://bit.ly/"]
 financemonk.net##iframe[id*="_mN_main_"]
@@ -42003,6 +42004,13 @@ nypost.com##div[class="sitewide-notice"]:remove()
 ||lumos.vmware.com/plugin/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||docs.vmware.com/uicontent/scripts/analytics/tech-pub-analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||docs.vmware.com/uicontent/scripts/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! ||houseofblogger.com^* prevents DropGalaxy downloads from working; no, at least not by itself.
+||assettlender.info^*
+||mackledcity.com^*
+||misarea.com^*
+||misfields.com^*
+||www.ambrs.online^*
+||muzzlematrix.com^*
 
 !Whitelisted
 ! blocks Kroger website?
