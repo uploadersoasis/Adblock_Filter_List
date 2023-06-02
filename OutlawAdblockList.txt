@@ -39351,8 +39351,22 @@ devuploads.com##+js(acs, iframenone, iframev)
 devuploads.com##img[id="featuredimage"]
 ! removing img[id="featuredimage"] prevents the xd value from being set so the final download will not work.
 !devuploads.com##img[id="featuredimage"]:remove()
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'googletag.')])
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'googletag.')]):remove()
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##img[id="featuredimage"]
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##img[id="featuredimage"]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isAdmin, true)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_front, {"":""})
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_js_code, false)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, b2a, noopFunc)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_adb_process_blocks, noopFunc)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, ai_js_code)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, ai_js_code)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, ai_front)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, ai_front)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, ai_adb_process_blocks)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, ai_adb_process_blocks)
+dev.miuiflash.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, atob, decodeURIComponent)
 dev.miuiflash.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, iframenone, iframev)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, gtag, noopFunc)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, gtag)
@@ -39378,9 +39392,16 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="336x280_"]
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="336x280_"]:remove()
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="300x250_"]
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="300x250_"]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set, window.googletag, [])
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag, {})
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, window.googletag, [])
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, window.googletag)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, window.googletag)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.cmd.push, noopFunc)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, googletag.cmd.push)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, googletag.cmd.push)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.enableServices, noopFunc)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, googletag.enableServices)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, googletag.enableServices)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="plzwait"]
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="plzwait"]:remove()
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="Blocked"]
@@ -39391,6 +39412,8 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]:remove()
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##^script[disable-devtool-auto]
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##^script[disable-devtool-auto]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##^script[id="generate-a11y"]
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##^script[id="generate-a11y"]:remove()
 *$frame,redirect-rule=noopframe,from=djxmaza.in|thecubexguide.com
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##html.i-amphtml-inabox
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnc"]
@@ -42011,6 +42034,24 @@ nypost.com##div[class="sitewide-notice"]:remove()
 ||misfields.com^*
 ||www.ambrs.online^*
 ||muzzlematrix.com^*
+!finance.yahoo.com##div[class*="adsStreamWrapper"]
+!finance.yahoo.com##div[class*="adsStreamWrapper"]:remove()
+finance.yahoo.com##div[id="jacPosition_OpenWebWidget"]
+finance.yahoo.com##div[id="jacPosition_OpenWebWidget"]:remove()
+||superbet.pl^*
+||dzapk.com/vendor/cookieconsent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+uvnc.com##iframe[id^="google_ads_"]
+uvnc.com##iframe[id^="google_ads_"]:remove()
+uvnc.com##iframe[name="googlefcPresent"]
+uvnc.com##iframe[name="googlefcPresent"]:remove()
+uvnc.com##ins[data-ad-client]
+uvnc.com##ins[data-ad-client]:remove()
+uvnc.com##+js(set-constant, signalGooglefcPresent, noopFunc)
+uvnc.com##+js(set-constant, adsbygoogle, [])
+uvnc.com##+js(abort-on-property-read, adsbygoogle)
+uvnc.com##+js(abort-on-property-write, adsbygoogle)
+||uvnc.com/modules/mod_ablockdetector/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||fundingchoicesmessages.google.com^*
 
 !Whitelisted
 ! blocks Kroger website?
