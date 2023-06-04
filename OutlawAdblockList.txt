@@ -39950,9 +39950,13 @@ voe.sx,scatch176duplicities.com##+js(set-constant, c74a68dfbd15fcd6f23a6b26879bc
 voe.sx,scatch176duplicities.com##+js(set-constant, adbStatus, 1)
 voe.sx,scatch176duplicities.com##+js(aeld, /contextmenu|keydown/)
 voe.sx,scatch176duplicities.com##+js(acs, debugger, console.clear)
-voe.sx,scatch176duplicities.com##+js(nostif, c74a68dfbd15fcd6f23a6b26879bc82e)
+!voe.sx,scatch176duplicities.com##+js(nostif, c74a68dfbd15fcd6f23a6b26879bc82e)
+voe.sx,scatch176duplicities.com##+js(nostif, /^/)
 voe.sx,scatch176duplicities.com##a[href^="https://desperationembassy.com/"]
 voe.sx,scatch176duplicities.com##a[href^="https://desperationembassy.com/"]:remove()
+voe.sx,scatch176duplicities.com##+js(aopw, window.c1f1f6cd617)
+voe.sx,scatch176duplicities.com##+js(aopr, window.c1f1f6cd617)
+voe.sx,scatch176duplicities.com##+js(acs, encodeURIComponent, decodeURIComponent)
 upstream.to##+js(set-constant, gtag, noopFunc)
 upstream.to##+js(set-constant, FabUtils, noopFunc)
 upstream.to##+js(set-constant, FabPlugin, noopFunc)
@@ -42061,6 +42065,13 @@ uvnc.com##+js(abort-on-property-write, adsbygoogle)
 ||serasearchtop.com^*
 ||haveaniceday.gitee.com^*
 ||raw.githubusercontent.com/wmcmurray/just-detect-adblock/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||makingdevil.com^*
+||hauganes.net^*
+||ahvmsyemcldyjjr.com^*
+facebook.github.io##a[href*="://opensource.facebook.com/support-ukraine"]
+facebook.github.io##a[href*="://opensource.facebook.com/support-ukraine"]:remove()
+facebook.github.io##div[class="socialBanner"]
+facebook.github.io##div[class="socialBanner"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
