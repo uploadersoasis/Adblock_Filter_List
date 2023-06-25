@@ -25058,7 +25058,10 @@ www.4shared.com##div.d1AdsWrapper
 www.4shared.com##div[class="adBlockWarningMessage"]
 www.4shared.com##div[class="cookies-holder"]
 www.4shared.com##div[class^="cookies-notice"]
+www.4shared.com##div[class^="cookies-notice"]:remove()
 www.4shared.com##div[class^="vidAdHolder"]
+!www.4shared.com##div[class="freeDownloadButton"]
+www.4shared.com##div[class*="vidAdHolder"]
 ||4shared.mozcloud.net^*
 !||cdnstatic.4shared.com/js/adlogger_tracker.4min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdnstatic.4shared.com/js/adlogger_tracker.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -25076,13 +25079,33 @@ www.4shared.com##div[class^="vidAdHolder"]
 !||www.4shared.com/show_ad_.xml$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.4shared.com/show_ad_.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.4shared.com/sw_1855972.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.4shared.com##+js(set-constant, document.querySelector("#jsTrafficLimitExceeded").value, false)
-www.4shared.com##+js(set-constant, document.querySelector("#secondsLeft").value, 0)
-www.4shared.com##+js(set-constant, document.querySelector("#troublesText2").style, display: block;)
+||www.4shared.com/dataCollect.jsp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.4shared.com##+js(abort-on-property-read, targetElemID)
+www.4shared.com##+js(abort-on-property-write, targetElemID)
+||static.4shared.com/js/relativeScript.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.4shared.com/js/facebookInit.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.4shared.com##+js(aopw, cookiesMessage)
+www.4shared.com##+js(aopr, cookiesMessage)
+www.4shared.com##^script:has-text(trackAdBlock)
+www.4shared.com##^script:has-text(ld.counter)
+! doesn't work
+!www.4shared.com##^script:has-text(cmwoejfwnldnkg):remove()
+!www.4shared.com##+js(nosiif, /^/)
+www.4shared.com##+js(nosiif, b)
+!www.4shared.com##+js(nano-stb, , *, 0.01)
+www.4shared.com##+js(remove-class, hintDuringCounter, #troublesText1)
+www.4shared.com##+js(remove-class, hintDuringCounter, #troublesText2)
+www.4shared.com###troublesText2:style(display: block !important;)
+www.4shared.com##+js(set-constant, d2CounterValue, -1, stay)
+!www.4shared.com##+js(set-constant, document.querySelector("#jsTrafficLimitExceeded").value, false)
+! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
+www.4shared.com##+js(sa, value, false, #jsTrafficLimitExceeded)
+!www.4shared.com##+js(set-constant, document.querySelector("#secondsLeft").value, 0)
+www.4shared.com##+js(sa, value, 0, #secondsLeft)
 !www.4shared.com##+js(set-constant, document.querySelector("#baseDownloadLink").type, text)
+!www.4shared.com##+js(sa, type, text, #baseDownloadLink)
 !www.4shared.com##+js(set-constant, document.querySelector("#baseDownloadLink").type, submit)
-www.4shared.com##+js(abort-on-property-read.js, targetElemID)
-www.4shared.com##+js(abort-on-property-write.js, targetElemID)
+www.4shared.com##+js(sa, type, submit, #baseDownloadLink)
 ||atharori.net/index/ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||api.pushnami.com/scripts/v1/hub$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||api.pushnami.com/scripts/v1/pushnami-adv/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -29679,11 +29702,6 @@ www.igorslab.de##^script[id^="advadsTracking"]
 ||www.igorslab.de/wp-content/plugins/complianz-gdpr/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 apnews.com##div[id="div-gpt-ad"]
 apnews.com##div[id="onetrust-banner-sdk"]
-www.4shared.com##+js(remove-class, hintDuringCounter, #troublesText1)
-www.4shared.com##+js(remove-class, hintDuringCounter, #troublesText2)
-www.4shared.com##+js(set-constant, d2CounterValue, -1, stay)
-!www.4shared.com##div[class="freeDownloadButton"]
-www.4shared.com##div[class*="vidAdHolder"]
 www.androidcentral.com##section[class*="article-footer--taboola"]
 www.skidrowreloaded.com##+js(aeld, /mousedown/i)
 www.skidrowreloaded.com##+js(aeld, /click/i)
@@ -34412,18 +34430,7 @@ www.pcgamesn.com##.new_affiliate_embed
 ||www.codemonkey.me.uk/php/ping_database.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||seeptoag.net/pfe/current/tag.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tr-un.unative.com^*
-||static.4shared.com/js/relativeScript.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||static.4shared.com/js/facebookInit.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.4shared.com##+js(aopw, cookiesMessage)
-www.4shared.com##+js(aopr, cookiesMessage)
-www.4shared.com##^script:has-text(trackAdBlock)
-www.4shared.com##^script:has-text(ld.counter)
-! doesn't work
-!www.4shared.com##^script:has-text(cmwoejfwnldnkg):remove()
 ||www.jscount.com/a/*/z?ref=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!www.4shared.com##+js(nosiif, /^/)
-www.4shared.com##+js(nosiif, b)
-||www.4shared.com/dataCollect.jsp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||data-secure.circulate.com/dapi/collect$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.legendsworld.net##+js(aopw, document.onmousedown)
 www.legendsworld.net##+js(aopr, document.onmousedown)
@@ -35677,7 +35684,6 @@ web.archive.org##+js(remove-class, variant-dark, body)
 web.archive.org##+js(remove-attr, style, body)
 web.archive.org##*:style(visibility: visible !important;)
 web.archive.org##div[id^="donato"]
-!www.4shared.com##+js(nano-stb, , *, 0.01)
 ||cdn.discordapp.com/attachments/981225862621966446/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.file-upload.com/mngez/js/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 cpmlink.net##div[id^="ad-display-section"]
@@ -42132,6 +42138,16 @@ search.brave.com##div[id^="premium-promo"]:remove()
 ||d3nonv7jx74md4.cloudfront.net^*
 www.caiman.us##a[href*="://www.csdmotors.be"]
 www.caiman.us##a[href*="://www.csdmotors.be"]:remove()
+tumblr.com##div[id="glass-container"]
+tumblr.com##div[id="glass-container"]:remove()
+tumblr.com##div[class="TopeC"]
+tumblr.com##div[class="TopeC"]:remove()
+tumblr.com##div[class="follow-teaser"]
+tumblr.com##div[class="follow-teaser"]:remove()
+||ads-alpha.ewscloud.com^*
+||zn4tjp6k5ql8j93rywvw-newsy.siteintercept.qualtrics.com^*
+!||hbx.media.net/bidexchange.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||hbx.media.net^*
 
 !Whitelisted
 ! blocks Kroger website?
