@@ -42148,6 +42148,63 @@ tumblr.com##div[class="follow-teaser"]:remove()
 ||zn4tjp6k5ql8j93rywvw-newsy.siteintercept.qualtrics.com^*
 !||hbx.media.net/bidexchange.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||hbx.media.net^*
+||kytesconge.com^*
+||carmeleanurous.com^*
+uploadbuzz.cc##a[href*="://7starhd.toys/"]
+uploadbuzz.cc##a[href*="://7starhd.toys/"]:remove()
+www.winsoftware.de##div[id="mbmcookie"]
+www.winsoftware.de##div[id="mbmcookie"]:remove()
+www.winsoftware.de##ins[data-ad-client]
+www.winsoftware.de##ins[data-ad-client]:remove()
+www.winsoftware.de##div[class="topbanner"]
+www.winsoftware.de##div[class="topbanner"]:remove()
+www.winsoftware.de##+js(set-constant, gtag, noopFunc)
+www.winsoftware.de##section[id="dl-hinweis-chrome"]
+www.winsoftware.de##section[id="dl-hinweis-chrome"]:remove()
+! prevents download page from completely loading
+!gofile.io##+js(set-constant, launchAppLixirAd, noopFunc)
+! prevents download page from completely loading
+!gofile.io##+js(acs, launchAppLixirAd)
+gofile.io##*[id^="AppLixirAd"]
+gofile.io##*[id^="AppLixirAd"]:remove()
+gofile.io##div[id="adsATF"]
+gofile.io##div[id="adsATF"]:remove()
+gofile.io##div[id="adsBTF"]
+gofile.io##div[id="adsBTF"]:remove()
+!gofile.io##:xpath(/html/body/div[5])
+!gofile.io##:xpath(/html/body/div[5]):remove()
+gofile.io##:xpath(/html/body/div[4]/div)
+gofile.io##:xpath(/html/body/div[4]/div):remove()
+gofile.io##div[class="modal-backdrop show"]
+gofile.io##div[class="modal-backdrop show"]:remove()
+woowebtools.com##ins[data-ad-client]
+woowebtools.com##ins[data-ad-client]:remove()
+woowebtools.com##+js(set-constant, gtag, noopFunc)
+woowebtools.com##+js(acs, gtag)
+! prevents page from loading
+!woowebtools.com##+js(acs, decodeURIComponent, eval)
+! prevents page from loading
+!woowebtools.com##+js(acs, parseInt, arguments)
+woowebtools.com##+js(abort-on-property-read, adsbygoogle)
+woowebtools.com##+js(abort-on-property-write, adsbygoogle)
+woowebtools.com##a[class="krj4aaj4wg"]
+woowebtools.com##a[class="krj4aaj4wg"]:remove()
+! prevents captcha from completing
+!woowebtools.com##:xpath(/html/body/div[2])
+!woowebtools.com##:xpath(/html/body/div[2]):remove()
+drive.online-fix.me##.download-button:remove-attr(onclick)
+drive.online-fix.me##.download-button:remove-attr(disabled)
+drive.online-fix.me##.get-key-button:remove-attr(disabled)
+! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
+drive.online-fix.me##+js(sa, disabled, false, .download-button)
+drive.online-fix.me##+js(sa, type, submit, .download-button)
+drive.online-fix.me##+js(sa, disabled, false, .get-key-button)
+drive.online-fix.me##+js(sa, aria-hidden, false, #downloadModal)
+drive.online-fix.me##div[id="downloadModal"]:style(display: block !important;)
+drive.online-fix.me##div[class="modal-footer"]:style(display: block !important;)
+drive.online-fix.me##div[class="download-button"]:style(pointer-events: all !important; user-select: all !important; -moz-user-select: all !important; -webkit-user-select: all !important;)
+kandi.openweaver.com##*[class^="Cookie_"]
+kandi.openweaver.com##*[class^="Cookie_"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
