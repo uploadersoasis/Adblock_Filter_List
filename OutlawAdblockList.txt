@@ -38391,7 +38391,17 @@ multiup.org,multiup.eu##a[namehost="UseNext"]
 multiup.org,multiup.eu##a[namehost="UseNext"]:remove()
 multiup.org,multiup.eu##input[name="link"]:remove-class(hidden)
 multiup.org,multiup.eu##input[name="link"]:remove-attr(type)
+! remove action attribute and also change the link attribute on submit button to formaction to override action.
 multiup.org,multiup.eu##form[action*="://multinews.me/"]:remove-attr(action)
+! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
+multiup.org,multiup.eu##+js(sa, method, GET, form[method="POST"])
+! remove name attribute under input tags so they won't be appended to the url on form GET submission
+multiup.org,multiup.eu##input[name="link"]:remove-attr(name)
+multiup.org,multiup.eu##input[name="filename"]:remove-attr(name)
+! rename-attr.js
+! #175151786 is button for gofile
+!multiup.org,multiup.eu##+js(rename-attr, #175151786, link, formaction)
+multiup.org,multiup.eu##+js(rename-attr, button[type="submit"], link, formaction)
 !||consent.trustarc.com/notice?domain=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||consent.trustarc.com^*
 ! change button's "link" attribute to "formaction" attribute.
@@ -42205,6 +42215,23 @@ drive.online-fix.me##div[class="modal-footer"]:style(display: block !important;)
 drive.online-fix.me##div[class="download-button"]:style(pointer-events: all !important; user-select: all !important; -moz-user-select: all !important; -webkit-user-select: all !important;)
 kandi.openweaver.com##*[class^="Cookie_"]
 kandi.openweaver.com##*[class^="Cookie_"]:remove()
+||truanet.com^*
+! redirection from Kroger survey website
+!||8451cx.az1.qualtrics.com^*
+||media.breitbart.com/ads.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+decider.com##div[class="content-wrap"]:has(div[class="sitewide-notice"])
+decider.com##div[class="content-wrap"]:has(div[class="sitewide-notice"]):remove()
+www.yourpickenscounty.com##li[class="banners-125"]
+www.yourpickenscounty.com##li[class="banners-125"]:remove()
+www.yourpickenscounty.com##+js(abort-on-property-read, _gaq)
+www.yourpickenscounty.com##+js(abort-on-property-write, _gaq)
+||www.yourpickenscounty.com/wp-content/plugins/wp-ad-manager/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||disney.demdex.net^*
+||abcotv.hb-api.omtrdc.net^*
+||log.go.com^*
+||metrics.barclaycardus.com^*
+||barclaybankdelaware.demdex.net^*
+||stats.vk-portal.net^*
 
 !Whitelisted
 ! blocks Kroger website?
