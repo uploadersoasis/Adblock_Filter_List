@@ -24280,7 +24280,6 @@ www.host-tracker.com##div[class="cookiePolicyMessage"]
 !gofile.io##.swal2-backdrop-show
 ||www.dicalnatur.club^*
 ||dicalnatur.club^*
-dailycaller.com##div[class^="dc-sticky sticky-footer"]
 www.nytimes.com##.e1x0szx60.css-4su5jw.expanded-dock.shown.MAG_web_anon_new-journey-rollout
 ydns.io##div[class="cookie-notice-outer"]
 www.securepoint.de##div[class="cc_banner-wrapper "]
@@ -24416,8 +24415,6 @@ fex.net##div[id^="epom-"]
 www.mp3tag.de##div[aria-label="cookieconsent"]
 passwordsgenerator.net##div.ProxyBtn
 lookup.icann.org##rwc-cookie-notification
-dailycaller.com##div[class^="index__adWrapper"]
-dailycaller.com##div[class^="index__adUnitWrapper"]
 !||ghb.adtelligent.com/adunit/tracking$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ghb.adtelligent.com^*
 ||stat.media/counter/api$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -31419,7 +31416,6 @@ oxy.cloud##div[id="cookies"]
 drevitalize.com##div[id="cookie-law-info-bar"]
 drevitalize.com##div[id="cookie-law-info-again"]
 drevitalize.com##div[id="cliSettingsPopup"]
-dailycaller.com##div[class="ad"]
 ||thyourretyequ.com^*
 ||d11hjbdxxtogg5.cloudfront.net^*
 ||taspectsofcu.com^*
@@ -42232,6 +42228,22 @@ www.yourpickenscounty.com##+js(abort-on-property-write, _gaq)
 ||metrics.barclaycardus.com^*
 ||barclaybankdelaware.demdex.net^*
 ||stats.vk-portal.net^*
+||static-tracking.klaviyo.com^*
+dailycaller.com##div[class^="dc-sticky sticky-footer"]
+dailycaller.com##div[class^="index__adWrapper"]
+dailycaller.com##div[class^="index__adUnitWrapper"]
+dailycaller.com##div[class="ad"]
+dailycaller.com##div[data-freestar-ad]
+dailycaller.com##div[data-freestar-ad]:remove()
+dailycaller.com##div[class*="adcontainer"]
+dailycaller.com##div[class*="adcontainer"]:remove()
+dailycaller.com##+js(set-constant, window.confiant, {})
+dailycaller.com##+js(set-constant, window.confiant.callback, noopFunc)
+dailycaller.com##+js(set-constant, impressionData, {})
+dailycaller.com##+js(abort-on-property-read, impressionData.prebid)
+dailycaller.com##+js(abort-on-property-write, impressionData.prebid)
+dailycaller.com##+js(abort-on-property-read, window.confiant)
+dailycaller.com##+js(abort-on-property-write, impressionData.prebid)
 
 !Whitelisted
 ! blocks Kroger website?
