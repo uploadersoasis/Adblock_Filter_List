@@ -42233,10 +42233,14 @@ dailycaller.com##div[class^="dc-sticky sticky-footer"]
 dailycaller.com##div[class^="index__adWrapper"]
 dailycaller.com##div[class^="index__adUnitWrapper"]
 dailycaller.com##div[class="ad"]
+dailycaller.com##aside[id="right1forarticles"]:has(div[data-freestar-ad])
+dailycaller.com##aside[id="right1forarticles"]:has(div[data-freestar-ad]):remove()
 dailycaller.com##div[data-freestar-ad]
 dailycaller.com##div[data-freestar-ad]:remove()
 dailycaller.com##div[class*="adcontainer"]
 dailycaller.com##div[class*="adcontainer"]:remove()
+dailycaller.com##div[id="paywall"]
+dailycaller.com##div[id="paywall"]:remove()
 dailycaller.com##+js(set-constant, window.confiant, {})
 dailycaller.com##+js(set-constant, window.confiant.callback, noopFunc)
 dailycaller.com##+js(set-constant, impressionData, {})
