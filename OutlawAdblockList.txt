@@ -38410,6 +38410,8 @@ multiup.org,multiup.eu##input[name="filename"]:remove-attr(name)
 ! #175151786 is button for gofile
 !multiup.org,multiup.eu##+js(rename-attr, #175151786, link, formaction)
 multiup.org,multiup.eu##+js(rename-attr, button[type="submit"], link, formaction)
+www.multiup.org,www.multiup.eu##div[class="mfp-wrap mfp-auto-cursor"]:has(div[class="mfp-container mfp-ajax-holder mfp-s-error"])
+www.multiup.org,www.multiup.eu##div[class="mfp-wrap mfp-auto-cursor"]:has(div[class="mfp-container mfp-ajax-holder mfp-s-error"]):remove()
 !||consent.trustarc.com/notice?domain=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||consent.trustarc.com^*
 ! change button's "link" attribute to "formaction" attribute.
