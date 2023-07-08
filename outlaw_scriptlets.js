@@ -1,7 +1,7 @@
 'use strict';
 
-/// set-attr-any-val.js
-/// alias stav.js
+/// set-attr-any.js
+/// alias sta.js
 /// world ISOLATED
 // This scriptlet is NOT the same as the set-attr.js added in the native/default uBlock
 // Origin scriptlets.js file.
