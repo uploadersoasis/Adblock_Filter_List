@@ -16,20 +16,25 @@
 !        from the javascript @ https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
 !        so add that URL to the "userResourcesLocation" value in the advanced settings
 !        so that those rules will work.
+
+!    2.  Some of these rules utilize the "set attribute any value" (stav) scriptlet 
+!        from the javascript @ https://github.com/uploadersoasis/Adblock_Filter_List/raw/master/outlaw_scriptlets.js
+!        so add that URL preceded by a space to the end of the "userResourcesLocation"
+         value in the advanced settings so that those rules will work.
 !
-!    2.  Filters in this list block ads on YouTube.com, but this causes a black,
+!    3.  Filters in this list block ads on YouTube.com, but this causes a black,
 !        screen to appear for each ad that would otherwise be played along with
 !        an associated delay.  The video will play or continue to play after
 !        this pause so patiently wait for it.  The delay may still be shorter
 !        than the ad(s) would have been.
 !
-!    3.  The countdown period of some file hosts has been removed or shortened.
+!    4.  The countdown period of some file hosts has been removed or shortened.
 !        In some of these cases the countdown may not display, so press the
 !        button to perform the download anyway.  For file hosts that do
 !        server-side checks on the countdown, you will still have to wait the
 !        normal period before downloading.
 !
-!    4.  A relative few websites still require the use of a custom Javascript
+!    5.  A relative few websites still require the use of a custom Javascript
 !        snippet to be fully functional.  Such a script can be saved as a
 !        bookmark in the web browser and selected when on the webpage which
 !        requires it.
@@ -39,7 +44,7 @@
 !        The script to activate the download button @ filecr.com is:
 ! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 !
-!    5.  Due to the way that Wikipedia's responsive website design currently
+!    6.  Due to the way that Wikipedia's responsive website design currently
 !        works or rather doesn't work, these rules force a style suited to a
 !        1920 pixel width screen.  If you screen is a different size, adjust the
 !        three rules which set this style:
@@ -57,6 +62,7 @@
 ! `false`
 ! positive decimal integer 0 <= value < 32768
 ! `[other]`: copy the value from attribute `other` on the same element
+! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/gorhill/uBlock/master/assets/resources/scriptlets.js
 ! Brave's native adblocking does not support the "has-text()" filter.
 ! Brave also does not support upward() nor remove().
 ! Brave's native adblocking does not support "$all" so use * or ^ (without preceding forward slash) instead.
@@ -25105,13 +25111,13 @@ www.4shared.com##+js(remove-class, hintDuringCounter, #troublesText2)
 www.4shared.com###troublesText2:style(display: block !important;)
 www.4shared.com##+js(set-constant, d2CounterValue, -1, stay)
 !www.4shared.com##+js(set-constant, document.querySelector("#jsTrafficLimitExceeded").value, false)
-www.4shared.com##+js(set-attr, #jsTrafficLimitExceeded, value, false)
+www.4shared.com##+js(set-attr, '#jsTrafficLimitExceeded', value, false)
 !www.4shared.com##+js(set-constant, document.querySelector("#secondsLeft").value, 0)
-www.4shared.com##+js(set-attr, #secondsLeft, value, 0)
+www.4shared.com##+js(set-attr, '#secondsLeft', value, 0)
 !www.4shared.com##+js(set-constant, document.querySelector("#baseDownloadLink").type, text)
-!www.4shared.com##+js(set-attr, #baseDownloadLink, type, text)
+!www.4shared.com##+js(stav, #baseDownloadLink, type, text)
 !www.4shared.com##+js(set-constant, document.querySelector("#baseDownloadLink").type, submit)
-www.4shared.com##+js(set-attr, #baseDownloadLink, type, submit)
+www.4shared.com##+js(stav, #baseDownloadLink, type, submit)
 www.4shared.com##+js(set-constant, sendNativeAnalytics, noopFunc)
 www.4shared.com##+js(acs, sendNativeAnalytics)
 www.4shared.com##+js(set-constant, Config.detectAd, {})
@@ -38401,8 +38407,7 @@ multiup.org,multiup.eu##input[name="link"]:remove-class(hidden)
 multiup.org,multiup.eu##input[name="link"]:remove-attr(type)
 ! remove action attribute and also change the link attribute on submit button to formaction to override action.
 multiup.org,multiup.eu##form[action*="://multinews.me/"]:remove-attr(action)
-! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
-multiup.org,multiup.eu##+js(set-attr, form[method="POST"], method, GET)
+multiup.org,multiup.eu##+js(stav, 'form[method="POST"]', method, GET)
 ! remove name attribute under input tags so they won't be appended to the url on form GET submission
 multiup.org,multiup.eu##input[name="link"]:remove-attr(name)
 multiup.org,multiup.eu##input[name="filename"]:remove-attr(name)
@@ -41612,7 +41617,7 @@ filerice.com##input[id="adblock_detected"]:remove()
 ! does not work filerice.com##+js(set-constant, document.querySelector('button[id="downloadbtn"]').type, submit)
 filerice.com##+js(set-constant, document.querySelector('button[id="downloadbtn"]').type, submit)
 ! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
-filerice.com##+js(set-attr, #downloadbtn, type, submit)
+filerice.com##+js(stav, #downloadbtn, type, submit)
 ||log.espn.com^*
 !||secure.espncdn.com/combiner/c?js=analytics/adobe/VisitorAPI_312.js,analytics/adobe/AppMeasurement_282.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||secure.espncdn.com/combiner/c?js=analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42216,10 +42221,10 @@ drive.online-fix.me##.download-button:remove-attr(onclick)
 drive.online-fix.me##.download-button:remove-attr(disabled)
 drive.online-fix.me##.get-key-button:remove-attr(disabled)
 ! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
-drive.online-fix.me##+js(set-attr, .download-button, disabled, false)
-drive.online-fix.me##+js(set-attr, .download-button, type, submit)
-drive.online-fix.me##+js(set-attr, .get-key-button, disabled, false)
-drive.online-fix.me##+js(set-attr, #downloadModal, aria-hidden, false)
+drive.online-fix.me##+js(set-attr, '.download-button', disabled, false)
+drive.online-fix.me##+js(stav, .download-button, type, submit)
+drive.online-fix.me##+js(set-attr, '.get-key-button', disabled, false)
+drive.online-fix.me##+js(set-attr, '#downloadModal', aria-hidden, false)
 drive.online-fix.me##div[id="downloadModal"]:style(display: block !important;)
 drive.online-fix.me##div[class="modal-footer"]:style(display: block !important;)
 drive.online-fix.me##div[class="download-button"]:style(pointer-events: all !important; user-select: all !important; -moz-user-select: all !important; -webkit-user-select: all !important;)
