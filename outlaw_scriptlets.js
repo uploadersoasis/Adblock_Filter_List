@@ -1,10 +1,10 @@
 'use strict';
 
-/// set-attr-any.js
-/// alias saa.js
+/// set-attr-any-val.js
+/// alias stav.js
 /// world ISOLATED
-// example.com##+js(saa, attr, value, [selector])
-function setAttrAny(
+// example.com##+js(stav, attr, value, [selector])
+function setAttrAnyVal(
 	token = '',
 	attrValue = '',
 	selector = '',
