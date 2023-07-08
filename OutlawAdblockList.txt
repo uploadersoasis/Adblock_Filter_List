@@ -12,7 +12,7 @@
 ! 
 ! NOTES:
 !
-!    1.  Some of these rules utilize the add-on scriptlets like "set attribute" (sa)
+!    1.  Some of these rules utilize the add-on scriptlets like "replace attribute" (replace-attr)
 !        from the javascript @ https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
 !        so add that URL to the "userResourcesLocation" value in the advanced settings
 !        so that those rules will work.
@@ -47,6 +47,16 @@
 !wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
 !wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important;)
 
+! example.org##+js(set-attr, selector, attr [, value])
+! `selector`: CSS selector of DOM elements for which the attribute `attr` must be modified.
+! `attr`: the name of the attribute to modify
+! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://github.com/gorhill/uBlock/blob/master/assets/resources/scriptlets.js
+! `value`: the value to assign to the target attribute. Possible values:
+! `''`: empty string (default if not specified)
+! `true`
+! `false`
+! positive decimal integer 0 <= value < 32768
+! `[other]`: copy the value from attribute `other` on the same element
 ! Brave's native adblocking does not support the "has-text()" filter.
 ! Brave also does not support upward() nor remove().
 ! Brave's native adblocking does not support "$all" so use * or ^ (without preceding forward slash) instead.
@@ -25095,14 +25105,16 @@ www.4shared.com##+js(remove-class, hintDuringCounter, #troublesText2)
 www.4shared.com###troublesText2:style(display: block !important;)
 www.4shared.com##+js(set-constant, d2CounterValue, -1, stay)
 !www.4shared.com##+js(set-constant, document.querySelector("#jsTrafficLimitExceeded").value, false)
-! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
-www.4shared.com##+js(sa, value, false, #jsTrafficLimitExceeded)
+www.4shared.com##+js(set-attr, #jsTrafficLimitExceeded, value, false)
 !www.4shared.com##+js(set-constant, document.querySelector("#secondsLeft").value, 0)
-www.4shared.com##+js(sa, value, 0, #secondsLeft)
+www.4shared.com##+js(set-attr, #secondsLeft, value, 0)
 !www.4shared.com##+js(set-constant, document.querySelector("#baseDownloadLink").type, text)
-!www.4shared.com##+js(sa, type, text, #baseDownloadLink)
+!www.4shared.com##+js(set-attr, #baseDownloadLink, type, text)
 !www.4shared.com##+js(set-constant, document.querySelector("#baseDownloadLink").type, submit)
-www.4shared.com##+js(sa, type, submit, #baseDownloadLink)
+www.4shared.com##+js(set-attr, #baseDownloadLink, type, submit)
+www.4shared.com##+js(set-constant, sendNativeAnalytics, noopFunc)
+www.4shared.com##+js(acs, sendNativeAnalytics)
+www.4shared.com##+js(set-constant, Config.detectAd, {})
 ||atharori.net/index/ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||api.pushnami.com/scripts/v1/hub$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||api.pushnami.com/scripts/v1/pushnami-adv/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -38390,7 +38402,7 @@ multiup.org,multiup.eu##input[name="link"]:remove-attr(type)
 ! remove action attribute and also change the link attribute on submit button to formaction to override action.
 multiup.org,multiup.eu##form[action*="://multinews.me/"]:remove-attr(action)
 ! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
-multiup.org,multiup.eu##+js(sa, method, GET, form[method="POST"])
+multiup.org,multiup.eu##+js(set-attr, form[method="POST"], method, GET)
 ! remove name attribute under input tags so they won't be appended to the url on form GET submission
 multiup.org,multiup.eu##input[name="link"]:remove-attr(name)
 multiup.org,multiup.eu##input[name="filename"]:remove-attr(name)
@@ -41598,7 +41610,7 @@ filerice.com##input[id="adblock_detected"]:remove()
 ! does not work filerice.com##+js(set-constant, document.querySelector('button[id="downloadbtn"]').type, submit)
 filerice.com##+js(set-constant, document.querySelector('button[id="downloadbtn"]').type, submit)
 ! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
-filerice.com##+js(sa, type, submit, #downloadbtn)
+filerice.com##+js(set-attr, #downloadbtn, type, submit)
 ||log.espn.com^*
 !||secure.espncdn.com/combiner/c?js=analytics/adobe/VisitorAPI_312.js,analytics/adobe/AppMeasurement_282.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||secure.espncdn.com/combiner/c?js=analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42202,10 +42214,10 @@ drive.online-fix.me##.download-button:remove-attr(onclick)
 drive.online-fix.me##.download-button:remove-attr(disabled)
 drive.online-fix.me##.get-key-button:remove-attr(disabled)
 ! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
-drive.online-fix.me##+js(sa, disabled, false, .download-button)
-drive.online-fix.me##+js(sa, type, submit, .download-button)
-drive.online-fix.me##+js(sa, disabled, false, .get-key-button)
-drive.online-fix.me##+js(sa, aria-hidden, false, #downloadModal)
+drive.online-fix.me##+js(set-attr, .download-button, disabled, false)
+drive.online-fix.me##+js(set-attr, .download-button, type, submit)
+drive.online-fix.me##+js(set-attr, .get-key-button, disabled, false)
+drive.online-fix.me##+js(set-attr, #downloadModal, aria-hidden, false)
 drive.online-fix.me##div[id="downloadModal"]:style(display: block !important;)
 drive.online-fix.me##div[class="modal-footer"]:style(display: block !important;)
 drive.online-fix.me##div[class="download-button"]:style(pointer-events: all !important; user-select: all !important; -moz-user-select: all !important; -webkit-user-select: all !important;)
