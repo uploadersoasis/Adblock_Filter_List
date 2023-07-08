@@ -9,18 +9,17 @@
 // was example.com##+js(sa, attr, value, [selector])
 // changed to conform to format of native set-attr.js, but not conflict with its alias.
 builtinScriptlets.push({
-	name: 'set-attr-any-val.js',
-	fn: setAttrAnyVal,
+	name: 'set-attr-any.js',
+	fn: setAttrAny,
 	world: 'ISOLATED',
 	dependencies: [
 	'run-at.fn',
 	],
 	aliases: [
-	'stav.js',
+	'sta.js',
 	],
 });
-
-function setAttrAnyVal(
+function setAttrAny(
 selector = '',
 token = '',
 attrValue = '',
@@ -34,7 +33,7 @@ runAt = ''
 		selector = `[${tokens.join('],[')}]`;
 	}
 	let timer;
-	const setattrany = () => {
+	const setattr = () => {
 		timer = undefined;
 		const nodes = document.querySelectorAll(selector);
 		try {
@@ -78,11 +77,11 @@ runAt = ''
 		if ( skip ) {
 			return;
 		}
-		timer = self.requestAnimationFrame(setattrany);
+		timer = self.requestAnimationFrame(setattr);
 	};
 
 	const start = ( ) => {
-		setattrany();
+		setattr();
 		if ( /\bloop\b/.test(runAt) === false ) {
 			return;
 		}
