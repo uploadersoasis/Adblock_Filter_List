@@ -9,7 +9,7 @@
 // Origin scriptlets.js file.
 // NOTES: This will NOT set a value if the attribute does not exist.
 //function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
-function setAttrAny(token = '', attrValue, selector = '', run = '') { // attrValue must be a string so convert below if not
+function setAttrAny(token = '', attrValue = '', selector = '', run = '') { // attrValue must be a string so convert below if not
 	if ( token === '' ) { return; }
 	const tokens = token.split(/\s*\|\s*/);  // create an array if multiple attributes entered separated with |
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
