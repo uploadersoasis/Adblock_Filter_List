@@ -1,16 +1,13 @@
 /* 
- * @scriptlet set-attr-any-val
+ * @scriptlet set-attr-any
  * 
  * @description
  * Sets the specified attribute on the specified elements. This scriptlet runs
  * once when the page loads then afterward on DOM mutations.
-
- * Reference: https://github.com/AdguardTeam/Scriptlets/blob/master/src/scriptlets/set-attr.js
- * 
  * ### Syntax
  * 
  * ```text
- * example.org##+js(set-attr, selector, attr, value)
+ * example.org##+js(set-attr-any, selector, attr, value)
  * ```
  * 
  * - `selector`: CSS selector of DOM elements for which the attribute `attr`
@@ -26,9 +23,6 @@ builtinScriptlets.push({
     ],
     fn: setAttrAny,
     world: 'ISOLATED',
-    dependencies: [
-        'run-at.fn',
-    ],
 });
 function setAttrAny(
     selector = '',
@@ -39,7 +33,7 @@ function setAttrAny(
     if ( selector === '' ) { return; }
     if ( value === '' ) { return; }
 
-    const applySetAttr = ( ) => {
+    const applySetAttrAmy = ( ) => {
         const elems = [];
         try {
             elems.push(...document.querySelectorAll(selector));
@@ -71,11 +65,11 @@ function setAttrAny(
         if ( shouldWork === false ) { return; }
         timer = self.requestAnimationFrame(( ) => {
             timer = undefined;
-            applySetAttr();
+            applySetAttrAny();
         });
     };
     const start = ( ) => {
-        if ( applySetAttr() === false ) { return; }
+        if ( applySetAttrAny() === false ) { return; }
         observer = new MutationObserver(onDomChanged);
         observer.observe(document.body, {
             subtree: true,
