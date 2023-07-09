@@ -21,8 +21,8 @@ function setAttrAny(token = '', attrValue, selector = '', run = '') {
 		try {
 			for (const node of nodes) {
 				for ( const attr of tokens ) {
-					if ( attr !== String(attrValue)) { 
-						node.setAttribute(attr, String(attrValue));
+					if ( attr !== `${attrValue}`) { 
+						node.setAttribute(attr, `${attrValue}`);
 					}
 				}
 			}
