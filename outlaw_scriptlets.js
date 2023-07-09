@@ -1,3 +1,4 @@
+'use strict';
 
 /// set-attr-any.js
 /// alias saa.js
@@ -7,11 +8,21 @@
 // This scriptlet is NOT the same as the set-attr.js added in the native/default uBlock
 // Origin scriptlets.js file.
 // NOTES: This will NOT set a value if the attribute does not exist.
-function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
+//        Do NOT put a semicolon at the end of the inputted attr parameter even if it is a Javascript function.
+/*
+TODO: Do not treat attrValue as a string if want to use a variable or calculated value for the value.
+      How, as not setting attrValue to default string and converting it is not working?
+      In that case, only treat attrValue as string if enclosed in quotation marks.
+      document.querySelector('button[id="downloadbtn"]').attributes.onclick.value.slice(12, -2); removes windows.open() from the string value.
+      clicknupload.*##+js(saa, href, document.querySelector('button[id="downloadbtn"]').attributes.onclick.value.slice(12, -2), button[id="downloadbtn"])
+*/
+//function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
+function setAttrAny(token = '', attrValue, selector = '', run = '') { // attrValue must be a string so convert below if not
 	if ( token === '' ) { return; }
-	const tokens = token.split(/\s*\|\s*/);
+	const tokens = token.split(/\s*\|\s*/);  // create an array if multiple attributes entered separated with |
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
-	let myurl = document.querySelector(selector).attributes.onclick.value.slice(13, -3);
+	//attrValue = String(attrValue);  // convert to string in case variable was inputted value
+	attrValue = `${attrValue}`;  // convert to string in case variable was inputted value
 	let timer;
 	const setattr = () => {
 		timer = undefined;	
@@ -19,8 +30,8 @@ function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
 		try {
 			for (const node of nodes) {
 				for ( const attr of tokens ) {
-					if ( attr !== myurl ) { 
-						node.setAttribute(attr, myurl);
+					if ( attr !== attrValue) { 
+						node.setAttribute(attr, attrValue);
 					}
 				}
 			}
