@@ -1,4 +1,3 @@
-'use strict';
 
 /// set-attr-any.js
 /// alias saa.js
@@ -12,7 +11,7 @@ function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
 	if ( token === '' ) { return; }
 	const tokens = token.split(/\s*\|\s*/);
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
-	const url = document.querySelector(selector).attributes.onclick.value.slice(13, -3);
+	let myurl = document.querySelector(selector).attributes.onclick.value.slice(13, -3);
 	let timer;
 	const setattr = () => {
 		timer = undefined;	
@@ -20,8 +19,8 @@ function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
 		try {
 			for (const node of nodes) {
 				for ( const attr of tokens ) {
-					if ( attr !== url ) { 
-						node.setAttribute(attr, url);
+					if ( attr !== myurl ) { 
+						node.setAttribute(attr, myurl);
 					}
 				}
 			}
