@@ -8,9 +8,7 @@
 // This scriptlet is NOT the same as the set-attr.js added in the native/default uBlock
 // Origin scriptlets.js file.
 // NOTES: This will NOT set a value if the attribute does not exist.
-//        Do NOT put a semicolon at the end of the inputted attr parameter even if it is a Javascript function.
-//function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
-function setAttrAny(token = '', attrValue, selector = '', run = '') {
+function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
 	if ( token === '' ) { return; }
 	const tokens = token.split(/\s*\|\s*/);
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
