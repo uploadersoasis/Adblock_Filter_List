@@ -44,7 +44,7 @@ function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
 	};
 	const start = ( ) => {
 		setattr();
-		if ( /\bloop\b/.test(runAt) === false ) { return; }
+		if ( /\bloop\b/.test(run) === false ) { return; }
 		const observer = new MutationObserver(mutationHandler);
 		observer.observe(document.documentElement, {
 			attributeFilter: tokens,
