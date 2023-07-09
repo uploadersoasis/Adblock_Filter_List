@@ -14,7 +14,7 @@ function setAttrAny(token = '', attrValue, selector = '', run = '') {
 	if ( token === '' ) { return; }
 	const tokens = token.split(/\s*\|\s*/);
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
-	console.log(typeof(attrValue), `${attrValue}`);
+	if (attrValue != null) { console.log(typeof(attrValue), `${attrValue}`); }
 	let timer;
 	const setattr = () => {
 		timer = undefined;	
