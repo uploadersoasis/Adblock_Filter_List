@@ -15,7 +15,7 @@ function setAttrAny(token = '', inputValue, selector = '', run = '') {
 	const tokens = token.split(/\s*\|\s*/);
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
 	//attrValue = String(attrValue);  // convert to string in case variable was inputted value
-	attrValue = String(inputValue);
+	attrValue = `${inputValue}`;
 	//attrValue = `${attrValue}`;  // convert to string in case variable was inputted value
 	let timer;
 	const setattr = () => {
