@@ -42272,6 +42272,10 @@ clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
 clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
 clicknupload.*##input[id="adblock_detected"]:remove()
 ||undefined^$script,domain=clicknupload.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!clicknupload.*##button[id="downloadbtn"]:remove-attr(href)
+! existing href must NOT be removed to rename onclick to href; it replaces it anyway
+clicknupload.*##+js(rename-attr, button[id="downloadbtn"], onclick, href)
+||makesembezzlementconsume.com^*
 
 !Whitelisted
 ! blocks Kroger website?
