@@ -13,8 +13,8 @@ function setAttrAny(token = '', attrValue, selector = '', run = '') {
 	if ( token === '' ) { return; }
 	const tokens = token.split(/\s*\|\s*/);
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
-	//attrValue = String(attrValue);  // convert to string in case variable was inputted value
-	attrValue = `${attrValue}`;  // convert to string in case variable was inputted value
+	attrValue = String(attrValue);  // convert to string in case variable was inputted value
+	//attrValue = `${attrValue}`;  // convert to string in case variable was inputted value
 	let timer;
 	const setattr = () => {
 		timer = undefined;	
