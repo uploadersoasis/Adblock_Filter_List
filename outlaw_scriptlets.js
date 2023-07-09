@@ -8,13 +8,10 @@
 // This scriptlet is NOT the same as the set-attr.js added in the native/default uBlock
 // Origin scriptlets.js file.
 // NOTES: This will NOT set a value if the attribute does not exist.
-//function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
-function setAttrAny(token = '', attrValue = '', selector = '', run = '') { // attrValue must be a string so convert below if not
+function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
 	if ( token === '' ) { return; }
 	const tokens = token.split(/\s*\|\s*/);  // create an array if multiple attributes entered separated with |
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
-	//attrValue = String(attrValue);  // convert to string in case variable was inputted value
-	attrValue = `${attrValue}`;  // convert to string in case variable was inputted value
 	let timer;
 	const setattr = () => {
 		timer = undefined;	
