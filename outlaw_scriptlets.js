@@ -8,22 +8,11 @@
 // This scriptlet is NOT the same as the set-attr.js added in the native/default uBlock
 // Origin scriptlets.js file.
 // NOTES: This will NOT set a value if the attribute does not exist.
-//        Do NOT put a semicolon at the end of the inputted attr parameter even if it is a Javascript function.
-/*
-TODO: Do not treat attrValue as a string if want to use a variable or calculated value for the value.
-      How, as not setting attrValue to default string and converting it is not working?
-      In that case, only treat attrValue as string if enclosed in quotation marks.
-      document.querySelector('button[id="downloadbtn"]').attributes.onclick.value.slice(12, -2); removes windows.open() from the string value.
-      clicknupload.*##+js(saa, href, document.querySelector('button[id="downloadbtn"]').attributes.onclick.value.slice(12, -2), button[id="downloadbtn"])
-*/
-//function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
-function setAttrAny(token = '', attrValue, selector = '', run = '') { // attrValue must be a string so convert below if not
+function setAttrAny(token = '', attrValue, selector = '', run = '') {
 	if ( token === '' ) { return; }
-	const tokens = token.split(/\s*\|\s*/);  // create an array if multiple attributes entered separated with |
+	const tokens = token.split(/\s*\|\s*/);
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
-	//attrValue = String(attrValue);  // convert to string in case variable was inputted value
-	//attrValue = `${attrValue}`;  // convert to string in case variable was inputted value
-	attrValue = String(document.querySelector(selector).attributes.onclick.value.slice(13, -3));
+	attrValue = document.querySelector(selector).attributes.onclick.value.slice(13, -3);
 	let timer;
 	const setattr = () => {
 		timer = undefined;	
