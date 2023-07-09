@@ -12,7 +12,6 @@ function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
 	if ( token === '' ) { return; }
 	const tokens = token.split(/\s*\|\s*/);
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
-	attrValue = document.querySelector(selector).attributes.onclick.value.slice(13, -3);
 	let timer;
 	const setattr = () => {
 		timer = undefined;	
@@ -20,7 +19,7 @@ function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
 		try {
 			for (const node of nodes) {
 				for ( const attr of tokens ) {
-					if ( attr !== attrValue) { 
+					if ( attr !== attrValue ) { 
 						node.setAttribute(attr, attrValue);
 					}
 				}
