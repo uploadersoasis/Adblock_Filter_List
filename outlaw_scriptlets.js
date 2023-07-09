@@ -13,10 +13,6 @@ function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
 	const tokens = token.split(/\s*\|\s*/);
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
 	const url = document.querySelector(selector).attributes.onclick.value.slice(13, -3);
-	if ( url === null) {
-		//attrValue = url;
-		return;
-	}
 	let timer;
 	const setattr = () => {
 		timer = undefined;	
