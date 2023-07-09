@@ -22338,7 +22338,6 @@ file.cm##+js(abort-on-property-read.js, setTrackerUrl)
 ||t1.os-data.com/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.weathfront.com^*
 ||qualaroo.com^*
-||filerio.in/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||b0omr3wn6u4b.com^*
 ||b6b4rhsbdawj.com^*
 ||nqrkzcd7ixwr.com^*
@@ -25249,10 +25248,6 @@ www.indiegala.com##div[id="cookie-policy-popup"]
 ||offerimage.com^*
 ||in-page-push.com^*
 ||agacelebir.com^*
-filerio.in##iframe[style*="display: none"]
-!filerio.in##div[id="banner_ad"]
-filerio.in##+js(abort-current-script, _gaq)
-filerio.in##+js(abort-current-script, banner_ad)
 !||protects.s3.us-east-2.amazonaws.com/secure/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||protects.s3.us-east-2.amazonaws.com^*
 ||usa.ced-max.com^*
@@ -25845,12 +25840,6 @@ www.pcmag.com##aside[class="zmgad-full-width"]
 ||adblockorigin.com^*
 ||product.directredirection.com^*
 ||twnt1.rdtk.io^*
-filerio.in##div[id="banner_ad"]
-filerio.in##+js(abort-on-property-read.js, atOptions)
-filerio.in##+js(abort-on-property-write.js, atOptions)
-filerio.in##^script[data-domain="xtraff1cx.space"]
-filerio.in##body > script:nth-child(7)
-filerio.in##.button-red.user
 ||download.gg/js/doubleclick.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||srv.cloudfilt.com/analyzC.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 download.gg##iframe[name="googlefcPresent"]
@@ -28322,9 +28311,6 @@ tii.ai##div[id="ad-banner"]
 tii.ai##+js(nowoif.js, !/tii\.ai/i)
 !tii.ai##+js(nostif.js, /checkAdblockUser/i)
 tii.ai##+js(nostif.js, /^/, 1000)
-filerio.in##+js(set-constant, zoneNativeSett, null)
-filerio.in##+js(abort-on-property-read.js, zoneNativeSett)
-filerio.in##+js(abort-on-property-write.js, zoneNativeSett)
 ||geniusonclick.com^*
 !||www.hostingcloud.racing/AuMg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ptongouh.net^*
@@ -37233,7 +37219,6 @@ www.cyberciti.biz##ins[data-ad-client]
 ||667350.directcpmfwr.com^*
 !||directcpmrev.com/bdv_rd3.dbm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||directcpmrev.com^*
-filerio.in##a[id="handle"]
 !||matomo.uptobox.com/matomo.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||matomo.uptobox.com^*
 regex101.com##div[class="_gHmG"]
@@ -42272,6 +42257,32 @@ dailycaller.com##+js(abort-on-property-read, impressionData.prebid)
 dailycaller.com##+js(abort-on-property-write, impressionData.prebid)
 dailycaller.com##+js(abort-on-property-read, window.confiant)
 dailycaller.com##+js(abort-on-property-write, impressionData.prebid)
+||filerio.in/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+filerio.in##a[id="handle"]
+filerio.in##iframe[style*="display: none"]
+filerio.in##+js(abort-current-script, _gaq)
+filerio.in##+js(abort-current-script, banner_ad)
+filerio.in##div[id="banner_ad"]
+filerio.in##+js(abort-on-property-read, atOptions)
+filerio.in##+js(abort-on-property-write, atOptions)
+filerio.in##^script[data-domain="xtraff1cx.space"]
+filerio.in##.button-red.user
+filerio.in##+js(set-constant, zoneNativeSett, null)
+filerio.in##+js(abort-on-property-read, zoneNativeSett)
+filerio.in##+js(abort-on-property-write, zoneNativeSett)
+filerio.in##+js(set-constant, adsurlvs, [])
+filerio.in##+js(set-constant, adsurl, [])
+filerio.in##+js(abort-on-property-read, adsurlvs)
+filerio.in##+js(abort-on-property-write, adsurlvs)
+filerio.in##+js(abort-on-property-read, adsurl)
+filerio.in##+js(abort-on-property-write, adsurl)
+filerio.in##body > script:nth-child(7)
+! the following five entries are from https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt
+mega.nz##.ads-left-block, .ads-right-block, .active.top-login-warning, .red.download-button.button, .checkbox-bl.download:remove()
+thewrap.com##style:has-text(wallkit-paywall-block):remove()
+thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:remove()
+||cloudflare.com/__log^
+||play.google.com/log?$xmlhttprequest,important
 
 !Whitelisted
 ! blocks Kroger website?
