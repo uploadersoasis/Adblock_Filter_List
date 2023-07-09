@@ -38412,7 +38412,7 @@ multiup.org,multiup.eu##form[action*="://multinews.me/"]:remove-attr(action)
 ! removing the method attribute from the form tag still allows the formaction attribute to work.
 !multiup.org,multiup.eu##form[method="POST"]:remove-attr(method)
 ! The method attribute will not be set below if it was removed above.
-multiup.org,multiup.eu##+js(saa, method, GET, form[method="POST"]')
+multiup.org,multiup.eu##+js(saa, method, GET, form[method="POST"])
 ! remove name attribute under input tags so they won't be appended to the url on form GET submission
 multiup.org,multiup.eu##input[name="link"]:remove-attr(name)
 multiup.org,multiup.eu##input[name="filename"]:remove-attr(name)
