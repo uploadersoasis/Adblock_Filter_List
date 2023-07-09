@@ -10,13 +10,10 @@
 // NOTES: This will NOT set a value if the attribute does not exist.
 //        Do NOT put a semicolon at the end of the inputted attr parameter even if it is a Javascript function.
 //function setAttrAny(token = '', attrValue = '', selector = '', run = '') {
-function setAttrAny(token = '', inputValue, selector = '', run = '') {
+function setAttrAny(token = '', attrValue, selector = '', run = '') {
 	if ( token === '' ) { return; }
 	const tokens = token.split(/\s*\|\s*/);
 	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
-	//attrValue = String(attrValue);  // convert to string in case variable was inputted value
-	attrValue = `${inputValue}`;
-	//attrValue = `${attrValue}`;  // convert to string in case variable was inputted value
 	let timer;
 	const setattr = () => {
 		timer = undefined;	
@@ -24,8 +21,8 @@ function setAttrAny(token = '', inputValue, selector = '', run = '') {
 		try {
 			for (const node of nodes) {
 				for ( const attr of tokens ) {
-					if ( attr !== attrValue) { 
-						node.setAttribute(attr, attrValue);
+					if ( attr !== String(attrValue)) { 
+						node.setAttribute(attr, String(attrValue));
 					}
 				}
 			}
