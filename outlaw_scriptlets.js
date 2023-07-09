@@ -33,7 +33,7 @@ function setAttrAny(
     if ( selector === '' ) { return; }
     if ( value === '' ) { return; }
 
-    const applySetAttrAmy = ( ) => {
+    const applySetAttrAny = ( ) => {
         const elems = [];
         try {
             elems.push(...document.querySelectorAll(selector));
