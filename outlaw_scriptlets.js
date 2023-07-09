@@ -18,21 +18,19 @@
  * - `attr`: the name of the attribute to modify
  * - `value`: the value to assign to the target attribute.
  */
-
 builtinScriptlets.push({
-    name: 'set-attr-any-val.js',
+    name: 'set-attr-any.js',
     requiresTrust: false,
     aliases: [
-        'stav.js',
+        'sta.js',
     ],
-    fn: setAttrAnyVal,
+    fn: setAttrAny,
     world: 'ISOLATED',
     dependencies: [
         'run-at.fn',
     ],
 });
-
-function setAttrAnyVal(
+function setAttrAny(
     selector = '',
     attr = '',
     value = ''
