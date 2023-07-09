@@ -1,110 +1,88 @@
-'use strict';
+/* 
+ * @scriptlet set-attr-any-val
+ * 
+ * @description
+ * Sets the specified attribute on the specified elements. This scriptlet runs
+ * once when the page loads then afterward on DOM mutations.
 
-/// set-attr-any.js
-/// alias sta.js
-/// world ISOLATED
-// This scriptlet is NOT the same as the set-attr.js added in the native/default uBlock
-// Origin scriptlets.js file.
-// example.com##+js(stav, selector, attribute, value)
-// was example.com##+js(sa, attr, value, [selector])
-// changed to conform to format of native set-attr.js, but not conflict with its alias.
+ * Reference: https://github.com/AdguardTeam/Scriptlets/blob/master/src/scriptlets/set-attr.js
+ * 
+ * ### Syntax
+ * 
+ * ```text
+ * example.org##+js(set-attr, selector, attr, value)
+ * ```
+ * 
+ * - `selector`: CSS selector of DOM elements for which the attribute `attr`
+ *   must be modified.
+ * - `attr`: the name of the attribute to modify
+ * - `value`: the value to assign to the target attribute.
+ */
+
 builtinScriptlets.push({
-	name: 'set-attr-any.js',
-	fn: setAttrAny,
-	world: 'ISOLATED',
-	aliases: [
-	'sta.js',
-	],
+    name: 'set-attr-any-val.js',
+    requiresTrust: false,
+    aliases: [
+        'stav.js',
+    ],
+    fn: setAttrAnyVal,
+    world: 'ISOLATED',
+    dependencies: [
+        ''run-at.fn',
+    ],
 });
-function setAttrAny(
-selector = '',
-token = '',
-attrValue = '',
-runAt = ''
+
+function setAttrAnyVal(
+    selector = '',
+    attr = '',
+    value = ''
 ) {
-	if ( token === '' ) {
-		return;
-	}
-	const tokens = token.split(/\s*\|\s*/);
-	if ( selector === '' ) {
-		selector = `[${tokens.join('],[')}]`;
-	}
-	let timer;
-	const setattr = () => {
-		timer = undefined;
-		const nodes = document.querySelectorAll(selector);
-		try {
-			for (const node of nodes) {
-				for ( const attr of tokens ) {
-					if ( attr !== attrValue) {
-						node.setAttribute(attr, attrValue);
-					}
-				}
-			}
-		}
-		catch {
-		}
-	};
-	const mutationHandler = mutations => {
-		if ( timer !== undefined ) {
-			return;
-		}
-		let skip = true;
-		for ( let i = 0; i < mutations.length && skip; i++ ) {
-			const {
-				type, addedNodes, removedNodes
-			}
-			= mutations[i];
-			if ( type === 'attributes' ) {
-				skip = false;
-			}
-			for ( let j = 0; j < addedNodes.length && skip; j++ ) {
-				if ( addedNodes[j].nodeType === 1 ) {
-					skip = false;
-					break;
-				}
-			}
-			for ( let j = 0; j < removedNodes.length && skip; j++ ) {
-				if ( removedNodes[j].nodeType === 1 ) {
-					skip = false;
-					break;
-				}
-			}
-		}
-		if ( skip ) {
-			return;
-		}
-		timer = self.requestAnimationFrame(setattr);
-	};
+    if ( typeof selector !== 'string' ) { return; }
+    if ( selector === '' ) { return; }
+    if ( value === '' ) { return; }
 
-	const start = ( ) => {
-		setattr();
-		if ( /\bloop\b/.test(runAt) === false ) {
-			return;
-		}
-		const observer = new MutationObserver(mutationHandler);
-		observer.observe(document.documentElement, {
-			attributes: true,
-			attributeFilter: tokens,
-			childList: true,
-			subtree: true,
-		}
-		);
-	};
-
-	if ( document.readyState !== 'complete' && /\bcomplete\b/.test(runAt) ) {
-		self.addEventListener('load', start, {
-			once: true
-		}
-		);
-	}
-	else if ( document.readyState !== 'loading' || /\basap\b/.test(runAt) ) {
-		start();
-	}
-	else {
-		self.addEventListener('DOMContentLoaded', start, {
-			once: true
-		}
-		);
-	}
+    const applySetAttr = ( ) => {
+        const elems = [];
+        try {
+            elems.push(...document.querySelectorAll(selector));
+        }
+        catch(ex) {
+            return false;
+        }
+        for ( const elem of elems ) {
+            const before = elem.getAttribute(attr);
+            const after = extractValue(elem);
+            if ( after === before ) { continue; }
+            elem.setAttribute(attr, after);
+        }
+        return true;
+    };
+    let observer, timer;
+    const onDomChanged = mutations => {
+        if ( timer !== undefined ) { return; }
+        let shouldWork = false;
+        for ( const mutation of mutations ) {
+            if ( mutation.addedNodes.length === 0 ) { continue; }
+            for ( const node of mutation.addedNodes ) {
+                if ( node.nodeType !== 1 ) { continue; }
+                shouldWork = true;
+                break;
+            }
+            if ( shouldWork ) { break; }
+        }
+        if ( shouldWork === false ) { return; }
+        timer = self.requestAnimationFrame(( ) => {
+            timer = undefined;
+            applySetAttr();
+        });
+    };
+    const start = ( ) => {
+        if ( applySetAttr() === false ) { return; }
+        observer = new MutationObserver(onDomChanged);
+        observer.observe(document.body, {
+            subtree: true,
+            childList: true,
+        });
+    };
+    runAt(( ) => { start(); }, 'idle');
 }
