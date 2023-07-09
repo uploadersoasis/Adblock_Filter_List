@@ -1,80 +1,60 @@
-/* 
- * @scriptlet set-attr-any
- * 
- * @description
- * Sets the specified attribute on the specified elements. This scriptlet runs
- * once when the page loads then afterward on DOM mutations.
- * ### Syntax
- * 
- * ```text
- * example.org##+js(set-attr-any, selector, attr, value)
- * ```
- * 
- * - `selector`: CSS selector of DOM elements for which the attribute `attr`
- *   must be modified.
- * - `attr`: the name of the attribute to modify
- * - `value`: the value to assign to the target attribute.
- */
-builtinScriptlets.push({
-    name: 'set-attr-any.js',
-    requiresTrust: false,
-    aliases: [
-        'sta.js',
-    ],
-    fn: setAttrAny,
-    world: 'ISOLATED',
-});
-function setAttrAny(
-    selector = '',
-    attr = '',
-    value = ''
-) {
-    if ( typeof selector !== 'string' ) { return; }
-    if ( selector === '' ) { return; }
-    if ( value === '' ) { return; }
+'use strict';
 
-    const applySetAttrAny = ( ) => {
-        const elems = [];
-        try {
-            elems.push(...document.querySelectorAll(selector));
-        }
-        catch(ex) {
-            return false;
-        }
-        for ( const elem of elems ) {
-            const before = elem.getAttribute(attr);
-            const after = extractValue(elem);
-            if ( after === before ) { continue; }
-            elem.setAttribute(attr, after);
-        }
-        return true;
-    };
-    let observer, timer;
-    const onDomChanged = mutations => {
-        if ( timer !== undefined ) { return; }
-        let shouldWork = false;
-        for ( const mutation of mutations ) {
-            if ( mutation.addedNodes.length === 0 ) { continue; }
-            for ( const node of mutation.addedNodes ) {
-                if ( node.nodeType !== 1 ) { continue; }
-                shouldWork = true;
-                break;
-            }
-            if ( shouldWork ) { break; }
-        }
-        if ( shouldWork === false ) { return; }
-        timer = self.requestAnimationFrame(( ) => {
-            timer = undefined;
-            applySetAttrAny();
-        });
-    };
-    const start = ( ) => {
-        if ( applySetAttrAny() === false ) { return; }
-        observer = new MutationObserver(onDomChanged);
-        observer.observe(document.body, {
-            subtree: true,
-            childList: true,
-        });
-    };
-    runAt(( ) => { start(); }, 'idle');
+/// set-attr-any.js
+/// alias saa.js
+/// world ISOLATED
+// example.com##+js(saa, attr, value, [selector])
+// This scriptlet is NOT the same as the set-attr.js added in the native/default uBlock
+// Origin scriptlets.js file.
+function setAttrAny(token = '', attrValue = '', selector = '', runAt = '') {
+	if ( token === '' ) { return; }
+	const tokens = token.split(/\s*\|\s*/);
+	if ( selector === '' ) { selector = `[${tokens.join('],[')}]`; }
+	let timer;
+	const setattr = () => {
+		timer = undefined;	
+		const nodes = document.querySelectorAll(selector);
+		try {
+			for (const node of nodes) {
+				for ( const attr of tokens ) {
+				      if ( attr !== attrValue) { 
+					   node.setAttribute(attr, attrValue);
+				      }	      
+				}
+			}
+		} catch { }
+	};
+	const mutationHandler = mutations => {
+		if ( timer !== undefined ) { return; }
+		let skip = true;
+		for ( let i = 0; i < mutations.length && skip; i++ ) {
+		    const { type, addedNodes, removedNodes } = mutations[i];
+		    if ( type === 'attributes' ) { skip = false; }
+		    for ( let j = 0; j < addedNodes.length && skip; j++ ) {
+				if ( addedNodes[j].nodeType === 1 ) { skip = false; break; }
+			}
+		}
+		for ( let j = 0; j < removedNodes.length && skip; j++ ) {
+			if ( removedNodes[j].nodeType === 1 ) { skip = false; break; }
+		}
+		if ( skip ) { return; }
+		timer = self.requestAnimationFrame(setattr);
+	};
+	const start = ( ) => {
+		setattr();
+		if ( /\bloop\b/.test(runAt) === false ) { return; }
+		const observer = new MutationObserver(mutationHandler);
+		observer.observe(document.documentElement, {
+		    attributeFilter: tokens,
+		    childList: true,
+		    subtree: true,
+		});
+	};
+	if ( document.readyState !== 'complete' && /\bcomplete\b/.test(runAt) ) {
+        self.addEventListener('load', start, true);
+    } else if ( document.readyState !== 'loading' || /\basap\b/.test(runAt) ) {
+    	start();
+    } else {
+    	self.addEventListener('DOMContentLoaded', start, true);
+    }
 }
