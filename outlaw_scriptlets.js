@@ -28,7 +28,7 @@ builtinScriptlets.push({
     fn: setAttrAnyVal,
     world: 'ISOLATED',
     dependencies: [
-        ''run-at.fn',
+        'run-at.fn',
     ],
 });
 
