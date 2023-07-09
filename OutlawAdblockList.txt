@@ -9460,7 +9460,8 @@ www.rlslog.net##div#ad_native_box
 ||turbobit.net/platform/js/lib/videojs/blank.mp4$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 uptobox.com###container_page > .bg_page > div:nth-of-type(1) > form > center > table > tbody > tr > td:nth-of-type(3)
 uptobox.com###container_page > .bg_page > div:nth-of-type(1) > form > center > table > tbody > tr > td:nth-of-type(1)
-turbobit.net#branding > div.core.inner > div:nth-child(1) > div.download-top-aplayer.v-area
+turbobit.net##div[class^="download-top-aplayer"]
+turbobit.net##div[class^="download-top-aplayer"]:remove()
 ||checkapi.xyz^*
 ||myprotectionalert.com^*
 ||perf.cdnads.com^*
@@ -20808,7 +20809,8 @@ www.thewindowsclub.com##.adtester-container-104
 www.venea.net##.ab_box
 www.venea.net###ag_place
 www.venea.net##.ag_banner_top
-||wer.microsoft.com/* !Windows error reports server
+! Windows error reports server
+||wer.microsoft.com^*
 ||www.ofzoxqcldl.com^*
 ||ofzoxqcldl.com^*
 ||www.fndvovywrtghk.com^*
@@ -25115,9 +25117,9 @@ www.4shared.com##+js(set-attr, '#jsTrafficLimitExceeded', value, false)
 !www.4shared.com##+js(set-constant, document.querySelector("#secondsLeft").value, 0)
 www.4shared.com##+js(set-attr, '#secondsLeft', value, 0)
 !www.4shared.com##+js(set-constant, document.querySelector("#baseDownloadLink").type, text)
-!www.4shared.com##+js(stav, #baseDownloadLink, type, text)
+!www.4shared.com##+js(saa, type, text, #baseDownloadLink)
 !www.4shared.com##+js(set-constant, document.querySelector("#baseDownloadLink").type, submit)
-www.4shared.com##+js(stav, #baseDownloadLink, type, submit)
+www.4shared.com##+js(saa, type, submit, #baseDownloadLink)
 www.4shared.com##+js(set-constant, sendNativeAnalytics, noopFunc)
 www.4shared.com##+js(acs, sendNativeAnalytics)
 www.4shared.com##+js(set-constant, Config.detectAd, {})
@@ -38407,7 +38409,10 @@ multiup.org,multiup.eu##input[name="link"]:remove-class(hidden)
 multiup.org,multiup.eu##input[name="link"]:remove-attr(type)
 ! remove action attribute and also change the link attribute on submit button to formaction to override action.
 multiup.org,multiup.eu##form[action*="://multinews.me/"]:remove-attr(action)
-multiup.org,multiup.eu##+js(stav, 'form[method="POST"]', method, GET)
+! removing the method attribute from the form tag still allows the formaction attribute to work.
+!multiup.org,multiup.eu##form[method="POST"]:remove-attr(method)
+! The method attribute will not be set below if it was removed above.
+multiup.org,multiup.eu##+js(saa, method, GET, form[method="POST"]')
 ! remove name attribute under input tags so they won't be appended to the url on form GET submission
 multiup.org,multiup.eu##input[name="link"]:remove-attr(name)
 multiup.org,multiup.eu##input[name="filename"]:remove-attr(name)
@@ -41615,9 +41620,9 @@ filerice.com##+js(set-constant, count, 3)
 !filerice.com##+js(aeld, click)
 filerice.com##input[id="adblock_detected"]:remove()
 ! does not work filerice.com##+js(set-constant, document.querySelector('button[id="downloadbtn"]').type, submit)
-filerice.com##+js(set-constant, document.querySelector('button[id="downloadbtn"]').type, submit)
+!filerice.com##+js(set-constant, document.querySelector('button[id="downloadbtn"]').type, submit)
 ! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
-filerice.com##+js(stav, #downloadbtn, type, submit)
+filerice.com##+js(saa, type, submit, #downloadbtn)
 ||log.espn.com^*
 !||secure.espncdn.com/combiner/c?js=analytics/adobe/VisitorAPI_312.js,analytics/adobe/AppMeasurement_282.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||secure.espncdn.com/combiner/c?js=analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42222,7 +42227,7 @@ drive.online-fix.me##.download-button:remove-attr(disabled)
 drive.online-fix.me##.get-key-button:remove-attr(disabled)
 ! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
 drive.online-fix.me##+js(set-attr, '.download-button', disabled, false)
-drive.online-fix.me##+js(stav, .download-button, type, submit)
+drive.online-fix.me##+js(saa, type, submit, .download-button)
 drive.online-fix.me##+js(set-attr, '.get-key-button', disabled, false)
 drive.online-fix.me##+js(set-attr, '#downloadModal', aria-hidden, false)
 drive.online-fix.me##div[id="downloadModal"]:style(display: block !important;)
