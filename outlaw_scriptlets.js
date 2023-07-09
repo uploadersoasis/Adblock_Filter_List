@@ -12,9 +12,6 @@ builtinScriptlets.push({
 	name: 'set-attr-any.js',
 	fn: setAttrAny,
 	world: 'ISOLATED',
-	dependencies: [
-	'run-at.fn',
-	],
 	aliases: [
 	'sta.js',
 	],
