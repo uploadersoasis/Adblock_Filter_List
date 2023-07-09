@@ -42272,10 +42272,19 @@ clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
 clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
 clicknupload.*##input[id="adblock_detected"]:remove()
 ||undefined^$script,domain=clicknupload.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! existing href must NOT be removed to set href value to onclick's value
 !clicknupload.*##button[id="downloadbtn"]:remove-attr(href)
-! existing href must NOT be removed to rename onclick to href; it replaces it anyway
-clicknupload.*##+js(rename-attr, button[id="downloadbtn"], onclick, href)
+! sets href value to onclick's value
+clicknupload.*##+js(set-attr, 'button[id="downloadbtn"]', href, '[onclick]')
+! Don't remove onclick unless href was set properly above;
+! Don't remove onclick because it will be removed before href is set above, so there will be no value to use.
+!clicknupload.*##button[id="downloadbtn"]:remove-attr(onclick)
+! existing href must NOT be removed to rename onclick to href; it replaces it anyway.
+!clicknupload.*##+js(rename-attr, button[id="downloadbtn"], onclick, href)
 ||makesembezzlementconsume.com^*
+||seedlingneurotic.com^*
+||forms.hsforms.com/embed/v3/counters.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||forms-na1.hsforms.com/embed/v3/counters.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! blocks Kroger website?
