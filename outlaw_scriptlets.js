@@ -6,6 +6,7 @@
 // example.com##+js(saa, attr, value, [selector])
 // This scriptlet is NOT the same as the set-attr.js added in the native/default uBlock
 // Origin scriptlets.js file.
+// NOTE: This will NOT set a value if the attribute does not exist.
 function setAttrAny(token = '', attrValue = '', selector = '', runAt = '') {
 	if ( token === '' ) { return; }
 	const tokens = token.split(/\s*\|\s*/);
