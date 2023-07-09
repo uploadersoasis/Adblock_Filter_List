@@ -16,7 +16,7 @@
 !        from the javascript @ https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
 !        so add that URL to the "userResourcesLocation" value in the advanced settings
 !        so that those rules will work.
-
+!
 !    2.  Some of these rules utilize the "set attribute any value" (stav) scriptlet 
 !        from the javascript @ https://github.com/uploadersoasis/Adblock_Filter_List/raw/master/outlaw_scriptlets.js
 !        so add that URL preceded by a space to the end of the "userResourcesLocation"
@@ -21870,30 +21870,6 @@ zippyshare.com##+js(abort-on-property-read.js, zippyfake)
 ||grensauy.com^*
 ||joorejou.net^*
 ##[href*="postlnk.com"]
-clicknupload.*##+js(abort-current-script, zfgloadedpopup)
-clicknupload.*##+js(abort-on-property-read.js, zfgloadedpopup)
-!clicknupload.*##+js(abort-on-property-read.js, /apu.php?zoneid=)
-!clicknupload.*##+js(abort-on-property-write.js, /apu.php?zoneid=)
-clicknupload.*##+js(abort-on-property-read.js, /apu.php)
-clicknupload.*##+js(abort-on-property-write.js, /apu.php)
-clicknupload.*##+js(abort-on-property-read.js, window['__CF$cv$params'])
-clicknupload.*##+js(abort-on-property-write.js, window['__CF$cv$params'])
-clicknupload.*##div[class="adsbox"]
-clicknupload.*##div[id^="contentad"]
-clicknupload.*##div[id^="rn_ad_native_"]
-||clicknupload.*/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-clicknupload.org##+js(abort-current-script, zfgloadedpopup)
-clicknupload.org##+js(abort-on-property-read.js, zfgloadedpopup)
-!clicknupload.org##+js(abort-on-property-read.js, /apu.php?zoneid=)
-!clicknupload.org##+js(abort-on-property-write.js, /apu.php?zoneid=)
-clicknupload.org##+js(abort-on-property-read.js, /apu.php)
-clicknupload.org##+js(abort-on-property-write.js, /apu.php)
-clicknupload.org##div[class="adsbox"]
-clicknupload.org##div[id^="contentad"]
-clicknupload.org##div[id^="rn_ad_native_"]
-||clicknupload.org/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-clicknupload.*##+js(aopr, AaDetector)
-clicknupload.*##+js(acs, Math, zfgloaded)
 !||static.t-ru.org/pic/vpn/NordVPN-Gift-2020-bn-4.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.t-ru.org/pic/vpn/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.admitad-connect.com^*
@@ -21921,7 +21897,6 @@ mediafire.com##+js(abort-current-inline-script, document.getElementById, adblock
 ||mirafaren.pw^*
 ||passeura.com^*
 !||pl15180657.passeura.com^*
-clicknupload.*###adblock_detected
 !||www.modulepush.com/d2689cd4e4d664e5246a193bb3545f80/invoke.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.modulepush.com/*/invoke.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.modulepush.com^*
@@ -22575,8 +22550,6 @@ hexupload.net##+js(set-constant, adblock_detected, 0)
 ||cams.gratis/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||go.arminius.io^*
 ||kmhodhhdvulnn.com^*
-clicknupload.*##+js(abort-on-property-write.js, oaxDyt)
-clicknupload.*##+js(abort-on-property-read.js, oaxDyt)
 ||dropmefiles.com/js/video-js/videojs.ads$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||stat.inetcom.ru^*
 dropmefiles.com##div[class="google_bnr"]
@@ -22603,7 +22576,6 @@ liliputing.com##.adtester-container
 ||egfqtvewksktz.com^*
 ||www.bcuuipewdz.com^*
 ||bcuuipewdz.com^*
-||undefined^$script,domain=clicknupload.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.celeritascdn.com^*
 ||celeritascdn.com^*
 ||record.revenuenetwork.com^*
@@ -24450,7 +24422,6 @@ jelastic.com##div[class="jelastic-cookie-bar"]
 ||www.atticgamez.com/contents/videos_screenshots/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.ign.com##div[class="jsx-3577397028 privacy-content"]
 developer.microsoft.com##div[id="uhfCookieAlert"]
-!clicknupload.*##div[id="rn_ad_native_uak91"]
 pixeldrain.com##div[id="sponsors"]
 pixeldrain.com##div[class="sponsors"]
 ||d1ybdlg8aoufn.cloudfront.net^*
@@ -24609,11 +24580,7 @@ tusfiles.com##+js(abort-on-property-read.js, zfgloadedpopup)
 ||whusebsu.com^*
 ||saumooly.net^*
 ||vaia06o630os.com^*
-clicknupload.*##input[id="adblock_detected"]
-! clicknupload.*##iframe blocks the captcha needed to download
-!clicknupload.*##iframe
 ||vashoaft.net^*
-!clicknupload.*##body > script
 ##iframe[class="padPreload"]
 ||www.ngumyydbupv.com^*
 ||ngumyydbupv.com^*
@@ -27586,8 +27553,6 @@ www.kproxy.com##+js(abort-on-property-write, pageTracker)
 www.download3k.es##div[class^="cc_banner"]
 ||tj1hkck686s4pw4j0ycd2baxy9.xyz^*
 www.techradar.com##.advertisement-label
-||clicknupload.*/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-clicknupload.*##^script:has-text(/document\.createElement|atob\(/i)
 uploadrar.com##div[id="countdown"]
 netu.io,netu.tv##div[class^="eupopup-"]
 ||netu.io/js/jquery-eu-cookie-law-popup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -27889,11 +27854,6 @@ apnews.com##div[class^="Component-placeholderWrapper"]
 ||www.jelabboody.com^*
 ||homeyloanedmes.work/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||jelabboody.com^*
-clicknupload.*##+js(set-constant, timeout, 0)
-clicknupload.*##+js(set-constant, tick, 0)
-clicknupload.*##+js(remove-class.js, captcha_code)
-clicknupload.*##style[id^="__web-inspector-hide"]
-clicknupload.*##div[class^="__web-inspector-hide"]
 !||e1f95201b19594.site/advert.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||e1f95201b19594.site^*
 ||direct-events-collector.spot.im/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -33330,9 +33290,6 @@ www.codemag.com##div[class*="advertisement"]
 www.codemag.com##div[class*="leaderboard-ad"]
 ||dooloust.net^*
 www.bestprog.net##ins[data-ad-client]
-clicknupload.to##+js(aopr, document.onmousedown)
-clicknupload.to##+js(aopw, document.onmousedown)
-clicknupload.to##+js(aeld, /^(?:mousedown)$/)
 community.developer.visa.com##div[id="CookieReportsPanel"]
 developer.visa.com##div[id="CookieReportsPanel"]
 www.nextpit.com##div[id="sticky-footer-ad"]
@@ -34009,7 +33966,6 @@ try2link.com##^script:has-text(/checkAdBlocker()/i)
 ||byilfpjcrwy.com^*
 ||explanationsacrifice.com^*
 ||hrrfciikbg.com^*
-clicknupload.to##iframe:remove()
 down.mdiaload.com##a[class="create"][href*="//down.mdiaload.com/download20.htm"]:remove()
 !down.mdiaload.com##center
 !||copyrightcontent.org/unblocker/ub/ub.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -38449,11 +38405,6 @@ katv.com##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
 ||refrigeratemaimbrunette.com^*
 !||www.arminius.io/bn/12/jump.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.arminius.io^*
-!clicknupload.red##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
-clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
-!clicknupload.*##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
-clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
-clicknupload.*##input[id="adblock_detected"]:remove()
 ||rapidrar.com/wpr.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 rapidrar.com##+js(remove-attr, disabled, #btn_download, stay)
 rapidrar.cr##+js(remove-attr, disabled, #btn_download, stay)
@@ -42283,6 +42234,44 @@ thewrap.com##style:has-text(wallkit-paywall-block):remove()
 thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:remove()
 ||cloudflare.com/__log^
 ||play.google.com/log?$xmlhttprequest,important
+||confideshrinebuff.com^*
+||clicknupload.*/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||clicknupload.*/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+clicknupload.*##+js(abort-current-script, zfgloadedpopup)
+clicknupload.*##+js(abort-on-property-read, zfgloadedpopup)
+clicknupload.*##+js(abort-current-script, apu.php)
+clicknupload.*##+js(abort-current-script, apu.php)
+clicknupload.*##+js(abort-on-property-read, window['__CF$cv$params'])
+clicknupload.*##+js(abort-on-property-write, window['__CF$cv$params'])
+clicknupload.*##div[class="adsbox"]
+clicknupload.*##div[id^="contentad"]
+clicknupload.*##div[id^="rn_ad_native_"]
+clicknupload.*##+js(aopr, AaDetector)
+clicknupload.*##+js(acs, Math, zfgloaded)
+clicknupload.*###adblock_detected
+clicknupload.*##+js(abort-on-property-write, oaxDyt)
+clicknupload.*##+js(abort-on-property-read, oaxDyt)
+!clicknupload.*##div[id="rn_ad_native_uak91"]
+clicknupload.*##input[id="adblock_detected"]
+! clicknupload.*##iframe blocks the captcha needed to download
+!clicknupload.*##iframe
+!clicknupload.*##body > script
+clicknupload.*##^script:has-text(/document\.createElement|atob\(/i)
+clicknupload.*##+js(set-constant, timeout, 0)
+clicknupload.*##+js(set-constant, tick, 0)
+!clicknupload.*##+js(remove-class, captcha_code)
+clicknupload.*##*[class*="captcha_code"]:remove-class(captcha_code)
+clicknupload.*##style[id^="__web-inspector-hide"]
+clicknupload.*##div[class^="__web-inspector-hide"]
+clicknupload.*##+js(aopr, document.onmousedown)
+clicknupload.*##+js(aopw, document.onmousedown)
+clicknupload.*##+js(aeld, /^(?:mousedown)$/)
+clicknupload.*##iframe:remove()
+clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
+!clicknupload.*##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
+clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
+clicknupload.*##input[id="adblock_detected"]:remove()
+||undefined^$script,domain=clicknupload.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! blocks Kroger website?
