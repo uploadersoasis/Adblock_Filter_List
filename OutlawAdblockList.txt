@@ -28065,7 +28065,6 @@ windows-repair-toolbox.com##div[id^="cookie-bar"]
 windows-repair-toolbox.com##span[class^="Ad-label"]
 windows-repair-toolbox.com##+js(abort-on-property-read.js, adsbygoogle)
 windows-repair-toolbox.com##+js(abort-on-property-write.js, adsbygoogle)
-||wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||v4.s.arclk.net^*
 ||track.vcdc.com^*
 ||www.warez-bb.org/banner_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42285,6 +42284,23 @@ clicknupload.*##+js(set-attr, 'button[id="downloadbtn"]', href, '[onclick]')
 ||seedlingneurotic.com^*
 ||forms.hsforms.com/embed/v3/counters.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||forms-na1.hsforms.com/embed/v3/counters.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||metric.onewegg.com/g/collect?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||metric.onewegg.com^*
+||ih.newegg.com/p.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||e8386.a.akamaiedge.net/p.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ec-apis.newegg.com/amber3/tracking$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||consent.api.osano.com/record$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||consent.api.osano.com^*
+||metrics.media-amazon.com^*
+||player.stats.live-video.net^*
+||youtrack.jetbrains.com^*
+www.att.com##div[id="gpc-banner"]
+www.att.com##div[id="gpc-banner"]:remove()
+||nbfkexqbr8elolwk-redventures.siteintercept.qualtrics.com^*
+||js.monitor.azure.com/scripts/b/ai.2.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||consentreceiverfd-prod.azurefd.net^*
+! blocking wcp-consent.js prevents some Microsoft websites from displaying at all
+!||wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! blocks Kroger website?
