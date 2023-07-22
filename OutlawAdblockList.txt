@@ -42112,7 +42112,6 @@ tumblr.com##div[class="follow-teaser"]:remove()
 ||ads-alpha.ewscloud.com^*
 ||zn4tjp6k5ql8j93rywvw-newsy.siteintercept.qualtrics.com^*
 !||hbx.media.net/bidexchange.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||hbx.media.net^*
 ||kytesconge.com^*
 ||carmeleanurous.com^*
 uploadbuzz.cc##a[href*="://7starhd.toys/"]
@@ -42128,7 +42127,6 @@ www.winsoftware.de##section[id="dl-hinweis-chrome"]
 www.winsoftware.de##section[id="dl-hinweis-chrome"]:remove()
 ! prevents download page from completely loading
 !gofile.io##+js(set-constant, launchAppLixirAd, noopFunc)
-! prevents download page from completely loading
 !gofile.io##+js(acs, launchAppLixirAd)
 gofile.io##*[id^="AppLixirAd"]
 gofile.io##*[id^="AppLixirAd"]:remove()
@@ -42148,7 +42146,6 @@ woowebtools.com##+js(set-constant, gtag, noopFunc)
 woowebtools.com##+js(acs, gtag)
 ! prevents page from loading
 !woowebtools.com##+js(acs, decodeURIComponent, eval)
-! prevents page from loading
 !woowebtools.com##+js(acs, parseInt, arguments)
 woowebtools.com##+js(abort-on-property-read, adsbygoogle)
 woowebtools.com##+js(abort-on-property-write, adsbygoogle)
@@ -42160,7 +42157,6 @@ woowebtools.com##a[class="krj4aaj4wg"]:remove()
 drive.online-fix.me##.download-button:remove-attr(onclick)
 drive.online-fix.me##.download-button:remove-attr(disabled)
 drive.online-fix.me##.get-key-button:remove-attr(disabled)
-! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
 drive.online-fix.me##+js(set-attr, '.download-button', disabled, false)
 drive.online-fix.me##+js(saa, type, submit, .download-button)
 drive.online-fix.me##+js(set-attr, '.get-key-button', disabled, false)
@@ -42206,7 +42202,6 @@ dailycaller.com##+js(set-constant, impressionData, {})
 dailycaller.com##+js(abort-on-property-read, impressionData.prebid)
 dailycaller.com##+js(abort-on-property-write, impressionData.prebid)
 dailycaller.com##+js(abort-on-property-read, window.confiant)
-dailycaller.com##+js(abort-on-property-write, impressionData.prebid)
 ||filerio.in/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 filerio.in##a[id="handle"]
 filerio.in##iframe[style*="display: none"]
@@ -42238,7 +42233,6 @@ thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:rem
 ||clicknupload.*/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 clicknupload.*##+js(abort-current-script, zfgloadedpopup)
 clicknupload.*##+js(abort-on-property-read, zfgloadedpopup)
-clicknupload.*##+js(abort-current-script, apu.php)
 clicknupload.*##+js(abort-current-script, apu.php)
 clicknupload.*##+js(abort-on-property-read, window['__CF$cv$params'])
 clicknupload.*##+js(abort-on-property-write, window['__CF$cv$params'])
@@ -42301,6 +42295,53 @@ www.att.com##div[id="gpc-banner"]:remove()
 ||consentreceiverfd-prod.azurefd.net^*
 ! blocking wcp-consent.js prevents some Microsoft websites from displaying at all
 !||wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||tracker-v4.gamedock.io^*
+||tracker.gamemonkey.org^*
+||tracker.gamedock.io^*
+store.steampowered.com##div[id="cookiePrefPopup"]
+store.steampowered.com##div[id="cookiePrefPopup"]:remove()
+www.vg247.com##div[id="sp_message_container_830134"]
+www.vg247.com##div[id="sp_message_container_830134"]:remove()
+www.vg247.com##body:remove-attr(data-ads)
+radaris.com##div[class*="js-ads-block"]
+radaris.com##div[class^="ads_"]
+radaris.com##ins[data-ad-client]
+radaris.com##div[class*="js-ads-block"]:remove()
+radaris.com##div[class^="ads_"]:remove()
+radaris.com##ins[data-ad-client]:remove()
+!||radaris.com/srv/a.gate_stats?event=1
+||radaris.com/srv/a.gate_stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+subscene.com##div[id^="zergnet-widget-"]
+subscene.com##div[id^="zergnet-widget-"]:remove()
+||letsupload.cc/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||nthaitingsh.buzz^*
+||yougame.biz/images/rlm/satanobannerru.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||yougame.biz/images/rlm/ruvds_560x60_animate.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+yougame.biz##div[class="sponsor-banner-ss"]
+yougame.biz##div[class="sponsor-banner-ss"]:remove()
+||umbrellastep.site^*
+||rubricagalah.guru^*
+||sorbentfalsum.com^*
+clicknupload.*##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIjcm5fYWRfbmF0aXZlX2o1bXJxfCNybl9hZF9uYXRpdmVfemNpemUifQ==)
+||pixeldrain.com/api/misc/rate_limits$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||entreatyfungusgaily.com^*
+||connect.cabbageknee.site^*
+||ku.yuppdownload.com^*
+!skidrowcodex.co##a[href^="https://ku.yuppdownload.com/"]
+!skidrowcodex.co##a[href^="https://ku.yuppdownload.com/"]:remove()
+||skidrowcodex.co^*
+!skiddirectgamespages.site##iframe[id="hdfdssvgddvd"]
+!skiddirectgamespages.site##iframe[id="hdfdssvgddvd"]:remove()
+||skiddirectgamespages.site^*
+||uploadgameserver11.space^*
+unitystr.com##div[aria-label="Close Ads"]
+unitystr.com##div[aria-label="Close Ads"]:remove()
+unitystr.com##script[id^="google_gtag"]
+unitystr.com##script[id^="google_gtag"]:remove()
+unitystr.com##+js(set-constant, gtag, noopFunc)
+||instrumenttactics.com^*
+||tags.orquideassp.com^*
+||vv8h9vyjgnst.com^*
 
 !Whitelisted
 ! blocks Kroger website?
