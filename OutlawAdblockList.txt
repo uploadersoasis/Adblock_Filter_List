@@ -27792,22 +27792,34 @@ apkboxdl.com##a[href*="//www.linkonclick.com/jump/next.php"]
 ||www.notorietycheerypositively.com^*
 androidrepublic.org##div[class="u-bottomFixer js-bottomFixTarget"]
 ||wikkenenwegen.hln.be/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!www.file-upload.com##div[id^="ads_container_"] !blocks download links
+||www.file-upload.com/mngez/js/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.file-upload.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.file-upload.com##+js(set-constant, timeout, 0)
 ||www.file-upload.com/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.file-upload.com##div[id="adblockinfo"]
-!www.file-upload.com##+js(set-constant, timeout, setTimeout\(tick\, 1\))
-www.file-upload.com##+js(set-constant, tick, 0)
-www.file-upload.com##+js(set-constant, document.querySelector("#downloadbtn").style, visibility: visible;)
-www.file-upload.com##button[id="downloadbtn"]:style(visibility: visible !important;)
-www.file-upload.com##+js(remove-attr, disabled, .downloadbtn, stay)
-www.file-upload.com##+js(remove-attr, disabled, #downloadbtn, stay)
-www.file-upload.com##+js(remove-attr, onclick, #downloadbtn, stay)
-!www.file-upload.com##+js(no-setTimeout-if)
 !||www.file-upload.com/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.file-upload.com/sw_may.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.file-upload.in/mngez/js/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.file-upload.in/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.file-upload.in/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.file-upload.in/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.file-upload.in/sw_may.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!www.file-upload.com,www.file-upload.in##div[id^="ads_container_"] !blocks download links
+www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, 0)
+www.file-upload.com,www.file-upload.in##div[id="adblockinfo"]
+!www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, setTimeout\(tick\, 1\))
+www.file-upload.com,www.file-upload.in##+js(set-constant, tick, 0)
+www.file-upload.com,www.file-upload.in##+js(set-constant, document.querySelector("#downloadbtn").style, visibility: visible;)
+www.file-upload.com,www.file-upload.in##button[id="downloadbtn"]:style(visibility: visible !important;)
+www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, .downloadbtn, stay)
+www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, #downloadbtn, stay)
+www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, #downloadbtn, stay)
+!www.file-upload.com,www.file-upload.in##+js(no-setTimeout-if)
 ! This makes the countdown very quick from 10 seconds, but the server checks the time so it errors if the button is pressed too soon.
-www.file-upload.com##+js(nano-stb, /.?/, 1000)
+www.file-upload.com,www.file-upload.in##+js(nano-stb, /.?/, 1000)
+www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, #download-btn)
+!www.file-upload.com,www.file-upload.in##div[id^="ads_container_"]
+www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, .mnbt1.btn-primary.btn-xs.btn)
+www.file-upload.com,www.file-upload.in##div[id="vb9h7ma"]
+www.file-upload.com,www.file-upload.in##div[id="ldrsr3r"]
 paladinmod.com##div[id="wait-done"]:style(display: block;margin-top: 25px;)
 paladinmod.com##+js(set-constant, document.querySelector("#wait-done").style, display: block;margin-top: 25px;)
 paladinmod.com##+js(remove-attr, style, #wait-done, stay)
@@ -29074,7 +29086,6 @@ veryfiles.com##meta[name="propeller"]
 ||apk4all.com/wp-content/cache/busting/google-tracking/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||gussame.com^*
 dlapk4all.com##a[href*="/mobileoffers-du-download.com/"]
-||www.file-upload.com/sw_may.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||phortaub.com^*
 ||www.yahoo.com/_td_api/beacon/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||glimtors.net^*
@@ -29550,9 +29561,6 @@ linkvertise.com##.cc-window
 ||streamrail.net^$script,domain=linkvertise.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||linkvertise.net^$3p
 ! https://github.com/uBlockOrigin/uAssets/issues/6487
-www.file-upload.com##+js(remove-attr, onclick, #download-btn)
-!www.file-upload.com##div[id^="ads_container_"]
-www.file-upload.com##+js(remove-attr, onclick, .mnbt1.btn-primary.btn-xs.btn)
 www.techspot.com##div.paragraphAdinsert
 nullpress.net##+js(set-constant, mdpUnGrabber, {})
 nullpress.net##+js(aopr, UnGrabber)
@@ -31076,12 +31084,9 @@ mynewsmedia.co##iframe
 mynewsmedia.co##+js(abort-current-inline-script, isGoogleAdClick)
 ||readytoloadforyou.com^*
 ||tei.ai/webroot/modern_theme/img/dwndbnr1.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.file-upload.com##div[id="vb9h7ma"]
-www.file-upload.com##div[id="ldrsr3r"]
 ||d26adrx9c3n0mq.cloudfront.net^*
 ||elementalantecedent.com^*
 ||search4y.com^*
-||file-upload.site/page.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.kazfv.com^*
 !||loxitdat.com/counter$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||loxitdat.com^*
@@ -35524,6 +35529,7 @@ www.dynamixyz.com##div[class^="sqs-cookie-banner"]
 ||1d0wnload1ngx.com^*
 ||fynbest.com^*
 ||10kjdbfkj10.monster/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||file-upload.site/page.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||file-upload.site^*
 ||modovia.de^*
 www.indiatoday.in##div[class="story-header-ad"]
@@ -35642,7 +35648,6 @@ web.archive.org##+js(remove-attr, style, body)
 web.archive.org##*:style(visibility: visible !important;)
 web.archive.org##div[id^="donato"]
 ||cdn.discordapp.com/attachments/981225862621966446/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.file-upload.com/mngez/js/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 cpmlink.net##div[id^="ad-display-section"]
 cpmlink.net##div[id="disable"]
 cpmlink.net##+js(set-constant, downloadButton.disabled, false, stay)
