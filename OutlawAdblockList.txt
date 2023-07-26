@@ -739,7 +739,6 @@ www.quickmeme.com##.meme_adwrap
 ||feedjit.com/wa/tf.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.webgozar.ir/c.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||c.speedtest.net/flash/wave-ad-wide.swf$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||soft98.ir/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.att.com/scripts/baynote.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||adslm.dohrenburg.net^*
 ||oascentral.sears.com^*
@@ -10895,7 +10894,6 @@ turbobit.net###topbanner
 !||cdnx.tribalfusion.com/media/*/creative.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cdnx.tribalfusion.com/media/common/richmedia/html5/3.0/js/creative.3.0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdnx.tribalfusion.com^*
-soft98.ir##.banners.ban.topcenteradss
 !w.datbaze.ru###banner34er45tg56
 w.datbaze.ru##div[id^="banner"]
 w.datbaze.ru##div[title^="banner"]
@@ -15995,7 +15993,6 @@ thepoliticalinsider.com###ox_2322248832_538143962
 ||securecloud-dl.com^*
 ||securessl-dl.com^*
 ||core2digital.go2affise.com^*
-||superonclick.com/prod/redirect.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ssa.1337x.to/show^*
 ||ssa.1337x.to^*
 ||l.lj-toys.com^*
@@ -17917,11 +17914,6 @@ www.superdataresearch.com###newsletter-container
 !||beta.kaprila.com/a/show.js.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||beta.kaprila.com/a/show.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||beta.kaprila.com^*
-||soft98.ir/engine/modules/antibot/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-soft98.ir##div[id="adx-wide"]
-soft98.ir##div[id="adx-specials"]
-soft98.ir##div[id="adx-text"]
-soft98.ir##div[id="toast__inner"]
 ||atinhenfortwa.info^*
 ||*.atinhenfortwa.info^*
 !||db59.atinhenfortwa.info^*
@@ -20024,11 +20016,6 @@ www.theverge.com##.m-ad__btf_leaderboard_variable
 ||moneymakercdn.com^*
 watchsomuch.unblocked.is###modal-1
 watchsomuch.unblocked.is###removeThisSection
-soft98.ir##div[id^="adx-specials"]
-soft98.ir##div[class="adt adx-sidebar"]
-soft98.ir##img[class="adx_images"]
-soft98.ir##div[class="adx__inner"]
-soft98.ir##div[id="kaprila_soft98_ir_related-top-post"]
 ||dl.a2zcity.net/wp-content/uploads/2018/08/google.png$image
 ||hephenmorepron.info^*
 ||render.btserve.com^*
@@ -20527,6 +20514,7 @@ rockfile.co##ins[class="adsbygoogle"]
 ||badskies.com^*
 ddl.to##div[class="adsBox"]
 ||watchsomuch.unblocked.to/AD/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||superonclick.com/prod/redirect.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||superonclick.com/script/npa3.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||superonclick.com^*
 !||thevpntrustzone.xyz/get_script.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -22769,9 +22757,6 @@ forum.xda-developers.com###adhesive_container
 mega4up.com###gdpr-cookie-notice
 ||www.olkrzytv.com^*
 ||olkrzytv.com^*
-!soft98.ir##div[class="yn-article-display-sticky yn-borderbox YEKTANET"]
-soft98.ir##div[class$="YEKTANET"]
-soft98.ir##.show.toast-lg.fade.toast
 !||ua.yektanet.com/__fake.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ua.yektanet.com^*
 knewz.com##ins[class="adsbygoogle"]
@@ -24634,7 +24619,6 @@ www.tutorialrepublic.com##.ad-container
 anonymz.com##^script:has-text(charCodeAt):has-text(fromCharCode)
 anonymz.com##^script:has-text(charCodeAt)
 anonymz.com##^script:has-text(fromCharCode)
-soft98.ir##body > script:nth-child(12)
 ||app.najva.com/static/js/scripts/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s3.amazonaws.com/72ae7df78a71f1cb4dd36b253ce1e5ca9159a131196d5fd86b6522/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||coyseyirely.club^*
@@ -38401,6 +38385,8 @@ multiup.org,multiup.eu##+js(set-attr, button[namehost][link], formaction, [link]
 !multiup.org,multiup.eu##+js(move-attr-prop, a[id="1fichier.com"], button[namehost="1fichier.com"], class, class)
 ! The following places a[id="welcome-message"] above button[namehost="1fichier.com"] to replace it.
 ! a[href^="/fr/mirror/"][alt="French flag"] alternative anchor tag to reuse.
+! insert-child-before needs https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/fec2e68c2062f02f304718bc5fb6bb53033655f2/scriptlets.js
+! In newer version of the scriptlet insert-child-before does not work.
 multiup.org,multiup.eu##+js(insert-child-before, button[namehost="1fichier.com"], a[id="welcome-message"])
 multiup.org,multiup.eu##+js(move-attr-prop, a[id="welcome-message"], button[namehost="1fichier.com"], href, link)
 multiup.org,multiup.eu##+js(move-attr-prop, a[id="welcome-message"], button[namehost="1fichier.com"], class, class)
@@ -38419,6 +38405,16 @@ multiup.org,multiup.eu##+js(replace-node-text, text, Welcome, Download)
 multiup.org,multiup.eu##+js(set-attr, button[namehost="1fichier.com"], hidden, true)
 multiup.org,multiup.eu##button[namehost="1fichier.com"]:style(display:none !important;)
 multiup.org,multiup.eu##+js(set-attr, button[namehost="1fichier.com"], disabled, true)
+multiup.org,multiup.eu##form[action^="/en/mirror/"]:remove-attr(onsubmit)
+! Also need to get rid of onsubmit() function and/or "submit" event listener to prevent new window/tab from being opened on pressing download button.
+! TODO: The following three lines to do that don't work for some reason.
+multiup.org,multiup.eu##+js(set-constant, onsubmit, noopFunc)
+!multiup.org,multiup.eu##+js(aeld, { "type": "/submit/", "pattern": "/onsubmit/", "log": 2 })
+multiup.org,multiup.eu##+js(aeld, { "type": "/submit/", "pattern": "/^/", "log": 2 })
+multiup.org,multiup.eu##form[action^="/en/mirror/"]:remove-attr(onsubmit)
+! simply removing target attribute makes the target "_self" instead of having to manually set it to "_self".
+!multiup.org,multiup.eu##+js(saa, target, _self, form[action^="/en/mirror/"])
+multiup.org,multiup.eu##form[action^="/en/mirror/"]:remove-attr(target)
 !multiup.org,multiup.eu##a#welcome-message::before
 !`window.open('${document.querySelector('button[namehost="1fichier.com"]').attributes.link.value}')`
 !document.querySelector('button[namehost="1fichier.com"]').attributes.link.value is the download link.
@@ -42402,6 +42398,75 @@ unitystr.com##+js(set-constant, gtag, noopFunc)
 ||instrumenttactics.com^*
 ||tags.orquideassp.com^*
 ||vv8h9vyjgnst.com^*
+||find-prizes.life^*
+||cdn-client.medium.com/lite/static/js/reporting.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+medium.com##h2:has-text(Support independent authors and access the):upward(4)
+medium.com##h2:has-text(Support independent authors and access the):upward(4):remove()
+||www.zergnet.com/zerg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ads.livetv686.me^*
+||rouwhapt.com^*
+||saiceezu.xyz^*
+||fwwxanjyjlu.xyz^*
+||ads.dochaseadx.com^*
+||hallway.netnaija.app/deliver.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||zl.anseisjulus.com^*
+||insectsmanners.com^*
+||vaugroar.com^*
+||freebookspot.unblockit.rsvp/vernambanner.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||soft98.ir/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+soft98.ir##.banners.ban.topcenteradss
+!||soft98.ir/engine/modules/antibot/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!soft98.ir##div[id="adx-wide"]
+!soft98.ir##div[id="adx-specials"]
+!soft98.ir##div[id="adx-text"]
+soft98.ir##div[id^="adx-"]
+soft98.ir##div[id="toast__inner"]
+soft98.ir##div[class="adt adx-sidebar"]
+!soft98.ir##img[class="adx_images"]
+!soft98.ir##div[class="adx__inner"]
+soft98.ir##div[class^="adx_"]
+!soft98.ir##div[id="kaprila_soft98_ir_related-top-post"]
+! The following blocking rule will cause the body contents to disappear if it is enabled.
+!soft98.ir##div[id^="kaprila_"]
+!soft98.ir##div[class="yn-article-display-sticky yn-borderbox YEKTANET"]
+! The following blocking rule will cause the body contents to disappear if it is enabled.
+!soft98.ir##div[class*="YEKTANET"]
+soft98.ir##.show.toast-lg.fade.toast
+!soft98.ir##body > script:nth-child(12)
+!soft98.ir##+js(abort-on-property-write, e.dlpc4)
+!soft98.ir##+js(abort-on-property-read, e.dlpc4)
+!soft98.ir##+js(abort-on-property-write, window.c4dlc4)
+!soft98.ir##+js(abort-on-property-read, window.c4dlc4)
+!soft98.ir##+js(set-constant, window.c4dlc4, {})
+soft98.ir##+js(set-constant, isAds, noopFunc)
+! The following blocking rule will cause the body contents to disappear if it is enabled.
+!||img.soft98.ir/1/afrak.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||soft98.ir/manifest.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! The following blocking rule is required or body section will disappear if ads are blocked.
+||soft98.ir/templates/23-07-18-20/css/style.min.css?v=2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||foxus.tagger.opecloud.com/foxus/v2/uid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||foxus.tagger.opecloud.com^*
+||htlbid.com/v3/*/htlbid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+public.tutflix.org##*[class*="fa-buysellads"]
+public.tutflix.org##*[class*="fa-buysellads"]:remove()
+public.tutflix.org##div[data-advadstrackid]
+public.tutflix.org##div[data-advadstrackid]:remove()
+public.tutflix.org##ins[data-ad-client]
+public.tutflix.org##ins[data-ad-client]:remove()
+public.tutflix.org##script[id^="advadsTrackingGAFront"]
+public.tutflix.org##script[id^="advadsTrackingGAFront"]:remove()
+public.tutflix.org##script[id="publi-tracking"]
+public.tutflix.org##script[id="publi-tracking"]:remove()
+public.tutflix.org##+js(set-constant, advads_tracking_ads, {})
+public.tutflix.org##+js(set-constant, advads_tracking_urls, {})
+public.tutflix.org##+js(set-constant, advads_tracking_methods, {})
+public.tutflix.org##+js(set-constant, advads_gatracking_allads, {})
+public.tutflix.org##+js(set-constant, window.advads_admin_bar_items, [])
+public.tutflix.org##+js(abort-on-property-write, advads_gatracking_allads)
+public.tutflix.org##+js(abort-on-property-read, advads_gatracking_allads)
+public.tutflix.org##+js(abort-on-property-write, window.advanced_ads_ready_queue)
+public.tutflix.org##+js(abort-on-property-read, window.advanced_ads_ready_queue)
+public.tutflix.org##+js(acs, sbr.ads_state)
 
 !Whitelisted
 ! blocks Kroger website?
