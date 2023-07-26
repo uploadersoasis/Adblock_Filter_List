@@ -17528,8 +17528,6 @@ stackoverflow.com##div[class^="clc-cp-sb"]
 ||boostfiles.net/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||boostfiles.net/themes/flow/js/clipboardjs/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||boostfiles.net/themes/flow/js/zeroClipboard/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||live.demand.supply/up.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||live.demand.supply/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 boostfiles.net##div[class="metaRedirectWrapperTopAds"]
 !||tag.researchnow.com/t/beacon$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tag.researchnow.com^*
@@ -32953,20 +32951,42 @@ webhostingpost.com##div[style="display:none;"]:style(display: block !important;)
 webhostingpost.com##div[class*="g-recaptcha"]:style(display: block !important;)
 ! blocks captcha from working
 !webhostingpost.com##+js(aeld, message)
-webhostingpost.com##+js(acs, googletag)
-webhostingpost.com##^script:has-text(googletag)
 ! This stops the script that generates the final destination link (contains var domain = "https://fc.lc/links/go").
 ! It is needed to get past the captcha screen though.
 !webhostingpost.com##+js(acs, /adBlockDetected/i)
 !webhostingpost.com##^script:has-text(/adBlockDetected/i)
-webhostingpost.com##+js(nofab.js)
-webhostingpost.com##+js(set-constant, importFAB, null)
-webhostingpost.com##+js(set-constant, _0x491ex3, 0, stay)
-webhostingpost.com##+js(acs, /function\(\$\,document\)/i)
-webhostingpost.com##^script:has-text(/function\(\$\,document\)/i)
+!webhostingpost.com##+js(acs, /function\(\$\,document\)/i)
+!webhostingpost.com##^script:has-text(/function\(\$\,document\)/i)
+!webhostingpost.com##+js(acs, googletag)
+!webhostingpost.com##^script:has-text(googletag)
 webhostingpost.com##div[id="overlay"]
+webhostingpost.com##div[id="overlay"]:remove()
 webhostingpost.com##+js(acs, \"s65c\")
 webhostingpost.com##^script:has-text(\"s65c\")
+webhostingpost.com##iframe[id="iframe_id"]
+webhostingpost.com##iframe[id="iframe_id"]:remove()
+webhostingpost.com##div[data-aa-adunit]
+webhostingpost.com##div[data-aa-adunit]:remove()
+webhostingpost.com##a[id="surl"]:remove-attr(onclick)
+webhostingpost.com##+js(set-constant, gtag, noopFunc)
+webhostingpost.com##+js(acs, gtag)
+webhostingpost.com##div[id="adb_detected"]
+webhostingpost.com##div[id="adb_detected"]:remove()
+webhostingpost.com##+js(acs, doc, iframe_id)
+webhostingpost.com##+js(set-constant, adBlockDetected, falseFunc)
+webhostingpost.com##+js(set-constant, detectPrivateMode, falseFunc)
+webhostingpost.com##+js(set-constant, adBlockNotDetected, trueFunc)
+!webhostingpost.com##+js(set-constant, start_counter, noopFunc)
+webhostingpost.com##+js(set-constant, importFAB, null)
+webhostingpost.com##+js(set-constant, FuckAdBlock, _0xae04)
+webhostingpost.com##+js(set-constant, fuckAdBlock, {})
+webhostingpost.com##+js(set-constant, _0x491ex3, 0, stay)
+!webhostingpost.com##+js(nofab.js)
+!webhostingpost.com##+js(aeld, { "type": "/onclick/", "pattern": "/onclick/", "log": 2 })
+webhostingpost.com##+js(aeld, { "type": "/onclick/", "pattern": "/^/", "log": 2 })
+webhostingpost.com##button[id="invisibleCaptchaShortlink"]:remove-attr(onclick)
+https://fc.lc/links/go
+
 ||klyxdogdj.com^*
 ||dyjtibcz3b48v.cloudfront.net^*
 ||hognaivee.com^*
@@ -36007,7 +36027,6 @@ www.espn.com##div[title="Advertisement"]
 ||last0nef1le.com^*
 fc-lc.com##iframe[id="iframe_id"]
 ||downloadfreexx1.com^*
-webhostingpost.com##iframe[id="iframe_id"]
 ||tovanillitechan.com^*
 ||jevtguexebyt.com^*
 ||trustbummler.com^*
@@ -38338,6 +38357,7 @@ multiup.org,multiup.eu##div[class="mfp-wrap mfp-auto-cursor mfp-ready"]
 !multiup.org,multiup.eu##div[id="cookie-bar"]
 !multiup.org,multiup.eu##div[id="cookie-plugin-modal"]
 multiup.org,multiup.eu##div[id^="cookie-"]
+multiup.org,multiup.eu##div[id^="cookie-"]:remove()
 multiup.org,multiup.eu##a[namehost="UseNext"]
 multiup.org,multiup.eu##a[namehost="UseNext"]:remove()
 multiup.org,multiup.eu##input[name="link"]:remove-class(hidden)
@@ -38386,9 +38406,13 @@ multiup.org,multiup.eu##+js(set-attr, button[namehost][link], formaction, [link]
 ! a[href^="/fr/mirror/"][alt="French flag"] alternative anchor tag to reuse.
 ! insert-child-before needs https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/fec2e68c2062f02f304718bc5fb6bb53033655f2/scriptlets.js
 ! In newer version of the scriptlet insert-child-before does not work.
+! is button[namehost="1fichier.com"] always button[id="175878546"]?
+!multiup.org,multiup.eu##+js(insert-child-before, button[id="175878546"], a[id="welcome-message"])
 multiup.org,multiup.eu##+js(insert-child-before, button[namehost="1fichier.com"], a[id="welcome-message"])
 multiup.org,multiup.eu##+js(move-attr-prop, a[id="welcome-message"], button[namehost="1fichier.com"], href, link)
 multiup.org,multiup.eu##+js(move-attr-prop, a[id="welcome-message"], button[namehost="1fichier.com"], class, class)
+! removing hidden is not necessary since move-attr-prop scriptlet above already replaced all original classes 
+multiup.org,multiup.eu##a[id="welcome-message"]:remove-class(hidden)
 ! remove hvr-bounce-to-right since it prevents the download icon from "fa fa-download" classes from being shown.
 multiup.org,multiup.eu##a[id="welcome-message"]:remove-class(hvr-bounce-to-right)
 multiup.org,multiup.eu##+js(saa, target, _blank, a[id="welcome-message"])
@@ -42483,6 +42507,39 @@ send.cm##div[data-aa-adunit]:remove()
 send.cm##+js(set-constant, nrlejw, noopFunc)
 send.cm##+js(acs, nrlejw)
 send.cm##video[id="vjsplayer"]:style(padding-top: 0% !important;)
+||cdn.cuty.io/js/public/links/first.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.cuty.io/js/public/layouts/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.cuty.io/js/public/layouts/_partials/nav-links.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.cuty.io/js/public/links/captcha.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.cuty.io/js/layouts/base.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+cutty.app##:xpath(/html/head/script[3])
+cutty.app##:xpath(/html/head/script[3]):remove()
+cutty.app##script[data-adel]
+cutty.app##script[data-adel]:remove()
+cutty.app##+js(set-constant, stcih, {})
+||cdntechone.com/stattag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+cutty.app##div[data-ad]
+cutty.app##div[data-ad]:remove()
+cutty.app##button[id="submit-button"]:remove-attr(disabled)
+! replace-node-text.js will replace the textContent of any element such as an anchor tagin the following rule.
+cutty.app##+js(replace-node-text, text, Please Wait ..., Get Download Link)
+cutty.app##div[class="container"]:has(button[class="ab"]:has(span[class="error-message"]:has-text(Please disable Adblock to continue)))
+cutty.app##div[class="container"]:has(button[class="ab"]:has(span[class="error-message"]:has-text(Please disable Adblock to continue))):remove()
+cutty.app##+js(acs, parseInt, document)
+cutty.app##+js(set-constant, gtag, noopFunc)
+cutty.app##+js(acs, gtag)
+cutty.app##div[class="adsbygoogle"]
+cutty.app##div[class="adsbygoogle"]:remove()
+||forbidcrenels.com^*
+!||live.demand.supply/up.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||live.demand.supply^*
+||nanesbewail.com^*
+||pl15036616.highrevenuegate.com^*
+||0lnawd0.com^*
+||softronline.click^*
+||tradenewbest.com^*
+www.dailymotion.com##div[class^="CookiePopup_"]
+www.dailymotion.com##div[class^="CookiePopup_"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
