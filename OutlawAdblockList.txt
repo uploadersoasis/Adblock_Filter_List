@@ -31238,7 +31238,6 @@ www.sportingnews.com##div[id="ad_D_sticky_banner"]
 ||inpage-push.com^*
 ||chatakauntewed.com^*
 dlapk4all.com##p[class="field has-addons control is-expanded"]:has(a[href*="//mobileoffers-7-m-download.com"])
-||www.increaserev.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||services.brid.tv/player/build/plugins/adunit.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||powerad.ai/script.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.android-x86.org##div[class="brid-advert-container"]
@@ -33358,7 +33357,6 @@ www.pythontutorial.net##div[class^="ad ad-"]:has(iradsdiv)
 www.pythontutorial.net##div[ir-ads-unit]
 www.pythontutorial.net##div[id^="div-gpt-ad-"]
 www.pythontutorial.net##iradsdiv
-secureads.increaserev.com^*
 www.i-programmer.info##div[id="iptop"]
 ||imp.pxf.io^*
 ||imp.i115008.net^*
@@ -36789,6 +36787,8 @@ www.pythontutorial.net##div[data-aa-adunit]
 www.pythontutorial.net##div[class="ad ad-336"]
 ||target.georiot.com^*
 ||ads.resetsrv.com^*
+||www.increaserev.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+secureads.increaserev.com^*
 !||increaserev.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||increaserev.com^*
 send.cm##div[class*="increaserev"]
@@ -42467,6 +42467,22 @@ public.tutflix.org##+js(abort-on-property-write, window.advanced_ads_ready_queue
 public.tutflix.org##+js(abort-on-property-read, window.advanced_ads_ready_queue)
 public.tutflix.org##+js(acs, sbr.ads_state)
 ||letsupload.cc/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!1337x.to##a[href="/netflixPromo728.php"]
+1337x.to##a[href^="/netflixPromo"]
+1337x.to##a[href^="/netflixPromo"]:remove()
+||x7r3mk6ldr.com^*
+||d2dkurdav21mkk.cloudfront.net^*
+send.cm##+js(set-constant, gtag, noopFunc)
+send.cm##+js(set-constant, _paq, [])
+send.cm##+js(abort-on-property-write, _paq)
+send.cm##+js(abort-on-property-read, _paq)
+send.cm##+js(abort-on-property-write, gtag)
+send.cm##+js(abort-on-property-read, gtag)
+send.cm##div[data-aa-adunit]
+send.cm##div[data-aa-adunit]:remove()
+send.cm##+js(set-constant, nrlejw, noopFunc)
+send.cm##+js(acs, nrlejw)
+send.cm##video[id="vjsplayer"]:style(padding-top: 0% !important;)
 
 !Whitelisted
 ! blocks Kroger website?
