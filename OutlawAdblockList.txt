@@ -42542,6 +42542,10 @@ cutty.app##div[class="adsbygoogle"]:remove()
 ||0lnawd0.com^*
 ||softronline.click^*
 ||tradenewbest.com^*
+wccftech.com##div[class="wccf_video_tag"]:has(div[class="d-none d-md-block"]):has(div[class="d-block d-md-none"])
+wccftech.com##div[class="wccf_video_tag"]:has(div[class="d-none d-md-block"]):has(div[class="d-block d-md-none"]):remove()
+www.techradar.com##div[class="dfp-leaderboard-container"]
+www.techradar.com##div[class="dfp-leaderboard-container"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
