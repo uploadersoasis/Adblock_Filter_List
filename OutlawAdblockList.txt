@@ -32979,17 +32979,17 @@ webhostingpost.com##a[id="surl"]:remove-attr(onclick)
 webhostingpost.com##+js(set-constant, gtag, noopFunc)
 webhostingpost.com##+js(acs, gtag)
 webhostingpost.com##+js(acs, doc, iframe_id)
-webhostingpost.com##+js(set-constant, adBlockDetected, falseFunc)
-webhostingpost.com##+js(set-constant, detectPrivateMode, falseFunc)
-webhostingpost.com##+js(set-constant, adBlockNotDetected, trueFunc)
-!webhostingpost.com##+js(set-constant, start_counter, noopFunc)
-webhostingpost.com##+js(set-constant, importFAB, null)
 webhostingpost.com##+js(set-constant, FuckAdBlock, _0xae04)
-webhostingpost.com##+js(set-constant, fuckAdBlock, {})
 webhostingpost.com##+js(set-constant, _0x491ex3, 0, stay)
-!webhostingpost.com##+js(aeld, { "type": "/onclick/", "pattern": "/onclick/", "log": 2 })
-webhostingpost.com##+js(aeld, { "type": "/onclick/", "pattern": "/^/", "log": 2 })
+!webhostingpost.com##+js(aeld, { "type": "/click/", "pattern": "/onclick/", "log": 2 })
+webhostingpost.com##+js(aeld, { "type": "/click/", "pattern": "/^/", "log": 2 })
 webhostingpost.com##button[id="invisibleCaptchaShortlink"]:remove-attr(onclick)
+!webhostingpost.com##+js(set-constant, importFAB, null)
+!webhostingpost.com##+js(set-constant, adBlockDetected, falseFunc)
+!webhostingpost.com##+js(set-constant, detectPrivateMode, falseFunc)
+!webhostingpost.com##+js(set-constant, adBlockNotDetected, trueFunc)
+!webhostingpost.com##+js(set-constant, fuckAdBlock, {})
+!webhostingpost.com##+js(set-constant, start_counter, noopFunc)
 ||revadvert.com/wp-content/plugins/smio-push-notification/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 revadvert.com##+js(set-constant, isOverGoogleAd, false, stay)
 revadvert.com##+js(set-constant, ustatus, "success", stay)
@@ -42602,6 +42602,7 @@ howifx.com##div[id="gads"]:remove()
 ||instantlyshrillblink.com^*
 ||nicestsame.com^*
 ||cheeroredraw.com^*
+||player.ad-adapex.io^*
 
 !Whitelisted
 ! blocks Kroger website?
@@ -42755,3 +42756,4 @@ gitlab.com#@#+js(no-floc)
 @@||gum.criteo.com/sid/json?origin=prebid&topUrl=$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
 @@||securepubads.g.doubleclick.net/pagead/ppub_config?ippd=$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
 @@||googletagservices.com/tag/js/gpt.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*$script,domain=webhostingpost.com
