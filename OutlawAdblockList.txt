@@ -42523,6 +42523,7 @@ send.cm##video[id="vjsplayer"]:style(padding-top: 0% !important;)
 ||cdn.cuty.io/js/public/layouts/_partials/nav-links.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.cuty.io/js/public/links/captcha.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.cuty.io/js/layouts/base.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.cuty.io/js/public/links/last.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 cutty.app##:xpath(/html/head/script[3])
 cutty.app##:xpath(/html/head/script[3]):remove()
 cutty.app##script[data-adel]
@@ -42541,6 +42542,11 @@ cutty.app##+js(set-constant, gtag, noopFunc)
 cutty.app##+js(acs, gtag)
 cutty.app##div[class="adsbygoogle"]
 cutty.app##div[class="adsbygoogle"]:remove()
+! the id's in the following four rules may be randomly generated.
+cutty.app##div[id="i0hi07d"]
+cutty.app##div[id="i0hi07d"]:remove()
+cutty.app##a[id="lkmy"]
+cutty.app##a[id="lkmy"]:remove()
 ||forbidcrenels.com^*
 !||live.demand.supply/up.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||live.demand.supply^*
@@ -42558,6 +42564,15 @@ www.newscon.org##div[id="adblock-warning"]:remove()
 www.newscon.org##div[id="adblock-warning"]:remove()
 www.newscon.org##+js(set-constant, checkads, trueFunc)
 www.newscon.org##+js(set-constant, intervalID, noopFunc)
+yogablogfit.com##button[id="getlink"]:remove-attr(disabled)
+yogablogfit.com##div[id="gads"]
+yogablogfit.com##div[id="gads"]:remove()
+howifx.com##button[id="getlink"]:remove-attr(disabled)
+howifx.com##div[id="gads"]
+howifx.com##div[id="gads"]:remove()
+||loweredexaggeratemeasures.com^*
+||instantlyshrillblink.com^*
+||nicestsame.com^*
 
 !Whitelisted
 ! blocks Kroger website?
