@@ -36204,11 +36204,6 @@ enit.in##div[id="orquidea-slideup"]
 ||gqkwnllokgaf.com^*
 ||adshort.space/script_ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 go.techgeek.digital##+js(remove-class, disabled, #getlink, stay)
-go.techgeek.digital##+js(remove-class, disabled, ##a, stay)
-go.techgeek.digital##+js(remove-attr, onclick, ##a.btn-main.get-link, stay)
-go.techgeek.digital##+js(remove-attr, onclick, #invisibleCaptchaShortlink, stay)
-go.techgeek.digital##div[id="ad-banner"]
-go.techgeek.digital##div[id="ad-banner"]:remove()
 go.techgeek.digital##div[id^="div-gpt-ad-"]
 go.techgeek.digital##div[id^="div-gpt-ad-"]:remove()
 go.techgeek.digital##+js(abort-on-property-write, document.oncontextmenu)
@@ -36220,7 +36215,25 @@ go.techgeek.digital##+js(abort-on-property-read, _qasp)
 go.techgeek.digital##+js(set-constant, adBlockNotDetected, trueFunc)
 go.techgeek.digital##+js(set-constant, adBlockDetected, falseFunc)
 go.techgeek.digital##+js(set-constant, window.adblockDetector, noopFunc)
-||go.techgeek.digital/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+go.techgeek.digital##div[class="alert alert-danger"]:has-text(Please disable Adblock)
+go.techgeek.digital##div[class="alert alert-danger"]:has-text(Please disable Adblock):remove()
+go.techgeek.digital###adb-not-enabled:style(display: block !important;)
+go.techgeek.digital###adb-enabled:style(display: none !important;)
+go.techgeek.digital##a[class^="btn-main get-link"]:remove-class(disabled)
+go.techgeek.digital##a[class^="btn-main get-link"]:remove-attr(onclick)
+go.techgeek.digital##+js(set-constant, isPrivateMode, false, stay)
+go.techgeek.digital##button[class="btn btn-primary"]:remove-attr(onclick)
+go.techgeek.digital##button[id="invisibleCaptchaShortlink"]:remove-attr(onclick)
+go.techgeek.digital##+js(aeld, { "type": "/click/", "pattern": "/onclick/", "log": 2 })
+!go.techgeek.digital##+js(aeld, { "type": "/click/", "pattern": "/^/", "log": 2 })
+! (nostif, /^function\(\)/) kills the countdown timer
+!go.techgeek.digital##+js(nostif, /^function\(\)/)
+!go.techgeek.digital##+js(set-constant, checkAdblockUser, noopFunc)
+! #ad-banner is checked by checkAdblockUser();
+!go.techgeek.digital##div[id="ad-banner"]
+!go.techgeek.digital##div[id="ad-banner"]:remove()
+! ads.js creates #ad-banner
+!||go.techgeek.digital/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 recorder.easeus.com##div[id="float_box"]
 obsproject.com##div[class="u-bottomFixer js-bottomFixTarget"]:has(li[class*="notice--cookie"])
 hansdegoede.livejournal.com##div[cookies-alert]
@@ -42588,6 +42601,7 @@ howifx.com##div[id="gads"]:remove()
 ||loweredexaggeratemeasures.com^*
 ||instantlyshrillblink.com^*
 ||nicestsame.com^*
+||cheeroredraw.com^*
 
 !Whitelisted
 ! blocks Kroger website?
