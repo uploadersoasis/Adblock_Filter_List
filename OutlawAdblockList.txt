@@ -36207,6 +36207,20 @@ go.techgeek.digital##+js(remove-class, disabled, #getlink, stay)
 go.techgeek.digital##+js(remove-class, disabled, ##a, stay)
 go.techgeek.digital##+js(remove-attr, onclick, ##a.btn-main.get-link, stay)
 go.techgeek.digital##+js(remove-attr, onclick, #invisibleCaptchaShortlink, stay)
+go.techgeek.digital##div[id="ad-banner"]
+go.techgeek.digital##div[id="ad-banner"]:remove()
+go.techgeek.digital##div[id^="div-gpt-ad-"]
+go.techgeek.digital##div[id^="div-gpt-ad-"]:remove()
+go.techgeek.digital##+js(abort-on-property-write, document.oncontextmenu)
+go.techgeek.digital##+js(abort-on-property-read, document.oncontextmenu)
+go.techgeek.digital##+js(acs, googletag)
+go.techgeek.digital##+js(set-constant, _qasp, [])
+go.techgeek.digital##+js(abort-on-property-write, _qasp)
+go.techgeek.digital##+js(abort-on-property-read, _qasp)
+go.techgeek.digital##+js(set-constant, adBlockNotDetected, trueFunc)
+go.techgeek.digital##+js(set-constant, adBlockDetected, falseFunc)
+go.techgeek.digital##+js(set-constant, window.adblockDetector, noopFunc)
+||go.techgeek.digital/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 recorder.easeus.com##div[id="float_box"]
 obsproject.com##div[class="u-bottomFixer js-bottomFixTarget"]:has(li[class*="notice--cookie"])
 hansdegoede.livejournal.com##div[cookies-alert]
@@ -42521,9 +42535,10 @@ send.cm##video[id="vjsplayer"]:style(padding-top: 0% !important;)
 ||cdn.cuty.io/js/public/links/first.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.cuty.io/js/public/layouts/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.cuty.io/js/public/layouts/_partials/nav-links.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cdn.cuty.io/js/public/links/captcha.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.cuty.io/js/layouts/base.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cdn.cuty.io/js/public/links/last.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! Do NOT block the following two scripts or the final link will not appear.
+!||cdn.cuty.io/js/public/links/captcha.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.cuty.io/js/public/links/last.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 cutty.app##:xpath(/html/head/script[3])
 cutty.app##:xpath(/html/head/script[3]):remove()
 cutty.app##script[data-adel]
