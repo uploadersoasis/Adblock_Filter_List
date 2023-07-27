@@ -41594,6 +41594,10 @@ www.dailymotion.com##+js(aopw, __GKS__)
 !www.dailymotion.com##div[class="CookiePopup__popup___3bblb"]
 !www.dailymotion.com##div[class^="CookiePopup__desktopContainer"][role="dialog"]
 !www.dailymotion.com##div[class^="CookiePopup__desktopContainer"][role="dialog"]:remove()
+www.dailymotion.com##div[class^="AdColumn_"]
+www.dailymotion.com##div[class^="AdColumn_"]:remove()
+www.dailymotion.com##div[id^="display_ads_"]
+www.dailymotion.com##div[id^="display_ads_"]:remove()
 !||pebed.dm-event.net^*
 !||webed.dm-event.net^*
 !||vpaid.pubmatic.com/ads/video/PMAdMgr.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
