@@ -120,7 +120,8 @@ techydino.net##+js(aopr, interstitialSlot)
 techydino.net##+js(aopw, interstitialSlot)
 techydino.net##+js(nobab)
 techydino.net##+js(nobab2)
-techydino.net##+js(nofab)
+! nofab.js was removed; would need to add https://raw.githubusercontent.com/gorhill/uBlock/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/nofab.js
+!techydino.net##+js(nofab)
 ||techydino.net/filesadblock/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fw.adsafeprotected.com^*
 ||cluster.adultadworld.com^*
@@ -22611,7 +22612,8 @@ web.archive.org###yt-dialog-bg
 cloud.mail.ru##+js(acs, window.performance.memory)
 cloud.mail.ru##+js(acs, window.__knownBlocker)
 cloud.mail.ru##+js(acs, abpDetected)
-cloud.mail.ru##+js(nofab)
+! nofab.js was removed; would need to add https://raw.githubusercontent.com/gorhill/uBlock/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/nofab.js
+!cloud.mail.ru##+js(nofab)
 !||consentmanager.mgr.consensu.org/delivery/cmp.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||consentmanager.mgr.consensu.org/delivery/pixel.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||consentmanager.mgr.consensu.org^*
@@ -29818,7 +29820,8 @@ megaup.net##div[class="footerAds"]
 megaup.net##^script:has-text(/debugger/i)
 megaup.net##.btn-free:style(display: inline !important;)
 megaup.net##+js(nobab.js)
-megaup.net##+js(nofab.js)
+! nofab.js was removed; would need to add https://raw.githubusercontent.com/gorhill/uBlock/a94df7f3b27080ae2dcb3b914ace39c0c294d2f6/src/web_accessible_resources/nofab.js
+!megaup.net##+js(nofab.js)
 megaup.net##div[class="download-timer"]
 ||eram-95-my-cheetah-website-3.cheetah.builderall.com^*
 !||rd.consoletarget.com/static/js/view116_bidshow.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -32941,6 +32944,7 @@ seriousbit.com##+js(aopw, analyticsFileTypes)
 ||royvfccrlki.com^*
 ||chooxail.com^*
 webhostingpost.com##div[id="adb_detected"]
+webhostingpost.com##div[id="adb_detected"]:remove()
 webhostingpost.com##button[id="invisibleCaptchaShortlink"]:style(display: block !important;)
 webhostingpost.com##+js(remove-attr, disabled, #invisibleCaptchaShortlink)
 !webhostingpost.com##+js(remove-attr, onclick, #invisibleCaptchaShortlink)
@@ -32959,19 +32963,21 @@ webhostingpost.com##div[class*="g-recaptcha"]:style(display: block !important;)
 !webhostingpost.com##^script:has-text(/function\(\$\,document\)/i)
 !webhostingpost.com##+js(acs, googletag)
 !webhostingpost.com##^script:has-text(googletag)
-webhostingpost.com##div[id="overlay"]
-webhostingpost.com##div[id="overlay"]:remove()
 webhostingpost.com##+js(acs, \"s65c\")
 webhostingpost.com##^script:has-text(\"s65c\")
 webhostingpost.com##iframe[id="iframe_id"]
 webhostingpost.com##iframe[id="iframe_id"]:remove()
+webhostingpost.com##a[href^="https://0lnawd0.com/r?token="]
+webhostingpost.com##a[href^="https://0lnawd0.com/r?token="]:remove()
+webhostingpost.com##div[id="overlay"]
+webhostingpost.com##div[id="overlay"]:remove()
 webhostingpost.com##div[data-aa-adunit]
 webhostingpost.com##div[data-aa-adunit]:remove()
+! example generated href for #surl is href="https://slink.bid/?go=aHR0cHM6Ly9ncGxpbmtzLmNvL1NPQlVi" not https://fc.lc/links/go
+webhostingpost.com##+js(add-class, btn-success, #surl)
 webhostingpost.com##a[id="surl"]:remove-attr(onclick)
 webhostingpost.com##+js(set-constant, gtag, noopFunc)
 webhostingpost.com##+js(acs, gtag)
-webhostingpost.com##div[id="adb_detected"]
-webhostingpost.com##div[id="adb_detected"]:remove()
 webhostingpost.com##+js(acs, doc, iframe_id)
 webhostingpost.com##+js(set-constant, adBlockDetected, falseFunc)
 webhostingpost.com##+js(set-constant, detectPrivateMode, falseFunc)
@@ -32981,12 +32987,13 @@ webhostingpost.com##+js(set-constant, importFAB, null)
 webhostingpost.com##+js(set-constant, FuckAdBlock, _0xae04)
 webhostingpost.com##+js(set-constant, fuckAdBlock, {})
 webhostingpost.com##+js(set-constant, _0x491ex3, 0, stay)
-!webhostingpost.com##+js(nofab.js)
 !webhostingpost.com##+js(aeld, { "type": "/onclick/", "pattern": "/onclick/", "log": 2 })
 webhostingpost.com##+js(aeld, { "type": "/onclick/", "pattern": "/^/", "log": 2 })
 webhostingpost.com##button[id="invisibleCaptchaShortlink"]:remove-attr(onclick)
-https://fc.lc/links/go
-
+||revadvert.com/wp-content/plugins/smio-push-notification/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+revadvert.com##+js(set-constant, isOverGoogleAd, false, stay)
+revadvert.com##+js(set-constant, ustatus, "success", stay)
+revadvert.com##+js(set-constant, count, 0, stay)
 ||klyxdogdj.com^*
 ||dyjtibcz3b48v.cloudfront.net^*
 ||hognaivee.com^*
@@ -42546,6 +42553,11 @@ wccftech.com##div[class="wccf_video_tag"]:has(div[class="d-none d-md-block"]):ha
 wccftech.com##div[class="wccf_video_tag"]:has(div[class="d-none d-md-block"]):has(div[class="d-block d-md-none"]):remove()
 www.techradar.com##div[class="dfp-leaderboard-container"]
 www.techradar.com##div[class="dfp-leaderboard-container"]:remove()
+www.newscon.org##div[id="adblock-warning"]
+www.newscon.org##div[id="adblock-warning"]:remove()
+www.newscon.org##div[id="adblock-warning"]:remove()
+www.newscon.org##+js(set-constant, checkads, trueFunc)
+www.newscon.org##+js(set-constant, intervalID, noopFunc)
 
 !Whitelisted
 ! blocks Kroger website?
