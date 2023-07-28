@@ -42678,6 +42678,23 @@ gplinks.co,gplinks.in##+js(aopr, clickCount)
 !||gplinks.co^$3p
 ||gplinks.co/sw.js$script,1p
 ||gplinks.in/sw.js$script,1p
+render-state.to##ins[data-ad-client]
+render-state.to##ins[data-ad-client]:remove()
+render-state.to##div[id^="cntnt-"]:upward(3):remove()
+||render-state.to/wp-content/plugins/real-cookie-banner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+render-state.to##body[id="blog"]:style(overflow: scroll !important;)
+render-state.to##body[id="blog"]:remove-attr(data-rcb-previous-overflow)
+render-state.to##html:remove-attr(style)
+render-state.to##html:style(overflow: scroll !important;)
+render-state.to##+js(set-constant, realCookieBanner, noopFunc)
+render-state.to##+js(set-constant, adsbygoogle, [])
+render-state.to##+js(abort-on-property-write, adsbygoogle)
+render-state.to##+js(abort-on-property-read, adsbygoogle)
+render-state.to##+js(abort-on-property-write, realCookieBanner)
+render-state.to##+js(abort-on-property-read, realCookieBanner)
+render-state.to##script[id="real-cookie-banner-banner-js-before"]:remove()
+render-state.to##div[class="textwidget custom-html-widget"]:has(div:has-text(PurpleAds))
+render-state.to##div[class="textwidget custom-html-widget"]:has(div:has-text(PurpleAds)):remove()
 
 !Whitelisted
 ! blocks Kroger website?
