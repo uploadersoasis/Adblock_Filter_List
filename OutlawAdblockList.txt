@@ -2402,7 +2402,6 @@ www.putlocker.com###ppuoverlay
 ||stat.ebuzzing.com^*
 ||api.ebuzzing.com/partners/1.0/getHasAdSelector^*
 ||www.ebuzzing.com/api/ebz-distribution.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.karanpc.blogspot.com/b/stats^*
 ||looksmile.ru/js/stat.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn3.kovla.com/static/js/popunder2.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||u.pub-fit.com^*
@@ -4645,8 +4644,6 @@ www.scientificamerican.com###bannerContain
 ||www.5vk5bzpui3.com^*
 ||www.7xnsg1rrb1.com^*
 ||ttb.softddlupdate.com^*
-www.eurogamer.net##.advert.leaderboard
-www.eurogamer.net##.advertContainer
 !||ssl.apple.com/metrics/scripts/s_code_h.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ssl.apple.com/metrics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||u5606.72.spylog.com^*
@@ -14600,7 +14597,6 @@ www.freetutorials.us##.all-services
 www.freetutorials.us###the_champ_sharing_more_providers
 www.freetutorials.us###heateor_ss_browser_popup_bg
 ||bromson.com^*
-||karanpc.com/wp-content/uploads/2012/05/download-button.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||rsload.net/images5/51rsload5895.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fullprogramlarindir.com/wp-content/uploads/2017/09/green.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||download2files.club^*
@@ -18893,7 +18889,6 @@ crackpckey.blogspot.com###HTML2
 ||www.eventraliaclinental.info^*
 ||eventraliaclinental.info^*
 ||s3.amazonaws.com/f2914419d37b51f296b5124af61c87dc048d02887272ca714de79dbd23d76/3d9144192f$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||karanpc.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||leechiza.net^*
 ||www.leechiza.net^*
 ||uploadev.com/mngez/images/banner1.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -29671,9 +29666,6 @@ www.coolblue.nl##html,body:style(overflow: auto;)
 ||www.hiprofitnetworks.com^*
 ||open.popnc.com^*
 ||juryinvolving.com^*
-www.eurogamer.net##div[class*="advertContainer"]
-www.eurogamer.net##div[class*="ads-rail"]
-www.eurogamer.net##div[class="advert"]
 mobiprox.myviptuto.com##div[class="Ads-vip"]
 mobiprox.myviptuto.com##div[class*="ads-here"]
 mobiprox.myviptuto.com##div[class="inline-ad"]
@@ -33181,14 +33173,6 @@ www.howtosolutions.net##+js(aopw, __advertiserRule)
 www.howtosolutions.net##span[class="ezoic-adpicker-ad"]
 www.howtosolutions.net##span[class*="adtester-container"]
 www.howtosolutions.net##div[class="leadad"]
-www.eurogamer.net##div[class^="advert"]
-www.eurogamer.net##div[class*="advert_container"]
-www.eurogamer.net##div[class="paywall"]
-www.eurogamer.net##+js(aopr, o.d.abp)
-www.eurogamer.net##+js(aopw, o.d.abp)
-www.eurogamer.net##+js(aopr, adConfig)
-www.eurogamer.net##+js(aopw, adConfig)
-www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true)
 ||taracareewitu.xyz^*
 ||fefashionis.com^*
 ||opolicycrea.xyz^*
@@ -36349,8 +36333,8 @@ www.dexerto.com##div[data-placeholder="ad"]
 www.dexerto.com##div[data-cy="GoogleAd"]
 www.dexerto.com##div[data-openweb-ad="true"]
 www.dexerto.com##div[class*="adhesiveAdWrapper"]
-!||0f73e92f-4074-4fe3-85d3-ed3fc969859e.edge.permutive.app/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||*.edge.permutive.app/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||0f73e92f-4074-4fe3-85d3-ed3fc969859e.edge.permutive.app^*
+||*.edge.permutive.app^*
 www.imdb.com##^script:has-text(adCustomAction):remove()
 www.imdb.com##script[type="text/javascript"]:has-text(adCustomAction):remove()
 blog.youtube##div[id="cookieBar"]
@@ -38408,8 +38392,7 @@ multiup.org,multiup.eu##+js(set-attr, button[namehost][link], formaction, [link]
 !multiup.org,multiup.eu##+js(move-attr-prop, a[id="1fichier.com"], button[namehost="1fichier.com"], class, class)
 ! The following places a[id="welcome-message"] above button[namehost="1fichier.com"] to replace it.
 ! a[href^="/fr/mirror/"][alt="French flag"] alternative anchor tag to reuse.
-! insert-child-before needs https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/fec2e68c2062f02f304718bc5fb6bb53033655f2/scriptlets.js
-! In newer version of the scriptlet insert-child-before does not work.
+! insert-child-before needs https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
 ! is button[namehost="1fichier.com"] always button[id="175878546"]?
 !multiup.org,multiup.eu##+js(insert-child-before, button[id="175878546"], a[id="welcome-message"])
 multiup.org,multiup.eu##+js(insert-child-before, button[namehost="1fichier.com"], a[id="welcome-message"])
@@ -42708,6 +42691,45 @@ www.stlyrics.com##+js(aopr, adsbygoogle)
 www.stlyrics.com##+js(aopw, adsbygoogle)
 www.stlyrics.com##+js(aopr, _gaq)
 www.stlyrics.com##+js(aopw, _gaq)
+||www.karanpc.blogspot.com/b/stats^*
+||karanpc.com/wp-content/uploads/2012/05/download-button.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||karanpc.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+karanpc.com##+js(set-constant, countdown, 0, stay)
+!karanpc.com##+js(set-constant, countdownInterval, noopFunc)
+karanpc.com##+js(nano-setTimeout-booster, function, 100, 0.10)
+karanpc.com##div[class^="ads-container"]
+karanpc.com##div[class^="ads-container"]:remove()
+karanpc.com##ins[data-ad-client]
+karanpc.com##ins[data-ad-client]:remove()
+karanpc.com##div[id="countdown"]
+karanpc.com##div[id="countdown"]:remove()
+karanpc.com##div[id="downloadButton"]:style(display: block !important;)
+www.eurogamer.net##div[class*="ads-rail"]
+www.eurogamer.net##div[class*="ads-rail"]:remove()
+www.eurogamer.net##div[class*="advertContainer"]
+www.eurogamer.net##div[class*="advertContainer"]:remove()
+www.eurogamer.net##div[class*="advert_container"]
+www.eurogamer.net##div[class*="advert_container"]:remove()
+www.eurogamer.net##div[class^="advert"]
+www.eurogamer.net##div[class^="advert"]:remove()
+www.eurogamer.net##div[class="paywall"]
+www.eurogamer.net##div[class="paywall"]:remove()
+www.eurogamer.net##+js(aopr, o.d.abp)
+www.eurogamer.net##+js(aopw, o.d.abp)
+www.eurogamer.net##+js(aopr, adConfig)
+www.eurogamer.net##+js(aopw, adConfig)
+www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true)
+www.eurogamer.net##div[class^="message-container"]:has(div[class="message-overlay"]):has(div[id="notice"])
+www.eurogamer.net##div[class^="message-container"]:has(div[class="message-overlay"]):has(div[id="notice"]):remove()
+www.eurogamer.net##+js(set-constant, permutiveOptIn, noopFunc)
+www.eurogamer.net##+js(set-constant, permutiveOptOut, noopFunc)
+www.eurogamer.net##+js(set-constant, permutivePageData, {})
+www.eurogamer.net##+js(aeld, BrockmanTCFConsent)
+www.eurogamer.net##+js(aeld, BrockmanTCFOptOut)
+www.eurogamer.net##+js(aeld, BrockmanPerformanceCookiesAllowed)
+www.eurogamer.net##+js(aeld, BrockmanPerformanceCookiesDisallowed)
+www.eurogamer.net##+js(set-constant, gtag, noopFunc)
+www.eurogamer.net##+js(acs, gtag, permutative)
 
 !Whitelisted
 ! blocks Kroger website?
