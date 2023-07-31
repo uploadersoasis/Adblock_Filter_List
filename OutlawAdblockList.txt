@@ -42695,6 +42695,19 @@ render-state.to##+js(abort-on-property-read, realCookieBanner)
 render-state.to##script[id="real-cookie-banner-banner-js-before"]:remove()
 render-state.to##div[class="textwidget custom-html-widget"]:has(div:has-text(PurpleAds))
 render-state.to##div[class="textwidget custom-html-widget"]:has(div:has-text(PurpleAds)):remove()
+!||srv.tunefindforfans.com/fruits/apricots.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||srv.tunefindforfans.com^*
+||track.ultimate-guitar.com^*
+www.stlyrics.com##div[class^="ad_top_"]
+www.stlyrics.com##div[class^="ad_top_"]:remove()
+www.stlyrics.com##div[id^="script_ad"]
+www.stlyrics.com##div[id^="script_ad"]:remove()
+www.stlyrics.com##ins[data-ad-client]
+www.stlyrics.com##ins[data-ad-client]:remove()
+www.stlyrics.com##+js(aopr, adsbygoogle)
+www.stlyrics.com##+js(aopw, adsbygoogle)
+www.stlyrics.com##+js(aopr, _gaq)
+www.stlyrics.com##+js(aopw, _gaq)
 
 !Whitelisted
 ! blocks Kroger website?
