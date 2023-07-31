@@ -42724,12 +42724,30 @@ www.eurogamer.net##div[class^="message-container"]:has(div[class="message-overla
 www.eurogamer.net##+js(set-constant, permutiveOptIn, noopFunc)
 www.eurogamer.net##+js(set-constant, permutiveOptOut, noopFunc)
 www.eurogamer.net##+js(set-constant, permutivePageData, {})
+www.eurogamer.net##+js(set-constant, appendOneSignal, noopFunc)
+www.eurogamer.net##+js(set-constant, sendToPiwik, noopFunc)
+www.eurogamer.net##+js(set-constant, sendToPermutive, noopFunc)
+www.eurogamer.net##+js(aeld, onConsentReady)
 www.eurogamer.net##+js(aeld, BrockmanTCFConsent)
 www.eurogamer.net##+js(aeld, BrockmanTCFOptOut)
 www.eurogamer.net##+js(aeld, BrockmanPerformanceCookiesAllowed)
 www.eurogamer.net##+js(aeld, BrockmanPerformanceCookiesDisallowed)
+www.eurogamer.net##+js(aeld, BrockmanFunctionalCookiesAllowed)
+www.eurogamer.net##+js(aeld, BrockmanFunctionalCookiesDisallowed)
+www.eurogamer.net##+js(aeld, BrockmanTargetingCookiesAllowed)
+www.eurogamer.net##+js(aeld, BrockmanTargetingCookiesDisallowed)
 www.eurogamer.net##+js(set-constant, gtag, noopFunc)
-www.eurogamer.net##+js(acs, gtag, permutative)
+www.eurogamer.net##+js(acs, gtag, permutative, OneSignal)
+www.eurogamer.net##+js(set-attr, body, data-ads, false)
+!||cmpsp.eurogamer.net/unified/4.10.1/gdpr-tcf.04abc9c12f5845f5ba5b.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cmpsp.eurogamer.net/unified/*/gdpr-tcf.*.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.eurogamer.net##+js(set-constant, performanceCookiesAllowed, noopFunc)
+www.eurogamer.net##+js(set-constant, performanceCookiesDisallowed, noopFunc)
+www.eurogamer.net##+js(set-constant, functionalCookiesAllowed, noopFunc)
+www.eurogamer.net##+js(set-constant, functionalCookiesDisallowed, noopFunc)
+www.eurogamer.net##+js(set-constant, targetingCookiesAllowed, noopFunc)
+www.eurogamer.net##+js(set-constant, targetingCookiesDisallowed, noopFunc)
+www.eurogamer.net##+js(set-constant, getSubscriber3pCookie, noopFunc)
 
 !Whitelisted
 ! blocks Kroger website?
