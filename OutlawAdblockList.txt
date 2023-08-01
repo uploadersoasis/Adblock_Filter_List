@@ -27751,8 +27751,8 @@ snapcraft.io##div[id="cookie-policy-content"]
 snapcraft.io##dialog[class="cookie-policy"]
 get.videolan.org##div[id="uecookies"]
 www.iphonefaq.org##ins[class="adsbygoogle"]
-www.iphonefaq.org##+js(abort-on-property-read.js, adsbygoogle)
-www.iphonefaq.org##+js(abort-on-property-write.js, adsbygoogle)
+www.iphonefaq.org##+js(abort-on-property-read, adsbygoogle)
+www.iphonefaq.org##+js(abort-on-property-write, adsbygoogle)
 www.iphonefaq.org##div[class*="ad-amazonnative"]
 www.iphonefaq.org##div[id="sliding-popup"]
 en.aptoide.com##svg:style(overflow: scroll !important;)
@@ -27783,27 +27783,38 @@ androidrepublic.org##div[class="u-bottomFixer js-bottomFixTarget"]
 ||www.file-upload.in/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.file-upload.in/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.file-upload.in/sw_may.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!www.file-upload.com,www.file-upload.in##div[id^="ads_container_"] !blocks download links
-www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, 0)
-www.file-upload.com,www.file-upload.in##div[id="adblockinfo"]
-!www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, setTimeout\(tick\, 1\))
-www.file-upload.com,www.file-upload.in##+js(set-constant, tick, 0)
-www.file-upload.com,www.file-upload.in##+js(set-constant, document.querySelector("#downloadbtn").style, visibility: visible;)
-www.file-upload.com,www.file-upload.in##button[id="downloadbtn"]:style(visibility: visible !important;)
-www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, .downloadbtn, stay)
-www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, #downloadbtn, stay)
-www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, #downloadbtn, stay)
-!www.file-upload.com,www.file-upload.in##+js(no-setTimeout-if)
+||www.file-upload.org/mngez/js/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.file-upload.org/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.file-upload.org/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.file-upload.org/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.file-upload.org/sw_may.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id^="ads_container_"] !blocks download links
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, 0)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="adblockinfo"]
+!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, setTimeout\(tick\, 1\))
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, tick, 0)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, document.querySelector("#downloadbtn").style, visibility: visible;)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##button[id="downloadbtn"]:style(visibility: visible !important;)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, .downloadbtn, stay)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, #downloadbtn, stay)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, #downloadbtn, stay)
+!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(no-setTimeout-if)
 ! This makes the countdown very quick from 10 seconds, but the server checks the time so it errors if the button is pressed too soon.
-www.file-upload.com,www.file-upload.in##+js(nano-stb, /.?/, 1000)
-www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, #download-btn)
-!www.file-upload.com,www.file-upload.in##div[id^="ads_container_"]
-www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, .mnbt1.btn-primary.btn-xs.btn)
-www.file-upload.com,www.file-upload.in##div[id="vb9h7ma"]
-www.file-upload.com,www.file-upload.in##div[id="ldrsr3r"]
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(nano-stb, /.?/, 1000)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, #download-btn)
+!www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id^="ads_container_"]
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, .mnbt1.btn-primary.btn-xs.btn)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="vb9h7ma"]
+www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="ldrsr3r"]
 ||www.file-upload.in/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.file-upload.com/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.file-upload.com,www.file-upload.in##+js(set-constant, BlockAdBlock, noopFunc, stay)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, detected, false, stay)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, BlockAdBlock, noopFunc)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, blockAdBlock, noopFunc)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, adBlockDetected, noopFunc)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, adBlockNotDetected, noopFunc)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(abort-on-property-read, detected)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(abort-on-property-write, detected)
 paladinmod.com##div[id="wait-done"]:style(display: block;margin-top: 25px;)
 paladinmod.com##+js(set-constant, document.querySelector("#wait-done").style, display: block;margin-top: 25px;)
 paladinmod.com##+js(remove-attr, style, #wait-done, stay)
