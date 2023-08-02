@@ -41874,6 +41874,8 @@ filecrypt.co,filecrypt.cc##button[title="block this!"]:remove()
 ||filecrypt.co/js/muchmoreads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.cc/js/adblock_and_adguard_sucks.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.co/js/adblock_and_adguard_sucks.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+filecrypt.co,filecrypt.cc##div[class^="fiIItheadblockqueue"]
+filecrypt.co,filecrypt.cc##div[class^="fiIItheadblockqueue"]:remove()
 !||js.streampsh.top/ps/ps.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||js.streampsh.top^*
 ||ucationin.club^*
@@ -42767,6 +42769,8 @@ www.eurogamer.net##+js(set-constant, getSubscriber3pCookie, noopFunc)
 ||a.bignutty.xyz^*
 ||animusmisform.com^*
 ||mosswhinepanther.com^*
+!||vlxxu.ujscdn.com/ipp.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||vlxxu.ujscdn.com^*
 
 !Whitelisted
 ! blocks Kroger website?
