@@ -42771,6 +42771,22 @@ www.eurogamer.net##+js(set-constant, getSubscriber3pCookie, noopFunc)
 ||mosswhinepanther.com^*
 !||vlxxu.ujscdn.com/ipp.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vlxxu.ujscdn.com^*
+www.kotaku.com.au##div[id^="ad_slot_"]
+www.kotaku.com.au##div[id^="ad_slot_"]:remove()
+www.kotaku.com.au##div[class*="wp-block-create-block-pedestrian-gam-ad-block"]
+www.kotaku.com.au##div[class*="wp-block-create-block-pedestrian-gam-ad-block"]:remove()
+www.kotaku.com.au##script[id^="ped-brightcove-script-js"]:remove()
+www.kotaku.com.au##script[id="kotak-tracking"]:remove()
+www.kotaku.com.au##script[id^="advanced-ads-pro"]:remove()
+www.kotaku.com.au##script[id^="advadsTrackingScript-js"]:remove()
+www.kotaku.com.au##+js(set-constant, pedBrightcove, {})
+www.kotaku.com.au##+js(set-constant, advadsCfpInfo, {})
+www.kotaku.com.au##+js(set-constant, advads_tracking_ads, {})
+www.kotaku.com.au##+js(set-constant, advads_tracking_urls, {})
+www.kotaku.com.au##+js(set-constant, advads_tracking_methods, {})
+www.kotaku.com.au##+js(set-constant, advads_tracking_parallel, {})
+www.kotaku.com.au##+js(set-constant, advads_tracking_linkbases, {})
+www.kotaku.com.au##+js(acs, advads_tracking_, advadsCfpInfo)
 
 !Whitelisted
 ! blocks Kroger website?
