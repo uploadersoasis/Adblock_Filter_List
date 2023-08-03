@@ -29787,25 +29787,6 @@ xsolla.com##div[id="gdpr-consent-form"]
 add0n.com##div[class="ads"]
 www.whatismybrowser.com##div[class*="fun-adsense"]
 uploadhaven.com##button[id="submitFree"]
-!megaup.net##+js(acs, I833)
-!megaup.net##[id^="AdskeeperComposite"]:style(transform:translate(-999999px,0))
-!megaup.net##div[id*="AdskeeperComposite"]
-!megaup.net##.mgbox:style(transform:translate(-999999px,0))
-megaup.net##[id*="ScriptRootC"]:upward(1):style(position:absolute !important;right:3000px !important;)
-!megaup.net##div[id="M458395ScriptRootC703218"]
-megaup.net##.metaRedirectWrapperBottomAds:style(height:100px)
-!megaup.net##div[class="metaRedirectWrapperBottomAds"]
-megaup.net##div[class="metaRedirectWrapperTopAds"]
-!||megaup.net/themes/flow/js/zeroClipboard/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||megaup.net/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||megaup.net/themes/flow/frontend_assets/images/adblock/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!megaup.net##+js(set-constant, seconds, 0)
-megaup.net##div[class="footerAds"]
-megaup.net##^script:has-text(/debugger/i)
-megaup.net##.btn-free:style(display: inline !important;)
-megaup.net##+js(nobab.js)
-!megaup.net##+js(nofab.js)
-megaup.net##div[class="download-timer"]
 ||eram-95-my-cheetah-website-3.cheetah.builderall.com^*
 !||rd.consoletarget.com/static/js/view116_bidshow.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||apsolutamente.com^*
@@ -32299,10 +32280,7 @@ miniwebtool.com##div[id="adsbottom"]
 ||miniwebtool.com/prebid426.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ismovernm.xyz^*
 ||ndollarhe.com^*
-||megaup.net/imageads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-megaup.net##a[class="imgAds"]
 ||imp9.bidgear.com^*
-megaup.net##div[class="metaRedirectWrapperBottomAds"]
 ||miihwnroe.com^*
 ||jlfyvvtkchueuj.xyz^*
 hoanchien.blogspot.com##div[class="overlay"]
@@ -42787,6 +42765,42 @@ www.kotaku.com.au##+js(set-constant, advads_tracking_methods, {})
 www.kotaku.com.au##+js(set-constant, advads_tracking_parallel, {})
 www.kotaku.com.au##+js(set-constant, advads_tracking_linkbases, {})
 www.kotaku.com.au##+js(acs, advads_tracking_, advadsCfpInfo)
+axxellanceblog.com##div[class*="cookiesAlertBox"]
+axxellanceblog.com##div[class*="cookiesAlertBox"]:remove()
+!megaup.net##[id^="AdskeeperComposite"]:style(transform:translate(-999999px,0))
+!megaup.net##div[id*="AdskeeperComposite"]
+!megaup.net##.mgbox:style(transform:translate(-999999px,0))
+!megaup.net##div[id="M458395ScriptRootC703218"]
+!megaup.net##.btn-free:style(display: inline !important;)
+!megaup.net##div[class="download-timer"]
+!megaup.net##+js(acs, I833)
+!megaup.net##+js(aopr, I833.U6v)
+!megaup.net##+js(aopw, I833.U6v)
+!megaup.net##[id*="ScriptRootC"]:upward(1):style(position:absolute !important;right:3000px !important;)
+!megaup.net##.metaRedirectWrapperBottomAds:style(height:100px)
+||megaup.net/themes/flow/frontend_assets/images/adblock/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+megaup.net##^script:has-text(/debugger/i)
+||megaup.net/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+megaup.net##+js(set-constant, seconds, 0, stay)
+!megaup.net##+js(nano-setInterval-booster, display, *, 0.15)
+megaup.net##+js(nano-setInterval-booster, display, 1000, 0.15)
+megaup.net##div[class="metaRedirectWrapperBottomAds"]
+megaup.net##div[class="metaRedirectWrapperBottomAds"]:remove()
+megaup.net##div[class="metaRedirectWrapperTopAds"]
+megaup.net##div[class="metaRedirectWrapperTopAds"]:remove()
+megaup.net##iframe[data-aa]
+megaup.net##iframe[data-aa]:remove()
+||megaup.net/imageads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+megaup.net##a[class="imgAds"]
+megaup.net##a[class="imgAds"]:remove()
+megaup.net##+js(set-constant, gamingadult, noopFunc)
+megaup.net##+js(acs, gamingadult)
+megaup.net##div[class="footerAds"]
+megaup.net##div[class="footerAds"]:remove()
+megaup.net##+js(set-constant, gtag, noopFunc)
+megaup.net##+js(acs, gtag)
+megaup.net##body:style(overflow-x: hidden !important;)
+||s3.amazonaws.com/035946c7be026aeddc2ed1e2896c74f71436d9bb590e3c6a775e9eb9/eb7c649530$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! blocks Kroger website?
