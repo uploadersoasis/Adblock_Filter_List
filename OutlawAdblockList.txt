@@ -25010,24 +25010,12 @@ www.gamersgate.com##div[aria-label="cookieconsent"]
 !||static.4shared.com/js/blockDetect/blockDetect.4min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static.4shared.com/js/blockDetect/blockDetect2.4min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static.4shared.com/js/zeroclipboard.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||www.4shared.com/ads/countdp^*
-4shared.com##.ads_top_wrapper
-www.4shared.com##.ads_top_wrapper
-www.4shared.com##.hidden-sm.hidden-xs.rekl_top_d
-www.4shared.com##.jsStickyBan.epomLeft
-www.4shared.com##div.d1AdsWrapper
-www.4shared.com##div[class="adBlockWarningMessage"]
-www.4shared.com##div[class="cookies-holder"]
-www.4shared.com##div[class^="cookies-notice"]
-www.4shared.com##div[class^="cookies-notice"]:remove()
-www.4shared.com##div[class^="vidAdHolder"]
-!www.4shared.com##div[class="freeDownloadButton"]
-www.4shared.com##div[class*="vidAdHolder"]
+!||www.4shared.com/ads/countdp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||4shared.mozcloud.net^*
+||epomads2.4shared.com^*
 !||cdnstatic.4shared.com/js/adlogger_tracker.4min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdnstatic.4shared.com/js/adlogger_tracker.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdnstatic.4shared.com/js/blockDetect/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||epomads2.4shared.com^*
 ||static.4shared.com/advertise/banners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.4shared.com/images/blank.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static.4shared.com/js/adlogger_tracker.4min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -25041,10 +25029,25 @@ www.4shared.com##div[class*="vidAdHolder"]
 ||www.4shared.com/show_ad_.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.4shared.com/sw_1855972.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.4shared.com/dataCollect.jsp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.4shared.com##+js(abort-on-property-read, targetElemID)
-www.4shared.com##+js(abort-on-property-write, targetElemID)
 ||static.4shared.com/js/relativeScript.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.4shared.com/js/facebookInit.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+4shared.com##.ads_top_wrapper
+4shared.com##.ads_top_wrapper:remove()
+www.4shared.com##.hidden-sm.hidden-xs.rekl_top_d
+www.4shared.com##.jsStickyBan.epomLeft
+www.4shared.com##div.d1AdsWrapper
+www.4shared.com##div.d1AdsWrapper:remove()
+www.4shared.com##div[class="adBlockWarningMessage"]
+www.4shared.com##div[class="adBlockWarningMessage"]:remove()
+www.4shared.com##div[class="cookies-holder"]
+www.4shared.com##div[class="cookies-holder"]:remove()
+www.4shared.com##div[class^="cookies-notice"]
+www.4shared.com##div[class^="cookies-notice"]:remove()
+www.4shared.com##div[class*="vidAdHolder"]
+www.4shared.com##div[class*="vidAdHolder"]:remove()
+!www.4shared.com##div[class="freeDownloadButton"]
+www.4shared.com##+js(abort-on-property-read, targetElemID)
+www.4shared.com##+js(abort-on-property-write, targetElemID)
 www.4shared.com##+js(aopw, cookiesMessage)
 www.4shared.com##+js(aopr, cookiesMessage)
 www.4shared.com##^script:has-text(trackAdBlock)
@@ -25054,21 +25057,42 @@ www.4shared.com##^script:has-text(ld.counter)
 !www.4shared.com##+js(nosiif, /^/)
 www.4shared.com##+js(nosiif, b)
 !www.4shared.com##+js(nano-stb, , *, 0.01)
-www.4shared.com##+js(remove-class, hintDuringCounter, #troublesText1)
-www.4shared.com##+js(remove-class, hintDuringCounter, #troublesText2)
+www.4shared.com###troublesText1:remove-class(hintDuringCounter)
+www.4shared.com###troublesText2:remove-class(hintDuringCounter)
 www.4shared.com###troublesText2:style(display: block !important;)
 www.4shared.com##+js(set-constant, d2CounterValue, -1, stay)
-!www.4shared.com##+js(set-constant, document.querySelector("#jsTrafficLimitExceeded").value, false)
 www.4shared.com##+js(set-attr, '#jsTrafficLimitExceeded', value, false)
-!www.4shared.com##+js(set-constant, document.querySelector("#secondsLeft").value, 0)
 www.4shared.com##+js(set-attr, '#secondsLeft', value, 0)
-!www.4shared.com##+js(set-constant, document.querySelector("#baseDownloadLink").type, text)
 !www.4shared.com##+js(saa, type, text, #baseDownloadLink)
-!www.4shared.com##+js(set-constant, document.querySelector("#baseDownloadLink").type, submit)
 www.4shared.com##+js(saa, type, submit, #baseDownloadLink)
 www.4shared.com##+js(set-constant, sendNativeAnalytics, noopFunc)
 www.4shared.com##+js(acs, sendNativeAnalytics)
 www.4shared.com##+js(set-constant, Config.detectAd, {})
+! replace-node-text.js will replace the textContent of any element such as an anchor tagin the following rule.
+www.4shared.com##+js(replace-node-text, text, Report Abuse, Download This)
+!www.4shared.com##+js(move-attr-prop, a[class*="reportAbuse"], input[id="baseDownloadLink"], href, value)
+!www.4shared.com##a[class*="reportAbuse"]:remove-class(light-gray)
+!www.4shared.com##a[class*="reportAbuse"]:remove-class(f11)
+!www.4shared.com##a[class*="reportAbuse"]:remove-class(alignRight)
+!www.4shared.com##a[class*="reportAbuse"]:remove-class(paddingL15)
+! remove the jsReportAbuse class so the click event listener isn't fired on this repurposed anchor tag.
+!www.4shared.com##a[data-element="h22_3"][class*="jsReportAbuse"]:remove-class(jsReportAbuse)
+!www.4shared.com##+js(add-class, freeDownloadButton|linkShowD3|light-blue|f16|floatLeft, a[data-element="h22_3"])
+!www.4shared.com##a[data-element="h22_3"]:style(box-sizing: content-box !important;)
+!www.4shared.com##+js(insert-child-after, div[class^="fileDescription"], a[data-element="h22_3")
+www.4shared.com##+js(move-attr-prop, a[data-element="h22_3"], input[id="baseDownloadLink"], href, value)
+www.4shared.com##a[data-element="h22_3"]:remove-class(reportAbuse)
+www.4shared.com##a[data-element="h22_3"]:remove-class(light-gray)
+www.4shared.com##a[data-element="h22_3"]:remove-class(f11)
+www.4shared.com##a[data-element="h22_3"]:remove-class(alignRight)
+www.4shared.com##a[data-element="h22_3"]:remove-class(paddingL15)
+! remove the jsReportAbuse class so the click event listener isn't fired on this repurposed anchor tag.
+www.4shared.com##a[data-element="h22_3"][class*="jsReportAbuse"]:remove-class(jsReportAbuse)
+www.4shared.com##+js(add-class, freeDownloadButton|linkShowD3|light-blue|f16|floatLeft, a[data-element="h22_3")
+www.4shared.com##a[data-element="h22_3"]:style(box-sizing: content-box !important;)
+www.4shared.com##+js(insert-child-after, div[class^="fileDescription"], a[data-element="h22_3")
+www.4shared.com##+js(move-attr-prop, a[class^="freeDownloadButton"], input[name="d3link"], href, value)
+www.4shared.com##+js(aeld, click, h)
 ||atharori.net/index/ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||api.pushnami.com/scripts/v1/hub$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||api.pushnami.com/scripts/v1/pushnami-adv/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -26717,7 +26741,7 @@ lapelotita.com##form[id="go-popup"]
 lapelotita.com##+js(set-constant, app_vars.counter_value, 0)
 lapelotita.com##div[class="banner-inner"]
 android-apk.org##ins[class="adsbygoogle"]
-android-apk.org##+js(remove-attr.js, disabled, #dl)
+android-apk.org##+js(remove-attr, disabled, #dl)
 android-apk.org##+js(abort-on-property-write.js, adsbygoogle)
 android-apk.org##+js(abort-on-property-read.js, adsbygoogle)
 www.moddescargar.com##.ad-wap
@@ -27000,7 +27024,7 @@ cutx.me##^script[data-zone-domain="https://stimtavy.net"]
 ||network-shield.com^*
 ||upsidecopiedcraft.com^*
 androidapksdl.com##ins[class="adsbygoogle"]
-freeupload.info##+js(remove-attr.js, disabled, #at-btn-download)
+freeupload.info###at-btn-download:remove-attr(disabled)
 ||s3.amazonaws.com/93c2badb0ef152b5e53b4384ed2a864ee159475a62a0efd880873192fd906/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||riminghoggoofy.com^*
 currently.att.yahoo.com##amp-ad
@@ -27140,7 +27164,7 @@ s0ft4pc.com##^script:has-text(DMCA)
 doodrive.com##^script:has-text(\x20second)
 doodrive.com##div:style(visibility: visible !important;)
 !doodrive.com##div:hidden(false)
-doodrive.com##+js(remove-attr.js, hidden, .uk-margin-auto > div:nth-child(4))
+doodrive.com##.uk-margin-auto > div:nth-child(4):remove-attr(hidden) 
 ||foxnews-d.openx.net^*
 codingshiksha.com##^script[data-ezscrex="false"]
 codingshiksha.com##style[id="admania-style-inline-css"]
@@ -27211,7 +27235,7 @@ store.substance3d.com##div[id="bannerCookie"]
 www.perlego.com##div[aria-label="cookie banner"]
 www.upload-4ever.com##+js(set-constant, remaining, 0)
 www.upload-4ever.com##+js(set-constant, timeout, 0)
-www.upload-4ever.com##+js(remove-attr.js, disabled, #downloadbtn)
+www.upload-4ever.com###downloadbtn:remove-attr(disabled)
 www.upload-4ever.com##button[id="downloadbtn"]:style(display:block !important;)
 ebookreader.best##div[id="cookieNotice"]
 bbooks.info##div[class*="cookiealert"]
@@ -27260,7 +27284,7 @@ krembol.ga##+js(set-constant, logged_impression, true)
 www.westerndigital.com##div[id="truste-consent-content"]
 ||privatedownload258.club^*
 stfly.me##div[class="banner banner-336x280"]
-stfly.me##+js(remove-attr.js, disabled, #go-submit)
+stfly.me###go-submit:remove-attr(disabled)
 ||stfly.me/links/popad$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 stfly.me##input[name="pop_ad"]
 stfly.me##div[class="ad-banner"]
@@ -27349,7 +27373,7 @@ drivers.softpedia.com##div[class="ad ad-300x600 posrel"]
 drivers.softpedia.com##div[class*="ad adhc ad-728x90"]
 !drivers.softpedia.com##div[class*="ad adwblue ad-300x250"]
 drivers.softpedia.com##div[class*="ad adwblue ad-"]
-uploadfree.info##+js(remove-attr.js, disabled, #at-btn-download)
+uploadfree.info###at-btn-download:remove-attr(disabled)
 ||uploadfree.info/assets/js/download.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 apkmaza.net##div[id="banner-advert-container"]
 apkmaza.net##img[id="ai-adb-adnxs"]
@@ -27368,7 +27392,8 @@ upload.ac##button[id="downloadbtn"]:style(display: block !important;)
 upload.ac##[id="downloadbtn"]:style(display: block !important;)
 upload.ac##+js(remove-attr.js, checked, #chkIsAdd, stay)
 upload.ac##input[id="addLinkBtn"]
-upload.ac##+js(set-constant, document.querySelector("#addLinkBtn").value, "")
+!upload.ac##+js(set-constant, document.querySelector("#addLinkBtn").value, "")
+upload.ac##+js(set-attr, '#addLinkBtn', value, "")
 ||upload.ac/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 upload.ac##^script:has-text(#downloadBtnClick)
 ||sobertransfer.xyz^*
@@ -27575,7 +27600,7 @@ exe.app##+js(abort-on-property-read.js, fuckAdBlock)
 exe.app##+js(abort-on-property-write.js, fuckAdBlock)
 exe.app##+js(abort-on-property-read.js, importFAB)
 exe.app##+js(abort-on-property-write.js, importFAB)
-exe.app##+js(remove-class, d-none, #go-submit)
+exe.app###go-submit:remove-class(d-none)
 !exe.app##+js(remove-attr, class, #go-submit, stay)
 exe.app##+js(remove-class, disabled, , stay)
 exe.app##iframe[style*="display: none;"]
@@ -27759,7 +27784,7 @@ en.aptoide.com##svg:style(overflow: scroll !important;)
 !en.aptoide.com##*:style(overflow: scroll !important;) !too broad
 !en.aptoide.com##+js(remove-class, no-scroll, html)
 !en.aptoide.com##+js(remove-class, no-scroll, body)
-en.aptoide.com##+js(remove-class, no-scroll)
+en.aptoide.com##*:remove-class(no-scroll)
 en.aptoide.com##+js(remove-attr, class, body, stay)
 en.aptoide.com##+js(remove-attr, class, html, stay)
 en.aptoide.com##^script:has-text(/no-scroll/i)
@@ -27793,7 +27818,6 @@ www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, ti
 www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="adblockinfo"]
 !www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, setTimeout\(tick\, 1\))
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, tick, 0)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, document.querySelector("#downloadbtn").style, visibility: visible;)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##button[id="downloadbtn"]:style(visibility: visible !important;)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, .downloadbtn, stay)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, #downloadbtn, stay)
@@ -27801,9 +27825,9 @@ www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, onc
 !www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(no-setTimeout-if)
 ! This makes the countdown very quick from 10 seconds, but the server checks the time so it errors if the button is pressed too soon.
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(nano-stb, /.?/, 1000)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, #download-btn)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##button[id="downloadbtn"]:remove-attr(onclick)
 !www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id^="ads_container_"]
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, .mnbt1.btn-primary.btn-xs.btn)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##.mnbt1.btn-primary.btn-xs.btn:remove-attr(onclick)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="vb9h7ma"]
 www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="ldrsr3r"]
 ||www.file-upload.in/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -27815,8 +27839,7 @@ www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, ad
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, adBlockNotDetected, noopFunc)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(abort-on-property-read, detected)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(abort-on-property-write, detected)
-paladinmod.com##div[id="wait-done"]:style(display: block;margin-top: 25px;)
-paladinmod.com##+js(set-constant, document.querySelector("#wait-done").style, display: block;margin-top: 25px;)
+paladinmod.com##div[id="wait-done"]:style(display: block !important; margin-top: 25px !important;)
 paladinmod.com##+js(remove-attr, style, #wait-done, stay)
 paladinmod.com##div[id="wait-me"]
 paladinmod.com##+js(set-constant, a, 0)
@@ -28095,25 +28118,25 @@ conssevarethi.ml##.pass-block:style(display: block; margin-top: 140px; text-alig
 conssevarethi.ml##.download-block-n:style(display: block;)
 conssevarethi.ml##a[class="download_link downloadfour"]
 www.w3docs.com##amp-ad
-intoupload.net##+js(remove-attr.js, checked, #chkIsAdd)
+intoupload.net###chkIsAdd:remove-attr(checked)
 !Gets rid of change event on #chkIsAdd
 intoupload.net##+js(aeld, change)
-intoupload.net##+js(remove-attr.js, disabled, .downloadbtn)
-intoupload.net##+js(remove-attr.js, disabled, #downloadbtn)
+intoupload.net##.downloadbtn:remove-attr(disabled)
+intoupload.net###downloadbtn:remove-attr(disabled)
 !Must remove style from downloadbtn for some reason before can change it to not be hidden later.
-intoupload.net##+js(remove-attr.js, style, #downloadbtn)
+intoupload.net###downloadbtn:remove-attr(style)
 intoupload.net##+js(set-constant, remaining, 0)
 intoupload.net##+js(set-constant, timeout, 0)
 intoupload.net##+js(set-constant, tick, 0)
 intoupload.net##button[id="downloadBtnClick"]:style(display: none;)
 intoupload.net##button[id="downloadBtnClick"]
-intoupload.net##button[id="downloadbtn"]:style(display: block; visibility: visible !important;)
-intoupload.net##+js(set-constant, document.querySelector("#downloadbtn").style, display: block; visibility: visible !important;)
-intoupload.net##+js(set-constant, document.querySelector("#adblock_detected").value, 0)
+intoupload.net##button[id="downloadbtn"]:style(display: block !important; visibility: visible !important;)
+intoupload.net##+js(set-attr, '#adblock_detected', value, 0)
 intoupload.net##input[id="addLinkBtn"]
-intoupload.net##+js(set-constant, document.querySelector("#addLinkBtn").value, "")
+intoupload.net##+js(set-attr, '##addLinkBtn', value, "")
 !intoupload.net##+js(set-constant, document.querySelector("#downloadBtnClick").onclick, "$('#myDownloadForm').submit();")
 intoupload.net##+js(set-constant, document.querySelector("#downloadbtn").onclick, "$('#myDownloadForm').submit();")
+intoupload.net##+js(saa, document.querySelector("#downloadbtn").onclick, "$('#myDownloadForm').submit();")
 ||intoupload.net/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !intoupload.net##+js(nano-stb.js, /timeout/i, 100, 0.10) 
 !intoupload.net##+js(nano-stb.js, /tick/i, 100, 0.10) 
@@ -42801,6 +42824,17 @@ megaup.net##+js(set-constant, gtag, noopFunc)
 megaup.net##+js(acs, gtag)
 megaup.net##body:style(overflow-x: hidden !important;)
 ||s3.amazonaws.com/035946c7be026aeddc2ed1e2896c74f71436d9bb590e3c6a775e9eb9/eb7c649530$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!www.legendsworld.net##div[oncontextmenu]:remove-attr(oncontextmenu)
+! remove the iframe since it is blocked by default by browser policy.
+www.legendsworld.net##iframe[name="downloadframe"]
+www.legendsworld.net##iframe[name="downloadframe"]:remove()
+!www.legendsworld.net##iframe[name="downloadframe"]:remove-attr(oncontextmenu)
+! removing the sandbox or changing the value to allow scripts will enable userscripts to put download links in the iframe.
+!www.legendsworld.net##iframe[name="downloadframe"]:remove-attr(sandbox)
+!www.legendsworld.net##+js(saa, sandbox, "allow-scripts", iframe[name="downloadframe"])
+!www.legendsworld.net##+js(saa, oncontextmenu, "return true;", iframe[name="downloadframe"])
+www.legendsworld.net##+js(saa, oncontextmenu, "return true;", div[oncontextmenu])
+www.legendsworld.net##+js(set-constant, location_check, "www.legendsworld.net/site/download.php")
 
 !Whitelisted
 ! blocks Kroger website?
