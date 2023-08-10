@@ -22439,7 +22439,6 @@ apkdot.com##.advertisement-text
 ||app.pluralsight.com/course-player/api/v1/metric/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||go.ero-advertising.com/banner.go$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||go.ero-advertising.com^*
-||s.click.aliexpress.com^*
 !||www.bluehost.com/track/myaff/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.bluehost.com/track/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.hostmonster.com/track/myaff/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -25068,7 +25067,7 @@ www.4shared.com##+js(saa, type, submit, #baseDownloadLink)
 www.4shared.com##+js(set-constant, sendNativeAnalytics, noopFunc)
 www.4shared.com##+js(acs, sendNativeAnalytics)
 www.4shared.com##+js(set-constant, Config.detectAd, {})
-! replace-node-text.js will replace the textContent of any element such as an anchor tagin the following rule.
+! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
 www.4shared.com##+js(replace-node-text, text, Report Abuse, Download This)
 !www.4shared.com##+js(move-attr-prop, a[class*="reportAbuse"], input[id="baseDownloadLink"], href, value)
 !www.4shared.com##a[class*="reportAbuse"]:remove-class(light-gray)
@@ -30190,7 +30189,6 @@ en.usenet.nl##div[class="cookiefirst-root"]
 !||citiretailservices.citibankonline.com/USCRSF/USCRSGBL/js/interaction_reporter.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 bytes.com##div[id="bytes-cm-display"]
 bytes.com##div[class="bytes-cm-consent"]
-www.tutorialsteacher.com##div[class="inart-ad"]
 www.techdirt.com##div[id="cookienotice"]
 www.ipwatchdog.com##div[class^="gdpr-pn-"]
 www.ipwatchdog.com##script[id^="cookieBanner-"]
@@ -33251,11 +33249,6 @@ www.thenorthernecho.co.uk##script[id*="cookieBanner-"]
 dilbert.com##div[class*="ad-leaderboard"]
 dilbert.com##div[data-ad-type]
 dilbert.com##div[class*="ad-container"]
-www.tutorialsteacher.com##div[class="videoAd"]
-www.tutorialsteacher.com##pubguru[data-pg-ad]
-www.tutorialsteacher.com##div[class="lb-ad"]
-www.tutorialsteacher.com##div[id^="rightbarAd"]
-www.tutorialsteacher.com##div[id="stickyAdDiv"]
 www.csharp-examples.net##ins[data-ad-client]
 blog.jongallant.com##ins[data-ad-client]
 blog.jongallant.com##div[class="banner-ad"]
@@ -38422,7 +38415,7 @@ multiup.org,multiup.eu##+js(saa, target, _blank, a[id="welcome-message"])
 multiup.org,multiup.eu##+js(add-class, fa|fa-download, #welcome-message)
 !multiup.org,multiup.eu##+js(add-class, fa|fa-download, #welcome-message > i)
 !multiup.org,multiup.eu###welcome-message > i:remove-class(fa-star)
-! replace-node-text.js will replace the textContent of any element such as an anchor tagin the following rule.
+! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
 multiup.org,multiup.eu##+js(replace-node-text, text, Welcome, Download)
 ! hide and disable the original download button for 1fichier.com using those button
 ! attributes, so it won't be clicked.
@@ -42835,6 +42828,75 @@ www.legendsworld.net##iframe[name="downloadframe"]:remove()
 !www.legendsworld.net##+js(saa, oncontextmenu, "return true;", iframe[name="downloadframe"])
 www.legendsworld.net##+js(saa, oncontextmenu, "return true;", div[oncontextmenu])
 www.legendsworld.net##+js(set-constant, location_check, "www.legendsworld.net/site/download.php")
+||cdn.ad4game.com^*
+prnt.sc##+js(set-constant, cdnPath, "")
+prnt.sc##ins[data-a4g-zone]
+prnt.sc##ins[data-a4g-zone]:remove()
+prnt.sc##iframe[id="rufous-sandbox"]
+prnt.sc##iframe[id="rufous-sandbox"]:remove()
+||st.prntscr.com/*/js/jquery.smartbanner.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||2.dailyinstall.com^*
+!||www.samsclub.com/js/desktop.ll-beacon.5928ff4558d301e127bb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.samsclub.com/js/desktop.ll-beacon.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.tutorialsteacher.com##div[class="inart-ad"]
+www.tutorialsteacher.com##div[class="videoAd"]
+www.tutorialsteacher.com##pubguru[data-pg-ad]
+www.tutorialsteacher.com##div[class="lb-ad"]
+www.tutorialsteacher.com##div[id^="rightbarAd"]
+www.tutorialsteacher.com##div[id="stickyAdDiv"]
+www.tutorialsteacher.com##span[id^="ezoic-pub-ad-"]
+www.tutorialsteacher.com##span[id^="ezoic-pub-ad-"]:remove()
+www.tutorialsteacher.com##span[id^="div-gpt-ad-"]
+www.tutorialsteacher.com##span[id^="div-gpt-ad-"]:remove()
+www.tutorialsteacher.com##+js(set-constant, stickyAd, noopFunc)
+www.tutorialsteacher.com##+js(set-constant, __ez_fad_ezpbinit, noopFunc)
+www.tutorialsteacher.com##+js(set-constant, ezAdtelligent, {})
+www.tutorialsteacher.com##+js(abort-on-property-write, ezAdtelligent)
+www.tutorialsteacher.com##+js(abort-on-property-read, ezAdtelligent)
+www.tutorialsteacher.com##+js(set-constant, consentCookie, "nonconsent")
+www.tutorialsteacher.com##+js(abort-on-property-write, consentCookie)
+www.tutorialsteacher.com##+js(abort-on-property-read, consentCookie)
+www.tutorialsteacher.com##+js(set-constant, __ezPwtBidders, [])
+www.tutorialsteacher.com##+js(abort-on-property-write, __ezPwtBidders)
+www.tutorialsteacher.com##+js(abort-on-property-read, __ezPwtBidders)
+www.tutorialsteacher.com##+js(set-constant, adUnits, 0)
+www.tutorialsteacher.com##+js(abort-on-property-write, adUnits)
+www.tutorialsteacher.com##+js(abort-on-property-read, adUnits)
+www.tutorialsteacher.com##+js(set-constant, ezAardvarkDetected, false)
+www.tutorialsteacher.com##+js(abort-on-property-write, ezAardvarkDetected)
+www.tutorialsteacher.com##+js(abort-on-property-read, ezAardvarkDetected)
+www.tutorialsteacher.com##+js(set-constant, __ezaps, [])
+www.tutorialsteacher.com##+js(abort-on-property-write, __ezaps)
+www.tutorialsteacher.com##+js(abort-on-property-read, __ezaps)
+www.tutorialsteacher.com##+js(set-constant, __ez_fad_pbt, noopFunc)
+www.tutorialsteacher.com##+js(acs, __ez_fad_pbt)
+www.tutorialsteacher.com##+js(set-constant, __banger_pmp_deals, noopFunc)
+www.tutorialsteacher.com##+js(acs, __banger_pmp_deals)
+www.tutorialsteacher.com##+js(set-constant, __ez_fad_display, noopFunc)
+www.tutorialsteacher.com##+js(acs, __ez_fad_display)
+||www.tutorialsteacher.com/edmontonalberta/calgary.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.tutorialsteacher.com/porpoiseant/fads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.tutorialsteacher.com/detroitchicago/augusta.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||1dl.net/ds2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+1dl.net##button[id="downloadbtn"]:remove-attr(disabled)
+1dl.net##div[class*="download-btn"]:style(display: block !important;)
+www.cpu-world.com##div[class="ab_w9"]
+www.cpu-world.com##div[class="ab_w9"]:remove()
+||www.cpu-world.com/Images/ab_w92.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.cpu-world.com##ins[data-ad-client]
+www.cpu-world.com##ins[data-ad-client]:remove()
+www.cpu-world.com##+js(set-constant, adsbygoogle, [])
+www.cpu-world.com##+js(abort-on-property-write, adsbygoogle)
+www.cpu-world.com##+js(abort-on-property-read, adsbygoogle)
+www.cpu-world.com##div[class^="top_adh"]
+www.cpu-world.com##div[class^="top_adh"]:remove()
+www.cpu-world.com##div[class^="bottom_ad"]
+www.cpu-world.com##div[class^="bottom_ad"]:remove()
+www.cpu-world.com##div[class^="side_ad"]
+www.cpu-world.com##div[class^="side_ad"]:remove()
+open.spotify.com##div[class*="os-host"]:remove-class(os-host-resize-disabled)
+codeeasy.io##div[class^="layout_CookiesContainer"]
+codeeasy.io##div[class^="layout_CookiesContainer"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
@@ -42888,6 +42950,7 @@ www.legendsworld.net##+js(set-constant, location_check, "www.legendsworld.net/si
 !@@||redirect.viglink.com^$first-party
 @@||click.pstmrk.it^$first-party
 @@||citicorpcreditservic.tt.omtrdc.net^*
+@@||www.google.com/recaptcha/api2/bframe$subdocument,domain=archive.is|archive.today
 @@||linkvertise.com^$ghide
 @@*$ghide,domain=jaanmusic.in|techyneed.com
 @@||googlesyndication.com/pagead/$script,domain=jaanmusic.in|techyneed.com
