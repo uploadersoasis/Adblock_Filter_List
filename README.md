@@ -27,11 +27,11 @@ NOTES:
        so add that URL preceded by a space to the end of the "userResourcesLocation"
         value in the advanced settings so that those rules will work.
 
-   4.  Filters in this list block ads on YouTube.com, but this causes a black,
-       screen to appear for each ad that would otherwise be played along with
-       an associated delay.  The video will play or continue to play after
-       this pause so patiently wait for it.  The delay may still be shorter
-       than the ad(s) would have been.
+   4.  Filters in this list block ads on YouTube.com.  This used to cause a black
+       screen to appear for each ad that would have otherwise played along with
+       an associated delay, but it doesn't appear to be the case any longer.
+       The video would play or continue to play after this pause.  The delay may
+       still have been shorter than the ad(s) would have been.
 
    5.  The countdown period of some file hosts has been removed or shortened.
        In some of these cases the countdown may not display, so press the
