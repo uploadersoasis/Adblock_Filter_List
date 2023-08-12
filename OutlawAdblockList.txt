@@ -26,11 +26,11 @@
 !        so add that URL preceded by a space to the end of the "userResourcesLocation"
 !        value in the advanced settings so that those rules will work.
 !
-!    4.  Filters in this list block ads on YouTube.com, but this causes a black,
-!        screen to appear for each ad that would otherwise be played along with
-!        an associated delay.  The video will play or continue to play after
-!        this pause so patiently wait for it.  The delay may still be shorter
-!        than the ad(s) would have been.
+!    4.  Filters in this list block ads on YouTube.com.  This used to cause a black
+!        screen to appear for each ad that would have otherwise played along with
+!        an associated delay, but it doesn't appear to be the case any longer.
+!        The video would play or continue to play after this pause.  The delay may
+!        still have been shorter than the ad(s) would have been.
 !
 !    5.  The countdown period of some file hosts has been removed or shortened.
 !        In some of these cases the countdown may not display, so press the
@@ -41817,28 +41817,48 @@ developer.spotify.com##div[id="cookies-alert"]
 ||scdn.co/audio/$media,redirect=noop-1s.mp4:10,domain=open.spotify.com
 ||fp.weeksth.com^*
 ||niftiesrotonde.com^*
-filecrypt.co,filecrypt.cc##+js(acs, absda)
-filecrypt.co,filecrypt.cc##+js(popads-dummy)
-filecrypt.co,filecrypt.cc##+js(set-constant, isAdblock, false, stay)
-filecrypt.co,filecrypt.cc##+js(set-constant, isAdblock2, false, stay)
-filecrypt.co,filecrypt.cc##+js(set-constant, lj, null)
-filecrypt.co,filecrypt.cc##+js(set-constant, _popsThisDay, 1)
-filecrypt.co,filecrypt.cc##+js(set-constant, popWait, 1)
-filecrypt.co,filecrypt.cc##+js(set-constant, popsMax, 1, stay)
-filecrypt.co,filecrypt.cc##+js(abort-on-property-read, WaynePop3)
-filecrypt.co,filecrypt.cc##+js(abort-on-property-write, WaynePop3)
-filecrypt.co,filecrypt.cc##+js(abort-on-property-read, _popsThisDay)
-filecrypt.co,filecrypt.cc##+js(abort-on-property-write, _popsThisDay)
-filecrypt.co,filecrypt.cc##+js(abort-on-property-read, popWait)
-filecrypt.co,filecrypt.cc##+js(abort-on-property-write, popWait)
-filecrypt.co,filecrypt.cc##+js(acs, Boolean, decodeURIComponent)
-filecrypt.co,filecrypt.cc##.content > .small.box > .container > tbody > tr:nth-of-type(2) > td > a[href^="https://www.g2a.com/"]
-filecrypt.co,filecrypt.cc##div[class^="fiIltheadblockqueue"]
-filecrypt.co,filecrypt.cc##div[class^="fiIltheadblockqueue"]:remove()
-filecrypt.co,filecrypt.cc##button[title="block this!"]
-filecrypt.co,filecrypt.cc##button[title="block this!"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(popads-dummy)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, isAdblock, false, stay)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, isAdblock2, false, stay)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, lj, null)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, _popsThisDay, 1)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, popWait, 1)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, popsMax, 1, stay)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(abort-on-property-read, WaynePop3)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(abort-on-property-write, WaynePop3)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(abort-on-property-read, _popsThisDay)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(abort-on-property-write, _popsThisDay)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(abort-on-property-read, popWait)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(abort-on-property-write, popWait)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, getTrackingPixel, noopFunc)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(abort-on-property-read, getTrackingPixelPromise)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(abort-on-property-write, getTrackingPixelPromise)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(aopr, __pop_debugX)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(acs, absda)
+!filecrypt.co,filecrypt.cc,filecrypt.to##+js(acs, Boolean, decodeURIComponent)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(acs, Boolean, decodeURIComponent, replace)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(acs, parseInt, open)
+filecrypt.co,filecrypt.cc,filecrypt.to##.content > .small.box > .container > tbody > tr:nth-of-type(2) > td > a[href^="https://www.g2a.com/"]
+filecrypt.co,filecrypt.cc,filecrypt.to##div[class^="fiIltheadblockqueue"]
+filecrypt.co,filecrypt.cc,filecrypt.to##div[class^="fiIltheadblockqueue"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##button[title="block this!"]
+filecrypt.co,filecrypt.cc,filecrypt.to##button[title="block this!"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##button[type="submit"]:has-text(/Confirm/i):style(display: block !important;)
+filecrypt.co,filecrypt.cc,filecrypt.to##button[id][onclick*=".html"]:remove-attr(onclick)
+filecrypt.co,filecrypt.cc,filecrypt.to##div > [href*=".html"]:upward(div)
+filecrypt.co,filecrypt.cc,filecrypt.to###jvb
+filecrypt.co,filecrypt.cc,filecrypt.to##li:has-text(100% Anonym)
+filecrypt.co,filecrypt.cc,filecrypt.to##.bums
+filecrypt.co,filecrypt.cc,filecrypt.to##.support
+filecrypt.co,filecrypt.cc,filecrypt.to##[src^="https://filecrypt.cc/images/"]
+filecrypt.co,filecrypt.cc,filecrypt.to##[src^="../../../images/"]
+filecrypt.co,filecrypt.cc,filecrypt.to##[href^="/xux/"]
+filecrypt.co,filecrypt.cc,filecrypt.to##div[class] > i[style*="background:url"][onclick*="openLink"]
+! The following is too general?
+!filecrypt.co,filecrypt.cc,filecrypt.to##div[class] > i[style][onclick]
+filecrypt.co,filecrypt.cc,filecrypt.to##button[id]:has-text(/High-speed/i)
 ! removing all cookies makes the captcha puzzle infinitely loop
-!filecrypt.co,filecrypt.cc##+js(cookie-remover, /^/)
+!filecrypt.co,filecrypt.cc,filecrypt.to##+js(cookie-remover, /^/)
 !/^https?:\/\/(www\.)?filecrypt\.(?:co|cc)\/bla2.php/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.cc/bla2.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.cc/js/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -41848,6 +41868,10 @@ filecrypt.co,filecrypt.cc##button[title="block this!"]:remove()
 ||filecrypt.co/js/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.co/js/blockmefuckingadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.co/p.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.to/bla2.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.to/js/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.to/js/blockmefuckingadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.to/p.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||filecrypt.co/0pixel.php?container=*&ad_box_=1$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||filecrypt.co/0pixel.php?container=*&ad_channel=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||filecrypt.co/0pixel.php?container=*&adsourceid=1$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -41860,16 +41884,22 @@ filecrypt.co,filecrypt.cc##button[title="block this!"]:remove()
 !||filecrypt.cc/0pixel.php?container=*&advertiserid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||filecrypt.cc/0pixel.php?container=*&advtile=1$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.cc/0pixel.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.to/0pixel.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||piwik.filecrypt.co/ping2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||piwik.filecrypt.cc/ping2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||piwik.filecrypt.to/ping2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.co/images/s15uafgga.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$image
 ||filecrypt.cc/images/s15uafgga.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$image
+||filecrypt.to/images/s15uafgga.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$image
 ||filecrypt.cc/js/muchmoreads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.co/js/muchmoreads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.to/js/muchmoreads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.cc/js/adblock_and_adguard_sucks.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.co/js/adblock_and_adguard_sucks.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-filecrypt.co,filecrypt.cc##div[class^="fiIItheadblockqueue"]
-filecrypt.co,filecrypt.cc##div[class^="fiIItheadblockqueue"]:remove()
+||filecrypt.to/js/adblock_and_adguard_sucks.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.cc^$popunder
+||filecrypt.to^$popunder
+||filecrypt.co^$popunder
 !||js.streampsh.top/ps/ps.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||js.streampsh.top^*
 ||ucationin.club^*
@@ -42897,6 +42927,16 @@ www.cpu-world.com##div[class^="side_ad"]:remove()
 open.spotify.com##div[class*="os-host"]:remove-class(os-host-resize-disabled)
 codeeasy.io##div[class^="layout_CookiesContainer"]
 codeeasy.io##div[class^="layout_CookiesContainer"]:remove()
+www.bleepingcomputer.com##div[class="post_block hentry clear"]:has(div[class="post_wrap"]):has(h3:has-text(/BC AdBot/))
+www.bleepingcomputer.com##div[class="post_block hentry clear"]:has(div[class="post_wrap"]):has(h3:has-text(/BC AdBot/)):remove()
+||grantunattractive.com^*
+!||vak345.com/s.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||vak345.com^*
+!||frfetchme.com/bens/vinos.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||frfetchme.com^*
+||d3a781y1fb2dm6.cloudfront.net^*
+www.xrel.to##div[class="the_big_misunderstanding"]
+www.xrel.to##div[class="the_big_misunderstanding"]:remove()
 
 !Whitelisted
 ! blocks Kroger website?
@@ -43000,6 +43040,7 @@ pinterest.*#@#.FullPageModal__scroller
 @@||www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&fallback=true$script,domain=ouo.io
 @@||www.gstatic.com/recaptcha/api2/v1561357937155/recaptcha__en.js$script,domain=ouo.io
 filecrypt.co#@#li[class="buttons"]
+@@||cutcaptcha.com/captcha/*$script,domain=filecrypt.co|filecrypt.cc|filecrypt.to
 @@||connect.facebook.net/en_us/sdk.js$script,domain=textnow.com
 @@||ads.arkansasonline.com^*
 @@||ads.nwaonline.com^*
