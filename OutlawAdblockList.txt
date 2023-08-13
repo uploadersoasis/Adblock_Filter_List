@@ -41841,6 +41841,8 @@ filecrypt.co,filecrypt.cc,filecrypt.to##+js(acs, parseInt, open)
 filecrypt.co,filecrypt.cc,filecrypt.to##.content > .small.box > .container > tbody > tr:nth-of-type(2) > td > a[href^="https://www.g2a.com/"]
 filecrypt.co,filecrypt.cc,filecrypt.to##div[class^="fiIltheadblockqueue"]
 filecrypt.co,filecrypt.cc,filecrypt.to##div[class^="fiIltheadblockqueue"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##div[class^="fiIItheadblockqueue"]
+filecrypt.co,filecrypt.cc,filecrypt.to##div[class^="fiIItheadblockqueue"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##button[title="block this!"]
 filecrypt.co,filecrypt.cc,filecrypt.to##button[title="block this!"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##button[type="submit"]:has-text(/Confirm/i):style(display: block !important;)
@@ -42270,6 +42272,7 @@ drive.online-fix.me##+js(set-attr, '.download-button', disabled, false)
 drive.online-fix.me##+js(saa, type, submit, .download-button)
 drive.online-fix.me##+js(set-attr, '.get-key-button', disabled, false)
 drive.online-fix.me##+js(set-attr, '#downloadModal', aria-hidden, false)
+drive.online-fix.me##div[id="downloadModal"]:remove-class(fade)
 drive.online-fix.me##div[id="downloadModal"]:style(display: block !important;)
 drive.online-fix.me##div[class="modal-footer"]:style(display: block !important;)
 drive.online-fix.me##div[class="download-button"]:style(pointer-events: all !important; user-select: all !important; -moz-user-select: all !important; -webkit-user-select: all !important;)
@@ -42937,6 +42940,8 @@ www.bleepingcomputer.com##div[class="post_block hentry clear"]:has(div[class="po
 ||d3a781y1fb2dm6.cloudfront.net^*
 www.xrel.to##div[class="the_big_misunderstanding"]
 www.xrel.to##div[class="the_big_misunderstanding"]:remove()
+!||vlxxu.nxt-psh.com/ps/ps.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||vlxxu.nxt-psh.com^*
 
 !Whitelisted
 ! blocks Kroger website?
