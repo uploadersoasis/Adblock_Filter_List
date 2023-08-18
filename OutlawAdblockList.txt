@@ -31159,7 +31159,8 @@ ruslangxp.ucoz.org##div[class="js-teasers-wrapper-down"]
 ||cdn.directadvert.ru^*
 ||deebcards-themier.com^*
 ||hidelen.com^*
-||live.primis.tech/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! live.primis.tech blocks videos
+!||live.primis.tech^*
 ||ncddiqisisy.top^*
 ||yourcoolfeed.com^*
 !||news.2xclick.ru/loader.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42781,16 +42782,26 @@ www.eurogamer.net##+js(aeld, BrockmanTargetingCookiesAllowed)
 www.eurogamer.net##+js(aeld, BrockmanTargetingCookiesDisallowed)
 www.eurogamer.net##+js(set-constant, gtag, noopFunc)
 www.eurogamer.net##+js(acs, gtag, permutative, OneSignal)
+www.eurogamer.net##+js(set-constant, updateGoogleAnalyticsConsent, noopFunc)
+www.eurogamer.net##+js(set-constant, updateGoogleAnalyticsConsentAnonymous, noopFunc)
+www.eurogamer.net##+js(set-constant, performanceCookiesAllowed, noopFunc)
 www.eurogamer.net##+js(set-attr, body, data-ads, false)
 !||cmpsp.eurogamer.net/unified/4.10.1/gdpr-tcf.04abc9c12f5845f5ba5b.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cmpsp.eurogamer.net/unified/*/gdpr-tcf.*.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.eurogamer.net##+js(set-constant, performanceCookiesAllowed, noopFunc)
 www.eurogamer.net##+js(set-constant, performanceCookiesDisallowed, noopFunc)
 www.eurogamer.net##+js(set-constant, functionalCookiesAllowed, noopFunc)
 www.eurogamer.net##+js(set-constant, functionalCookiesDisallowed, noopFunc)
 www.eurogamer.net##+js(set-constant, targetingCookiesAllowed, noopFunc)
 www.eurogamer.net##+js(set-constant, targetingCookiesDisallowed, noopFunc)
 www.eurogamer.net##+js(set-constant, getSubscriber3pCookie, noopFunc)
+www.eurogamer.net##+js(set-constant, BrockmanAds, noopFunc)
+www.eurogamer.net##+js(set-constant, appendBrockmanAds, noopFunc)
+www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, trueFunc)
+www.eurogamer.net##+js(set-constant,  adConfig, {})
+*##iframe[id^="google_ads_iframe_dummy_"]
+*##iframe[id^="google_ads_iframe_dummy_"]:remove()
+!amli.sekindo.com##iframe[id^="google_ads_iframe_dummy_"]
+!amli.sekindo.com##iframe[id^="google_ads_iframe_dummy_"]:remove()
 ||www.uploadcloud.pro/js/cookieinfo.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||wirewar.website/tracker/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.bignutty.xyz^*
@@ -42943,6 +42954,10 @@ www.xrel.to##div[class="the_big_misunderstanding"]:remove()
 !||vlxxu.nxt-psh.com/ps/ps.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vlxxu.nxt-psh.com^*
 ||d1af033869koo7.cloudfront.net^*
+||prod.entry.video-ads.a2z.com^*
+||kisscartoon.sh/api/popv2.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||s1.musictarget.com/ii/tc/is_sk_2.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||s1.musictarget.com/ii/tc/is_bn_harley_1.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! blocks Kroger website?
