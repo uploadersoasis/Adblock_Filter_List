@@ -15788,10 +15788,8 @@ docslide.net##div[class^="adsbygoogle"]
 !||espndotcom.tt.omtrdc.net^*
 !||microsoftmscompoc.tt.omtrdc.net^*
 !||tmobile.tt.omtrdc.net^*
-!||samsungus.tt.omtrdc.net^*
 !||coxcommunications.tt.omtrdc.net^*
 !||nflenterprises.tt.omtrdc.net^*
-!||searsholdings.tt.omtrdc.net^*
 !||usbank.tt.omtrdc.net^*
 !||ford.tt.omtrdc.net^*
 !||mcafee12.tt.omtrdc.net^*
@@ -25094,7 +25092,6 @@ www.4shared.com##a[data-element="h22_3"]:remove-class(light-gray)
 www.4shared.com##a[data-element="h22_3"]:remove-class(f11)
 www.4shared.com##a[data-element="h22_3"]:remove-class(alignRight)
 www.4shared.com##a[data-element="h22_3"]:remove-class(paddingL15)
-! remove the jsReportAbuse class so the click event listener isn't fired on this repurposed anchor tag.
 www.4shared.com##a[data-element="h22_3"][class*="jsReportAbuse"]:remove-class(jsReportAbuse)
 www.4shared.com##+js(add-class, freeDownloadButton|linkShowD3|light-blue|f16|floatLeft, a[data-element="h22_3")
 www.4shared.com##a[data-element="h22_3"]:style(box-sizing: content-box !important;)
@@ -27837,7 +27834,6 @@ www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="ldrsr3r"]
 ||www.file-upload.com/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, detected, false, stay)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, BlockAdBlock, noopFunc)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, blockAdBlock, noopFunc)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, adBlockDetected, noopFunc)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, adBlockNotDetected, noopFunc)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(abort-on-property-read, detected)
@@ -39374,6 +39370,7 @@ uploady.io##div[id="div-mobile"]:remove()
 uploady.io##div[id="div-desktop"]
 uploady.io##div[id="div-desktop"]:remove()
 uploady.io##+js(nostif, tick)
+uploady.io##a[type="button"][class="btn btn-primary rounded"]:remove-attr(onlick)
 devuploads.com##body:style(visibility: visible !important; display: block !important;)
 !devuploads.com##input[name="fadb"]
 !devuploads.com##input[name="fadb"]:remove()
@@ -42553,6 +42550,7 @@ cutty.app##+js(set-constant, stcih, {})
 cutty.app##div[data-ad]
 cutty.app##div[data-ad]:remove()
 cutty.app##button[id="submit-button"]:remove-attr(disabled)
+! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
 cutty.app##+js(replace-node-text, text, Please Wait ..., Get Download Link)
 cutty.app##div[class="container"]:has(button[class="ab"]:has(span[class="error-message"]:has-text(Please disable Adblock to continue)))
 cutty.app##div[class="container"]:has(button[class="ab"]:has(span[class="error-message"]:has-text(Please disable Adblock to continue))):remove()
@@ -42724,7 +42722,6 @@ render-state.to##div[class="textwidget custom-html-widget"]:has(div:has-text(Pur
 render-state.to##div[class="textwidget custom-html-widget"]:has(div:has-text(PurpleAds)):remove()
 !||srv.tunefindforfans.com/fruits/apricots.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||srv.tunefindforfans.com^*
-||track.ultimate-guitar.com^*
 www.stlyrics.com##div[class^="ad_top_"]
 www.stlyrics.com##div[class^="ad_top_"]:remove()
 www.stlyrics.com##div[id^="script_ad"]
@@ -42958,6 +42955,17 @@ www.xrel.to##div[class="the_big_misunderstanding"]:remove()
 ||kisscartoon.sh/api/popv2.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s1.musictarget.com/ii/tc/is_sk_2.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s1.musictarget.com/ii/tc/is_bn_harley_1.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||thedentadsi24.com^*
+||4hgavwd451.monster^*
+||sdk.ocmhood.com^*
+||smartapplifly.com^*
+||notifpushnext.azurewebsites.net^*
+||notifpushnext.net^*
+||notifsendback.com^*
+||notifications-news.com^*
+||news-host.net^*
+||feed.cn-rtb.com^*
+||data-px.services^*
 
 !Whitelisted
 ! blocks Kroger website?
