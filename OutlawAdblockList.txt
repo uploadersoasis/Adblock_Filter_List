@@ -23518,8 +23518,8 @@ www.mirrored.to##+js(abort-on-property-write.js, chain)
 www.mirrored.to##+js(abort-on-property-read.js, chain)
 www.mirrored.to##+js(abort-on-property-write.js, blockAdBlock)
 www.mirrored.to##+js(abort-on-property-read.js, blockAdBlock)
-www.mirrored.to##+js(abort-on-property-write.js, pageTracker)
-www.mirrored.to##+js(abort-on-property-read.js, pageTracker)
+www.mirrored.to##+js(abort-on-property-write, pageTracker)
+www.mirrored.to##+js(abort-on-property-read, pageTracker)
 www.mirrored.to##+js(abort-on-property-write.js, adb)
 www.mirrored.to##+js(abort-on-property-read.js, adb)
 www.mirrored.to##+js(abort-on-property-write.js, navigator.cookieEnabled)
@@ -23532,6 +23532,8 @@ www.mirrored.to##+js(set-constant, interval, 1)
 ||www.mirrored.to/js/sweetalert.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.mirrored.to/js/bab.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.mirrored.to/mirstats.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.mirrored.to##+js(set-constant, pageTracker, noopFunc)
+www.mirrored.to##+js(set-constant, gtag, noopFunc)
 ||oosl6q5prri3.com^*
 ||hidester.postaffiliatepro.com^*
 www.diskpart.com##div[class="ensureCookie"]
@@ -39370,7 +39372,11 @@ uploady.io##div[id="div-mobile"]:remove()
 uploady.io##div[id="div-desktop"]
 uploady.io##div[id="div-desktop"]:remove()
 uploady.io##+js(nostif, tick)
-uploady.io##a[type="button"][class="btn btn-primary rounded"]:remove-attr(onlick)
+!uploady.io##a[type="button"][class="btn btn-primary rounded"]:remove-attr(onlick)
+uploady.io##a[class="btn btn-primary rounded"]:remove-attr(onlick)
+! It's not really necessary to reenable that download button @ uploady.io as the countdown timer is only client-side.
+!uploady.io##button[id="free_dwn"]:watch-attr(disabled):remove-attr(disabled)
+uploady.io##input[id="sb_frm"]:style(display: block !important;)
 devuploads.com##body:style(visibility: visible !important; display: block !important;)
 !devuploads.com##input[name="fadb"]
 !devuploads.com##input[name="fadb"]:remove()
@@ -41064,9 +41070,6 @@ unlockapk.com##+js(aopw, pageData)
 unlockapk.com##+js(set-constant, JsEvalContext, noopFunc) 
 unlockapk.com##+js(set-constant, gtag, noopFunc)
 unlockapk.com##+js(acs, gtag)
-! It's not really necessary to reenable that download button @ uploady.ioas the countdown timer is only client-side.
-!uploady.io##button[id="free_dwn"]:watch-attr(disabled):remove-attr(disabled)
-uploady.io##input[id="sb_frm"]:style(display: block !important;)
 android.gadgethacks.com##+js(set-constant, gtag, noopFunc)
 android.gadgethacks.com##+js(acs, gtag)
 !||cdn.adsninja.ca/adsninja_client.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42966,6 +42969,19 @@ www.xrel.to##div[class="the_big_misunderstanding"]:remove()
 ||news-host.net^*
 ||feed.cn-rtb.com^*
 ||data-px.services^*
+||www.chronline.com/js/rvb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.chronline.com##script[data-ad-client]:remove()
+www.chronline.com##div[class^="cq-creative"]
+www.chronline.com##div[class^="cq-creative"]:remove()
+www.chronline.com##div[class*="box-bannerads-"]
+www.chronline.com##div[class*="box-bannerads-"]:remove()
+!||cdn6.creativecirclemedia.com^*
+||bandel.creativecirclemedia.com^*
+||pannumregnal.com^*
+||jouteetu.net^*
+||loculusgerara.digital^*
+||remintsmuggy.com^*
+||bemascloche.life^*
 
 !Whitelisted
 ! blocks Kroger website?
