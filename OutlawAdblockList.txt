@@ -701,7 +701,6 @@ www.game-debate.com##div[id^="oggiBanner"]
 www.game-debate.com##.loadIn728by90
 ||i.ubm-us.net/shared/omniture/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||js.bizographics.com/convert_data.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cdn.livechatinc.com/tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||domains.googlesyndication.com/apps/domainpark/domainpark.cgi$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.hlserve.com/Delivery/ClientPaths/Overstock/Delivery.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.hlserve.com/Delivery/ClientPaths/Sears/Delivery.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -20959,8 +20958,6 @@ guidedhacking.com##.notice--cookie.notice--primary.js-notice.notice
 ||www.iduroxygib.tk^*
 ||iduroxygib.tk^*
 ||ua.yektanet.com/__fake.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||hostingcloud.racing/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.hostingcloud.racing/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||play.google.com/log$domain=drive.google.com,important
 !||play.google.com/log?format=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||play.google.com/log^*
@@ -22586,7 +22583,6 @@ liliputing.com##.adtester-container
 ||fbzm.xyz^*
 ||www.aaoqq.site^*
 ||aaoqq.site^*
-||onclickalgo.com^*
 ||s3.amazonaws.com/ba13cf7e8ef18d7c90b841ddc8808478951c85ac4baeabdb491cf832bd7/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !www.linuxuprising.com##div[id="adsense-top-horiz"]
 www.linuxuprising.com##div[id^="adsense-"]
@@ -23122,7 +23118,6 @@ stfly.me###cookie-pop
 ||mrjb7hvcks.com^*
 ||optiads.org^*
 ||vsa74.tawk.to^*
-!||onclickalgo.com/script/suurl.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pushmejs.com/pfe/current/tag.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 stfly.me###_hevs2tr
 stfly.me###p_3381275
@@ -28302,7 +28297,8 @@ tii.ai##+js(nowoif.js, !/tii\.ai/i)
 !tii.ai##+js(nostif.js, /checkAdblockUser/i)
 tii.ai##+js(nostif.js, /^/, 1000)
 ||geniusonclick.com^*
-!||www.hostingcloud.racing/AuMg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||hostingcloud.racing^*
+||www.hostingcloud.racing^*
 ||ptongouh.net^*
 ||elamigosedition.com/sw-d4649.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||edl.jipo.io/init.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -40074,6 +40070,9 @@ vtube.to,vtbe.net,vtplay.net##body[id="top"]:remove-attr(data-aos-duration)
 ||inspectorstrongerpill.com^*
 !||www.onclickalgo.com/jump/next.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.onclickalgo.com^*
+!||onclickalgo.com/script/suurl.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||onclickalgo.com/a/display.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||onclickalgo.com^*
 ||afraid-standard.pro^*
 ||xml.serving-passthrough.com^*
 ||prrequests.com^*
@@ -42982,6 +42981,14 @@ www.chronline.com##div[class*="box-bannerads-"]:remove()
 ||loculusgerara.digital^*
 ||remintsmuggy.com^*
 ||bemascloche.life^*
+www.fosslinux.com##pubtag[data-ad-mode]
+www.fosslinux.com##pubtag[data-ad-mode]:remove()
+www.fosslinux.com##+js(set-constant, _ezaq, {})
+!www.youtube.com##+js(set-constant, ytcsi, {}) !breaks youtube completely
+www.namesilo.com##section[data-v-4d62f5bd]
+www.namesilo.com##section[data-v-4d62f5bd]:remove()
+! blocks chat from working at all.
+!||cdn.livechatinc.com/tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! blocks Kroger website?
