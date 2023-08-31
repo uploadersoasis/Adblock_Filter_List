@@ -34076,6 +34076,10 @@ toolslib.net##script[data-ad-client]
 toolslib.net##ins[data-ad-client]
 ||toolslib.net/assets/custom/img/placeholders/placeholder_1.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||toolslib.net/assets/custom/img/placeholders/placeholder_2.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+toolslib.net##+js(abort-on-property-write, adsbygoogle)
+toolslib.net##+js(abort-on-property-read, adsbygoogle)
+toolslib.net##div[class="custom-label"]:has(span:has-text(/Advertising/i))
+toolslib.net##div[class="custom-label"]:has(span:has-text(/Advertising/i)):remove()
 irdeto.com##div[id="termly-code-snippet-support"]
 www.whatismyip.com##+js(aopw, googletag)
 www.whatismyip.com##+js(aopr, googletag)
@@ -43044,6 +43048,22 @@ powvdeo.lol##div[id="banner"]:remove()
 ||b.stats.paypal.com^*
 ! js.stripe.com/v3/fingerprinted/ blocking prevents payment forms from working.
 !||js.stripe.com/v3/fingerprinted/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||plirkep.com^*
+pallabmobile.in##iframe[id^="google_ads_frame"]
+pallabmobile.in##iframe[id^="google_ads_frame"]:remove()
+pallabmobile.in##+js(abort-on-property-write, adsbygoogle)
+pallabmobile.in##+js(abort-on-property-read, adsbygoogle)
+pallabmobile.in##ins[data-ad-client]
+pallabmobile.in##ins[data-ad-client]:remove()
+||pallabmobile.in/6720046757/3197548844.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||images.vfl.ru/ii/1692683354/52a10b2a/38996699.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+x1337x.ws##a[href="https://x1337x.ws/netflixPromo728.php"]
+x1337x.ws##a[href="https://x1337x.ws/netflixPromo728.php"]:remove()
+x1337x.ws##a[href="https://x1337x.ws/anoydl9-VpnHideMe"]
+x1337x.ws##a[href="https://x1337x.ws/anoydl9-VpnHideMe"]:remove()
+x1337x.ws##+js(set-constant, lf6893388e60a6dec8e8b0bacb72c8a518fa1b6ee, "")
+x1337x.ws##+js(abort-on-property-write, lf6893388e60a6dec8e8b0bacb72c8a518fa1b6ee)
+x1337x.ws##+js(abort-on-property-read, lf6893388e60a6dec8e8b0bacb72c8a518fa1b6ee)
 
 !Whitelisted
 ! blocks Kroger website?
