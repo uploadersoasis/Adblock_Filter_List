@@ -14629,7 +14629,6 @@ onhax.me##div[id="bottom-promo-abdload"]
 !||www.niceduckies.com/AF_TA/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.niceduckies.com^*
 www.filefactory.com###ff-wp-promo-inner
-||www.google.com/images/cleardot.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||estatalogy.info^*
 ||www.adexchangecloud.com/jump/next.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||platform.bidgear.com/ads.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -20954,12 +20953,6 @@ guidedhacking.com##.notice--cookie.notice--primary.js-notice.notice
 ||www.iduroxygib.tk^*
 ||iduroxygib.tk^*
 ||ua.yektanet.com/__fake.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||play.google.com/log$domain=drive.google.com,important
-!||play.google.com/log?format=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||play.google.com/log^*
-||play.google.com/play/log^*
-!||drive.google.com/drive/logImpressions$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||drive.google.com/drive/logImpressions$xmlhttprequest,domain=drive.google.com,important
 ||unreal4.cf/cdn-cgi/apps/head/RdcXbuSarQGvtz_xRvctZOhgx1I.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 unreal4.cf##+js(abort-on-property-write.js, GoogleAnalyticsObject)
 unreal4.cf##+js(abort-on-property-read.js, GoogleAnalyticsObject)
@@ -23293,7 +23286,6 @@ www.ni93.com##div[class="a_fl"]
 !unity928.rssing.com##+js(abort-on-property-read.js, gdprAppliesGlobally)
 rssing.com##+js(abort-on-property-write.js, gdprAppliesGlobally)
 rssing.com##+js(abort-on-property-read.js, gdprAppliesGlobally)
-||ssl.gstatic.com/docs/common/cleardot.gif$domain=drive.google.com
 ||drive.google.com/drive/logImpressions$domain=drive.google.com
 !unity928.rssing.com##div[class^="cs-header-kanner"]
 !unity928.rssing.com##div[class^="rs-ad"]
@@ -43064,8 +43056,24 @@ x1337x.ws##a[href="https://x1337x.ws/anoydl9-VpnHideMe"]:remove()
 x1337x.ws##+js(set-constant, lf6893388e60a6dec8e8b0bacb72c8a518fa1b6ee, "")
 x1337x.ws##+js(abort-on-property-write, lf6893388e60a6dec8e8b0bacb72c8a518fa1b6ee)
 x1337x.ws##+js(abort-on-property-read, lf6893388e60a6dec8e8b0bacb72c8a518fa1b6ee)
+||www.google.com/images/cleardot.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ssl.gstatic.com/docs/common/cleardot.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||play.google.com/log$domain=drive.google.com,important
+!||play.google.com/log?format=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||play.google.com/log^*
+!||play.google.com/play/log^*
+||play.google.com/log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||play.google.com/play/log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||drive.google.com/drive/logImpressions$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
+! for Google Drive
+!@@||drive.google.com/drive/logImpressions$domain=drive.google.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!@@||play.google.com/log?format=json&hasfast=true&authuser=0$xhr,domain=accounts.google.com
+!@@||play.google.com/log$domain=drive.google.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!@@||play.google.com/play/log$domain=drive.google.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!@@||www.google.com/images/cleardot.gif$domain=drive.google.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+@@||ssl.gstatic.com/docs/common/cleardot.gif$domain=drive.google.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! blocks Kroger website?
 ! It initially fails, but then works on Firefox after a countdown timer popup and then a retry to login.
 ! Brave browser fails regardless of enabling the following or not.
@@ -43179,7 +43187,6 @@ blogspot.com#@#+js(no-floc)
 !www.espn.com#@#+js(no-floc)
 !accounts.google.com#@#+js(no-floc)
 !@@||accounts.google.com/cspreport$other,domain=accounts.google.com
-!@@||play.google.com/log?format=json&hasfast=true&authuser=0$xhr,domain=accounts.google.com
 gitlab.io#@#+js(no-floc)
 gitlab.com#@#+js(no-floc)
 @@||sentry.gitlab.net/api/$other,domain=gitlab.com
