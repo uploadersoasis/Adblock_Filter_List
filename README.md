@@ -51,7 +51,7 @@ NOTES:
 
    7.  Due to the way that Wikipedia's responsive website design currently
        works or rather doesn't work, these rules force a style suited to a
-       1920 pixel width screen.  If you screen is a different size, adjust the
+       1920 pixel width screen.  If your screen is a different size, adjust the
        three rules which set this style:
        wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
        wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
