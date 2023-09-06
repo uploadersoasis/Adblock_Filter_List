@@ -50,7 +50,7 @@
 !
 !    7.  Due to the way that Wikipedia's responsive website design currently
 !        works or rather doesn't work, these rules force a style suited to a
-!        1920 pixel width screen.  If you screen is a different size, adjust the
+!        1920 pixel width screen.  If your screen is a different size, adjust the
 !        three rules which set this style:
 !wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
 !wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
@@ -40184,7 +40184,7 @@ a2zapk.io##+js(set-constant, countad, noopFunc)
 a2zapk.io##html,body:remove-attr(oncontextmenu)
 ! aeld doesn't work for some reason on the contextmenu event listener
 a2zapk.io##+js(aeld, contextmenu)
-! ||a2zapk.io/dload/$inline-script prevents the contextmenu from being disabled on the download screen and doesn't breat the download links
+! ||a2zapk.io/dload/$inline-script prevents the contextmenu from being disabled on the download screen and doesn't break the download links
 ||a2zapk.io/dload/$inline-script
 ! The following don't prevent the contextmenu from being disabled for some reason.
 a2zapk.io,a2zapk.com##+js(acs, document.oncontextmenu)
@@ -43065,6 +43065,30 @@ x1337x.ws##+js(abort-on-property-read, lf6893388e60a6dec8e8b0bacb72c8a518fa1b6ee
 ||play.google.com/log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||play.google.com/play/log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||drive.google.com/drive/logImpressions$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+redstate.com##+js(set-constant, gtag, noopFunc)
+redstate.com##+js(acs, gtag)
+redstate.com##+js(set-constant, setNptTechAdblockerCookie, noopFunc)
+redstate.com##+js(set-constant, gptAdSlot, [])
+redstate.com##+js(set-constant, gptAdUnitPath, "")
+redstate.com##+js(set-constant, adUnits, [])
+redstate.com##+js(set-constant, interstitialSlot, falseFunc)
+redstate.com##+js(abort-on-property-write, interstitialSlot)
+redstate.com##+js(abort-on-property-read, interstitialSlot)
+redstate.com##+js(abort-on-property-write, adUnits)
+redstate.com##+js(abort-on-property-read, adUnits)
+redstate.com##+js(abort-on-property-write, gptAdUnitPath)
+redstate.com##+js(abort-on-property-read, gptAdUnitPath)
+redstate.com##+js(abort-on-property-write, gptAdSlot)
+redstate.com##+js(abort-on-property-read, gptAdSlot)
+redstate.com##div[id^="div-gpt-"]
+redstate.com##div[id^="div-gpt-"]:remove()
+redstate.com##div[class="advs"]:has-text(Advertisement)
+redstate.com##div[class="advs"]:has-text(Advertisement):remove()
+gamesnacks.com##div[jscontroller="k82Eq"][jsaction="rcuQ6b:npT2md"]
+gamesnacks.com##div[jscontroller="k82Eq"][jsaction="rcuQ6b:npT2md"]:remove()
+gamesnacks.com##div[class="sSVlic"]
+gamesnacks.com##div[class="sSVlic"]:remove()
+||cdn.gbqofs.com/acehardware/p/detector-dom.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
