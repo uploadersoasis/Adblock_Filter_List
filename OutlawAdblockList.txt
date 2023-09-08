@@ -41494,7 +41494,7 @@ www.quora.com##.qu-zIndex--alert.qu-overflow--hidden.qu-justifyContent--center.q
 www.quora.com##+js(remove-class, js-focus-visible)
 www.quora.com##+js(remove-attr, data-js-focus-visible)
 www.quora.com##div[class="q-box qu-overflow--hidden"]:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
-!www.quora.com##div[id="flexbox-root"]:style(overflow:scroll;)
+!www.quora.com##div[id="flexbox-root"]:style(overflow:scroll !important;)
 www.quora.com##div[id="flexbox-root"]
 www.quora.com##div[class*="qu-zIndex--blocking_wall"]
 www.quora.com##+js(remove-class, qu-overflow--hidden, ,)
@@ -41519,6 +41519,7 @@ www.quora.com##div[class*="OverlayCard___StyledBox-sc-1fdxtzr-0"]:remove-class(O
 www.quora.com##div[class="qu-overflow--hidden"]:remove-class(qu-overflow--hidden)
 www.quora.com##div[class="q-box qu-zIndex--inline_overlay"]
 www.quora.com##div[class="q-box qu-zIndex--inline_overlay"]:remove()
+www.quora.com##body[class="q-platform--desktop"]:style(overflow:scroll !important;)
 !||production-cmp.isgprivacy.cbsi.com/dist/optanon-v1.1.0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||production-cmp.isgprivacy.cbsi.com^*
 ! player-services.cbs.com/1.16.0/smart-tag/smart.tag.js handles video ads, but is that all?
@@ -43089,6 +43090,17 @@ gamesnacks.com##div[jscontroller="k82Eq"][jsaction="rcuQ6b:npT2md"]:remove()
 gamesnacks.com##div[class="sSVlic"]
 gamesnacks.com##div[class="sSVlic"]:remove()
 ||cdn.gbqofs.com/acehardware/p/detector-dom.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+itsfoss.com##+js(set-constant, freestar, {})
+itsfoss.com##+js(abort-on-property-write, freestar)
+itsfoss.com##+js(abort-on-property-read, freestar)
+itsfoss.com##iframe[name^="__privateStripeMetricsController"]
+itsfoss.com##iframe[name^="__privateStripeMetricsController"]:remove()
+||a9695278-4085-40b3-9f02-8d4c38a6ff01.edge.permutive.app^*
+||query.petametrics.com^*
+!||hummingbird.mavencoalition.io/collect$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||hummingbird.mavencoalition.io^*
+||www.si.com/.bootscripts/webcomponents/ad.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.si.com/runtime/webads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
