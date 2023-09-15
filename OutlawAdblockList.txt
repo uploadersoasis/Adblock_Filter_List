@@ -41679,8 +41679,8 @@ dokicloud.one##+js(set-constant, console.clear, noopFunc)
 ||ae.dmxleo.com/v2/events?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||s.update.dailymotion.com/2/661389/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.update.dailymotion.com/*/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||adblock-tester.com/banners/pr_advertising_ads_banner.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||adblock-tester.com^*
+||adblock-tester.com/banners/pr_advertising_ads_banner.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||adblock-tester.com^*
 ||ghb2.adtelligent.com^*
 ||ghb1.adtelligent.com^*
 !||adunit.datawrkz.com/production/prebid/dw_prebid_adaptor/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43101,6 +43101,12 @@ itsfoss.com##iframe[name^="__privateStripeMetricsController"]:remove()
 ||hummingbird.mavencoalition.io^*
 ||www.si.com/.bootscripts/webcomponents/ad.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.si.com/runtime/webads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+voterrecords.com##div[class*="tosbox-container"]
+voterrecords.com##div[class*="tosbox-container"]:remove()
+deviwiki.com##div[id="aterrabar"]
+deviwiki.com##div[id="aterrabar"]:remove()
+||nc.pubpowerplatform.io^*
+||deb.fdmpkg.org^*
 
 !Whitelisted
 ! for Google Drive
