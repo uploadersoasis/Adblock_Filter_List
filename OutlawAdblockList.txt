@@ -43107,6 +43107,31 @@ deviwiki.com##div[id="aterrabar"]
 deviwiki.com##div[id="aterrabar"]:remove()
 ||nc.pubpowerplatform.io^*
 ||deb.fdmpkg.org^*
+||tripphloems.com^*
+||www.247checkers.com/js/support/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.247checkers.com##div[class^="aspace"]:has(div[id^="div-gpt-ad"])
+www.247checkers.com##div[class^="aspace"]:has(div[id^="div-gpt-ad"]):remove()
+www.247checkers.com##div[id^="div-gpt-ad"]
+www.247checkers.com##div[id^="div-gpt-ad"]:remove()
+cardgames.io##div[id="draper-right"]
+cardgames.io##div[id="draper-right"]:remove()
+cardgames.io##div[id="draper-left"]
+cardgames.io##div[id="draper-left"]:remove()
+cardgames.io##ins[data-ad-client]
+cardgames.io##ins[data-ad-client]:remove()
+||cardgames.io/shared/lib/gtm.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+appoutlet.github.io##div[data-behaviour-link="#cookie-settings"]
+appoutlet.github.io##div[data-behaviour-link="#cookie-settings"]:remove()
+www.real.discount##+js(set-constant, adsbygoogle, [])
+www.real.discount##+js(abort-on-property-write, adsbygoogle)
+www.real.discount##+js(abort-on-property-read, adsbygoogle)
+www.real.discount##div[class="card"]
+www.real.discount##div[class="card"]:remove()
+www.lightreading.com##div[class*="Ad_pos_300_"]
+www.lightreading.com##div[class*="Ad_pos_300_"]:remove()
+woowebtools.com##div:has(svg):has(h3:has-text(Disable Adblock & Tracking Protection!))
+woowebtools.com##div:has(svg):has(h3:has-text(Disable Adblock & Tracking Protection!)):remove()
+||clouddecrease.com^*
 
 !Whitelisted
 ! for Google Drive
