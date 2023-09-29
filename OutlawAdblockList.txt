@@ -43132,6 +43132,28 @@ www.lightreading.com##div[class*="Ad_pos_300_"]:remove()
 woowebtools.com##div:has(svg):has(h3:has-text(Disable Adblock & Tracking Protection!))
 woowebtools.com##div:has(svg):has(h3:has-text(Disable Adblock & Tracking Protection!)):remove()
 ||clouddecrease.com^*
+||www.outkick.com/wp-content/plugins/ad-ace/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.outkick.com/wp-content/plugins/advanced-ads-pro/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.outkick.com/wp-content/plugins/advanced-ads-responsive/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.outkick.com/wp-content/plugins/advanced-ads-sticky-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.outkick.com/wp-content/plugins/advanced-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cmpsp.vg247.com/index.html?message_id=*&consentUUID=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cmpsp.vg247.com^*
+!www.vg247.com##div[id="notice"]:upward(2)
+!www.vg247.com##div[id="notice"]:upward(2):remove()
+www.vg247.com##iframe[id^="sp_message_iframe_"]
+www.vg247.com##iframe[id^="sp_message_iframe_"]:remove()
+play.geforcenow.com##gfn-oobe
+play.geforcenow.com##gfn-oobe:remove()
+play.geforcenow.com##div[id^="cdk-overlay-"][class*="dialogWelcome"]
+play.geforcenow.com##div[id^="cdk-overlay-"][class*="dialogWelcome"]:remove()
+play.geforcenow.com##div[class="cdk-overlay-container"]:has(div[class="cdk-global-overlay-wrapper"])
+play.geforcenow.com##div[class="cdk-overlay-container"]:has(div[class="cdk-global-overlay-wrapper"]):remove()
+www.2daygeek.com##section[id^="ai_widget-"]:has(ins[data-ad-client])
+www.2daygeek.com##section[id^="ai_widget-"]:has(ins[data-ad-client]):remove()
+www.2daygeek.com##ins[data-ad-client]
+www.2daygeek.com##ins[data-ad-client]:remove()
+||www.2daygeek.com/wp-content/plugins/wf-cookie-consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
