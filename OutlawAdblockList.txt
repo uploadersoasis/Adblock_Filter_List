@@ -38312,107 +38312,111 @@ www.fox.com##+js(aopw, window.pintrk)
 ||analytics.nova.fox.com^*
 ||foxentertainment.hb.omtrdc.net^*
 ||multiup.org/img/sonyoutube_long.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||multiup.eu/img/sonyoutube_long.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||multiup.io/img/sonyoutube_long.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.multiup.org/js/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.multiup.org/welcome-message$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.multiup.eu/js/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.multiup.eu/welcome-message$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||multiup.eu/img/sonyoutube_long.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.multiup.io/js/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.multiup.io/welcome-message$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||stats.multiup.org/piwik.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||stats.multiup.eu/piwik.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||stats.multiup.org^*
 ||stats.multiup.eu^*
+||stats.multiup.io^*
 ||gorin.multiup.org/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-multiup.org,multiup.eu##div[class="mfp-wrap mfp-auto-cursor"]:has(div[class="mfp-container mfp-ajax-holder mfp-s-error"])
-multiup.org,multiup.eu##div[class="mfp-wrap mfp-auto-cursor"]:has(div[class="mfp-container mfp-ajax-holder mfp-s-error"]):remove()
-multiup.org,multiup.eu##div[class="mfp-preloader"]
-multiup.org,multiup.eu##div[id="custom-content"]
-multiup.org,multiup.eu##div[class="mfp-bg mfp-ready"]
-multiup.org,multiup.eu##div[class="mfp-container mfp-ajax-holder mfp-s-ready"]
-multiup.org,multiup.eu##div[class="mfp-wrap mfp-auto-cursor mfp-ready"]
+multiup.org,multiup.eu,multiup.io##div[class="mfp-wrap mfp-auto-cursor"]:has(div[class="mfp-container mfp-ajax-holder mfp-s-error"])
+multiup.org,multiup.eu,multiup.io##div[class="mfp-wrap mfp-auto-cursor"]:has(div[class="mfp-container mfp-ajax-holder mfp-s-error"]):remove()
+multiup.org,multiup.eu,multiup.io##div[class="mfp-preloader"]
+multiup.org,multiup.eu,multiup.io##div[id="custom-content"]
+multiup.org,multiup.eu,multiup.io##div[class="mfp-bg mfp-ready"]
+multiup.org,multiup.eu,multiup.io##div[class="mfp-container mfp-ajax-holder mfp-s-ready"]
+multiup.org,multiup.eu,multiup.io##div[class="mfp-wrap mfp-auto-cursor mfp-ready"]
 !www.multiup.org,www.multiup.eu##div[id="cookie-bar"]
-!multiup.org,multiup.eu##div[id="cookie-bar"]
-!multiup.org,multiup.eu##div[id="cookie-plugin-modal"]
-multiup.org,multiup.eu##div[id^="cookie-"]
-multiup.org,multiup.eu##div[id^="cookie-"]:remove()
-multiup.org,multiup.eu##a[namehost="UseNext"]
-multiup.org,multiup.eu##a[namehost="UseNext"]:remove()
-multiup.org,multiup.eu##input[name="link"]:remove-class(hidden)
-multiup.org,multiup.eu##input[name="link"]:remove-attr(type)
+!multiup.org,multiup.eu,multiup.io##div[id="cookie-bar"]
+!multiup.org,multiup.eu,multiup.io##div[id="cookie-plugin-modal"]
+multiup.org,multiup.eu,multiup.io##div[id^="cookie-"]
+multiup.org,multiup.eu,multiup.io##div[id^="cookie-"]:remove()
+multiup.org,multiup.eu,multiup.io##a[namehost="UseNext"]
+multiup.org,multiup.eu,multiup.io##a[namehost="UseNext"]:remove()
+multiup.org,multiup.eu,multiup.io##input[name="link"]:remove-class(hidden)
+multiup.org,multiup.eu,multiup.io##input[name="link"]:remove-attr(type)
 ! remove action attribute and also change the link attribute on submit button to formaction to override action.
-multiup.org,multiup.eu##form[action*="://multinews.me/"]:remove-attr(action)
+multiup.org,multiup.eu,multiup.io##form[action*="://multinews.me/"]:remove-attr(action)
 ! Removing the method attribute from the form tag still allows the formaction attribute to work.
 ! Don't remove this because it affect all forms not just the ones on the download page.
-!multiup.org,multiup.eu##form[method="POST"]:remove-attr(method)
+!multiup.org,multiup.eu,multiup.io##form[method="POST"]:remove-attr(method)
 ! Don't set this because it affect all forms not just the ones on the download page.
 ! The method attribute will not be set below if it was removed above.
-!multiup.org,multiup.eu##+js(saa, method, GET, form[method="POST"])
+!multiup.org,multiup.eu,multiup.io##+js(saa, method, GET, form[method="POST"])
 ! The following is necessary because the previous line will prevent the upload forms from working.
-!multiup.org,multiup.eu##+js(saa, method, POST, form[id="fileupload"])
+!multiup.org,multiup.eu,multiup.io##+js(saa, method, POST, form[id="fileupload"])
 ! Set each download button to perform a GET method instead of the POST as the parent form specifies.
-multiup.org,multiup.eu##+js(saa, formmethod, get, button[namehost][link])
-!multiup.org,multiup.eu##+js(saa, formnovalidate, , button[namehost][link])
-multiup.org,multiup.eu##+js(set-attr, button[namehost][link], formnovalidate)
-multiup.org,multiup.eu##+js(saa, formtarget, _blank, button[namehost][link])
+multiup.org,multiup.eu,multiup.io##+js(saa, formmethod, get, button[namehost][link])
+!multiup.org,multiup.eu,multiup.io##+js(saa, formnovalidate, , button[namehost][link])
+multiup.org,multiup.eu,multiup.io##+js(set-attr, button[namehost][link], formnovalidate)
+multiup.org,multiup.eu,multiup.io##+js(saa, formtarget, _blank, button[namehost][link])
 ! remove name attribute under input tags so they won't be appended to the url on form GET submission
-multiup.org,multiup.eu##input[name="link"]:remove-attr(name)
-multiup.org,multiup.eu##input[name="filename"]:remove-attr(name)
+multiup.org,multiup.eu,multiup.io##input[name="link"]:remove-attr(name)
+multiup.org,multiup.eu,multiup.io##input[name="filename"]:remove-attr(name)
 ! rename-attr.js
 ! #175151786 is button for gofile
-!multiup.org,multiup.eu##+js(rename-attr, #175151786, link, formaction)
+!multiup.org,multiup.eu,multiup.io##+js(rename-attr, #175151786, link, formaction)
 ! The following works but requires an external scriptlet; use set-attr instead.
-!multiup.org,multiup.eu##+js(rename-attr, button[namehost][link], link, formaction)
-multiup.org,multiup.eu##+js(set-attr, button[namehost][link], formaction, [link])
+!multiup.org,multiup.eu,multiup.io##+js(rename-attr, button[namehost][link], link, formaction)
+multiup.org,multiup.eu,multiup.io##+js(set-attr, button[namehost][link], formaction, [link])
 ! The following  lines (minus the commented ones) are necessary because 1fichier
 ! doesn't work with the GET form submission (because it has an ? in its URL?).
 ! button tags won't act as anchor tag even with href attribute set.
-!multiup.org,multiup.eu##+js(saa, type, button, button[namehost="1fichier.com"])
+!multiup.org,multiup.eu,multiup.io##+js(saa, type, button, button[namehost="1fichier.com"])
 ! Do not remove "type" attribute as the button will still behave as type "submit".
-!multiup.org,multiup.eu##button[namehost="1fichier.com"]:remove-attr(type)
+!multiup.org,multiup.eu,multiup.io##button[namehost="1fichier.com"]:remove-attr(type)
 ! Setting href for the button tag doesn't work even when button type is "button".
 ! Would need to set as "onlick" attribute instead.
 ! Use set-attr here instead of rename-attr because it doesn't require an external scriptlet.
-!multiup.org,multiup.eu##+js(rename-attr, button[namehost="1fichier.com"], link, href)
-!multiup.org,multiup.eu##+js(set-attr, button[namehost="1fichier.com"], href, [link])
+!multiup.org,multiup.eu,multiup.io##+js(rename-attr, button[namehost="1fichier.com"], link, href)
+!multiup.org,multiup.eu,multiup.io##+js(set-attr, button[namehost="1fichier.com"], href, [link])
 ! rename "link" not "formaction" IF type is already removed because above rename wouldn't apply.
 ! Have to reuse an anchor tag instead of creating one since can't address the created a tag later to modify it.
-!multiup.org,multiup.eu##+js(append-elem, button[namehost="1fichier.com"], a, id, 1fichier.com)
-!multiup.org,multiup.eu##+js(move-attr-prop, a[id="1fichier.com"], button[namehost="1fichier.com"], href, link)
-!multiup.org,multiup.eu##+js(move-attr-prop, a[id="1fichier.com"], button[namehost="1fichier.com"], class, class)
+!multiup.org,multiup.eu,multiup.io##+js(append-elem, button[namehost="1fichier.com"], a, id, 1fichier.com)
+!multiup.org,multiup.eu,multiup.io##+js(move-attr-prop, a[id="1fichier.com"], button[namehost="1fichier.com"], href, link)
+!multiup.org,multiup.eu,multiup.io##+js(move-attr-prop, a[id="1fichier.com"], button[namehost="1fichier.com"], class, class)
 ! The following places a[id="welcome-message"] above button[namehost="1fichier.com"] to replace it.
 ! a[href^="/fr/mirror/"][alt="French flag"] alternative anchor tag to reuse.
 ! insert-child-before needs https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
 ! is button[namehost="1fichier.com"] always button[id="175878546"]?
-!multiup.org,multiup.eu##+js(insert-child-before, button[id="175878546"], a[id="welcome-message"])
-multiup.org,multiup.eu##+js(insert-child-before, button[namehost="1fichier.com"], a[id="welcome-message"])
-multiup.org,multiup.eu##+js(move-attr-prop, a[id="welcome-message"], button[namehost="1fichier.com"], href, link)
-multiup.org,multiup.eu##+js(move-attr-prop, a[id="welcome-message"], button[namehost="1fichier.com"], class, class)
+!multiup.org,multiup.eu,multiup.io##+js(insert-child-before, button[id="175878546"], a[id="welcome-message"])
+multiup.org,multiup.eu,multiup.io##+js(insert-child-before, button[namehost="1fichier.com"], a[id="welcome-message"])
+multiup.org,multiup.eu,multiup.io##+js(move-attr-prop, a[id="welcome-message"], button[namehost="1fichier.com"], href, link)
+multiup.org,multiup.eu,multiup.io##+js(move-attr-prop, a[id="welcome-message"], button[namehost="1fichier.com"], class, class)
 ! removing hidden is not necessary since move-attr-prop scriptlet above already replaced all original classes 
-multiup.org,multiup.eu##a[id="welcome-message"]:remove-class(hidden)
+multiup.org,multiup.eu,multiup.io##a[id="welcome-message"]:remove-class(hidden)
 ! remove hvr-bounce-to-right since it prevents the download icon from "fa fa-download" classes from being shown.
-multiup.org,multiup.eu##a[id="welcome-message"]:remove-class(hvr-bounce-to-right)
-multiup.org,multiup.eu##+js(saa, target, _blank, a[id="welcome-message"])
+multiup.org,multiup.eu,multiup.io##a[id="welcome-message"]:remove-class(hvr-bounce-to-right)
+multiup.org,multiup.eu,multiup.io##+js(saa, target, _blank, a[id="welcome-message"])
 ! | is used to add multiple classes at once.
-multiup.org,multiup.eu##+js(add-class, fa|fa-download, #welcome-message)
-!multiup.org,multiup.eu##+js(add-class, fa|fa-download, #welcome-message > i)
-!multiup.org,multiup.eu###welcome-message > i:remove-class(fa-star)
+multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download, #welcome-message)
+!multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download, #welcome-message > i)
+!multiup.org,multiup.eu,multiup.io###welcome-message > i:remove-class(fa-star)
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
-multiup.org,multiup.eu##+js(replace-node-text, text, Welcome, Download)
+multiup.org,multiup.eu,multiup.io##+js(replace-node-text, text, Welcome, Download)
 ! hide and disable the original download button for 1fichier.com using those button
 ! attributes, so it won't be clicked.
 ! hidden attribute set to true is not enough to hide the button.
-multiup.org,multiup.eu##+js(set-attr, button[namehost="1fichier.com"], hidden, true)
-multiup.org,multiup.eu##button[namehost="1fichier.com"]:style(display:none !important;)
-multiup.org,multiup.eu##+js(set-attr, button[namehost="1fichier.com"], disabled, true)
-multiup.org,multiup.eu##form[action^="/en/mirror/"]:remove-attr(onsubmit)
+multiup.org,multiup.eu,multiup.io##+js(set-attr, button[namehost="1fichier.com"], hidden, true)
+multiup.org,multiup.eu,multiup.io##button[namehost="1fichier.com"]:style(display:none !important;)
+multiup.org,multiup.eu,multiup.io##+js(set-attr, button[namehost="1fichier.com"], disabled, true)
+multiup.org,multiup.eu,multiup.io##form[action^="/en/mirror/"]:remove-attr(onsubmit)
 ! Also need to get rid of onsubmit() function and/or "submit" event listener to prevent new window/tab from being opened on pressing download button.
 ! TODO: The following three lines to do that don't work for some reason.
-multiup.org,multiup.eu##+js(set-constant, onsubmit, noopFunc)
-!multiup.org,multiup.eu##+js(aeld, { "type": "/submit/", "pattern": "/onsubmit/", "log": 2 })
-multiup.org,multiup.eu##+js(aeld, { "type": "/submit/", "pattern": "/^/", "log": 2 })
+multiup.org,multiup.eu,multiup.io##+js(set-constant, onsubmit, noopFunc)
+!multiup.org,multiup.eu,multiup.io##+js(aeld, { "type": "/submit/", "pattern": "/onsubmit/", "log": 2 })
+multiup.org,multiup.eu,multiup.io##+js(aeld, { "type": "/submit/", "pattern": "/^/", "log": 2 })
 ! simply removing target attribute makes the target "_self" instead of having to manually set it to "_self".
-!multiup.org,multiup.eu##+js(saa, target, _self, form[action^="/en/mirror/"])
-multiup.org,multiup.eu##form[action^="/en/mirror/"]:remove-attr(target)
-!multiup.org,multiup.eu##a#welcome-message::before
+!multiup.org,multiup.eu,multiup.io##+js(saa, target, _self, form[action^="/en/mirror/"])
+multiup.org,multiup.eu,multiup.io##form[action^="/en/mirror/"]:remove-attr(target)
+!multiup.org,multiup.eu,multiup.io##a#welcome-message::before
 !`window.open('${document.querySelector('button[namehost="1fichier.com"]').attributes.link.value}')`
 !document.querySelector('button[namehost="1fichier.com"]').attributes.link.value is the download link.
 !||consent.trustarc.com/notice?domain=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43154,6 +43158,14 @@ www.2daygeek.com##section[id^="ai_widget-"]:has(ins[data-ad-client]):remove()
 www.2daygeek.com##ins[data-ad-client]
 www.2daygeek.com##ins[data-ad-client]:remove()
 ||www.2daygeek.com/wp-content/plugins/wf-cookie-consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+fuse-box.info##ins[data-ad-client]
+fuse-box.info##ins[data-ad-client]:remove()
+fuse-box.info##div[class*="code-block"]:has(div[class="ai-attributes"])
+fuse-box.info##div[class*="code-block"]:has(div[class="ai-attributes"]):remove()
+||dy.kr.wildpettykiwi.info^*
+!||link.monetizer101.com/widget/code/1511.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||link.monetizer101.com^*
+||adc.flyermobi.com^*
 
 !Whitelisted
 ! for Google Drive
