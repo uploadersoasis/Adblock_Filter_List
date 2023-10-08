@@ -1,3 +1,7 @@
+// Contains scriptlets I use in https://raw.githubusercontent.com/uploadersoasis/Adblock_Filter_List/master/OutlawAdblockList.txt
+// which have been removed from https://github.com/gorhill/uBlock/blob/master/assets/resources/scriptlets.js or
+// https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js by their developers.
+
 'use strict';
 
 /// set-attr-any.js
