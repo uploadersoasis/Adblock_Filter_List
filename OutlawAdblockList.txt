@@ -38326,6 +38326,8 @@ www.fox.com##+js(aopw, window.pintrk)
 ||stats.multiup.eu^*
 ||stats.multiup.io^*
 ||gorin.multiup.org/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||gorin.multiup.eu/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||gorin.multiup.io/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 multiup.org,multiup.eu,multiup.io##div[class="mfp-wrap mfp-auto-cursor"]:has(div[class="mfp-container mfp-ajax-holder mfp-s-error"])
 multiup.org,multiup.eu,multiup.io##div[class="mfp-wrap mfp-auto-cursor"]:has(div[class="mfp-container mfp-ajax-holder mfp-s-error"]):remove()
 multiup.org,multiup.eu,multiup.io##div[class="mfp-preloader"]
@@ -38396,8 +38398,8 @@ multiup.org,multiup.eu,multiup.io##a[id="welcome-message"]:remove-class(hidden)
 multiup.org,multiup.eu,multiup.io##a[id="welcome-message"]:remove-class(hvr-bounce-to-right)
 multiup.org,multiup.eu,multiup.io##+js(saa, target, _blank, a[id="welcome-message"])
 ! | is used to add multiple classes at once.
-multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download, #welcome-message)
-!multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download, #welcome-message > i)
+multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download|host|btn|btn-md|btn-default|btn-block|btn-3d, #welcome-message)
+!multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download|host|btn|btn-md|btn-default|btn-block|btn-3d, #welcome-message > i)
 !multiup.org,multiup.eu,multiup.io###welcome-message > i:remove-class(fa-star)
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
 multiup.org,multiup.eu,multiup.io##+js(replace-node-text, text, Welcome, Download)
@@ -43166,6 +43168,11 @@ fuse-box.info##div[class*="code-block"]:has(div[class="ai-attributes"]):remove()
 !||link.monetizer101.com/widget/code/1511.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||link.monetizer101.com^*
 ||adc.flyermobi.com^*
+||heartdiscipleinsolent.com^*
+reflect4.me##div[class="bg-gray-600 text-white absolute bottom-0 left-0 w-full py-8"]:has(a[href="https://reflect4.me/privacy-policy"]):upward(1)
+reflect4.me##div[class="bg-gray-600 text-white absolute bottom-0 left-0 w-full py-8"]:has(a[href="https://reflect4.me/privacy-policy"]):upward(1):remove()
+reflect4.me##button[type="submit"]:remove-attr(disabled)
+!reflect4.me##app > div > div > div.mt-6.px-5.py-4.bg-white.shadow-md.overflow-hidden.sm\:rounded-lg > form > div.flex.items-center.justify-between.mt-8 > button:remove-attr(disabled)
 
 !Whitelisted
 ! for Google Drive
