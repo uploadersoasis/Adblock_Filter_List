@@ -21921,7 +21921,6 @@ www.youtube.com##div[id="show-ad"]
 www.youtube.com##div[id^="ad_creative_expand_btn"]
 www.youtube.com##dom-if[class$="ytd-video-masthead-ad-v3-renderer"]
 www.youtube.com##iframe[class$="ytd-video-masthead-ad-primary-video-renderer"]
-www.youtube.com##ytd-popup-container.ytd-app.style-scope
 www.youtube.com##ytd-thumbnail[class$="ytd-video-masthead-ad-v3-renderer"]
 www.youtube.com##.ytp-error-content-wrap-reason
 www.youtube.com##.ytp-error-content-wrap
@@ -43340,3 +43339,5 @@ gitlab.com#@#+js(no-floc)
 !@@||g.doubleclick.net/pagead/managed/js/gpt/*/pubads_impl.js$domain=mynewsmedia.co|mynewspost.in|revadvert.com
 !@@||g.doubleclick.net/gampad/ads?$xhr,domain=mynewsmedia.co|mynewspost.in|revadvert.com
 @@||citicorpcreditservic.tt.omtrdc.net^*
+! ytd-popup-container includes popup filter on search
+www.youtube.com#@#ytd-popup-container.ytd-app.style-scope
