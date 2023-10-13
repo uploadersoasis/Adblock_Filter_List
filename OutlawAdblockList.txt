@@ -22308,7 +22308,6 @@ lifehacker.com##video[title="Advertisement"]
 ||lifehacker.com/x-kinja-static/assets/new-client/trackers.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 lifehacker.com##div[class*="js_ad-"]
 lifehacker.com##div[class^="ad-container"]
-www.howtogeek.com###div-thetop1
 ||www.infocupboard.com^*
 ||infocupboard.com^*
 ||www.dianomi.com/cgi-bin/smartads_video_a.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -27938,6 +27937,34 @@ online-fix.me##+js(abort-current-inline-script, replaceWith)
 !online-fix.me##+js(remove-attr.js, src, , stay) !break too many other tags with src attributes
 !online-fix.me##+js(nostif, /^/) !works but stops Google Translate from working https://translate.googleapis.com/element/TE_20210224_00/e/js/element/element_main.js
 online-fix.me##+js(nostif, w, !undefined)
+online-fix.me##+js(set-constant, gdprApplies, false)
+online-fix.me##+js(set-constant, uspInterval, noopFunc)
+online-fix.me##+js(nostif, uspInterval)
+online-fix.me##+js(set-constant, e8c43d8940_interval, noopFunc)
+online-fix.me##+js(nostif, e8c43d8940_interval)
+online-fix.me##+js(set-constant, e7f652f7be_interval, noopFunc)
+online-fix.me##+js(nostif, e7f652f7be_interval)
+online-fix.me##+js(set-constant, crWEbPushEl, noopFunc)
+online-fix.me##+js(abort-on-property-read.js, crWEbPushEl)
+online-fix.me##+js(abort-on-property-write.js, crWEbPushEl)
+online-fix.ne##div[class="no-pop"]:remove-attr(onclick)
+online-fix.ne##div[class="no-pop"]:remove-attr(onmouseup)
+online-fix.ne##div[class="no-pop"]:remove-attr(onmousedown)
+online-fix.ne##div[class="no-pop"]:remove-attr(oncontextmenu)
+!online-fix.me##div[class="sidebar-block"]
+online-fix.me##div[class="sidebar-block"]:has(font:has-text(/Adblock/i))
+drive.online-fix.me##.download-button:remove-attr(onclick)
+drive.online-fix.me##.download-button:remove-attr(disabled)
+drive.online-fix.me##.get-key-button:remove-attr(disabled)
+!drive.online-fix.me##+js(set-attr, '.download-button', disabled, false)
+drive.online-fix.me##+js(saa, type, submit, .download-button)
+!drive.online-fix.me##+js(set-attr, '.get-key-button', disabled, false)
+drive.online-fix.me##+js(set-attr, '#downloadModal', aria-hidden, false)
+drive.online-fix.me##div[id="downloadModal"]:remove-class(fade)
+drive.online-fix.me##div[id="downloadModal"]:style(display: block !important; opacity: 100 !important;)
+drive.online-fix.me##div[class*="swal2-popup"]:style(display: block !important; opacity: 100 !important;)
+drive.online-fix.me##div[class="modal-footer"]:style(display: block !important;)
+drive.online-fix.me##div[class="download-button"]:style(pointer-events: all !important; user-select: all !important; -moz-user-select: all !important; -webkit-user-select: all !important;)
 ||fluffycodepotc.com^*
 ||solitudeelection.com^*
 !||venetrigni.com/stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -28672,7 +28699,6 @@ letsupload.io##div[id="iHCIjECYmrkE"]
 letsupload.io##+js(remove-class, clear-adblock, , stay)
 letsupload.io##div[class*="bottom-advert"]
 letsupload.io##div[class*="advert-wrapper"]
-www.howtogeek.com^script:has-text(/tmntag\.adTag/i)
 ||selfishsnake.com^$3p
 www.varonis.com##div[id="cookie_consent_container"]
 ||www.varonis.com/vanalytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -30678,8 +30704,6 @@ www.tutorialspoint.com###google-top-ads
 www.axios.com##amp-ad
 www.axios.com##^script[custom-element="amp-ad"]
 www.axios.com##^script[custom-element="amp-analytics"]
-www.howtogeek.com##div[class*="adslot"]
-www.howtogeek.com##amp-iframe
 www.pcgamesn.com##div[class="nn_bb ad"]
 www.law360.com##div[id^="div-gpt-ad"]
 www.law360.com##+js(remove-class, fade1, ,)
@@ -31235,7 +31259,6 @@ daylifetips.com##script[id^="google_gtagjs"]
 ||daylifetips.com/wp-content/plugins/content-egg/res/js/price_alert.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 daylifetips.com##div[class*="td-header-ad-wrap"]
 daylifetips.com##div[class*="td-ad"]
-www.howtogeek.com##div[data-nosnippet]:has(span[class="future_inline_clone_target"]:has-text(/Advertisement/i))
 apnews.com##div[class*="Component-adTitle"]
 www.droid8k.com##div[id="cookie-notice"]
 linuxconfig.org##div[class="incontent_ads"]
@@ -32537,7 +32560,6 @@ vimm.net##table[class="rounded"]:has(td:has-text(/disabling your ad blocker/i))
 vimm.net##+js(set-constant, success, true)
 !vimm.net##+js(set-constant, blocked_86b543f0, false)
 !vimm.net##+js(set-constant, blocked_fb0bfa1d, false)
-online-fix.me##div[class="sidebar-block"]:has(font:has-text(/Adblock/i))
 !||baominh.tech/wp-content/plugins/kchrslajmawv/wp-warebizenzljtay.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||baominh.tech/wp-content/plugins/kchrslajmawv/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.hackers-arise.com##wix-iframe:has(script:has-text(/adsbygoogle/i))
@@ -37308,7 +37330,6 @@ cs.rin.ru##a[href$="/ucp.php?i=pm&folder=inbox"]:style(color:red !important; fon
 csrinrutkb3tshptdctl5lyei4et35itl22qvk5ktdcat6aeavy6nhid.onion##a[href$="/ucp.php?i=pm&folder=inbox"]:style(color:red !important; font-weight:bold)
 ||orangefreesounds.com/wp-content/plugins/cookie-law-info/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.androidacy.com/st/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-online-fix.me##div[class="sidebar-block"]
 ||rovno.xyz^*
 ||maggotpolity.com^*
 ||spritzawapuhi.guru^*
@@ -42257,18 +42278,6 @@ woowebtools.com##a[class="krj4aaj4wg"]:remove()
 ! prevents captcha from completing
 !woowebtools.com##:xpath(/html/body/div[2])
 !woowebtools.com##:xpath(/html/body/div[2]):remove()
-drive.online-fix.me##.download-button:remove-attr(onclick)
-drive.online-fix.me##.download-button:remove-attr(disabled)
-drive.online-fix.me##.get-key-button:remove-attr(disabled)
-!drive.online-fix.me##+js(set-attr, '.download-button', disabled, false)
-drive.online-fix.me##+js(saa, type, submit, .download-button)
-!drive.online-fix.me##+js(set-attr, '.get-key-button', disabled, false)
-drive.online-fix.me##+js(set-attr, '#downloadModal', aria-hidden, false)
-drive.online-fix.me##div[id="downloadModal"]:remove-class(fade)
-drive.online-fix.me##div[id="downloadModal"]:style(display: block !important; opacity: 100 !important;)
-drive.online-fix.me##div[class*="swal2-popup"]:style(display: block !important; opacity: 100 !important;)
-drive.online-fix.me##div[class="modal-footer"]:style(display: block !important;)
-drive.online-fix.me##div[class="download-button"]:style(pointer-events: all !important; user-select: all !important; -moz-user-select: all !important; -webkit-user-select: all !important;)
 kandi.openweaver.com##*[class^="Cookie_"]
 kandi.openweaver.com##*[class^="Cookie_"]:remove()
 ||truanet.com^*
@@ -43172,6 +43181,84 @@ reflect4.me##div[class="bg-gray-600 text-white absolute bottom-0 left-0 w-full p
 reflect4.me##div[class="bg-gray-600 text-white absolute bottom-0 left-0 w-full py-8"]:has(a[href="https://reflect4.me/privacy-policy"]):upward(1):remove()
 reflect4.me##button[type="submit"]:remove-attr(disabled)
 !reflect4.me##app > div > div > div.mt-6.px-5.py-4.bg-white.shadow-md.overflow-hidden.sm\:rounded-lg > form > div.flex.items-center.justify-between.mt-8 > button:remove-attr(disabled)
+||cheddaramusias.life^*
+||cowerscrowers.top^*
+||eedsaung.net^*
+||sarcinedewlike.com^*
+||ossmightyenar.net^*
+||keewoach.net^*
+||potskolu.net^*
+||psojeeng.com^*
+||ypwctbiqhqv.com^*
+||prd.jwpltx.com/v1/error/ping.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+84.46.254.230##div[class="afs_ads"]
+84.46.254.230##div[class="afs_ads"]:remove()
+www.247solitaire.com##div[id^="feature-ad"]
+www.247solitaire.com##div[id^="feature-ad"]:remove()
+www.247solitaire.com##+js(set-constant, loadAnalyticsData, noopFunc)
+www.247solitaire.com##div[id^="div-gpt-ad-"]
+www.247solitaire.com##div[id^="div-gpt-ad-"]:remove()
+!www.247solitaire.com##div:has(div):has-text(/Close Ad/)
+!www.247solitaire.com##div:has(div):has-text(/Close Ad/):remove()
+www.247solitaire.com##+js(set-constant, AdMob, {})
+www.247solitaire.com##+js(set-constant, AdMob.enabled, false)
+www.247solitaire.com##div[id^="aspace-"]
+www.247solitaire.com##div[id^="aspace-"]:remove()
+||miltlametta.com^*
+||hexupload.net/disable_developer.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mrgreekroad.com/services/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||static.twitchcdn.net/assets/features.video-player.components.video-ads.stream-display-ad.pushdown$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||static.twitchcdn.net/assets/features.video-player.components.video-ads.audio-ad-overlay$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.twitchcdn.net/assets/features.video-player.components.video-ads.pushdown$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ippcodepink.com/clicks/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ippcodepink.com/devin/mornic.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||track.smachnakittchen.com^*
+||cdn.smachnakittchen.com^*
+!||builthousefor.com/services/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||builthousefor.com^*
+!||streetuptowind.com/services/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||streetuptowind.com^*
+||d24g87zbxr4yiz.cloudfront.net^*
+www.howtogeek.com##div[class*="ad-loading"]
+www.howtogeek.com##div[class*="ad-loading"]:remove()
+www.howtogeek.com##div[class*="ad-zone-"]
+www.howtogeek.com##div[class*="ad-zone-"]:remove()
+www.howtogeek.com##div[class*="adsninja-ad-zone"]
+www.howtogeek.com##div[class*="adsninja-ad-zone"]:remove()
+www.howtogeek.com##div[class*="dynamically-injected-refresh-ad-zone"]
+www.howtogeek.com##div[class*="dynamically-injected-refresh-ad-zone"]:remove()
+www.howtogeek.com##div[class="ad-current"]
+www.howtogeek.com##div[class="ad-current"]:remove()
+www.howtogeek.com##div[data-nosnippet]:has(span[class="future_inline_clone_target"]:has-text(/Advertisement/i))
+www.howtogeek.com##div[data-nosnippet]:has(span[class="future_inline_clone_target"]:has-text(/Advertisement/i)):remove()
+www.howtogeek.com##div[id^="ad-zone-"]
+www.howtogeek.com##div[id^="ad-zone-"]:remove()
+www.howtogeek.com##div[id^="adsninja-ad-"]
+www.howtogeek.com##div[id^="adsninja-ad-"]:remove()
+www.howtogeek.com##div[id^="dynamically-injected-refresh-ad-zone"]
+www.howtogeek.com##div[id^="dynamically-injected-refresh-ad-zone"]:remove()
+www.howtogeek.com##strong[class*="ad-zone-advertising-"]
+www.howtogeek.com##strong[class*="ad-zone-advertising-"]:remove()
+www.howtogeek.com##div[class*="adslot"]
+www.howtogeek.com##div[class*="adslot"]:remove()
+www.howtogeek.com##amp-iframe
+www.howtogeek.com##amp-iframe:remove()
+www.howtogeek.com^script:has-text(/tmntag\.adTag/i)
+www.howtogeek.com^script:has-text(/tmntag\.adTag/i):remove()
+www.howtogeek.com###div-thetop1
+www.howtogeek.com###div-thetop1:remove()
+www.howtogeek.com##+js(set-constant, sendToGoogleAnalytics, noopFunc)
+www.howtogeek.com##+js(set-constant, loadAnalyticsData, noopFunc)
+www.howtogeek.com##+js(set-constant, VALNET_GLOBAL_ADS, "")
+www.howtogeek.com##+js(set-constant, VALNET_GLOBAL_ISADBLOCK, false)
+www.howtogeek.com##+js(set-constant, googletag, {})
+www.howtogeek.com##+js(set-constant, gads, {})
+www.howtogeek.com##+js(set-constant, valnet_hideAds, true)
+www.howtogeek.com##+js(acs, gads)
+www.howtogeek.com##+js(acs, googletag)
+www.howtogeek.com##+js(acs, sendToGoogleAnalytics, loadAnalyticsData)
+!||ww7.freedailyiptv.com/js/parking.2.104.1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ww*.freedailyiptv.com/js/parking.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
