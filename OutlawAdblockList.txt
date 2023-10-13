@@ -43256,12 +43256,47 @@ www.howtogeek.com##+js(set-constant, gads, {})
 www.howtogeek.com##+js(set-constant, valnet_hideAds, true)
 www.howtogeek.com##+js(acs, gads)
 www.howtogeek.com##+js(acs, googletag)
+www.howtogeek.com##+js(abort-on-property-write, googletag)
+www.howtogeek.com##+js(abort-on-property-read, googletag)
 www.howtogeek.com##+js(acs, sendToGoogleAnalytics, loadAnalyticsData)
+www.howtogeek.com##+js(set-constant, window.adsNinja, {})
+www.howtogeek.com##+js(acs, window.adsNinja)
+www.howtogeek.com##+js(abort-on-property-write, window.adsNinja)
+www.howtogeek.com##+js(abort-on-property-read, window.adsNinja)
+www.howtogeek.com##+js(set-constant, adUnitBidderConfigs, {})
+www.howtogeek.com##+js(acs, adUnitBidderConfigs)
+www.howtogeek.com##+js(abort-on-property-write, adUnitBidderConfigs)
+www.howtogeek.com##+js(abort-on-property-read, adUnitBidderConfigs)
 ||www.howtogeek.com/strpixel.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||ww7.freedailyiptv.com/js/parking.2.104.1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!www.howtogeek.com##+js(abort-on-property-write, i.pubads)
+!www.howtogeek.com##+js(abort-on-property-read, i.pubads)
+!www.howtogeek.com##+js(acs, pubads)
+!www.howtogeek.com##+js(acs, _aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtMzI)
+!www.howtogeek.com^script:has-text(_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtMzI)
+!www.howtogeek.com^script:has-text(_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtMzI):remove()
+!www.howtogeek.com##:xpath(//script[contains(text(), '_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtMzI')])
+!www.howtogeek.com##:xpath(//script[contains(text(), '_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtMzI')]):remove()
+!www.howtogeek.com##+js(acs, v4ac1eiZr0)
+!www.howtogeek.com^script:has-text(v4ac1eiZr0)
+!www.howtogeek.com^script:has-text(v4ac1eiZr0):remove()
+!www.howtogeek.com##:xpath(//script[contains(text(), 'v4ac1eiZr0')])
+!www.howtogeek.com##:xpath(//script[contains(text(), 'v4ac1eiZr0')]):remove()
+www.howtogeek.com##+js(acs, admbenefits)
+www.howtogeek.com^script:has-text(admbenefits)
+www.howtogeek.com^script:has-text(admbenefits):remove()
+www.howtogeek.com##:xpath(//script[contains(text(), 'admbenefits')])
+www.howtogeek.com##:xpath(//script[contains(text(), 'admbenefits')]):remove()
+! the following inline anti-adblocking script location may change
+www.howtogeek.com##:xpath(//html/head/script[27])
+! only block all inline javascript if there is no other way to bypass the inline "admiral" anti-adblocking script
+!www.howtogeek.com^$inline-script
+www.howtogeek.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):has(div[class="duogaR"]):has(div[class="dzMDQR"]):has(h3[class="bBWhhG"]):remove()
+www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disable your blocker):upward(4):remove()
+|!||ww7.freedailyiptv.com/js/parking.2.104.1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ww*.freedailyiptv.com/js/parking.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d162h6x3rxav67.cloudfront.net/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.adsafeprotected.com/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! blocking crystalboulevard.com or succeedscene.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
 ||crystalboulevard.com^*
 ||succeedscene.com^*
 
