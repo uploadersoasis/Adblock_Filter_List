@@ -43227,9 +43227,9 @@ www.247solitaire.com##+js(abort-on-property-write, adsEnabled)
 www.247solitaire.com##+js(abort-on-property-read, adsEnabled)
 ||www.247solitaire.com/js/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.247solitaire.com/js/support/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! The following prevents the game from loading.
+! The following two lines prevent the game from loading.
 !www.247solitaire.com##+js(set-constant, adLineupManualTimeout, noopFunc)
-www.247solitaire.com##+js(acs, adLineupManualTimeout)
+!www.247solitaire.com##+js(acs, adLineupManualTimeout)
 www.247solitaire.com##+js(set-constant, hideFeatureAd(), trueFunc)
 ||miltlametta.com^*
 ||hexupload.net/disable_developer.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
