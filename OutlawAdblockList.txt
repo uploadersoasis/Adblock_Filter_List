@@ -18242,10 +18242,10 @@ www.wsj.com##div[id="wsj-mobile-ad-target"]
 !||ib.adnxs.com/jpt?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ib.adnxs.com/bounce^*
 !||ib.adnxs.com/async_usersync_file$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||ib.adnxs.com/* !blocks Shopyourway/Sears/Kmart offer links
+!||ib.adnxs.com^* !blocks Shopyourway/Sears/Kmart offer links
 !||sharethrough.adnxs.com/getuidp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||sharethrough.adnxs.com^*
-!||adnxs.com/* !blocks ib.adnxs.com too
+!||adnxs.com^* !blocks ib.adnxs.com too
 ||m.adnxs.com^*
 ||photobucket.adnxs.com^*
 subscription.packtpub.com##div[class="fade-out"]
@@ -43195,15 +43195,41 @@ reflect4.me##button[type="submit"]:remove-attr(disabled)
 84.46.254.230##div[class="afs_ads"]:remove()
 www.247solitaire.com##div[id^="feature-ad"]
 www.247solitaire.com##div[id^="feature-ad"]:remove()
-www.247solitaire.com##+js(set-constant, loadAnalyticsData, noopFunc)
 www.247solitaire.com##div[id^="div-gpt-ad-"]
 www.247solitaire.com##div[id^="div-gpt-ad-"]:remove()
-!www.247solitaire.com##div:has(div):has-text(/Close Ad/)
-!www.247solitaire.com##div:has(div):has-text(/Close Ad/):remove()
-www.247solitaire.com##+js(set-constant, AdMob, {})
-www.247solitaire.com##+js(set-constant, AdMob.enabled, false)
 www.247solitaire.com##div[id^="aspace-"]
 www.247solitaire.com##div[id^="aspace-"]:remove()
+!www.247solitaire.com##div:has(div):has-text(/Close Ad/)
+!www.247solitaire.com##div:has(div):has-text(/Close Ad/):remove()
+www.247solitaire.com##+js(set-constant, loadAnalyticsData, noopFunc)
+www.247solitaire.com##+js(set-constant, adsStart, noopFunc)
+www.247solitaire.com##+js(abort-on-property-write, adsStart)
+www.247solitaire.com##+js(abort-on-property-read, adsStart)
+www.247solitaire.com##+js(set-constant, TIMEOUT, 0)
+www.247solitaire.com##+js(set-constant, AdMob, {})
+www.247solitaire.com##+js(set-constant, AdMob.enabled, false)
+www.247solitaire.com##+js(set-constant, googletag, noopFunc)
+www.247solitaire.com##+js(abort-on-property-write, googletag)
+www.247solitaire.com##+js(abort-on-property-read, googletag)
+www.247solitaire.com##+js(set-constant, adUnits, [])
+www.247solitaire.com##+js(abort-on-property-write, adUnits)
+www.247solitaire.com##+js(abort-on-property-read, adUnits)
+www.247solitaire.com##+js(set-constant, initAdServer, noopFunc)
+www.247solitaire.com##+js(acs, initAdServer)
+www.247solitaire.com##+js(set-constant, adblock, false)
+www.247solitaire.com##+js(abort-on-property-write, adblock)
+www.247solitaire.com##+js(abort-on-property-read, adblock)
+www.247solitaire.com##+js(set-constant, adsbygoogle, [])
+www.247solitaire.com##+js(abort-on-property-write, adblock)
+www.247solitaire.com##+js(abort-on-property-read, adblock)
+www.247solitaire.com##+js(set-constant, adsEnabled, false)
+www.247solitaire.com##+js(abort-on-property-write, adsEnabled)
+www.247solitaire.com##+js(abort-on-property-read, adsEnabled)
+||www.247solitaire.com/js/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.247solitaire.com/js/support/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.247solitaire.com##+js(set-constant, adLineupManualTimeout, noopFunc)
+www.247solitaire.com##+js(acs, adLineupManualTimeout)
+www.247solitaire.com##+js(set-constant, hideFeatureAd(), trueFunc)
 ||miltlametta.com^*
 ||hexupload.net/disable_developer.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mrgreekroad.com/services/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43299,6 +43325,11 @@ www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disa
 ! blocking crystalboulevard.com or succeedscene.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
 ||crystalboulevard.com^*
 ||succeedscene.com^*
+www.ionos.com##div[id="cookieinfo-container"]
+www.ionos.com##div[id="cookieinfo-container"]:remove()
+!||hb.yellowblue.io/hb-multi$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||hb.yellowblue.io^*
+||i.liadm.com^*
 
 !Whitelisted
 ! for Google Drive
