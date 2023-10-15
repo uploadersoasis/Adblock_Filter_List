@@ -15440,9 +15440,6 @@ screenrant.com##div[id^="div_gpt_ad"]
 ||nexus.ensighten.com/hearst/mag-uk/code/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||rep.myappzcollection.com^*
 forums.cncnz.com###blocker
-www.breitbart.com###iscnewsmaxwidgetid
-!www.breitbart.com##.SWW.Hmobi.ad:nth-of-type(5)
-www.breitbart.com##div[id^="SWW.Hmobi.ad"]
 ||re.gtosite.com^*
 !||7proof.com/app/feedclick$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||7proof.com^*
@@ -16266,7 +16263,6 @@ http://eicm-global.dsp.io/opx$document,subdocument,script,inline-script,inline-f
 ||x1337x.ws/js/afcdbddefcaabdfaaacf.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||i2.wp.com/a2zcity.net/wp-content/uploads/2018/05/downloadnew.png$image
 ||iresentall.info^*
-||www.breitbart.com/t/assets/iframe/newsmax-ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 txapela.ru##.floating-bar
 txapela.ru###M218998Composite648309
 txapela.ru##div[class="dUexVJF"]
@@ -25753,7 +25749,6 @@ www.zellepay.com##div[class="ot-sdk-row"]
 !||ads.arkansasonline.com^*
 !||ads.nwaonline.com^*
 www.st.com##div[class^="optanon-alert-box-wrapper"]
-www.breitbart.com##div[id="social-share-footer"]
 developer.chrome.com##announcement-banner[class="cookie-banner hairline-top"]
 ||help.retailmenot.com/s/sfsites/auraAnalytics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.kfuiprtjuqntp.com^*
@@ -28718,8 +28713,6 @@ speakingjs.com##^script[id="_carbonads_js"]
 ||www7.securybrowseapp.com^*
 ||securybrowseapp.com^*
 www.pcloud.com##div[class="cookie_consent_holder"]
-www.xda-developers.com##div[class*="honor-spon-banner"]
-www.xda-developers.com##div[class*="spon_banner"]
 cli.co##div[class="CookieConsent"]
 ||loadheavilyquickthefile.vip/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||one.affiliateland.io^*
@@ -34974,7 +34967,6 @@ lorebeam.com##ins[data-ad-client]
 ||yajlpetccbodq.com^*
 ||1337x.proxybit.cfd/cdn-cgi/apps/head/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||spotpromocode.com^*
-||www.ojrq.net^*
 livsavr.co##+js(acs, anonymous)
 livsavr.co##+js(aopr, window.location.hash)
 livsavr.co##+js(aopw, window.location.hash)
@@ -42283,7 +42275,6 @@ kandi.openweaver.com##*[class^="Cookie_"]:remove()
 ||truanet.com^*
 ! redirection from Kroger survey website
 !||8451cx.az1.qualtrics.com^*
-||media.breitbart.com/ads.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 decider.com##div[class="content-wrap"]:has(div[class="sitewide-notice"])
 decider.com##div[class="content-wrap"]:has(div[class="sitewide-notice"]):remove()
 www.yourpickenscounty.com##li[class="banners-125"]
@@ -43323,9 +43314,10 @@ www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disa
 ||ww*.freedailyiptv.com/js/parking.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d162h6x3rxav67.cloudfront.net/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.adsafeprotected.com/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! blocking crystalboulevard.com or succeedscene.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
+! blocking crystalboulevard.com, succeedscene.com, whimsicalgrove.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
 ||crystalboulevard.com^*
 ||succeedscene.com^*
+||whimsicalgrove.com^*
 www.ionos.com##div[id="cookieinfo-container"]
 www.ionos.com##div[id="cookieinfo-container"]:remove()
 !||hb.yellowblue.io/hb-multi$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43333,6 +43325,66 @@ www.ionos.com##div[id="cookieinfo-container"]:remove()
 ||i.liadm.com^*
 outlook.live.com##div[data-animatable="true"]:has(div[class="Ogt7j"])
 outlook.live.com##div[data-animatable="true"]:has(div[class="Ogt7j"]):remove()
+!||carrick-ui.advoncommerce.com/gw/api/track/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||carrick-ui.advoncommerce.com^*
+www.xda-developers.com##div[class*="honor-spon-banner"]
+www.xda-developers.com##div[class*="spon_banner"]
+||www.xda-developers.com/strpixel.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.xda-developers.com##div[id^="adsninja-ad-zone"]
+www.xda-developers.com##div[id^="adsninja-ad-zone"]:remove()
+www.xda-developers.com##div[id^="ad-zone-container"]
+www.xda-developers.com##div[id^="ad-zone-container"]:remove()
+www.xda-developers.com##div[id*="div-gpt-ad-"]
+www.xda-developers.com##div[id*="div-gpt-ad-"]:remove()
+www.xda-developers.com##iframe[style="display: none;"][name="__tcfapiLocator"]:remove()
+www.xda-developers.com##iframe[style="display: none;"][name="__uspapiLocator"]:remove()
+www.xda-developers.com##h3:has-text(/It looks like you\'re blocking our ads/):upward(6):remove()
+www.xda-developers.com##+js(set-constant, window.adsNinja, {})
+www.xda-developers.com##+js(acs, window.adsNinja)
+www.xda-developers.com##+js(abort-on-property-write, window.adsNinja)
+www.xda-developers.com##+js(abort-on-property-read, window.adsNinja)
+www.xda-developers.com##+js(set-constant, adUnitBidderConfigs, {})
+www.xda-developers.com##+js(acs, adUnitBidderConfigs)
+www.xda-developers.com##+js(abort-on-property-write, adUnitBidderConfigs)
+www.xda-developers.com##+js(abort-on-property-read, adUnitBidderConfigs)
+www.xda-developers.com##+js(set-constant, adUnitBidderConfigs, {})
+www.xda-developers.com##+js(acs, googletag)
+www.xda-developers.com##+js(abort-on-property-write, googletag)
+www.xda-developers.com##+js(abort-on-property-read, googletag)
+www.xda-developers.com##+js(set-constant, window.googletag, {})
+www.xda-developers.com##+js(acs, window.googletag)
+www.xda-developers.com##+js(abort-on-property-write, window.googletag)
+www.xda-developers.com##+js(abort-on-property-read, window.googletag)
+! the following inline anti-adblocking script location may change
+www.xda-developers.com##:xpath(//html/head/script[26])
+! only block all inline javascript if there is no other way to bypass the inline "admiral" anti-adblocking script
+!www.xda-developers.com^$inline-script
+www.xda-developers.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):has(div[class="duogaR"]):has(div[class="dzMDQR"]):has(h3[class="bBWhhG"]):remove()
+www.xda-developers.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disable your blocker):upward(4):remove()
+!||sovrn-cm.monetizer101.com/js/loader.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||sovrn-cm.monetizer101.com^*
+!||unpkg.com/web-vitals@3.5.0/dist/web-vitals.attribution.iife.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||unpkg.com/web-vitals@*/dist/web-vitals.attribution.iife.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! www.ojrq.net is a URL redirector and blocking it will block legitimate links
+!||www.ojrq.net^*
+www.incentivespro.com##div[aria-label="cookieconsent"]
+www.incentivespro.com##div[aria-label="cookieconsent"]:remove()
+www.incentivespro.com##+js(set-constant, _gaq, [])
+www.incentivespro.com##+js(acs, _gaq)
+www.incentivespro.com##+js(abort-on-property-write, _gaq)
+www.incentivespro.com##+js(abort-on-property-read, _gaq)
+www.breitbart.com###iscnewsmaxwidgetid
+!www.breitbart.com##.SWW.Hmobi.ad:nth-of-type(5)
+www.breitbart.com##div[id^="SWW.Hmobi.ad"]
+||www.breitbart.com/t/assets/iframe/newsmax-ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.breitbart.com##div[id="social-share-footer"]
+||media.breitbart.com/ads.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.breitbart.com##aside[id="social-share-mobile-sticky"]
+www.breitbart.com##aside[id="social-share-mobile-sticky"]:remove()
+www.breitbart.com##iframe[id="rufous-sandbox"]:remove()
+www.breitbart.com##script[id="spmmin_js"]
+www.breitbart.com##script[id="spmmin_js"]:remove()
+||overlay-track.sailthru.cloud^*
 
 !Whitelisted
 ! for Google Drive
