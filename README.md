@@ -13,10 +13,13 @@ do not work to https://github.com/uploadersoasis/Adblock_Filter_List/issues .
  
 NOTES:
 
-   1.  Some of these rules utilize the add-on scriptlets like "replace attribute" (replace-attr)
-       from the javascript @ https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
+   1.  Some of these rules utilize the add-on scriptlets like "replace attribute"
+       (rpla) and "rename attribute" (rna) from the javascript @
+       https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
        so add that URL to the "userResourcesLocation" value in the advanced settings
        so that those rules will work.
+       example.com##+js(rpla, [selector], oldattr, newattr, newvalue)  ! newvalue is optional.
+       example.com##+js(rna, [selector], oldattr, newattr)  ! don't need to first remove existing attribute with same name
 
    2.  The rules which utilize the "replace-node-text" / "rpnt" scriptlet must also
        be listed under the "My Filters" tab and not just in this list because that
