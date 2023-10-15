@@ -1,0 +1,759 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2023-10-15T08:54:19.173Z",
+    "redirects": [
+        {
+            "description": "Example redirect, try going to http://example.com/anywordhere",
+            "exampleUrl": "http://example.com/some-word-that-matches-wildcard",
+            "exampleResult": "https://google.com/search?q=some-word-that-matches-wildcard",
+            "error": null,
+            "includePattern": "http://example.com/*",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "https://google.com/search?q=$1",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "vidoza.net Redirector to embedded video player",
+            "exampleUrl": "https://www.vidoza.net/0hleht4pl3au.html",
+            "exampleResult": "https://www.vidoza.net/embed-0hleht4pl3au.html",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?vidoza\\.net\\/([0-9a-zA-z]+\\.html)",
+            "excludePattern": "",
+            "patternDesc": "Redirecting to this URL prevents downloading the video from vidoza.net since no download button on the embedded page",
+            "redirectUrl": "$1://$2vidoza.net/embed-$3",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "wikisport.click Redirector to View Source",
+            "exampleUrl": "https://wikisport.click/fsl/espn0.php",
+            "exampleResult": "view-source:https://wikisport.click/fsl/espn0.php",
+            "error": null,
+            "includePattern": "(https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*))",
+            "excludePattern": "",
+            "patternDesc": "only want main URL and not full \"&num=<number>\" on end of query string",
+            "redirectUrl": "view-source:$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        },
+        {
+            "description": "Twitter Tweet URL Redirector to Embedded Tweet Website",
+            "exampleUrl": "https://twitter.com/elonmusk/status/1459891238384115722?ref_src=twsrc%5etfw",
+            "exampleResult": "https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Felonmusk%2Fstatus%2F1459891238384115722%3Fref_src%3Dtwsrc%255etfw",
+            "error": null,
+            "includePattern": "(https?:\\/\\/([wW]{3}\\.)?twitter\\.com\\/\\w+/status/\\d+\\??\\S*)",
+            "excludePattern": "",
+            "patternDesc": "tweet URL; This rule will also automatically handle redirects from t.co URL's",
+            "redirectUrl": "https://twitframe.com/show?url=$1",
+            "patternType": "R",
+            "processMatches": "urlEncode",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Redirect IMBD TV Episode to 2embed.to Videos of that Episode",
+            "exampleUrl": "https://www.imdb.com/title/tt0112173/episodes?season=1",
+            "exampleResult": "https://www.2embed.to/embed/imdb/tv?id=tt0112173&s=1&e=1",
+            "error": null,
+            "includePattern": "https?:\\/\\/([wW]{3}\\.)?imdb\\.com\\/title\\/(tt[0-9]{7,})\\/episodes\\?season=([1-9][0-9]*)",
+            "excludePattern": "only removes the URL for the subtitles file from the query string in the URL",
+            "patternDesc": "Need way to get episode number from IMDB URL",
+            "redirectUrl": "https://www.2embed.to/embed/imdb/tv?id=$2&s=$3&e=1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Redirect IMBD TV Episode to 2embed.to Videos of that Episode",
+            "exampleUrl": "https://www.imdb.com/title/tt0706375/?ref_=ttep_ep3",
+            "exampleResult": "https://www.2embed.to/embed/imdb/tv?id=tt0706375&e=3&s=1",
+            "error": null,
+            "includePattern": "https?:\\/\\/([wW]{3}\\.)?imdb\\.com\\/title\\/(tt[0-9]{7,})\\/\\?ref_=ttep_ep([1-9][0-9]*)",
+            "excludePattern": "only removes the URL for the subtitles file from the query string in the URL",
+            "patternDesc": "Need way to get season from IMDB URL",
+            "redirectUrl": "https://www.2embed.to/embed/imdb/tv?id=$2&e=$3&s=1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "upstream.to embedded video player iframe Redirector",
+            "exampleUrl": "https://www.upstream.to/embed-d8w9fo9n5htj.html",
+            "exampleResult": "https://www.upstream.to/embed-d8w9fo9n5htj.html",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?upstream\\.to\\/embed-([0-9a-zA-z]+\\.html)",
+            "excludePattern": "",
+            "patternDesc": "Redirecting due to CORS restriction if try to play embedded video in an iframe; this doesn't solve the problem since the main upstream.to website has the same issue",
+            "redirectUrl": "$1://$2upstream.to/embed-$3",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "upstream.to Redirector to embedded video player",
+            "exampleUrl": "https://www.upstream.to/d8w9fo9n5htj",
+            "exampleResult": "https://www.upstream.to/embed-d8w9fo9n5htj.html",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?upstream\\.to\\/(embed-)?([0-9a-zA-z]+)(\\.html)?",
+            "excludePattern": "",
+            "patternDesc": "Using this redirector prevents getting the download link to download the file",
+            "redirectUrl": "$1://$2upstream.to/embed-$4.html",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "sbnet.one removal of subtitles URL in query string to prevent CORS error",
+            "exampleUrl": "https://sbnet.one/e/jtpwdb9nz7ti?caption_1=https://sub.membed.net/sub&sub_1=English",
+            "exampleResult": "https://sbnet.one/e/jtpwdb9nz7ti",
+            "error": null,
+            "includePattern": "(https?:\\/\\/([wW]{3}\\.)?sbnet\\.one\\/e\\/[0-9a-zA-Z]{12,})\\?caption_1=(https?:\\/\\/sub\\.membed\\.net\\/sub\\/?)[-a-zA-Z0-9()@:%_\\+.~#?\\/=]*(&(sub_1=[0-9a-zA-Z:]{2,}))?",
+            "excludePattern": "only removes the URL for the subtitles file from the query string in the URL",
+            "patternDesc": "",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "moonmov.pro and movhide.pro removal of subtitles URL in query string to prevent CORS error",
+            "exampleUrl": "https://movhide.pro/e/shs5xxv54ht4?sub.info=https://sub.membed.net/sub&c1_label=English",
+            "exampleResult": "https://movhide.pro/e/shs5xxv54ht4?&c1_label=English",
+            "error": null,
+            "includePattern": "(https?:\\/\\/([wW]{3}\\.)?(movhide|moonmov)\\.pro\\/e\\/[0-9a-zA-Z]{12,})\\?sub.info=(https?:\\/\\/sub\\.membed\\.net\\/sub\\/?)[-a-zA-Z0-9()@:%_\\+.~#?\\/=]*(&(c1_label=[0-9a-zA-Z:]{2,}))?",
+            "excludePattern": "only removes the URL for the subtitles file from the query string in the URL",
+            "patternDesc": "",
+            "redirectUrl": "$1?$5",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "moonmov.pro removal of subtitles URL in query string to prevent CORS error",
+            "exampleUrl": "https://www.moonmov.pro/e/j8j0xywf5z8m?sub.info=https://sub.membed.net/sub/i-am-georgina-season-2-episode-5-suenos-cumplidos/i-am-georgina-season-2-episode-5-suenos-cumplidos.v1.vtt&c1_label=English18:28:4",
+            "exampleResult": "https://www.moonmov.pro/e/j8j0xywf5z8m?c1_label=English18:28:4",
+            "error": null,
+            "includePattern": "(https?:\\/\\/([wW]{3}\\.)?moonmov\\.pro\\/e\\/[0-9a-zA-Z]{12,})\\?sub.info=(https?:\\/\\/sub\\.membed\\.net\\/sub\\/)[-a-zA-Z0-9()@:%_\\+.~#?\\/=]+(&(c1_label=[0-9a-zA-Z:]{2,}))?",
+            "excludePattern": "only removes the URL for the subtitles file from the query string in the URL",
+            "patternDesc": "",
+            "redirectUrl": "$1?$5",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "extrafreetv.com Redirector to sportskart.click",
+            "exampleUrl": "https://extrafreetv.com/embed/scplayer.php?53",
+            "exampleResult": "https://sportskart.click/embed/stream-53.php",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?extrafreetv\\.com\\/embed\\/scplayer\\.php\\?(\\d+)",
+            "excludePattern": "",
+            "patternDesc": "only want number at the start of query string which is the stream number",
+            "redirectUrl": "$1://sportskart.click/embed/stream-$3.php",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "cdn.stream-24.net Redirector ",
+            "exampleUrl": "https://cdn.stream-24.net/live/stream.php?t=Flash&id=418148&link=https://tinyurl.com/8z2jb257&num=2",
+            "exampleResult": "https://tinyurl.com/8z2jb257",
+            "error": null,
+            "includePattern": "https?:\\/\\/cdn\\.stream-24\\.net/live/stream\\.php\\?t=Flash(&id=\\d+)?&link=(https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?\\/=]*))(&id=\\d+)?(&w=.+)?(&num=\\d+)?",
+            "excludePattern": "",
+            "patternDesc": "only want main URL and not full \"&num=<number>\" on end of query string",
+            "redirectUrl": "$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "klubsports.online Redirector to its own embedded iframe",
+            "exampleUrl": "https://klubsports.online/live/2023.php?id=151",
+            "exampleResult": "https://klubsports.online/live/player2.php?id=151",
+            "error": null,
+            "includePattern": "(https?):\\/\\/klubsports\\.online\\/live\\/(2023|reddit)\\.php\\?id=([1-9][0-9]*)",
+            "excludePattern": "",
+            "patternDesc": "three digit number on end of the URL is the channel ID",
+            "redirectUrl": "$1://klubsports.online/live/player2.php?id=$3",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "em.tgo-tv.co Redirector to cdn.sportcast.life",
+            "exampleUrl": "https://em.tgo-tv.co/channels.php?423",
+            "exampleResult": "https://cdn.sportcast.life/nginx.php?id=423",
+            "error": null,
+            "includePattern": "(https?):\\/\\/em\\.tgo-tv\\.co\\/channels\\.php\\?([1-9][0-9]*)",
+            "excludePattern": "",
+            "patternDesc": "three digit number on end of the URL is the channel ID",
+            "redirectUrl": "$1://cdn.sportcast.life/nginx.php?id=$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "extrafreetv.com Redirector to cdn.sportcast.life",
+            "exampleUrl": "https://extrafreetv.com/embed/em.php?45",
+            "exampleResult": "https://cdn.sportcast.life/nginx.php?id=45",
+            "error": null,
+            "includePattern": "(https?):\\/\\/extrafreetv\\.com\\/embed\\/em\\.php\\?([1-9][0-9]*)",
+            "excludePattern": "",
+            "patternDesc": "three digit number on end of the URL is the channel ID",
+            "redirectUrl": "$1://cdn.sportcast.life/nginx.php?id=$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "File-Upload Download Redirect",
+            "exampleUrl": "https://www.file-upload.in/file.php?get=hmr9ax596wcb&__cf_chl_tk=zS1Y1DYG_pBOaC2aJrH95xYgYJCYgv5LjDeSLijYJ.o-1690921145-0-gaNycGzNDhA",
+            "exampleResult": "https://www.file-upload.org/hmr9ax596wcb",
+            "error": null,
+            "includePattern": "(https?:\\/\\/)([wW]{3}\\.)?file-upload\\.(com|in)\\/file\\.php\\?get=([A-Za-z0-9]+)(&.)*",
+            "excludePattern": "",
+            "patternDesc": "adds to \"en/mirror\" in middle of the URL but needs filename on the end",
+            "redirectUrl": "$1$2file-upload.org/$4",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Multiup Main Download Redirect #2",
+            "exampleUrl": "https://www.multiup.org/e3449c67747ce6aa1e37dd3a46e43dbb",
+            "exampleResult": "https://www.multiup.org/en/mirror/e3449c67747ce6aa1e37dd3a46e43dbb",
+            "error": null,
+            "includePattern": "(https?:\\/\\/([wW]{3}\\.)?multiup\\.(org|eu|io))\\/([a-z0-9]+)",
+            "excludePattern": "",
+            "patternDesc": "adds to \"en/mirror\" in middle of the URL but needs filename on the end",
+            "redirectUrl": "$1/en/mirror/$4",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Multiup Main Download Redirect #1",
+            "exampleUrl": "https://www.multiup.org/download/e3449c67747ce6aa1e37dd3a46e43dbb/game-fury.unleashed-(60804).part1.rar",
+            "exampleResult": "https://www.multiup.org/en/mirror/e3449c67747ce6aa1e37dd3a46e43dbb/game-fury.unleashed-(60804).part1.rar",
+            "error": null,
+            "includePattern": "(https?:\\/\\/([wW]{3}\\.)?multiup\\.(org|eu|io))(\\/en)?(\\/download)\\/([a-z0-9]+\\/.+)",
+            "excludePattern": "",
+            "patternDesc": "changes \"download\" to \"en/mirror\"",
+            "redirectUrl": "$1/en/mirror/$6",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Multiup Download Redirect from Google+ Link",
+            "exampleUrl": "https://plus.google.com/share?url=http://multiup.org/download/bd436f9f230708e886391f043bcc5f42/Streets.of.Rage.4.build.10731343.rar",
+            "exampleResult": "http://multiup.org/en/mirror/bd436f9f230708e886391f043bcc5f42/Streets.of.Rage.4.build.10731343.rar",
+            "error": null,
+            "includePattern": "https?:\\/\\/plus\\.google\\.com\\/share\\?url=(http:\\/\\/multiup\\.(org|eu|io))\\/download\\/([a-z0-9]+\\/.*)",
+            "excludePattern": "",
+            "patternDesc": "Any url after \"share?url=\"",
+            "redirectUrl": "$1/en/mirror/$3",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Multiup Download Redirect from Twitter Link",
+            "exampleUrl": "https://twitter.com/share?url=http://multiup.org/download/bd436f9f230708e886391f043bcc5f42/Streets.of.Rage.4.build.10731343.rar",
+            "exampleResult": "http://multiup.org/en/mirror/bd436f9f230708e886391f043bcc5f42/Streets.of.Rage.4.build.10731343.rar",
+            "error": null,
+            "includePattern": "https?:\\/\\/([wW]{3}\\.)?twitter\\.com\\/share\\?url=(http:\\/\\/multiup\\.(org|eu|io))\\/download\\/([a-z0-9]+\\/.*)",
+            "excludePattern": "",
+            "patternDesc": "Any url after \"share?url=\"",
+            "redirectUrl": "$2/en/mirror/$4",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Multiup Download Redirect from Facebook Link",
+            "exampleUrl": "https://www.facebook.com/sharer.php?u=http://multiup.org/download/bd436f9f230708e886391f043bcc5f42/Streets.of.Rage.4.build.10731343.rar",
+            "exampleResult": "http://multiup.org/en/mirror/bd436f9f230708e886391f043bcc5f42/Streets.of.Rage.4.build.10731343.rar",
+            "error": null,
+            "includePattern": "https?:\\/\\/([wW]{3}\\.)?facebook\\.com\\/sharer\\.php\\?u=(http:\\/\\/multiup\\.(org|eu|io))\\/download\\/([a-z0-9]+\\/.*)",
+            "excludePattern": "",
+            "patternDesc": "Any url after \"share?url=\"",
+            "redirectUrl": "$2/en/mirror/$4",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Wikipedia Redirect to Older Style Format",
+            "exampleUrl": "https://en.wikipedia.org/wiki/Component_Object_Model",
+            "exampleResult": "https://en.wikipedia.org/wiki/Component_Object_Model?useskin=vector",
+            "error": null,
+            "includePattern": "(^https?:\\/(\\/[a-zA-Z]{2,}\\.|\\/)wikipedia\\.(com|org)/.+)",
+            "excludePattern": "(^https?:\\/(\\/[a-zA-Z]{2,}\\.|\\/)wikipedia\\.(com|org)/.+)(\\?useskin=vector)+",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "$1?useskin=vector",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame"
+            ]
+        },
+        {
+            "description": "anrdoezrs.net Redirects",
+            "exampleUrl": "https://www.anrdoezrs.net/links/7251228/type/dlg/sid/UUmuoUeUpU35995/https://play.google.com/store/apps/details?id=eu.chainfire.tv.sideloadlauncher",
+            "exampleResult": "https://play.google.com/store/apps/details?id=eu.chainfire.tv.sideloadlauncher",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?anrdoezrs\\.net\\/links\\/\\d+\\/type\\/dlg\\/sid\\/[a-zA-Z0-9]+\\/(https?\\:\\/\\/.+)$",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "$3",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "jdoqocy.com Redirects",
+            "exampleUrl": "https://www.jdoqocy.com/click-7633730-15041379?url=https%3A%2F%2Fwww.directv.com%2Fshop%2Fstream%2Fentertainment-package&",
+            "exampleResult": "https://www.directv.com/shop/stream/entertainment-package&",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?jdoqocy\\.com\\/click-\\d+-\\d+\\?url=(.+)$",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "$3",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "viglink.com Redirects",
+            "exampleUrl": "https://redirect.viglink.com/?u=https%3A%2F%2Fwww.newegg.com&prodOvrd=RAL&key=b01ff7ca3e728b947b9c76b1293dd5ec&cuid=PF1_en-us",
+            "exampleResult": "https://www.newegg.com&prodOvrd=RAL&key=b01ff7ca3e728b947b9c76b1293dd5ec&cuid=PF1_en-us",
+            "error": null,
+            "includePattern": "^https?:\\/\\/redirect\\.viglink\\.com/\\?u=(.+)$",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "unityassetfree.xyz Download Redirect",
+            "exampleUrl": "https://unityassetfree.xyz/redirect-to/?url=http://ouo.io/qs/n21xCt72?s=https%3A%2F%2Funityassetcollection.com%2Fdownload.php%3Furl%3DTB-33c1afE4E2F2unsB5wpA3rE3PG2BcQZcF2D2C-7D2fD-17daaE4C1C1I-7B-21tA2ntA2ddNvC3ajxD4owC3C3B1C6C1F1G1A4E4A3B10A1C6D6jB1li1jB-21A4YQHNMMBB1%3D%3D",
+            "exampleResult": "http://ouo.io/qs/n21xCt72?s=https%3A%2F%2Funityassetcollection.com%2Fdownload.php%3Furl%3DTB-33c1afE4E2F2unsB5wpA3rE3PG2BcQZcF2D2C-7D2fD-17daaE4C1C1I-7B-21tA2ntA2ddNvC3ajxD4owC3C3B1C6C1F1G1A4E4A3B10A1C6D6jB1li1jB-21A4YQHNMMBB1%3D%3D",
+            "error": null,
+            "includePattern": "^https?:\\/\\/unityassetfree\\.xyz\\/redirect-to/\\?url=(.+)$",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "mycommerce.com Redirects",
+            "exampleUrl": "https://redirect.mycommerce.com/affiliate.html?affiliateid=200051329&publisherid=23725&target=https://www.eltima.com/download/usb_network_gate.exe",
+            "exampleResult": "https://www.eltima.com/download/usb_network_gate.exe",
+            "error": null,
+            "includePattern": "^https?:\\/\\/redirect\\.mycommerce\\.com\\/affiliate\\.html\\?affiliateid=\\d+&publisherid=\\d+&target=(.+)$",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "GOG Affiliate Links Redirect Rule",
+            "exampleUrl": "https://af.gog.com/game/kings_bounty_ii?as=1721879312",
+            "exampleResult": "https://www.gog.com/game/kings_bounty_ii?as=1721879312",
+            "error": null,
+            "includePattern": "af.gog.com\\/game\\/(.*)",
+            "excludePattern": "",
+            "patternDesc": "direct game link with affiliate tag",
+            "redirectUrl": "https://www.gog.com/game/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Adtraction Redirector",
+            "exampleUrl": "https://track.adtraction.com/t/t?a=1578845458&as=1708256980&t=2&tk=1&url=https://www.gog.com/news/release_wolfenstein_enemy_territory_for_free_with_dedicated_gog_servers_and_bethesda_halloween_sale",
+            "exampleResult": "https://www.gog.com/news/release_wolfenstein_enemy_territory_for_free_with_dedicated_gog_servers_and_bethesda_halloween_sale",
+            "error": null,
+            "includePattern": "https?:\\/\\/track\\.adtraction\\.com\\/t\\/t\\?a=\\d+&as=\\d+&t=\\d&tk=\\d&url=(https?:\\/\\/.*)",
+            "excludePattern": "",
+            "patternDesc": "Target Website (usually GOG.com)",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "2baksa.ws Redirector",
+            "exampleUrl": "https://2baksa.ws/go/go.php?url=https://up-load.io/1pedydqf320n",
+            "exampleResult": "https://up-load.io/1pedydqf320n",
+            "error": null,
+            "includePattern": "https?:\\/\\/([wW]{3}\\.)?2baksa\\.ws\\/go\\/go\\.php\\?url=(https?:\\/\\/.*)",
+            "excludePattern": "",
+            "patternDesc": "Target Website (usually up-load.io)",
+            "redirectUrl": "$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "anrdoezrs.net Redirector",
+            "exampleUrl": "https://www.anrdoezrs.net/links/8532386/type/dlg/sid/___vg__p_23230404__t_w__r_https://www.bluesnews.com/__d_D/https://www.verizon.com/support/verizon-test-drive-faqs/#signup",
+            "exampleResult": "https://www.verizon.com/support/verizon-test-drive-faqs/#signup",
+            "error": null,
+            "includePattern": "https?:\\/\\/([wW]{3}\\.)?anrdoezrs\\.net\\/links\\/\\d+\\/type\\/dlg\\/sid\\/\\S*\\/(https?:\\/\\/\\S+)$",
+            "excludePattern": "",
+            "patternDesc": "Target Website",
+            "redirectUrl": "$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "sportskart.click iframe redirect to ntuplay.xyz iframe (disable since sportskart.click/embed can be used directly with ublock and ntuplay.xyz can't",
+            "exampleUrl": "https://sportskart.click/embed/stream-45.php",
+            "exampleResult": "https://ntuplay.xyz/premiumtv/daddyhd.php?id=45",
+            "error": null,
+            "includePattern": "(https?):\\/\\/([wW]{3}\\.)?sportskart\\.click\\/embed\\/stream-([1-9][0-9]*).php.*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1://ntuplay.xyz/premiumtv/daddyhd.php?id=$3",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "time4tv iframe redirect to extrafreetv iframe",
+            "exampleUrl": "https://time4tv.stream/embed/sc/espn2/link1.php",
+            "exampleResult": "https://extrafreetv.com/embed/espn2/1.php?width=100%&height=100%",
+            "error": null,
+            "includePattern": "(https?):\\/\\/([wW]{3}\\.)?time4tv\\.stream\\/embed\\/sc\\/([0-9a-zA-Z]+)/link([1-9]).php.*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1://extrafreetv.com/embed/$3/$4.php?width=100%&height=100%",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "redirectingat.com Redirector",
+            "exampleUrl": "https://go.redirectingat.com/?id=66960X1514734&xs=1&url=https%3A%2F%2Fwww.t-mobile.com%2Foffers%2Ffree-trial&referrer=theverge.com&xcust=___vg__p_22319851__t_w__r_https://www.theverge.com/2022/11/18/23466363/verizon-5g-test-drive-trial-e",
+            "exampleResult": "https://www.t-mobile.com/offers/free-trial",
+            "error": null,
+            "includePattern": "https?:\\/\\/go\\.redirectingat\\.com\\/\\?id=\\w+&xs=\\d+&url=(https?\\S+)&referrer=\\S+&xcust=\\S+",
+            "excludePattern": "",
+            "patternDesc": "Target Website",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "target.georiot.com Redirector",
+            "exampleUrl": "https://target.georiot.com/Proxy.ashx?tsid=8428&GR_URL=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB08164VTWH%2Fref%3Dasc_df_B08164VTWH1669352400000%3Ftag%3Dhawk-future-20%26creative%3D395261%26creativeASIN%3DB08164VTWH%26linkCode%3Dasn%26ascsubtag%3Dtrd-us-6624777914252576000-20",
+            "exampleResult": "https://www.amazon.com/dp/B08164VTWH/ref=asc_df_B08164VTWH1669352400000?tag=hawk-future-20&creative=395261&creativeASIN=B08164VTWH&linkCode=asn&ascsubtag=trd-us-6624777914252576000-20",
+            "error": null,
+            "includePattern": "https?:\\/\\/target\\.georiot\\.com\\/Proxy.ashx\\?tsid=\\d+&GR_URL=(https?\\S+)",
+            "excludePattern": "",
+            "patternDesc": "Target Website",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "ojrq.net URL Redirects",
+            "exampleUrl": "https://www.ojrq.net/p/?return=https%3A%2F%2Fmicrosoft.msafflnk.net%2Fc%2F1243925%2F433017%2F7593%3Fsharedid%3DkXQk6.ivFEQ-.yTG9Z6jPEUW7vSn_ysk8A%26subid2%3D24542%26subid3%3D2294204%26u%3Dhttps%253A%252F%252Flearn.microsoft.com%252Fen%252Dus%252Flinux%252F%253FranMID%3D24542%2526ranEAID%3DkXQk6*ivFEQ%2526ranSiteID%3DkXQk6.ivFEQ-.yTG9Z6jPEUW7vSn_ysk8A%2526epi%3DkXQk6.ivFEQ-.yTG9Z6jPEUW7vSn_ysk8A%26level%3D1%26srcref%3Dhttps%253A%252F%252Fwww.techradar.com%252Fpro%252Fmicrosoft-suddenly-wants-to-tell-you-how-to-install-linux-but-why&cid=7593&tpsync=yes&auth=56545d7443720f94",
+            "exampleResult": "https://microsoft.msafflnk.net/c/1243925/433017/7593?sharedid=kXQk6.ivFEQ-.yTG9Z6jPEUW7vSn_ysk8A&subid2=24542&subid3=2294204&u=https%3A%2F%2Flearn.microsoft.com%2Fen%2Dus%2Flinux%2F%3FranMID=24542%26ranEAID=kXQk6*ivFEQ%26ranSiteID=kXQk6.ivFEQ-.yTG9Z6jPEUW7vSn_ysk8A%26epi=kXQk6.ivFEQ-.yTG9Z6jPEUW7vSn_ysk8A&level=1&srcref=https%3A%2F%2Fwww.techradar.com%2Fpro%2Fmicrosoft-suddenly-wants-to-tell-you-how-to-install-linux-but-why&cid=7593&tpsync=yes&auth=56545d7443720f94",
+            "error": null,
+            "includePattern": "https?:\\/\\/www\\.ojrq\\.net\\/\\p\\/\\?return=(https?\\S+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "image",
+                "imageset",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "msafflnk.net URL Redirects",
+            "exampleUrl": "https://microsoft.msafflnk.net/c/1243925/433017/7593?sharedid=kXQk6.ivFEQ-3GJfoOs.UQWI97hdyYW8Jw&subid2=24542&subid3=2294204&u=https%3A%2F%2Flearn.microsoft.com%2Fen%2Dus%2Flinux%2Finstall%3FranMID=24542%26ranEAID=kXQk6*ivFEQ%26ranSiteID=kXQk6.ivFEQ-3GJfoOs.UQWI97hdyYW8Jw%26epi=kXQk6.ivFEQ-3GJfoOs.UQWI97hdyYW8Jw&level=6&srcref=https%3A%2F%2Fwww.techradar.com%2Fpro%2Fmicrosoft-suddenly-wants-to-tell-you-how-to-install-linux-but-why&cid=7593&tpsync=yes&auth=56545cbacdcd4f26Because%20of%20the%20following%20filter:&cid=7593&tpsync=yes&auth=565507ad518521f1&cid=7593&tpsync=yes&auth=5655070153e5d436&cid=7593&tpsync=yes&auth=565507b274dd44f3&cid=7593&tpsync=yes&auth=5655076f2d4de7ec&cid=7593&tpsync=yes&auth=5655075f71ca2d29",
+            "exampleResult": "https://learn.microsoft.com/en-us/linux/install?ranMID=24542&ranEAID=kXQk6*ivFEQ&ranSiteID=kXQk6.ivFEQ-3GJfoOs.UQWI97hdyYW8Jw&epi=kXQk6.ivFEQ-3GJfoOs.UQWI97hdyYW8Jw&level=6&srcref=https://www.techradar.com/pro/microsoft-suddenly-wants-to-tell-you-how-to-install-linux-but-why&cid=7593&tpsync=yes&auth=56545cbacdcd4f26Because of the following filter:&cid=7593&tpsync=yes&auth=565507ad518521f1&cid=7593&tpsync=yes&auth=5655070153e5d436&cid=7593&tpsync=yes&auth=565507b274dd44f3&cid=7593&tpsync=yes&auth=5655076f2d4de7ec&cid=7593&tpsync=yes&auth=5655075f71ca2d29",
+            "error": null,
+            "includePattern": "https?:\\/\\/microsoft.msafflnk.net\\/c\\/\\d+\\/\\d+\\/\\d+\\?&?(sharedid=\\S+)(subid2=\\d+)?(subid3=\\d+)?(u=(https?\\S+))",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$5",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "image",
+                "imageset",
+                "xmlhttprequest"
+            ]
+        }
+    ]
+}
