@@ -11373,8 +11373,10 @@ kickasstorrents.to##.tcc_mb
 www.freedownloadify.org##.header-ad.col-md-9
 ||instantwinner764.club^*
 ||404.safedog.cn/sitedog_stat_new.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||segments.company-target.com/log^*
 !||b.company-target.com/ect.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||b.company-target.com^*
+||company-target.com^*
 !blocks PowerDVD online activation
 ||cap.cyberlink.com^*
 bc.vc##iframe[src="http://bc.vc/pages/download.php"]
@@ -11752,6 +11754,7 @@ haxdown.com##.bannersinglefot:nth-of-type(2) > a[href^="http://hdwn.siomi.tech/"
 !||app.medyanetads.com/dfp2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||app.medyanetads.com^*
 !||1ff98d3f0df77fc9fdedf4209cc4db4cc1844a69.cws.conviva.com^*
+!||885e2dd94adb263c2321d2d0f3778d18523bce4a.cws.conviva.com^*
 !||cws.conviva.com/cws_iframe.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cws.conviva.com^*
 ||kumekqeccmob.com^*
@@ -17946,7 +17949,6 @@ tutsgalaxy.com##div[id^="tutsg-"]
 ||295mv.com^*
 ||homeepotrebates.com^*
 ||www.homeepotrebates.com^*
-||segments.company-target.com/log^*
 !||web-analytics.engagio.com/js/ei.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||web-analytics.engagio.com^*
 ||popcornhole.com^*
@@ -20965,6 +20967,7 @@ ouou.io##span[class="msg-adblock"]
 ||cm.gammaplatform.com/adx/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||tr.brand-display.com/tracking$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tr.brand-display.com^*
+||brand-display.com^*
 ||hb.gammaplatform.com/adx/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||adhitzads.com^*
 !||www.blogtraffic.de/track/track.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -31619,24 +31622,85 @@ asphalt.fandom.com##div[class*="ad-slot-placeholder"]
 !apkxmods.com##+js(remove-class, postlink, ,)
 apkxmods.com##+js(remove-attr, href, .postlink)
 mega4up.org##+js(remove-attr, disabled, #downloadbtn, stay)
-||up-load.io/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||up-load.io/ds1/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!up-load.io##+js(set-constant, tick, 1)
+!||up-load.io^$inline-script makes the page blank
+!causes adblock popup
 !up-load.io##+js(set-constant, remaining, 0)
-up-load.io##ins[class="adsbygoogle"]
-up-load.io##+js(abort-on-property-read.js, adsbygoogle)
-up-load.io##+js(abort-on-property-write.js, adsbygoogle)
-up-load.io###gdpr-cookie-notice
+!up-load.io##+js(set-constant, tick, 1)
+! removing or stopping the script with JSON.parse(atob()) will prevent the 
+!up-load.io##+js(acs, JSON.parse(atob()))
+!up-load.io##^script:has-text(/y=JSON\.parse\(atob\(\)\)/)
+!up-load.io##^script:has-text(/y=JSON\.parse\(atob\(\)\)/):remove()
+!up-load.io##iframe
+!up-load.io##img[src$="://i.imgur.com/ne03PNi.png"]:upward(3)
+up-load.io##+js(abort-on-property-read, ael)
+up-load.io##+js(abort-on-property-write, ael)
+up-load.io##+js(acs, ael)
+up-load.io##+js(abort-on-property-read, adsbygoogle)
+up-load.io##+js(abort-on-property-write, adsbygoogle)
+up-load.io##+js(abort-on-property-read, atOptions)
+up-load.io##+js(abort-on-property-write, atOptions)
+up-load.io##+js(abort-on-property-read, _ofkhpt)
+up-load.io##+js(abort-on-property-write, _ofkhpt)
+up-load.io##+js(acs, _ofkhpt)
+up-load.io##script[id="_ofkhpt"]
+up-load.io##script[id="_ofkhpt"]:remove()
+up-load.io##^script:has-text(\"s65c\")
+up-load.io##^script:has-text(\"s65c\"):remove()
+!up-load.io##+js(acs, s65c)
+up-load.io##+js(acs, \"s65c\")
+up-load.io##span[id="s65c"]
+up-load.io##span[id="s65c"]:remove()
+up-load.io##+js(aeld, DOMNodeRemoved)
+up-load.io##+js(aeld, DOMNodeRemoved, onload)
 up-load.io##+js(remove-attr, disabled, #downloadbtn, stay)
 up-load.io##+js(remove-class, btn-block, #downloadbtn, stay)
-up-load.io##div[class="contentDivOuter"]
+up-load.io##+js(set-constant, atOptions, {})
+up-load.io##a[id="__bgd_link"]
+up-load.io##a[id="__bgd_link"]:remove()
 up-load.io##div[class*="ad-layout-"]
 up-load.io##div[class="ad-display-section"]
 up-load.io##div[class="ads"]
+up-load.io##div[class="contentDivOuter"]
+up-load.io##div[class="cookie-message"]
+up-load.io##div[class="cookie-message"]:remove()
+up-load.io##div[id="gdpr-cookie-notice"]
+up-load.io##div[id="gdpr-cookie-notice"]:remove()
+up-load.io##ins[class="adsbygoogle"]
+up-load.io##ins[class="adsbygoogle"]:remove()
+up-load.io##div[id="proxydetected"]
+up-load.io##div[id="proxydetected"]:remove()
+up-load.io##script:remove-attr(onerror)
+up-load.io##script:remove-attr(onload)
 up-s1.com,up-load.io##+js(window.open-defuser)
-!up-load.io##iframe
-up-load.io##div.container:nth-child(10) > script:nth-child(5)
+||up-load.io/ds1/img/logo.png#-page-peel//adnetwork468./ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||up-load.io/pcheck.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||up-load.io/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||up-load.io^$xhr
+||up-load.io^$xmlhttprequest,3p
+||up-load.io^$script,third-party
+||up-load.io/ds1/js/nt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! using remove() above will change the position of the following scripts and make the hard-coded values invalid, so remove the scripts in reverse order of appearance in the page
+up-load.io##:xpath(/html/body/script[3])
+up-load.io##:xpath(/html/body/script[1])
+up-load.io##:xpath(/html/head/script[13])
+up-load.io##:xpath(/html/body/script[3]):remove()
+up-load.io##:xpath(/html/body/script[1]):remove()
+up-load.io##:xpath(/html/head/script[13]):remove()
+up-load.io##span:has(*[id="adContext"])
+up-load.io##span:has(*[id="downloadAd"])
+up-load.io##span:has(*[id="ad_img"])
+up-load.io##span:has(*[id="onpageads"])
+up-load.io##span:has(*[id="adsense"])
+up-load.io##span:has(*[id="topBannerAd"])
+up-load.io##span:has(*[id="weatherad"])
+up-load.io##span:has(*[id="adContext"]):remove()
+up-load.io##span:has(*[id="downloadAd"]):remove()
+up-load.io##span:has(*[id="ad_img"]):remove()
+up-load.io##span:has(*[id="onpageads"]):remove()
+up-load.io##span:has(*[id="adsense"]):remove()
+up-load.io##span:has(*[id="topBannerAd"]):remove()
+up-load.io##span:has(*[id="weatherad"]):remove()
 ||upskittyan.com^*
 ||qrhwossbcconwxc.xyz^*
 ||vgfutxwgq.com^*
@@ -31882,9 +31946,6 @@ lapelotita.com##button[id="go-submit"]:style(display:block !important;)
 apkmody.io##div[class="ad-unit"]
 ||www.scblqvoiypcoy.com^*
 ||scblqvoiypcoy.com^*
-up-load.io^$xmlhttprequest,3p
-up-load.io^$script,third-party
-!up-load.io^$script,3p
 ||www.hamhrpccxs.xyz^*
 ||hamhrpccxs.xyz^*
 ||ambxvmllokaa.com^*
@@ -32094,7 +32155,6 @@ xapkmod.com##+js(set-constant, seconds, 0, stay)
 newatlas.com##div[class*="OcelotAdModule"]
 ||ogxbvyeynymsx.xyz^*
 ||vcrlaitlihy.com^*
-||up-load.io/ds1/js/nt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 service.engelmann.com##+js(remove-attr, disabled, .btn.btn-primary)
 litgu.ru##a[href^="https://usnd.to/"]
 ||xhhocfwarxfh.xyz^*
@@ -32146,8 +32206,6 @@ baominh.tech##ins[data-ad-client]
 ||xhbhivtodtsnib.xyz^*
 ||pcnmjhsq.xyz^*
 ||fpimttkfxrvgi.com^*
-up-load.io##div.container.download_page.pt30 > script:nth-child(8)
-up-load.io##div.container.download_page.pt30 > script:nth-child(6)
 www.comss.ru##div[class="container-fluid"]:has(ins[data-ad-client])
 www.comss.ru##ins[data-ad-client]
 ||nafulltiuk.com^*
@@ -32265,19 +32323,6 @@ bethesda.net##visor-alert
 ||xtuocamulxdqwft.xyz^*
 ||nlfsqvqf.com^*
 ||kcpwcrcjewal.com^*
-!up-load.io##head > script:nth-child(31)
-up-load.io##:xpath(/html/head/script[15])
-up-load.io##:xpath(/html/head/script[14])
-!causes adblock popup
-||up-load.io/ds1/img/logo.png#-page-peel//adnetwork468./ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-up-load.io##+js(aeld, DOMNodeRemoved, onload)
-!up-load.io##img[src$="://i.imgur.com/ne03PNi.png"]:upward(3)
-up-load.io##span[id="s65c"]
-up-load.io##:xpath(/html/body/div[1]/div[1]/script[5])
-up-load.io##:xpath(/html/body/div/div/div[1]/script[4])
-up-load.io##+js(acs, s65c)
-!up-load.io##+js(acs, ("s65c"))
-!up-load.io##^script:has-text(("s65c"))
 ||cdn.barscreative1.com^*
 ||qaqdojte.xyz^*
 ||gjnbhvnbmxxv.com^*
@@ -32397,8 +32442,6 @@ linkifier.com##div[id="cookie-notice"]
 eizone.info##aside[id="moove_gdpr_cookie_info_bar"]
 ||s5.cnnx.io/s2static/*/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lvhkkkrjyhv.com^*
-!up-load.io##^script:has-text(y=JSON.parse(atob()))
-!up-load.io##+js(acs, y=JSON.parse(atob()))
 ||popgecusljq.xyz^*
 ||onomousw.xyz^*
 beebom.com##div[class="_ap_apex_ad"]
@@ -32448,7 +32491,6 @@ yoomoney.ru##div[class^="Gdpr__"]
 ||din.adrenalads.net^*
 ||yrntpeas.xyz^*
 ||send.cm^$xhr
-||up-load.io^$xhr
 ||yjcsgercrlylxdy.com^*
 rambox.app##h2:has-text(/Cookies Policy/i):upward(1)
 freemagazines.top##ins[data-ad-client]:upward(1)
@@ -33306,7 +33348,6 @@ chedrive.com##a[href*="//1frozenthrone1.com/"]
 ||eehuzaih.com^*
 short.katflys.com##+js(aeld, DOMNodeRemoved)
 short.katflys.com^$script,3p
-up-load.io##+js(aeld, DOMNodeRemoved)
 ||hoppedobscurefame.com^*
 ||ytgfmxrchvn.com^*
 snakify.org##ins[data-ad-client]:upward(1)
@@ -37317,7 +37358,6 @@ www.thomas-krenn.com##+js(remove-attr, data-xtx-default-gtm-tracking-event-name-
 www.thomas-krenn.com##+js(remove-attr, data-xtx-default-gtm-tracking)
 haydenjames.io##div[id^="advads_ad_widget"]
 haydenjames.io##div[id^="hayden-"]
-up-load.io##a[id="__bgd_link"]
 ||amazingfilehosting.com/wp-content/plugins/cookie-law-info/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 cs.rin.ru##a[href$="/ucp.php?i=pm&folder=inbox"]:style(color:red !important; font-weight:bold)
 csrinrutkb3tshptdctl5lyei4et35itl22qvk5ktdcat6aeavy6nhid.onion##a[href$="/ucp.php?i=pm&folder=inbox"]:style(color:red !important; font-weight:bold)
@@ -43404,8 +43444,8 @@ www.windowscentral.com##div[class="mobile-leaderboard-320-50"]
 www.windowscentral.com##^script:has-text(/GdprApplies/i)
 www.windowscentral.com##*[id^="parsely-"]
 www.windowscentral.com##+js(set-constant, TIMEOUT_DELAY, 0)
-!www.windowscentral.com##+js(abort-on-property-read.js, TIMEOUT_DELAY)
-!www.windowscentral.com##+js(abort-on-property-write.js, TIMEOUT_DELAY)
+www.windowscentral.com##+js(abort-on-property-read.js, TIMEOUT_DELAY)
+www.windowscentral.com##+js(abort-on-property-write.js, TIMEOUT_DELAY)
 www.windowscentral.com##div[id^="bordeaux-preemptive-ad"]
 www.windowscentral.com##div:has(div.mobile-leaderboard-320-50 > div#bordeaux-preemptive-ad-2)
 www.windowscentral.com##+js(aeld, onerror)
@@ -43424,6 +43464,23 @@ www.windowscentral.com##div[id^="bordeaux-standard-ad-"]:remove()
 ! Don't need to remove current src attribute to rename other attribute to it
 !www.windowscentral.com##+js(rna, img[class=" lazy-image-van"], data-pin-media, src)
 www.windowscentral.com##+js(rna, img[class=" lazy-image-van"], data-original-mos, src)
+||anybodyproper.com^*
+||strawguineaequanimity.com^*
+||indelicateexcept.com^*
+!||stats.filelisting.com/log.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||stats.filelisting.com^*
+filelisting.com##iframe[src^="https://stats.filelisting.com"]:remove()
+2baksa.ws##div[class^="antblock"]
+2baksa.ws##div[class^="antblock"]:remove()
+||usetalentedpunk.com^*
+||professionalswebcheck.com^*
+||amunfezanttor.com^*
+||eegamaub.net^*
+||uflvdbhnqf.com^*
+||gvgusjnobwo.com^*
+extreme-ip-lookup.com^*$domain=up-load.io
+!||stats.pixeldrain.com/api/event$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||stats.pixeldrain.com^*
 
 !Whitelisted
 ! for Google Drive
