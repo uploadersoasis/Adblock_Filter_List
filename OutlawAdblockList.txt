@@ -31627,7 +31627,7 @@ mega4up.org##+js(remove-attr, disabled, #downloadbtn, stay)
 !causes adblock popup
 !up-load.io##+js(set-constant, remaining, 0)
 !up-load.io##+js(set-constant, tick, 1)
-! removing or stopping the script with JSON.parse(atob()) will prevent the 
+! removing or stopping the script with JSON.parse(atob()) will prevent the "create your link" button from being created
 !up-load.io##+js(acs, JSON.parse(atob()))
 !up-load.io##^script:has-text(/y=JSON\.parse\(atob\(\)\)/)
 !up-load.io##^script:has-text(/y=JSON\.parse\(atob\(\)\)/):remove()
@@ -31678,7 +31678,7 @@ up-s1.com,up-load.io##+js(window.open-defuser)
 ||up-load.io/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||up-load.io^$xhr
 ||up-load.io^$xmlhttprequest,3p
-||up-load.io^$script,third-party
+||up-load.io^$3p,script,redirect-rule=noopjs
 ||up-load.io/ds1/js/nt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! using remove() above will change the position of the following scripts and make the hard-coded values invalid, so remove the scripts in reverse order of appearance in the page
 up-load.io##:xpath(/html/body/script[3])
@@ -43481,6 +43481,11 @@ filelisting.com##iframe[src^="https://stats.filelisting.com"]:remove()
 extreme-ip-lookup.com^*$domain=up-load.io
 !||stats.pixeldrain.com/api/event$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||stats.pixeldrain.com^*
+!||s.uicdn.com/mailint/9.2227.0/assets/adservice.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||s.uicdn.com/mailint/*/assets/adservice.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||js.ui-portal.de/prompt/permission/latest/tracking.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||img.ui-portal.de/pos-cdn/tracklib/*/tracklib.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||rdltjlbdqiflkn.com^*
 
 !Whitelisted
 ! for Google Drive
