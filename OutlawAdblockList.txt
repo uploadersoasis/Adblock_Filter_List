@@ -3300,7 +3300,7 @@ depositfiles.com###networkdownloader_submit
 !||frontdoor1.coupons.com/fds/lst.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||frontdoor1.coupons.com/fds/gu.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||frontdoor1.coupons.com/fds/qptl.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!Blocking frontdoor1.coupons.com in hosts prevents coupons from printing.
+! Blocking frontdoor1.coupons.com in hosts prevents coupons from printing.
 ||frontdoor1.coupons.com^*
 ||clients2.google.com/service/update2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a02.korrelate.net/a/e/d2a.ads$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -21946,7 +21946,7 @@ down.ali213.net##div[id="cs_DIV_cscpvrich8388C"]
 ||fd7qz88ckd.com^*
 !||fadspms.com/pixel/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fadspms.com^*
-!uploadbox.io##span[id="countdown"] !blocking this prevents downloads
+!uploadbox.io##span[id="countdown"] ! blocking this prevents downloads
 ||uploadbox.io/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 uploadbox.io##+js(set-constant, enable_page_level_ads, true)
 uploadbox.io##+js(set-constant, ad_blocker_message, null)
@@ -35546,7 +35546,7 @@ www.thecpuguide.com##+js(aopr, ai_adb)
 www.thecpuguide.com##+js(aopw, ai_adb)
 www.thecpuguide.com##+js(aopr, __ez)
 www.thecpuguide.com##+js(aopw, __ez)
-!blocking __ezaq prevents lazyload images BUT it is required to prevent the anti-adblock redirect and overlay
+! blocking __ezaq prevents lazyload images BUT it is required to prevent the anti-adblock redirect and overlay
 www.thecpuguide.com##+js(aopr, _ezaq)
 www.thecpuguide.com##+js(aopw, _ezaq)
 www.thecpuguide.com##+js(set-constant, _ezaq, {}, stay)
@@ -43332,7 +43332,7 @@ www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disa
 ||ww*.freedailyiptv.com/js/parking.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d162h6x3rxav67.cloudfront.net/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.adsafeprotected.com/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! blocking crystalboulevard.com, succeedscene.com, whimsicalgrove.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
+! blocking crystalboulevard.com, succeedscene.com, whimsicalgrove.com, and functionalfeather.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
 ||crystalboulevard.com^*
 ||succeedscene.com^*
 ||whimsicalgrove.com^*
@@ -43515,6 +43515,7 @@ www.bleepingcomputer.com##ins[data-ad-client]
 www.bleepingcomputer.com##ins[data-ad-client]:remove()
 a.pub.network^*$domain=www.bleepingcomputer.com,bleepingcomputer.com
 !||a.pub.network/core/pubfig/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||notepadxtreme.com^*
 
 !Whitelisted
 ! for Google Drive
