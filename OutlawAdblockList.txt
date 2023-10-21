@@ -43516,6 +43516,18 @@ www.bleepingcomputer.com##ins[data-ad-client]:remove()
 a.pub.network^*$domain=www.bleepingcomputer.com,bleepingcomputer.com
 !||a.pub.network/core/pubfig/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||notepadxtreme.com^*
+www.deskmodder.de##div[class="cookie-modal"]
+www.deskmodder.de##div[class="cookie-modal"]:remove()
+www-deskmodder-de.translate.goog##div[class="cookie-modal"]
+www-deskmodder-de.translate.goog##div[class="cookie-modal"]:remove()
+www.deskmodder.de##div[id="klaro"]
+www.deskmodder.de##div[id="klaro"]:remove()
+www-deskmodder-de.translate.goog##div[id="klaro"]
+www-deskmodder-de.translate.goog##div[id="klaro"]:remove()
+www.skylinewebcams.com##div[id="top_leaderboard"]
+www.skylinewebcams.com##div[id="top_leaderboard"]:remove()
+www.skylinewebcams.com##div[class="cam-vert"]:has(p[class="subt"]:has-text(adv))
+www.skylinewebcams.com##div[class="cam-vert"]:has(p[class="subt"]:has-text(adv)):remove()
 
 !Whitelisted
 ! for Google Drive
