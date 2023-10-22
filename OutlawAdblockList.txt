@@ -35338,6 +35338,7 @@ www.khronos.org##div[id="cookie_decline"]
 ||nutattorneyjack.com^*
 ||www.syaomlovqeq.com^*
 ||westats.dev/api/event$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||westats.dev/js/plausible.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||jaavnacsdw.com^*
 www.wemod.com##div[class*="cookie-policy"]
 ||againirksomefutile.com^*
@@ -39822,7 +39823,6 @@ dood.re##+js(aeld, /contextmenu|keydown/)
 ||shredvealdone.com^*
 ||recanesjurel.com^*
 ||go.adstico.io^*
-||westats.dev/js/plausible.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||q.popbutler.com^*
 ||ak.phumpauk.com^*
 !||mixdrop.co/js/script.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -39875,8 +39875,15 @@ mixdrop.co##+js(aopr, lastTimestamp)
 mixdrop.co##+js(aopw, wpn63s)
 mixdrop.co##+js(aopr, wpn63s)
 mixdrop.co##+js(aeld, click, function(g))
+mixdrop.co##+js(aeld, click, function(a))
 mixdrop.co##+js(nosiif, function)
 mixdrop.co##body:remove-attr(onclick)
+||mixdrop.co/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+mixdrop.co##+js(set-constant, adcashMacros, {})
+mixdrop.co##+js(abort-on-property-write, adcashMacros)
+mixdrop.co##+js(abort-on-property-read, adcashMacros)
+mixdrop.co##:xpath(//script[contains(text(), 'adcashMacros')])
+mixdrop.co##:xpath(//script[contains(text(), 'adcashMacros')]):remove()
 ||soliads.net^*
 ||dd.tittyptinoid.com^*
 ||ibrapush.com^*
@@ -43581,6 +43588,11 @@ send.cm##div[id="biihh1t"]:remove()
 ||taulirestful.website^*
 ||hunkiesdibbing.guru^*
 ||jurorstalar.uno^*
+||heleric.com^*
+||yp.poxykhakis.com^*
+||spilomamettle.uno^*
+||www.tydeatslqefr.com^*
+||www.ifntizihsffqi.com^*
 
 !Whitelisted
 ! for Google Drive
