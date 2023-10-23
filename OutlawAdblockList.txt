@@ -24390,6 +24390,7 @@ mail.yahoo.com##span[data-test-id="ad-summary"]
 !||socialbars-web4.com/sb/notifications/software/us/windows/flash-all/1/js/script.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||socialbars-web4.com^*
 ||load.sumo.com^*
+! opus.analytics.yahoo.com is also blocked by existing ||analytics.yahoo.com^* rule
 !||opus.analytics.yahoo.com^*
 !||service.idsync.analytics.yahoo.com^*
 !||cdn2.wpbeginner.com/wp-content/plugins/google-analytics-premium/assets/js/frontend.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -25609,7 +25610,6 @@ www.easy2boot.com##div[class^="ezmob-footer"]
 !www.tweaking.com##div[id="cookie-bar-prompt"]
 www.tweaking.com##div[id^="cookie-bar"]
 kolompc.com##div[class="cookies-alert alert"]
-www.engadget.com##div[class^="index__adWrapper-"]
 serverfault.com##div[id="js-gdpr-consent-banner"]
 abc7.com##div[data-box-type^="fitt-adbox-"]
 www.airdroid.com##div[class="mode-cookie-tip"]
@@ -28669,7 +28669,6 @@ pkg.go.dev##div[class="Banner-message"]:has-text(/Black Lives Matter/i)
 ||earneydisti.fun^*
 ||d2fbvay81k4ji3.cloudfront.net^*
 www.inputmag.com##div[class*="adWrapper"]
-www.engadget.com##div[class="ads-cont"]
 www.pcgamer.com##div[class="ad-unit"]
 www.inputmag.com##div[class^="ytp-ad-persistent-"]
 www.inputmag.com##iframe[style="display: none"]
@@ -43593,6 +43592,51 @@ send.cm##div[id="biihh1t"]:remove()
 ||spilomamettle.uno^*
 ||www.tydeatslqefr.com^*
 ||www.ifntizihsffqi.com^*
+www.engadget.com##div[class="ads-cont"]
+www.engadget.com##div[class^="index__adWrapper-"]
+www.engadget.com##+js(set-constant, adsConfig, {})
+www.engadget.com##+js(abort-on-property-read, adsConfig)
+www.engadget.com##+js(abort-on-property-write, adsConfig)
+www.engadget.com##div[data-content="Advertisement"]
+www.engadget.com##div[data-content="Advertisement"]:remove()
+www.engadget.com##div[data-component="JacAd"]
+www.engadget.com##div[data-component="JacAd"]:remove()
+www.engadget.com##div[id^="article-ads-"]
+www.engadget.com##div[id^="article-ads-"]:remove()
+www.engadget.com##div[id="sda-LDRB-iframe"]
+www.engadget.com##div[id="sda-LDRB-iframe"]:remove()
+www.engadget.com##div[id^="sda-LDRB2-"]
+www.engadget.com##div[id^="sda-LDRB2-"]:remove()
+www.engadget.com##div[class*="enableAdSlots"]
+www.engadget.com##div[class*="enableRRAdsSlots"]
+www.engadget.com##div[class*="rrAdsAlignWithCover"]
+www.engadget.com##div[class*="post-article-ad"]
+www.engadget.com##div[class*="enableAdSlots"]:remove()
+www.engadget.com##div[class*="enableRRAdsSlots"]:remove()
+www.engadget.com##div[class*="rrAdsAlignWithCover"]:remove()
+www.engadget.com##div[class*="post-article-ad"]:remove()
+www.engadget.com##div[class*="ads-cont"]
+www.engadget.com##div[class*="ads-cont"]:remove()
+www.engadget.com##iframe[id="mnet"]:remove()
+www.engadget.com##div[class*="enableGAMMomentsAds"]
+www.engadget.com##div[class*="enableGAMMomentsAds"]:remove()
+www.engadget.com##img[alt="Relevant ads info"]
+www.engadget.com##img[alt="Relevant ads info"]:remove()
+www.engadget.com##div[id="advertisement-thamba"]
+www.engadget.com##div[id="advertisement-thamba"]:remove()
+||www.engadget.com/_td_api/beacon/error?code=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.engadget.com/_td/beacon?beaconType=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! blocking the following EnableGAM divisions will eliminate the article contents too
+!www.engadget.com##div[class*="enableGAMAds"]
+!www.engadget.com##div[class*="enableGAMAds"]:remove()
+!||hb.yahoo.net/checksync.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||hb.yahoo.net^*
+||s.yimg.com/cv/apiv2/adbuilder/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||s.yimg.com/dy/ads/native.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||edge.gycpi.b.yahoodns.net/oa/consent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||s.yimg.com/oa/consent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.techspot.com##div[class="cta grey"]:has(div[class="wrapper"]):has(div[class^="billboard_placeholder"]):has(div[class="tsadpre"])
+www.techspot.com##div[class="cta grey"]:has(div[class="wrapper"]):has(div[class^="billboard_placeholder"]):has(div[class="tsadpre"]):remove()
 
 !Whitelisted
 ! for Google Drive
