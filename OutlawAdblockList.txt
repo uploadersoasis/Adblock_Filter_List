@@ -32463,7 +32463,6 @@ borncity.com##div[id="sp_message_container_616352"]
 borncity.com##ins[data-ad-client]
 borncity.com##div[class*="code-block"]:has-text(Advertising)
 ||gdpr-tcfv2.sp-prod.net^*
-alternativeto.net##ins[data-ad-client]
 ||lmefarketi.com^*
 ||ftheplansa.com^*
 jungleworks.com##div[class*="for-cookies-only"]
@@ -43519,6 +43518,7 @@ send.cm##video[id="vjsplayer"]:style(padding-top: 0% !important;)
 ||walker.send.cm/s.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !send.cm##+js(disable-newtab-links)
 ||send.cm^$3p,script,popup
+||send.cm^$inline-script
 ||send.cm^$xhr
 ! sets button[id="downloadbtn"] type to "submit"
 send.cm##+js(saa, type, submit, #downloadbtn)
@@ -43746,6 +43746,44 @@ www.makeuseof.com##div[id^="adsninja-ad-"]:remove()
 www.makeuseof.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):has(div[class="duogaR"]):has(div[class="dzMDQR"]):has(h3[class="bBWhhG"]:has-text(Something went wrong. Please disable your blocker))
 www.makeuseof.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):has(div[class="duogaR"]):has(div[class="dzMDQR"]):has(h3[class="bBWhhG"]:has-text(Something went wrong. Please disable your blocker)):remove()
 ||cdn.optmn.cloud/hb/valnet-adapter.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.hardwaretimes.com##div[id^="r89-desktop-billboard-atf-"]
+www.hardwaretimes.com##div[id^="r89-desktop-billboard-atf-"]:remove()
+www.hardwaretimes.com##div[id^="r89-desktop-incontent-"]
+www.hardwaretimes.com##div[id^="r89-desktop-incontent-"]:remove()
+linuxhandbook.com##+js(set-constant, raAdfSync, {})
+linuxhandbook.com##+js(abort-on-property-read, raAdfSync)
+linuxhandbook.com##+js(abort-on-property-write, raAdfSync)
+linuxhandbook.com##iframe[name^="__privateStripeMetricsController"]
+linuxhandbook.com##iframe[name^="__privateStripeMetricsController"]:remove()
+linuxhandbook.com##iframe[class="gh-portal-triggerbtn-iframe"]
+linuxhandbook.com##iframe[class="gh-portal-triggerbtn-iframe"]:remove()
+||track.adform.net^*
+||sync.richaudience.com^*
+||shb.richaudience.com^*
+variety.com##div[id^="pmc-pp-tou--notice"]
+variety.com##div[id^="pmc-pp-tou--notice"]:remove()
+variety.com##div[class^="floating-preroll-ad"]
+variety.com##div[class^="floating-preroll-ad"]:remove()
+variety.com##div[id^="connatix_floating_preroll_ad"]
+variety.com##div[id^="connatix_floating_preroll_ad"]:remove()
+variety.com##script[id^="connatix_floating_preroll_ad"]:remove()
+alternativeto.net##ins[data-ad-client]
+alternativeto.net##ins[data-ad-client]:remove()
+alternativeto.net##div[class^="AdsenseAd_"]
+alternativeto.net##div[class^="AdsenseAd_"]:remove()
+alternativeto.net##script[id="google-tag-manager"]:remove()
+www.cboxera.com##div[id="aswift_2_host"]:remove()
+www.cboxera.com##div[id="aswift_2_host"]:remove()
+www.cboxera.com##iframe[id="aswift_2"]
+www.cboxera.com##iframe[id="aswift_2"]:remove()
+www.cboxera.com##div[id="ad_position_box"]
+www.cboxera.com##div[id="ad_position_box"]:remove()
+www.cboxera.com##div[class="adsense-wrapper"]
+www.cboxera.com##div[class="adsense-wrapper"]:remove()
+www.cboxera.com##ins[data-ad-client]
+www.cboxera.com##ins[data-ad-client]:remove()
+www.uploadedpremiumlink.net##div[class^="v-snack__wrapper"]:has(div[class="v-snack__content"][aria-live="polite"])
+www.uploadedpremiumlink.net##div[class^="v-snack__wrapper"]:has(div[class="v-snack__content"][aria-live="polite"]):remove()
 
 !Whitelisted
 ! for Google Drive
