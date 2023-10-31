@@ -42111,6 +42111,10 @@ www.tecmint.com##+js(set-constant, gtag, noopFunc)
 www.tecmint.com##+js(acs, gtag)
 www.tecmint.com##div[data-freestar-ad]
 www.tecmint.com##div[data-freestar-ad]:remove()
+www.tecmint.com##div[id="tecmint_leaderboard_article_top"]
+www.tecmint.com##div[id="tecmint_leaderboard_article_top"]:remove()
+www.tecmint.com##div[id="tecmint_incontent"]
+www.tecmint.com##div[id="tecmint_incontent"]:remove()
 www.tecmint.com##+js(set-constant, freestar.config.enabled_slots.push, noopFunc)
 www.tecmint.com##+js(acs, freestar.config.enabled_slots.push)
 ||live.rezync.com/pixel.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43256,7 +43260,9 @@ www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disa
 |!||ww7.freedailyiptv.com/js/parking.2.104.1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ww*.freedailyiptv.com/js/parking.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d162h6x3rxav67.cloudfront.net/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||static.adsafeprotected.com/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||static.adsafeprotected.com/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||static.adsafeprotected.com/skeleton.gif?bannnerid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.adsafeprotected.com/skeleton.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! blocking crystalboulevard.com, succeedscene.com, whimsicalgrove.com, and functionalfeather.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
 ||crystalboulevard.com^*
 ||succeedscene.com^*
@@ -43326,6 +43332,8 @@ www.breitbart.com##aside[id="social-share-mobile-sticky"]:remove()
 www.breitbart.com##iframe[id="rufous-sandbox"]:remove()
 www.breitbart.com##script[id="spmmin_js"]
 www.breitbart.com##script[id="spmmin_js"]:remove()
+www.breitbart.com##ins[data-ad-client]
+www.breitbart.com##ins[data-ad-client]:remove()
 ||overlay-track.sailthru.cloud^*
 sidequestvr.com##div[class^="cky-consent-"]
 sidequestvr.com##div[class^="cky-consent-"]:remove()
@@ -43888,6 +43896,7 @@ www.bluesnews.com##[href="/a/2597/contribute-your-support"]
 ||zumrieth.com^*
 ||lmmbn.laqwnrazvyjeb.top^*
 ||spilomamettle.uno^*
+||flutteringfireman.com^*
 
 !Whitelisted
 ! for Google Drive
