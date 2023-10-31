@@ -39526,12 +39526,13 @@ stapadblockuser.xyz##script[class="nunush"]:remove()
 !||ping.staticmoly.me^*
 ||pingo.staticmoly.me/logas/reportv.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ring.staticmoly.me^*
+! frd0ad.js is the video player script
+!||cdn.staticmoly.me/player_clappr/frd0ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cdn.staticmoly.me/ads/be/99/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.staticmoly.me/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.staticmoly.me/deskademeta.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.staticmoly.me/dlwed2.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.staticmoly.me/metric.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cdn.staticmoly.me/player_clappr/frd0ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.staticmoly.me/set/reporta.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.staticmoly.me/vadch.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.staticmoly.me/vlock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -39541,6 +39542,11 @@ stapadblockuser.xyz##script[class="nunush"]:remove()
 vidmoly.to,vidmoly.me##+js(set-constant, adsBlocked, noopFunc)
 ! Do NOT noop the adBlockControl() function or the embedded video player will not be displayed.
 !vidmoly.to,vidmoly.me##+js(set-constant, adBlockControl, noopFunc)
+vidmoly.to,vidmoly.me##script[src="https://cdn.staticmoly.me/ads/be/99/ads.js"]:remove-attr(onerror)
+vidmoly.to,vidmoly.me##script[src="https://cdn.staticmoly.me/ads/be/99/ads.js"]:remove()
+vidmoly.to,vidmoly.me##script:remove-attr(onerror)
+vidmoly.to,vidmoly.me##+js(set-constant, vsd1(), noopFunc)
+vidmoly.to,vidmoly.me##+js(acs, vsd1)
 vidmoly.to,vidmoly.me##:xpath(//script[contains(text(), 'ADBLOCK DETECTED')]):remove()
 vidmoly.to,vidmoly.me##+js(set-constant, _0x5aa6, [])
 vidmoly.to,vidmoly.me##+js(aopr, _0x5aa6)
@@ -43879,6 +43885,9 @@ www.bluesnews.com##[href="/a/2597/contribute-your-support"]
 ||gamescdnfor.com^*
 ! allvideometrika.com may block embedded videos
 ||allvideometrika.com^*
+||zumrieth.com^*
+||lmmbn.laqwnrazvyjeb.top^*
+||spilomamettle.uno^*
 
 !Whitelisted
 ! for Google Drive
