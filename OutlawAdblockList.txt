@@ -26840,15 +26840,17 @@ www.cinemablend.com##div[id="preemptive-1"]
 !||geoip.redirect-ads.com/* !blocks video player
 !||playhydrax.com/* !"HX"video player
 kimcartoon.to##div[id="adbWarnContainer"]
+kimcartoon.to##div[id="adbWarnContainer"]:remove()
 !kimcartoon.to##div[id="adsIfrme"]
 kimcartoon.to##a[id="hideAds"]
 kimcartoon.to##p[id="adbAlert"]
 kimcartoon.to##div[class="kcAds1"]
+kimcartoon.to##div[class="kcAds1"]:remove()
 kimcartoon.to##div[class="adsbyvli"]
 kimcartoon.to##^script:has-text(adbWarn)
 kimcartoon.to##+js(set-constant, alb, false)
 kimcartoon.to##+js(set-constant, isAdb, false)
-kimcartoon.to##+js(set-constant, setHideAdsCd, 1)
+kimcartoon.to##+js(set-constant, setHideAdsCd, 0)
 kimcartoon.to##+js(set-constant, hideAdsCd, 1)
 kimcartoon.to##+js(abort-on-property-read.js, isAdb)
 www.imyfone.com##div[class^="cookie_policy"]
@@ -31417,6 +31419,7 @@ pythonawesome.com##ins[class="adsbygoogle"]
 ||malinesmanses.com^*
 kisscenter.net##div[data-ad-slot]
 kisscenter.net##div[class="kcAds1"]
+kisscenter.net##div[class="kcAds1"]:remove()
 kisscenter.net##a[id="hideAds"]
 ||softballwaiting.com^*
 ||ak.hetaruvg.com^*
@@ -39557,11 +39560,13 @@ vidmoly.to,vidmoly.me##+js(set-constant, devtoolsDetector.lanuch(), noopFunc)
 vidmoly.to,vidmoly.me##+js(set-constant, vopes2(), noopFunc)
 vidmoly.to,vidmoly.me##+js(acs, vopes2)
 vidmoly.to,vidmoly.me##+js(aeld, onclick, vopes2)
+vidmoly.to,vidmoly.me##img[id="vope"]:remove-attr(onclick)
+vidmoly.to,vidmoly.me##+js(aeld, contextmenu)
 !vidmoly.to,vidmoly.me##+js(set-constant, window.adsbygoogle, null)
 vidmoly.to,vidmoly.me##+js(set-constant, blocked, false, stay)
 vidmoly.to,vidmoly.me##+js(set-constant, block, 0, stay)
 vidmoly.to,vidmoly.me##+js(set-constant, adb, 0, stay)
-vidmoly.to,vidmoly.me##+js(set-constant, vmAdBlocked1, 1, stay)
+vidmoly.to,vidmoly.me##+js(set-constant, vmAdBlocked1, 0, stay)
 vidmoly.to,vidmoly.me##+js(set-constant, vmAdBlocked, 0, stay)
 vidmoly.to,vidmoly.me##+js(set-constant, abLoad, false, stay)
 vidmoly.to,vidmoly.me##+js(set-constant, window.abLoad, false, stay)
@@ -39572,13 +39577,38 @@ vidmoly.to,vidmoly.me##+js(set-constant, wdsc3, noopFunc)
 vidmoly.to,vidmoly.me##+js(set-constant, mg_vd, noopFunc)
 vidmoly.to,vidmoly.me##+js(set-constant, mg_vd2, noopFunc)
 vidmoly.to,vidmoly.me##+js(set-constant, lo_metric, noopFunc)
+vidmoly.to,vidmoly.me##+js(set-constant, dos_vlock, noopFunc)
+vidmoly.to,vidmoly.me##+js(set-constant, molyast21, false)
+vidmoly.to,vidmoly.me##+js(set-constant, gtag, noopFunc)
+vidmoly.to,vidmoly.me##+js(acs, gtag)
 ! molyvastsc() is required to display the video player
 !vidmoly.to,vidmoly.me##+js(set-constant, molyvastsc, noopFunc)
+vidmoly.to,vidmoly.me##div[id="dos_vlock"]
+vidmoly.to,vidmoly.me##div[id="mg_vd"]
+vidmoly.to,vidmoly.me##div[id="mg_vd2"]
+vidmoly.to,vidmoly.me##div[id="dos_vlock"]:remove()
+vidmoly.to,vidmoly.me##div[id="mg_vd"]:remove()
+vidmoly.to,vidmoly.me##div[id="mg_vd2"]:remove()
+vidmoly.to,vidmoly.me##div[class="afs_ads ad-placement"]
+vidmoly.to,vidmoly.me##div[class="afs_ads ad-placement"]:remove()
 vidmoly.to,vidmoly.me##div[id="adsblock"]
 vidmoly.to,vidmoly.me##div[id="adsblock"]:remove()
 vidmoly.to,vidmoly.me##div[id="lo_metric"]
 vidmoly.to,vidmoly.me##div[id="lo_metric"]:remove()
-vidmoly.to,vidmoly.me##+js(aeld, contextmenu)
+vidmoly.to,vidmoly.me##div[id="metric_load2"]
+vidmoly.to,vidmoly.me##div[id="metric_load2"]:remove()
+vidmoly.to,vidmoly.me##div[id="metric_load3"]
+vidmoly.to,vidmoly.me##div[id="metric_load3"]:remove()
+vidmoly.to,vidmoly.me##div[class*="video_ad"]
+vidmoly.to,vidmoly.me##div[class*="video_ad"]:remove()
+vidmoly.to,vidmoly.me###btn_download:remove-attr(disabled)
+vidmoly.to,vidmoly.me##a[href*="://vidmoly.me/dl/"]
+vidmoly.to,vidmoly.me##a[href*="://vidmoly.me/dl/"]:remove()
+vidmoly.to,vidmoly.me##a[href*="://vidmoly.to/dl/"]
+vidmoly.to,vidmoly.me##a[href*="://vidmoly.to/dl/"]:remove()
+! Do NOT remove the adsBox or the adblock detection script will trigger.
+!vidmoly.to,vidmoly.me##div[class="adsBox"]
+!vidmoly.to,vidmoly.me##div[class="adsBox"]:remove()
 vidmoly.to,vidmoly.me##+js(nosiif, mg_vd)
 vidmoly.to,vidmoly.me##+js(nosiif, igetas)
 vidmoly.to,vidmoly.me##+js(nosiif, igetlang)
@@ -39587,16 +39617,6 @@ vidmoly.to,vidmoly.me##+js(nosiif, igetlang)
 vidmoly.to,vidmoly.me##+js(nosiif, lo_metric)
 vidmoly.to,vidmoly.me###vidmolyadblocktest
 vidmoly.to,vidmoly.me###vidmolyadblocktest:remove()
-! Do NOT remove the adsBox or the adblock detection script will trigger.
-!vidmoly.to,vidmoly.me##div[class="adsBox"]
-!vidmoly.to,vidmoly.me##div[class="adsBox"]:remove()
-vidmoly.to,vidmoly.me##div[class*="video_ad"]
-vidmoly.to,vidmoly.me##div[class*="video_ad"]:remove()
-vidmoly.to,vidmoly.me###btn_download:remove-attr(disabled)
-vidmoly.to,vidmoly.me##a[href*="://vidmoly.me/dl/"]
-vidmoly.to,vidmoly.me##a[href*="://vidmoly.me/dl/"]:remove()
-vidmoly.to,vidmoly.me##a[href*="://vidmoly.to/dl/"]
-vidmoly.to,vidmoly.me##a[href*="://vidmoly.to/dl/"]:remove()
 !vidmoly.to,vidmoly.me##+js(noeval)
 ||vidmoly.me/igetm.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vidmoly.to/igetm.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -39604,6 +39624,8 @@ vidmoly.to,vidmoly.me##a[href*="://vidmoly.to/dl/"]:remove()
 ||vidmoly.me//metric.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vidmoly.to//metric.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||vidmoly.me/dls.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! get to vmring.cc returns "on"
+||vmring.cc^*
 ||subscriptioneccentric.com^*
 ||tyranbrashore.com^*
 ||russellseemslept.com^*
@@ -43334,6 +43356,9 @@ www.breitbart.com##script[id="spmmin_js"]
 www.breitbart.com##script[id="spmmin_js"]:remove()
 www.breitbart.com##ins[data-ad-client]
 www.breitbart.com##ins[data-ad-client]:remove()
+www.breitbart.com##+js(set-constant, BB_Y, {ads:0})
+www.breitbart.com##+js(abort-on-property-write, BB_Y)
+www.breitbart.com##+js(abort-on-property-read, BB_Y)
 ||overlay-track.sailthru.cloud^*
 sidequestvr.com##div[class^="cky-consent-"]
 sidequestvr.com##div[class^="cky-consent-"]:remove()
@@ -43816,20 +43841,32 @@ vimm.net##div[id="headerAdContainerFixed"]
 vimm.net##div[id="headerAdContainerFixed"]:remove()
 ! remove this script before any other changes to kimcartoon.li since other removals would change the xpath of this script.
 kimcartoon.li##:xpath(/html/head/script[6]):remove()
+!kimcartoon.li##:xpath/html/body/div[1]/div[5]/div/div/script[3]):remove()
+!kimcartoon.li##:xpath(/html/body/div[1]/div[5]/div/div/script[2]):remove()
 ! blocking encodeURIComponent will block some video URL's too
 !kimcartoon.li##:xpath(//script[contains(text(), 'encodeURIComponent')]):remove()
 !kimcartoon.li##+js(acs, encodeURIComponent)
+kimcartoon.li##+js(set-constant, _DRrmA, "")
+kimcartoon.li##+js(abort-on-property-read, _DRrmA)
+kimcartoon.li##+js(abort-on-property-write, _DRrmA)
 kimcartoon.li##div[id="adbWarnContainer"]
 kimcartoon.li##div[id="adbWarnContainer"]:remove()
 kimcartoon.li##div[class="kcAds1"]:has(iframe[src*="/Ads/"])
 kimcartoon.li##div[class="kcAds1"]:has(iframe[src*="/Ads/"]):remove()
 kimcartoon.li##iframe[src*="/Ads/"]
 kimcartoon.li##iframe[src*="/Ads/"]:remove()
-kimcartoon.li##+js(set-constant, adbWarn, noopFunc)
+kimcartoon.li##div[class="kcAds1"]:has(div[id^="bg-ssp-"])
+kimcartoon.li##div[class="kcAds1"]:has(div[id^="bg-ssp-"]):remove()
+kimcartoon.li##+js(set-constant, adbWarn, falseFunc)
 kimcartoon.li##+js(acs, adbWarn)
-kimcartoon.li##+js(set-constant, alb, false, stay)
-kimcartoon.li##+js(abort-on-property-read, alb)
-kimcartoon.li##+js(abort-on-property-write, alb)
+kimcartoon.li##+js(set-constant, alb, false)
+kimcartoon.li##+js(set-constant, isAdb, false)
+!kimcartoon.li##+js(abort-on-property-read, alb)
+!kimcartoon.li##+js(abort-on-property-write, alb)
+kimcartoon.li##+js(set-constant, xaZlE, noopFunc)
+kimcartoon.li##+js(set-constant, leHzI, noopFunc)
+kimcartoon.li##+js(no-setTimeout-if, leHzI)
+kimcartoon.li##+js(set-constant, hideAdsCd, 0, stay)
 kimcartoon.li##a[id="hideAds"]
 kimcartoon.li##a[id="hideAds"]:remove()
 kimcartoon.li##div[id="videoAd"]
@@ -43841,6 +43878,10 @@ kimcartoon.li##div[id="videoAd"]:remove()
 !kimcartoon.li##div[id="adsIfrme"]
 !kimcartoon.li##div[id="adsIfrme"]:remove()
 ||kimcartoon.li/Content/images/adb.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+kswplayer.info##div[id="adbd"]
+kswplayer.info##div[id="adbd"]:remove()
+kswplayer.info##+js(nowoif)
+!*##+js(window-close-if, /^https?://(www\.)?kswplayer\.info/)
 ||streamwish.com/js/dnsads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ennrv.eayeewlvmebkj.top^*
 ||eayeewlvmebkj.top^*
@@ -43894,9 +43935,17 @@ www.bluesnews.com##[href="/a/2597/contribute-your-support"]
 ! allvideometrika.com may block embedded videos
 ||allvideometrika.com^*
 ||zumrieth.com^*
-||lmmbn.laqwnrazvyjeb.top^*
+!||lmmbn.laqwnrazvyjeb.top^*
+||laqwnrazvyjeb.top^*
 ||spilomamettle.uno^*
 ||flutteringfireman.com^*
+!||ak.stoorgel.com^*
+||stoorgel.com^*
+||sylxisys.com^*
+!||lwe.lkbnneknznjb.top^*
+||lkbnneknznjb.top^*
+!||zqj.zjybqqalenve.top^*
+||zjybqqalenve.top^*
 
 !Whitelisted
 ! for Google Drive
