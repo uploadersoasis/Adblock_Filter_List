@@ -24193,7 +24193,6 @@ www.home.neustar##div[class="cookie-message"]
 ||sdk.privacy-center.org^*
 www.pingdom.com##div[class="sw19b-cookie-banner sw19s-force-hide show"]
 www.pingdom.com##div[class="sw19-alert-box cookie-consent"]
-pagesix.com##div[class="nyp-sitewide-notice"]
 www.swanndvr.net##div[class="bodgd"]
 www.swanndvr.net##div[id="bodgd"]
 love2dev.com##div[class^="gdpr-prompt"]
@@ -29702,7 +29701,6 @@ primeuploads.com##div[class*="cookiealert"]
 press.handy-games.com##div[class*="cookie-consent-bar"]
 ||analytics-cdn.prezly.com^*
 ||analytics.prezly.com^*
-pagesix.com##div[class*="billboard-ad"]
 nypost.com##div[class*="billboard-ad"]
 ||molodgytot.biz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||promisingjournalist.com^*
@@ -39392,9 +39390,9 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:style(
 ! adblock_detected needs to be 1 and xd to have a proper value (token) not the default of 1 for the download post submission to work.
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="adblock_detected"]
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="adblock_detected"]:remove()
-! Setting either or both isblocked and isadblock to 0 will prevent the event listener on the final download button from working.
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isblocked, 0)
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isadblock, 0)
+! Both isblocked and isadblock need to be 0 for the event listener on the final download button to work.
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isblocked, 0, stay)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isadblock, 0, stay)
 ! an inline script needs to execute to retrieve the download token so don't abort on "unescape".
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, unescape)
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, _0x49fcx2)
@@ -42161,8 +42159,6 @@ www.reddit.com##div[id="adblocktest"]
 www.reddit.com##div[id="adblocktest"]:remove()
 www.reddit.com##script[id="datadome-bot-detection"]
 www.reddit.com##script[id="datadome-bot-detection"]:remove()
-pagesix.com##div[class="content-wrap"]:has(div[class="sitewide-notice"])
-pagesix.com##div[class="content-wrap"]:has(div[class="sitewide-notice"]):remove()
 ||cdn.opecloud.com/ope-tegna.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.kvue.com##^script[id="utag_data_script"]
 www.kvue.com##script[id="utag_data_script"]:remove()
@@ -44051,6 +44047,29 @@ uploadrar.com^$inline-script
 ||ytimewornan.org^*
 ||bluffforester.com^*
 ||d1spc7iz1ls2b1.cloudfront.net^*
+||pagesix.com/wp-content/plugins/nyp-video-player/build/jwadvertise.bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||pagesix.com/wp-content/plugins/nyp-video-player/build/jwanalytics.bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+pagesix.com##div[id^="div-gpt-ad-"]
+pagesix.com##div[id^="div-gpt-ad-"]:remove()
+pagesix.com##div[class="nyp-sitewide-notice"]
+pagesix.com##div[class*="billboard-ad"]
+pagesix.com##div[class="content-wrap"]:has(div[class="sitewide-notice"])
+pagesix.com##div[class="content-wrap"]:has(div[class="sitewide-notice"]):remove()
+pagesix.com##+js(set-constant, OptanonWrapper, noopFunc)
+pagesix.com##+js(abort-on-property-read, OptanonWrapper)
+pagesix.com##+js(abort-on-property-write, OptanonWrapper)
+pagesix.com##+js(set-constant, adWrapper, noopFunc)
+pagesix.com##+js(abort-on-property-read, adWrapper)
+pagesix.com##+js(abort-on-property-write, adWrapper)
+pagesix.com##+js(set-constant, googletag, {})
+pagesix.com##+js(abort-on-property-read, googletag)
+pagesix.com##+js(abort-on-property-write, googletagq)
+pagesix.com##+js(set-constant, gtag, noopFunc)
+pagesix.com##+js(acs, gtag)
+pagesix.com##script[class^="optanon-category-"]:remove()
+pagesix.com##script[class*="gdpr"]:remove()
+pagesix.com##script[class="wp-asset-manager ads"]:remove()
+||warp.media.net/js/tags/prebidrtdclient.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
