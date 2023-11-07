@@ -33710,6 +33710,7 @@ www.mysqltutorial.org##div[class^="ad ad-3"]
 www.mysqltutorial.org##div[class="donation"]
 file-mods.ru##+js(trusted-set, secs, -1)
 file-mods.ru##a[href*="//methoxyunpaled.com/"]
+file-mods.ru##a[href*="//methoxyunpaled.com/"]:remove()
 ||methoxyunpaled.com^*
 ||86cb1dcb13ba5a1a.com^*
 ||5c577fc74618431b.com^*
@@ -34614,7 +34615,7 @@ shrinke.me##div[id="cookie-pop"]
 techmody.io##+js(acs, window.googletag)
 techmody.io##+js(aopr, window.googletag)
 techmody.io##+js(aopw, window.googletag)
-techmody.io##+js(trusted-set, count, -1, stay)
+techmody.io##+js(trusted-set, count, -1)
 techmody.io##+js(remove-class, disabled, #invisibleCaptchaShortlink, stay)
 techmody.io##+js(remove-attr, disabled, #invisibleCaptchaShortlink, stay)
 techmody.io##+js(acs, adBlockDetected)
@@ -40761,7 +40762,8 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(remove-attr, oncontextmenu, bod
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##body:remove-attr(oncontextmenu)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com###analytics
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="analytics"]
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, holymoly, '0')
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, holymoly, '0')
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, holymoly, 0)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-current-inline-script, fullAdsRendered)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="ad-section"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(/debugger/i)
@@ -40879,7 +40881,7 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopr, dmAZuTknHuCIIWY)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopw, dmAZuTknHuCIIWY)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(cookie-remover, /^/)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, ads, [""])
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, statusTxt, "success")
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, statusTxt, success)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="warning"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="warning"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="modalpop"]
@@ -44301,7 +44303,7 @@ www.fresherslive.com##iframe[id="rufous-sandbox"]:remove()
 !www.fresherslive.com##script[src*="://images.dmca.com/Badges/DMCABadgeHelper.min.js"]:remove()
 *##script[src*="://images.dmca.com/Badges/DMCABadgeHelper.min.js"]:remove()
 ||images.dmca.com/Badges/DMCABadgeHelper.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!www.gsmtoolpro.com##+js(trusted-set, count, -1)
+www.gsmtoolpro.com##+js(trusted-set, count, -1)
 www.tenorshare.com##aside[id="gdprAgree"]
 www.tenorshare.com##aside[id="gdprAgree"]:remove()
 www.tenorshare.com##div[id="cookies-eu-banner"]
