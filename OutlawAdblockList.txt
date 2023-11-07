@@ -20,28 +20,32 @@
 !        example.com##+js(rpla, [selector], oldattr, newattr, newvalue)  ! newvalue is optional.
 !        example.com##+js(rna, [selector], oldattr, newattr)  ! don't need to first remove existing attribute with same name
 !
-!    2.  The rules which utilize the "replace-node-text" / "rpnt" scriptlet must also
+!    2.  The rules which utilize the "replace-node-text.js" / "rpnt.js" scriptlet must also
 !        be listed under the "My Filters" tab and not just in this list because that
 !        scriptlet has the "requiresTrust" set to true.
 !
-!    3.  Some of these rules utilize the "set attribute any value" (set-attr-any.js / saa) scriptlet 
+!    3.  The rules which utilize the "treusted-set" scriptlet must also be listed
+!        under the "My Filters" tab and not just in this list because that scriptlet
+!        has the "requiresTrust" set to true.
+!
+!    4.  Some of these rules utilize the "set attribute any value" (set-attr-any.js / saa) scriptlet 
 !        from the javascript @ https://github.com/uploadersoasis/Adblock_Filter_List/raw/master/outlaw_scriptlets.js
 !        so add that URL preceded by a space to the end of the "userResourcesLocation"
 !        value in the advanced settings so that those rules will work.
 !
-!    4.  Filters in this list block ads on YouTube.com.  This used to cause a black
-!        screen to appear for each ad that would have otherwise played along with
-!        an associated delay, but it doesn't appear to be the case any longer.
-!        The video would play or continue to play after this pause.  The delay may
-!        still have been shorter than the ad(s) would have been.
+!    5.  Filters in this list block ads on YouTube.com.  This causes a black screen
+!        to appear for each ad that would have otherwise played along with an
+!        associated delay.
+!        The video will play or continue to play after this pause.  The delay may
+!        still be shorter than the ad(s) would have been.
 !
-!    5.  The countdown period of some file hosts has been removed or shortened.
+!    6.  The countdown period of some file hosts has been removed or shortened.
 !        In some of these cases the countdown may not display, so press the
-!        button to perform the download anyway.  For file hosts that do
-!        server-side checks on the countdown, you will still have to wait the
-!        normal period before downloading.
+!        button to perform the download anyway.  For file hosts that do server-side
+!        checks on the countdown, you will still have to wait the normal period
+!        before downloading.
 !
-!    6.  A relative few websites still require the use of a custom Javascript
+!    7.  A relative few websites still require the use of a custom Javascript
 !        snippet to be fully functional.  Such a script can be saved as a
 !        bookmark in the web browser and selected when on the webpage which
 !        requires it.
@@ -51,7 +55,7 @@
 !        The script to activate the download button @ filecr.com is:
 ! javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 !
-!    7.  Due to the way that Wikipedia's responsive website design currently
+!    8.  Due to the way that Wikipedia's responsive website design currently
 !        works or rather doesn't work, these rules force a style suited to a
 !        1920 pixel width screen.  If your screen is a different size, adjust the
 !        three rules which set this style:
@@ -1693,14 +1697,6 @@ guyspeed.com/wp-content/plugins/google-analyticator/$document,subdocument,script
 ||www2.localdirectory.com/banners.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||js.washingtonpost.com/rw/sites/twpweb/js/init/init.track-header-1.0.0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||kotaku.com/assets/ad_iframe-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||www.pcworld.com###toaster
-!||www.pcworld.com/ads/adData^*
-!||www.pcworld.com/ads/tso$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.pcworld.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||www.pcworld.com/www.idgcsmb.pcw/js/analytics/omniture/pcwmw-pcworld/s_code.js
-||www.pcworld.com/www.idgcsmb.pcw/js/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||www.pcworld.com/www.idgcsmb/js/ads/demandbase.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.pcworld.com/www.idgcsmb/js/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||resource.guim.co.uk/global/survey/foresee/foresee-trigger.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||seattletimes.com/js/standardFunctionality/AdTags.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||seattletimes.com/js/paywall/st_ad_position_redefinition.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -2486,6 +2482,8 @@ www.kotaku.com.au##.ad
 ||excipientfest.com/media/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||papironi.com/archive/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||img.techpowerup.com/images/bnnrs/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.techpowerup.com/reviyuu/b784/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.techpowerup.com##div[class="no-ad-found"]:remove()
 !||tiads.timeinc.net/ads/tii_bk-coretag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||tiads.people.com/ads/tgx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tiads.timeinc.net^*
@@ -6214,11 +6212,20 @@ www.rlslog.net###content > div:nth-of-type(2) > div > a[href^="http://clickeu.te
 ||update.utorrent.com^*
 ||free.myradioaccess.com^*
 www.danoah.com###post-53575 > .td-page-wrap.container > .row > .span12 > .td-grid-wrap > .container-fluid > .row-fluid:nth-of-type(2) > .td-post-content.column_container.span8 > .td-post-text-content > .td-a-rec-id-content_inline.td-a-rec > .HideOnVCPosts > .SDLInlineAd
-!www.pcgamer.com###vpaid-nTZN8AKnBPKbByhSSIzP
-!www.pcgamer.com###vpaid-C4f5bH9Vfi3d6Kwc4SP1
-!www.pcgamer.com###vpaid-jVeFddaVPGK6VkQ0jJTi
-!www.pcgamer.com###vpaid-9GgP4pbeIOwFIZvmiuBf
 www.pcgamer.com##div[id^="vpaid-"]
+www.pcgamer.com##div[id^="vpaid-"]:remove()
+www.pcgamer.com##footer[id="taboola-below-article-thumbnails"]
+www.pcgamer.com##footer[id="taboola-below-article-thumbnails"]:remove()
+www.pcgamer.com##div[id^="bordeaux-preemptive-ad-"]
+www.pcgamer.com##div[id^="bordeaux-preemptive-ad-"]:remove()
+!www.pcgamer.com##div[class="in-article ad-unit"]
+!www.pcgamer.com##div[class="in-article ad-unit"]:remove()
+www.pcgamer.com##div[class*="ad-unit"]
+www.pcgamer.com##div[class*="ad-unit"]:remove()
+www.pcgamer.com###gdnhhkbuuqekhwkfzf
+www.pcgamer.com##div[class="arqdpbywhj"]
+www.pcgamer.com##div[class="gntyrkjxscxohupdurfvdzyqo"]
+www.pcgamer.com##div[class^="dfp-leaderboard-"]
 www.cloudy.ec###first_btn[href="javascript:pop_click();adclose();"]
 ||pool.admedo.com^*
 ||pool.adizio.com^*
@@ -17376,9 +17383,6 @@ uploadproper.com##div[class="adsbox"]
 ||www.europerikuytol.info^*
 !||d2k8blu5qp5ezc.cloudfront.net/vdb%5Ekulcrpv/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d2k8blu5qp5ezc.cloudfront.net^*
-www.pcgamer.com###gdnhhkbuuqekhwkfzf
-www.pcgamer.com##div[class="arqdpbywhj"]
-www.pcgamer.com##div[class="gntyrkjxscxohupdurfvdzyqo"]
 www.techonthenet.com###sabl
 www.techonthenet.com##div[class="slot bottom_slot"]
 www.techonthenet.com##div[class="slot top_slot"]
@@ -20365,7 +20369,6 @@ www.game-debate.com##+js(abort-on-property-write.js, getAdCookie)
 ||www.washingtonexaminer.com/scripts/ad_load.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.thegatewaypundit.com/wp-content/uploads/gorilla-dream.jpg$image
 www.washingtonexaminer.com##div[class^="videoAdUi"]
-www.pcworld.com##div[class="ad-container"]
 www.thepostmillennial.com##div[class*="afw_ad"]
 ||amzan.azurewebsites.net^*
 ||postlnk.com^*
@@ -20799,8 +20802,71 @@ persia144.rssing.com##div[class="adsbyvli"]
 ||www.google.com/ads/measurement/t^*
 ||www.googleadservices.com/measurement^*
 assets.tumblr.com/assets/scripts/pre_tumblelog.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+unlockapk.com##+js(trusted-set, data-adsbygoogle-status, done)
+unlockapk.com##+js(trusted-set, detect, yes)
+unlockapk.com##+js(abort-on-property-read, adClasses)
+unlockapk.com##+js(abort-on-property-read, adsbygoogle)
+unlockapk.com##+js(abort-on-property-read, divalerttag)
+unlockapk.com##+js(abort-on-property-read, google_ad_client)
+unlockapk.com##+js(abort-on-property-read, opads)
+unlockapk.com##+js(abort-on-property-write, adClasses)
+unlockapk.com##+js(abort-on-property-write, adsbygoogle)
+unlockapk.com##+js(abort-on-property-write, divalerttag)
+unlockapk.com##+js(abort-on-property-write, google_ad_client)
+unlockapk.com##+js(abort-on-property-write, opads)
+unlockapk.com##+js(abort-on-property-read, g207)
+unlockapk.com##+js(abort-on-property-write, g207)
+unlockapk.com##+js(aeld, load, g207)
+unlockapk.com##+js(acs, divalerttag, $imgg) 
+unlockapk.com##+js(acs, gtag)
+unlockapk.com##+js(aopr, $imgg)
+unlockapk.com##+js(aopw, $imgg)
+unlockapk.com##+js(aopr, divalerttag)
+unlockapk.com##+js(aopw, divalerttag)
+unlockapk.com##+js(aopr, pageData)
+unlockapk.com##+js(aopw, pageData)
+unlockapk.com##+js(aopr, vitag)
+unlockapk.com##+js(aopw, vitag)
+!unlockapk.com##+js(set-constant, $img, {})
+!unlockapk.com##+js(set-constant, $imgg, {})
+unlockapk.com##+js(set-constant, JsEvalContext, noopFunc) 
+unlockapk.com##+js(set-constant, divalerttag, "") 
+unlockapk.com##+js(set-constant, enable_page_level_ads, false)
+unlockapk.com##+js(set-constant, gtag, noopFunc)
+unlockapk.com##+js(set-constant, ga, noopFunc)
+unlockapk.com##+js(set-constant, g207, noopFunc)
+! the following three values change/are random
+unlockapk.com##+js(set-constant, pPeunAUEONzGXgodpexIwaiFoKASBMLglH, 1, stay)
+unlockapk.com##+js(set-constant, QUtQJYUqtOqRPEHFBglvLhhsWsDaaSkv, 1, stay)
+unlockapk.com##+js(set-constant, XQBYnWGiHBrdguyNyYLEIHtUDCFClw, noopFunc)
+unlockapk.com##+js(set-constant, pageData, {}) 
+unlockapk.com##+js(set-constant, vitag, {}) 
+!unlockapk.com##+js(set-constant, vitag.Init, [], end) 
+!unlockapk.com##+js(set-constant, vitag.Init, [], complete) 
+unlockapk.com##div[data-ad-slot]
+unlockapk.com##div[data-ad-slot]:remove()
+unlockapk.com##div[id="alert"]
+unlockapk.com##div[id="alert"]:remove()
+unlockapk.com##div[id="detect"]
+uunlockapk.com##div[id="detect"]:remove()
+unlockapk.com##div[id="go"]:remove-attr(style)
+unlockapk.com##div[id="go"]:style(display: block !important;)
+!unlockapk.com##div[id="waitt"]:remove-attr(style)
+!unlockapk.com##div[id="waitt"]:style(display: block !important;)
+unlockapk.com##div[id="prog"]:remove-attr(style)
+unlockapk.com##div[id="prog"]:style(display: block !important;)
 unlockapk.com##ins[class="adsbygoogle"]
-unlockapk.com##+js(abort-on-property-write.js, adsbygoogle)
+unlockapk.com##ins[class="adsbygoogle"]:remove()
+unlockapk.com##iframe[data-aa]
+unlockapk.com##iframe[data-aa]:remove()
+! The following element names change.
+!unlockapk.com###OBirleurFOzwXZimaGlOonizAZjPEbBw
+!unlockapk.com###OBirleurFOzwXZimaGlOonizAZjPEbBw:remove()
+!unlockapk.com##image[id="pPeunAUEONzGXgodpexIwaiFoKASBMLglH"]
+!unlockapk.com##image[id="pPeunAUEONzGXgodpexIwaiFoKASBMLglH"]:remove()
+!unlockapk.com###pJJgkNhjaebCdgnHVdplQgczJWqjLkVwuz
+!unlockapk.com###pJJgkNhjaebCdgnHVdplQgczJWqjLkVwuz:remove()
+||unlockapk.com/dl/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||d.btttag.com/analytics.rcv$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d.btttag.com^*
 www.uploadship.com##+js(abort-on-property-write.js, adsbygoogle)
@@ -21025,8 +21091,6 @@ ouou.io##span[class="msg-adblock"]
 ||s3.amazonaws.com/6ca000b9ac8b42ac199bda2f2b77a4f9daaa9319da2fba3cf5e504/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.b1g1w7wic0.com^*
 ||b1g1w7wic0.com^*
-!||trackcmp.net/visit^*
-!||trackcmp.net^*
 ||qualigo.com/doks/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.ay.gy/images/banners/adfly.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||openx.trellian.com/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -21246,18 +21310,6 @@ www.ftuudemy.com##ins[class="adsbygoogle"]
 ||kt5850pjz0.com^*
 ||www.installflash-s3.com^*
 ||installflash-s3.com^*
-||get.mirando.de/mirando.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-unlockapk.com##+js(abort-on-property-write.js, opads)
-unlockapk.com##+js(abort-on-property-read.js, opads)
-unlockapk.com##+js(abort-on-property-read.js, adsbygoogle)
-unlockapk.com##+js(abort-on-property-write.js, google_ad_client)
-unlockapk.com##+js(abort-on-property-read.js, google_ad_client)
-unlockapk.com##+js(abort-on-property-write.js, adClasses)
-unlockapk.com##+js(abort-on-property-read.js, adClasses)
-unlockapk.com##+js(set-constant, data-adsbygoogle-status, done)
-unlockapk.com##+js(set-constant, enable_page_level_ads, false)
-unlockapk.com##+js(set-constant, detect, yes)
-||unlockapk.com/dl/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tpc.googlesyndication.com/simgad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||oimcowiemc.host/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||collecting.click/piwik.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -22167,8 +22219,11 @@ talkerscode.com##div[class="videoAdUiFloatingLayer"]
 !||jumbitr.com/path/lp.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||jumbitr.com^*
 crazy4tv.mrunblock.xyz##+js(set-constant, popundersPerIP, 0)
-crazy4tv.mrunblock.xyz##+js(set-constant, delayBetween, 999999)
+! 32767 /0x7FFF is the highest int allowed for set-constant
+!crazy4tv.mrunblock.xyz##+js(set-constant, delayBetween, 32767)
+crazy4tv.mrunblock.xyz##+js(trusted-set, delayBetween, 999999)
 !crazy4tv.mrunblock.xyz##+js(set-constant, default, [])
+!crazy4tv.mrunblock.xyz##+js(set-constant, default, undefined)
 crazy4tv.mrunblock.xyz##+js(set-constant, default, null)
 crazy4tv.mrunblock.xyz##+js(abort-current-script, popundersPerIP)
 crazy4tv.mrunblock.xyz##+js(abort-current-script, delayBetween)
@@ -23875,6 +23930,7 @@ giga-down.com##+js(abort-on-property-write.js, _atrk_opts)
 giga-down.com##+js(abort-on-property-read.js, chain)
 giga-down.com##+js(abort-on-property-write.js, chain)
 giga-down.com##div[class="adsbox"]
+!giga-down.com##+js(abort-current-script, /\$\('\.adsbox'\)/)
 giga-down.com##+js(abort-current-script, $('.adsbox'))
 giga-down.com##+js(set-constant, adblock_detected, 0)
 giga-down.com##+js(set-constant, remaining, 0)
@@ -24627,7 +24683,7 @@ mirrorace.com##+js(aeld, click, _0x)
 mirrorace.com##+js(aopr, AaDetector)
 mirrorace.com##+js(aopw, _pop)
 mirrorace.com##+js(popads-dummy)
-mirrorace.com##+js(set-constant, blockAdBlock, off)
+mirrorace.com##+js(trusted-set, blockAdBlock, off)
 mirrorace.com##[href*="search/"]
 mirrorace.com##a[href^="http://nottoke.com/ref"]
 mirrorace.com##div[class="uk-width-1-1 uk-margin-bottom uk-text-center uk-visible@m"]
@@ -24892,6 +24948,8 @@ www.w10privacy.de##.cc-individual-cookie-settings-overlay
 flacplayer.ehubsoft.net##+js(abort-current-script, 'google_ad_client')
 flacplayer.ehubsoft.net##+js(set-constant, gadb, false)
 flacplayer.ehubsoft.net##^script[onerror="gadb=true;"]
+flacplayer.ehubsoft.net##^script[onerror="gadb=true;"]:remove()
+!flacplayer.ehubsoft.net##script:remove-attr(onerror)
 !flacplayer.ehubsoft.net##maintable > tbody > tr:nth-child(1) > td > center > script:nth-child(1)
 !flacplayer.ehubsoft.net##maintable > tbody > tr:nth-child(1) > td > center > script:nth-child(2)
 !||seeptoag.net/pfe/current/service-worker.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -24980,7 +25038,7 @@ www.4shared.com##+js(nosiif, b)
 www.4shared.com###troublesText1:remove-class(hintDuringCounter)
 www.4shared.com###troublesText2:remove-class(hintDuringCounter)
 www.4shared.com###troublesText2:style(display: block !important;)
-www.4shared.com##+js(set-constant, d2CounterValue, -1, stay)
+www.4shared.com##+js(trusted-set, d2CounterValue, -1)
 www.4shared.com##+js(set-attr, '#jsTrafficLimitExceeded', value, false)
 www.4shared.com##+js(set-attr, '#secondsLeft', value, 0)
 !www.4shared.com##+js(saa, type, text, #baseDownloadLink)
@@ -24989,7 +25047,7 @@ www.4shared.com##+js(set-constant, sendNativeAnalytics, noopFunc)
 www.4shared.com##+js(acs, sendNativeAnalytics)
 www.4shared.com##+js(set-constant, Config.detectAd, {})
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
-www.4shared.com##+js(replace-node-text, text, Report Abuse, Download This)
+www.4shared.com##+js(rpnt.js, text, Report Abuse, Download This)
 !www.4shared.com##+js(move-attr-prop, a[class*="reportAbuse"], input[id="baseDownloadLink"], href, value)
 !www.4shared.com##a[class*="reportAbuse"]:remove-class(light-gray)
 !www.4shared.com##a[class*="reportAbuse"]:remove-class(f11)
@@ -25244,16 +25302,20 @@ www.driver4vr.com##div[class="gdpr gdpr-general-confirmation"]
 ||xml.realtime-bid.com^*
 ||enkayijamal.club^*
 ||ndenlende.club^*
-fcc.lc##+js(set-constant, document.querySelector("#overlay").onclick, "")
+!fcc.lc##+js(set-constant, document.querySelector("#overlay").onclick, "")
+fcc.lc###overlay:remove-attr(onclick)
 fcc.lc##+js(set-constant, document.querySelector("#\\37 80427 > div:nth-child(1)").style, display:inline-block;)
 fcc.lc##+js(set-constant, document.querySelector("#\\37 80427 > div:nth-child(5) > div:nth-child(2) > div").style, display:inline-block;)
 fcc.lc##\37 80427 > div:nth-child(5) > div:nth-child(2) > div > iframe
 fcc.lc##content > script:nth-child(8)
 fcc.lc##p
 fcc.lc##^script[id="popmagicldr"]
+fcc.lc##^script[id="popmagicldr"]:remove()
 !||fcc.lc/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 fcc.lc##div[id="adb_detected"]
+fcc.lc##div[id="adb_detected"]:remove()
 fcc.lc##div[id^="div-gpt-ad-"]
+fcc.lc##div[id^="div-gpt-ad-"]:remove()
 fcc.lc##div[class="adq"]
 !fcc.lc##+js(abort-on-property-read.js, importFAB)
 !fcc.lc##+js(abort-on-property-write.js, importFAB)
@@ -25264,9 +25326,9 @@ fcc.lc##+js(abort-on-property-write.js, window.Adomik)
 fcc.lc##+js(abort-on-property-read.js, window.googletag)
 fcc.lc##+js(abort-on-property-write.js, window.googletag)
 fcc.lc##^script[id="ads_priv"]
-!fcc.lc##+js(set-constant, document.querySelector("#surl").onclick, "")
-fcc.lc##+js(set-constant, document.querySelector("#surl").onclick, null)
-fcc.lc##+js(set-constant, document.querySelector("#overlay")style, position: absolute; width: 100vw; height: 100vh; z-index: 99999; display: inline;)
+!fcc.lc##+js(set-constant, document.querySelector("#surl").onclick, null)
+fcc.lc###surl:remove-attr(onlick)
+fcc.lc###overlay:style( position: absolute !important; width: 100vw !important; height: 100vh !important; z-index: 99999 !important; display: inline !important;)
 ||vulturechinamaternity.com^*
 ||click.hooligapps.com^*
 ||luckypushwinner.com^*
@@ -25283,14 +25345,15 @@ fcc.lc##+js(set-constant, document.querySelector("#overlay")style, position: abs
 ||racaty.net/racaty_new/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 racaty.net##div[id="mobile_sticky_ad"]
 racaty.net##span[id="countdown"]
-racaty.net##+js(set-constant, document.querySelector("#uniqueExpirylink").style, visibility: visible;)
-racaty.net##+js(set-constant, document.getElementsByClassName("after")[0].style, display: inline;)
-racaty.net##+js(set-constant, document.querySelector("#downloadbtn > div").style, display: inline;)
-racaty.net##+js(set-constant, document.querySelector("#simulateRstrt").style, background: none;color:#007bff;display: inline)
+racaty.net##*[class="after"]:style(display: inline !important;)
+racaty.net###uniqueExpirylink:style(visibility: visible !important;)
+racaty.net###downloadbtn > div:style(display: inline !important;)
+racaty.net###simulateRstrt:style(background: none !important; color:#007bff !important; display: inline !important;)
 racaty.net##+js(set-constant, a__rcPd, false)
 racaty.net##+js(abort-on-property-read.js, a__rcPd)
 racaty.net##+js(abort-on-property-write.js, a__rcPd)
-racaty.net##+js(set-constant, document.querySelector("#downloadbtn").type, submit)
+!racaty.net##+js(trusted-set, document.querySelector("#downloadbtn").type, submit)
+racaty.net##+js(saa, type, submit, #downloadbtn)
 ||f3551539d6565853.com^*
 ||edfsqfaeenij.com^*
 ||www.dkypsidljq.com^*
@@ -25467,15 +25530,13 @@ atharori.net##+js(set-constant, optout_adfly, 1)
 ||name0fbestway.com^*
 ||tickmatureparties.com^*
 iir.ai##div[class="col-md-12 hidden"]
-iir.ai##+js(set-constant, document.querySelector("#invisibleCaptchaShortlink").disabled, disabled)
-iir.ai##+js(set-constant, document.querySelector("#invisibleCaptchaShortlink").onclick, null)
-iir.ai##+js(set-constant, document.querySelector("#invisibleCaptchaShortlink").disabled, null)
+iir.ai###invisibleCaptchaShortlink:remove-attr(disabled)
+iir.ai###invisibleCaptchaShortlink:remove-attr(onclick)
+iir.ai###go-submit:remove-attr(disabled)
+iir.ai###go-submit:remove-attr(class)
 iir.ai##div[class="alert alert-danger"]
 !iir.ai##div[id="adtrue_tag_18696"]
 iir.ai##div[id^="adtrue_tag_"]
-iir.ai##+js(set-constant, document.querySelector("#go-submit").disabled, disabled)
-iir.ai##+js(set-constant, document.querySelector("#go-submit").disabled, null)
-iir.ai##+js(set-constant, document.querySelector("#go-submit").class, "")
 iir.ai##div[class="banner-inner"]
 iir.ai##iframe[name="__cmpLocator"]
 ||js.taplytics.com^*
@@ -25541,12 +25602,12 @@ speed-down.org###container > center > script:nth-child(18)
 speed-down.org##+js(abort-current-script, blockadblock)
 speed-down.org##+js(abort-on-property-read.js, blockadblock)
 speed-down.org##+js(abort-on-property-write.js, blockadblock)
-speed-down.org##+js(set-constant, document.querySelector("#go-submit").disabled, null)
+speed-down.org###go-submit:remove-attr(disabled)
 ||speed-down.org/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-speed-down.org##+js(set-constant, document.querySelector(".downloadbtn").disabled, false)
-speed-down.org##+js(set-constant, document.querySelector(".downloadbtn").display, inline)
+speed-down.org##.downloadbtn:remove-attr(disabled)
+speed-down.org##.downloadbtn:style(display: inline !important;)
 speed-down.org##+js(set-constant, adblock_detected, 1)
-speed-down.org##input[id="adblock_detected"]
+speed-down.org##input[id="adblock_detected"]:remove()
 speed-down.org##a[title="Download"]
 !speed-down.org##.btn-success.btn
 www.decsoftutils.com##div[id="cookies-note"]
@@ -25767,14 +25828,12 @@ www.mirrored.to##+js(abort-on-property-read.js, aiptag.cmd.display)
 www.mirrored.to##+js(abort-on-property-write.js, aiptag.cmd.display)
 www.mirrored.to##+js(abort-on-property-read.js, window.aiptag)
 www.mirrored.to##+js(abort-on-property-write.js, window.aiptag)
-www.mirrored.to##+js(set-constant, document.cookie, "ab=0; path=/";)
+www.mirrored.to##+js(trusted-set, document.cookie, ab=0; path=/;)
 !||analytics-ingress-global.bitmovin.com/analytics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||analytics-ingress-global.bitmovin.com^*
 ||licensing.bitmovin.com/impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cdn.bitmovin.com/analytics/web/beta/2/bitmovinanalytics.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.bitmovin.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!www.pcworld.com##div[class="bg-sky cookies-eu text-center pannacotta"]
-www.pcworld.com##div[class*="cookies-eu"]
 ||www.03347b0e2c1321feb76e79ad81003e51.icu/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||03347b0e2c1321feb76e79ad81003e51.icu/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||insights-collector.gog.com^*
@@ -25908,7 +25967,6 @@ login.northlane.com##div[class="privacycontainer"]
 developers.google.com##a[class="gc-analytics-event"]
 www.home-network-help.com##div[class="eucookiebar show"]
 www.pandasecurity.com##div[id="cookieInfo"]
-www.outkick.com##div[id="ad-container"]
 elektrotanya.com##div[id="cookieChoiceInfo"]
 !office-lens.en.aptoide.com##div[class="cookie-sidemenu__CookieSectionContainer-sc-15x684q-1 fezCVi"]
 office-lens.en.aptoide.com##div[class^="cookie-sidemenu_"]
@@ -25983,27 +26041,26 @@ nulled.link##li[class$="notice--cookie"]
 ||knockoutwithdrawal.com^*
 ||www.darkng.com/service_worker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dloady.com/service_worker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||borntonull.com/download/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 borntonull.com##div[id="cookie-pop"]
 borntonull.com##div[class="ad-banner"]
 borntonull.com##div[id="ad-banner"]
 borntonull.com##div[class="alert alert-danger"]
 borntonull.com##div[class="banner banner-728x90"]
 borntonull.com##div[class="myTestAd"]
-||borntonull.com/download/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 borntonull.com##ins[class="adsbygoogle"]
 borntonull.com##+js(abort-on-property-write.js, adsbygoogle)
 borntonull.com##+js(abort-on-property-read.js, adsbygoogle)
 borntonull.com##^script[data-ad-client^="ca-pub-"]
+borntonull.com##^script[data-ad-client^="ca-pub-"]:remove()
 borntonull.com##div[class="banner banner-336x280"]
 borntonull.com##div[class="cookie-confirm"]
 !borntonull.com##*:style(display:none)
 !borntonull.com##button[class]:has-text(hidden)
-borntonull.com##+js(set-constant, document.querySelector("#go-submit").className, "")
-!borntonull.com##+js(set-constant, document.querySelector("#go-submit").disabled, "")
-borntonull.com##+js(set-constant, document.querySelector("#go-submit").disabled, false)
-borntonull.com##+js(set-constant, document.querySelector("#go-link").className, "")
-!borntonull.com##+js(set-constant, document.querySelector("#go-link").disabled, "")
-borntonull.com##+js(set-constant, document.querySelector("#go-link").disabled, false)
+borntonull.com###go-link:remove-attr(class)
+borntonull.com###go-link:remove-attr(disabled)
+borntonull.com###go-submit:remove-attr(class)
+borntonull.com###go-submit:remove-attr(disabled)
 daviruzsystems.com##div[class="adsBox"]
 daviruzsystems.com##^script[class^="atScript"]
 ||daviruzsystems.com/pwa-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -26162,8 +26219,7 @@ www.wilderssecurity.com##div[class="noticeCookiesContent"]
 ||sixft-apart.com^*
 ||www.uploadship.com/static.doubleclick.net/instream/ad_status.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.uploadship.com/themes/pro/images/B1.jpg$image
-!www.uploadship.com##div[id="Download-Link"]:style(display:block !important;)
-www.uploadship.com##+js(set-constant, document.getElementById("Download-Link").style, "display:block !important;")
+www.uploadship.com##div[id="Download-Link"]:style(display:block !important;)
 ||www.uploadship.com/themes/pro/images/Binance.png$image
 www.sitelike.org##div[id="ezmobfooter"]
 !www.sitelike.org##span[class="ezoic-ad medrectangle-2 adtester-container adtester-container-100"]
@@ -26353,7 +26409,7 @@ cydiasources.net##.sgpb-popup-overlay
 cydiasources.net##.sg-popup-content
 ||pushsar.com^*
 a2zupload.com##div[id="alert"]
-a2zupload.com##+js(set-constant, speed, "unlimit")
+a2zupload.com##+js(trusted-set, speed, unlimit)
 a2zupload.com##div[id="alertmsg"]
 filza.net##div[id="eu-cookie-law"]
 filza.net##section[class*="widget_eu_cookie_law_widget"]
@@ -26469,8 +26525,9 @@ doodrive.com##div[class="uk-card uk-card-default uk-card-body uk-text-center"]
 doodrive.com##ins[class="adsbygoogle"]
 doodrive.com##+js(abort-on-property-write.js, _stq)
 doodrive.com##+js(abort-on-property-read.js, _stq)
-doodrive.com##+js(abort-on-property-write.js, adsbygoogle)
-doodrive.com##+js(abort-on-property-read.js, adsbygoogle)
+doodrive.com##+js(set-constant, adsbygoogle, [])
+doodrive.com##+js(abort-on-property-write, adsbygoogle)
+doodrive.com##+js(abort-on-property-read, adsbygoogle)
 doodrive.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 !doodrive.com###human-verification
 !realmike.org##aside[class="widget widget_eu_cookie_law_widget"]
@@ -26570,10 +26627,6 @@ gifs.com##span[id="hidead"]
 gifs.com##span[id="adsby"]
 gifs.com##a[id="overlayLink"]
 ||storage.googleapis.com/cdn.gifs.com/build/js/tracking-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-unlockapk.com##div[id="alert"]
-unlockapk.com##div[id="detect"]
-unlockapk.com##+js(abort-on-property-write.js, divalerttag)
-unlockapk.com##+js(abort-on-property-read.js, divalerttag)
 ||cash-app.me^*
 ||cash-app.com^*
 !www.droidviews.com##span[id="ezoic-pub-ad-placeholder-100"]
@@ -26705,8 +26758,8 @@ www.ovagames.com##^script:has-text(KVDiGHRQGvz)
 ||vipmods.net/wp-content/plugins/exit-strategy-pro/count.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 vipmods.net##+js(set-constant, gsecs, 1)
 !vipmods.net##+js(set-constant, CountActive, false)
-!vipmods.net##+js(set-constant, CountStepper, -50)
-vipmods.net##+js(set-constant, skipit, -1)
+!vipmods.net##+js(trusted-set, CountStepper, -50)
+vipmods.net##+js(trusted-set, skipit, -1)
 vipmods.net##+js(set-constant, skipthis, 1)
 !vipmods.net##*:style(overflow:hidden; visibility:hidden)
 ||d31vxm9ubutrmw.cloudfront.net^*
@@ -26744,7 +26797,7 @@ www.techradar.com##footer[class="van_taboola"]
 ||ctuggestd.fun^*
 ||dmmzkfd82wayn.cloudfront.net^*
 aporasal.net##*[style*="display: none"]:remove()
-aporasal.net##+js(set-constant, iframe2.indexOf('adf.ly'), -1)
+aporasal.net##+js(trusted-set, iframe2.indexOf('adf.ly'), -1)
 ||cdn65182383.ahacdn.me^*
 !||cst.cstwpush.com/static/adManager.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cst.cstwpush.com^*
@@ -26839,7 +26892,6 @@ kimcartoon.to##+js(set-constant, setHideAdsCd, 0)
 kimcartoon.to##+js(set-constant, hideAdsCd, 1)
 kimcartoon.to##+js(abort-on-property-read.js, isAdb)
 www.imyfone.com##div[class^="cookie_policy"]
-www.tenorshare.com##aside[id="gdprAgree"]
 ||stuffedprofessional.com^*
 ||deaconrandomoptional.com^*
 ||Clxrggmghevqfu.com^*
@@ -27028,8 +27080,8 @@ www.nulled-scripts.info##html:style(overflow: scroll !important; overflow-y: scr
 www.nulled-scripts.info##svg:style(overflow: scroll !important; overflow-y: scroll !important;)
 !Don't set all tags to overflow to scroll or the page is broken.
 !www.nulled-scripts.info##*:style(overflow: scroll !important;)
-!www.nulled-scripts.info##+js(set-constant, h.overflow, 'scroll')
-!www.nulled-scripts.info##+js(set-constant, n.overflow, 'scroll')
+!www.nulled-scripts.info##+js(trusted-set, h.overflow, scroll)
+!www.nulled-scripts.info##+js(trusted-set, n.overflow, scroll)
 www.nulled-scripts.info##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 !www.nulled-scripts.info##scrollbar[disabled="true"]
 !www.nulled-scripts.info##scrollbarbutton[disabled="true"]
@@ -27330,7 +27382,8 @@ upload.ac##[id="downloadbtn"]:style(display: block !important;)
 upload.ac##+js(remove-attr.js, checked, #chkIsAdd, stay)
 upload.ac##input[id="addLinkBtn"]
 !upload.ac##+js(set-constant, document.querySelector("#addLinkBtn").value, "")
-upload.ac##+js(set-attr, '#addLinkBtn', value, "")
+upload.ac##+js(set-attr, #addLinkBtn, value, '')
+!upload.ac###addLinkBtn:remove-attr(value)
 ||upload.ac/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 upload.ac##^script:has-text(#downloadBtnClick)
 ||sobertransfer.xyz^*
@@ -27424,7 +27477,6 @@ dailyuploads.net##^script:has-text(#addLinkBtn)
 !dailyuploads.net##^script:has-text(document.createElement('script'))
 dailyuploads.net##^script:has-text(document.createElement)
 dailyuploads.net##button[id="downloadBtnClickOrignal"]:style(display: block !important;)
-!dailyuploads.net##+js(set-constant, document.querySelector("#downloadBtnClickOrignal").style, 'display:block;')
 dailyuploads.net##button[class*="button-"][data-user="518"]
 dailyuploads.net##button[class*="button-"][data-user="518"]:remove()
 outlook.live.com##span[class="N3k7EN5vRGTrONWBPg250"]
@@ -27446,10 +27498,10 @@ www.programmers-books.com##div[id="bvcdksg-blanket"]
 ||cilcountee.top^*
 ||ssaffortyya.club^*
 tusfiles.com##button[id="btn_download"]:style(display:block !important;)
-tusfiles.com##+js(set-constant, document.querySelector("#btn_download").disabled, false)
-userscloud.com##+js(set-constant, document.querySelector("#btn_download").disabled, false)
+tusfiles.com###btn_download:remove-attr(disabled)
+userscloud.com###btn_download:remove-attr(disabled)
 userscloud.com##button[id="btn_download"]:style(display:block !important;)
-userscloud.com##iframe[style="display: none;"]
+userscloud.com##iframe[style="display: none;"]:remove()
 userscloud.com##+js(set-constant, window.__cfRLUnblockHandlers, true, stay)
 userscloud.com##^script:has-text(/astancerta\.fun|esusivebe\.top|dtv5loup63fac\.cloudfront.net/)
 ||annelinterv.fun^*
@@ -27745,7 +27797,8 @@ androidrepublic.org##div[class="u-bottomFixer js-bottomFixTarget"]
 !www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id^="ads_container_"] !blocks download links
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, 0)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="adblockinfo"]
-!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, setTimeout\(tick\, 1\))
+!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(trusted-set, timeout, setTimeout\(tick\, 1\))
+!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(trusted-set, timeout, setTimeout(tick, 1))
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, tick, 0)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##button[id="downloadbtn"]:style(visibility: visible !important;)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, .downloadbtn, stay)
@@ -28080,12 +28133,13 @@ intoupload.net##+js(set-constant, tick, 0)
 intoupload.net##button[id="downloadBtnClick"]:style(display: none;)
 intoupload.net##button[id="downloadBtnClick"]
 intoupload.net##button[id="downloadbtn"]:style(display: block !important; visibility: visible !important;)
-intoupload.net##+js(set-attr, '#adblock_detected', value, 0)
+intoupload.net##+js(set-attr, #adblock_detected, value, 0)
 intoupload.net##input[id="addLinkBtn"]
-intoupload.net##+js(set-attr, '##addLinkBtn', value, "")
-!intoupload.net##+js(set-constant, document.querySelector("#downloadBtnClick").onclick, "$('#myDownloadForm').submit();")
-intoupload.net##+js(set-constant, document.querySelector("#downloadbtn").onclick, "$('#myDownloadForm').submit();")
-intoupload.net##+js(saa, document.querySelector("#downloadbtn").onclick, "$('#myDownloadForm').submit();")
+intoupload.net##+js(set-attr, ##addLinkBtn, value, "")
+!intoupload.net##+js(trusted-set, document.querySelector("#downloadBtnClick").onclick, "$('#myDownloadForm').submit();")
+!intoupload.net##+js(saa, onclick, $('#myDownloadForm').submit();, #downloadBtnClick)
+!intoupload.net##+js(trusted-set, document.querySelector("#downloadbtn").onclick, "$('#myDownloadForm').submit();")
+intoupload.net##+js(saa, onclick, $('#myDownloadForm').submit();, #downloadbtn)
 ||intoupload.net/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !intoupload.net##+js(nano-stb.js, /timeout/i, 100, 0.10) 
 !intoupload.net##+js(nano-stb.js, /tick/i, 100, 0.10) 
@@ -28177,7 +28231,7 @@ www.filecad.com##+js(remove-class, clear-adblock)
 www.filecad.com##div[id="adblockinfo"]
 www.filecad.com##+js(set-constant, seconds, 0)
 www.filecad.com##+js(set-constant, started, true)
-!www.filecad.com##+js(set-constant, countdownTimer, setInterval('display()', 1))
+!www.filecad.com##+js(trusted-set, countdownTimer, setInterval('display()', 1))
 www.filecad.com##+js(set-constant, countdownTimer, 0)
 www.filecad.com##^script:has-text(clear-adblock)
 www.filecad.com##^script:has-text(#adblockinfo)
@@ -28595,7 +28649,9 @@ www.europeup.com##+js(remove-attr.js, disabled, #downloadbtn)
 www.europeup.com##+js(remove-attr.js, disabled, .downloadbtn)
 www.europeup.com##+js(set-constant, timeout, 1)
 www.europeup.com##^script:has-text(/adblock/i)
-www.europeup.com##+js(set-constant, document.querySelector("#adblock_detected").value, 0)
+www.europeup.com##^script:has-text(/adblock/i):remove()
+www.europeup.com##+js(set-attr, #adblock_detected, value, 0)
+!www.europeup.com###adblock_detected:remove-attr(value)
 gtaforums.com##div[id="elGuestTerms"]
 ||cdn.iubenda.com/cookie_solution/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.snopes.com##^script[id="ads-js"]
@@ -28624,7 +28680,6 @@ pkg.go.dev##div[class="Banner-message"]:has-text(/Black Lives Matter/i)
 ||earneydisti.fun^*
 ||d2fbvay81k4ji3.cloudfront.net^*
 www.inputmag.com##div[class*="adWrapper"]
-www.pcgamer.com##div[class="ad-unit"]
 www.inputmag.com##div[class^="ytp-ad-persistent-"]
 www.inputmag.com##iframe[style="display: none"]
 ||pandg.tapad.com^*
@@ -28858,15 +28913,13 @@ www.gsmarena.com##div[id^="div-gpt-ad-"]
 www.digitaltrends.com##+js(aopr, window.dtadsExperiences)
 www.digitaltrends.com##+js(aopw, window.dtadsExperiences)
 gpuopen.com##div[id="cookie-notice"]
-down.fast-down.com##+js(remove-attr, disabled, .downloadbtn, stay)
-down.fast-down.com##button[class*="downloadbtn"]:style(display: inline;)
-down.fast-down.com##+js(set-constant, document.querySelector("#adblock_detected").value, 0)
-down.fast-down.com##+js(remove-attr, value, #adblock_detected)
-down.mdiaload.com##+js(set-constant, document.querySelector("#adblock_detected").value, 0)
-down.mdiaload.com##+js(remove-attr, value, #adblock_detected)
-down.mdiaload.com##+js(remove-attr, disabled, .downloadbtn, stay)
-down.mdiaload.com##button[class*="downloadbtn"]:style(display: inline;)
+!down.fast-down.com,down.mdiaload.com##+js(remove-attr, disabled, .downloadbtn, stay)
+down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:remove-attr(disabled)
+down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:style(display: inline !important;)
+down.fast-down.com,down.mdiaload.com###adblock_detected:remove-attr(value)
+down.fast-down.com,down.mdiaload.com##+js(set-attr, #adblock_detected, value, 0)
 www.hanselman.com##div[aria-label="cookieconsent"]
+www.hanselman.com##div[aria-label="cookieconsent"]:remove()
 ||www.hanselman.com/blog/theme/jinyang/scripts/cda-tracker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.hanselman.com##div[id^="div-gpt-ad-"]
 www.hanselman.com##div[class*="ad-item"]
@@ -28931,18 +28984,18 @@ llamadaoculta.com##ins[class="adsbygoogle"]
 !||d1xkyo9j4r7vnn.cloudfront.net/public/click.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d1xkyo9j4r7vnn.cloudfront.net^*
 !||dgu9g3a2kzqx2.cloudfront.net/public/external/check.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!dgu9g3a2kzqx2.cloudfront.net##+js(set-constant, closeType, 'redirect', stay)
+!dgu9g3a2kzqx2.cloudfront.net##+js(trusted-set, closeType, redirect)
 !dgu9g3a2kzqx2.cloudfront.net##+js(set-constant, offersCompleted, 3, stay)
 !dgu9g3a2kzqx2.cloudfront.net##+js(set-constant, payoutCompleted, 3, stay)
 !dgu9g3a2kzqx2.cloudfront.net##+js(set-constant, logged_impression, true, stay)
 !dgu9g3a2kzqx2.cloudfront.net##+js(set-constant, logged_event, true, stay)
 ||dgu9g3a2kzqx2.cloudfront.net^*
-smartunlock.me##+js(set-constant, closeType, 'redirect', stay)
+smartunlock.me##+js(trusted-set, closeType, redirect)
 smartunlock.me##+js(set-constant, offersCompleted, 3, stay)
 smartunlock.me##+js(set-constant, payoutCompleted, 3, stay)
 smartunlock.me##+js(set-constant, logged_impression, true, stay)
 smartunlock.me##+js(set-constant, logged_event, true, stay)
-cpabuild.com##+js(set-constant, userSettings.onClose, 'redirect', stay)
+cpabuild.com##+js(trusted-set, userSettings.onClose, redirect)
 cpabuild.com##+js(set-constant, offersCompleted, 3, stay)
 cpabuild.com##+js(set-constant, payoutCompleted, 3, stay)
 cpabuild.com##+js(set-constant, logged_impression, true, stay)
@@ -29845,7 +29898,6 @@ www.extremetech.com##div[class*="AdChoiceContainer"]
 !||pagead2.googlesyndication.com/omsdk/releases/live/omweb-v1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pagead2.googlesyndication.com/omsdk/releases/live/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||premiumsrv.aniview.com/api/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.outkick.com##div[id="catapult-cookie-bar"]
 www.nolimitscoaster.com##div[id="easycookieinfo"]
 turbofuture.com##div[id="ad-"]
 turbofuture.com##div[class*="m-header-ad"]
@@ -29860,7 +29912,6 @@ turbofuture.com##div[class*="m-header-ad"]
 www.washingtonpost.com##div[id="leaderboard-wrapper"]
 www.washingtonpost.com##div[data-testid="placeholder-box"]
 www.builtbybel.com##div[id="easycookieinfo"]
-www.pcgamer.com##div[id^="bordeaux-preemptive-ad-"]
 ||www.user-shield-check.com^*
 ||lgazyaq.com^*
 ||ocdnmq.com^*
@@ -29872,7 +29923,6 @@ decider.com##div[id="header-billboard-ad"]
 decider.com##div[class*="ad-wrapper"]
 decider.com##div[class*="dfp-ad"]
 decider.com##div[id^="div-gpt-ad-"]
-www.pcgamer.com##.ad-unit
 www.gsmware.com##div[id="ezmobfooter"]
 www.gsmware.com##span[id^="div-gpt-ad"]
 www.gsmware.com##span[class*="ezoic-ad"]
@@ -30580,7 +30630,7 @@ unityassetcollection.com##a[href*="/www.buymeacoffee.com/"]
 ||unityassetcollection.com/wp-content/themes/mts_ad_sense/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||unityassetcollection.com/wp-content/themes/mts_ad_sense/js/customscript.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||unityassetcollection.com/wp-content/uploads/qglcxsnfd.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-unityassetcollection.com##+js(set-constant, totalWaitingTime, -1, stay)
+unityassetcollection.com##+js(trusted-set, totalWaitingTime, -1)
 unityassetcollection.com##+js(nano-sib, /function ()/, *, 0.1)
 unityassetcollection.com##+js(remove-class, disabled, #BtnGetLink, stay)
 unityassetcollection.com##+js(remove-attr, disabled, #BtnGetLink, stay)
@@ -31311,7 +31361,6 @@ www.digitaltrends.com##div[class*="dtads-"]
 uploadhub.to##div[class*="cookiealert"]
 www.phonearena.com##div[class="pa-sticky-container"]:has(div[class*="ad_728_90"])
 www.phonearena.com##div[class*="ad_940_0"]
-www.pcgamer.com##div[class^="dfp-leaderboard-"]
 www.romsgames.net##div[class^="adlabel"]
 www.romsgames.net##div[data-pg-ad]
 andropalace.co##div[id="sgpb-popup-dialog-main-div-wrapper"]
@@ -31442,6 +31491,12 @@ andoridgameshafeezullahdal.blogspot.com##a[class="piki-ads"]
 ||www.androidauthority.com/_next/static/chunks/pages/*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.androidauthority.com/_next/static/chunks/*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.androidauthority.com/_next/static/*/_middlewareManifest.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.androidauthority.com##div[class="--___Mb"]:has(div[class="--___jb --___kb"])
+www.androidauthority.com##div[class="--___Mb"]:has(div[class="--___jb --___kb"]):remove()
+www.androidauthority.com##div[class*="ad-banner"]
+www.androidauthority.com##div[class*="ad-banner"]:remove()
+www.androidauthority.com##div[class*="adBanner"]
+www.androidauthority.com##div[class*="adBanner"]:remove()
 ||sites.google.com/_/view/logImpressions^*
 xervoo.net##div[id="cookie_notice"]
 ||6ldn4.voluumtrk3.com^*
@@ -32187,7 +32242,7 @@ download.baominh.tech##div[id="cookie-pop"]
 download.baominh.tech##form[id="go-popup"]
 !download.baominh.tech##+js(remove-class, hidden, #go-submit, stay)
 !download.baominh.tech##+js(remove-attr, disabled, #go-submit, stay)
-!download.baominh.tech##button[id="go-submit"]:style(display:inline;)
+!download.baominh.tech##button[id="go-submit"]:style(display:inline !important;)
 download.baominh.tech##div[class="banner-inner"]
 !||download.baominh.tech.cdn.cloudflare.net/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||download.baominh.tech/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -32468,16 +32523,19 @@ douploads.net##label[for="chkIsAdd"]
 ||douploads.net/images/StartDownload.gif$image
 ||douploads.net/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||douploads.net/sw_newone.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-douploads.net##+js(set-constant, document.querySelector("#chkIsAdd").value, off)
-douploads.net##+js(set-constant, document.querySelector("#downloadBtnClick").type, submit)
-douploads.net##+js(set-constant, document.querySelector("#downloadbtn").type, submit)
+!douploads.net##+js(trusted-set, document.querySelector("#chkIsAdd").value, off)
+!douploads.net##+js(trusted-set, document.querySelector("#downloadBtnClick").type, submit)
+!douploads.net##+js(trusted-set, document.querySelector("#downloadbtn").type, submit)
+douploads.net##+js(saa, value, off, #chkIsAdd")
+douploads.net##+js(saa, type, submit, #downloadBtnClick)
+douploads.net##+js(saa, type, submit, #downloadbtn)
 douploads.net##+js(set-constant, adblock_detected, 0)
 douploads.net##+js(set-constant, gdpr-cookie-consent, true)
 douploads.net##input[id="addLinkBtn"]:remove()
 douploads.net##input[id="chkIsAdd"]:remove()
 douploads.net##input[id="adblock_detected"]:remove()
 !douploads.net##button[id="downloadBtnClick"]:remove()
-!douploads.net##button[id="downloadbtn"]:style(display: block;)
+!douploads.net##button[id="downloadbtn"]:style(display: block !important;)
 douploads.net##*[id="downloadbtn"]:style(display: block !important;)
 douploads.net##button[id="downloadbtn"]:remove()
 douploads.net##+js(remove-attr, disabled, #downloadbtn, stay)
@@ -32597,7 +32655,7 @@ myshrinker.com##a[id="366813813"]
 ||moltyeroki.com^*
 ||www.free-tutorials.us/wp-content/uploads/erzsjtnao.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.free-tutorials.us##ins[data-ad-client]
-!www.free-tutorials.us##+js(set-constant, counter, -1, stay)
+!www.free-tutorials.us##+js(trusted-set, counter, -1)
 !www.free-tutorials.us##a[id="download"]:style(display:inline !important;)
 www.free-tutorials.us##+js(acs, downloadButton)
 www.free-tutorials.us##+js(aopr, downloadButton)
@@ -32879,7 +32937,7 @@ webhostingpost.com##a[id="surl"]:remove-attr(onclick)
 webhostingpost.com##+js(set-constant, gtag, noopFunc)
 webhostingpost.com##+js(acs, gtag)
 webhostingpost.com##+js(acs, doc, iframe_id)
-webhostingpost.com##+js(set-constant, FuckAdBlock, _0xae04)
+webhostingpost.com##+js(trusted-set, FuckAdBlock, _0xae04)
 webhostingpost.com##+js(set-constant, _0x491ex3, 0, stay)
 !webhostingpost.com##+js(aeld, { "type": "/click/", "pattern": "/onclick/", "log": 2 })
 webhostingpost.com##+js(aeld, { "type": "/click/", "pattern": "/^/", "log": 2 })
@@ -33629,7 +33687,7 @@ thinkkers.com##ins[data-ad-client]
 ||fleraprt.com^*
 apkloo.com##ins[data-ad-client]:upward(1)
 apkloo.com##ins[data-ad-client]
-apkloo.com##+js(set-constant, secs, -1, stay)
+apkloo.com##+js(trusted-set, secs, -1)
 ||www.mediafire.com/js/prebid5.17.0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ambiliarcarwin.com^*
 ||exchangediscreditmast.com^*
@@ -33650,7 +33708,7 @@ www.mysqltutorial.org##div[class*="carbon-ads"]
 !www.mysqltutorial.org##div[class="ad ad-300"]
 www.mysqltutorial.org##div[class^="ad ad-3"]
 www.mysqltutorial.org##div[class="donation"]
-file-mods.ru##+js(set-constant, secs, -1, stay)
+file-mods.ru##+js(trusted-set, secs, -1)
 file-mods.ru##a[href*="//methoxyunpaled.com/"]
 ||methoxyunpaled.com^*
 ||86cb1dcb13ba5a1a.com^*
@@ -33823,7 +33881,7 @@ tei.ai##div[class="_1e3i4 or-Gy"]
 ||dbosowwfgb.com^*
 newforex.online##div[id="content"]
 newforex.online##div[id="adb_detected"]
-newforex.online##+js(set-constant, count, -1, stay)
+newforex.online##+js(trusted-set, count, -1)
 newforex.online##div[data-ad]
 newforex.online##+js(abort-current-inline-script, getalladblocks())
 newforex.online##+js(abort-current-inline-script, checkAdBlocker())
@@ -33835,7 +33893,7 @@ newforex.online##+js(remove-class, d-none, #go_d)
 newforex.online##div[id="devozon-wait1"]
 world-trips.net##div[id="content"]
 world-trips.net##div[id="adb_detected"]
-world-trips.net##+js(set-constant, count, -1, stay)
+world-trips.net##+js(trusted-set, count, -1)
 world-trips.net##div[data-ad]
 world-trips.net##+js(abort-current-inline-script, getalladblocks())
 world-trips.net##+js(abort-current-inline-script, checkAdBlocker())
@@ -34188,7 +34246,8 @@ anydebrid.com##ins[data-ad-client]
 !anydebrid.com##div[class="responsive-ad-wrapper"]
 anydebrid.com##div[class*="responsive-ad-"]
 !||anydebrid.com/assets/js/bunddlev35.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-anydebrid.com##+js(set-constant, ablocker, '0', stay)
+!anydebrid.com##+js(trusted-set, ablocker, '0')
+anydebrid.com##+js(trusted-set, ablocker, 0)
 anydebrid.com##+js(set-constant, showDisable(), {}, stay)
 anydebrid.com##+js(set-constant, skipABCheck, true, stay)
 anydebrid.com##+js(set-constant, maxLoop, 0, stay)
@@ -34341,13 +34400,20 @@ www.racked.com##div[id="privacy-options"]
 ||nsfwadds.com/event?adblk=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.msn.com##div[id^="views-banner-ad-"]
 www.msn.com##display-ads
-wccftech.com##div[class="d-none d-md-block bg-horizontal"]::before
-wccftech.com##div[class="d-none d-md-block bg-horizontal"]::before:remove()
+wccftech.com##div[class="d-none d-md-block"]:has(div[class="bg-horizontal"]::before)
+wccftech.com##div[class="d-none d-md-block"]:has(div[class="bg-horizontal"]::before):remove()
+!wccftech.com##div[class="d-none d-md-block bg-horizontal"]::before
+!wccftech.com##div[class="d-none d-md-block bg-horizontal"]::before:remove()
+wccftech.com##div[class="d-none d-md-block bg-horizontal"]
+wccftech.com##div[class="d-none d-md-block bg-horizontal"]:remove()
 wccftech.com##div[class="bg-square"]::before
 wccftech.com##div[class="bg-vertical"]::before
 wccftech.com##div[class="bg-horizontal"]:has(div[id^="div-gpt-ad-"])
 wccftech.com##div[class="bg-vertical"]:has(div[id^="div-gpt-ad-"])
 wccftech.com##div[class="bg-square"]:has(div[id^="div-gpt-ad-"])
+wccftech.com##div[class="bg-horizontal"]:has(div[id^="div-gpt-ad-"]):remove()
+wccftech.com##div[class="bg-vertical"]:has(div[id^="div-gpt-ad-"]):remove()
+wccftech.com##div[class="bg-square"]:has(div[id^="div-gpt-ad-"]):remove()
 wccftech.com##div[id^="div-gpt-ad-"]
 wccftech.com##div[id^="div-gpt-ad-"]:remove()
 wccftech.com##div[data-pg-ad-spot]
@@ -34440,7 +34506,7 @@ exey.io##div:style(visibility: visible !important;)
 !||exey.io/js/src/alert.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 exey.io##+js(nostif.js, /^/, 1000)
 exey.io##+js(set-constant, force_disable_adblock, 0, stay)
-exey.io##+js(set-constant, document.cookie, ab=0;, stay)
+exey.io##+js(trusted-set, document.cookie, ab=0;)
 exey.io##+js(acs, disableItToContinue)
 exey.io##+js(acs, fuckAdBlock)
 exey.io##+js(acs, importFAB)
@@ -34524,7 +34590,7 @@ try2link.com##+js(aopr, adsurfebe)
 try2link.com##+js(aopw, adsurfebe)
 try2link.com##+js(remove-class, hidden, #go-submit, stay)
 try2link.com##+js(remove-attr, disabled, #go-submit, stay)
-try2link.com##div[style="display:none;"]:style(display:inline;)
+try2link.com##div[style="display:none;"]:style(display:inline !important;)
 try2link.com##+js(acs, getalladblocks)
 shrinke.me##div[id="imgAddDirectLink"]
 shrinke.me##+js(acs, adtrue_tags)
@@ -34548,7 +34614,7 @@ shrinke.me##div[id="cookie-pop"]
 techmody.io##+js(acs, window.googletag)
 techmody.io##+js(aopr, window.googletag)
 techmody.io##+js(aopw, window.googletag)
-techmody.io##+js(set-constant, count, -1, stay)
+techmody.io##+js(trusted-set, count, -1, stay)
 techmody.io##+js(remove-class, disabled, #invisibleCaptchaShortlink, stay)
 techmody.io##+js(remove-attr, disabled, #invisibleCaptchaShortlink, stay)
 techmody.io##+js(acs, adBlockDetected)
@@ -34608,7 +34674,7 @@ icutlink.com##+js(remove-attr, disabled, #go-submit, stay)
 !mobi2c.com##div[class="adb_detected"]
 !mobi2c.com##div[id="content"]
 mobi2c.com##div[id="adb_detected"]
-mobi2c.com##+js(set-constant, count, -1, stay)
+mobi2c.com##+js(trusted-set, count, -1)
 mobi2c.com##div[data-ad]:remove()
 mobi2c.com##+js(abort-current-inline-script, getalladblocks)
 mobi2c.com##+js(abort-current-inline-script, checkAdBlocker)
@@ -35598,17 +35664,6 @@ www.free-fonts.com##div[id="notice"]:upward(2)
 www.free-fonts.com##+js(acs, /GdprApplies/i)
 www.free-fonts.com##+js(aopr, consentStatus)
 www.free-fonts.com##+js(aopw, consentStatus)
-||cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||cdn.privacy-mgmt.com/unified/4.13.3/gdpr-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||cdn.privacy-mgmt.com/unified/4.13.3/ccpa.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||cdn.privacy-mgmt.com/unified/*/gdpr-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||cdn.privacy-mgmt.com/unified/*/ccpa.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cdn.privacy-mgmt.com/wrapper/tcfv2/v2/gdpr/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||cdn.privacy-mgmt.com/consent/tcfv2/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||cdn.privacy-mgmt.com/consent/tcfv2/vendor-list/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cdn.privacy-mgmt.com/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cdn.privacy-mgmt.com/Notice.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cp.free-fonts.com/stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.univention.com##link[id^="cookie-law-info"]
 ||www.univention.com/wp-content/cache/min/1/wp-content/plugins/webtoffee-gdpr-cookie-consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -35617,8 +35672,8 @@ www.univention.com##+js(aopr, _paq)
 www.univention.com##+js(aopw, _paq)
 www.univention.com##div[id^="cookie-law-info-"]
 www.univention.com##div[class="wt-cli-cookie-bar-container"]
-||yrecomemu.one/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||maticalaccurate.one/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||yrecomemu.one^*
+||maticalaccurate.one^*
 ||goomaphy.com^*
 ||tackchen.gitee.io^*
 !userscloud.com##script[type="36a936178ecce1dd77e68197-text/javascript"]
@@ -36337,8 +36392,6 @@ windows10gadgets.pro##ins[data-ad-client]
 windows10gadgets.pro##img[src*="advertisement.gif"]
 windows10gadgets.pro##+js(aopr, adsbygoogle)
 windows10gadgets.pro##+js(aopw, adsbygoogle)
-www.androidauthority.com##div[class*="ad-banner"]
-www.androidauthority.com##div[class*="adBanner"]
 ||aab.devicetests.com^*
 ||cdn.snigelweb.com/adengine/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||sp.chip.de/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -37901,7 +37954,7 @@ ntuplay.xyz##+js(aopr, autoloadMarker)
 ntuplay.xyz##+js(aopw, autoloadMarker)
 ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]
 ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]:remove()
-ntuplay.xyz##+js(set-constant, currentReferer, "wikisport.click")
+ntuplay.xyz##+js(trusted-set, currentReferer, wikisport.click)
 ntuplay.xyz##+js(set-constant, attr, {})
 ntuplay.xyz##+js(acs, currentReferer)
 ntuplay.xyz##+js(aopr, currentReferer)
@@ -37982,7 +38035,7 @@ wikisport.click##^script:has-text(/window.top/i)
 wikisport.click##+js(aopr, window.top)
 wikisport.click##+js(aopw, window.top)
 wikisport.click##+js(acs, window.top)
-wikisport.click##+js(set-constant, mustave, atob('L2hscy9zdHJlYW0ubTN1OD9jaD1zcG4='))
+wikisport.click##+js(trusted-set, mustave, atob('L2hscy9zdHJlYW0ubTN1OD9jaD1zcG4='))
 wikisport.click##+js(set-constant, clearTimeout, noopFunc)
 wikisport.click##+js(set-constant, keepChecking, noopFunc)
 wikisport.click##+js(set-constant, addScript, noopFunc)
@@ -38080,6 +38133,8 @@ freestreams-live1.tv,fsl-streams.click##div[id="adz1"]:remove()
 ||xyz123.online^*
 ||mebfylxqbhjbx.xyz^*
 ||hyvmflsclweae.xyz^*
+www.foxnews.com##.block.ad-unit:nth-of-type(6)
+www.foxnews.com##.block.ad-unit:nth-of-type(6):remove()
 foxnews.com##+js(aopr, window.location.href.indexOf('video-embed'))
 foxnews.com##+js(aopw, window.location.href.indexOf('video-embed'))
 foxnews.com##+js(set-constant, authenticated, true)
@@ -38095,8 +38150,8 @@ insider.foxnews.com##div[id="ad-content"]
 foxnews.com##div[data-banner-type="ccpa"]
 www.foxnews.com###paid-advertising-top-tech-deals
 www.foxnews.com##+js(remove-class, scroll-lock, ,)
-www.foxnews.com##+js(set-constant, document.querySelector("a.close").href, window.history.back(), stay)
-www.foxnews.com##.block.ad-unit:nth-of-type(6)
+www.foxnews.com##+js(trusted-set, document.querySelector("a.close").href, window.history.back())
+www.foxnews.com##+js(saa, href, window.history.back(), a.close)
 www.foxnews.com##div[class="slide-ad-overlay"]
 www.foxnews.com##div[class*="ad-enabled-container"]
 www.foxnews.com##div[class*="pf-modal-cdp-gated-cartoon"]
@@ -38346,7 +38401,7 @@ multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download|host|btn|btn-md
 !multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download|host|btn|btn-md|btn-default|btn-block|btn-3d, #welcome-message > i)
 !multiup.org,multiup.eu,multiup.io###welcome-message > i:remove-class(fa-star)
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
-multiup.org,multiup.eu,multiup.io##+js(replace-node-text, text, Welcome, Download)
+multiup.org,multiup.eu,multiup.io##+js(rpnt.js, text, Welcome, Download)
 ! hide and disable the original download button for 1fichier.com using those button
 ! attributes, so it won't be clicked.
 ! hidden attribute set to true is not enough to hide the button.
@@ -38886,11 +38941,10 @@ cricplay2.xyz##script[id="_waumnk"]:remove()
 !cricplay2.xyz##+js(nostif, function)
 !cricplay2.xyz##+js(nostif, /^function()/)
 cricplay2.xyz##+js(nostif, /^function\(\)/)
-! These v_width and v_height values are being ignored for some reason.
-cricplay2.xyz##+js(set-constant, v_width, "100vw")
-!cricplay2.xyz##+js(set-constant, v_width, "100%")
-cricplay2.xyz##+js(set-constant, v_height, "100vh")
-!cricplay2.xyz##+js(set-constant, v_height, "100%")
+cricplay2.xyz##+js(trusted-set, v_width, 100vw)
+!cricplay2.xyz##+js(trusted-set, v_width, 100%)
+cricplay2.xyz##+js(trusted-set, v_height, 100vh)
+!cricplay2.xyz##+js(trusted-set, v_height, 100%)
 !cricplay2.xyz##+js(set-constant, v_height, 700)
 cricplay2.xyz##+js(aopr, _Hasync)
 cricplay2.xyz##+js(aopw, _Hasync)
@@ -38915,10 +38969,10 @@ millionscast.com##+js(acs, window.f82f079c58b9ae7bdad78f9cd5659934)
 millionscast.com##+js(aopr, window.f82f079c58b9ae7bdad78f9cd5659934)
 millionscast.com##+js(aopw, window.f82f079c58b9ae7bdad78f9cd5659934)
 ! Set these v_width and v_height values @ millionscast.com instead where the script which uses them is hosted; doesn't appear to work here either although values are reflected in console.
-millionscast.com##+js(set-constant, v_width, "100vw")
-!millionscast.com##+js(set-constant, v_width, "100%")
-millionscast.com##+js(set-constant, v_height, "100vh")
-!millionscast.com##+js(set-constant, v_height, "100%")
+millionscast.com##+js(trusted-set, v_width, 100vw)
+!millionscast.com##+js(trusted-set, v_width, 100%)
+millionscast.com##+js(trusted-set, v_height, 100vh)
+!millionscast.com##+js(trusted-set, v_height, 100%)
 !millionscast.com##+js(set-constant, v_height, 700)
 millionscast.com##div[id="player"]:style(width: 100vw !important; height: 100vh !important;)
 ||ufojwpgypela.xyz^*
@@ -39018,8 +39072,8 @@ maxsport.one##+js(aopw, window.c18fe44ffdefee243e858c7444dda370)
 maxsport.one##+js(acs, _Hasync)
 maxsport.one##+js(aopr, _Hasync)
 maxsport.one##+js(aopw, _Hasync)
-maxsport.one##+js(set-constant, currentReferer, "https://maxsport.one/")
-primasport.one##+js(set-constant, currentReferer, "https://primasport.one/")
+maxsport.one##+js(trusted-set, currentReferer, https://maxsport.one/)
+primasport.one##+js(trusted-set, currentReferer, https://primasport.one/)
 ||cdn.taboola.com/libtrc/chatango-network/loader.js$script,domain=cdn.stream-24.net|klubsports.online
 pluto.tv###omid_v1_present
 pluto.tv###omid_v1_present:remove()
@@ -39321,7 +39375,7 @@ devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[c
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##img[id="featuredimage"]
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##img[id="featuredimage"]:remove()
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isAdmin, true)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_front, {"":""})
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(trusted-set, ai_front, {"":""})
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_js_code, false)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, b2a, noopFunc)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_adb_process_blocks, noopFunc)
@@ -39540,16 +39594,16 @@ vidmoly.to,vidmoly.me##+js(set-constant, adsBlocked, noopFunc)
 vidmoly.to,vidmoly.me##script[src="https://cdn.staticmoly.me/ads/be/99/ads.js"]:remove-attr(onerror)
 vidmoly.to,vidmoly.me##script[src="https://cdn.staticmoly.me/ads/be/99/ads.js"]:remove()
 vidmoly.to,vidmoly.me##script:remove-attr(onerror)
-vidmoly.to,vidmoly.me##+js(set-constant, vsd1(), noopFunc)
+vidmoly.to,vidmoly.me##+js(set-constant, vsd1, noopFunc)
 vidmoly.to,vidmoly.me##+js(acs, vsd1)
 vidmoly.to,vidmoly.me##:xpath(//script[contains(text(), 'ADBLOCK DETECTED')]):remove()
 vidmoly.to,vidmoly.me##+js(set-constant, _0x5aa6, [])
 vidmoly.to,vidmoly.me##+js(aopr, _0x5aa6)
 vidmoly.to,vidmoly.me##+js(aopw, _0x5aa6)
-vidmoly.to,vidmoly.me##+js(set-constant, testURL, "https://www.google.com")
+vidmoly.to,vidmoly.me##+js(trusted-set, testURL, https://www.google.com)
 vidmoly.to,vidmoly.me##+js(set-constant, devtoolsDetector, {})
-vidmoly.to,vidmoly.me##+js(set-constant, devtoolsDetector.lanuch(), noopFunc)
-vidmoly.to,vidmoly.me##+js(set-constant, vopes2(), noopFunc)
+vidmoly.to,vidmoly.me##+js(set-constant, devtoolsDetector.lanuch, noopFunc)
+vidmoly.to,vidmoly.me##+js(set-constant, vopes2, noopFunc)
 vidmoly.to,vidmoly.me##+js(acs, vopes2)
 vidmoly.to,vidmoly.me##+js(aeld, onclick, vopes2)
 vidmoly.to,vidmoly.me##img[id="vope"]:remove-attr(onclick)
@@ -39760,7 +39814,8 @@ bestsolaris.com##+js(nostif, r)
 !||jentent.streampiay.fun/drh.hh$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 streampiay.fun##iframe[id="d0acf"]:remove-class(ad)
 streampiay.fun##+js(set-constant, isAdb, false)
-streampiay.fun##+js(set-constant, script.src, "")
+!streampiay.fun##+js(set-constant, script.src, "", end)
+streampiay.fun##+js(set-constant, script.src, "", complete)
 streampiay.fun##+js(aopr, script.src)
 streampiay.fun##+js(aopw, script.src)
 streampiay.fun##+js(aopr, isAdb)
@@ -39902,10 +39957,12 @@ mixdrop.co##:xpath(//script[contains(text(), 'adcashMacros')]):remove()
 ||vidoza.net/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 vidoza.net##+js(set-constant, ownerAdblockLock, 0)
 vidoza.net##^script:has-text(GoogleAnalyticsObject)
+vidoza.net##^script:has-text(GoogleAnalyticsObject):remove()
 vidoza.net##+js(acs, GoogleAnalyticsObject)
 vidoza.net##^script:has-text(gtm.)
 vidoza.net##+js(acs, gtm., www.googletagmanager.com)
-vidoza.net##+js(set-constant, Ya.Metrika, noopFunc)
+!vidoza.net##+js(set-constant, Ya.Metrika, noopFunc, end)
+vidoza.net##+js(set-constant, Ya.Metrika, noopFunc, complete)
 vidoza.net##^script:has-text(/Metrika/i)
 vidoza.net##+js(acs, /Metrika/i)
 vidoza.net##^script[data-spots][data-tag][data-subid1]
@@ -39917,7 +39974,7 @@ vidoza.net##^script:has-text(window.asgvastcnf_overlay)
 vidoza.net##+js(acs, window.asgvastcnf_overlay)
 vidoza.net##+js(aopw, window.asgvastcnf_overlay)
 vidoza.net##+js(aopr, window.asgvastcnf_overlay)
-vidoza.net##+js(set-constant, a2a_config.locale, "en")
+vidoza.net##+js(trusted-set, a2a_config.locale, "en")
 ||vidoza.net/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 vidoza.net##+js(set-constant, xRds, false)
 vidoza.net##+js(set-constant, cRAds, false)
@@ -40154,7 +40211,8 @@ a2zp30.com##ins[class="adsbygoogle"]
 a2zp30.com##+js(abort-on-property-read.js, adsbygoogle)
 a2zp30.com##+js(abort-on-property-write.js, adsbygoogle)
 ||a2zp30.com/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-a2zapk.io##+js(set-constant, e.preventDefault, noopFunc)
+!a2zapk.io##+js(set-constant, e.preventDefault, noopFunc, end)
+a2zapk.io##+js(set-constant, e.preventDefault, noopFunc, complete)
 a2zapk.io##+js(set-constant, gtag, noopFunc)
 ||a2zapk.io/adsbyg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 a2zapk.io##div[class="ad-container"]
@@ -40212,7 +40270,8 @@ a2zapk.io,a2zapk.com##+js(acs, document.ondragstart)
 123chill.to##+js(acs, window.twttr)
 123chill.to##+js(aopw, window.twttr)
 123chill.to##+js(aopr, window.twttr)
-123chill.to##+js(set-constant, t.I, "")
+!123chill.to##+js(set-constant, t.I, "", end)
+123chill.to##+js(set-constant, t.I, "", complete)
 123chill.to##+js(acs, _njwno, eephaush.com)
 123chill.to##+js(aopw, _njwno)
 123chill.to##+js(aopr, _njwno)
@@ -40279,9 +40338,12 @@ membed1.com##+js(acs, gtag)
 membed1.com##+js(set-constant, $pe, "")
 membed1.com##+js(set-constant, _0xd959, [])
 membed1.com##+js(set-constant, isSandboxed, noopFunc)
-membed1.com##+js(set-constant, s.src, "")
-membed1.com##+js(set-constant, s.onerror, noopFunc)
-membed1.com##+js(set-constant, s.onload, noopFunc)
+!membed1.com##+js(set-constant, s.src, "", end)
+!membed1.com##+js(set-constant, s.onerror, noopFunc, end)
+!membed1.com##+js(set-constant, s.onload, noopFunc, end)
+membed1.com##+js(set-constant, s.src, "", complete)
+membed1.com##+js(set-constant, s.onerror, noopFunc, complete)
+membed1.com##+js(set-constant, s.onload, noopFunc, complete)
 membed1.com##+js(acs, isSandboxed)
 membed1.com##+js(acs, _umltsm)
 membed1.com##+js(acs, _0xd959, arr, encodeURIComponent)
@@ -40381,9 +40443,11 @@ movhide.pro##+js(set-constant, ym, noopFunc)
 movhide.pro##div[id="adbd"]
 movhide.pro##div[id="adbd"]:remove()
 ||movhide.pro/assets/jquery/main0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-movhide.pro##+js(set-constant, _ASO, {})
-movhide.pro##+js(set-constant, _ASO.loadPushHelper, noopFunc)
-movhide.pro##+js(set-constant, _ASO.PushOptions, {})
+!movhide.pro##+js(set-constant, _ASO, {})
+!movhide.pro##+js(set-constant, _ASO.loadPushHelper, noopFunc, end)
+!movhide.pro##+js(set-constant, _ASO.PushOptions, {}, end)
+movhide.pro##+js(set-constant, _ASO.loadPushHelper, noopFunc, complete)
+movhide.pro##+js(set-constant, _ASO.PushOptions, {}, complete)
 movhide.pro##+js(acs, _ASO.loadPushHelper, _ASO.PushOptions)
 movhide.pro##+js(aopw, _ASO.PushOptions)
 movhide.pro##+js(aopr, _ASO.PushOptions)
@@ -40392,9 +40456,11 @@ sbnet.one##div[class*="jw-logo-top-right"]
 sbnet.one##div[class*="jw-logo-top-right"]:remove()
 sbnet.one##+js(set-constant, gtag, noopFunc)
 sbnet.one##+js(acs, gtag)
-sbnet.one##+js(set-constant, _ASO, {})
-sbnet.one##+js(set-constant, _ASO.loadPushHelper, noopFunc)
-sbnet.one##+js(set-constant, _ASO.PushOptions, {})
+!sbnet.one##+js(set-constant, _ASO, {})
+!sbnet.one##+js(set-constant, _ASO.loadPushHelper, noopFunc, end)
+!sbnet.one##+js(set-constant, _ASO.PushOptions, {}, end)
+sbnet.one##+js(set-constant, _ASO.loadPushHelper, noopFunc, complete)
+sbnet.one##+js(set-constant, _ASO.PushOptions, {}, complete)
 sbnet.one##+js(acs, _ASO.loadPushHelper, _ASO.PushOptions)
 sbnet.one##+js(aopw, _ASO.PushOptions)
 sbnet.one##+js(aopr, _ASO.PushOptions)
@@ -40442,8 +40508,9 @@ chedrives.com##a[role="button"][href^="https://start3dfile33.com/"]:remove()
 hifi2007reviews.com##html:remove-class(mh-disable-sb)
 hifi2007reviews.com##html:remove-attr(nighteyeplgn)
 ||hifi2007reviews.com/cdn-cgi/zaraz/s.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-hifi2007reviews.com##+js(set-constant, cO, {})
-hifi2007reviews.com##+js(set-constant, cO.zaraz, noopFunc)
+!hifi2007reviews.com##+js(set-constant, cO, {})
+!hifi2007reviews.com##+js(set-constant, cO.zaraz, noopFunc, end)
+hifi2007reviews.com##+js(set-constant, cO.zaraz, noopFunc, complete)
 hifi2007reviews.com##+js(aopw, cO.zaraz)
 hifi2007reviews.com##+js(aopr, cO.zaraz)
 hifi2007reviews.com##+js(set-constant, adsbygoogle, [])
@@ -40541,8 +40608,9 @@ www.playmods.net##div[class^="gpt-banner"]
 www.playmods.net##div[class^="gpt-banner"]:remove()
 www.playmods.net##iframe[id="ads-iframe"]
 www.playmods.net##iframe[id="ads-iframe"]:remove()
-www.playmods.net##+js(set-constant, window.adsTag, {})
-www.playmods.net##+js(set-constant, window.adsTag.renderAds, noopFunc)
+!www.playmods.net##+js(set-constant, window.adsTag, {})
+!www.playmods.net##+js(set-constant, window.adsTag.renderAds, noopFunc, end)
+www.playmods.net##+js(set-constant, window.adsTag.renderAds, noopFunc, complete)
 www.playmods.net##+js(acs, window.adsTag.renderAds)
 ||sdk.enjoy4fun.com/cdn/prebid/*/prebid.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ce.ditchesteenish.com^*
@@ -40560,8 +40628,10 @@ yarnpkg.com##div[class^="css-"]:has(div[class^="css-"]:has(p:has(a[href="https:/
 ! removal causes successive content to be removed as well.
 !yarnpkg.com##div[class^="css-"]:has(div[class^="css-"]:has(p:has(a[href="https://war.ukraine.ua/support-ukraine/"]))):remove()
 !techssting.com##div[id="analytics"]
-techssting.com##+js(set-constant, document.querySelector("#downloadBtnClick").form, ff1, stay)
-techssting.com##+js(set-constant, document.querySelector("#downloadBtnClick").type, submit, stay)
+!techssting.com##+js(trusted-set, document.querySelector("#downloadBtnClick").form, ff1)
+!techssting.com##+js(trusted-set, document.querySelector("#downloadBtnClick").type, submit)
+techssting.com##+js(saa, type, submit, #downloadBtnClick)
+techssting.com##+js(saa, form, ff1, #downloadBtnClick)
 techssting.com##+js(remove-attr, name, #downloadBtnClick, stay)
 !techssting.com##+js(remove-attr, style, #downloadbtn, stay)
 !techssting.com##button[id="downloadbtn"]:style(display:block !important;)
@@ -40587,117 +40657,117 @@ newsindi.com##div[id="alert"]
 newsindi.com,techssting.com##+js(aopr, absda)
 ||dsh7ky7308k4b.cloudfront.net/publishers/dropgalaxycom.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||jscdn.greeter.me/dropgalaxy.onlinehead.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!dropgalaxy.com,dropgalaxy.in##ins[class="adsbygoogle"]
-!dropgalaxy.com,dropgalaxy.in##.adsbygoogle, .showads
-!dropgalaxy.com,dropgalaxy.in##+js(acs, adblock_check)
-!dropgalaxy.com,dropgalaxy.in##+js(acs, .downloadbtn)
-!dropgalaxy.com,dropgalaxy.in##+js(aopr, .downloadbtn)
-!dropgalaxy.com,dropgalaxy.in##+js(acs, usrblock)
-!dropgalaxy.com,dropgalaxy.in##+js(aopr, got)
-!dropgalaxy.com,dropgalaxy.in##+js(aopw, got)
-!dropgalaxy.com##div[class="adsbox"]
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##ins[class="adsbygoogle"]
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.adsbygoogle, .showads
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, adblock_check)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, .downloadbtn)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopr, .downloadbtn)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, usrblock)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopr, got)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopw, got)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[class="adsbox"]
 ! removing stickyunit triggers the anti-adblock script @ dropgalaxy
-!dropgalaxy.com,dropgalaxy.in##div[id="stickyunit"]
-!dropgalaxy.com,dropgalaxy.in##div[id="stickyunit"]:remove()
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="stickyunit"]
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="stickyunit"]:remove()
 ! changing the ads variable will trigger the anti-adblocking script @ dropgalaxy
 ! setting ads to [] also makes the fetch script continually contact the site
-!dropgalaxy.com,dropgalaxy.in##+js(set-constant, ads, [])
-!dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, ads)
-!dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, ads)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, ads, [])
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, ads)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, ads)
 ! changing the brute variable will trigger the anti-adblocking script @ dropgalaxy
 ! setting brute to [] also makes the fetch script continually contact the site
-!dropgalaxy.com,dropgalaxy.in##+js(set-constant, brute, [])
-!dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, brute)
-!dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, brute)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, brute, [])
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, brute)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, brute)
 ! The countdown div tag is needed because the countdown is still used.
-!dropgalaxy.com,dropgalaxy.in##div[id="countdown"]
-!dropgalaxy.com,dropgalaxy.in##div[id="countdown"]:remove()
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="countdown"]
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="countdown"]:remove()
 ! Do not remove any of these input tags as these values are required for the download link to be given:
 ! The id's with a value of 0 probably could be successfully removed, but only would be needed if they are otherwise triggered to a non-zero value.
-!dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="adblock_check"] value="0" name="adblock_check">
-!dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="adblock_detected"] value="1" name="adblock_detected">
-!dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="xd"] value="UUZWZXhqZGdGNXA2czlIOUxjc3h5d1ZmRi9RdEpUOEphem1zc3AraDNWVlVJMlpPWjJqQXExNWdNSzRtZmJ1b0xSMmxkY0RXNjRwNFF4TEdzSm9KTWdQTUovc3ErWVd3NTRJeFJ4VU5mUTV2Y2RCY2xXL3FjSEpJUzZLMFVhdVo2ZGVKWnh4Lzh5QUYxY3B6Rld0eGZRPT0=" name="xd">
-!dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="admaven_popup"] name="admaven_popup" value="1">
-!dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="dropgalaxyisbest"] value="0" name="dropgalaxyisbest"> <- must be 0!
-!dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="adb"] value="0" name="adb">
-!dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="ppp"] name="ppp" value="2">
-!dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="ag7e3x"] value="0" name="ag7e3x">
-!dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="badipp"] value="0" name="badipp">
-!dropgalaxy.com,dropgalaxy.in,techssting.com##input[id="dgl"] name="dgl" value="1">
-dropgalaxy.com,dropgalaxy.in##^script:has-text(setTimeout)
-dropgalaxy.com,dropgalaxy.in##button[id="downloadBtnClick"]:style(visibility: hidden !important; display: none !important;)
-dropgalaxy.com,dropgalaxy.in##button[id="downloadBtnClick"]
-dropgalaxy.com,dropgalaxy.in##button[id="downloadBtnClick"]:remove()
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="adblock_check"] value="0" name="adblock_check">
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="adblock_detected"] value="1" name="adblock_detected">
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="xd"] value="UUZWZXhqZGdGNXA2czlIOUxjc3h5d1ZmRi9RdEpUOEphem1zc3AraDNWVlVJMlpPWjJqQXExNWdNSzRtZmJ1b0xSMmxkY0RXNjRwNFF4TEdzSm9KTWdQTUovc3ErWVd3NTRJeFJ4VU5mUTV2Y2RCY2xXL3FjSEpJUzZLMFVhdVo2ZGVKWnh4Lzh5QUYxY3B6Rld0eGZRPT0=" name="xd">
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="admaven_popup"] name="admaven_popup" value="1">
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="dropgalaxyisbest"] value="0" name="dropgalaxyisbest"> <- must be 0!
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="adb"] value="0" name="adb">
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="ppp"] name="ppp" value="2">
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="ag7e3x"] value="0" name="ag7e3x">
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="badipp"] value="0" name="badipp">
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="dgl"] name="dgl" value="1">
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(setTimeout)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(setTimeout):remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadBtnClick"]:style(visibility: hidden !important; display: none !important;)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadBtnClick"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadBtnClick"]:remove()
 ! Don't enable the button before the countdown completes or the anti-adblock page will display.
-!dropgalaxy.com,dropgalaxy.in##button[id="downloadbtn"]:remove-attr(disabled)
-!dropgalaxy.com,dropgalaxy.in##+js(remove-attr, disabled, #downloadbtn, stay)
-dropgalaxy.com,dropgalaxy.in##button[id="downloadbtn"]:remove-attr(style)
-dropgalaxy.com,dropgalaxy.in##button[id="downloadbtn"]:style(visibility: visible !important; display: block !important;)
-!dropgalaxy.com,dropgalaxy.in###downloadbtn:style(visibility: visible !important; display: block !important;)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, timeleft, 0, stay)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, loaded, true)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, remaining, 0, stay)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, downloadTimer, noopFunc)
-dropgalaxy.com,dropgalaxy.in##div[id^="adm-container-"]
-dropgalaxy.com,dropgalaxy.in##div[id^="adm-container-"]:remove()
-dropgalaxy.com,dropgalaxy.in##button[id="method_free2"]
-dropgalaxy.com,dropgalaxy.in##button[id="method_free2"]:remove()
-!dropgalaxy.com,dropgalaxy.in##+js(remove-attr, style, #method_free)
-dropgalaxy.com,dropgalaxy.in##button[id="method_free"]:remove-attr(style)
-dropgalaxy.com,dropgalaxy.in##button[id="method_free"]:style(display: block !important;)
-dropgalaxy.com,dropgalaxy.in##+js(remove-attr, disabled, #method_free, stay)
-dropgalaxy.com,dropgalaxy.in##button[id="method_free"]:remove-attr(disabled)
-dropgalaxy.com,dropgalaxy.in##.btn-info.btn-sm.btn-block.btn
-dropgalaxy.com,dropgalaxy.in##.btn-info.btn-sm.btn-block.btn:remove()
-dropgalaxy.com,dropgalaxy.in##div[class="alert alert-danger mb-3"]
-dropgalaxy.com,dropgalaxy.in#@#div[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important;)
-dropgalaxy.com,dropgalaxy.in##div[id^="div-gpt-ad-"]
-dropgalaxy.com,dropgalaxy.in##div[id^="div-gpt-ad-"]:remove()
-dropgalaxy.com,dropgalaxy.in##+js(aopr, data-ad-client)
-dropgalaxy.com,dropgalaxy.in##+js(aopw, data-ad-client)
-dropgalaxy.com,dropgalaxy.in##+js(acs, data-ad-client)
-dropgalaxy.com,dropgalaxy.in##+js(aopr, adsbygoogle)
-dropgalaxy.com,dropgalaxy.in##+js(aopw, adsbygoogle)
-dropgalaxy.com,dropgalaxy.in##+js(acs, adsbygoogle)
-dropgalaxy.com,dropgalaxy.in##+js(acs, atob)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, got, 0)
-dropgalaxy.com,dropgalaxy.in##+js(nostif, _0x)
-dropgalaxy.com,dropgalaxy.in##^script:has-text(_0x)
-dropgalaxy.com,dropgalaxy.in##a:style(display:block !important;)
-dropgalaxy.com,dropgalaxy.in##img[id="load"]
-dropgalaxy.com,dropgalaxy.in##img[id="load"]:remove()
-dropgalaxy.com,dropgalaxy.in##div[class^="modalpop"]
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, adblock_detected, 0, stay)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, adblock_check, 1, stay)
-dropgalaxy.com,dropgalaxy.in##+js(acs, gdpr-cookie-consent)
-dropgalaxy.com,dropgalaxy.in##+js(aopr, gdpr-cookie-consent)
-dropgalaxy.com,dropgalaxy.in###gdpr-cookie-notice
-dropgalaxy.com,dropgalaxy.in###gdpr-cookie-notice:remove()
-dropgalaxy.com,dropgalaxy.in##^script:has-text(/document.on/i)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, mousehandler, noopFunc)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, disableCtrlKeyCombination, noopFunc)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, forbiddenKeys, [])
-dropgalaxy.com,dropgalaxy.in##+js(aopr, forbiddenKeys)
-dropgalaxy.com,dropgalaxy.in##+js(aopw, forbiddenKeys)
-dropgalaxy.com,dropgalaxy.in##+js(acs, document.onkeydown)
-dropgalaxy.com,dropgalaxy.in##+js(aopr, document.onkeydown)
-dropgalaxy.com,dropgalaxy.in##+js(aopw, document.onkeydown)
-dropgalaxy.com,dropgalaxy.in##+js(acs, document.oncontextmenu, document.onmousedown, document.onmouseup)
-dropgalaxy.com,dropgalaxy.in##+js(aopr, document.oncontextmenu, document.onmousedown, document.onmouseup)
-dropgalaxy.com,dropgalaxy.in##+js(aopw, document.oncontextmenu, document.onmousedown, document.onmouseup)
-dropgalaxy.com,dropgalaxy.in##+js(aopr, document.documentElement.clientWidth)
-dropgalaxy.com,dropgalaxy.in##+js(aopw, document.documentElement.clientWidth)
-dropgalaxy.com,dropgalaxy.in##+js(remove-attr, oncontextmenu, body)
-dropgalaxy.com,dropgalaxy.in##body:remove-attr(oncontextmenu)
-dropgalaxy.com,dropgalaxy.in,techssting.com###analytics
-!dropgalaxy.com,dropgalaxy.in##div[id="analytics"]
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, holymoly, '0', stay)
-dropgalaxy.com,dropgalaxy.in##+js(abort-current-inline-script, fullAdsRendered)
-dropgalaxy.com,dropgalaxy.in##div[id^="ad-section"]
-dropgalaxy.com,dropgalaxy.in##^script:has-text(/debugger/i)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadbtn"]:remove-attr(disabled)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(remove-attr, disabled, #downloadbtn, stay)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadbtn"]:remove-attr(style)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadbtn"]:style(visibility: visible !important; display: block !important;)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###downloadbtn:style(visibility: visible !important; display: block !important;)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, timeleft, 0, stay)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, loaded, true)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, remaining, 0, stay)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, downloadTimer, noopFunc)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="adm-container-"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="adm-container-"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="method_free2"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="method_free2"]:remove()
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(remove-attr, style, #method_free)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="method_free"]:remove-attr(style)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="method_free"]:style(display: block !important;)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(remove-attr, disabled, #method_free, stay)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="method_free"]:remove-attr(disabled)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.btn-info.btn-sm.btn-block.btn
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.btn-info.btn-sm.btn-block.btn:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[class="alert alert-danger mb-3"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="div-gpt-ad-"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="div-gpt-ad-"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopr, data-ad-client)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopw, data-ad-client)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, data-ad-client)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopr, adsbygoogle)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopw, adsbygoogle)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, adsbygoogle)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, atob)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, got, 0)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(nostif, _0x)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(_0x)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##a:style(display:block !important;)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[id="load"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[id="load"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[class^="modalpop"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, adblock_detected, 0, stay)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, adblock_check, 1, stay)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, gdpr-cookie-consent)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopr, gdpr-cookie-consent)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###gdpr-cookie-notice
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###gdpr-cookie-notice:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(/document.on/i)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, mousehandler, noopFunc)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, disableCtrlKeyCombination, noopFunc)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, forbiddenKeys, [])
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopr, forbiddenKeys)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopw, forbiddenKeys)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, document.onkeydown)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopr, document.onkeydown)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopw, document.onkeydown)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, document.oncontextmenu, document.onmousedown, document.onmouseup)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopr, document.oncontextmenu, document.onmousedown, document.onmouseup)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopw, document.oncontextmenu, document.onmousedown, document.onmouseup)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopr, document.documentElement.clientWidth)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopw, document.documentElement.clientWidth)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(remove-attr, oncontextmenu, body)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##body:remove-attr(oncontextmenu)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com###analytics
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="analytics"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, holymoly, '0')
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-current-inline-script, fullAdsRendered)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="ad-section"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(/debugger/i)
 ||tmp.dropgalaxy.in/js/badip.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tmp.dropgalaxy.com/js/badip.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-dropgalaxy.com##+js(set-constant, badip, false, stay)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, badip, false, stay)
 !||tmp.dropgalaxy.in^*
 !||tmp.dropgalaxy.com^*
 ||tmp.dropgalaxy.in/adddds.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -40710,65 +40780,65 @@ dropgalaxy.com##+js(set-constant, badip, false, stay)
 !||tmp.dropgalaxy.com/js/countd.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||dropgalaxy.com/826-tips-on-home-insurance-for-large-families.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dropgalaxy.com/assets/js/vendor/popper.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-dropgalaxy.com,dropgalaxy.in##img[v1018myxp]
-dropgalaxy.com,dropgalaxy.in##img[v1018myxp]:remove()
-dropgalaxy.com,dropgalaxy.in##img[width="0"][height="0"][style="display:none;width:0;height:0;"]
-dropgalaxy.com,dropgalaxy.in##img[width="0"][height="0"][style="display:none;width:0;height:0;"]:remove()
-dropgalaxy.com,dropgalaxy.in##iframe[v1018myxp]
-dropgalaxy.com,dropgalaxy.in##iframe[v1018myxp]:remove()
-dropgalaxy.com,dropgalaxy.in##div[id="main-frame-error"]
-dropgalaxy.com,dropgalaxy.in##div[id="main-frame-error"]:remove()
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, pageData, {})
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, pageData)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, pageData)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, ad114caa64152aac18535dbf18d9ed74, "")
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, ad114caa64152aac18535dbf18d9ed74)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, ad114caa64152aac18535dbf18d9ed74)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, scriptletGlobals, noopFunc)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, scriptletGlobals)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, scriptletGlobals)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, xhrInstances, noopFunc)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, xhrInstances)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, xhrInstances)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, noFetchIf, noopFunc)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, noFetchIf)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, noFetchIf)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, deAmpEnabled)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, deAmpEnabled)
-dropgalaxy.com,dropgalaxy.in##iframe[title="Criteo GUM iframe"]:remove()
-dropgalaxy.com,dropgalaxy.in##iframe[src^="https://sync.quantumdex.io/usersync/pbjs"]:remove()
-dropgalaxy.com,dropgalaxy.in##iframe[id="VIEventStats"]:remove()
-dropgalaxy.com,dropgalaxy.in##vli[class="adsbyvli vliinterstial"]
-dropgalaxy.com,dropgalaxy.in##vli[class="adsbyvli vliinterstial"]:remove()
-dropgalaxy.com,dropgalaxy.in##button[id="dl"]:style(display:block !important;)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, window._initAds, false, stay)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, window.googletag, {})
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, window.protag, {})
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, responsiveAdSlot1, null)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, responsiveAdSlot2, null)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, responsiveAdSlot3, null)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, responsiveAdSlot4, null)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, window.googletag)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, window.googletag)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, window.protag)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, window.protag)
-dropgalaxy.com,dropgalaxy.in##meta[name="purpleads-verification"]
-dropgalaxy.com,dropgalaxy.in##meta[name="purpleads-verification"]:remove()
-dropgalaxy.com,dropgalaxy.in##+js(aeld, /mousehandler/)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-write, forbiddenKeys)
-dropgalaxy.com,dropgalaxy.in##+js(abort-on-property-read, forbiddenKeys)
-dropgalaxy.com,dropgalaxy.in##script[disable-devtool-auto]:remove-attr(disable-menu)
-dropgalaxy.com,dropgalaxy.in##^script[disable-devtool-auto]
-dropgalaxy.com,dropgalaxy.in##^script[disable-devtool-auto]:remove()
-dropgalaxy.com,dropgalaxy.in##script[disable-devtool-auto]
-dropgalaxy.com,dropgalaxy.in##script[disable-devtool-auto]:remove()
-dropgalaxy.com,dropgalaxy.in##div[id^="gpt-passback-dropgalaxy"]
-dropgalaxy.com,dropgalaxy.in##div[id^="gpt-passback-dropgalaxy"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[v1018myxp]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[v1018myxp]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[width="0"][height="0"][style="display:none;width:0;height:0;"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[width="0"][height="0"][style="display:none;width:0;height:0;"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##iframe[v1018myxp]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##iframe[v1018myxp]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="main-frame-error"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="main-frame-error"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, pageData, {})
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, pageData)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, pageData)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, ad114caa64152aac18535dbf18d9ed74, "")
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, ad114caa64152aac18535dbf18d9ed74)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, ad114caa64152aac18535dbf18d9ed74)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, scriptletGlobals, noopFunc)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, scriptletGlobals)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, scriptletGlobals)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, xhrInstances, noopFunc)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, xhrInstances)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, xhrInstances)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, noFetchIf, noopFunc)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, noFetchIf)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, noFetchIf)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, deAmpEnabled)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, deAmpEnabled)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##iframe[title="Criteo GUM iframe"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##iframe[src^="https://sync.quantumdex.io/usersync/pbjs"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##iframe[id="VIEventStats"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##vli[class="adsbyvli vliinterstial"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##vli[class="adsbyvli vliinterstial"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="dl"]:style(display:block !important;)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, window._initAds, false, stay)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, window.googletag, {})
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, window.protag, {})
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, responsiveAdSlot1, null)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, responsiveAdSlot2, null)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, responsiveAdSlot3, null)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, responsiveAdSlot4, null)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, window.googletag)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, window.googletag)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, window.protag)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, window.protag)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##meta[name="purpleads-verification"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##meta[name="purpleads-verification"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aeld, /mousehandler/)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, forbiddenKeys)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, forbiddenKeys)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##script[disable-devtool-auto]:remove-attr(disable-menu)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script[disable-devtool-auto]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script[disable-devtool-auto]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##script[disable-devtool-auto]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##script[disable-devtool-auto]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="gpt-passback-dropgalaxy"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="gpt-passback-dropgalaxy"]:remove()
 ! blocking all xhr and fetch will prevent downloads
-!dropgalaxy.com,dropgalaxy.in##+js(no-fetch-if, /^/)
-!dropgalaxy.com,dropgalaxy.in##+js(no-xhr-if, /^/)
-dropgalaxy.com,dropgalaxy.in##+js(no-fetch-if, /adtrue\.com|eningspon\.com|freychang\.fun|orquideassp\.com|popunder/)
-dropgalaxy.com,dropgalaxy.in##+js(no-xhr-if, /a-mo\.net|adnxs\.com|prebid|creativecdn\.com|e-planning\.net|quantumdex\.io/)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(no-fetch-if, /^/)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(no-xhr-if, /^/)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(no-fetch-if, /adtrue\.com|eningspon\.com|freychang\.fun|orquideassp\.com|popunder/)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(no-xhr-if, /a-mo\.net|adnxs\.com|prebid|creativecdn\.com|e-planning\.net|quantumdex\.io/)
 dropgalaxy.*,techssting.com##+js(aeld, , { [native code] })
 dropgalaxy.*,techssting.com##+js(nosiif, [native code])
 dropgalaxy.*,techssting.com##+js(nowoif)
@@ -40782,48 +40852,48 @@ dropgalaxy.*,techssting.com##[id^="aswift"]:style(display:none!important;)
 dropgalaxy.*,techssting.com##iframe[id*="_mN_main_"]
 dropgalaxy.*,techssting.com##iframe[id*="_mN_main_"]:remove()
 dropgalaxy.*,techssting.com##[target="_blank"]:has-text(Download)
-dropgalaxy.com,dropgalaxy.in##div[id="proxymsg"]
-dropgalaxy.com,dropgalaxy.in##script[onerror="absda()"]
-dropgalaxy.com,dropgalaxy.in##div[id="analytics"]
-dropgalaxy.com,dropgalaxy.in##script[id="interactive_js_adcode"]
-dropgalaxy.com,dropgalaxy.in##script[id="interactive_js_adcode"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="proxymsg"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##script[onerror="absda()"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="analytics"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##script[id="interactive_js_adcode"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##script[id="interactive_js_adcode"]:remove()
 dropgalaxy.*,financemonk.net###operadata + br + [href][target="_blank"]
 dropgalaxy.*,financemonk.net##body > div[style^="position: fixed; display: block"]
 dropgalaxy.*,financemonk.net##.adsbygoogle:style(max-height: 1px !important;)
 dropgalaxy.*,financemonk.net##[id^="aswift"]:style(display:none!important;)
 dropgalaxy.*,financemonk.net##[target="_blank"]:has-text(Download)
 dropgalaxy.*,financemonk.net###modalpop
-*$frame,redirect-rule=noopframe,domain=dropgalaxy.com|techthematter.xyz
-*$xhr,redirect-rule=nooptext,domain=dropgalaxy.com|techthematter.xyz
-*$script,redirect-rule=noopjs,domain=dropgalaxy.*|financemonk.net|techthematter.xyz|techssting.com
-*$image,redirect-rule=32x32.png,domain=dropgalaxy.*|financemonk.net|techthematter.xyz|techssting.com
-dropgalaxy.com,dropgalaxy.in##.GoogleActiveViewElement, .middle-container, .mys-wrapper
-dropgalaxy.com,dropgalaxy.in##.ns-mulii-l-square-editorial
-dropgalaxy.com,dropgalaxy.in##.pgAdWrapper
-dropgalaxy.com,dropgalaxy.in##[src^="//ad.a-ads.com/"]
-dropgalaxy.com,dropgalaxy.in##[id^="apkad"]
-dropgalaxy.com,dropgalaxy.in###nativefluid
-dropgalaxy.com,dropgalaxy.in###dmAZuTknHuCIIWY
-dropgalaxy.com,dropgalaxy.in###dmAZuTknHuCIIWY:remove()
-dropgalaxy.com,dropgalaxy.in##+js(aopr, dmAZuTknHuCIIWY)
-dropgalaxy.com,dropgalaxy.in##+js(aopw, dmAZuTknHuCIIWY)
+*$frame,redirect-rule=noopframe,domain=dropgalaxy.com|techthematter.xyz|dropgalaxy.vip|dgdrive.xyz
+*$xhr,redirect-rule=nooptext,domain=dropgalaxy.com|techthematter.xyz|dropgalaxy.vip|dgdrive.xyz
+*$script,redirect-rule=noopjs,domain=dropgalaxy.*|financemonk.net|techthematter.xyz|techssting.com|dropgalaxy.vip|dgdrive.xyz
+*$image,redirect-rule=32x32.png,domain=dropgalaxy.*|financemonk.net|techthematter.xyz|techssting.com|dropgalaxy.vip|dgdrive.xyz
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.GoogleActiveViewElement, .middle-container, .mys-wrapper
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.ns-mulii-l-square-editorial
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.pgAdWrapper
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##[src^="//ad.a-ads.com/"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##[id^="apkad"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###nativefluid
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###dmAZuTknHuCIIWY
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###dmAZuTknHuCIIWY:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopr, dmAZuTknHuCIIWY)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopw, dmAZuTknHuCIIWY)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(cookie-remover, /^/)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, ads, [""], stay)
-dropgalaxy.com,dropgalaxy.in##+js(set-constant, statusTxt, "success", stay)
-dropgalaxy.com,dropgalaxy.in##div[id="warning"]
-dropgalaxy.com,dropgalaxy.in##div[id="warning"]:remove()
-dropgalaxy.com,dropgalaxy.in##div[id="modalpop"]
-dropgalaxy.com,dropgalaxy.in##div[id="modalpop"]:remove()
-dropgalaxy.com,dropgalaxy.in##div[id="overlaypop"]
-dropgalaxy.com,dropgalaxy.in##div[id="overlaypop"]:remove()
-dropgalaxy.com,dropgalaxy.in##div[id^="vi-smartbanner"]
-dropgalaxy.com,dropgalaxy.in##div[id^="vi-smartbanner"]:remove()
-dropgalaxy.com,dropgalaxy.in##iframe[id="debug_vi-smartbanner-unit"]
-dropgalaxy.com,dropgalaxy.in##iframe[id="debug_vi-smartbanner-unit"]:remove()
-dropgalaxy.com,dropgalaxy.in##iframe[src^="https://a2zapk.io/dl/postifram.php"]
-dropgalaxy.com,dropgalaxy.in##iframe[src^="https://a2zapk.io/dl/postifram.php"]:remove()
-dropgalaxy.com##div[id="analytics"]
-dropgalaxy.com##div[id="analytics"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, ads, [""])
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, statusTxt, "success")
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="warning"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="warning"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="modalpop"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="modalpop"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="overlaypop"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="overlaypop"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="vi-smartbanner"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="vi-smartbanner"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##iframe[id="debug_vi-smartbanner-unit"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##iframe[id="debug_vi-smartbanner-unit"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##iframe[src^="https://a2zapk.io/dl/postifram.php"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##iframe[src^="https://a2zapk.io/dl/postifram.php"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="analytics"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="analytics"]:remove()
 financemonk.net##+js(nowoif)
 financemonk.net##[href^="https://bit.ly/"]
 financemonk.net##iframe[id*="_mN_main_"]
@@ -41028,34 +41098,6 @@ dlapk4all.com##iframe:remove()
 ! ##script without remove() which only works with ublock Origin not Brave natively may not do anything.
 dlapk4all.com##script[data-domain="22filexstarted22.com"]
 dlapk4all.com##script[data-domain="22filexstarted22.com"]:remove()
-unlockapk.com##+js(set-constant, divalerttag, "") 
-unlockapk.com##+js(set-constant, $imgg, {})
-unlockapk.com##+js(set-constant, pJJgkNhjaebCdgnHVdplQgczJWqjLkVwuz, 1)
-unlockapk.com###pJJgkNhjaebCdgnHVdplQgczJWqjLkVwuz
-unlockapk.com###pJJgkNhjaebCdgnHVdplQgczJWqjLkVwuz:remove()
-unlockapk.com###OBirleurFOzwXZimaGlOonizAZjPEbBw
-unlockapk.com###OBirleurFOzwXZimaGlOonizAZjPEbBw:remove()
-unlockapk.com##+js(acs, divalerttag, $imgg) 
-unlockapk.com##+js(aopr, divalerttag)
-unlockapk.com##+js(aopw, divalerttag)
-unlockapk.com##+js(aopr, $imgg)
-unlockapk.com##+js(aopw, $imgg)
-unlockapk.com##div[id="go"]:remove-attr(style)
-unlockapk.com##div[id="go"]:style(display: block !important;)
-unlockapk.com##div[id="prog"]:remove-attr(style)
-unlockapk.com##div[id="prog"]:style(display: block !important;)
-unlockapk.com##div[data-ad-slot]
-unlockapk.com##div[data-ad-slot]:remove()
-unlockapk.com##+js(set-constant, vitag, {}) 
-unlockapk.com##+js(set-constant, vitag.Init, []) 
-unlockapk.com##+js(aopr, vitag)
-unlockapk.com##+js(aopw, vitag)
-unlockapk.com##+js(set-constant, pageData, {}) 
-unlockapk.com##+js(aopr, pageData)
-unlockapk.com##+js(aopw, pageData)
-unlockapk.com##+js(set-constant, JsEvalContext, noopFunc) 
-unlockapk.com##+js(set-constant, gtag, noopFunc)
-unlockapk.com##+js(acs, gtag)
 android.gadgethacks.com##+js(set-constant, gtag, noopFunc)
 android.gadgethacks.com##+js(acs, gtag)
 !||cdn.adsninja.ca/adsninja_client.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -41264,7 +41306,8 @@ www.visualon.com##button[class*="vop-cast-button"][title="chromecast"]:style(dis
 www.visualon.com##button[class*="vop-fullscreen-button"][title="fullscreen"]:style(display: inline-block !important;)
 www.visualon.com##button[class*="vop-fast-rewind-button"]:style(display: inline-block !important;)
 www.visualon.com##button[class*="vop-fast-forward-button"]:style(display: inline-block !important;)
-www.visualon.com##+js(set-constant, window[disableStr], true)
+!www.visualon.com##+js(set-constant, window[disableStr], true, end)
+www.visualon.com##+js(set-constant, window[disableStr], true, complete)
 www.visualon.com##+js(set-constant, __gaTrackerIsOptedOut, trueFunc)
 www.visualon.com##+js(set-constant, mi_track_user, false)
 www.visualon.com##+js(set-constant, gaOptout, trueFunc)
@@ -41296,8 +41339,8 @@ www.2baksa.ws##div[class^="antblock"]:remove()
 hurry.stream##+js(set-constant, atOptions, {})
 hurry.stream##+js(aopr, atOptions)
 hurry.stream##+js(aopw, atOptions)
-hurry.stream##+js(set-constant, ww, "99vw")
-hurry.stream##+js(set-constant, hh, "99vh")
+hurry.stream##+js(trusted-set, ww, 99vw)
+hurry.stream##+js(trusted-set, hh, 99vh)
 hurry.stream##div[class="video_adp3"]
 hurry.stream##div[class="video_adp3"]:remove()
 hurry.stream##+js(set-constant, xRds, false)
@@ -41612,8 +41655,7 @@ filerice.com##+js(set-constant, count, 3)
 !filerice.com##+js(aopw, arr)
 !filerice.com##+js(aeld, click)
 filerice.com##input[id="adblock_detected"]:remove()
-! does not work filerice.com##+js(set-constant, document.querySelector('button[id="downloadbtn"]').type, submit)
-!filerice.com##+js(set-constant, document.querySelector('button[id="downloadbtn"]').type, submit)
+!filerice.com##+js(trusted-set, document.querySelector('button[id="downloadbtn"]').type, submit)
 ! no quotes for attribute value because they are added by the set-attr.js scriptlet from https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
 filerice.com##+js(saa, type, submit, #downloadbtn)
 ||log.espn.com^*
@@ -41639,7 +41681,8 @@ putlocker.boo##+js(set-constant, FingerprintJS, noopFunc)
 !putlocker.sb##+js(nosiif, /function\(\)/)
 putlocker.sb##+js(nosiif, /^/)
 putlocker.sb##+js(set-constant, devtoolsDetectInterval, noopFunc)
-putlocker.sb##+js(set-constant, window.kkp4a5x5tv, noopFunc)
+!putlocker.sb##+js(set-constant, window.kkp4a5x5tv, noopFunc, end)
+putlocker.sb##+js(set-constant, window.kkp4a5x5tv, noopFunc, complete)
 putlocker.sb##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')])
 putlocker.sb##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 putlocker.sb##+js(acs, window.kkp4a5x5tv)
@@ -41687,7 +41730,8 @@ www.outlookindia.com##div[id^="div-gpt-ad-"]
 www.outlookindia.com##div[id^="div-gpt-ad-"]:remove()
 www.outlookindia.com##+js(nosiif, /function\(\)/)
 !www.outlookindia.com##+js(nosiif, /^/)
-www.outlookindia.com##+js(set-constant, googletag.cmd.push, noopFunc)
+!www.outlookindia.com##+js(set-constant, googletag.cmd.push, noopFunc, end)
+www.outlookindia.com##+js(set-constant, googletag.cmd.push, noopFunc, complete)
 www.outlookindia.com##+js(acs, googletag)
 www.outlookindia.com##div[id="_snup-rtdx-ldgr1"]
 www.outlookindia.com##div[id="_snup-rtdx-ldgr1"]:remove()
@@ -41913,9 +41957,11 @@ www.dailymail.co.uk##div[data-track-module]
 www.dailymail.co.uk##+js(set-constant, disableAds, true, stay)
 www.dailymail.co.uk##+js(set-constant, enableAds, false, stay)
 www.dailymail.co.uk##+js(set-constant, useGpt, false, stay)
-www.dailymail.co.uk##+js(set-constant, window.adverts, {})
-www.dailymail.co.uk##+js(set-constant, window.adverts.config, {})
-www.dailymail.co.uk##+js(set-constant, adverts.addToArray, noopFunc)
+!www.dailymail.co.uk##+js(set-constant, window.adverts, {})
+!www.dailymail.co.uk##+js(set-constant, window.adverts.config, {}, end)
+www.dailymail.co.uk##+js(set-constant, window.adverts.config, {}, complete)
+!www.dailymail.co.uk##+js(set-constant, adverts.addToArray, noopFunc, end)
+www.dailymail.co.uk##+js(set-constant, adverts.addToArray, noopFunc, complete)
 www.dailymail.co.uk##+js(acs, adverts)
 www.dailymail.co.uk##+js(aopr, window.adverts)
 www.dailymail.co.uk##+js(aopw, window.adverts)
@@ -41963,7 +42009,6 @@ www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, player_ads)
 www.up-4ever.net,www.up-4ever.org##div[id^="hiddensection"]
 www.up-4ever.net,www.up-4ever.org##+js(acs, lhzzbthn.kn)
 www.up-4ever.net,www.up-4ever.org##a[id="downLoadLinkButton"]:remove-attr(onclick)
-!www.up-4ever.net,www.up-4ever.org##+js(set-constant, document.querySelector("#downLoadLinkButton").onclick, null)
 www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, adsbygoogle)
 www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, google_ad_client)
 www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, enable_page_level_ads)
@@ -41982,7 +42027,8 @@ www.up-4ever.net,www.up-4ever.org##iframe[id^="aswift_"]:remove()
 www.up-4ever.net,www.up-4ever.org##iframe[id^="google_ads_frame"]
 www.up-4ever.net,www.up-4ever.org##iframe[id^="google_ads_frame"]:remove()
 www.up-4ever.net,www.up-4ever.org##ins[id="adblock_detected"]
-www.up-4ever.net,www.up-4ever.org##+js(set-constant, document.querySelector("#downloadbtn").type, submit)
+!www.up-4ever.net,www.up-4ever.org##+js(trusted-set, document.querySelector("#downloadbtn").type, submit)
+www.up-4ever.net,www.up-4ever.org##+js(saa, type, submit, #downloadbtn)
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, 'allowed_countries')
 www.up-4ever.net,www.up-4ever.org##+js(set-constant, cookiesAgree, noopFunc)
 www.up-4ever.net,www.up-4ever.org##+js(nostif, /function\(\)/)
@@ -42025,7 +42071,8 @@ techraptor.net##div[id^="div-insticator-ad-"]:remove()
 availedsmallest.com##+js(nostif, /^/)
 availedsmallest.com##+js(acs, i.Logger.log, o.console)
 ! This window member name changes (window.ea392926ee1f0eacdd14) so cannot block it this way.
-!availedsmallest.com##+js(set-constant, window.a7c07e85bedf339753, "")
+!availedsmallest.com##+js(set-constant, window.a7c07e85bedf339753, "", end)
+!availedsmallest.com##+js(set-constant, window.a7c07e85bedf339753, "", complete)
 !availedsmallest.com##+js(abort-on-property-read, window.a7c07e85bedf339753)
 !availedsmallest.com##+js(abort-on-property-write, window.a7c07e85bedf339753)
 availedsmallest.com##+js(set-constant, b0uae[554498], noopFunc)
@@ -42129,7 +42176,8 @@ www.tecmint.com##div[id="tecmint_leaderboard_article_top"]
 www.tecmint.com##div[id="tecmint_leaderboard_article_top"]:remove()
 www.tecmint.com##div[id="tecmint_incontent"]
 www.tecmint.com##div[id="tecmint_incontent"]:remove()
-www.tecmint.com##+js(set-constant, freestar.config.enabled_slots.push, noopFunc)
+!www.tecmint.com##+js(set-constant, freestar.config.enabled_slots.push, noopFunc, end)
+www.tecmint.com##+js(set-constant, freestar.config.enabled_slots.push, noopFunc, complete)
 www.tecmint.com##+js(acs, freestar.config.enabled_slots.push)
 ||live.rezync.com/pixel.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||referrer.disqus.com/juggler/event.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42145,7 +42193,9 @@ www.google.com##div[aria-label="Celebrating Willi Ninja"]:remove()
 ||www.intellipopup.com/polyglot.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||advertising.ntuplay.xyz/showads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||advertising.ntuplay.xyz^*
-poscitech.click##+js(set-constant, window.fc845e02e3935b24c66075d7ef68bba5, "")
+! The fc845e02e3935b24c66075d7ef68bba5 value changes so this is ineffective.
+!poscitech.click##+js(set-constant, window.fc845e02e3935b24c66075d7ef68bba5, "", end)
+!poscitech.click##+js(set-constant, window.fc845e02e3935b24c66075d7ef68bba5, "", complete)
 poscitech.click##+js(acs, decodeURIComponent, undefined)
 poscitech.click##+js(abort-on-property-read, _gaq)
 poscitech.click##+js(abort-on-property-write, _gaq)
@@ -42277,8 +42327,10 @@ dailycaller.com##div[class*="adcontainer"]
 dailycaller.com##div[class*="adcontainer"]:remove()
 dailycaller.com##div[id="paywall"]
 dailycaller.com##div[id="paywall"]:remove()
-dailycaller.com##+js(set-constant, window.confiant, {})
-dailycaller.com##+js(set-constant, window.confiant.callback, noopFunc)
+!dailycaller.com##+js(set-constant, window.confiant, {}, end)
+dailycaller.com##+js(set-constant, window.confiant, {}, complete)
+!dailycaller.com##+js(set-constant, window.confiant.callback, noopFunc, end)
+dailycaller.com##+js(set-constant, window.confiant.callback, noopFunc, complete)
 dailycaller.com##+js(set-constant, impressionData, {})
 dailycaller.com##+js(abort-on-property-read, impressionData.prebid)
 dailycaller.com##+js(abort-on-property-write, impressionData.prebid)
@@ -42330,7 +42382,7 @@ clicknupload.*##input[id="adblock_detected"]
 ! clicknupload.*##iframe blocks the captcha needed to download
 !clicknupload.*##iframe
 !clicknupload.*##body > script
-clicknupload.*##^script:has-text(/document\.createElement|atob\(/i)
+clicknupload.*##^script:has-text(/document\.createElement|atob\(/i):remove()
 clicknupload.*##+js(set-constant, timeout, 0)
 clicknupload.*##+js(set-constant, tick, 0)
 !clicknupload.*##+js(remove-class, captcha_code)
@@ -42460,7 +42512,8 @@ soft98.ir##.show.toast-lg.fade.toast
 !soft98.ir##+js(abort-on-property-read, e.dlpc4)
 !soft98.ir##+js(abort-on-property-write, window.c4dlc4)
 !soft98.ir##+js(abort-on-property-read, window.c4dlc4)
-!soft98.ir##+js(set-constant, window.c4dlc4, {})
+!soft98.ir##+js(set-constant, window.c4dlc4, {}, end)
+!soft98.ir##+js(set-constant, window.c4dlc4, {}, complete)
 soft98.ir##+js(set-constant, isAds, noopFunc)
 !||img.soft98.ir/1/afrak.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||soft98.ir/manifest.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42511,7 +42564,7 @@ cutty.app##div[data-ad]
 cutty.app##div[data-ad]:remove()
 cutty.app##button[id="submit-button"]:remove-attr(disabled)
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
-cutty.app##+js(replace-node-text, text, Please Wait ..., Get Download Link)
+cutty.app##+js(rpnt.js, text, Please Wait ..., Get Download Link)
 cutty.app##div[class="container"]:has(button[class="ab"]:has(span[class="error-message"]:has-text(Please disable Adblock to continue)))
 cutty.app##div[class="container"]:has(button[class="ab"]:has(span[class="error-message"]:has-text(Please disable Adblock to continue))):remove()
 cutty.app##+js(acs, parseInt, document)
@@ -42554,7 +42607,7 @@ howifx.com##div[id="gads"]:remove()
 ||reatasfibro.uno^*
 ||revadvert.com/wp-content/plugins/smio-push-notification/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 revadvert.com##+js(set-constant, isOverGoogleAd, false, stay)
-revadvert.com##+js(set-constant, ustatus, "success", stay)
+revadvert.com##+js(trusted-set, ustatus, success)
 revadvert.com##+js(set-constant, count, 0, stay)
 revadvert.com##+js(set-constant, isBrave, falseFunc)
 revadvert.com##+js(set, AdBlockerDetected, noopFunc)
@@ -42610,7 +42663,7 @@ mynewsmedia.co,mynewspost.in###footer-sticky-ad
 !||gplinks.co/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||gplinks.in/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 gplinks.co,gplinks.in##+js(set-constant, isOverGoogleAd, false, stay)
-gplinks.co,gplinks.in##+js(set-constant, ustatus, "success", stay)
+gplinks.co,gplinks.in##+js(trusted-set, ustatus, success)
 gplinks.co,gplinks.in##+js(set-constant, count, 0, stay)
 !gplinks.co,gplinks.in##+js(nosiif, /^/)
 gplinks.co,gplinks.in##+js(nosiif, timer)
@@ -42649,6 +42702,8 @@ gplinks.co,gplinks.in##div[class^="adb-"]
 gplinks.co,gplinks.in##div[class^="adb-"]:remove()
 !gplinks.co,gplinks.in###go-link > div:nth-child(1):style(display: inline;)
 gplinks.co,gplinks.in##+js(set-constant, blurred, false)
+!gplinks.co,gplinks.in##+js(set-constant, app_vars.force_disable_adblock, true, end)
+gplinks.co,gplinks.in##+js(set-constant, app_vars.force_disable_adblock, true, complete)
 gplinks.co,gplinks.in##+js(aopr, app_vars.force_disable_adblock)
 gplinks.co,gplinks.in##+js(disable-newtab-links)
 gplinks.co,gplinks.in##+js(nosiif, href)
@@ -42717,7 +42772,8 @@ www.eurogamer.net##+js(aopr, o.d.abp)
 www.eurogamer.net##+js(aopw, o.d.abp)
 www.eurogamer.net##+js(aopr, adConfig)
 www.eurogamer.net##+js(aopw, adConfig)
-www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true)
+!www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true, end)
+www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true, complete)
 www.eurogamer.net##div[class^="message-container"]:has(div[class="message-overlay"]):has(div[id="notice"])
 www.eurogamer.net##div[class^="message-container"]:has(div[class="message-overlay"]):has(div[id="notice"]):remove()
 www.eurogamer.net##+js(set-constant, permutiveOptIn, noopFunc)
@@ -42826,7 +42882,7 @@ www.legendsworld.net##iframe[name="downloadframe"]:remove()
 !www.legendsworld.net##+js(saa, sandbox, "allow-scripts", iframe[name="downloadframe"])
 !www.legendsworld.net##+js(saa, oncontextmenu, "return true;", iframe[name="downloadframe"])
 www.legendsworld.net##+js(saa, oncontextmenu, "return true;", div[oncontextmenu])
-www.legendsworld.net##+js(set-constant, location_check, "www.legendsworld.net/site/download.php")
+www.legendsworld.net##+js(trusted-set, location_check, www.legendsworld.net/site/download.php)
 ||cdn.ad4game.com^*
 prnt.sc##+js(set-constant, cdnPath, "")
 prnt.sc##ins[data-a4g-zone]
@@ -43097,11 +43153,6 @@ www.lightreading.com##div[class*="Ad_pos_300_"]:remove()
 woowebtools.com##div:has(svg):has(h3:has-text(Disable Adblock & Tracking Protection!))
 woowebtools.com##div:has(svg):has(h3:has-text(Disable Adblock & Tracking Protection!)):remove()
 ||clouddecrease.com^*
-||www.outkick.com/wp-content/plugins/ad-ace/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.outkick.com/wp-content/plugins/advanced-ads-pro/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.outkick.com/wp-content/plugins/advanced-ads-responsive/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.outkick.com/wp-content/plugins/advanced-ads-sticky-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.outkick.com/wp-content/plugins/advanced-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cmpsp.vg247.com/index.html?message_id=*&consentUUID=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cmpsp.vg247.com^*
 !www.vg247.com##div[id="notice"]:upward(2)
@@ -43156,8 +43207,9 @@ www.247solitaire.com##+js(set-constant, adsStart, noopFunc)
 www.247solitaire.com##+js(abort-on-property-write, adsStart)
 www.247solitaire.com##+js(abort-on-property-read, adsStart)
 www.247solitaire.com##+js(set-constant, TIMEOUT, 0)
-www.247solitaire.com##+js(set-constant, AdMob, {})
-www.247solitaire.com##+js(set-constant, AdMob.enabled, false)
+!www.247solitaire.com##+js(set-constant, AdMob, {})
+!www.247solitaire.com##+js(set-constant, AdMob.enabled, false, end)
+www.247solitaire.com##+js(set-constant, AdMob.enabled, false, complete)
 www.247solitaire.com##+js(set-constant, googletag, noopFunc)
 www.247solitaire.com##+js(abort-on-property-write, googletag)
 www.247solitaire.com##+js(abort-on-property-read, googletag)
@@ -43178,7 +43230,7 @@ www.247solitaire.com##+js(abort-on-property-read, adsEnabled)
 ! The following two lines prevent the game from loading.
 !www.247solitaire.com##+js(set-constant, adLineupManualTimeout, noopFunc)
 !www.247solitaire.com##+js(acs, adLineupManualTimeout)
-www.247solitaire.com##+js(set-constant, hideFeatureAd(), trueFunc)
+www.247solitaire.com##+js(set-constant, hideFeatureAd, trueFunc)
 ||miltlametta.com^*
 ||hexupload.net/disable_developer.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mrgreekroad.com/services/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43322,7 +43374,7 @@ www.xda-developers.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please
 !||sovrn-cm.monetizer101.com/js/loader.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||sovrn-cm.monetizer101.com^*
 !||unpkg.com/web-vitals@3.5.0/dist/web-vitals.attribution.iife.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||unpkg.com/web-vitals@*/dist/web-vitals.attribution.iife.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||unpkg.com/web-vitals*$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! www.ojrq.net is a URL redirector and blocking it will block legitimate links
 !||www.ojrq.net^*
 www.incentivespro.com##div[aria-label="cookieconsent"]
@@ -43344,7 +43396,7 @@ www.breitbart.com##script[id="spmmin_js"]
 www.breitbart.com##script[id="spmmin_js"]:remove()
 www.breitbart.com##ins[data-ad-client]
 www.breitbart.com##ins[data-ad-client]:remove()
-www.breitbart.com##+js(set-constant, BB_Y, {ads:0})
+www.breitbart.com##+js(trusted-set, BB_Y, {ads:0})
 www.breitbart.com##+js(abort-on-property-write, BB_Y)
 www.breitbart.com##+js(abort-on-property-read, BB_Y)
 ||overlay-track.sailthru.cloud^*
@@ -43489,6 +43541,7 @@ send.cm##+js(abort-on-property-write, _paq)
 send.cm##+js(abort-on-property-read, gtag)
 send.cm##+js(abort-on-property-write, gtag)
 send.cm##+js(acs, nrlejw)
+send.cm##+js(set-constant, elhlypd, noopFunc)
 send.cm##+js(set-constant, _0xd965, noopFunc)
 send.cm##+js(set-constant, _0x2e4efe, [])
 send.cm##+js(acs, _0xd965)
@@ -44083,6 +44136,176 @@ pagesix.com##script[class="wp-asset-manager ads"]:remove()
 ||livepixel4-production.bln.liveintent.com^*
 ||rp.liadm.com^*
 ||rp4.liadm.com^*
+!||www.pcworld.com/ads/adData^*
+!||www.pcworld.com/ads/tso$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.pcworld.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.pcworld.com/www.idgcsmb.pcw/js/analytics/omniture/pcwmw-pcworld/s_code.js
+||www.pcworld.com/www.idgcsmb.pcw/js/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.pcworld.com/www.idgcsmb/js/ads/demandbase.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.pcworld.com/www.idgcsmb/js/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.pcworld.com###toaster
+www.pcworld.com##div[class="ad-container"]
+www.pcworld.com##div[class="ad-container"]:remove()
+www.pcworld.com##div[class*="cookies-eu"]
+www.pcworld.com##div[class*="cookies-eu"]:remove()
+www.pcworld.com##div[data-aa-adunit]
+www.pcworld.com##div[data-aa-adunit]:remove()
+www.pcworld.com##script[id="jetpack-stats-js-after"]
+www.pcworld.com##script[id="jetpack-stats-js-after"]:remove()
+www.pcworld.com##+js(set-constant, ybGPTHook, noopFunc)
+www.pcworld.com##+js(acs, ybGPTHook)
+www.pcworld.com##+js(set-constant, ves, [])
+www.pcworld.com##+js(abort-on-property-read, ves)
+www.pcworld.com##+js(abort-on-property-write, ves)
+!www.pcworld.com##+js(set-constant, window._sp_analytics, {}, end)
+www.pcworld.com##+js(set-constant, window._sp_analytics, {}, complete)
+www.pcworld.com##+js(abort-on-property-read, window._sp_analytics)
+www.pcworld.com##+js(abort-on-property-write, window._sp_analytics)
+www.pcworld.com##+js(set-constant, _stq, [])
+www.pcworld.com##+js(abort-on-property-read, _stq)
+www.pcworld.com##+js(abort-on-property-write, _stq)
+!www.pcworld.com##+js(set-constant, aax, {}, end)
+www.pcworld.com##+js(set-constant, aax, {}, complete)
+www.pcworld.com##+js(abort-on-property-read, aax)
+www.pcworld.com##+js(abort-on-property-write, aax)
+!www.pcworld.com##+js(set-constant, aaxEndpoint, "", end)
+www.pcworld.com##+js(set-constant, aaxEndpoint, "", complete)
+www.pcworld.com##+js(abort-on-property-read, aaxEndpoint)
+www.pcworld.com##+js(abort-on-property-write, aaxEndpoint)
+!www.pcworld.com##+js(set-constant, window.aax, {}, end)
+www.pcworld.com##+js(set-constant, window.aax, {}, complete)
+www.pcworld.com##+js(abort-on-property-read, window.aax)
+www.pcworld.com##+js(abort-on-property-write, aax)
+!||cmpv2.pcworld.com/ccpa.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cmpv2.pcworld.com^*
+||ccpa.amp.pcworld.com^*
+www.t-mobile.com##button[mat-flat-button]:remove-class(mat-button-disabled)
+www.t-mobile.com##button[mat-flat-button]:remove-attr(disabled)
+||static.foxnews.com/static/isa/app/lib/ccpa.opt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||a2zapk.io/images/detect.png#/adaffiliate_/adops/ad/adsales/ad/adsby./adtest./ajax/ads/ad/controller/ads/ad/pageads/ad/weather/ads/ad-728x90-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a2zapk.io/images/detect.png#/adaffiliate_/document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.privacy-mgmt.com/unified/4.13.3/gdpr-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.privacy-mgmt.com/unified/4.13.3/ccpa.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.privacy-mgmt.com/unified/*/gdpr-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.privacy-mgmt.com/unified/*/ccpa.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn*.privacy-mgmt.com/unified/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn*.privacy-mgmt.com/wrapperMessagingWithoutDetection.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.privacy-mgmt.com/wrapper/tcfv2/v2/gdpr/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn*.privacy-mgmt.com/wrapper/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.privacy-mgmt.com/consent/tcfv2/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.privacy-mgmt.com/consent/tcfv2/vendor-list/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn*.privacy-mgmt.com/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn*.privacy-mgmt.com/Notice.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn-146.privacy-mgmt.com^*
+www.outkick.com##div[id="ad-container"]
+www.outkick.com##div[id="ad-container"]:remove()
+www.outkick.com##div[id="catapult-cookie-bar"]
+www.outkick.com##div[id="catapult-cookie-bar"]:remove()
+||www.outkick.com/wp-content/plugins/ad-ace/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.outkick.com/wp-content/plugins/advanced-ads-pro/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.outkick.com/wp-content/plugins/advanced-ads-responsive/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.outkick.com/wp-content/plugins/advanced-ads-sticky-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.outkick.com/wp-content/plugins/advanced-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.outkick.com##script[id="outki-ready"]:remove()
+www.outkick.com##script[id^="advanced-ads-"]:remove()
+www.outkick.com##+js(set-constant, _qevents, [])
+www.outkick.com##+js(abort-on-property-read, _qevents)
+www.outkick.com##+js(abort-on-property-write, _qevents)
+www.outkick.com##+js(set-constant, gtag, noopFunc)
+www.outkick.com##+js(acs, gtag)
+!www.outkick.com##+js(set-constant, window.advads_passive_placements, {}, end)
+www.outkick.com##+js(set-constant, window.advads_passive_placements, {}, complete)
+www.outkick.com##+js(abort-on-property-read, window.advads_passive_placements)
+www.outkick.com##+js(abort-on-property-write, window.advads_passive_placements)
+!www.outkick.com##+js(set-constant, window.advanced_ads_ready_queue, [], end)
+www.outkick.com##+js(set-constant, window.advanced_ads_ready_queue, [], complete)
+www.outkick.com##+js(abort-on-property-read, window.advanced_ads_ready_queue)
+www.outkick.com##+js(abort-on-property-write, window.advanced_ads_ready_queue)
+!||a.optinmonster.com/app/js/prebid-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a.optinmonster.com^*
+||a.omappapi.com/app/js/api.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||omapp.b-cdn.net/app/js/api.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a1806.dscf1.akamai.net/static/outkick/display/libs/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||strike.fox.com/static/outkick/display/libs/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||trackcmp.net^*
+!||trackcmp.net/visit^*
+||trackcmp.net/t_prism_sitemessages.php?trackid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.thessdreview.com##div[class="wp_bannerize Toshiba Right 300x600"]
+www.thessdreview.com##div[class="wp_bannerize Toshiba Right 300x600"]:remove()
+www.thessdreview.com##div[class="wp_bannerize Toshiba Leader 651x80"]
+www.thessdreview.com##div[class="wp_bannerize Toshiba Leader 651x80"]:remove()
+www.thessdreview.com##div[id^="ads300_250-widget-"]
+www.thessdreview.com##div[id^="ads300_250-widget-"]:remove()
+||www.thessdreview.com/wp-content/uploads/2023/02/ssdreview_we_are_ready_for_next_webskin.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! prevents links on background ads even if image is blocked
+www.thessdreview.com##a[class="background-cover"]
+www.thessdreview.com##a[class="background-cover"]:remove()
+!||ad-tech-pyxis-2124195674.us-west-2.elb.amazonaws.com/pyxis/submit$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ad-tech-pyxis-2124195674.us-west-2.elb.amazonaws.com^*
+||prod.pyxis.atp.fox/pyxis/submit$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||v3.taplytics.com^*
+!||ats.rlcdn.com/ats.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ats.rlcdn.com^*
+||wtop.com/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+wtop.com##div[id^="div-adh-adhesion-"]
+wtop.com##div[id^="div-adh-adhesion-"]:remove()
+wtop.com##div[id="out-of-page-ad"]
+wtop.com##div[id="out-of-page-ad"]:remove()
+wtop.com##div[aria-label="Advertisement"]
+wtop.com##div[aria-label="Advertisement"]:remove()
+wtop.com##div[class^="ad__h"]
+wtop.com##div[class^="ad__h"]:remove()
+wtop.com##div[class*="ad-slot-wrapper"]
+wtop.com##div[class*="ad-slot-wrapper"]:remove()
+wtop.com##script[id="DFPLIGHT-js-extra"]:remove()
+wtop.com##+js(set-constant, _comscore, [])
+wtop.com##+js(abort-on-property-read, _comscore)
+wtop.com##+js(abort-on-property-write, _comscore)
+wtop.com##+js(set-constant, _qevents, [])
+wtop.com##+js(abort-on-property-read, _qevents)
+wtop.com##+js(abort-on-property-write, _qevents)
+!||ws.zoominfo.com/pixel/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ws.zoominfo.com^*
+www.filou.de##div[class^="cc_banner"]
+www.filou.de##div[class^="cc_banner"]:remove()
+www.fresherslive.com##div[id^="div-gpt-ad-"]
+www.fresherslive.com##div[id^="div-gpt-ad-"]:remove()
+www.fresherslive.com##div[id="bottom_subscribe"]
+www.fresherslive.com##div[id="bottom_subscribe"]:remove()
+www.fresherslive.com##div[class^="desk-ad"]
+www.fresherslive.com##div[class^="desk-ad"]:remove()
+www.fresherslive.com##div[class*="ad_div"]
+www.fresherslive.com##div[class*="ad_desk_h"]
+www.fresherslive.com##div[class*="ad_mob_h"]
+www.fresherslive.com##div[class*="ad_div"]:remove()
+www.fresherslive.com##div[class*="ad_desk_h"]:remove()
+www.fresherslive.com##div[class*="ad_mob_h"]:remove()
+www.fresherslive.com##div[class="ad_web_intertital"]
+www.fresherslive.com##div[class="ad_web_intertital"]:remove()
+www.fresherslive.com##ins[data-ad-client]
+www.fresherslive.com##ins[data-ad-client]:remove()
+www.fresherslive.com##+js(set-constant, adsbygoogle, [])
+www.fresherslive.com##+js(abort-on-property-write, adsbygoogle)
+www.fresherslive.com##+js(abort-on-property-read, adsbygoogle)
+www.fresherslive.com##+js(set-constant, googletag, [])
+www.fresherslive.com##+js(abort-on-property-write, adsbygoogle)
+www.fresherslive.com##+js(abort-on-property-read, adsbygoogle)
+www.fresherslive.com##+js(set-constant, gtag, noopFunc)
+www.fresherslive.com##+js(acs, gtag)
+www.fresherslive.com##+js(set-constant, sendToGoogleAnalytics, noopFunc)
+www.fresherslive.com##+js(acs, sendToGoogleAnalytics)
+www.fresherslive.com##+js(set-constant, refreshStickyAd, noopFunc)
+www.fresherslive.com##+js(acs, sendToGoogleAnalytics)
+www.fresherslive.com##iframe[id="rufous-sandbox"]:remove()
+!www.fresherslive.com##script[src*="://images.dmca.com/Badges/DMCABadgeHelper.min.js"]:remove()
+*##script[src*="://images.dmca.com/Badges/DMCABadgeHelper.min.js"]:remove()
+||images.dmca.com/Badges/DMCABadgeHelper.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!www.gsmtoolpro.com##+js(trusted-set, count, -1)
+www.tenorshare.com##aside[id="gdprAgree"]
+www.tenorshare.com##aside[id="gdprAgree"]:remove()
+www.tenorshare.com##div[id="cookies-eu-banner"]
+www.tenorshare.com##div[id="cookies-eu-banner"]:remove()
 
 !Whitelisted
 ! for Google Drive
@@ -44209,40 +44432,41 @@ gitlab.io#@#+js(no-floc)
 gitlab.com#@#+js(no-floc)
 @@||sentry.gitlab.net/api/$other,domain=gitlab.com
 @@||go.redirectingat.com^*
-@@.jpg$image,domain=dropgalaxy.*|techssting.com|financemonk.net
-@@.png$image,domain=dropgalaxy.*|techssting.com|financemonk.net
-@@||googlesyndication.com^$script,xhr,domain=dropgalaxy.*|techssting.com|financemonk.net
+@@.jpg$image,domain=dropgalaxy.*|techssting.com|financemonk.net|dgdrive.xyz
+@@.png$image,domain=dropgalaxy.*|techssting.com|financemonk.net|dgdrive.xyz
+@@||googlesyndication.com^$script,xhr,domain=dropgalaxy.*|techssting.com|financemonk.net|dgdrive.xyz
 @@||dropgalaxy.*^$ghide
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip#@#div[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important;)
 ! Are the following really necessary for dropgalaxy downloads to work?
-@@||dnhfi5nn2dt67.cloudfront.net/ui-bootstrap-tpls.min.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||contextual.media.net/dmedianet.js?cid=$domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||contextual.media.net/*/fcmain.js$domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||cloudfront.net/publishers/dropgalaxycom.min.js$domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||cmp.uniconsent.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||googletagmanager.com/gtag/js$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||adservice.google.*/adsid/integrator.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@.jpg$image,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net|techthematter.xyz
-@@.png$image,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net|techthematter.xyz
-@@||googlesyndication.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net|techthematter.xyz
-@@||jscdn.greeter.me/dropgalaxy.onlinehead.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||player.aplhb.adipolo.com/prebidlink/$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||a2zapk.com^$script,xhr,3p,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||dnhfi5nn2dt67.cloudfront.net/ui-bootstrap-tpls.min.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||contextual.media.net/dmedianet.js?cid=$domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||contextual.media.net/*/fcmain.js$domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||cloudfront.net/publishers/dropgalaxycom.min.js$domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||cmp.uniconsent.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||googletagmanager.com/gtag/js$xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||adservice.google.*/adsid/integrator.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@.jpg$image,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|techthematter.xyz|dgdrive.xyz
+@@.png$image,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|techthematter.xyz|dgdrive.xyz
+@@||googlesyndication.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|techthematter.xyz|dgdrive.xyz
+@@||jscdn.greeter.me/dropgalaxy.onlinehead.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||player.aplhb.adipolo.com/prebidlink/$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||a2zapk.com^$script,xhr,3p,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 !||protagcdn.com/s/dropgalaxy.com/site.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||protagcdn.com/s/dropgalaxy.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-@@||protagcdn.com/s/dropgalaxy.com/site.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||script.4dex.io/localstore.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||script.4dex.io/adagio.js$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||tag.vlitag.com/v1/$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||services.vlitag.com/adv1/$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net|unlockapk.com
-@@||assets.vlitag.com/prebid/default/prebid-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||static.criteo.net/js/ld/publishertag.prebid.js$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||protagcdn.com/check-bot/index.html$frame,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||mp.4dex.io/prebid$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||gum.criteo.com/sid/json?origin=prebid&topUrl=$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||securepubads.g.doubleclick.net/pagead/ppub_config?ippd=$xhr,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
-@@||googletagservices.com/tag/js/gpt.js$script,domain=dropgalaxy.com|dropgalaxy.in|financemonk.net
+@@||protagcdn.com/s/dropgalaxy.com/site.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||script.4dex.io/localstore.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||script.4dex.io/adagio.js$xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||tag.vlitag.com/v1/$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||services.vlitag.com/adv1/$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|unlockapk.com|dgdrive.xyz
+@@||assets.vlitag.com/prebid/default/prebid-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|dgdrive.xyz|financemonk.net
+@@||static.criteo.net/js/ld/publishertag.prebid.js$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||protagcdn.com/check-bot/index.html$frame,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||mp.4dex.io/prebid$xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||gum.criteo.com/sid/json?origin=prebid&topUrl=$xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||securepubads.g.doubleclick.net/pagead/ppub_config?ippd=$xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||googletagservices.com/tag/js/gpt.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*$script,domain=webhostingpost.com
 @@||mynewsmedia.co,mynewspost.in^$ghide
 @@||revadvert.com^$ghide
