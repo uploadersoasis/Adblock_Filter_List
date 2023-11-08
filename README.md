@@ -23,10 +23,12 @@ do not work to https://github.com/uploadersoasis/Adblock_Filter_List/issues .
     2.  The rules which utilize the "replace-node-text.js" / "rpnt.js" scriptlet must also
         be listed under the "My Filters" tab and not just in this list because that
         scriptlet has the "requiresTrust" set to true.
+        Firefox does not currently support the replace-node-text scriptlet.
 
-    3.  The rules which utilize the "treusted-set" scriptlet must also be listed
+    3.  The rules which utilize the "trusted-set" scriptlet must also be listed
         under the "My Filters" tab and not just in this list because that scriptlet
         has the "requiresTrust" set to true.
+        Firefox does not currently support the trusted-set scriptlet.
 
     4.  Some of these rules utilize the "set attribute any value" (set-attr-any.js / saa) scriptlet 
         from the javascript @ https://github.com/uploadersoasis/Adblock_Filter_List/raw/master/outlaw_scriptlets.js
