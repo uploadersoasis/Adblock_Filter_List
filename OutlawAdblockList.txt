@@ -22220,7 +22220,8 @@ talkerscode.com##div[class="videoAdUiFloatingLayer"]
 ||jumbitr.com^*
 crazy4tv.mrunblock.xyz##+js(set-constant, popundersPerIP, 0)
 ! 32767 /0x7FFF is the highest int allowed for set-constant
-!crazy4tv.mrunblock.xyz##+js(set-constant, delayBetween, 32767)
+! in case this trusted-set rule is not in "My Filters" tab
+crazy4tv.mrunblock.xyz##+js(set-constant, delayBetween, 32767)
 crazy4tv.mrunblock.xyz##+js(trusted-set, delayBetween, 999999)
 !crazy4tv.mrunblock.xyz##+js(set-constant, default, [])
 !crazy4tv.mrunblock.xyz##+js(set-constant, default, undefined)
@@ -38134,37 +38135,95 @@ freestreams-live1.tv,fsl-streams.click##div[id="adz1"]:remove()
 ||xyz123.online^*
 ||mebfylxqbhjbx.xyz^*
 ||hyvmflsclweae.xyz^*
+www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-container"])
+www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-container"]):remove()
+www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-h-"][class*="ad-w-"])
+www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-h-"][class*="ad-w-"]):remove()
+www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="mobile-mw-ad-adh-dom"])
+www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="mobile-mw-ad-adh-dom"]):remove()
+www.foxnews.com##header[class="article-header"]:style(padding-top: 0px !important; margin-bottom: 0px !important;)
+www.foxnews.com##div[class="site-header"]:style(min-height: 150px !important; margin-bottom: 0px !important;)
+www.foxnews.com##div[class="article-meta article-meta-upper"]:style(padding-top: 0px !important;)
+www.foxnews.com##div[class*="ad-container"]
+www.foxnews.com##div[class*="ad-container"]:remove()
+www.foxnews.com##div[class*="ad-h-"][class*="ad-w-"]
+www.foxnews.com##div[class*="ad-h-"][class*="ad-w-"]:remove()
+www.foxnews.com##div[class*="adhesion-ad"]
+www.foxnews.com##div[class*="adhesion-ad"]:remove()
+www.foxnews.com##div[class*="mobile-mw-ad-adh-dom"]
+www.foxnews.com##div[class*="mobile-mw-ad-adh-dom"]:remove()
+www.foxnews.com##div[class*="sticky-ads"]
+www.foxnews.com##div[class*="sticky-ads"]:remove()
+www.foxnews.com##div[data-iu]
+www.foxnews.com##div[data-iu]:remove()
+!www.foxnews.com##div[class="ad gam-inst"]
+www.foxnews.com##div[class*="ad gam"]
+www.foxnews.com##div[class*="ad gam"]:remove()
+www.foxnews.com##div[class^="vendor-unit"]
+www.foxnews.com##div[class^="vendor-unit"]:remove()
 www.foxnews.com##.block.ad-unit:nth-of-type(6)
 www.foxnews.com##.block.ad-unit:nth-of-type(6):remove()
-foxnews.com##+js(aopr, window.location.href.indexOf('video-embed'))
-foxnews.com##+js(aopw, window.location.href.indexOf('video-embed'))
-foxnews.com##+js(set-constant, authenticated, true)
-foxnews.com##+js(set-constant, data, {authenticated: true})
 foxnews.com##div[class*="amp-ad"]
+foxnews.com##div[class*="amp-ad"]:remove()
+!www.foxnews.com##div[class*="ad-container"]
 foxnews.com##div[class*="ad-container"]
+foxnews.com##div[class*="ad-container"]:remove()
 foxnews.com##div[id="desk-interstitial-1x1"]
+foxnews.com##div[id="desk-interstitial-1x1"]:remove()
 foxnews.com##div[id="desktop_desk-peak-interstitial-1x1"]
-insider.foxnews.com##div[class="sidebar-ad"]
-insider.foxnews.com##div[id="ad-content"]
+foxnews.com##div[id="desktop_desk-peak-interstitial-1x1"]:remove()
 !www.foxnews.com##div[data-banner-type="ccpa"]
+!www.foxnews.com##div[data-banner-type="ccpa"]:remove()
 !video.foxnews.com##div[data-banner-type="ccpa"]
+!video.foxnews.com##div[data-banner-type="ccpa"]:remove()
 foxnews.com##div[data-banner-type="ccpa"]
+foxnews.com##div[data-banner-type="ccpa"]:remove()
+insider.foxnews.com##div[class="sidebar-ad"]
+insider.foxnews.com##div[class="sidebar-ad"]:remove()
+insider.foxnews.com##div[id="ad-content"]
+insider.foxnews.com##div[id="ad-content"]:remove()
 www.foxnews.com###paid-advertising-top-tech-deals
+www.foxnews.com###paid-advertising-top-tech-deals:remove()
+www.foxnews.com##div[class*="ad-enabled-container"]
+www.foxnews.com##div[class*="ad-enabled-container"]:remove()
+www.foxnews.com##div[class*="pf-modal-cdp-gated-cartoon"]
+www.foxnews.com##div[class*="pf-modal-cdp-gated-cartoon"]:remove()
+www.foxnews.com##div[class="ad gpt"]
+www.foxnews.com##div[class="ad gpt"]:remove()
+www.foxnews.com##div[class="advert-inner"]
+www.foxnews.com##div[class="advert-inner"]:remove()
+www.foxnews.com##div[class="popup-modal airshipPushNotify show"]
+www.foxnews.com##div[class="popup-modal airshipPushNotify show"]:remove()
+www.foxnews.com##div[class="slide-ad-overlay"]
+www.foxnews.com##div[class="slide-ad-overlay"]:remove()
+www.foxnews.com##div[class^="advert-overlay"]
+www.foxnews.com##div[class^="advert-overlay"]:remove()
+www.foxnews.com##div[id="welcome-ovr"]
+www.foxnews.com##div[id="welcome-ovr"]:remove()
+www.foxnews.com##div[id^="desk-interstitial-"]
+www.foxnews.com##div[id^="desk-interstitial-"]:remove()
+www.foxnews.com##div[class^="vendor-unit openweb"]:has(div[data-openweb-ad])
+www.foxnews.com##div[class^="vendor-unit openweb"]:has(div[data-openweb-ad]):remove()
+www.foxnews.com##div[data-openweb-ad]
+www.foxnews.com##div[data-openweb-ad]:remove()
+www.foxnews.com##+js(set-constant, window._cbq, [])
+www.foxnews.com##+js(aopr, window._cbq)
+www.foxnews.com##+js(aopw, window._cbq)
+!www.foxnews.com##+js(set-constant, Strike.insertAd, noopFunc, end)
+www.foxnews.com##+js(set-constant, Strike.insertAd, noopFunc, complete)
+www.foxnews.com##+js(acs, Strike.insertAd)
+www.foxnews.com##+js(nosiif, /function\(\)/)
 www.foxnews.com##+js(remove-class, scroll-lock, ,)
 www.foxnews.com##+js(trusted-set, document.querySelector("a.close").href, window.history.back())
 www.foxnews.com##+js(saa, href, window.history.back(), a.close)
-www.foxnews.com##div[class="slide-ad-overlay"]
-www.foxnews.com##div[class*="ad-enabled-container"]
-www.foxnews.com##div[class*="pf-modal-cdp-gated-cartoon"]
-www.foxnews.com##div[class="ad gam-inst"]
-www.foxnews.com##div[class="ad gpt"]
-www.foxnews.com##div[class="advert-inner"]
-www.foxnews.com##div[class="popup-modal airshipPushNotify show"]
-www.foxnews.com##div[class^="ad-container"]
-www.foxnews.com##div[class^="advert-overlay"]
-www.foxnews.com##div[id="welcome-ovr"]
-www.foxnews.com##div[id^="desk-interstitial-"]
+foxnews.com##+js(aopr, window.location.href.indexOf('video-embed'))
+foxnews.com##+js(aopw, window.location.href.indexOf('video-embed'))
+foxnews.com##+js(set-constant, authenticated, true)
+foxnews.com##+js(trusted-set, data, {authenticated: true})
 ||www.foxnews.com/feeds/p/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.foxnews.com/static/orion/scripts/core/base/app/modules/ad-strike.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.foxnews.com/static/strike/scripts/libs/google.funding.choices.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.foxnews.com/static/strike/scripts/libs/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.yimg.com/dy/ads/readmo.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.yimg.com/dy/readmo-pixel.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||jlym52rvaw7g5y.trustexploration.com/deb.js$script
@@ -40922,13 +40981,6 @@ centfile.com##button[class="btn-xs btn-link"]:style(text-decoration: underline !
 ||www.centfile.com/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 centfile.com##a[href^="https://www.centfile.com/files/"]:remove-attr(onclick)
 centfile.com##a[href^="https://www.centfile.com/files/"]:style(text-decoration: underline !important; font-size: 18px !important;)
-||static.foxnews.com/static/orion/scripts/core/base/app/modules/ad-strike.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||static.foxnews.com/static/strike/scripts/libs/google.funding.choices.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||static.foxnews.com/static/strike/scripts/libs/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.foxnews.com##+js(set-constant, window._cbq, [])
-www.foxnews.com##+js(aopr, window._cbq)
-www.foxnews.com##+js(aopw, window._cbq)
-www.foxnews.com##+js(nosiif, /function\(\)/)
 ||www.knotch-cdn.com/ktag/latest/ktag.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.opecloud.com/ope-fox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||d33wubrfki0l68.cloudfront.net^*
@@ -43747,10 +43799,6 @@ tecadmin.net##+js(abort-on-property-write, vitag.Init)
 !||public-prod-dailymotion-addirector.dmxleo.com^*
 ||ad11.adfarm1.adition.com^*
 ||cozyhillside.com^*
-www.foxnews.com##div[class^="vendor-unit openweb"]:has(div[data-openweb-ad])
-www.foxnews.com##div[class^="vendor-unit openweb"]:has(div[data-openweb-ad]):remove()
-www.foxnews.com##div[data-openweb-ad]
-www.foxnews.com##div[data-openweb-ad]:remove()
 lightmailer.gmx.com##iframe[id="piba3"]
 lightmailer.gmx.com##iframe[id="piba3"]:remove()
 lightmailer.gmx.com##li[class*="inbox-ad-panel"]
@@ -44308,6 +44356,7 @@ www.tenorshare.com##aside[id="gdprAgree"]
 www.tenorshare.com##aside[id="gdprAgree"]:remove()
 www.tenorshare.com##div[id="cookies-eu-banner"]
 www.tenorshare.com##div[id="cookies-eu-banner"]:remove()
+||comparisons.sovrn.com^*
 
 !Whitelisted
 ! for Google Drive
