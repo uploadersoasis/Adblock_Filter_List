@@ -13,7 +13,7 @@
 ! NOTES:
 !
 !    1.  Some of these rules utilize the add-on scriptlets like "replace attribute"
-!       (rpla) and "rename attribute" (rna) from the javascript @
+!        (rpla) and "rename attribute" (rna) from the javascript @
 !        https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
 !        so add that URL to the "userResourcesLocation" value in the advanced settings
 !        so that those rules will work.
@@ -23,10 +23,12 @@
 !    2.  The rules which utilize the "replace-node-text.js" / "rpnt.js" scriptlet must also
 !        be listed under the "My Filters" tab and not just in this list because that
 !        scriptlet has the "requiresTrust" set to true.
+!        Firefox does not currentl support the replace-node-text scriptlet.
 !
-!    3.  The rules which utilize the "treusted-set" scriptlet must also be listed
+!    3.  The rules which utilize the "trusted-set" scriptlet must also be listed
 !        under the "My Filters" tab and not just in this list because that scriptlet
 !        has the "requiresTrust" set to true.
+!        Firefox does not currentl support the trusted-set scriptlet.
 !
 !    4.  Some of these rules utilize the "set attribute any value" (set-attr-any.js / saa) scriptlet 
 !        from the javascript @ https://github.com/uploadersoasis/Adblock_Filter_List/raw/master/outlaw_scriptlets.js
@@ -6792,8 +6794,8 @@ hugefiles.net###content-wrapper > .content-bg-repeat > form > table > tbody > tr
 ||qisearchengine.com^*
 ||qitrck.com^*
 !||qitrck.com/setcookie$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.qitrck.com/setcookie.htm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||samples.coolsavings.com^*
-||www.qitrck.com/setcookie.htm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bestadbid.com^*
 !||bestadbid.com/apu.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||bestadbid.com/afu.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -15670,7 +15672,9 @@ uploadburst.com##div[class="adsbox"]
 ||www.oyutube.com^*
 ||oyutube.com^*
 code.visualstudio.com###mscc-cookie-container
+code.visualstudio.com###mscc-cookie-container:remove()
 code.visualstudio.com###skip-to-content
+code.visualstudio.com###skip-to-content:remove()
 ouo.io##div[id="movie_300_250_yellow"]
 ouo.io##div[id$="_sync"]
 !||www.morbitempus.com/js/show_ads_adsurge.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -18794,7 +18798,7 @@ www.programmingbuddy.club##.header-custom-ads
 ||www.yeagdfyw.com^*
 ||www.wmrlljpj.com^*
 ||wmrlljpj.com^*
-mediafire.com##+js(abort-on-property-write.js, UAParser)
+mediafire.com##+js(abort-on-property-write, UAParser)
 ||ziqdunppuzjd.com^*
 ||www.ziqdunppuzjd.com^*
 ||www.gqrsxfwxvx.com^*
@@ -19676,7 +19680,7 @@ www.experts-exchange.com##.bg0.interceptBackgroundBlocker
 !www.androidcentral.com##div[class^="adunit-wrap"]
 www.androidcentral.com##div[class^="adunit"]
 dl.gamemod.io##ins[class="adsbygoogle"]
-dl.gamemod.io##+js(abort-on-property-read.js, CheckAdLoad)
+dl.gamemod.io##+js(abort-on-property-read, CheckAdLoad)
 dl.gamemod.io##+js(abort-current-script, CheckAdLoad)
 ||apkhdgame.com/templates/adaptiv/js/jquery.ihavecookies.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 */templates/adaptiv/js/jquery.ihavecookies.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -19707,6 +19711,7 @@ ar.modapkdown.com##.ad-wrap
 www.hiapkdownload.com##.adsbygoogle
 ar.modapkdown.com##div[class="fot-float-box"]
 gamesindians.com###cookie-pop
+gamesindians.com###cookie-pop:remove()
 wendgames.com###fixedban
 wenddownloadpage.com##div[id="fixedban"]
 !||dolohen.com/apu.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -19796,7 +19801,7 @@ sama-berli.info##div[id^="smartmedia-"]
 ||www.renought.com^*
 ||media-playon.com^*
 ||www.media-playon.com^*
-mylink.love##+js(abort-on-property-read.js, adsbygoogle)
+mylink.love##+js(abort-on-property-read, adsbygoogle)
 mylink.love##+js(abort-current-script, adsbygoogle)
 mylink.love##ins[class="adsbygoogle"]
 ||dash.cutw.pro^*
@@ -20045,7 +20050,7 @@ watchsomuch.unblocked.is###removeThisSection
 ||efully.info^*
 ||pushagim.com/pfe/current/tag.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||adserver.cut-urls.com^*
-phoronix.com##+js(abort-on-property-read.js, aax_getad_mpb)
+phoronix.com##+js(abort-on-property-read, aax_getad_mpb)
 phoronix.com##+js(abort-current-script, aax_getad_mpb)
 ||prrpfmrz.com^*
 ||www.prrpfmrz.com^*
@@ -20126,25 +20131,25 @@ phoronix.com##+js(abort-current-script, aax_getad_mpb)
 ||www.lbgmmsubsxn.com^*
 ||suewgrsq.com^*
 ||www.suewgrsq.com^*
-mylink.li##+js(abort-on-property-read.js, enable_page_level_ads)
+mylink.li##+js(abort-on-property-read, enable_page_level_ads)
 mylink.li##+js(abort-current-script, enable_page_level_ads)
-mylink.li##+js(abort-on-property-read.js, adsbygoogle)
+mylink.li##+js(abort-on-property-read, adsbygoogle)
 mylink.li##+js(abort-current-script, adsbygoogle)
 mylink.li##ins[class="adsbygoogle"]
-mylink.li##+js(abort-on-property-read.js, COcTEURvVahKvwSKM)
+mylink.li##+js(abort-on-property-read, COcTEURvVahKvwSKM)
 mylink.li##+js(abort-current-script, COcTEURvVahKvwSKM)
 ||www.adtival.network/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lwt.pw^*
 ||lewat.club/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.ovagames.com##+js(abort-on-property-read.js, t.pubads)
+www.ovagames.com##+js(abort-on-property-read, t.pubads)
 www.ovagames.com##+js(abort-current-script, t.pubads)
-www.ovagames.com##+js(abort-on-property-read.js, window.event.keyCode)
+www.ovagames.com##+js(abort-on-property-read, window.event.keyCode)
 www.ovagames.com##+js(abort-current-script, window.event.keyCode)
-www.ovagames.com##+js(abort-on-property-read.js, adtival_advert)
+www.ovagames.com##+js(abort-on-property-read, adtival_advert)
 www.ovagames.com##+js(abort-current-script, adtival_advert)
-www.ovagames.com##+js(abort-on-property-read.js, adtival_url)
+www.ovagames.com##+js(abort-on-property-read, adtival_url)
 www.ovagames.com##+js(abort-current-script, adtival_url)
-www.ovagames.com##+js(abort-on-property-read.js, adtival_api_token)
+www.ovagames.com##+js(abort-on-property-read, adtival_api_token)
 www.ovagames.com##+js(abort-current-script, adtival_api_token)
 ||www.adtival.com/themes/jquery.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||jhpceldehkofgj.com^*
@@ -20266,9 +20271,9 @@ www.thegamer.com##.ad-zone-container-content-word-count-3.ad-zone-container
 www.thegamer.com##.ad-zone-container-content-word-count-4.ad-zone-container
 www.thegamer.com##.ad-zone-container-content-word-count-1.ad-zone-container
 www.thegamer.com##.ad-zone-container-content-word-count-5.ad-zone-container
-ddl.to##+js(abort-on-property-read.js, 2628863)
+ddl.to##+js(abort-on-property-read, 2628863)
 ddl.to##+js(abort-current-script, 2628863)
-ddl.to##+js(abort-on-property-read.js, popundersPerIP)
+ddl.to##+js(abort-on-property-read, popundersPerIP)
 ddl.to##+js(abort-current-script, popundersPerIP)
 ||www.nbylhvbswplcj.com^*
 ||nbylhvbswplcj.com^*
@@ -20348,22 +20353,23 @@ thefpsreview.com##ins[class="adsbygoogle"]
 thefpsreview.com##div[class*="td-g-rec-id-custom_ad_"]
 www.xtube.com##.cnt > .removeAds
 1fichier.com###cookie_box
+1fichier.com###cookie_box:remove()
 ||img.1fichier.com/ui/ui-bg_highlight-soft_100_eeeeee_1x100.png$image
 ||www.facebook.com/tr?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||web.vortex.data.microsoft.com/collect/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mscom.demdex.net^*
 ||dc.ads.linkedin.com^*
 ||d.impactradius-event.com^*
-!*##+js(abort-on-property-read.js, popundersPerIP)
+!*##+js(abort-on-property-read, popundersPerIP)
 !*##+js(abort-current-script, popundersPerIP)
 ||www.game-debate.com/adcode.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.game-debate.com##div[class="ad-banner"]
 ||www.game-debate.com/amazon/collectStats.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.game-debate.com##+js(abort-on-property-read.js, getAdCookie)
-www.game-debate.com##+js(abort-on-property-read.js, setAdCookie)
+www.game-debate.com##+js(abort-on-property-read, getAdCookie)
+www.game-debate.com##+js(abort-on-property-read, setAdCookie)
 www.game-debate.com##+js(abort-current-script, adPanelOpen)
-www.game-debate.com##+js(abort-on-property-write.js, setAdCookie)
-www.game-debate.com##+js(abort-on-property-write.js, getAdCookie)
+www.game-debate.com##+js(abort-on-property-write, setAdCookie)
+www.game-debate.com##+js(abort-on-property-write, getAdCookie)
 ||agdvemtd.com^*
 ||www.agdvemtd.com^*
 ||www.washingtonexaminer.com/scripts/ad_load.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -20382,14 +20388,14 @@ www.thepostmillennial.com##div[class*="afw_ad"]
 ||gsafe.getawesome2.com^*
 !||lp.searchmulty.com/redirect.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lp.searchmulty.com^*
-earn4files.com##+js(abort-on-property-read.js, adblockers)
-earn4files.com##+js(abort-on-property-read.js, adsbygoogle)
-earn4files.com##+js(abort-on-property-read.js, banner_ad)
-earn4files.com##+js(abort-on-property-read.js, blockadblock)
-earn4files.com##+js(abort-on-property-write.js, adblockers)
-earn4files.com##+js(abort-on-property-write.js, adsbygoogle)
-earn4files.com##+js(abort-on-property-write.js, banner_ad)
-earn4files.com##+js(abort-on-property-write.js, blockadblock)
+earn4files.com##+js(abort-on-property-read, adblockers)
+earn4files.com##+js(abort-on-property-read, adsbygoogle)
+earn4files.com##+js(abort-on-property-read, banner_ad)
+earn4files.com##+js(abort-on-property-read, blockadblock)
+earn4files.com##+js(abort-on-property-write, adblockers)
+earn4files.com##+js(abort-on-property-write, adsbygoogle)
+earn4files.com##+js(abort-on-property-write, banner_ad)
+earn4files.com##+js(abort-on-property-write, blockadblock)
 earn4files.com##ins[class="adsbygoogle"]
 earn4files.com##div[id="banner_ad"]
 ||earn4files.com/ds1/js/clipboard.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -20449,8 +20455,8 @@ www.techradar.com##div[class="fallbackampad"]
 ||d2.consoletarget.com/i/tc/pm/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 d2.consoletarget.com​##ins[class="adsbygoogle"]
 ||trcklks.com^*
-d2.consoletarget.com##+js(abort-on-property-read.js, adsbygoogle)
-d2.consoletarget.com##+js(abort-on-property-write.js, adsbygoogle)
+d2.consoletarget.com##+js(abort-on-property-read, adsbygoogle)
+d2.consoletarget.com##+js(abort-on-property-write, adsbygoogle)
 ||a2.consoletarget.com/@_kgn.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a2.consoletarget.com/!_bn.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.gamecopyworld.com/games/i/tc/pm/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -20459,10 +20465,10 @@ d2.consoletarget.com##+js(abort-on-property-write.js, adsbygoogle)
 !||a.exdynsrv.com/popunder1000.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.exdynsrv.com^*
 ||c.klcheck.com^*
-torrentgalaxy.to##+js(abort-on-property-read.js, ExoLoader)
-torrentgalaxy.to##+js(abort-on-property-write.js, ExoLoader)
-torrentgalaxy.to##+js(abort-on-property-read.js, real-href)
-torrentgalaxy.to##+js(abort-on-property-write.js, real-href)
+torrentgalaxy.to##+js(abort-on-property-read, ExoLoader)
+torrentgalaxy.to##+js(abort-on-property-write, ExoLoader)
+torrentgalaxy.to##+js(abort-on-property-read, real-href)
+torrentgalaxy.to##+js(abort-on-property-write, real-href)
 ||torrentgalaxy.to/common/exs/exs.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 torrentgalaxy.to##iframe[id="twitter-widget-0"]
 ||cdn.thegamerspost.com/themes/v2/img/adblock.png$image
@@ -20471,10 +20477,10 @@ torrentgalaxy.to##iframe[id="twitter-widget-0"]
 ||mx-sh.net/css_newTheme/adblock.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 mx-sh.net##div[id="bannerad"]
 ||mx-sh.net/js/remodal.min-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-mx-sh.net##+js(abort-on-property-read.js, adblockinfo)
-mx-sh.net##+js(abort-on-property-write.js, adblockinfo)
-mx-sh.net##+js(abort-on-property-read.js, bannerad)
-mx-sh.net##+js(abort-on-property-write.js, bannerad)
+mx-sh.net##+js(abort-on-property-read, adblockinfo)
+mx-sh.net##+js(abort-on-property-write, adblockinfo)
+mx-sh.net##+js(abort-on-property-read, bannerad)
+mx-sh.net##+js(abort-on-property-write, bannerad)
 !||pl15052426.pvclouds.com/f3/05/6f/f3056fd5ef688eff5343ab2724659d89.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pl15052426.pvclouds.com^*
 rockfile.co##ins[class="adsbygoogle"]
@@ -20655,11 +20661,11 @@ www.overclockers.com###text-11 > .textwidget > .adsbygoogle
 ||www.serial4download.com^*
 ||nullthemedownload.com^*
 ||www.nullthemedownload.com^*
-4downfiles.org##+js(abort-on-property-read.js, Histats.start)
-4downfiles.org##+js(abort-on-property-read.js, banner_ad)
-4downfiles.org##+js(abort-on-property-read.js, BlockAdBlock)
+4downfiles.org##+js(abort-on-property-read, Histats.start)
+4downfiles.org##+js(abort-on-property-read, banner_ad)
+4downfiles.org##+js(abort-on-property-read, BlockAdBlock)
 4downfiles.org##+js(abort-current-inline-script, BlockAdBlock)
-gtdb.to##+js(abort-on-property-write.js, adcashMacros)
+gtdb.to##+js(abort-on-property-write, adcashMacros)
 ||gtdb.to/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pl14995214.pvclouds.com/db483f2db0b5ba289622e783ee7cdf82/invoke.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.file-up.org###subscribnow
@@ -20869,10 +20875,10 @@ unlockapk.com##iframe[data-aa]:remove()
 ||unlockapk.com/dl/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||d.btttag.com/analytics.rcv$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d.btttag.com^*
-www.uploadship.com##+js(abort-on-property-write.js, adsbygoogle)
+www.uploadship.com##+js(abort-on-property-write, adsbygoogle)
 www.uploadship.com##ins[class="adsbygoogle"]
-www.uploadship.com##+js(abort-on-property-read.js, clipboardDemos)
-www.uploadship.com##+js(abort-on-property-write.js, clipboardDemos)
+www.uploadship.com##+js(abort-on-property-read, clipboardDemos)
+www.uploadship.com##+js(abort-on-property-write, clipboardDemos)
 ||www.uploadship.com/themes/pro/js/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||api.chat.ecbsn.com/analytics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.rakuten.com/static/js/loggly_js/loggly.tracker-2.1.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -20921,8 +20927,8 @@ geo-torrent.biz##div[class="bannerss"]
 !||token.createrelativechanging.com/far.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||token.createrelativechanging.com^*
 megafile3.top##ins[class="adsbygoogle"]
-megafile3.top##+js(abort-on-property-write.js, adsbygoogle)
-megafile3.top##+js(abort-on-property-read.js, adsbygoogle)
+megafile3.top##+js(abort-on-property-write, adsbygoogle)
+megafile3.top##+js(abort-on-property-read, adsbygoogle)
 ||www.tut2u.com/728.png$image
 ||www.yereyibbmudon.com^*
 ||yereyibbmudon.com^*
@@ -20960,8 +20966,8 @@ nullpk.com##.active.mdp-deblocker-blackout
 !||nullpk.com/wp-content/plugins/deblocker/js/ads.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||nullpk.com/wp-content/plugins/deblocker/js/deblocker.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||nullpk.com/wp-content/plugins/deblocker/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-nullpk.com##+js(abort-on-property-write.js, mdp_deblocker)
-nullpk.com##+js(abort-on-property-read.js, mdp_deblocker)
+nullpk.com##+js(abort-on-property-write, mdp_deblocker)
+nullpk.com##+js(abort-on-property-read, mdp_deblocker)
 ||flyeragency.co.uk/images/download2.jpg$image
 ||www.myabandonware.com/media/img/g2a/loa3/default/LoA3_MzM2eDc2OA==.jpg$image
 ||www.myabandonware.com/media/img/wgm/wows/default/WOWS_statics_June17_Stylized_Google_MzM2eDI4MA==_3_EN.jpg$image
@@ -20969,6 +20975,7 @@ nullpk.com##+js(abort-on-property-read.js, mdp_deblocker)
 ||www.oldpcgaming.net/wp-content/uploads/2018/08/adbox_1.jpg$image
 ||www.oldpcgaming.net/wp-content/uploads/2018/08/adbox_2.jpg$image
 guidedhacking.com##.notice--cookie.notice--primary.js-notice.notice
+guidedhacking.com##.notice--cookie.notice--primary.js-notice.notice:remove()
 ||www.gamecopyworld.com/ddd/ii/kgn/fifa20_lb.png$image
 ||srvtrck.com^*
 ||medianewtab.com^*
@@ -20981,10 +20988,10 @@ guidedhacking.com##.notice--cookie.notice--primary.js-notice.notice
 ||iduroxygib.tk^*
 ||ua.yektanet.com/__fake.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||unreal4.cf/cdn-cgi/apps/head/RdcXbuSarQGvtz_xRvctZOhgx1I.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-unreal4.cf##+js(abort-on-property-write.js, GoogleAnalyticsObject)
-unreal4.cf##+js(abort-on-property-read.js, GoogleAnalyticsObject)
-unreal4.cf##+js(abort-on-property-write.js, _client)
-unreal4.cf##+js(abort-on-property-read.js, _client)
+unreal4.cf##+js(abort-on-property-write, GoogleAnalyticsObject)
+unreal4.cf##+js(abort-on-property-read, GoogleAnalyticsObject)
+unreal4.cf##+js(abort-on-property-write, _client)
+unreal4.cf##+js(abort-on-property-read, _client)
 ||110380d053f716c4.com^*
 ||www.110380d053f716c4.com^*
 ||www.ucepogum.ml^*
@@ -20993,7 +21000,7 @@ unreal4.cf##+js(abort-on-property-read.js, _client)
 ||www.dormister.com^*
 ||12dc71b7cb820f2a.com^*
 ||990b424f659e4e27.com^*
-ovagames.com##+js(abort-on-property-read.js, __webpack_exports__)
+ovagames.com##+js(abort-on-property-read, __webpack_exports__)
 ovagames.com##+js(abort-current-script, __webpack_exports__)
 ||cef5b491241aa0f3.com^*
 ||install.convertmyvid.com^*
@@ -21168,33 +21175,33 @@ www.ccn.com##iframe[id="ad_iframe"]
 !www.ccn.com##iframe[id="google_ads_iframe_1"]
 www.ccn.com##iframe[id^="google_ads_iframe_"]
 www.ccn.com##div[class="GoogleActiveViewElement"]
-www.ccn.com##+js(abort-on-property-write.js, doubleclick)
-www.ccn.com##+js(abort-on-property-read.js, doubleclick)
-www.ccn.com##+js(abort-on-property-write.js, inMobileAdSdk)
-www.ccn.com##+js(abort-on-property-read.js, inMobileAdSdk)
-www.ccn.com##+js(abort-on-property-write.js, ad_container_id)
-www.ccn.com##+js(abort-on-property-read.js, ad_container_id)
-www.ccn.com##+js(abort-on-property-write.js, buildAdSlot)
-www.ccn.com##+js(abort-on-property-read.js, buildAdSlot)
-www.ccn.com##+js(abort-on-property-read.js, getAd)
-www.ccn.com##+js(abort-on-property-write.js, getAd)
-www.ccn.com##+js(abort-on-property-read.js, getAdsLength)
-www.ccn.com##+js(abort-on-property-write.js, getAdsLength)
-www.ccn.com##+js(abort-on-property-read.js, sendBeacon)
-www.ccn.com##+js(abort-on-property-write.js, sendBeacon)
-www.ccn.com##+js(abort-on-property-read.js, ad_iframe)
-www.ccn.com##+js(abort-on-property-write.js, ad_iframe)
-www.ccn.com##+js(abort-on-property-read.js, adsense-labs)
-www.ccn.com##+js(abort-on-property-write.js, adsense-labs)
-www.ccn.com##+js(abort-on-property-read.js, ad-request-start)
-www.ccn.com##+js(abort-on-property-write.js, ad-request-start)
-www.ccn.com##+js(abort-on-property-read.js, adrequeststart)
-www.ccn.com##+js(abort-on-property-write.js, adrequeststart)
+www.ccn.com##+js(abort-on-property-write, doubleclick)
+www.ccn.com##+js(abort-on-property-read, doubleclick)
+www.ccn.com##+js(abort-on-property-write, inMobileAdSdk)
+www.ccn.com##+js(abort-on-property-read, inMobileAdSdk)
+www.ccn.com##+js(abort-on-property-write, ad_container_id)
+www.ccn.com##+js(abort-on-property-read, ad_container_id)
+www.ccn.com##+js(abort-on-property-write, buildAdSlot)
+www.ccn.com##+js(abort-on-property-read, buildAdSlot)
+www.ccn.com##+js(abort-on-property-read, getAd)
+www.ccn.com##+js(abort-on-property-write, getAd)
+www.ccn.com##+js(abort-on-property-read, getAdsLength)
+www.ccn.com##+js(abort-on-property-write, getAdsLength)
+www.ccn.com##+js(abort-on-property-read, sendBeacon)
+www.ccn.com##+js(abort-on-property-write, sendBeacon)
+www.ccn.com##+js(abort-on-property-read, ad_iframe)
+www.ccn.com##+js(abort-on-property-write, ad_iframe)
+www.ccn.com##+js(abort-on-property-read, adsense-labs)
+www.ccn.com##+js(abort-on-property-write, adsense-labs)
+www.ccn.com##+js(abort-on-property-read, ad-request-start)
+www.ccn.com##+js(abort-on-property-write, ad-request-start)
+www.ccn.com##+js(abort-on-property-read, adrequeststart)
+www.ccn.com##+js(abort-on-property-write, adrequeststart)
 www.ccn.com##div[class="i-amphtml-ad-default-holder"]
-!www.ccn.com##+js(abort-on-property-read.js, googleRichMediaAd)
-!www.ccn.com##+js(abort-on-property-write.js, googleRichMediaAd)
-##+js(abort-on-property-read.js, googleRichMediaAd)
-##+js(abort-on-property-write.js, googleRichMediaAd)
+!www.ccn.com##+js(abort-on-property-read, googleRichMediaAd)
+!www.ccn.com##+js(abort-on-property-write, googleRichMediaAd)
+##+js(abort-on-property-read, googleRichMediaAd)
+##+js(abort-on-property-write, googleRichMediaAd)
 ||tpc.googlesyndication.com/sadbundle/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tpc.googlesyndication.com/pagead/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tpc.googlesyndication.com^$domain=forbes.com
@@ -21234,28 +21241,28 @@ iddeas.xyz##div[class="alert alert-danger"]
 iddeas.xyz##ins[class="adsbygoogle"]
 iddeas.xyz##+js(set-constant, force_disable_adblock, 0)
 iddeas.xyz##+js(set-constant, cookie_notification_bar, false)
-iddeas.xyz##+js(abort-on-property-write.js, skip_ad)
-iddeas.xyz##+js(abort-on-property-read.js, skip_ad)
+iddeas.xyz##+js(abort-on-property-write, skip_ad)
+iddeas.xyz##+js(abort-on-property-read, skip_ad)
 !||iddeas.xyz/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ac-mo.com##+js(abort-current-script, adBlockClose)
 ac-mo.com##+js(abort-current-script, adBlockDetected)
 ac-mo.com##+js(abort-current-script, NativeAd)
-ac-mo.com##+js(abort-on-property-read.js, fuckAdBlock)
-ac-mo.com##+js(abort-on-property-write.js, fuckAdBlock)
-ac-mo.com##+js(abort-on-property-read.js, importFAB)
-ac-mo.com##+js(abort-on-property-write.js, importFAB)
-ac-mo.com##+js(abort-on-property-read.js, adsByPosition)
-ac-mo.com##+js(abort-on-property-write.js, adsByPosition)
-ac-mo.com##+js(abort-on-property-read.js, rn_ad_native_ttqal)
-ac-mo.com##+js(abort-on-property-write.js, rn_ad_native_ttqal)
-ac-mo.com##+js(abort-on-property-read.js, ad_idzone)
-ac-mo.com##+js(abort-on-property-write.js, ad_idzone)
-ac-mo.com##+js(abort-on-property-read.js, ad_width)
-ac-mo.com##+js(abort-on-property-write.js, ad_width)
-ac-mo.com##+js(abort-on-property-read.js, ad_height)
-ac-mo.com##+js(abort-on-property-write.js, ad_height)
-ac-mo.com##+js(abort-on-property-read.js, adConfig)
-ac-mo.com##+js(abort-on-property-write.js, adConfig)
+ac-mo.com##+js(abort-on-property-read, fuckAdBlock)
+ac-mo.com##+js(abort-on-property-write, fuckAdBlock)
+ac-mo.com##+js(abort-on-property-read, importFAB)
+ac-mo.com##+js(abort-on-property-write, importFAB)
+ac-mo.com##+js(abort-on-property-read, adsByPosition)
+ac-mo.com##+js(abort-on-property-write, adsByPosition)
+ac-mo.com##+js(abort-on-property-read, rn_ad_native_ttqal)
+ac-mo.com##+js(abort-on-property-write, rn_ad_native_ttqal)
+ac-mo.com##+js(abort-on-property-read, ad_idzone)
+ac-mo.com##+js(abort-on-property-write, ad_idzone)
+ac-mo.com##+js(abort-on-property-read, ad_width)
+ac-mo.com##+js(abort-on-property-write, ad_width)
+ac-mo.com##+js(abort-on-property-read, ad_height)
+ac-mo.com##+js(abort-on-property-write, ad_height)
+ac-mo.com##+js(abort-on-property-read, adConfig)
+ac-mo.com##+js(abort-on-property-write, adConfig)
 ac-mo.com##div[id="WgD"]
 !||ac-mo.com/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdnjs.cloudflare.com/ajax/libs/fuckadblock/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -21282,24 +21289,24 @@ techofaqs.com##.banner-468x60.banner
 adshort.org##+js(set-constant, counter_value, 0)
 adshort.org##+js(set-constant, force_disable_adblock, 0)
 adshort.org##+js(set-constant, cookie_notification_bar, false)
-freevideotutorialsus.com##+js(abort-on-property-write.js, adsbygoogle)
-freevideotutorialsus.com##+js(abort-on-property-read.js, adsbygoogle)
-freevideotutorialsus.com##+js(abort-on-property-write.js, enable_page_level_ads)
-freevideotutorialsus.com##+js(abort-on-property-read.js, enable_page_level_ads)
+freevideotutorialsus.com##+js(abort-on-property-write, adsbygoogle)
+freevideotutorialsus.com##+js(abort-on-property-read, adsbygoogle)
+freevideotutorialsus.com##+js(abort-on-property-write, enable_page_level_ads)
+freevideotutorialsus.com##+js(abort-on-property-read, enable_page_level_ads)
 freevideotutorialsus.com##+js(set-constant, enable_page_level_ads, false)
 freevideotutorialsus.com##div[id="babasbmsgx"]
 freevideotutorialsus.com##ins[class="adsbygoogle"]
-www.freetutorialsus.com##+js(abort-on-property-write.js, adsbygoogle)
-www.freetutorialsus.com##+js(abort-on-property-read.js, adsbygoogle)
-www.freetutorialsus.com##+js(abort-on-property-write.js, enable_page_level_ads)
-www.freetutorialsus.com##+js(abort-on-property-read.js, enable_page_level_ads)
+www.freetutorialsus.com##+js(abort-on-property-write, adsbygoogle)
+www.freetutorialsus.com##+js(abort-on-property-read, adsbygoogle)
+www.freetutorialsus.com##+js(abort-on-property-write, enable_page_level_ads)
+www.freetutorialsus.com##+js(abort-on-property-read, enable_page_level_ads)
 www.freetutorialsus.com##+js(set-constant, enable_page_level_ads, false)
 www.freetutorialsus.com##div[id="babasbmsgx"]
 www.freetutorialsus.com##ins[class="adsbygoogle"]
-www.ftuudemy.com##+js(abort-on-property-write.js, adsbygoogle)
-www.ftuudemy.com##+js(abort-on-property-read.js, adsbygoogle)
-www.ftuudemy.com##+js(abort-on-property-write.js, enable_page_level_ads)
-www.ftuudemy.com##+js(abort-on-property-read.js, enable_page_level_ads)
+www.ftuudemy.com##+js(abort-on-property-write, adsbygoogle)
+www.ftuudemy.com##+js(abort-on-property-read, adsbygoogle)
+www.ftuudemy.com##+js(abort-on-property-write, enable_page_level_ads)
+www.ftuudemy.com##+js(abort-on-property-read, enable_page_level_ads)
 www.ftuudemy.com##+js(set-constant, enable_page_level_ads, false)
 www.ftuudemy.com##div[id="babasbmsgx"]
 www.ftuudemy.com##ins[class="adsbygoogle"]
@@ -21323,8 +21330,8 @@ www.ftuudemy.com##ins[class="adsbygoogle"]
 ||neonoticon1986.getsoft2015.com^*
 ||api.github.com/_private/browser/stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.hiapkdownload.com##ins[class="adsbygoogle"]
-www.hiapkdownload.com##+js(abort-on-property-write.js, loadContentOfAdSlot)
-www.hiapkdownload.com##+js(abort-on-property-read.js, adsbygoogle)
+www.hiapkdownload.com##+js(abort-on-property-write, loadContentOfAdSlot)
+www.hiapkdownload.com##+js(abort-on-property-read, adsbygoogle)
 ||www.ampugi334f.com^*
 ||www.8s32e590un.com^*
 !||archive.org/components/npm/clipboard/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -21371,17 +21378,17 @@ digitechnews.net###pa-push-notification-subscription
 freeeducationsite.com##.theiaStickySidebar
 ifreecourses.com###secondary
 ifreecourses.com##.litespeed-loaded
-download-software.ru##+js(abort-on-property-write.js, Ya.Metrik)
-download-software.ru##+js(abort-on-property-read.js, Ya.Metrik)
-download-software.ru##+js(abort-on-property-write.js, _gaq)
-download-software.ru##+js(abort-on-property-read.js, _gaq)
+download-software.ru##+js(abort-on-property-write, Ya.Metrik)
+download-software.ru##+js(abort-on-property-read, Ya.Metrik)
+download-software.ru##+js(abort-on-property-write, _gaq)
+download-software.ru##+js(abort-on-property-read, _gaq)
 !||download-software.ru/images/_yandex/yandex-browser-728x90.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||download-software.ru/images/_yandex/yandex-browser-2018_240x400.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||download-software.ru/images/_yandex/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||aliadvert.ru/tapocheknet$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||aliadvert.ru^*
-tapochek.net##+js(abort-on-property-write.js, _0x7c4d)
-tapochek.net##+js(abort-on-property-read.js, _0x7c4d) 
+tapochek.net##+js(abort-on-property-write, _0x7c4d)
+tapochek.net##+js(abort-on-property-read, _0x7c4d) 
 ||datacygnal.io^*
 ||bcm-d.openx.net^*
 ||saambaa.com^*
@@ -21460,8 +21467,8 @@ tapochek.net##+js(abort-on-property-read.js, _0x7c4d)
 ||www.targetkbank.com^*
 ||www.workapplink.com^*
 ||www.workdevapp.com^*
-www.legendsworld.net##+js(abort-on-property-write.js, document.onmousedown)
-www.legendsworld.net##+js(abort-on-property-read.js, document.onmousedown)
+www.legendsworld.net##+js(abort-on-property-write, document.onmousedown)
+www.legendsworld.net##+js(abort-on-property-read, document.onmousedown)
 www.legendsworld.net##+js(abort-current-script, document.onmousedown)
 !www.legendsworld.net##+js(abort-current-script, eval)
 !www.legendsworld.net##+js(abort-current-script, unescape)
@@ -21490,8 +21497,8 @@ www.wired.com##.paywall-bar--visible.paywall-bar
 ||klljshial.com^*
 ||count.romwe.com^*
 ||i5iog3mlrw.com^*
-gamewii.net##+js(abort-on-property-write.js, zfgloadednative)
-gamewii.net##+js(abort-on-property-read.js, zfgloadednative)
+gamewii.net##+js(abort-on-property-write, zfgloadednative)
+gamewii.net##+js(abort-on-property-read, zfgloadednative)
 gamewii.net##+js(abort-current-script, zfgloadednative)
 ||e2.extreme-dm.com^*
 m.allfreeapk.com##._zuoxxtv
@@ -21511,10 +21518,12 @@ n.naylo.top###__BannerId
 !||tempest.services.disqus.com/ads-iframe/taboola/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tempest.services.disqus.com/ads-iframe/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 techsapparel.com###cookie-pop
+techsapparel.com###cookie-pop:remove()
 techsapparel.com##.banner-336x280.banner
 techsapparel.com##.banner-468x60.banner
 xtechstar.com###quads-ad3
 voxc.org###cookie-pop
+voxc.org###cookie-pop:remove()
 ||a-ads.com^*
 ||techsapparel.com/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||adshort.club/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -21555,8 +21564,8 @@ salamdl.co##div[id="sidebar_ad"]
 salamdl.co##div[id="footer_ad"]
 ||www.beqkxrcgjfnc.com^*
 ||beqkxrcgjfnc.com^*
-x265movies.co##+js(abort-on-property-write.js, popundersPerIP)
-x265movies.co##+js(abort-on-property-read.js, popundersPerIP)
+x265movies.co##+js(abort-on-property-write, popundersPerIP)
+x265movies.co##+js(abort-on-property-read, popundersPerIP)
 salamdl.co##div[id="sabaVisionZoneBox"]
 salamdl.co##div[class="sabaVisionZoneBoxContentBox"]
 salamdl.co##div[id^="native_iframe_"]
@@ -21600,18 +21609,18 @@ www.myabandonware.com###ddneu
 ||pl15228345.passeura.com^*
 multifilemirror.com##+js(abort-current-script, adBlockDetected)
 multifilemirror.com##+js(abort-current-script, lz_loadads)
-multifilemirror.com##+js(abort-on-property-read.js, lz_target)
-multifilemirror.com##+js(abort-on-property-read.js, reklamstore_ad_type)
-multifilemirror.com##+js(abort-on-property-read.js, reklamstore_region_id)
-multifilemirror.com##+js(abort-on-property-write.js, lz_target)
-multifilemirror.com##+js(abort-on-property-write.js, reklamstore_ad_type)
-multifilemirror.com##+js(abort-on-property-write.js, reklamstore_region_id)
+multifilemirror.com##+js(abort-on-property-read, lz_target)
+multifilemirror.com##+js(abort-on-property-read, reklamstore_ad_type)
+multifilemirror.com##+js(abort-on-property-read, reklamstore_region_id)
+multifilemirror.com##+js(abort-on-property-write, lz_target)
+multifilemirror.com##+js(abort-on-property-write, reklamstore_ad_type)
+multifilemirror.com##+js(abort-on-property-write, reklamstore_region_id)
 multifilemirror.com##+js(set-constant, adBlockNotDetected, true)
 multifilemirror.com##+js(set-constant, blockAdBlock, false)
-multifilemirror.com##+js(abort-on-property-write.js, Placement_type)
-multifilemirror.com##+js(abort-on-property-read.js, Placement_type)
-multifilemirror.com##+js(abort-on-property-write.js, googletag)
-multifilemirror.com##+js(abort-on-property-read.js, googletag)
+multifilemirror.com##+js(abort-on-property-write, Placement_type)
+multifilemirror.com##+js(abort-on-property-read, Placement_type)
+multifilemirror.com##+js(abort-on-property-write, googletag)
+multifilemirror.com##+js(abort-on-property-read, googletag)
 multifilemirror.com##.fanxwhmgy0cu
 multifilemirror.com##div[class*="adContainer"]
 !multifilemirror.com##div[class="adContainer"]
@@ -21711,11 +21720,11 @@ upload.ac##+js(abort-current-script, adsBox)
 upload.ac##+js(abort-current-script, adsbygoogle)
 upload.ac##+js(abort-current-script, bannerad)
 upload.ac##+js(abort-current-script, clipboard)
-upload.ac##+js(abort-on-property-read.js, adblockinfo)
-upload.ac##+js(abort-on-property-read.js, adsBox)
-upload.ac##+js(abort-on-property-read.js, adsbygoogle)
-upload.ac##+js(abort-on-property-read.js, bannerad)
-upload.ac##+js(abort-on-property-read.js, clipboard)
+upload.ac##+js(abort-on-property-read, adblockinfo)
+upload.ac##+js(abort-on-property-read, adsBox)
+upload.ac##+js(abort-on-property-read, adsbygoogle)
+upload.ac##+js(abort-on-property-read, bannerad)
+upload.ac##+js(abort-on-property-read, clipboard)
 upload.ac##div[id="adblockinfo"]
 upload.ac##ins[class="adsbygoogle"]
 ||upload.ac/hg/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -21773,6 +21782,7 @@ ulozto.net###mask
 ||ulrementpati.info^*
 ||ackgroupsevention.info^*
 www.auslogics.com##.b-cookie-policy
+www.auslogics.com##.b-cookie-policy:remove()
 www.heaventools.com##.cc-color-override-688238583.cc-top.cc-theme-block.cc-type-info.cc-banner.cc-window
 www.digitalcitizen.life###eu-cookies-consent
 ||www.sdbeta.com/images/qunyingyun.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -21817,8 +21827,8 @@ free4pc.org##.user.button-green
 ||fxs8o.rdtk.io^*
 ||cweiwoydalr.com^*
 ||www.cweiwoydalr.com^*
-crazy4tv.mrunlock.red##+js(abort-on-property-write.js, popundersPerIP)
-crazy4tv.mrunlock.red##+js(abort-on-property-read.js, popundersPerIP)
+crazy4tv.mrunlock.red##+js(abort-on-property-write, popundersPerIP)
+crazy4tv.mrunlock.red##+js(abort-on-property-read, popundersPerIP)
 upload.ac##.eww
 ||composivel.pro^*
 ||cdn.jsdelivr.net/gh/johnroy-ui/up@master/download_cloud.gif$image
@@ -21860,10 +21870,10 @@ userscloud.com##input[id="adblock_detected"]
 ||filesupload.org/themes/flow/js/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||newscoder7.com^*
 ||gz06x5tqlj.com^*
-zippyshare.com##+js(abort-on-property-write.js, zippyadb)
-zippyshare.com##+js(abort-on-property-read.js, zippyadb)
-zippyshare.com##+js(abort-on-property-write.js, zippyfake)
-zippyshare.com##+js(abort-on-property-read.js, zippyfake)
+zippyshare.com##+js(abort-on-property-write, zippyadb)
+zippyshare.com##+js(abort-on-property-read, zippyadb)
+zippyshare.com##+js(abort-on-property-write, zippyfake)
+zippyshare.com##+js(abort-on-property-read, zippyfake)
 ||fadsoks.com^*
 !||jsc.adskeeper.co.uk/r/l/rlslog.net.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||jsc.adskeeper.co.uk^*
@@ -21908,6 +21918,7 @@ mediafire.com##+js(abort-current-inline-script, document.getElementById, adblock
 ||societingna.info^*
 ||8bef5bb6b351ca5e.com^*
 zenkit.com##.cookie-alert
+zenkit.com##.cookie-alert:remove()
 !www.youtube.com###results > .pyv-afc-mute.yt-section-hover-container.spf-nolink.pyv-afc-ads-container > .pyv-afc-ads-inner > div:nth-of-type(3) > .yt-lockup-tile.yt-lockup-video.yt-uix-tile.clearfix.yt-lockup
 !www.youtube.com##.branded-page-box
 !us8.proxy-youtube.com##.bounceInDown.animated.btn
@@ -21993,10 +22004,10 @@ uploadbox.io##+js(set-constant, ad_blocker_message, null)
 uploadbox.io##div[class="ad_block_container"]
 uploadbox.io##+js(abort-current-script, replaceContentWithAdBlockerContent)
 uploadbox.io##+js(abort-current-script, errorWhileLoadGoogleAds)
-uploadbox.io##+js(abort-on-property-write.js, ad_blocker_message)
-uploadbox.io##+js(abort-on-property-read.js, ad_blocker_message)
-uploadbox.io##+js(abort-on-property-write.js, testadblock)
-uploadbox.io##+js(abort-on-property-read.js, testadblock)
+uploadbox.io##+js(abort-on-property-write, ad_blocker_message)
+uploadbox.io##+js(abort-on-property-read, ad_blocker_message)
+uploadbox.io##+js(abort-on-property-write, testadblock)
+uploadbox.io##+js(abort-on-property-read, testadblock)
 !uploadbox.io##ins[class="adsbygoogle infeed"]
 uploadbox.io##ins[class^="adsbygoogle"]
 uploadbox.io##div[class="sticky-ad"]
@@ -22033,10 +22044,10 @@ shon.xyz##.hidden-sm.hidden-xs
 ||jazdoxthxiv.com^*
 ||www.oefyjdykepx.com^*
 ||oefyjdykepx.com^*
-!1337x.123unblock.pink##+js(abort-on-property-write.js, antiClickjack)
-!1337x.123unblock.pink##+js(abort-on-property-read.js, antiClickjack)
-##+js(abort-on-property-write.js, antiClickjack)
-##+js(abort-on-property-read.js, antiClickjack)
+!1337x.123unblock.pink##+js(abort-on-property-write, antiClickjack)
+!1337x.123unblock.pink##+js(abort-on-property-read, antiClickjack)
+##+js(abort-on-property-write, antiClickjack)
+##+js(abort-on-property-read, antiClickjack)
 ||1337x.123unblock.pink/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||1337x.unblocked.is/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bitdownload.ir/wp-content/uploads/ban/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -22084,10 +22095,10 @@ megafile.io##+js(set-constant, enable_page_level_ads, true)
 megafile.io##+js(set-constant, ad_blocker_message, null)
 megafile.io##+js(abort-current-script, replaceContentWithAdBlockerContent)
 megafile.io##+js(abort-current-script, errorWhileLoadGoogleAds)
-megafile.io##+js(abort-on-property-write.js, ad_blocker_message)
-megafile.io##+js(abort-on-property-read.js, ad_blocker_message)
-megafile.io##+js(abort-on-property-write.js, testadblock)
-megafile.io##+js(abort-on-property-read.js, testadblock)
+megafile.io##+js(abort-on-property-write, ad_blocker_message)
+megafile.io##+js(abort-on-property-read, ad_blocker_message)
+megafile.io##+js(abort-on-property-write, testadblock)
+megafile.io##+js(abort-on-property-read, testadblock)
 ||megafile.io/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||s.webtrends.com/js/webtrends.hm.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.webtrends.com^*
@@ -22230,14 +22241,14 @@ crazy4tv.mrunblock.xyz##+js(abort-current-script, popundersPerIP)
 crazy4tv.mrunblock.xyz##+js(abort-current-script, delayBetween)
 crazy4tv.mrunblock.xyz##+js(abort-current-script, default)
 crazy4tv.mrunblock.xyz##+js(abort-current-script, integrity)
-crazy4tv.mrunblock.xyz##+js(abort-on-property-write.js, integrity)
-crazy4tv.mrunblock.xyz##+js(abort-on-property-read.js, integrity)
-crazy4tv.mrunblock.xyz##+js(abort-on-property-write.js, popundersPerIP)
-crazy4tv.mrunblock.xyz##+js(abort-on-property-read.js, popundersPerIP)
-crazy4tv.mrunblock.xyz##+js(abort-on-property-write.js, delayBetween)
-crazy4tv.mrunblock.xyz##+js(abort-on-property-read.js, delayBetween)
-crazy4tv.mrunblock.xyz##+js(abort-on-property-write.js, default)
-crazy4tv.mrunblock.xyz##+js(abort-on-property-read.js, default)
+crazy4tv.mrunblock.xyz##+js(abort-on-property-write, integrity)
+crazy4tv.mrunblock.xyz##+js(abort-on-property-read, integrity)
+crazy4tv.mrunblock.xyz##+js(abort-on-property-write, popundersPerIP)
+crazy4tv.mrunblock.xyz##+js(abort-on-property-read, popundersPerIP)
+crazy4tv.mrunblock.xyz##+js(abort-on-property-write, delayBetween)
+crazy4tv.mrunblock.xyz##+js(abort-on-property-read, delayBetween)
+crazy4tv.mrunblock.xyz##+js(abort-on-property-write, default)
+crazy4tv.mrunblock.xyz##+js(abort-on-property-read, default)
 ||api-sensors.shein.com^*
 ||www.clfvfumqqok.com^*
 ||clfvfumqqok.com^*
@@ -22283,12 +22294,12 @@ ulozto.net##+js(set-constant, adblock_detected, false)
 pixeldrain.com###sponsors
 ||pixeldrain.com/res/img/misc/banner_as.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||analytics.file.cm/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-file.cm##+js(abort-on-property-write.js, trackPageView)
-file.cm##+js(abort-on-property-read.js, trackPageView)
-file.cm##+js(abort-on-property-write.js, enableLinkTracking)
-file.cm##+js(abort-on-property-read.js, enableLinkTracking)
-file.cm##+js(abort-on-property-write.js, setTrackerUrl)
-file.cm##+js(abort-on-property-read.js, setTrackerUrl)
+file.cm##+js(abort-on-property-write, trackPageView)
+file.cm##+js(abort-on-property-read, trackPageView)
+file.cm##+js(abort-on-property-write, enableLinkTracking)
+file.cm##+js(abort-on-property-read, enableLinkTracking)
+file.cm##+js(abort-on-property-write, setTrackerUrl)
+file.cm##+js(abort-on-property-read, setTrackerUrl)
 ||www.ftkbsddgbqt.com^*
 ||ftkbsddgbqt.com^*
 ||conjeller-chikemon.com^*
@@ -22360,8 +22371,8 @@ lifehacker.com##div[class^="ad-container"]
 piratebays.win##div[id="vpnvpn"]
 ||ladsatz.com^*
 shortearn.eu##div[id^="adm-container"]
-shortearn.eu##+js(abort-on-property-write.js, zfgloadedpopup)
-shortearn.eu##+js(abort-on-property-read.js, zfgloadedpopup)
+shortearn.eu##+js(abort-on-property-write, zfgloadedpopup)
+shortearn.eu##+js(abort-on-property-read, zfgloadedpopup)
 shortearn.eu##div[id^="atContainer-"]
 shortearn.eu##div[class="ad-title"]
 shortearn.eu##div[class="ad-skip"]
@@ -22517,23 +22528,27 @@ ftw.usatoday.com##div#ad--sidebar
 !||cicero-mit.com/imp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cicero-mit.com^*
 www.dodears.info##+js(abort-current-inline-script, zfgloadednative)
-www.dodears.info##+js(abort-on-property-write.js, zfgloadednative)
-www.dodears.info##+js(abort-on-property-read.js, zfgloadednative)
+www.dodears.info##+js(abort-on-property-write, zfgloadednative)
+www.dodears.info##+js(abort-on-property-read, zfgloadednative)
 ||www.dodears.info/wp-content/plugins/wp-safelink-v3/assets/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static.lalaping.com/online.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.lalaping.com^*
 ||www.nta1vb6cdlrl.com^*
 ||nta1vb6cdlrl.com^*
 www.magnetforensics.com##.cookie-banner
+www.magnetforensics.com##.cookie-banner:remove()
 subscription.packtpub.com##.cc-banner.cc-window
+subscription.packtpub.com##.cc-banner.cc-window:remove()
 hexupload.net##div[id^="rn_ad_native_"]
+hexupload.net##div[id^="rn_ad_native_"]:remove()
 hexupload.net##ins[class="adsbygoogle"]
+hexupload.net##ins[class="adsbygoogle"]:remove()
 ||d22sfab2t5o9bq.cloudfront.net^*
 ||yy9s51b2u05z.com^*
-hexupload.net##+js(abort-on-property-write.js, createOffer)
-hexupload.net##+js(abort-on-property-read.js, createOffer)
-hexupload.net##+js(abort-on-property-write.js, adCashMacros)
-hexupload.net##+js(abort-on-property-read.js, adCashMacros)
+hexupload.net##+js(abort-on-property-write, createOffer)
+hexupload.net##+js(abort-on-property-read, createOffer)
+hexupload.net##+js(abort-on-property-write, adCashMacros)
+hexupload.net##+js(abort-on-property-read, adCashMacros)
 hexupload.net##+js(set-constant, adblock_detected, 0)
 ||stymcatddkl.com^*
 ||hadslimz.com^*
@@ -22596,14 +22611,14 @@ www.linuxuprising.com##div[id^="adsense-"]
 !www.linuxuprising.com##span[id="ezoic-pub-ad-placeholder-103"]
 www.linuxuprising.com##span[id="ezoic-pub-ad-placeholder-"]
 www.linuxuprising.com##div[id^="ads-post"]
-www.linuxuprising.com##+js(abort-on-property-write.js, ez_ad_units)
-www.linuxuprising.com##+js(abort-on-property-read.js, ez_ad_units)
-www.linuxuprising.com##+js(abort-on-property-write.js, ezAdUnits)
-www.linuxuprising.com##+js(abort-on-property-read.js, ezAdUnits)
-www.linuxuprising.com##+js(abort-on-property-write.js, adUnitCode)
-www.linuxuprising.com##+js(abort-on-property-read.js, adUnitCode)
-www.linuxuprising.com##+js(abort-on-property-write.js, getGooglePersonalization)
-www.linuxuprising.com##+js(abort-on-property-read.js, getGooglePersonalization)
+www.linuxuprising.com##+js(abort-on-property-write, ez_ad_units)
+www.linuxuprising.com##+js(abort-on-property-read, ez_ad_units)
+www.linuxuprising.com##+js(abort-on-property-write, ezAdUnits)
+www.linuxuprising.com##+js(abort-on-property-read, ezAdUnits)
+www.linuxuprising.com##+js(abort-on-property-write, adUnitCode)
+www.linuxuprising.com##+js(abort-on-property-read, adUnitCode)
+www.linuxuprising.com##+js(abort-on-property-write, getGooglePersonalization)
+www.linuxuprising.com##+js(abort-on-property-read, getGooglePersonalization)
 www.linuxuprising.com##div[class="ads-posting"]
 www.linuxuprising.com##span[id^="div-gpt-ad-"]
 www.linuxuprising.com##div[class="ezoic-adpicker-ad"]
@@ -22659,6 +22674,7 @@ news.thewindowsclub.com##span[class^="ezoic-ad"]
 ||news.thewindowsclub.com/detroitchicago/imp.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||theweblocker.net/video_locker/shorten/locker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 shorten.sh###cookie-pop
+shorten.sh###cookie-pop:remove()
 ||ilkmawgod.site^*
 ||asewlfjqwlflkew.com^*
 ||shorten.sh/popunder/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -22701,6 +22717,7 @@ www.vector.co.jp##ins[class="adsbygoogle"]
 ||www.vector.co.jp/common/css/adposchange.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ad.jp.ap.valuecommerce.com/servlet/gifbanner$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ad.jp.ap.valuecommerce.com^*
+www.gratisgames24.ch##+js(set-constant, adsbygoogle, [])
 www.gratisgames24.ch##+js(acs, adsbygoogle)
 www.gratisgames24.ch##+js(acs, adscontent)
 www.gratisgames24.ch##+js(acs, adsense)
@@ -22745,6 +22762,7 @@ forum.xda-developers.com###adhesive_container
 ||propeller-tracking.com^*
 ||grubsoan.com^*
 mega4up.com###gdpr-cookie-notice
+mega4up.com###gdpr-cookie-notice:remove()
 ||www.olkrzytv.com^*
 ||olkrzytv.com^*
 !||ua.yektanet.com/__fake.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -22836,8 +22854,8 @@ mp1st.com###ezmobfooter
 ||repruggob.com^*
 d2.consoletarget.com##ins[class="adsbygoogle"]
 d2.consoletarget.com##+js(abort-current-script, AVPWCAP=)
-d2.consoletarget.com##+js(abort-on-property-read.js, AVPWCAP=)
-d2.consoletarget.com##+js(abort-on-property-write.js, AVPWCAP=)
+d2.consoletarget.com##+js(abort-on-property-read, AVPWCAP=)
+d2.consoletarget.com##+js(abort-on-property-write, AVPWCAP=)
 d2.consoletarget.com##^script:has-text(AVPWCAP=)
 d2.consoletarget.com##+js(abort-current-script, adsbygoogle)
 d2.consoletarget.com##^script:has-text(adsbygoogle)
@@ -22878,53 +22896,53 @@ www.javadecompilers.com##span[class^="ezmob-footer"]
 ||www.javadecompilers.com/ezoic/anchorfix.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.javadecompilers.com##div[id^="div-gpt-ad-"]
 www.javadecompilers.com##+js(abort-current-script, isClean)
-www.javadecompilers.com##+js(abort-on-property-read.js, isClean)
-www.javadecompilers.com##+js(abort-on-property-write.js, isClean)
+www.javadecompilers.com##+js(abort-on-property-read, isClean)
+www.javadecompilers.com##+js(abort-on-property-write, isClean)
 www.javadecompilers.com##+js(abort-current-script, window.ez_ad_units)
-www.javadecompilers.com##+js(abort-on-property-read.js, window.ez_ad_units)
-www.javadecompilers.com##+js(abort-on-property-write.js, window.ez_ad_units)
+www.javadecompilers.com##+js(abort-on-property-read, window.ez_ad_units)
+www.javadecompilers.com##+js(abort-on-property-write, window.ez_ad_units)
 www.javadecompilers.com##+js(abort-current-script, window.ezslots)
-www.javadecompilers.com##+js(abort-on-property-read.js, window.ezslots)
-www.javadecompilers.com##+js(abort-on-property-write.js, window.ezslots)
+www.javadecompilers.com##+js(abort-on-property-read, window.ezslots)
+www.javadecompilers.com##+js(abort-on-property-write, window.ezslots)
 www.javadecompilers.com##+js(abort-current-script, window.ezsrqt)
-www.javadecompilers.com##+js(abort-on-property-read.js, window.ezsrqt)
-www.javadecompilers.com##+js(abort-on-property-write.js, window.ezsrqt)
+www.javadecompilers.com##+js(abort-on-property-read, window.ezsrqt)
+www.javadecompilers.com##+js(abort-on-property-write, window.ezsrqt)
 www.javadecompilers.com##+js(abort-current-script, ezcmd)
-www.javadecompilers.com##+js(abort-on-property-read.js, ezcmd)
-www.javadecompilers.com##+js(abort-on-property-write.js, ezcmd)
+www.javadecompilers.com##+js(abort-on-property-read, ezcmd)
+www.javadecompilers.com##+js(abort-on-property-write, ezcmd)
 www.javadecompilers.com##+js(abort-current-script, ez_ad_units.length)
-www.javadecompilers.com##+js(abort-on-property-read.js, ez_ad_units.length)
-www.javadecompilers.com##+js(abort-on-property-write.js, ez_ad_units.length)
+www.javadecompilers.com##+js(abort-on-property-read, ez_ad_units.length)
+www.javadecompilers.com##+js(abort-on-property-write, ez_ad_units.length)
 www.javadecompilers.com##+js(abort-current-script, window.isEZABL)
-www.javadecompilers.com##+js(abort-on-property-read.js, window.isEZABL)
-www.javadecompilers.com##+js(abort-on-property-write.js, window.isEZABL)
+www.javadecompilers.com##+js(abort-on-property-read, window.isEZABL)
+www.javadecompilers.com##+js(abort-on-property-write, window.isEZABL)
 www.javadecompilers.com##+js(abort-current-script, window.ezogetbrkey)
-www.javadecompilers.com##+js(abort-on-property-read.js, window.ezogetbrkey)
-www.javadecompilers.com##+js(abort-on-property-write.js, window.ezogetbrkey)
+www.javadecompilers.com##+js(abort-on-property-read, window.ezogetbrkey)
+www.javadecompilers.com##+js(abort-on-property-write, window.ezogetbrkey)
 www.javadecompilers.com##+js(abort-current-script, googleAdClient)
-www.javadecompilers.com##+js(abort-on-property-read.js, googleAdClient)
-www.javadecompilers.com##+js(abort-on-property-write.js, googleAdClient)
+www.javadecompilers.com##+js(abort-on-property-read, googleAdClient)
+www.javadecompilers.com##+js(abort-on-property-write, googleAdClient)
 www.javadecompilers.com##+js(abort-current-script, ezaxmns)
-www.javadecompilers.com##+js(abort-on-property-read.js, ezaxmns)
-www.javadecompilers.com##+js(abort-on-property-write.js, ezaxmns)
+www.javadecompilers.com##+js(abort-on-property-read, ezaxmns)
+www.javadecompilers.com##+js(abort-on-property-write, ezaxmns)
 www.javadecompilers.com##+js(abort-current-script, ezaucmns)
-www.javadecompilers.com##+js(abort-on-property-read.js, ezaucmns)
-www.javadecompilers.com##+js(abort-on-property-write.js, ezaucmns)
+www.javadecompilers.com##+js(abort-on-property-read, ezaucmns)
+www.javadecompilers.com##+js(abort-on-property-write, ezaucmns)
 www.javadecompilers.com##+js(abort-current-script, _0xa453)
-www.javadecompilers.com##+js(abort-on-property-read.js, _0xa453)
-www.javadecompilers.com##+js(abort-on-property-write.js, _0xa453)
+www.javadecompilers.com##+js(abort-on-property-read, _0xa453)
+www.javadecompilers.com##+js(abort-on-property-write, _0xa453)
 www.javadecompilers.com##+js(abort-current-script, adsbygoogle)
-www.javadecompilers.com##+js(abort-on-property-read.js, adsbygoogle)
-www.javadecompilers.com##+js(abort-on-property-write.js, adsbygoogle)
+www.javadecompilers.com##+js(abort-on-property-read, adsbygoogle)
+www.javadecompilers.com##+js(abort-on-property-write, adsbygoogle)
 www.javadecompilers.com##+js(abort-current-script, _ezaq)
-www.javadecompilers.com##+js(abort-on-property-read.js, _ezaq)
-www.javadecompilers.com##+js(abort-on-property-write.js, _ezaq)
+www.javadecompilers.com##+js(abort-on-property-read, _ezaq)
+www.javadecompilers.com##+js(abort-on-property-write, _ezaq)
 www.javadecompilers.com##^script:has-text(adsense)
 www.javadecompilers.com##+js(nobab)
 ||ahscdn.com^*
 desiupload.co##+js(abort-current-script, sora_base_url)
-desiupload.co##+js(abort-on-property-read.js, sora_base_url)
-desiupload.co##+js(abort-on-property-write.js, sora_base_url)
+desiupload.co##+js(abort-on-property-read, sora_base_url)
+desiupload.co##+js(abort-on-property-write, sora_base_url)
 desiupload.co##div[id*="ScriptRootC"]
 ||fryawlauk.com^*
 ||davidgreeninen.eklablog.com^*
@@ -22958,11 +22976,11 @@ rutracker.siteunblocked.net##div[id="cookieConsent"]
 ||mylink.vc/myadb$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mylink.vc/block-ads$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 mylink.vc##+js(abort-current-script, _Hasync)
-mylink.vc##+js(abort-on-property-read.js, _Hasync)
-mylink.vc##+js(abort-on-property-write.js, _Hasync)
+mylink.vc##+js(abort-on-property-read, _Hasync)
+mylink.vc##+js(abort-on-property-write, _Hasync)
 mylink.vc##+js(abort-current-script, bmdfvtquoURL)
-mylink.vc##+js(abort-on-property-read.js, bmdfvtquoURL)
-mylink.vc##+js(abort-on-property-write.js, bmdfvtquoURL)
+mylink.vc##+js(abort-on-property-read, bmdfvtquoURL)
+mylink.vc##+js(abort-on-property-write, bmdfvtquoURL)
 ||ewftrgrs.com^*
 ||esasoud.net^*
 ||vimjarawl.com^*
@@ -22972,15 +22990,16 @@ mylink.vc##+js(abort-on-property-write.js, bmdfvtquoURL)
 www.gamesindustry.biz###onetrust-consent-sdk
 www.gamelife.com###ezmobfooter
 www.gamelife.com##.cookie-notice-container
+www.gamelife.com##.cookie-notice-container:remove()
 www.playground.ru##+js(abort-current-script, adfoxBiddersMap)
-www.playground.ru##+js(abort-on-property-read.js, adfoxBiddersMap)
-www.playground.ru##+js(abort-on-property-write.js, adfoxBiddersMap)
+www.playground.ru##+js(abort-on-property-read, adfoxBiddersMap)
+www.playground.ru##+js(abort-on-property-write, adfoxBiddersMap)
 www.playground.ru##+js(abort-current-script, adUnits)
-www.playground.ru##+js(abort-on-property-read.js, adUnits)
-www.playground.ru##+js(abort-on-property-write.js, adUnits)
+www.playground.ru##+js(abort-on-property-read, adUnits)
+www.playground.ru##+js(abort-on-property-write, adUnits)
 www.playground.ru##+js(abort-current-script, adsbygoogle)
-www.playground.ru##+js(abort-on-property-read.js, adsbygoogle)
-www.playground.ru##+js(abort-on-property-write.js, adsbygoogle)
+www.playground.ru##+js(abort-on-property-read, adsbygoogle)
+www.playground.ru##+js(abort-on-property-write, adsbygoogle)
 www.playground.ru##+js(set-constant, userTimeout, 0)
 www.playground.ru##div[id^="div-gpt-ad-"]
 www.playground.ru##div[id^="adfox_"]
@@ -23037,12 +23056,12 @@ download.ru###place117
 !||tdsjsext1.com/ExtService.svc/getextparams$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tdsjsext1.com^*
 mshares.co##+js(abort-current-script, ads_block)
-mshares.co##+js(abort-on-property-read.js, ads_block)
-mshares.co##+js(abort-on-property-write.js, ads_block)
+mshares.co##+js(abort-on-property-read, ads_block)
+mshares.co##+js(abort-on-property-write, ads_block)
 mshares.co##+js(set-constant, ads_block, false)
 mshares.co##+js(abort-current-script, ads_script_list)
-mshares.co##+js(abort-on-property-read.js, ads_script_list)
-mshares.co##+js(abort-on-property-write.js, ads_script_list)
+mshares.co##+js(abort-on-property-read, ads_script_list)
+mshares.co##+js(abort-on-property-write, ads_script_list)
 mshares.co##div[class="yoads_network_widget"]
 mshares.co##div[class="ads_336"]
 ||mshares.co/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -23054,11 +23073,11 @@ mshares.co##div[class="ads_336"]
 ||kaforsingto.cf/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 freedbush.site#ins[class="adsbygoogle"]
 freedbush.site##+js(abort-current-script, adsbygoogle)
-freedbush.site##+js(abort-on-property-read.js, adsbygoogle)
-freedbush.site##+js(abort-on-property-write.js, adsbygoogle)
+freedbush.site##+js(abort-on-property-read, adsbygoogle)
+freedbush.site##+js(abort-on-property-write, adsbygoogle)
 freedbush.site##+js(abort-current-script, app_vars)
-freedbush.site##+js(abort-on-property-read.js, app_vars)
-freedbush.site##+js(abort-on-property-write.js, app_vars)
+freedbush.site##+js(abort-on-property-read, app_vars)
+freedbush.site##+js(abort-on-property-write, app_vars)
 !||freedbush.site/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||producebreed.com^*
 ||only-soft.org/images/vk-46-1.png$image
@@ -23120,16 +23139,16 @@ unity.allfreeassets.com##.active.mdp-deblocker-blackout
 ||unity.allfreeassets.com/wp-content/plugins/cleantalk-spam-protect/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||unity.allfreeassets.com/wp-content/plugins/google-analytics-premium/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 unity.allfreeassets.com##+js(abort-current-script, mi_track_user)
-unity.allfreeassets.com##+js(abort-on-property-read.js, mi_track_user)
-unity.allfreeassets.com##+js(abort-on-property-write.js, mi_track_user)
+unity.allfreeassets.com##+js(abort-on-property-read, mi_track_user)
+unity.allfreeassets.com##+js(abort-on-property-write, mi_track_user)
 unity.allfreeassets.com##+js(set-constant, mi_track_user, false)
 unity.allfreeassets.com##+js(abort-current-script, adsbygoogle)
-unity.allfreeassets.com##+js(abort-on-property-read.js, adsbygoogle)
-unity.allfreeassets.com##+js(abort-on-property-write.js, adsbygoogle)
+unity.allfreeassets.com##+js(abort-on-property-read, adsbygoogle)
+unity.allfreeassets.com##+js(abort-on-property-write, adsbygoogle)
 unity.allfreeassets.com##ins[class="adsbygoogle"]
 unity.allfreeassets.com##+js(abort-current-script, mdp_deblocker)
-unity.allfreeassets.com##+js(abort-on-property-read.js, mdp_deblocker)
-unity.allfreeassets.com##+js(abort-on-property-write.js, mdp_deblocker)
+unity.allfreeassets.com##+js(abort-on-property-read, mdp_deblocker)
+unity.allfreeassets.com##+js(abort-on-property-write, mdp_deblocker)
 unity.allfreeassets.com##+js(set-constant, mdp_deblocker, null)
 ||unity.allfreeassets.com/wp-content/plugins/ungrabber/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||akxml.nativeadsfeed.com^*
@@ -23248,16 +23267,16 @@ www.fshare.vn###eclick_ads_frame0_ins
 www.fshare.vn##.topbg > .wrap.container > .padding-v-15 > .hidden-sm.ad-wrapper
 www.fshare.vn##div[id="showVideo"]
 !www.fshare.vn##^script[id="arf-core-js"]
-www.fshare.vn##+js(abort-on-property-write.js, stringDataAds)
-www.fshare.vn##+js(abort-on-property-read.js, stringDataAds)
-www.fshare.vn##+js(abort-on-property-write.js, Adomik.randomAdGroup)
-www.fshare.vn##+js(abort-on-property-read.js, Adomik.randomAdGroup)
-www.fshare.vn##+js(abort-on-property-write.js, window.Adomik)
-www.fshare.vn##+js(abort-on-property-read.js, window.Adomik)
-www.fshare.vn##+js(abort-on-property-write.js, googletag)
-www.fshare.vn##+js(abort-on-property-read.js, googletag)
-www.fshare.vn##+js(abort-on-property-write.js, adsbygoogle)
-www.fshare.vn##+js(abort-on-property-read.js, adsbygoogle)
+www.fshare.vn##+js(abort-on-property-write, stringDataAds)
+www.fshare.vn##+js(abort-on-property-read, stringDataAds)
+www.fshare.vn##+js(abort-on-property-write, Adomik.randomAdGroup)
+www.fshare.vn##+js(abort-on-property-read, Adomik.randomAdGroup)
+www.fshare.vn##+js(abort-on-property-write, window.Adomik)
+www.fshare.vn##+js(abort-on-property-read, window.Adomik)
+www.fshare.vn##+js(abort-on-property-write, googletag)
+www.fshare.vn##+js(abort-on-property-read, googletag)
+www.fshare.vn##+js(abort-on-property-write, adsbygoogle)
+www.fshare.vn##+js(abort-on-property-read, adsbygoogle)
 www.fshare.vn##div[class^="adsplay-placement"]
 www.fshare.vn##ins[class="adsbygoogle"]
 www.fshare.vn##+js(set-constant, minutes, 0)
@@ -23273,8 +23292,8 @@ www.fshare.vn##+js(set-constant, minutes, 0)
 ||gamma.cachefly.net/js/ad-exchange.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||script.tapfiliate.com/tapfiliate.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||script.tapfiliate.com^*
-www.sitepoint.com##+js(abort-on-property-write.js, t.TapfiliateObject)
-www.sitepoint.com##+js(abort-on-property-read.js, t.TapfiliateObject)
+www.sitepoint.com##+js(abort-on-property-write, t.TapfiliateObject)
+www.sitepoint.com##+js(abort-on-property-read, t.TapfiliateObject)
 www.sitepoint.com##.gSJDlh
 !||adylalahb.ru/clickunder-out/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||adylalahb.ru^*
@@ -23282,10 +23301,10 @@ www.sitepoint.com##.gSJDlh
 ||catds.net/uid/pixel$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||focdn.net/js/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.ni93.com##div[class="a_fl"]
-!unity928.rssing.com##+js(abort-on-property-write.js, gdprAppliesGlobally)
-!unity928.rssing.com##+js(abort-on-property-read.js, gdprAppliesGlobally)
-rssing.com##+js(abort-on-property-write.js, gdprAppliesGlobally)
-rssing.com##+js(abort-on-property-read.js, gdprAppliesGlobally)
+!unity928.rssing.com##+js(abort-on-property-write, gdprAppliesGlobally)
+!unity928.rssing.com##+js(abort-on-property-read, gdprAppliesGlobally)
+rssing.com##+js(abort-on-property-write, gdprAppliesGlobally)
+rssing.com##+js(abort-on-property-read, gdprAppliesGlobally)
 ||drive.google.com/drive/logImpressions$domain=drive.google.com
 !unity928.rssing.com##div[class^="cs-header-kanner"]
 !unity928.rssing.com##div[class^="rs-ad"]
@@ -23298,12 +23317,12 @@ rssing.com##div[class$="sssticky-indx-banner"]
 rssing.com##div[class^="rs-sticky-sidebar-ad"]
 ||static.vliplatform.com^*
 makaka.org##div[id="catapult-cookie-bar"]
-www.onlinefreecourse.net##+js(abort-on-property-write.js, betterads_screen_width)
-www.onlinefreecourse.net##+js(abort-on-property-read.js, betterads_screen_width)
-www.onlinefreecourse.net##+js(abort-on-property-write.js, betterads_el_width)
-www.onlinefreecourse.net##+js(abort-on-property-read.js, betterads_el_width)
-www.onlinefreecourse.net##+js(abort-on-property-write.js, mdpDeBlocker)
-www.onlinefreecourse.net##+js(abort-on-property-read.js, mdpDeBlocker)
+www.onlinefreecourse.net##+js(abort-on-property-write, betterads_screen_width)
+www.onlinefreecourse.net##+js(abort-on-property-read, betterads_screen_width)
+www.onlinefreecourse.net##+js(abort-on-property-write, betterads_el_width)
+www.onlinefreecourse.net##+js(abort-on-property-read, betterads_el_width)
+www.onlinefreecourse.net##+js(abort-on-property-write, mdpDeBlocker)
+www.onlinefreecourse.net##+js(abort-on-property-read, mdpDeBlocker)
 www.onlinefreecourse.net##div[class$="ads_styling_1"]
 www.onlinefreecourse.net##div[id="mdp-deblocker-ads"]
 www.onlinefreecourse.net##ins[class="adsbygoogle"]
@@ -23328,36 +23347,36 @@ open3dmodel.com##.active.mdp-deblocker-blackout
 ||open3dmodel.com/wp-content/plugins/deblocker/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 open3dmodel.com##div[id="mdp-deblocker-ads"]
 open3dmodel.com##ins[class="adsbygoogle"]
-open3dmodel.com##+js(abort-on-property-write.js, mdp_deblocker)
-open3dmodel.com##+js(abort-on-property-read.js, mdp_deblocker)
-open3dmodel.com##+js(abort-on-property-write.js, adsbygoogle)
-open3dmodel.com##+js(abort-on-property-read.js, adsbygoogle)
+open3dmodel.com##+js(abort-on-property-write, mdp_deblocker)
+open3dmodel.com##+js(abort-on-property-read, mdp_deblocker)
+open3dmodel.com##+js(abort-on-property-write, adsbygoogle)
+open3dmodel.com##+js(abort-on-property-read, adsbygoogle)
 www.producerloops.com##span[id="cookieconsent:desc"]
 www.producerloops.com##div[aria-label="cookieconsent"]
 switowski.com##span[id="cookieconsent:desc"]
 switowski.com##div[aria-label="cookieconsent"]
 !||d3jaymjyiads5d.cloudfront.net/tracker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d3jaymjyiads5d.cloudfront.net^*
-www.boredpanda.com##+js(abort-on-property-write.js, loadAds)
-www.boredpanda.com##+js(abort-on-property-read.js, loadAds)
-www.boredpanda.com##+js(abort-on-property-write.js, window.adnet)
-www.boredpanda.com##+js(abort-on-property-read.js, window.adnet)
-www.boredpanda.com##+js(abort-on-property-write.js, googletag.pubadsReady)
-www.boredpanda.com##+js(abort-on-property-read.js, googletag.pubadsReady)
-www.boredpanda.com##+js(abort-on-property-write.js, m2hb.initAdserverSet)
-www.boredpanda.com##+js(abort-on-property-read.js, m2hb.initAdserverSet)
-www.boredpanda.com##+js(abort-on-property-write.js, m2hb.initAdserver)
-www.boredpanda.com##+js(abort-on-property-read.js, m2hb.initAdserver)
-www.boredpanda.com##+js(abort-on-property-write.js, window.initAdserver)
-www.boredpanda.com##+js(abort-on-property-read.js, window.initAdserver)
+www.boredpanda.com##+js(abort-on-property-write, loadAds)
+www.boredpanda.com##+js(abort-on-property-read, loadAds)
+www.boredpanda.com##+js(abort-on-property-write, window.adnet)
+www.boredpanda.com##+js(abort-on-property-read, window.adnet)
+www.boredpanda.com##+js(abort-on-property-write, googletag.pubadsReady)
+www.boredpanda.com##+js(abort-on-property-read, googletag.pubadsReady)
+www.boredpanda.com##+js(abort-on-property-write, m2hb.initAdserverSet)
+www.boredpanda.com##+js(abort-on-property-read, m2hb.initAdserverSet)
+www.boredpanda.com##+js(abort-on-property-write, m2hb.initAdserver)
+www.boredpanda.com##+js(abort-on-property-read, m2hb.initAdserver)
+www.boredpanda.com##+js(abort-on-property-write, window.initAdserver)
+www.boredpanda.com##+js(abort-on-property-read, window.initAdserver)
 www.w3docs.com##amp-user-notification[class^="cookie-disclaimer"]
 www.gearbest.com##div[class="cookiePolicy"]
 ||get.sportstream-search.com^*
 ||ptoushoa.com^*
 ||zofile.com/xFileSharingTemplates-js/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||zofile.com/xFileSharingTemplates-js/atrk.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-zofile.com##+js(abort-on-property-write.js, adsbygoogle)
-zofile.com##+js(abort-on-property-read.js, adsbygoogle)
+zofile.com##+js(abort-on-property-write, adsbygoogle)
+zofile.com##+js(abort-on-property-read, adsbygoogle)
 zofile.com##+js(set-constant, timeout, 0)
 zofile.com##+js(set-constant, enable_page_level_ads, false)
 ||yeaonesad.com^*
@@ -23370,10 +23389,10 @@ origin.80.lv##div[class="_2-Oc1"]
 !||datagather.xsolla.com/hit/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||datagather.xsolla.com^*
 ||hitfile.net/ajax/fdlogger/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.site2unblock.com##+js(abort-on-property-write.js, adsbygoogle)
-www.site2unblock.com##+js(abort-on-property-read.js, adsbygoogle)
-www.site2unblock.com##+js(abort-on-property-write.js, window.adsbygoogle)
-www.site2unblock.com##+js(abort-on-property-read.js, window.adsbygoogle)
+www.site2unblock.com##+js(abort-on-property-write, adsbygoogle)
+www.site2unblock.com##+js(abort-on-property-read, adsbygoogle)
+www.site2unblock.com##+js(abort-on-property-write, window.adsbygoogle)
+www.site2unblock.com##+js(abort-on-property-read, window.adsbygoogle)
 www.site2unblock.com##ins[class="adsbygoogle"]
 ||cdnjs.cloudflare.com/ajax/libs/cookie-banner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||dsh7ky7308k4b.cloudfront.net/autoads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -23386,12 +23405,12 @@ debrid-file.com##div[class^="cookie-consent-popup"]
 ||onlinecoursebay.com/wp-content/plugins/deblocker/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 onlinecoursebay.com##div[id="mdp-deblocker-ads"]
 onlinecoursebay.com##ins[class="adsbygoogle"]
-onlinecoursebay.com##+js(abort-on-property-write.js, mdpDeBlocker)
-onlinecoursebay.com##+js(abort-on-property-read.js, mdpDeBlocker)
-onlinecoursebay.com##+js(abort-on-property-write.js, adsbygoogle)
-onlinecoursebay.com##+js(abort-on-property-read.js, adsbygoogle)
-uplod.net##+js(abort-on-property-write.js, mdpDeBlocker)
-uplod.net##+js(abort-on-property-read.js, mdpDeBlocker)
+onlinecoursebay.com##+js(abort-on-property-write, mdpDeBlocker)
+onlinecoursebay.com##+js(abort-on-property-read, mdpDeBlocker)
+onlinecoursebay.com##+js(abort-on-property-write, adsbygoogle)
+onlinecoursebay.com##+js(abort-on-property-read, adsbygoogle)
+uplod.net##+js(abort-on-property-write, mdpDeBlocker)
+uplod.net##+js(abort-on-property-read, mdpDeBlocker)
 !||www.redditstatic.com/ads/pixel.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.redditstatic.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||gizmodo.com/api/kala/stats/beacon^
@@ -23472,8 +23491,8 @@ www.clo3d.com##div[class="banner info"]
 www.binaryfortress.com##div[id="CookieConsentDiv"]
 www.fbackup.com##div[id="cookie-gdpr"]
 www.backup4all.com##div[id="cookie-gdpr"]
-eu.hidester.com##+js(abort-on-property-write.js, adcashMacros)
-eu.hidester.com##+js(abort-on-property-read.js, adcashMacros)
+eu.hidester.com##+js(abort-on-property-write, adcashMacros)
+eu.hidester.com##+js(abort-on-property-read, adcashMacros)
 eu.hidester.com##div[id^="beacon_"]
 ||ad-cdn.technoratimedia.com^*
 ||thisiswaldo.com/new-impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -23493,21 +23512,21 @@ eu.hidester.com##div[id^="beacon_"]
 ||beonixom.com^*
 ||install.search-converter.com^*
 ||www.mirrored.to/_offer.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!www.mirrored.to##+js(abort-on-property-write.js, antiClickjack)
-!www.mirrored.to##+js(abort-on-property-read.js, antiClickjack)
+!www.mirrored.to##+js(abort-on-property-write, antiClickjack)
+!www.mirrored.to##+js(abort-on-property-read, antiClickjack)
 www.mirrored.to##.bottom-sticky-g
-www.mirrored.to##+js(abort-on-property-write.js, chain)
-www.mirrored.to##+js(abort-on-property-read.js, chain)
-www.mirrored.to##+js(abort-on-property-write.js, blockAdBlock)
-www.mirrored.to##+js(abort-on-property-read.js, blockAdBlock)
+www.mirrored.to##+js(abort-on-property-write, chain)
+www.mirrored.to##+js(abort-on-property-read, chain)
+www.mirrored.to##+js(abort-on-property-write, blockAdBlock)
+www.mirrored.to##+js(abort-on-property-read, blockAdBlock)
 www.mirrored.to##+js(abort-on-property-write, pageTracker)
 www.mirrored.to##+js(abort-on-property-read, pageTracker)
-www.mirrored.to##+js(abort-on-property-write.js, adb)
-www.mirrored.to##+js(abort-on-property-read.js, adb)
-www.mirrored.to##+js(abort-on-property-write.js, navigator.cookieEnabled)
-www.mirrored.to##+js(abort-on-property-read.js, navigator.cookieEnabled)
-www.mirrored.to##+js(abort-on-property-write.js, window.dataLayer)
-www.mirrored.to##+js(abort-on-property-read.js, window.dataLayer)
+www.mirrored.to##+js(abort-on-property-write, adb)
+www.mirrored.to##+js(abort-on-property-read, adb)
+www.mirrored.to##+js(abort-on-property-write, navigator.cookieEnabled)
+www.mirrored.to##+js(abort-on-property-read, navigator.cookieEnabled)
+www.mirrored.to##+js(abort-on-property-write, window.dataLayer)
+www.mirrored.to##+js(abort-on-property-read, window.dataLayer)
 www.mirrored.to##+js(set-constant, ab, 0)
 www.mirrored.to##+js(set-constant, adb, 0)
 www.mirrored.to##+js(set-constant, interval, 1)
@@ -23515,7 +23534,9 @@ www.mirrored.to##+js(set-constant, interval, 1)
 ||www.mirrored.to/js/bab.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.mirrored.to/mirstats.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.mirrored.to##+js(set-constant, pageTracker, noopFunc)
+www.mirrored.to##+js(acs, pageTracker)
 www.mirrored.to##+js(set-constant, gtag, noopFunc)
+www.mirrored.to##+js(acs, gtag)
 ||oosl6q5prri3.com^*
 ||hidester.postaffiliatepro.com^*
 www.diskpart.com##div[class="ensureCookie"]
@@ -23596,16 +23617,16 @@ nulledfree.pw##div[id="cookie-law-info-bar"]
 ||cdn1.adplugg.io/apusers/serve/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 code.tutsplus.com##.post__article-ad
 nulleb.com##+js(set-constant, triggerAlert, false)
-nulleb.com##+js(abort-on-property-write.js, window.location.hash)
-nulleb.com##+js(abort-on-property-read.js, window.location.hash)
-nulleb.com##+js(abort-on-property-write.js, adsbygoogle)
-nulleb.com##+js(abort-on-property-read.js, adsbygoogle)
-nulleb.com##+js(abort-on-property-write.js, adblockDetectedAlert)
-nulleb.com##+js(abort-on-property-read.js, adblockDetectedAlert)
-nulleb.com##+js(abort-on-property-write.js, t.adblock)
-nulleb.com##+js(abort-on-property-read.js, t.adblock)
-nulleb.com##+js(abort-on-property-write.js, mdpDeBlocker)
-nulleb.com##+js(abort-on-property-read.js, mdpDeBlocker)
+nulleb.com##+js(abort-on-property-write, window.location.hash)
+nulleb.com##+js(abort-on-property-read, window.location.hash)
+nulleb.com##+js(abort-on-property-write, adsbygoogle)
+nulleb.com##+js(abort-on-property-read, adsbygoogle)
+nulleb.com##+js(abort-on-property-write, adblockDetectedAlert)
+nulleb.com##+js(abort-on-property-read, adblockDetectedAlert)
+nulleb.com##+js(abort-on-property-write, t.adblock)
+nulleb.com##+js(abort-on-property-read, t.adblock)
+nulleb.com##+js(abort-on-property-write, mdpDeBlocker)
+nulleb.com##+js(abort-on-property-read, mdpDeBlocker)
 nulleb.com##ins[class="adsbygoogle"]
 nulleb.com##div[class="adace-disclaimer"]
 nulleb.com##div[class="adace-slot"]
@@ -23645,18 +23666,18 @@ gamerant.com##.ad-zone-container
 ||pl15392224.passtechusa.com^*
 ||www.w3counter.com/tracker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.proxysite.com##ins[class^="adsbygoogle"]
-www.proxysite.com##+js(abort-on-property-write.js, google_ad_slot)
-www.proxysite.com##+js(abort-on-property-read.js, google_ad_slot)
-www.proxysite.com##+js(abort-on-property-write.js, adsbygoogle)
-www.proxysite.com##+js(abort-on-property-read.js, adsbygoogle)
+www.proxysite.com##+js(abort-on-property-write, google_ad_slot)
+www.proxysite.com##+js(abort-on-property-read, google_ad_slot)
+www.proxysite.com##+js(abort-on-property-write, adsbygoogle)
+www.proxysite.com##+js(abort-on-property-read, adsbygoogle)
 www.4everproxy.com##ins[class="adsbygoogle"]
-www.4everproxy.com##+js(abort-on-property-write.js, adsbygoogle)
-www.4everproxy.com##+js(abort-on-property-read.js, adsbygoogle)
+www.4everproxy.com##+js(abort-on-property-write, adsbygoogle)
+www.4everproxy.com##+js(abort-on-property-read, adsbygoogle)
 blog.syscloud.com##div[id="hs-eu-cookie-confirmation"]
 winscp.net##div[class="adsbygoogle"]
 winscp.net##p[class="promo-block-content"]
-winscp.net##+js(abort-on-property-write.js, adsbygoogle)
-winscp.net##+js(abort-on-property-read.js, adsbygoogle)
+winscp.net##+js(abort-on-property-write, adsbygoogle)
+winscp.net##+js(abort-on-property-read, adsbygoogle)
 !||www.itechtics.com/ezoic/anchorfix.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.itechtics.com/ezoic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.itechtics.com##span[id^="div-gpt-ad"]
@@ -23665,14 +23686,14 @@ www.itechtics.com##span[class*="adtester-container-"]
 www.itechtics.com##aside[id^="adswidget1-quick-adsense"]
 www.itechtics.com##aside[id^="adswidget2-quick-adsense"]
 www.itechtics.com##aside[id^="adswidget3-quick-adsense"]
-www.itechtics.com##+js(abort-on-property-write.js, window.ez_ad_units)
-www.itechtics.com##+js(abort-on-property-read.js, window.ez_ad_units)
-www.itechtics.com##+js(abort-on-property-write.js, window.isEZABL)
-www.itechtics.com##+js(abort-on-property-read.js, window.isEZABL)
-www.itechtics.com##+js(abort-on-property-write.js, ezaxmns)
-www.itechtics.com##+js(abort-on-property-read.js, ezaxmns)
-www.itechtics.com##+js(abort-on-property-write.js, googleAdClient)
-www.itechtics.com##+js(abort-on-property-read.js, googleAdClient)
+www.itechtics.com##+js(abort-on-property-write, window.ez_ad_units)
+www.itechtics.com##+js(abort-on-property-read, window.ez_ad_units)
+www.itechtics.com##+js(abort-on-property-write, window.isEZABL)
+www.itechtics.com##+js(abort-on-property-read, window.isEZABL)
+www.itechtics.com##+js(abort-on-property-write, ezaxmns)
+www.itechtics.com##+js(abort-on-property-read, ezaxmns)
+www.itechtics.com##+js(abort-on-property-write, googleAdClient)
+www.itechtics.com##+js(abort-on-property-read, googleAdClient)
 ||log.outbrainimg.com^*
 ||www.itechtics.com/ezossp/https/stats.wp.com^*
 ||www.itechtics.com/detroitchicago/imp.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -23682,73 +23703,54 @@ www.itechtics.com##+js(abort-on-property-read.js, googleAdClient)
 ||app.infinityfree.net/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 infinityfree.net##div[class="uk-grid cookie-message"]
 infinityfree.net##ins[class="adsbygoogle"]
-infinityfree.net##+js(abort-on-property-write.js, adsbygoogle)
-infinityfree.net##+js(abort-on-property-read.js, adsbygoogle)
-app.infinityfree.net##+js(abort-on-property-write.js, adsbygoogle)
-app.infinityfree.net##+js(abort-on-property-read.js, adsbygoogle)
+infinityfree.net##+js(abort-on-property-write, adsbygoogle)
+infinityfree.net##+js(abort-on-property-read, adsbygoogle)
+app.infinityfree.net##+js(abort-on-property-write, adsbygoogle)
+app.infinityfree.net##+js(abort-on-property-read, adsbygoogle)
 app.infinityfree.net##div[class="alert alert-secondary bg-grey fundingNotice"]
 !||jill.fc.yahoo.com/v1/ads/js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||jill.fc.yahoo.com/v1/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||letsupload.to/themes/mngez/js/clipboardjs/dist/clipboard.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-letsupload.to##+js(abort-current-script, _Hasync)
-letsupload.to##+js(abort-current-script, adCashMacros)
-letsupload.to##+js(abort-current-script, runAdblock)
-letsupload.to##+js(abort-on-property-read.js, _Hasync)
-letsupload.to##+js(abort-on-property-read.js, adCashMacros)
-letsupload.to##+js(abort-on-property-read.js, adsbygoogle)
-letsupload.to##+js(abort-on-property-write.js, _Hasync)
-letsupload.to##+js(abort-on-property-write.js, adCashMacros)
-letsupload.to##+js(abort-on-property-write.js, adsbygoogle)
-letsupload.to##+js(set-constant, seconds, 0)
-letsupload.to##div[class="clipboard-placeholder-wrapper"]
-letsupload.to##div[class="containadhere"]
-letsupload.to##div[class="metaRedirectWrapperTopAds"]
-letsupload.to##^script:has-text(runAdblock)
-letsupload.to##span[class="adsbygoogle"]
-||letsupload.to/themes/flow/js/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||letsupload.to/themes/mngez/js/clipboardjs/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||letsupload.to/themes/mngez/js/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||nunhoefey.com^*
 www.wonderplugin.com##div[class="wonderplugin-box-top"]
 www.wonderplugin.com##div[class="wonderplugin-box-bottom"]
 www.hideoxy.com##ins[class="adsbygoogle"]
-www.hideoxy.com##+js(abort-on-property-read.js, adsbygoogle)
-www.hideoxy.com##+js(abort-on-property-write.js, adsbygoogle)
+www.hideoxy.com##+js(abort-on-property-read, adsbygoogle)
+www.hideoxy.com##+js(abort-on-property-write, adsbygoogle)
 www.hideoxy.com##^script[id="cookiebanner"]
-www.unblockvid.com##+js(abort-on-property-read.js, google_ad_client)
-www.unblockvid.com##+js(abort-on-property-write.js, google_ad_client)
-www.unblockvid.com##+js(abort-on-property-read.js, google_ad_slot)
-www.unblockvid.com##+js(abort-on-property-write.js, google_ad_slot)
+www.unblockvid.com##+js(abort-on-property-read, google_ad_client)
+www.unblockvid.com##+js(abort-on-property-write, google_ad_client)
+www.unblockvid.com##+js(abort-on-property-read, google_ad_slot)
+www.unblockvid.com##+js(abort-on-property-write, google_ad_slot)
 www.unblockvid.com##^script[id="cookiebanner"]
 ||www.unblockvid.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.cultofmac.com##+js(abort-on-property-read.js, __ez)
-www.cultofmac.com##+js(abort-on-property-write.js, __ez)
-www.cultofmac.com##+js(abort-on-property-read.js, processGoogleToken)
-www.cultofmac.com##+js(abort-on-property-write.js, processGoogleToken)
-www.cultofmac.com##+js(abort-on-property-read.js, window.ezogtk)
-www.cultofmac.com##+js(abort-on-property-write.js, window.ezogtk)
-www.cultofmac.com##+js(abort-on-property-read.js, _ebcids)
-www.cultofmac.com##+js(abort-on-property-write.js, _ebcids)
-www.cultofmac.com##+js(abort-on-property-read.js, window.ez_ad_units)
-www.cultofmac.com##+js(abort-on-property-write.js, window.ez_ad_units)
-www.cultofmac.com##+js(abort-on-property-read.js, ezrpos)
-www.cultofmac.com##+js(abort-on-property-write.js, ezrpos)
-www.cultofmac.com##+js(abort-on-property-read.js, epbjsRequestAdUnits)
-www.cultofmac.com##+js(abort-on-property-write.js, epbjsRequestAdUnits)
-www.cultofmac.com##+js(abort-on-property-read.js, gads.src)
-www.cultofmac.com##+js(abort-on-property-write.js, gads.src)
-www.cultofmac.com##+js(abort-on-property-read.js, __ez.ssaf)
-www.cultofmac.com##+js(abort-on-property-write.js, __ez.ssaf)
+www.cultofmac.com##+js(abort-on-property-read, __ez)
+www.cultofmac.com##+js(abort-on-property-write, __ez)
+www.cultofmac.com##+js(abort-on-property-read, processGoogleToken)
+www.cultofmac.com##+js(abort-on-property-write, processGoogleToken)
+www.cultofmac.com##+js(abort-on-property-read, window.ezogtk)
+www.cultofmac.com##+js(abort-on-property-write, window.ezogtk)
+www.cultofmac.com##+js(abort-on-property-read, _ebcids)
+www.cultofmac.com##+js(abort-on-property-write, _ebcids)
+www.cultofmac.com##+js(abort-on-property-read, window.ez_ad_units)
+www.cultofmac.com##+js(abort-on-property-write, window.ez_ad_units)
+www.cultofmac.com##+js(abort-on-property-read, ezrpos)
+www.cultofmac.com##+js(abort-on-property-write, ezrpos)
+www.cultofmac.com##+js(abort-on-property-read, epbjsRequestAdUnits)
+www.cultofmac.com##+js(abort-on-property-write, epbjsRequestAdUnits)
+www.cultofmac.com##+js(abort-on-property-read, gads.src)
+www.cultofmac.com##+js(abort-on-property-write, gads.src)
+www.cultofmac.com##+js(abort-on-property-read, __ez.ssaf)
+www.cultofmac.com##+js(abort-on-property-write, __ez.ssaf)
 www.cultofmac.com##div[id^="div-gpt-ad"]
 www.cultofmac.com##span[id^="div-gpt-ad"]
-www.cultofmac.com##+js(abort-on-property-read.js, adUnitName)
-www.cultofmac.com##+js(abort-on-property-write.js, adUnitName)
+www.cultofmac.com##+js(abort-on-property-read, adUnitName)
+www.cultofmac.com##+js(abort-on-property-write, adUnitName)
 www.cultofmac.com##div[id="ezmobfooter"]
 www.cultofmac.com##div[class^="ezmobfooter"]
-www.cultofmac.com##+js(abort-on-property-read.js, pl_beacon)
-www.cultofmac.com##+js(abort-on-property-write.js, pl_beacon)
-www.cultofmac.com##+js(abort-on-property-read.js, googleAdClient)
-www.cultofmac.com##+js(abort-on-property-write.js, googleAdClient)
+www.cultofmac.com##+js(abort-on-property-read, pl_beacon)
+www.cultofmac.com##+js(abort-on-property-write, pl_beacon)
+www.cultofmac.com##+js(abort-on-property-read, googleAdClient)
+www.cultofmac.com##+js(abort-on-property-write, googleAdClient)
 www.cultofmac.com##section[class="header-ad-region"]
 www.cultofmac.com##span[id^="ezoic-pub-ad-placeholder-"]
 www.cultofmac.com##span[class^="ezoic-ad"]
@@ -23761,66 +23763,61 @@ www.hidemyass.com##div[class="js-cookie-bar cookie-bar visible"]
 ||a.optmnstr.com^*
 ||graph.instagram.com/logging_client_events$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.unblock123.com##ins[class="adsbygoogle"]
-www.cultofmac.com##+js(abort-on-property-read.js, adsbygoogle)
-www.cultofmac.com##+js(abort-on-property-write.js, adsbygoogle)
+www.cultofmac.com##+js(abort-on-property-read, adsbygoogle)
+www.cultofmac.com##+js(abort-on-property-write, adsbygoogle)
 !www.unblock123.com##^script[id="cookiebanner"]
 !www.unblockdomain.com##^script[id="cookiebanner"]
-www.unblockdomain.com##+js(abort-on-property-write.js, google_ad_client)
-www.unblockdomain.com##+js(abort-on-property-read.js, google_ad_client)
+www.unblockdomain.com##+js(abort-on-property-write, google_ad_client)
+www.unblockdomain.com##+js(abort-on-property-read, google_ad_client)
 www.hidebux.com##ins[class="adsbygoogle"]
-www.hidebux.com##+js(abort-on-property-write.js, adsbygoogle)
-www.hidebux.com##+js(abort-on-property-read.js, adsbygoogle)
+www.hidebux.com##+js(abort-on-property-write, adsbygoogle)
+www.hidebux.com##+js(abort-on-property-read, adsbygoogle)
 ||www.unblockstreaming.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.myipbanned.com##ins[class="adsbygoogle"]
-www.myipbanned.com##+js(abort-on-property-read.js, adsbygoogle)
-www.myipbanned.com##+js(abort-on-property-write.js, adsbygoogle)
-zend2.com##+js(abort-on-property-read.js, adsbygoogle)
-zend2.com##+js(abort-on-property-write.js, adsbygoogle)
+www.myipbanned.com##+js(abort-on-property-read, adsbygoogle)
+www.myipbanned.com##+js(abort-on-property-write, adsbygoogle)
+zend2.com##+js(abort-on-property-read, adsbygoogle)
+zend2.com##+js(abort-on-property-write, adsbygoogle)
 zend2.com##ins[class="adsbygoogle"]
 www.videounblocker.net##ins[class="adsbygoogle"]
-www.videounblocker.net##+js(abort-on-property-read.js, adsbygoogle)
-www.videounblocker.net##+js(abort-on-property-write.js, adsbygoogle)
-webproxy.to##+js(abort-on-property-read.js, adsbygoogle)
-webproxy.to##+js(abort-on-property-write.js, adsbygoogle)
-webproxy.to##+js(abort-on-property-read.js, _gaq)
-webproxy.to##+js(abort-on-property-write.js, _gaq)
-webproxy.to##+js(abort-on-property-read.js, cookieChoices.showCookieConsentBar)
-webproxy.to##+js(abort-on-property-write.js, cookieChoices.showCookieConsentBar)
+www.videounblocker.net##+js(abort-on-property-read, adsbygoogle)
+www.videounblocker.net##+js(abort-on-property-write, adsbygoogle)
+webproxy.to##+js(abort-on-property-read, adsbygoogle)
+webproxy.to##+js(abort-on-property-write, adsbygoogle)
+webproxy.to##+js(abort-on-property-read, _gaq)
+webproxy.to##+js(abort-on-property-write, _gaq)
+webproxy.to##+js(abort-on-property-read, cookieChoices.showCookieConsentBar)
+webproxy.to##+js(abort-on-property-write, cookieChoices.showCookieConsentBar)
 webproxy.to##ins[class="adsbygoogle"]
 !||cdn.hbplatform.com/adfill/tags/2/1034/adfill.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.hbplatform.com/adfill/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.croxyproxy.com##+js(abort-on-property-read.js, adsbygoogle)
-www.croxyproxy.com##+js(abort-on-property-write.js, adsbygoogle)
+www.croxyproxy.com##+js(abort-on-property-read, adsbygoogle)
+www.croxyproxy.com##+js(abort-on-property-write, adsbygoogle)
 www.croxyproxy.com##ins[class="adsbygoogle"]
 ||cdn.userreport.com/userreport.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-unblockvideos.com##+js(abort-on-property-read.js, adsbygoogle)
-unblockvideos.com##+js(abort-on-property-write.js, adsbygoogle)
-unblockvideos.com##+js(abort-on-property-read.js, adblock)
-unblockvideos.com##+js(abort-on-property-write.js, adblock)
+unblockvideos.com##+js(abort-on-property-read, adsbygoogle)
+unblockvideos.com##+js(abort-on-property-write, adsbygoogle)
+unblockvideos.com##+js(abort-on-property-read, adblock)
+unblockvideos.com##+js(abort-on-property-write, adblock)
 unblockvideos.com##ins[class="adsbygoogle"]
-unblockvideos.com##+js(abort-on-property-read.js, adblock_on)
-unblockvideos.com##+js(abort-on-property-write.js, adblock_on)
+unblockvideos.com##+js(abort-on-property-read, adblock_on)
+unblockvideos.com##+js(abort-on-property-write, adblock_on)
 unblockvideos.com##+js(set-constant, adblock_on, 0)
 ||stats.platformadmin.de^*
 debrid-file.com##div[class="cookie-consent-popup open"]
-debrid-file.com##+js(abort-on-property-read.js, window.cookieConsent)
-debrid-file.com##+js(abort-on-property-write.js, window.cookieConsent)
+debrid-file.com##+js(abort-on-property-read, window.cookieConsent)
+debrid-file.com##+js(abort-on-property-write, window.cookieConsent)
 leech360.com##div[id="cookie-required"]
 nextcloud.com##div[class="cookiewarning"]
 nextcloud.com##div[id="cookieConsent"]
 www.genmirror.com##ins[class="adsbygoogle"]
-www.genmirror.com##+js(abort-on-property-read.js, adsbygoogle)
-www.genmirror.com##+js(abort-on-property-write.js, adsbygoogle)
+www.genmirror.com##+js(abort-on-property-read, adsbygoogle)
+www.genmirror.com##+js(abort-on-property-write, adsbygoogle)
 www.genmirror.com##div[class="ad2 text-center"]
 www.s7a.it##div[class="annoying-container"]
 www.gog.com##div[ng-hide="floatingBanner.isDismissed"]
 ||ikunselt.com^*
 ||ptaulrou.net^*
-letsupload.org,letsupload.to##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
-letsupload.org,letsupload.to##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-letsupload.org,letsupload.to##^script:has-text(JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
-letsupload.org,letsupload.to##+js(abort-current-script, atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='))
-letsupload.org,letsupload.to##+js(abort-current-script, JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
 www.foxebook.net##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
 www.foxebook.net##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 www.foxebook.net##+js(abort-current-script, atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='))
@@ -23839,8 +23836,8 @@ www.proxfree.com##div[class="pfad4"]
 tx.proxfree.com##div[class="pfad4"]
 tx.proxfree.com##div[class="pfad3"]
 tx.proxfree.com##div[class="pfad2"]
-www.proxfree.com##+js(abort-on-property-read.js, adsbygoogle)
-www.proxfree.com##+js(abort-on-property-write.js, adsbygoogle)
+www.proxfree.com##+js(abort-on-property-read, adsbygoogle)
+www.proxfree.com##+js(abort-on-property-write, adsbygoogle)
 www.abandonware-france.org##ins[class="adsbygoogle"]
 www.abandonware-france.org##div[id="barritaloca"]
 www.rapidtables.com##div[id="ban-ad"]
@@ -23849,32 +23846,32 @@ www.rapidtables.com##ins[class="adsbygoogle adslot_2"]
 theisozone.com##div[class="cookie-notice-container"]
 www.oneangrygamer.net##div[id="fb-root"]
 www.oneangrygamer.net##div[id^="amzn-assoc-ad-"]
-!www.oneangrygamer.net##+js(abort-on-property-read.js, cli_cookiebar_settings)
-!www.oneangrygamer.net##+js(abort-on-property-write.js, cli_cookiebar_settings)
-##+js(abort-on-property-read.js, cli_cookiebar_settings)
-##+js(abort-on-property-write.js, cli_cookiebar_settings)
+!www.oneangrygamer.net##+js(abort-on-property-read, cli_cookiebar_settings)
+!www.oneangrygamer.net##+js(abort-on-property-write, cli_cookiebar_settings)
+##+js(abort-on-property-read, cli_cookiebar_settings)
+##+js(abort-on-property-write, cli_cookiebar_settings)
 www.oneangrygamer.net##div[id="cookie-law-info-bar"]
 www.oneangrygamer.net##div[class="cli-modal"]
 www.oneangrygamer.net##div[class="adsbyvli"]
-www.oneangrygamer.net##+js(abort-on-property-read.js, amzn_assoc_enable_interest_ads)
-www.oneangrygamer.net##+js(abort-on-property-write.js, amzn_assoc_enable_interest_ads)
+www.oneangrygamer.net##+js(abort-on-property-read, amzn_assoc_enable_interest_ads)
+www.oneangrygamer.net##+js(abort-on-property-write, amzn_assoc_enable_interest_ads)
 www.oneangrygamer.net##+js(set-constant, amzn_assoc_enable_interest_ads, false)
-www.oneangrygamer.net##+js(abort-on-property-read.js, adElemSticky)
-www.oneangrygamer.net##+js(abort-on-property-write.js, adElemSticky)
+www.oneangrygamer.net##+js(abort-on-property-read, adElemSticky)
+www.oneangrygamer.net##+js(abort-on-property-write, adElemSticky)
 www.oneangrygamer.net##div[id="vi-sticky-ad"]
 www.oneangrygamer.net##div[id="vi-ad"]
 retrozone.co##ins[class="adsbygoogle"]
 gamejolt.com##div[class^="cookie-banner"]
 ||cdn.otnolatrnup.com^*
 www.mediafire.com##div[id="cookie-accept-footer"]
-www.mediafire.com##+js(abort-on-property-read.js, AD_UNITS_CONFIG)
-www.mediafire.com##+js(abort-on-property-write.js, AD_UNITS_CONFIG)
-www.mediafire.com##+js(abort-on-property-read.js, adElement)
-www.mediafire.com##+js(abort-on-property-write.js, adElement)
-www.mediafire.com##+js(abort-on-property-read.js, adLoaded)
-www.mediafire.com##+js(abort-on-property-write.js, adLoaded)
-www.mediafire.com##+js(abort-on-property-read.js, pbjs.initAdserverSet)
-www.mediafire.com##+js(abort-on-property-write.js, pbjs.initAdserverSet)
+www.mediafire.com##+js(abort-on-property-read, AD_UNITS_CONFIG)
+www.mediafire.com##+js(abort-on-property-write, AD_UNITS_CONFIG)
+www.mediafire.com##+js(abort-on-property-read, adElement)
+www.mediafire.com##+js(abort-on-property-write, adElement)
+www.mediafire.com##+js(abort-on-property-read, adLoaded)
+www.mediafire.com##+js(abort-on-property-write, adLoaded)
+www.mediafire.com##+js(abort-on-property-read, pbjs.initAdserverSet)
+www.mediafire.com##+js(abort-on-property-write, pbjs.initAdserverSet)
 www.mediafire.com##+js(set-constant, pbjs.initAdserverSet, false)
 www.oneangrygamer.net##div[id="fwn_videos"]
 !||www.oneangrygamer.net/wp-content/plugins/cookie-law-info/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -23890,8 +23887,8 @@ www.atozproxy.com##div[class="ad2 text-center"]
 ||servecontent.net/content/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||pl15277361.passeura.com^*
 ||xr.kgtcm.club^*
-www.arachnosoft.com##+js(abort-on-property-read.js, adsbygoogle)
-www.arachnosoft.com##+js(abort-on-property-write.js, adsbygoogle)
+www.arachnosoft.com##+js(abort-on-property-read, adsbygoogle)
+www.arachnosoft.com##+js(abort-on-property-write, adsbygoogle)
 ||passback.free.fr/pub/pp_120x600.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||passback.free.fr/pub/pp_300x250.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||usd.engel-eva.com/zcredirect^*
@@ -23903,33 +23900,33 @@ community.spiceworks.com##div[class="zd-privacy-content"]
 !www.vpnbook.com##div[class="align-left adsense"]
 www.vpnbook.com##div[class$="adsense"]
 www.vpnbook.com##ins[class="adsbygoogle"]
-www.vpnbook.com##+js(abort-on-property-read.js, adsbygoogle)
-www.vpnbook.com##+js(abort-on-property-write.js, adsbygoogle)
+www.vpnbook.com##+js(abort-on-property-read, adsbygoogle)
+www.vpnbook.com##+js(abort-on-property-write, adsbygoogle)
 1fichier.com##div[aria-describedby="modal-msg"]
 !||flow.aquaplatform.com/lg.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||flow.aquaplatform.com/asyncjs.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||flow.aquaplatform.com^*
-proxite.ws##+js(abort-on-property-read.js, scJsHost)
-proxite.ws##+js(abort-on-property-write.js, scJsHost)
+proxite.ws##+js(abort-on-property-read, scJsHost)
+proxite.ws##+js(abort-on-property-write, scJsHost)
 www.seagullscientific.com##div[aria-label="cookieconsent"]
 support.seagullscientific.com##div[id="cookie-popper"]
 1fichier.com##.ui-front.ui-widget-overlay
 ||mypenny.xyz^*
 !||d1gwclp1pmzk26.cloudfront.net/agile/stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!horizondatasys.com##+js(abort-on-property-read.js, Agile_API)
-!horizondatasys.com##+js(abort-on-property-write.js, Agile_API)
+!horizondatasys.com##+js(abort-on-property-read, Agile_API)
+!horizondatasys.com##+js(abort-on-property-write, Agile_API)
 ||asoulrox.com^*
 ||gcxjczooe.com^*
 ||www.gcxjczooe.com^*
 ||traff6.com^*
 ||stats2.agilecrm.com^*
 giga-down.com##ins[class="adsbygoogle"]
-giga-down.com##+js(abort-on-property-read.js, adsbygoogle)
-giga-down.com##+js(abort-on-property-write.js, adsbygoogle)
-giga-down.com##+js(abort-on-property-read.js, _atrk_opts)
-giga-down.com##+js(abort-on-property-write.js, _atrk_opts)
-giga-down.com##+js(abort-on-property-read.js, chain)
-giga-down.com##+js(abort-on-property-write.js, chain)
+giga-down.com##+js(abort-on-property-read, adsbygoogle)
+giga-down.com##+js(abort-on-property-write, adsbygoogle)
+giga-down.com##+js(abort-on-property-read, _atrk_opts)
+giga-down.com##+js(abort-on-property-write, _atrk_opts)
+giga-down.com##+js(abort-on-property-read, chain)
+giga-down.com##+js(abort-on-property-write, chain)
 giga-down.com##div[class="adsbox"]
 !giga-down.com##+js(abort-current-script, /\$\('\.adsbox'\)/)
 giga-down.com##+js(abort-current-script, $('.adsbox'))
@@ -23939,8 +23936,8 @@ giga-down.com##+js(set-constant, speed, 1)
 giga-down.com##input[name="adblock_detected"]
 giga-down.com##center:nth-of-type(3) > .btn-dow.btn
 giga-down.com##div.download-option-btn:nth-of-type(2) > .btn-success.btn
-giga-down.com##+js(abort-on-property-read.js, _Hasync=)
-giga-down.com##+js(abort-on-property-write.js, _Hasync=)
+giga-down.com##+js(abort-on-property-read, _Hasync=)
+giga-down.com##+js(abort-on-property-write, _Hasync=)
 www.softwareok.com##div[id="cookiebar"]
 ||cdn.simpleanalytics.io^*
 ||api.simpleanalytics.io^*
@@ -23956,13 +23953,13 @@ superuser.com##div[id="js-gdpr-consent-banner"]
 da-software.net##div[aria-label="cookieconsent"]
 ||oksy.cloud/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.dualshockers.com##.afw_ad
-multifilemirror.com##+js(abort-on-property-read.js, window.googletag)
-multifilemirror.com##+js(abort-on-property-write.js, window.googletag)
+multifilemirror.com##+js(abort-on-property-read, window.googletag)
+multifilemirror.com##+js(abort-on-property-write, window.googletag)
 multifilemirror.com##div[class="9qbvd1u5962m"]
 multifilemirror.com##div[class="blockContainer"]
 multifilemirror.com##div[class="adContainer"]
-multifilemirror.com##+js(abort-on-property-read.js, blockAdBlock)
-multifilemirror.com##+js(abort-on-property-write.js, blockAdBlock)
+multifilemirror.com##+js(abort-on-property-read, blockAdBlock)
+multifilemirror.com##+js(abort-on-property-write, blockAdBlock)
 www.r-studio.com##div[id="pp-info"]
 ||d3v3bqdndm4erx.cloudfront.net^*
 ||prosumsit.com^*
@@ -23971,12 +23968,12 @@ www.paypal.com##div[id="ccpaCookieBanner"]
 www.selenium.dev##div[id="banner-blm"]
 esportsobserver.com##div[id="hs-eu-cookie-confirmation"]
 esportsobserver.com##div[class="jeg_ad jeg_ad_top jnews_header_top_ads"]
-esportsobserver.com##+js(abort-on-property-read.js, ga_options)
-esportsobserver.com##+js(abort-on-property-write.js, ga_options)
-esportsobserver.com##+js(abort-on-property-read.js, advadsCfpAd)
-esportsobserver.com##+js(abort-on-property-write.js, advadsCfpAd)
-esportsobserver.com##+js(abort-on-property-read.js, advads_items)
-esportsobserver.com##+js(abort-on-property-write.js, advads_items)
+esportsobserver.com##+js(abort-on-property-read, ga_options)
+esportsobserver.com##+js(abort-on-property-write, ga_options)
+esportsobserver.com##+js(abort-on-property-read, advadsCfpAd)
+esportsobserver.com##+js(abort-on-property-write, advadsCfpAd)
+esportsobserver.com##+js(abort-on-property-read, advads_items)
+esportsobserver.com##+js(abort-on-property-write, advads_items)
 esportsobserver.com##div[class^="ads-wrapper"]
 ||www.zuyejecgb.com^*
 ||zuyejecgb.com^*
@@ -24090,18 +24087,18 @@ chrunos.com##div[class="cookie-notice-container"]
 ||s3-us-west-1.amazonaws.com/adamillionads01-us-prod/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.adsrvr.org^*
 ||scripps.demdex.net^*
-www.searchpeoplefree.com##+js(abort-on-property-read.js, ad_cw)
-www.searchpeoplefree.com##+js(abort-on-property-write.js, ad_cw)
-www.searchpeoplefree.com##+js(abort-on-property-read.js, ad_mobile)
-www.searchpeoplefree.com##+js(abort-on-property-write.js, ad_mobile)
-www.searchpeoplefree.com##+js(abort-on-property-read.js, ad_tablet)
-www.searchpeoplefree.com##+js(abort-on-property-write.js, ad_tablet)
-www.searchpeoplefree.com##+js(abort-on-property-read.js, ad_desktop)
-www.searchpeoplefree.com##+js(abort-on-property-write.js, ad_desktop)
-www.searchpeoplefree.com##+js(abort-on-property-read.js, googletag)
-www.searchpeoplefree.com##+js(abort-on-property-write.js, googletag)
-www.searchpeoplefree.com##+js(abort-on-property-read.js, $googleAds)
-www.searchpeoplefree.com##+js(abort-on-property-write.js, $googleAds)
+www.searchpeoplefree.com##+js(abort-on-property-read, ad_cw)
+www.searchpeoplefree.com##+js(abort-on-property-write, ad_cw)
+www.searchpeoplefree.com##+js(abort-on-property-read, ad_mobile)
+www.searchpeoplefree.com##+js(abort-on-property-write, ad_mobile)
+www.searchpeoplefree.com##+js(abort-on-property-read, ad_tablet)
+www.searchpeoplefree.com##+js(abort-on-property-write, ad_tablet)
+www.searchpeoplefree.com##+js(abort-on-property-read, ad_desktop)
+www.searchpeoplefree.com##+js(abort-on-property-write, ad_desktop)
+www.searchpeoplefree.com##+js(abort-on-property-read, googletag)
+www.searchpeoplefree.com##+js(abort-on-property-write, googletag)
+www.searchpeoplefree.com##+js(abort-on-property-read, $googleAds)
+www.searchpeoplefree.com##+js(abort-on-property-write, $googleAds)
 !www.searchpeoplefree.com##div[class="s-ad-f d-block d-md-none"]
 !www.searchpeoplefree.com##div[class="s-ad s-ad-w d-md-none"]
 !www.searchpeoplefree.com##.s-ad-w
@@ -24178,8 +24175,8 @@ silk.com##div[id="cookie-bar"]
 silk.com##div[class="cookiealert show"]
 free-proxysite.com##div[id="ad1sector"]
 free-proxysite.com##div[id="ad2sector"]
-free-proxysite.com##+js(abort-on-property-read.js, sc_project)
-free-proxysite.com##+js(abort-on-property-write.js, sc_project)
+free-proxysite.com##+js(abort-on-property-read, sc_project)
+free-proxysite.com##+js(abort-on-property-write, sc_project)
 onemonth.com##div[class="supreme-container blur"]
 onemonth.com##div[class="modal-backdrop fade show"]
 onemonth.com##div[style*="visibility: hidden"]
@@ -24193,18 +24190,18 @@ onemonth.com##div[class="ub-emb-container"]
 ||edcreptors.club^*
 ||www.apestsagai.club^*
 ||apestsagai.club^*
-tusfiles.com##+js(abort-on-property-read.js, a.admvn_inter___ctc)
-tusfiles.com##+js(abort-on-property-write.js, a.admvn_inter___ctc)
-tusfiles.com##+js(abort-on-property-read.js, a.admvn_inter___ctt)
-tusfiles.com##+js(abort-on-property-write.js, a.admvn_inter___ctt)
-tusfiles.com##+js(abort-on-property-read.js, a.admvn_inter___ddb)
-tusfiles.com##+js(abort-on-property-write.js, a.admvn_inter___ddb)
-tusfiles.com##+js(abort-on-property-read.js, k.admvn_inter___ddb)
-tusfiles.com##+js(abort-on-property-write.js, k.admvn_inter___ddb)
-tusfiles.com##+js(abort-on-property-read.js, k.admvn_inter___ctt)
-tusfiles.com##+js(abort-on-property-write.js, k.admvn_inter___ctt)
-tusfiles.com##+js(abort-on-property-read.js, k.admvn_inter___ctc)
-tusfiles.com##+js(abort-on-property-write.js, k.admvn_inter___ctc)
+tusfiles.com##+js(abort-on-property-read, a.admvn_inter___ctc)
+tusfiles.com##+js(abort-on-property-write, a.admvn_inter___ctc)
+tusfiles.com##+js(abort-on-property-read, a.admvn_inter___ctt)
+tusfiles.com##+js(abort-on-property-write, a.admvn_inter___ctt)
+tusfiles.com##+js(abort-on-property-read, a.admvn_inter___ddb)
+tusfiles.com##+js(abort-on-property-write, a.admvn_inter___ddb)
+tusfiles.com##+js(abort-on-property-read, k.admvn_inter___ddb)
+tusfiles.com##+js(abort-on-property-write, k.admvn_inter___ddb)
+tusfiles.com##+js(abort-on-property-read, k.admvn_inter___ctt)
+tusfiles.com##+js(abort-on-property-write, k.admvn_inter___ctt)
+tusfiles.com##+js(abort-on-property-read, k.admvn_inter___ctc)
+tusfiles.com##+js(abort-on-property-write, k.admvn_inter___ctc)
 ||fpa-events.arstechnica.com/plogger/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.rsaltsjt.com^*
 ||rsaltsjt.com^*
@@ -24259,14 +24256,14 @@ medium.com##div[class="n o of"]
 filesupload.org##div[class="footerAds"]
 stackabuse.com##.ad.content
 stackabuse.com##div[class="content ad"]
-stackabuse.com##+js(abort-on-property-read.js, w.Repixel)
-stackabuse.com##+js(abort-on-property-write.js, w.Repixel)
+stackabuse.com##+js(abort-on-property-read, w.Repixel)
+stackabuse.com##+js(abort-on-property-write, w.Repixel)
 ||sdk.repixel.co/r.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cdnjs.cloudflare.com/ajax/libs/autotrack/1.0.1/autotrack.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdnjs.cloudflare.com/ajax/libs/autotrack/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||stackabuse.com/assets/js/highlight-worker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.w3schools.com##+js(abort-on-property-read.js, gptAdSlots)
-www.w3schools.com##+js(abort-on-property-write.js, gptAdSlots)
+www.w3schools.com##+js(abort-on-property-read, gptAdSlots)
+www.w3schools.com##+js(abort-on-property-write, gptAdSlots)
 u.pcloud.link##div[class="cookie_consent_holder"]
 ||www.steammovies.space^*
 ||steammovies.space^*
@@ -24277,12 +24274,9 @@ u.pcloud.link##div[class="cookie_consent_holder"]
 ||d21rudljp9n1rr.cloudfront.net^*
 www.aspsnippets.com##div[id="dvCookie"]
 www.aspsnippets.com##div[class="leaderboard_ad hidden-xs leader_float"]
-letsupload.org###addsButtonNew
 ||matomo.gofile.io^*
 www.educative.io##div[class="styles__BannerStyled-sc-14k2cl6-0 ddHKTm commonBanner-enter-done"]
 www.educative.io##div[class$="commonBanner-enter-done"]
-||letsupload.org/themes/mngez/js/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||letsupload.org/themes/mngez/styles/cookieconsent.min.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 x265movies.cc##div[class^="mysticky-welcomebar-"]
 !||slckg-2p3vy.ads.tremorhub.com^*
 !||slckg-qrmhc.ads.tremorhub.com^*
@@ -24310,8 +24304,6 @@ x265movies.cc##div[class^="mysticky-welcomebar-"]
 ||www.ps7894.com^*
 !||grid.bidswitch.net/hbnm^*
 ||grid.bidswitch.net^*
-letsupload.org##^script:has-text(document.createElement('script'),_)
-letsupload.org##+js(abort-current-script, document.createElement('script'),_)
 ||ssc.33across.com/api/v1/hb$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.thwhilecom.club^*
 ||thwhilecom.club^*
@@ -24325,24 +24317,24 @@ letsupload.org##+js(abort-current-script, document.createElement('script'),_)
 forum.torrminatorr.com##div[aria-label="cookieconsent"]
 www.konstantinkanin.com##div[id="catapult-cookie-bar"]
 ||exchange.buzzoola.com/adv/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-avr.i-trailer.ru##+js(abort-on-property-read.js, adspgpmd)
-avr.i-trailer.ru##+js(abort-on-property-write.js, adspgpmd)
-avr.i-trailer.ru##+js(abort-on-property-read.js, adspektr)
-avr.i-trailer.ru##+js(abort-on-property-write.js, adspektr)
-avr.i-trailer.ru##+js(abort-on-property-read.js, otm3)
-avr.i-trailer.ru##+js(abort-on-property-write.js, otm3)
-avr.i-trailer.ru##+js(abort-on-property-read.js, otm2)
-avr.i-trailer.ru##+js(abort-on-property-write.js, otm2)
-avr.i-trailer.ru##+js(abort-on-property-read.js, otm1)
-avr.i-trailer.ru##+js(abort-on-property-write.js, otm1)
-avr.i-trailer.ru##+js(abort-on-property-read.js, advarkads)
-avr.i-trailer.ru##+js(abort-on-property-write.js, advarkads)
-avr.i-trailer.ru##+js(abort-on-property-read.js, advarkads2)
-avr.i-trailer.ru##+js(abort-on-property-write.js, advarkads2)
-avr.i-trailer.ru##+js(abort-on-property-read.js, advark)
-avr.i-trailer.ru##+js(abort-on-property-write.js, advark)
-avr.i-trailer.ru##+js(abort-on-property-read.js, advark2)
-avr.i-trailer.ru##+js(abort-on-property-write.js, advark2)
+avr.i-trailer.ru##+js(abort-on-property-read, adspgpmd)
+avr.i-trailer.ru##+js(abort-on-property-write, adspgpmd)
+avr.i-trailer.ru##+js(abort-on-property-read, adspektr)
+avr.i-trailer.ru##+js(abort-on-property-write, adspektr)
+avr.i-trailer.ru##+js(abort-on-property-read, otm3)
+avr.i-trailer.ru##+js(abort-on-property-write, otm3)
+avr.i-trailer.ru##+js(abort-on-property-read, otm2)
+avr.i-trailer.ru##+js(abort-on-property-write, otm2)
+avr.i-trailer.ru##+js(abort-on-property-read, otm1)
+avr.i-trailer.ru##+js(abort-on-property-write, otm1)
+avr.i-trailer.ru##+js(abort-on-property-read, advarkads)
+avr.i-trailer.ru##+js(abort-on-property-write, advarkads)
+avr.i-trailer.ru##+js(abort-on-property-read, advarkads2)
+avr.i-trailer.ru##+js(abort-on-property-write, advarkads2)
+avr.i-trailer.ru##+js(abort-on-property-read, advark)
+avr.i-trailer.ru##+js(abort-on-property-write, advark)
+avr.i-trailer.ru##+js(abort-on-property-read, advark2)
+avr.i-trailer.ru##+js(abort-on-property-write, advark2)
 ||www.ciqguphollyj.com^*
 ||ciqguphollyj.com^*
 ||www.tdugvspdnq.com^*
@@ -24363,8 +24355,8 @@ ur-files.com##div[class="cookieinfo"]
 byet.host##div[class="cookieinfo"]
 !||cookieinfoscript.com/js/cookieinfo.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cookieinfoscript.com^*
-www.w3schools.com##+js(abort-on-property-write.js, adsbygoogle)
-www.w3schools.com##+js(abort-on-property-read.js, adsbygoogle)
+www.w3schools.com##+js(abort-on-property-write, adsbygoogle)
+www.w3schools.com##+js(abort-on-property-read, adsbygoogle)
 fex.net##div[class="layout__cookies-policy-notification"]
 fex.net##div[id^="epom-"]
 ||www.wgrjizeaimbxx.com^*
@@ -24532,8 +24524,8 @@ tusfiles.com##body > iframe:nth-child(5)
 ||workedlew.top^*
 ||set.connectingtobestsoftware.com^*
 ||connectingtobestsoftware.com^*
-tusfiles.com##+js(abort-on-property-write.js, zfgloadedpopup)
-tusfiles.com##+js(abort-on-property-read.js, zfgloadedpopup)
+tusfiles.com##+js(abort-on-property-write, zfgloadedpopup)
+tusfiles.com##+js(abort-on-property-read, zfgloadedpopup)
 ||hcxwy.prograph.club^*
 ||prograph.club^*
 ||horiticalagen.club^*
@@ -24556,7 +24548,7 @@ tusfiles.com##+js(abort-on-property-read.js, zfgloadedpopup)
 tusfiles.com##^script:has-text(document.createElement('script'))
 tusfiles.com##app > div.padding > script:nth-child(7)
 ||stsunfulnoth.top^*
-tusfiles.com##+js(abort-on-property-write.js, Fingerprint2)
+tusfiles.com##+js(abort-on-property-write, Fingerprint2)
 tusfiles.com##+js(nowoif)
 tusfiles.com##+js(acs, Math, zfgloaded)
 ||tusfiles.com/sw.js$script,1p
@@ -24618,8 +24610,8 @@ ubuntudde.com##^script[id="ai-adb-mn"]
 ubuntudde.com##^script[id="ai-adb-ads"]
 ubuntudde.com##^script[id="ai-adb-sponsors"]
 ubuntudde.com##+js(set-constant, ai_js_code, false)
-ubuntudde.com##+js(abort-on-property-write.js, ai_js_code)
-ubuntudde.com##+js(abort-on-property-read.js, ai_js_code)
+ubuntudde.com##+js(abort-on-property-write, ai_js_code)
+ubuntudde.com##+js(abort-on-property-read, ai_js_code)
 !||ubuntudde.com/wp-content/plugins/ad-inserter/images/ads.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ubuntudde.com/wp-content/plugins/ad-inserter/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ubuntudde.com/wp-content/plugins/ad-inserter/js/sponsors.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -24642,16 +24634,16 @@ scnlog.me##.at_a11y
 !||scnlog.me/wp-content/cache/busting/google-tracking/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||scnlog.me/wp-content/cache/busting/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||scnlog.me/cdn-cgi/apps/head/oOeNXYuAlgjdygJugMEgBqaJzrM.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-scnlog.me##+js(abort-on-property-read.js, 2318171)
+scnlog.me##+js(abort-on-property-read, 2318171)
 scnlog.me##+js(abort-current-script, 2318171)
 !scnlog.me##+js(popads.net.js)
 !scnlog.me##^script:inline(popads.net.js)
 scnlog.me##+js(abort-current-script, popundersPerIP)
-scnlog.me##+js(abort-on-property-read.js, c1.popads.net/pop.js)
+scnlog.me##+js(abort-on-property-read, c1.popads.net/pop.js)
 scnlog.me##+js(abort-current-script, c1.popads.net/pop.js)
-scnlog.me##+js(abort-on-property-read.js, c2.popads.net/pop.js)
+scnlog.me##+js(abort-on-property-read, c2.popads.net/pop.js)
 scnlog.me##+js(abort-current-script, c2.popads.net/pop.js)
-scnlog.me##+js(abort-on-property-read.js, _paq)
+scnlog.me##+js(abort-on-property-read, _paq)
 scnlog.me##+js(abort-current-script, _paq)
 scnlog.me##head > script:nth-child(73)
 ||d3mzokty951c5w.cloudfront.net^*
@@ -24674,10 +24666,10 @@ mirrorace.com##.uk-card-secondary:has-text(VPN)
 mirrorace.org##.uk-card-secondary:has-text(VPN)
 mirrorace.org##.uk-text-center.uk-padding
 mirrorace.com##.uk-text-center.uk-margin-bottom.uk-width-1-1:nth-of-type(2)
-mirrorace.com##+js(abort-on-property-read.js, _0x4a8e)
-mirrorace.com##+js(abort-on-property-read.js, blockAdBlock)
-mirrorace.com##+js(abort-on-property-write.js, _0x4a8e)
-mirrorace.com##+js(abort-on-property-write.js, blockAdBlock)
+mirrorace.com##+js(abort-on-property-read, _0x4a8e)
+mirrorace.com##+js(abort-on-property-read, blockAdBlock)
+mirrorace.com##+js(abort-on-property-write, _0x4a8e)
+mirrorace.com##+js(abort-on-property-write, blockAdBlock)
 mirrorace.com##+js(acs, RegExp, _0x)
 mirrorace.com##+js(acs, String.fromCharCode, 'shift')
 mirrorace.com##+js(aeld, click, _0x)
@@ -24689,12 +24681,12 @@ mirrorace.com##[href*="search/"]
 mirrorace.com##a[href^="http://nottoke.com/ref"]
 mirrorace.com##div[class="uk-width-1-1 uk-margin-bottom uk-text-center uk-visible@m"]
 mirrorace.com##div[id^="rn_ad_native_"]
-mirrorace.org##+js(abort-on-property-read.js, _0x319d)
-mirrorace.org##+js(abort-on-property-read.js, _0xc10e)
-mirrorace.org##+js(abort-on-property-read.js, d9e4130f7e4791eddb39599c3ff75271)
-mirrorace.org##+js(abort-on-property-write.js, _0x319d)
-mirrorace.org##+js(abort-on-property-write.js, _0xc10e)
-mirrorace.org##+js(abort-on-property-write.js, d9e4130f7e4791eddb39599c3ff75271)
+mirrorace.org##+js(abort-on-property-read, _0x319d)
+mirrorace.org##+js(abort-on-property-read, _0xc10e)
+mirrorace.org##+js(abort-on-property-read, d9e4130f7e4791eddb39599c3ff75271)
+mirrorace.org##+js(abort-on-property-write, _0x319d)
+mirrorace.org##+js(abort-on-property-write, _0xc10e)
+mirrorace.org##+js(abort-on-property-write, d9e4130f7e4791eddb39599c3ff75271)
 mirrorace.org##+js(acs, String.fromCharCode, 'shift')
 mirrorace.org##^script:has-text(document.createElement('script'))
 mirrorace.org##body > script:nth-child(2)
@@ -24806,8 +24798,8 @@ myuploadedpremium.de##body > script:nth-child(22)
 ||independentdespisedevolution.com^*
 ||pretencejailscore.com^*
 ||mypushz.com^*
-myuploadedpremium.de##+js(abort-on-property-read.js, window.atob)
-myuploadedpremium.de##+js(abort-on-property-write.js, window.atob)
+myuploadedpremium.de##+js(abort-on-property-read, window.atob)
+myuploadedpremium.de##+js(abort-on-property-write, window.atob)
 ||fundingchoicesmessages.google.com^*
 www.mediafire.com##div[id="adwrapper"]
 www.mediafire.com##div[id^="div-gpt-ad-"]
@@ -24863,7 +24855,7 @@ www.ign.com##div[class$="privacy-banner"]
 ||www.pqxadekhqotwkv.com^*
 ||pqxadekhqotwkv.com^*
 ||lqeevjgkjjwi.com^*
-scnlog.me##+js(abort-on-property-read.js, charCodeAt)
+scnlog.me##+js(abort-on-property-read, charCodeAt)
 www.freep.com##aside[aria-label="advertisement"]
 www.digitalocean.com##div[class="_panel_1nv7e_1"]
 askubuntu.com##div[id="js-gdpr-consent-banner"]
@@ -25252,16 +25244,16 @@ www.wjunction.com##li[class*="notice--cookie"]
 ||faindianship.club^*
 ||vercraneans.club^*
 short.fc-lc.com##div[id="adb_detected"]
-short.fc-lc.com##+js(abort-on-property-read.js, importFAB)
-short.fc-lc.com##+js(abort-on-property-write.js, importFAB)
-short.fc-lc.com##+js(abort-on-property-read.js, fuckAdBlock)
-short.fc-lc.com##+js(abort-on-property-write.js, fuckAdBlock)
+short.fc-lc.com##+js(abort-on-property-read, importFAB)
+short.fc-lc.com##+js(abort-on-property-write, importFAB)
+short.fc-lc.com##+js(abort-on-property-read, fuckAdBlock)
+short.fc-lc.com##+js(abort-on-property-write, fuckAdBlock)
 short.fc-lc.com##+js(abort-current-script, in-page-push.com)
 ||fc.lc/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-fc.lc##+js(abort-on-property-read.js, window.Adomik)
-fc.lc##+js(abort-on-property-write.js, window.Adomik)
-fc.lc##+js(abort-on-property-read.js, window.googletag)
-fc.lc##+js(abort-on-property-write.js, window.googletag)
+fc.lc##+js(abort-on-property-read, window.Adomik)
+fc.lc##+js(abort-on-property-write, window.Adomik)
+fc.lc##+js(abort-on-property-read, window.googletag)
+fc.lc##+js(abort-on-property-write, window.googletag)
 fc.lc##div[id="cookie-pop"]
 fc.lc##div[class="cookie-message"]
 ||itnuzleafan.com^*
@@ -25318,14 +25310,14 @@ fcc.lc##div[id="adb_detected"]:remove()
 fcc.lc##div[id^="div-gpt-ad-"]
 fcc.lc##div[id^="div-gpt-ad-"]:remove()
 fcc.lc##div[class="adq"]
-!fcc.lc##+js(abort-on-property-read.js, importFAB)
-!fcc.lc##+js(abort-on-property-write.js, importFAB)
-!fcc.lc##+js(abort-on-property-read.js, fuckAdBlock)
-!fcc.lc##+js(abort-on-property-write.js, fuckAdBlock)
-fcc.lc##+js(abort-on-property-read.js, window.Adomik)
-fcc.lc##+js(abort-on-property-write.js, window.Adomik)
-fcc.lc##+js(abort-on-property-read.js, window.googletag)
-fcc.lc##+js(abort-on-property-write.js, window.googletag)
+!fcc.lc##+js(abort-on-property-read, importFAB)
+!fcc.lc##+js(abort-on-property-write, importFAB)
+!fcc.lc##+js(abort-on-property-read, fuckAdBlock)
+!fcc.lc##+js(abort-on-property-write, fuckAdBlock)
+fcc.lc##+js(abort-on-property-read, window.Adomik)
+fcc.lc##+js(abort-on-property-write, window.Adomik)
+fcc.lc##+js(abort-on-property-read, window.googletag)
+fcc.lc##+js(abort-on-property-write, window.googletag)
 fcc.lc##^script[id="ads_priv"]
 !fcc.lc##+js(set-constant, document.querySelector("#surl").onclick, null)
 fcc.lc###surl:remove-attr(onlick)
@@ -25351,8 +25343,8 @@ racaty.net###uniqueExpirylink:style(visibility: visible !important;)
 racaty.net###downloadbtn > div:style(display: inline !important;)
 racaty.net###simulateRstrt:style(background: none !important; color:#007bff !important; display: inline !important;)
 racaty.net##+js(set-constant, a__rcPd, false)
-racaty.net##+js(abort-on-property-read.js, a__rcPd)
-racaty.net##+js(abort-on-property-write.js, a__rcPd)
+racaty.net##+js(abort-on-property-read, a__rcPd)
+racaty.net##+js(abort-on-property-write, a__rcPd)
 !racaty.net##+js(trusted-set, document.querySelector("#downloadbtn").type, submit)
 racaty.net##+js(saa, type, submit, #downloadbtn)
 ||f3551539d6565853.com^*
@@ -25505,17 +25497,17 @@ www.google-analytics.com^$script,domain=daddylivehd.sx
 !||deviceid.trueleadid.com/cog.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||industrialfasr445.weebly.com/gdpr/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||*.weebly.com/gdpr/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!industrialfasr445.weebly.com##+js(abort-on-property-read.js, _W.Analytics)
-!industrialfasr445.weebly.com##+js(abort-on-property-write.js, _W.Analytics)
-weebly.com##+js(abort-on-property-read.js, _W.Analytics)
-weebly.com##+js(abort-on-property-write.js, _W.Analytics)
+!industrialfasr445.weebly.com##+js(abort-on-property-read, _W.Analytics)
+!industrialfasr445.weebly.com##+js(abort-on-property-write, _W.Analytics)
+weebly.com##+js(abort-on-property-read, _W.Analytics)
+weebly.com##+js(abort-on-property-write, _W.Analytics)
 ||edspectsm.fun^*
-atharori.net##+js(abort-on-property-read.js, frame_check)
-atharori.net##+js(abort-on-property-write.js, frame_check)
+atharori.net##+js(abort-on-property-read, frame_check)
+atharori.net##+js(abort-on-property-write, frame_check)
 atharori.net##div[id="bottomAd"]
 atharori.net##div[id="cookie_notice"]
-atharori.net##+js(abort-on-property-read.js, optout_adfly)
-atharori.net##+js(abort-on-property-write.js, optout_adfly)
+atharori.net##+js(abort-on-property-read, optout_adfly)
+atharori.net##+js(abort-on-property-write, optout_adfly)
 atharori.net##+js(set-constant, optout_adfly, 1)
 ||critingothere.top^*
 !||www51.elbaestes.pro/am-push.796884.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -25582,15 +25574,15 @@ linuxnewbieguide.org##span[class*="adtester-container"]
 iosgods.com##div[id="elGuestTerms"]
 ||speed-down.org/ds1/js/clipboard.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 speed-down.org##div[id^="div-gpt-ad-"]
-speed-down.org##+js(abort-on-property-read.js, _Hasync=)
-speed-down.org##+js(abort-on-property-write.js, _Hasync=)
+speed-down.org##+js(abort-on-property-read, _Hasync=)
+speed-down.org##+js(abort-on-property-write, _Hasync=)
 speed-down.org##ins[class="adsbygoogle"]
-speed-down.org##+js(abort-on-property-read.js, adsbygoogle)
-speed-down.org##+js(abort-on-property-write.js, adsbygoogle)
-speed-down.org##+js(abort-on-property-read.js, sc_security)
-speed-down.org##+js(abort-on-property-write.js, sc_security)
-speed-down.org##+js(abort-on-property-read.js, _atrk_opts)
-speed-down.org##+js(abort-on-property-write.js, _atrk_opts)
+speed-down.org##+js(abort-on-property-read, adsbygoogle)
+speed-down.org##+js(abort-on-property-write, adsbygoogle)
+speed-down.org##+js(abort-on-property-read, sc_security)
+speed-down.org##+js(abort-on-property-write, sc_security)
+speed-down.org##+js(abort-on-property-read, _atrk_opts)
+speed-down.org##+js(abort-on-property-write, _atrk_opts)
 speed-down.org##input[name="adblock_detected"]
 speed-down.org##div[class="adsbox"]
 !used to set ablock_detected variable
@@ -25601,8 +25593,8 @@ speed-down.org##div.download-option-btn:nth-of-type(2) > .btn-success.btn
 !speed-down.org##div.download-option-btn:nth-of-type(3) > .btn-success.btn
 speed-down.org###container > center > script:nth-child(18)
 speed-down.org##+js(abort-current-script, blockadblock)
-speed-down.org##+js(abort-on-property-read.js, blockadblock)
-speed-down.org##+js(abort-on-property-write.js, blockadblock)
+speed-down.org##+js(abort-on-property-read, blockadblock)
+speed-down.org##+js(abort-on-property-write, blockadblock)
 speed-down.org###go-submit:remove-attr(disabled)
 ||speed-down.org/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 speed-down.org##.downloadbtn:remove-attr(disabled)
@@ -25664,8 +25656,8 @@ radikal.ru###dogLifeKoKomanda
 !||utarget.ru/is_clickunder/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||utarget.ru^*
 temasoft.com##div[class="avia-cookie-consent avia-cookiemessage-top"]
-passwordsgenerator.net##+js(abort-on-property-read.js, _paq)
-passwordsgenerator.net##+js(abort-on-property-write.js, _paq)
+passwordsgenerator.net##+js(abort-on-property-read, _paq)
+passwordsgenerator.net##+js(abort-on-property-write, _paq)
 www.sordum.org##div[id="cookie-notice"]
 www.yesstyle.com##md-bottom-sheet[ng-if="!hideCookiePolicy"]
 programmersought.com###leftads2
@@ -25825,10 +25817,15 @@ download.gg##iframe[name="googlefcPresent"]
 download.gg##div[id="udRVCwqeYyHh"]
 download.gg##body > script:nth-child(20)
 www.mirrored.to##style[id="antiClickjack"]
-www.mirrored.to##+js(abort-on-property-read.js, aiptag.cmd.display)
-www.mirrored.to##+js(abort-on-property-write.js, aiptag.cmd.display)
-www.mirrored.to##+js(abort-on-property-read.js, window.aiptag)
-www.mirrored.to##+js(abort-on-property-write.js, window.aiptag)
+www.mirrored.to##+js(abort-on-property-read, aiptag.cmd.display)
+www.mirrored.to##+js(abort-on-property-write, aiptag.cmd.display)
+www.mirrored.to##+js(abort-on-property-read, window.aiptag)
+www.mirrored.to##+js(abort-on-property-write, window.aiptag)
+! remove existing cookie first
+www.mirrored.to##+js(cookie-remover, ab)
+! TODO: need to reload page with cookie set?
+!www.mirrored.to##+js(set-cookie, ab, 0, /, reload, 1)
+www.mirrored.to##+js(set-cookie, ab, 0, /)
 www.mirrored.to##+js(trusted-set, document.cookie, ab=0; path=/;)
 !||analytics-ingress-global.bitmovin.com/analytics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||analytics-ingress-global.bitmovin.com^*
@@ -25840,8 +25837,8 @@ www.mirrored.to##+js(trusted-set, document.cookie, ab=0; path=/;)
 ||insights-collector.gog.com^*
 ||f853150605ccb.com^*
 ||recipetocook.recipes/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-uploadbuzz.cc##+js(abort-on-property-read.js, sora_base_url)
-uploadbuzz.cc##+js(abort-on-property-write.js, sora_base_url)
+uploadbuzz.cc##+js(abort-on-property-read, sora_base_url)
+uploadbuzz.cc##+js(abort-on-property-write, sora_base_url)
 texteditor.co##.adsbygoogle
 texteditor.co##.topBanner
 texteditor.co###adHeading
@@ -25850,10 +25847,10 @@ www.anaconda.com##div[class="gdpr-banner"]
 !www.ovagames.com###aorwqlbtf-blanket
 www.ovagames.com##div[id$="-blanket"]
 www.ovagames.com##div[id="adter"]
-www.ovagames.com##+js(abort-on-property-read.js, aorwqlbtf)
-www.ovagames.com##+js(abort-on-property-write.js, aorwqlbtf)
-bitfly.io##+js(abort-on-property-read.js, adConfig)
-bitfly.io##+js(abort-on-property-write.js, adConfig)
+www.ovagames.com##+js(abort-on-property-read, aorwqlbtf)
+www.ovagames.com##+js(abort-on-property-write, aorwqlbtf)
+bitfly.io##+js(abort-on-property-read, adConfig)
+bitfly.io##+js(abort-on-property-write, adConfig)
 bitfly.io##div[class="alert alert-danger"]
 bitfly.io##div[class="myTestAd"]
 bitfly.io##div[id="overlay"]
@@ -25862,8 +25859,8 @@ bitfly.io##div[id="cookie-pop"]
 ||bitfly.io/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bitfly.io/js/nt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 bitfly.io##^script[id="popmagicldr"]
-bitfly.io##+js(abort-on-property-read.js, window.googletag)
-bitfly.io##+js(abort-on-property-write.js, window.googletag)
+bitfly.io##+js(abort-on-property-read, window.googletag)
+bitfly.io##+js(abort-on-property-write, window.googletag)
 bitfly.io##iframe[id="{{IFRAME_ID}}"]
 bitfly.io##+js(nostif.js, /^/, 1000)
 ||ads.adshort.media/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -25897,10 +25894,10 @@ www.washingtonpost.com##div[id="wp-adb-c"]
 !www.washingtonpost.com##div[class^="moat-trackable"]
 ||www.washingtonpost.com/pb/gr/c/default-article/*/eu-cookie-banner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.washingtonpost.com/pb/resources/js/utils/eu-cookie-banner.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.washingtonpost.com##+js(abort-on-property-read.js, isInitAnalytics)
-www.washingtonpost.com##+js(abort-on-property-write.js, isInitAnalytics)
-www.washingtonpost.com##+js(abort-on-property-read.js, gdpr_cookie)
-www.washingtonpost.com##+js(abort-on-property-write.js, gdpr_cookie)
+www.washingtonpost.com##+js(abort-on-property-read, isInitAnalytics)
+www.washingtonpost.com##+js(abort-on-property-write, isInitAnalytics)
+www.washingtonpost.com##+js(abort-on-property-read, gdpr_cookie)
+www.washingtonpost.com##+js(abort-on-property-write, gdpr_cookie)
 !||www.washingtonpost.com/subscribe/logging/logInfo$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.washingtonpost.com/subscribe/logging/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.washingtonpost.com/notification-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -25912,14 +25909,14 @@ www.washingtonpost.com##+js(abort-on-property-write.js, gdpr_cookie)
 ||d1pz6dax0t5mop.cloudfront.net/prod/PoWaLoaderWapo.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||d2ty8gaf6rmowa.cloudfront.net/ad/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d2ty8gaf6rmowa.cloudfront.net/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.washingtonpost.com##+js(abort-on-property-read.js, powa-ad-tag)
-www.washingtonpost.com##+js(abort-on-property-write.js, powa-ad-tag)
-www.washingtonpost.com##+js(abort-on-property-read.js, powa-ad-zone)
-www.washingtonpost.com##+js(abort-on-property-write.js, powa-ad-zone)
-www.washingtonpost.com##+js(abort-on-property-read.js, adblocker-overlay)
-www.washingtonpost.com##+js(abort-on-property-write.js, adblocker-overlay)
-www.washingtonpost.com##+js(abort-on-property-read.js, _0x108f)
-www.washingtonpost.com##+js(abort-on-property-write.js, _0x108f)
+www.washingtonpost.com##+js(abort-on-property-read, powa-ad-tag)
+www.washingtonpost.com##+js(abort-on-property-write, powa-ad-tag)
+www.washingtonpost.com##+js(abort-on-property-read, powa-ad-zone)
+www.washingtonpost.com##+js(abort-on-property-write, powa-ad-zone)
+www.washingtonpost.com##+js(abort-on-property-read, adblocker-overlay)
+www.washingtonpost.com##+js(abort-on-property-write, adblocker-overlay)
+www.washingtonpost.com##+js(abort-on-property-read, _0x108f)
+www.washingtonpost.com##+js(abort-on-property-write, _0x108f)
 !||targeting.washpost.nile.works/TargetingWebAPP/targeting$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||targeting.washpost.nile.works/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !www.washingtonpost.com##wp-ad[class^="pb-ad-container"]
@@ -25946,7 +25943,7 @@ login.northlane.com##div[class="privacycontainer"]
 ||kmart.com.ssl.d1.sc.omtrdc.net^*
 !||c1.adform.net/serving/cookie/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||aa.agkn.com/adscores/g.pixel$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||aa.agkn.com/adscores/s.pixel^*
+!||aa.agkn.com/adscores/s.pixel$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||aa.agkn.com/adscores/g.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||aa.agkn.com/adscores/r.pixel$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||aa.agkn.com/adscores/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -25990,8 +25987,8 @@ chinnica.net##div[id="bottomAd"]
 ||ssionsupre.fun^*
 ||ueaggress.top^*
 ||d20903hof2l33q.cloudfront.net^*
-chinnica.net##+js(abort-on-property-write.js, antiClickjack)
-chinnica.net##+js(abort-on-property-read.js, antiClickjack)
+chinnica.net##+js(abort-on-property-write, antiClickjack)
+chinnica.net##+js(abort-on-property-read, antiClickjack)
 chinnica.net##div[id="_bd"]
 chinnica.net###fade
 chinnica.net##+js(set-constant, optout_adfly, 1)
@@ -26001,8 +25998,6 @@ chinnica.net##a[id="skip_bu2tton"]:style(display:block !important;)
 www.komando.com##div[id="onetrust-consent-sdk"]
 www.assimilateinc.com##div[id="gdprc_bar"]
 ||blastcahs.com^*
-letsupload.io##div[class*="cookiealert"]
-||letsupload.io/themes/spirit/assets/frontend/js/cookiealert.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||astancerta.fun^*
 dloady.com##ins[class="adsbygoogle"]
 dloady.com##div[class="google"]
@@ -26019,8 +26014,8 @@ www.rt-sw.de##div[id="cooschutz"]
 !nulljungle.com##.wp-vwnsbm-axvu-blackout
 nulljungle.com##div[class^="wp-vwnsbm-axvu"]
 nulljungle.com##^script[id=mdp-deblocker-js-extra]
-nulljungle.com##+js(abort-on-property-write.js, adsbygoogle)
-nulljungle.com##+js(abort-on-property-read.js, adsbygoogle)
+nulljungle.com##+js(abort-on-property-write, adsbygoogle)
+nulljungle.com##+js(abort-on-property-read, adsbygoogle)
 !nulljungle.com##body[class*="wp-vwnsbm-axvu-blur"]
 !nulljungle.com##body.wp-vwnsbm-axvu-blur
 !nulljungle.com##.wp-vwnsbm-axvu-blur
@@ -26050,8 +26045,8 @@ borntonull.com##div[class="alert alert-danger"]
 borntonull.com##div[class="banner banner-728x90"]
 borntonull.com##div[class="myTestAd"]
 borntonull.com##ins[class="adsbygoogle"]
-borntonull.com##+js(abort-on-property-write.js, adsbygoogle)
-borntonull.com##+js(abort-on-property-read.js, adsbygoogle)
+borntonull.com##+js(abort-on-property-write, adsbygoogle)
+borntonull.com##+js(abort-on-property-read, adsbygoogle)
 borntonull.com##^script[data-ad-client^="ca-pub-"]
 borntonull.com##^script[data-ad-client^="ca-pub-"]:remove()
 borntonull.com##div[class="banner banner-336x280"]
@@ -26097,8 +26092,8 @@ gamecopyworld.eu##div[class="gsc-adBlockInvisible"]
 www.overwolf.com##div[class="cookiebar"]
 wepresent.wetransfer.com##div[id="cookieMessage"]
 iperiusremote.com##div[id="cookie-bar"]
-s0ft4pc.com##+js(abort-on-property-write.js, _stq)
-s0ft4pc.com##+js(abort-on-property-read.js, _stq)
+s0ft4pc.com##+js(abort-on-property-write, _stq)
+s0ft4pc.com##+js(abort-on-property-read, _stq)
 s0ft4pc.com###top > script:nth-child(15)
 ||yiatelychur.top^*
 ||d18t35yyry2k49.cloudfront.net^*
@@ -26159,7 +26154,6 @@ www.abqjournal.com##div[class="story-ad"]
 www.abqjournal.com##div[id="advertisement"]
 www.abqjournal.com##p[class="disclaimer"]
 www.abqjournal.com##div[id="story-ad-0-skip-target"]
-letsupload.io##div[class="col-md-12 text-center advert-wrapper bottom-advert"]
 !www.vice.com##.adph--border.adph
 www.vice.com##*[class^="adph"]
 ||search.discoverweb.com^*
@@ -26491,11 +26485,11 @@ kubadownload.com##ins[class="adsbygoogle"]
 kubadownload.com##ins[class="AdSense"]
 !kubadownload.com##div[id="banner_ad"]
 kubadownload.com##^script:has-text(adblockTracker)
-kubadownload.com##+js(abort-on-property-write.js, ad)
-kubadownload.com##+js(abort-on-property-read.js, ad)
+kubadownload.com##+js(abort-on-property-write, ad)
+kubadownload.com##+js(abort-on-property-read, ad)
 kubadownload.com##+js(set-constant, ad, null)
-kubadownload.com##+js(abort-on-property-write.js, i.GoogleAnalyticsObject)
-kubadownload.com##+js(abort-on-property-read.js, i.GoogleAnalyticsObject)
+kubadownload.com##+js(abort-on-property-write, i.GoogleAnalyticsObject)
+kubadownload.com##+js(abort-on-property-read, i.GoogleAnalyticsObject)
 kubadownload.com##+js(set-constant, i.GoogleAnalyticsObject, null)
 kubadownload.com##body > script:nth-child(29)
 kubadownload.com##body > script:nth-child(28)
@@ -26524,8 +26518,8 @@ www.cox.com##+js(set-constant, shouldShowCookieNotice, false)
 doodrive.com##div[class="uk-card uk-card-default uk-card-body uk-text-center"]
 ||doodrive.com/assets/js/cookieconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 doodrive.com##ins[class="adsbygoogle"]
-doodrive.com##+js(abort-on-property-write.js, _stq)
-doodrive.com##+js(abort-on-property-read.js, _stq)
+doodrive.com##+js(abort-on-property-write, _stq)
+doodrive.com##+js(abort-on-property-read, _stq)
 doodrive.com##+js(set-constant, adsbygoogle, [])
 doodrive.com##+js(abort-on-property-write, adsbygoogle)
 doodrive.com##+js(abort-on-property-read, adsbygoogle)
@@ -26560,8 +26554,8 @@ www.muo.com##div[class^="ad-zone"]
 www.muo.com##div[id^="div-gpt-ad"]
 hostapk.com##div[class="pace-progress"]
 hostapk.com##ins[class="adsbygoogle"]
-hostapk.com##+js(abort-on-property-write.js, adsbygoogle)
-hostapk.com##+js(abort-on-property-read.js, adsbygoogle)
+hostapk.com##+js(abort-on-property-write, adsbygoogle)
+hostapk.com##+js(abort-on-property-read, adsbygoogle)
 ||www.hostapk.com/wp-content/uploads/2019/01/download.png$image
 ||4edhfbvjhfv.club^*
 ||10dfkuvbdkfv.club^*
@@ -26604,8 +26598,8 @@ apk.support##div.googleadv.ad-box
 ||4pda.ru/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 androidbiits.com##.adsbygoogle
 forum.gsmhosting.com##ins[class="adsbygoogle"]
-forum.gsmhosting.com##+js(abort-on-property-write.js, adsbygoogle)
-forum.gsmhosting.com##+js(abort-on-property-read.js, adsbygoogle)
+forum.gsmhosting.com##+js(abort-on-property-write, adsbygoogle)
+forum.gsmhosting.com##+js(abort-on-property-read, adsbygoogle)
 xdroidapps.com##div[id="cookie-notice"]
 !m.downloadatoz.com##^script[id="cookieScriptId"]
 downloadatoz.com##^script[id="cookieScriptId"]
@@ -26734,8 +26728,8 @@ lapelotita.com##+js(set-constant, app_vars.counter_value, 0)
 lapelotita.com##div[class="banner-inner"]
 android-apk.org##ins[class="adsbygoogle"]
 android-apk.org##+js(remove-attr, disabled, #dl)
-android-apk.org##+js(abort-on-property-write.js, adsbygoogle)
-android-apk.org##+js(abort-on-property-read.js, adsbygoogle)
+android-apk.org##+js(abort-on-property-write, adsbygoogle)
+android-apk.org##+js(abort-on-property-read, adsbygoogle)
 www.moddescargar.com##.ad-wap
 www.modapkdescargar.com##.ad-new-box
 es.happymoddownload.com##.ad-wap
@@ -26750,8 +26744,8 @@ playcaliber.com##div[class^="cookie_notice"]
 uploadking.net##div.mb-4.ads
 ||v3v9d2b8.rocketcdn.me/wp-content/uploads/2020/07/download-button.png$image
 ||ox-d.adtrackers.net^*
-www.ovagames.com##+js(abort-on-property-write.js, pop_tag)
-www.ovagames.com##+js(abort-on-property-read.js, pop_tag)
+www.ovagames.com##+js(abort-on-property-write, pop_tag)
+www.ovagames.com##+js(abort-on-property-read, pop_tag)
 www.ovagames.com##^script:has-text(VGALnWlhIpx)
 www.ovagames.com##^script:has-text(KVDiGHRQGvz)
 ||cdn.webpushr.com^*
@@ -26891,7 +26885,7 @@ kimcartoon.to##+js(set-constant, alb, false)
 kimcartoon.to##+js(set-constant, isAdb, false)
 kimcartoon.to##+js(set-constant, setHideAdsCd, 0)
 kimcartoon.to##+js(set-constant, hideAdsCd, 1)
-kimcartoon.to##+js(abort-on-property-read.js, isAdb)
+kimcartoon.to##+js(abort-on-property-read, isAdb)
 www.imyfone.com##div[class^="cookie_policy"]
 ||stuffedprofessional.com^*
 ||deaconrandomoptional.com^*
@@ -26932,7 +26926,7 @@ nbyts.online##input[id="ab"]
 ||twitter.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 exerin1982.pixnet.net##div[id^="div-gpt-ad-"]
 exerin1982.pixnet.net##div[id="pix-mib-unfold-ad"]
-exerin1982.pixnet.net##+js(abort-on-property-read.js, _atrk_opts)
+exerin1982.pixnet.net##+js(abort-on-property-read, _atrk_opts)
 ||s.pixanalytics.com^*
 ||www.hufwitew.com^*
 ||hufwitew.com^*
@@ -27005,8 +26999,8 @@ cutx.me##div[id="cookie-pop"]
 ||d3l22sipwx377d.cloudfront.net^*
 ||ssl.cdne.cpmstar.com^*
 cutx.me##div[class="alert alert-danger"]
-cutx.me##+js(abort-on-property-read.js, cpmstar_pid)
-cutx.me##+js(abort-on-property-write.js, cpmstar_pid)
+cutx.me##+js(abort-on-property-read, cpmstar_pid)
+cutx.me##+js(abort-on-property-write, cpmstar_pid)
 cutx.me##^script:has-text(cpmstar_)
 !||asccdn.com/script/suv4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||asccdn.com^*
@@ -27088,8 +27082,8 @@ www.nulled-scripts.info##*:style(filter: blur(0px) !important; -webkit-filter: b
 !www.nulled-scripts.info##scrollbarbutton[disabled="true"]
 !www.nulled-scripts.info##slider[disabled="true"]
 www.nulled-scripts.info##ins[class="adsbygoogle"]
-www.nulled-scripts.info##+js(abort-on-property-read.js, adsbygoogle)
-www.nulled-scripts.info##+js(abort-on-property-write.js, adsbygoogle)
+www.nulled-scripts.info##+js(abort-on-property-read, adsbygoogle)
+www.nulled-scripts.info##+js(abort-on-property-write, adsbygoogle)
 www.nulled-scripts.info##div[id="banner-advert-container"]
 www.nulled-scripts.info##div[class="ad-inserter infolinks-ad"]
 www.nulled-scripts.info##img[id="adsense"]
@@ -27144,11 +27138,11 @@ www.nulled-scripts.info##.tie-popup-container
 ||outlook-1.cdn.office.net/owamail/*/srienabled/scripts/owa.MailBoot~Analytics*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||outlook-1.cdn.office.net/owamail/*/srienabled/scripts/owa.MailBoot~OwaAdUserLog.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||outlook-1.cdn.office.net/owamail/*/srienabled/scripts/owa.initializeAdTcf.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-s0ft4pc.com##+js(abort-on-property-read.js, oneSignal_options)
-s0ft4pc.com##+js(abort-on-property-write.js, oneSignal_options)
+s0ft4pc.com##+js(abort-on-property-read, oneSignal_options)
+s0ft4pc.com##+js(abort-on-property-write, oneSignal_options)
 s0ft4pc.com##^script:has-text(OneSignal)
-s0ft4pc.com##+js(abort-on-property-read.js, atOptions)
-s0ft4pc.com##+js(abort-on-property-write.js, atOptions)
+s0ft4pc.com##+js(abort-on-property-read, atOptions)
+s0ft4pc.com##+js(abort-on-property-write, atOptions)
 s0ft4pc.com##^script:has-text(atOptions)
 s0ft4pc.com##^script:has-text(DMCA)
 doodrive.com##^script:has-text(\x20second)
@@ -27174,10 +27168,10 @@ codingshiksha.com##span[class*="adtester-container"]
 codingshiksha.com##div[class*="ezmob-footer"]
 codingshiksha.com##div[class*="ezo_ad"]
 codingshiksha.com##div[class="ezoic-adpicker-ad"]
-codingshiksha.com##+js(abort-on-property-read.js, __inScopeForCCPA)
-codingshiksha.com##+js(abort-on-property-write.js, __inScopeForCCPA)
-codingshiksha.com##+js(abort-on-property-read.js, __ez_dims)
-codingshiksha.com##+js(abort-on-property-write.js, __ez_dims)
+codingshiksha.com##+js(abort-on-property-read, __inScopeForCCPA)
+codingshiksha.com##+js(abort-on-property-write, __inScopeForCCPA)
+codingshiksha.com##+js(abort-on-property-read, __ez_dims)
+codingshiksha.com##+js(abort-on-property-write, __ez_dims)
 codingshiksha.com##+js(set-constant, __ez_dims, '')
 codingshiksha.com##+js(set-constant, _ezaq, '')
 !||codingshiksha.com/ezoic/anchorfix.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -27186,14 +27180,14 @@ codingshiksha.com##^script:has-text(googletag)
 ||codingshiksha.com/wp-content/uploads/himbzrqp.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||codingshiksha.com/detroitchicago/imp.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||codingshiksha.com/detroitchicago/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-codingshiksha.com##+js(abort-on-property-read.js, ad_position_id)
-codingshiksha.com##+js(abort-on-property-write.js, ad_position_id)
-codingshiksha.com##+js(abort-on-property-read.js, adUnitName)
-codingshiksha.com##+js(abort-on-property-write.js, adUnitName)
+codingshiksha.com##+js(abort-on-property-read, ad_position_id)
+codingshiksha.com##+js(abort-on-property-write, ad_position_id)
+codingshiksha.com##+js(abort-on-property-read, adUnitName)
+codingshiksha.com##+js(abort-on-property-write, adUnitName)
 codingshiksha.com##+js(set-constant, ad_position_id, 0)
 codingshiksha.com##+js(set-constant, adUnitName, '')
-codingshiksha.com##+js(abort-on-property-read.js, ezouid)
-codingshiksha.com##+js(abort-on-property-write.js, ezouid)
+codingshiksha.com##+js(abort-on-property-read, ezouid)
+codingshiksha.com##+js(abort-on-property-write, ezouid)
 codingshiksha.com##+js(set-constant, ezouid, 0)
 codingshiksha.com##aside[class*="widget_admania_sticky_widgets"]
 codingshiksha.com##aside[class*="admania_sidebarsticky"]
@@ -27578,10 +27572,10 @@ exe.app##^script:has-text(/zunsoach\.com/i)
 exe.app##^script:has-text(/__CF\$cv\$params/i)
 exe.app##^script:has-text(/adb_detected/i)
 exe.app##^script:has-text(/JSON\.parse\(atob\(/i)
-exe.app##+js(abort-on-property-read.js, fuckAdBlock)
-exe.app##+js(abort-on-property-write.js, fuckAdBlock)
-exe.app##+js(abort-on-property-read.js, importFAB)
-exe.app##+js(abort-on-property-write.js, importFAB)
+exe.app##+js(abort-on-property-read, fuckAdBlock)
+exe.app##+js(abort-on-property-write, fuckAdBlock)
+exe.app##+js(abort-on-property-read, importFAB)
+exe.app##+js(abort-on-property-write, importFAB)
 exe.app###go-submit:remove-class(d-none)
 !exe.app##+js(remove-attr, class, #go-submit, stay)
 exe.app##+js(remove-class, disabled, , stay)
@@ -27615,10 +27609,10 @@ rapidgator.net##+js(alert-buster.js)
 !||discovernative.com/al/visit.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||discovernative.com/script/native.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||discovernative.com^*
-www.upload.ee##+js(abort-on-property-read.js, _smartad)
-www.upload.ee##+js(abort-on-property-write.js, _smartad)
-www.upload.ee##+js(abort-on-property-read.js, zoneNativeSett)
-www.upload.ee##+js(abort-on-property-write.js, zoneNativeSett)
+www.upload.ee##+js(abort-on-property-read, _smartad)
+www.upload.ee##+js(abort-on-property-write, _smartad)
+www.upload.ee##+js(abort-on-property-read, zoneNativeSett)
+www.upload.ee##+js(abort-on-property-write, zoneNativeSett)
 ||www.upload.ee/image/12985909/cbc_small.jpg$image
 ||www.upload.ee/image/12985918/cbb_small.jpg$image
 ||eergithi.com^*
@@ -27653,14 +27647,14 @@ iosgods.com##.adsbygoogle
 turbobit.net##a[href*="clksite.com/adServe/"]
 ||authqeqbnhkdjjklumailssocl.web.app/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.filepuma.com##div[class="cookiesTip"]
-www.eltima.com##+js(abort-on-property-read.js, gdpr)
-www.eltima.com##+js(abort-on-property-write.js, gdpr)
+www.eltima.com##+js(abort-on-property-read, gdpr)
+www.eltima.com##+js(abort-on-property-write, gdpr)
 sken.io##div[class="js-cookie-consent cookie-consent"]
-sken.io##+js(abort-on-property-read.js, window.laravelCookieConsent)
-sken.io##+js(abort-on-property-write.js, window.laravelCookieConsent)
+sken.io##+js(abort-on-property-read, window.laravelCookieConsent)
+sken.io##+js(abort-on-property-write, window.laravelCookieConsent)
 stackoverflow.com##div[class*="js-consent-banner"]
-onlystream.tv##+js(abort-on-property-read.js, BetterJsPop.popunderAvailable)
-onlystream.tv##+js(abort-on-property-write.js, BetterJsPop.popunderAvailable)
+onlystream.tv##+js(abort-on-property-read, BetterJsPop.popunderAvailable)
+onlystream.tv##+js(abort-on-property-write, BetterJsPop.popunderAvailable)
 ||erdecisesgeorg.info^*
 pagescreen.io##div[id="cookie-consent"]
 pagescreen.io##div[aria-label="cookieconsent"]
@@ -27692,14 +27686,14 @@ msendpointmgr.com##li[class="sponsors-item all"]
 !||www.mirrored.to/mirstats.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping !blocks list of files
 ||events.launchdarkly.com/events/diagnostic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 windowsmatters.com###dkxqne-blanket
-windowsmatters.com##+js(abort-on-property-read.js, disableStr)
-windowsmatters.com##+js(abort-on-property-write.js, disableStr)
-windowsmatters.com##+js(abort-on-property-read.js, adsbygoogle)
-windowsmatters.com##+js(abort-on-property-write.js, adsbygoogle)
-windowsmatters.com##+js(abort-on-property-read.js, _pop)
-windowsmatters.com##+js(abort-on-property-write.js, _pop)
-windowsmatters.com##+js(abort-on-property-read.js, _stq)
-windowsmatters.com##+js(abort-on-property-write.js, _stq)
+windowsmatters.com##+js(abort-on-property-read, disableStr)
+windowsmatters.com##+js(abort-on-property-write, disableStr)
+windowsmatters.com##+js(abort-on-property-read, adsbygoogle)
+windowsmatters.com##+js(abort-on-property-write, adsbygoogle)
+windowsmatters.com##+js(abort-on-property-read, _pop)
+windowsmatters.com##+js(abort-on-property-write, _pop)
+windowsmatters.com##+js(abort-on-property-read, _stq)
+windowsmatters.com##+js(abort-on-property-write, _stq)
 windowsmatters.com##ins[class="adsbygoogle"]
 !windowsmatters.com##div[id="adswidget1-quick-adsense-2"]
 !windowsmatters.com##div[id="adswidget3-quick-adsense-2"]
@@ -27711,10 +27705,10 @@ forum.acronis.com##div[class^="cookies-notification"]
 www.pluralsight.com##div[class="jsx-1227599814 banner"]
 ||sc.lfeeder.com/lftracker_v1_YEgkB8lZQKW4ep3Z.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.easyredircdn.com/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.easyredir.com##+js(abort-on-property-read.js, window.shouldEmitAnalytics)
-www.easyredir.com##+js(abort-on-property-write.js, window.shouldEmitAnalytics)
-www.easyredir.com##+js(abort-on-property-read.js, analytics)
-www.easyredir.com##+js(abort-on-property-write.js, analytics)
+www.easyredir.com##+js(abort-on-property-read, window.shouldEmitAnalytics)
+www.easyredir.com##+js(abort-on-property-write, window.shouldEmitAnalytics)
+www.easyredir.com##+js(abort-on-property-read, analytics)
+www.easyredir.com##+js(abort-on-property-write, analytics)
 www.easyredir.com##div[data-controller="cookiebar"]
 www.idownloadblog.com##span[class*="ezoic-ad"]
 www.idownloadblog.com##span[class*="adtester-container"]
@@ -27731,8 +27725,8 @@ www.keycdn.com##div[class="cookies-warning position-fixed"]
 www.dropboxforum.com##div[class^="lia-cookie-banner-alert"]
 ||zn1amgis3tmt5gckb-dropbox.siteintercept.qualtrics.com^*
 www.tipsandtricks-hq.com##ins[class="adsbygoogle"]
-www.tipsandtricks-hq.com##+js(abort-on-property-read.js, adsbygoogle)
-www.tipsandtricks-hq.com##+js(abort-on-property-write.js, adsbygoogle)
+www.tipsandtricks-hq.com##+js(abort-on-property-read, adsbygoogle)
+www.tipsandtricks-hq.com##+js(abort-on-property-write, adsbygoogle)
 www.inmotionhosting.com##div[id="cookies"]
 jailbreaknerds.com##div[id="cookie-notice"]
 jailbreaknerds.com##div[id="izooto-optin"]
@@ -27742,18 +27736,18 @@ tech.hindustantimes.com##div[id^="div-gpt-ad"]
 tech.hindustantimes.com##div[class="header-ad"]
 www.scientificamerican.com##figure[class*="dfp-article-ad"]
 www.wintools.info##ins[class="adsbygoogle"]
-www.wintools.info##+js(abort-on-property-read.js, adsbygoogle)
-www.wintools.info##+js(abort-on-property-write.js, adsbygoogle)
+www.wintools.info##+js(abort-on-property-read, adsbygoogle)
+www.wintools.info##+js(abort-on-property-write, adsbygoogle)
 testmyinternetspeed.org##div[id="cookieConsent"]
 codingshiksha.com##div[id^="admania_sticky_widgets"]
 codingshiksha.com##div[class="admania-sidebar-sticky"]
-codingshiksha.com##+js(abort-on-property-read.js, __ez)
-codingshiksha.com##+js(abort-on-property-write.js, __ez)
+codingshiksha.com##+js(abort-on-property-read, __ez)
+codingshiksha.com##+js(abort-on-property-write, __ez)
 ||www.thehoth.com/downloads/ads2018/$image
 remoteripple.com##div[id="cookie-notice"]
 mightyviewer.com##div[id="cookie-notice"]
-codingshiksha.com##+js(abort-on-property-read.js, _ezaq)
-codingshiksha.com##+js(abort-on-property-write.js, _ezaq)
+codingshiksha.com##+js(abort-on-property-read, _ezaq)
+codingshiksha.com##+js(abort-on-property-write, _ezaq)
 snapcraft.io##div[id="cookie-policy-content"]
 snapcraft.io##dialog[class="cookie-policy"]
 get.videolan.org##div[id="uecookies"]
@@ -27843,10 +27837,10 @@ www.businesswire.com##div[id="onetrust-group-container"]
 ubuntu.com##dialog[class="cookie-policy"]
 www.tipard.com##div[class="usernotice_pop"]
 jaanmusic.in##ins[class="adsbygoogle"]
-jaanmusic.in##+js(abort-on-property-read.js, adsbygoogle)
-jaanmusic.in##+js(abort-on-property-write.js, adsbygoogle)
-!jaanmusic.in##+js(abort-on-property-read.js, _0x3344)
-!jaanmusic.in##+js(abort-on-property-write.js, _0x3344)
+jaanmusic.in##+js(abort-on-property-read, adsbygoogle)
+jaanmusic.in##+js(abort-on-property-write, adsbygoogle)
+!jaanmusic.in##+js(abort-on-property-read, _0x3344)
+!jaanmusic.in##+js(abort-on-property-write, _0x3344)
 jaanmusic.in##div[id="alertmsg"]
 jaanmusic.in##+js(set-constant, datat, "")
 www.accuweather.com##div[class="privacy-policy-banner"]
@@ -27875,8 +27869,8 @@ apnews.com##div[class^="Component-placeholderWrapper"]
 www.pcmag.com##aside[class*="zmgad-"]
 www.getdroidtips.com##ins[class="adsbygoogle"]
 www.getdroidtips.com##div[class="_ap_apex_ad"]
-www.getdroidtips.com##+js(abort-on-property-read.js, adpushup)
-www.getdroidtips.com##+js(abort-on-property-write.js, adpushup)
+www.getdroidtips.com##+js(abort-on-property-read, adpushup)
+www.getdroidtips.com##+js(abort-on-property-write, adpushup)
 rootmygalaxy.net##ins[class="adsbygoogle"]
 !rootmygalaxy.net##div[class*="quads-ad1"]
 rootmygalaxy.net##div[class*="quads-ad"]
@@ -27903,12 +27897,12 @@ online-fix.me##+js(abort-current-script, "mecash-ad")
 online-fix.me##+js(abort-current-script, cmod_d)
 online-fix.me##+js(abort-current-script, replaceWith)
 online-fix.me##+js(abort-current-script, helpus)
-online-fix.me##+js(abort-on-property-read.js, utarget_script)
-online-fix.me##+js(abort-on-property-write.js, utarget_script)
-online-fix.me##+js(abort-on-property-read.js, cmod_d)
-online-fix.me##+js(abort-on-property-write.js, cmod_d)
-online-fix.me##+js(abort-on-property-read.js, js)
-online-fix.me##+js(abort-on-property-write.js, js)
+online-fix.me##+js(abort-on-property-read, utarget_script)
+online-fix.me##+js(abort-on-property-write, utarget_script)
+online-fix.me##+js(abort-on-property-read, cmod_d)
+online-fix.me##+js(abort-on-property-write, cmod_d)
+online-fix.me##+js(abort-on-property-read, js)
+online-fix.me##+js(abort-on-property-write, js)
 online-fix.me##+js(set-constant, c, 0)
 online-fix.me##+js(set-constant, cmod_d, false)
 online-fix.me##+js(nano-stb, /.?/, 1000, 0.10)
@@ -27935,8 +27929,8 @@ online-fix.me##^script:has-text(/quote/i)
 !online-fix.me##^script:has-text(data:text/javascript;base64) !won't work since script is decoded before being run.
 online-fix.me##^script[src^="data:text/javascript;base64"]
 online-fix.me##+js(addEventListener-defuser, /DOMContentLoaded/i)
-online-fix.me##+js(abort-on-property-read.js, window.K3)
-online-fix.me##+js(abort-on-property-write.js, window.K3)
+online-fix.me##+js(abort-on-property-read, window.K3)
+online-fix.me##+js(abort-on-property-write, window.K3)
 online-fix.me##+js(abort-current-inline-script, replaceWith)
 !online-fix.me##^script:has-text(w30718356951d090ce9e5eddfe5beed11) !won't work since is a random string that always starts with w
 !online-fix.me##+js(remove-attr.js, src, , stay) !break too many other tags with src attributes
@@ -27950,8 +27944,8 @@ online-fix.me##+js(nostif, e8c43d8940_interval)
 online-fix.me##+js(set-constant, e7f652f7be_interval, noopFunc)
 online-fix.me##+js(nostif, e7f652f7be_interval)
 online-fix.me##+js(set-constant, crWEbPushEl, noopFunc)
-online-fix.me##+js(abort-on-property-read.js, crWEbPushEl)
-online-fix.me##+js(abort-on-property-write.js, crWEbPushEl)
+online-fix.me##+js(abort-on-property-read, crWEbPushEl)
+online-fix.me##+js(abort-on-property-write, crWEbPushEl)
 online-fix.ne##div[class="no-pop"]:remove-attr(onclick)
 online-fix.ne##div[class="no-pop"]:remove-attr(onmouseup)
 online-fix.ne##div[class="no-pop"]:remove-attr(onmousedown)
@@ -27983,18 +27977,18 @@ forums.freebsd.org##.notice--cookie
 !www.yidio.com##div[class="ad provider question overlay"]
 !www.yidio.com##div[class="ad provider bullets vert"]
 www.yidio.com##div[class^="ad provider"]
-solarmovie-free.com##+js(abort-on-property-read.js, checkVPNads_shown)
-solarmovie-free.com##+js(abort-on-property-write.js, checkVPNads_shown)
+solarmovie-free.com##+js(abort-on-property-read, checkVPNads_shown)
+solarmovie-free.com##+js(abort-on-property-write, checkVPNads_shown)
 solarmovie-free.com##^script:has-text(document.addEventListener)
 solarmovie-free.com##^script:has-text(/DOMContentLoaded/i)
 ||solarmovie-free.com/addons/as6sadjhsda6dsf.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||solarmovie-free.com/addons/a7sdtasjdasdas.gif$image
 solarmovie-free.com###LSlijJBBZc
 ||www.thewatchcartoononline.tv/inc/embed/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.thewatchcartoononline.tv##+js(abort-on-property-read.js, cpmstar_siteskin_settings)
-www.thewatchcartoononline.tv##+js(abort-on-property-write.js, cpmstar_siteskin_settings)
-www.thewatchcartoononline.tv##+js(abort-on-property-read.js, cpmstar_rnd)
-www.thewatchcartoononline.tv##+js(abort-on-property-write.js, cpmstar_rnd)
+www.thewatchcartoononline.tv##+js(abort-on-property-read, cpmstar_siteskin_settings)
+www.thewatchcartoononline.tv##+js(abort-on-property-write, cpmstar_siteskin_settings)
+www.thewatchcartoononline.tv##+js(abort-on-property-read, cpmstar_rnd)
+www.thewatchcartoononline.tv##+js(abort-on-property-write, cpmstar_rnd)
 www.thewatchcartoononline.tv##+js(set-constant, isAdBlockActive, false)
 www.thewatchcartoononline.tv##div[class="adBanner ads.js"]
 www.thewatchcartoononline.tv##^script[src="ads.js"]
@@ -28029,8 +28023,8 @@ www.chip.de##svg:style(overflow: scroll !important; overflow-y: scroll !importan
 ||cmp.chip.de/Notice.0c5fe.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.chip.de/c1_impressum/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.blackhatworld.com/js/xf/preamble.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.blackhatworld.com##+js(abort-on-property-read.js, _avp)
-www.blackhatworld.com##+js(abort-on-property-write.js, _avp)
+www.blackhatworld.com##+js(abort-on-property-read, _avp)
+www.blackhatworld.com##+js(abort-on-property-write, _avp)
 www.blackhatworld.com##.notice--cookie
 www.blackhatworld.com##div[class*="bhw-banner-"]
 ||payhitproveold.live/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -28069,8 +28063,8 @@ www.cybermania.ws##ins[class="adsbygoogle"]
 !||www.cybermania.ws/cdn-cgi/bm/cv/669835187/api.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.cybermania.ws##div[class^="san_howtowhitelist"]
 ||www.paypalobjects.com/en_US/i/scr/pixel.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.cybermania.ws##+js(abort-on-property-read.js, adsbygoogle)
-www.cybermania.ws##+js(abort-on-property-write.js, adsbygoogle)
+www.cybermania.ws##+js(abort-on-property-read, adsbygoogle)
+www.cybermania.ws##+js(abort-on-property-write, adsbygoogle)
 www.cybermania.ws##^script:has-text(/Adblock/i)
 ||www.ecjkroklyxvod.com^*
 ||ecjkroklyxvod.com^*
@@ -28096,8 +28090,8 @@ www.cybermania.ws##^script:has-text(/Adblock/i)
 ||therapistpopulationcommentary.com^*
 windows-repair-toolbox.com##div[id^="cookie-bar"]
 windows-repair-toolbox.com##span[class^="Ad-label"]
-windows-repair-toolbox.com##+js(abort-on-property-read.js, adsbygoogle)
-windows-repair-toolbox.com##+js(abort-on-property-write.js, adsbygoogle)
+windows-repair-toolbox.com##+js(abort-on-property-read, adsbygoogle)
+windows-repair-toolbox.com##+js(abort-on-property-write, adsbygoogle)
 ||v4.s.arclk.net^*
 ||track.vcdc.com^*
 ||www.warez-bb.org/banner_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -28174,10 +28168,10 @@ code-boxx.com##span[class*="ezoic-ad"]
 !code-boxx.com##span[class^="ezmob-footer"]
 code-boxx.com##*[class^="ezmob-footer"]
 code-boxx.com##^script[data-ezscrex]
-code-boxx.com##+js(abort-on-property-read.js, __ez)
-code-boxx.com##+js(abort-on-property-write.js, __ez)
-code-boxx.com##+js(abort-on-property-read.js, gads)
-code-boxx.com##+js(abort-on-property-write.js, gads)
+code-boxx.com##+js(abort-on-property-read, __ez)
+code-boxx.com##+js(abort-on-property-write, __ez)
+code-boxx.com##+js(abort-on-property-read, gads)
+code-boxx.com##+js(abort-on-property-write, gads)
 code-boxx.com##span[id^="ezoic-pub-ad"]
 ||code-boxx.com/porpoiseant/banger.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||hoowooze.net^*
@@ -28204,12 +28198,12 @@ www.gmx.com##div[class="blurredbg"]
 www.gmx.com##div[class="error"]
 !||dl.gmx.com/tcf/live/v1/js/tcf-api.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dl.gmx.com/permission/live/v1/ppp/js/permission-client.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.gmx.com##+js(abort-on-property-read.js, window.ui.consentPageUrl)
-www.gmx.com##+js(abort-on-property-write.js, window.ui.consentPageUrl)
-www.gmx.com##+js(abort-on-property-read.js, bypassCookieName)
-www.gmx.com##+js(abort-on-property-write.js, bypassCookieName)
-www.gmx.com##+js(abort-on-property-read.js, bypassCookieValue)
-www.gmx.com##+js(abort-on-property-write.js, bypassCookieValue)
+www.gmx.com##+js(abort-on-property-read, window.ui.consentPageUrl)
+www.gmx.com##+js(abort-on-property-write, window.ui.consentPageUrl)
+www.gmx.com##+js(abort-on-property-read, bypassCookieName)
+www.gmx.com##+js(abort-on-property-write, bypassCookieName)
+www.gmx.com##+js(abort-on-property-read, bypassCookieValue)
+www.gmx.com##+js(abort-on-property-write, bypassCookieValue)
 www.gmx.com##+js(set-constant, window.ui.consentPageUrl, "")
 www.gmx.com##^script:has-text(/checkIfConsentCookieIsPresent\(\)/i)
 ||videoroll.net/js/vid_vpaut_script.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -28221,8 +28215,8 @@ davidwalsh.name##^script:has-text(/analyticsID/i)
 www.filecad.com##div[aria-label="cookieconsent"]
 www.filecad.com##div[class*="cookiealert"]
 www.filecad.com##ins[class="adsbygoogle"]
-www.filecad.com##+js(abort-on-property-read.js, adsbygoogle)
-www.filecad.com##+js(abort-on-property-write.js, adsbygoogle)
+www.filecad.com##+js(abort-on-property-read, adsbygoogle)
+www.filecad.com##+js(abort-on-property-write, adsbygoogle)
 www.filecad.com##div[class*="advert-wrapper"]
 www.filecad.com##div[class*="advert-page-footer"]
 www.filecad.com##div[class*="top-advert"]
@@ -28266,8 +28260,8 @@ igg-games.com##div[class*="widget-advads-ad-widget"]
 bluemediafiles.com^$popup
 bluemediafiles.com^$popunder
 !bluemediafiles.com##+js(nano-sib, function(), 1000, 0.10)
-bluemediafiles.com##+js(abort-on-property-read.js, FingerprintJS)
-bluemediafiles.com##+js(abort-on-property-write.js, FingerprintJS)
+bluemediafiles.com##+js(abort-on-property-read, FingerprintJS)
+bluemediafiles.com##+js(abort-on-property-write, FingerprintJS)
 bluemediafiles.com##div[id="anti-adblock"]
 ||bluemediafiles.com/img/AdblockDetected.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 bluemediafiles.com##iframe
@@ -28292,8 +28286,8 @@ tii.ai##a[href*="/r3adyt0download.com/"]
 ||matchedule.club^*
 ||tii.ai/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tii.ai/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-tii.ai##+js(abort-on-property-read.js, elem)
-tii.ai##+js(abort-on-property-write.js, elem)
+tii.ai##+js(abort-on-property-read, elem)
+tii.ai##+js(abort-on-property-write, elem)
 tii.ai##^script:has-text(/\/apu\.php\?zoneid\=/i)
 tii.ai##^script:has-text(/JSON\.parse\(atob\(/i)
 tii.ai##^script:has-text(/document\.createElement\('script'\)/i)
@@ -28457,43 +28451,43 @@ reverseengineering.stackexchange.com##div[class*="js-consent-ban"]
 www.tomsguide.com##*[class^="hawk-tracking-pixel-"]
 www.tomsguide.com##+js(set-constant, window.askForConsent, false)
 www.tomsguide.com##+js(set-constant, window.waitForConsent, false)
-www.tomsguide.com##+js(abort-on-property-read.js, window.askForConsent)
-www.tomsguide.com##+js(abort-on-property-write.js, window.askForConsent)
-www.tomsguide.com##+js(abort-on-property-read.js, window.waitForConsent)
-www.tomsguide.com##+js(abort-on-property-write.js, window.waitForConsent)
+www.tomsguide.com##+js(abort-on-property-read, window.askForConsent)
+www.tomsguide.com##+js(abort-on-property-write, window.askForConsent)
+www.tomsguide.com##+js(abort-on-property-read, window.waitForConsent)
+www.tomsguide.com##+js(abort-on-property-write, window.waitForConsent)
 ||jac.yahoosandbox.com/$subdocument
 ||www.findresults.xyz^*
 ||findresults.xyz^*
 ||m.mobilesearch.app/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.minitool.com##div[class="bottom-cookie-wrap"]
 ||exploringbits.com/detroitchicago/imp.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-exploringbits.com##+js(abort-on-property-read.js, __ez)
-exploringbits.com##+js(abort-on-property-write.js, __ez)
-exploringbits.com##+js(abort-on-property-read.js, gads)
-exploringbits.com##+js(abort-on-property-write.js, gads)
-exploringbits.com##+js(abort-on-property-read.js, _ezaq)
-exploringbits.com##+js(abort-on-property-write.js, _ezaq)
+exploringbits.com##+js(abort-on-property-read, __ez)
+exploringbits.com##+js(abort-on-property-write, __ez)
+exploringbits.com##+js(abort-on-property-read, gads)
+exploringbits.com##+js(abort-on-property-write, gads)
+exploringbits.com##+js(abort-on-property-read, _ezaq)
+exploringbits.com##+js(abort-on-property-write, _ezaq)
 exploringbits.com##span[class*="ezoic-ad"]
 www.sync.com##div[class*="eupopup-"]
 www.getfilecloud.com##div[id="gdpr_accept"]
-www.filehosting.org##+js(abort-on-property-read.js, QualiGOAdOptions)
-www.filehosting.org##+js(abort-on-property-write.js, QualiGOAdOptions)
+www.filehosting.org##+js(abort-on-property-read, QualiGOAdOptions)
+www.filehosting.org##+js(abort-on-property-write, QualiGOAdOptions)
 www.filehosting.org##+js(remove-attr.js, onclick, a.visible-phone, stay)
 www.filehosting.org##+js(remove-attr.js, onclick, a.hidden-phone, stay)
 www.couponxoo.com##div[class*="cookiealert"]
-www.couponxoo.com##+js(abort-on-property-read.js, adsenseSettings)
-www.couponxoo.com##+js(abort-on-property-write.js, adsenseSettings)
+www.couponxoo.com##+js(abort-on-property-read, adsenseSettings)
+www.couponxoo.com##+js(abort-on-property-write, adsenseSettings)
 www.couponxoo.com##div[class*="modal-adblock"]
-www.couponxoo.com##+js(abort-on-property-read.js, window.googletag)
-www.couponxoo.com##+js(abort-on-property-write.js, window.googletag)
+www.couponxoo.com##+js(abort-on-property-read, window.googletag)
+www.couponxoo.com##+js(abort-on-property-write, window.googletag)
 ||www.ukslphcgs.com^*
 ||ukslphcgs.com^*
 mirrorace.org##^script:has-text(/UIkit\[/)
 ||discountbyte.xyz^*
 ||script.4dex.io/adagio.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 sharemods.com##^script[id="cookieinfo"]
-sharemods.com##+js(abort-on-property-read.js, window.googletag)
-sharemods.com##+js(abort-on-property-write.js, window.googletag)
+sharemods.com##+js(abort-on-property-read, window.googletag)
+sharemods.com##+js(abort-on-property-write, window.googletag)
 sharemods.com##+js(remove-attr.js, disabled, .downloadbtn, stay)
 ||filefreak.com/static/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||see.tfaln.com^*
@@ -28514,8 +28508,8 @@ www.business-standard.com##div[id^="div-gpt-ad-"]
 www.neowin.net##div[class="ad"]
 ||7freef.com^*
 www.g2.com##div[class*="js-cookie-consent-"]
-!wetransfer.com##+js(abort-on-property-read.js, __trackjs__)
-!wetransfer.com##+js(abort-on-property-write.js, __trackjs__)
+!wetransfer.com##+js(abort-on-property-read, __trackjs__)
+!wetransfer.com##+js(abort-on-property-write, __trackjs__)
 wetransfer.com##div[class="banner__container banner__animations-enter-done"]
 ||d19ptbnuzhibkh.cloudfront.net/2.10.2/sp.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||prod-cdn.wetransfer.net/assets/advertising-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$script
@@ -28547,8 +28541,8 @@ www.lexology.com##div[id="optanon-popup-bottom"]
 ||tvjkilgfanpt.com^*
 ||www.akcdinzvcenhjh.com^*
 ||akcdinzvcenhjh.com^*
-skidrowfull.com##+js(abort-on-property-read.js, adsbygoogle)
-skidrowfull.com##+js(abort-on-property-write.js, adsbygoogle)
+skidrowfull.com##+js(abort-on-property-read, adsbygoogle)
+skidrowfull.com##+js(abort-on-property-write, adsbygoogle)
 ||oldeststrickenambulance.com^*
 ||mindactual.com^*
 ||skidrowcodexreloaded.com/wp-content/cache/busting/google-tracking/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -28693,12 +28687,6 @@ www.inputmag.com##iframe[style="display: none"]
 ||insanityoh.com^*
 ||sillyflowermachine.com^*
 ||podregarddomicile.com^*
-!||letsupload.io/js/xadss.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-letsupload.io##div[id="adblockinfo"]
-letsupload.io##div[id="iHCIjECYmrkE"]
-letsupload.io##+js(remove-class, clear-adblock, , stay)
-letsupload.io##div[class*="bottom-advert"]
-letsupload.io##div[class*="advert-wrapper"]
 ||selfishsnake.com^$3p
 www.varonis.com##div[id="cookie_consent_container"]
 ||www.varonis.com/vanalytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -29305,10 +29293,10 @@ cellularnews.com##div[class*="responsive-ad"]
 cellularnews.com##.responsive-thin-ad-wrapper
 ||msoplease.biz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.phonemore.com##div[class="gdpr"]
-www.androidweblog.com##+js(abort-on-property-read.js, __ez)
-www.androidweblog.com##+js(abort-on-property-write.js, __ez)
-www.androidweblog.com##+js(abort-on-property-read.js, window.ezogtk)
-www.androidweblog.com##+js(abort-on-property-write.js, window.ezogtk)
+www.androidweblog.com##+js(abort-on-property-read, __ez)
+www.androidweblog.com##+js(abort-on-property-write, __ez)
+www.androidweblog.com##+js(abort-on-property-read, window.ezogtk)
+www.androidweblog.com##+js(abort-on-property-write, window.ezogtk)
 www.androidweblog.com##^script[data-ezscrex]
 www.androidweblog.com##span[class="ezoic-adpicker-ad"]
 www.androidweblog.com##span[class*="ezoic-ad"]
@@ -31105,8 +31093,8 @@ www.apkmirror.com##ins[class*="adslot"]
 www.apkmirror.com##ins[class*="adsbygoogle"]
 !www.apkmirror.com##div[class="gooWidget google-ad-leaderboard"]
 www.apkmirror.com##div[class*="google-ad-leaderboard"]
-www.apkmirror.com##+js(abort-on-property-write.js, adsbygoogle)
-www.apkmirror.com##+js(abort-on-property-read.js, adsbygoogle)
+www.apkmirror.com##+js(abort-on-property-write, adsbygoogle)
+www.apkmirror.com##+js(abort-on-property-read, adsbygoogle)
 www.apkmirror.com##div[class="downloadCountdown expandMargins"]
 www.apkmirror.com##.col-md-12 > script:nth-child(3)
 www.apkmirror.com##+js(remove-attr.js, style, div.noPadding.col-md-12)
@@ -31356,7 +31344,6 @@ www.digitaltrends.com##div[class*="dtads-"]
 ||infuriateharder.com^*
 ||caperedlevi.com^*
 ||impressivepointcircular.com^*
-!||letsupload.io/js/adsx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||poodledopas.cam^*
 ||www.fileleaks.com/arc-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 uploadhub.to##div[class*="cookiealert"]
@@ -32514,8 +32501,8 @@ www.gamepressure.com##div[class*="ad-2016-top"]
 www.gamepressure.com##div[id="baner-inner2"]
 ||mqaui928dq.xyz^*
 douploads.net###gdpr-cookie-notice
-douploads.net##+js(abort-on-property-read.js, _gaq)
-douploads.net##+js(abort-on-property-write.js, _gaq)
+douploads.net##+js(abort-on-property-read, _gaq)
+douploads.net##+js(abort-on-property-write, _gaq)
 douploads.net##div[class="alert alert-danger mb-3"]
 douploads.net##div[class="checkbox text-center mt-3 checkbox-info off"]
 douploads.net##label[for="chkIsAdd"]
@@ -34495,10 +34482,10 @@ currently.att.yahoo.com##div[ata-wf-sticky-target="#adsStream"]
 ||ertyvaluation.lol/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 exey.io##div[id="adb_detected"]:remove()
 exey.io##^script:has-text(importFAB)
-exey.io##+js(abort-on-property-read.js, fuckAdBlock)
-exey.io##+js(abort-on-property-write.js, fuckAdBlock)
-exey.io##+js(abort-on-property-read.js, importFAB)
-exey.io##+js(abort-on-property-write.js, importFAB)
+exey.io##+js(abort-on-property-read, fuckAdBlock)
+exey.io##+js(abort-on-property-write, fuckAdBlock)
+exey.io##+js(abort-on-property-read, importFAB)
+exey.io##+js(abort-on-property-write, importFAB)
 exey.io##iframe[src*="/vignerez.net/"]
 !||exey.io/vulaj_theme/js/vendor/popper.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||exey.io/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -34508,6 +34495,11 @@ exey.io##div:style(visibility: visible !important;)
 !||exey.io/js/src/alert.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 exey.io##+js(nostif.js, /^/, 1000)
 exey.io##+js(set-constant, force_disable_adblock, 0, stay)
+! remove existing cookie first
+exey.io##+js(cookie-remover, ab)
+! TODO: need to reload page with cookie set?
+!exey.io##+js(set-cookie, ab, 0, /, reload, 1)
+exey.io##+js(set-cookie, ab, 0, /)
 exey.io##+js(trusted-set, document.cookie, ab=0;)
 exey.io##+js(acs, disableItToContinue)
 exey.io##+js(acs, fuckAdBlock)
@@ -37502,14 +37494,14 @@ filecr.com##div[class*="filec-sticky-ad"]
 filecr.com^$inline-script
 !||o1089883.ingest.sentry.io/api/6106537/envelope/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||o*.ingest.sentry.io/api/*/envelope/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-filecr.com##+js(abort-on-property-write.js, advanced_ads_ga_UID)
-filecr.com##+js(abort-on-property-read.js, advanced_ads_ga_UID)
-filecr.com##+js(abort-on-property-write.js, advanced_ads_ga_anonymIP)
-filecr.com##+js(abort-on-property-read.js, advanced_ads_ga_anonymIP)
-filecr.com##+js(abort-on-property-write.js, window.advanced_ads_ready)
-filecr.com##+js(abort-on-property-read.js, window.advanced_ads_ready)
-filecr.com##+js(abort-on-property-write.js, window.advanced_ads_sticky_items)
-filecr.com##+js(abort-on-property-read.js, window.advanced_ads_sticky_items)
+filecr.com##+js(abort-on-property-write, advanced_ads_ga_UID)
+filecr.com##+js(abort-on-property-read, advanced_ads_ga_UID)
+filecr.com##+js(abort-on-property-write, advanced_ads_ga_anonymIP)
+filecr.com##+js(abort-on-property-read, advanced_ads_ga_anonymIP)
+filecr.com##+js(abort-on-property-write, window.advanced_ads_ready)
+filecr.com##+js(abort-on-property-read, window.advanced_ads_ready)
+filecr.com##+js(abort-on-property-write, window.advanced_ads_sticky_items)
+filecr.com##+js(abort-on-property-read, window.advanced_ads_sticky_items)
 filecr.com##+js(aopr, advadsCfpAd)
 filecr.com##+js(aopw, advadsCfpAd)
 filecr.com##+js(acs, advadsCfpAd)
@@ -38899,7 +38891,6 @@ playermyplayer.me##div:has(span[onmouseup="document.getElementById('floatLayer1'
 playermyplayer.me##div:has(span[onmouseup="document.getElementById('floatLayer1').style.display='none'"]):remove()
 ||e12872de91aaca7a39095801bdf5f168d87912fa.cws.conviva.com^*
 ||video-ads-module.ad-tech.nbcuni.com^*
-||cdn.lr-in.com/logger-1.min.js$script
 ||shutesaroph.com^*
 www.cbs.com##div[class="video__player-wrapper"]:remove-attr(data-use-freewheel-ads)
 www.cbs.com##button[type="button"]:remove-class(disabled)
@@ -39968,22 +39959,22 @@ mixdrop.co##+js(abort-current-script, dynamicadx)
 mixdrop.co##+js(abort-current-script, popups)
 mixdrop.co##+js(abort-current-script, gearbest)
 mixdrop.co##+js(abort-current-script, pmzer)
-mixdrop.co##+js(abort-on-property-write.js, dynamicadx)
-mixdrop.co##+js(abort-on-property-read.js, dynamicadx)
-mixdrop.co##+js(abort-on-property-write.js, popups)
-mixdrop.co##+js(abort-on-property-read.js, popups)
-mixdrop.co##+js(abort-on-property-write.js, gearbest)
-mixdrop.co##+js(abort-on-property-read.js, gearbest)
-mixdrop.co##+js(abort-on-property-write.js, pmzer)
-mixdrop.co##+js(abort-on-property-read.js, pmzer)
-mixdrop.co##+js(abort-on-property-write.js, lkid)
-mixdrop.co##+js(abort-on-property-read.js, lkid)
-mixdrop.co##+js(abort-on-property-write.js, mp0p_counter)
-mixdrop.co##+js(abort-on-property-read.js, mp0p_counter)
-mixdrop.co##+js(abort-on-property-write.js, rn_native_bqupr)
-mixdrop.co##+js(abort-on-property-read.js, rn_native_bqupr)
-mixdrop.co##+js(abort-on-property-write.js, NativeAd)
-mixdrop.co##+js(abort-on-property-read.js, NativeAd)
+mixdrop.co##+js(abort-on-property-write, dynamicadx)
+mixdrop.co##+js(abort-on-property-read, dynamicadx)
+mixdrop.co##+js(abort-on-property-write, popups)
+mixdrop.co##+js(abort-on-property-read, popups)
+mixdrop.co##+js(abort-on-property-write, gearbest)
+mixdrop.co##+js(abort-on-property-read, gearbest)
+mixdrop.co##+js(abort-on-property-write, pmzer)
+mixdrop.co##+js(abort-on-property-read, pmzer)
+mixdrop.co##+js(abort-on-property-write, lkid)
+mixdrop.co##+js(abort-on-property-read, lkid)
+mixdrop.co##+js(abort-on-property-write, mp0p_counter)
+mixdrop.co##+js(abort-on-property-read, mp0p_counter)
+mixdrop.co##+js(abort-on-property-write, rn_native_bqupr)
+mixdrop.co##+js(abort-on-property-read, rn_native_bqupr)
+mixdrop.co##+js(abort-on-property-write, NativeAd)
+mixdrop.co##+js(abort-on-property-read, NativeAd)
 mixdrop.co##^script:has-text(dtnoppu)
 mixdrop.co##+js(acs, dtnoppu)
 mixdrop.co##+js(aopw, lastTimestamp)
@@ -40268,8 +40259,8 @@ forum.husham.com##div[class="u-bottomFixer js-bottomFixTarget"]:has(div[class="n
 ||tmp.a2zapk.com/adspopup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tmp.a2zapk.com/adddds.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 a2zp30.com##ins[class="adsbygoogle"]
-a2zp30.com##+js(abort-on-property-read.js, adsbygoogle)
-a2zp30.com##+js(abort-on-property-write.js, adsbygoogle)
+a2zp30.com##+js(abort-on-property-read, adsbygoogle)
+a2zp30.com##+js(abort-on-property-write, adsbygoogle)
 ||a2zp30.com/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !a2zapk.io##+js(set-constant, e.preventDefault, noopFunc, end)
 a2zapk.io##+js(set-constant, e.preventDefault, noopFunc, complete)
@@ -42051,14 +42042,14 @@ fikper.com##button[class*="Mui-disabled"]:remove-class(Mui-disabled)
 ||www.up-4ever.net/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.up-4ever.net,www.up-4ever.org##span[id="countdown"]
 www.up-4ever.net,www.up-4ever.org##div[class="alert alert-danger"]
-www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, modal-image-wrapper)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, modal-image-wrapper)
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, modal-image-wrapper)
 www.up-4ever.net,www.up-4ever.orgt##div[class="adsbox"]
-www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, adblock_detected)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, adblock_detected)
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, adblock_detected)
-www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, adsbox)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, adsbox)
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, adsbox)
-www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read.js, player_ads)
+www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, player_ads)
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, player_ads)
 www.up-4ever.net,www.up-4ever.org##div[id^="hiddensection"]
 www.up-4ever.net,www.up-4ever.org##+js(acs, lhzzbthn.kn)
@@ -42500,7 +42491,6 @@ radaris.com##ins[data-ad-client]:remove()
 ||radaris.com/srv/a.gate_stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 subscene.com##div[id^="zergnet-widget-"]
 subscene.com##div[id^="zergnet-widget-"]:remove()
-||letsupload.cc/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||nthaitingsh.buzz^*
 ||yougame.biz/images/rlm/satanobannerru.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||yougame.biz/images/rlm/ruvds_560x60_animate.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42596,7 +42586,6 @@ public.tutflix.org##+js(abort-on-property-read, advads_gatracking_allads)
 public.tutflix.org##+js(abort-on-property-write, window.advanced_ads_ready_queue)
 public.tutflix.org##+js(abort-on-property-read, window.advanced_ads_ready_queue)
 public.tutflix.org##+js(acs, sbr.ads_state)
-||letsupload.cc/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !1337x.to##a[href="/netflixPromo728.php"]
 1337x.to##a[href^="/netflixPromo"]
 1337x.to##a[href^="/netflixPromo"]:remove()
@@ -43281,10 +43270,10 @@ www.247solitaire.com##+js(abort-on-property-write, adsEnabled)
 www.247solitaire.com##+js(abort-on-property-read, adsEnabled)
 ||www.247solitaire.com/js/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.247solitaire.com/js/support/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! The following two lines prevent the game from loading.
+! Any one of the following three lines prevent the game from loading.
 !www.247solitaire.com##+js(set-constant, adLineupManualTimeout, noopFunc)
 !www.247solitaire.com##+js(acs, adLineupManualTimeout)
-www.247solitaire.com##+js(set-constant, hideFeatureAd, trueFunc)
+!www.247solitaire.com##+js(set-constant, hideFeatureAd, trueFunc)
 ||miltlametta.com^*
 ||hexupload.net/disable_developer.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mrgreekroad.com/services/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43471,8 +43460,8 @@ www.windowscentral.com##div[class="mobile-leaderboard-320-50"]
 www.windowscentral.com##^script:has-text(/GdprApplies/i)
 www.windowscentral.com##*[id^="parsely-"]
 www.windowscentral.com##+js(set-constant, TIMEOUT_DELAY, 0)
-www.windowscentral.com##+js(abort-on-property-read.js, TIMEOUT_DELAY)
-www.windowscentral.com##+js(abort-on-property-write.js, TIMEOUT_DELAY)
+www.windowscentral.com##+js(abort-on-property-read, TIMEOUT_DELAY)
+www.windowscentral.com##+js(abort-on-property-write, TIMEOUT_DELAY)
 www.windowscentral.com##div[id^="bordeaux-preemptive-ad"]
 www.windowscentral.com##div:has(div.mobile-leaderboard-320-50 > div#bordeaux-preemptive-ad-2)
 www.windowscentral.com##+js(aeld, onerror)
@@ -43590,12 +43579,15 @@ www.247chess.com##div[id^="div-gpt-ad-"]:remove()
 send.cm##+js(set-constant, js, "")
 send.cm##+js(abort-current-inline-script, __CF$cv$params)
 send.cm##+js(set-constant, _paq, [])
+send.cm##+js(set-constant, gtag, noopFunc)
 send.cm##+js(abort-on-property-read, _paq)
 send.cm##+js(abort-on-property-write, _paq)
 send.cm##+js(abort-on-property-read, gtag)
 send.cm##+js(abort-on-property-write, gtag)
-send.cm##+js(acs, nrlejw)
 send.cm##+js(set-constant, elhlypd, noopFunc)
+send.cm##+js(acs, elhlypd)
+send.cm##+js(set-constant, nrlejw, noopFunc)
+send.cm##+js(acs, nrlejw)
 send.cm##+js(set-constant, _0xd965, noopFunc)
 send.cm##+js(set-constant, _0x2e4efe, [])
 send.cm##+js(acs, _0xd965)
@@ -43612,10 +43604,11 @@ send.cm##+js(set-constant, FingerprintJS, noopFunc)
 send.cm##+js(acs, FingerprintJS)
 send.cm##+js(aopr, FingerprintJS)
 send.cm##+js(aopw, FingerprintJS)
-send.cm##+js(nowoif, !/send.cm/i, log)
+! sometimes causes tab to close on pressing download button? removing this makes no difference
+! This makes it close on pressing the download button everytime.
+!send.cm##+js(disable-newtab-links)
+!send.cm##+js(nowoif, !/send.cm/i, log)
 send.cm##+js(remove-attr, class, #fileinfo, stay)
-send.cm##+js(set-constant, gtag, noopFunc)
-send.cm##+js(set-constant, nrlejw, noopFunc)
 send.cm##a[href*="//agacelebir.com/"]:remove()
 send.cm##a[href*="//pronunciationspecimens.com/"]:upward(1):remove()
 send.cm##a[href*="//pronunciationspecimens.com/"]:remove()
@@ -43651,7 +43644,6 @@ send.cm##video[id="vjsplayer"]:style(padding-top: 0% !important;)
 ||send.cm/js/dt.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||send.cm/static/js/lwcnCookieNotice.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||walker.send.cm/s.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!send.cm##+js(disable-newtab-links)
 ||send.cm^$3p,script,popup
 ||send.cm^$inline-script
 ||send.cm^$xhr
@@ -43679,7 +43671,9 @@ send.cm##div[id="biihh1t"]:remove()
 ||w.send.cm/www/d/cl.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||w.send.cm/www/d/lg.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||analytics.send.cm^*
+send.cm##+js(aeld, error)
 ! remove in reverse order since would otherwise change the xpath of the nodes that follow
+send.cm##:xpath(/html/body/script[13]):remove()
 !send.cm##:xpath(/html/body/script[20]):remove()
 !send.cm##:xpath(/html/body/script[12]):remove()
 !send.cm##:xpath(/html/body/script[11]):remove()
@@ -44357,6 +44351,93 @@ www.tenorshare.com##aside[id="gdprAgree"]:remove()
 www.tenorshare.com##div[id="cookies-eu-banner"]
 www.tenorshare.com##div[id="cookies-eu-banner"]:remove()
 ||comparisons.sovrn.com^*
+!||letsupload.to/themes/mngez/js/clipboardjs/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||letsupload.io/themes/mngez/js/clipboardjs/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||letsupload.org/themes/mngez/js/clipboardjs/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||letsupload.io/js/adsx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||letsupload.org/js/adsx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||letsupload.to/js/adsx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||letsupload.io/js/xadss.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||letsupload.org/js/xadss.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||letsupload.to/js/xadss.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.org/themes/mngez/js/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.to/themes/mngez/js/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.io/themes/mngez/js/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.org/themes/mngez/styles/cookieconsent.min.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.to/themes/mngez/styles/cookieconsent.min.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.io/themes/mngez/styles/cookieconsent.min.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.org/themes/flow/js/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.to/themes/flow/js/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.io/themes/flow/js/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.org/themes/spirit/assets/frontend/js/cookiealert.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.to/themes/spirit/assets/frontend/js/cookiealert.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.io/themes/spirit/assets/frontend/js/cookiealert.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+letsupload.org,letsupload.to,letsupload.io##+js(abort-current-script, _Hasync)
+letsupload.org,letsupload.to,letsupload.io##+js(abort-current-script, adCashMacros)
+letsupload.org,letsupload.to,letsupload.io##+js(set-constant, runAdblock, noopFunc)
+letsupload.org,letsupload.to,letsupload.io##+js(abort-current-script, runAdblock)
+letsupload.org,letsupload.to,letsupload.io##+js(abort-on-property-read, _Hasync)
+letsupload.org,letsupload.to,letsupload.io##+js(abort-on-property-read, adCashMacros)
+letsupload.org,letsupload.to,letsupload.io##+js(abort-on-property-read, adsbygoogle)
+letsupload.org,letsupload.to,letsupload.io##+js(abort-on-property-write, _Hasync)
+letsupload.org,letsupload.to,letsupload.io##+js(abort-on-property-write, adCashMacros)
+letsupload.org,letsupload.to,letsupload.io##+js(abort-on-property-write, adsbygoogle)
+letsupload.org,letsupload.to,letsupload.io##+js(set-constant, seconds, 0)
+letsupload.org,letsupload.to,letsupload.io##^script:has-text(runAdblock)
+letsupload.org,letsupload.to,letsupload.io##^script:has-text(runAdblock):remove()
+letsupload.org,letsupload.to,letsupload.io##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+letsupload.org,letsupload.to,letsupload.io##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+letsupload.org,letsupload.to,letsupload.io##^script:has-text(JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
+letsupload.org,letsupload.to,letsupload.io##^script:has-text(JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='))):remove()
+letsupload.org,letsupload.to,letsupload.io##+js(abort-current-script, atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='))
+letsupload.org,letsupload.to,letsupload.io##+js(abort-current-script, JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
+letsupload.org,letsupload.to,letsupload.io##+js(abort-current-script, 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')
+letsupload.org,letsupload.to,letsupload.io##^script:has-text(document.createElement('script'),_)
+letsupload.org,letsupload.to,letsupload.io##^script:has-text(document.createElement('script'),_):remove()
+letsupload.org,letsupload.to,letsupload.io##:xpath(//script[contains(text(), "document.createElement('script'),_")])
+letsupload.org,letsupload.to,letsupload.io##:xpath(//script[contains(text(), "document.createElement('script'),_")]):remove()
+letsupload.org,letsupload.to,letsupload.io##+js(abort-current-script, document.createElement('script'),_)
+letsupload.org,letsupload.to,letsupload.io##+js(remove-class, clear-adblock, , stay)
+letsupload.org,letsupload.to,letsupload.io###addsButtonNew
+letsupload.org,letsupload.to,letsupload.io##span[class="adsbygoogle"]
+letsupload.org,letsupload.to,letsupload.io##span[class="adsbygoogle"]:remove()
+letsupload.org,letsupload.to,letsupload.io##div[id="adblockinfo"]
+letsupload.org,letsupload.to,letsupload.io##div[id="adblockinfo"]:remove()
+letsupload.org,letsupload.to,letsupload.io##div[id="iHCIjECYmrkE"]
+letsupload.org,letsupload.to,letsupload.io##div[id="iHCIjECYmrkE"]:remove()
+letsupload.org,letsupload.to,letsupload.io##div[class="clipboard-placeholder-wrapper"]
+letsupload.org,letsupload.to,letsupload.io##div[class="containadhere"]
+letsupload.org,letsupload.to,letsupload.io##div[class="metaRedirectWrapperTopAds"]
+letsupload.org,letsupload.to,letsupload.io##div[class*="cookiealert"]
+letsupload.org,letsupload.to,letsupload.io##div[class*="cookiealert"]:remove()
+letsupload.org,letsupload.to,letsupload.io##div[class*="bottom-advert"]
+letsupload.org,letsupload.to,letsupload.io##div[class*="bottom-advert"]:remove()
+letsupload.org,letsupload.to,letsupload.io##div[class*="advert-wrapper"]
+letsupload.org,letsupload.to,letsupload.io##div[class*="advert-wrapper"]:remove()
+||letsupload.cc/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||letsupload.cc/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.lr-ingest.io/logger.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.lr-hv-in.com/logger.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.lr-in.com/logger-1.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||signin-static-js.att.com/__imp_apg__/api/imp/v1.0/report/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.overclock.net##div[class*="california-ad"]
+www.overclock.net##div[class*="california-ad"]:remove()
+www.overclock.net##div[class*="california-sidebar-ad"]
+www.overclock.net##div[class*="california-sidebar-ad"]:remove()
+www.overclock.net##div[class="MessageCard__container primis-wrapper"]
+www.overclock.net##div[class="MessageCard__container primis-wrapper"]:remove()
+||compliance.datacamp.com/scripts/gtm.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+campus.datacamp.com##script[id="dcTrackingGenerator"]:remove()
+upsell-dialogs.datacamp.com##div[class^="dc-paywall-content"]
+upsell-dialogs.datacamp.com##div[class^="dc-paywall-content"]:remove()
+upsell-dialogs.datacamp.com##article[class^="dc-paywall-container"]
+upsell-dialogs.datacamp.com##article[class^="dc-paywall-container"]:remove()
+campus.datacamp.com##iframe[src*="://upsell-dialogs.datacamp.com/"]
+campus.datacamp.com##iframe[src*="://upsell-dialogs.datacamp.com/"]:remove()
+campus.datacamp.com##div[data-testid="modal-overlay"]:has(span[data-floating-ui-focus-guard])
+campus.datacamp.com##div[data-testid="modal-overlay"]:has(span[data-floating-ui-focus-guard]):remove()
+||infra-reporter.datacamp.com/csp-report$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.datacamp.com/api/window?type=paywall$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
