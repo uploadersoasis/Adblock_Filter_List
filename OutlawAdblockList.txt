@@ -23,12 +23,12 @@
 !    2.  The rules which utilize the "replace-node-text.js" / "rpnt.js" scriptlet must also
 !        be listed under the "My Filters" tab and not just in this list because that
 !        scriptlet has the "requiresTrust" set to true.
-!        Firefox does not currentl support the replace-node-text scriptlet.
+!        Firefox does not currently support the replace-node-text scriptlet.
 !
 !    3.  The rules which utilize the "trusted-set" scriptlet must also be listed
 !        under the "My Filters" tab and not just in this list because that scriptlet
 !        has the "requiresTrust" set to true.
-!        Firefox does not currentl support the trusted-set scriptlet.
+!        Firefox does not currently support the trusted-set scriptlet.
 !
 !    4.  Some of these rules utilize the "set attribute any value" (set-attr-any.js / saa) scriptlet 
 !        from the javascript @ https://github.com/uploadersoasis/Adblock_Filter_List/raw/master/outlaw_scriptlets.js
@@ -44,8 +44,8 @@
 !    6.  The countdown period of some file hosts has been removed or shortened.
 !        In some of these cases the countdown may not display, so press the
 !        button to perform the download anyway.  For file hosts that do server-side
-!        checks on the countdown, you will still have to wait the normal period
-!        before downloading.
+!        checks on the countdown, such as Filefactory, you will still have to wait
+!        the normal period before downloading.
 !
 !    7.  A relative few websites still require the use of a custom Javascript
 !        snippet to be fully functional.  Such a script can be saved as a
@@ -6411,7 +6411,6 @@ rapidmoviez.com##.ab-alert
 www.msn.com###main > .loaded.articlecontent > .articlebody > span > .nac0.show.nativeAd
 ||gardenadvices.com/adcall.ashx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||gardenadvices.com/traffic.ashx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.filefactory.com###g367CB268B1094004A3689751E7AC568FFloatingBanner
 ||bc.ixiaa.com^*
 !||leadsfinders.com/rd?uri=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||leadsfinders.com^*
@@ -12387,8 +12386,6 @@ cr.cracksurl.com###fade
 ||txwzdalmamma.com^*
 ||afa9bdfa63bf7.com^*
 ||www.afa9bdfa63bf7.com^*
-!||www.filefactory.com/js/vendor/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||www.filefactory.com/js/vendor/countdown_plugins.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.iwmonrwpeeku.com^*
 ||iwmonrwpeeku.com^*
 ||01dff0e56385455f459.com^*
@@ -14617,7 +14614,6 @@ onhax.me##div[id="bottom-promo-abdload"]
 !||www.niceduckies.com/AF_TA/rel/index.cfm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.niceduckies.com/AF_TA/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.niceduckies.com^*
-www.filefactory.com###ff-wp-promo-inner
 ||estatalogy.info^*
 ||www.adexchangecloud.com/jump/next.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||platform.bidgear.com/ads.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43358,6 +43354,7 @@ www.howtogeek.com##:xpath(//script[contains(text(), 'admbenefits')])
 www.howtogeek.com##:xpath(//script[contains(text(), 'admbenefits')]):remove()
 ! the following inline anti-adblocking script location may change
 www.howtogeek.com##:xpath(//html/head/script[27])
+www.howtogeek.com##:xpath(//html/head/script[27]):remove()
 ! only block all inline javascript if there is no other way to bypass the inline "admiral" anti-adblocking script
 !www.howtogeek.com^$inline-script
 www.howtogeek.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):has(div[class="duogaR"]):has(div[class="dzMDQR"]):has(h3[class="bBWhhG"]):remove()
@@ -44438,6 +44435,110 @@ campus.datacamp.com##div[data-testid="modal-overlay"]:has(span[data-floating-ui-
 campus.datacamp.com##div[data-testid="modal-overlay"]:has(span[data-floating-ui-focus-guard]):remove()
 ||infra-reporter.datacamp.com/csp-report$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.datacamp.com/api/window?type=paywall$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.hwcooling.net##div[id="catapult-cookie-bar"]
+www.hwcooling.net##div[id="catapult-cookie-bar"]:remove()
+www.hwcooling.net##html:remove-class(has-cookie-bar)
+www.hwcooling.net##html:remove-class(cookie-bar-bottom-left-block)
+www.hwcooling.net##html:remove-class(cookie-bar-block)
+www.hwcooling.net##div[class="banner_wrapper"]
+www.hwcooling.net##div[class="banner_wrapper"]:remove()
+www.hwcooling.net##div[class="heureka-affiliate-category"]
+www.hwcooling.net##div[class="heureka-affiliate-category"]:remove()
+www.hwcooling.net##div[class^="right-ad"]
+www.hwcooling.net##div[class^="right-ad"]:remove()
+www.hwcooling.net##div[id="fb-root"]:remove()
+www.hwcooling.net##script[custom-element="amp-ad"]:remove()
+www.hwcooling.net##script[data-ad-client]:remove()
+www.hwcooling.net##+js(set-constant, catapultReadCookie, noopFunc)
+www.hwcooling.net##+js(abort-current-script, catapultReadCookie)
+||www.hwcooling.net/wp-content/plugins/uk-cookie-consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.hwcooling.net/wp-content/plugins/duracelltomi-google-tag-manager/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||serve.affiliate.heurekashopping.sk^*
+www.cdrlabs.com##div[id="topbanner"]
+www.cdrlabs.com##div[id="topbanner"]:remove()
+www.cdrlabs.com##div[id="banner_ad"]
+www.cdrlabs.com##div[id="banner_ad"]:remove()
+www.cdrlabs.com##div[id^="amzn-assoc-ad-"]
+www.cdrlabs.com##div[id^="amzn-assoc-ad-"]:remove()
+www.cdrlabs.com##div[class="banneritem"]
+www.cdrlabs.com##div[class="banneritem"]:remove()
+www.cdrlabs.com##div[class="bannergroup_ad"]
+www.cdrlabs.com##div[class="bannergroup_ad"]:remove()
+www.cdrlabs.com##iframe[id="rufous-sandbox"]:remove()
+! blocking all inline-scripts does block anti-adblocking script but also disqus on the site
+!||www.cdrlabs.com^$inline-script
+! the following inline anti-adblocking script location may change
+www.cdrlabs.com##:xpath(//html/body/div[1]/footer/section/div/div/div/script)
+www.cdrlabs.com##:xpath(//html/body/div[1]/footer/section/div/div/div/script):remove()
+||cdn.static.zdtag.com^*
+! makes accordian menus expanded by default
+pxc-coding.com##div:remove-class(collapse)
+support.lenovo.com##div[class^="cookie-remind-"]
+support.lenovo.com##div[class^="cookie-remind-"]:remove()
+!support.lenovo.com##+js(set-constant, userOperationCookieBefore, trueFunc)
+support.lenovo.com##+js(set-constant, userOperationCookieBefore, true)
+!||lenovosupport-app.quantummetric.com^$xhr
+||lenovosupport-app.quantummetric.com^*
+||e7741.d.akamaiedge.net/BannerManagement/track/footprints.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||download.lenovo.com/BannerManagement/track/footprints.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.croxyproxy.com##div[id="gdpr"]
+www.croxyproxy.com##div[id="gdpr"]:remove()
+www.croxyproxy.com##div[class*="gdprContainer"]
+www.croxyproxy.com##div[class*="gdprContainer"]:remove()
+www.filefactory.com###ff-wp-promo-inner
+www.filefactory.com###g367CB268B1094004A3689751E7AC568FFloatingBanner
+!||www.filefactory.com/js/vendor/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.filefactory.com/js/vendor/countdown_plugins.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.filefactory.com##+js(set-constant, _gaq, [])
+www.filefactory.com##+js(set-constant, _gaq.push, noopFunc)
+www.filefactory.com##+js(set-constant, zone_invocation_url, "")
+www.filefactory.com##+js(abort-on-property-read, _gaq)
+www.filefactory.com##+js(abort-on-property-write, _gaq)
+www.filefactory.com##+js(abort-on-property-write, zone_invocation_url)
+www.filefactory.com##+js(abort-on-property-write, zone_invocation_url)
+www.filefactory.com##div[id="PopupSignupForm_0"]
+www.filefactory.com##div[id="PopupSignupForm_0"]:remove()
+www.filefactory.com##+js(set-attr, #file-download-free-action-start, href, [data-href])
+www.filefactory.com##+js(set-attr, #file-download-free-action-slow, href, [data-href])
+www.filefactory.com##a[id="file-download-free-action-slow-promo"]:style(display: none !important)
+www.filefactory.com##a[id="file-download-free-action-slow-promo"]
+www.filefactory.com##a[id="file-download-free-action-slow-promo"]:remove()
+www.filefactory.com##a[id="file-download-free-action-slow"]:remove-attr(style)
+! file-download-free-start sets style for a[id="file-download-free-action-slow"]
+www.filefactory.com##div[id="file-download-free-start"]:style(display: block !important)
+www.filefactory.com##a[id="file-download-free-action-slow"]:style(display: block !important)
+www.filefactory.com##a[id="file-download-free-countdown"]:style(display: none !important)
+www.filefactory.com##a[id="file-download-free-countdown"]
+www.filefactory.com##a[id="file-download-free-countdown"]:remove()
+! removing the click prevents the timer, but the download timer is server-side so bypassing it doesn't work.
+!www.filefactory.com##+js(aeld, click)
+!www.filefactory.com##+js(aeld, click, , runAt, end)
+||engagesrvr.filefactory.com^*
+linux.how2shout.com##div[data-ad-slot]
+linux.how2shout.com##div[data-ad-slot]:remove()
+linux.how2shout.com##div[class="ads-line"]
+linux.how2shout.com##div[class="ads-line"]:remove()
+linux.how2shout.com##+js(set-constant, viAPItag, {})
+!linux.how2shout.com##+js(set-constant, viAPItag.display, noopFunc, end)
+linux.how2shout.com##+js(set-constant, viAPItag.display, noopFunc, complete)
+!linux.how2shout.com##+js(set-constant, vitag.Init, [], end)
+linux.how2shout.com##+js(set-constant, vitag.Init, [], complete)
+linux.how2shout.com##:xpath(//script[contains(text(), 'vitag.Init')])
+linux.how2shout.com##:xpath(//script[contains(text(), 'vitag.Init')]):remove()
+linux.how2shout.com##ins[data-ad-client]
+linux.how2shout.com##ins[data-ad-client]:remove()
+linux.how2shout.com##+js(set-constant, adsbygoogle, [])
+linux.how2shout.com##+js(abort-on-property-write, adsbygoogle)
+linux.how2shout.com##+js(abort-on-property-read, adsbygoogle)
+linux.how2shout.com##+js(set-constant, gtag, noopFunc)
+linux.how2shout.com##+js(acs, gtag)
+history-computer.com##div[id^="AdThrive_"]
+history-computer.com##div[id^="AdThrive_"]:remove()
+history-computer.com##+js(set-constant, handleAffiliateTest, noopFunc)
+history-computer.com##+js(acs, handleAffiliateTest)
+history-computer.com##script[id^="cls-insertion-"]:remove()
+history-computer.com##div[id^="cls-video-container-"][class="adthrive"]
+history-computer.com##div[id^="cls-video-container-"][class="adthrive"]:remove()
 
 !Whitelisted
 ! for Google Drive
