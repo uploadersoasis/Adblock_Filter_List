@@ -44,8 +44,8 @@ do not work to https://github.com/uploadersoasis/Adblock_Filter_List/issues .
     6.  The countdown period of some file hosts has been removed or shortened.
         In some of these cases the countdown may not display, so press the
         button to perform the download anyway.  For file hosts that do server-side
-        checks on the countdown, you will still have to wait the normal period
-        before downloading.
+        checks on the countdown, such as Filefactory, you will still have to wait
+        the normal period before downloading.
 
     7.  A relative few websites still require the use of a custom Javascript
         snippet to be fully functional.  Such a script can be saved as a
