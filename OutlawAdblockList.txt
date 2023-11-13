@@ -42405,49 +42405,60 @@ thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:rem
 ||confideshrinebuff.com^*
 ||clicknupload.*/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||clicknupload.*/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-clicknupload.*##+js(abort-current-script, zfgloadedpopup)
-clicknupload.*##+js(abort-on-property-read, zfgloadedpopup)
-clicknupload.*##+js(abort-current-script, apu.php)
-clicknupload.*##+js(abort-on-property-read, window['__CF$cv$params'])
-clicknupload.*##+js(abort-on-property-write, window['__CF$cv$params'])
-clicknupload.*##div[class="adsbox"]
-clicknupload.*##div[id^="contentad"]
-clicknupload.*##div[id^="rn_ad_native_"]
-clicknupload.*##+js(aopr, AaDetector)
-clicknupload.*##+js(acs, Math, zfgloaded)
-clicknupload.*###adblock_detected
-clicknupload.*##+js(abort-on-property-write, oaxDyt)
-clicknupload.*##+js(abort-on-property-read, oaxDyt)
-!clicknupload.*##div[id="rn_ad_native_uak91"]
-clicknupload.*##input[id="adblock_detected"]
-! clicknupload.*##iframe blocks the captcha needed to download
-!clicknupload.*##iframe
-!clicknupload.*##body > script
-clicknupload.*##^script:has-text(/document\.createElement|atob\(/i):remove()
-clicknupload.*##+js(set-constant, timeout, 0)
-clicknupload.*##+js(set-constant, tick, 0)
-!clicknupload.*##+js(remove-class, captcha_code)
-clicknupload.*##*[class*="captcha_code"]:remove-class(captcha_code)
-clicknupload.*##style[id^="__web-inspector-hide"]
-clicknupload.*##div[class^="__web-inspector-hide"]
-clicknupload.*##+js(aopr, document.onmousedown)
-clicknupload.*##+js(aopw, document.onmousedown)
-clicknupload.*##+js(aeld, /^(?:mousedown)$/)
-clicknupload.*##iframe:remove()
-clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
-!clicknupload.*##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
-clicknupload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
-clicknupload.*##input[id="adblock_detected"]:remove()
+||clickndownload.org/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||clickndownload.org/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+clicknupload.*,clickndownload.org##+js(abort-current-script, zfgloadedpopup)
+clicknupload.*,clickndownload.org##+js(abort-on-property-read, zfgloadedpopup)
+clicknupload.*,clickndownload.org##+js(abort-current-script, apu.php)
+clicknupload.*,clickndownload.org##+js(abort-on-property-read, window['__CF$cv$params'])
+clicknupload.*,clickndownload.org##+js(abort-on-property-write, window['__CF$cv$params'])
+clicknupload.*,clickndownload.org##div[class="adsbox"]
+clicknupload.*,clickndownload.org##div[id^="contentad"]
+clicknupload.*,clickndownload.org##div[id^="rn_ad_native_"]
+clicknupload.*,clickndownload.org##+js(aopr, AaDetector)
+clicknupload.*,clickndownload.org##+js(acs, Math, zfgloaded)
+clicknupload.*,clickndownload.org###adblock_detected
+clicknupload.*,clickndownload.org##+js(abort-on-property-write, oaxDyt)
+clicknupload.*,clickndownload.org##+js(abort-on-property-read, oaxDyt)
+!clicknupload.*,clickndownload.org##div[id="rn_ad_native_uak91"]
+clicknupload.*,clickndownload.org##input[id="adblock_detected"]
+! clicknupload.*,clickndownload.org##iframe blocks the captcha needed to download
+!clicknupload.*,clickndownload.org##iframe
+!clicknupload.*,clickndownload.org##body > script
+clicknupload.*,clickndownload.org##^script:has-text(/document\.createElement|atob\(/i)
+clicknupload.*,clickndownload.org##^script:has-text(/document\.createElement|atob\(/i):remove()
+clicknupload.*,clickndownload.org##^script:has-text(/eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==/)
+clicknupload.*,clickndownload.org##^script:has-text(/eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==/):remove()
+clicknupload.*,clickndownload.org##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+clicknupload.*,clickndownload.org##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+clicknupload.*,clickndownload.org##+js(set-constant, timeout, 0)
+clicknupload.*,clickndownload.org##+js(set-constant, tick, 0)
+!clicknupload.*,clickndownload.org##+js(remove-class, captcha_code)
+clicknupload.*,clickndownload.org##*[class*="captcha_code"]:remove-class(captcha_code)
+clicknupload.*,clickndownload.org##style[id^="__web-inspector-hide"]
+clicknupload.*,clickndownload.org##div[class^="__web-inspector-hide"]
+clicknupload.*,clickndownload.org##+js(aopr, document.onmousedown)
+clicknupload.*,clickndownload.org##+js(aopw, document.onmousedown)
+clicknupload.*,clickndownload.org##+js(aeld, /^(?:mousedown)$/)
+clicknupload.*,clickndownload.org##iframe:remove()
+clicknupload.*,clickndownload.org##input[id="adblock_detected"]:remove()
 ||undefined^$script,domain=clicknupload.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! existing href must NOT be removed to set href value to onclick's value
-!clicknupload.*##button[id="downloadbtn"]:remove-attr(href)
+!clicknupload.*,clickndownload.org##button[id="downloadbtn"]:remove-attr(href)
 ! sets href value to onclick's value
-clicknupload.*##+js(set-attr, 'button[id="downloadbtn"]', href, '[onclick]')
+clicknupload.*,clickndownload.org##+js(set-attr, 'button[id="downloadbtn"]', href, '[onclick]')
 ! Don't remove onclick unless href was set properly above;
 ! Don't remove onclick because it will be removed before href is set above, so there will be no value to use.
-!clicknupload.*##button[id="downloadbtn"]:remove-attr(onclick)
+!clicknupload.*,clickndownload.org##button[id="downloadbtn"]:remove-attr(onclick)
 ! existing href must NOT be removed to rename onclick to href; it replaces it anyway.
-!clicknupload.*##+js(rename-attr, button[id="downloadbtn"], onclick, href)
+!clicknupload.*,clickndownload.org##+js(rename-attr, button[id="downloadbtn"], onclick, href)
+! the location of the following xpaths may change especially if remove() is used on any elements above it
+clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
+clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2])
+clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1]):remove()
+clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2]):remove()
+!clicknupload.*,clickndownload.org##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
+clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
 ||makesembezzlementconsume.com^*
 ||seedlingneurotic.com^*
 ||forms.hsforms.com/embed/v3/counters.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42495,7 +42506,7 @@ yougame.biz##div[class="sponsor-banner-ss"]:remove()
 ||umbrellastep.site^*
 ||rubricagalah.guru^*
 ||sorbentfalsum.com^*
-clicknupload.*##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIjcm5fYWRfbmF0aXZlX2o1bXJxfCNybl9hZF9uYXRpdmVfemNpemUifQ==)
+clicknupload.*,clickndownload.org##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIjcm5fYWRfbmF0aXZlX2o1bXJxfCNybl9hZF9uYXRpdmVfemNpemUifQ==)
 ||pixeldrain.com/api/misc/rate_limits$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||entreatyfungusgaily.com^*
 ||connect.cabbageknee.site^*
@@ -44539,6 +44550,20 @@ history-computer.com##+js(acs, handleAffiliateTest)
 history-computer.com##script[id^="cls-insertion-"]:remove()
 history-computer.com##div[id^="cls-video-container-"][class="adthrive"]
 history-computer.com##div[id^="cls-video-container-"][class="adthrive"]:remove()
+!||a.slashdotmedia.com/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||a.slashdotmedia.com^*
+||analytics.linuxjournal.com^*
+||ads.supplyframe.com^*
+||www.eevblog.com/images/comm/JLCPCB-3.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.eevblog.com##iframe[src*="//search.supplyframe.com/partner/26/ipo950/"]
+www.eevblog.com##iframe[src*="//search.supplyframe.com/partner/26/ipo950/"]:remove()
+||prematuregrumpyunhappy.com^*
+||downloading-free.com^*
+||yourjsdelivery.com^*
+||waughtsquint.com^*
+||enablerubbingjab.com^*
+||audrault.xyz^*
+||ctkjiysyepxwrv.xyz^*
 
 !Whitelisted
 ! for Google Drive
