@@ -26868,20 +26868,6 @@ www.cinemablend.com##div[id="preemptive-1"]
 !||www.luxubu.review/* !blocks "FE" video player
 !||geoip.redirect-ads.com/* !blocks video player
 !||playhydrax.com/* !"HX"video player
-kimcartoon.to##div[id="adbWarnContainer"]
-kimcartoon.to##div[id="adbWarnContainer"]:remove()
-!kimcartoon.to##div[id="adsIfrme"]
-kimcartoon.to##a[id="hideAds"]
-kimcartoon.to##p[id="adbAlert"]
-kimcartoon.to##div[class="kcAds1"]
-kimcartoon.to##div[class="kcAds1"]:remove()
-kimcartoon.to##div[class="adsbyvli"]
-kimcartoon.to##^script:has-text(adbWarn)
-kimcartoon.to##+js(set-constant, alb, false)
-kimcartoon.to##+js(set-constant, isAdb, false)
-kimcartoon.to##+js(set-constant, setHideAdsCd, 0)
-kimcartoon.to##+js(set-constant, hideAdsCd, 1)
-kimcartoon.to##+js(abort-on-property-read, isAdb)
 www.imyfone.com##div[class^="cookie_policy"]
 ||stuffedprofessional.com^*
 ||deaconrandomoptional.com^*
@@ -39653,6 +39639,7 @@ vidmoly.to,vidmoly.me##+js(set-constant, devtoolsDetector.lanuch, noopFunc)
 vidmoly.to,vidmoly.me##+js(set-constant, vopes2, noopFunc)
 vidmoly.to,vidmoly.me##+js(acs, vopes2)
 vidmoly.to,vidmoly.me##+js(aeld, onclick, vopes2)
+vidmoly.to,vidmoly.me##:xpath(//script[contains(text(), 'vopes2()')]):remove()
 vidmoly.to,vidmoly.me##img[id="vope"]:remove-attr(onclick)
 vidmoly.to,vidmoly.me##+js(aeld, contextmenu)
 !vidmoly.to,vidmoly.me##+js(set-constant, window.adsbygoogle, null)
@@ -43932,44 +43919,54 @@ vimm.net##div[id="ads"]
 vimm.net##div[id="ads"]:remove()
 vimm.net##div[id="headerAdContainerFixed"]
 vimm.net##div[id="headerAdContainerFixed"]:remove()
-! remove this script before any other changes to kimcartoon.li since other removals would change the xpath of this script.
-kimcartoon.li##:xpath(/html/head/script[6]):remove()
-!kimcartoon.li##:xpath/html/body/div[1]/div[5]/div/div/script[3]):remove()
-!kimcartoon.li##:xpath(/html/body/div[1]/div[5]/div/div/script[2]):remove()
+! remove this script before any other changes to kimcartoon domains since other removals would change the xpath of this script.
+kimcartoon.li,kimcartoon.to##:xpath(/html/head/script[6]):remove()
+!kimcartoon.li,kimcartoon.to##:xpath/html/body/div[1]/div[5]/div/div/script[3]):remove()
+!kimcartoon.li,kimcartoon.to##:xpath(/html/body/div[1]/div[5]/div/div/script[2]):remove()
 ! blocking encodeURIComponent will block some video URL's too
-!kimcartoon.li##:xpath(//script[contains(text(), 'encodeURIComponent')]):remove()
-!kimcartoon.li##+js(acs, encodeURIComponent)
-kimcartoon.li##+js(set-constant, _DRrmA, "")
-kimcartoon.li##+js(abort-on-property-read, _DRrmA)
-kimcartoon.li##+js(abort-on-property-write, _DRrmA)
-kimcartoon.li##div[id="adbWarnContainer"]
-kimcartoon.li##div[id="adbWarnContainer"]:remove()
-kimcartoon.li##div[class="kcAds1"]:has(iframe[src*="/Ads/"])
-kimcartoon.li##div[class="kcAds1"]:has(iframe[src*="/Ads/"]):remove()
-kimcartoon.li##iframe[src*="/Ads/"]
-kimcartoon.li##iframe[src*="/Ads/"]:remove()
-kimcartoon.li##div[class="kcAds1"]:has(div[id^="bg-ssp-"])
-kimcartoon.li##div[class="kcAds1"]:has(div[id^="bg-ssp-"]):remove()
-kimcartoon.li##+js(set-constant, adbWarn, falseFunc)
-kimcartoon.li##+js(acs, adbWarn)
-kimcartoon.li##+js(set-constant, alb, false)
-kimcartoon.li##+js(set-constant, isAdb, false)
-!kimcartoon.li##+js(abort-on-property-read, alb)
-!kimcartoon.li##+js(abort-on-property-write, alb)
-kimcartoon.li##+js(set-constant, xaZlE, noopFunc)
-kimcartoon.li##+js(set-constant, leHzI, noopFunc)
-kimcartoon.li##+js(no-setTimeout-if, leHzI)
-kimcartoon.li##+js(set-constant, hideAdsCd, 0, stay)
-kimcartoon.li##a[id="hideAds"]
-kimcartoon.li##a[id="hideAds"]:remove()
-kimcartoon.li##div[id="videoAd"]
-kimcartoon.li##div[id="videoAd"]:remove()
+!kimcartoon.li,kimcartoon.to##:xpath(//script[contains(text(), 'encodeURIComponent')]):remove()
+kimcartoon.li,kimcartoon.to##div[id="adbWarnContainer"]
+kimcartoon.li,kimcartoon.to##div[id="adbWarnContainer"]:remove()
+!kimcartoon.li,kimcartoon.to##div[id="adsIfrme"]
+kimcartoon.li,kimcartoon.to##a[id="hideAds"]
+kimcartoon.li,kimcartoon.to##p[id="adbAlert"]
+kimcartoon.li,kimcartoon.to##div[class="kcAds1"]
+kimcartoon.li,kimcartoon.to##div[class="kcAds1"]:remove()
+kimcartoon.li,kimcartoon.to##div[class="adsbyvli"]
+kimcartoon.li,kimcartoon.to##^script:has-text(adbWarn)
+kimcartoon.li,kimcartoon.to##^script:has-text(adbWarn):remove()
+kimcartoon.li,kimcartoon.to##+js(set-constant, alb, false)
+kimcartoon.li,kimcartoon.to##+js(set-constant, isAdb, false)
+kimcartoon.li,kimcartoon.to##+js(set-constant, setHideAdsCd, 0)
+kimcartoon.li,kimcartoon.to##+js(set-constant, hideAdsCd, 1)
+kimcartoon.li,kimcartoon.to##+js(abort-on-property-read, isAdb)
+!kimcartoon.li,kimcartoon.to##+js(acs, encodeURIComponent)
+kimcartoon.li,kimcartoon.to##+js(set-constant, _DRrmA, "")
+kimcartoon.li,kimcartoon.to##+js(abort-on-property-read, _DRrmA)
+kimcartoon.li,kimcartoon.to##+js(abort-on-property-write, _DRrmA)
+kimcartoon.li,kimcartoon.to##div[class="kcAds1"]:has(iframe[src*="/Ads/"])
+kimcartoon.li,kimcartoon.to##div[class="kcAds1"]:has(iframe[src*="/Ads/"]):remove()
+kimcartoon.li,kimcartoon.to##iframe[src*="/Ads/"]
+kimcartoon.li,kimcartoon.to##iframe[src*="/Ads/"]:remove()
+kimcartoon.li,kimcartoon.to##div[class="kcAds1"]:has(div[id^="bg-ssp-"])
+kimcartoon.li,kimcartoon.to##div[class="kcAds1"]:has(div[id^="bg-ssp-"]):remove()
+kimcartoon.li,kimcartoon.to##div[id="bg-ssp-7942"]
+kimcartoon.li,kimcartoon.to##div[id="bg-ssp-7942"]:remove()
+kimcartoon.li,kimcartoon.to##+js(set-constant, adbWarn, falseFunc)
+kimcartoon.li,kimcartoon.to##+js(acs, adbWarn)
+!kimcartoon.li,kimcartoon.to##+js(abort-on-property-read, alb)
+!kimcartoon.li,kimcartoon.to##+js(abort-on-property-write, alb)
+kimcartoon.li,kimcartoon.to##+js(set-constant, xaZlE, noopFunc)
+kimcartoon.li,kimcartoon.to##+js(set-constant, leHzI, noopFunc)
+kimcartoon.li,kimcartoon.to##+js(no-setTimeout-if, leHzI)
+kimcartoon.li,kimcartoon.to##+js(set-constant, hideAdsCd, 0, stay)
+kimcartoon.li,kimcartoon.to##a[id="hideAds"]:remove()
+kimcartoon.li,kimcartoon.to##div[id="videoAd"]
+kimcartoon.li,kimcartoon.to##div[id="videoAd"]:remove()
 !||kimcartoon.li/ads/bid300c.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||kimcartoon.li/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||kimcartoon.li/Ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! removes embedded video
-!kimcartoon.li##div[id="adsIfrme"]
-!kimcartoon.li##div[id="adsIfrme"]:remove()
+!kimcartoon.li,kimcartoon.to##div[id="adsIfrme"]:remove()
 ||kimcartoon.li/Content/images/adb.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 kswplayer.info##div[id="adbd"]
 kswplayer.info##div[id="adbd"]:remove()
@@ -44564,6 +44561,18 @@ www.eevblog.com##iframe[src*="//search.supplyframe.com/partner/26/ipo950/"]:remo
 ||enablerubbingjab.com^*
 ||audrault.xyz^*
 ||ctkjiysyepxwrv.xyz^*
+!||zrly.zjjranmjabrjl.top^*
+||zjjranmjabrjl.top^*
+!||awvn.ayyjenjqlrlbj.top^*
+||ayyjenjqlrlbj.top^*
+||umexalim.com^*
+||anodizerefund.space^*
+||sahouane.net^*
+||unsightly-farm.com^*
+!||main.proffering.xyz^*
+||proffering.xyz^*
+||aditmedia.g2afse.com^*
+||boozifyprays.space^*
 
 !Whitelisted
 ! for Google Drive
