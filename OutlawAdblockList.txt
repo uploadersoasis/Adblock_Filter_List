@@ -170,10 +170,10 @@ techydino.net##+js(nobab2)
 ||googleads.g.doubleclick.net/apps/domainpark/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||googleads.g.doubleclick.net/pagead/adview$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||googleads.g.doubleclick.net/pagead/conversion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||www.googleadservices.com/pagead/aclk?sa=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.googleadservices.com/pagead/conversion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.googleadservices.com/pagead/conversion.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.googleadservices.com/pagead/conversion$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.googleadservices.com/pagead/conversion_async.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.googleadservices.com/pagead/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||event.slate.com/log.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||sourceforge.net/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -31217,7 +31217,6 @@ dmarcian.com##div[id="cookie-notice"]
 ||twinrdsrv.com/link.engine$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||smetrics.regions.com^*
 ||t.co/i/adsct^*
-||www.googleadservices.com/pagead/conversion_async.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||1013536406.privacysandbox.googleadservices.com^*
 ||*.privacysandbox.googleadservices.com^*
 www.tutorialspoint.com##div[id="privacy-banner"]
@@ -44575,6 +44574,10 @@ www.eevblog.com##iframe[src*="//search.supplyframe.com/partner/26/ipo950/"]:remo
 ||aditmedia.g2afse.com^*
 ||boozifyprays.space^*
 ||latentdefinitionangry.com^*
+www.axosbank.com##div[id="__tealiumGDPRecModal"]
+www.axosbank.com##div[id="__tealiumGDPRecModal"]:remove()
+www.axosbank.com##div[class^="privacy_prompt"]
+www.axosbank.com##div[class^="privacy_prompt"]:remove()
 
 !Whitelisted
 ! for Google Drive
@@ -44748,3 +44751,5 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip#@#div[id^="div-gpt-ad"]:style(width:
 www.youtube.com#@#ytd-popup-container.ytd-app.style-scope
 ! allow on Dell.com for service tag search will work; not necessary
 !@@||api.iperceptions.com/InviteTriggers$domain=dell.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! To enable redirects for links from Google searches
+@@||www.googleadservices.com/pagead/aclk?sa=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
