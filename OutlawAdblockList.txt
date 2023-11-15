@@ -15281,12 +15281,6 @@ softasm.com##div[class*="the-ad-break"]
 !www.kentuckynewera.com###blox-ad-position-fixed-big-ad-middle1
 !www.kentuckynewera.com###blox-ad-position-fixed-big-ad-top1
 www.kentuckynewera.com##div[id^="blox-ad-position"]
-www.computerbase.de##.block1--ads-gray.block1--ads.block1
-!www.computerbase.de###adbox-banner
-!www.computerbase.de##div[class*="ADBOX-wrapper"]
-!www.computerbase.de##div[class="adbox-wrapper.adbox-wrapper--rectangle"]
-www.computerbase.de##div[class*="adbox"]
-||www.computerbase.de/api/noscript-ad$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bloximages.chicago2.vip.townnews.com/kentuckynewera.com/content/tncms/assets/v3/bannerad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||kentuckynewera.us.intellitxt.com^*
 !||www.kentuckynewera.com/shared-content/art/stats/common/tracker.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -34396,14 +34390,18 @@ wccftech.com##div[class="content-ad"]
 wccftech.com##div[id="onetrust-consent-sdk"]
 wccftech.com##div[class*="text-ad"]
 wccftech.com##div[data-pg-ad-spot]
-wccftech.com##+js(abort-on-property-write, f.fbq)
-wccftech.com##+js(abort-on-property-read, f.fbq)
-wccftech.com##+js(remove-class, main-background, div)
 wccftech.com##figure[class*="ad noskim"]
 wccftech.com##a[rel="sponsored"]
 wccftech.com##h2:has-text(A message from our sponsor):remove()
 wccftech.com##div[class="wccf_video_tag"]:has(div[class="d-none d-md-block"]):has(div[class="d-block d-md-none"])
 wccftech.com##div[class="wccf_video_tag"]:has(div[class="d-none d-md-block"]):has(div[class="d-block d-md-none"]):remove()
+wccftech.com##div[id="main-background"]:remove-class(div)
+wccftech.com##div[id="yeioo0il6n"]
+wccftech.com##div[id="yeioo0il6n"]:remove()
+wccftech.com##div[data-key]:has(a[rel="sponsored"])
+wccftech.com##div[data-key]:has(a[rel="sponsored"]):remove()
+wccftech.com##+js(abort-on-property-write, f.fbq)
+wccftech.com##+js(abort-on-property-read, f.fbq)
 www.website.ws##div[id="cookie-alert"]
 ||cdn.bmcdn4.com/js/62cbd2822f4a0501732aa1d5.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.bmcdn4.com/js/source/389920305973.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43599,7 +43597,9 @@ send.cm##+js(set-constant, FingerprintJS, noopFunc)
 send.cm##+js(acs, FingerprintJS)
 send.cm##+js(aopr, FingerprintJS)
 send.cm##+js(aopw, FingerprintJS)
-! sometimes causes tab to close on pressing download button? removing this makes no difference
+! blocking popups sometimes causes tab to close on pressing download button
+!||send.cm^$3p,script,popup
+||send.cm^$3p,script
 ! This makes it close on pressing the download button everytime.
 !send.cm##+js(disable-newtab-links)
 !send.cm##+js(nowoif, !/send.cm/i, log)
@@ -43639,7 +43639,6 @@ send.cm##video[id="vjsplayer"]:style(padding-top: 0% !important;)
 ||send.cm/js/dt.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||send.cm/static/js/lwcnCookieNotice.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||walker.send.cm/s.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||send.cm^$3p,script,popup
 ||send.cm^$inline-script
 ||send.cm^$xhr
 ! sets button[id="downloadbtn"] type to "submit"
@@ -44578,6 +44577,23 @@ www.axosbank.com##div[id="__tealiumGDPRecModal"]
 www.axosbank.com##div[id="__tealiumGDPRecModal"]:remove()
 www.axosbank.com##div[class^="privacy_prompt"]
 www.axosbank.com##div[class^="privacy_prompt"]:remove()
+!www.computerbase.de,www-computerbase-de.translate.goog##.block1--ads-gray.block1--ads.block1
+www.computerbase.de,www-computerbase-de.translate.goog##div[class*="block1--ads"]
+www.computerbase.de,www-computerbase-de.translate.goog##div[class*="block1--ads"]:remove()
+!www.computerbase.de,www-computerbase-de.translate.goog###adbox-banner
+!www.computerbase.de,www-computerbase-de.translate.goog##div[class*="ADBOX-wrapper"]
+!www.computerbase.de,www-computerbase-de.translate.goog##div[class="adbox-wrapper.adbox-wrapper--rectangle"]
+www.computerbase.de,www-computerbase-de.translate.goog##div[class*="adbox"]
+www.computerbase.de,www-computerbase-de.translate.goog##div[class*="adbox"]:remove()
+||www.computerbase.de/api/noscript-ad$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www-computerbase-de.translate.goog/api/noscript-ad$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.computerbase.de,www-computerbase-de.translate.goog##div[id="js-stats"]:remove()
+www.computerbase.de,www-computerbase-de.translate.goog##*[class^="consent__"]
+www.computerbase.de,www-computerbase-de.translate.goog##*[class^="consent__"]:remove()
+www.computerbase.de,www-computerbase-de.translate.goog##dialog[class="consent js-consent"]
+www.computerbase.de,www-computerbase-de.translate.goog##dialog[class="consent js-consent"]:remove()
+www.computerbase.de,www-computerbase-de.translate.goog##div[id^="onetrust-"]
+www.computerbase.de,www-computerbase-de.translate.goog##div[id^="onetrust-"]:remove()
 
 !Whitelisted
 ! for Google Drive
