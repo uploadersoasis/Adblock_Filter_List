@@ -42391,6 +42391,9 @@ thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:rem
 ||clicknupload.*/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||clickndownload.org/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||clickndownload.org/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! block all third-party scripts except those from any clicknupload domain
+||clicknupload.*^$3p,script,domain=~clicknupload.*|~clickndownload.org
+||clickndownload.org*^$3p,script,domain=~clicknupload.*|~clickndownload.org
 ! the location of the following xpaths may change especially if remove() is used on any elements above it
 clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
 clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2])
@@ -42415,7 +42418,6 @@ clicknupload.*,clickndownload.org##+js(abort-on-property-write, oaxDyt)
 clicknupload.*,clickndownload.org##+js(abort-on-property-read, oaxDyt)
 clicknupload.*,clickndownload.org##+js(set-constant, timeout, 0)
 clicknupload.*,clickndownload.org##+js(set-constant, tick, 0)
-!clicknupload.*,clickndownload.org##+js(remove-class, captcha_code)
 clicknupload.*,clickndownload.org##+js(aopr, document.onmousedown)
 clicknupload.*,clickndownload.org##+js(aopw, document.onmousedown)
 clicknupload.*,clickndownload.org##+js(aeld, /^(?:mousedown)$/)
@@ -42423,17 +42425,24 @@ clicknupload.*,clickndownload.org##+js(set-constant, gtag, noopFunc)
 clicknupload.*,clickndownload.org##+js(acs, gtag)
 clicknupload.*,clickndownload.org##input[id="adblock_detected"]:remove()
 clicknupload.*,clickndownload.org##div[class="adsbox"]
+clicknupload.*,clickndownload.org##div[class="adsbox"]:remove()
 clicknupload.*,clickndownload.org##div[id^="contentad"]
-clicknupload.*,clickndownload.org##div[id^="rn_ad_native_"]
-clicknupload.*,clickndownload.org###adblock_detected
+clicknupload.*,clickndownload.org##div[id^="contentad"]:remove()
 !clicknupload.*,clickndownload.org##div[id="rn_ad_native_uak91"]
+clicknupload.*,clickndownload.org##div[id^="rn_ad_native_"]
+clicknupload.*,clickndownload.org##div[id^="rn_ad_native_"]:remove()
+clicknupload.*,clickndownload.org###adblock_detected
+clicknupload.*,clickndownload.org###adblock_detected:remove()
 ! clicknupload.*,clickndownload.org##iframe blocks the captcha needed to download
 !clicknupload.*,clickndownload.org##iframe
+!clicknupload.*,clickndownload.org##iframe:remove()
 !clicknupload.*,clickndownload.org##body > script
 clicknupload.*,clickndownload.org##*[class*="captcha_code"]:remove-class(captcha_code)
+clicknupload.*,clickndownload.org##*[class*="captcha_code"]:remove-class(captcha_code):remove()
 clicknupload.*,clickndownload.org##style[id^="__web-inspector-hide"]
+clicknupload.*,clickndownload.org##style[id^="__web-inspector-hide"]:remove()
 clicknupload.*,clickndownload.org##div[class^="__web-inspector-hide"]
-clicknupload.*,clickndownload.org##iframe:remove()
+clicknupload.*,clickndownload.org##div[class^="__web-inspector-hide"]:remove()
 ||undefined^$script,domain=clicknupload.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! existing href must NOT be removed to set href value to onclick's value
 !clicknupload.*,clickndownload.org##button[id="downloadbtn"]:remove-attr(href)
@@ -43361,10 +43370,11 @@ www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disa
 !||static.adsafeprotected.com/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static.adsafeprotected.com/skeleton.gif?bannnerid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.adsafeprotected.com/skeleton.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! blocking crystalboulevard.com, succeedscene.com, whimsicalgrove.com, and functionalfeather.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
+! blocking crystalboulevard.com, succeedscene.com, whimsicalgrove.com, functionalfeather.com, and delicatecascade.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
 ||crystalboulevard.com^*
 ||succeedscene.com^*
 ||whimsicalgrove.com^*
+||delicatecascade.com^*
 www.ionos.com##div[id="cookieinfo-container"]
 www.ionos.com##div[id="cookieinfo-container"]:remove()
 !||hb.yellowblue.io/hb-multi$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -44594,6 +44604,56 @@ www.computerbase.de,www-computerbase-de.translate.goog##dialog[class="consent js
 www.computerbase.de,www-computerbase-de.translate.goog##dialog[class="consent js-consent"]:remove()
 www.computerbase.de,www-computerbase-de.translate.goog##div[id^="onetrust-"]
 www.computerbase.de,www-computerbase-de.translate.goog##div[id^="onetrust-"]:remove()
+asrock.com##section[id="AcceptCookies"]
+asrock.com##section[id="AcceptCookies"]:remove()
+msg.aliexpress.com##div[id="gdpr-new-container"]
+msg.aliexpress.com##div[id="gdpr-new-container"]:remove()
+! The following is the anti-adblock admiral inline script.  Put this here before any
+! other rule for gamerant.com to lessen the chances of the location of the script
+! changing and invalidating the xpath.
+gamerant.com##:xpath(//html/head/script[39])
+gamerant.com##:xpath(//html/head/script[39]):remove()
+! The following removes the division that overlays the page when the admiral script is not run.
+gamerant.com##div[class="bOvWNQ"]:has(h3[class="bBWhhG"]:has-text(Something went wrong. Please disable your blocker))
+gamerant.com##div[class="bOvWNQ"]:has(h3[class="bBWhhG"]:has-text(Something went wrong. Please disable your blocker)):remove()
+gamerant.com##+js(set-constant, valnet_hideAds, true, stay)
+gamerant.com##iframe[id="rufous-sandbox"]:remove()
+gamerant.com##div[id*="div-gpt-ad-"]
+gamerant.com##div[id*="div-gpt-ad-"]:remove()
+gamerant.com##*[class*="ad-zone"]
+gamerant.com##*[class*="ad-zone"]:remove()
+gamerant.com##iframe[title^="Mbid"]:remove()
+gamerant.com##+js(set-constant, googletag, {})
+!gamerant.com##+js(set-constant, googletag.display, noopFunc, end)
+gamerant.com##+js(set-constant, googletag.display, noopFunc, complete)
+gamerant.com##+js(acs, googletag)
+gamerant.com##+js(set-constant, sendToGoogleAnalytics, noopFunc)
+gamerant.com##+js(acs, sendToGoogleAnalytics)
+gamerant.com##+js(set-constant, adUnitBidderConfigs, {})
+gamerant.com##+js(abort-on-property-write, adUnitBidderConfigs)
+gamerant.com##+js(abort-on-property-read, adUnitBidderConfigs)
+!gamerant.com##+js(set-constant, window.adsNinja, {}, end)
+gamerant.com##+js(set-constant, window.adsNinja, {}, complete)
+gamerant.com##+js(abort-on-property-write, window.adsNinja)
+gamerant.com##+js(abort-on-property-read, window.adsNinja)
+gamerant.com##script[id="optimera-ops"]
+gamerant.com##script[id="optimera-ops"]:remove()
+gamerant.com##+js(set-constant, window.pbjs, {})
+!gamerant.com##+js(set-constant, window.pbjs, {}, end)
+gamerant.com##+js(acs, window.pbjs)
+||gamerant.com/public/build/valnet-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+insider-gaming.com##div[class="mv-ad-box"]
+insider-gaming.com##div[class="mv-ad-box"]:remove()
+insider-gaming.com##div[class*="adunitwrapper"]
+insider-gaming.com##div[class*="adunitwrapper"]:remove()
+insider-gaming.com##div[class*="adunit"]
+insider-gaming.com##div[class*="adunit"]:remove()
+||gamesathletes.com^*
+||biterstraiky.life^*
+||deathssm.com^*
+||logicorganized.com^*
+||partsfroveil.com^*
+||vaccinationinvalidphosphate.com^*
 
 !Whitelisted
 ! for Google Drive
