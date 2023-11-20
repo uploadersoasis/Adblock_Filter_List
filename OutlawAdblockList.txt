@@ -3954,8 +3954,6 @@ www.dsogaming.com##.adsbygoogle
 !||data.lizads.com/servlet/view/banner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||data.lizads.com^*
 ||data.chiasenhac.com/banner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-rutor.org###b_tz_208
-rutor.org##.b_tz_on_top
 ||www.google.com/ads/popudner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mygpuid.com^*
 ||luxup.ru/cmrk/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -10384,6 +10382,7 @@ uptobox.com##.yp6_desktop_classic.yp6_area.my6_widget_bg.my6_wrap
 !||tag.bounceexchange.com/2000/i.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tag.bounceexchange.com^*
 ||metrics.foxnews.com^*
+||smetrics.foxnews.com^*
 ||foxnews.hb.omtrdc.net^*
 !||foxnews.hb.omtrdc.net/settings/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||comcluster.cxense.com/Repo/rep.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -22113,12 +22112,9 @@ www.nytimes.com##.e1x0szx60.css-16r57cp.expanded-dock.shown.MAG_web_anon_new-jou
 ||cdn.segment.com/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||global.fncstatic.com/static/isa/app/lib/VisitorAPI.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||global.fncstatic.com/static/isa/app/lib/omtr_code.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||static.foxnews.com/static/leap/sites/fnc/metrics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||ping.chartbeat.net/ping^*
-||static.foxnews.com/static/v/all/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||global.fncstatic.com/static/v/all/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||ping.chartbeat.net/ping^*
 ||ping.chartbeat.net^*
-||smetrics.foxnews.com^*
 ||ups.analytics.yahoo.com^*
 !||a2.adform.net/videoad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a2.adform.net^*
@@ -28657,10 +28653,8 @@ www.inputmag.com##iframe[style="display: none"]
 www.varonis.com##div[id="cookie_consent_container"]
 ||www.varonis.com/vanalytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.foxbusiness.com##^script[src*="/bat.bing.com/"]
-||static.foxnews.com/static/isa/app/lib/bing.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.foxbusiness.com##div[data-banner-type="ccpa"]
 www.foxbusiness.com##^script[src*="/static.foxnews.com/static/isa/app/lib/omtr_code.js"]
-||static.foxnews.com/static/isa/app/lib/omtr_code.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.foxbusiness.com##^script[src*="/s.yimg.com/dy/ads/"]
 www.foxbusiness.com##^script[src*="/ads.pubmatic.com/"]
 www.foxbusiness.com##^script[src*="/u.openx.net/"]
@@ -38097,8 +38091,10 @@ www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="mobile-mw-ad-adh
 www.foxnews.com##header[class="article-header"]:style(padding-top: 0px !important; margin-bottom: 0px !important;)
 www.foxnews.com##div[class="site-header"]:style(min-height: 150px !important; margin-bottom: 0px !important;)
 www.foxnews.com##div[class="article-meta article-meta-upper"]:style(padding-top: 0px !important;)
-www.foxnews.com##div[class*="ad-container"]
-www.foxnews.com##div[class*="ad-container"]:remove()
+!www.foxnews.com##div[class*="ad-container"]
+!www.foxnews.com##div[class*="ad-container"]:remove()
+www.foxnews.com##div[class*="ad-contain"]
+www.foxnews.com##div[class*="ad-contain"]:remove()
 www.foxnews.com##div[class*="ad-h-"][class*="ad-w-"]
 www.foxnews.com##div[class*="ad-h-"][class*="ad-w-"]:remove()
 www.foxnews.com##div[class*="adhesion-ad"]
@@ -38174,9 +38170,15 @@ foxnews.com##+js(aopw, window.location.href.indexOf('video-embed'))
 foxnews.com##+js(set-constant, authenticated, true)
 foxnews.com##+js(trusted-set, data, {authenticated: true})
 ||www.foxnews.com/feeds/p/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||static.foxnews.com/static/orion/scripts/core/base/app/modules/ad-strike.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.foxnews.com/static/isa/app/lib/bing.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.foxnews.com/static/isa/app/lib/ccpa.opt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.foxnews.com/static/isa/app/lib/omtr_code.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.foxnews.com/static/leap/sites/fnc/metrics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.foxnews.com/static/strike/scripts/libs/google.funding.choices.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.foxnews.com/static/strike/scripts/libs/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.foxnews.com/static/v/all/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! Blocking the following script may prevent the political cartoon slideshow from working @ foxnews
+||static.foxnews.com/static/orion/scripts/core/base/app/modules/ad-strike.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.yimg.com/dy/ads/readmo.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.yimg.com/dy/readmo-pixel.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||jlym52rvaw7g5y.trustexploration.com/deb.js$script
@@ -44217,7 +44219,6 @@ www.pcworld.com##+js(abort-on-property-write, aax)
 ||ccpa.amp.pcworld.com^*
 www.t-mobile.com##button[mat-flat-button]:remove-class(mat-button-disabled)
 www.t-mobile.com##button[mat-flat-button]:remove-attr(disabled)
-||static.foxnews.com/static/isa/app/lib/ccpa.opt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||a2zapk.io/images/detect.png#/adaffiliate_/adops/ad/adsales/ad/adsby./adtest./ajax/ads/ad/controller/ads/ad/pageads/ad/weather/ads/ad-728x90-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a2zapk.io/images/detect.png#/adaffiliate_/document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cdn.privacy-mgmt.com/unified/wrapperMessagingWithoutDetection.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -44778,11 +44779,27 @@ piraproxy.info,dirproxy.com##div[class="justify-brow"]:has(div[class="nrd-genera
 !||filmrls.dirproxy.com/zpp/zpp4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filmrls.dirproxy.com/zpp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filmrls.dirproxy.com/hy.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-ettv.dirproxy.com##div[id="lbxUR99472"]
-ettv.dirproxy.com##div[id="lbxUR99472"]:remove()
+solarmovie.dirproxy.com,ettv.dirproxy.com##div[id="lbxUR99472"]
+solarmovie.dirproxy.com,ettv.dirproxy.com##div[id="lbxUR99472"]:remove()
 ettv.dirproxy.com##+js(set-constant, _paq, [])
 ettv.dirproxy.com##+js(abort-on-property-read, _paq)
 ettv.dirproxy.com##+js(abort-on-property-write, _paq)
+rutor.org###b_tz_208
+rutor.org##.b_tz_on_top
+rutor.org##+js(set-constant, executed, true)
+||whiteinflammablejaws.com^*
+||tenderlywomblink.com^*
+||conqueredallrightswell.com^*
+||remaincall.com^*
+||abundantservantexact.com^*
+||transferloitering.com^*
+||overlookrapt.com^*
+||selectioncarnivalrig.com^*
+!||personalityleftoverwhiskers.com/impr.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||personalityleftoverwhiskers.com/ren.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||personalityleftoverwhiskers.com^*
+||track.bannerboo.com^*
+||embed.bannerboo.com^*
 
 !Whitelisted
 ! for Google Drive
