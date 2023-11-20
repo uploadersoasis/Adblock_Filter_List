@@ -42420,7 +42420,6 @@ clicknupload.*,clickndownload.org###adblock_detected:remove()
 !clicknupload.*,clickndownload.org##iframe:remove()
 !clicknupload.*,clickndownload.org##body > script
 clicknupload.*,clickndownload.org##*[class*="captcha_code"]:remove-class(captcha_code)
-clicknupload.*,clickndownload.org##*[class*="captcha_code"]:remove-class(captcha_code):remove()
 clicknupload.*,clickndownload.org##style[id^="__web-inspector-hide"]
 clicknupload.*,clickndownload.org##style[id^="__web-inspector-hide"]:remove()
 clicknupload.*,clickndownload.org##div[class^="__web-inspector-hide"]
