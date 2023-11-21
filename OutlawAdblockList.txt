@@ -15607,8 +15607,6 @@ douploads.com##.downicon
 !||gigaonclick.com/script/i.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||gigaonclick.com/a/display.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||gigaonclick.com^*
-||a.apkpure.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||a.apkpure.com/* !blocks download captchas
 !||promopure.com/outpromotion/apkpuredown-728x150$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||promopure.com/outpromotion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||webcompon.info/popunder.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -25530,7 +25528,6 @@ sonydadc.com##div[class="cookie-banner js-cookiebanner"]
 www.sega.com##div[id="ccc"]
 unetbootin.github.io##div[id="helpful"]
 freecommander.com##div[id="cookie-notice"]
-apkpure.com###policy-info
 pastebin.com##div[class="popup-box -cookies"]
 ||ssp.rambler.ru^*
 ||cmjs.rambler.ru^*
@@ -26238,9 +26235,7 @@ svn.jdownloader.org##div[class="cc_banner-wrapper "]
 regexr.com##div[class="noad"]
 www.indishare.org##[href="https://9xlust.in"]
 aporasal.net##div[id="cookie_notice"]
-||cdnpure.com/static/js/ads-1.0.2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||a.apkpure.com/analytics_v1018.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||static.apkpure.com/www/static/script/sweetalert.1.1.3.min.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdnpure.com/static/js/ads-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||yaksgames.com/promotion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www10.richardwashington.pro^*
 ||www16.richardwashington.pro^*
@@ -26614,7 +26609,6 @@ tidal.com##div[class*="cookie-info"]
 developer.samsung.com##div[id="cookie-bottom-layer"]
 dplayout.bce.lu##div[id="cookie-notice"]
 www.hardreset.info##div[class="adp_interactive_ad"]
-m.apkpure.com##div.ad-box
 apkcombo.com##.ad-box-header
 apkcombo.com##.adslink
 ||tolyafbnjt9dedjj10.com^*
@@ -33035,8 +33029,6 @@ my.nordaccount.com##p[class*="nord-text"]:has-text(/This website uses cookies./i
 www.guru99.com##div[id^="div-gpt-ad-"]:upward(1)
 www.guru99.com##aside[id="secondary"]
 www.android.com##*[class*="cookie-banner"]
-apkpure.com##div[class="ad-box-auto"]
-apkpure.com##ins[data-ad-client]
 ||steamdb.info/cdn-cgi/bm/cv/669835187/api.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.w3resource.com##ins[data-ad-client]
 www.w3resource.com##div[id^="sol_ad_"]
@@ -35252,9 +35244,6 @@ adfly.kingdownload.net##div[id="cookie-pop"]
 nulledenvato.com##ins[data-ad-client]
 nulledenvato.com##+js(aopr, adsbygoogle)
 nulledenvato.com##+js(aopw, adsbygoogle)
-||apkpure.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||m.apkpure.com/sw_v3.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||apkpure.com/workbox-sw.prod.v2.1.3.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.newzit.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mads.dailymail.co.uk^*
 ||t.dailymail.co.uk^*
@@ -36739,7 +36728,6 @@ www.voterview.ar-nova.org##div[id="ModalCookiesMustBeEnabled"]:remove()
 ||*.adtouch.adbirx.io^*
 3dm-games.com##script[src^="data:text/javascript;base64,"]
 3dm-games.com##div[id^="eu_cookie_law_"]
-android-zone.ws##div[id="elGuestTerms"]
 ||payce-google.com^*
 ||snanpckat-apk.com^*
 ||vidmates-app.com^*
@@ -38371,7 +38359,7 @@ multiup.org,multiup.eu,multiup.io##form[action*="://multinews.me/"]:remove-attr(
 ! Set each download button to perform a GET method instead of the POST as the parent form specifies.
 multiup.org,multiup.eu,multiup.io##+js(saa, formmethod, get, button[namehost][link])
 !multiup.org,multiup.eu,multiup.io##+js(saa, formnovalidate, , button[namehost][link])
-multiup.org,multiup.eu,multiup.io##+js(set-attr, button[namehost][link], formnovalidate)
+multiup.org,multiup.eu,multiup.io##+js(set-attr, button[namehost][link], formnovalidate, '')
 multiup.org,multiup.eu,multiup.io##+js(saa, formtarget, _blank, button[namehost][link])
 ! remove name attribute under input tags so they won't be appended to the url on form GET submission
 multiup.org,multiup.eu,multiup.io##input[name="link"]:remove-attr(name)
@@ -44800,6 +44788,32 @@ rutor.org##+js(set-constant, executed, true)
 ||personalityleftoverwhiskers.com^*
 ||track.bannerboo.com^*
 ||embed.bannerboo.com^*
+android-zone.ws##div[id="elGuestTerms"]
+android-zone.ws##+js(set-attr, img[data-src], src, [data-src])
+!||a.apkpure.com/* !blocks download captchas
+!||a.apkpure.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||a.apkpure.com/analytics_v1018.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a.apkpure.com/analytics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||apkpure.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||apkpure.com/workbox-sw.prod.v*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+apkpure.com###policy-info
+apkpure.com##div[class="ad-box-auto"]
+apkpure.com##ins[data-ad-client]
+m.apkpure.com##div.ad-box
+||m.apkpure.com/sw_v3.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.apkpure.com/www/static/script/sweetalert.*.min.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+apkpure.com##ins[data-ad-client]
+apkpure.com##ins[data-ad-client]:remove()
+apkpure.com##div[class*="ad-box"]
+apkpure.com##div[class*="ad-box"]:remove()
+apkpure.com##div[class*="js-ad-slot"]
+apkpure.com##div[class*="js-ad-slot"]:remove()
+apkpure.com##div[class*="ad-adsense"]
+apkpure.com##div[class*="ad-adsense"]:remove()
+!apkpure.com##+js(set-constant, window.apkpureAdUnfilledConfig, {}, end)
+apkpure.com##+js(set-constant, window.apkpureAdUnfilledConfig, {}, complete)
+apkpure.com##+js(abort-on-property-read, window.apkpureAdUnfilledConfig)
+apkpure.com##+js(abort-on-property-write, _paq)
 
 !Whitelisted
 ! for Google Drive
