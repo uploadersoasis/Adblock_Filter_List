@@ -34341,10 +34341,10 @@ www.racked.com##div[id="privacy-options"]
 ||nsfwadds.com/event?adblk=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.msn.com##div[id^="views-banner-ad-"]
 www.msn.com##display-ads
-wccftech.com##div[class="d-none d-md-block"]:has(div[class="bg-horizontal"]::before)
-wccftech.com##div[class="d-none d-md-block"]:has(div[class="bg-horizontal"]::before):remove()
-!wccftech.com##div[class="d-none d-md-block bg-horizontal"]::before
-!wccftech.com##div[class="d-none d-md-block bg-horizontal"]::before:remove()
+wccftech.com##div[class="d-none d-md-block"]:has(div[class="bg-horizontal"])::before
+wccftech.com##div[class="d-none d-md-block"]:has(div[class="bg-horizontal"])::before:remove()
+!wccftech.com##div[class="bg-horizontal"]::before
+!wccftech.com##div[class="bg-horizontal"]::before:remove()
 wccftech.com##div[class="d-none d-md-block bg-horizontal"]
 wccftech.com##div[class="d-none d-md-block bg-horizontal"]:remove()
 wccftech.com##div[class="bg-square"]::before
