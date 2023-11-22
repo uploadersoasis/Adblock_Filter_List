@@ -324,7 +324,6 @@ sharedbit.net##.ilv
 ||secure.gaug.es/track.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||sourceforge.net/static/ads/iframe_ad.htm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||sourceforge.net/static/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||a.fsdn.com/con/js/adframe.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||h.verticalscope.com/beacon/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.adshost1.com/no-impression.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.google.com/uds/api/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -7450,8 +7449,6 @@ www.pinterest.com##.quarterScreenBanner
 www.pinterest.com##.wallStep
 ||uk.gpaf.net/b/sky?ref=pcgw&utm_content=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping&utm_medium=skyscraper$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 sourceforge.net###openx_5772_wrapped.ox
-!||a.slashdotmedia.com/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||a.slashdotmedia.com^*
 windowsforum.com###BrowserBar
 !||updatemybrowser.org^*
 !||track.netshelter.net/async/js/sites/tweaktown.com-async.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -7945,9 +7942,6 @@ www.experienceproject.com##body > .cover:nth-of-type(8)
 u3d.at.ua##div#mainadsdv
 u3d.at.ua##div.uPreroll-holder
 ||c.morgdm.ru^*
-!||analytics.slashdotmedia.com/sf.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||analytics.slashdotmedia.com/sf.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||analytics.slashdotmedia.com^*
 ||nativead.tech/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||turbobit.net/platform/js/galog.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||sourceforge.net/cdn/con/img/ad.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -21902,49 +21896,57 @@ mediafire.com##+js(abort-current-inline-script, document.getElementById, adblock
 ||8bef5bb6b351ca5e.com^*
 zenkit.com##.cookie-alert
 zenkit.com##.cookie-alert:remove()
-!www.youtube.com###results > .pyv-afc-mute.yt-section-hover-container.spf-nolink.pyv-afc-ads-container > .pyv-afc-ads-inner > div:nth-of-type(3) > .yt-lockup-tile.yt-lockup-video.yt-uix-tile.clearfix.yt-lockup
-!www.youtube.com##.branded-page-box
 !us8.proxy-youtube.com##.bounceInDown.animated.btn
 proxy-youtube.com##.bounceInDown.animated.btn
+!www.youtube.com##.branded-page-box
 !www.youtube.com###ad_creative_1.ad-div.mastad
 www.youtube.com###ad_creative_1
 www.youtube.com###banner
 www.youtube.com###merch-shelf
 www.youtube.com###movie_player > .html5-video-container > .html5-stop-propagation.video-ads
 www.youtube.com###player-ads
+www.youtube.com###player-ads:remove()
 www.youtube.com###premium-yva
+!www.youtube.com###results > .pyv-afc-mute.yt-section-hover-container.spf-nolink.pyv-afc-ads-container > .pyv-afc-ads-inner > div:nth-of-type(3) > .yt-lockup-tile.yt-lockup-video.yt-uix-tile.clearfix.yt-lockup
 www.youtube.com###results > .pyv-afc-mute.yt-section-hover-container.spf-nolink.pyv-afc-ads-container
 www.youtube.com###video-masthead
-www.youtube.com##.ad-container
-www.youtube.com##.ad-container-single-media-element-annotations
+!www.youtube.com##.ad-container
+!www.youtube.com##.ad-container-single-media-element-annotations
+www.youtube.com##*[class^="ad-container"]
+www.youtube.com##*[class^="ad-container"]:remove()
 www.youtube.com##.ad-overlay
+www.youtube.com##.ad-overlay:remove()
 www.youtube.com##.opened
 www.youtube.com##.premium-yva-
 www.youtube.com##.ytd-merch-shelf-renderer
 www.youtube.com##.ytp-ad-module.video-ads
+www.youtube.com##.ytp-ad-module.video-ads:remove()
+!www.youtube.com##.ytp-error-content-wrap-reason
+!www.youtube.com##.ytp-error-content-wrap
+!www.youtube.com##.ytp-error-content
+!www.youtube.com##.ytp-error
+www.youtube.com##*[class^="ytp-error"]
+www.youtube.com##*[class^="ytp-error"]:remove()
+www.youtube.com###movie_player.ytp-ad-display-override.ad-interrupting.ad-showing.ytp-ad-overlay-closed.ad-created
+!www.youtube.com##.ad-interrupting
+!www.youtube.com##.ad-showing
+!www.youtube.com##.ad-created
+!www.youtube.com##.ytd-player.style-scope
+!www.youtube.com##.ytp-ad-display-override
+!www.youtube.com##.ytp-ad-overlay-closed
+www.youtube.com##div[class*="ytd-display-ad-renderer"]
+www.youtube.com##ytd-display-ad-renderer
+www.youtube.com##dom-if[class$="ytd-video-masthead-ad-v3-renderer"]
+www.youtube.com##ytd-thumbnail[class$="ytd-video-masthead-ad-v3-renderer"]
 www.youtube.com##div[class$="ytd-video-masthead-ad-advertiser-info-renderer"]
+www.youtube.com##div[class*="ytd-video-masthead-ad-primary-video-renderer"]
+www.youtube.com##iframe[class$="ytd-video-masthead-ad-primary-video-renderer"]
 www.youtube.com##div[class*="ytd-promoted-sparkles-web-renderer"]
 www.youtube.com##div[class*="ytd-promoted-video-renderer"]
-www.youtube.com##div[class*="ytd-video-masthead-ad-primary-video-renderer"]
 www.youtube.com##div[id="banner-spacer"]
 www.youtube.com##div[id="masthead-ad"]
 www.youtube.com##div[id="show-ad"]
 www.youtube.com##div[id^="ad_creative_expand_btn"]
-www.youtube.com##dom-if[class$="ytd-video-masthead-ad-v3-renderer"]
-www.youtube.com##iframe[class$="ytd-video-masthead-ad-primary-video-renderer"]
-www.youtube.com##ytd-thumbnail[class$="ytd-video-masthead-ad-v3-renderer"]
-www.youtube.com##.ytp-error-content-wrap-reason
-www.youtube.com##.ytp-error-content-wrap
-www.youtube.com##.ytp-error-content
-www.youtube.com##.ytp-error
-www.youtube.com###movie_player.ytp-ad-display-override.ad-interrupting.ad-showing.ytp-ad-overlay-closed.ad-created
-!www.youtube.com##.ytp-ad-display-override
-!www.youtube.com##.ad-interrupting
-!www.youtube.com##.ad-showing
-!www.youtube.com##.ytp-ad-overlay-closed
-!www.youtube.com##.ad-created
-!www.youtube.com##.ytd-player.style-scope
-youtube.com##+js(json-prune, adPlacements)
 !||s.youtube.com/api/stats/watchtime^*
 !||www.youtube.com/yts/jsbin/www-pagead-id-vflQArhct/www-pagead-id.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.youtube.com/api/stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -21969,6 +21971,33 @@ youtube.com##+js(json-prune, adPlacements)
 ||www.youtube.com/yts/jsbin/www-pagead-id-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.youtube.com/yva_video?adformat=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.youtube.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.youtube.com/youtubei/v1/player/ad_break?key=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.youtube.com/youtubei/v1/player/ad_break^*
+||www.youtube.com/pagead/adview^*
+!||www.youtube.com/s/desktop/3d8e40b0/jsbin/www-tampering.vflset/www-tampering.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.youtube.com/s/desktop/*/jsbin/www-tampering.vflset/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.youtube.com/pagead/interaction/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.youtube.com/s/desktop/1422277c/jsbin/intersection-observer.min.vflset/intersection-observer.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.youtube.com/s/desktop/1422277c/jsbin/intersection-observer.min.vflset/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+youtube.com##+js(json-prune, adPlacements)
+www.youtube.com##+js(set-constant, window.google_ad_status, 1, stay)
+www.youtube.com##+js(set-constant, AD_BLOCK, 0, stay)
+www.youtube.com##+js(set-constant, f.adblock, 0, stay)
+www.youtube.com##+js(set-constant, chain, '', stay)
+www.youtube.com##+js(set-constant, this.adBlockId, 0, stay)
+www.youtube.com##+js(set-constant, this.videoInstreamAdBlocks_, [], stay)
+www.youtube.com##+js(set-constant, this.displayAdBlocks_, [], stay)
+www.youtube.com##+js(set-constant, a.displayAdBlocks_, null, stay)
+www.youtube.com##+js(set-constant, a.videoInstreamAdBlocks_, null, stay)
+!www.youtube.com##+js(set-constant, ytcsi, {}) !breaks youtube completely
+! stops all settimeout functions @ youtube; also breaks youtube completely
+!www.youtube.com##+js(nostif, /^/)
+! Neither of the following override the original setting @ youtube.com
+!www.youtube.com##+js(set-constant, ytcsi.now, noopFunc, end)
+!www.youtube.com##+js(set-constant, ytcsi.now, noopFunc, complete)
+||ads.youtube.com^*
+!||tv.youtube.com/api/stats/playback^*
+||tv.youtube.com/api/stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ##+js(set-constant, settings.adBlockerDetection, false)
 ##+js(set-constant, adblock_detected, 0)
 down.ali213.net##div[id="cs_DIV_cscpvrich8388C"]
@@ -28197,8 +28226,6 @@ www.javascripttutorial.net##div[class="whitelist"]
 !1fichier.com##div[class="ct_warn"]
 ||www.hgzuqrtzt.com^*
 ||hgzuqrtzt.com^*
-!||www.youtube.com/youtubei/v1/player/ad_break?key=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.youtube.com/youtubei/v1/player/ad_break^*
 indishare.org##a[href*="//9xlust.in"]
 ||dita6jhhqwoiz.cloudfront.net^*
 ||viewm.moonicorn.network/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -28492,7 +28519,6 @@ www.lexology.com##div[id="optanon-popup-bottom"]
 ||csrinrutkb3tshptdctl5lyei4et35itl22qvk5ktdcat6aeavy6nhid.onion$removeparam=hilit
 ||forum.torrminatorr.com$removeparam=hilit
 ||ade.googlesyndication.com/ddm/activity_ext/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,domain=www.youtube.com
-||www.youtube.com/pagead/adview^*
 ||www.tvjkilgfanpt.com^*
 ||tvjkilgfanpt.com^*
 ||www.akcdinzvcenhjh.com^*
@@ -30125,16 +30151,7 @@ www.whattheforum.com##div[class*="cc-window"]
 www.whattheforum.com##span[id="cookieconsent:desc"]
 www.joinhoney.com##div[class^="cookieConsentBannerContainer"]
 !||www.google.com/js/th/*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.youtube.com##+js(set-constant, window.google_ad_status, 1, stay)
 static.doubleclick.net##+js(set-constant, window.google_ad_status, 1, stay)
-www.youtube.com##+js(set-constant, AD_BLOCK, 0, stay)
-www.youtube.com##+js(set-constant, f.adblock, 0, stay)
-www.youtube.com##+js(set-constant, chain, '', stay)
-www.youtube.com##+js(set-constant, this.adBlockId, 0, stay)
-www.youtube.com##+js(set-constant, this.videoInstreamAdBlocks_, [], stay)
-www.youtube.com##+js(set-constant, this.displayAdBlocks_, [], stay)
-www.youtube.com##+js(set-constant, a.displayAdBlocks_, null, stay)
-www.youtube.com##+js(set-constant, a.videoInstreamAdBlocks_, null, stay)
 serverfault.com##div[class*="js-consent-banner"]
 www.dmarcanalyzer.com##div[id^="cookiescript_"]
 ||accounts.google.com/cspreport$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -30154,9 +30171,6 @@ www.limetorrents.pro##iframe
 ||adexchangegate.com^*
 ||zantbowsing.cam^*
 hot4share.com##div[id="gdpr-cookie-notice"]
-www.youtube.com##div[class*="ytd-display-ad-renderer"]
-!||www.youtube.com/s/desktop/3d8e40b0/jsbin/www-tampering.vflset/www-tampering.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.youtube.com/s/desktop/*/jsbin/www-tampering.vflset/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||t-mobile.com.ssl.d1.sc.omtrdc.net^*
 ||smetrics.t-mobile.com^*
 ||mov.t-mobile.com/p/cp/-1/track.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -30324,7 +30338,6 @@ www.att.com##div[class="advertisementpanel"]
 !||lax1-ib.adnxs.com/rd_log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lax1-ib.adnxs.com^*
 ||www.att.com/scripts/adobe/prod/attmonetization/js/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.youtube.com/pagead/interaction/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 blog.getpaint.net##div[id="eu-cookie-law"]
 blog.getpaint.net##div[class*="ads-active"]
 ||d2t953dxm5i0o5.cloudfront.net/superstack/builds/latest/howstuffworks.com/hybrid/ads.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -34036,7 +34049,6 @@ www.gamingbible.co.uk##div[data-cypress="sticky-ads"]
 abc7news.com##div[data-set="adAppend"]
 abc7news.com##div[class*="adRectangle-"]
 ||floccischlump.com^*
-||a.fsdn.com/con/js/adframetop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||peppermintos.com/koko-analytics-collect.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||peppermintos.com/wp-content/plugins/koko-analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||api.tradeclouddata.com^*
@@ -34075,8 +34087,6 @@ www.pcgamesn.com##div[id^="nn_mpu"]:upward(1)
 www.sfgate.com##div[class*="adModule"]
 ||hearstnewspapers-d.openx.net^*
 ||count.api.pgs.io^*
-!||www.youtube.com/s/desktop/1422277c/jsbin/intersection-observer.min.vflset/intersection-observer.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.youtube.com/s/desktop/1422277c/jsbin/intersection-observer.min.vflset/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||l0-secure.videohub.tv/ssframework/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a-iad.1rx.io^*
 !||bids.concert.io/bids/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -34089,7 +34099,6 @@ www.sfgate.com##div[class*="adModule"]
 ||www.profitablecpmgate.com/*/invoke.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||core.mourny-clostheme.com^*
 ||restaurantbubblerub.com^*
-www.youtube.com##ytd-display-ad-renderer
 ||adsandcomputer.com^*
 ||delayeddisembroildisembroil.com^*
 !||www.topdisplayformat.com/*/invoke.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -36847,7 +36856,6 @@ linuxtechlab.com##span[class*="adtester-container"]
 ||analytics.facebook.com^*
 ||ads-api.twitter.com^*
 ||ads.facebook.com^*
-||ads.youtube.com^*
 ||ads.reddit.com^*
 ||advertising.twitter.com^*
 ||an.facebook.com^*
@@ -39417,7 +39425,8 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag, {})
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, window.googletag, [])
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, window.googletag)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, window.googletag)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.cmd.push, noopFunc)
+!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.cmd.push, noopFunc, end)
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.cmd.push, noopFunc, complete)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, googletag.cmd.push)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, googletag.cmd.push)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.enableServices, noopFunc)
@@ -41508,8 +41517,6 @@ setsysteme.com##div[id="cm"]
 setsysteme.com##div[id="cm"]:remove()
 teratv.eitvcloud.com##div[id="div_lgpd"]
 teratv.eitvcloud.com##div[id="div_lgpd"]:remove()
-!||tv.youtube.com/api/stats/playback^*
-||tv.youtube.com/api/stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 streamingtvguides.com##footer[id="colophon"]
 streamingtvguides.com##footer[id="colophon"]:remove()
 www.cleveroad.com##div[class="bm_3"]:has(p[class="p_cq bm_s2"]):has-text(This website uses cookies for personalization)
@@ -43006,7 +43013,6 @@ www.chronline.com##div[class*="box-bannerads-"]:remove()
 www.fosslinux.com##pubtag[data-ad-mode]
 www.fosslinux.com##pubtag[data-ad-mode]:remove()
 www.fosslinux.com##+js(set-constant, _ezaq, {})
-!www.youtube.com##+js(set-constant, ytcsi, {}) !breaks youtube completely
 www.namesilo.com##section[data-v-4d62f5bd]
 www.namesilo.com##section[data-v-4d62f5bd]:remove()
 ! blocks chat from working at all.
@@ -44523,13 +44529,16 @@ history-computer.com##+js(acs, handleAffiliateTest)
 history-computer.com##script[id^="cls-insertion-"]:remove()
 history-computer.com##div[id^="cls-video-container-"][class="adthrive"]
 history-computer.com##div[id^="cls-video-container-"][class="adthrive"]:remove()
-!||a.slashdotmedia.com/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||a.slashdotmedia.com^*
 ||analytics.linuxjournal.com^*
 ||ads.supplyframe.com^*
 ||www.eevblog.com/images/comm/JLCPCB-3.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.eevblog.com##iframe[src*="//search.supplyframe.com/partner/26/ipo950/"]
 www.eevblog.com##iframe[src*="//search.supplyframe.com/partner/26/ipo950/"]:remove()
+!||a.slashdotmedia.com/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a.slashdotmedia.com^*
+!||analytics.slashdotmedia.com/sf.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||analytics.slashdotmedia.com/sf.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||analytics.slashdotmedia.com^*
 ||prematuregrumpyunhappy.com^*
 ||downloading-free.com^*
 ||yourjsdelivery.com^*
@@ -44814,6 +44823,23 @@ apkpure.com##div[class*="ad-adsense"]:remove()
 apkpure.com##+js(set-constant, window.apkpureAdUnfilledConfig, {}, complete)
 apkpure.com##+js(abort-on-property-read, window.apkpureAdUnfilledConfig)
 apkpure.com##+js(abort-on-property-write, _paq)
+!games.slashdot.org##div[class*="adwrap"]
+!games.slashdot.org##div[id^="div-gpt-ad-"]
+slashdot.org##div[class*="adwrap"]
+slashdot.org##div[class*="adwrap"]:remove()
+slashdot.org##div[id^="div-gpt-ad-"]
+slashdot.org##div[id^="div-gpt-ad-"]:remove()
+slashdot.org##+js(set-constant, googletag, {})
+!slashdot.org##+js(set-constant, googletag.cmd.push, noopFunc, end)
+slashdot.org##+js(set-constant, googletag.cmd.push, noopFunc, complete)
+slashdot.org##+js(acs, googletag)
+||s.ad.smaato.net^*
+||widgets.jobbio.com/partner_fluid_widgets_v1.6.1/assets/js/imp.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||d1pywsqd87ew9v.cloudfront.net/partner_fluid_widgets_v1.6.1/assets/js/ind-imp.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a.fsdn.com/con/js/adframe.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a.fsdn.com/con/js/adframetop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a.fsdn.com/sd/js/scripts/adsbanner.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||pgdpcdbwhielbo.com^*
 
 !Whitelisted
 ! for Google Drive
