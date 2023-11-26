@@ -44891,6 +44891,72 @@ dlpure.com##script[id^="google_gtagjs-js"]:remove()
 ||ryazabti.com^*
 ||herynore.com^*
 ||download4world.com^*
+||catalqe.com^*
+||ordrefa.com^*
+||download4left.com^*
+!||get.safety-searchapp.com^*
+||safety-searchapp.com^*
+||bidarabon.com^*
+||d34cixo0lr52lw.cloudfront.net^*
+||haronfitanheck.com^*
+||gotherresethat.com^*
+||scagsflotson.guru^*
+!||trk.jaclottens.live^*
+||jaclottens.live^*
+||hantsailsyte.com^*
+||piaroankenyte.store^*
+||kartleast.guru^*
+||hammertramp.website^*
+||ddtvskish.com^*
+||haveredsiren.space^*
+||rauvoaty.net^*
+||api-ad-admin.jojoy.io^*
+!||uh.calepinphrasal.com^*
+||uh.calepinphrasal.com^*
+||hoickpinyons.com^*
+||etpweb.doodoo.love^*
+||data-etp-testweb.rockeyops.com^*
+||dwdisc.com/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+dwdisc.com##a[href*="//hantsailsyte.com/"]
+dwdisc.com##a[href*="//hantsailsyte.com/"]:remove()
+||bossapk.com/banner_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||s3.us-east-1.amazonaws.com/2b023e0529fc8b992e110ad41b381bfcfa43a87535343b6bec412/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.espn.com##input[type="button"][pseudo="-webkit-media-controls-fullscreen-button"]:style(display: block !important;)
+www.espn.com##button[type="button"][class^="vjs-share-control"]:style(display: none !important)
+rexdlbox.com##:xpath(//script[contains(text(), 'd34cixo0lr52lw')])
+rexdlbox.com##:xpath(//script[contains(text(), 'd34cixo0lr52lw')]):remove()
+rexdlbox.com##+js(acs, d34cixo0lr52lw)
+www.flatpanelshd.com##div[data-aaad]
+www.flatpanelshd.com##div[data-aaad]:remove()
+www.flatpanelshd.com##div[data-aa-adunit]
+www.flatpanelshd.com##div[data-aa-adunit]:remove()
+gl.modsforandroid.com##div[id^="double_banner_"]
+gl.modsforandroid.com##div[id^="double_banner_"]:remove()
+gl.modsforandroid.com##div[style="text-align: center; min-height: 336px;"]
+gl.modsforandroid.com##div[style="text-align: center; min-height: 336px;"]:remove()
+upload.app##div[id="policy-info"]
+upload.app##div[id="policy-info"]:remove()
+androidtop.net[data-ad-client]
+androidtop.net[data-ad-client]:remove()
+androidtop.net##+js(set-constant, adsbygoogle, [])
+androidtop.net##+js(abort-on-property-read, adsbygoogle)
+androidtop.net##+js(abort-on-property-write, adsbygoogle)
+androidtop.net##+js(trusted-set, timeleft, -1)
+androidtop.net##div[class="counterhide"]:style(opacity: 0 !important; visibility: hidden !important; height: 0px !important;)
+androidtop.net##div[class="download-result"]:style(opacity: 1 !important; visibility: visible !important;)
+||etpweb.apkmody.io/event/report/web?data=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+apkmody.io##+js(set-constant, gtag, noopFunc)
+apkmody.io##+js(acs, gtag)
+apkmody.io##+js(set-constant, window.googletag, {})
+apkmody.io##+js(trusted-set, window.googletag, {cmd: []})
+apkmody.io##+js(acs, window.googletag)
+!apkmody.io##+js(set-constant, googletag.pubads, noopFunc, end)
+apkmody.io##+js(set-constant, googletag.pubads, noopFunc, complete)
+apkmody.io##+js(acs, googletag.pubads)
+apkmody.io##a[id="download-button"][href$="://worker.happymod.cool/releases/Apkmody-latest.apk"]
+apkmody.io##a[id="download-button"][href$="://worker.happymod.cool/releases/Apkmody-latest.apk"]:remove()
+modcombo.com##div[id="cookie-notice-bar"]
+modcombo.com##div[id="cookie-notice-bar"]:remove()
 
 !Whitelisted
 ! for Google Drive
