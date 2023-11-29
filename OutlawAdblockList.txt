@@ -39358,6 +39358,7 @@ uploady.io##+js(aopr, Tawk_API)
 uploady.io##+js(aopw, Tawk_API)
 ||uploady.io/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||uploady.io/ds2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||uploady.io/nt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 uploady.io##.downloadbtn:remove-attr(disabled)
 uploady.io##input[id="adblock_detected"]
 uploady.io##input[id="adblock_detected"]:remove()
@@ -39371,6 +39372,9 @@ uploady.io##a[class="btn btn-primary rounded"]:remove-attr(onlick)
 ! It's not really necessary to reenable that download button @ uploady.io as the countdown timer is only client-side.
 !uploady.io##button[id="free_dwn"]:watch-attr(disabled):remove-attr(disabled)
 uploady.io##input[id="sb_frm"]:style(display: block !important;)
+!uploady.io##div[id="downloadbtn"]:remove-attr(onclick)
+uploady.io##div[id="downloadbtn"]
+uploady.io##div[id="downloadbtn"]:remove()
 devuploads.com##body:style(visibility: visible !important; display: block !important;)
 !devuploads.com##input[name="fadb"]
 !devuploads.com##input[name="fadb"]:remove()
@@ -43683,11 +43687,10 @@ send.cm##:xpath(/html/body/script[13]):remove()
 ||spilomamettle.uno^*
 ||www.tydeatslqefr.com^*
 ||www.ifntizihsffqi.com^*
-www.engadget.com##div[class="ads-cont"]
-www.engadget.com##div[class^="index__adWrapper-"]
 www.engadget.com##+js(set-constant, adsConfig, {})
 www.engadget.com##+js(abort-on-property-read, adsConfig)
 www.engadget.com##+js(abort-on-property-write, adsConfig)
+www.engadget.com##+js(set-constant, window.YAHOO, {})
 www.engadget.com##div[data-content="Advertisement"]
 www.engadget.com##div[data-content="Advertisement"]:remove()
 www.engadget.com##div[data-component="JacAd"]
@@ -43698,28 +43701,36 @@ www.engadget.com##div[id="sda-LDRB-iframe"]
 www.engadget.com##div[id="sda-LDRB-iframe"]:remove()
 www.engadget.com##div[id^="sda-LDRB2-"]
 www.engadget.com##div[id^="sda-LDRB2-"]:remove()
-www.engadget.com##div[class*="enableAdSlots"]
-www.engadget.com##div[class*="enableRRAdsSlots"]
-www.engadget.com##div[class*="rrAdsAlignWithCover"]
+www.engadget.com##div[id="advertisement-thamba"]
+www.engadget.com##div[id="advertisement-thamba"]:remove()
+www.engadget.com##div[class="ads-cont"]
+www.engadget.com##div[class^="index__adWrapper-"]
 www.engadget.com##div[class*="post-article-ad"]
-www.engadget.com##div[class*="enableAdSlots"]:remove()
-www.engadget.com##div[class*="enableRRAdsSlots"]:remove()
-www.engadget.com##div[class*="rrAdsAlignWithCover"]:remove()
 www.engadget.com##div[class*="post-article-ad"]:remove()
 www.engadget.com##div[class*="ads-cont"]
 www.engadget.com##div[class*="ads-cont"]:remove()
 www.engadget.com##iframe[id="mnet"]:remove()
-www.engadget.com##div[class*="enableGAMMomentsAds"]
-www.engadget.com##div[class*="enableGAMMomentsAds"]:remove()
 www.engadget.com##img[alt="Relevant ads info"]
 www.engadget.com##img[alt="Relevant ads info"]:remove()
-www.engadget.com##div[id="advertisement-thamba"]
-www.engadget.com##div[id="advertisement-thamba"]:remove()
 ||www.engadget.com/_td_api/beacon/error?code=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.engadget.com/_td/beacon?beaconType=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! blocking the following EnableGAM divisions will eliminate the article contents too
+! blocking the following divisions will eliminate the article contents too
+!www.engadget.com##div[class*="enableAdSlots"]
+!www.engadget.com##div[class*="enableAdSlots"]:remove()
+!www.engadget.com##div[class*="enableRRAdsSlots"]
+!www.engadget.com##div[class*="enableRRAdsSlots"]:remove()
+!www.engadget.com##div[class*="enableGAMMomentsAds"]
+!www.engadget.com##div[class*="enableGAMMomentsAds"]:remove()
+!www.engadget.com##div[class*="rrAdsAlignWithCover"]
+!www.engadget.com##div[class*="rrAdsAlignWithCover"]:remove()
 !www.engadget.com##div[class*="enableGAMAds"]
 !www.engadget.com##div[class*="enableGAMAds"]:remove()
+www.engadget.com##div[class*="enableRRAdsSlots"]:remove-class(enableRRAdsSlots)
+www.engadget.com##div[class*="enableGAMMomentsAds"]:remove-class(enableGAMMomentsAds)
+www.engadget.com##div[class*="rrAdsAlignWithCover"]:remove-class(rrAdsAlignWithCover)
+www.engadget.com##div[class*="enableGAMAds"]:remove-class(enableGAMAds)
+www.engadget.com##div[class*="enableAdSlotsNewMap"]:remove-class(enableAdSlotsNewMap)
+www.engadget.com##div[class*="enableAdSlotsOneSlot"]:remove-class(enableAdSlotsOneSlot)
 !||hb.yahoo.net/checksync.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||hb.yahoo.net^*
 ||s.yimg.com/cv/apiv2/adbuilder/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -44957,6 +44968,32 @@ apkmody.io##a[id="download-button"][href$="://worker.happymod.cool/releases/Apkm
 apkmody.io##a[id="download-button"][href$="://worker.happymod.cool/releases/Apkmody-latest.apk"]:remove()
 modcombo.com##div[id="cookie-notice-bar"]
 modcombo.com##div[id="cookie-notice-bar"]:remove()
+rog.asus.com##div[id^="cookie-policy-"]
+rog.asus.com##div[id^="cookie-policy-"]:remove()
+www.aorus.com##div[class="cookie-div"]
+www.aorus.com##div[class="cookie-div"]:remove()
+www.asus.com##div[id^="cookie-policy-info"]
+www.asus.com##div[id^="cookie-policy-info"]:remove()
+www.asus.com##body:remove-class(show-cookie-policy-info)
+!||dlcdnimgs.asus.com/vendor/cookie-banner/js/alert-info.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dlcdnimgs.asus.com/vendor/cookie-banner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||dlcdnimgs.asus.com/vendor/location-reminder/js/locationreminder.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dlcdnimgs.asus.com/vendor/location-reminder/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+truthsocial.com##div[data-testid="banner"]:has(p[class*="tracking-normal"])
+truthsocial.com##div[data-testid="banner"]:has(p[class*="tracking-normal"]):remove()
+! blocking the following error handling script is necessary if the cookie consent banner is also blocked.
+||truthsocial.com/packs/js/error-*.chunk.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+truthsocial.com##div[item="[object Object]"]:has(a[href="/@TruthAds"])
+truthsocial.com##div[item="[object Object]"]:has(a[href="/@TruthAds"]):remove()
+||ae.mmstat.com^*
+||moduleanalysis.aliexpress.com^*
+||stubhub.prf.hn^*
+||fbkzqnyyga.com^*
+||s.yimg.com/cx/pv/perf-vitals*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||3p-geo.yahoo.com/p?s=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||3p-geo.yahoo.com^*
+! Yahoo ad & tracking script
+||openweb.jac.yahoosandbox.com/*/jac.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
