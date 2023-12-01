@@ -25398,6 +25398,7 @@ us.msi.com##div[id="ccc-notify"]
 ||breated.club^*
 ||d1nnhbi4g0kj5.cloudfront.net^*
 !||revboostprocdnadsprod.azureedge.net/adsdata/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||revboostprocdnadsprod.azureedge.net/scripts/latest/min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||revboostprocdnadsprod.azureedge.net^*
 ||rtpetworki.fun^*
 ||rum-http-intake.logs.datadoghq.com^*
@@ -29520,6 +29521,7 @@ boustahe.com##div[class*="push-notice"]
 !||nativepu.sh/ntfc.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||nativepu.sh^*
 !||cdn.adapex.io/hb/aaw.link.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.adapex.io/hb/aaw.jpost.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.adapex.io^*
 !linkvertise.com##span[id="cookieconsent:desc"]
 linkvertise.com##div[aria-label="cookieconsent"]
@@ -45008,12 +45010,29 @@ www.theloadout.com##+js(set-constant, amazon_ukid, "")
 www.theloadout.com##+js(abort-on-property-read, amazon_usid)
 www.theloadout.com##+js(abort-on-property-write, amazon_usid)
 www.theloadout.com##+js(abort-on-property-read, amazon_ukid)
-www.theloadout.com##+js(abort-on-property-write, amazon_ukids)
+www.theloadout.com##+js(abort-on-property-write, amazon_ukid)
 www.theloadout.com##+js(set-constant, window.spaceBetweenAds, {})
 !www.theloadout.com##+js(set-constant, window.spaceBetweenAds.desktop, 0, end)
 www.theloadout.com##+js(set-constant, window.spaceBetweenAds.desktop, 0)
 !www.theloadout.com##+js(set-constant, window.spaceBetweenAds.mobile, 0, end)
 www.theloadout.com##+js(set-constant, window.spaceBetweenAds.mobile, 0)
+www.jpost.com##div[data-aa-adunit]
+www.jpost.com##div[data-aa-adunit]:remove()
+www.jpost.com##section[class*="hide-for-premium"]
+www.jpost.com##section[class*="hide-for-premium"]:remove()
+www.jpost.com##ins[id^="gpt_unit_"]
+www.jpost.com##ins[id^="gpt_unit_"]:remove()
+www.jpost.com##script[id="Adoric_Script"]
+www.jpost.com##script[id="Adoric_Script"]:remove()
+www.jpost.com##script[id="gpt_script"]
+www.jpost.com##script[id="gpt_script"]:remove()
+www.jpost.com##+js(set-constant, generalAdapex, noopFunc)
+www.jpost.com##+js(acs, generalAdapex)
+!||95662602.adoric-om.com/adoric.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||95662602.adoric-om.com^*
+||*.adoric-om.com^*
+!||static.adoric.com/adoric.v9.8.min.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.adoric.com^*
 
 !Whitelisted
 ! for Google Drive
