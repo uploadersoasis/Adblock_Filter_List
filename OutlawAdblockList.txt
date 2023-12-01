@@ -26526,7 +26526,6 @@ www.cox.com##^script[id="cookie-notice-mark-up"]
 www.cox.com##div[class="cookie-notice-container"]
 www.cox.com##+js(set-constant, shouldShowCookieNotice, false)
 doodrive.com##div[class="uk-card uk-card-default uk-card-body uk-text-center"]
-||doodrive.com/assets/js/cookieconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 doodrive.com##ins[class="adsbygoogle"]
 doodrive.com##+js(abort-on-property-write, _stq)
 doodrive.com##+js(abort-on-property-read, _stq)
@@ -26534,7 +26533,15 @@ doodrive.com##+js(set-constant, adsbygoogle, [])
 doodrive.com##+js(abort-on-property-write, adsbygoogle)
 doodrive.com##+js(abort-on-property-read, adsbygoogle)
 doodrive.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
+doodrive.com##^script:has-text(\x20second)
+doodrive.com##div:style(visibility: visible !important;)
+doodrive.com##.uk-margin-auto > div:nth-child(4):remove-attr(hidden) 
+!doodrive.com##div:hidden(false)
 !doodrive.com###human-verification
+!doodrive.com##div[id="human-verification"]
+||doodrive.com/assets/js/cookieconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||doodrive.com/8846620859/3787866411.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||doodrive.com/8846620859/5681175743.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !realmike.org##aside[class="widget widget_eu_cookie_law_widget"]
 realmike.org##aside[class$="widget_eu_cookie_law_widget"]
 www.samsung.com##div[class^="cm-cookie-geo"]
@@ -27140,10 +27147,6 @@ s0ft4pc.com##+js(abort-on-property-read, atOptions)
 s0ft4pc.com##+js(abort-on-property-write, atOptions)
 s0ft4pc.com##^script:has-text(atOptions)
 s0ft4pc.com##^script:has-text(DMCA)
-doodrive.com##^script:has-text(\x20second)
-doodrive.com##div:style(visibility: visible !important;)
-!doodrive.com##div:hidden(false)
-doodrive.com##.uk-margin-auto > div:nth-child(4):remove-attr(hidden) 
 ||foxnews-d.openx.net^*
 codingshiksha.com##^script[data-ezscrex="false"]
 codingshiksha.com##style[id="admania-style-inline-css"]
@@ -27990,8 +27993,6 @@ www.thewatchcartoononline.tv##^script[src="ads.js"]
 ||js.gumgum.com/services.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.thewatchcartoononline.tv/inc/embed/embed.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 no-kid-hungry.prezly.com##div[class="cookie-consent-bar"]
-||doodrive.com/8846620859/3787866411.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||doodrive.com/8846620859/5681175743.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 account.withings.com##div[class^="cookieBar"]
 ipcgames.com##div[id="catapult-cookie-bar"]
 ||hechcandled.casa^*
@@ -28093,7 +28094,6 @@ windows-repair-toolbox.com##+js(abort-on-property-write, adsbygoogle)
 salesforce.stackexchange.com##div[class*="js-consent-banner"]
 www.bitdegree.org##div[class="cookie-bar"]
 ||kneeansweras.com^*
-!doodrive.com##div[id="human-verification"]
 www.gry-online.pl###baner-inner
 abandonwaregames.net##a[href*="/track.wg-aff.com/"]
 ||www.sordum.org/wp-content/plugins/cookie-notice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -39366,6 +39366,8 @@ uploady.io##div[id="div-mobile"]
 uploady.io##div[id="div-mobile"]:remove()
 uploady.io##div[id="div-desktop"]
 uploady.io##div[id="div-desktop"]:remove()
+uploady.io##span[class="ad-label"]
+uploady.io##span[class="ad-label"]:remove()
 uploady.io##+js(nostif, tick)
 !uploady.io##a[type="button"][class="btn btn-primary rounded"]:remove-attr(onlick)
 uploady.io##a[class="btn btn-primary rounded"]:remove-attr(onlick)
@@ -44994,6 +44996,24 @@ truthsocial.com##div[item="[object Object]"]:has(a[href="/@TruthAds"]):remove()
 ||3p-geo.yahoo.com^*
 ! Yahoo ad & tracking script
 ||openweb.jac.yahoosandbox.com/*/jac.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.theloadout.com##div[class*="venatus_ad"]
+www.theloadout.com##div[class*="venatus_ad"]:remove()
+www.theloadout.com##div[class*="advertising_slot_"]
+www.theloadout.com##div[class*="advertising_slot_"]:remove()
+www.theloadout.com##+js(set-constant, venatus_ad_slots, {})
+www.theloadout.com##+js(abort-on-property-read, venatus_ad_slots)
+www.theloadout.com##+js(abort-on-property-write, venatus_ad_slots)
+www.theloadout.com##+js(set-constant, amazon_usid, "")
+www.theloadout.com##+js(set-constant, amazon_ukid, "")
+www.theloadout.com##+js(abort-on-property-read, amazon_usid)
+www.theloadout.com##+js(abort-on-property-write, amazon_usid)
+www.theloadout.com##+js(abort-on-property-read, amazon_ukid)
+www.theloadout.com##+js(abort-on-property-write, amazon_ukids)
+www.theloadout.com##+js(set-constant, window.spaceBetweenAds, {})
+!www.theloadout.com##+js(set-constant, window.spaceBetweenAds.desktop, 0, end)
+www.theloadout.com##+js(set-constant, window.spaceBetweenAds.desktop, 0)
+!www.theloadout.com##+js(set-constant, window.spaceBetweenAds.mobile, 0, end)
+www.theloadout.com##+js(set-constant, window.spaceBetweenAds.mobile, 0)
 
 !Whitelisted
 ! for Google Drive
