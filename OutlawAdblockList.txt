@@ -10731,7 +10731,6 @@ uptobox.com##div[id^="adleave"]
 ||i.blogads.com^*
 ||coed-d.openx.net^*
 ||news.digitaltrends.com/newdata/adpreview^*
-||lifehacker.com/api/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fls-na.amazon-adsystem.com/*/associates-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fls-na.amazon-adsystem.com/*/action-impressions/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.computerworld.com/www/js/ads/jquery.lazyload-ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -22347,14 +22346,19 @@ file.cm##+js(abort-on-property-read, setTrackerUrl)
 ||mjbuuxt7l18r.com^*
 ||pushnotifications.click^*
 lifehacker.com##video[title="Advertisement"]
+lifehacker.com##div[id="zdcFloatingBtn"]
+lifehacker.com##div[id="zdcFloatingBtn"]:remove()
+lifehacker.com##div[class*="js_ad-"]
+lifehacker.com##div[class^="ad-container"]
+lifehacker.com##ins[class="zmgad-full-width"]
+lifehacker.com##ins[class="zmgad-full-width"]:remove()
+||lifehacker.com/api/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||lifehacker.com/x-kinja-static/assets/new-client/ads~$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lifehacker.com/x-kinja-static/assets/new-client/ads.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lifehacker.com/x-kinja-static/assets/new-client/vendors~ads.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lifehacker.com/x-kinja-static/assets/new-client/runtime~ads.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lifehacker.com/x-kinja-static/assets/new-client/runtime~trackers.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lifehacker.com/x-kinja-static/assets/new-client/trackers.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-lifehacker.com##div[class*="js_ad-"]
-lifehacker.com##div[class^="ad-container"]
 ||www.infocupboard.com^*
 ||infocupboard.com^*
 ||www.dianomi.com/cgi-bin/smartads_video_a.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43360,11 +43364,12 @@ www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disa
 !||static.adsafeprotected.com/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static.adsafeprotected.com/skeleton.gif?bannnerid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.adsafeprotected.com/skeleton.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! blocking crystalboulevard.com, succeedscene.com, whimsicalgrove.com, functionalfeather.com, and delicatecascade.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
+! blocking crystalboulevard.com, succeedscene.com, whimsicalgrove.com, functionalfeather.com, delicatecascade.com, and potatoinvention.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
 ||crystalboulevard.com^*
 ||succeedscene.com^*
 ||whimsicalgrove.com^*
 ||delicatecascade.com^*
+||potatoinvention.com^*
 www.ionos.com##div[id="cookieinfo-container"]
 www.ionos.com##div[id="cookieinfo-container"]:remove()
 !||hb.yellowblue.io/hb-multi$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -45022,6 +45027,8 @@ www.jpost.com##section[class*="hide-for-premium"]
 www.jpost.com##section[class*="hide-for-premium"]:remove()
 www.jpost.com##ins[id^="gpt_unit_"]
 www.jpost.com##ins[id^="gpt_unit_"]:remove()
+www.jpost.com##section[class="label-body-bannner"]:has-text(Advertisement)
+www.jpost.com##section[class="label-body-bannner"]:has-text(Advertisement):remove()
 www.jpost.com##script[id="Adoric_Script"]
 www.jpost.com##script[id="Adoric_Script"]:remove()
 www.jpost.com##script[id="gpt_script"]
@@ -45033,6 +45040,67 @@ www.jpost.com##+js(acs, generalAdapex)
 ||*.adoric-om.com^*
 !||static.adoric.com/adoric.v9.8.min.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.adoric.com^*
+www.christcenteredgamer.com##ins[data-ad-client]
+www.christcenteredgamer.com##ins[data-ad-client]:remove()
+www.christcenteredgamer.com##+js(aopr, adsbygoogle)
+www.christcenteredgamer.com##+js(aopw, adsbygoogle)
+www.christcenteredgamer.com##div[id^="kofi-widget-overlay"][id$="-donate-button"]
+www.christcenteredgamer.com##div[id^="kofi-widget-overlay"][id$="-donate-button"]:remove()
+! use reddit.com instead of subdomain pay.reddit.com for the following entries
+reddit.com##div[class*="ad-container"]
+reddit.com##div[class*="ad-container"]:remove()
+reddit.com##div[class*="native-ad-container"]:remove()
+reddit.com##div[class*="native-sidebar-ad"]
+reddit.com##div[class*="native-sidebar-ad"]:remove()
+reddit.com##div[data-adserver-imp-pixel]
+reddit.com##div[data-adserver-imp-pixel]:remove()
+reddit.com##div[data-adserver-impression-id]
+reddit.com##div[data-adserver-impression-id]:remove()
+reddit.com##div[data-adserver-viewable-pixel]
+reddit.com##div[data-adserver-viewable-pixel]:remove()
+www.badcaps.net##div[class*="js-privacy-consent-banner__"]
+www.badcaps.net##div[class*="js-privacy-consent-banner__"]:remove()
+www.badcaps.net##html:remove-class(b-modal-banner--disabled)
+www.badcaps.net##body[id="vb-page-body"]:remove-class(b-modal-banner--disabled)
+www.badcaps.net##html:remove-class(no-overflowscrolling)
+www.badcaps.net##html:remove-class(cookies)
+||cdn.badcaps-static.com/js/privacy-consent-banner.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+global.cainiao.com##div[class="puckinn-cookie-consent"]
+global.cainiao.com##div[class="puckinn-cookie-consent"]:remove()
+!||snap.licdn.com/li.lms-analytics/insight.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||snap.licdn.com/li.lms-analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.bnnbloomberg.ca##div[id="ticker-ad"]
+www.bnnbloomberg.ca##div[id="ticker-ad"]:remove()
+www.bnnbloomberg.ca##div[ad-type]
+www.bnnbloomberg.ca##div[ad-type]:remove()
+||www.bnnbloomberg.ca/js/bellmedia/omnitureTVE.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.xda-developers.com##div[id="article-limit-container"]
+www.xda-developers.com##div[id="article-limit-container"]:remove()
+lingojam.com##+js(set-constant, window.adProviderName, "")
+lingojam.com##+js(aopr, window.adProviderName)
+lingojam.com##+js(aopw, window.adProviderName)
+lingojam.com##p[id^="adsense-area"]
+lingojam.com##p[id^="adsense-area"]:remove()
+lingojam.com##div[class="adsense-area"]
+lingojam.com##div[class="adsense-area"]:remove()
+! The following is an admiral anti-adblocking frame.  TODO: Does the class name ever change?
+lingojam.com##div[class="dgEhJe6g"]
+lingojam.com##div[class="dgEhJe6g"]:remove()
+!||bids.proper.io/api/bidding$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||bids.proper.io^*
+||lipidicchaoush.com^*
+||adserver.adtech.advertising.com^*
+!||merequartz.com/aadetect/px.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||merequartz.com/aadetect/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||ad-maven.xml.ak-is2.net/pixel?i=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ad-maven.xml.ak-is2.net^*
+!||xml.yellow-resultsbidder.com/pixel?i=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||xml.yellow-resultsbidder.com^*
+||ghettoapicula.life^*
+||rovno.xyz^*
+||eyeballceorl.guru^*
+!||imtwjwoasak.com/trk?^*
+||imtwjwoasak.com/^*
 
 !Whitelisted
 ! for Google Drive
