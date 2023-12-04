@@ -45101,6 +45101,29 @@ lingojam.com##div[class="dgEhJe6g"]:remove()
 ||eyeballceorl.guru^*
 !||imtwjwoasak.com/trk?^*
 ||imtwjwoasak.com/^*
+www.systranbox.com##div[class*="atf_adWrapper"]
+www.systranbox.com##div[class*="atf_adWrapper"]:remove()
+www.systranbox.com##div[class*="atf_wgAd"]
+www.systranbox.com##div[class*="atf_wgAd"]:remove()
+www.systranbox.com##div[class*="wgAd-loaded"]
+www.systranbox.com##div[class*="wgAd-loaded"]:remove()
+www.systranbox.com##+js(set-constant, googletag, {})
+www.systranbox.com##+js(aopr, googletag)
+www.systranbox.com##+js(aopw, googletag)
+www.systranbox.com##+js(set-constant, gads, noopFunc)
+www.systranbox.com##+js(aopr, gads)
+www.systranbox.com##+js(aopw, gads)
+||wgd.wgplayer.com/wgdu/systranbox.com/wgDesktopAds.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+gg.deals##div[aria-label="cookieconsent"]
+gg.deals##div[aria-label="cookieconsent"]:remove()
+www.nstec.com##div[class*="atf_adWrapper"]
+www.nstec.com##div[class*="atf_adWrapper"]:remove()
+www.nstec.com##div[class*="wgAd-loaded"]
+www.nstec.com##div[class*="wgAd-loaded"]:remove()
+www.nstec.com##div[class*="atf_wgAd"]
+www.nstec.com##div[class*="atf_wgAd"]:remove()
+forums.debian.net##div[id="klaro"]:has(div[class^="cookie-notice"])
+forums.debian.net##div[id="klaro"]:has(div[class^="cookie-notice"]):remove()
 
 !Whitelisted
 ! for Google Drive
