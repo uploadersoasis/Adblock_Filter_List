@@ -31259,7 +31259,6 @@ www.hitc.com##div[class="GRVMpuWrapper"]:has(div[data-ad-type])
 www.dealabs.com##div[class*="popover--oreo-message"]
 www.dealabs.com##+js(remove-class, overflow--hidden, , stay)
 fostips.com##aside[id="rb-cookie"]
-forums.linuxmint.com##div[class="cookiebanner"]
 www.techradar.com##div[class*="ad-unit"]
 www.inverse.com##amp-ad
 ||www.sbmrwzkwshit.com^*
@@ -38340,6 +38339,8 @@ www.fox.com##+js(aopw, window.pintrk)
 ||www.multiup.eu/welcome-message$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.multiup.io/js/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.multiup.io/welcome-message$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||multiup.io/api/link-check/welcome-message$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||multiup.eu/api/link-check/welcome-message$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||stats.multiup.org/piwik.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||stats.multiup.eu/piwik.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||stats.multiup.org^*
@@ -45124,6 +45125,52 @@ www.nstec.com##div[class*="atf_wgAd"]
 www.nstec.com##div[class*="atf_wgAd"]:remove()
 forums.debian.net##div[id="klaro"]:has(div[class^="cookie-notice"])
 forums.debian.net##div[id="klaro"]:has(div[class^="cookie-notice"]):remove()
+||ads.send.cm^*
+forums.linuxmint.com##script[id="cookiebanner"]:remove()
+forums.linuxmint.com##div[class="cookiebanner"]
+forums.linuxmint.com##div[class="cookiebanner"]:remove()
+forums.linuxmint.com##ins[data-ad-client]
+forums.linuxmint.com##ins[data-ad-client]:remove()
+forums.linuxmint.com##+js(set-constant, google_ad_client, "")
+forums.linuxmint.com##+js(set-constant, google_ad_slot, "")
+forums.linuxmint.com##+js(set-constant, google_ad_width, 0)
+forums.linuxmint.com##+js(set-constant, google_ad_height, 0)
+||forums.linuxmint.com/ext/phpbb/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.linuxmint.com/js/cookiebanner.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.peuzubuqo.com^*
+||peuzubuqo.com^*
+||magni-dcm.info^*
+||www.bbocajxn.com^*
+||bbocajxn.com^*
+||uppit.ml/random.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.uppit.com##+js(set-constant, f169bba40420a278a74b5f0f3871fd15, "")
+www.uppit.com##+js(aopr, f169bba40420a278a74b5f0f3871fd15)
+www.uppit.com##+js(aopw, f169bba40420a278a74b5f0f3871fd15)
+www.uppit.com##+js(acs, decodeURIComponent)
+www.uppit.com##:xpath(//html/body/header/div/script[2])
+www.uppit.com##:xpath(//html/body/header/div/script[2]):remove()
+||mdbekjwqa.pw/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mixdrop.ag/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cholatetapalos.com^*
+www.vice.com##*[class^="vice-ad"]
+www.vice.com##*[class^="vice-ad"]:remove()
+www.vice.com##link[id^="ad-lib"]
+www.vice.com##link[id^="ad-lib"]:remove()
+!www.vice.com##div[class="recirc-footer__post-ad-container"]
+!www.vice.com##div[class="recirc-footer__post-ad-container"]:remove()
+!||vice-web-statics-cdn.vice.com/vendor/ad-lib/v2.75.0/vice-ad-lib.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||vice-web-statics-cdn.vice.com/vendor/ad-lib/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.vice.com##+js(set-constant, adLibScript, noopFunc)
+www.vice.com##+js(aopr, adLibScript)
+www.vice.com##+js(aopw, adLibScript)
+www.vice.com##+js(set-constant, analytics, [])
+www.vice.com##+js(aopr, analytics)
+www.vice.com##+js(aopw, analytics)
+www.vice.com##+js(set-constant, setNptTechAdblockerCookie, noopFunc)
+www.vice.com##+js(aopr, setNptTechAdblockerCookie)
+www.vice.com##+js(aopw, setNptTechAdblockerCookie)
+techreport.com##div[class*="clickout-banner-regular_native_box"]
+techreport.com##div[class*="clickout-banner-regular_native_box"]:remove()
 
 !Whitelisted
 ! for Google Drive
