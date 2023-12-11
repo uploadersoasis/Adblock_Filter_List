@@ -1433,8 +1433,6 @@ boingboing.net##.ad
 ||jacksonville.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.orlandosentinel.com/hive/javascripts/taxonomy-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tfc-ad.com/openx/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||www.imdb.com/video/imdb/vi3941640473/metrics_480p_flash$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.imdb.com/video/imdb/vi3941640473/metrics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||arstechnica.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.ecommercebytes.com/phpAdsNew-2.0/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.espncdn.com/insertfiles/javascript/wa/sOmni.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -1449,11 +1447,6 @@ boingboing.net##.ad
 ||extabit.com/popup.jsp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||pop.billionuploads.com/ppp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pop.billionuploads.com^*
-!||www.codeproject.com###dmad1
-!||www.codeproject.com###dmad2
-!||www.codeproject.com###dmad3
-!||www.codeproject.com###dmad4
-www.codeproject.com##div[id^="dmad"]
 ||guildwars2.com.support.en-log.pw^*
 ||facebook.apps.identify.suspened.drgaia-hosting.com^*
 ||folder.richbanner.ru/rbn.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -9830,6 +9823,7 @@ www.cheatsheet.com##.nolinks.swoop-container
 !||data.adsrvr.org/track/cmf/generic^*
 ||data.adsrvr.org^*
 !||c1.adform.net/serving/cookie/match/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||c1.adform.net/serving/cookie/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||c1.adform.net^*
 ||go.letadnew.com^*
 !||imp.vj-vid.com/trkVJAdsReqPxl.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -24142,7 +24136,6 @@ www.msp360.com##div[class^="use-cookie"]
 ||xgubafscfsf.com^*
 giga-down.com##div.download-option-btn:nth-of-type(3) > .btn-success.btn
 nypost.com##div[class="nyp-sitewide-notice"]
-www.codeproject.com##div[aria-label="cookieconsent"]
 ||resupposer.club^*
 ||familinger.club^*
 ||nmentsim.club^*
@@ -25954,7 +25947,6 @@ login.northlane.com##div[class="privacycontainer"]
 ||sears.com.ssl.d1.sc.omtrdc.net^*
 ||sears.demdex.net^*
 ||kmart.com.ssl.d1.sc.omtrdc.net^*
-!||c1.adform.net/serving/cookie/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||aa.agkn.com/adscores/g.pixel$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||aa.agkn.com/adscores/s.pixel$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||aa.agkn.com/adscores/g.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -26526,17 +26518,29 @@ wiki.dd-wrt.com##div[class="cookieinfo"]
 www.cox.com##^script[id="cookie-notice-mark-up"]
 www.cox.com##div[class="cookie-notice-container"]
 www.cox.com##+js(set-constant, shouldShowCookieNotice, false)
+doodrive.com##^script:has-text(\x20second)
+doodrive.com##^script:has-text(\x20second):remove()
 doodrive.com##div[class="uk-card uk-card-default uk-card-body uk-text-center"]
 doodrive.com##ins[class="adsbygoogle"]
+doodrive.com##ins[class="adsbygoogle"]:remove()
 doodrive.com##+js(abort-on-property-write, _stq)
 doodrive.com##+js(abort-on-property-read, _stq)
 doodrive.com##+js(set-constant, adsbygoogle, [])
 doodrive.com##+js(abort-on-property-write, adsbygoogle)
 doodrive.com##+js(abort-on-property-read, adsbygoogle)
+doodrive.com##+js(set-constant, gtag, noopFunc)
+doodrive.com##+js(acs, atob, encodeURIComponent)
 doodrive.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
-doodrive.com##^script:has-text(\x20second)
 doodrive.com##div:style(visibility: visible !important;)
 doodrive.com##.uk-margin-auto > div:nth-child(4):remove-attr(hidden) 
+doodrive.com##a[id="lkzlu"]
+doodrive.com##a[id="lkzlu"]:remove()
+doodrive.com##a[class="hqoni2rvyn"]
+doodrive.com##a[class="hqoni2rvyn"]:remove()
+doodrive.com##iframe[data-aa]
+doodrive.com##iframe[data-aa]:remove()
+doodrive.com##:xpath(/html/body/div[5]/div/div/script[3])
+doodrive.com##:xpath(/html/body/div[5]/div/div/script[3]):remove()
 !doodrive.com##div:hidden(false)
 !doodrive.com###human-verification
 !doodrive.com##div[id="human-verification"]
@@ -26728,9 +26732,6 @@ www.dvdnextcopy.com##*[class*="avia-cookie-consent"]
 ||oppositedragonfly.com^*
 ||f95nkry2nf8o.com^*
 ||incompatiblemisterfarmer.com^*
-www.imdb.com##div[id="top_ad_webbug"]
-www.imdb.com##^script[type="data-doubleclick"]
-www.imdb.com##img[id="mobile-ad-image"]
 ||ia.media-imdb.com/images/G/01/mobile/blank_pixel.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||atnxm.vesmetheo.biz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vesmetheo.biz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -28702,17 +28703,6 @@ www.cheatsheet.com##div[class*="has-ad"]
 www.cheatsheet.com##div[class*="ad-loaded"]
 ||click.expmediadirect1.com^*
 webnode.es##div[class*="wnd-free-stripe"]
-www.imdb.com##ins[class="dcmads"]
-www.imdb.com##div[id="ad"]
-www.imdb.com##div[aria-label^="Sponsored Ad"]
-www.imdb.com##a[aria-labelledby="ad"]
-www.imdb.com##+js(aopr, window.ads_js_start)
-www.imdb.com##+js(aopw, window.ads_js_start)
-www.imdb.com##+js(aopr, imdbads)
-www.imdb.com##+js(aopw, imdbads)
-www.imdb.com##.ad_fadein
-www.imdb.com##.placeholder_pattern
-www.imdb.com##.sponsored_label
 www.raymond.cc##.adsbygoogle
 www.raymond.cc###adngin-sidebar_1-0
 www.raymond.cc###adngin-sidebar_2-0
@@ -28863,6 +28853,7 @@ www.gamersnexus.net##div[class="gsc-adBlockInvisible"]
 www.gamersnexus.net##div[class="googlead"]
 www.gamersnexus.net##ins[class="adsbygoogle"]
 softgateon.herokuapp.com##:xpath(//div[5])
+softgateon.herokuapp.com##:xpath(//div[5]):remove()
 sedo.com##div[class^="cookie__"]
 sedo.com##aside[data-cookie-banner]
 masterkreatif.net##button:has-text(/Download Crack/i)
@@ -32291,6 +32282,7 @@ fc-lc.com##+js(acs, s65c)
 !fc-lc.com##^script:has-text(("s65c"))
 fc-lc.com##+js(aeld, DOMNodeRemoved, onload)
 fc-lc.com##:xpath(/html/body/script[4])
+fc-lc.com##:xpath(/html/body/script[4]):remove()
 fc-lc.com##button[id="submitbtn"]:style(display: block !important;)
 ||ugtresqqp.com^*
 ||outbarwonna.casa^*
@@ -36261,8 +36253,6 @@ www.dexerto.com##div[data-placeholder="ad"]
 www.dexerto.com##div[data-cy="GoogleAd"]
 www.dexerto.com##div[data-openweb-ad="true"]
 www.dexerto.com##div[class*="adhesiveAdWrapper"]
-www.imdb.com##^script:has-text(adCustomAction):remove()
-www.imdb.com##script[type="text/javascript"]:has-text(adCustomAction):remove()
 blog.youtube##div[id="cookieBar"]
 gameloop.en.softonic.com##div[id="top-leaderboard-article-page-desktop-wrapper"]
 gameloop.en.softonic.com##div[id="top-banner-article-page-desktop-wrapper"]
@@ -45239,6 +45229,92 @@ www.akamai.com##+js(set-constant, OptanonWrapper, noopFunc)
 www.akamai.com##+js(aeld, oneTrustCookieAccepted)
 www.akamai.com##div[id="onetrust-consent-sdk"]
 www.akamai.com##div[id="onetrust-consent-sdk"]:remove()
+!||www.overclock.net/js/vendor/intentiq/intentiq.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.overclock.net/js/vendor/intentiq/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.overclock.net##li[data-notice-id]:has-text(Enjoy ad-free browsing with Overclock.net Plus)
+www.overclock.net##li[data-notice-id]:has-text(Enjoy ad-free browsing with Overclock.net Plus):remove()
+www.mechabreak.com##div[class*="index-cookie-"]
+www.mechabreak.com##div[class*="index-cookie-"]:remove()
+!||www.imdb.com/video/imdb/vi3941640473/metrics_480p_flash$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.imdb.com/video/imdb/vi3941640473/metrics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.imdb.com##+js(aopr, imdbads)
+www.imdb.com##+js(aopw, imdbads)
+www.imdb.com##+js(aopr, window.ads_js_start)
+www.imdb.com##+js(aopw, window.ads_js_start)
+www.imdb.com##+js(set-constant, ad_utils, {})
+www.imdb.com##+js(set-constant, doWithAds, noopFunc)
+www.imdb.com##+js(set-constant, document.ad, {})
+www.imdb.com##+js(set-constant, document.adSlotConfig, {})
+www.imdb.com##+js(set-constant, document.defaultAd, {})
+www.imdb.com##.ad_fadein
+!www.imdb.com##.placeholder_pattern
+www.imdb.com##.sponsored_label
+www.imdb.com##^script:has-text(adCustomAction)
+www.imdb.com##^script:has-text(adCustomAction):remove()
+www.imdb.com##^script[type="data-doubleclick"]
+www.imdb.com##^script[type="data-doubleclick"]:remove()
+www.imdb.com##a[aria-labelledby="ad"]
+www.imdb.com##div[aria-label^="Sponsored Ad"]
+www.imdb.com##div[id="ad"]
+www.imdb.com##div[id="ad"]:remove()
+www.imdb.com##div[id="top_ad_webbug"]
+www.imdb.com##div[id="top_ad_webbug"]:remove()
+www.imdb.com##div[id^="div-gpt-ad-"]
+www.imdb.com##div[id^="div-gpt-ad-"]:remove()
+www.imdb.com##iframe[id="sis_pixel_sitewide"]
+www.imdb.com##iframe[id="sis_pixel_sitewide"]:remove()
+www.imdb.com##img[id="mobile-ad-image"]
+www.imdb.com##img[id="mobile-ad-image"]:remove()
+www.imdb.com##ins[class="dcmads"]
+www.imdb.com##ins[class="dcmads"]:remove()
+www.imdb.com##script[id="ad_feedback_handler"]
+www.imdb.com##script[id="ad_feedback_handler"]:remove()
+www.imdb.com##script[type="text/javascript"]:has-text(adCustomAction)
+www.imdb.com##script[type="text/javascript"]:has-text(adCustomAction):remove()
+www.imdb.com##span[id="inline50_sponsored"]
+www.imdb.com##span[id="inline50_sponsored"]:remove()
+www.imdb.com##+js(aopr, _comscore)
+www.imdb.com##+js(aopw, _comscore)
+www.imdb.com##+js(set-constant, _comscore, [])
+!||www.codeproject.com###dmad1
+!||www.codeproject.com###dmad2
+!||www.codeproject.com###dmad3
+!||www.codeproject.com###dmad4
+www.codeproject.com##div[id^="dmad"]
+www.codeproject.com##div[id^="dmad"]:remove()
+www.codeproject.com##div[data-type="ad"]
+www.codeproject.com##div[data-type="ad"]:remove()
+www.codeproject.com##div[aria-label="cookieconsent"]
+www.codeproject.com##div[aria-label="cookieconsent"]:remove()
+www.codeproject.com##img[id="ctl00_Audience"]
+www.codeproject.com##img[id="ctl00_Audience"]:remove()
+www.codeproject.com##+js(set-constant, googletag, {})
+www.codeproject.com##+js(set-constant, googletag.pubads, noopFunc)
+www.codeproject.com##+js(acs, googletag)
+www.codeproject.com##+js(set-constant, DMAds, {})
+www.codeproject.com##+js(set-constant, DMAds.Initialise, noopFunc)
+www.codeproject.com##+js(set-constant, SendDmAdUid, 0)
+www.codeproject.com##+js(set-constant, EnableMutableAds, 0)
+www.codeproject.com##+js(set-constant, adServer, "")
+www.codeproject.com##+js(set-constant, DMAdXHelper noopFunc)
+www.codeproject.com##+js(set-constant, , {})
+www.codeproject.com##+js(aopr, DMAds)
+www.codeproject.com##+js(aopw, DMAds)
+www.codeproject.com##:xpath(//script[contains(text(), 'adContainer')])
+www.codeproject.com##:xpath(//script[contains(text(), 'adContainer')]):remove()
+||ads.DeveloperMedia.com^*
+||apps.developermedia.com/Ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+sfist.com##div[class="mv-ad-box"]
+sfist.com##div[class="mv-ad-box"]:remove()
+sfist.com##div[id^="adhesion_"]
+sfist.com##div[id^="adhesion_"]:remove()
+sfist.com##mv-ad-reporter
+sfist.com##mv-ad-reporter:remove()
+||throatpoll.com^*
+||metricattempt.com^*
+||josephineravine.com^*
+! alteredapk.shop is legitimately used for doodrive downloads
+!||alteredapk.shop^*
 
 !Whitelisted
 ! for Google Drive
