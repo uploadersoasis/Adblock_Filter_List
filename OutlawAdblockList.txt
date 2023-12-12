@@ -45343,6 +45343,12 @@ www.reddit.com.com##faceplate-perfmetric-collector:remove()
 ||www.redditstatic.com/shreddit/en-US/ad-event-tracker-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.reddit.com##shreddit-comments-page-ad
 www.reddit.com##shreddit-comments-page-ad:remove()
+www.reddit.com##shreddit-sidebar-ad
+www.reddit.com##shreddit-sidebar-ad:remove()
+||www.redditstatic.com/shreddit/en-US/telemetry-event-struct-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.redditstatic.com/shreddit/en-US/xpromo-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.redditstatic.com/shreddit/en-US/report-flow-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.redditstatic.com/shreddit/en-US/report-flow-provider-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 sbupload.com##div[aria-label="cookieconsent"]
 sbupload.com##div[aria-label="cookieconsent"]:remove()
 www.economist.com##div[class*="adComponent_"]
@@ -45350,6 +45356,7 @@ www.economist.com##div[class*="adComponent_"]:remove()
 www.economist.com##+js(set-constant, NREUM, {})
 www.economist.com##+js(aopr, NREUM)
 www.economist.com##+js(aopw, NREUM)
+||consent.economist.com^*
 
 !Whitelisted
 ! for Google Drive
