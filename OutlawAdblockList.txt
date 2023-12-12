@@ -17569,7 +17569,8 @@ kotaku.com##.tp-active.tp-backdrop
 ||www.signforcover.com^*
 ||guildmails.com^*
 ||www.guildmails.com^*
-||csp.yahoo.com/beacon/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||csp.yahoo.com/beacon/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||csp.yahoo.com^*
 ||sd5doozry8.com^*
 ||www.sd5doozry8.com^*
 ||b.chairgaubsy.com^*
@@ -30126,8 +30127,6 @@ mail.yahoo.com##a[data-test-id="pencil-ad-messageList"]
 ||s.yimg.com/cb/af/adfeedback-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||va6-bid.adsrvr.org/bid/feedback/rightmedia$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||va6-bid.adsrvr.org^*
-!||csp.yahoo.com/beacon/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||csp.yahoo.com^*
 ||s.yimg.com/nq/nr/js/bundle_basic_mail_ads_$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 news.itsfoss.com##amp-ad
 www.flickr.com##div[class*="cookie-banner-view"]
@@ -45297,7 +45296,6 @@ www.codeproject.com##+js(set-constant, SendDmAdUid, 0)
 www.codeproject.com##+js(set-constant, EnableMutableAds, 0)
 www.codeproject.com##+js(set-constant, adServer, "")
 www.codeproject.com##+js(set-constant, DMAdXHelper noopFunc)
-www.codeproject.com##+js(set-constant, , {})
 www.codeproject.com##+js(aopr, DMAds)
 www.codeproject.com##+js(aopw, DMAds)
 www.codeproject.com##:xpath(//script[contains(text(), 'adContainer')])
@@ -45315,6 +45313,43 @@ sfist.com##mv-ad-reporter:remove()
 ||josephineravine.com^*
 ! alteredapk.shop is legitimately used for doodrive downloads
 !||alteredapk.shop^*
+! blocking AND removing these ads causes a generic error message
+!mail.yahoo.com##li[class="H_A hd_n p_a L_0 R_0"]:has(img[src*="//images.taboola.com/taboola/image/fetch/"]):remove()
+!mail.yahoo.com##button[tabindex="-1"]:has-text(Ad):upward(4):remove()
+mail.yahoo.com##li[class="H_A hd_n p_a L_0 R_0"]:has(img[src*="//images.taboola.com/taboola/image/fetch/"])
+mail.yahoo.com##button[tabindex="-1"]:has-text(Ad):upward(4)
+! The following rule blocks inline ads in the email message list, BUT it also prevents the UI from working properly.
+!||s.yimg.com/nq/nr/js/mail_app_es6_vendor_*.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cadmus.script.ac/d49ph8jz3wewg/script.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+mail.yahoo.com##+js(aeld, click, Rr)
+mail.yahoo.com##+js(set-constant, Rr, noopFunc)
+mail.yahoo.com##span[data-test-id="ad-summary"]
+mail.yahoo.com##span[data-test-id="ad-summary"]:remove()
+mail.yahoo.com##div[data-test-id="ad-feedback-menu"]
+mail.yahoo.com##div[data-test-id="ad-feedback-menu"]:remove()
+www.reddit.com.com##faceplate-perfmetric-collector
+www.reddit.com.com##faceplate-perfmetric-collector:remove()
+||reddit.map.fastly.net/reports$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||w3-reporting.reddit.com/reports$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||w3-reporting.reddit.com^*
+||www.reddit.com/svc/shreddit/perfMetrics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dualstack.reddit.map.fastly.net/shreddit/en-US/w3-report-from-v2-event-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.redditstatic.com/shreddit/en-US/w3-report-from-v2-event-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dualstack.reddit.map.fastly.net/shreddit/en-US/shreddit-sidebar-ad-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.redditstatic.com/shreddit/en-US/shreddit-sidebar-ad-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dualstack.reddit.map.fastly.net/shreddit/en-US/media-telemetry-observer-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.redditstatic.com/shreddit/en-US/media-telemetry-observer-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dualstack.reddit.map.fastly.net/shreddit/en-US/ad-event-tracker-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.redditstatic.com/shreddit/en-US/ad-event-tracker-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.reddit.com##shreddit-comments-page-ad
+www.reddit.com##shreddit-comments-page-ad:remove()
+sbupload.com##div[aria-label="cookieconsent"]
+sbupload.com##div[aria-label="cookieconsent"]:remove()
+www.economist.com##div[class*="adComponent_"]
+www.economist.com##div[class*="adComponent_"]:remove()
+www.economist.com##+js(set-constant, NREUM, {})
+www.economist.com##+js(aopr, NREUM)
+www.economist.com##+js(aopw, NREUM)
 
 !Whitelisted
 ! for Google Drive
