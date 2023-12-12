@@ -37097,7 +37097,7 @@ wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; hei
 wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important;)
 !wikipedia.org##div[class="mw-body"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important;)
 sosmediacorp.com##div[id="cookie"]
-www.cnn.com##div[class^="terms-of-service"]
+us.cnn.com,www.cnn.com##div[class^="terms-of-service"]
 !||www.cnn.com/media/sites/js/bundles/business-adfuel.min.js
 !||www.cnn.com/media/sites/js/bundles/business-adfuel-body.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.cnn.com/media/sites/js/bundles/business-adfuel$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -45357,6 +45357,29 @@ www.economist.com##+js(set-constant, NREUM, {})
 www.economist.com##+js(aopr, NREUM)
 www.economist.com##+js(aopw, NREUM)
 ||consent.economist.com^*
+us.cnn.com,www.cnn.com##div[class^="ad-slot"]
+us.cnn.com,www.cnn.com##div[class^="ad-slot"]:remove()
+us.cnn.com,www.cnn.com##div[class^="container__ads"]
+us.cnn.com,www.cnn.com##div[class^="container__ads"]:remove()
+us.cnn.com,www.cnn.com##iframe[class="smartad_iframe"]
+us.cnn.com,www.cnn.com##iframe[class="smartad_iframe"]:remove()
+!||cdn.cnn.com/ads/cnn/cnn_quantum_leaf.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.cnn.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||a80a9201ee101bbc3.awsglobalaccelerator.com/com.snowplowanalytics.snowplow/tp2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||*.awsglobalaccelerator.com/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||collector.cdp.cnn.com/com.snowplowanalytics.snowplow/tp2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||collector.cdp.cnn.com^*
+||www.dianomi.com/cgi-bin/smartads_video_json.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.dianomi.com/cgi-bin/pixeltrack.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||logs.browser-intake-datadoghq.com/api/v2/logs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||alb-logs-http-browser-pub-s0-1899014706.us-east-1.elb.amazonaws.com/api/v2/logs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||smetrics.cnn.com/b/ss/cnn-adbp-domestic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cnn.com.102.122.2o7.net/b/ss/cnn-adbp-domestic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||logs.browser-intake-datadoghq.com^*
+||alb-logs-http-browser-pub-s0-1899014706.us-east-1.elb.amazonaws.com^*
+||smetrics.cnn.com^*
+||cnn.com.102.122.2o7.net^*
+||www.cnn.com/media/sites/js/bundles/business-adfuel*.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
