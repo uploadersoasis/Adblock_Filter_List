@@ -24136,7 +24136,6 @@ www.msp360.com##div[class^="use-cookie"]
 ||www.xgubafscfsf.com^*
 ||xgubafscfsf.com^*
 giga-down.com##div.download-option-btn:nth-of-type(3) > .btn-success.btn
-nypost.com##div[class="nyp-sitewide-notice"]
 ||resupposer.club^*
 ||familinger.club^*
 ||nmentsim.club^*
@@ -29720,7 +29719,6 @@ primeuploads.com##div[class*="cookiealert"]
 press.handy-games.com##div[class*="cookie-consent-bar"]
 ||analytics-cdn.prezly.com^*
 ||analytics.prezly.com^*
-nypost.com##div[class*="billboard-ad"]
 ||molodgytot.biz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||promisingjournalist.com^*
 ||passwordscompound.com^*
@@ -29883,7 +29881,6 @@ www.builtbybel.com##div[id="easycookieinfo"]
 ||ocdnmq.com^*
 ||kesmatic.com^*
 a2zrom.com##*:style(-moz-user-select:text; -webkit-user-select:text; -webkit-touch-callout: text; -khtml-user-select: text; -ms-user-select: text; user-select: text;)
-nypost.com##div[class*="ad-slot"]
 ||perfads.bouncex.net^*
 decider.com##div[id="header-billboard-ad"]
 decider.com##div[class*="ad-wrapper"]
@@ -34056,11 +34053,6 @@ abc7news.com##div[class*="adRectangle-"]
 ||notifmart.com^*
 ||search.cinema-te.net^*
 ||cinema-te.net^*
-nypost.com##div[class*="ad__wrapper"]
-nypost.com##div[class*="ad__placeholder"]
-nypost.com##div[class*="ad-wrapper"]
-nypost.com##div[class*="ad--container"]
-nypost.com##div[id^="div-gpt-ad-"]
 www.chicagotribune.com##div[class*="ad_container"]
 !www.chicagotribune.com##div[class="top_ad_wrapper"]
 www.chicagotribune.com##div[class*="ad_wrapper"]
@@ -42108,10 +42100,6 @@ availedsmallest.com##+js(nosiif, /^/)
 ||rnynacj.erichorne.net^*
 *##html[data-adblockkey]:remove-attr(data-adblockkey)
 ||d38psrni17bvxu.cloudfront.net^*
-nypost.com##iframe[id="zephr-component-1"]
-nypost.com##iframe[id="zephr-component-1"]:remove()
-nypost.com##div[class="sitewide-notice"]
-nypost.com##div[class="sitewide-notice"]:remove()
 ||myfrank.xyz^*
 ||mucinyak.com^*
 ||dec22.live^*
@@ -45380,6 +45368,42 @@ us.cnn.com,www.cnn.com##iframe[class="smartad_iframe"]:remove()
 ||smetrics.cnn.com^*
 ||cnn.com.102.122.2o7.net^*
 ||www.cnn.com/media/sites/js/bundles/business-adfuel*.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||meadowlullaby.com^*
+nypost.com##div[class*="ad--container"]
+nypost.com##div[class*="ad--container"]:remove()
+nypost.com##div[class*="ad-slot"]
+nypost.com##div[class*="ad-slot"]:remove()
+nypost.com##div[class*="ad-wrapper"]
+nypost.com##div[class*="ad-wrapper"]:remove()
+nypost.com##div[class*="ad__placeholder"]
+nypost.com##div[class*="ad__placeholder"]:remove()
+nypost.com##div[class*="ad__wrapper"]
+nypost.com##div[class*="ad__wrapper"]:remove()
+nypost.com##div[class*="billboard-ad"]
+nypost.com##div[class*="billboard-ad"]:remove()
+nypost.com##div[class="nyp-sitewide-notice"]
+nypost.com##div[class="nyp-sitewide-notice"]:remove()
+nypost.com##div[class="sitewide-notice"]
+nypost.com##div[class="sitewide-notice"]:remove()
+nypost.com##div[id^="div-gpt-ad-"]
+nypost.com##div[id^="div-gpt-ad-"]:remove()
+nypost.com##iframe[id="zephr-component-1"]
+nypost.com##iframe[id="zephr-component-1"]:remove()
+nypost.com##iframe[id="revvyiframe"]
+nypost.com##iframe[id="revvyiframe"]:remove()
+nypost.com##iframe[rel="sponsored"]
+nypost.com##iframe[rel="sponsored"]:remove()
+nypost.com##script[class^="optanon-category"]
+nypost.com##script[class^="optanon-category"]:remove()
+nypost.com##script[src*="//cdn.cookielaw.org/"]
+nypost.com##script[src*="//cdn.cookielaw.org/"]:remove()
+nypost.com##+js(set-constant, gtag, noopFunc)
+nypost.com##+js(acs, gtag)
+||d1udjti6mtxz9q.cloudfront.net/p/nyp/nyp/pb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||pbcs.nypost.com/p/nyp/nyp/pb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||nypost.com/wp-content/themes/nypost-2016/client/build/js/nyp-show-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||vop.sundaysky.com^*
+||api.id5-sync.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
