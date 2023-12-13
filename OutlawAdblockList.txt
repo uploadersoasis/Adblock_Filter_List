@@ -43484,6 +43484,9 @@ extreme-ip-lookup.com^*$domain=up-load.io
 !||a.pub.network/core/prebid-analytics-1.10.0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.pub.network/core/prebid-analytics-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.pub.network/core/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||a.pub.network/core/pubfig/*/pubfig.engine.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||a.pub.network/core/pubfig/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a.pub.network^*$domain=bleepingcomputer.com|www.siliconera.com
 !||cdn.confiant-integrations.net/gptprebidnative/202303290926/wrap.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.confiant-integrations.net/gptprebidnative/$script
 !||cdn.confiant-integrations.net/MbZTQS496EB4Sd27ILU4rbHXnJ8/gpt_and_prebid/config.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43529,8 +43532,6 @@ www.bleepingcomputer.com##+js(abort-on-property-write, adsbygoogle)
 www.bleepingcomputer.com##+js(abort-on-property-read, adsbygoogle)
 www.bleepingcomputer.com##ins[data-ad-client]
 www.bleepingcomputer.com##ins[data-ad-client]:remove()
-||a.pub.network^*$domain=bleepingcomputer.com
-!||a.pub.network/core/pubfig/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||notepadxtreme.com^*
 www.deskmodder.de##div[class="cookie-modal"]:remove()
 www-deskmodder-de.translate.goog##div[class="cookie-modal"]
@@ -45404,6 +45405,20 @@ nypost.com##+js(acs, gtag)
 ||nypost.com/wp-content/themes/nypost-2016/client/build/js/nyp-show-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vop.sundaysky.com^*
 ||api.id5-sync.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.siliconera.com##+js(set-constant, __gaTracker, noopFunc)
+www.siliconera.com##+js(set-constant, __gtagDataLayer, noopFunc)
+www.siliconera.com##+js(set-constant, __gtagTrackerIsOptedOut, trueFunc)
+www.siliconera.com##+js(set-constant, mi_track_user, false)
+www.siliconera.com##+js(set-constant, window.snowplow, noopFunc)
+www.siliconera.com##+js(acs, snowplow)
+www.siliconera.com##+js(set-constant, gtmDataLayer, [])
+www.siliconera.com##+js(aopr, gtmDataLayer)
+www.siliconera.com##+js(aopw, gtmDataLayer)
+www.siliconera.com##+js(set-constant, MonsterInsights, noopFunc)
+www.siliconera.com##div[class="bOvWNQ"]:has(button[data-instructions-url$="/my.getadmiral.com/instructions"]:has-text(Disable my adblocker))
+www.siliconera.com##div[class="bOvWNQ"]:has(button[data-instructions-url$="/my.getadmiral.com/instructions"]:has-text(Disable my adblocker)):remove()
+||spc.siliconera.com^*
+||metrics.pico.tools^*
 
 !Whitelisted
 ! for Google Drive
