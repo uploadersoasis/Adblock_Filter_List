@@ -23950,7 +23950,6 @@ giga-down.com##center:nth-of-type(3) > .btn-dow.btn
 giga-down.com##div.download-option-btn:nth-of-type(2) > .btn-success.btn
 giga-down.com##+js(abort-on-property-read, _Hasync=)
 giga-down.com##+js(abort-on-property-write, _Hasync=)
-www.softwareok.com##div[id="cookiebar"]
 ||cdn.simpleanalytics.io^*
 ||api.simpleanalytics.io^*
 www.3dflow.net##div[id="cookie-notice"]
@@ -26792,7 +26791,6 @@ dzapk.com##div[aria-label="cookieconsent"]
 ||start3dd0wnload.com^*
 !jornaleconomico.sapo.pt##div[id="tg-adhesion"]
 jornaleconomico.sapo.pt##div[id^="tg-adhesion"]
-www.softwareok.com###banner_217_B
 !www2.bittools.net##div[aria-label="cookieconsent"]
 bittools.net##div[aria-label="cookieconsent"]
 techbigs.com##div[class="cookie-notice-container"]
@@ -45427,6 +45425,43 @@ www.siliconera.com##div[class="bOvWNQ"]:has(button[data-instructions-url$="/my.g
 ! The following should work on all websites which use Admiral anti-adblocking.
 *##div[class="bOvWNQ"]:has(button[data-instructions-url$="/my.getadmiral.com/instructions"]:has-text(Disable my adblocker))
 *##div[class="bOvWNQ"]:has(button[data-instructions-url$="/my.getadmiral.com/instructions"]:has-text(Disable my adblocker)):remove()
+www.softwareok.com##div[id="cookiebar"]
+www.softwareok.com##div[id="cookiebar"]:remove()
+www.softwareok.com##table[id="banner_217_B"]
+www.softwareok.com##table[id="banner_217_B"]:remove()
+www.softwareok.com##ins[data-ad-client]
+www.softwareok.com##ins[data-ad-client]:remove()
+www.softwareok.com##+js(set-constant, adsbygoogle, [])
+www.softwareok.com##+js(aopw, adsbygoogle)
+www.softwareok.com##+js(aopr, adsbygoogle)
+www.softwareok.com##+js(set-constant, adwin, "")
+www.softwareok.com##+js(aopw, adwin)
+www.softwareok.com##+js(aopr, adwin)
+www.softwareok.com##+js(set-constant, temu, "")
+www.softwareok.com##+js(aopw, temu)
+www.softwareok.com##+js(aopr, temu)
+www.softwareok.com##+js(set-constant, NordVPN, "")
+www.softwareok.com##+js(aopw, NordVPN)
+www.softwareok.com##+js(aopr, NordVPN)
+www.softwareok.com##+js(set-constant, NordPass, "")
+www.softwareok.com##+js(aopw, NordPass)
+www.softwareok.com##+js(aopr, NordPass)
+www.softwareok.com##+js(set-constant, NordLocker, "")
+www.softwareok.com##+js(aopw, NordLocker)
+www.softwareok.com##+js(aopr, NordLocker)
+www.softwareok.com##+js(set-constant, amz, "")
+www.softwareok.com##+js(aopw, amz)
+www.softwareok.com##+js(aopr, amz)
+www.softwareok.com##+js(set-constant, urls_WREqwre, [])
+www.softwareok.com##+js(aopw, urls_WREqwre)
+www.softwareok.com##+js(aopr, urls_WREqwre)
+www.softwareok.com##+js(set-constant, Werbung2023, noopFunc)
+www.softwareok.com##+js(acs, Werbung2023)
+www.softwareok.com##+js(set-constant, Test2023ABC, noopFunc)
+www.softwareok.com##+js(acs, Test2023ABC)
+www.softwareok.com##:xpath(//html/body/center/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[2]/td/script)
+www.softwareok.com##:xpath(//html/body/center/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[2]/td/script):remove()
+||www.awin1.com/cread.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
