@@ -41663,6 +41663,7 @@ filerice.com##+js(saa, type, submit, #downloadbtn)
 ||log.espn.com^*
 !||secure.espncdn.com/combiner/c?js=analytics/adobe/VisitorAPI_312.js,analytics/adobe/AppMeasurement_282.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||secure.espncdn.com/combiner/c?js=analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||secure.espncdn.com/js/omniture/tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||insights-collector.newrelic.com/v1/accounts/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||insights-collector.newrelic.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||efeagreatasese.info^*
@@ -44961,6 +44962,10 @@ www.aorus.com##div[class="cookie-div"]:remove()
 www.asus.com##div[id^="cookie-policy-info"]
 www.asus.com##div[id^="cookie-policy-info"]:remove()
 www.asus.com##body:remove-class(show-cookie-policy-info)
+www.asus.com##*[id^="cookie-policy-lightbox-"]
+www.asus.com##*[id^="cookie-policy-lightbox-"]:remove()
+www.asus.com##*[class^="cookie-policy-lightbox-"]
+www.asus.com##*[class^="cookie-policy-lightbox-"]:remove()
 !||dlcdnimgs.asus.com/vendor/cookie-banner/js/alert-info.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dlcdnimgs.asus.com/vendor/cookie-banner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||dlcdnimgs.asus.com/vendor/location-reminder/js/locationreminder.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -45419,6 +45424,9 @@ www.siliconera.com##div[class="bOvWNQ"]:has(button[data-instructions-url$="/my.g
 www.siliconera.com##div[class="bOvWNQ"]:has(button[data-instructions-url$="/my.getadmiral.com/instructions"]:has-text(Disable my adblocker)):remove()
 ||spc.siliconera.com^*
 ||metrics.pico.tools^*
+! The following should work on all websites which use Admiral anti-adblocking.
+*##div[class="bOvWNQ"]:has(button[data-instructions-url$="/my.getadmiral.com/instructions"]:has-text(Disable my adblocker))
+*##div[class="bOvWNQ"]:has(button[data-instructions-url$="/my.getadmiral.com/instructions"]:has-text(Disable my adblocker)):remove()
 
 !Whitelisted
 ! for Google Drive
