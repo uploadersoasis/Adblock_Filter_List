@@ -24918,12 +24918,9 @@ linuxize.com##.adtester-container
 ostechnix.com##div[class="penci-wrap-gprd-law"]
 www.binarytides.com##ins[class="adsbygoogle"]
 www.binarytides.com##div[class^="display-ad-unit"]
-itsfoss.com##+js(abort-current-script, 'adUnitCode')
 ||bucket.rtk.io/analytics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.update.sharethru.com/2/673815/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||apester-d.openx.net^*
-itsfoss.com##div[class*="str-adunit"]
-##div[class^="str-adunit"]
 ||events.apester.com^*
 ||static.apester.com/cookie/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||interaction.apester.com/interaction-stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -24931,8 +24928,6 @@ itsfoss.com##div[class*="str-adunit"]
 ||renderer.apester.com/v2/static/adsbygoogle.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.omappapi.com/app/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.apester.com/js/lib/adsbygoogle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-itsfoss.com##div[id^="RTK_banner_"]
-!itsfoss.com##div[class="mon-banner"]
 ||a.omappapi.com/app/campaign-views/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 linuxize.com##div[class^="affiliate"]
 linuxize.com##span[class="ezoic-adpicker-ad"]
@@ -30123,7 +30118,6 @@ mail.yahoo.com##a[data-test-id="pencil-ad-messageList"]
 !||va6-bid.adsrvr.org/bid/feedback/rightmedia$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||va6-bid.adsrvr.org^*
 ||s.yimg.com/nq/nr/js/bundle_basic_mail_ads_$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-news.itsfoss.com##amp-ad
 www.flickr.com##div[class*="cookie-banner-view"]
 ||consent.cookiefirst.com^*
 en.usenet.nl##div[class="cookiefirst-root"]
@@ -30822,8 +30816,6 @@ www.livescience.com##div[class*="ad-unit"]
 www.livescience.com##+js(aopr, window._adftrack)
 www.livescience.com##+js(aopw, window._adftrack)
 ||iyfhshsp.com^*
-itsfoss.com##data-freestar-ad
-itsfoss.com##div[class*="eaa-ad"]
 www.supergrubdisk.org##div[id="cookie-notice"]
 www.supergrubdisk.org##ins[class="adsbygoogle"]
 login.regions.com##*[class*="rds-cookie-notice"]
@@ -33768,7 +33760,6 @@ www.aroged.com##ins[data-ad-client]
 www.aroged.com##div[class*="ads-wrapper"]
 www.aroged.com##div[class^="jeg_ad"]
 ||zomtanup.com^*
-itsfoss.com##div[data-freestar-ad]
 ||urgvrerk.com^*
 ||www.acobnnvet.com^*
 ||lotsooms.com^*
@@ -43130,11 +43121,6 @@ gamesnacks.com##div[jscontroller="k82Eq"][jsaction="rcuQ6b:npT2md"]:remove()
 gamesnacks.com##div[class="sSVlic"]
 gamesnacks.com##div[class="sSVlic"]:remove()
 ||cdn.gbqofs.com/acehardware/p/detector-dom.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-itsfoss.com##+js(set-constant, freestar, {})
-itsfoss.com##+js(abort-on-property-write, freestar)
-itsfoss.com##+js(abort-on-property-read, freestar)
-itsfoss.com##iframe[name^="__privateStripeMetricsController"]
-itsfoss.com##iframe[name^="__privateStripeMetricsController"]:remove()
 !||0f73e92f-4074-4fe3-85d3-ed3fc969859e.edge.permutive.app^*
 !||6093eccf-6734-4877-ac8b-83d6d0e27b46.edge.permutive.app^*
 !||a9695278-4085-40b3-9f02-8d4c38a6ff01.edge.permutive.app^*
@@ -43485,7 +43471,7 @@ extreme-ip-lookup.com^*$domain=up-load.io
 ||a.pub.network/core/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||a.pub.network/core/pubfig/*/pubfig.engine.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||a.pub.network/core/pubfig/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||a.pub.network^*$domain=bleepingcomputer.com|www.siliconera.com
+||a.pub.network^*$domain=bleepingcomputer.com|www.siliconera.com|itsfoss.com
 !||cdn.confiant-integrations.net/gptprebidnative/202303290926/wrap.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.confiant-integrations.net/gptprebidnative/$script
 !||cdn.confiant-integrations.net/MbZTQS496EB4Sd27ILU4rbHXnJ8/gpt_and_prebid/config.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -45462,6 +45448,70 @@ www.softwareok.com##+js(acs, Test2023ABC)
 www.softwareok.com##:xpath(//html/body/center/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[2]/td/script)
 www.softwareok.com##:xpath(//html/body/center/table/tbody/tr/td/table/tbody/tr[1]/td/table/tbody/tr[2]/td/script):remove()
 ||www.awin1.com/cread.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+forums.lenovo.com##div[data-v-2f4bed87]:has(div[class^="cookie-remind-"])
+forums.lenovo.com##div[data-v-2f4bed87]:has(div[class^="cookie-remind-"]):remove()
+forums.lenovo.com##div[class^="cookie-remind-"]
+forums.lenovo.com##div[class^="cookie-remind-"]:remove()
+forums.lenovo.com##+js(set-constant, gtag, noopFunc)
+forums.lenovo.com##+js(acs, gtag)
+mp3hits.cz##div[aria-label="cookieconsent"]
+mp3hits.cz##div[aria-label="cookieconsent"]:remove()
+||mp3hits.cz/ext/phpbb/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mp3hits.cz/assets/cookieconsent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+forum.popjustice.com##div[class="u-bottomFixer js-bottomFixTarget"]:has(li[class*="notice--cookie"])
+forum.popjustice.com##div[class="u-bottomFixer js-bottomFixTarget"]:has(li[class*="notice--cookie"]):remove()
+||affiliate.juno.co.uk/scripts/trackjs.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.junodownload.com##+js(set-constant, papTrackingFunction, noopFunc)
+www.junodownload.com##+js(acs, papTrackingFunction)
+www.junodownload.com##div[id="juno-cookie-consent"]
+www.junodownload.com##div[id="juno-cookie-consent"]:remove()
+www.discogs.com##div[id="ad_right"]
+www.discogs.com##div[id="ad_right"]:remove()
+www.discogs.com##div[id="ad_bottom"]
+www.discogs.com##div[id="ad_bottom"]:remove()
+www.discogs.com##div[id="ad_flexa"]
+www.discogs.com##div[id="ad_flexa"]:remove()
+www.discogs.com##div[aria-label="Advertisement"]
+www.discogs.com##div[aria-label="Advertisement"]:remove()
+||quasimanagespreparation.com^*
+||extortiongauzedictum.com^*
+||courthousedefective.com^*
+||muzzlematrix.com^*
+||wearisomeexertiontales.com^*
+||tstats-13fkh44r.com^*
+||careersadorable.com^*
+||flowshaft.com^*
+torrentgalaxy.mx##img[class="img-responsive hpcover"][src*="/everest.picturedent.org/images/"]
+torrentgalaxy.mx##img[class="img-responsive hpcover"][src*="/everest.picturedent.org/images/"]:remove()
+1337x.proxyninja.org##div[id="alert-popup"]
+1337x.proxyninja.org##div[id="alert-popup"]:remove()
+!itsfoss.com##div[class="mon-banner"]
+itsfoss.com##.apester-ad-container
+itsfoss.com##.apester-ad-container:remove()
+itsfoss.com##data-freestar-ad
+itsfoss.com##div[class*="eaa-ad"]
+itsfoss.com##div[class*="str-adunit"]
+itsfoss.com##div[data-freestar-ad]
+itsfoss.com##div[data-freestar-ad]:remove()
+itsfoss.com##div[id^="RTK_banner_"]
+itsfoss.com##iframe[name^="__privateStripeMetricsController"]
+itsfoss.com##iframe[name^="__privateStripeMetricsController"]:remove()
+itsfoss.com##+js(abort-current-script, 'adUnitCode')
+itsfoss.com##+js(abort-on-property-read, freestar)
+itsfoss.com##+js(abort-on-property-write, freestar)
+itsfoss.com##+js(set-constant, freestar, {})
+itsfoss.com##+js(set-constant, freestar.newAdSlots, noopFunc)
+itsfoss.com##+js(acs, freestar.newAdSlots)
+itsfoss.com##+js(set-constant, window.confiant, {})
+itsfoss.com##+js(acs, window.confiant)
+itsfoss.com##+js(set-constant, gtag, noopFunc)
+itsfoss.com##+js(acs, gtag)
+itsfoss.com##script[data-owner="freestar"]
+itsfoss.com##script[data-owner="freestar"]:remove()
+news.itsfoss.com##amp-ad
+||a.pub.network/itsfoss/pubfig.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.confiant-integrations.net/*/gpt_and_prebid/config.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.confiant-integrations.net/*/gpt_and_prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
