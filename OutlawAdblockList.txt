@@ -45145,13 +45145,13 @@ www.247checkers.com##div[id^="feature-ad"]:remove()
 www.247checkers.com##+js(set-constant, window.adLineup, noopFunc)
 www.247checkers.com##+js(aopr, window.adLineup)
 www.247checkers.com##+js(aopw, window.adLineup)
-!www.247checkers.com##+js(set-constant, window.generateFeatureAdLineup, noopFunc, end)
-!www.247checkers.com##+js(set-constant, window.generateFeatureAdLineup, noopFunc, complete)
+www.247checkers.com##+js(set-constant, window.generateFeatureAdLineup, noopFunc, end)
+www.247checkers.com##+js(set-constant, window.generateFeatureAdLineup, noopFunc, complete)
 www.247checkers.com##+js(set-constant, window.generateFeatureAdLineup, noopFunc)
 www.247checkers.com##+js(aopr, window.generateFeatureAdLineup)
 www.247checkers.com##+js(aopw, window.generateFeatureAdLineup)
-!www.247checkers.com##+js(set-constant, window.games247.FeatureAd, {})
-!www.247checkers.com##+js(set-constant, window.games247.FeatureAd, {}, complete)
+www.247checkers.com##+js(set-constant, window.games247.FeatureAd, {})
+www.247checkers.com##+js(set-constant, window.games247.FeatureAd, {}, complete)
 www.247checkers.com##+js(set-constant, window.games247.FeatureAd, {}, end)
 www.247checkers.com##+js(acs, window.games247.FeatureAd)
 www.247checkers.com##+js(set-constant, window.games247.ads, {})
@@ -45159,12 +45159,19 @@ www.247checkers.com##+js(set-constant, window.games247.ads.loadBanner300x250, no
 www.247checkers.com##+js(set-constant, window.games247.ads.FeatureAd, noopFunc)
 www.247checkers.com##+js(set-constant, adsBlocked, falseFunc)
 www.247checkers.com##+js(set-constant, showad, noopFunc)
-www.247checkers.com##+js(set-constant, googletag, {})
-! do not abort on googletag or the game will not load.
+! do not set or abort on googletag or gtag or the game will not load.
+!www.247checkers.com##+js(set-constant, googletag, {})
 !www.247checkers.com##+js(aopr, googletag)
 !www.247checkers.com##+js(aopw, googletag)
-www.247checkers.com##+js(set-constant, pbjs, {})
-www.247checkers.com##+js(set-constant, gtag, noopFunc)
+!www.247checkers.com##+js(set-constant, gtag, noopFunc)
+!www.247checkers.com##+js(set-constant, pbjs, {})
+! Removing the following scripts will prevent the game from loading 
+!www.247checkers.com##script[data-interstitial-enabled-mobile="true"]
+!www.247checkers.com##script[data-interstitial-enabled-mobile="true"]:remove()
+!www.247checkers.com##script[data-interstitial-enabled-desktop="true"]
+!www.247checkers.com##script[data-interstitial-enabled-desktop="true"]:remove()
+! eliminates 5 second countdown before gameplay
+www.247checkers.com##+js(nano-stb, /.?/, 1000, 0.10)
 www.247checkers.com##:xpath(//script[contains(text(), 'self.games247.FeatureAd.init()')])
 www.247checkers.com##:xpath(//script[contains(text(), 'self.games247.FeatureAd.init()')]):remove()
 www.247checkers.com##:xpath(//script[contains(text(), '/www.247games.com/feature-lineup/FeatureLineup.')])
@@ -45172,8 +45179,6 @@ www.247checkers.com##:xpath(//script[contains(text(), '/www.247games.com/feature
 ! The following script should already be gone per the above rule.
 www.247checkers.com##script[src*="/www.247games.com/feature-lineup/FeatureLineup."]
 www.247checkers.com##script[src*="/www.247games.com/feature-lineup/FeatureLineup."]:remove()
-! eliminates 5 second countdown before gameplay
-www.247checkers.com##+js(nano-stb, /.?/, 1000, 0.10)
 ||www.247games.com/feature-lineup/FeatureLineup.v2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ib.adnxs.com/ut/v3/prebid$xhr,domain=www.247checkers.com
 ||fastlane.rubiconproject.com/a/api/fastlane.json$xhr,domain=www.247checkers.com
@@ -45512,6 +45517,43 @@ news.itsfoss.com##amp-ad
 ||a.pub.network/itsfoss/pubfig.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cdn.confiant-integrations.net/*/gpt_and_prebid/config.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.confiant-integrations.net/*/gpt_and_prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||ads.supplyframe.com/openads/adjs.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ads.supplyframe.com^*
+www.datasheetarchive.com##div[class*="ad-content"]
+www.datasheetarchive.com##div[class*="ad-content"]:remove()
+! prevent download link
+!www.manualslib.com##div[class*="dl_ad_neighbor"]
+!www.manualslib.com##div[class*="dl_ad_neighbor"]:remove()
+www.manualslib.com##div[class^="adslot_"]
+www.manualslib.com##div[class^="adslot_"]:remove()
+www.manualslib.com##div[id="manualban"]
+www.manualslib.com##div[id="manualban"]:remove()
+www.manualslib.com##div[id="dl_ad_block"]
+www.manualslib.com##div[id="dl_ad_block"]:remove()
+www.manualslib.com##div[id="banner_downloadSideAd"]
+www.manualslib.com##div[id="banner_downloadSideAd"]:remove()
+www.manualslib.com##div[id="banner_downloadBottomAd"]
+www.manualslib.com##div[id="banner_downloadBottomAd"]:remove()
+www.manualslib.com##p[class="abp_adv_s-title"]
+www.manualslib.com##p[class="abp_adv_s-title"]:remove()
+www.manualslib.com##+js(set-constant, gtag, noopFunc)
+www.manualslib.com##+js(acs, gtag)
+www.manualslib.com##+js(set-constant, isLoggedIn, 1)
+!www.manualslib.com##+js(set-constant, isLoggedIn, true)
+www.manualslib.com##+js(set-constant, window.googletag, {})
+www.manualslib.com##+js(set-constant, adconsent, noopFunc)
+www.manualslib.com##+js(set-constant, refreshAd, noopFunc)
+www.manualslib.com##+js(set-constant, AdUnit, noopFunc)
+www.manualslib.com##+js(set-constant, adUnits, [])
+www.manualslib.com##+js(set-constant, AdUnit, {})
+www.manualslib.com##+js(acs, window.googletag)
+www.manualslib.com##+js(acs, adconsent)
+www.manualslib.com##+js(acs, refreshAd)
+www.manualslib.com##+js(acs, AdUnit)
+www.manualslib.com##+js(abort-on-property-read, adUnits)
+www.manualslib.com##+js(abort-on-property-write, adUnits)
+www.manualslib.com##+js(abort-on-property-read, AdUnit)
+www.manualslib.com##+js(abort-on-property-write, AdUnit)
 
 !Whitelisted
 ! for Google Drive
