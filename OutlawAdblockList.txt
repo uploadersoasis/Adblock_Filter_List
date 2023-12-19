@@ -42704,6 +42704,8 @@ gplinks.co,gplinks.in##+js(nosiif, timer)
 gplinks.co,gplinks.in##+js(remove-attr, disabled, #go-submit, stay)
 gplinks.co,gplinks.in##+js(remove-class, d-none, #go-submit, stay)
 gplinks.co,gplinks.in##+js(remove-class, hidden, #go-submit, stay)
+gplinks.co,gplinks.in##+js(set-constant, checkAdsbypasserUser, noopFunc)
+gplinks.co,gplinks.in##+js(set-constant, checkAdblockUser, noopFunc)
 gplinks.co,gplinks.in##+js(set-constant, AdBDetected, noopFunc)
 gplinks.co,gplinks.in##+js(set-constant, AdbModel, null)
 gplinks.co,gplinks.in##+js(set-constant, AdbPageReload, noopFunc)
@@ -42723,8 +42725,9 @@ gplinks.co,gplinks.in##+js(set-constant, removefakeAd, noopFunc)
 gplinks.co,gplinks.in##+js(set-constant, smart_link, "")
 gplinks.co,gplinks.in##+js(set-constant, timeleft, 0, stay)
 gplinks.co,gplinks.in##+js(set-constant, banners, [])
-!gplinks.co,gplinks.in##+js(set-constant, app_vars.force_disable_adblock, true, end)
-gplinks.co,gplinks.in##+js(set-constant, app_vars.force_disable_adblock, true, complete)
+!gplinks.co,gplinks.in##+js(set-constant, app_vars.force_disable_adblock, 1, end)
+gplinks.co,gplinks.in##+js(set-constant, app_vars.force_disable_adblock, 1, complete)
+gplinks.co,gplinks.in##+js(trusted-set, app_vars.force_disable_adblock, '1', complete)
 gplinks.co,gplinks.in##+js(trusted-set, ustatus, success)
 gplinks.co,gplinks.in##a[href^="https://bit.ly/"]
 gplinks.co,gplinks.in##button[id="go-submit"]:style(display:block !important;)
@@ -45590,6 +45593,7 @@ jobnewsj.com##div[id="myTimerDiv"]
 jobnewsj.com##div[id="myTimerDiv"]:remove()
 ||teemooge.net^*
 ||feeloshu.com^*
+||sysoutvariola.com^*
 ||magicbid.digislots.in/api/smart-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
