@@ -42677,56 +42677,69 @@ mynewsmedia.co,mynewspost.in###footer-sticky-ad
 ! ads.js is used to create #ad-banner to check for adblock
 !||gplinks.co/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||gplinks.in/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-gplinks.co,gplinks.in##+js(set-constant, isOverGoogleAd, false, stay)
-gplinks.co,gplinks.in##+js(trusted-set, ustatus, success)
-gplinks.co,gplinks.in##+js(set-constant, count, 0, stay)
+! prevents the links from working
+!||gplinks.in/track/js/main.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||gplinks.co/track/js/main.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!gplinks.co,gplinks.in###go-link > div:nth-child(1):style(display: inline;)
 !gplinks.co,gplinks.in##+js(nosiif, /^/)
-gplinks.co,gplinks.in##+js(nosiif, timer)
 gplinks.co,gplinks.in###cookie-pop
-gplinks.co,gplinks.in##+js(remove-class, hidden, #go-submit, stay)
-gplinks.co,gplinks.in##+js(remove-class, d-none, #go-submit, stay)
-gplinks.co,gplinks.in##+js(remove-attr, disabled, #go-submit, stay)
-gplinks.co,gplinks.in##+js(set-constant, isIPPAdClick, true, stay)
-gplinks.co,gplinks.in##+js(set-constant, smart_link, "")
-gplinks.co,gplinks.in##+js(set-constant, googleAdUrl, "")
-gplinks.co,gplinks.in##+js(set-constant, adBlockEnabled, false, stay)
-gplinks.co,gplinks.in##+js(set-constant, timeleft, 0, stay)
-gplinks.co,gplinks.in##+js(set-constant, detectWithFakeAdsDiv, noopFunc)
-gplinks.co,gplinks.in##+js(set-constant, AdbPageReload, noopFunc)
-gplinks.co,gplinks.in##+js(set-constant, AdBDetected, noopFunc)
-gplinks.co,gplinks.in##+js(set-constant, detectAdBlock, noopFunc)
-gplinks.co,gplinks.in##+js(set-constant, isBrave, falseFunc)
-gplinks.co,gplinks.in###unlock-btn:style(display: block !important;)
-gplinks.co,gplinks.in###msg:style(display: block !important;)
 gplinks.co,gplinks.in###link-btn:style(display: block !important;)
-gplinks.co,gplinks.in##button[id="go-submit"]:style(display:block !important;)
-gplinks.co,gplinks.in###myTimerDiv:style(display:none !important;)
+gplinks.co,gplinks.in###msg:style(display: block !important;)
 gplinks.co,gplinks.in###myNextInst:style(display:block !important;)
+gplinks.co,gplinks.in###myTimerDiv:style(display:none !important;)
+gplinks.co,gplinks.in###unlock-btn:style(display: block !important;)
 gplinks.co,gplinks.in###VerifyBtn:style(display:block !important;)
-gplinks.co,gplinks.in##+js(set-constant, gtag, noopFunc)
-gplinks.co,gplinks.in##+js(acs, gtag)
-gplinks.co,gplinks.in##+js(aopr, Tawk_API)
-gplinks.co,gplinks.in##+js(aopw, Tawk_API)
 gplinks.co,gplinks.in##*[class*="adb-align-"]
 gplinks.co,gplinks.in##*[class*="adb-align-"]:remove()
 gplinks.co,gplinks.in##*[class*="adb-message"]
 gplinks.co,gplinks.in##*[class*="adb-message"]:remove()
-gplinks.co,gplinks.in##div[id="AdbModel"]
-gplinks.co,gplinks.in##div[id="AdbModel"]:remove()
-gplinks.co,gplinks.in##div[class^="adb-"]
-gplinks.co,gplinks.in##div[class^="adb-"]:remove()
-!gplinks.co,gplinks.in###go-link > div:nth-child(1):style(display: inline;)
-gplinks.co,gplinks.in##+js(set-constant, blurred, false)
-!gplinks.co,gplinks.in##+js(set-constant, app_vars.force_disable_adblock, true, end)
-gplinks.co,gplinks.in##+js(set-constant, app_vars.force_disable_adblock, true, complete)
+gplinks.co,gplinks.in##+js(acs, gtag)
 gplinks.co,gplinks.in##+js(aopr, app_vars.force_disable_adblock)
+gplinks.co,gplinks.in##+js(aopr, clickCount)
+gplinks.co,gplinks.in##+js(aopr, Tawk_API)
+gplinks.co,gplinks.in##+js(aopw, Tawk_API)
 gplinks.co,gplinks.in##+js(disable-newtab-links)
 gplinks.co,gplinks.in##+js(nosiif, href)
+gplinks.co,gplinks.in##+js(nosiif, timer)
+gplinks.co,gplinks.in##+js(remove-attr, disabled, #go-submit, stay)
+gplinks.co,gplinks.in##+js(remove-class, d-none, #go-submit, stay)
+gplinks.co,gplinks.in##+js(remove-class, hidden, #go-submit, stay)
+gplinks.co,gplinks.in##+js(set-constant, AdBDetected, noopFunc)
+gplinks.co,gplinks.in##+js(set-constant, AdbModel, null)
+gplinks.co,gplinks.in##+js(set-constant, AdbPageReload, noopFunc)
+gplinks.co,gplinks.in##+js(set-constant, adBlockEnabled, false, stay)
+gplinks.co,gplinks.in##+js(set-constant, blurred, false)
+gplinks.co,gplinks.in##+js(set-constant, count, 0, stay)
+gplinks.co,gplinks.in##+js(set-constant, Intervaltime, 0, stay)
+gplinks.co,gplinks.in##+js(set-constant, detectAdBlock, noopFunc)
+gplinks.co,gplinks.in##+js(set-constant, detectWithFakeAdsDiv, noopFunc)
+gplinks.co,gplinks.in##+js(set-constant, fakeAd, {})
+gplinks.co,gplinks.in##+js(set-constant, googleAdUrl, "")
+gplinks.co,gplinks.in##+js(set-constant, gtag, noopFunc)
+gplinks.co,gplinks.in##+js(set-constant, isBrave, falseFunc)
+gplinks.co,gplinks.in##+js(set-constant, isIPPAdClick, true, stay)
+gplinks.co,gplinks.in##+js(set-constant, isOverGoogleAd, false, stay)
+gplinks.co,gplinks.in##+js(set-constant, removefakeAd, noopFunc)
+gplinks.co,gplinks.in##+js(set-constant, smart_link, "")
+gplinks.co,gplinks.in##+js(set-constant, timeleft, 0, stay)
+gplinks.co,gplinks.in##+js(set-constant, banners, [])
+!gplinks.co,gplinks.in##+js(set-constant, app_vars.force_disable_adblock, true, end)
+gplinks.co,gplinks.in##+js(set-constant, app_vars.force_disable_adblock, true, complete)
+gplinks.co,gplinks.in##+js(trusted-set, ustatus, success)
 gplinks.co,gplinks.in##a[href^="https://bit.ly/"]
+gplinks.co,gplinks.in##button[id="go-submit"]:style(display:block !important;)
+gplinks.co,gplinks.in##div[class^="adb-"]
+gplinks.co,gplinks.in##div[class^="adb-"]:remove()
+gplinks.co,gplinks.in##div[id="AdbModel"]
+gplinks.co,gplinks.in##div[id="AdbModel"]:remove()
+gplinks.co,gplinks.in##.adb-popup
+gplinks.co,gplinks.in##.adb-overlay
+gplinks.co,gplinks.in##.adb-message
+gplinks.co,gplinks.in##.adb-align-center
+gplinks.co,gplinks.in##.adb-animate
 gplinks.co,gplinks.in##.box-main p
-gplinks.co,gplinks.in##.smart-link-banner-ad-container
 gplinks.co,gplinks.in##.exclude-popad
-gplinks.co,gplinks.in##+js(aopr, clickCount)
+gplinks.co,gplinks.in##.smart-link-banner-ad-container
 !||gplinks.in^$3p
 !||gplinks.co^$3p
 ||gplinks.co/sw.js$script,1p
@@ -45554,6 +45567,30 @@ www.manualslib.com##+js(abort-on-property-read, adUnits)
 www.manualslib.com##+js(abort-on-property-write, adUnits)
 www.manualslib.com##+js(abort-on-property-read, AdUnit)
 www.manualslib.com##+js(abort-on-property-write, AdUnit)
+thinkpad-forum.de##div[class="u-bottomFixer js-bottomFixTarget"]:has(li[class*="notice--cookie"])
+thinkpad-forum.de##div[class="u-bottomFixer js-bottomFixTarget"]:has(li[class*="notice--cookie"]):remove()
+thinkpad-forum.de##div[class="firstbn"]
+thinkpad-forum.de##div[class="firstbn"]:remove()
+finance.yahoo.com##div[data-content="Advertisement"]
+finance.yahoo.com##div[data-content="Advertisement"]:remove()
+finance.yahoo.com##i[data-content="Advertisement"]
+finance.yahoo.com##i[data-content="Advertisement"]:remove()
+jobnewsj.com##div[id="AdbModel"]
+jobnewsj.com##div[id="AdbModel"]:remove()
+jobnewsj.com##div[id^="div-gpt-ad-"]
+jobnewsj.com##div[id^="div-gpt-ad-"]:remove()
+jobnewsj.com##+js(set-constant, window.googletag, {})
+jobnewsj.com##+js(set-constant, googletag.pubads, noopFunc)
+jobnewsj.com##+js(acs, googletag.pubads)
+jobnewsj.com##+js(set-constant, gtag, noopFunc)
+jobnewsj.com##+js(acs, gtag)
+!jobnewsj.com##+js(set-constant, GPostsArray, [])
+jobnewsj.com##button[id="VerifyBtn"]:style(display: block !important;)
+jobnewsj.com##div[id="myTimerDiv"]
+jobnewsj.com##div[id="myTimerDiv"]:remove()
+||teemooge.net^*
+||feeloshu.com^*
+||magicbid.digislots.in/api/smart-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
