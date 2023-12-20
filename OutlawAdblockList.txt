@@ -20,10 +20,10 @@
 !        example.com##+js(rpla, [selector], oldattr, newattr, newvalue)  ! newvalue is optional.
 !        example.com##+js(rna, [selector], oldattr, newattr)  ! don't need to first remove existing attribute with same name
 !
-!    2.  The rules which utilize the "replace-node-text.js" / "rpnt.js" scriptlet must also
+!    2.  The rules which utilize the "trusted-replace-node-text.js" / "trusted-rpnt.js" scriptlet must also
 !        be listed under the "My Filters" tab and not just in this list because that
 !        scriptlet has the "requiresTrust" set to true.
-!        Firefox does not currently support the replace-node-text scriptlet.
+!        Firefox does not currently support the trusted-replace-node-text scriptlet.
 !
 !    3.  The rules which utilize the "trusted-set" scriptlet must also be listed
 !        under the "My Filters" tab and not just in this list because that scriptlet
@@ -25040,7 +25040,7 @@ www.4shared.com##+js(set-constant, sendNativeAnalytics, noopFunc)
 www.4shared.com##+js(acs, sendNativeAnalytics)
 www.4shared.com##+js(set-constant, Config.detectAd, {})
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
-www.4shared.com##+js(rpnt.js, text, Report Abuse, Download This)
+www.4shared.com##+js(trusted-replace-node-text, text, Report Abuse, Download This)
 !www.4shared.com##+js(move-attr-prop, a[class*="reportAbuse"], input[id="baseDownloadLink"], href, value)
 !www.4shared.com##a[class*="reportAbuse"]:remove-class(light-gray)
 !www.4shared.com##a[class*="reportAbuse"]:remove-class(f11)
@@ -38389,7 +38389,7 @@ multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download|host|btn|btn-md
 !multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download|host|btn|btn-md|btn-default|btn-block|btn-3d, #welcome-message > i)
 !multiup.org,multiup.eu,multiup.io###welcome-message > i:remove-class(fa-star)
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
-multiup.org,multiup.eu,multiup.io##+js(rpnt.js, text, Welcome, Download)
+multiup.org,multiup.eu,multiup.io##+js(trusted-replace-node-text, text, Welcome, Download)
 ! hide and disable the original download button for 1fichier.com using those button
 ! attributes, so it won't be clicked.
 ! hidden attribute set to true is not enough to hide the button.
@@ -40853,16 +40853,17 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aeld, , loadScripts)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set, window.isAdblockActive, false)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(break;case $.)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, parseInt, break;case $.)
+! remove-node-text (rmnt), <node name>, <pattern to contain causing removal of node>
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(remove-node-text, script, break;case $.)
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, holymoly, '0')
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, holymoly, 0)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, ads, [""])
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, statusTxt, success)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, document.visibilityState, visible)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(rmnt, script, break;case $.)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(rpnt, script, true;, false;)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(rpnt, script, /none|hidden/, 0, condition, getComputedStyle)
-!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(rpnt, script, /s.src =|s.src/i)
-!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(rpnt, script, /script1.src|script2.src/, lol.noop)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-replace-node-text, script, true;, false;)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-replace-node-text, script, /none|hidden/, 0, condition, getComputedStyle)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-replace-node-text, script, /s.src =|s.src/i)
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-replace-node-text, script, /script1.src|script2.src/, lol.noop)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##+js(aeld, , { [native code] })
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##+js(nosiif, [native code])
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com###analytics
@@ -42592,7 +42593,7 @@ cutty.app##div[data-ad]
 cutty.app##div[data-ad]:remove()
 cutty.app##button[id="submit-button"]:remove-attr(disabled)
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
-cutty.app##+js(rpnt.js, text, Please Wait ..., Get Download Link)
+cutty.app##+js(trusted-replace-node-text, text, Please Wait ..., Get Download Link)
 cutty.app##div[class="container"]:has(button[class="ab"]:has(span[class="error-message"]:has-text(Please disable Adblock to continue)))
 cutty.app##div[class="container"]:has(button[class="ab"]:has(span[class="error-message"]:has-text(Please disable Adblock to continue))):remove()
 cutty.app##+js(acs, parseInt, document)
@@ -42646,7 +42647,8 @@ revadvert.com##+js(acs, navigator.brave)
 revadvert.com##iframe[id^="google_ads_iframe"]:style(height: 1px !important;)
 revadvert.com###footer-sticky-ad
 revadvert.com##^script:has-text(fakeAd)
-revadvert.com##+js(rmnt, script, fakeAd)
+! remove-node-text (rmnt), <node name>, <pattern to contain causing removal of node>
+revadvert.com##+js(remove-node-text, script, fakeAd)
 ||mynewsmedia.co/wp-content/uploads/*/AdBlock-Detected.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mynewsmedia.co/edu/Linkpage/ads_stats_controller.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mynewsmedia.co/tech/Linkpage/ads_stats_controller.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42681,7 +42683,8 @@ mynewsmedia.co,mynewspost.in##+js(no-fetch-if, googlesyndication)
 mynewsmedia.co,mynewspost.in##+js(acs, navigator.brave)
 mynewsmedia.co,mynewspost.in##+js(set-constant, isBrave, falseFunc)
 mynewsmedia.co,mynewspost.in##^script:has-text(fakeAd)
-mynewsmedia.co,mynewspost.in##+js(rmnt, script, fakeAd)
+! remove-node-text (rmnt), <node name>, <pattern to contain causing removal of node>
+mynewsmedia.co,mynewspost.in##+js(remove-node-text, script, fakeAd)
 mynewsmedia.co,mynewspost.in###footer-sticky-ad
 ||gplinks.in/img/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||gplinks.co/Auth/ads_stats_controller.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
