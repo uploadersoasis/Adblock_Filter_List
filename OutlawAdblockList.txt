@@ -34164,8 +34164,9 @@ anydebrid.com##ins[data-ad-client]
 !anydebrid.com##div[class="responsive-ad-wrapper"]
 anydebrid.com##div[class*="responsive-ad-"]
 !||anydebrid.com/assets/js/bunddlev35.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!anydebrid.com##+js(trusted-set, ablocker, '0')
-anydebrid.com##+js(trusted-set, ablocker, 0)
+anydebrid.com##+js(set-constant, ablocker, 0)
+! override the 0 with '0' since quotations may be required by the script
+anydebrid.com##+js(trusted-set, ablocker, '0')
 anydebrid.com##+js(set-constant, showDisable(), {}, stay)
 anydebrid.com##+js(set-constant, skipABCheck, true, stay)
 anydebrid.com##+js(set-constant, maxLoop, 0, stay)
@@ -40855,8 +40856,9 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(break;case $.)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, parseInt, break;case $.)
 ! remove-node-text (rmnt), <node name>, <pattern to contain causing removal of node>
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(remove-node-text, script, break;case $.)
-!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, holymoly, '0')
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, holymoly, 0)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, holymoly, 0)
+! set 0 in single quotes as script may require it
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, holymoly, '0')
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, ads, [""])
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, statusTxt, success)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-set, document.visibilityState, visible)
@@ -40903,10 +40905,10 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net,newsi
 ||tmp.dropgalaxy.com/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||tmp.dropgalaxy.in/js/countd.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||tmp.dropgalaxy.com/js/countd.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*$frame,redirect-rule=noopframe,domain=dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip|techthematter.xyz|dgdrive.xyz
-*$image,redirect-rule=32x32.png,domain=dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip|financemonk.net|techthematter.xyz|techssting.com|dgdrive.xyz
-*$script,redirect-rule=noopjs,domain=dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip|financemonk.net|techthematter.xyz|techssting.com|dgdrive.xyz
-*$xhr,redirect-rule=nooptext,domain=dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip|techthematter.xyz|dgdrive.xyz
+*$frame,redirect-rule=noopframe,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techthematter.xyz|dgdrive.xyz
+*$xhr,redirect-rule=nooptext,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techthematter.xyz|dgdrive.xyz
+*$image,redirect-rule=32x32.png,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|techthematter.xyz|techssting.com|dgdrive.xyz
+*$script,redirect-rule=noopjs,domain=dropgalaxy.com|dropgalaxy.in,dropgalaxy.vip|financemonk.net|techthematter.xyz|techssting.com|dgdrive.xyz
 ||dsh7ky7308k4b.cloudfront.net/publishers/dropgalaxycom.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||jscdn.greeter.me/dropgalaxy.onlinehead.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||assets.isavetube.com/images/dgpromo.jpg
@@ -45761,17 +45763,17 @@ www.youtube.com#@#ytd-popup-container.ytd-app.style-scope
 !@@||api.iperceptions.com/InviteTriggers$domain=dell.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! To enable redirects for links from Google searches
 @@||www.googleadservices.com/pagead/aclk?sa=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-@@.jpg$image,domain=dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz
-@@.png$image,domain=dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz
-@@||googlesyndication.com^$script,xhr,domain=dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz|techthematter.xyz
+@@.jpg$image,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz
+@@.png$image,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz
+@@||googlesyndication.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz|techthematter.xyz
 @@||dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip^$ghide
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip#@#div[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important;)
 @@||a2zapk.com^$script,xhr,3p,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 ! Are the following really necessary for dropgalaxy downloads to work?
-@@||adoto.net^$script,xhr,domain=dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip
+@@||adoto.net^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip
 @@||adservice.google.*/adsid/integrator.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||assets.vlitag.com/prebid/default/prebid-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|dgdrive.xyz|financemonk.net
-@@||challenges.cloudflare.com^$subdocument,domain=dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip
+@@||challenges.cloudflare.com^$subdocument,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip
 @@||cloudfront.net/publishers/dropgalaxycom.min.js$domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||cmp.uniconsent.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||contextual.media.net/*/fcmain.js$domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
@@ -45781,10 +45783,10 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip#@#div[id^="div-gpt-ad"]:style(width:
 @@||googletagservices.com/tag/js/gpt.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||gum.criteo.com/sid/json?origin=prebid&topUrl=$xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||jscdn.greeter.me/dropgalaxy.onlinehead.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
-@@||login.popmonetizer.com^$script,domain=dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip
+@@||login.popmonetizer.com^$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip
 @@||mp.4dex.io/prebid$xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||player.aplhb.adipolo.com/prebidlink/$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
-@@||popads.net/js/adblock.js$script,xhr,domain=dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip
+@@||popads.net/js/adblock.js$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip
 @@||protagcdn.com/check-bot/index.html$frame,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 !||protagcdn.com/s/dropgalaxy.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||protagcdn.com/s/dropgalaxy.com/site.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
