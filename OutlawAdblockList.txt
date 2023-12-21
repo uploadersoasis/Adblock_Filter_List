@@ -30210,11 +30210,19 @@ currently.att.yahoo.com##a[class="creative"]
 www.yahoo.com##button[class*="collapse-button"]
 www.yahoo.com##+js(remove-class, caas-readmore-collapse)
 !||web-oao.ssp.yahoo.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||web-oao.ssp.yahoo.com/admax/adEvent.do$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||oao-js-tag.onemobile.yahoo.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||oao-js-tag.onemobile.yahoo.com/admax/adEvent.do$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||us-east-1-web-oao.ssp.yahoo.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||prod-m-node-1113.ssp.yahoo.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||prod-m-node-1111.ssp.advertising.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||us-east-1-web-oao.ssp.yahoo.com/admax/adEvent.do$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||us-east-1.onemobile.yahoo.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||us-east-1.onemobile.yahoo.com/admax/adEvent.do$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||prod-m-node-1113.ssp.yahoo.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||prod-m-node-1113.ssp.yahoo.com/admax/adEvent.do$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||prod-m-node-1111.ssp.advertising.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||prod-m-node-1111.ssp.advertising.com/admax/adEvent.do$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||c2shb.pubgw.yahoo.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||c2shb.pubgw.yahoo.com/admax/bid/partners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 news.yahoo.com##div[class*="vp-adview-wrapper"]
 news.yahoo.com##+js(remove-class, enableInArticleAd)
 news.yahoo.com##+js(remove-class, vp-disable)
@@ -30707,7 +30715,6 @@ currently.att.yahoo.com##div[id*="_my-ads"]
 currently.att.yahoo.com##ins[class="adsbygoogle"]
 currently.att.yahoo.com##div[id="gpt-passback"]
 ||service.idsync.analytics.yahoo.com/sp/v0/pixels^*
-!||us-east-1-web-oao.ssp.yahoo.com/admax/adEvent.do$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||s.uicdn.com/pos-cdn/tracklib/3.7.0/tracklib.poly.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.uicdn.com/pos-cdn/tracklib/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.uicdn.com/mailint/9.1887.0/assets/adservice.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -36489,7 +36496,6 @@ filen.io##div[id="cookie-consent"]
 ||zoover.bannertrack.net^*
 !||udbaa.com/bnr.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||udbaa.com^*
-||c2shb.pubgw.yahoo.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ajxx98.online^*
 ||grefutiwhe.com^*
 !||data.adop.cc/collect.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
