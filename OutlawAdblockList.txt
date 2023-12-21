@@ -10155,7 +10155,6 @@ wixsite.com###WIX_ADS
 ||fast.philly.demdex.net^*
 !||fast.sears.demdex.net/dest4.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fast.sears.demdex.net^*
-||foxnews.demdex.net^*
 ||homedepot.demdex.net^*
 ||mtvn.demdex.net^*
 ||nbcu.demdex.net^*
@@ -10374,10 +10373,6 @@ uptobox.com##.yp6_desktop_classic.yp6_area.my6_widget_bg.my6_wrap
 ||owlmjcogunzx.com^*
 !||tag.bounceexchange.com/2000/i.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tag.bounceexchange.com^*
-||metrics.foxnews.com^*
-||smetrics.foxnews.com^*
-||foxnews.hb.omtrdc.net^*
-!||foxnews.hb.omtrdc.net/settings/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||comcluster.cxense.com/Repo/rep.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||comcluster.cxense.com^*
 !||scdn.cxense.com/cx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -24738,14 +24733,9 @@ www.wired.com##.paywall-modal--paywall.paywall-modal
 !||cdn.adrtx.net/adrtxtag.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.adrtx.net^*
 ||cdn.xplosion.de/adp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||profiles.tagger.opecloud.com/api/v1/adalliance/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||profiles.tagger.opecloud.com^*
 !||s.adadapter.netzathleten-media.de/API-1.0/NA-827979-1/naMediaAd.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.adadapter.netzathleten-media.de^*
 ||tag.md-nx.com^*
-!||tagger.opecloud.com/adalliance/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||tagger.opecloud.com/adalliance/v2/metrics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||tagger.opecloud.com^*
 ||conditionstray.com^*
 ||myuploadedpremium.de/vendor/js.cookie.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||perfunctorytalentcompute.com/pixel/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -27142,7 +27132,6 @@ s0ft4pc.com##+js(abort-on-property-read, atOptions)
 s0ft4pc.com##+js(abort-on-property-write, atOptions)
 s0ft4pc.com##^script:has-text(atOptions)
 s0ft4pc.com##^script:has-text(DMCA)
-||foxnews-d.openx.net^*
 codingshiksha.com##^script[data-ezscrex="false"]
 codingshiksha.com##style[id="admania-style-inline-css"]
 !codingshiksha.com##div[class^="admania-"]
@@ -37482,10 +37471,6 @@ parkingpage.namecheap.com##div[id="ads"]
 parkingpage.namecheap.com##^script[src*="://parkingcrew.net/jsparkcaf.php"]
 ||parkingcrew.net/jsparkcaf.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 securitytrails.com##+js(remove-class, text-preview, td, stay)
-!||foxnewsplayer-a.akamaihd.net/player/9.0.23/akamai/amp/mediaanalytics/Mediaanalytics.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/mediaanalytics/$script
-!||foxnewsplayer-a.akamaihd.net/player/9.0.23/akamai/amp/amazonbidder/Amazonbidder.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/amazonbidder/$script
 !||79423.analytics.edgekey.net/ma_library/javascript/javascript_malibrary.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||79423.analytics.edgekey.net/ma_library/javascript/$script
 ||pro-swapper.com^*
@@ -38058,6 +38043,18 @@ freestreams-live1.tv,fsl-streams.click##div[id="adz1"]:remove()
 ||xyz123.online^*
 ||mebfylxqbhjbx.xyz^*
 ||hyvmflsclweae.xyz^*
+||foxnews.demdex.net^*
+||metrics.foxnews.com^*
+||smetrics.foxnews.com^*
+||foxnews.hb.omtrdc.net^*
+!||foxnews.hb.omtrdc.net/settings/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||foxnews-d.openx.net^*
+! blocking div[class*="ad-container"] prevents videos from being played
+!foxnews.com##div[class*="ad-container"]
+!foxnews.com##div[class*="ad-container"]:remove()
+! blocking div[class*="amp-ad"] prevents videos from being played
+!foxnews.com##div[class*="amp-ad"]
+!foxnews.com##div[class*="amp-ad"]:remove()
 www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-container"])
 www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-container"]):remove()
 www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-h-"][class*="ad-w-"])
@@ -38067,10 +38064,6 @@ www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="mobile-mw-ad-adh
 www.foxnews.com##header[class="article-header"]:style(padding-top: 0px !important; margin-bottom: 0px !important;)
 www.foxnews.com##div[class="site-header"]:style(min-height: 150px !important; margin-bottom: 0px !important;)
 www.foxnews.com##div[class="article-meta article-meta-upper"]:style(padding-top: 0px !important;)
-!www.foxnews.com##div[class*="ad-container"]
-!www.foxnews.com##div[class*="ad-container"]:remove()
-www.foxnews.com##div[class*="ad-contain"]
-www.foxnews.com##div[class*="ad-contain"]:remove()
 www.foxnews.com##div[class*="ad-h-"][class*="ad-w-"]
 www.foxnews.com##div[class*="ad-h-"][class*="ad-w-"]:remove()
 www.foxnews.com##div[class*="adhesion-ad"]
@@ -38088,11 +38081,6 @@ www.foxnews.com##div[class^="vendor-unit"]
 www.foxnews.com##div[class^="vendor-unit"]:remove()
 www.foxnews.com##.block.ad-unit:nth-of-type(6)
 www.foxnews.com##.block.ad-unit:nth-of-type(6):remove()
-foxnews.com##div[class*="amp-ad"]
-foxnews.com##div[class*="amp-ad"]:remove()
-!www.foxnews.com##div[class*="ad-container"]
-foxnews.com##div[class*="ad-container"]
-foxnews.com##div[class*="ad-container"]:remove()
 foxnews.com##div[id="desk-interstitial-1x1"]
 foxnews.com##div[id="desk-interstitial-1x1"]:remove()
 foxnews.com##div[id="desktop_desk-peak-interstitial-1x1"]
@@ -38145,6 +38133,24 @@ foxnews.com##+js(aopr, window.location.href.indexOf('video-embed'))
 foxnews.com##+js(aopw, window.location.href.indexOf('video-embed'))
 foxnews.com##+js(set-constant, authenticated, true)
 foxnews.com##+js(trusted-set, data, {authenticated: true})
+!||foxnewsplayer-a.akamaihd.net/player/9.0.23/akamai/amp/mediaanalytics/Mediaanalytics.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/mediaanalytics/$script
+!||foxnewsplayer-a.akamaihd.net/player/9.0.23/akamai/amp/amazonbidder/Amazonbidder.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/amazonbidder/$script
+||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp//omniture/Omniture.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||profiles.tagger.opecloud.com/api/v1/adalliance/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||profiles.tagger.opecloud.com^*
+!||fox.tagger.opecloud.com^*
+!||foxus.tagger.opecloud.com/foxus/v2/uid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||foxus.tagger.opecloud.com^*
+!||foxus.dcapi.tagger.opecloud.com
+!||tagger.opecloud.com/adalliance/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||tagger.opecloud.com/adalliance/v2/metrics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||tagger.opecloud.com^*
+||sync.admanmedia.com/pbs.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||prod.pyxis.atp.fox/pyxis/submit$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||ad-tech-pyxis-2124195674.us-west-2.elb.amazonaws.com/pyxis/submit$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ad-tech-pyxis-2124195674.us-west-2.elb.amazonaws.com^*
 ||www.foxnews.com/feeds/p/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.foxnews.com/static/isa/app/lib/bing.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.foxnews.com/static/isa/app/lib/ccpa.opt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -38500,7 +38506,6 @@ lato.sx##^script[admn][admc][zid][did]
 lato.sx##script[admn][admc][zid][did]
 lato.sx##iframe[src^="https://switchcast2.com/embedhls.php"]:style(overflow:hidden;height:100vh !important;width:100vw !important;)
 ||switchcast2.com/blast.js$script
-||fox.tagger.opecloud.com^*
 ||statistic-data.com^*
 ||sacrip.com^*
 ||depigs.com^*
@@ -42560,8 +42565,6 @@ soft98.ir##+js(set-constant, isAds, noopFunc)
 ||soft98.ir/manifest.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! The following blocking rule is required or body section will disappear if ads are blocked.
 ||soft98.ir/templates/23-07-18-20/css/style.min.css?v=2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||foxus.tagger.opecloud.com/foxus/v2/uid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||foxus.tagger.opecloud.com^*
 ||htlbid.com/v3/*/htlbid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 public.tutflix.org##*[class*="fa-buysellads"]
 public.tutflix.org##*[class*="fa-buysellads"]:remove()
@@ -44304,9 +44307,6 @@ www.thessdreview.com##div[id^="ads300_250-widget-"]:remove()
 ! prevents links on background ads even if image is blocked
 www.thessdreview.com##a[class="background-cover"]
 www.thessdreview.com##a[class="background-cover"]:remove()
-!||ad-tech-pyxis-2124195674.us-west-2.elb.amazonaws.com/pyxis/submit$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||ad-tech-pyxis-2124195674.us-west-2.elb.amazonaws.com^*
-||prod.pyxis.atp.fox/pyxis/submit$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||v3.taplytics.com^*
 !||ats.rlcdn.com/ats.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ats.rlcdn.com^*
