@@ -17,7 +17,7 @@
 !        https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
 !        so add that URL to the "userResourcesLocation" value in the advanced settings
 !        so that those rules will work.
-!        example.com##+js(rpla, [selector], oldattr, newattr, newvalue)  ! newvalue is optional.
+!        example.com##+js(rpla, [selector], oldattr, newattr, newvalue)  ! newvalue is optional but is "" by default.
 !        example.com##+js(rna, [selector], oldattr, newattr)  ! don't need to first remove existing attribute with same name
 !
 !    2.  The rules which utilize the "trusted-replace-node-text.js" / "trusted-rpnt.js" scriptlet must also
@@ -27555,8 +27555,6 @@ www.linuxtechi.com##span[id^="div-gpt-ad-"]
 www.fossmint.com##div[class="addisclaimer"]
 techseize.com##div[id="cookie-notice"]
 mashtips.com##ins[class="adsbygoogle"]
-apkmody.io##div[id="above-the-fold-ad"]
-apkmody.io##ins[class="adsbygoogle"]
 exe.app##div[id="adb_detected"]
 exe.app##div[class="alert alert-danger"]
 exe.app##div[class="adq"]
@@ -27785,6 +27783,10 @@ androidrepublic.org##div[class="u-bottomFixer js-bottomFixTarget"]
 !www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id^="ads_container_"] !blocks download links
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, 0)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="adblockinfo"]
+www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="adblockinfo"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="bannerad"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in##div[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:403px;width:1536px;cursor:pointer"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(aeld, click, function)
 !www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(trusted-set, timeout, setTimeout\(tick\, 1\))
 !www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(trusted-set, timeout, setTimeout(tick, 1))
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, tick, 0)
@@ -31835,7 +31837,6 @@ lapelotita.com##+js(remove-class, disabled, a)
 lapelotita.com##button[id="go-submit"]:style(display:block !important;)
 ||www.nuctcflay.com^*
 ||nuctcflay.com^*
-apkmody.io##div[class="ad-unit"]
 ||www.scblqvoiypcoy.com^*
 ||scblqvoiypcoy.com^*
 ||www.hamhrpccxs.xyz^*
@@ -33609,11 +33610,8 @@ apkdone.com##+js(aopr, adsbygoogle)
 ||achunogo.com^*
 thinkkers.com##div[id="above-the-fold-ad"]
 thinkkers.com##ins[data-ad-client]
-||apkmody.io/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||thinnerconcha.com^*
 ||agenduret.com^*
-||apkmody.io/ads01.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||apkmody.io/ads02.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fjuryflfnbfr.com^*
 !||tzegilo.com/stattag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tzegilo.com^*
@@ -42050,7 +42048,9 @@ www.up-4ever.net,www.up-4ever.org##+js(nostif, /function\(\)/)
 www.up-4ever.net,www.up-4ever.org##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
 www.up-4ever.net,www.up-4ever.org##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
-www.up-4ever.net,www.up-4ever.org##+js(href-sanitizer, a[href="javascript:void(0)"][id="downLoadLinkButton"], [data-target])
+! href-sanitizer no longer works for this
+!www.up-4ever.net,www.up-4ever.org##+js(href-sanitizer, a[href="javascript:void(0)"][id="downLoadLinkButton"], [data-target])
+www.up-4ever.net,www.up-4ever.org##+js(set-attr, a[href="javascript:void(0)"][id="downLoadLinkButton"], href, [data-target])
 www.up-4ever.net,www.up-4ever.org##+js(aeld, click, window.open)
 !www.up-4ever.net,www.up-4ever.org##+js(aeld, click, onclick)
 www.up-4ever.net##span[class="firstOne"]:has(i[class="fa fa-cog fa-spin"])
@@ -44966,17 +44966,6 @@ androidtop.net##+js(abort-on-property-write, adsbygoogle)
 androidtop.net##+js(trusted-set, timeleft, -1)
 androidtop.net##div[class="counterhide"]:style(opacity: 0 !important; visibility: hidden !important; height: 0px !important;)
 androidtop.net##div[class="download-result"]:style(opacity: 1 !important; visibility: visible !important;)
-||etpweb.apkmody.io/event/report/web?data=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-apkmody.io##+js(set-constant, gtag, noopFunc)
-apkmody.io##+js(acs, gtag)
-apkmody.io##+js(set-constant, window.googletag, {})
-apkmody.io##+js(trusted-set, window.googletag, {cmd: []})
-apkmody.io##+js(acs, window.googletag)
-!apkmody.io##+js(set-constant, googletag.pubads, noopFunc, end)
-apkmody.io##+js(set-constant, googletag.pubads, noopFunc, complete)
-apkmody.io##+js(acs, googletag.pubads)
-apkmody.io##a[id="download-button"][href$="://worker.happymod.cool/releases/Apkmody-latest.apk"]
-apkmody.io##a[id="download-button"][href$="://worker.happymod.cool/releases/Apkmody-latest.apk"]:remove()
 modcombo.com##div[id="cookie-notice-bar"]
 modcombo.com##div[id="cookie-notice-bar"]:remove()
 rog.asus.com##div[id^="cookie-policy-"]
@@ -45629,6 +45618,52 @@ mspoweruser.com##div[class*="ad-reporter-"]
 mspoweruser.com##div[class*="ad-reporter-"]:remove()
 mspoweruser.com##div[data-adtype]
 mspoweruser.com##div[data-adtype]:remove()
+||ganda-ljo.com^*
+||revive.stats.rip^*
+||rmaticalacm.info^*
+||bleandworldw.org^*
+||d3ff60r8himt67.cloudfront.net^*
+||eorganizatio.com^*
+||saeculadecoic.guru^*
+||bissonprevoid.website^*
+||www.toprevenuegate.com^*
+||daejyre.com^*
+!||ou.jezailmasking.com^*
+||jezailmasking.com^*
+||px.greenfox.ink/pixel.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||apkmody.io/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||apkmody.io/ads01.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||apkmody.io/ads02.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||etpweb.apkmody.io/event/report/web?data=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+apkmody.io##div[class="ad-unit"]
+apkmody.io##div[class="ad-unit"]:remove()
+apkmody.io##div[id="above-the-fold-ad"]
+apkmody.io##div[id="above-the-fold-ad"]:remove()
+apkmody.io##div[class="download-ads"]
+apkmody.io##div[class="download-ads"]:remove()
+apkmody.io##ins[class="adsbygoogle"]
+apkmody.io##ins[class="adsbygoogle"]:remove()
+apkmody.io##a[id="download-button"][href$="://worker.happymod.cool/releases/Apkmody-latest.apk"]
+apkmody.io##a[id="download-button"][href$="://worker.happymod.cool/releases/Apkmody-latest.apk"]:remove()
+apkmody.io##+js(set-constant, gtag, noopFunc)
+apkmody.io##+js(acs, gtag)
+apkmody.io##+js(set-constant, window.googletag, {})
+apkmody.io##+js(trusted-set, window.googletag, {cmd: []})
+apkmody.io##+js(acs, window.googletag)
+!apkmody.io##+js(set-constant, googletag.pubads, noopFunc, end)
+apkmody.io##+js(set-constant, googletag.pubads, noopFunc, complete)
+apkmody.io##+js(acs, googletag.pubads)
+apkmody.io##+js(set-constant, downLoadTrack, noopFunc)
+apkmody.io##+js(set-constant, etpTrack, noopFunc)
+apkmody.io##+js(acs, downLoadTrack, etpTrack)
+apkmody.io##+js(set-constant, downloadAds, noopFunc)
+modded-1.com##ins[data-ad-client]
+modded-1.com##ins[data-ad-client]:remove()
+modded-1.com##div[class="ad-unit"]
+modded-1.com##div[class="ad-unit"]:remove()
+modded-1.com##+js(set-constant, adsbygoogle, [])
+modded-1.com##+js(aopw, adsbygoogle)
+modded-1.com##+js(aopr, adsbygoogle)
 
 !Whitelisted
 ! for Google Drive
