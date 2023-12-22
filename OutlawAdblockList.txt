@@ -38081,20 +38081,6 @@ www.foxnews.com##div[class^="vendor-unit"]
 www.foxnews.com##div[class^="vendor-unit"]:remove()
 www.foxnews.com##.block.ad-unit:nth-of-type(6)
 www.foxnews.com##.block.ad-unit:nth-of-type(6):remove()
-foxnews.com##div[id="desk-interstitial-1x1"]
-foxnews.com##div[id="desk-interstitial-1x1"]:remove()
-foxnews.com##div[id="desktop_desk-peak-interstitial-1x1"]
-foxnews.com##div[id="desktop_desk-peak-interstitial-1x1"]:remove()
-!www.foxnews.com##div[data-banner-type="ccpa"]
-!www.foxnews.com##div[data-banner-type="ccpa"]:remove()
-!video.foxnews.com##div[data-banner-type="ccpa"]
-!video.foxnews.com##div[data-banner-type="ccpa"]:remove()
-foxnews.com##div[data-banner-type="ccpa"]
-foxnews.com##div[data-banner-type="ccpa"]:remove()
-insider.foxnews.com##div[class="sidebar-ad"]
-insider.foxnews.com##div[class="sidebar-ad"]:remove()
-insider.foxnews.com##div[id="ad-content"]
-insider.foxnews.com##div[id="ad-content"]:remove()
 www.foxnews.com###paid-advertising-top-tech-deals
 www.foxnews.com###paid-advertising-top-tech-deals:remove()
 www.foxnews.com##div[class*="ad-enabled-container"]
@@ -38119,6 +38105,21 @@ www.foxnews.com##div[class^="vendor-unit openweb"]:has(div[data-openweb-ad])
 www.foxnews.com##div[class^="vendor-unit openweb"]:has(div[data-openweb-ad]):remove()
 www.foxnews.com##div[data-openweb-ad]
 www.foxnews.com##div[data-openweb-ad]:remove()
+insider.foxnews.com##div[class="sidebar-ad"]
+insider.foxnews.com##div[class="sidebar-ad"]:remove()
+insider.foxnews.com##div[id="ad-content"]
+insider.foxnews.com##div[id="ad-content"]:remove()
+foxnews.com##div[id="desk-interstitial-1x1"]
+foxnews.com##div[id="desk-interstitial-1x1"]:remove()
+foxnews.com##div[id="desktop_desk-peak-interstitial-1x1"]
+foxnews.com##div[id="desktop_desk-peak-interstitial-1x1"]:remove()
+!www.foxnews.com##div[data-banner-type="ccpa"]
+!www.foxnews.com##div[data-banner-type="ccpa"]:remove()
+!video.foxnews.com##div[data-banner-type="ccpa"]
+!video.foxnews.com##div[data-banner-type="ccpa"]:remove()
+foxnews.com##div[data-banner-type="ccpa"]
+foxnews.com##div[data-banner-type="ccpa"]:remove()
+foxnews.com##div[class*="gated-overlay"]:remove-attr(class)
 www.foxnews.com##+js(set-constant, window._cbq, [])
 www.foxnews.com##+js(aopr, window._cbq)
 www.foxnews.com##+js(aopw, window._cbq)
