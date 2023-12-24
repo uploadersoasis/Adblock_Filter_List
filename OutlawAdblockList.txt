@@ -25745,7 +25745,6 @@ www.iovation.com##div[aria-label="cookieconsent"]
 ||www.gog.com/productcard/users/activity/log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.pointdev.com##div[id="RGPD"]
 www.pointdev.com##div[id="download"]
-www.wps.com##div[class="gdpr"]
 testhmd.com##div[class="argpd-footer"]
 testhmd.com##div[class^="argpd-cookies"]
 !testhmd.com##div[class="argpd-cookies-bar"]
@@ -31222,7 +31221,6 @@ abbaspc.net##button[class="getox"]
 screamingbee.com##div[id="cookieConsent"]
 gsmatoztool.com##a[onclick*="/rigrighostfancygoz.xyz"]
 simcast.com##div[class="gdpr-block"]
-www.wps.com##div[class="gdpr-wrapper"]
 www.hitc.com##amp-analytics
 www.hitc.com##amp-embed
 www.hitc.com##div[data-ad-type]
@@ -45665,6 +45663,10 @@ modded-1.com##div[class="ad-unit"]:remove()
 modded-1.com##+js(set-constant, adsbygoogle, [])
 modded-1.com##+js(aopw, adsbygoogle)
 modded-1.com##+js(aopr, adsbygoogle)
+www.wps.com##div[class^="gdpr"]
+www.wps.com##div[class^="gdpr"]:remove()
+!||abtest-api-v2.wps.com/api/abtest-core/abtest/2/parameters$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||abtest-api-v2.wps.com^*
 
 !Whitelisted
 ! for Google Drive
@@ -45805,6 +45807,7 @@ www.youtube.com#@#ytd-popup-container.ytd-app.style-scope
 !@@||api.iperceptions.com/InviteTriggers$domain=dell.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! To enable redirects for links from Google searches
 @@||www.googleadservices.com/pagead/aclk?sa=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+@@||www.googletagmanager.com/gtag/js$domain=wps.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 @@.jpg$image,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz
 @@.png$image,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz
 @@||googlesyndication.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz|techthematter.xyz
