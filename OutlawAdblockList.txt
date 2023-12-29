@@ -42298,9 +42298,6 @@ woowebtools.com##ins[data-ad-client]
 woowebtools.com##ins[data-ad-client]:remove()
 woowebtools.com##+js(set-constant, gtag, noopFunc)
 woowebtools.com##+js(acs, gtag)
-! prevents page from loading
-!woowebtools.com##+js(acs, decodeURIComponent, eval)
-!woowebtools.com##+js(acs, parseInt, arguments)
 woowebtools.com##+js(set-constant, adsbygoogle, [])
 woowebtools.com##+js(abort-on-property-read, adsbygoogle)
 woowebtools.com##+js(abort-on-property-write, adsbygoogle)
@@ -42308,15 +42305,18 @@ woowebtools.com##a[class="krj4aaj4wg"]
 woowebtools.com##a[class="krj4aaj4wg"]:remove()
 woowebtools.com##div:has(svg):has(h3:has-text(Disable Adblock & Tracking Protection!))
 woowebtools.com##div:has(svg):has(h3:has-text(Disable Adblock & Tracking Protection!)):remove()
-woowebtools.com##script[id="hitmag-scripts-js"]:remove()
-! the location of the following xpaths may change especially if remove() is used on any elements above it
-woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/div/script):remove()
-woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/script[2]):remove()
-woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/script[1]):remove()
+!woowebtools.com##script[id="hitmag-scripts-js"]:remove()
 ! eliminates 3 second countdown - does not work
 !woowebtools.com##+js(nano-stb, /.?/, 1000, 0.10)
 !woowebtools.com##+js(nano-stb, /^/, *, 0.01)
 woowebtools.com##+js(nano-stb, , *, 0.01)
+! the location of the following xpaths may change especially if remove() is used on any elements above it
+!woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/div/script):remove()
+!woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/script[2]):remove()
+!woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/script[1]):remove()
+! prevents page from loading
+!woowebtools.com##+js(acs, decodeURIComponent, eval)
+!woowebtools.com##+js(acs, parseInt, arguments)
 ! prevents captcha from completing
 !woowebtools.com##:xpath(/html/body/div[2])
 !woowebtools.com##:xpath(/html/body/div[2]):remove()
@@ -45708,7 +45708,9 @@ wixsite.com###WIX_ADS:style(visibility: hidden !important;)
 ||proftrafficcounter.com^*
 !||discordpeckplaying.com/pixel/purst?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||discordpeckplaying.com^*
-||churnedflames.top/^*
+||churnedflames.top^*
+!||sync-dmp.mobtrakk.com/match/google?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||sync-dmp.mobtrakk.com^*
 
 !Whitelisted
 ! for Google Drive
