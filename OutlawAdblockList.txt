@@ -1890,7 +1890,6 @@ www.nydailynews.com##.yahoo_ads
 ||stattracker.meiamso.me^*
 ||u20295832.letitbit.net/images/download/ins_728_90_1.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||antibotsystem.com/js/mediaplayer.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-wix.com##.adFootBox
 ||www.managemydownload.com^*
 ||filestoorageonline.com^*
 !||t.sellpoints.com/h.gif
@@ -10109,8 +10108,6 @@ uptobox.com###fpContentWidgetFooterWrapper
 !||www.sexystat.com/decor/entrez.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||p.cpx.to/p/11667/px.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||p.cpx.to^*
-genericname112.wixsite.com###WIX_ADS
-wixsite.com###WIX_ADS
 ||10nr6frq.cricket/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||my.rtmark.net/img.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||my.rtmark.net^*
@@ -13672,7 +13669,6 @@ tumblr.com###nu-optica-sticky-darla-ad-1
 ||88.214.193.98/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pixel.theagency.com^*
 ||p.rx22dc.com^*
-!theneonchameleon1.wixsite.com###WIX_ADS
 ||bbp-vnh.com^*
 ||www.bbp-vnh.com^*
 ||qfrhhvbfofbt.com^*
@@ -26501,9 +26497,20 @@ wiki.dd-wrt.com##div[class="cookieinfo"]
 www.cox.com##^script[id="cookie-notice-mark-up"]
 www.cox.com##div[class="cookie-notice-container"]
 www.cox.com##+js(set-constant, shouldShowCookieNotice, false)
-doodrive.com##^script:has-text(\x20second)
-doodrive.com##^script:has-text(\x20second):remove()
+doodrive.com##:xpath(//script[contains(text(), '\x20second')])
+doodrive.com##:xpath(//script[contains(text(), '\x20second')]):remove()
+doodrive.com##:xpath(//script[contains(text(), 'rn\x20this\x22')])
+doodrive.com##:xpath(//script[contains(text(), 'rn\x20this\x22')]):remove()
+doodrive.com##:xpath(/html/body/div[5]/div/div/script[3])
+doodrive.com##:xpath(/html/body/div[5]/div/div/script[3]):remove()
+doodrive.com##:xpath(/html/body/div[6]/div/div[1]/div[1]/script[3])
+doodrive.com##:xpath(/html/body/div[6]/div/div[1]/div[1]/script[3]):remove()
+doodrive.com##div[class="uk-grid uk-grid-medium uk-child-width-expand uk-flex-middle"]:has(a[title="NordVPN"]):remove()
+doodrive.com##div[class="uk-grid uk-grid-medium uk-child-width-expand uk-flex-middle"]:has(button[class^="uk-button uk-button-secondary"]:has-text(Download NordVPN!)):remove()
 doodrive.com##div[class="uk-card uk-card-default uk-card-body uk-text-center"]
+doodrive.com##div[class="uk-card uk-card-default uk-card-body uk-text-center"]:remove()
+doodrive.com##div[class="uk-card uk-card-default uk-card-small"]:has(h4:has-text(Are you protected with a VPN?))
+doodrive.com##div[class="uk-card uk-card-default uk-card-small"]:has(h4:has-text(Are you protected with a VPN?)):remove()
 doodrive.com##ins[class="adsbygoogle"]
 doodrive.com##ins[class="adsbygoogle"]:remove()
 doodrive.com##+js(abort-on-property-write, _stq)
@@ -26513,6 +26520,7 @@ doodrive.com##+js(abort-on-property-write, adsbygoogle)
 doodrive.com##+js(abort-on-property-read, adsbygoogle)
 doodrive.com##+js(set-constant, gtag, noopFunc)
 doodrive.com##+js(acs, atob, encodeURIComponent)
+doodrive.com##+js(acs, rn\x20this\x22)
 doodrive.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 doodrive.com##div:style(visibility: visible !important;)
 doodrive.com##.uk-margin-auto > div:nth-child(4):remove-attr(hidden) 
@@ -26522,8 +26530,6 @@ doodrive.com##a[class="hqoni2rvyn"]
 doodrive.com##a[class="hqoni2rvyn"]:remove()
 doodrive.com##iframe[data-aa]
 doodrive.com##iframe[data-aa]:remove()
-doodrive.com##:xpath(/html/body/div[5]/div/div/script[3])
-doodrive.com##:xpath(/html/body/div[5]/div/div/script[3]):remove()
 !doodrive.com##div:hidden(false)
 !doodrive.com###human-verification
 !doodrive.com##div[id="human-verification"]
@@ -41424,13 +41430,6 @@ www.hardwin82.com##div[id="BACKGROUND_GROUP"]
 www.hardwin82.com##div[id="BACKGROUND_GROUP"]:remove()
 www.hardwin82.com##a[data-testid="linkElement"]:has(div[data-testid="bannerLogo"])
 www.hardwin82.com##a[data-testid="linkElement"]:has(div[data-testid="bannerLogo"]):remove()
-! The following breaks some websites hosted by WIX by making all of the content invisible.
-!*##div[id="BACKGROUND_GROUP"]
-!*##div[id="BACKGROUND_GROUP"]:remove()
-*##div[id="WIX_ADS"]
-*##div[id="WIX_ADS"]:remove()
-*##a[data-testid="linkElement"]:has(div[data-testid="bannerLogo"])
-*##a[data-testid="linkElement"]:has(div[data-testid="bannerLogo"]):remove()
 www.shellhacks.com##a[href^="https://u24.gov.ua/"][class="stop-war"]
 www.shellhacks.com##a[href^="https://u24.gov.ua/"][class="stop-war"]:remove()
 www.shellhacks.com##ins[data-ad-client]
@@ -41784,7 +41783,7 @@ filesusr.co##div[class^="didna-ad-slot"]
 filesusr.co##div[class^="didna-ad-slot"]:remove()
 !||www.thebrighterside.news/_api/wix-code-telemetry-registry-public/v1/sites/c406cecd-9f06-4d1a-940b-654db489bc1a/telemetry/runtime-configuration$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.thebrighterside.news/_api/wix-code-telemetry-registry-public/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||sentry-next.wixpress.com^*
+||*@sentry-next.wixpress.com^*
 ||www.adplugg.com/serve/js/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.parastorage.com/services/cookie-consent-banner-for-uou/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||didna-d.openx.net^*
@@ -41798,8 +41797,6 @@ filesusr.co##div[class^="didna-ad-slot"]:remove()
 ! The following will erase the contents of some WIX hosted websites.
 !||static.parastorage.com/services/wix-thunderbolt/dist/feature-telemetry-wix-code-sdk.a1cb8825.chunk.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static.parastorage.com/services/wix-thunderbolt/dist/feature-telemetry-wix-code-sdk.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||frog.wix.com/bpm?_msid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||frog.wix.com/bpm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bcdn.grmtas.com/pub/ga_pub_15168.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||storage.googleapis.com/didna_hb/webifacts_llc/webifactsthebrighterside/didna_config.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||storage.googleapis.com/didna_hb/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42393,67 +42390,71 @@ thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:rem
 ||clicknupload.*/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||clickndownload.org/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||clickndownload.org/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||clickndownload.space/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||clickndownload.space/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! block all third-party scripts except those from any clicknupload domain
-||clicknupload.*^$3p,script,domain=~clicknupload.*|~clickndownload.org
-||clickndownload.org*^$3p,script,domain=~clicknupload.*|~clickndownload.org
+||clicknupload.*^$3p,script,domain=~clicknupload.*|~clickndownload.org|~clickndownload.space
+||clickndownload.org*^$3p,script,domain=~clicknupload.*|~clickndownload.org|~clickndownload.space
+||clickndownload.space*^$3p,script,domain=~clicknupload.*|~clickndownload.org|~clickndownload.space
 ! the location of the following xpaths may change especially if remove() is used on any elements above it
-clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
-clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2])
-clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1]):remove()
-clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2]):remove()
-!clicknupload.*,clickndownload.org##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
-clicknupload.*,clickndownload.org##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
-clicknupload.*,clickndownload.org##^script:has-text(/document\.createElement|atob\(/i)
-clicknupload.*,clickndownload.org##^script:has-text(/document\.createElement|atob\(/i):remove()
-clicknupload.*,clickndownload.org##^script:has-text(/eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==/)
-clicknupload.*,clickndownload.org##^script:has-text(/eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==/):remove()
-clicknupload.*,clickndownload.org##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
-clicknupload.*,clickndownload.org##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-clicknupload.*,clickndownload.org##+js(abort-current-script, zfgloadedpopup)
-clicknupload.*,clickndownload.org##+js(abort-on-property-read, zfgloadedpopup)
-clicknupload.*,clickndownload.org##+js(abort-current-script, apu.php)
-clicknupload.*,clickndownload.org##+js(abort-on-property-read, window['__CF$cv$params'])
-clicknupload.*,clickndownload.org##+js(abort-on-property-write, window['__CF$cv$params'])
-clicknupload.*,clickndownload.org##+js(aopr, AaDetector)
-clicknupload.*,clickndownload.org##+js(acs, Math, zfgloaded)
-clicknupload.*,clickndownload.org##+js(abort-on-property-write, oaxDyt)
-clicknupload.*,clickndownload.org##+js(abort-on-property-read, oaxDyt)
-clicknupload.*,clickndownload.org##+js(set-constant, timeout, 0)
-clicknupload.*,clickndownload.org##+js(set-constant, tick, 0)
-clicknupload.*,clickndownload.org##+js(aopr, document.onmousedown)
-clicknupload.*,clickndownload.org##+js(aopw, document.onmousedown)
-clicknupload.*,clickndownload.org##+js(aeld, /^(?:mousedown)$/)
-clicknupload.*,clickndownload.org##+js(set-constant, gtag, noopFunc)
-clicknupload.*,clickndownload.org##+js(acs, gtag)
-clicknupload.*,clickndownload.org##input[id="adblock_detected"]:remove()
-clicknupload.*,clickndownload.org##div[class="adsbox"]
-clicknupload.*,clickndownload.org##div[class="adsbox"]:remove()
-clicknupload.*,clickndownload.org##div[id^="contentad"]
-clicknupload.*,clickndownload.org##div[id^="contentad"]:remove()
-!clicknupload.*,clickndownload.org##div[id="rn_ad_native_uak91"]
-clicknupload.*,clickndownload.org##div[id^="rn_ad_native_"]
-clicknupload.*,clickndownload.org##div[id^="rn_ad_native_"]:remove()
-clicknupload.*,clickndownload.org###adblock_detected
-clicknupload.*,clickndownload.org###adblock_detected:remove()
-! clicknupload.*,clickndownload.org##iframe blocks the captcha needed to download
-!clicknupload.*,clickndownload.org##iframe
-!clicknupload.*,clickndownload.org##iframe:remove()
-!clicknupload.*,clickndownload.org##body > script
-clicknupload.*,clickndownload.org##*[class*="captcha_code"]:remove-class(captcha_code)
-clicknupload.*,clickndownload.org##style[id^="__web-inspector-hide"]
-clicknupload.*,clickndownload.org##style[id^="__web-inspector-hide"]:remove()
-clicknupload.*,clickndownload.org##div[class^="__web-inspector-hide"]
-clicknupload.*,clickndownload.org##div[class^="__web-inspector-hide"]:remove()
+clicknupload.*,clickndownload.org,clickndownload.space##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1])
+clicknupload.*,clickndownload.org,clickndownload.space##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2])
+clicknupload.*,clickndownload.org,clickndownload.space##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1]):remove()
+clicknupload.*,clickndownload.org,clickndownload.space##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2]):remove()
+!clicknupload.*,clickndownload.org,clickndownload.space##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
+clicknupload.*,clickndownload.org,clickndownload.space##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
+clicknupload.*,clickndownload.org,clickndownload.space##^script:has-text(/document\.createElement|atob\(/i)
+clicknupload.*,clickndownload.org,clickndownload.space##^script:has-text(/document\.createElement|atob\(/i):remove()
+clicknupload.*,clickndownload.org,clickndownload.space##^script:has-text(/eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==/)
+clicknupload.*,clickndownload.org,clickndownload.space##^script:has-text(/eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==/):remove()
+clicknupload.*,clickndownload.org,clickndownload.space##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
+clicknupload.*,clickndownload.org,clickndownload.space##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIjcm5fYWRfbmF0aXZlX2o1bXJxfCNybl9hZF9uYXRpdmVfemNpemUifQ==)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-current-script, zfgloadedpopup)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-on-property-read, zfgloadedpopup)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-current-script, apu.php)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-on-property-read, window['__CF$cv$params'])
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-on-property-write, window['__CF$cv$params'])
+clicknupload.*,clickndownload.org,clickndownload.space##+js(aopr, AaDetector)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(acs, Math, zfgloaded)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-on-property-write, oaxDyt)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-on-property-read, oaxDyt)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(set-constant, timeout, 0)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(set-constant, tick, 0)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(aopr, document.onmousedown)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(aopw, document.onmousedown)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(aeld, /^(?:mousedown)$/)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(set-constant, gtag, noopFunc)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(acs, gtag)
+clicknupload.*,clickndownload.org,clickndownload.space##input[id="adblock_detected"]:remove()
+clicknupload.*,clickndownload.org,clickndownload.space##div[class="adsbox"]
+clicknupload.*,clickndownload.org,clickndownload.space##div[class="adsbox"]:remove()
+clicknupload.*,clickndownload.org,clickndownload.space##div[id^="contentad"]
+clicknupload.*,clickndownload.org,clickndownload.space##div[id^="contentad"]:remove()
+!clicknupload.*,clickndownload.org,clickndownload.space##div[id="rn_ad_native_uak91"]
+clicknupload.*,clickndownload.org,clickndownload.space##div[id^="rn_ad_native_"]
+clicknupload.*,clickndownload.org,clickndownload.space##div[id^="rn_ad_native_"]:remove()
+clicknupload.*,clickndownload.org,clickndownload.space###adblock_detected
+clicknupload.*,clickndownload.org,clickndownload.space###adblock_detected:remove()
+! clicknupload.*,clickndownload.org,clickndownload.space##iframe blocks the captcha needed to download
+!clicknupload.*,clickndownload.org,clickndownload.space##iframe
+!clicknupload.*,clickndownload.org,clickndownload.space##iframe:remove()
+!clicknupload.*,clickndownload.org,clickndownload.space##body > script
+clicknupload.*,clickndownload.org,clickndownload.space##*[class*="captcha_code"]:remove-class(captcha_code)
+clicknupload.*,clickndownload.org,clickndownload.space##style[id^="__web-inspector-hide"]
+clicknupload.*,clickndownload.org,clickndownload.space##style[id^="__web-inspector-hide"]:remove()
+clicknupload.*,clickndownload.org,clickndownload.space##div[class^="__web-inspector-hide"]
+clicknupload.*,clickndownload.org,clickndownload.space##div[class^="__web-inspector-hide"]:remove()
 ||undefined^$script,domain=clicknupload.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! existing href must NOT be removed to set href value to onclick's value
-!clicknupload.*,clickndownload.org##button[id="downloadbtn"]:remove-attr(href)
+!clicknupload.*,clickndownload.org,clickndownload.space##button[id="downloadbtn"]:remove-attr(href)
 ! sets href value to onclick's value
-clicknupload.*,clickndownload.org##+js(set-attr, 'button[id="downloadbtn"]', href, '[onclick]')
+clicknupload.*,clickndownload.org,clickndownload.space##+js(set-attr, 'button[id="downloadbtn"]', href, '[onclick]')
 ! Don't remove onclick unless href was set properly above;
 ! Don't remove onclick because it will be removed before href is set above, so there will be no value to use.
-!clicknupload.*,clickndownload.org##button[id="downloadbtn"]:remove-attr(onclick)
+!clicknupload.*,clickndownload.org,clickndownload.space##button[id="downloadbtn"]:remove-attr(onclick)
 ! existing href must NOT be removed to rename onclick to href; it replaces it anyway.
-!clicknupload.*,clickndownload.org##+js(rename-attr, button[id="downloadbtn"], onclick, href)
+!clicknupload.*,clickndownload.org,clickndownload.space##+js(rename-attr, button[id="downloadbtn"], onclick, href)
 ||makesembezzlementconsume.com^*
 ||seedlingneurotic.com^*
 ||forms.hsforms.com/embed/v3/counters.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42500,7 +42501,6 @@ yougame.biz##div[class="sponsor-banner-ss"]:remove()
 ||umbrellastep.site^*
 ||rubricagalah.guru^*
 ||sorbentfalsum.com^*
-clicknupload.*,clickndownload.org##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIjcm5fYWRfbmF0aXZlX2o1bXJxfCNybl9hZF9uYXRpdmVfemNpemUifQ==)
 ||pixeldrain.com/api/misc/rate_limits$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||entreatyfungusgaily.com^*
 ||connect.cabbageknee.site^*
@@ -45667,6 +45667,48 @@ www.wps.com##div[class^="gdpr"]
 www.wps.com##div[class^="gdpr"]:remove()
 !||abtest-api-v2.wps.com/api/abtest-core/abtest/2/parameters$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||abtest-api-v2.wps.com^*
+||devar-akg.com^*
+!||cmp.inmobi.com/choice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cmp.inmobi.com^*
+www.myabandonware.com##div[data-f1227-ad]
+www.myabandonware.com##div[data-f1227-ad]:remove()
+wix.com##.adFootBox
+wix.com##.adFootBox:remove()
+||frog.wix.com/pulse$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||frog.wix.com/bpm?_msid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||frog.wix.com/bpm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+wixsite.com##+js(set-constant, window.onBeforeSentryBreadcrumb, noopFunc)
+wixsite.com##+js(aopw, window.onBeforeSentryBreadcrumb)
+wixsite.com##+js(aopr, window.onBeforeSentryBreadcrumb)
+*##a[data-testid="linkElement"]:has(div[data-testid="bannerLogo"])
+*##a[data-testid="linkElement"]:has(div[data-testid="bannerLogo"]):remove()
+wixsite.com##+js(set-constant, wixAds, {})
+wixsite.com##+js(aopw, wixAds)
+wixsite.com##+js(aopr, wixAds)
+wixsite.com##+js(set-constant, WIX_ADS, "")
+wixsite.com##+js(acs, WIX_ADS)
+! Removing id's WIX_ADS and BACKGROUND_GROUP breaks some websites hosted by WIX by making all of the content invisible.
+!*##div[id="WIX_ADS"]
+!*##div[id="WIX_ADS"]:remove()
+!wixsite.com###WIX_ADS
+!wixsite.com###WIX_ADS:remove()
+!genericname112.wixsite.com###WIX_ADS
+!theneonchameleon1.wixsite.com###WIX_ADS
+!*##div[id="BACKGROUND_GROUP"]
+!*##div[id="BACKGROUND_GROUP"]:remove()
+wixsite.com###WIX_ADS:style(visibility: hidden !important;)
+||brobadsmart.com^*
+||hoppingtooart.digital^*
+||greekroo.xyz^*
+||williednb.com^*
+||ibvoycvoo.xyz^*
+||rancidexile.com^*
+||madeirauncertaintendency.com^*
+!||proftrafficcounter.com/stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||proftrafficcounter.com^*
+!||discordpeckplaying.com/pixel/purst?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||discordpeckplaying.com^*
+||churnedflames.top/^*
 
 !Whitelisted
 ! for Google Drive
