@@ -42294,6 +42294,10 @@ gofile.io##:xpath(/html/body/div[4]/div)
 gofile.io##:xpath(/html/body/div[4]/div):remove()
 gofile.io##div[class="modal-backdrop show"]
 gofile.io##div[class="modal-backdrop show"]:remove()
+! the location of the following xpaths may change especially if remove() is used on any elements above it
+woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/div/script):remove()
+woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/script[2]):remove()
+woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/script[1]):remove()
 woowebtools.com##ins[data-ad-client]
 woowebtools.com##ins[data-ad-client]:remove()
 woowebtools.com##+js(set-constant, gtag, noopFunc)
@@ -42305,15 +42309,12 @@ woowebtools.com##a[class="krj4aaj4wg"]
 woowebtools.com##a[class="krj4aaj4wg"]:remove()
 woowebtools.com##div:has(svg):has(h3:has-text(Disable Adblock & Tracking Protection!))
 woowebtools.com##div:has(svg):has(h3:has-text(Disable Adblock & Tracking Protection!)):remove()
-!woowebtools.com##script[id="hitmag-scripts-js"]:remove()
+woowebtools.com##script[id="hitmag-scripts-js"]:remove()
 ! eliminates 3 second countdown - does not work
 !woowebtools.com##+js(nano-stb, /.?/, 1000, 0.10)
 !woowebtools.com##+js(nano-stb, /^/, *, 0.01)
-woowebtools.com##+js(nano-stb, , *, 0.01)
-! the location of the following xpaths may change especially if remove() is used on any elements above it
-!woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/div/script):remove()
-!woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/script[2]):remove()
-!woowebtools.com##:xpath(/html/body/div/div[2]/div[3]/div/div[2]/div/script[1]):remove()
+! prevents the recaptcha from working
+!woowebtools.com##+js(nano-stb, , *, 0.01)
 ! prevents page from loading
 !woowebtools.com##+js(acs, decodeURIComponent, eval)
 !woowebtools.com##+js(acs, parseInt, arguments)
