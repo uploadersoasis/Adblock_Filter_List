@@ -43857,6 +43857,11 @@ www.makeuseof.com###axdsense2
 www.makeuseof.com###axdsense2:remove()
 www.makeuseof.com##.ad-zone-container
 www.makeuseof.com##.ad-zone-container:remove()
+www.makeuseof.com##+js(set-constant, window.maxUnauthenicatedArticleViews, 32767)
+www.makeuseof.com##+js(set-constant, window.apstag, {})
+www.makeuseof.com##+js(set-constant, window.adsNinjaAmazonInitData, {})
+www.makeuseof.com##+js(set-constant, window.adsNinjaAmazonReady, noopFunc)
+www.makeuseof.com##+js(set-constant, window.adsNinjaAmazonResolve, noopFunc)
 www.makeuseof.com##+js(set-constant, adUnitBidderConfigs, {})
 www.makeuseof.com##+js(abort-on-property-read, adUnitBidderConfigs)
 www.makeuseof.com##+js(abort-on-property-write, adUnitBidderConfigs)
@@ -43871,6 +43876,8 @@ www.makeuseof.com##div[class*="adsninja-"]
 www.makeuseof.com##div[class*="adsninja-"]:remove()
 www.makeuseof.com##div[class^="ad-zone"]
 www.makeuseof.com##div[class^="ad-zone"]:remove()
+www.makeuseof.com##aside[class*="adsninja-rail-container"]
+www.makeuseof.com##aside[class*="adsninja-rail-container"]:remove()
 www.makeuseof.com##div[id^="dynamically-injected-refresh-ad-zone"]
 www.makeuseof.com##div[id^="dynamically-injected-refresh-ad-zone"]:remove()
 www.makeuseof.com##div[id^="adsninja-ad-"]
@@ -45732,7 +45739,7 @@ uploadhaven.com##button[id="submitFree"]::before:style(height: 42px !important; 
 uploadhaven.com##+js(saa, type, submit, #submitFree)
 ! class was "btn btn-submit-free btn-download-free"
 uploadhaven.com##+js(saa, class, btn btn-submit-free btn-download-free btn-success btn-block, #submitFree)
-! The following doesn't work, but is not necessary since "Free Download" is applied via injected stylesheet above.
+! The following doesn't work, but it is also not necessary since "Free Download" is applied via injected stylesheet above.
 !uploadhaven.com##+js(trusted-set, downloadTimerMsg, Free Download)
 uploadhaven.com##+js(set-constant, downloadLimitTriggered, false)
 ! The following prevents the countdown, but it doesn't change the button text
@@ -45755,6 +45762,9 @@ uploadhaven.com##+js(acs, FingerprintJS)
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
 ! TODO: This does not work because script is webpacked?
 !uploadhaven.com##+js(trusted-replace-node-text, script, let seconds = 15;, let seconds = 1;)
+||www.rmz.cr/files/js/libs/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ripgamesfun.net^*
+||ripgamesfun.net^*
 
 !Whitelisted
 ! for Google Drive
