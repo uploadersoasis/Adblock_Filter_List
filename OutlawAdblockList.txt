@@ -1685,6 +1685,24 @@ mail.google.com##.oM
 !||www.huffingtonpost.com/ads/ad_html_wh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.huffingtonpost.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static4.businessinsider.com/assets/js/track.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||permutive.businessinsider.com/v2.0/internal/metrics^*
+||analytics.businessinsider.com^*
+||horizon.businessinsider.com/horizon/track^*
+||www.businessinsider.com/track.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.businessinsider.com/adframe^*
+www.businessinsider.com##.tp-modal
+www.businessinsider.com##.tp-active.tp-backdrop
+www.businessinsider.com##div[class*="ad-wrapper"]
+www.businessinsider.com##div[class*="ad-wrapper"]:remove()
+www.businessinsider.com##div[class*="subnav-ad-"]
+www.businessinsider.com##div[class*="sticky-rail-ad-container"]
+www.businessinsider.com##div[class*="sticky-rail-ad-container"]:remove()
+www.businessinsider.com##div[data-type="ad"]
+www.businessinsider.com##div[data-type="ad"]:remove()
+www.businessinsider.com##div[data-adunit]
+www.businessinsider.com##div[data-adunit]:remove()
+www.businessinsider.com##aside[class*="has-video-ad"]
+www.businessinsider.com##aside[class*="has-video-ad"]:remove()
 ||toplist.eu/count.asp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||phys.org/openx/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 guyspeed.com/wp-content/plugins/google-analyticator/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -2030,10 +2048,7 @@ www.nydailynews.com##.yahoo_ads
 !||174.133.197.186/adcode/mediatarget.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||174.133.197.186/adcode/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||70.87.135.2/serve/*/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.businessinsider.com/track.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.businessinsider.com/adframe^*
 ||alt.coxnewsweb.com/ajc/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||horizon.businessinsider.com/horizon/track^*
 ||media.cmgdigital.com/shared/media/*/web/common/javascript/qualtrics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||click.fastdld.com/tracking202/static/record.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fastdld.com/wp-content/themes/gadgetry-parent/images/adv_$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -15021,7 +15036,6 @@ spotifyrecorder.codeplex.com###msccBanner
 ||www.theadgateway.com/jump/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||39d1d397c97730.com^*
 ||analytics.ssbbartgroup.com^*
-||analytics.businessinsider.com^*
 ||pleasewait.win/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cms.c1exchange.com/cookie/match/adv/adx/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cms.c1exchange.com^*
@@ -17820,8 +17834,6 @@ boingboing.net###ds_cpp
 ||gsafe.getawesome1.com^*
 ||bird.sidediscovery.pw^*
 ||rsload.net/images5/7w389045390570.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.businessinsider.com##.tp-modal
-www.businessinsider.com##.tp-active.tp-backdrop
 !||api-v3.tinypass.com/api/v3/page/unload^*
 ||api-v3.tinypass.com^*
 !||experience.tinypass.com/xbuilder/experience/load^*
@@ -27321,7 +27333,6 @@ webbrowsertools.com##^script:has-text(adsbygoogle)
 ||reporting.deliveryengine.adswizz.com^*
 ||promoted.soundcloud.com/event?z=pandora-audio-ad-web-api-v2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||soundcloud-pax.pandora.com/haymaker/api/v1/tracking-event/impression^*
-||permutive.businessinsider.com/v2.0/internal/metrics^*
 ||example707discusswide.live/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||zoneofthebest.com^*
 ||2.informistio.com^*
@@ -30013,8 +30024,6 @@ www.ugmfree.it##div[id="divPolicyBar"]
 short-ly.co##a[class="btnDownload"]
 ||js.mobileoffers-ac-download.com^*
 ||mobileoffers-7-d-download.com^*
-www.businessinsider.com##div[class*="ad-wrapper"]
-www.businessinsider.com##div[class*="subnav-ad-"]
 www.bostonglobe.com##html,body:style(overflow:auto !important;)
 www.bostonglobe.com##div[id^="ad_position_ad"]
 www.bostonglobe.com##+js(remove-class, overflow_hidden, , stay)
@@ -30263,8 +30272,6 @@ www.cablefree.net##*[id^="eu-cookie-law"]
 !||ipinfo.io^*
 charlieintel.com##div[id^="div-gpt-ad-"]
 charlieintel.com##div[class="code-block-label"]:has-text(/Advertisement/i)
-www.businessinsider.com##div[class*="sticky-rail-ad-container"]
-www.businessinsider.com##div[data-type="ad"]
 romprovider.com##div[aria-label="cookieconsent"]
 romprovider.com##ins[class="adsbygoogle"]
 192.168.12.1##+js(remove-attr, style, #ap_ipv6)
@@ -45781,6 +45788,16 @@ www.hbo.com##script[id="user-consent-script"]
 www.hbo.com##script[id="user-consent-script"]:remove()
 !||www.hbo.com/js/ccpa/geo-fallback.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.hbo.com/js/ccpa/user-consent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||static.vidazoo.com/basev/*/prebid/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||static.vidazoo.com/basev/*/prebid/intent-iq.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.vidazoo.com/basev/*/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||edge.aditude.io/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||edge.aditude.io/wrapper/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||edge.aditude.io^*
+||dn0qt3r0xannq.cloudfront.net/plugins/ad-server.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||assets.boredpanda.com/blog/wp-content/themes/boredpanda/js/boredpanda.content_tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||stiffgame.com^*
+||cdn.flipboard.com/dev_O/clear.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
