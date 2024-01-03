@@ -1695,6 +1695,11 @@ www.businessinsider.com##.tp-active.tp-backdrop
 www.businessinsider.com##div[class*="ad-wrapper"]
 www.businessinsider.com##div[class*="ad-wrapper"]:remove()
 www.businessinsider.com##div[class*="subnav-ad-"]
+www.businessinsider.com##div[class*="subnav-ad-"]:remove()
+www.businessinsider.com##div[class*="ad-label"]
+www.businessinsider.com##div[class*="ad-label"]:remove()
+www.businessinsider.com##div[class*="ad-callout-wrapper"]
+www.businessinsider.com##div[class*="ad-callout-wrapper"]:remove()
 www.businessinsider.com##div[class*="sticky-rail-ad-container"]
 www.businessinsider.com##div[class*="sticky-rail-ad-container"]:remove()
 www.businessinsider.com##div[data-type="ad"]
@@ -1703,6 +1708,14 @@ www.businessinsider.com##div[data-adunit]
 www.businessinsider.com##div[data-adunit]:remove()
 www.businessinsider.com##aside[class*="has-video-ad"]
 www.businessinsider.com##aside[class*="has-video-ad"]:remove()
+www.businessinsider.com##script[data-osano="ANALYTICS"]
+www.businessinsider.com##script[data-osano="ANALYTICS"]:remove()
+www.businessinsider.com##script[id="consent-manager-script"]
+www.businessinsider.com##script[id="consent-manager-script"]:remove()
+www.businessinsider.com##+js(set-constant, gtag, noopFunc)
+www.businessinsider.com##+js(acs, gtag)
+www.businessinsider.com##+js(set-constant, setAdblockerCookie, noopFunc)
+www.businessinsider.com##+js(set-constant, adblocker, false)
 ||toplist.eu/count.asp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||phys.org/openx/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 guyspeed.com/wp-content/plugins/google-analyticator/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -45798,6 +45811,7 @@ www.hbo.com##script[id="user-consent-script"]:remove()
 ||assets.boredpanda.com/blog/wp-content/themes/boredpanda/js/boredpanda.content_tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||stiffgame.com^*
 ||cdn.flipboard.com/dev_O/clear.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.speedcurve.com/js/lux.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
