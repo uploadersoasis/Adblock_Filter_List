@@ -45766,6 +45766,21 @@ jojoy.io##div[class="download-ads"]:remove()
 ||etpweb.jojoy.io^*
 ||ou.samogonmarvy.com^*
 ||sirmianow.top^*
+||theekedgleamed.com^*
+apkdone.com##p[class="sponsor-text"]
+apkdone.com##p[class="sponsor-text"]:remove()
+apkdone.com##div[style="height:250px;"]:has(script[src*="//theekedgleamed.com/"])
+apkdone.com##div[style="height:250px;"]:has(script[src*="//theekedgleamed.com/"]):remove()
+||pl21574782.toprevenuegate.com^*
+www.hbo.com##+js(set-constant, toastDiv, {})
+www.hbo.com##+js(aopw, toastDiv)
+www.hbo.com##+js(aopr, toastDiv)
+www.hbo.com##div[class^="hbo-toast"]
+www.hbo.com##div[class^="hbo-toast"]:remove()
+www.hbo.com##script[id="user-consent-script"]
+www.hbo.com##script[id="user-consent-script"]:remove()
+!||www.hbo.com/js/ccpa/geo-fallback.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.hbo.com/js/ccpa/user-consent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
