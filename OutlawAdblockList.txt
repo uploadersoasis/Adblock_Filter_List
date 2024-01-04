@@ -33821,9 +33821,6 @@ jabbr.net##script[id="jabbr-ready"]
 jabbr.net##ins[data-ad-client]
 jabbr.net##+js(aopw, adsbygoogle)
 jabbr.net##+js(aopr, adsbygoogle)
-www.androidpolice.com##div[id^="adsninja-ad-zone"]
-www.androidpolice.com##div[id*="div-gpt-ad"]
-www.androidpolice.com##div[class*="adsninja-ad-zone"]
 ||adsninja.ca/adsninja_client.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||scarfsmash.com^*
 ||events.release.narrativ.com/api/v0/publishers/*/impressions/page_impression/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43345,7 +43342,6 @@ www.howtogeek.com^script:has-text(/tmntag\.adTag/i)
 www.howtogeek.com^script:has-text(/tmntag\.adTag/i):remove()
 www.howtogeek.com###div-thetop1
 www.howtogeek.com###div-thetop1:remove()
-www.howtogeek.com##+js(set-constant, sendToGoogleAnalytics, noopFunc)
 www.howtogeek.com##+js(set-constant, loadAnalyticsData, noopFunc)
 www.howtogeek.com##+js(set-constant, VALNET_GLOBAL_ADS, "")
 www.howtogeek.com##+js(set-constant, VALNET_GLOBAL_ISADBLOCK, false)
@@ -43356,6 +43352,7 @@ www.howtogeek.com##+js(acs, gads)
 www.howtogeek.com##+js(acs, googletag)
 www.howtogeek.com##+js(abort-on-property-write, googletag)
 www.howtogeek.com##+js(abort-on-property-read, googletag)
+www.howtogeek.com##+js(set-constant, sendToGoogleAnalytics, noopFunc)
 www.howtogeek.com##+js(acs, sendToGoogleAnalytics, loadAnalyticsData)
 www.howtogeek.com##+js(set-constant, window.adsNinja, {})
 www.howtogeek.com##+js(acs, window.adsNinja)
@@ -45771,8 +45768,6 @@ flipp.com##div[class^="cky-consent-"]:remove()
 ! blocking analytics prevents the website from fully loading
 !||flipp.com/build/*/static/happy-analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn-cookieyes.com/client_data/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.pressreader.com##script[id="Cookiebot"]
-www.pressreader.com##script[id="Cookiebot"]:remove()
 developer.mozilla.org##div[class^="top-banner"]:has(*[class^="pong"])
 developer.mozilla.org##div[class^="top-banner"]:has(*[class^="pong"]):remove()
 jojoy.io##div[id^="ad_block_"]
@@ -45812,6 +45807,36 @@ www.hbo.com##script[id="user-consent-script"]:remove()
 ||stiffgame.com^*
 ||cdn.flipboard.com/dev_O/clear.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.speedcurve.com/js/lux.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ingress.pressreader.com/services/track/pageview$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ingress.pressreader.com/services/v1/analyticprofiles/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! removing 1x1.gif removes the thumbnails
+!www.pressreader.com##img[src$="/images/1x1.gif"]:remove()
+!ao.pressreader.com##img[src$="/images/1x1.gif"]:remove()
+www.pressreader.com##+js(set-constant, isLoggedIn, trueFunc)
+ao.pressreader.com##+js(set-constant, isLoggedIn, trueFunc)
+www.pressreader.com##script[id="Cookiebot"]
+www.pressreader.com##script[id="Cookiebot"]:remove()
+www.pressreader.com##div:remove-class(subscriber-content)
+ao.pressreader.com##div:remove-class(subscriber-content)
+!||cdn.blueconic.net/wehco.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.blueconic.net^*
+||eminentbubble.com^*
+||dn6rwwtxa647p.cloudfront.net/76/www.androidpolice.com/best-apple-news-alternatives/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.androidpolice.com##div[class*="adsninja-ad-zone"]
+www.androidpolice.com##div[class*="adsninja-ad-zone"]:remove()
+www.androidpolice.com##div[id*="div-gpt-ad"]
+www.androidpolice.com##div[id*="div-gpt-ad"]:remove()
+www.androidpolice.com##div[id^="adsninja-ad-zone"]
+www.androidpolice.com##div[id^="adsninja-ad-zone"]:remove()
+www.androidpolice.com##div[class="ad-odd"]
+www.androidpolice.com##div[class="ad-odd"]:remove()
+www.androidpolice.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):remove()
+www.androidpolice.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):remove()
+www.androidpolice.com##script[id="optimera-ops"]
+www.androidpolice.com##script[id="optimera-ops"]:remove()
+www.androidpolice.com##+js(set-constant, sendToGoogleAnalytics, noopFunc)
+www.androidpolice.com##+js(acs, sendToGoogleAnalytics, loadAnalyticsData)
+||www.androidpolice.com/strpixel.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
