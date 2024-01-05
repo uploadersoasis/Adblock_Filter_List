@@ -45851,6 +45851,14 @@ www.androidpolice.com##+js(acs, sendToGoogleAnalytics, loadAnalyticsData)
 ||cmp.setupcmp.com^*
 !||ii.woolensulking.com^*
 ||woolensulking.com^*
+apkstreamz.com##+js(saa, data-timer, 1, .show_download_links)
+!||lg.kerryfluence.com^*
+||kerryfluence.com^*
+||cmlwaup.com^*
+!||cdn.contalyze.com/asset.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.contalyze.com^*
+||gamedrive.org/wp-content/cache/min/1/wp-content/plugins/meks-easy-ads-widget/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||d3qygewatvuv28.cloudfront.net^*
 
 !Whitelisted
 ! for Google Drive
@@ -46002,7 +46010,8 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip#@#div[id^="div-gpt-ad"]:style(width:
 @@||adoto.net^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip
 @@||adservice.google.*/adsid/integrator.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||assets.vlitag.com/prebid/default/prebid-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|dgdrive.xyz|financemonk.net
-@@||challenges.cloudflare.com^$subdocument,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip
+@@||challenges.cloudflare.com/cdn-cgi/challenge-platform/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!@@||challenges.cloudflare.com^$subdocument,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip
 @@||cloudfront.net/publishers/dropgalaxycom.min.js$domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||cmp.uniconsent.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||contextual.media.net/*/fcmain.js$domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
