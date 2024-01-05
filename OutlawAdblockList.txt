@@ -26551,6 +26551,8 @@ doodrive.com##a[class="hqoni2rvyn"]
 doodrive.com##a[class="hqoni2rvyn"]:remove()
 doodrive.com##iframe[data-aa]
 doodrive.com##iframe[data-aa]:remove()
+doodrive.com##div[id="patron-modal"]
+doodrive.com##div[id="patron-modal"]:remove()
 !doodrive.com##div:hidden(false)
 !doodrive.com###human-verification
 !doodrive.com##div[id="human-verification"]
@@ -41907,6 +41909,8 @@ filecrypt.co,filecrypt.cc,filecrypt.to##button[title="block this!"]
 filecrypt.co,filecrypt.cc,filecrypt.to##button[title="block this!"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##button[type="submit"]:has-text(/Confirm/i):style(display: block !important;)
 filecrypt.co,filecrypt.cc,filecrypt.to##button[id][onclick*=".html"]:remove-attr(onclick)
+! The following would remove the legitimate download link.
+!filecrypt.co,filecrypt.cc,filecrypt.to##button[data-i18n="Download"][onclick^="openLink("]:remove-attr(onclick)
 filecrypt.co,filecrypt.cc,filecrypt.to##div > [href*=".html"]:upward(div)
 filecrypt.co,filecrypt.cc,filecrypt.to###jvb
 filecrypt.co,filecrypt.cc,filecrypt.to##li:has-text(100% Anonym)
@@ -45837,6 +45841,16 @@ www.androidpolice.com##script[id="optimera-ops"]:remove()
 www.androidpolice.com##+js(set-constant, sendToGoogleAnalytics, noopFunc)
 www.androidpolice.com##+js(acs, sendToGoogleAnalytics, loadAnalyticsData)
 ||www.androidpolice.com/strpixel.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||random-affiliate.atimaze.com^*
+!||chs03.cookie-script.com^*
+||chs*.cookie-script.com^*
+||mc.letpim.com^*
+||d32d89surjhks4.cloudfront.net^*
+||www.cloudflare.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||forthemoonh.com^*
+||cmp.setupcmp.com^*
+!||ii.woolensulking.com^*
+||woolensulking.com^*
 
 !Whitelisted
 ! for Google Drive
