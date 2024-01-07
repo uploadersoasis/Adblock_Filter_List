@@ -36815,7 +36815,6 @@ wirelessjoint.com##div[aria-label="cookieconsent"]
 wirelessjoint.com##div[data-phpbb-ads-id]
 ||wirelessjoint.com/assets/cookieconsent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 download.apkmody.fun##+js(remove-attr, onclick, #download-button)
-mega4upload.com##+js(remove-attr, onclick, a.btn.btn-sm.btn-dark)
 ||dipaka-ead.com^*
 ||managecompletelyquickinfo-file.info^*
 usersdownload.com##h5[id="title_12324323"]
@@ -38500,8 +38499,6 @@ rapidrar.com##input[id="btn_download"]:style(display: inline !important;)
 ||aesaul.com^*
 ||givill.com^*
 ||cheorg.com^*
-||mega4upload.com/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-mega4upload.com##script[sadbl]
 ||www.qtzedmrehcvpe.com^*
 ||qtzedmrehcvpe.com^*
 ||prankdishevelledhurdle.com^*
@@ -41067,11 +41064,6 @@ tvlistings.zap2it.com##div[class^="ad-wrapper"]:remove()
 ||e007499ca9.com^*
 ||uphewoab.net^*
 ||itupnjqqjbxxqt.com^*
-||mega4upload.com/z-6386914$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! The following are only necessary if "^$all" is not used to block the domains instead.
-mega4upload.com##+js(no-xhr-if, method:HEAD)
-! mega4upload currently only uses xhr not fetch.
-mega4upload.com##+js(no-fetch-if, method:HEAD)
 ||gcxugoksw.com^*
 ||abashfireworks.com^*
 ||2ahgsd22.com^*
@@ -45951,6 +45943,34 @@ apkadmin.com##+js(acs, googletag.pubads)
 ||cryingforanythi.com^*
 ||d2izcn32j62dtp.cloudfront.net^*
 ||abletoprese.org^*
+||sabakhapyosis.life^*
+||snhtvtp.com^*
+!||nv.seriousjumby.com^*
+||seriousjumby.com^*
+!||pubtrky.com/ut/hb.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||pubtrky.com^*
+||flcrcyj.com^*
+||www.spotofspawn.com^*
+||jotskuffieh.website^*
+||mega4upload.com/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mega4upload.com/z-6386914$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! The following are only necessary if "^$all" is not used to block the domains instead.
+mega4upload.com##+js(no-xhr-if, method:HEAD)
+! mega4upload currently only uses xhr not fetch.
+mega4upload.com##+js(no-fetch-if, method:HEAD)
+mega4upload.com##+js(remove-attr, onclick, a.btn.btn-sm.btn-dark)
+mega4upload.com##script[sadbl]
+mega4upload.com##script[sadbl]:remove()
+mega4upload.com##script[id="adex"]
+mega4upload.com##script[id="adex"]:remove()
+mega4upload.com##+js(set-constant, gtag, noopFunc)
+mega4upload.com##+js(acs, gtag)
+mega4upload.com##+js(acs, googletag)
+mega4upload.com##div[id="gdpr-cookie-notice"]
+mega4upload.com##div[id="gdpr-cookie-notice"]:remove()
+mega4upload.com##:xpath(//html/body/script[14])
+mega4upload.com##:xpath(//html/body/script[14]):remove()
+mega4upload.com##button[id="downloadbtn"]:remove-attr(disabled)
 
 !Whitelisted
 ! for Google Drive
