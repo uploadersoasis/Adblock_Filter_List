@@ -26801,7 +26801,6 @@ dzapk.com##div[aria-label="cookieconsent"]
 jornaleconomico.sapo.pt##div[id^="tg-adhesion"]
 !www2.bittools.net##div[aria-label="cookieconsent"]
 bittools.net##div[aria-label="cookieconsent"]
-techbigs.com##div[class="cookie-notice-container"]
 ||joastous.com^*
 www.y2mate.com##^script:has-text(popupWindow)
 !||push-decdbeb-8600.pushails.com^*
@@ -26960,7 +26959,6 @@ yts.mx##^script:has-text(admc)
 ||poxtebnltkehh.com^*
 hevcbay.com##^script:has-text(decodeURIComponent)
 ||ddcevwmddjhjp.cloudfront.net^*
-techbigs.com##div[id="cookie-notice-bar"]
 ||imagetwist.com/adblock_detector2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||imagetwist.com/site_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||impactserving.com/banner.engine$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -45971,6 +45969,61 @@ mega4upload.com##div[id="gdpr-cookie-notice"]:remove()
 mega4upload.com##:xpath(//html/body/script[14])
 mega4upload.com##:xpath(//html/body/script[14]):remove()
 mega4upload.com##button[id="downloadbtn"]:remove-attr(disabled)
+!||cdn.amplitude.com/libs/amplitude-5.8.0-min.gz.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.amplitude.com/libs/amplitude-*-min.gz.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+techbigs.com##div[class="cookie-notice-container"]
+techbigs.com##div[id="cookie-notice-bar"]
+techbigs.com##div[class*="ads123"]
+techbigs.com##div[class*="ads123"]:remove()
+techbigs.com##ins[data-ad-client]
+techbigs.com##ins[data-ad-client]:remove()
+techbigs.com##script[data-ad-client]
+techbigs.com##script[data-ad-client]:remove()
+techbigs.com##+js(set-constant, gtag, noopFunc)
+techbigs.com##+js(acs, gtag)
+techbigs.com##+js(set-constant, showads, false)
+techbigs.com##+js(set-constant, adscode, "")
+techbigs.com##+js(set-constant, lazyAds, noopFunc)
+!||cdn.adschill.com/v2/unit/pt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.adschill.com^*
+moddroid.com##+js(set-constant, googleAdUrl, "")
+moddroid.com##+js(set-constant, detectAdBlock, noopFunc)
+moddroid.com##+js(acs, detectAdBlock)
+moddroid.com##+js(set-constant, adBlockEnabled, false)
+moddroid.com##+js(set-constant, gtag, noopFunc)
+moddroid.com##+js(acs, gtag)
+moddroid.com##+js(set-constant, fadeOutDonatePopup, false)
+moddroid.com##+js(acs, fadeOutDonatePopup)
+moddroid.com##dialog[id="adBlockDialog"]
+moddroid.com##dialog[id="adBlockDialog"]:remove()
+moddroid.com##span[id="donate-popup"]
+moddroid.com##span[id="donate-popup"]:remove()
+moddroid.com##div[id="ad_block_reminder_dialog"]
+moddroid.com##div[id="ad_block_reminder_dialog"]:remove()
+moddroid.com##div[id="reminder_dialog"]
+moddroid.com##div[id="reminder_dialog"]:remove()
+moddroid.com##div[class="download-ads"]
+moddroid.com##div[class="download-ads"]:remove()
+moddroid.com##a[id="download-app-button"]:remove-attr(onclick)
+moddroid.com##a[id="download-app-button"]:style(display: flex !important;)
+moddroid.com##a[id="download-button"]
+moddroid.com##a[id="download-button"]:remove()
+! this makes the real download button disappear.
+!moddroid.com##div[class="download_app--btn-wrapper mobile_download--info"]
+!moddroid.com##div[class="download_app--btn-wrapper mobile_download--info"]:remove()
+moddroid.com##div[class="download_button--wrapper"]
+moddroid.com##div[class="download_button--wrapper"]:remove()
+moddroid.com##*[class*="mobile_download--info"]:remove-class(hidden)
+||moddroid.com/static/video/adblock-plus.mp4$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||etpweb.moddroid.com/event/report/web$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||yu.deggerfletton.com^*
+||deggerfletton.com^*
+!||ek.taminystopgap.com^*
+||taminystopgap.com^*
+||1558334541.rsc.cdn77.org/nfs/20221104/etpnoauid.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||kdpxkmpwwawhga.com^*
+||thauhoux.com^*
+||tewtawnaze.space^*
 
 !Whitelisted
 ! for Google Drive
