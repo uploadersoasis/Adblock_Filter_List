@@ -45754,6 +45754,12 @@ jojoy.io##div[id^="div-gpt-ad-"]
 jojoy.io##div[id^="div-gpt-ad-"]:remove()
 jojoy.io##div[class="download-ads"]
 jojoy.io##div[class="download-ads"]:remove()
+jojoy.io##+js(set-constant, googleAdUrl, "")
+jojoy.io##+js(set-constant, detectAdBlock, noopFunc)
+jojoy.io##+js(acs, detectAdBlock)
+jojoy.io##+js(set-constant, adBlockEnabled, false)
+jojoy.io##+js(set-constant, gtag, noopFunc)
+jojoy.io##+js(acs, gtag)
 ||jojoy.io/static/video/adblock-plus.mp4$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||etpweb.jojoy.io/event/report/web?data=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||etpweb.jojoy.io^*
@@ -46075,6 +46081,9 @@ linkoops.com##:xpath(//script[contains(text(), 'eval(function(h,u,n,t,e,r)')]):r
 !linkoops.com##:xpath(//html/body/div[4]/div/div[1]/div/div[2]/p[9]/script[1]):remove()
 !linkoops.com##:xpath(//html/body/script)
 !linkoops.com##:xpath(//html/body/script):remove()
+||alwingulla.com^*
+||haykavlwa.com^*
+||vpbunwkupqqwa.com^*
 
 !Whitelisted
 ! for Google Drive
