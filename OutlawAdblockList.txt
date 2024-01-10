@@ -46129,6 +46129,63 @@ www.sportskeeda.com##*[id^="gdpr__consent_revocation"]:remove()
 ||acortartu.link^*
 ||yipecordes.net^*
 ||mikjusmqybw.com^*
+||andamqhoiqmpo.xyz^*
+! blocking the adgpt.js removes the main iframe with the video in it
+!||streamadblocker.cc/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!streamadblocker.cc##div[id="adb"]
+!streamadblocker.cc##div[id="adb"]:remove()
+streamadblocker.cc##div[class*="adblockblock"]
+streamadblocker.cc##div[class*="adblockblock"]:remove()
+streamadblocker.cc##div[class="play-overlay"]
+streamadblocker.cc##div[class="play-overlay"]:remove()
+streamadblocker.cc##div[id="ideoooolink"]:remove-attr(style)
+!streamadblocker.cc##div[id="ideoooolink"]:style(display: block !important;)
+streamadblocker.cc##div[id="norobotlink"]:remove-attr(style)
+!streamadblocker.cc##div[id="norobotlink"]:style(display: block !important;)
+streamadblocker.cc##span[id="captchalink"]:remove-attr(style)
+!streamadblocker.cc##span[id="captchalink"]:style(display: block !important;)
+streamadblocker.cc##iframe[src^="https://a.adforcast.com/"]
+streamadblocker.cc##iframe[src^="https://a.adforcast.com/"]:remove()
+streamadblocker.cc##iframe[src^="https://zimpolo.com/"]
+streamadblocker.cc##iframe[src^="https://zimpolo.com/"]:remove()
+! pcl is number of clicks on the overlay
+streamadblocker.cc##+js(set-constant, pcl, 3)
+streamadblocker.cc##+js(set-constant, adblock, false)
+! the parent name object of adblock varies so cannot block using this method.
+!streamadblocker.cc##+js(set-constant, zjjOqGyUosWk.adblock, false)
+!streamadblocker.cc##+js(set-constant, mYSrQPmKtpMS.adblock, false)
+!streamadblocker.cc##+js(set-constant, CgGHjhgTtFpC.adblock, false)
+!streamadblocker.cc##+js(set-constant, CgGHjhgTtFpC.adblock, false, end)
+!streamadblocker.cc##+js(set-constant, CgGHjhgTtFpC.adblock, false, complete)
+streamadblocker.cc##+js(set-constant, trigger, '')
+streamadblocker.cc##+js(aeld, contextmenu)
+streamadblocker.cc##+js(disable-newtab-links)
+!streamadblocker.cc##+js(window.open-defuser)
+streamadblocker.cc##+js(window.open-defuser, !/paikoasa.tv/i)
+! two scripts have "_ohknjom" in them
+streamadblocker.cc##:xpath(//script[contains(text(), '_ohknjom')])
+streamadblocker.cc##:xpath(//script[contains(text(), '_ohknjom')]):remove()
+streamadblocker.cc##:xpath(//html/body/div[1]/div/div[1]/script[2])
+streamadblocker.cc##:xpath(//html/body/div[1]/div/div[1]/script[2]):remove()
+!streamadblocker.cc##:xpath(//html/body/script[4])
+!streamadblocker.cc##:xpath(//html/body/script[4]):remove()
+!streamadblocker.cc##:xpath(//html/body/script[3])
+!streamadblocker.cc##:xpath(//html/body/script[3]):remove()
+!||yz.linensephraim.com^*
+||linensephraim.com^*
+||bygliscortor.com/impression/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||bygliscortor.com^*
+!||bytogeticr.com/split_track$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||bytogeticr.com^*
+!||piteevoo.com/apu.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||piteevoo.com^*
+||boatoamo.com^*
+||meksicie.net^*
+||ulskxvatjxbnusa.com^*
+||ijalstqugbkb.com^*
+||paikoasa.tv^*
+!||az.mniumlapsers.com^*
+||mniumlapsers.com^*
 
 !Whitelisted
 ! for Google Drive
