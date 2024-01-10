@@ -34284,7 +34284,7 @@ thewebdev.info##span[id^="div-gpt-ad-"]
 thewebdev.info##+js(aopw, ez_ad_units)
 thewebdev.info##+js(aopr, ez_ad_units)
 www.express.co.uk##div[id^="div-gpt-ad-"]:remove()
-||accounts.google.com/gsi/log?client_id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||accounts.google.com/gsi/log?client_id$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d2q1qtsl33ql2r.cloudfront.net^*
 downloadfreecourse.com##div[class="cookies-warning"]
 vfxdownload.net##ins[data-ad-client]
@@ -46084,6 +46084,51 @@ linkoops.com##:xpath(//script[contains(text(), 'eval(function(h,u,n,t,e,r)')]):r
 ||alwingulla.com^*
 ||haykavlwa.com^*
 ||vpbunwkupqqwa.com^*
+!||static.kueezrtb.com/latest.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||static.kueezrtb.com/js/latest.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.kueezrtb.com^*
+||u.kueezrtb.com^*
+||track.kueezrtb.com^*
+||gtrack.kueezrtb.com^*
+||metrics.roblox.com^*
+||www.fastly-insights.com/static/scout.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.sportskeeda.com/js/production/ads/liveramp-bundle-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.sportskeeda.com/js/production/ads/desktop/content-pages-ad-definitions-bundle-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.sportskeeda.com/js/production/ads/interstitial-definition-bundle-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.sportskeeda.com/js/production/ads/gpt_script-bundle-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.sportskeeda.com/js/production/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.sportskeeda.com/js/production/ad-message-handler-bundle_*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.sportskeeda.com##+js(set-constant, AD_UNITS, {})
+www.sportskeeda.com##+js(set-constant, prepareGAEventTracker, noopFunc)
+www.sportskeeda.com##+js(acs, prepareGAEventTracker)
+www.sportskeeda.com##+js(set-constant, admiralLoaded, false)
+www.sportskeeda.com##+js(set-constant, loadAdmiral, noopFunc)
+www.sportskeeda.com##+js(acs, loadAdmiral)
+www.sportskeeda.com##+js(set-constant, lazyLoadInFeedNativeAds, noopFunc)
+www.sportskeeda.com##+js(set-constant, trackImpressionGAEventWhenInViewport, noopFunc)
+www.sportskeeda.com##+js(set-constant, trackFortniteBannerClicks, noopFunc)
+www.sportskeeda.com##+js(acs, trackFortniteBannerClicks)
+www.sportskeeda.com##+js(set-constant, refreshStickyAdUnit, noopFunc)
+www.sportskeeda.com##+js(acs, refreshStickyAdUnit)
+www.sportskeeda.com##+js(set-constant, trackGAEvent, noopFunc)
+www.sportskeeda.com##+js(set-constant, displayAdSlot, noopFunc)
+www.sportskeeda.com##+js(set-constant, checKAndProcessVideoAdPlayersQueue, noopFunc)
+www.sportskeeda.com##div[class="ad-container"]
+www.sportskeeda.com##div[class="ad-container"]:remove()
+www.sportskeeda.com##div[class="ad-declare-explicit"]
+www.sportskeeda.com##div[class="ad-declare-explicit"]:remove()
+www.sportskeeda.com##div[class="sidebar-ad-top"]
+www.sportskeeda.com##div[class="sidebar-ad-top"]:remove()
+www.sportskeeda.com##div[id^="div-gpt-ad-"]
+www.sportskeeda.com##div[id^="div-gpt-ad-"]:remove()
+www.sportskeeda.com##div[id="sticky-ad-container"]
+www.sportskeeda.com##div[id="sticky-ad-container"]:remove()
+www.sportskeeda.com##*[id^="gdpr__consent_revocation"]
+www.sportskeeda.com##*[id^="gdpr__consent_revocation"]:remove()
+||quillkick.com^*
+||acortartu.link^*
+||yipecordes.net^*
+||mikjusmqybw.com^*
 
 !Whitelisted
 ! for Google Drive
@@ -46218,6 +46263,7 @@ gitlab.com#@#+js(no-floc)
 !@@||g.doubleclick.net/gampad/ads?$xhr,domain=mynewsmedia.co|mynewspost.in|revadvert.com
 @@||citicorpcreditservic.tt.omtrdc.net^*
 @@||apis.google.com^$domain=citiretailservices.citibankonline.com
+@@||www.sportskeeda.com/js/production/ads/video-players-bundle-**.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! ytd-popup-container includes popup filter on search
 www.youtube.com#@#ytd-popup-container.ytd-app.style-scope
 ! allow on Dell.com for service tag search will work; not necessary
