@@ -27258,7 +27258,6 @@ www.ovagames.com##^script:has-text(['length','charCodeAt','fromCharCode'])
 !||cds.s5x3j6q5.hwcdn.net/* !prevents surverys from working
 sanfrancisco.cbslocal.com##div[class="cps-banner cps-container"]
 sanfrancisco.cbslocal.com##div[class="cps-content"]
-down.mdiaload.com##button[class="downloadbtn btn btn-success"]:style(display: inline !important;)
 ||d13pxqgp3ixdbh.cloudfront.net/assets/content_lockers/block.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 krembol.ga##+js(set-constant, logged_impression, true)
 ||yts.mx/y_is_ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -28881,11 +28880,6 @@ www.gsmarena.com##div[id^="div-gpt-ad-"]
 www.digitaltrends.com##+js(aopr, window.dtadsExperiences)
 www.digitaltrends.com##+js(aopw, window.dtadsExperiences)
 gpuopen.com##div[id="cookie-notice"]
-!down.fast-down.com,down.mdiaload.com##+js(remove-attr, disabled, .downloadbtn, stay)
-down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:remove-attr(disabled)
-down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:style(display: inline !important;)
-down.fast-down.com,down.mdiaload.com###adblock_detected:remove-attr(value)
-down.fast-down.com,down.mdiaload.com##+js(set-attr, #adblock_detected, value, 0)
 www.hanselman.com##div[aria-label="cookieconsent"]
 www.hanselman.com##div[aria-label="cookieconsent"]:remove()
 ||www.hanselman.com/blog/theme/jinyang/scripts/cda-tracker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -29677,7 +29671,6 @@ smallbusiness.chron.com##+js(aopr, _comscore)
 smallbusiness.chron.com##+js(aopw, _comscore)
 smallbusiness.chron.com##+js(aopr, DWH_COOKIE)
 smallbusiness.chron.com##+js(aopw, DWH_COOKIE)
-down.mdiaload.com##a[href="https://down.mdiaload.com/download9.html"]
 itstillworks.com##div[class="taboola-ads"]
 itstillworks.com##div[class="main-ad"]
 itstillworks.com##div[data-ad-unit-name="adblock-medianet-main"]
@@ -33064,11 +33057,6 @@ www.wsj.com##div[class*="adContainer"]
 www.wsj.com##div[class*="staticAd"]
 www.wsj.com##+js(aopr, adOptions)
 www.wsj.com##+js(aopw, adOptions)
-down.mdiaload.com##div[data-ad]
-down.mdiaload.com##div[class="btn btn-success"]
-!down.mdiaload.com##div[class="download-option-btn"]
-down.mdiaload.com##input[id="adblock_detected"]:remove()
-down.mdiaload.com##a[class="btn btn-dow"]
 www.gamedeveloper.com##div[class*="cookie-popup"]
 www.gamedeveloper.com##div[id="cookie-popup-wrapper"]
 www.encodedna.com##ins[data-ad-client]
@@ -33860,8 +33848,6 @@ try2link.com##^script:has-text(/checkAdBlocker()/i)
 ||byilfpjcrwy.com^*
 ||explanationsacrifice.com^*
 ||hrrfciikbg.com^*
-down.mdiaload.com##a[class="create"][href*="//down.mdiaload.com/download20.htm"]:remove()
-!down.mdiaload.com##center
 !||copyrightcontent.org/unblocker/ub/ub.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||copyrightcontent.org/unblocker/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||zk.commovenuba.com^*
@@ -46186,6 +46172,40 @@ streamadblocker.cc##:xpath(//html/body/div[1]/div/div[1]/script[2]):remove()
 ||paikoasa.tv^*
 !||az.mniumlapsers.com^*
 ||mniumlapsers.com^*
+||s3.us-east-1.amazonaws.com/4ac9bc53ca651ed2739bff5ea401e0e6a400e9b50c42f08be818973cc096b2c/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||jgxpwvijstkvomk.com^*
+||gttquccl.com^*
+!||hr.prositzapas.com^*
+||prositzapas.com^*
+||gloorsie.com^*
+!down.fast-down.com,down.mdiaload.com##center
+!down.fast-down.com,down.mdiaload.com##div[class="download-option-btn"]
+down.fast-down.com,down.mdiaload.com###adblock_detected:remove-attr(value)
+down.fast-down.com,down.mdiaload.com##+js(set-attr, #adblock_detected, value, 0)
+!down.fast-down.com,down.mdiaload.com##+js(remove-attr, disabled, .downloadbtn, stay)
+down.fast-down.com,down.mdiaload.com##+js(saa, type, submit, .downloadbtn)
+down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:remove-attr(disabled)
+down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:style(display: inline !important;)
+down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"]
+down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"]:remove()
+down.fast-down.com##a[class="create"][href*="//down.fast-down.com/download20.htm"]
+down.fast-down.com##a[class="create"][href*="//down.fast-down.com/download20.htm"]:remove()
+down.mdiaload.com##a[class="create"][title="Download"][href$="//down.mdiaload.com/free-download.html"]
+down.mdiaload.com##a[class="create"][title="Download"][href$="//down.mdiaload.com/free-download.html"]:remove()
+down.fast-down.com,down.mdiaload.com##button[class="downloadbtn btn btn-success"]:style(display: inline !important;)
+down.fast-down.com,down.mdiaload.com##div[class="btn btn-success"]
+down.fast-down.com,down.mdiaload.com##div[class="btn btn-success"]:remove()
+down.fast-down.com,down.mdiaload.com##input[id="adblock_detected"]:remove()
+down.fast-down.com,down.mdiaload.com##div[data-ad]
+down.fast-down.com,down.mdiaload.com##div[data-ad]:remove()
+down.fast-down.com,down.mdiaload.com##div[class="demand-supply"]
+down.fast-down.com,down.mdiaload.com##div[class="demand-supply"]:remove()
+down.fast-down.com,down.mdiaload.com##div[style="width:336px; height:296px"]
+down.fast-down.com,down.mdiaload.com##div[style="width:336px; height:296px"]:remove()
+down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '.adsbox')])
+down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '.adsbox')]):remove()
+down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '#adblock_detected')])
+down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '#adblock_detected')]):remove()
 
 !Whitelisted
 ! for Google Drive
