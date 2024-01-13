@@ -43347,7 +43347,7 @@ www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disa
 !||static.adsafeprotected.com/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static.adsafeprotected.com/skeleton.gif?bannnerid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.adsafeprotected.com/skeleton.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! blocking crystalboulevard.com, succeedscene.com, whimsicalgrove.com, functionalfeather.com, delicatecascade.com, and potatoinvention.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
+! blocking crystalboulevard.com, succeedscene.com, whimsicalgrove.com, functionalfeather.com, delicatecascade.com, potatoinvention.com, and featherstage.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
 ||crystalboulevard.com^*
 ||succeedscene.com^*
 ||whimsicalgrove.com^*
@@ -46168,6 +46168,7 @@ streamadblocker.cc##:xpath(//html/body/div[1]/div/div[1]/script[2]):remove()
 !down.fast-down.com,down.mdiaload.com##center
 !down.fast-down.com,down.mdiaload.com##div[class="download-option-btn"]
 down.fast-down.com,down.mdiaload.com###adblock_detected:remove-attr(value)
+down.fast-down.com,down.mdiaload.com##input[id="adblock_detected"]:remove()
 down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_invisible, 0)
 down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_remove_link, 0)
 down.fast-down.com,down.mdiaload.com##+js(set-attr, #adblock_detected, value, 0)
@@ -46177,16 +46178,18 @@ down.fast-down.com,down.mdiaload.com##+js(acs, gtag)
 down.fast-down.com,down.mdiaload.com##+js(saa, type, submit, .downloadbtn)
 down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:remove-attr(disabled)
 down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:style(display: inline !important;)
+!down.fast-down.com,down.mdiaload.com##button[class="downloadbtn btn btn-success"]:style(display: inline !important;)
 down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"]
 down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"]:remove()
 down.fast-down.com##a[class="create"][href*="//down.fast-down.com/download20.htm"]
 down.fast-down.com##a[class="create"][href*="//down.fast-down.com/download20.htm"]:remove()
-down.mdiaload.com##a[class="create"][title="Download"][href$="//down.mdiaload.com/free-download.html"]
-down.mdiaload.com##a[class="create"][title="Download"][href$="//down.mdiaload.com/free-download.html"]:remove()
-down.fast-down.com,down.mdiaload.com##button[class="downloadbtn btn btn-success"]:style(display: inline !important;)
+!down.mdiaload.com##a[class="create"][title="Download"][href$="//down.mdiaload.com/free-download.html"]
+!down.mdiaload.com##a[class="create"][title="Download"][href$="//down.mdiaload.com/free-download.html"]:remove()
+! TODO: using title tag does not work for some reason
+down.mdiaload.com##a[class="create"][href$="//down.mdiaload.com/free-download.html"]
+down.mdiaload.com##a[class="create"][href$="//down.mdiaload.com/free-download.html"]:remove()
 down.fast-down.com,down.mdiaload.com##div[class="btn btn-success"]
 down.fast-down.com,down.mdiaload.com##div[class="btn btn-success"]:remove()
-down.fast-down.com,down.mdiaload.com##input[id="adblock_detected"]:remove()
 down.fast-down.com,down.mdiaload.com##div[data-ad]
 down.fast-down.com,down.mdiaload.com##div[data-ad]:remove()
 down.fast-down.com,down.mdiaload.com##div[class="demand-supply"]
@@ -46279,6 +46282,10 @@ karanpc.com##+js(aopr, document.body.concontextmenu)
 ||usersdrive.com/propellersw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 usersdrive.com##a[href^="https://href.li/?https://khncham.cfd/"]
 usersdrive.com##a[href^="https://href.li/?https://khncham.cfd/"]:remove()
+||c.aps.amazon-adsystem.com/apstag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||featherstage.com^*
+||static.adsafeprotected.com/skeleton.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||d162h6x3rxav67.cloudfront.net/skeleton.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
@@ -46414,6 +46421,7 @@ gitlab.com#@#+js(no-floc)
 @@||citicorpcreditservic.tt.omtrdc.net^*
 @@||apis.google.com^$domain=citiretailservices.citibankonline.com
 @@||www.sportskeeda.com/js/production/ads/video-players-bundle-**.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+@@||c.aps.amazon-adsystem.com^*$domain=amazon.com
 ! ytd-popup-container includes popup filter on search
 www.youtube.com#@#ytd-popup-container.ytd-app.style-scope
 ! allow on Dell.com for service tag search will work; not necessary
