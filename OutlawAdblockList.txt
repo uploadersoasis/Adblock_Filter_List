@@ -42788,19 +42788,6 @@ www.stlyrics.com##+js(aopr, adsbygoogle)
 www.stlyrics.com##+js(aopw, adsbygoogle)
 www.stlyrics.com##+js(aopr, _gaq)
 www.stlyrics.com##+js(aopw, _gaq)
-||www.karanpc.blogspot.com/b/stats^*
-||karanpc.com/wp-content/uploads/2012/05/download-button.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||karanpc.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-karanpc.com##+js(set-constant, countdown, 0, stay)
-!karanpc.com##+js(set-constant, countdownInterval, noopFunc)
-karanpc.com##+js(nano-setTimeout-booster, function, 100, 0.10)
-karanpc.com##div[class^="ads-container"]
-karanpc.com##div[class^="ads-container"]:remove()
-karanpc.com##ins[data-ad-client]
-karanpc.com##ins[data-ad-client]:remove()
-karanpc.com##div[id="countdown"]
-karanpc.com##div[id="countdown"]:remove()
-karanpc.com##div[id="downloadButton"]:style(display: block !important;)
 www.eurogamer.net##div[class*="ads-rail"]
 www.eurogamer.net##div[class*="ads-rail"]:remove()
 www.eurogamer.net##div[class*="advertContainer"]
@@ -46181,6 +46168,8 @@ streamadblocker.cc##:xpath(//html/body/div[1]/div/div[1]/script[2]):remove()
 !down.fast-down.com,down.mdiaload.com##center
 !down.fast-down.com,down.mdiaload.com##div[class="download-option-btn"]
 down.fast-down.com,down.mdiaload.com###adblock_detected:remove-attr(value)
+down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_invisible, 0)
+down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_remove_link, 0)
 down.fast-down.com,down.mdiaload.com##+js(set-attr, #adblock_detected, value, 0)
 down.fast-down.com,down.mdiaload.com##+js(set-constant, gtag, noopFunc)
 down.fast-down.com,down.mdiaload.com##+js(acs, gtag)
@@ -46202,14 +46191,16 @@ down.fast-down.com,down.mdiaload.com##div[data-ad]
 down.fast-down.com,down.mdiaload.com##div[data-ad]:remove()
 down.fast-down.com,down.mdiaload.com##div[class="demand-supply"]
 down.fast-down.com,down.mdiaload.com##div[class="demand-supply"]:remove()
-down.fast-down.com,down.mdiaload.com##div[style="width:336px; height:296px"]
-down.fast-down.com,down.mdiaload.com##div[style="width:336px; height:296px"]:remove()
-down.fast-down.com,down.mdiaload.com##div[style="width:336px; height:280px"]
-down.fast-down.com,down.mdiaload.com##div[style="width:336px; height:280px"]:remove()
+down.fast-down.com,down.mdiaload.com##div[id="generate1"]:remove()
+down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:296px"]
+down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:296px"]:remove()
+down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:280px"]
+down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:280px"]:remove()
 down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '.adsbox')])
 down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '.adsbox')]):remove()
 down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '#adblock_detected')])
 down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '#adblock_detected')]):remove()
+||down.mdiaload.com/js/share.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||img.cartooncdn.xyz/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||img.cartooncdn.xyz/themes/vast/videojs.ads.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 kisscartoon.sh##div[id="upgrade_pop"]
@@ -46235,6 +46226,59 @@ www.yourupload.com/images/watermark.png$document,subdocument,script,inline-scrip
 ||glelroum.com^*
 www.yourupload.com##div[class="afs_ads"]
 www.yourupload.com##div[class="afs_ads"]:remove()
+www.humblebundle.com##div[id="zdcFloatingBtn"]
+www.humblebundle.com##div[id="zdcFloatingBtn"]:remove()
+||d.mailer.humblebundle.com/track.v2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.ziffstatic.com/jst/zdconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.humblebundle.com##+js(set-constant, window.zdconsent.run.push, noopFunc, end)
+!www.humblebundle.com##+js(set-constant, window.zdconsent.run.push, noopFunc, complete)
+||www.karanpc.blogspot.com/b/stats^*
+||karanpc.com/wp-content/plugins/deblocker/js/ads.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||karanpc.com/wp-content/uploads/2012/05/download-button.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||karanpc.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+karanpc.com##+js(set-constant, countdown, 0, stay)
+!karanpc.com##+js(set-constant, countdownInterval, noopFunc)
+karanpc.com##+js(nano-setTimeout-booster, function, 100, 0.10)
+karanpc.com##div[class^="ads-container"]
+karanpc.com##div[class^="ads-container"]:remove()
+karanpc.com##ins[data-ad-client]
+karanpc.com##ins[data-ad-client]:remove()
+karanpc.com##div[id="countdown"]
+karanpc.com##div[id="countdown"]:remove()
+karanpc.com##div[id="downloadButton"]:style(display: block !important;)
+karanpc.com##div[id="mdp-deblocker-ads"]
+karanpc.com##div[id="mdp-deblocker-ads"]:remove()
+karanpc.com##div[class^="mdpDeblocker-"]
+karanpc.com##div[class^="mdpDeblocker-"]:remove()
+karanpc.com##script[id^="mdp-deblocker-ads-js"]
+karanpc.com##script[id^="mdp-deblocker-ads-js"]:remove()
+karanpc.com##style[id="mdpDeblocker-css"]
+karanpc.com##style[id="mdpDeblocker-css"]:remove()
+karanpc.com##+js(set-constant, disableContextMenu, noopFunc)
+karanpc.com##+js(set-constant, disableHotKeys, noopFunc)
+karanpc.com##+js(set-constant, disableDeveloperTools, noopFunc)
+karanpc.com##+js(set-constant, disableTextSelection, noopFunc)
+! The following names are randomly generated so they can't be blocked by name.
+!karanpc.com##+js(set-constant, pwnhdbliqzmfusryload, true)
+!karanpc.com##+js(set-constant, pwnhdbliqzmfusryreceived, true)
+!karanpc.com##+js(set-constant, pwnhdbliqzmfusryon, noopFunc)
+karanpc.com##+js(set-constant, doAction, noopFunc)
+karanpc.com##+js(acs, doAction)
+karanpc.com##+js(set-constant, adsBlocked, noopFunc)
+karanpc.com##+js(set-constant, callbackAdsBlocked, noopFunc)
+karanpc.com##+js(acs, callbackAdsBlocked, adsBlocked)
+karanpc.com##+js(set-constant, isFairAdBlocker, falseFunc)
+karanpc.com##+js(set-constant, adsSrc, "")
+karanpc.com##script[id="generate-a11y"]
+karanpc.com##script[id="generate-a11y"]:remove()
+!karanpc.com##+js(aeld, contextmenu)
+karanpc.com##+js(aopr, document.oncontextmenu)
+karanpc.com##+js(aopr, document.body.concontextmenu)
+||whounsou.com^*
+||khncham.cfd^*
+||usersdrive.com/propellersw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+usersdrive.com##a[href^="https://href.li/?https://khncham.cfd/"]
+usersdrive.com##a[href^="https://href.li/?https://khncham.cfd/"]:remove()
 
 !Whitelisted
 ! for Google Drive
