@@ -43433,34 +43433,51 @@ sidequestvr.com##div[class^="cky-consent-"]:remove()
 ||directory.cookieyes.com/api/v1/ip$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cs9.wpc.v0cdn.net/scripts/c/ms.analytics-web-2.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||az416426.vo.msecnd.net/scripts/c/ms.analytics-web-2.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.windowscentral.com##div[class="swal-modal detective--splash"]
-www.windowscentral.com##div[class="swal-overlay swal-overlay--show-modal"]
 ||www.windowscentral.com/sites/all/libraries/adblockdetection/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.windowscentral.com##div[class*="adunit"]
-www.windowscentral.com##div[class="mobile-leaderboard-320-50"]
-www.windowscentral.com##^script:has-text(/GdprApplies/i)
 www.windowscentral.com##*[id^="parsely-"]
-www.windowscentral.com##+js(set-constant, TIMEOUT_DELAY, 0)
-www.windowscentral.com##+js(abort-on-property-read, TIMEOUT_DELAY)
-www.windowscentral.com##+js(abort-on-property-write, TIMEOUT_DELAY)
-www.windowscentral.com##div[id^="bordeaux-preemptive-ad"]
+www.windowscentral.com##*[id^="parsely-"]:remove()
 www.windowscentral.com##div:has(div.mobile-leaderboard-320-50 > div#bordeaux-preemptive-ad-2)
-www.windowscentral.com##+js(aeld, onerror)
+www.windowscentral.com##div:has(div.mobile-leaderboard-320-50 > div#bordeaux-preemptive-ad-2):remove()
+www.windowscentral.com##div[class*="adunit"]
+www.windowscentral.com##div[class*="adunit"]:remove()
+www.windowscentral.com##div[class*="ad-unit"]
+www.windowscentral.com##div[class*="ad-unit"]:remove()
+www.windowscentral.com##div[class="mobile-leaderboard-320-50"]
+www.windowscentral.com##div[class="mobile-leaderboard-320-50"]:remove()
+www.windowscentral.com##div[class="swal-modal detective--splash"]
+www.windowscentral.com##div[class="swal-modal detective--splash"]:remove()
+www.windowscentral.com##div[class="swal-overlay swal-overlay--show-modal"]
+www.windowscentral.com##div[class="swal-overlay swal-overlay--show-modal"]:remove()
+www.windowscentral.com##div[class^="dfp-leaderboard-"]:remove()
+www.windowscentral.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
+www.windowscentral.com##div[id="slice-container-regionRedirectBanner"]:remove()
+www.windowscentral.com##div[id^="bordeaux-preemptive-ad"]
+www.windowscentral.com##div[id^="bordeaux-preemptive-ad"]:remove()
+www.windowscentral.com##div[id^="bordeaux-standard-ad-"]
+www.windowscentral.com##div[id^="bordeaux-standard-ad-"]:remove()
+www.windowscentral.com##footer[id="taboola-below-article-thumbnails"]:remove()
+www.windowscentral.com##footer[id="taboola-mobile-below-article-thumbnails"]:remove()
 www.windowscentral.com##img:remove-attr(onerror)
 www.windowscentral.com##source:remove-attr(onerror)
+www.windowscentral.com##+js(abort-on-property-read, TIMEOUT_DELAY)
+www.windowscentral.com##+js(abort-on-property-write, TIMEOUT_DELAY)
+www.windowscentral.com##+js(aeld, onerror)
+www.windowscentral.com##+js(set-constant, TIMEOUT_DELAY, 0)
+www.windowscentral.com##^script:has-text(/GdprApplies/i)
+www.windowscentral.com##^script:has-text(/GdprApplies/i):remove()
+www.windowscentral.com##:xpath(//script[contains(text(), 'GdprApplies')])
+www.windowscentral.com##:xpath(//script[contains(text(), 'GdprApplies)]):remove()
+! Don't need to remove current src attribute to rename other attribute to it
+!www.windowscentral.com##+js(rna, img[class=" lazy-image-van"], data-pin-media, src)
+www.windowscentral.com##+js(rna, img[class=" lazy-image-van"], data-original-mos, src)
 !||champagne.futurecdn.net/champagne.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||n9f8j2f8.stackpathcdn.com/champagne.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||champagne.futurecdn.net^*
 !||trc-events.taboola.com/futureplc-windowscentral/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||trc-events.taboola.com/*/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||eventsproxy.gargantuan.futureplc.com/future.adtech.freyr.v1.PageViewEvent$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.windowscentral.com##div[id^="bordeaux-standard-ad-"]
-www.windowscentral.com##div[id^="bordeaux-standard-ad-"]:remove()
 ||ad9a3c0dd66d84630be05b9bc8e77afe-475350857.eu-west-1.elb.amazonaws.com/push_metrics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bordeaux-gateway.futureplc.com/push_metrics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! Don't need to remove current src attribute to rename other attribute to it
-!www.windowscentral.com##+js(rna, img[class=" lazy-image-van"], data-pin-media, src)
-www.windowscentral.com##+js(rna, img[class=" lazy-image-van"], data-original-mos, src)
 ||anybodyproper.com^*
 ||strawguineaequanimity.com^*
 ||indelicateexcept.com^*
@@ -46286,6 +46303,14 @@ usersdrive.com##a[href^="https://href.li/?https://khncham.cfd/"]:remove()
 ||featherstage.com^*
 ||static.adsafeprotected.com/skeleton.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d162h6x3rxav67.cloudfront.net/skeleton.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||zintrack.com/js/plausible.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||zintrack.com/api/event$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.linkedin.com##div[id="organization_guest_contextual-sign-in"]
+www.linkedin.com##div[id="organization_guest_contextual-sign-in"]:remove()
+!||designatemeddling.com/err.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||designatemeddling.com^*
+||noveltyensue.com^*
+||crushedcrisp.com^*
 
 !Whitelisted
 ! for Google Drive
