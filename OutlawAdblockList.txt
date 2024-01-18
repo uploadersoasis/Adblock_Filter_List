@@ -28741,7 +28741,6 @@ www.theblaze.com##div[class^="gdpr-cookie"]
 ||comasoiling.casa^*
 ||tackledisplay.com^*
 ||h1.fastlyanalytics.map.fastly.net^*
-||www.fastly-insights.com/static/scout.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.wikia.nocookie.net/fandom-ae-assets/tracking-opt-in/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||seg.ad.gt^*
 ||a.ad.gt^*
@@ -43455,6 +43454,9 @@ www.windowscentral.com##div[id^="bordeaux-preemptive-ad"]
 www.windowscentral.com##div[id^="bordeaux-preemptive-ad"]:remove()
 www.windowscentral.com##div[id^="bordeaux-standard-ad-"]
 www.windowscentral.com##div[id^="bordeaux-standard-ad-"]:remove()
+www.windowscentral.com##div[data-widget-type="ads"]:remove()
+!www.windowscentral.com##div[data-type="ads"][data-ads-type="bordeaux"]:remove()
+www.windowscentral.com##div[data-type="ads"]:remove()
 www.windowscentral.com##footer[id="taboola-below-article-thumbnails"]:remove()
 www.windowscentral.com##footer[id="taboola-mobile-below-article-thumbnails"]:remove()
 www.windowscentral.com##img:remove-attr(onerror)
@@ -43463,6 +43465,8 @@ www.windowscentral.com##+js(abort-on-property-read, TIMEOUT_DELAY)
 www.windowscentral.com##+js(abort-on-property-write, TIMEOUT_DELAY)
 www.windowscentral.com##+js(aeld, onerror)
 www.windowscentral.com##+js(set-constant, TIMEOUT_DELAY, 0)
+www.windowscentral.com##+js(set-constant, loadTaboola, noopFunc)
+www.windowscentral.com##+js(acs, loadTaboola)
 www.windowscentral.com##^script:has-text(/GdprApplies/i)
 www.windowscentral.com##^script:has-text(/GdprApplies/i):remove()
 www.windowscentral.com##:xpath(//script[contains(text(), 'GdprApplies')])
@@ -45805,7 +45809,6 @@ www.androidpolice.com##div[id^="adsninja-ad-zone"]:remove()
 www.androidpolice.com##div[class="ad-odd"]
 www.androidpolice.com##div[class="ad-odd"]:remove()
 www.androidpolice.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):remove()
-www.androidpolice.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):remove()
 www.androidpolice.com##script[id="optimera-ops"]
 www.androidpolice.com##script[id="optimera-ops"]:remove()
 www.androidpolice.com##+js(set-constant, sendToGoogleAnalytics, noopFunc)
@@ -46222,7 +46225,6 @@ down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '#adblock
 down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '#adblock_detected')]):remove()
 ||down.mdiaload.com/js/share.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||img.cartooncdn.xyz/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||img.cartooncdn.xyz/themes/vast/videojs.ads.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 kisscartoon.sh##div[id="upgrade_pop"]
 kisscartoon.sh##div[id="upgrade_pop"]:remove()
 embed.vodstream.xyz##div[id="playback-fake"]:remove()
@@ -46311,6 +46313,97 @@ www.linkedin.com##div[id="organization_guest_contextual-sign-in"]:remove()
 ||designatemeddling.com^*
 ||noveltyensue.com^*
 ||crushedcrisp.com^*
+quakewiki.org##div[class^="mw-cookiewarning-"]
+quakewiki.org##div[class^="mw-cookiewarning-"]:remove()
+||static-cdn.spot.im/production/conversation/tags/v*/ad-container-bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.popsci.com/app/mu-plugins/organic-content/dist/affiliate-links-fill-up.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.popsci.com##aside[class="mtc-unit-prefill-container"]:has(div[id="mtc-unit-header__desktop__article-0"])
+www.popsci.com##aside[class="mtc-unit-prefill-container"]:has(div[id="mtc-unit-header__desktop__article-0"]):remove()
+www.popsci.com##div[class^="ad-slot-wrapper"]
+www.popsci.com##div[class^="ad-slot-wrapper"]:remove()
+www.popsci.com##div[aria-label="Advertisement"]
+www.popsci.com##div[aria-label="Advertisement"]:remove()
+pallabmobile.in##div[style="position: fixed; width: 100vw; background: rgba(0, 0, 0, 0.5); top: 0; bottom: 0; left: 0; display: flex; z-index: 999999;"]:remove()
+pallabmobile.in##article[id^="post-"]:remove()
+pallabmobile.in##+js(set-constant, adsbygoogle, [])
+pallabmobile.in##+js(aopw, adsbygoogle)
+pallabmobile.in##+js(aopr, adsbygoogle)
+pallabmobile.in##:xpath(//script[contains(text(), 'adsbygoogle')]):remove()
+pallabmobile.in##:xpath(//script[contains(text(), 'eval(function(h,u,n,t,e,r)')]):remove()
+pallabmobile.in##:xpath(//script[contains(text(), '}return decodeURIComponent')]):remove()
+pallabmobile.in##script[src*="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove()
+! The following scripts have to be in this order since removal would otherwise change the xpath.
+!pallabmobile.in##:xpath(//html/body/div[1]/div[2]/div[3]/div/div[2]/div/script[2]):remove()
+!pallabmobile.in##:xpath(//html/body/div[1]/div[2]/div[3]/div/div[2]/div/script[1]):remove()
+*##script[src*="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove()
+||ads.aralego.com^*
+||economictimes.indiatimes.com/js_monetize/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+economictimes.indiatimes.com##aside[currency_ad="1"]:remove()
+economictimes.indiatimes.com##div[data-mgid]:remove()
+economictimes.indiatimes.com##div[class*="adBox"]:remove()
+economictimes.indiatimes.com##div[class*="custom_ad"]:remove()
+economictimes.indiatimes.com##div[id^="div-gpt-ad-"]:remove()
+economictimes.indiatimes.com##div[id="topAd"]:remove()
+economictimes.indiatimes.com##+js(set-constant, boomrScriptUrl, "")
+economictimes.indiatimes.com##+js(aopw, boomrScriptUrl)
+economictimes.indiatimes.com##+js(aopr, boomrScriptUrl)
+commentpicker.com##div[id="ezmobfooter"]:remove()
+commentpicker.com##+js(set-constant, __ezHttpConsent, {})
+commentpicker.com##+js(aopw, __ezHttpConsent)
+commentpicker.com##+js(aopr, __ezHttpConsent)
+commentpicker.com##+js(set-constant, __ez.fads, {})
+commentpicker.com##+js(aopw, __ez.fads)
+commentpicker.com##+js(aopr, __ez.fads)
+commentpicker.com##+js(set-constant, ezTcfConsent, {})
+commentpicker.com##+js(aopw, ezTcfConsent)
+commentpicker.com##+js(aopr, ezTcfConsent)
+commentpicker.com##+js(set-constant, __advertiserRule, [])
+commentpicker.com##+js(aopw, __advertiserRule)
+commentpicker.com##+js(aopr, __advertiserRule)
+commentpicker.com##+js(set-constant, window.isEZABL, false)
+commentpicker.com##+js(set-constant, ezAardvarkDetected, false)
+commentpicker.com##+js(set-constant, ezDetectAardvark, noopFunc)
+commentpicker.com##+js(acs, ezDetectAardvark)
+commentpicker.com##+js(set-constant, _emitEzConsentEvent, noopFunc)
+commentpicker.com##+js(acs, _emitEzConsentEvent)
+commentpicker.com##+js(set-constant, __ez_fad_ezpbinit, noopFunc)
+commentpicker.com##+js(acs, __ez_fad_ezpbinit)
+commentpicker.com##+js(set-constant, loadTeadsCookiless, noopFunc)
+commentpicker.com##+js(set-constant, window.teads_analytics, {})
+commentpicker.com##+js(set-constant, teadsCookilessScript, {})
+commentpicker.com##+js(acs, loadTeadsCookiless)
+commentpicker.com##span[id^="ezoic-pub-ad-"]:remove()
+commentpicker.com##span[class^="ezoic-ad"]:remove()
+||commentpicker.com/edmontonalberta/calgary.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||commentpicker.com/porpoiseant/banger.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||commentpicker.com/porpoiseant/nmash.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/detroitchicago/wichita.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/detroitchicago/raleigh.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/detroitchicago/vista.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/beardeddragon/drake.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/porpoiseant/jellyfish.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/detroitchicago/kenai.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/detroitchicago/boise.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/detroitchicago/grapefruit.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/detroitchicago/tulsa.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/parsonsmaize/abilene.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/parsonsmaize/mulvane.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/parsonsmaize/olathe.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/parsonsmaize/chanute.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/porpoiseant/et.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/porpoiseant/lemon.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/porpoiseant/tangerine.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.ezojs.com/tardisrocinante/vitals.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||adservice.google.nl^*
+||vrthfncg.com^*
+||www.euware.net^*
+||euware.net^*
+||starller.com^*
+||storagesafe.com^*
+||www6.storagesafe.com^*
+||www.storagesafe.cloud^*
+||premium.toptap.co^*
+alternativeto.net##div[class^="GamAds_"]:remove()
 
 !Whitelisted
 ! for Google Drive
@@ -46457,6 +46550,7 @@ www.youtube.com#@#ytd-popup-container.ytd-app.style-scope
 @@.jpg$image,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz
 @@.png$image,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz
 @@||googlesyndication.com^$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|dgdrive.xyz|techthematter.xyz
+@@||go.ezodn.com/detroitchicago/audins.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 @@||dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip^$ghide
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip#@#div[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important;)
 @@||a2zapk.com^$script,xhr,3p,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
