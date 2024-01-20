@@ -26548,6 +26548,7 @@ doodrive.com##iframe[data-aa]
 doodrive.com##iframe[data-aa]:remove()
 doodrive.com##div[id="patron-modal"]
 doodrive.com##div[id="patron-modal"]:remove()
+doodrive.com##button[data-download]:remove-attr(disabled)
 !doodrive.com##div:hidden(false)
 !doodrive.com###human-verification
 !doodrive.com##div[id="human-verification"]
@@ -46427,6 +46428,9 @@ commentpicker.com##span[class^="ezoic-ad"]:remove()
 ||premium.toptap.co^*
 alternativeto.net##div[class^="GamAds_"]:remove()
 ||0f73e92f-4074-4fe3-85d3-ed3fc969859e.edge.permutive.app^*
+gamedva.com##iframe[id^="google_ads_frame"]:remove()
+gamedva.com##ins[data-ad-client]:remove()
+gamedva.com##div[class="ad-slot"]:remove()
 
 !Whitelisted
 ! for Google Drive
