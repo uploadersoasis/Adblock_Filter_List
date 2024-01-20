@@ -31883,7 +31883,29 @@ www.rgcd.co.uk##div[id="cookieChoiceInfo"]
 !www.videogameschronicle.com##div[id="ad__leaderboard"]
 !www.videogameschronicle.com##div[id="ad__billboard"]
 www.videogameschronicle.com##div[id^="ad__"]
+www.videogameschronicle.com##div[id^="ad__"]:remove()
+www.videogameschronicle.com##+js(set-constant, performanceCookiesAllowed, falseFunc)
+www.videogameschronicle.com##+js(set-constant, performanceCookiesDisallowed, trueFunc)
+www.videogameschronicle.com##+js(set-constant, targetingCookiesAllowed, falseFunc)
+www.videogameschronicle.com##+js(set-constant, targetingCookiesDisallowed, trueFunc)
+www.videogameschronicle.com##+js(set-constant, functionalCookiesAllowed, trueFunc)
+www.videogameschronicle.com##+js(set-constant, functionalCookiesDisallowed, falseFunc)
+www.videogameschronicle.com##+js(set-constant, gtag, noopFunc)
+www.videogameschronicle.com##+js(acs, gtag)
+www.videogameschronicle.com##+js(set-constant, window.googletag, {})
+www.videogameschronicle.com##+js(aopr, window.googletag)
+www.videogameschronicle.com##+js(aopw, window.googletag)
+www.videogameschronicle.com##+js(set-constant, ad__source, [])
+www.videogameschronicle.com##+js(set-constant, ad__tags, [])
+www.videogameschronicle.com##+js(set-constant, ad__games, [])
+www.videogameschronicle.com##+js(aopr, ad__source)
+www.videogameschronicle.com##+js(aopw, ad__source)
+www.videogameschronicle.com##+js(aopr, ad__tags)
+www.videogameschronicle.com##+js(aopw, ad__tags)
+www.videogameschronicle.com##+js(aopr, ad__games)
+www.videogameschronicle.com##+js(aopw, ad__games)
 ||www.videogameschronicle.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cmp.videogameschronicle.com^*
 ||brioletredeyes.com^*
 ||nestledmph.com^*
 ||vooshagy.net^*
@@ -46404,6 +46426,7 @@ commentpicker.com##span[class^="ezoic-ad"]:remove()
 ||www.storagesafe.cloud^*
 ||premium.toptap.co^*
 alternativeto.net##div[class^="GamAds_"]:remove()
+||0f73e92f-4074-4fe3-85d3-ed3fc969859e.edge.permutive.app^*
 
 !Whitelisted
 ! for Google Drive
