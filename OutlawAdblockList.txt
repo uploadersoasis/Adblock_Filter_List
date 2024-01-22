@@ -27323,7 +27323,6 @@ triviaboss.com##.game-right-rail-ad-label
 autosoft-forum.com##li[class*="notice--cookie"]
 ||gadsabs.com^*
 ||mediasama.com^*
-||apkgk.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||nationsflushedoccasionally.com^*
 ||pl14999415.pvclouds.com^*
 filesupload.org##div[class*="cookiealert"]
@@ -27864,8 +27863,8 @@ apnews.com##div[class^="Component-placeholderWrapper"]
 ||jelabboody.com^*
 !||e1f95201b19594.site/advert.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||e1f95201b19594.site^*
-||direct-events-collector.spot.im/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||events-collector.spot.im/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||direct-events-collector.spot.im^*
+||events-collector.spot.im^*
 !||publisher-assets.spot.im/ad/event-tracking/pixel-ads-google-adsense.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||publisher-assets.spot.im/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static-cdn.spot.im/production/ads/tags/v16.4.3-1/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -41969,11 +41968,20 @@ editor.p5js.org##*[class^="CookieConsent_"]:remove()
 ||www.dailymail.co.uk/static/mol-fe/static/mol-fe-sync-bundle/6.19.0/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.dailymail.co.uk/static/mol-adverts/6.5.1/mol-adverts.desktop.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.dailymail.co.uk/static/mol-adverts/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.dailymail.co.uk##a[href*="://pubads.g.doubleclick.net/gampad/"]:upward(1)
+www.dailymail.co.uk##a[href*="://pubads.g.doubleclick.net/gampad/"]:upward(1):remove()
+www.dailymail.co.uk##div[class^="puff-ad"]
+www.dailymail.co.uk##div[class^="puff-ad"]:remove()
+www.dailymail.co.uk##div[class*="adHolder"]:remove()
+www.dailymail.co.uk##div[class*="molads_"]:remove()
 www.dailymail.co.uk##div[class="ad-wrapper"]
+www.dailymail.co.uk##div[data-adverts-ad]
+www.dailymail.co.uk##div[data-adverts-ad]:remove()
+www.dailymail.co.uk##div[data-track-module]
+www.dailymail.co.uk##div[data-track-module]:remove()
+www.dailymail.co.uk##iframe[src*="//www.newzit.com/setABframe.html"]:remove()
 www.dailymail.co.uk##span[class*="mol-ads-label"]
 www.dailymail.co.uk##span[class*="mol-ads-label"]:remove()
-www.dailymail.co.uk##div[data-adverts-ad]
-www.dailymail.co.uk##div[data-track-module]
 www.dailymail.co.uk##+js(set-constant, disableAds, true, stay)
 www.dailymail.co.uk##+js(set-constant, enableAds, false, stay)
 www.dailymail.co.uk##+js(set-constant, useGpt, false, stay)
@@ -41986,9 +41994,6 @@ www.dailymail.co.uk##+js(acs, adverts)
 www.dailymail.co.uk##+js(aopr, window.adverts)
 www.dailymail.co.uk##+js(aopw, window.adverts)
 !www.dailymail.co.uk##div[id="content"]:remove()
-www.dailymail.co.uk##a[href*="://pubads.g.doubleclick.net/gampad/"]:upward(1)
-www.dailymail.co.uk##div[class^="puff-ad"]
-www.dailymail.co.uk##div[class^="puff-ad"]:remove()
 ||xypthe.com^*
 www.yahoo.com##div[id^="sda-MAST2"]:upward(1):remove()
 www.yahoo.com##div[id^="sda-MAST2"]
@@ -46431,6 +46436,12 @@ alternativeto.net##div[class^="GamAds_"]:remove()
 gamedva.com##iframe[id^="google_ads_frame"]:remove()
 gamedva.com##ins[data-ad-client]:remove()
 gamedva.com##div[class="ad-slot"]:remove()
+||apkgk.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+apkgk.com##ins[data-ad-client]:remove()
+apkgk.com##+js(set-constant, adsbygoogle, [])
+apkgk.com##+js(aopw, adsbygoogle)
+apkgk.com##+js(aopr, adsbygoogle)
+apkgk.com##span[class="title-adv"]:remove()
 
 !Whitelisted
 ! for Google Drive
