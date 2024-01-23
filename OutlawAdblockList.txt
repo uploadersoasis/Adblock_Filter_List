@@ -39902,63 +39902,69 @@ dood.re##+js(aeld, /contextmenu|keydown/)
 ||ak.phumpauk.com^*
 !||mixdrop.co/js/script.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||mixdrop.co/xvideo-js.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||mixdrop.to/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mixdrop.co/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mixdrop.co/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mixdrop.co/xads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!mixdrop.co##iframe
-mixdrop.co##+js(set-constant, adblock, 0)
-mixdrop.co##+js(set-constant, blockAB, false)
-mixdrop.co##+js(set-constant, popundersPerIP, 0)
+||mixdrop.to/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mixdrop.to/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mixdrop.to/xads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mixdrop.ag/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mixdrop.ag/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mixdrop.ag/xads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!mixdrop.co,mixdrop.ag,mixdrop.to##iframe
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, adblock, 0)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, blockAB, false)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, popundersPerIP, 0)
 ! MDCore is a function defined in https://mixdrop.co/player/videoplayer.min.js
-mixdrop.co##+js(set-constant, MDCore, noopFunc)
-mixdrop.co##+js(set-constant, MDCore.blockAB, false)
-mixdrop.co##+js(set-constant, MDCore.adblock, 0)
-mixdrop.co##+js(set-constant, wpn63s, noopFunc)
-mixdrop.co##+js(window.open-defuser.js)
-mixdrop.co##div[id="rn_native_bqupr"]
-mixdrop.co##^script:has-text(/injectP2\(\)/i)
-mixdrop.co##^script:has-text(/plantinscription\.com/i)
-mixdrop.co##^script:has-text(/function\(p,a,c,k,e,d\)/i)
-mixdrop.co##+js(abort-current-script, fromCharCode, charCodeAt)
-mixdrop.co##+js(abort-current-script, atob, decodeURIComponent)
-mixdrop.co##+js(abort-current-script, mp0p_counter)
-mixdrop.co##+js(abort-current-script, lkid)
-mixdrop.co##+js(abort-current-script, dynamicadx)
-mixdrop.co##+js(abort-current-script, popups)
-mixdrop.co##+js(abort-current-script, gearbest)
-mixdrop.co##+js(abort-current-script, pmzer)
-mixdrop.co##+js(abort-on-property-write, dynamicadx)
-mixdrop.co##+js(abort-on-property-read, dynamicadx)
-mixdrop.co##+js(abort-on-property-write, popups)
-mixdrop.co##+js(abort-on-property-read, popups)
-mixdrop.co##+js(abort-on-property-write, gearbest)
-mixdrop.co##+js(abort-on-property-read, gearbest)
-mixdrop.co##+js(abort-on-property-write, pmzer)
-mixdrop.co##+js(abort-on-property-read, pmzer)
-mixdrop.co##+js(abort-on-property-write, lkid)
-mixdrop.co##+js(abort-on-property-read, lkid)
-mixdrop.co##+js(abort-on-property-write, mp0p_counter)
-mixdrop.co##+js(abort-on-property-read, mp0p_counter)
-mixdrop.co##+js(abort-on-property-write, rn_native_bqupr)
-mixdrop.co##+js(abort-on-property-read, rn_native_bqupr)
-mixdrop.co##+js(abort-on-property-write, NativeAd)
-mixdrop.co##+js(abort-on-property-read, NativeAd)
-mixdrop.co##^script:has-text(dtnoppu)
-mixdrop.co##+js(acs, dtnoppu)
-mixdrop.co##+js(aopw, lastTimestamp)
-mixdrop.co##+js(aopr, lastTimestamp)
-mixdrop.co##+js(aopw, wpn63s)
-mixdrop.co##+js(aopr, wpn63s)
-mixdrop.co##+js(aeld, click, function(g))
-mixdrop.co##+js(aeld, click, function(a))
-mixdrop.co##+js(nosiif, function)
-mixdrop.co##body:remove-attr(onclick)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, MDCore, noopFunc)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, MDCore.blockAB, false)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, MDCore.adblock, 0)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, wpn63s, noopFunc)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(window.open-defuser.js)
+mixdrop.co,mixdrop.ag,mixdrop.to##div[id="rn_native_bqupr"]
+mixdrop.co,mixdrop.ag,mixdrop.to##^script:has-text(/injectP2\(\)/i)
+mixdrop.co,mixdrop.ag,mixdrop.to##^script:has-text(/plantinscription\.com/i)
+mixdrop.co,mixdrop.ag,mixdrop.to##^script:has-text(/function\(p,a,c,k,e,d\)/i)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-current-script, fromCharCode, charCodeAt)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-current-script, atob, decodeURIComponent)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-current-script, mp0p_counter)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-current-script, lkid)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-current-script, dynamicadx)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-current-script, popups)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-current-script, gearbest)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-current-script, pmzer)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, dynamicadx)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-read, dynamicadx)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, popups)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-read, popups)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, gearbest)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-read, gearbest)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, pmzer)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-read, pmzer)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, lkid)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-read, lkid)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, mp0p_counter)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-read, mp0p_counter)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, rn_native_bqupr)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-read, rn_native_bqupr)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, NativeAd)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-read, NativeAd)
+mixdrop.co,mixdrop.ag,mixdrop.to##^script:has-text(dtnoppu)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(acs, dtnoppu)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(aopw, lastTimestamp)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(aopr, lastTimestamp)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(aopw, wpn63s)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(aopr, wpn63s)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(aeld, click, function(g))
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(aeld, click, function(a))
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(nosiif, function)
+mixdrop.co,mixdrop.ag,mixdrop.to##body:remove-attr(onclick)
 ||mixdrop.co/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-mixdrop.co##+js(set-constant, adcashMacros, {})
-mixdrop.co##+js(abort-on-property-write, adcashMacros)
-mixdrop.co##+js(abort-on-property-read, adcashMacros)
-mixdrop.co##:xpath(//script[contains(text(), 'adcashMacros')])
-mixdrop.co##:xpath(//script[contains(text(), 'adcashMacros')]):remove()
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, adcashMacros, {})
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, adcashMacros)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-read, adcashMacros)
+mixdrop.co,mixdrop.ag,mixdrop.to##:xpath(//script[contains(text(), 'adcashMacros')])
+mixdrop.co,mixdrop.ag,mixdrop.to##:xpath(//script[contains(text(), 'adcashMacros')]):remove()
 ||soliads.net^*
 ||dd.tittyptinoid.com^*
 ||ibrapush.com^*
@@ -45169,7 +45175,6 @@ www.uppit.com##+js(acs, decodeURIComponent)
 www.uppit.com##:xpath(//html/body/header/div/script[2])
 www.uppit.com##:xpath(//html/body/header/div/script[2]):remove()
 ||mdbekjwqa.pw/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||mixdrop.ag/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cholatetapalos.com^*
 techreport.com##div[class*="clickout-banner-regular_native_box"]
 techreport.com##div[class*="clickout-banner-regular_native_box"]:remove()
