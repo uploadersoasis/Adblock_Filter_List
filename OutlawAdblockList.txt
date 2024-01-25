@@ -46552,8 +46552,8 @@ igram.storyy.shop##+js(acs, gtag)
 ||revive.stats.rip^*
 new7.filepress.store##div[id^="beacon_"]:remove()
 new7.filepress.store##div[id="banner-reclam"]:remove()
-new7.filepress.store##+js(set-constant, trackBannerClick(), noopFunc)
-new7.filepress.store##+js(acs, trackBannerClick())
+new7.filepress.store##+js(set-constant, trackBannerClick, noopFunc)
+new7.filepress.store##+js(acs, trackBannerClick)
 ||s3.us-east-1.amazonaws.com/957e4f1b5fca420d923566291306036be3bf08c79b3687345c667d0dd2366ca/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vpnrice.com/a/p.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vidhide.com/js/dnsads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -46570,6 +46570,14 @@ vidhidepro.com##div[class*="ad-placement"]:remove()
 ||witwormfurzes.com^*
 ||pourpressedcling.com^*
 ||offshuppetchan.com^*
+playhop.com##div[class^="adv-fullscreen-block"]:remove()
+playhop.com##div[class*="play-modal"]:remove()
+playhop.com##div[class*="google-sticky-adv-banner"]:remove()
+playhop.com##script[data-rcid="aab"]:remove()
+playhop.com##script[data-info="heavy-ad-intervention-observer"]:remove()
+playhop.com##+js(set-constant, handleHeavyAdIntervention, noopFunc)
+playhop.com##+js(acs, handleHeavyAdIntervention)
+playhop.com##+js(set-constant, isHeavyAdIntervention, falseFunc)
 
 !Whitelisted
 ! for Google Drive
