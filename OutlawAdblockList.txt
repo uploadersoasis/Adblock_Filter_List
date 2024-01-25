@@ -2289,6 +2289,7 @@ depositfiles.com###ads_z_frame
 ||secure.lawsuit-runescape.com^*
 ||ophan.guardian.co.uk/redir.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ophan.theguardian.com/t.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ophan.theguardian.com/img/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||i2.putags.com/pu.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||i2.putags.com^*
 !||c4tracking01.com/aff/ep.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -23315,9 +23316,6 @@ www.fshare.vn##+js(set-constant, minutes, 0)
 ||gamma.cachefly.net/js/ad-exchange.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||script.tapfiliate.com/tapfiliate.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||script.tapfiliate.com^*
-www.sitepoint.com##+js(abort-on-property-write, t.TapfiliateObject)
-www.sitepoint.com##+js(abort-on-property-read, t.TapfiliateObject)
-www.sitepoint.com##.gSJDlh
 !||adylalahb.ru/clickunder-out/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||adylalahb.ru^*
 ||catds.net/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -24172,7 +24170,6 @@ gamesmojo.com##div[class="gdpr-block-wrap slide-up"]
 ||get.zazqx.com^*
 ||www.registshhg.club^*
 ||registshhg.club^*
-||www.sitepoint.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||the-eighth-d.openx.net^*
 news.xbox.com##div[id="msccBanner"]
 www.gamasutra.com##div[id="gdpr_banner"]
@@ -37405,7 +37402,6 @@ pubads.g.doubleclick.net^$xhr,domain=pluto.tv
 pagead2.googlesyndication.com^$xhr,domain=pluto.tv
 pluto.tv##div[data-role="adContainer"]
 pluto.tv##div[data-role="adClickEl"]
-||production-cmp.isgprivacy.cbsi.com/dist/optanon-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||g.bidbrain.app^*
 ||pingpepa.xyz^*
 www.audioholics.com##div[id="sitemodal"]
@@ -41581,7 +41577,7 @@ www.quora.com##div[class="qu-overflow--hidden"]:remove-class(qu-overflow--hidden
 www.quora.com##div[class="q-box qu-zIndex--inline_overlay"]
 www.quora.com##div[class="q-box qu-zIndex--inline_overlay"]:remove()
 www.quora.com##body[class="q-platform--desktop"]:style(overflow:scroll !important;)
-!||production-cmp.isgprivacy.cbsi.com/dist/optanon-v1.1.0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||production-cmp.isgprivacy.cbsi.com/dist/optanon-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||production-cmp.isgprivacy.cbsi.com^*
 ! player-services.cbs.com/1.16.0/smart-tag/smart.tag.js handles video ads, but is that all?
 ||player-services.cbs.com/*/smart-tag/smart.tag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -41976,11 +41972,15 @@ editor.p5js.org##*[class^="CookieConsent_"]:remove()
 ||www.dailymail.co.uk/static/mol-adverts/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.dailymail.co.uk##a[href*="://pubads.g.doubleclick.net/gampad/"]:upward(1)
 www.dailymail.co.uk##a[href*="://pubads.g.doubleclick.net/gampad/"]:upward(1):remove()
+www.dailymail.co.uk##ad-slot:remove()
 www.dailymail.co.uk##div[class^="puff-ad"]
 www.dailymail.co.uk##div[class^="puff-ad"]:remove()
 www.dailymail.co.uk##div[class*="adHolder"]:remove()
 www.dailymail.co.uk##div[class*="molads_"]:remove()
 www.dailymail.co.uk##div[class="ad-wrapper"]
+www.dailymail.co.uk##div[class="ad-wrapper"]:remove()
+www.dailymail.co.uk##div[class*="mpu_puff_wrapper"]
+www.dailymail.co.uk##div[class*="mpu_puff_wrapper"]:remove()
 www.dailymail.co.uk##div[data-adverts-ad]
 www.dailymail.co.uk##div[data-adverts-ad]:remove()
 www.dailymail.co.uk##div[data-track-module]
@@ -41996,6 +41996,8 @@ www.dailymail.co.uk##+js(set-constant, useGpt, false, stay)
 www.dailymail.co.uk##+js(set-constant, window.adverts.config, {}, complete)
 !www.dailymail.co.uk##+js(set-constant, adverts.addToArray, noopFunc, end)
 www.dailymail.co.uk##+js(set-constant, adverts.addToArray, noopFunc, complete)
+!www.dailymail.co.uk##+js(set-constant, adverts.addFBRemarketingPixel, noopFunc, end)
+www.dailymail.co.uk##+js(set-constant, adverts.addFBRemarketingPixel, noopFunc, complete)
 www.dailymail.co.uk##+js(acs, adverts)
 www.dailymail.co.uk##+js(aopr, window.adverts)
 www.dailymail.co.uk##+js(aopw, window.adverts)
@@ -46447,6 +46449,77 @@ apkgk.com##+js(set-constant, adsbygoogle, [])
 apkgk.com##+js(aopw, adsbygoogle)
 apkgk.com##+js(aopr, adsbygoogle)
 apkgk.com##span[class="title-adv"]:remove()
+||designerdeclinedfrail.com^*
+||lurgimte.com^*
+!||cdn.ads-flipp.com/flyer-locator-service/campaigns$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.ads-flipp.com^*
+||p.flipp.com/beacons$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||doppler-beacon.cbsivideo.com/log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||uninterestedquarter.com^*
+||www.sitepoint.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.sitepoint.com##+js(abort-on-property-write, t.TapfiliateObject)
+www.sitepoint.com##+js(abort-on-property-read, t.TapfiliateObject)
+www.sitepoint.com##.gSJDlh
+www.sitepoint.com##div[data-unit-code]:has(div[class*="_ap_apex_ad"]):remove()
+www.sitepoint.com##div[class*="_ap_apex_ad"]:remove()
+www.sitepoint.com##script[id="adpushup-script"]:remove()
+www.sitepoint.com##script[id="meta-script"]:remove()
+www.sitepoint.com##script[id^="tapfiliate-"]:remove()
+www.sitepoint.com##script[id="gtm-script"]:remove()
+www.sitepoint.com##script[id="consent-script"]:remove()
+||api-eu.mixpanel.com/track/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||twitter.com/i/js_inst?c_name=ui_metrics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! The following three rules don't keep the profile page from being redirected if not logged in.
+!||api.twitter.com/1.1/onboarding/task.json?flow_name=login$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||abs.twimg.com/responsive-web/client-web/shared~bundle.AboutThisAd~bundle.NotMyAccount~bundle.MultiAccount~bundle.Articles~bundle.AudioSpacePeek~bundl.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||abs.twimg.com/responsive-web/client-web/shared~loader.DMDrawer~bundle.AccountAnalytics~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.BookmarkFolders~.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||synchrobox.adswizz.com^*
+!||collect.rebelmouse.io/collector/v1/cwv$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||collect.rebelmouse.io^*
+!||split-testing-stats.rbl.ms/spacer.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||split-testing-stats.rbl.ms^*
+www.rawstory.com##div[id="story-top-ad"]:remove()
+www.rawstory.com##ins[data-ad-client]:remove()
+www.rawstory.com##+js(set-constant, adsbygoogle, [])
+www.rawstory.com##+js(aopw, adsbygoogle)
+www.rawstory.com##+js(aopr, adsbygoogle)
+www.rawstory.com##div[class*="proper-ad-unit"]:remove()
+www.rawstory.com##div[class="connatix-hodler"]:remove()
+www.rawstory.com##+js(set-constant, window.admiral, noopFunc)
+www.rawstory.com##+js(acs, window.admiral)
+www.rawstory.com##+js(trusted-set, subscription, active)
+||user-stats.rbl.ms^*
+||pages-stats.rbl.ms^*
+!||dell-a.ntp-update.com^*
+||dell-*.ntp-update.com^*
+||ntp-update.com^*
+||assets.zephr.com/zephr-browser/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.nbcudigitaladops.com/hosted/util/geo_data.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+cnbc.com##span:remove-attr(hidden)
+cnbc.com##span:remove-class(hidden)
+!||collector-26223.us.tvsquared.com/tv2track.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||collector-26223.us.tvsquared.com^*
+||collector-*.us.tvsquared.com^*
+||8cmfzco0.micpn.com/p/js/1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.theguardian.com##gu-island[name="StickyBottomBanner"]:remove()
+www.theguardian.com##gu-island[name="SetABTests"]:remove()
+www.theguardian.com##gu-island[name="SetAdTargeting"]:remove()
+www.theguardian.com##gu-island[name="ReaderRevenueDev"]:remove()
+www.theguardian.com##gu-island[name="Metrics"]:remove()
+www.theguardian.com##gu-island[name="SupportTheG"]:remove()
+www.theguardian.com##div[class*="ad-slot-container"]:remove()
+www.theguardian.com##div[class*="ad_unit"]:remove()
+www.theguardian.com##div[class*="text-ad"]:remove()
+www.theguardian.com##div[class*="textAd"]:remove()
+www.theguardian.com##div[class*="text_ad"]:remove()
+www.theguardian.com##div[class*="text-ads"]:remove()
+www.theguardian.com##div[class*="ad-text"]:remove()
+www.theguardian.com##div[class*="adSense"]:remove()
+www.theguardian.com##div[class*="adBlock"]:remove()
+www.theguardian.com##div[class*="adContent"]:remove()
+www.theguardian.com##div[class*="adBanner"]:remove()
+www.theatlantic.com##gpt-ad:remove()
+www.theatlantic.com##div[class^="ArticleInjector_clsAvoider__"]:remove()
 
 !Whitelisted
 ! for Google Drive
