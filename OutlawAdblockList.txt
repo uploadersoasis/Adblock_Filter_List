@@ -41910,6 +41910,7 @@ filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="AdPanel"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="ad--sidebar"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="HouseAd"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="ad-728-90"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="NavAD"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="ad-300x250-wrapper"]:remove()
 ||filecrypt.cc/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.co/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -41918,7 +41919,10 @@ filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="ad-300x250-wrapper"]:remove()
 ||filecrypt.co/meh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.to/meh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[src="/muh.php"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##img[style="display:none;"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##script[id^="AdContent_"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'bla2.php?container=')])
+filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'bla2.php?container=')]):remove()
 ! The following is too general?
 !filecrypt.co,filecrypt.cc,filecrypt.to##div[class] > i[style][onclick]
 filecrypt.co,filecrypt.cc,filecrypt.to##button[id]:has-text(/High-speed/i)
