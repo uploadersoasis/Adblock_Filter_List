@@ -41903,6 +41903,7 @@ filecrypt.co,filecrypt.cc,filecrypt.to##div[class] > i[style*="background:url"][
 ! The following rule won't work because this class name is randomly generated.
 !filecrypt.co,filecrypt.cc,filecrypt.to##div[class="obldnweby"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##div[style="pointer-events: none; position: absolute; top: 0px; left: 0px; width: 1522px; height: 566px; z-index: 2147483647;"]:has(div[style="position: absolute; top: 0px; left: 0px; width: 1522px; height: 566px; z-index: 2147483647; pointer-events: auto;"]):remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##div[class="filItheadbIockgueue3"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id^="AdServer_"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="AdHeader"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="Adcode"]:remove()
@@ -41912,17 +41913,22 @@ filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="HouseAd"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="ad-728-90"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="NavAD"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="ad-300x250-wrapper"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id^="ad-2-"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="above-the-fold-ad"]:remove()
 ||filecrypt.cc/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.co/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.to/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.cc/meh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.co/meh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.to/meh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-filecrypt.co,filecrypt.cc,filecrypt.to##iframe[src="/muh.php"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[src$="/muh.php"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##img[style="display:none;"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##img[style="display: none;"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##script[id^="AdContent_"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'bla2.php?container=')])
 filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'bla2.php?container=')]):remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')])
+filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 ! The following is too general?
 !filecrypt.co,filecrypt.cc,filecrypt.to##div[class] > i[style][onclick]
 filecrypt.co,filecrypt.cc,filecrypt.to##button[id]:has-text(/High-speed/i)
@@ -41960,6 +41966,9 @@ filecrypt.co,filecrypt.cc,filecrypt.to##button[id]:has-text(/High-speed/i)
 ||filecrypt.co/images/s15uafgga.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$image
 ||filecrypt.cc/images/s15uafgga.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$image
 ||filecrypt.to/images/s15uafgga.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$image
+||filecrypt.cc/images/akelajkszw.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.co/images/akelajkszw.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.to/images/akelajkszw.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.cc/js/muchmoreads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.co/js/muchmoreads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.to/js/muchmoreads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -46618,6 +46627,7 @@ www.downloadsource.net##+js(aopw, adsbygoogle)
 www.downloadsource.net##+js(aopr, adsbygoogle)
 ||riweeboo.com^*
 ||yotuqblgnug.com^*
+||bssyhrubrcs.com^*
 
 !Whitelisted
 ! for Google Drive
