@@ -28172,7 +28172,6 @@ my.syncplicity.com##+js(remove-class, /disable/i, , stay)
 www.leawo.org##div[id^="ad_box"]
 ||katie.v4.omgtnc.com^*
 filesupload.org##+js(set-constant, seconds, 0)
-easyupload.io##+js(remove-attr.js, disabled, #expiration > option:nth-child(5), stay)
 www.mediafire.com##+js(nowoif.js, !/mediafire\.com/i)
 ||s4.bcbits.com/bundle/bundle/1/analytics-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bandcamp.com/api/tracker/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -29505,8 +29504,7 @@ boustahe.com##div[class*="push-notice"]
 ||push-decdbgj-177.boustahe.com^*
 !||nativepu.sh/ntfc.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||nativepu.sh^*
-!||cdn.adapex.io/hb/aaw.link.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||cdn.adapex.io/hb/aaw.jpost.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.adapex.io/hb/aaw.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.adapex.io^*
 !linkvertise.com##span[id="cookieconsent:desc"]
 linkvertise.com##div[aria-label="cookieconsent"]
@@ -46628,6 +46626,18 @@ www.downloadsource.net##+js(aopr, adsbygoogle)
 ||riweeboo.com^*
 ||yotuqblgnug.com^*
 ||bssyhrubrcs.com^*
+apkpure.net##div[id="policy-info"]:remove()
+easyupload.io##+js(remove-attr.js, disabled, #expiration > option:nth-child(5), stay)
+easyupload.io##ins[data-ad-client]:remove()
+easyupload.io##div[class="desktopad"]:remove()
+easyupload.io##div[class="mobilead"]:remove()
+easyupload.io##+js(set-constant, window.googletag, {})
+easyupload.io##+js(aopw, window.googletag)
+easyupload.io##+js(aopr, window.googletag)
+easyupload.io##+js(set-constant, adsbygoogle, [])
+easyupload.io##+js(aopw, adsbygoogle)
+easyupload.io##+js(aopr, adsbygoogle)
+easyupload.io##iframe[id="rufous-sandbox"]:remove()
 
 !Whitelisted
 ! for Google Drive
