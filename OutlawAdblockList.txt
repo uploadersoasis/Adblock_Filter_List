@@ -41900,6 +41900,25 @@ filecrypt.co,filecrypt.cc,filecrypt.to##[src^="https://filecrypt.cc/images/"]
 filecrypt.co,filecrypt.cc,filecrypt.to##[src^="../../../images/"]
 filecrypt.co,filecrypt.cc,filecrypt.to##[href^="/xux/"]
 filecrypt.co,filecrypt.cc,filecrypt.to##div[class] > i[style*="background:url"][onclick*="openLink"]
+! The following rule won't work because this class name is randomly generated.
+!filecrypt.co,filecrypt.cc,filecrypt.to##div[class="obldnweby"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##div[style="pointer-events: none; position: absolute; top: 0px; left: 0px; width: 1522px; height: 566px; z-index: 2147483647;"]:has(div[style="position: absolute; top: 0px; left: 0px; width: 1522px; height: 566px; z-index: 2147483647; pointer-events: auto;"]):remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id^="AdServer_"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="AdHeader"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="Adcode"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="AdPanel"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="ad--sidebar"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="HouseAd"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="ad-728-90"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="ad-300x250-wrapper"]:remove()
+||filecrypt.cc/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.co/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.to/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.cc/meh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.co/meh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||filecrypt.to/meh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[src="/muh.php"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##script[id^="AdContent_"]:remove()
 ! The following is too general?
 !filecrypt.co,filecrypt.cc,filecrypt.to##div[class] > i[style][onclick]
 filecrypt.co,filecrypt.cc,filecrypt.to##button[id]:has-text(/High-speed/i)
@@ -46578,6 +46597,23 @@ playhop.com##script[data-info="heavy-ad-intervention-observer"]:remove()
 playhop.com##+js(set-constant, handleHeavyAdIntervention, noopFunc)
 playhop.com##+js(acs, handleHeavyAdIntervention)
 playhop.com##+js(set-constant, isHeavyAdIntervention, falseFunc)
+||www.wlns.com/wp-content/plugins/nxst-advertising/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.wlns.com/wp-content/plugins/lakana/inc/ad-referral-source/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.wlns.com/wp-content/themes/nexstar-wv/client/build/js/error-logger.bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.wlns.com/CvbtpUrj/xhr/b/s/beacon$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.wlns.com/CvbtpUrj/xhr/api/v2/collector$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||segment.psg.nexstardigital.net/adobeanalytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||collector-pxcvbtpurj.px-cloud.net/api/v2/collector$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||collector-pxcvbtpurj.px-cloud.net^*
+||analyticssystems.net/api/v2/client/impression/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.downloadsource.net/assets/frontend/js/cookieconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.downloadsource.net##div[id="cc--main"]:remove()
+www.downloadsource.net##ins[data-ad-client]:remove()
+www.downloadsource.net##+js(set-constant, adsbygoogle, [])
+www.downloadsource.net##+js(aopw, adsbygoogle)
+www.downloadsource.net##+js(aopr, adsbygoogle)
+||riweeboo.com^*
+||yotuqblgnug.com^*
 
 !Whitelisted
 ! for Google Drive
