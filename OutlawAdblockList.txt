@@ -9402,7 +9402,6 @@ nethd.org###ads_zone20627
 !||delivery.g.switchadhub.com/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||delivery.g.switchadhub.com^*
 ||slickdeals-d.openx.net^*
-||rum-static.pingdom.net/prum.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||browser-update.org/update.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||assets.tapad.com/tapestry/tapestry-0.7.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||assets.tapad.com/tapestry/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -46653,6 +46652,45 @@ easyupload.io##iframe[id="rufous-sandbox"]:remove()
 !||p333175.clksite.com^*
 ||p*.clksite.com^*
 ||knoherpo.xyz^*
+luna.amazon.com##div[class^="ReactModal__Overlay"]:has(div[id="ftue_home_terms_and_conditions"]):remove()
+luna.amazon.com##div[data-portal-id="cookie-consent"]:remove()
+||camp.inc.com/ash.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mansueto.map.fastly.net/ash.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mansueto.map.fastly.net/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||camp.inc.com/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.inc.com##div[class*="bcpNotificationBar"]:remove()
+www.inc.com##div[class*="AdContainer"]:remove()
+www.inc.com##div[class*="adElement"]:remove()
+www.inc.com##div[data-ad_slot_type]:remove()
+www.inc.com##+js(set-constant, setNptTechAdblockerCookie, noopFunc)
+www.inc.com##+js(set-constant, adblocker, false)
+www.inc.com##+js(trusted-set, adblocker, false)
+www.inc.com##div[class*="ad-block"][class*="topAdBlock"]:remove()
+! the following two rules break styles on the page
+!www.inc.com##div[class*="ad-block"]:remove()
+!www.inc.com##div[class*="topAdBlock"]:remove()
+||rum-collector-2.pingdom.net^*
+!||rum-static.pingdom.net/prum.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||rum-static.pingdom.net/pa-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||rum-static.pingdom.net^*
+||elsa.memoinsights.com^*
+!||ads-static.conde.digital/production/cns/builds/ars-technica/ars-technica.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||ads-static.conde.digital/production/cns/builds/ars-technica/prebid.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||ads-static.conde.digital/production/cns/builds/condenast/pixelpropagate.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ads-static.conde.digital^*
+||d1yitvct7k255o.cloudfront.net/production/cns/builds/ars-technica/prebid.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||d1yitvct7k255o.cloudfront.net/production/cns/builds/condenast/pixelpropagate.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||permutive.arstechnica.com/audience-matching/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||permutive.arstechnica.com^*
+||a.api.permutive.app/audience-matching/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||api.avo.app/inspector/v1/track$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.permutive.app/1dfc40bb-d155-4f15-970e-99450dbfa0e2-web.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||d162h6x3rxav67.cloudfront.net/iasPET.1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.adsafeprotected.com/iasPET.1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.adsafeprotected.com/vans-adapter-google-ima.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||d162h6x3rxav67.cloudfront.net/vans-adapter-google-ima.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||vip1.g5.cachefly.net/wp-content/themes/ars/assets/js/ars-dc1d08cbd8.ads.us.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.datadoghq-browser-agent.com/datadog-logs-v*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
