@@ -46691,6 +46691,9 @@ www.inc.com##div[class*="ad-block"][class*="topAdBlock"]:remove()
 ||d162h6x3rxav67.cloudfront.net/vans-adapter-google-ima.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vip1.g5.cachefly.net/wp-content/themes/ars/assets/js/ars-dc1d08cbd8.ads.us.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.datadoghq-browser-agent.com/datadog-logs-v*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!woowebtools.com##+js(cookie-remover, /.+/)
+woowebtools.com##+js(cookie-remover)
+||zirkiterocklay.com^*
 
 !Whitelisted
 ! for Google Drive
