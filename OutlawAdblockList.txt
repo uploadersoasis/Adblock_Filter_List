@@ -37838,7 +37838,7 @@ ntuplay.xyz##+js(aopr, autoloadMarker)
 ntuplay.xyz##+js(aopw, autoloadMarker)
 ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]
 ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]:remove()
-ntuplay.xyz##+js(trusted-set, currentReferer, wikisport.click)
+ntuplay.xyz##+js(trusted-set, currentReferer, https://wikisport.click/)
 ntuplay.xyz##+js(set-constant, attr, {})
 ntuplay.xyz##+js(acs, currentReferer)
 ntuplay.xyz##+js(aopr, currentReferer)
@@ -46676,6 +46676,7 @@ www.crazygames.com##div[id^="div-gpt-ad-"]:upward(1):remove()
 ||xob.bull00shit.com^*
 ||zktsygv.com^*
 ||acscdn.com/script/aclib.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+sporttuna.com,sporttuna.sx,sporttuna.site##div[class="container"]:style(height: 100vh !important; width: 100vw !important; max-width: 100vw !important; max-height: 100vh !important;)
 sporttuna.com,sporttuna.sx,sporttuna.site##script[id="aclib"]:remove()
 sporttuna.com,sporttuna.sx,sporttuna.site##script[src^="https://www.displayvertising.com/"]:remove()
 ! TODO: 100vw and 100vh do not work as values for the width and height attributes of an iframe.  Why?
@@ -46835,7 +46836,7 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||encesprincipledecl.info^*
 !1stream.eu##div[id="video-player"]:has(div[data-player]):style(height: 100vh !important; width: 100vw !important;)
 1stream.eu##div[data-player]:style(height: 100vh !important; width: 100vw !important;)
-*/script/utils.js$domain=lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/utils.js$domain=livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dlhd.sx/embed/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 dlhd.sx##+js(set-constant, _Hasync, [])
 dlhd.sx##+js(aopw, _Hasync)
@@ -46900,12 +46901,13 @@ olalivehdplay.ru,weblivehdplay.ru##iframe[class="padPreload"]:remove()
 ||analytics.publir.com^*
 fiveyardlab.com##:xpath(//script[contains(text(), 'allowedDomains')]):remove()
 fiveyardlab.com##:xpath(//script[contains(text(), 'currentReferer')]):remove()
-fiveyardlab.comu##+js(aopw, allowedDomains)
+fiveyardlab.com##+js(aopw, allowedDomains)
 fiveyardlab.com##+js(aopr, allowedDomains)
 fiveyardlab.com##+js(aopw, currentReferer)
 fiveyardlab.com##+js(aopr, currentReferer)
 fiveyardlab.com##span[style="display:none"]:remove()
 fiveyardlab.com##div[id="player"]:style(height:100vh !important; width:100vw !important;)
+fiveyardlab.com##+js(trusted-set, currentReferer, https://wikisport.se/)
 fiveyardlab.com##+js(trusted-set, PlaySize, style="height:100vh important!;width:100vw !important;")
 ||ak.phoognol.com^*
 ||a749.b.akamai.net/4/6882417$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -46914,23 +46916,23 @@ fiveyardlab.com##+js(trusted-set, PlaySize, style="height:100vh important!;width
 poscitechs.shop,streameast.buffstream.io##+js(set-constant, _Hasync, [])
 poscitechs.shop,streameast.buffstream.io##+js(aopw, _Hasync)
 poscitechs.shop,streameast.buffstream.io##+js(aopr, _Hasync)
-streameast.buffstream.io##iframe[src^="http://streameast.buffstream.io/emb/"]:style(height:100vh !important; width:100vw !important;)
+streameast.buffstream.io##iframe[src^="http://streameast.buffstream.io/emb/"]:style(height: 100vh !important; width: 100vw !important;)
 ! TODO: 100vw and 100vh do not work as values for the width and height attributes of an iframe.  Why?
 streameast.buffstream.io##+js(saa, width, 100%, iframe[src^="http://streameast.buffstream.io/emb/"])
 streameast.buffstream.io##+js(saa, height, 100%, iframe[src^="http://streameast.buffstream.io/emb/"])
-streameast.buffstream.io##iframe[src^="http://wikisport.click/"]:style(height:100vh !important; width:100vw !important;)
+streameast.buffstream.io##iframe[src^="http://wikisport.click/"]:style(height: 100vh !important; width: 100vw !important;)
 streameast.buffstream.io##+js(saa, width, 100%, iframe[src^="http://wikisport.click/"])
 streameast.buffstream.io##+js(saa, height, 100%, iframe[src^="http://wikisport.click/"])
-wikisport.click,wikisport.se##iframe[src^="https://wikisport.se/"]:style(height:100vh !important; width:100vw !important;)
+wikisport.click,wikisport.se##iframe[src^="https://wikisport.se/"]:style(height: 100vh !important; width: 100vw !important;)
 wikisport.click,wikisport.se##+js(saa, width, 100%, iframe[src^="https://wikisport.se/"])
 wikisport.click,wikisport.se##+js(saa, height, 100%, iframe[src^="https://wikisport.se/"])
-wikisport.click,wikisport.se##iframe[src^="https://fiveyardlab.com/wiki.php"]:style(height:100vh !important; width:100vw !important;)
+wikisport.click,wikisport.se##iframe[src^="https://fiveyardlab.com/wiki.php"]:style(height: 100vh !important; width: 100vw !important;)
 wikisport.click,wikisport.se##+js(saa, width, 100%, iframe[src^="https://fiveyardlab.com/wiki.php"])
 wikisport.click,wikisport.se##+js(saa, height, 100%, iframe[src^="https://fiveyardlab.com/wiki.php"])
-wikisport.click,wikisport.se##iframe[src^="https://poscitechs.shop/live/"]:style(height:100vh !important; width:100vw !important;)
+wikisport.click,wikisport.se##iframe[src^="https://poscitechs.shop/live/"]:style(height: 100vh !important; width: 100vw !important;)
 wikisport.click,wikisport.se##+js(saa, width, 100%, iframe[src^="https://poscitechs.shop/live/"])
 wikisport.click,wikisport.se##+js(saa, height, 100%, iframe[src^="https://poscitechs.shop/live/"])
-wikisport.click,wikisport.se##iframe[src^="https://embedstream.me/"]:style(height:100vh !important; width:100vw !important;)
+wikisport.click,wikisport.se##iframe[src^="https://embedstream.me/"]:style(height: 100vh !important; width: 100vw !important;)
 wikisport.click,wikisport.se##+js(saa, width, 100%, iframe[src^="https://embedstream.me/"])
 wikisport.click,wikisport.se##+js(saa, height, 100%, iframe[src^="https://embedstream.me/"])
 !wikisport.click,wikisport.se##+js(set-constant, v_width, 1920)
@@ -46939,6 +46941,7 @@ wikisport.click,wikisport.se##+js(trusted-set, v_width, 100vw)
 !wikisport.click,wikisport.se##+js(trusted-set, v_width, 100%)
 wikisport.click,wikisport.se##+js(trusted-set, v_height, 100vh)
 !wikisport.click,wikisport.se##+js(trusted-set, v_height, 100%)
+wikisport.click,wikisport.se##iframe[src^="https://livehdplay.ru/wiki.php"]:style(height: 100vh !important; width: 100vw !important;)
 ||olalivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||capaciousdrewreligion.com/advertisers.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||capaciousdrewreligion.com^*
@@ -46992,13 +46995,20 @@ golassiahub.com##+js(set-constant, result, noopFunc)
 ||lovesomecommunity.com/z-7123946$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 lovesomecommunity.com##+js(trusted-set, WSUnmute, player.setMute(false);)
 !lovesomecommunity.com##+js(trusted-set, WSUnmute, player.setVolume(100);)
-lovesomecommunity.com##script[adblock-settings]:remove()
+lovesomecommunity.com,livehdplay.ru##script[adblock-settings]:remove()
 lovesomecommunity.com##span[style="display:none"]:remove()
 lovesomecommunity.com##div[id="player"]:style(height:100vh !important; width:100vw !important;)
-lovesomecommunity.com##div[id="UnMutePlayer"]:remove()
+lovesomecommunity.com,livehdplay.ru##div[id="UnMutePlayer"]:remove()
 lovesomecommunity.com##+js(set-constant, _Hasync, [])
 lovesomecommunity.com##+js(aopw, _Hasync)
 lovesomecommunity.com##+js(aopr, _Hasync)
+||livehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+livehdplay.ru##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+livehdplay.ru##+js(acs, sandDetect)
+livehdplay.ru##+js(trusted-set, currentReferer, https://wikisport.se/)
+livehdplay.ru##+js(acs, currentReferer)
+livehdplay.ru##+js(aopr, currentReferer)
+livehdplay.ru##+js(aopw, currentReferer)
 
 !Whitelisted
 ! for Google Drive
