@@ -38900,6 +38900,9 @@ www.digitbin.com##div[class^="code-block code-block-"]:has(div:has-text(Advertis
 ||entrerscab.com^*
 ||www.ujlrvzfws.com^*
 ||nevail.com/script/$script
+cricfree.live##iframe[src^="https://cricplay2.xyz/sky-sports-arena"]:style(height: 100vh !important; width: 100vw !important;)
+cricfree.live##+js(saa, width, 100%, iframe[src^="https://cricplay2.xyz/sky-sports-arena"])
+cricfree.live##+js(saa, height, 100%, iframe[src^="https://cricplay2.xyz/sky-sports-arena"])
 cricplay2.xyz##^script[id="_waumnk"]
 cricplay2.xyz##^script[id="_waumnk"]:remove()
 cricplay2.xyz##script[id="_waumnk"]
@@ -38913,12 +38916,20 @@ cricplay2.xyz##+js(trusted-set, v_width, 100vw)
 !cricplay2.xyz##+js(trusted-set, v_width, 100%)
 cricplay2.xyz##+js(trusted-set, v_height, 100vh)
 !cricplay2.xyz##+js(trusted-set, v_height, 100%)
-!cricplay2.xyz##+js(set-constant, v_height, 700)
+!cricplay2.xyz##+js(set-constant, v_height, 1080)
+!cricplay2.xyz##+js(set-constant, v_width, 1920)
+cricplay2.xyz##+js(set-constant, _Hasync, [])
 cricplay2.xyz##+js(aopr, _Hasync)
 cricplay2.xyz##+js(aopw, _Hasync)
-||cricplay2.xyz/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-cricplay2.xyz##iframe[src*="://millionscast.com/embedcr.php"]:style(width: 100% !important; height: 100% !important;)
+cricplay2.xyz##+js(set-constant, gtag, noopFunc)
+cricplay2.xyz##+js(acs, gtag)
+!cricplay2.xyz##iframe[src*="://millionscast.com/embedcr.php"]:style(width: 100vw !important; height: 100vh !important;)
+!cricplay2.xyz##iframe[src^="https://lovesomecommunity.com/embedcr.php"]:style(height: 100vh !important; width: 100vw !important;)
+cricplay2.xyz##iframe[src*="/embedcr.php"]:style(height: 100vh !important; width: 100vw !important;)
+cricplay2.xyz##+js(saa, width, 100%, iframe[src*="/embedcr.php"])
+cricplay2.xyz##+js(saa, height, 100%, iframe[src*="/embedcr.php"])
 cricplay2.xyz##+js(aeld, click)
+||cricplay2.xyz/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||spated.com/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||spated.com/script/i.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||uptimecdn.com/prod/redirect.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,domain=cricplay2.xyz
@@ -46824,7 +46835,7 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||encesprincipledecl.info^*
 !1stream.eu##div[id="video-player"]:has(div[data-player]):style(height: 100vh !important; width: 100vw !important;)
 1stream.eu##div[data-player]:style(height: 100vh !important; width: 100vw !important;)
-*/script/utils.js$domain=givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/utils.js$domain=lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dlhd.sx/embed/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 dlhd.sx##+js(set-constant, _Hasync, [])
 dlhd.sx##+js(aopw, _Hasync)
@@ -46947,6 +46958,7 @@ wikisport.click,wikisport.se##+js(trusted-set, v_height, 100vh)
 ||1384555756.rsc.cdn77.org/static/mimagine.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !poscitechs.shop##+js(nostif)
 !poscitechs.shop##+js(nostif, /^/)
+poscitechs.shop##+js(nostif, /^function\(\)/)
 poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(height:100vh !important; width:100vw !important;)
 poscitechs.shop##iframe[id="thatframe"]:style(height:100vh !important; width:100vw !important;)
 poscitechs.shop##+js(saa, width, 100%, #thatframe)
@@ -46965,6 +46977,28 @@ poscitechs.shop##iframe[src="javascript:false"]:remove()
 ||cqnmtmqxecqvyl.com^*
 ||www.msrehcmpeme.com^*
 ||msrehcmpeme.com^*
+||golassiahub.com/css/banr-adstera.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||golassiahub.com/css/jquerymin-adstera.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||golassiahub.com/css/stat.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||golassiahub.com/css/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+golassiahub.com##:xpath(//script[contains(text(), 'sandblaster.detect')]):remove()
+golassiahub.com##+js(acs, sandblaster.detect)
+golassiahub.com##+js(set-constant, result, noopFunc)
+!||cj.moronesphotos.com^*
+||moronesphotos.com^*
+||miayarus.com^*
+||notablyassn.digital^*
+||lovesomecommunity.com/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||lovesomecommunity.com/z-7123946$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+lovesomecommunity.com##+js(trusted-set, WSUnmute, player.setMute(false);)
+!lovesomecommunity.com##+js(trusted-set, WSUnmute, player.setVolume(100);)
+lovesomecommunity.com##script[adblock-settings]:remove()
+lovesomecommunity.com##span[style="display:none"]:remove()
+lovesomecommunity.com##div[id="player"]:style(height:100vh !important; width:100vw !important;)
+lovesomecommunity.com##div[id="UnMutePlayer"]:remove()
+lovesomecommunity.com##+js(set-constant, _Hasync, [])
+lovesomecommunity.com##+js(aopw, _Hasync)
+lovesomecommunity.com##+js(aopr, _Hasync)
 
 !Whitelisted
 ! for Google Drive
