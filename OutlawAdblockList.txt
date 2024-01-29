@@ -18004,7 +18004,7 @@ dl.go4up.com##div[id^="epmads-"]
 ||stats.ibtimes.co.in^*
 ||ounyrilukncbj.com^*
 ||www.ounyrilukncbj.com^*
-||record.commissionkings.ag/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||record.commissionkings.ag^*
 ||kuvlikgekekwp.com^*
 ||www.kuvlikgekekwp.com^*
 ||dev.visualwebsiteoptimizer.com/5.0/track-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -46693,9 +46693,15 @@ sporttuna.com,sporttuna.sx,sporttuna.site##+js(window.open-defuser)
 ||directresulto.org^*
 www.niaomea.me##script[adblock-settings]:remove()
 www.niaomea.me##script[mads]:remove()
+www.niaomea.me##iframe[class="padPreload"]:remove()
+! The following rule removes the overlay for the popup click event;  Is the class name random?
+www.niaomea.me##div[class="hlixgammb"]:remove()
 www.niaomea.me##+js(set-constant, trkurlprefix, "")
 www.niaomea.me##+js(aopw, trkurlprefix)
 www.niaomea.me##+js(aopr, trkurlprefix)
+! This suppresses the popups from the click events, but it also kills the video playback controls.
+!www.niaomea.me##+js(aeld, click)
+www.niaomea.me##+js(set-constant, detectDevTool, noopFunc)
 ||www.bypfpuldupkyy.com^*
 ||bypfpuldupkyy.com^*
 ||dukingdraon.com^*
@@ -46922,6 +46928,18 @@ wikisport.click,wikisport.se##+js(saa, height, 100%, iframe[src^="https://poscit
 wikisport.click,wikisport.se##iframe[src^="https://embedstream.me/"]:style(height: 100vh !important; width: 100vw !important;)
 wikisport.click,wikisport.se##+js(saa, width, 100%, iframe[src^="https://embedstream.me/"])
 wikisport.click,wikisport.se##+js(saa, height, 100%, iframe[src^="https://embedstream.me/"])
+wikisport.click,wikisport.se##+js(set-constant, adcashMacros, {})
+wikisport.click,wikisport.se##+js(set-constant, urls, {})
+wikisport.click,wikisport.se##+js(aopw, urls)
+wikisport.click,wikisport.se##+js(aopr, urls)
+wikisport.click,wikisport.se##+js(aopw, adcashMacros)
+wikisport.click,wikisport.se##+js(aopr, adcashMacros)
+wikisport.click,wikisport.se##+js(set-constant, nocontextmenu, trueFunc)
+wikisport.click,wikisport.se##:xpath(//script[contains(text(), 'window==window.top')]):remove()
+wikisport.click,wikisport.se##+js(aopw, window.top)
+wikisport.click,wikisport.se##+js(aopr, window.top)
+wikisport.click,wikisport.se##:xpath(//script[contains(text(), 'window.location.replace')]):remove()
+wikisport.click,wikisport.se##+js(acs, window.location.replace)
 !wikisport.click,wikisport.se##+js(set-constant, v_width, 1920)
 !wikisport.click,wikisport.se##+js(set-constant, v_height, 1080)
 wikisport.click,wikisport.se##+js(trusted-set, v_width, 100vw)
@@ -47012,6 +47030,16 @@ livehdplay.ru##+js(aopw, currentReferer)
 !||newsharsh.com/arc-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! Don't comment the following rule as that website may not be legitimately use peer-to-peer traffic.
 ||crazyblog.in/arc-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||acacdn.com/script/compatibility.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||acacdn.com/script/firefox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||asacdn.com/script/compatibility.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||asacdn.com/script/firefox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||commercialvalue.org^*
+||trk.sportsflix4k.club/impression/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||trk.sportsflix4k.club^*
+||cariblish-vanitayed.com/impression/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cariblish-vanitayed.com^*
+||eptougry.net^*
 
 !Whitelisted
 ! for Google Drive
