@@ -46814,7 +46814,7 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||encesprincipledecl.info^*
 !1stream.eu##div[id="video-player"]:has(div[data-player]):style(height: 100vh !important; width: 100vw !important;)
 1stream.eu##div[data-player]:style(height: 100vh !important; width: 100vw !important;)
-*/script/utils.js$domain=weblivehdplay.ru|dlhd.sx|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/utils.js$domain=weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dlhd.sx/embed/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 dlhd.sx##+js(set-constant, _Hasync, [])
 dlhd.sx##+js(aopw, _Hasync)
@@ -46840,6 +46840,7 @@ dlhd.sx##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIif
 ||main.proffering.xyz^*
 ||adfgetlink.net/api/v1/cs?authkey=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||weblivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! TODO: None of the following three rules actually prevent redirection away from the page if the page is not in a frame
 weblivehdplay.ru##:xpath(//script[contains(text(), 'window==window.top')]):remove()
 weblivehdplay.ru##+js(aopw, window.top)
 weblivehdplay.ru##+js(aopr, window.top)
@@ -46854,6 +46855,10 @@ weblivehdplay.ru##+js(trusted-set, WSUnmute, jwplayer().setMute(false);)
 weblivehdplay.ru##div[id="UnMutePlayer"]:remove()
 weblivehdplay.ru##:xpath(//script[contains(text(), 'adcashLib')])
 weblivehdplay.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
+weblivehdplay.ru##:xpath(//script[contains(text(), 'document.onmousedown')])
+weblivehdplay.ru##:xpath(//script[contains(text(), 'document.onmousedown')]):remove()
+weblivehdplay.ru##+js(acs, document.onkeypress, document.onkeydown, document.onmousedown)
+||uazwqqlt.com^*
 
 !Whitelisted
 ! for Google Drive
