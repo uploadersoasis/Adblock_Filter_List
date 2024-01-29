@@ -8846,6 +8846,7 @@ www.emutor.com###s-article > .data_block > .advB
 ||oascentral.ghmedia.com^*
 !||ad2.adfarm1.adition.com^*
 !||adfarm1.adition.com^*
+!||dsp.adfarm1.adition.com^*
 adfarm1.adition.com^*
 !||ads.rubiconproject.com/ad/9933.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ads.rubiconproject.com^*
@@ -47040,6 +47041,12 @@ livehdplay.ru##+js(aopw, currentReferer)
 ||cariblish-vanitayed.com/impression/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cariblish-vanitayed.com^*
 ||eptougry.net^*
+andscape.com##div[id="ad-Overlay"]:remove()
+andscape.com##div[id="ad-Banner"]:remove()
+andscape.com##div[class="ad-prevent-jump"]:remove()
+andscape.com##script[id="tb_loader_script"]:remove()
+andscape.com##script[ccpa-opt-out-ids]:remove()
+||andscape.com/wp-content/plugins/dtci-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! for Google Drive
