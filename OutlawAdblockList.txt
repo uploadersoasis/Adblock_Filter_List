@@ -46902,28 +46902,28 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||weblivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||olalivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 weblivehdplay.ru##+js(aeld, click, function)
-! TODO: None of the following three rules actually prevent redirection away from the page if the page is not in a frame
-olalivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'window==window.top')]):remove()
-olalivehdplay.ru,weblivehdplay.ru##+js(aopw, window.top)
-olalivehdplay.ru,weblivehdplay.ru##+js(aopr, window.top)
 olalivehdplay.ru,weblivehdplay.ru##body:remove-attr(oncontextmenu)
-olalivehdplay.ru,weblivehdplay.ru##script[adblock-settings]:remove()
 olalivehdplay.ru,weblivehdplay.ru##script[disable-devtool-auto]:remove()
-olalivehdplay.ru,weblivehdplay.ru##+js(set-constant, player.options.allowUserInteraction, true)
-olalivehdplay.ru,weblivehdplay.ru##+js(set-constant, player.options.playback.disableContextMenu, false)
+! TODO: None of the following three rules actually prevent redirection away from the page if the page is not in a frame
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##:xpath(//script[contains(text(), 'window==window.top')]):remove()
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(aopw, window.top)
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(aopr, window.top)
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##script[adblock-settings]:remove()
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(set-constant, player.options.allowUserInteraction, true)
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(set-constant, player.options.playback.disableContextMenu, false)
 ! This does not actually set the volume level which is still 0 at initial setting.
-olalivehdplay.ru,weblivehdplay.ru##+js(set-constant, player.options.mute, false)
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(set-constant, player.options.mute, false)
 ! These change the initial Clapper player configuration options.
-olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
-olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /mute: true/gm, mute: false)
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(trusted-rpnt, script, /mute: true/gm, mute: false)
 ! Don't always want a script to set full volume, but this only runs at initial load of the page
 ! 4th parameter should not be in regex format
-!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(0\);/gm, player.setVolume(100);)
-!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/gm, player.setVolume(100);)
+!olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(0\);/gm, player.setVolume(100);)
+!olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/gm, player.setVolume(100);)
 ! sets any value not 100 to 100
-olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/gm, player.setVolume(100);)
-olalivehdplay.ru,weblivehdplay.ru##div[id="UnMutePlayer"]:remove()
-olalivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/gm, player.setVolume(100);)
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##div[id="UnMutePlayer"]:remove()
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
 olalivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'document.onmousedown')]):remove()
 olalivehdplay.ru,weblivehdplay.ru##+js(acs, document.onkeypress, document.onkeydown, document.onmousedown)
 olalivehdplay.ru,weblivehdplay.ru##iframe[class="padPreload"]:remove()
@@ -47076,18 +47076,19 @@ lovesomecommunity.com##+js(set-constant, _Hasync, [])
 lovesomecommunity.com##+js(aopw, _Hasync)
 lovesomecommunity.com##+js(aopr, _Hasync)
 ||livehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||viwlivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 livehdplay.ru##body:remove-attr(oncontextmenu)
 livehdplay.ru##script[disable-devtool-auto]:remove()
 livehdplay.ru##+js(acs, sandDetect)
-livehdplay.ru##+js(trusted-set, currentReferer, https://antenasport.ru/)
-livehdplay.ru##+js(acs, currentReferer)
-livehdplay.ru##+js(aopr, currentReferer)
-livehdplay.ru##+js(aopw, currentReferer)
-livehdplay.ru##+js(aopw, allowedDomains)
-livehdplay.ru##+js(aopr, allowedDomains)
+livehdplay.ru,viwlivehdplay.ru##+js(trusted-set, currentReferer, https://antenasport.ru/)
+livehdplay.ru,viwlivehdplay.ru##+js(acs, currentReferer)
+livehdplay.ru,viwlivehdplay.ru##+js(aopr, currentReferer)
+livehdplay.ru,viwlivehdplay.ru##+js(aopw, currentReferer)
+livehdplay.ru,viwlivehdplay.ru##+js(aopw, allowedDomains)
+livehdplay.ru,viwlivehdplay.ru##+js(aopr, allowedDomains)
+livehdplay.ru,viwlivehdplay.ru##:xpath(//script[contains(text(), 'allowedDomains')]):remove()
+livehdplay.ru,viwlivehdplay.ru##:xpath(//script[contains(text(), 'currentReferer')]):remove()
 livehdplay.ru##:xpath(//script[contains(text(), 'window==window.top')]):remove()
-livehdplay.ru##:xpath(//script[contains(text(), 'allowedDomains')]):remove()
-livehdplay.ru##:xpath(//script[contains(text(), 'currentReferer')]):remove()
 livehdplay.ru##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
 ! The following are domains related to peer-to-peer networksing and are used for peer-to-peer video streaming on some websites
 !||arc.io/arc-sw-core.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -47165,7 +47166,6 @@ player.mycraft.click##+js(nosiif, /^vwu\(\)/)
 ||totalnicenewz.com^*
 ||ctmiiasj.com^*
 ||ku42hjr2e.com^*
-||viwlivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mitowdcagos.com^*
 antenasport.ru,maxsport.one##+js(acs, decodeURIComponent)
 antenasport.ru,maxsport.one##+js(acs, window.c18fe44ffdefee243e858c7444dda370)
