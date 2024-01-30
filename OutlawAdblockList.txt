@@ -47085,12 +47085,19 @@ lovesomecommunity.com##+js(set-constant, _Hasync, [])
 lovesomecommunity.com##+js(aopw, _Hasync)
 lovesomecommunity.com##+js(aopr, _Hasync)
 ||livehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-livehdplay.ru##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+livehdplay.ru##body:remove-attr(oncontextmenu)
+livehdplay.ru##script[disable-devtool-auto]:remove()
 livehdplay.ru##+js(acs, sandDetect)
-livehdplay.ru##+js(trusted-set, currentReferer, https://wikisport.se/)
+livehdplay.ru##+js(trusted-set, currentReferer, https://antenasport.ru/)
 livehdplay.ru##+js(acs, currentReferer)
 livehdplay.ru##+js(aopr, currentReferer)
 livehdplay.ru##+js(aopw, currentReferer)
+livehdplay.ru##+js(aopw, allowedDomains)
+livehdplay.ru##+js(aopr, allowedDomains)
+livehdplay.ru##:xpath(//script[contains(text(), 'window==window.top')]):remove()
+livehdplay.ru##:xpath(//script[contains(text(), 'allowedDomains')]):remove()
+livehdplay.ru##:xpath(//script[contains(text(), 'currentReferer')]):remove()
+livehdplay.ru##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
 ! The following are domains related to peer-to-peer networksing and are used for peer-to-peer video streaming on some websites
 !||arc.io/arc-sw-core.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static.arc.io/widget/js/brokers.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -47166,6 +47173,44 @@ player.mycraft.click##+js(nosiif, /^vwu\(\)/)
 ||zoawhoal.com^*
 ||totalnicenewz.com^*
 ||ctmiiasj.com^*
+||ku42hjr2e.com^*
+||viwlivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mitowdcagos.com^*
+antenasport.ru##:xpath(//script[contains(text(), '_Hasync')]):remove()
+antenasport.ru##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+antenasport.ru##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+antenasport.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
+antenasport.ru##iframe[src="about:blank"]:remove()
+antenasport.ru##script[adblock-settings]:remove()
+antenasport.ru##+js(set-constant, _Hasync, [])
+antenasport.ru##+js(aopw, _Hasync)
+antenasport.ru##+js(aopr, _Hasync)
+antenasport.ru##+js(set-constant, window.kkp4a5x5tv, noopFunc)
+antenasport.ru##+js(acs, window.kkp4a5x5tv)
+antenasport.ru##+js(aopr, window.kkp4a5x5tv)
+antenasport.ru##+js(aopw, window.kkp4a5x5tv)
+antenasport.ru##+js(set-constant, ydjsm, noopFunc)
+||aradsport.live/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+aradsport.live##span[style="display:none"]:remove()
+aradsport.live##div[id="player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+aradsport.live##:xpath(//script[contains(text(), '_Hasync')]):remove()
+aradsport.live##+js(set-constant, _Hasync, [])
+aradsport.live##+js(aopw, _Hasync)
+aradsport.live##+js(aopr, _Hasync)
+aradsport.live##div[id="UnMutePlayer"]:remove()
+aradsport.live##+js(set-constant, player.options.allowUserInteraction, true)
+aradsport.live##+js(set-constant, player.options.playback.disableContextMenu, false)
+! This does not actually set the volume level which is still 0 at initial setting.
+aradsport.live##+js(set-constant, player.options.mute, false)
+! These change the initial Clapper player configuration options.
+aradsport.live##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
+aradsport.live##+js(trusted-rpnt, script, /mute: 'true'/gm, mute: 'false')
+! Don't always want a script to set full volume, but this only runs at initial load of the page
+! 4th parameter should not be in regex format
+!aradsport.live##+js(trusted-rpnt, script, /player\.setVolume\(0\);/gm, player.setVolume(100);)
+!aradsport.live##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/gm, player.setVolume(100);)
+! sets any value not 100 to 100
+aradsport.live##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/gm, player.setVolume(100);)
 
 !Whitelisted
 ! for Google Drive
