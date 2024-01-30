@@ -120,7 +120,7 @@ techydino.net##^script[onerror]
 techydino.net##+js(remove-attr, onerror)
 techydino.net##^script:has-text(decodeURIComponent)
 techydino.net##+js(acs, decodeURIComponent)
-techydino.net##+js(nowoif, !/techydino.net/i, log)
+techydino.net##+js(nowoif, !/techydino\.net/i, log)
 techydino.net##+js(acs, anchorSlot)
 techydino.net##+js(aopr, anchorSlot)
 techydino.net##+js(aopw, anchorSlot)
@@ -28052,8 +28052,8 @@ www.gry-online.pl###baner-inner
 abandonwaregames.net##a[href*="/track.wg-aff.com/"]
 ||www.sordum.org/wp-content/plugins/cookie-notice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fireads.org/storage/banners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-skidrowcodex.co##+js(nowoif.js, !/skidrowcodex.co/i)
-www.skidrowcodex.net##+js(nowoif.js, !/skidrowcodex.net/i)
+skidrowcodex.co##+js(nowoif, !/skidrowcodex\.co/i)
+www.skidrowcodex.net##+js(nowoif, !/skidrowcodex\.net/i)
 ||lialiobrit.tk^*
 ||lightningprefacegrant.com^*
 ||salutationcheerlessdemote.com^*
@@ -28118,7 +28118,7 @@ code-boxx.com##+js(abort-on-property-write, gads)
 code-boxx.com##span[id^="ezoic-pub-ad"]
 ||code-boxx.com/porpoiseant/banger.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||hoowooze.net^*
-ytoffline.net##+js(nowoif.js, !/googlevideo\.com|ytoffline\.net|youtube\.com/i)
+ytoffline.net##+js(nowoif, !/googlevideo\.com|ytoffline\.net|youtube\.com/i)
 !my.syncplicity.com##+js(remove-class, /disable/i, .upload, stay)
 my.syncplicity.com##+js(remove-class, /disable/i, , stay)
 www.leawo.org##div[id^="ad_box"]
@@ -28207,10 +28207,10 @@ bluemediafiles.com##div[id="idModal"]
 bluemediafiles.com##div[id="ads-left"]
 bluemediafiles.com##div[id="ads-right"]
 bluemediafiles.com##^script:has-text(window.BB_)
-!bluemediafiles.com##+js(nowoif.js, , , log)
-bluemediafiles.com##+js(nowoif.js, /tyeatment.biz/i)
-bluemediafiles.com##+js(nowoif.js, /apsstoure.biz/i)
-bluemediafiles.com##+js(nowoif.js, !/bluemediafiles\.com/i)
+!bluemediafiles.com##+js(nowoif, , , log)
+bluemediafiles.com##+js(nowoif, /tyeatment\.biz/i)
+bluemediafiles.com##+js(nowoif, /apsstoure\.biz/i)
+bluemediafiles.com##+js(nowoif, !/bluemediafiles\.com/i)
 ||click.advertnative.com^*
 !||network.eonads.com/adserver/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.lxhkqjqpswhg.com^*
@@ -28233,7 +28233,7 @@ tii.ai##div[id="ad-banner"]
 !tii.ai##+js(set-constant, go_popup, null)
 !tii.ai##^script:has-text(/checkAdblockUser\(\)/i)
 !tii.ai##+js(set-constant, e, "")
-tii.ai##+js(nowoif.js, !/tii\.ai/i)
+tii.ai##+js(nowoif, !/tii\.ai/i)
 !tii.ai##+js(nostif.js, /checkAdblockUser/i)
 tii.ai##+js(nostif.js, /^/, 1000)
 ||geniusonclick.com^*
@@ -31954,7 +31954,7 @@ diakov.net##div[data-name="adaptiveAd"]
 ||toftheussia.com^*
 !katfile.com##+js(set-constant, download_click, true, stay)
 !katfile.com##+js(set-constant, adEnable, false, stay)
-katfile.com##+js(window.open-defuser, 0, /katfile.com/i)
+katfile.com##+js(window.open-defuser, 0, /katfile\.com/i)
 ||ableaborah.com^*
 ||eiasninancu.com^*
 ||imps.monu.delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -31963,7 +31963,7 @@ katfile.com##+js(window.open-defuser, 0, /katfile.com/i)
 ||ads.viralize.tv^*
 ||tgkswchehxpfwff.com^*
 ||1warie.com^*
-uploadev.org##+js(window.open-defuser, 0, /uploadev.org/i)
+uploadev.org##+js(window.open-defuser, 0, /uploadev\.org/i)
 !||hexagon-analytics.com/images/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||hexagon-analytics.com^*
 ||rmumuhmcogufc.xyz^*
@@ -32574,7 +32574,7 @@ tidbits.com##div[id^="eu-cookie-law"]
 ||router.allure-ng.net^*
 ||mr.media-bucket.com^*
 !theeadyagency.com##+js(disable-newtab-links)
-theeadyagency.com##+js(window.open-defuser, !/theeadyagency.com/i)
+theeadyagency.com##+js(window.open-defuser, !/theeadyagency\.com/i)
 ||cglfhqfb.xyz^*
 ||offfurreton.com^*
 !||cybertronads.com/platform/show_i.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -39888,7 +39888,7 @@ mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, MDCore, noopFunc)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, MDCore.blockAB, false)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, MDCore.adblock, 0)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, wpn63s, noopFunc)
-mixdrop.co,mixdrop.ag,mixdrop.to##+js(window.open-defuser.js)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(window.open-defuser)
 mixdrop.co,mixdrop.ag,mixdrop.to##div[id="rn_native_bqupr"]
 mixdrop.co,mixdrop.ag,mixdrop.to##^script:has-text(/injectP2\(\)/i)
 mixdrop.co,mixdrop.ag,mixdrop.to##^script:has-text(/plantinscription\.com/i)
@@ -42131,7 +42131,7 @@ availedsmallest.com##:xpath(//script[contains(text(), 'debugger')]):remove()
 availedsmallest.com##:xpath(//script[contains(text(), 'sandbox')])
 availedsmallest.com##:xpath(//script[contains(text(), 'sandbox')]):remove()
 availedsmallest.com##+js(set-constant, console.clear, noopFunc)
-availedsmallest.com##+js(window.open-defuser, /parentlargevia.com/)
+availedsmallest.com##+js(window.open-defuser, /parentlargevia\.com/)
 availedsmallest.com##+js(nosiif, /^/)
 ||parentlargevia.com^*
 ||rnynacj.erichorne.net^*
@@ -43653,7 +43653,7 @@ send.cm##+js(aopw, FingerprintJS)
 ||send.cm^$3p,script
 ! This makes it close on pressing the download button everytime.
 !send.cm##+js(disable-newtab-links)
-!send.cm##+js(nowoif, !/send.cm/i, log)
+!send.cm##+js(nowoif, !/send\.cm/i, log)
 send.cm##+js(remove-attr, class, #fileinfo, stay)
 send.cm##a[href*="//agacelebir.com/"]:remove()
 send.cm##a[href*="//pronunciationspecimens.com/"]:upward(1):remove()
@@ -46193,7 +46193,7 @@ streamadblocker.cc##+js(set-constant, trigger, '')
 streamadblocker.cc##+js(aeld, contextmenu)
 streamadblocker.cc##+js(disable-newtab-links)
 !streamadblocker.cc##+js(window.open-defuser)
-streamadblocker.cc##+js(window.open-defuser, !/paikoasa.tv/i)
+streamadblocker.cc##+js(window.open-defuser, !/paikoasa\.tv/i)
 ! two scripts have "_ohknjom" in them
 streamadblocker.cc##:xpath(//script[contains(text(), '_ohknjom')])
 streamadblocker.cc##:xpath(//script[contains(text(), '_ohknjom')]):remove()
@@ -46739,6 +46739,10 @@ www.niaomea.me##+js(aopw, window.kkp4a5x5tv)
 www.niaomea.me##+js(aopr, window.kkp4a5x5tv)
 www.niaomea.me##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 www.niaomea.me##+js(window.open-defuser)
+!www.niaomea.me##+js(nowoif)
+www.niaomea.me##+js(nowoif, !/\.niaomea\.me/i)
+!www.niaomea.me##+js(window.open-defuser)
+www.niaomea.me##+js(window.open-defuser, !/\.niaomea\.me/i)
 ||embedstreams.me/partytown/partytown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 embedstreams.me##script[type="text/partytown"]:remove()
 embedstreams.me##+js(set-constant, aclib.runPop, noopFunc, end)
@@ -46828,7 +46832,7 @@ www.mediafire.com##.lr-ad
 !www.mediafire.com##figure
 !www.mediafire.com##div[class$="ads-normal"] !makes download links disappear
 www.mediafire.com##script[id="infinity"]:remove()
-www.mediafire.com##+js(nowoif.js, !/mediafire\.com/i)
+www.mediafire.com##+js(nowoif, !/mediafire\.com/i)
 www.mediafire.com##+js(abort-on-property-read, AD_UNITS_CONFIG)
 www.mediafire.com##+js(abort-on-property-write, AD_UNITS_CONFIG)
 www.mediafire.com##+js(abort-on-property-read, adElement)
@@ -47179,11 +47183,11 @@ antenasport.ru,maxsport.one##+js(acs, _Hasync)
 antenasport.ru,maxsport.one##+js(aopr, _Hasync)
 antenasport.ru,maxsport.one##+js(aopw, _Hasync)
 antenasport.ru,maxsport.one##+js(trusted-set, currentReferer, https://antenasport.ru/)
-antenasport.ru##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
-antenasport.ru##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-antenasport.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
 antenasport.ru##iframe[src="about:blank"]:remove()
 antenasport.ru##script[adblock-settings]:remove()
+antenasport.ru##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+antenasport.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
+antenasport.ru##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 antenasport.ru##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 antenasport.ru##+js(acs, window.kkp4a5x5tv)
 antenasport.ru##+js(aopr, window.kkp4a5x5tv)
@@ -47215,6 +47219,49 @@ aradsport.live##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/gm
 ||nmhcroxspro.com^*
 ||eqdudaj.com^*
 ||sheegiwo.com^*
+||www.xbcrohmposa.com^*
+!||pf.despectclogwyn.com^*
+||despectclogwyn.com^*
+||bugraubs.com^*
+||myeammfweb.com^*
+||commarevelation.com^*
+s2watch.link##+js(set-constant, adcash, noopFunc)
+s2watch.link##+js(set-constant, Adcash, noopFunc)
+s2watch.link##script[adblock-settings]:remove()
+s2watch.link##:xpath(//script[contains(text(), '_Hasync')]):remove()
+s2watch.link##+js(set-constant, _Hasync, [])
+s2watch.link##+js(aopw, _Hasync)
+s2watch.link##+js(aopr, _Hasync)
+s2watch.link##:xpath(//script[contains(text(), 'vwu()')]):remove()
+s2watch.link##+js(set-constant, vwu, noopFunc)
+s2watch.link##+js(nosiif, /^vwu\(\)/)
+s2watch.link##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+s2watch.link##+js(set-constant, window.kkp4a5x5tv, noopFunc)
+s2watch.link##+js(acs, window.kkp4a5x5tv)
+s2watch.link##+js(aopr, window.kkp4a5x5tv)
+s2watch.link##+js(aopw, window.kkp4a5x5tv)
+nobodywalked.com##a[href="https://26216.stunserver.net/a/16"]:remove()
+nobodywalked.com##+js(set-constant, devtoolsDetector, {})
+nobodywalked.com##+js(set-constant, devtoolsDetector.DevtoolsDetector, noopFunc)
+nobodywalked.com##+js(set-constant, DevtoolsDetector, noopFunc)
+nobodywalked.com##+js(aopr, devtoolsDetector)
+nobodywalked.com##+js(aopw, devtoolsDetector)
+nobodywalked.com##+js(set-constant, player.options.allowUserInteraction, true)
+nobodywalked.com##+js(set-constant, player.options.playback.disableContextMenu, false)
+! This does not actually set the volume level which is still 0 at initial setting.
+nobodywalked.com##+js(set-constant, player.options.mute, false)
+! TODO: The following does not work to remove the debugger command. Is this because the script is obfuscated?
+nobodywalked.com##+js(trusted-rpnt, script, /^eval\("debugger;"\);/gm, "")
+nobodywalked.com##+js(acs, /^debugger/)
+!nobodywalked.com##+js(nowoif)
+nobodywalked.com##+js(nowoif, !/nobodywalked\.com/i)
+!nobodywalked.com##+js(window.open-defuser)
+nobodywalked.com##+js(window.open-defuser, !/nobodywalked\.com/i)
+! the following rules blocks the video player
+!||nobodywalked.com/player-bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||predictiondisplay.com/jump/next.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||predictiondisplay.com^*
+||slenjjspmvxkup.com^*
 
 !Whitelisted
 ! for Google Drive
