@@ -24992,8 +24992,8 @@ www.4shared.com##+js(saa, type, submit, #baseDownloadLink)
 www.4shared.com##+js(set-constant, sendNativeAnalytics, noopFunc)
 www.4shared.com##+js(acs, sendNativeAnalytics)
 www.4shared.com##+js(set-constant, Config.detectAd, {})
-! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
-www.4shared.com##+js(trusted-replace-node-text, text, Report Abuse, Download This)
+! trusted-replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
+www.4shared.com##+js(trusted-rpnt, text, Report Abuse, Download This)
 !www.4shared.com##+js(move-attr-prop, a[class*="reportAbuse"], input[id="baseDownloadLink"], href, value)
 !www.4shared.com##a[class*="reportAbuse"]:remove-class(light-gray)
 !www.4shared.com##a[class*="reportAbuse"]:remove-class(f11)
@@ -27737,14 +27737,15 @@ androidrepublic.org##div[class="u-bottomFixer js-bottomFixTarget"]
 !||www.file-upload.org/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.file-upload.org/sw_may.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id^="ads_container_"] !blocks download links
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, 0)
+www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, noopFunc)
+! can't set or redfine a function using trusted-set since it is for strings and would need eval() to execute the function
+!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(trusted-set, timeout, setTimeout\(tick\, 1\))
+!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(trusted-set, timeout, setTimeout(tick, 1))
 www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="adblockinfo"]
 www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="adblockinfo"]:remove()
 www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="bannerad"]:remove()
 www.file-upload.org,www.file-upload.com,www.file-upload.in##div[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:403px;width:1536px;cursor:pointer"]:remove()
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(aeld, click, function)
-!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(trusted-set, timeout, setTimeout\(tick\, 1\))
-!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(trusted-set, timeout, setTimeout(tick, 1))
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, tick, 0)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##button[id="downloadbtn"]:style(visibility: visible !important;)
 www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, .downloadbtn, stay)
@@ -28166,8 +28167,9 @@ www.filecad.com##+js(remove-class, clear-adblock)
 www.filecad.com##div[id="adblockinfo"]
 www.filecad.com##+js(set-constant, seconds, 0)
 www.filecad.com##+js(set-constant, started, true)
+! can't set or redfine a function using trusted-set since it is for strings and would need eval() to execute the function
 !www.filecad.com##+js(trusted-set, countdownTimer, setInterval('display()', 1))
-www.filecad.com##+js(set-constant, countdownTimer, 0)
+www.filecad.com##+js(set-constant, countdownTimer, noopFunc)
 www.filecad.com##^script:has-text(clear-adblock)
 www.filecad.com##^script:has-text(#adblockinfo)
 !www.filecad.com##+js(remove-class, download-timer)
@@ -37903,7 +37905,9 @@ wikisport.click##^script:has-text(/window.top/i)
 wikisport.click##+js(aopr, window.top)
 wikisport.click##+js(aopw, window.top)
 wikisport.click##+js(acs, window.top)
-wikisport.click##+js(trusted-set, mustave, atob('L2hscy9zdHJlYW0ubTN1OD9jaD1zcG4='))
+! can't set or redfine a function using trusted-set since it is for strings and would need eval() to execute the function
+!wikisport.click##+js(trusted-set, mustave, atob('L2hscy9zdHJlYW0ubTN1OD9jaD1zcG4='))
+wikisport.click##+js(trusted-set, mustave, /hls/stream.m3u8?ch=spn)
 wikisport.click##+js(set-constant, clearTimeout, noopFunc)
 wikisport.click##+js(set-constant, keepChecking, noopFunc)
 wikisport.click##+js(set-constant, addScript, noopFunc)
@@ -45749,9 +45753,9 @@ uploadhaven.com##+js(set-constant, FingerprintJS, noopFunc)
 uploadhaven.com##+js(aopw, FingerprintJS)
 uploadhaven.com##+js(aopr, FingerprintJS)
 uploadhaven.com##+js(acs, FingerprintJS)
-! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
+! trusted-replace-node-text.js will replace the textContent of any element such as an script tag in the following rule.
 ! TODO: This does not work because script is webpacked?
-!uploadhaven.com##+js(trusted-replace-node-text, script, let seconds = 15;, let seconds = 1;)
+uploadhaven.com##+js(trusted-replace-node-text, script, /let seconds = 15;/, let seconds = 1;)
 ||www.rmz.cr/files/js/libs/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.ripgamesfun.net^*
 ||ripgamesfun.net^*
@@ -46753,9 +46757,9 @@ voodc.com##+js(nosiif, /^Pingstat\(\)/)
 ! voodc.com does host the jwplayer javascript player and player functions for some embedded channels.
 ! Don't always want a script to unmute the volume, but this only runs at initial load of the page
 ! 4th parameter should not be in regex format
-!voodc.com##+js(trusted-rpnt, script, /jwplayer\(\)\.setMute\(true\);/g, jwplayer().setMute(false);)
+!voodc.com##+js(trusted-rpnt, script, /jwplayer\(\)\.setMute\(true\);/gm, jwplayer().setMute(false);)
 ! sets any value not false to false
-voodc.com##+js(trusted-rpnt, script, /jwplayer\(\)\.setMute\(((?!false)\w)+\);/g, jwplayer().setMute(false);)
+voodc.com##+js(trusted-rpnt, script, /jwplayer\(\)\.setMute\(((?!false)\w)+\);/gm, jwplayer().setMute(false);)
 ! cannot set a function with trusted-set since the third parameter is a string and would need eval() to run as a function.
 !voodc.com##+js(trusted-set, WSUnmute, function(){jwplayer().setMute(false);})
 mobmodapk.com##aside[class^="ads"]:remove()
@@ -46867,20 +46871,28 @@ poscitechs.shop,dlhd.sx##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZ
 ||main.proffering.xyz^*
 ||adfgetlink.net/api/v1/cs?authkey=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||weblivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! TODO: None of the following three rules actually prevent redirection away from the page if the page is not in a frame
-weblivehdplay.ru##:xpath(//script[contains(text(), 'window==window.top')]):remove()
-weblivehdplay.ru##+js(aopw, window.top)
-weblivehdplay.ru##+js(aopr, window.top)
+||olalivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 weblivehdplay.ru##+js(aeld, click, function)
+! TODO: None of the following three rules actually prevent redirection away from the page if the page is not in a frame
+olalivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'window==window.top')]):remove()
+olalivehdplay.ru,weblivehdplay.ru##+js(aopw, window.top)
+olalivehdplay.ru,weblivehdplay.ru##+js(aopr, window.top)
 olalivehdplay.ru,weblivehdplay.ru##body:remove-attr(oncontextmenu)
 olalivehdplay.ru,weblivehdplay.ru##script[adblock-settings]:remove()
 olalivehdplay.ru,weblivehdplay.ru##script[disable-devtool-auto]:remove()
+olalivehdplay.ru,weblivehdplay.ru##+js(set-constant, player.options.allowUserInteraction, true)
+olalivehdplay.ru,weblivehdplay.ru##+js(set-constant, player.options.playback.disableContextMenu, false)
+! This does not actually set the volume level which is still 0 at initial setting.
+olalivehdplay.ru,weblivehdplay.ru##+js(set-constant, player.options.mute, false)
+! These change the initial Clapper player configuration options.
+olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
+olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /mute: true/gm, mute: false)
 ! Don't always want a script to set full volume, but this only runs at initial load of the page
 ! 4th parameter should not be in regex format
-!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(0\);/g, player.setVolume(100);)
-!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/g, player.setVolume(100);)
+!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(0\);/gm, player.setVolume(100);)
+!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/gm, player.setVolume(100);)
 ! sets any value not 100 to 100
-olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/g, player.setVolume(100);)
+olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/gm, player.setVolume(100);)
 olalivehdplay.ru,weblivehdplay.ru##div[id="UnMutePlayer"]:remove()
 olalivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
 olalivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'document.onmousedown')]):remove()
@@ -46961,7 +46973,6 @@ wikisport.click,wikisport.se##+js(trusted-set, v_width, 100vw)
 wikisport.click,wikisport.se##+js(trusted-set, v_height, 100vh)
 !wikisport.click,wikisport.se##+js(trusted-set, v_height, 100%)
 wikisport.click,wikisport.se##iframe[src^="https://livehdplay.ru/wiki.php"]:style(height: 100vh !important; width: 100vw !important;)
-||olalivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||capaciousdrewreligion.com/advertisers.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||capaciousdrewreligion.com^*
 ||psockapa.net^*
@@ -46980,7 +46991,7 @@ wikisport.click,wikisport.se##iframe[src^="https://livehdplay.ru/wiki.php"]:styl
 ||1384555756.rsc.cdn77.org/static/mimagine.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !poscitechs.shop##+js(nostif)
 !poscitechs.shop##+js(nostif, /^/)
-!poscitechs.shop##+js(nostif, /^function\(\)/)
+poscitechs.shop##+js(nostif, /^function\(\)/)
 poscitechs.shop##iframe[src="javascript:false"]:remove()
 poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(height: 100vh !important; width: 100vw !important;)
 poscitechs.shop##iframe[id="thatframe"]:style(height: 100vh !important; width: 100vw !important;)
@@ -46989,6 +47000,7 @@ poscitechs.shop##+js(saa, height, 100%, #thatframe)
 poscitechs.shop##+js(saa, width, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(saa, height, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(set-constant, popWin, noopFunc)
+poscitechs.shop##+js(set-constant, afScript, noopFunc)
 ||162.252.214.4/a.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.jvswyxxyrrh.com^*
 ||jvswyxxyrrh.com^*
@@ -47016,12 +47028,19 @@ golassiahub.com##+js(set-constant, result, noopFunc)
 lovesomecommunity.com,livehdplay.ru##script[adblock-settings]:remove()
 lovesomecommunity.com##span[style="display:none"]:remove()
 lovesomecommunity.com##div[id="player"]:style(height:100vh !important; width:100vw !important;)
+lovesomecommunity.com,livehdplay.ru##+js(set-constant, player.options.allowUserInteraction, true)
+lovesomecommunity.com,livehdplay.ru##+js(set-constant, player.options.playback.disableContextMenu, false)
+! This does not actually set the volume level which is still 0 at initial setting.
+lovesomecommunity.com,livehdplay.ru##+js(set-constant, player.options.mute, false)
+! These change the initial Clapper player configuration options.
+lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
+lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /mute: true/gm, mute: false)
 ! Don't always want a script to set full volume, but this only runs at initial load of the page
 ! 4th parameter should not be in regex format
-!lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(0\);/g, player.setVolume(100);)
-!lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/g, player.setVolume(100);)
+!lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(0\);/gm, player.setVolume(100);)
+!lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/gm, player.setVolume(100);)
 ! sets any value not 100 to 100
-lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/g, player.setVolume(100);)
+lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/gm, player.setVolume(100);)
 lovesomecommunity.com,livehdplay.ru##div[id="UnMutePlayer"]:remove()
 lovesomecommunity.com##+js(set-constant, _Hasync, [])
 lovesomecommunity.com##+js(aopw, _Hasync)
@@ -47090,12 +47109,15 @@ player.mycraft.click##+js(set-constant, player.options.allowUserInteraction, tru
 player.mycraft.click##+js(set-constant, player.options.playback.disableContextMenu, false)
 ! This does not actually set the volume level which is still 0 at initial setting.
 player.mycraft.click##+js(set-constant, player.options.mute, false)
+! These change the initial Clapper player configuration options.
+player.mycraft.click##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
+player.mycraft.click##+js(trusted-rpnt, script, /mute: true/gm, mute: false)
 ! Don't always want a script to set full volume, but this only runs at initial load of the page
 ! 4th parameter should not be in regex format
-!player.mycraft.click##+js(trusted-rpnt, script, /player\.setVolume\(0\);/g, player.setVolume(100);)
-!player.mycraft.click##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/g, player.setVolume(100);)
+!player.mycraft.click##+js(trusted-rpnt, script, /player\.setVolume\(0\);/gm, player.setVolume(100);)
+!player.mycraft.click##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/gm, player.setVolume(100);)
 ! sets any value not 100 to 100
-player.mycraft.click##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/g, player.setVolume(100);)
+player.mycraft.click##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/gm, player.setVolume(100);)
 !static.mycraft.click##+js(trusted-set, PlaySize, style="height: 100vh important!;width: 100vw !important;")
 player.mycraft.click##+js(trusted-set, PlaySize, style="height: 100vh important!;width: 100vw !important;")
 player.mycraft.click##div[id="UnMutePlayer"]:remove()
