@@ -46686,6 +46686,7 @@ sporttuna.com,sporttuna.sx,sporttuna.site##+js(aopw, _Hasync)
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(aopr, _Hasync)
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(set-constant, aclib.runPop, noopFunc, end)
 !sporttuna.com,sporttuna.sx,sporttuna.site##+js(set-constant, aclib.runPop, noopFunc, complete)
+sporttuna.com,sporttuna.sx,sporttuna.site##:xpath(//script[contains(text(), 'aclib.runPop')]):remove()
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(window.open-defuser)
 ||honoursimmoderate.com^*
 ||smitealter.com^*
@@ -46718,11 +46719,24 @@ www.niaomea.me##+js(aeld, contextmenu)
 www.niaomea.me##+js(aeld, resize, detectDevTool)
 www.niaomea.me##div[class^="jwplayer"][aria-label="Video Player"]:remove-class(jw-flag-user-inactive)
 www.niaomea.me##video[class^="jw-video"][aria-label="Video Player"]:remove-attr(disableremoteplayback)
+www.niaomea.me##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+www.niaomea.me##+js(acs, window.kkp4a5x5tv)
+www.niaomea.me##+js(aopw, window.kkp4a5x5tv)
+www.niaomea.me##+js(aopr, window.kkp4a5x5tv)
+www.niaomea.me##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+www.niaomea.me##+js(window.open-defuser)
+||embedstreams.me/partytown/partytown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+embedstreams.me##script[type="text/partytown"]:remove()
+embedstreams.me##+js(set-constant, aclib.runPop, noopFunc, end)
+embedstreams.me##+js(set-constant, aclib.runPop, noopFunc, complete)
+embedstreams.me##+js(set-constant, partytown, {})
+embedstreams.me##:xpath(//script[contains(text(), 'adcashLib')]):remove()
+! The following rule prevents the embedded video frame from playing.
+!embedstreams.me##+js(set-constant, siteConfig, {})
 ||www.bypfpuldupkyy.com^*
 ||bypfpuldupkyy.com^*
 ||dukingdraon.com^*
 ||ophoacit.com^*
-||embedstreams.me/partytown/partytown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||wwhnjrg.com^*
 ||v.vfgte.com^*
 ||rahxfus.com^*
@@ -47148,6 +47162,10 @@ player.mycraft.click##+js(trusted-set, PlaySize, style="height: 100vh important!
 player.mycraft.click##div[id="UnMutePlayer"]:remove()
 player.mycraft.click##+js(set-constant, vwu, noopFunc)
 player.mycraft.click##+js(nosiif, /^vwu\(\)/)
+||fodsoack.com^*
+||zoawhoal.com^*
+||totalnicenewz.com^*
+||ctmiiasj.com^*
 
 !Whitelisted
 ! for Google Drive
