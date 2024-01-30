@@ -46755,9 +46755,9 @@ voodc.com##+js(nosiif, /^Pingstat\(\)/)
 ! 4th parameter should not be in regex format
 !voodc.com##+js(trusted-rpnt, script, /jwplayer\(\)\.setMute\(true\);/g, jwplayer().setMute(false);)
 ! sets any value not false to false
+voodc.com##+js(trusted-rpnt, script, /jwplayer\(\)\.setMute\(((?!false)\w)+\);/g, jwplayer().setMute(false);)
 ! cannot set a function with trusted-set since the third parameter is a string and would need eval() to run as a function.
 !voodc.com##+js(trusted-set, WSUnmute, function(){jwplayer().setMute(false);})
-voodc.com##+js(trusted-rpnt, script, /jwplayer\(\)\.setMute\(((?!false)\w)+\);/g, jwplayer().setMute(false);)
 mobmodapk.com##aside[class^="ads"]:remove()
 mobmodapk.com##ins[data-ad-client]:remove()
 mobmodapk.com##+js(set-constant, adsbygoogle, [])
@@ -47098,6 +47098,9 @@ player.mycraft.click##+js(set-constant, player.options.mute, false)
 player.mycraft.click##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/g, player.setVolume(100);)
 !static.mycraft.click##+js(trusted-set, PlaySize, style="height: 100vh important!;width: 100vw !important;")
 player.mycraft.click##+js(trusted-set, PlaySize, style="height: 100vh important!;width: 100vw !important;")
+player.mycraft.click##div[id="UnMutePlayer"]:remove()
+player.mycraft.click##+js(set-constant, vwu, noopFunc)
+player.mycraft.click##+js(nosiif, /^vwu\(\)/)
 
 !Whitelisted
 ! for Google Drive
