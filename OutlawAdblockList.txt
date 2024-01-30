@@ -6601,7 +6601,6 @@ www.newser.com###g367CB268B1094004A3689751E7AC568FFloatingBanner0
 !||trk.vidible.tv/trk/js-loaded.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||trk.vidible.tv^*
 ||trends.revcontent.com/serve.js.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||capture.condenastdigital.com/track?_ts=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||subscribe.glamour.com/ams/page-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||event.glamour.com/js/eventTracker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 betanews.com###bd > .wideCol > .article.section > .content > .lockerdomead
@@ -7545,7 +7544,7 @@ www.wired.com###veil.right
 www.wired.com###veil.left
 www.wired.com###veil.bottom
 www.wired.com###veil.veil-active
-!||capture.condenastdigital.com/track?_o=wired&_c=ad-free&_t=adblock-on$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||capture.condenastdigital.com/track?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||capture.condenastdigital.com^*
 !||cdn.yldbt.com/js/yieldbot.intent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.yldbt.com^*
@@ -42204,7 +42203,7 @@ www.tecmint.com##div[id="tecmint_incontent"]:remove()
 !www.tecmint.com##+js(set-constant, freestar.config.enabled_slots.push, noopFunc, end)
 www.tecmint.com##+js(set-constant, freestar.config.enabled_slots.push, noopFunc, complete)
 www.tecmint.com##+js(acs, freestar.config.enabled_slots.push)
-||live.rezync.com/pixel.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||live.rezync.com/pixel.*$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||referrer.disqus.com/juggler/event.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.linuxadictos.com##ins[data-ad-client]
 www.linuxadictos.com##ins[data-ad-client]:remove()
@@ -46738,7 +46737,8 @@ livefootball24.com##div[id^="div-gpt-ad-"]:remove()
 !||quo1.dlive.click^*
 !||orangery.quesadilla.click^*
 !||tastevin.panpizza.click^*
-voodc.com##+js(trusted-set, WSUnmute, jwplayer().setMute(false);)
+! cannot set a function with trusted-set since the third parameter is a string and would need eval() to run as a function.
+!voodc.com##+js(trusted-set, WSUnmute, jwplayer().setMute(false);)
 !voodc.com##+js(set-constant, WSUnmute, noopFunc)
 !voodc.com##+js(aopw, WSUnmute)
 !voodc.com##+js(aopr, WSUnmute)
@@ -46864,7 +46864,10 @@ weblivehdplay.ru##+js(aeld, click, function)
 olalivehdplay.ru,weblivehdplay.ru##body:remove-attr(oncontextmenu)
 olalivehdplay.ru,weblivehdplay.ru##script[adblock-settings]:remove()
 olalivehdplay.ru,weblivehdplay.ru##script[disable-devtool-auto]:remove()
-olalivehdplay.ru,weblivehdplay.ru##+js(trusted-set, WSUnmute, jwplayer().setMute(false);)
+! cannot set a function with trusted-set since the third parameter is a string and would need eval() to run as a function.
+!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-set, WSUnmute, jwplayer().setMute(false);)
+! 4th parameter should not be in regex format
+!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(100\);/g, player.setMute(false);)
 !olalivehdplay.ru,weblivehdplay.ru##+js(set-constant, WSUnmute, noopFunc)
 !olalivehdplay.ru,weblivehdplay.ru##+js(aopw, WSUnmute)
 !olalivehdplay.ru,weblivehdplay.ru##+js(aopr, WSUnmute)
@@ -46967,14 +46970,15 @@ wikisport.click,wikisport.se##iframe[src^="https://livehdplay.ru/wiki.php"]:styl
 ||1384555756.rsc.cdn77.org/static/mimagine.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !poscitechs.shop##+js(nostif)
 !poscitechs.shop##+js(nostif, /^/)
-poscitechs.shop##+js(nostif, /^function\(\)/)
-poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(height:100vh !important; width:100vw !important;)
-poscitechs.shop##iframe[id="thatframe"]:style(height:100vh !important; width:100vw !important;)
+!poscitechs.shop##+js(nostif, /^function\(\)/)
+poscitechs.shop##iframe[src="javascript:false"]:remove()
+poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(height: 100vh !important; width: 100vw !important;)
+poscitechs.shop##iframe[id="thatframe"]:style(height: 100vh !important; width: 100vw !important;)
 poscitechs.shop##+js(saa, width, 100%, #thatframe)
 poscitechs.shop##+js(saa, height, 100%, #thatframe)
 poscitechs.shop##+js(saa, width, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(saa, height, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
-poscitechs.shop##iframe[src="javascript:false"]:remove()
+poscitechs.shop##+js(set-constant, popWin, noopFunc)
 ||162.252.214.4/a.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.jvswyxxyrrh.com^*
 ||jvswyxxyrrh.com^*
@@ -46999,7 +47003,8 @@ golassiahub.com##+js(set-constant, result, noopFunc)
 ||notablyassn.digital^*
 ||lovesomecommunity.com/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lovesomecommunity.com/z-7123946$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-lovesomecommunity.com##+js(trusted-set, WSUnmute, player.setMute(false);)
+! cannot set a function with trusted-set since the third parameter is a string and would need eval() to run as a function.
+!lovesomecommunity.com##+js(trusted-set, WSUnmute, player.setMute(false);)
 !lovesomecommunity.com##+js(trusted-set, WSUnmute, player.setVolume(100);)
 lovesomecommunity.com,livehdplay.ru##script[adblock-settings]:remove()
 lovesomecommunity.com##span[style="display:none"]:remove()
@@ -47047,6 +47052,20 @@ andscape.com##div[class="ad-prevent-jump"]:remove()
 andscape.com##script[id="tb_loader_script"]:remove()
 andscape.com##script[ccpa-opt-out-ids]:remove()
 ||andscape.com/wp-content/plugins/dtci-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.hasbrorisk.com##div[data-js-cookieconsent-alert]:remove()
+||www.mnwjgegruq.com^*
+||mnwjgegruq.com^*
+||www.ercabxkngkbnuj.com^*
+||ercabxkngkbnuj.com^*
+||nsjyfpo.com^*
+||quomcnbhllbh.xyz^*
+||foaglaid.xyz^*
+||yiejvik.com^*
+||www.hpepeepce.com^*
+||hpepeepce.com^*
+||ib.adnxs.com/getuid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.yjaxjcbpkmp.com^*
+||yjaxjcbpkmp.com^*
 
 !Whitelisted
 ! for Google Drive
