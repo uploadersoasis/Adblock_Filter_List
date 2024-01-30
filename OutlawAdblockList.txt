@@ -37210,7 +37210,22 @@ www.cxtvlive.com##iframe[id^="aswift_"]
 dlhd.sx,daddylivehd.sx##+js(noeval)
 dlhd.sx,daddylivehd.sx##+js(aopw, emulateStorage)
 dlhd.sx,daddylivehd.sx##+js(aopr, emulateStorage)
-dlhd.sx,daddylivehd.sx##iframe[src^="https://st.chatango.com/"]
+dlhd.sx,daddylivehd.sx##iframe[src^="https://st.chatango.com/"]:remove()
+dlhd.sx,daddylivehd.sx##iframe[data-aa]:remove()
+dlhd.sx,daddylivehd.sx##iframe[src*="/stream.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, iframe[src*="/stream.php"])
+dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src*="/stream.php"])
+dlhd.sx,daddylivehd.sx##+js(saa, allowfullscreen, true, iframe[src*="/stream.php"])
+dlhd.sx,daddylivehd.sx##+js(saa, frameborder, 0, iframe[src*="/stream.php"])
+dlhd.sx,daddylivehd.sx##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, #thatframe)
+dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, #thatframe)
+dlhd.sx,daddylivehd.sx##+js(saa, allowfullscreen, true, #thatframe)
+dlhd.sx,daddylivehd.sx##+js(saa, frameborder, 0, #thatframe)
+dlhd.sx,daddylivehd.sx##div[id="fluid_video_wrapper_video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+dlhd.sx,daddylivehd.sx##video[id="video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, #video-id)
+dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, #video-id)
 dlhd.sx,daddylivehd.sx##+js(aopw, _chatangoTagserver)
 dlhd.sx,daddylivehd.sx##+js(aopr, _chatangoTagserver)
 dlhd.sx,daddylivehd.sx##script[id="tsjson"]:remove()
@@ -37255,10 +37270,12 @@ poscitechs.shop,dlhd.sx##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZ
 !poscitechs.shop##+js(nostif, /^/)
 poscitechs.shop##+js(nostif, /^function\(\)/)
 poscitechs.shop##iframe[src="javascript:false"]:remove()
-poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(height: 100vh !important; width: 100vw !important;)
-poscitechs.shop##iframe[id="thatframe"]:style(height: 100vh !important; width: 100vw !important;)
+poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+poscitechs.shop##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 poscitechs.shop##+js(saa, width, 100%, #thatframe)
 poscitechs.shop##+js(saa, height, 100%, #thatframe)
+poscitechs.shop##+js(saa, allowfullscreen, true, #thatframe)
+poscitechs.shop##+js(saa, frameborder, 0, #thatframe)
 poscitechs.shop##+js(saa, width, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(saa, height, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(set-constant, popWin, noopFunc)
@@ -37344,8 +37361,6 @@ www.fanatical.com##div[class^="PrivacyChecker"]
 ||cdn.fedykr.com^*
 ||www.tgo-tv.co/js/chat.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tgo-tv.co/tgochat.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cdn.jsdelivr.net/npm/disable-devtool/$script
 ||www.sqydhgubsy.com^*
 ||sqydhgubsy.com^*
 ||inoculateexplosionpostman.com^*
@@ -39252,6 +39267,10 @@ stream.crichd.vip##+js(aopr, _Hasync)
 stream.crichd.vip##+js(aopw, _Hasync)
 ||1l1l.to/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 1l1l.to##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+1l1l.to##+js(saa, width, 100%, #thatframe)
+1l1l.to##+js(saa, height, 100%, #thatframe)
+1l1l.to##+js(saa, allowfullscreen, true, #thatframe)
+1l1l.to##+js(saa, frameborder, 0, #thatframe)
 1l1l.to##+js(set-constant, cbut, noopFunc)
 1l1l.to##+js(acs, cbut, adholder)
 1l1l.to##div[id="adholder"]
@@ -46894,8 +46913,6 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 */script/ut.js$domain=s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||canoemissioninjunction.com^*
 ||fertilizerpokerelations.com^*
-||jsdelivr.map.fastly.net/npm/disable-devtool@latest$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cdn.jsdelivr.net/npm/disable-devtool@latest$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||xd.awashemeers.com^*
 ||nukeluck.net^*
 ||lgrykvialh.com^*
@@ -47262,6 +47279,16 @@ nobodywalked.com##+js(window.open-defuser, !/nobodywalked\.com/i)
 !||predictiondisplay.com/jump/next.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||predictiondisplay.com^*
 ||slenjjspmvxkup.com^*
+||ceimo.click/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||rakeq.ru.com/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||qbxez.click/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cvkbl.ru.com/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||jsdelivr.map.fastly.net/npm/disable-devtool@latest$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cdn.jsdelivr.net/npm/disable-devtool@latest$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.jsdelivr.net/npm/disable-devtool$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+mrgamingstreams.com##^script[disable-devtool-auto]:remove()
+mrgamingstreams.com##script[disable-devtool-auto]:remove()
 
 !Whitelisted
 ! for Google Drive
