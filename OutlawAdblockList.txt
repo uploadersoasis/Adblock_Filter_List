@@ -46731,6 +46731,7 @@ sporttuna.com,sporttuna.sx,sporttuna.site##+js(window.open-defuser)
 ||directresulto.org^*
 ! TODO: the following rule does not work; because the script is anonymous/generated?
 www.niaomea.me##+js(trusted-rpnt, script, /^debugger ;/gm, "")
+www.niaomea.me##^script[adblock-settings]:remove()
 www.niaomea.me##script[adblock-settings]:remove()
 www.niaomea.me##script[mads]:remove()
 www.niaomea.me##iframe[class="padPreload"]:remove()
@@ -46780,6 +46781,7 @@ embedstreams.me##:xpath(//script[contains(text(), 'adcashLib')]):remove()
 !||ctrtrk.com/ut/ctr.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ctrtrk.com^*
 ||www.displayvertising.com/fg9.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+givemereddit.eu,embedstreams.me##^script[adblock-settings]:remove()
 givemereddit.eu,embedstreams.me##script[adblock-settings]:remove()
 ||meenetiy.com^*
 ||www.tvknxyisi.com^*
@@ -46808,8 +46810,8 @@ voodc.com##iframe[src^="https://player.mycraft.click/"]:style(height: 100vh !imp
 voodc.com##div[class="afs_ads ad-placement"]:remove()
 voodc.com##div[id="UnMutePlayer"]:remove()
 voodc.com##div[id="ForWeb"]:remove()
-voodc.com##:xpath(//script[contains(text(), 'adcashLib')])
 voodc.com##:xpath(//script[contains(text(), 'adcashLib')]):remove()
+voodc.com##^script[adblock-settings]:remove()
 voodc.com##script[adblock-settings]:remove()
 voodc.com##img[id="pingsts"]:remove()
 voodc.com##+js(set-constant, Pingstat, noopFunc)
@@ -46931,12 +46933,13 @@ olalivehdplay.ru,weblivehdplay.ru##script[disable-devtool-auto]:remove()
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##:xpath(//script[contains(text(), 'window==window.top')]):remove()
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(aopw, window.top)
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(aopr, window.top)
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##^script[adblock-settings]:remove()
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##script[adblock-settings]:remove()
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(set-constant, player.options.allowUserInteraction, true)
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(set-constant, player.options.playback.disableContextMenu, false)
 ! This does not actually set the volume level which is still 0 at initial setting.
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(set-constant, player.options.mute, false)
-! These change the initial Clapper player configuration options.
+! These two rules change the initial Clapper player configuration options.
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(trusted-rpnt, script, /mute: true/gm, mute: false)
 ! Don't always want a script to set full volume, but this only runs at initial load of the page
@@ -46984,7 +46987,7 @@ fiveyardlab.com##+js(set-constant, player.options.allowUserInteraction, true)
 fiveyardlab.com##+js(set-constant, player.options.playback.disableContextMenu, false)
 ! This does not actually set the volume level which is still 0 at initial setting.
 fiveyardlab.com##+js(set-constant, player.options.mute, false)
-! These change the initial Clapper player configuration options.
+! These two rules change the initial Clapper player configuration options.
 fiveyardlab.com##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
 fiveyardlab.com##+js(trusted-rpnt, script, /mute: true/gm, mute: false)
 ! Don't always want a script to set full volume, but this only runs at initial load of the page
@@ -47079,13 +47082,14 @@ golassiahub.com##+js(set-constant, result, noopFunc)
 ||lovesomecommunity.com/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lovesomecommunity.com/z-7123946$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 lovesomecommunity.com,livehdplay.ru##script[adblock-settings]:remove()
+lovesomecommunity.com,livehdplay.ru##^script[adblock-settings]:remove()
 lovesomecommunity.com##span[style="display:none"]:remove()
 lovesomecommunity.com##div[id="player"]:style(height:100vh !important; width:100vw !important;)
 lovesomecommunity.com,livehdplay.ru##+js(set-constant, player.options.allowUserInteraction, true)
 lovesomecommunity.com,livehdplay.ru##+js(set-constant, player.options.playback.disableContextMenu, false)
 ! This does not actually set the volume level which is still 0 at initial setting.
 lovesomecommunity.com,livehdplay.ru##+js(set-constant, player.options.mute, false)
-! These change the initial Clapper player configuration options.
+! These two rules change the initial Clapper player configuration options.
 lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
 lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /mute: true/gm, mute: false)
 ! Don't always want a script to set full volume, but this only runs at initial load of the page
@@ -47170,7 +47174,7 @@ player.mycraft.click##+js(set-constant, player.options.allowUserInteraction, tru
 player.mycraft.click##+js(set-constant, player.options.playback.disableContextMenu, false)
 ! This does not actually set the volume level which is still 0 at initial setting.
 player.mycraft.click##+js(set-constant, player.options.mute, false)
-! These change the initial Clapper player configuration options.
+! These two rules change the initial Clapper player configuration options.
 player.mycraft.click##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
 player.mycraft.click##+js(trusted-rpnt, script, /mute: true/gm, mute: false)
 ! Don't always want a script to set full volume, but this only runs at initial load of the page
@@ -47201,6 +47205,7 @@ antenasport.ru,maxsport.one##+js(aopr, _Hasync)
 antenasport.ru,maxsport.one##+js(aopw, _Hasync)
 antenasport.ru,maxsport.one##+js(trusted-set, currentReferer, https://antenasport.ru/)
 antenasport.ru##iframe[src="about:blank"]:remove()
+antenasport.ru##^script[adblock-settings]:remove()
 antenasport.ru##script[adblock-settings]:remove()
 antenasport.ru##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 antenasport.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
@@ -47222,7 +47227,7 @@ aradsport.live##+js(set-constant, player.options.allowUserInteraction, true)
 aradsport.live##+js(set-constant, player.options.playback.disableContextMenu, false)
 ! This does not actually set the volume level which is still 0 at initial setting.
 aradsport.live##+js(set-constant, player.options.mute, false)
-! These change the initial Clapper player configuration options.
+! These two rules change the initial Clapper player configuration options.
 aradsport.live##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
 aradsport.live##+js(trusted-rpnt, script, /mute: 'true'/gm, mute: 'false')
 ! Don't always want a script to set full volume, but this only runs at initial load of the page
@@ -47244,6 +47249,7 @@ aradsport.live##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/gm
 ||commarevelation.com^*
 s2watch.link##+js(set-constant, adcash, noopFunc)
 s2watch.link##+js(set-constant, Adcash, noopFunc)
+s2watch.link##^script[adblock-settings]:remove()
 s2watch.link##script[adblock-settings]:remove()
 s2watch.link##:xpath(//script[contains(text(), '_Hasync')]):remove()
 s2watch.link##+js(set-constant, _Hasync, [])
@@ -47279,16 +47285,41 @@ nobodywalked.com##+js(window.open-defuser, !/nobodywalked\.com/i)
 !||predictiondisplay.com/jump/next.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||predictiondisplay.com^*
 ||slenjjspmvxkup.com^*
-||ceimo.click/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||rakeq.ru.com/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||qbxez.click/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cvkbl.ru.com/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||jsdelivr.map.fastly.net/npm/disable-devtool@latest$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cdn.jsdelivr.net/npm/disable-devtool@latest$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.jsdelivr.net/npm/disable-devtool$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 mrgamingstreams.com##^script[disable-devtool-auto]:remove()
 mrgamingstreams.com##script[disable-devtool-auto]:remove()
+! These two rules change the initial Clapper player configuration options.
+ypamu.ru.com##+js(trusted-rpnt, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
+ypamu.ru.com##+js(trusted-rpnt, script, /mute: true/gm, mute: false)
+||ceimo.click/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||rakeq.ru.com/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||qbxez.click/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cvkbl.ru.com/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ypamu.ru.com/js/deb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ceimo.click/framebox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||rakeq.ru.com/framebox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||qbxez.click/framebox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cvkbl.ru.com/framebox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ypamu.ru.com/framebox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! TODO: None of the following three rules actually prevent redirection away from the page if the page is not in a frame
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##:xpath(//script[contains(text(), 'window==window.top')]):remove()
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopw, window.top)
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopr, window.top)
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##^script[id="_waumqy"]:remove()
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##script[id="_waumqy"]:remove()
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(set-constant, _wau, [])
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopr, _wau)
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopw, _wau)
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##^script[adblock-settings]:remove()
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##script[adblock-settings]:remove()
+! muted is not getting set by saa
+!ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(saa, muted, false, video[data-html5-video])
+! removing the muted attribute when set to true does not unmute the video frame
+!ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##video[data-html5-video]:remove-attr(muted)
 
 !Whitelisted
 ! for Google Drive
