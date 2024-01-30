@@ -25405,7 +25405,7 @@ gofile.io##.swal2-backdrop-show.swal2-center.swal2-container
 !||www.google-analytics.com/r/collect$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.google-analytics.com/siteopt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.google-analytics.com/urchin.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.google-analytics.com^$script,domain=daddylivehd.sx
+www.google-analytics.com^$script,domain=daddylivehd.sx|dlhd.sx
 ||google-analytics.com^*
 ||googletagmanager.com/gtm.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||googletagservices.com/gpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -37207,40 +37207,62 @@ stream2watch.games##div[class="midel_comant_box"]
 www.cxtvlive.com##div[class*="ad-titulo"]
 www.cxtvlive.com##ins[data-ad-client]
 www.cxtvlive.com##iframe[id^="aswift_"]
-daddylivehd.sx##+js(noeval)
-daddylivehd.sx##+js(aopw, emulateStorage)
-daddylivehd.sx##+js(aopr, emulateStorage)
-daddylivehd.sx##iframe[src^="https://st.chatango.com/"]
-daddylivehd.sx##+js(aopw, _chatangoTagserver)
-daddylivehd.sx##+js(aopr, _chatangoTagserver)
-daddylivehd.sx##script[id="tsjson"]
-daddylivehd.sx##script[data-adel][zid]
-daddylivehd.sx##script[data-adel][zid]:remove()
-daddylivehd.sx##^script[data-adel][zid]
-daddylivehd.sx##^script[data-adel][zid]:remove()
-daddylivehd.sx##+js(acs, atob, decodeURIComponent)
-daddylivehd.sx##+js(acs, document, $._Eu, $.BD)
-daddylivehd.sx##div[id="footer"]
-daddylivehd.sx##div[id="sidebar"]
-daddylivehd.sx##iframe[id="stats"]
-daddylivehd.sx##+js(aopw, document.oncontextmenu)
-daddylivehd.sx##+js(aopr, document.oncontextmenu)
-daddylivehd.sx##+js(aopw, document.onkeypress)
-daddylivehd.sx##+js(aopr, document.onkeypress)
-daddylivehd.sx##+js(aopw, document.onmousedown)
-daddylivehd.sx##+js(aopr, document.onmousedown)
-daddylivehd.sx##+js(aopw, x.withCredentials)
-daddylivehd.sx##+js(aopr, x.withCredentials)
-daddylivehd.sx##div[id="UnMutePlayer"]:remove()
-!daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
-daddylivehd.sx##input[type=button]:remove-attr(disabled)
-daddylivehd.sx##textarea[id="txtarea"]
-daddylivehd.sx##+js(set-constant, hs, {})
-daddylivehd.sx##+js(acs, _Hasync)
-daddylivehd.sx##+js(aopr, _Hasync)
-daddylivehd.sx##+js(aopw, _Hasync)
+dlhd.sx,daddylivehd.sx##+js(noeval)
+dlhd.sx,daddylivehd.sx##+js(aopw, emulateStorage)
+dlhd.sx,daddylivehd.sx##+js(aopr, emulateStorage)
+dlhd.sx,daddylivehd.sx##iframe[src^="https://st.chatango.com/"]
+dlhd.sx,daddylivehd.sx##+js(aopw, _chatangoTagserver)
+dlhd.sx,daddylivehd.sx##+js(aopr, _chatangoTagserver)
+dlhd.sx,daddylivehd.sx##script[id="tsjson"]:remove()
+dlhd.sx,daddylivehd.sx##script[data-adel][zid]
+dlhd.sx,daddylivehd.sx##script[data-adel][zid]:remove()
+dlhd.sx,daddylivehd.sx##^script[data-adel][zid]
+dlhd.sx,daddylivehd.sx##^script[data-adel][zid]:remove()
+dlhd.sx,daddylivehd.sx##+js(acs, atob, decodeURIComponent)
+dlhd.sx,daddylivehd.sx##+js(acs, document, $._Eu, $.BD)
+dlhd.sx,daddylivehd.sx##div[id="footer"]
+dlhd.sx,daddylivehd.sx##div[id="sidebar"]
+dlhd.sx,daddylivehd.sx##iframe[id="stats"]:remove()
+dlhd.sx,daddylivehd.sx##+js(aopw, document.oncontextmenu)
+dlhd.sx,daddylivehd.sx##+js(aopr, document.oncontextmenu)
+dlhd.sx,daddylivehd.sx##+js(aopw, document.onkeypress)
+dlhd.sx,daddylivehd.sx##+js(aopr, document.onkeypress)
+dlhd.sx,daddylivehd.sx##+js(aopw, document.onmousedown)
+dlhd.sx,daddylivehd.sx##+js(aopr, document.onmousedown)
+dlhd.sx,daddylivehd.sx##+js(aopw, x.withCredentials)
+dlhd.sx,daddylivehd.sx##+js(aopr, x.withCredentials)
+dlhd.sx,daddylivehd.sx##div[id="UnMutePlayer"]:remove()
+!dlhd.sx,daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
+dlhd.sx,daddylivehd.sx##input[type=button]:remove-attr(disabled)
+dlhd.sx,daddylivehd.sx##textarea[id="txtarea"]
+dlhd.sx,daddylivehd.sx##+js(set-constant, hs, {})
+dlhd.sx,daddylivehd.sx##+js(set-constant, _Hasync, [])
+dlhd.sx,daddylivehd.sx##+js(acs, _Hasync)
+dlhd.sx,daddylivehd.sx##+js(aopr, _Hasync)
+dlhd.sx,daddylivehd.sx##+js(aopw, _Hasync)
 ||daddylivehd.sx/embed/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||daddylivehd.sx/stream/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dlhd.sx/embed/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dlhd.sx/stream/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+poscitechs.shop,dlhd.sx##iframe[src="about:blank"]:remove()
+poscitechs.shop,dlhd.sx##div[style="position: fixed; display: block; width: 100%; height: 100%; inset: 0px; background-color: rgba(0, 0, 0, 0); z-index: 300000;"]:remove()
+poscitechs.shop,dlhd.sx##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+poscitechs.shop,dlhd.sx##+js(acs, window.kkp4a5x5tv)
+poscitechs.shop,dlhd.sx##+js(aopw, window.kkp4a5x5tv)
+poscitechs.shop,dlhd.sx##+js(aopr, window.kkp4a5x5tv)
+poscitechs.shop,dlhd.sx##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+!poscitechs.shop##+js(nostif)
+!poscitechs.shop##+js(nostif, /^/)
+poscitechs.shop##+js(nostif, /^function\(\)/)
+poscitechs.shop##iframe[src="javascript:false"]:remove()
+poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(height: 100vh !important; width: 100vw !important;)
+poscitechs.shop##iframe[id="thatframe"]:style(height: 100vh !important; width: 100vw !important;)
+poscitechs.shop##+js(saa, width, 100%, #thatframe)
+poscitechs.shop##+js(saa, height, 100%, #thatframe)
+poscitechs.shop##+js(saa, width, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
+poscitechs.shop##+js(saa, height, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
+poscitechs.shop##+js(set-constant, popWin, noopFunc)
+poscitechs.shop##+js(set-constant, afScript, noopFunc)
 ||armoryleaseholder.com^*
 ||santstipule.com^*
 !tv.ustvgo.live##object[id="ai-adb-dblclk"]
@@ -39033,14 +39055,6 @@ cdn.stream-24.net##+js(aopw, web3)
 cdn.stream-24.net##+js(acs, pu)
 cdn.stream-24.net##+js(aopr, pu)
 cdn.stream-24.net##+js(aopw, pu)
-maxsport.one##+js(acs, decodeURIComponent)
-maxsport.one##+js(acs, window.c18fe44ffdefee243e858c7444dda370)
-maxsport.one##+js(aopr, window.c18fe44ffdefee243e858c7444dda370)
-maxsport.one##+js(aopw, window.c18fe44ffdefee243e858c7444dda370)
-maxsport.one##+js(acs, _Hasync)
-maxsport.one##+js(aopr, _Hasync)
-maxsport.one##+js(aopw, _Hasync)
-maxsport.one##+js(trusted-set, currentReferer, https://maxsport.one/)
 primasport.one##+js(trusted-set, currentReferer, https://primasport.one/)
 pluto.tv###omid_v1_present
 pluto.tv###omid_v1_present:remove()
@@ -40570,10 +40584,10 @@ slmaxed.com##div[class="alert alert-info mb-2"]:remove()
 ||lp.pickmysearch.com^*
 ||www.edqbparlheuj.com^*
 ||edqbparlheuj.com^*
-!||st.chatango.com/js/gz/emb.js$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
-!||st.chatango.com^$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
-!||st.chatango.com^$all,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
-||st.chatango.com^*$domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+!||st.chatango.com/js/gz/emb.js$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+!||st.chatango.com^$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+!||st.chatango.com^$all,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+||st.chatango.com^*$domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
 ||www.facebook.com/ajax/bz?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 tutorialzine.com##+js(set-constant, _gaq, [])
 tutorialzine.com##+js(abort-on-property-write, _gaq)
@@ -46872,17 +46886,6 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 !1stream.eu##div[id="video-player"]:has(div[data-player]):style(height: 100vh !important; width: 100vw !important;)
 1stream.eu##div[data-player]:style(height: 100vh !important; width: 100vw !important;)
 */script/utils.js$domain=livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||dlhd.sx/embed/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-dlhd.sx##+js(set-constant, _Hasync, [])
-dlhd.sx##+js(aopw, _Hasync)
-dlhd.sx##+js(aopr, _Hasync)
-poscitechs.shop,dlhd.sx##iframe[src="about:blank"]:remove()
-poscitechs.shop,dlhd.sx##div[style="position: fixed; display: block; width: 100%; height: 100%; inset: 0px; background-color: rgba(0, 0, 0, 0); z-index: 300000;"]:remove()
-poscitechs.shop,dlhd.sx##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
-poscitechs.shop,dlhd.sx##+js(acs, window.kkp4a5x5tv)
-poscitechs.shop,dlhd.sx##+js(aopw, window.kkp4a5x5tv)
-poscitechs.shop,dlhd.sx##+js(aopr, window.kkp4a5x5tv)
-poscitechs.shop,dlhd.sx##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 ||canoemissioninjunction.com^*
 ||fertilizerpokerelations.com^*
 ||jsdelivr.map.fastly.net/npm/disable-devtool@latest$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -47028,18 +47031,6 @@ wikisport.click,wikisport.se##iframe[src^="https://livehdplay.ru/wiki.php"]:styl
 ||www.jrqwfdkksamx.com^*
 ||jrqwfdkksamx.com^*
 ||1384555756.rsc.cdn77.org/static/mimagine.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!poscitechs.shop##+js(nostif)
-!poscitechs.shop##+js(nostif, /^/)
-poscitechs.shop##+js(nostif, /^function\(\)/)
-poscitechs.shop##iframe[src="javascript:false"]:remove()
-poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(height: 100vh !important; width: 100vw !important;)
-poscitechs.shop##iframe[id="thatframe"]:style(height: 100vh !important; width: 100vw !important;)
-poscitechs.shop##+js(saa, width, 100%, #thatframe)
-poscitechs.shop##+js(saa, height, 100%, #thatframe)
-poscitechs.shop##+js(saa, width, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
-poscitechs.shop##+js(saa, height, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
-poscitechs.shop##+js(set-constant, popWin, noopFunc)
-poscitechs.shop##+js(set-constant, afScript, noopFunc)
 ||162.252.214.4/a.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.jvswyxxyrrh.com^*
 ||jvswyxxyrrh.com^*
@@ -47176,15 +47167,21 @@ player.mycraft.click##+js(nosiif, /^vwu\(\)/)
 ||ku42hjr2e.com^*
 ||viwlivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mitowdcagos.com^*
-antenasport.ru##:xpath(//script[contains(text(), '_Hasync')]):remove()
+antenasport.ru,maxsport.one##+js(acs, decodeURIComponent)
+antenasport.ru,maxsport.one##+js(acs, window.c18fe44ffdefee243e858c7444dda370)
+antenasport.ru,maxsport.one##+js(aopr, window.c18fe44ffdefee243e858c7444dda370)
+antenasport.ru,maxsport.one##+js(aopw, window.c18fe44ffdefee243e858c7444dda370)
+antenasport.ru,maxsport.one##:xpath(//script[contains(text(), '_Hasync')]):remove()
+antenasport.ru,maxsport.one##+js(set-constant, _Hasync, [])
+antenasport.ru,maxsport.one##+js(acs, _Hasync)
+antenasport.ru,maxsport.one##+js(aopr, _Hasync)
+antenasport.ru,maxsport.one##+js(aopw, _Hasync)
+antenasport.ru,maxsport.one##+js(trusted-set, currentReferer, https://antenasport.ru/)
 antenasport.ru##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 antenasport.ru##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 antenasport.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
 antenasport.ru##iframe[src="about:blank"]:remove()
 antenasport.ru##script[adblock-settings]:remove()
-antenasport.ru##+js(set-constant, _Hasync, [])
-antenasport.ru##+js(aopw, _Hasync)
-antenasport.ru##+js(aopr, _Hasync)
 antenasport.ru##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 antenasport.ru##+js(acs, window.kkp4a5x5tv)
 antenasport.ru##+js(aopr, window.kkp4a5x5tv)
