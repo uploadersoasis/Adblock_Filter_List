@@ -28172,7 +28172,7 @@ www.filecad.com##^script:has-text(clear-adblock)
 www.filecad.com##^script:has-text(#adblockinfo)
 !www.filecad.com##+js(remove-class, download-timer)
 www.filecad.com##div[class="download-timer"]:style(display: inline !important;)
-www.filecad.com##+js(nosiif.js, display())
+www.filecad.com##+js(nosiif, /^display\(\)/)
 www.filecad.com##a[class="btn btn-subtle"]:style(display: inline !important;)
 www.filecad.com##+js(set-constant, LOGGED_IN, true)
 www.amazon.es##span[data-action="sp-cc"]
@@ -28355,7 +28355,6 @@ tny.so##^script[src$="/a.js"]
 ||onsideratio.fun^*
 ||arguerepetition.com^*
 ||proclaimsubjected.com^*
-||acscdn.com/script/ippg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||shockersheva.com^*
 ||d1nssfq3xl2t6b.cloudfront.net^*
 makemoneywithurl.com##div[id^="div-gpt-ad"]
@@ -31295,7 +31294,7 @@ fastclick.to##ins[data-ad-client]
 fastclick.to##ins[data-ad-client]:remove()
 fastclick.to##inpur[id="adblock_detected"]:remove()
 !fastclick.to##+js(nosiif, /^/)
-fastclick.to##+js(nosiif, /function\(\)/)
+fastclick.to##+js(nosiif, /^function\(\)/)
 apk4k.fun##div[class="ad_spoiler"]
 apk4k.fun##div[class="ad"]
 ||wildroid.ru/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -31651,7 +31650,6 @@ www.apeaksoft.com##div[class="usernotice_pop"]:has-text(/cookies/i)
 ||outragedisgraceful.com^*
 ||itweepinbelltor.com^*
 ||immoderatesulky.com^*
-||acscdn.com/script/suv4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 gbplus.org##div[style*="width:100vw; height:280px;"]:has(ins[data-ad-client])
 gbplus.org##div[style="width:100vw; text-align:center; height:250px;"]:has(ins[data-ad-client])
 gbplus.org##ins[data-ad-client]
@@ -35719,13 +35717,13 @@ www.linkedin.com##+js(aopr, window.impressionTracking)
 www.linkedin.com##+js(aopw, window.impressionTracking)
 nw.freestreams-live1.com##+js(acs, debugger)
 nw.freestreams-live1.com##+js(acs, anonymous)
-!||speai.com/script/pustrck.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||speai.com/script/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!nw.freestreams-live1.com##div[id="UnMutePlayer"]:remove()
-||browsobsolete.com^*
 nw.freestreams-live1.com##script[cdnd="acacdn.com"]
 nw.freestreams-live1.com##a[class="pf-br-icon"]:upward(1)
 nw.freestreams-live1.com##div[id^="pf-"]
+!nw.freestreams-live1.com##div[id="UnMutePlayer"]:remove()
+!||speai.com/script/pustrck.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||speai.com/script/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||browsobsolete.com^*
 ||thiem-csl.com^*
 ||fyngood.com^*
 ||virginyoungestrust.com^*
@@ -37231,7 +37229,7 @@ daddylivehd.sx##+js(aopw, document.onmousedown)
 daddylivehd.sx##+js(aopr, document.onmousedown)
 daddylivehd.sx##+js(aopw, x.withCredentials)
 daddylivehd.sx##+js(aopr, x.withCredentials)
-daddylivehd.sx##div[id="UnMutePlayer"]
+daddylivehd.sx##div[id="UnMutePlayer"]:remove()
 !daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
 daddylivehd.sx##input[type=button]:remove-attr(disabled)
 daddylivehd.sx##textarea[id="txtarea"]
@@ -37622,7 +37620,6 @@ time4tv.stream,time4tv.xyz##div[class="chatBox"]:remove()
 time4tv.stream,time4tv.xyz##iframe[id="rufous-sandbox"]
 time4tv.stream,time4tv.xyz##div[id="UnMutePlayer"]:style(display: none;)
 time4tv.stream,time4tv.xyz##div[id="UnMutePlayer"]:remove()
-time4tv.stream,time4tv.xyz##div[id="UnMutePlayer"]
 time4tv.stream,time4tv.xyz##+js(set-constant, atOptions, {})
 time4tv.stream,time4tv.xyz##+js(aopr, atOptions)
 time4tv.stream,time4tv.xyz##+js(aopw, atOptions)
@@ -37820,7 +37817,7 @@ ntuplay.xyz##+js(aopr, document.onkeypress)
 ntuplay.xyz##+js(aopw, document.onkeypress)
 ntuplay.xyz##+js(aopr, document.onkeydown)
 ntuplay.xyz##+js(aopw, document.onkeydown)
-ntuplay.xyz##div[id="UnMutePlayer"]
+ntuplay.xyz##div[id="UnMutePlayer"]:remove()
 ntuplay.xyz##+js(aopr, autoloadMarker)
 ntuplay.xyz##+js(aopw, autoloadMarker)
 ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]
@@ -38087,7 +38084,7 @@ www.foxnews.com##+js(aopw, window._cbq)
 !www.foxnews.com##+js(set-constant, Strike.insertAd, noopFunc, end)
 www.foxnews.com##+js(set-constant, Strike.insertAd, noopFunc, complete)
 www.foxnews.com##+js(acs, Strike.insertAd)
-www.foxnews.com##+js(nosiif, /function\(\)/)
+www.foxnews.com##+js(nosiif, /^function\(\)/)
 www.foxnews.com##+js(remove-class, scroll-lock, ,)
 www.foxnews.com##+js(trusted-set, document.querySelector("a.close").href, window.history.back())
 www.foxnews.com##+js(saa, href, window.history.back(), a.close)
@@ -38460,7 +38457,7 @@ lato.sx##+js(aopr, window["s2ss42"])
 lato.sx##+js(aopw, window["s2ss42"])
 lato.sx##+js(set-constant, v_width, 1280)
 lato.sx##+js(set-constant, v_height, 720)
-!lato.sx##+js(set-constant, PlaySize, style="overflow:hidden;height:100vh;width:100vw")
+lato.sx##+js(trusted-set, PlaySize, style="height:100vh important!;width:100vw !important;")
 lato.sx##+js(no-setTimeout-if, function)
 lato.sx##^script[admn][admc][zid][did]
 lato.sx##script[admn][admc][zid][did]
@@ -38609,7 +38606,8 @@ www.sportsbaytv.com##+js(set-constant, popurl, '')
 www.sportsbaytv.com##+js(set-constant, popurl2, '')
 www.sportsbaytv.com##+js(set-constant, popurl3, '')
 www.sportsbaytv.com##+js(set-constant, hostname, '')
-www.sportsbaytv.com##+js(nosiif, vwu())
+!www.sportsbaytv.com##+js(nosiif, vwu)
+www.sportsbaytv.com##+js(nosiif, /^vwu\(\)/)
 1rowsportz.info##+js(aopr, _Hasync)
 1rowsportz.info##+js(aopw, _Hasync)
 !||1rowsportz.info/sbss.js$script
@@ -38694,7 +38692,7 @@ ntv.capshd.xyz##div[id="overlay"]
 ntv.capshd.xyz##div[id="overlay"]:remove()
 ||erumen.com^*
 ||strayindicate.net/deity.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-strayindicate.net##div[id="btn-unmute"]
+strayindicate.net##div[id="btn-unmute"]:remove()
 strayindicate.net##+js(set-constant, isConsoleOpen, false)
 strayindicate.net##+js(set-constant, isOpen, false)
 strayindicate.net##+js(set-constant, ConsoleBan.init, noopFunc)
@@ -38832,7 +38830,7 @@ live.harleyquinnwidget.live##div[id="ad_overlay"]
 live.harleyquinnwidget.live##div[id="ad_overlay"]:remove()
 live.harleyquinnwidget.live##div[id="ads"]
 live.harleyquinnwidget.live##div[id="ads"]:remove()
-live.harleyquinnwidget.live##+js(nosiif, vwu())
+live.harleyquinnwidget.live##+js(nosiif, /^vwu\(\)/)
 live.harleyquinnwidget.live##+js(aopr, mamafooty)
 live.harleyquinnwidget.live##+js(aopw, mamafooty)
 live.harleyquinnwidget.live##:xpath(//script[contains(text(), 'top.location')])
@@ -39428,7 +39426,7 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isadblock, 0, 
 !devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="ipp"]:remove()
 devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nostif, tick)
 ! defusing intervals breaks the script which creates the token for the download
-!devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nosiif, /function\(\)/)
+!devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nosiif, /^function\(\)/)
 ! even though blocking the countdown script, still have to wait for the 10 second countdown for the download link to be generated.
 ||devuploads.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||thecubexguide.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -39720,8 +39718,6 @@ streamvid.net##+js(abort-on-property-read, _0x3538e)
 ||ethecityonata.com^*
 ||alloverwiththinl.com^*
 ||d1azpphj80lavy.cloudfront.net^*
-||acscdn.com/script/ut.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||acscdn.com/script/atg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s3.us-east-1.amazonaws.com/5a8cca0cfc3724b3098015d90738ea10397092fb09bb521efd5f837e2f0d/cfc0acc8a5$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||thefacux.com^*
 ||rural-patience.com^*
@@ -39911,7 +39907,7 @@ mixdrop.co,mixdrop.ag,mixdrop.to##+js(aopw, wpn63s)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(aopr, wpn63s)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(aeld, click, function(g))
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(aeld, click, function(a))
-mixdrop.co,mixdrop.ag,mixdrop.to##+js(nosiif, function)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(nosiif, /^function/)
 mixdrop.co,mixdrop.ag,mixdrop.to##body:remove-attr(onclick)
 ||mixdrop.co/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, adcashMacros, {})
@@ -41657,7 +41653,7 @@ putlocker.boo##+js(set-constant, FingerprintJS, noopFunc)
 ||putlocker.boo/assets/script$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! redefining _0x39426c prevents the altrernative video hosts/server from being listed on the watch pages
 !putlocker.sb##+js(set-constant, _0x39426c, noopFunc)
-!putlocker.sb##+js(nosiif, /function\(\)/)
+!putlocker.sb##+js(nosiif, /^function\(\)/)
 putlocker.sb##+js(nosiif, /^/)
 putlocker.sb##+js(set-constant, devtoolsDetectInterval, noopFunc)
 !putlocker.sb##+js(set-constant, window.kkp4a5x5tv, noopFunc, end)
@@ -41707,7 +41703,7 @@ www.outlookindia.com##div[class^="ad_unit_"]
 www.outlookindia.com##div[class^="ad_unit_"]:remove()
 www.outlookindia.com##div[id^="div-gpt-ad-"]
 www.outlookindia.com##div[id^="div-gpt-ad-"]:remove()
-www.outlookindia.com##+js(nosiif, /function\(\)/)
+www.outlookindia.com##+js(nosiif, /^function\(\)/)
 !www.outlookindia.com##+js(nosiif, /^/)
 !www.outlookindia.com##+js(set-constant, googletag.cmd.push, noopFunc, end)
 www.outlookindia.com##+js(set-constant, googletag.cmd.push, noopFunc, complete)
@@ -46662,6 +46658,10 @@ www.crazygames.com##div[id^="div-gpt-ad-"]:upward(1):remove()
 ||nopl.bull00shit.com^*
 ||xob.bull00shit.com^*
 ||zktsygv.com^*
+||acscdn.com/script/ippg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||acscdn.com/script/suv4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||acscdn.com/script/ut.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||acscdn.com/script/atg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||acscdn.com/script/aclib.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 sporttuna.com,sporttuna.sx,sporttuna.site##div[class="container"]:style(height: 100vh !important; width: 100vw !important; max-width: 100vw !important; max-height: 100vh !important;)
 sporttuna.com,sporttuna.sx,sporttuna.site##script[id="aclib"]:remove()
@@ -46737,16 +46737,27 @@ livefootball24.com##div[id^="div-gpt-ad-"]:remove()
 !||quo1.dlive.click^*
 !||orangery.quesadilla.click^*
 !||tastevin.panpizza.click^*
-! cannot set a function with trusted-set since the third parameter is a string and would need eval() to run as a function.
-!voodc.com##+js(trusted-set, WSUnmute, jwplayer().setMute(false);)
-!voodc.com##+js(set-constant, WSUnmute, noopFunc)
-!voodc.com##+js(aopw, WSUnmute)
-!voodc.com##+js(aopr, WSUnmute)
+voodc.com##iframe[src^="https://player.mycraft.click/"]:style(height: 100vh !important; width: 100vw !important;)
+voodc.com##div[class="afs_ads ad-placement"]:remove()
 voodc.com##div[id="UnMutePlayer"]:remove()
 voodc.com##div[id="ForWeb"]:remove()
 voodc.com##:xpath(//script[contains(text(), 'adcashLib')])
 voodc.com##:xpath(//script[contains(text(), 'adcashLib')]):remove()
 voodc.com##script[adblock-settings]:remove()
+voodc.com##img[id="pingsts"]:remove()
+voodc.com##+js(set-constant, Pingstat, noopFunc)
+voodc.com##+js(acs, Pingstat)
+!voodc.com##+js(nosiif, Pingstat)
+voodc.com##+js(nosiif, /^Pingstat\(\)/)
+||restapi.voodc.com/vping.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! voodc.com does host the jwplayer javascript player and player functions for some embedded channels.
+! Don't always want a script to unmute the volume, but this only runs at initial load of the page
+! 4th parameter should not be in regex format
+!voodc.com##+js(trusted-rpnt, script, /jwplayer\(\)\.setMute\(true\);/g, jwplayer().setMute(false);)
+! sets any value not false to false
+! cannot set a function with trusted-set since the third parameter is a string and would need eval() to run as a function.
+!voodc.com##+js(trusted-set, WSUnmute, function(){jwplayer().setMute(false);})
+voodc.com##+js(trusted-rpnt, script, /jwplayer\(\)\.setMute\(((?!false)\w)+\);/g, jwplayer().setMute(false);)
 mobmodapk.com##aside[class^="ads"]:remove()
 mobmodapk.com##ins[data-ad-client]:remove()
 mobmodapk.com##+js(set-constant, adsbygoogle, [])
@@ -46864,13 +46875,12 @@ weblivehdplay.ru##+js(aeld, click, function)
 olalivehdplay.ru,weblivehdplay.ru##body:remove-attr(oncontextmenu)
 olalivehdplay.ru,weblivehdplay.ru##script[adblock-settings]:remove()
 olalivehdplay.ru,weblivehdplay.ru##script[disable-devtool-auto]:remove()
-! cannot set a function with trusted-set since the third parameter is a string and would need eval() to run as a function.
-!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-set, WSUnmute, jwplayer().setMute(false);)
+! Don't always want a script to set full volume, but this only runs at initial load of the page
 ! 4th parameter should not be in regex format
-!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(100\);/g, player.setMute(false);)
-!olalivehdplay.ru,weblivehdplay.ru##+js(set-constant, WSUnmute, noopFunc)
-!olalivehdplay.ru,weblivehdplay.ru##+js(aopw, WSUnmute)
-!olalivehdplay.ru,weblivehdplay.ru##+js(aopr, WSUnmute)
+!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(0\);/g, player.setVolume(100);)
+!olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/g, player.setVolume(100);)
+! sets any value not 100 to 100
+olalivehdplay.ru,weblivehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/g, player.setVolume(100);)
 olalivehdplay.ru,weblivehdplay.ru##div[id="UnMutePlayer"]:remove()
 olalivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
 olalivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'document.onmousedown')]):remove()
@@ -46905,7 +46915,7 @@ fiveyardlab.com##+js(aopr, currentReferer)
 fiveyardlab.com##span[style="display:none"]:remove()
 fiveyardlab.com##div[id="player"]:style(height:100vh !important; width:100vw !important;)
 fiveyardlab.com##+js(trusted-set, currentReferer, https://wikisport.se/)
-fiveyardlab.com##+js(trusted-set, PlaySize, style="height:100vh important!;width:100vw !important;")
+fiveyardlab.com##+js(trusted-set, PlaySize, style="height: 100vh important!;width: 100vw !important;")
 ||ak.phoognol.com^*
 ||a749.b.akamai.net/4/6882417$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||singelstodate.com^*
@@ -47003,12 +47013,15 @@ golassiahub.com##+js(set-constant, result, noopFunc)
 ||notablyassn.digital^*
 ||lovesomecommunity.com/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lovesomecommunity.com/z-7123946$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! cannot set a function with trusted-set since the third parameter is a string and would need eval() to run as a function.
-!lovesomecommunity.com##+js(trusted-set, WSUnmute, player.setMute(false);)
-!lovesomecommunity.com##+js(trusted-set, WSUnmute, player.setVolume(100);)
 lovesomecommunity.com,livehdplay.ru##script[adblock-settings]:remove()
 lovesomecommunity.com##span[style="display:none"]:remove()
 lovesomecommunity.com##div[id="player"]:style(height:100vh !important; width:100vw !important;)
+! Don't always want a script to set full volume, but this only runs at initial load of the page
+! 4th parameter should not be in regex format
+!lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(0\);/g, player.setVolume(100);)
+!lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/g, player.setVolume(100);)
+! sets any value not 100 to 100
+lovesomecommunity.com,livehdplay.ru##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/g, player.setVolume(100);)
 lovesomecommunity.com,livehdplay.ru##div[id="UnMutePlayer"]:remove()
 lovesomecommunity.com##+js(set-constant, _Hasync, [])
 lovesomecommunity.com##+js(aopw, _Hasync)
@@ -47066,6 +47079,25 @@ www.hasbrorisk.com##div[data-js-cookieconsent-alert]:remove()
 ||ib.adnxs.com/getuid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.yjaxjcbpkmp.com^*
 ||yjaxjcbpkmp.com^*
+||www.srrmpfstbh.com^*
+||srrmpfstbh.com^*
+||www.ykxscghselpj.com^*
+||ykxscghselpj.com^*
+||www.arhymalojnzo.com^*
+||arhymalojnzo.com^*
+! player.mycraft.click NOT voodc.com is the actual domain hosting the Clapper javascript player and player functions.
+player.mycraft.click##+js(set-constant, player.options.allowUserInteraction, true)
+player.mycraft.click##+js(set-constant, player.options.playback.disableContextMenu, false)
+! This does not actually set the volume level which is still 0 at initial setting.
+player.mycraft.click##+js(set-constant, player.options.mute, false)
+! Don't always want a script to set full volume, but this only runs at initial load of the page
+! 4th parameter should not be in regex format
+!player.mycraft.click##+js(trusted-rpnt, script, /player\.setVolume\(0\);/g, player.setVolume(100);)
+!player.mycraft.click##+js(trusted-rpnt, script, /player\.setVolume\((80|90)\);/g, player.setVolume(100);)
+! sets any value not 100 to 100
+player.mycraft.click##+js(trusted-rpnt, script, /player\.setVolume\(((?!100)\d)+\);/g, player.setVolume(100);)
+!static.mycraft.click##+js(trusted-set, PlaySize, style="height: 100vh important!;width: 100vw !important;")
+player.mycraft.click##+js(trusted-set, PlaySize, style="height: 100vh important!;width: 100vw !important;")
 
 !Whitelisted
 ! for Google Drive
