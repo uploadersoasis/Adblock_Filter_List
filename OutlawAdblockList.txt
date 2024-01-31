@@ -25316,19 +25316,16 @@ www.driver4vr.com##div[class="gdpr gdpr-general-confirmation"]:remove()
 ||ndenlende.club^*
 !fcc.lc##+js(set-constant, document.querySelector("#overlay").onclick, "")
 fcc.lc###overlay:remove-attr(onclick)
-fcc.lc##+js(set-constant, document.querySelector("#\\37 80427 > div:nth-child(1)").style, display:inline-block;)
-fcc.lc##+js(set-constant, document.querySelector("#\\37 80427 > div:nth-child(5) > div:nth-child(2) > div").style, display:inline-block;)
-fcc.lc##\37 80427 > div:nth-child(5) > div:nth-child(2) > div > iframe
-fcc.lc##content > script:nth-child(8)
+fcc.lc###\\37 80427 > div:nth-child(1):style(display:inline-block !important;)
+fcc.lc###\\37 80427 > div:nth-child(5) > div:nth-child(2) > div:style(display:inline-block !important;)
+fcc.lc##\37 80427 > div:nth-child(5) > div:nth-child(2) > div > iframe:remove()
+fcc.lc##content > script:nth-child(8):remove()
 fcc.lc##p
-fcc.lc##^script[id="popmagicldr"]
 fcc.lc##^script[id="popmagicldr"]:remove()
 !||fcc.lc/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-fcc.lc##div[id="adb_detected"]
 fcc.lc##div[id="adb_detected"]:remove()
-fcc.lc##div[id^="div-gpt-ad-"]
 fcc.lc##div[id^="div-gpt-ad-"]:remove()
-fcc.lc##div[class="adq"]
+fcc.lc##div[class="adq"]:remove()
 !fcc.lc##+js(abort-on-property-read, importFAB)
 !fcc.lc##+js(abort-on-property-write, importFAB)
 !fcc.lc##+js(abort-on-property-read, fuckAdBlock)
@@ -25337,7 +25334,7 @@ fcc.lc##+js(abort-on-property-read, window.Adomik)
 fcc.lc##+js(abort-on-property-write, window.Adomik)
 fcc.lc##+js(abort-on-property-read, window.googletag)
 fcc.lc##+js(abort-on-property-write, window.googletag)
-fcc.lc##^script[id="ads_priv"]
+fcc.lc##^script[id="ads_priv"]:remove()
 !fcc.lc##+js(set-constant, document.querySelector("#surl").onclick, null)
 fcc.lc###surl:remove-attr(onlick)
 fcc.lc###overlay:style( position: absolute !important; width: 100vw !important; height: 100vh !important; z-index: 99999 !important; display: inline !important;)
