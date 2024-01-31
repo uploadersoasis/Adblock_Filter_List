@@ -33702,8 +33702,8 @@ thinkkers.com##ins[data-ad-client]
 ||tzegilo.com^*
 !||fleraprt.com/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fleraprt.com^*
-apkloo.com##ins[data-ad-client]:upward(1)
-apkloo.com##ins[data-ad-client]
+apkloo.com##ins[data-ad-client]:upward(1):remove()
+apkloo.com##ins[data-ad-client]:remove()
 apkloo.com##+js(trusted-set-constant, secs, -1)
 ||ambiliarcarwin.com^*
 ||exchangediscreditmast.com^*
@@ -33889,30 +33889,18 @@ community.companyofheroes.com##div[id="cookies-settings"]
 tei.ai##div[class="_1e3i4 or-Gy"]
 ||ig.lurefuleuryon.com^*
 ||dbosowwfgb.com^*
-newforex.online##div[id="content"]
-newforex.online##div[id="adb_detected"]
-newforex.online##+js(trusted-set-constant, count, -1)
-newforex.online##div[data-ad]
-newforex.online##+js(abort-current-inline-script, getalladblocks())
-newforex.online##+js(abort-current-inline-script, checkAdBlocker())
-newforex.online##+js(nano-stb, counter, *, 0.01)
-newforex.online##^script:has-text(/getalladblocks()/i)
-newforex.online##^script:has-text(/checkAdBlocker()/i)
-newforex.online##+js(set-constant, usingBlocker, null)
-newforex.online##+js(remove-class, d-none, #go_d)
-newforex.online##div[id="devozon-wait1"]
-world-trips.net##div[id="content"]
-world-trips.net##div[id="adb_detected"]
-world-trips.net##+js(trusted-set-constant, count, -1)
-world-trips.net##div[data-ad]
-world-trips.net##+js(abort-current-inline-script, getalladblocks())
-world-trips.net##+js(abort-current-inline-script, checkAdBlocker())
-world-trips.net##+js(nano-stb, counter, *, 0.01)
-world-trips.net##^script:has-text(/getalladblocks()/i)
-world-trips.net##^script:has-text(/checkAdBlocker()/i)
-world-trips.net##+js(set-constant, usingBlocker, null)
-world-trips.net##+js(remove-class, d-none, #go_d)
-world-trips.net##div[id="devozon-wait1"]
+newforex.online,world-trips.net##div[id="content"]:remove()
+newforex.online,world-trips.net##div[id="adb_detected"]:remove()
+newforex.online,world-trips.net##div[id="devozon-wait1"]:remove()
+newforex.online,world-trips.net##div[data-ad]:remove()
+newforex.online,world-trips.net##^script:has-text(/getalladblocks()/i):remove()
+newforex.online,world-trips.net##^script:has-text(/checkAdBlocker()/i):remove()
+newforex.online,world-trips.net##+js(trusted-set-constant, count, -1)
+newforex.online,world-trips.net##+js(abort-current-inline-script, /getalladblocks\(\)/)
+newforex.online,world-trips.net##+js(abort-current-inline-script, /checkAdBlocker\(\)/)
+newforex.online,world-trips.net##+js(nano-stb, counter, *, 0.01)
+newforex.online,world-trips.net##+js(set-constant, usingBlocker, null)
+newforex.online,world-trips.net##+js(remove-class, d-none, #go_d)
 ||try2link.com/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 try2link.com##div[id="ad-banner"]
 try2link.com##div[id="contentuy"]
@@ -38743,8 +38731,8 @@ lato.sx##+js(set-constant, v_width, 1280)
 lato.sx##+js(set-constant, v_height, 720)
 lato.sx##+js(trusted-set-constant, PlaySize, style="height:100vh important!;width:100vw !important;")
 lato.sx##+js(no-setTimeout-if, function)
-lato.sx##^script[admn][admc][zid][did]
-lato.sx##script[admn][admc][zid][did]
+lato.sx##^script[admn][admc][zid][did]:remove()
+lato.sx##script[admn][admc][zid][did]:remove()
 lato.sx##iframe[src^="https://switchcast2.com/embedhls.php"]:style(overflow:hidden;height:100vh !important;width:100vw !important;)
 ||switchcast2.com/blast.js$script
 ||statistic-data.com^*
@@ -40238,12 +40226,10 @@ vidoza.net##+js(acs, gtm., www.googletagmanager.com)
 vidoza.net##+js(set-constant, Ya.Metrika, noopFunc, complete)
 vidoza.net##^script:has-text(/Metrika/i)
 vidoza.net##+js(acs, /Metrika/i)
-vidoza.net##^script[data-spots][data-tag][data-subid1]
 vidoza.net##^script[data-spots][data-tag][data-subid1]:remove()
-vidoza.net##script[data-spots][data-tag][data-subid1]
 vidoza.net##script[data-spots][data-tag][data-subid1]:remove()
+vidoza.net##^script:has-text(window.asgvastcnf_overlay):remove()
 vidoza.net##+js(set-constant, window.asgvastcnf_overlay, {})
-vidoza.net##^script:has-text(window.asgvastcnf_overlay)
 vidoza.net##+js(acs, window.asgvastcnf_overlay)
 vidoza.net##+js(aopw, window.asgvastcnf_overlay)
 vidoza.net##+js(aopr, window.asgvastcnf_overlay)
@@ -40253,16 +40239,11 @@ vidoza.net##+js(set-constant, xRds, false)
 vidoza.net##+js(set-constant, cRAds, false)
 ||vidoza.net/js/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 vidoza.net##div[class="prevent-first-click"]:remove-attr(onclick)
-vidoza.net##div[class="prevent-first-click"]
 vidoza.net##div[class="prevent-first-click"]:remove()
 vidoza.net##+js(set-constant, VIDOZA_PLAY_AND_DOWNLOAD, true)
-vidoza.net##iframe[src*="//vz.7vid.net/api/spots/"]
 vidoza.net##iframe[src*="//vz.7vid.net/api/spots/"]:remove()
-vidoza.net##iframe[src^="https://www.googletagmanager.com/"]
 vidoza.net##iframe[src^="https://www.googletagmanager.com/"]:remove()
-vidoza.net##div[id='ov4166']
 vidoza.net##div[id='ov4166']:remove()
-vidoza.net##div[id='pusl_0']
 vidoza.net##div[id='pusl_0']:remove()
 vidoza.net##+js(aeld, install)
 vidoza.net##+js(aeld, push)
@@ -40356,9 +40337,7 @@ vtube.to,vtbe.net,vtplay.net##script:has-text(/debugger;/):remove()
 vtube.to,vtbe.net,vtplay.net##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 vtube.to,vtbe.net,vtplay.net##+js(acs, /^debugger;/)
 vtube.to,vtbe.net,vtplay.net##+js(acs, gtag)
-vtube.to,vtbe.net,vtplay.net##^script[data-spots][data-tag][data-subid1]
 vtube.to,vtbe.net,vtplay.net##^script[data-spots][data-tag][data-subid1]:remove()
-vtube.to,vtbe.net,vtplay.net##script[data-spots][data-tag][data-subid1]
 vtube.to,vtbe.net,vtplay.net##script[data-spots][data-tag][data-subid1]:remove()
 vtube.to,vtbe.net,vtplay.net##+js(set-constant, _0x3538, [])
 vtube.to,vtbe.net,vtplay.net##+js(aopw, _0x3538)
@@ -40376,19 +40355,15 @@ vtube.to,vtbe.net,vtplay.net##+js(set-constant, xRds,false)
 !||vtbe.net/src/plugins/aos/dist/aos.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||vtplay.net/src/plugins/aos/dist/aos.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 vtube.to,vtbe.net,vtplay.net##+js(aeld, /contextmenu|keydown/)
-vtube.to,vtbe.net,vtplay.net##iframe[data-aa]
 vtube.to,vtbe.net,vtplay.net##iframe[data-aa]:remove()
 vtube.to,vtbe.net,vtplay.net##div[id="vplayer"]:style(user-select: all !important; display: block !important; visibility: visible !important;)
 ! Removing this div prevents the entire video player from being present.
-!vtube.to,vtbe.net,vtplay.net##div[class="jw-wrapper jw-reset"]
 !vtube.to,vtbe.net,vtplay.net##div[class="jw-wrapper jw-reset"]:remove()
-!vtube.to,vtbe.net,vtplay.net##div[class="jw-wrapper jw-reset"]:has(div[class="jw-contract-trigger"])
 !vtube.to,vtbe.net,vtplay.net##div[class="jw-wrapper jw-reset"]:has(div[class="jw-contract-trigger"]):remove()
 ! The following would remove the hidden division which also hides the video player, but the only way to identify this division is by xpath which may change.
 ! It also prevents the video player from being activateable.
 !vtube.to,vtbe.net,vtplay.net##:xpath("/html/body/main/div[2]/div/div/div/div/div/div[1]/div/div[2]/div[1]")
 !vtube.to,vtbe.net,vtplay.net##:xpath("/html/body/main/div[2]/div/div/div/div/div/div[1]/div/div[2]/div[1]"):remove()
-vtube.to,vtbe.net,vtplay.net##div[class="afs_ads ad-placement"]
 vtube.to,vtbe.net,vtplay.net##div[class="afs_ads ad-placement"]:remove()
 vtube.to,vtbe.net,vtplay.net##video[class*="jw-video"]:remove-attr(disableremoteplayback)
 vtube.to,vtbe.net,vtplay.net##body[id="top"]:remove-attr(data-aos-duration)
@@ -41639,7 +41614,6 @@ hurry.stream##+js(aopr, atOptions)
 hurry.stream##+js(aopw, atOptions)
 hurry.stream##+js(trusted-set-constant, ww, 99vw)
 hurry.stream##+js(trusted-set-constant, hh, 99vh)
-hurry.stream##div[class="video_adp3"]
 hurry.stream##div[class="video_adp3"]:remove()
 hurry.stream##+js(set-constant, xRds, false)
 hurry.stream##+js(set-constant, cRAds, true)
@@ -41650,14 +41624,10 @@ hurry.stream##+js(set-constant, checkADB, noopFunc)
 hurry.stream##+js(nostif, checkADB)
 hurry.stream##+js(aopr, window.cRAds)
 hurry.stream##+js(aopw, window.cRAds)
-hurry.stream##a[id="close-teaser"]
-hurry.stream##a[id="close-teaser"]:remove-attr(onclick)
+!hurry.stream##a[id="close-teaser"]:remove-attr(onclick)
 hurry.stream##a[id="close-teaser"]:remove()
-hurry.stream##div[id="teaser4"]
 hurry.stream##div[id="teaser4"]:remove()
-hurry.stream##iframe[id="pjsfrrsplayerjs"]
 hurry.stream##iframe[id="pjsfrrsplayerjs"]:remove()
-hurry.stream##div[id="play_limit_box"]
 hurry.stream##div[id="play_limit_box"]:remove()
 hurry.stream##div[id="video-content"]:style(width: 100vw !important; height: 100vh !important;)
 hurry.stream##div[id="pdiv"]:style(max-width: 100vw !important; max-height: 100vh !important;width: 100vw !important; height: 100vh !important;)
@@ -46932,6 +46902,7 @@ www.inc.com##div[class*="adElement"]:remove()
 www.inc.com##div[data-ad_slot_type]:remove()
 www.inc.com##+js(set-constant, setNptTechAdblockerCookie, noopFunc)
 www.inc.com##+js(set-constant, adblocker, false)
+! the following rule is necessary to set adblocker to a string of "false" not the value.
 www.inc.com##+js(trusted-set-constant, adblocker, false)
 www.inc.com##div[class*="ad-block"][class*="topAdBlock"]:remove()
 ! the following two rules break styles on the page
