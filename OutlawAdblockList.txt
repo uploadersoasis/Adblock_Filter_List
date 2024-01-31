@@ -25314,30 +25314,6 @@ www.driver4vr.com##div[class="gdpr gdpr-general-confirmation"]:remove()
 ||xml.realtime-bid.com^*
 ||enkayijamal.club^*
 ||ndenlende.club^*
-!fcc.lc##+js(set-constant, document.querySelector("#overlay").onclick, "")
-fcc.lc###overlay:remove-attr(onclick)
-fcc.lc###\\37 80427 > div:nth-child(1):style(display:inline-block !important;)
-fcc.lc###\\37 80427 > div:nth-child(5) > div:nth-child(2) > div:style(display:inline-block !important;)
-fcc.lc##\37 80427 > div:nth-child(5) > div:nth-child(2) > div > iframe:remove()
-fcc.lc##content > script:nth-child(8):remove()
-fcc.lc##p
-fcc.lc##^script[id="popmagicldr"]:remove()
-!||fcc.lc/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-fcc.lc##div[id="adb_detected"]:remove()
-fcc.lc##div[id^="div-gpt-ad-"]:remove()
-fcc.lc##div[class="adq"]:remove()
-!fcc.lc##+js(abort-on-property-read, importFAB)
-!fcc.lc##+js(abort-on-property-write, importFAB)
-!fcc.lc##+js(abort-on-property-read, fuckAdBlock)
-!fcc.lc##+js(abort-on-property-write, fuckAdBlock)
-fcc.lc##+js(abort-on-property-read, window.Adomik)
-fcc.lc##+js(abort-on-property-write, window.Adomik)
-fcc.lc##+js(abort-on-property-read, window.googletag)
-fcc.lc##+js(abort-on-property-write, window.googletag)
-fcc.lc##^script[id="ads_priv"]:remove()
-!fcc.lc##+js(set-constant, document.querySelector("#surl").onclick, null)
-fcc.lc###surl:remove-attr(onlick)
-fcc.lc###overlay:style( position: absolute !important; width: 100vw !important; height: 100vh !important; z-index: 99999 !important; display: inline !important;)
 ||vulturechinamaternity.com^*
 ||click.hooligapps.com^*
 ||luckypushwinner.com^*
@@ -38107,11 +38083,8 @@ sportskart.click##+js(set-constant, _Hasync, [])
 sportskart.click##+js(set-constant, _gaq, [])
 sportskart.click##+js(set-constant, window.u_cfg, {})
 sportskart.click##+js(set-constant, window.c1702bdd64cd85dc6e4723404569127c, "")
-sportskart.click##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
 sportskart.click##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-sportskart.click##script[data-adel][zid]
 sportskart.click##script[data-adel][zid]:remove()
-sportskart.click##iframe[id="stats"]
 sportskart.click##iframe[id="stats"]:remove()
 sportskart.click###stats:remove()
 sportskart.click##+js(aopr, window.u_cfg)
@@ -38124,7 +38097,6 @@ sportskart.click##+js(aopr, _Hasync)
 sportskart.click##+js(aopw, _Hasync)
 sportskart.click##+js(aopr, x.withCredentials)
 sportskart.click##+js(aopw, x.withCredentials)
-sportskart.click##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')])
 sportskart.click##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 sportskart.click##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 sportskart.click##+js(acs, window.kkp4a5x5tv)
@@ -38138,19 +38110,22 @@ sportskart.click##+js(aopr, $._Eu)
 sportskart.click##+js(aopw, $._Eu)
 sportskart.click##+js(aopr, t.Tn)
 sportskart.click##+js(aopw, t.Tn)
-sportskart.click##^script:has-text(/delete window\[/)
 sportskart.click##^script:has-text(/delete window\[/):remove()
+sportskart.click##:xpath(//script[contains(text(), 'delete window[')]):remove()
+sportskart.click##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+sportskart.click##+js(saa, width, 100vw, #thatframe)
+sportskart.click##+js(saa, height, 100vh, #thatframe)
+sportskart.click##+js(saa, allowfullscreen, true, #thatframe)
+sportskart.click##+js(saa, frameborder, 0, #thatframe)
 !||wikisport.click/iptv2/$inline-script
 ||wikisport.click/usa/tn5.bpo$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-wikisport.click##iframe[src^="https://wikisport.click/"]:remove-attr(width)
+!wikisport.click##iframe[src^="https://wikisport.click/"]:remove-attr(width)
 wikisport.click##iframe[src^="https://wikisport.click/"]:style(width: 100vw !important; height: 100vh !important;)
 wikisport.click##iframe[src^="https://wikicast.tv/wiki.php?player="]:style(width: 100vw !important; height: 100vh !important;)
-wikisport.click##a[href="//pubfuture.com"][class="pf-br-icon"]
-wikisport.click##^script:xpath("/html/head/script[4]")
-wikisport.click##:xpath("//script[4]")
-wikisport.click##:xpath("//script[4]"):remove()
-wikisport.click##:xpath(//script[10])
-wikisport.click##:xpath(//script[10]):remove()
+wikisport.click##a[href="//pubfuture.com"][class="pf-br-icon"]:remove()
+!wikisport.click##^script:xpath("/html/head/script[4]"):remove()
+!wikisport.click##:xpath("//script[4]"):remove()
+!wikisport.click##:xpath(//script[10]):remove()
 wikisport.click##:xpath(//script[contains(text(), 'window.location.replace')]):remove()
 wikisport.click##:xpath(//script[contains(text(), 'debugger;')]):remove()
 wikisport.click##^script:has-text(/debugger;/):remove()
@@ -38162,8 +38137,10 @@ wikisport.click##+js(set-constant, unsandbox, noopFunc)
 wikisport.click##+js(aeld, contextmenu)
 wikisport.click##+js(aeld, 'cut copy paste print')
 wikisport.click##+js(aeld, 'drag drop')
-wikisport.click##^script:has-text(mustave)
-wikisport.click##^script:has-text(/window.top/i)
+wikisport.click##^script:has-text(mustave):remove()
+wikisport.click##:xpath(//script[contains(text(), 'window.top')]):remove()
+wikisport.click##^script:has-text(/window.top/):remove()
+wikisport.click##:xpath(//script[contains(text(), 'mustave')]):remove()
 wikisport.click##+js(aopr, window.top)
 wikisport.click##+js(aopw, window.top)
 wikisport.click##+js(acs, window.top)
@@ -38441,6 +38418,11 @@ reddit-tv1-streams.blogspot.com##+js(aopw, window.location)
 !r-strm.blogspot.com##iframe[src^="https://worldstreams.click/embed/stream-"]:remove-attr(height)
 !r-strm.blogspot.com##iframe[src^="https://sportskart.click/embed/stream-"]:remove-attr(height)
 !r-strm.blogspot.com##iframe[src^="https://daddylivehd.sx/embed/stream-"]:remove-attr(height)
+worldstreams.click##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+worldstreams.click##+js(saa, width, 100vw, #thatframe)
+worldstreams.click##+js(saa, height, 100vh, #thatframe)
+worldstreams.click##+js(saa, allowfullscreen, true, #thatframe)
+worldstreams.click##+js(saa, frameborder, 0, #thatframe)
 ||felied.com^*
 ||nanouwho.com^*
 ||obstry.com^*
@@ -38568,8 +38550,6 @@ multiup.org,multiup.eu,multiup.io##div[id^="cookie-"]
 multiup.org,multiup.eu,multiup.io##div[id^="cookie-"]:remove()
 multiup.org,multiup.eu,multiup.io##a[namehost="UseNext"]
 multiup.org,multiup.eu,multiup.io##a[namehost="UseNext"]:remove()
-multiup.org,multiup.eu,multiup.io##input[name="link"]:remove-class(hidden)
-multiup.org,multiup.eu,multiup.io##input[name="link"]:remove-attr(type)
 ! remove action attribute and also change the link attribute on submit button to formaction to override action.
 multiup.org,multiup.eu,multiup.io##form[action*="://multinews.me/"]:remove-attr(action)
 ! Removing the method attribute from the form tag still allows the formaction attribute to work.
@@ -38585,6 +38565,10 @@ multiup.org,multiup.eu,multiup.io##+js(saa, formmethod, get, button[namehost][li
 !multiup.org,multiup.eu,multiup.io##+js(saa, formnovalidate, , button[namehost][link])
 multiup.org,multiup.eu,multiup.io##+js(set-attr, button[namehost][link], formnovalidate, '')
 multiup.org,multiup.eu,multiup.io##+js(saa, formtarget, _blank, button[namehost][link])
+multiup.org,multiup.eu,multiup.io##+js(saa, type, text, input[type="hidden"])
+multiup.org,multiup.eu,multiup.io##input[name="link"]:remove-class(hidden)
+! This removes the type attribute which had been set to "text" by the rule above.
+multiup.org,multiup.eu,multiup.io##input[name="link"]:remove-attr(type)
 ! remove name attribute under input tags so they won't be appended to the url on form GET submission
 multiup.org,multiup.eu,multiup.io##input[name="link"]:remove-attr(name)
 multiup.org,multiup.eu,multiup.io##input[name="filename"]:remove-attr(name)
@@ -39781,35 +39765,8 @@ watchsb.com##+js(nostif, check)
 ||ssl.p.jwpcdn.com/player/plugins/vast/v/*/vast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.adforcast.com^*
 ||zimpolo.com^*
-||streamtape.com/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-streamtape.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
-streamtape.com##^script:has-text(/debugger;/):remove()
-streamtape.com##script:has-text(/debugger;/):remove()
-streamtape.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-streamtape.com##+js(acs, /^debugger;/)
-||streamtape.com/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-streamtape.com##+js(set-constant, googleAd, false)
-streamtape.com##+js(set-constant, rFrx, false)
-streamtape.com##div[id="adb"]:remove()
-streamtape.com##+js(aeld, contextmenu)
-streamtape.com##+js(nostif, function)
-streamtape.com##+js(acs, document.write, unescape)
-streamtape.com##^script[class="nunush"]:remove()
-streamtape.com##script[class="nunush"]:remove()
-||bobabillydirect.org^*
-stapadblockuser.xyz##+js(set-constant, googleAd, false)
-||stapadblockuser.xyz/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-stapadblockuser.xyz##+js(acs, document.write, unescape)
-stapadblockuser.xyz##div[id="adb"]:remove()
-stapadblockuser.xyz##+js(aeld, contextmenu)
-stapadblockuser.xyz##^script[class="nunush"]:remove()
-stapadblockuser.xyz##script[class="nunush"]:remove()
-stapadblockuser.xyz##:xpath(//script[contains(text(), 'debugger;')]):remove()
-stapadblockuser.xyz##^script:has-text(/debugger;/):remove()
-stapadblockuser.xyz##script:has-text(/debugger;/):remove()
-stapadblockuser.xyz##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-stapadblockuser.xyz##+js(acs, /^debugger;/)
 ||bebloommulvel.com^*
+||bobabillydirect.org^*
 !||cdn.jsdelivr.net/gh/InteractiveAdvertisingBureau/AdBlockDetection/adblockDetector.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.jsdelivr.net/gh/InteractiveAdvertisingBureau/AdBlockDetection/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ping.staticmoly.me/ads/be/99/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -46430,11 +46387,8 @@ www.sportskeeda.com##*[id^="gdpr__consent_revocation"]:remove()
 ||andamqhoiqmpo.xyz^*
 ! blocking the adgpt.js removes the main iframe with the video in it
 !||streamadblocker.cc/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!streamadblocker.cc##div[id="adb"]
 !streamadblocker.cc##div[id="adb"]:remove()
-streamadblocker.cc##div[class*="adblockblock"]
 streamadblocker.cc##div[class*="adblockblock"]:remove()
-streamadblocker.cc##div[class="play-overlay"]
 streamadblocker.cc##div[class="play-overlay"]:remove()
 streamadblocker.cc##div[id="ideoooolink"]:remove-attr(style)
 !streamadblocker.cc##div[id="ideoooolink"]:style(display: block !important;)
@@ -46442,33 +46396,47 @@ streamadblocker.cc##div[id="norobotlink"]:remove-attr(style)
 !streamadblocker.cc##div[id="norobotlink"]:style(display: block !important;)
 streamadblocker.cc##span[id="captchalink"]:remove-attr(style)
 !streamadblocker.cc##span[id="captchalink"]:style(display: block !important;)
-streamadblocker.cc##iframe[src^="https://a.adforcast.com/"]
 streamadblocker.cc##iframe[src^="https://a.adforcast.com/"]:remove()
-streamadblocker.cc##iframe[src^="https://zimpolo.com/"]
 streamadblocker.cc##iframe[src^="https://zimpolo.com/"]:remove()
-! pcl is number of clicks on the overlay
-streamadblocker.cc##+js(set-constant, pcl, 3)
-streamadblocker.cc##+js(set-constant, adblock, false)
-! the parent name object of adblock varies so cannot block using this method.
-!streamadblocker.cc##+js(set-constant, zjjOqGyUosWk.adblock, false)
-!streamadblocker.cc##+js(set-constant, mYSrQPmKtpMS.adblock, false)
-!streamadblocker.cc##+js(set-constant, CgGHjhgTtFpC.adblock, false)
-!streamadblocker.cc##+js(set-constant, CgGHjhgTtFpC.adblock, false, end)
-!streamadblocker.cc##+js(set-constant, CgGHjhgTtFpC.adblock, false, complete)
 streamadblocker.cc##+js(set-constant, trigger, '')
 streamadblocker.cc##+js(aeld, contextmenu)
 streamadblocker.cc##+js(disable-newtab-links)
 !streamadblocker.cc##+js(window.open-defuser)
 streamadblocker.cc##+js(window.open-defuser, !/paikoasa\.tv/i)
 ! two scripts have "_ohknjom" in them
-streamadblocker.cc##:xpath(//script[contains(text(), '_ohknjom')])
 streamadblocker.cc##:xpath(//script[contains(text(), '_ohknjom')]):remove()
-streamadblocker.cc##:xpath(//html/body/div[1]/div/div[1]/script[2])
 streamadblocker.cc##:xpath(//html/body/div[1]/div/div[1]/script[2]):remove()
-!streamadblocker.cc##:xpath(//html/body/script[4])
 !streamadblocker.cc##:xpath(//html/body/script[4]):remove()
-!streamadblocker.cc##:xpath(//html/body/script[3])
 !streamadblocker.cc##:xpath(//html/body/script[3]):remove()
+! the parent name object of adblock varies so cannot block using this method.
+!streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(set-constant, zjjOqGyUosWk.adblock, false)
+!streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(set-constant, mYSrQPmKtpMS.adblock, false)
+!streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(set-constant, CgGHjhgTtFpC.adblock, false)
+!streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(set-constant, CgGHjhgTtFpC.adblock, false, end)
+!streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(set-constant, CgGHjhgTtFpC.adblock, false, complete)
+streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(set-constant, adblock, false)
+! pcl is number of clicks on the overlay
+streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(set-constant, pcl, 3)
+! TODO: always 12 letters in the *.adblock variable?
+streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(trusted-replace-node-text, script, /pcl<2\s?&&\s?!\w{12}.adblock/gm, pcl<0)
+||streamtape.com/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||stapadblockuser.xyz/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! blocking the adgpt.js removes the main iframe with the video in it
+!||streamtape.com/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||stapadblockuser.xyz/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+streamtape.com,stapadblockuser.xyz##div[id="adb"]:remove()
+streamtape.com,stapadblockuser.xyz##^script[class="nunush"]:remove()
+streamtape.com,stapadblockuser.xyz##script[class="nunush"]:remove()
+streamtape.com,stapadblockuser.xyz##:xpath(//script[contains(text(), 'debugger;')]):remove()
+streamtape.com,stapadblockuser.xyz##^script:has-text(/debugger;/):remove()
+streamtape.com,stapadblockuser.xyz##script:has-text(/debugger;/):remove()
+streamtape.com,stapadblockuser.xyz##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+streamtape.com,stapadblockuser.xyz##+js(acs, /^debugger;/)
+streamtape.com,stapadblockuser.xyz##+js(set-constant, googleAd, false)
+streamtape.com,stapadblockuser.xyz##+js(set-constant, rFrx, false)
+streamtape.com,stapadblockuser.xyz##+js(aeld, contextmenu)
+streamtape.com,stapadblockuser.xyz##+js(nostif, function)
+streamtape.com,stapadblockuser.xyz##+js(acs, document.write, unescape)
 !||yz.linensephraim.com^*
 ||linensephraim.com^*
 !||bygliscortor.com/impression/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
