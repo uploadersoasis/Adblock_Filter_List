@@ -47599,11 +47599,18 @@ wykop-stream.blogspot.com##:xpath(//script[contains(text(), 'inIframe')]):remove
 wykop-stream.blogspot.com##+js(set-constant, inIframe, trueFunc)
 wykop-stream.blogspot.com##iframe[title="myFrame"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 wykop-stream.blogspot.com##iframe[id="playdiv"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-wykop-stream.blogspot.com##+js(saa, width, 100%, #playdiv])
+wykop-stream.blogspot.com##+js(saa, width, 100%, #playdiv)
 wykop-stream.blogspot.com##+js(saa, height, 100%, #playdiv)
 wykop-stream.blogspot.com##+js(saa, allowfullscreen, true, #playdiv)
 wykop-stream.blogspot.com##+js(saa, frameborder, 0, #playdiv)
+! TODO: The following rules do change the script text, but the created iframe still has the original values.
 wykop-stream.blogspot.com##+js(trusted-replace-node-text, script, /height="450"/gm, height="100%")
+wykop-stream.blogspot.com##+js(trusted-replace-node-text, script, /scrolling="no"/gm, scrolling="yes")
+wykop-stream.blogspot.com##div[id="tv"]>iframe:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+wykop-stream.blogspot.com##+js(saa, width, 100%, div[id="tv"]>iframe)
+wykop-stream.blogspot.com##+js(saa, height, 100%, div[id="tv"]>iframe)
+wykop-stream.blogspot.com##+js(saa, allowfullscreen, true, div[id="tv"]>iframe)
+wykop-stream.blogspot.com##+js(saa, scrolling, yes, div[id="tv"]>iframe)
 !*/static/ximagine.min.js
 ||www.npaqfubekak.com^*
 ||www.ohrkihivhtz.com^*
