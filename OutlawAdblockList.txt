@@ -47571,6 +47571,13 @@ www.kiplinger.com##^script[id="parsely-cfg"]:remove()
 www.kiplinger.com##^script[id="hawklinks-script"]:remove()
 ! The following rule is for the script loaded by the the preceding rule's script tag
 ||search-api.fie.futurecdn.net/hl/es6/hawklinks.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.kiplinger.com##^script[id="hawkAdditionalScripts"]:remove()
+www.kiplinger.com##+js(set-constant, window.adParameters, {})
+www.kiplinger.com##+js(set-constant, handleHeaderError, noopFunc)
+www.kiplinger.com##+js(set-constant, comscoreIntegration, noopFunc)
+www.kiplinger.com##+js(set-constant, window.bordeaux, {})
+www.kiplinger.com##+js(set-constant, createAndAppendPermutive, noopFunc)
+www.kiplinger.com##+js(set-constant, window.googletag, {})
 www.kiplinger.com##+js(set-constant, window.vanilla, {})
 www.kiplinger.com##+js(set-constant, window.VAN, {})
 www.kiplinger.com##+js(set-constant, window.vanilla.loadGTM, noopFunc)
