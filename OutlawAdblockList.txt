@@ -47597,6 +47597,7 @@ wykop-stream.blogspot.com##:xpath(//script[contains(text(), 'adblockmesaj')]):re
 wykop-stream.blogspot.com##+js(set-constant, DisableDevtool, noopFunc)
 wykop-stream.blogspot.com##:xpath(//script[contains(text(), 'inIframe')]):remove()
 wykop-stream.blogspot.com##+js(set-constant, inIframe, trueFunc)
+!wykop-stream.blogspot.com##iframe:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 wykop-stream.blogspot.com##iframe[title="myFrame"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 wykop-stream.blogspot.com##iframe[id="playdiv"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 wykop-stream.blogspot.com##+js(saa, width, 100%, #playdiv)
@@ -47617,8 +47618,12 @@ wykop-stream.blogspot.com##+js(saa, scrolling, yes, div[id="tv"]>iframe)
 ||www.kdyxxkcd.com^*
 ||kdyxxkcd.com^*
 ||ypkljvp.com^*
+||www.towcoaah.com^*
 ! block all third-party scripts except specific exceptions on these domains related to video streaming.
 *$script,3p,denyallow=code.jquery.com|arc.io,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
+sportstream1.cfd##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+sportstream1.cfd##+js(saa, allow, encrypted-media, #thatframe)
+sportstream1.cfd##+js(saa, scrolling, yes, #thatframe)
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
