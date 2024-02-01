@@ -18192,20 +18192,21 @@ www.wsj.com##div[id="wsj-mobile-ad-target"]
 ||rb.adnxs.com^*
 ||prebid.adnxs.com^*
 ||secure-nym.adnxs.com^*
+!||acdn.adnxs.com/vx/static/w/anwrapper-1.800.0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||acdn.adnxs.com/vx/static/w/anwrapper-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.adnxs.com^*
 ||lax1.mobile.adnxs.com^*
 !||secure.adnxs.com/seg?add=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||secure.adnxs.com^*
-||nym1-ib.adnxs.com^*
-!||ib.adnxs.com/ttj?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||ib.adnxs.com/jpt?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||ib.adnxs.com/bounce^*
-!||ib.adnxs.com/async_usersync_file$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||ib.adnxs.com^* !blocks Shopyourway/Sears/Kmart offer links
 !||sharethrough.adnxs.com/getuidp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||sharethrough.adnxs.com^*
 !||adnxs.com^* !blocks ib.adnxs.com too
 ||m.adnxs.com^*
+!||nym1-ib.adnxs.com/vast_track/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||nym1-ib.adnxs.com^*
+!||lax1-ib.adnxs.com/it?an_audit=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||lax1-ib.adnxs.com/rd_log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||lax1-ib.adnxs.com^*
 ||photobucket.adnxs.com^*
 subscription.packtpub.com##div[class="fade-out"]
 !subscription.packtpub.com##.upsell
@@ -19924,9 +19925,6 @@ www.omaredomex.org###fbox-background
 ||www.cstfzgckbtrb.com^*
 ||ajcsjktzlqh.com^*
 ||www.ajcsjktzlqh.com^*
-!||nym1-ib.adnxs.com/vast_track/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||acdn.adnxs.com/vx/static/w/anwrapper-1.800.0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||acdn.adnxs.com/vx/static/w/anwrapper-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vdo.ai/core/trigtent/ads_vmap.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vdo.ai/core/trigtent/adframe.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.trigtent.com/uPushSW.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -30333,9 +30331,6 @@ dokumen.tips##+js(set-constant, i, 0, stay)
 www.alcatelunleashed.com##div[aria-label="cookieconsent"]
 www.scribd.com##div[aria-label="Consent Manager by Osano"]
 www.att.com##div[class="advertisementpanel"]
-!||lax1-ib.adnxs.com/it?an_audit=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||lax1-ib.adnxs.com/rd_log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||lax1-ib.adnxs.com^*
 ||www.att.com/scripts/adobe/prod/attmonetization/js/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 blog.getpaint.net##div[id="eu-cookie-law"]
 blog.getpaint.net##div[class*="ads-active"]
@@ -41987,7 +41982,13 @@ filesusr.co##div[class^="didna-ad-slot"]:remove()
 ||static.parastorage.com/services/cookie-consent-banner-for-uou/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||didna-d.openx.net^*
 ||cdn.adnxs-simple.com^*
+!||ib.adnxs.com/ttj?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||ib.adnxs.com/jpt?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||ib.adnxs.com/bounce$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||ib.adnxs.com/async_usersync_file$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ib.adnxs.com/ut/v3/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||ib.adnxs.com^* !blocks Shopyourway/Sears/Kmart offer links
+||ib.adnxs.com/getuid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! thebrighterside.news domain only for the following four rules
 ||ib.adnxs.com/ut/v3/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,domain=thebrighterside.news|www-thebrighterside-news.filesusr.com
 ||prebid.media.net/rtb/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,domain=thebrighterside.news|www-thebrighterside-news.filesusr.com
@@ -43087,7 +43088,7 @@ www.eurogamer.net##+js(aeld, BrockmanFunctionalCookiesDisallowed)
 www.eurogamer.net##+js(aeld, BrockmanTargetingCookiesAllowed)
 www.eurogamer.net##+js(aeld, BrockmanTargetingCookiesDisallowed)
 www.eurogamer.net##+js(set-constant, gtag, noopFunc)
-www.eurogamer.net##+js(acs, gtag, permutative, OneSignal)
+www.eurogamer.net##+js(acs, gtag, permutive, OneSignal)
 www.eurogamer.net##+js(set-constant, updateGoogleAnalyticsConsent, noopFunc)
 www.eurogamer.net##+js(set-constant, updateGoogleAnalyticsConsentAnonymous, noopFunc)
 www.eurogamer.net##+js(set-constant, performanceCookiesAllowed, noopFunc)
@@ -43406,6 +43407,7 @@ gamesnacks.com##div[class="sSVlic"]:remove()
 !||0f73e92f-4074-4fe3-85d3-ed3fc969859e.edge.permutive.app^*
 !||6093eccf-6734-4877-ac8b-83d6d0e27b46.edge.permutive.app^*
 !||a9695278-4085-40b3-9f02-8d4c38a6ff01.edge.permutive.app^*
+!||3a6b0682-f3e1-4576-a706-5eb4101b9cc3.edge.permutive.app^*
 ||*.edge.permutive.app^*
 ||query.petametrics.com^*
 !||hummingbird.mavencoalition.io/collect$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -47372,7 +47374,6 @@ www.hasbrorisk.com##div[data-js-cookieconsent-alert]:remove()
 ||yiejvik.com^*
 ||www.hpepeepce.com^*
 ||hpepeepce.com^*
-||ib.adnxs.com/getuid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.yjaxjcbpkmp.com^*
 ||yjaxjcbpkmp.com^*
 ||www.srrmpfstbh.com^*
@@ -47625,10 +47626,87 @@ wykop-stream.blogspot.com##+js(saa, scrolling, yes, div[id="tv"]>iframe)
 sportstream1.cfd##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 sportstream1.cfd##+js(saa, allow, encrypted-media, #thatframe)
 sportstream1.cfd##+js(saa, scrolling, yes, #thatframe)
+||www.abc27.com/wp-content/plugins/civic-science/js/pixel.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! blocking all of of the civic science plug-in blocks the surveys too
+!||www.abc27.com/wp-content/plugins/civic-science/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.abc27.com/wp-content/plugins/nxst-advertising/dist/htlbid-advertising.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.abc27.com/wp-content/plugins/nxst-advertising/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.abc27.com/wp-content/themes/nexstar-wv/client/build/js/error-logger.bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.abc27.com/wp-content/plugins/lakana/inc/ad-referral-source/js/ad-referral-source.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.abc27.com/wp-content/plugins/lakana/inc/ad-referral-source/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.abc27.com/CvbtpUrj/xhr/api/v2/collector$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.abc27.com/CvbtpUrj/init.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.abc27.com/CvbtpUrj/xhr/b/s$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.abc27.com##aside[class^="ad-unit"]:remove()
+www.abc27.com##div[class^="ad-unit__content"]:remove()
+www.abc27.com##div[id^="acm-ad-tag-"]:remove()
+www.abc27.com##div[id="taboola-tracking-pixel"]:remove()
+www.abc27.com##div[id="taboola-block"]:remove()
+www.abc27.com##iframe[src^="//www.googletagmanager.com/ns.html"]:remove()
+www.abc27.com##iframe[src^="//sync.rtk.io/cs"]:remove()
+www.abc27.com##img[src^="https://ib.adnxs.com/getuid?"]:remove()
+www.abc27.com##img[src^="https://match.prod.bidr.io/cookie-sync/nextardigital"]:remove()
+! TODO: ^script does not work for the following scripts even though they are present in the original page source.
+www.abc27.com##script[ccpa-opt-out-ids]:remove()
+www.abc27.com##script[class*="ad_referral_source_inline"]:remove()
+www.abc27.com##script[class*="nxst_logging_entry"]:remove()
+www.abc27.com##script[class*="wp-asset-manager gpt"]:remove()
+www.abc27.com##script[class*="nswv-ad-handler-js"]:remove()
+www.abc27.com##script[id="civic-science-pixel-js"]:remove()
+www.abc27.com##script[id="htlbid_async_script-js-before"]:remove()
+www.abc27.com##script[id^="jetpack-stats-js"]:remove()
+www.abc27.com##script[id="optimera-ops"]:remove()
+www.abc27.com##script[id="tb_loader_script"]:remove()
+www.abc27.com##script[id="ns_script_dc"]:remove()
+www.abc27.com##+js(aeld, nxsConsent)
+www.abc27.com##+js(set-constant, consent, true)
+www.abc27.com##+js(set-constant, window.isAdRefreshEnabled, false)
+www.abc27.com##+js(set-constant, window.isAdLazyloadEnabled, false)
+www.abc27.com##+js(set-constant, window.isAdSponsorshipEnabled, false)
+www.abc27.com##+js(set-constant, window.isHtlbidEnabled, false)
+www.abc27.com##+js(set-constant, window.isGdprPrebidEnabled, false)
+www.abc27.com##+js(set-constant, window.consentGranted, trueFunc)
+www.abc27.com##+js(set-constant, apstag.init, noopFunc)
+www.abc27.com##+js(set-constant, OptanonWrapper, noopFunc)
+www.abc27.com##+js(set-constant, window.permutive.consent, noopFunc)
+www.abc27.com##+js(set-constant, maybeLaunchTrackingPixel, noopFunc)
+www.abc27.com##+js(set-constant, googletag.pubads, noopFunc)
+www.abc27.com##+js(set-constant, checkDataLayerValues, noopFunc)
+www.abc27.com##+js(set-constant, getPercentPageViewed, noopFunc)
+www.abc27.com##+js(set-constant, getTimeParting, noopFunc)
+www.abc27.com##+js(set-constant, nxsConsentEvent, noopFunc)
+www.abc27.com##+js(set-constant, _stq, [])
+www.abc27.com##+js(set-constant, nxst_logging_settings, {})
+www.abc27.com##+js(set-constant, window.googletag, {})
+www.abc27.com##+js(set-constant, window.amScripts, {})
+www.abc27.com##+js(set-constant, window.adRefreshConfig, {})
+www.abc27.com##+js(set-constant, window.adLazyloadConfig, [])
+www.abc27.com##+js(set-constant, window.adExclusionIds, [])
+www.abc27.com##+js(aopr, taboolaTrackingPixelID)
+www.abc27.com##+js(aopw, taboolaTrackingPixelID)
+www.abc27.com##+js(aopr, taboolaTrackingPixelAdSlot)
+www.abc27.com##+js(aopw, taboolaTrackingPixelAdSlot)
+www.abc27.com##+js(aopr, oneTrustAccept)
+www.abc27.com##+js(aopw, oneTrustAccept)
+!||d3plfjw9uod7ab.cloudfront.net/31b9b552-f32e-4036-8364-726eb992b71d.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||d3plfjw9uod7ab.cloudfront.net^*
+||edge.adobedc.net/ee-pre-prd/va/v1/ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||collector-a.px-cloud.net/api/v2/collector/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
 !Whitelisted
+! to prevent civic science surveys from being blocked (overrides ||civicscience.com^*$3p rule in "uBlock filters - Privacy")
+! The first four rules are not enough to override the rule in the official ublock privacy file list.
+!@@||www.civicscience.com/widget/api/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,domain=pluto.tv
+!@@||www.civicscience.com/jot?$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,domain=pluto.tv
+!@@||get.civicscience.com/jspoll/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,domain=pluto.tv
+!@@||cdn.civicscience.com/jspoll/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,domain=pluto.tv
+@@||get.civicscience.com^*$3p
+@@||cdn.civicscience.com^*$3p
+@@||www.civicscience.com^*$3p
+! The following rule would completely override the rule in the official ublock privacy file list.
+!@@||civicscience.com^*$3p
 ! to prevent breaking Google map context menu.
 !www.google.com#@#div[oncontextmenu^="return false"]
 ! for Google Drive
