@@ -47544,6 +47544,14 @@ docs.merkulov.design##div[class="mdp-cookies-box"]:remove()
 ||www.bpjgiwzzmgjp.com^*
 ||bpjgiwzzmgjp.com^*
 ||esaidees.com^*
+wykop-stream.blogspot.com##script[src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove-attr(onerror)
+wykop-stream.blogspot.com##^script[src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove()
+wykop-stream.blogspot.com##+js(set-constant, adblockmesaj, noopFunc)
+wykop-stream.blogspot.com##:xpath(//script[contains(text(), 'adblockmesaj')]):remove()
+wykop-stream.blogspot.com##+js(set-constant, DisableDevtool, noopFunc)
+wykop-stream.blogspot.com##:xpath(//script[contains(text(), 'inIframe')]):remove()
+wykop-stream.blogspot.com##+js(set-constant, inIframe, trueFunc)
+||www.wudaoutsjuxbd.com^*
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
