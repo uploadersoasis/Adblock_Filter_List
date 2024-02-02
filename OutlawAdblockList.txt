@@ -121,12 +121,15 @@ techydino.net##+js(acs, window.googletag)
 techydino.net##+js(aopr, window.googletag)
 techydino.net##+js(aopw, window.googletag)
 techydino.net##ins[data-sizes-desktop]
-techydino.net##^script[onerror]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+!techydino.net##^script[onerror]
+techydino.net##script[onerror]:remove()
+techydino.net##script:remove-attr(onerror)
 !techydino.net##+js(remove-attr, onerror, script, stay)
 techydino.net##+js(remove-attr, onerror)
 techydino.net##^script:has-text(decodeURIComponent)
 techydino.net##+js(acs, decodeURIComponent)
-techydino.net##+js(nowoif, !/techydino\.net/i, log)
+techydino.net##+js(no-window-open-if, !/techydino\.net/i, log)
 techydino.net##+js(acs, anchorSlot)
 techydino.net##+js(aopr, anchorSlot)
 techydino.net##+js(aopw, anchorSlot)
@@ -587,8 +590,6 @@ www.shacknews.com/ads/blank.htm$document,subdocument,script,inline-script,inline
 ||craftkeys.com/tracker/analytics^*
 ||craftkeys.com/track.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||remosoftware.supportaxis.net/scripts/iptracker.asp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.tusfiles.net/img/TusFiles_728x90.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.tusfiles.net##.bttn
 ||remosoftware.supportaxis.net/scripts/js/monitor.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||xslt.alexa.com/site_stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.mypagerank.net/services/sn/servicesn_js.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -2139,8 +2140,6 @@ www.nydailynews.com##.yahoo_ads
 ||twimgs.com/csb.techweb.com/cdn/templates/global/js/csb-omniture-min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||afftrack.optimarkets.com^*
 ||www.binary-theorem.info^*
-||z.tusfiles.net/img/WP728_90.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||z.tusfiles.net/images/13.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||adrotate.se/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dlp.123mplayer.com^*
 ||3c45d848d99.se/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -2400,7 +2399,6 @@ www.putlocker.com###ppuoverlay
 ||is.gd/hUaxRk$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||services.bunndle.com/ProductServices/FetchAgent$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||services.bunndle.com^*
-||z.tusfiles.net/images/WP90.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||tracking.fccinteractive.com/user_tracking/user_tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||tracking.fccinteractive.com/tracking/article/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tracking.fccinteractive.com^*
@@ -2751,7 +2749,6 @@ glo.msn.com##.ad-LREC
 glo.msn.com##.adId
 ||geobanner.friendfinder.com^*
 ||rose.ixbt.com/cgi-bin/r.cgi$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||z.tusfiles.net/images/tusfilesb.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.siftscience.com/s.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||1.rp-api.com/repost/log_button.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||videos.rawstory.com/embed/player/modules/ad.mason$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -3469,7 +3466,6 @@ photoshopdesigntutorials.com##.adsbygoogle
 !www.sockshare.com##.3d8786227602cb28ea28a15104398ebd
 ||sports-ak.espn.go.com/espn/sponsoredlinks/adsense/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 sports-ak.espn.go.com##.sponsors
-||z.tusfiles.net/i/dll.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||benchmarkreviews.com/wp-content/uploads/banners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cache.go4up.com/assets/img/Download-button-en.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bidr.trellian.com^*
@@ -7718,9 +7714,8 @@ u3d.at.ua##div#_u_ablock_bottomlink
 ||clickadscounter.com^*
 !||ss.install.wtf/advertisement/advertisement.js/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ss.install.wtf/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||tusfiles.net/images/523523523.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.trafficstars.com^*
-xhamster.com##div#plAds
+xhamster.com##div#plAds:remove()
 ||rotator.trafficstars.com^*
 ||b12.xhamster.com^*
 !||b11.xhamster.com/iframes2/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -10192,6 +10187,7 @@ uptobox.com###fpContentWidgetFooterWrapper
 ||vivaki.demdex.net^*
 ||adserver.fanserver.net^*
 greasyfork.org##^script-show-info-ad
+greasyfork.org##script-show-info-ad:remove()
 !||dpallyihgtgu.com/OIZFVB.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||dpallyihgtgu.com/e.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||dpallyihgtgu.com/lSWLsD.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -12824,7 +12820,6 @@ erpman1.tripod.com###FooterAd
 !||ads.contextweb.com/TagPublish/getvideo.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ads.contextweb.com^*
 ||www3.smartadserver.com^*
-tusfiles.net##.white.btn-lg.btn
 ||hqxtsqwpvort.com^*
 ||www.hqxtsqwpvort.com^*
 ||steamdownloadfree.com^*
@@ -21808,7 +21803,7 @@ userscloud.com##div[class^="glx-teaser-"]
 userscloud.com##div[id="adblock_detected_warning"]
 userscloud.com##div[id="banner"]
 userscloud.com##div[id="gk7FroDRjMsV6rJF"]
-userscloud.com##input[id="adblock_detected"]
+userscloud.com##input[id="adblock_detected"]:remove()
 ||userscloud.com//images/300x250d.png$image
 ||userscloud.com/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||userscloud.com/i/dlnitro.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -23271,7 +23266,8 @@ unityassetsfree.wordpress.com##.widget_eu_cookie_law_widget:remove()
 www.fshare.vn###eclick_ads_frame0_ins
 www.fshare.vn##.topbg > .wrap.container > .padding-v-15 > .hidden-sm.ad-wrapper
 www.fshare.vn##div[id="showVideo"]
-!www.fshare.vn##^script[id="arf-core-js"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+!www.fshare.vn##script[id="arf-core-js"]:remove()
 www.fshare.vn##+js(abort-on-property-write, stringDataAds)
 www.fshare.vn##+js(abort-on-property-read, stringDataAds)
 www.fshare.vn##+js(abort-on-property-write, Adomik.randomAdGroup)
@@ -23756,12 +23752,14 @@ www.hideoxy.com##ins[class="adsbygoogle"]:remove()
 www.hideoxy.com##+js(set-constant, adsbygoogle, [])
 www.hideoxy.com##+js(abort-on-property-read, adsbygoogle)
 www.hideoxy.com##+js(abort-on-property-write, adsbygoogle)
-www.hideoxy.com##^script[id="cookiebanner"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.hideoxy.com##script[id="cookiebanner"]:remove()
 www.unblockvid.com##+js(abort-on-property-read, google_ad_client)
 www.unblockvid.com##+js(abort-on-property-write, google_ad_client)
 www.unblockvid.com##+js(abort-on-property-read, google_ad_slot)
 www.unblockvid.com##+js(abort-on-property-write, google_ad_slot)
-www.unblockvid.com##^script[id="cookiebanner"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.unblockvid.com##script[id="cookiebanner"]:remove()
 ||www.unblockvid.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.cultofmac.com##+js(abort-on-property-read, __ez)
 www.cultofmac.com##+js(abort-on-property-write, __ez)
@@ -23803,11 +23801,11 @@ www.hidemyass.com##div[class="js-cookie-bar cookie-bar visible"]:remove()
 ||a.optmnstr.com^*
 ||graph.instagram.com/logging_client_events$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.unblock123.com##ins[class="adsbygoogle"]:remove()
-www.cultofmac.com##+js(set-constant, adsbygoogle, [])
-www.cultofmac.com##+js(abort-on-property-read, adsbygoogle)
-www.cultofmac.com##+js(abort-on-property-write, adsbygoogle)
-!www.unblock123.com##^script[id="cookiebanner"]:remove()
-!www.unblockdomain.com##^script[id="cookiebanner"]:remove()
+www.unblock123.com##+js(set-constant, adsbygoogle, [])
+www.unblock123.com##+js(abort-on-property-read, adsbygoogle)
+www.unblock123.com##+js(abort-on-property-write, adsbygoogle)
+www.unblock123.com##script[id="cookiebanner"]:remove()
+www.unblockdomain.com##script[id="cookiebanner"]:remove()
 www.unblockdomain.com##+js(abort-on-property-write, google_ad_client)
 www.unblockdomain.com##+js(abort-on-property-read, google_ad_client)
 www.hidebux.com##ins[class="adsbygoogle"]:remove()
@@ -23974,9 +23972,9 @@ giga-down.com##+js(set-constant, adblock_detected, 0)
 giga-down.com##+js(set-constant, remaining, 0)
 giga-down.com##+js(set-constant, speed, 1)
 giga-down.com##input[name="adblock_detected"]:remove()
-giga-down.com##center:nth-of-type(3) > .btn-dow.btn
-giga-down.com##div.download-option-btn:nth-of-type(2) > .btn-success.btn
-giga-down.com##div.download-option-btn:nth-of-type(3) > .btn-success.btn
+giga-down.com##center:nth-of-type(3) > .btn-dow.btn:remove()
+giga-down.com##div.download-option-btn:nth-of-type(3) > .btn-success.btn:remove()
+giga-down.com##div.download-option-btn:nth-of-type(2) > .btn-success.btn:remove()
 giga-down.com##+js(abort-on-property-read, _Hasync=)
 giga-down.com##+js(abort-on-property-write, _Hasync=)
 ||cdn.simpleanalytics.io^*
@@ -24036,7 +24034,6 @@ www.tmz.com##div[id="ad-header"]:remove()
 www.tmz.com##div[class^="ad-container"]:remove()
 www.tmz.com##+js(set-constant, ads_enabled, false)
 www.nchsoftware.com##div[id="bubbletip"]
-!tusfiles.net.w3snoop.com##span[id^="div-gpt-ad-"]:remove()
 w3snoop.com##span[id^="div-gpt-ad-"]:remove()
 w3snoop.com##div[id="ezmobfooter"]:remove()
 w3snoop.com##div[class="cookie-consent-container"]:remove()
@@ -24227,18 +24224,6 @@ onemonth.com##div[class="ub-emb-container"]
 ||edcreptors.club^*
 ||www.apestsagai.club^*
 ||apestsagai.club^*
-tusfiles.com##+js(abort-on-property-read, a.admvn_inter___ctc)
-tusfiles.com##+js(abort-on-property-write, a.admvn_inter___ctc)
-tusfiles.com##+js(abort-on-property-read, a.admvn_inter___ctt)
-tusfiles.com##+js(abort-on-property-write, a.admvn_inter___ctt)
-tusfiles.com##+js(abort-on-property-read, a.admvn_inter___ddb)
-tusfiles.com##+js(abort-on-property-write, a.admvn_inter___ddb)
-tusfiles.com##+js(abort-on-property-read, k.admvn_inter___ddb)
-tusfiles.com##+js(abort-on-property-write, k.admvn_inter___ddb)
-tusfiles.com##+js(abort-on-property-read, k.admvn_inter___ctt)
-tusfiles.com##+js(abort-on-property-write, k.admvn_inter___ctt)
-tusfiles.com##+js(abort-on-property-read, k.admvn_inter___ctc)
-tusfiles.com##+js(abort-on-property-write, k.admvn_inter___ctc)
 ||fpa-events.arstechnica.com/plogger/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.rsaltsjt.com^*
 ||rsaltsjt.com^*
@@ -24454,7 +24439,8 @@ mail.yahoo.com##div[data-test-id="pencil-ad"]:remove()
 !||qsbr.fs.quoracdn.net/-4-ans_frontend-relay-vendor-component-Modals-AdsManager-27-a878ca4b1fce51ec.webpack$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||qsbr.fs.quoracdn.net/-4-ans_frontend-relay-vendor-component-Modals-AdsManager-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.opmnstr.com^*
-www.prodad.com##^script[data-consent_id="google_analytics"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.prodad.com##script[data-consent_id="google_analytics"]:remove()
 www.prodad.com##div[class="cookie_consent"]:remove()
 !www.actalis.it##div[id="cookiesdirective"]:remove()
 !extrassl.actalis.it##div[id="cookiesdirective"]:remove()
@@ -24471,7 +24457,8 @@ www.connection.com##div[class="cookie-check hidden-print"]:remove()
 www.softpedia.com##div[id="cookienotif"]:remove()
 ukie.org.uk##div[class="cookie-policy js-cookie-policy is-visible"]:remove()
 www.designcise.com##aside[data-vendor="carbonads"]:remove()
-www.designcise.com##^script[id="_carbonads_js"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.designcise.com##script[id="_carbonads_js"]:remove()
 !||bgn2zqlce1eiya.icu/metrika/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bgn2zqlce1eiya.icu/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.nvidia.com##div[id="cookiePolicy-layer"]:remove()
@@ -24501,19 +24488,6 @@ www.usatoday.com##aside[aria-label="advertisement"]
 ||tedstocktails.club^*
 ||purrenches.top^*
 ||greemeek.net^*
-tusfiles.com##iframe
-tusfiles.com##body > script
-tusfiles.com##body > iframe:nth-child(3)
-tusfiles.com##body > iframe:nth-child(4)
-tusfiles.com##body > iframe:nth-child(7)
-tusfiles.com##body > iframe:nth-child(8)
-tusfiles.com##body > iframe:nth-child(9)
-tusfiles.com##body > iframe:nth-child(10)
-tusfiles.com##body > iframe:nth-child(11)
-tusfiles.com##body > iframe:nth-child(12)
-tusfiles.com##body > iframe:nth-child(13)
-tusfiles.com##body > iframe:nth-child(14)
-tusfiles.com##html > iframe
 ||10.trackints.com^*
 ||beta.infopicked.com^*
 ||btpnative.com^*
@@ -24524,7 +24498,7 @@ tusfiles.com##html > iframe
 ||inabsolor.com^*
 ||agafurretor.com^*
 ||expresentc.top^*
-userscloud.com##input[name="adblock_detected"]
+userscloud.com##input[name="adblock_detected"]:remove()
 !||cdn.snigelweb.com/adconsent/adconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.snigelweb.com/adconsent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.zvmldjxh.com^*
@@ -24556,13 +24530,9 @@ userscloud.com##input[name="adblock_detected"]
 ||displayvertising.com^*
 ||ratesphospit.club^*
 ||jientlysome.top^*
-tusfiles.com##body > iframe:nth-child(6)
-tusfiles.com##body > iframe:nth-child(5)
 ||workedlew.top^*
 ||set.connectingtobestsoftware.com^*
 ||connectingtobestsoftware.com^*
-tusfiles.com##+js(abort-on-property-write, zfgloadedpopup)
-tusfiles.com##+js(abort-on-property-read, zfgloadedpopup)
 ||hcxwy.prograph.club^*
 ||prograph.club^*
 ||horiticalagen.club^*
@@ -24582,13 +24552,7 @@ tusfiles.com##+js(abort-on-property-read, zfgloadedpopup)
 ||jnctgldbxc.com^*
 ||ferentshugge.top^*
 ||d1ukp4rdr0i4nl.cloudfront.net^*
-tusfiles.com##^script:has-text(document.createElement('script'))
-tusfiles.com##app > div.padding > script:nth-child(7)
 ||stsunfulnoth.top^*
-tusfiles.com##+js(abort-on-property-write, Fingerprint2)
-tusfiles.com##+js(nowoif)
-tusfiles.com##+js(acs, Math, zfgloaded)
-||tusfiles.com/sw.js$script,1p
 ||freshcode.club^*
 ||gamecococo.com^*
 ||www.egxlbyokjk.com^*
@@ -24634,18 +24598,19 @@ nordvpn.com##div[aria-label="cookieconsent"]:remove()
 !||api.purpleads.io/x/partners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||api.purpleads.io^*
 ||cdn.purpleads.io^*
-ubuntudde.com##^script[id="google_gtagjs-js-after"]:remove()
-ubuntudde.com##^script[id="purpleads-client"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+ubuntudde.com##script[id="google_gtagjs-js-after"]:remove()
+ubuntudde.com##script[id="purpleads-client"]:remove()
+ubuntudde.com##script[id="ai-adb-ga"]:remove()
+ubuntudde.com##script[id="ai-adb-mn"]:remove()
+ubuntudde.com##script[id="ai-adb-ads"]:remove()
+ubuntudde.com##script[id="ai-adb-sponsors"]:remove()
 ubuntudde.com##div[id="cookie-law-info-bar"]:remove()
 ubuntudde.com##div[id="banner-advert-container"]:remove()
 ubuntudde.com##div[class="ad-inserter infolinks-ad"]:remove()
 ubuntudde.com##img[id="adsense"]:remove()
 ubuntudde.com##img[class="SponsorAds adsense"]:remove()
 ubuntudde.com##img[id="ai-adb-adnxs"]:remove()
-ubuntudde.com##^script[id="ai-adb-ga"]:remove()
-ubuntudde.com##^script[id="ai-adb-mn"]:remove()
-ubuntudde.com##^script[id="ai-adb-ads"]:remove()
-ubuntudde.com##^script[id="ai-adb-sponsors"]:remove()
 ubuntudde.com##+js(set-constant, ai_js_code, false)
 ubuntudde.com##+js(abort-on-property-write, ai_js_code)
 ubuntudde.com##+js(abort-on-property-read, ai_js_code)
@@ -24856,7 +24821,8 @@ www.reddit.com###sidebar-atf-0:remove()
 www.geeksforgeeks.org###AP_G4GR_5:remove()
 login.wirecard.com##div[id="cookie-message"]:remove()
 www.sega60th.com##div[aria-label="Cookie Preferences"]:remove()
-steamworkshopdownloader.io##^script[src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+steamworkshopdownloader.io##script[src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove()
 rsload.net##a[href^="https://click.1k3web.net"]:remove()
 ||rsload.net/images5/dsramka.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||rsload.net/images5/2019-02-14-16-30-19.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -24956,8 +24922,8 @@ linuxize.com##span[class="ezoic-adpicker-ad"]
 www.w10privacy.de##div[class^="cc-individual-cookie-settings"]:remove()
 flacplayer.ehubsoft.net##+js(abort-current-script, 'google_ad_client')
 flacplayer.ehubsoft.net##+js(set-constant, gadb, false)
-flacplayer.ehubsoft.net##^script[onerror="gadb=true;"]
-flacplayer.ehubsoft.net##^script[onerror="gadb=true;"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+flacplayer.ehubsoft.net##script[onerror="gadb=true;"]:remove()
 !flacplayer.ehubsoft.net##script:remove-attr(onerror)
 !flacplayer.ehubsoft.net##maintable > tbody > tr:nth-child(1) > td > center > script:nth-child(1)
 !flacplayer.ehubsoft.net##maintable > tbody > tr:nth-child(1) > td > center > script:nth-child(2)
@@ -25411,7 +25377,8 @@ www.modapkdown.com##div[class="cookie-fixd"]:remove()
 www.modapkdown.com##div[class="fot-fixd"]
 www.happymod.com##div[class="cookie-fixd"]:remove()
 www.happymod.com##div[class="fot-fixd"]
-www.happymod.com##^script[id="cookieScriptId"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.happymod.com##script[id="cookieScriptId"]:remove()
 ||reporting.jdsports.co.uk^*
 gofile.io##.swal2-show.swal2-modal.swal2-popup
 gofile.io##.swal2-backdrop-show.swal2-center.swal2-container
@@ -25563,18 +25530,18 @@ linuxnewbieguide.org##span[class*="adtester-container"]
 ||a.unblockit.app/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 iosgods.com##div[id="elGuestTerms"]
 ||speed-down.org/ds1/js/clipboard.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-speed-down.org##div[id^="div-gpt-ad-"]
+speed-down.org##div[id^="div-gpt-ad-"]:remove()
 speed-down.org##+js(abort-on-property-read, _Hasync=)
 speed-down.org##+js(abort-on-property-write, _Hasync=)
-speed-down.org##ins[class="adsbygoogle"]
+speed-down.org##ins[class="adsbygoogle"]:remove()
 speed-down.org##+js(abort-on-property-read, adsbygoogle)
 speed-down.org##+js(abort-on-property-write, adsbygoogle)
 speed-down.org##+js(abort-on-property-read, sc_security)
 speed-down.org##+js(abort-on-property-write, sc_security)
 speed-down.org##+js(abort-on-property-read, _atrk_opts)
 speed-down.org##+js(abort-on-property-write, _atrk_opts)
-speed-down.org##input[name="adblock_detected"]
-speed-down.org##div[class="adsbox"]
+speed-down.org##input[name="adblock_detected"]:remove()
+speed-down.org##div[class="adsbox"]:remove()
 !used to set ablock_detected variable
 !speed-down.org##div[id="banner_ad"] !triggers adblock script
 speed-down.org##+js(set-constant, remaining, 0)
@@ -25848,7 +25815,8 @@ bitfly.io##div[id="cookie-pop"]
 !||bitfly.io/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bitfly.io/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bitfly.io/js/nt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-bitfly.io##^script[id="popmagicldr"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+bitfly.io##script[id="popmagicldr"]:remove()
 bitfly.io##+js(abort-on-property-read, window.googletag)
 bitfly.io##+js(abort-on-property-write, window.googletag)
 bitfly.io##iframe[id="{{IFRAME_ID}}"]
@@ -25997,12 +25965,13 @@ www.download3k.com##div[class^="cc_banner"]
 www.download3k.com##div[id="google_top"]
 www.download3k.com##ins[class="adsbygoogle"]
 !yetishare-file-hosting-script.soft32.com##div[class="jquery-notify-bar cookie"]
-soft32.com##div[class="jquery-notify-bar cookie"]
+soft32.com##div[class="jquery-notify-bar cookie"]:remove()
 www.rt-sw.de##div[id="cooschutz"]
 !nulljungle.com##.wp-vwnsbm-axvu-wrapper:remove()
 !nulljungle.com##.wp-vwnsbm-axvu-blackout:remove()
 nulljungle.com##div[class^="wp-vwnsbm-axvu"]:remove()
-nulljungle.com##^script[id=mdp-deblocker-js-extra]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+nulljungle.com##script[id=mdp-deblocker-js-extra]:remove()
 nulljungle.com##+js(set-constant, adsBlocked, falseFunc)
 nulljungle.com##+js(set-constant, window.mdpDeBlockerDestroyer, false)
 nulljungle.com##+js(set-constant, disableTextSelection, noopFunc)
@@ -26042,8 +26011,8 @@ borntonull.com##div[class="myTestAd"]
 borntonull.com##ins[class="adsbygoogle"]
 borntonull.com##+js(abort-on-property-write, adsbygoogle)
 borntonull.com##+js(abort-on-property-read, adsbygoogle)
-borntonull.com##^script[data-ad-client^="ca-pub-"]
-borntonull.com##^script[data-ad-client^="ca-pub-"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+borntonull.com##script[data-ad-client^="ca-pub-"]:remove()
 borntonull.com##div[class="banner banner-336x280"]
 borntonull.com##div[class="cookie-confirm"]
 !borntonull.com##*:style(display:none)
@@ -26053,7 +26022,8 @@ borntonull.com###go-link:remove-attr(disabled)
 borntonull.com###go-submit:remove-attr(class)
 borntonull.com###go-submit:remove-attr(disabled)
 daviruzsystems.com##div[class="adsBox"]
-daviruzsystems.com##^script[class^="atScript"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+daviruzsystems.com##script[class^="atScript"]
 ||daviruzsystems.com/pwa-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||districtbaloneywhiskers.com^*
 ||dividedscientific.com^*
@@ -26187,7 +26157,8 @@ daryldixon.gala100.net##div[class="penci-wrap-gprd-law"]
 !||adbit.biz/js/show_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||adbit.biz/js/show_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.internetsociety.org/wp-content/plugins/jetpack/_inc/build/widgets/eu-cookie-law/eu-cookie-law.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.internetsociety.org##^script[id="eu-cookie-law-script-js"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.internetsociety.org##script[id="eu-cookie-law-script-js"]:remove()
 www.internetsociety.org##div[class$="widget_eu_cookie_law_widget"]
 www.internetsociety.org##div[id="eu-cookie-law"]
 ||cash.tweakly.net^*
@@ -26326,11 +26297,12 @@ rockstarintel.com##aside[class="thb-cookie-bar"]
 ||callsupportforassisstance5.ml^*
 ||measure.analysis.fi/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.tomsguide.com##div[class="advertisement-label"]
-www.tomsguide.com##^script[id="bordeaux-liveramp"]
-www.tomsguide.com##^script[id="gpt-api-script"]
-www.tomsguide.com##^script[id="ias-script"]
-www.tomsguide.com##^script[id="amazon-script"]
-www.tomsguide.com##div[class="ad-unit"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.tomsguide.com##script[id="bordeaux-liveramp"]:remove()
+www.tomsguide.com##script[id="gpt-api-script"]:remove()
+www.tomsguide.com##script[id="ias-script"]:remove()
+www.tomsguide.com##script[id="amazon-script"]:remove()
+www.tomsguide.com##div[class="ad-unit"]:remove()
 ||emagazing.fun^*
 !||www.addonsearch.net/trhandler.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.addonsearch.net^*
@@ -26367,7 +26339,8 @@ www.wikihow.com##div[class*="wh_ad_"]
 !||www.wikihow.com/extensions/min/f/_ads/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.wikihow.com/extensions/min/f/_ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.wikihow.com##div[id="contribute_footer_wrap"]
-yalujailbreak.net##^script[id="cookie-notice-front-js-extra"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+yalujailbreak.net##script[id="cookie-notice-front-js-extra"]:remove()
 yalujailbreak.net###content_2_btf_wrapper
 yalujailbreak.net###content_3_btf_wrapper
 yalujailbreak.net###content_btf_wrapper
@@ -26495,16 +26468,18 @@ www.iphonecake.com##div[id="banner_ad"]
 !worldunlock-codes-calculator.soft112.com##div[id="s112_accept_cookies"]
 soft112.com##div[id="s112_accept_cookies"]
 cellcarcol.forumcommunity.net##div[class="note"]
-forum.dd-wrt.com##^script[id="cookieinfo"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+forum.dd-wrt.com##script[id="cookieinfo"]:remove()
 forum.dd-wrt.com##div[class="cookieinfo"]
 ||forum.dd-wrt.com/js/cookieinfo.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 forum.dd-wrt.com##div[id="header_ads"]
-wiki.dd-wrt.com##^script[id="cookieinfo"]
+wiki.dd-wrt.com##script[id="cookieinfo"]:remove()
 wiki.dd-wrt.com##div[class="cookieinfo"]
 ||wiki.dd-wrt.com/js/cookieinfo.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||nfl.hb.omtrdc.net^*
 ||smetrics.cox.com^*
-www.cox.com##^script[id="cookie-notice-mark-up"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.cox.com##script[id="cookie-notice-mark-up"]:remove()
 www.cox.com##div[class="cookie-notice-container"]
 www.cox.com##+js(set-constant, shouldShowCookieNotice, false)
 doodrive.com##:xpath(//script[contains(text(), '\x20second')])
@@ -26571,8 +26546,9 @@ www.samsung.com##div[class^="cookie-bar"]
 !||assets.adobedtm.com/extensions/EPbde2f7ca14e540399dcc1f8208860b7b/AppMeasurement_Module_ActivityMap.min.js
 !||assets.adobedtm.com/extensions/EPbde2f7ca14e540399dcc1f8208860b7b/AppMeasurement_Module_AudienceManagement.min.js
 ||api.iadvize.com/collector/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.appledystopia.com##*[class*="ezoic-ad"]
-www.appledystopia.com##^script[ez-screx="true"]
+www.appledystopia.com##*[class*="ezoic-ad"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.appledystopia.com##script[ez-screx="true"]:remove()
 ||h-discover.online-metrix.net^*
 www.muo.com##div[class^="ad-zone"]
 www.muo.com##div[id^="div-gpt-ad"]
@@ -26625,12 +26601,13 @@ forum.gsmhosting.com##ins[class="adsbygoogle"]
 forum.gsmhosting.com##+js(abort-on-property-write, adsbygoogle)
 forum.gsmhosting.com##+js(abort-on-property-read, adsbygoogle)
 xdroidapps.com##div[id="cookie-notice"]
-!m.downloadatoz.com##^script[id="cookieScriptId"]
-downloadatoz.com##^script[id="cookieScriptId"]
-!m.downloadatoz.com##div[class="cookie-fixd"]
-downloadatoz.com##div[class="cookie-fixd"]
-!m.downloadatoz.com##div[class="cookie-main clearfix"]
-downloadatoz.com##div[class="cookie-main clearfix"]
+!m.downloadatoz.com##script[id="cookieScriptId"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+downloadatoz.com##script[id="cookieScriptId"]:remove()
+!m.downloadatoz.com##div[class="cookie-fixd"]:remove()
+downloadatoz.com##div[class="cookie-fixd"]:remove()
+!m.downloadatoz.com##div[class="cookie-main clearfix"]:remove()
+downloadatoz.com##div[class="cookie-main clearfix"]:remove()
 ||rating.happymod.com/cookie/cookies.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||adservingvpc-1239633584.eu-west-1.elb.amazonaws.com^*
 ||ad.audiencemanager.de^*
@@ -26638,9 +26615,9 @@ downloadatoz.com##div[class="cookie-main clearfix"]
 !||mantodea.mantisadnetwork.com/prebid/display?referrer=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mantodea.mantisadnetwork.com^*
 ||publisherdesk-d.openx.net^*
-m.downloadatoz.com##.fot-float-box
+m.downloadatoz.com##.fot-float-box:remove()
 www.bemobi.com.br##div[class^="cookie-banner-lgpd"]
-techwiser.com##ins[class="adsbygoogle"]
+techwiser.com##ins[class="adsbygoogle"]:remove()
 gifs.com##div[id="gifsad"]
 gifs.com##span[id="hidead"]
 gifs.com##span[id="adsby"]
@@ -26697,7 +26674,8 @@ www.rt.com##div[class^="cookies__banner"]
 ||secure-open.com^*
 ||mail.elbroos.com/scripts/analitics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||androidforums.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.laptopmag.com##^script[id="hawklinks-script"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.laptopmag.com##script[id="hawklinks-script"]:remove()
 !||hawk.laptopmag.com/hl/hawklinks.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||hawk.laptopmag.com^*
 www.laptopmag.com##div[class="ad-unit"]
@@ -26837,8 +26815,9 @@ appcrush.blogspot.com##[href^="https://mob1ledev1ces.com/r/"]
 developer.nvidia.com##div[class*="eu-cookie-compliance-banner"]
 developer.nvidia.com##div[id="sliding-popup"]
 ||terraformpro.com/wp-content/plugins/jetpack/_inc/build/widgets/eu-cookie-law/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-terraformpro.com##^script[id="eu-cookie-law-script-js"]
-terraformpro.com##div[id="eu-cookie-law"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+terraformpro.com##script[id="eu-cookie-law-script-js"]:remove()
+terraformpro.com##div[id="eu-cookie-law"]:remove()
 youlink.ga##div[id="cookie-pop"]
 youlink.ga##div[class="ad-banner"]
 ||emuwanflat.com^*
@@ -26860,9 +26839,10 @@ supreme-gamers.com##+js(set-constant, lolMan, null)
 ||supreme-gamers.com/js/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !supreme-gamers.com##^script:has-text(lolMan)
 !supreme-gamers.com##^script:has-text(adsbygoogle)
-www.cinemablend.com##div[id="leaderboard-ad"]
-www.cinemablend.com##^script[id="gpt-api-script"]
-www.cinemablend.com##div[id="preemptive-1"]
+www.cinemablend.com##div[id="leaderboard-ad"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.cinemablend.com##script[id="gpt-api-script"]:remove()
+www.cinemablend.com##div[id="preemptive-1"]:remove()
 ||pailridarm.com^*
 ||nunailsum.com^*
 ||ddmax20.xyz^*
@@ -26912,10 +26892,10 @@ www.wsgf.org##div[id^="block-google-admanager"]
 ||interstitial-07.com^*
 ||omchanseyr.com^*
 ||capsfogpeck.com^*
-nbyts.online##div[id^="div-gpt-ad"]
+nbyts.online##div[id^="div-gpt-ad"]:remove()
 nbyts.online##^script:has-text(googletag)
-nbyts.online##div[id="adb_detected"]
-nbyts.online##input[id="ab"]
+nbyts.online##div[id="adb_detected"]:remove()
+nbyts.online##input[id="ab"]:remove()
 ||trainspersuasiveknitting.com^*
 ||maimeehu.com^*
 ||rr.tracker.mobiletracking.ru^*
@@ -26965,8 +26945,9 @@ hevcbay.com##^script:has-text(decodeURIComponent)
 ||klx.masterchurrascaria.com.br/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||emotersjervina.com^*
 ||boasstylijoked.com^*
-www.ovagames.com##a[rel="nofollow"]
-www.ovagames.com##^script[id="magnific_popup-js"]
+www.ovagames.com##a[rel="nofollow"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.ovagames.com##script[id="magnific_popup-js"]:remove()
 ||www.ovagames.com/wp-content/themes/eGamer/includes/page_templates/js/magnific_popup/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||popbounty.com/serve.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||popbounty.com^*
@@ -27004,9 +26985,10 @@ cutx.me##div[class="alert alert-danger"]
 cutx.me##+js(abort-on-property-read, cpmstar_pid)
 cutx.me##+js(abort-on-property-write, cpmstar_pid)
 cutx.me##^script:has-text(cpmstar_)
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+cutx.me##script[data-zone-domain="https://stimtavy.net"]:remove()
 !||asccdn.com/script/suv4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||asccdn.com^*
-cutx.me##^script[data-zone-domain="https://stimtavy.net"]
 ||network-shield.com^*
 ||upsidecopiedcraft.com^*
 androidapksdl.com##ins[class="adsbygoogle"]
@@ -27090,7 +27072,8 @@ www.nulled-scripts.info##div[id="banner-advert-container"]
 www.nulled-scripts.info##div[class="ad-inserter infolinks-ad"]
 www.nulled-scripts.info##img[id="adsense"]
 www.nulled-scripts.info##img[id="ai-adb-adnxs"]
-www.nulled-scripts.info##^script[id^="ai-adb-"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.nulled-scripts.info##script[id^="ai-adb-"]:remove()
 !www.nulled-scripts.info##^script:has-text(ai_adb_active)
 www.nulled-scripts.info##^script:has-text(ai_adb_)
 www.nulled-scripts.info##^script:has-text(ai-adb-)
@@ -27147,8 +27130,9 @@ s0ft4pc.com##+js(abort-on-property-read, atOptions)
 s0ft4pc.com##+js(abort-on-property-write, atOptions)
 s0ft4pc.com##^script:has-text(atOptions)
 s0ft4pc.com##^script:has-text(DMCA)
-codingshiksha.com##^script[data-ezscrex="false"]
-codingshiksha.com##style[id="admania-style-inline-css"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+codingshiksha.com##script[data-ezscrex="false"]:remove()
+codingshiksha.com##style[id="admania-style-inline-css"]:remove()
 !codingshiksha.com##div[class^="admania-"]
 !codingshiksha.com##div[class="admania-sitecontainer"]
 codingshiksha.com##header[class^="admania-"]
@@ -27263,11 +27247,11 @@ krembol.ga##+js(set-constant, logged_impression, true)
 ||onesaimdew.com^*
 www.westerndigital.com##div[id="truste-consent-content"]
 ||privatedownload258.club^*
-stfly.me##div[class="banner banner-336x280"]
+stfly.me##div[class="banner banner-336x280"]:remove()
 stfly.me###go-submit:remove-attr(disabled)
 ||stfly.me/links/popad$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-stfly.me##input[name="pop_ad"]
-stfly.me##div[class="ad-banner"]
+stfly.me##input[name="pop_ad"]:remove()
+stfly.me##div[class="ad-banner"]:remove()
 ||stfly.me/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||kiynew.com^*
 ||www.gadgethacks.com/ajax/checkforhpupdates/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -27353,9 +27337,10 @@ drivers.softpedia.com##div[class*="ad adhc ad-728x90"]
 drivers.softpedia.com##div[class*="ad adwblue ad-"]
 uploadfree.info###at-btn-download:remove-attr(disabled)
 ||uploadfree.info/assets/js/download.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-apkmaza.net##div[id="banner-advert-container"]
-apkmaza.net##img[id="ai-adb-adnxs"]
-apkmaza.net##^script[id="ai-adb-mn"]
+apkmaza.net##div[id="banner-advert-container"]:remove()
+apkmaza.net##img[id="ai-adb-adnxs"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+apkmaza.net##script[id="ai-adb-mn"]:remove()
 ||apkmaza.net/wp-content/plugins/ad-inserter/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 apkmaza.net##^script:has-text(ai_adb_)
 !apkmaza.net##+js(set-constant, ai_adb_active, 0)
@@ -27369,7 +27354,7 @@ upload.ac##button[id="downloadBtnClick"]
 upload.ac##button[id="downloadbtn"]:style(display: block !important;)
 upload.ac##[id="downloadbtn"]:style(display: block !important;)
 upload.ac##+js(remove-attr.js, checked, #chkIsAdd, stay)
-upload.ac##input[id="addLinkBtn"]
+upload.ac##input[id="addLinkBtn"]:remove()
 !upload.ac##+js(set-constant, document.querySelector("#addLinkBtn").value, "")
 upload.ac##+js(set-attr, #addLinkBtn, value, '')
 !upload.ac###addLinkBtn:remove-attr(value)
@@ -27388,10 +27373,11 @@ z3x-team.com##section[class="cookie-bottom"]
 !||www.techeligible.com/wp-content/uploads/siteground-optimizer-assets/mobmenujs.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.techeligible.com/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-js-bc5941b8d163f6f7ddf4bb8ee746cc76.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping !blocks images in addition to the context menu
 !www.techeligible.com##+js(aopr, advanced_ads_ready) !prevents all images from loading
-www.techeligible.com##^script[id="advanced-ads-advanced-js-js-extra"]
-www.techeligible.com##^script[id="wpcp_css_disable_selection"]
-www.techeligible.com##^script[data-ad-client]
-www.techeligible.com##ins[class="adsbygoogle"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.techeligible.com##script[id="advanced-ads-advanced-js-js-extra"]:remove()
+www.techeligible.com##script[id="wpcp_css_disable_selection"]:remove()
+www.techeligible.com##script[data-ad-client]:remove()
+www.techeligible.com##ins[class="adsbygoogle"]:remove()
 www.techeligible.com##^script:has-text(adsbygoogle)
 !prevents context menu disabling
 www.techeligible.com##+js(aopr, document.oncontextmenu)
@@ -27406,13 +27392,14 @@ www.4gapn.com##amp-user-notification[id="amp-user-notification1"]
 ||watch-video.net^*
 ||osxdaily.com/xmlrpc.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.osxdaily.com/wp-content/plugins/cookie-notice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!osxdaily.com##^script[id="cookie-notice-front-js-extra"]
-osxdaily.com##^script[id^="cookie-notice-front-js"]
-osxdaily.com##ins[class="adsbygoogle"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+!osxdaily.com##script[id="cookie-notice-front-js-extra"]:remove()
+osxdaily.com##script[id^="cookie-notice-front-js"]:remove()
+osxdaily.com##ins[class="adsbygoogle"]:remove()
 osxdaily.com##+js(aopr, adsbygoogle)
 osxdaily.com##+js(aopw, adsbygoogle)
-osxdaily.com##div[id="cookie-notice"]
-osxdaily.com##div[id="bsap_1278263"]
+osxdaily.com##div[id="cookie-notice"]:remove()
+osxdaily.com##div[id="bsap_1278263"]:remove()
 ||tags.expo9.exponential.com^*
 www.rcrwireless.com##div[id="branda-cookie-notice"]
 www.rcrwireless.com##div[class="cookie-notice-container"]
@@ -27441,9 +27428,9 @@ dailyuploads.net##+js(abort-on-property-read, _Hasync)
 dailyuploads.net##+js(abort-on-property-write, _Hasync)
 dailyuploads.net##+js(abort-on-property-read, _gaq)
 dailyuploads.net##+js(abort-on-property-write, _gaq)
-dailyuploads.net##.ziggy_763505
-dailyuploads.net##input[type="hidden"][id="addLinkBtn"][value="#"][class="sufyan"]
-dailyuploads.net##input[value^="Download From Server"]
+dailyuploads.net##.ziggy_763505:remove()
+dailyuploads.net##input[type="hidden"][id="addLinkBtn"][value="#"][class="sufyan"]:remove()
+dailyuploads.net##input[value^="Download From Server"]:remove()
 dailyuploads.net##^script:has-text(.hide)
 dailyuploads.net##^script:has-text(adsbygoogle)
 dailyuploads.net##^script:has-text(player_ads)
@@ -27455,10 +27442,9 @@ dailyuploads.net##^script:has-text(player_start)
 ||dailyuploads.net/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dailyuploads.net/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !dailyuploads.net##button[id="downloadBtnClick"] !Removed since the script to hide this button is disabled.
-dailyuploads.net##button[id="downloadBtnClick"]
 dailyuploads.net##button[id="downloadBtnClick"]:remove()
-dailyuploads.net##div[id="addLinkBtn"]
-dailyuploads.net##input[id="chkIsAdd"]
+dailyuploads.net##div[id="addLinkBtn"]:remove()
+dailyuploads.net##input[id="chkIsAdd"]:remove()
 dailyuploads.net##+js(remove-attr.js, checked, #chkIsAdd, stay)
 dailyuploads.net##^script:has-text(#downloadBtnClickOrignal)
 dailyuploads.net##^script:has-text(#downloadBtnClick)
@@ -27472,13 +27458,14 @@ outlook.live.com##span[class="N3k7EN5vRGTrONWBPg250"]
 zamunda.net##div[class^="gdprcookie"]
 ||advertere.zamunda.net^*
 ||o.actio.systems/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.programmers-books.com##^script[id='adunblocker-js-extra']
-www.programmers-books.com##^script[data-rocketlazyloadscript]
-www.programmers-books.com##ins[class="adsbygoogle"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.programmers-books.com##script[id='adunblocker-js-extra']:remove()
+www.programmers-books.com##script[data-rocketlazyloadscript]:remove()
+www.programmers-books.com##ins[class="adsbygoogle"]:remove()
 www.programmers-books.com##^script:has-text(adsbygoogle)
 ||www.programmers-books.com/wp-content/plugins/cookie-notice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.programmers-books.com##div[id="cookie-notice"]
-www.programmers-books.com##div[id="bvcdksg-blanket"]
+www.programmers-books.com##div[id="cookie-notice"]:remove()
+www.programmers-books.com##div[id="bvcdksg-blanket"]:remove()
 !||www.programmers-books.com/wp-content/cache/min/1/wp-content/uploads/bvcdksg-7e87d80a9f74c7ae659b23efd96f778b.css* !contains css to disable scrolling and adblock overlay
 ||www.programmers-books.com/wp-content/cache/min/1/wp-content/uploads/bvcdksg-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||player-telemetry.vimeo.com/player-events/log/partial$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -27486,8 +27473,6 @@ www.programmers-books.com##div[id="bvcdksg-blanket"]
 ||ads.golem.de^*
 ||cilcountee.top^*
 ||ssaffortyya.club^*
-tusfiles.com##button[id="btn_download"]:style(display:block !important;)
-tusfiles.com###btn_download:remove-attr(disabled)
 userscloud.com###btn_download:remove-attr(disabled)
 userscloud.com##button[id="btn_download"]:style(display:block !important;)
 userscloud.com##iframe[style="display: none;"]:remove()
@@ -27706,8 +27691,9 @@ www.idownloadblog.com##span[class*="ezoic-ad"]
 www.idownloadblog.com##span[class*="adtester-container"]
 !www.idownloadblog.com##span[id="ezoic-pub-ad-placeholder-100"]
 www.idownloadblog.com##span[id^="ezoic-pub-ad"]
-myicloud.info##div[id^="eu-cookie-law"]
-myicloud.info##^script[id="eu-cookie-law-script-js"]
+myicloud.info##div[id^="eu-cookie-law"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+myicloud.info##script[id="eu-cookie-law-script-js"]:remove()
 !||myicloud.info/wp-content/plugins/wp-advertize-it/javascript/wp-advertize-it.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||myicloud.info/wp-content/plugins/wp-advertize-it/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||c0.wp.com/p/jetpack/9.5/_inc/build/widgets/eu-cookie-law/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -27924,7 +27910,8 @@ online-fix.me##^script:has-text(document.createElement)
 online-fix.me##^script:has-text(/quote/i)
 !online-fix.me##^script:has-text(/timer\(\)/i)
 !online-fix.me##^script:has-text(data:text/javascript;base64) !won't work since script is decoded before being run.
-online-fix.me##^script[src^="data:text/javascript;base64"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+online-fix.me##script[src^="data:text/javascript;base64"]:remove()
 online-fix.me##+js(addEventListener-defuser, /DOMContentLoaded/i)
 online-fix.me##+js(abort-on-property-read, window.K3)
 online-fix.me##+js(abort-on-property-write, window.K3)
@@ -27987,8 +27974,9 @@ www.thewatchcartoononline.tv##+js(abort-on-property-write, cpmstar_siteskin_sett
 www.thewatchcartoononline.tv##+js(abort-on-property-read, cpmstar_rnd)
 www.thewatchcartoononline.tv##+js(abort-on-property-write, cpmstar_rnd)
 www.thewatchcartoononline.tv##+js(set-constant, isAdBlockActive, false)
-www.thewatchcartoononline.tv##div[class="adBanner ads.js"]
-www.thewatchcartoononline.tv##^script[src="ads.js"]
+www.thewatchcartoononline.tv##div[class="adBanner ads.js"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.thewatchcartoononline.tv##script[src="ads.js"]:remove()
 ||js.gumgum.com/services.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.thewatchcartoononline.tv/inc/embed/embed.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 no-kid-hungry.prezly.com##div[class="cookie-consent-bar"]
@@ -28007,9 +27995,10 @@ www.merriam-webster.com##div[id="fixed-ad-bottom"]
 www.merriam-webster.com##div[class*="mw-ad-slot-"]
 ||stats.merriam-webster.com^*
 ||telemetry.art19.com^*
-www.projects-software.com##div[class="cookie-box"]
-www.projects-software.com##^script[id="BorlabsCookieBoxWrap"]
-www.projects-software.com##div[class="BorlabsCookie"]
+www.projects-software.com##div[class="cookie-box"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.projects-software.com##script[id="BorlabsCookieBoxWrap"]:remove()
+www.projects-software.com##div[class="BorlabsCookie"]:remove()
 www.chip.de##^script:has-text(/pushAdTag/i)
 www.chip.de##^script:has-text(/getAdTag/i)
 www.chip.de##svg:style(overflow: scroll !important; overflow-y: scroll !important;)
@@ -28097,8 +28086,8 @@ www.gry-online.pl###baner-inner
 abandonwaregames.net##a[href*="/track.wg-aff.com/"]
 ||www.sordum.org/wp-content/plugins/cookie-notice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fireads.org/storage/banners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-skidrowcodex.co##+js(nowoif, !/skidrowcodex\.co/i)
-www.skidrowcodex.net##+js(nowoif, !/skidrowcodex\.net/i)
+skidrowcodex.co##+js(no-window-open-if, !/skidrowcodex\.co/i)
+www.skidrowcodex.net##+js(no-window-open-if, !/skidrowcodex\.net/i)
 ||lialiobrit.tk^*
 ||lightningprefacegrant.com^*
 ||salutationcheerlessdemote.com^*
@@ -28120,10 +28109,10 @@ intoupload.net##+js(set-constant, remaining, 0)
 intoupload.net##+js(set-constant, timeout, 0)
 intoupload.net##+js(set-constant, tick, 0)
 intoupload.net##button[id="downloadBtnClick"]:style(display: none;)
-intoupload.net##button[id="downloadBtnClick"]
+intoupload.net##button[id="downloadBtnClick"]:remove()
 intoupload.net##button[id="downloadbtn"]:style(display: block !important; visibility: visible !important;)
 intoupload.net##+js(set-attr, #adblock_detected, value, 0)
-intoupload.net##input[id="addLinkBtn"]
+intoupload.net##input[id="addLinkBtn"]:remove()
 intoupload.net##+js(set-attr, ##addLinkBtn, value, "")
 !intoupload.net##+js(trusted-set-constant, document.querySelector("#downloadBtnClick").onclick, "$('#myDownloadForm').submit();")
 !intoupload.net##+js(saa, onclick, $('#myDownloadForm').submit();, #downloadBtnClick)
@@ -28152,10 +28141,11 @@ intoupload.net##div[class="checkbox checkbox-info off"]:style(display: none; vis
 ||dyncdn.me/static/20/js/showads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dyncdn.me/static/20/js/expla95.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 rarbg.to##+js(set-constant, abbz, false)
-code-boxx.com##span[class*="ezoic-ad"]
-!code-boxx.com##span[class^="ezmob-footer"]
-code-boxx.com##*[class^="ezmob-footer"]
-code-boxx.com##^script[data-ezscrex]
+code-boxx.com##span[class*="ezoic-ad"]:remove()
+!code-boxx.com##span[class^="ezmob-footer"]:remove()
+code-boxx.com##*[class^="ezmob-footer"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+code-boxx.com##script[data-ezscrex]:remove()
 code-boxx.com##+js(abort-on-property-read, __ez)
 code-boxx.com##+js(abort-on-property-write, __ez)
 code-boxx.com##+js(abort-on-property-read, gads)
@@ -28163,7 +28153,7 @@ code-boxx.com##+js(abort-on-property-write, gads)
 code-boxx.com##span[id^="ezoic-pub-ad"]
 ||code-boxx.com/porpoiseant/banger.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||hoowooze.net^*
-ytoffline.net##+js(nowoif, !/googlevideo\.com|ytoffline\.net|youtube\.com/i)
+ytoffline.net##+js(no-window-open-if, !/googlevideo\.com|ytoffline\.net|youtube\.com/i)
 !my.syncplicity.com##+js(remove-class, /disable/i, .upload, stay)
 my.syncplicity.com##+js(remove-class, /disable/i, , stay)
 www.leawo.org##div[id^="ad_box"]
@@ -28252,10 +28242,10 @@ bluemediafiles.com##div[id="idModal"]
 bluemediafiles.com##div[id="ads-left"]
 bluemediafiles.com##div[id="ads-right"]
 bluemediafiles.com##^script:has-text(window.BB_)
-!bluemediafiles.com##+js(nowoif, , , log)
-bluemediafiles.com##+js(nowoif, /tyeatment\.biz/i)
-bluemediafiles.com##+js(nowoif, /apsstoure\.biz/i)
-bluemediafiles.com##+js(nowoif, !/bluemediafiles\.com/i)
+!bluemediafiles.com##+js(no-window-open-if, , , log)
+bluemediafiles.com##+js(no-window-open-if, /tyeatment\.biz/i)
+bluemediafiles.com##+js(no-window-open-if, /apsstoure\.biz/i)
+bluemediafiles.com##+js(no-window-open-if, !/bluemediafiles\.com/i)
 ||click.advertnative.com^*
 !||network.eonads.com/adserver/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.lxhkqjqpswhg.com^*
@@ -28278,9 +28268,9 @@ tii.ai##div[id="ad-banner"]
 !tii.ai##+js(set-constant, go_popup, null)
 !tii.ai##^script:has-text(/checkAdblockUser\(\)/i)
 !tii.ai##+js(set-constant, e, "")
-tii.ai##+js(nowoif, !/tii\.ai/i)
-!tii.ai##+js(nostif.js, /checkAdblockUser/i)
-tii.ai##+js(nostif.js, /^/, 1000)
+tii.ai##+js(no-window-open-if, !/tii\.ai/i)
+!tii.ai##+js(nostif, /checkAdblockUser/i)
+tii.ai##+js(nostif, /^/, 1000)
 ||geniusonclick.com^*
 ||hostingcloud.racing^*
 ||www.hostingcloud.racing^*
@@ -28374,12 +28364,14 @@ linkspremium.download##div[aria-label="cookieconsent"]
 ||jetfilmizle.live/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.adbetnetwork.com^*
 ||sporttagz.com^*
-cbox.turkdown.com##^script[src="advertisement.js"]
-cbox.turkdown.com##div[id="986qPMIlsmuWWBTCZXEeq"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+cbox.turkdown.com##script[src="advertisement.js"]:remove()
+cbox.turkdown.com##div[id="986qPMIlsmuWWBTCZXEeq"]:remove()
 bcvc.live##div[class*="adflex-"]
 bcvc.live##div[class="adflexbox"]
 bcvc.live##img[class*="adflex-b"]
-!bcvc.live##^script[src*="/punosy.best/"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+!bcvc.live##script[src*="/punosy.best/"]:remove()
 !||punosy.best/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tny.so/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 tny.so##div[class="ad-banner"]
@@ -28398,7 +28390,8 @@ tny.so##div[class="ad-banner"]
 ||inscriptionothernarcotic.com^*
 ||www.ustxsntseyhwsx.com^*
 ||ustxsntseyhwsx.com^*
-tny.so##^script[src$="/a.js"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+tny.so##script[src$="/a.js"]:remove()
 ||onsideratio.fun^*
 ||arguerepetition.com^*
 ||proclaimsubjected.com^*
@@ -28416,10 +28409,11 @@ noticiasesports.live##div[class*="eacc-widget-"]
 ||adshort.live/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s3.amazonaws.com/009a944b59fcf4a419d1c9f02e55a39d1bfe4d935824d03fb53ca9c78d7/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||pingit.im/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-noticiasesports.live###adb-enabled
+noticiasesports.live###adb-enabled:remove()
 noticiasesports.live##div[id="adb-not-enabled"]:style(display: block !important;)
-!noticiasesports.live##head > script:nth-child(2)
-noticiasesports.live##^script[src*="/ads.adshort.media/"]
+!noticiasesports.live##head > script:nth-child(2):remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+noticiasesports.live##script[src*="/ads.adshort.media/"]:remove()
 noticiasesports.live##+js(set-constant, window.adblockDetector, false)
 ||vignerez.net^*
 ||forzubatr.com^*
@@ -28466,7 +28460,8 @@ www.couponxoo.com##+js(abort-on-property-write, window.googletag)
 ||ukslphcgs.com^*
 ||discountbyte.xyz^*
 ||script.4dex.io/adagio.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-sharemods.com##^script[id="cookieinfo"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+sharemods.com##script[id="cookieinfo"]:remove()
 sharemods.com##+js(abort-on-property-read, window.googletag)
 sharemods.com##+js(abort-on-property-write, window.googletag)
 sharemods.com##+js(remove-attr.js, disabled, .downloadbtn, stay)
@@ -28600,7 +28595,8 @@ nullphpscript.com##+js(aopw, document.oncontextmenu)
 nullphpscript.com##+js(set-constant, vjiezwuqamlbgxo, null)
 ||nullphpscript.com/wp-content/plugins/npsblocker/js/ads.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 nullphpscript.com##div[class*="wp-gqdxya-kqivb-"]
-nullphpscript.com##^script[src*="/pagead2.googlesyndication.com/"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+nullphpscript.com##script[src*="/pagead2.googlesyndication.com/"]:remove()
 nullphpscript.com##*:style(-webkit-filter: blur(0px) !important; filter: blur(0px) !important;)
 nullphpscript.com##^script:has-text(/AdBlocker/i)
 www.cloudshare.com##div[id="cookie-notice"]
@@ -28631,14 +28627,15 @@ www.europeup.com##+js(set-attr, #adblock_detected, value, 0)
 !www.europeup.com###adblock_detected:remove-attr(value)
 gtaforums.com##div[id="elGuestTerms"]
 ||cdn.iubenda.com/cookie_solution/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.snopes.com##^script[id="ads-js"]
-www.snopes.com##div[class*="needsclick"][formtype="POPUP"]
-www.snopes.com##div[class*="smg-zone-widget-ads-placement"]
-www.snopes.com##div[data-ad-placement-id]
-www.techiedelight.com##section[class*="widget_eu_cookie_law_widget"]
-www.techiedelight.com##div[id="eu-cookie-law"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.snopes.com##script[id="ads-js"]:remove()
+www.snopes.com##div[class*="needsclick"][formtype="POPUP"]:remove()
+www.snopes.com##div[class*="smg-zone-widget-ads-placement"]:remove()
+www.snopes.com##div[data-ad-placement-id]:remove()
+www.techiedelight.com##section[class*="widget_eu_cookie_law_widget"]:remove()
+www.techiedelight.com##div[id="eu-cookie-law"]:remove()
 www.businesswire.com##div[id="onetrust-banner-sdk"]
-www.venea.net##ins[class="adsbygoogle"]
+www.venea.net##ins[class="adsbygoogle"]:remove()
 ||8779.BODIS.com^*
 ||c.trafficcertify.com^*
 ||majorgeeks.com/images/mg/160.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -28672,17 +28669,19 @@ www.inputmag.com##iframe[style="display: none"]
 ||selfishsnake.com^$3p
 www.varonis.com##div[id="cookie_consent_container"]
 ||www.varonis.com/vanalytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.foxbusiness.com##^script[src*="/bat.bing.com/"]
-www.foxbusiness.com##div[data-banner-type="ccpa"]
-www.foxbusiness.com##^script[src*="/static.foxnews.com/static/isa/app/lib/omtr_code.js"]
-www.foxbusiness.com##^script[src*="/s.yimg.com/dy/ads/"]
-www.foxbusiness.com##^script[src*="/ads.pubmatic.com/"]
-www.foxbusiness.com##^script[src*="/u.openx.net/"]
-www.foxbusiness.com##^script[src*="acdn.adnxs.com/"]
-en.cdprojektred.com##div[id="eu-cookie"]
+www.foxbusiness.com##div[data-banner-type="ccpa"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.foxbusiness.com##script[src*="/bat.bing.com/"]:remove()
+www.foxbusiness.com##script[src*="/static.foxnews.com/static/isa/app/lib/omtr_code.js"]:remove()
+www.foxbusiness.com##script[src*="/s.yimg.com/dy/ads/"]:remove()
+www.foxbusiness.com##script[src*="/ads.pubmatic.com/"]:remove()
+www.foxbusiness.com##script[src*="/u.openx.net/"]:remove()
+www.foxbusiness.com##script[src*="acdn.adnxs.com/"]:remove()
+en.cdprojektred.com##div[id="eu-cookie"]:remove()
 ||en.cdprojektred.com/wp-content/themes/evp-cdpr/js/js-cookie.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-speakingjs.com##div[id="adbox"]
-speakingjs.com##^script[id="_carbonads_js"]
+speakingjs.com##div[id="adbox"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+speakingjs.com##script[id="_carbonads_js"]:remove()
 ||www7.securybrowseapp.com^*
 ||securybrowseapp.com^*
 www.pcloud.com##div[class="cookie_consent_holder"]
@@ -28718,7 +28717,8 @@ revclouds.com##div[id="cookie-notice"]
 www.cbackup.com##div[class="ensureCookie"]
 syncthing.net##a[href*="/forum.syncthing.net/t/the-syncthing-foundation-stands-against-racism/"]
 syncthing.net##div[class*="alert"]:has-text(/racism/i)
-s0ft4pc.com##^script[data-ad-client]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+s0ft4pc.com##script[data-ad-client]:remove()
 s0ft4pc.com##+js(noeval)
 ||unspeakablepurebeings.com^*
 ||perceivefilthy.com^*
@@ -28831,8 +28831,9 @@ www.pngtosvg.com##div[class*="ezo_ad"]
 www.pngtosvg.com##*[class*="ezmob-footer"]
 www.pngtosvg.com##*[class*="ezoic-ad"]
 www.aconvert.com##div[id="cck-box"]
-svg-converter.com##div[id="catapult-cookie-bar"]
-svg-converter.com##^script[id^="cookie-consent-js"]
+svg-converter.com##div[id="catapult-cookie-bar"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+svg-converter.com##script[id^="cookie-consent-js"]:remove()
 ||svg-converter.com/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||svg-converter.com/wp-content/plugins/uk-cookie-consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 svg-converter.com##ins[class="adsbygoogle"]
@@ -28887,7 +28888,8 @@ www.tenorshare.net##div[id="gdprAgree"]
 www.imei-unlocker.com##div[class="cookiealert"]
 ||www.uhqpnhorurueku.com^*
 ||www.tywzyhfliwdbu.com^*
-romforandroid.com##^script[data-ad-client]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+romforandroid.com##script[data-ad-client]:remove()
 romforandroid.com##body:style(overflow: scroll !important;)
 ||ealthetime.biz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||herwisegim.fun^*
@@ -28900,7 +28902,8 @@ samsungfirmware.net##div[id="ezmobfooter"]
 samsungfirmware.net##span[class*="ezoic-ad"]
 samsungfirmware.net##+js(aopr, __ez)
 samsungfirmware.net##+js(aopw, __ez)
-!samsungfirmware.net##^script[data-ezscrex] blocks lazyload images
+!blocks lazyload images
+!samsungfirmware.net##script[data-ezscrex]:remove()
 samsungfirmware.net##+js(set-constant, secs, 0)
 www.droidviews.com##+js(aopr, __ez)
 www.droidviews.com##+js(aopw, __ez)
@@ -28965,13 +28968,15 @@ www.dummies.com##div[class="ads-sidebar"]
 !||get.s-onetag.com/bffe21a1-6bb8-4928-9449-7beadb468dae/tag.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||get.s-onetag.com^*
 ||www.dummies.com/wp-content/plugins/dummies-ads-manager/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.dummies.com##^script[id^="dummies-ads-manager-"]
-gsm.vpnwp.com##div[id="catapult-cookie-bar"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.dummies.com##script[id^="dummies-ads-manager-"]:remove()
+gsm.vpnwp.com##div[id="catapult-cookie-bar"]:remove()
 ||gsm.vpnwp.com/wp-content/cache/min/1/wp-content/plugins/uk-cookie-consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-gsm.vpnwp.com##div[class*="ytp-paid-content-"]
-www.softwarecrackguru.com##div[id="gourabblock"]
-www.softwarecrackguru.com##^script[data-ad-client]
-www.softwarecrackguru.com##ins[class="adsbygoogle"]
+gsm.vpnwp.com##div[class*="ytp-paid-content-"]:remove()
+www.softwarecrackguru.com##div[id="gourabblock"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.softwarecrackguru.com##script[data-ad-client]:remove()
+www.softwarecrackguru.com##ins[class="adsbygoogle"]:remove()
 ||cdn.staticaly.com/gist/pyarmeindia/*/gourabblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||glow-hostz.xyz^*
 ||ciid2servr.xyz^*
@@ -29010,15 +29015,16 @@ www.upload-4ever.com##+js(set-constant, tick, 0)
 www.upload-4ever.com##+js(nano-stb, /.?/, 500)
 ||s3.us-east-2.amazonaws.com/dexteritydownloads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||downloads24754.downflscloud.com^*
-androidmtk.in##div[id="eu-cookie-law"]
-androidmtk.in##aside[class*="widget_eu_cookie_law_widget"]
-androidmtk.in##^script[id="eu-cookie-law-script-js"]
+androidmtk.in##div[id="eu-cookie-law"]:remove()
+androidmtk.in##aside[class*="widget_eu_cookie_law_widget"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+androidmtk.in##script[id="eu-cookie-law-script-js"]:remove()
 ||c0.wp.com/p/jetpack/9.9/_inc/build/widgets/eu-cookie-law/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 androidmtk.in##+js(aopr, document.oncontextmenu)
 ||ribz-server.xyz^*
 ||fliedridgin.com^*
 ||yahoo.bannertrack.net^*
-veryfiles.com##ins[class^="bmadblock-"]
+veryfiles.com##ins[class^="bmadblock-"]:remove()
 veryfiles.com##+js(remove-attr, disabled, .downloadbtn, stay)
 veryfiles.com##+js(aopr, interstitialSlot)
 veryfiles.com##+js(aopw, interstitialSlot)
@@ -29030,15 +29036,15 @@ veryfiles.com##+js(aopr, _0x57e0)
 veryfiles.com##+js(aopw, _0x57e0)
 veryfiles.com##+js(aopr, XrhwLPllmYD)
 veryfiles.com##+js(aopw, XrhwLPllmYD)
-veryfiles.com##input[id="adblock_detected"]
+veryfiles.com##input[id="adblock_detected"]:remove()
 veryfiles.com##^script:has-text(/adblock/i)
-veryfiles.com##a[href*="/www.passtechusa.com/"]
-veryfiles.com##div[id="ads-left"]
-veryfiles.com##div[id="ads-right"]
-veryfiles.com##iframe[data-id^="veryfiles.com_"]
-veryfiles.com##div[id*="ScriptRootC"]
-veryfiles.com##meta[name="verify-admitad"]
-veryfiles.com##meta[name="propeller"]
+veryfiles.com##a[href*="/www.passtechusa.com/"]:remove()
+veryfiles.com##div[id="ads-left"]:remove()
+veryfiles.com##div[id="ads-right"]:remove()
+veryfiles.com##iframe[data-id^="veryfiles.com_"]:remove()
+veryfiles.com##div[id*="ScriptRootC"]:remove()
+veryfiles.com##meta[name="verify-admitad"]:remove()
+veryfiles.com##meta[name="propeller"]:remove()
 ||yasni.adclixx.net^*
 ||yasni.adtrackers.net^*
 ||torrentz.adclixx.net^*
@@ -29070,11 +29076,12 @@ dlapk4all.com##a[href*="/mobileoffers-du-download.com/"]
 ||play.google.com/_/PlayStoreUi/cspreport$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 apkzz.com##ins[class="adsbygoogle"]
 ||smartproxy.com/wp-content/plugins/uk-cookie-consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-smartproxy.com##div[id="catapult-cookie-bar"]
-smartproxy.com##^script[id^="cookie-consent-js"]
-www.guidingtech.com##ins[class="adsbygoogle"]
-www.guidingtech.com##div[class="ad-centered"]
-www.guidingtech.com##div[class*="detail-ad"]
+smartproxy.com##div[id="catapult-cookie-bar"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+smartproxy.com##script[id^="cookie-consent-js"]:remove()
+www.guidingtech.com##ins[class="adsbygoogle"]:remove()
+www.guidingtech.com##div[class="ad-centered"]:remove()
+www.guidingtech.com##div[class*="detail-ad"]:remove()
 ||dlupload.com/adbanner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||verifychocolate.com^*
 ||latentcreeper.com^*
@@ -29096,17 +29103,19 @@ gsmatoztool.com##ins[class="adsbygoogle"]
 www.the-sun.com##div[class*="advert-wrapper"]
 www.the-sun.com##div[class*="dfp-ad"]
 ||ads.the-sun.com^*
-divyanet.com##div[id="customad"]
-divyanet.com##div[id="above-the-fold-ad"]
-divyanet.com##ins[class="adsbygoogle"]
-divyanet.com##^script[src^="data:text/javascript;base64,"]
+divyanet.com##div[id="customad"]:remove()
+divyanet.com##div[id="above-the-fold-ad"]:remove()
+divyanet.com##ins[class="adsbygoogle"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+divyanet.com##script[src^="data:text/javascript;base64,"]:remove()
 ||cundumbagroom.com^*
-www.getdroidtips.com##div[class="code-block-label"]:has-text(/advertisements/i)
+www.getdroidtips.com##div[class="code-block-label"]:has-text(/advertisements/i):remove()
 samsungcombinationfile.com##+js(aopr, document.oncontextmenu)
 samsungcombinationfile.com##+js(aopr, document.onselectstart)
 samsungcombinationfile.com##+js(aopr, document.onmousedown)
-samsungcombinationfile.com##ins[class="adsbygoogle"]
-!samsungcombinationfile.com##^script[id='rocket-preload-links-js-after']
+samsungcombinationfile.com##ins[class="adsbygoogle"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+!samsungcombinationfile.com##script[id='rocket-preload-links-js-after']:remove()
 !samsungcombinationfile.com##+js(aeld, /^(?:copy|test|mouseout|mousedown|touchstart|selectstart|dragstart)$/)
 odindownloader.com##+js(aopr, document.oncontextmenu)
 odindownloader.com##+js(aopr, document.onselectstart)
@@ -29122,11 +29131,12 @@ www.dsmedia24.com##+js(aopr, document.onselectstart)
 ||ceesty.com/bundles/smeweb/img/tracking-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||exchange.mediavine.com^*
 ||scripts.mediavine.com/tags/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.wipelock.com##^script[id="mv-script-wrapper-js"]
-www.wipelock.com##div[class="mv-ad-box"]
-www.wipelock.com[class*="adunitwrapper"]
-www.wipelock.com[class="adunitlabel"]
-www.imeione.com##div[id="COOKIELAW"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.wipelock.com##script[id="mv-script-wrapper-js"]:remove()
+www.wipelock.com##div[class="mv-ad-box"]:remove()
+www.wipelock.com[class*="adunitwrapper"]:remove()
+www.wipelock.com[class="adunitlabel"]:remove()
+www.imeione.com##div[id="COOKIELAW"]:remove()
 ||thejobandl.biz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 hurirk.net##+js(aopr, _0x3f76)
 hurirk.net##+js(aopw, _0x3f76)
@@ -29256,27 +29266,29 @@ cellularnews.com##div[id^="floating_ads_"]
 cellularnews.com##div[class*="responsive-ad"]
 cellularnews.com##.responsive-thin-ad-wrapper
 ||msoplease.biz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.phonemore.com##div[class="gdpr"]
+www.phonemore.com##div[class="gdpr"]:remove()
 www.androidweblog.com##+js(abort-on-property-read, __ez)
 www.androidweblog.com##+js(abort-on-property-write, __ez)
 www.androidweblog.com##+js(abort-on-property-read, window.ezogtk)
 www.androidweblog.com##+js(abort-on-property-write, window.ezogtk)
-www.androidweblog.com##^script[data-ezscrex]
-www.androidweblog.com##span[class="ezoic-adpicker-ad"]
-www.androidweblog.com##span[class*="ezoic-ad"]
-www.androidweblog.com##span[class*="adtester-container"]
-www.androidweblog.com##span[class*="adsbygoogle"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.androidweblog.com##script[data-ezscrex]:remove()
+www.androidweblog.com##span[class="ezoic-adpicker-ad"]:remove()
+www.androidweblog.com##span[class*="ezoic-ad"]:remove()
+www.androidweblog.com##span[class*="adtester-container"]:remove()
+www.androidweblog.com##span[class*="adsbygoogle"]:remove()
 gsmcracklink.blogspot.com##button[class="button1 button2  buttonPress-38"]
 zcpa.us##div[id="cookie-pop"]
 zcpa.us##div[class="ad-banner"]
 ||zcpa.us/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||iptautup.com^*
-zcpa.us##^script[data-zone-domain="https://iptautup.com"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+zcpa.us##script[data-zone-domain="https://iptautup.com"]:remove()
 !zcpa.us##+js(set-constant, counter_start_object, {}, stay)
-!zcpa.us##+js(nostif.js, /checkAdblockUser/i)
-zcpa.us##+js(nostif.js, checkAdblockUser())
+!zcpa.us##+js(nostif.js, /checkAdblockUser/)
+zcpa.us##+js(nostif.js, /checkAdblockUser\(\)/)
 zcpa.us##+js(nostif.js, /^/, 1000)
-zcpa.us##form[id="go-popup"]
+zcpa.us##form[id="go-popup"]:remove()
 zcpa.us##+js(remove-class, disabled, .btn-success, stay)
 zcpa.us##+js(remove-class, hidden, #go-submit, stay)
 ||zcpa.us/whugesto.net/afu.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -29291,13 +29303,14 @@ www.wish.com##div[id="consent_blackbar"]
 www.wish.com##div[id="teconsent"]
 ||static.securedtouch.com/sdk/st-ping-1.1.0p.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.securedtouch.com/sdk/pong.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-halabtech.com##*[class*="ezoic-ad"]
-halabtech.com##span[class*="adtester-container"]
-halabtech.com##span[class*="ezmob-footer"]
+halabtech.com##*[class*="ezoic-ad"]:remove()
+halabtech.com##span[class*="adtester-container"]:remove()
+halabtech.com##span[class*="ezmob-footer"]:remove()
 halabtech.com##+js(aopr, advanced_ads_ready)
 halabtech.com##+js(aopw, advanced_ads_ready)
-halabtech.com##^script[id^="advanced-ads"]
-halabtech.com##^script[id^="advanced_ads"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+halabtech.com##script[id^="advanced-ads"]:remove()
+halabtech.com##script[id^="advanced_ads"]:remove()
 ||halabtech.com/wp-content/plugins/image-watermark/js/no-right-click.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||halabtech.com/wp-content/plugins/wp-content-copy-protection/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||halabtech.com/wp-content/plugins/advanced-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -29311,17 +29324,18 @@ phandroid.com##div[id^="cookie-law-info"]
 ||downloadsfreefile.com^*
 ||s3.us-east-2.amazonaws.com/startdllocations/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.gsmcrack.com##a[id="u5673122"]
-zeemalcrack.com##^script[id="wpcp_css_disable_selection"]
-zeemalcrack.com##^script[id="wpcp_disable_Right_Click"]
-zeemalcrack.com##^script[src^="data:text/javascript;base64"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+zeemalcrack.com##script[id="wpcp_css_disable_selection"]:remove()
+zeemalcrack.com##script[id="wpcp_disable_Right_Click"]:remove()
+zeemalcrack.com##script[src^="data:text/javascript;base64"]:remove()
 zeemalcrack.com##+js(aopr, document.oncontextmenu)
 zeemalcrack.com##+js(aopw, document.oncontextmenu)
 zeemalcrack.com##+js(aeld, /^(?:keydown|dragstart|click|contextmenu|mousedown|selectstart)$/)
 zeemalcrack.com##+js(set-constant, iscontenteditable, true, stay)
 zeemalcrack.com##^script:has-text(/wccp_free_iscontenteditable/i)
 ||zeemalcrack.com/wp-content/plugins/google-analytics-dashboard-for-wp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-zeemalcrack.com##button[name="continuebtn"]
-zeemalcrack.com##div[id="wpcp-error-message"]
+zeemalcrack.com##button[name="continuebtn"]:remove()
+zeemalcrack.com##div[id="wpcp-error-message"]:remove()
 zeemalcrack.com##*:style(-moz-user-select:text; -webkit-user-select:text; -webkit-touch-callout: text; -khtml-user-select: text; -ms-user-select: text; user-select: text;)
 ||nerexmen.xyz^*
 www.gsmfirmware.net##+js(aopr, _ezaq)
@@ -29334,13 +29348,15 @@ dl.gsmfirmware.net##+js(aopw, adsbygoogle)
 !dl.gsmfirmware.net##+js(aopw, t.fuckAdBlock)
 ||cdn.jsdelivr.net/gh/AsifKamboh-COM/tools@main/levelmaxblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.techoxygen.com##*:style(-moz-user-select:text; -webkit-user-select:text; -webkit-touch-callout: text; -khtml-user-select: text; -ms-user-select: text; user-select: text;)
-www.techoxygen.com##^script[id="wpcp_disable_selection"]
-www.techoxygen.com##^script[id="wpcp_disable_Right_Click"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+!www.techoxygen.com##script[id="wpcp_disable_selection"]:remove()
+!www.techoxygen.com##script[id="wpcp_disable_Right_Click"]:remove()
+www.techoxygen.com##script[id^="wpcp_disable_"]:remove()
 www.techoxygen.com##+js(aopr, _statcounter)
 www.techoxygen.com##+js(aopw, _statcounter)
 www.techoxygen.com##+js(remove-class, unselectable, ,)
-www.techoxygen.com##div[id^="quads-ad"]
-www.techoxygen.com##div[id="wpcp-error-message"]
+www.techoxygen.com##div[id^="quads-ad"]:remove()
+www.techoxygen.com##div[id="wpcp-error-message"]:remove()
 www.techoxygen.com##+js(aopr, document.onkeydown)
 www.techoxygen.com##+js(aopw, document.onkeydown)
 www.techoxygen.com##+js(aopr, document.onselectstart)
@@ -29373,7 +29389,7 @@ makemoneywithurl.com##div[id="hidden"] > form:nth-child(1) > div:nth-child(2):st
 ||lib.wtg-ads.com^*
 ||d3beefy8kd1pr7.cloudfront.net^*
 ||ysenidorre.biz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-tei.ai##div[id^="adtrue_tag_"]
+tei.ai##div[id^="adtrue_tag_"]:remove()
 ||waytogrow-d.openx.net^*
 ||www.gobrowse.net/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||nuclearads.com/display/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -29478,12 +29494,13 @@ filelox.com##+js(aopw, atOptions)
 uptocloud.co##div[id="gdpr-cookie-notice"]
 uptocloud.co##+js(aopr, _gaq)
 uptocloud.co##+js(aopw, _gaq)
-bowfile.com##div[class="adsbygoogle"]
-bowfile.com##div[class*="cookiealert"]
+bowfile.com##div[class="adsbygoogle"]:remove()
+bowfile.com##div[class*="cookiealert"]:remove()
 ||bowfile.com/themes/spirit/assets/frontend/js/cookiealert.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-bowfile.com##^script[data-ad-client]
-bowfile.com##div[id="popup1"]
-bowfile.com##div[id="adblockinfo"]
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+bowfile.com##script[data-ad-client]:remove()
+bowfile.com##div[id="popup1"]:remove()
+bowfile.com##div[id="adblockinfo"]:remove()
 bowfile.com##+js(remove-class, clear-adblock, , stay)
 bowfile.com##+js(set-constant, adblockEnabled, false, stay)
 bowfile.com##+js(aopr, adblockEnabled)
@@ -29502,9 +29519,10 @@ boustahe.com##div[class*="push-notice"]
 ||nativepu.sh^*
 !||cdn.adapex.io/hb/aaw.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.adapex.io^*
-!linkvertise.com##span[id="cookieconsent:desc"]
-linkvertise.com##div[aria-label="cookieconsent"]
-linkvertise.com##^script[id="tb_loader_script"]
+!linkvertise.com##span[id="cookieconsent:desc"]:remove()
+linkvertise.com##div[aria-label="cookieconsent"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+linkvertise.com##script[id="tb_loader_script"]:remove()
 ||linkvertise.com/assets/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 linkvertise.com##+js(aopr, isAdBlockActive)
 linkvertise.com##+js(aopw, isAdBlockActive)
@@ -29512,8 +29530,8 @@ linkvertise.com##+js(set-constant, isAdBlockActive, false, stay)
 linkvertise.com##^script:has-text(/checkForAdBlock/i)
 !linkvertise.com##^script:has-text(/adsense/i)
 linkvertise.com##+js(aeld, /^(?:lvAdblock)$/)
-!linkvertise.com##div[class*="ad-wrapper"]
-!linkvertise.com##div[class*="ad_box"]
+!linkvertise.com##div[class*="ad-wrapper"]:remove()
+!linkvertise.com##div[class*="ad_box"]:remove()
 ||publisher.linkvertise.com/api/v1/redirect/link/*/countdown_impression^*
 ||linkvertise.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||linkvertise.com/main-es2015.f453cfc680cd904a73c0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping !edit this script to prevent adblocking
@@ -29523,12 +29541,12 @@ linkvertise.com##+js(acs, onload, adsbygoogle)
 linkvertise.com##+js(aeld, load, nextFunction)
 linkvertise.com##+js(json-prune, data.meta.require_addon data.meta.require_captcha data.meta.require_notifications data.meta.require_og_ads data.meta.require_video data.meta.require_web)
 linkvertise.com##+js(nano-sib)
-linkvertise.*##lv-msnnewsfeed
-linkvertise.com##.cc-window
-||streamrail.net^$script,domain=linkvertise.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+linkvertise.*##lv-msnnewsfeed:remove()
+linkvertise.com##.cc-window:remove()
 ||linkvertise.net^$3p
+||streamrail.net^$script,domain=linkvertise.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! https://github.com/uBlockOrigin/uAssets/issues/6487
-www.techspot.com##div.paragraphAdinsert
+www.techspot.com##div.paragraphAdinsert:remove()
 nullpress.net##+js(set-constant, mdpUnGrabber, {})
 nullpress.net##+js(aopr, mdpUnGrabber)
 nullpress.net##+js(aopw, mdpUnGrabber)
@@ -29576,13 +29594,15 @@ www.mobile5tech.com##^script:has-text(/contextmenu/i)
 ||clk.rtpdn14.com^*
 ||hanner-blobal.com^*
 ||iencefortdhi.biz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.androidgsm.com##ins[class="adsbygoogle"]
-www.androidgsm.com##a[name^="ad-post-"]
+www.androidgsm.com##ins[class="adsbygoogle"]:remove()
+www.androidgsm.com##a[name^="ad-post-"]:remove()
 www.androidgsm.com##a[id="b1"]:style(display: inline-block !important;)
 www.androidgsm.com##a[id="b2"]:style(display: inline-block !important;)
 www.androidgsm.com##a[id="b3"]:style(display: inline-block !important;)
 www.androidgsm.com##^script:has-text(/antiblock/i)
-www.androidgsm.com##^script[data-ad-client]
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+www.androidgsm.com##script[data-ad-client]:remove()
+www.androidgsm.com##script[src="https://cdn.adf.ly/js/link-converter.js"]:remove()
 www.androidgsm.com##+js(aopr, pop_tag)
 www.androidgsm.com##+js(aopw, pop_tag)
 www.androidgsm.com##+js(aopr, puShown)
@@ -29590,7 +29610,6 @@ www.androidgsm.com##+js(aopw, puShown)
 www.androidgsm.com##+js(set-constant, puShown, true)
 www.androidgsm.com##+js(aopr, adfly_advert)
 www.androidgsm.com##+js(aopw, adfly_advert)
-www.androidgsm.com##^script[src="https://cdn.adf.ly/js/link-converter.js"]
 ||lowseelan.com^*
 ||aulteeby.net^*
 www.dl.avastudio.org##ins[class="adsbygoogle"]
@@ -29614,7 +29633,8 @@ www.phonearena.com##+js(aopr, abTestingId)
 www.phonearena.com##+js(aopw, abTestingId)
 ||s-cdn.phonearena.com/js/prebidjs/phones_adhesion_desktop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||phone-arena-d.openx.net^*
-xdarom.com##^script[id="mdp-deblocker-js-extra"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+xdarom.com##script[id="mdp-deblocker-js-extra"]:remove()
 xdarom.com##div[class^="mdp-deblocker-"]:remove()
 xdarom.com##ins[class="adsbygoogle"]:remove()
 xdarom.com##+js(set-constant, adsBlocked, falseFunc)
@@ -29638,24 +29658,26 @@ www.igorslab.de##div[id="cc-window"]:remove()
 business.vive.com##div[id="vive-cookie-notice"]:remove()
 snwritetool.com##+js(aeld, /^(?:contextmenu|dragstart|selectstart|mousedown|touchstart)$/i)
 snwritetool.com##+js(acs, document.oncontextmenu, document.onselectstart, document.onmousedown, document.ondragstart)
-www.androidinfotech.com##div[class*="ezmob-footer"]
-www.androidinfotech.com##[class*="ezo_ad"]
-www.androidinfotech.com##div[class*="ezoic-floating-"]
-www.androidinfotech.com##span[class="ezoic-adpicker-ad"]
-www.androidinfotech.com##span[class*="adtester-container"]
-www.androidinfotech.com##span[class="ez-report-ad-button"]
-www.androidinfotech.com##span[id^="ezoic-pub-ad-"]
-www.androidinfotech.com##^script[id^="ez-toc-js"]
-www.igorslab.de##button[class*="cmplz-blocked-content-notice"],[class*="cmplz-accept-marketing"]
+www.androidinfotech.com##div[class*="ezmob-footer"]:remove()
+www.androidinfotech.com##[class*="ezo_ad"]:remove()
+www.androidinfotech.com##div[class*="ezoic-floating-"]:remove()
+www.androidinfotech.com##span[class="ezoic-adpicker-ad"]:remove()
+www.androidinfotech.com##span[class*="adtester-container"]:remove()
+www.androidinfotech.com##span[class="ez-report-ad-button"]:remove()
+www.androidinfotech.com##span[id^="ezoic-pub-ad-"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+www.androidinfotech.com##script[id^="ez-toc-js"]:remove()
+www.igorslab.de##script[id="advanced-ads-sticky-footer-js-js"]:remove()
+www.igorslab.de##script[id^="advadsTracking"]:remove()
+www.igorslab.de##button[class*="cmplz-blocked-content-notice"]:remove()
+www.igorslab.de##button[class*="cmplz-accept-marketing"]:remove()
 !||servedbyadbutler.com/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||servedbyadbutler.com/adserve/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||servedbyadbutler.com^*
 ||js.srvtrck.com^*
-www.igorslab.de##^script[id="advanced-ads-sticky-footer-js-js"]
-www.igorslab.de##^script[id^="advadsTracking"]
 ||www.igorslab.de/wp-content/plugins/complianz-gdpr/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-apnews.com##div[id="div-gpt-ad"]
-apnews.com##div[id="onetrust-banner-sdk"]
+apnews.com##div[id="div-gpt-ad"]:remove()
+apnews.com##div[id="onetrust-banner-sdk"]:remove()
 www.androidcentral.com##section[class*="article-footer--taboola"]
 www.skidrowreloaded.com##+js(aeld, /mousedown/i)
 www.skidrowreloaded.com##+js(aeld, /click/i)
@@ -29673,7 +29695,8 @@ mobiprox.myviptuto.com##div[class="Ads-vip"]
 mobiprox.myviptuto.com##div[class*="ads-here"]
 mobiprox.myviptuto.com##div[class="inline-ad"]
 mobiprox.myviptuto.com##ins[class="adsbygoogle"]
-smallbusiness.chron.com##^script[id="adPositionManagerScriptTag"]
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+smallbusiness.chron.com##script[id="adPositionManagerScriptTag"]:remove()
 smallbusiness.chron.com##+js(aopr, _comscore)
 smallbusiness.chron.com##+js(aopw, _comscore)
 smallbusiness.chron.com##+js(aopr, DWH_COOKIE)
@@ -29969,8 +29992,10 @@ www.ubergizmo.com##div[class="ubergizmo-dfp-ad"]
 petapixel.com##.instream_ad
 www.ubergizmo.com##div[class="in_article_ad_wrapper"]
 www.ubergizmo.com##div[class*="ad_container"]
-apk-galaxy.site##div[id="cookie-notice"]
-apk-galaxy.site##^script[src="https://cdn.adf.ly/js/link-converter.js"]
+apk-galaxy.site##div[id="cookie-notice"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+apk-galaxy.site##script[src="https://cdn.adf.ly/js/link-converter.js"]:remove()
+techyneed.com##script[data-ad-client]:remove()
 techyneed.com##^script:has-text(/debugger;/):remove()
 techyneed.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
 techyneed.com##+js(acs, /^debugger;/)
@@ -29982,16 +30007,15 @@ techyneed.com##+js(aopr, adsbygoogle)
 techyneed.com##+js(aopw, adsbygoogle)
 techyneed.com##+js(set-constant, _0x3344, [])
 techyneed.com##div[id="alertmsg"]
-techyneed.com##iframe[data-aa]
+techyneed.com##iframe[data-aa]:remove()
 techyneed.com##+js(noeval)
-techyneed.com##^script[data-ad-client]
 jaanmusic.in,techyneed.com##+js(nosiif, _0x)
 jaanmusic.in##.adsbygoogle
 jaanmusic.in,techyneed.com##div[style="background:#ededed;"]
 jaanmusic.in,techyneed.com###galax2
-alfacast.net##div[id^="cookie-law-info"]
-alfacast.net##div[id="cliSettingsPopup"]
-apkxmods.com##ins[class="adsbygoogle"]
+alfacast.net##div[id^="cookie-law-info"]:remove()
+alfacast.net##div[id="cliSettingsPopup"]:remove()
+apkxmods.com##ins[class="adsbygoogle"]:remove()
 apkxmods.com##+js(aopr, adsbygoogle)
 ||redirectbuzz.club^*
 betacast.net##div[id^="cookie-law-info"]:remove()
@@ -30041,22 +30065,23 @@ www.bostonglobe.com##button[class*="continue_button"]:has-text(/Read full articl
 ||dc8xl0ndzn2cb.cloudfront.net^*
 ||d1zokzhal29fpg.cloudfront.net^*
 ||tags.rd.linksynergy.com^*
-www.verywellhealth.com##div[class*="mntl-gpt-adunit"]
-www.verywellhealth.com##div[class*="mntl-flexible-ad"]
-www.verywellhealth.com##div[class*="scads-"]
-www.goodhousekeeping.com##div[id="gpt-leaderboard-ad"]
-www.goodhousekeeping.com##div[class*="leaderboard-ad"]
-www.goodhousekeeping.com##div[class*="ad-container"]
-www.goodhousekeeping.com##div[class*="gpt-adslot"]
-www.goodhousekeeping.com##div[class*="breaker-ad"]
-www.goodhousekeeping.com##^script[id*="ad-breaker"]
-www.inquirer.com##div[class*="arcad"]
-www.inquirer.com##div[class*="arc-ad-wrapper"]
-www.greenevillesun.com##div[class*="tnt-ads"]
-www.greenevillesun.com##div[class*="dfp-ad"]
+www.verywellhealth.com##div[class*="mntl-gpt-adunit"]:remove()
+www.verywellhealth.com##div[class*="mntl-flexible-ad"]:remove()
+www.verywellhealth.com##div[class*="scads-"]:remove()
+www.goodhousekeeping.com##div[id="gpt-leaderboard-ad"]:remove()
+www.goodhousekeeping.com##div[class*="leaderboard-ad"]:remove()
+www.goodhousekeeping.com##div[class*="ad-container"]:remove()
+www.goodhousekeeping.com##div[class*="gpt-adslot"]:remove()
+www.goodhousekeeping.com##div[class*="breaker-ad"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+www.goodhousekeeping.com##script[id*="ad-breaker"]:remove()
+www.inquirer.com##div[class*="arcad"]:remove()
+www.inquirer.com##div[class*="arc-ad-wrapper"]:remove()
+www.greenevillesun.com##div[class*="tnt-ads"]:remove()
+www.greenevillesun.com##div[class*="dfp-ad"]:remove()
 www.tok001.com##html,body:style(overflow:auto !important;)
-www.linuxhospital.com##div[data-app="cookie_consent"]
-www.linuxhospital.com##div[class*="shareaholic-cookie-consent"]
+www.linuxhospital.com##div[data-app="cookie_consent"]:remove()
+www.linuxhospital.com##div[class*="shareaholic-cookie-consent"]:remove()
 exbulletin.com##+js(set-constant, ai_adb_active, 0, stay)
 exbulletin.com##+js(aopr, _ezaq)
 exbulletin.com##+js(aopw, _ezaq)
@@ -30605,7 +30630,7 @@ www.maketecheasier.com##div[class*="ad-slot"]
 !www.skidrowcodex.net##div[id="i9fnbsk"]
 ||blotcreepy.com^*
 ||yardperformedtraumatize.com^*
-www.skidrowcodex.net##iframe[id="st_gdpr_iframe"]
+www.skidrowcodex.net##iframe[id="st_gdpr_iframe"]:remove()
 !||annesuspense.com/2a/a0/d7/2aa0d74e87039503a470d3942c5f7ea4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||annesuspense.com^*
 www.pcmag.com##ins[class="zmgad-full-width"]
@@ -30620,15 +30645,16 @@ careerkarma.com##div[class="close-banner-btn"]
 careerkarma.com##button[id="keep-reading"]
 careerkarma.com##+js(set-constant, keepReading, true, stay)
 careerkarma.com##^script:has-text(/keepReading/i)
-www.codegrepper.com###bsa_add_holder_g
-www.tutorialspoint.com###adp_top_ads
-www.tutorialspoint.com##.google-top-ads
-www.tutorialspoint.com###google-top-ads
-www.axios.com##amp-ad
-www.axios.com##^script[custom-element="amp-ad"]
-www.axios.com##^script[custom-element="amp-analytics"]
-www.pcgamesn.com##div[class="nn_bb ad"]
-www.law360.com##div[id^="div-gpt-ad"]
+www.codegrepper.com###bsa_add_holder_g:remove()
+www.tutorialspoint.com###adp_top_ads:remove()
+www.tutorialspoint.com##.google-top-ads:remove()
+www.tutorialspoint.com###google-top-ads:remove()
+www.axios.com##amp-ad:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+www.axios.com##script[custom-element="amp-ad"]:remove()
+www.axios.com##script[custom-element="amp-analytics"]:remove()
+www.pcgamesn.com##div[class="nn_bb ad"]:remove()
+www.law360.com##div[id^="div-gpt-ad"]:remove()
 www.law360.com##+js(remove-class, fade1, ,)
 www.law360.com##+js(remove-class, fade2, ,)
 www.law360.com##+js(remove-class, fade3, ,)
@@ -31537,36 +31563,29 @@ up-load.io##+js(abort-on-property-write, atOptions)
 up-load.io##+js(abort-on-property-read, _ofkhpt)
 up-load.io##+js(abort-on-property-write, _ofkhpt)
 up-load.io##+js(acs, _ofkhpt)
-up-load.io##script[id="_ofkhpt"]
 up-load.io##script[id="_ofkhpt"]:remove()
 up-load.io##^script:has-text(\"s65c\")
 up-load.io##^script:has-text(\"s65c\"):remove()
 !up-load.io##+js(acs, s65c)
 up-load.io##+js(acs, \"s65c\")
-up-load.io##span[id="s65c"]
 up-load.io##span[id="s65c"]:remove()
 up-load.io##+js(aeld, DOMNodeRemoved)
 up-load.io##+js(aeld, DOMNodeRemoved, onload)
 up-load.io##+js(remove-attr, disabled, #downloadbtn, stay)
 up-load.io##+js(remove-class, btn-block, #downloadbtn, stay)
 up-load.io##+js(set-constant, atOptions, {})
-up-load.io##a[id="__bgd_link"]
 up-load.io##a[id="__bgd_link"]:remove()
-up-load.io##div[class*="ad-layout-"]
-up-load.io##div[class="ad-display-section"]
-up-load.io##div[class="ads"]
-up-load.io##div[class="contentDivOuter"]
-up-load.io##div[class="cookie-message"]
+up-load.io##div[class*="ad-layout-"]:remove()
+up-load.io##div[class="ad-display-section"]:remove()
+up-load.io##div[class="ads"]:remove()
+up-load.io##div[class="contentDivOuter"]:remove()
 up-load.io##div[class="cookie-message"]:remove()
-up-load.io##div[id="gdpr-cookie-notice"]
 up-load.io##div[id="gdpr-cookie-notice"]:remove()
-up-load.io##ins[class="adsbygoogle"]
 up-load.io##ins[class="adsbygoogle"]:remove()
-up-load.io##div[id="proxydetected"]
 up-load.io##div[id="proxydetected"]:remove()
 up-load.io##script:remove-attr(onerror)
 up-load.io##script:remove-attr(onload)
-up-s1.com,up-load.io##+js(window.open-defuser)
+up-s1.com,up-load.io##+js(no-window-open-if)
 ||up-load.io/ds1/img/logo.png#-page-peel//adnetwork468./ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||up-load.io/pcheck.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||up-load.io/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -31575,19 +31594,9 @@ up-s1.com,up-load.io##+js(window.open-defuser)
 ||up-load.io^$3p,script,redirect-rule=noopjs
 ||up-load.io/ds1/js/nt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! using remove() above will change the position of the following scripts and make the hard-coded values invalid, so remove the scripts in reverse order of appearance in the page
-up-load.io##:xpath(/html/body/script[3])
-up-load.io##:xpath(/html/body/script[1])
-up-load.io##:xpath(/html/head/script[13])
 up-load.io##:xpath(/html/body/script[3]):remove()
 up-load.io##:xpath(/html/body/script[1]):remove()
 up-load.io##:xpath(/html/head/script[13]):remove()
-up-load.io##span:has(*[id="adContext"])
-up-load.io##span:has(*[id="downloadAd"])
-up-load.io##span:has(*[id="ad_img"])
-up-load.io##span:has(*[id="onpageads"])
-up-load.io##span:has(*[id="adsense"])
-up-load.io##span:has(*[id="topBannerAd"])
-up-load.io##span:has(*[id="weatherad"])
 up-load.io##span:has(*[id="adContext"]):remove()
 up-load.io##span:has(*[id="downloadAd"]):remove()
 up-load.io##span:has(*[id="ad_img"]):remove()
@@ -32017,7 +32026,7 @@ diakov.net##div[data-name="adaptiveAd"]
 ||toftheussia.com^*
 !katfile.com##+js(set-constant, download_click, true, stay)
 !katfile.com##+js(set-constant, adEnable, false, stay)
-katfile.com##+js(window.open-defuser, 0, /katfile\.com/i)
+katfile.com##+js(no-window-open-if, 0, /katfile\.com/i)
 ||ableaborah.com^*
 ||eiasninancu.com^*
 ||imps.monu.delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -32026,7 +32035,7 @@ katfile.com##+js(window.open-defuser, 0, /katfile\.com/i)
 ||ads.viralize.tv^*
 ||tgkswchehxpfwff.com^*
 ||1warie.com^*
-uploadev.org##+js(window.open-defuser, 0, /uploadev\.org/i)
+uploadev.org##+js(no-window-open-if, 0, /uploadev\.org/i)
 !||hexagon-analytics.com/images/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||hexagon-analytics.com^*
 ||rmumuhmcogufc.xyz^*
@@ -32166,7 +32175,7 @@ www.wifislax.com##script[id^="gdpr-tools"]
 ||d2kdb91xusyaeu.cloudfront.net/cms/videojs/videojs.ads.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||assets.scrippsdigital.com/cms/videojs/videojs.ads.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !baominh.tech##script[id="mdp-deblocker-ads-js"]:remove()
-baominh.tech##^script[id^="mdp-deblocker-"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 baominh.tech##script[id^="mdp-deblocker-"]:remove()
 baominh.tech##+js(set-constant, adsBlocked, falseFunc)
 baominh.tech##+js(set-constant, window.mdpDeBlockerDestroyer, false)
@@ -32550,7 +32559,7 @@ coursesghar.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 ! This line prevents the need to block all inline scripts in dynamic filter for coursesghar.com.
 coursesghar.com##^script:has-text(/escape\(r\)/i):remove()
 !||coursesghar.com/wp-content/plugins/deblocker/js/ads.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-coursesghar.com##^script[id="mdp-deblocker-ads-js"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 coursesghar.com##script[id="mdp-deblocker-ads-js"]:remove()
 coursesghar.com##+js(set-constant, adsBlocked, falseFunc)
 coursesghar.com##+js(set-constant, window.mdpDeBlockerDestroyer, false)
@@ -32652,7 +32661,7 @@ tidbits.com##div[id^="eu-cookie-law"]
 ||router.allure-ng.net^*
 ||mr.media-bucket.com^*
 !theeadyagency.com##+js(disable-newtab-links)
-theeadyagency.com##+js(window.open-defuser, !/theeadyagency\.com/i)
+theeadyagency.com##+js(no-window-open-if, !/theeadyagency\.com/i)
 ||cglfhqfb.xyz^*
 ||offfurreton.com^*
 !||cybertronads.com/platform/show_i.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -32974,7 +32983,7 @@ www.vice.com##+js(aopr, setNptTechAdblockerCookie)
 www.vice.com##+js(aopw, setNptTechAdblockerCookie)
 ||081dce968626bf84fb600a469be591882ec575376e1ed7e2f34bda0852ab.s3.amazonaws.com^*
 www.upload-4ever.com##+js(disable-newtab-links)
-www.upload-4ever.com##+js(window.open-defuser)
+www.upload-4ever.com##+js(no-window-open-if)
 skylum.com##*[class*="save-ukraine"]
 nocodb.com##div[class^="Cookie"]
 www.psdly.com##ins[data-ad-client]
@@ -34902,7 +34911,7 @@ shorturl.unityassets4free.com##+js(remove-class, hidden, #go-popup, stay)
 shorturl.unityassets4free.com##input[name="pop_ad"]:remove()
 shorturl.unityassets4free.com##+js(remove-class, disabled, .get-link, stay)
 shorturl.unityassets4free.com##+js(remove-class, hidden, #go-link, stay)
-www.forocable.com##^script[data-ad-client]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 www.forocable.com##script[data-ad-client]:remove()
 programs.online##div[class="cookie-notice"]:remove()
 ||www.vrtlsummit.com^*
@@ -37412,9 +37421,8 @@ dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, #video-id)
 dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, #video-id)
 dlhd.sx,daddylivehd.sx##+js(aopw, _chatangoTagserver)
 dlhd.sx,daddylivehd.sx##+js(aopr, _chatangoTagserver)
-dlhd.sx,daddylivehd.sx##^script[id="tsjson"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 dlhd.sx,daddylivehd.sx##script[id="tsjson"]:remove()
-dlhd.sx,daddylivehd.sx##^script[data-adel][zid]:remove()
 dlhd.sx,daddylivehd.sx##script[data-adel][zid]:remove()
 dlhd.sx,daddylivehd.sx##^script:has-text(/debugger;/):remove()
 dlhd.sx,daddylivehd.sx##script:has-text(/debugger;/):remove()
@@ -37533,7 +37541,6 @@ iptvwire.com##+js(aopr, _stq)
 iptvwire.com##+js(aopw, _stq)
 www.ustream.to##div[class*="adblockz-alert"]
 ||www.revenuenetworkcpm.com^*
-www.9now.com.au##input[id="toggle_notification_notification-ad-blocker"]
 www.9now.com.au##input[id="toggle_notification_notification-ad-blocker"]:remove()
 ||www.insurancehealth.info^*
 ||insurancehealth.info^*
@@ -37643,7 +37650,8 @@ filecr.com##div[class*="ads-wrapper"]:remove()
 filecr.com##div[class="top-header-ad"]:remove()
 filecr.com##+js(set-constant, ShPublic.disable_server_downloads, 0, stay)
 filecr.com##^script:has-text(/decodeURIComponent\(escape\(r\)\)/i):remove()
-filecr.com##^script[id^="advanced-ads-"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+filecr.com##script[id^="advanced-ads-"]:remove()
 filecr.com##div[class$="-blackout active"]:remove()
 filecr.com##div[class^="wp-"][class$="-content"]:has(div[class^="main-adblock-wrap"]):remove()
 !filecr.com##div[class^="wp-"][class$="-wrapper"]:remove()
@@ -37665,7 +37673,8 @@ parkingpage.namecheap.com##+js(aopw, policywnd)
 parkingpage.namecheap.com##+js(aopr, replacementLink)
 parkingpage.namecheap.com##+js(aopw, replacementLink)
 parkingpage.namecheap.com##div[id="ads"]
-parkingpage.namecheap.com##^script[src*="://parkingcrew.net/jsparkcaf.php"]
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+parkingpage.namecheap.com##script[src*="://parkingcrew.net/jsparkcaf.php"]:remove()
 ||parkingcrew.net/jsparkcaf.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 securitytrails.com##+js(remove-class, text-preview, td, stay)
 !||79423.analytics.edgekey.net/ma_library/javascript/javascript_malibrary.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -37717,28 +37726,25 @@ securitytrails.com##+js(remove-class, text-preview, td, stay)
 ||userupload.in/ds2/js/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||userupload.in/ds2/js/1.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||userupload.in/assets/js/1.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-userupload.net,userupload.in##div[class="ad-unit hidden-xs"]
-userupload.net,userupload.in##div[class="ad-unit visible-xs"]
-userupload.net,userupload.in##div[class="ad-unit"]
-userupload.net,userupload.in##div[class="adsbox"]
-userupload.net,userupload.in##div[id="adblockinfo"]
-userupload.net,userupload.in##div[id="mobGo"]
+userupload.net,userupload.in##div[class="ad-unit hidden-xs"]:remove()
+userupload.net,userupload.in##div[class="ad-unit visible-xs"]:remove()
+userupload.net,userupload.in##div[class="ad-unit"]:remove()
+userupload.net,userupload.in##div[class="adsbox"]:remove()
+userupload.net,userupload.in##div[id="adblockinfo"]:remove()
+userupload.net,userupload.in##div[id="mobGo"]:remove()
 userupload.net,userupload.in##input[id="adblock_detected"]:remove()
-userupload.net,userupload.in##ins[class="adsbygoogle"]
-!userupload.net,userupload.in##div[class="ads mb-4"]
-userupload.net,userupload.in##div[class^="ads mb-"]
-userupload.net,userupload.in##.btn-danger.btn
-userupload.net,userupload.in##a[href*="//betzapdoson.com/"]
-userupload.net,userupload.in##iframe[id^="google_ads_frame"]
-userupload.net,userupload.in##amp-auto-ads
+userupload.net,userupload.in##ins[class="adsbygoogle"]:remove()
+!userupload.net,userupload.in##div[class="ads mb-4"]:remove()
+userupload.net,userupload.in##div[class^="ads mb-"]:remove()
+userupload.net,userupload.in##.btn-danger.btn:remove()
+userupload.net,userupload.in##a[href*="//betzapdoson.com/"]:remove()
+userupload.net,userupload.in##iframe[id^="google_ads_frame"]:remove()
+userupload.net,userupload.in##amp-auto-ads:remove()
 userupload.net,userupload.in##input[id="addon"]:remove()
-userupload.net,userupload.in##div[id="gdpr-cookie-notice"]
 userupload.net,userupload.in##div[id="gdpr-cookie-notice"]:remove()
 userupload.net,userupload.net,userupload.in##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')])
 userupload.net,userupload.net,userupload.in##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-userupload.net,userupload.in##ins[data-ad-client]
 userupload.net,userupload.in##ins[data-ad-client]:remove()
-userupload.net,userupload.in##*[id="vc4c"]
 userupload.net,userupload.in##*[id="vc4c"]:remove()
 userupload.net,userupload.in##*[id="ad-banner-1"]:remove()
 userupload.net,userupload.in##*[id="ad-slot-2"]:remove()
@@ -37891,9 +37897,7 @@ time4tv.stream,time4tv.xyz##+js(aopr, _Hasync)
 time4tv.stream,time4tv.xyz##+js(aopw, _Hasync)
 time4tv.stream,time4tv.xyz##+js(set-constant, _jnwlwxy, noopFunc)
 time4tv.stream,time4tv.xyz##+js(set-constant, _aisdow, noopFunc)
-time4tv.stream,time4tv.xyz##^script[src*="/go.oclasrv.com/apu.php"]:remove-attr(onerror)
-time4tv.stream,time4tv.xyz##^script[src*="/go.oclasrv.com/apu.php"]:remove-attr(onload)
-time4tv.stream,time4tv.xyz##^script[src*="/go.oclasrv.com/apu.php"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 time4tv.stream,time4tv.xyz##script[src*="/go.oclasrv.com/apu.php"]:remove-attr(onerror)
 time4tv.stream,time4tv.xyz##script[src*="/go.oclasrv.com/apu.php"]:remove-attr(onload)
 time4tv.stream,time4tv.xyz##script[src*="/go.oclasrv.com/apu.php"]:remove()
@@ -38133,9 +38137,10 @@ wikisport.click##+js(aeld, contextmenu)
 wikisport.click##+js(aeld, 'cut copy paste print')
 wikisport.click##+js(aeld, 'drag drop')
 wikisport.click##^script:has-text(mustave):remove()
+wikisport.click##:xpath(//script[contains(text(), 'mustave')]):remove()
+! to prevent being in an iframe detection
 wikisport.click##:xpath(//script[contains(text(), 'window.top')]):remove()
 wikisport.click##^script:has-text(/window.top/):remove()
-wikisport.click##:xpath(//script[contains(text(), 'mustave')]):remove()
 wikisport.click##+js(aopr, window.top)
 wikisport.click##+js(aopw, window.top)
 wikisport.click##+js(acs, window.top)
@@ -38666,21 +38671,18 @@ katv.com##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
 ||refrigeratemaimbrunette.com^*
 !||www.arminius.io/bn/12/jump.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.arminius.io^*
-||rapidrar.com/wpr.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-rapidrar.com##+js(remove-attr, disabled, #btn_download, stay)
-rapidrar.cr##+js(remove-attr, disabled, #btn_download, stay)
-rapidrar.cr##div[id="adb-alert"]
-rapidrar.com##div[id="adb-alert"]
-||rapidrar.cr/js/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||rapidrar.com/js/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||rapidrar.cr/js/rapidrar3.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||rapidrar.com/js/rapidrar3.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-rapidrar.com##+js(aopr, _Hasync)
-rapidrar.com##+js(aopw, _Hasync)
-rapidrar.cr##+js(aopr, _Hasync)
-rapidrar.cr##+js(aopw, _Hasync)
-rapidrar.cr##input[id="btn_download"]:style(display: inline !important;)
-rapidrar.com##input[id="btn_download"]:style(display: inline !important;)
+||rapidrar.com/wpr.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||rapidrar.cr/wpr.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||rapidrar.cr/js/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||rapidrar.com/js/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+rapidrar.com,rapidrar.cr###btn_download:remove-attr(disabled)
+rapidrar.com,rapidrar.cr##+js(remove-attr, disabled, #btn_download, stay)
+rapidrar.com,rapidrar.cr##div[id="adb-alert"]:remove()
+rapidrar.com,rapidrar.cr##input[id="btn_download"]:style(display: inline !important;)
+rapidrar.com,rapidrar.cr##+js(aopr, _Hasync)
+rapidrar.com,rapidrar.cr##+js(aopw, _Hasync)
 ||razzedwhimsic.website^*
 ||mokibill.com^*
 ||gluondockize.digital^*
@@ -38707,7 +38709,7 @@ lato.sx##+js(set-constant, v_width, 1280)
 lato.sx##+js(set-constant, v_height, 720)
 lato.sx##+js(trusted-set-constant, PlaySize, style="height:100vh important!;width:100vw !important;")
 lato.sx##+js(no-setTimeout-if, function)
-lato.sx##^script[admn][admc][zid][did]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 lato.sx##script[admn][admc][zid][did]:remove()
 lato.sx##iframe[src^="https://switchcast2.com/embedhls.php"]:style(overflow:hidden;height:100vh !important;width:100vw !important;)
 ||switchcast2.com/blast.js$script
@@ -38845,8 +38847,7 @@ www.thestreameast.to##div[data-player]:style(height: 100vh !important; width: 10
 !||arehen.com/script/pustrck.js$script
 ||arehen.com^*
 ||skorlive.com/styles/adsbygoogle-footer.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.sportsbaytv.com##^script[id="_wauaex"]
-www.sportsbaytv.com##^script[id="_wauaex"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 www.sportsbaytv.com##script[id="_wauaex"]:remove()
 www.sportsbaytv.com##+js(aopr, _Hasync)
 www.sportsbaytv.com##+js(aopw, _Hasync)
@@ -39136,9 +39137,7 @@ www.digitbin.com##div[class^="code-block code-block-"]:has(div:has-text(Advertis
 cricfree.live##iframe[src^="https://cricplay2.xyz/sky-sports-arena"]:style(height: 100vh !important; width: 100vw !important;)
 cricfree.live##+js(saa, width, 100%, iframe[src^="https://cricplay2.xyz/sky-sports-arena"])
 cricfree.live##+js(saa, height, 100%, iframe[src^="https://cricplay2.xyz/sky-sports-arena"])
-cricplay2.xyz##^script[id="_waumnk"]
-cricplay2.xyz##^script[id="_waumnk"]:remove()
-cricplay2.xyz##script[id="_waumnk"]
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 cricplay2.xyz##script[id="_waumnk"]:remove()
 !cricplay2.xyz##+js(nostif, /^/)
 !cricplay2.xyz##+js(nostif, function())
@@ -39556,13 +39555,9 @@ uploady.io##+js(aopw, Tawk_API)
 ||uploady.io/ds2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||uploady.io/nt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 uploady.io##.downloadbtn:remove-attr(disabled)
-uploady.io##input[id="adblock_detected"]
 uploady.io##input[id="adblock_detected"]:remove()
-uploady.io##div[id="div-mobile"]
 uploady.io##div[id="div-mobile"]:remove()
-uploady.io##div[id="div-desktop"]
 uploady.io##div[id="div-desktop"]:remove()
-uploady.io##span[class="ad-label"]
 uploady.io##span[class="ad-label"]:remove()
 uploady.io##+js(nostif, tick)
 !uploady.io##a[type="button"][class="btn btn-primary rounded"]:remove-attr(onlick)
@@ -39571,13 +39566,10 @@ uploady.io##a[class="btn btn-primary rounded"]:remove-attr(onlick)
 !uploady.io##button[id="free_dwn"]:watch-attr(disabled):remove-attr(disabled)
 uploady.io##input[id="sb_frm"]:style(display: block !important;)
 !uploady.io##div[id="downloadbtn"]:remove-attr(onclick)
-uploady.io##div[id="downloadbtn"]
 uploady.io##div[id="downloadbtn"]:remove()
 devuploads.com##body:style(visibility: visible !important; display: block !important;)
-!devuploads.com##input[name="fadb"]
 !devuploads.com##input[name="fadb"]:remove()
 ! adblock_detected needs to be 1 and xd to have a proper value (token) for the download post submission to work.
-!devuploads.com##input[id="adblock_detected"]
 !devuploads.com##input[id="adblock_detected"]:remove()
 devuploads.com##+js(set-constant, remaining, 0)
 devuploads.com##+js(set-constant, antiAdBlockerHandler, noopFunc)
@@ -39645,10 +39637,9 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[class^="stickyads_"]
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[class^="stickyads_"]:remove()
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##^script[disable-devtool-auto]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##^script[disable-devtool-auto]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##^script[id="generate-a11y"]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##^script[id="generate-a11y"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]:remove()
+dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[id="generate-a11y"]:remove()
 *$frame,redirect-rule=noopframe,from=djxmaza.in|thecubexguide.com
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##html.i-amphtml-inabox
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnc"]
@@ -39658,7 +39649,6 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:style(
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:remove()
 ! adblock_detected needs to be 1 and xd to have a proper value (token) not the default of 1 for the download post submission to work.
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="adblock_detected"]
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="adblock_detected"]:remove()
 ! Both isblocked and isadblock need to be 0 for the event listener on the final download button to work.
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isblocked, 0, stay)
@@ -40035,11 +40025,8 @@ streampiay.fun##div[id="uverlay"]:style(display: block !important;)
 !||dood.re/pass_md5/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dood.re/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 dood.re##input[aria-label="play"]:remove-attr(disabled)
-dood.re##iframe[src="about:blank"]
 dood.re##iframe[src="about:blank"]:remove()
-dood.re##div[id="lpcuazk"]
 dood.re##div[id="lpcuazk"]:remove()
-dood.re##a[id="lkf7p"]
 dood.re##a[id="lkf7p"]:remove()
 dood.re##+js(set-constant, check, noopFunc)
 dood.re##+js(acs, minimalUserResponseInMiliseconds)
@@ -40096,7 +40083,7 @@ dood.re##+js(aeld, /contextmenu|keydown/)
 ||mixdrop.ag/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mixdrop.ag/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mixdrop.ag/xads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!mixdrop.co,mixdrop.ag,mixdrop.to##iframe
+!mixdrop.co,mixdrop.ag,mixdrop.to##iframe:remove()
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, adblock, 0)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, blockAB, false)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, popundersPerIP, 0)
@@ -40105,8 +40092,8 @@ mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, MDCore, noopFunc)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, MDCore.blockAB, false)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, MDCore.adblock, 0)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, wpn63s, noopFunc)
-mixdrop.co,mixdrop.ag,mixdrop.to##+js(window.open-defuser)
-mixdrop.co,mixdrop.ag,mixdrop.to##div[id="rn_native_bqupr"]
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(no-window-open-if)
+mixdrop.co,mixdrop.ag,mixdrop.to##div[id="rn_native_bqupr"]:remove()
 mixdrop.co,mixdrop.ag,mixdrop.to##^script:has-text(/injectP2\(\)/i)
 mixdrop.co,mixdrop.ag,mixdrop.to##^script:has-text(/plantinscription\.com/i)
 mixdrop.co,mixdrop.ag,mixdrop.to##^script:has-text(/function\(p,a,c,k,e,d\)/i)
@@ -40148,7 +40135,6 @@ mixdrop.co,mixdrop.ag,mixdrop.to##body:remove-attr(onclick)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, adcashMacros, {})
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, adcashMacros)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-read, adcashMacros)
-mixdrop.co,mixdrop.ag,mixdrop.to##:xpath(//script[contains(text(), 'adcashMacros')])
 mixdrop.co,mixdrop.ag,mixdrop.to##:xpath(//script[contains(text(), 'adcashMacros')]):remove()
 ||soliads.net^*
 ||dd.tittyptinoid.com^*
@@ -40175,7 +40161,7 @@ vidoza.net##+js(acs, gtm., www.googletagmanager.com)
 vidoza.net##+js(set-constant, Ya.Metrika, noopFunc, complete)
 vidoza.net##^script:has-text(/Metrika/i)
 vidoza.net##+js(acs, /Metrika/i)
-vidoza.net##^script[data-spots][data-tag][data-subid1]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 vidoza.net##script[data-spots][data-tag][data-subid1]:remove()
 vidoza.net##^script:has-text(window.asgvastcnf_overlay):remove()
 vidoza.net##+js(set-constant, window.asgvastcnf_overlay, {})
@@ -40200,7 +40186,7 @@ vidoza.net##+js(aeld, pushsubscriptionchange)
 vidoza.net##+js(aeld, notificationclick)
 ! from ublock Origin main list:
 vidoza.net##+js(noeval)
-vidoza.net##+js(nowoif)
+vidoza.net##+js(no-window-open-if)
 !vidoza.net##.in-block
 !vidoza.net###plo_0
 !vidoza.net##[id*="ScriptRoot"]
@@ -40286,7 +40272,7 @@ vtube.to,vtbe.net,vtplay.net##script:has-text(/debugger;/):remove()
 vtube.to,vtbe.net,vtplay.net##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 vtube.to,vtbe.net,vtplay.net##+js(acs, /^debugger;/)
 vtube.to,vtbe.net,vtplay.net##+js(acs, gtag)
-vtube.to,vtbe.net,vtplay.net##^script[data-spots][data-tag][data-subid1]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 vtube.to,vtbe.net,vtplay.net##script[data-spots][data-tag][data-subid1]:remove()
 vtube.to,vtbe.net,vtplay.net##+js(set-constant, _0x3538, [])
 vtube.to,vtbe.net,vtplay.net##+js(aopw, _0x3538)
@@ -40439,7 +40425,6 @@ a2zapk.io,a2zapk.com##+js(set-constant, $img, null)
 a2zapk.io,a2zapk.com##+js(acs, $img)
 a2zapk.io,a2zapk.com##+js(aopw, $img)
 a2zapk.io,a2zapk.com##+js(aopr, $img)
-a2zapk.io,a2zapk.com##input[id="adx"]
 a2zapk.io,a2zapk.com##input[id="adx"]:remove()
 a2zapk.io,a2zapk.com##+js(set-constant, divalerttag, "")
 a2zapk.io,a2zapk.com##+js(acs, divalerttag)
@@ -40507,22 +40492,15 @@ dood.wf##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 dood.wf##+js(set-constant, ca0967284e67bc53cb5b626985619403, "")
 dood.wf##+js(aopw, ca0967284e67bc53cb5b626985619403)
 dood.wf##+js(aopr, ca0967284e67bc53cb5b626985619403)
-dood.wf##^script[data-adel][cdnd][zid]
-dood.wf##^script[data-adel][cdnd][zid]:remove()
-dood.wf##script[data-adel][cdnd][zid]
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 dood.wf##script[data-adel][cdnd][zid]:remove()
-dood.wf##^script[src*="//la3c05lr3o.com/"]
-dood.wf##^script[src*="//la3c05lr3o.com/"]:remove()
 dood.wf##script[src*="//la3c05lr3o.com/"]:remove-attr(onerror)
 dood.wf##script[src*="//la3c05lr3o.com/"]:remove-attr(onloaded)
-dood.wf##script[src*="//la3c05lr3o.com/"]
 dood.wf##script[src*="//la3c05lr3o.com/"]:remove()
 dood.wf##+js(nostif, c3)
-www.2embed.to##^script[src*="//whoursie.com/"]
-www.2embed.to##^script[src*="//whoursie.com/"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 www.2embed.to##script[src*="//whoursie.com/"]:remove-attr(onerror)
 www.2embed.to##script[src*="//whoursie.com/"]:remove-attr(onloaded)
-www.2embed.to##script[src*="//whoursie.com/"]
 www.2embed.to##script[src*="//whoursie.com/"]:remove()
 www.2embed.to##+js(set-constant, $pe, "")
 www.2embed.to##+js(acs, $._Eu, $.BD, $pe)
@@ -40972,7 +40950,7 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##vli[class="adsbyvli vliinterstial"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="dl"]:style(display:block !important;)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##meta[name="purpleads-verification"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##script[disable-devtool-auto]:remove-attr(disable-menu)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script[disable-devtool-auto]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##script[disable-devtool-auto]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##:xpath(//script[contains(text(), 'disable-devtool-auto')]):remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="gpt-passback-dropgalaxy"]:remove()
@@ -41090,7 +41068,7 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com###analytics
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com###analytics:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##.btn-primary.btn-lg.btn-block.btn:remove-attr(onclick)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##.btn-primary.btn-lg.btn-block.btn:remove-attr(target)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##+js(nowoif)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##+js(no-window-open-if)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##+js(nosiif, _0x)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##[href^="https://bit.ly/"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##[href^="https://bit.ly/"]:remove()
@@ -41180,7 +41158,6 @@ usersdrive.com###downloadbtn:remove-attr(disabled)
 usersdrive.com###downloadbtn:remove-class(disabled)
 usersdrive.com##input[id="adblock_detected"]:remove()
 ! can't skip countdown since server-side
-!usersdrive.com##span[id="countdown"]
 !usersdrive.com##span[id="countdown"]:remove()
 ||usersdrive.com/userdrive/assets/js/countdown.js$popup,document,inline-script,inline-font,popunder,subdocument,script,other
 ||tokofyttes.com^*
@@ -41222,31 +41199,18 @@ gdrivemovies.xyz##+js(set-constant, monsterinsights_scroll_tracking_load, noopFu
 gdrivemovies.xyz##+js(acs, __gaTracker)
 gdrivemovies.xyz##+js(aopr, __gaTracker)
 gdrivemovies.xyz##+js(aopw, __gaTracker)
-gdrivemovies.xyz##^script[id="wpcp_disable_selection"]
-gdrivemovies.xyz##^script[id="wpcp_disable_selection"]:remove()
-gdrivemovies.xyz##script[id="wpcp_disable_selection"]
-gdrivemovies.xyz##script[id="wpcp_disable_selection"]:remove()
-gdrivemovies.xyz##^script[id="wpcp_disable_Right_Click"]
-gdrivemovies.xyz##^script[id="wpcp_disable_Right_Click"]:remove()
-gdrivemovies.xyz##script[id="wpcp_disable_Right_Click"]
-gdrivemovies.xyz##script[id="wpcp_disable_Right_Click"]:remove()
-gdrivemovies.xyz##^script[id="wpcp_css_disable_selection"]
-gdrivemovies.xyz##^script[id="wpcp_css_disable_selection"]:remove()
-gdrivemovies.xyz##script[id="wpcp_css_disable_selection"]
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+!gdrivemovies.xyz##script[id="wpcp_disable_selection"]:remove()
+!gdrivemovies.xyz##script[id="wpcp_disable_Right_Click"]:remove()
+gdrivemovies.xyz##script[id^="wpcp_disable_"]:remove()
 gdrivemovies.xyz##script[id="wpcp_css_disable_selection"]:remove()
-gdrivemovies.xyz##^script[id="generate-a11y"]
-gdrivemovies.xyz##^script[id="generate-a11y"]:remove()
-gdrivemovies.xyz##script[id="generate-a11y"]
 gdrivemovies.xyz##script[id="generate-a11y"]:remove()
-gdrivemovies.xyz##div[data-adblockkey]
 gdrivemovies.xyz##div[data-adblockkey]:remove()
-gdrivemovies.xyz##iframe[id^="google_ads_"]
 gdrivemovies.xyz##iframe[id^="google_ads_"]:remove()
 gdrivemovies.xyz##div:has(*[class^="adblock_"]):remove()
 gdrivemovies.xyz##div[id="wpcp-error-message"]:remove()
-www.thoughtco.com##div[id^="mntl-sponsor-tracking-codes"]
 www.thoughtco.com##div[id^="mntl-sponsor-tracking-codes"]:remove()
-tutorialspots.com##script[id="_wau1m6"]
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 tutorialspots.com##script[id="_wau1m6"]:remove()
 tutorialspots.com##+js(set-constant, _wau, []) 
 tutorialspots.com##+js(aopr, _wau)
@@ -41427,9 +41391,7 @@ play.xumo.com##div[class="cookieConsent"]
 play.xumo.com##div[class="cookieConsent"]:remove()
 play.xumo.com##div[class="privacyConsent"]
 play.xumo.com##div[class="privacyConsent"]:remove()
-play.xumo.com##^script[id="script-gtm-inline"]
-play.xumo.com##^script[id="script-gtm-inline"]:remove()
-play.xumo.com##script[id="script-gtm-inline"]
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 play.xumo.com##script[id="script-gtm-inline"]:remove()
 ! Do NOT remove the header.
 !play.xumo.com##header
@@ -42358,7 +42320,7 @@ availedsmallest.com##+js(trusted-replace-node-text, script, /^console\.clear\(\)
 availedsmallest.com##+js(acs, /console\.clear\(\);/)
 availedsmallest.com##+js(set-constant, console.clear, noopFunc)
 availedsmallest.com##+js(acs, sandbox)
-availedsmallest.com##+js(window.open-defuser, /parentlargevia\.com/)
+availedsmallest.com##+js(no-window-open-if, /parentlargevia\.com/)
 availedsmallest.com##+js(nosiif, /^/)
 ||parentlargevia.com^*
 ||rnynacj.erichorne.net^*
@@ -42475,7 +42437,7 @@ www.reddit.com##div[id="adblocktest"]:remove()
 www.reddit.com##script[id="datadome-bot-detection"]
 www.reddit.com##script[id="datadome-bot-detection"]:remove()
 ||cdn.opecloud.com/ope-tegna.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.kvue.com##^script[id="utag_data_script"]
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 www.kvue.com##script[id="utag_data_script"]:remove()
 ! blocks embedded videos
 !www.kvue.com##+js(acs, window.tegna)
@@ -42612,15 +42574,16 @@ dailycaller.com##+js(abort-on-property-read, impressionData.prebid)
 dailycaller.com##+js(abort-on-property-write, impressionData.prebid)
 dailycaller.com##+js(abort-on-property-read, window.confiant)
 ||filerio.in/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-filerio.in##a[id="handle"]
-filerio.in##iframe[style*="display: none"]
+filerio.in##a[id="handle"]:remove()
+filerio.in##iframe[style*="display: none"]:remove()
 filerio.in##+js(abort-current-script, _gaq)
 filerio.in##+js(abort-current-script, banner_ad)
-filerio.in##div[id="banner_ad"]
+filerio.in##div[id="banner_ad"]:remove()
 filerio.in##+js(abort-on-property-read, atOptions)
 filerio.in##+js(abort-on-property-write, atOptions)
-filerio.in##^script[data-domain="xtraff1cx.space"]
-filerio.in##.button-red.user
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+filerio.in##script[data-domain="xtraff1cx.space"]:remove()
+filerio.in##.button-red.user:remove()
 filerio.in##+js(set-constant, zoneNativeSett, null)
 filerio.in##+js(abort-on-property-read, zoneNativeSett)
 filerio.in##+js(abort-on-property-write, zoneNativeSett)
@@ -42630,7 +42593,7 @@ filerio.in##+js(abort-on-property-read, adsurlvs)
 filerio.in##+js(abort-on-property-write, adsurlvs)
 filerio.in##+js(abort-on-property-read, adsurl)
 filerio.in##+js(abort-on-property-write, adsurl)
-filerio.in##body > script:nth-child(7)
+filerio.in##body > script:nth-child(7):remove()
 ! the following five entries are from https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt
 mega.nz##.ads-left-block, .ads-right-block, .active.top-login-warning, .red.download-button.button, .checkbox-bl.download:remove()
 thewrap.com##style:has-text(wallkit-paywall-block):remove()
@@ -43878,7 +43841,7 @@ send.cm##+js(aopw, FingerprintJS)
 ||send.cm^$3p,script
 ! This makes it close on pressing the download button everytime.
 !send.cm##+js(disable-newtab-links)
-!send.cm##+js(nowoif, !/send\.cm/i, log)
+!send.cm##+js(no-window-open-if, !/send\.cm/i, log)
 send.cm##+js(remove-attr, class, #fileinfo, stay)
 send.cm##a[href*="//agacelebir.com/"]:remove()
 send.cm##a[href*="//pronunciationspecimens.com/"]:upward(1):remove()
@@ -44257,9 +44220,8 @@ kimcartoon.li,kimcartoon.to##div[id="videoAd"]:remove()
 ! removes embedded video
 !kimcartoon.li,kimcartoon.to##div[id="adsIfrme"]:remove()
 ||kimcartoon.li/Content/images/adb.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-kswplayer.info##div[id="adbd"]
 kswplayer.info##div[id="adbd"]:remove()
-kswplayer.info##+js(nowoif)
+kswplayer.info##+js(no-window-open-if)
 !*##+js(window-close-if, /^https?://(www\.)?kswplayer\.info/)
 ||streamwish.com/js/dnsads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ennrv.eayeewlvmebkj.top^*
@@ -44370,7 +44332,7 @@ www.cgdirector.com##+js(acs, adthrive)
 www.cgdirector.com##body:remove-class(adthrive-device-desktop)
 www.cgdirector.com##script[id^="gainwp-tracking-analytics-events-js"]:remove()
 ||www.cgdirector.com/wp-content/plugins/ga-in/front/js/tracking-analytics-events.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-uploadrar.com###lastnews
+uploadrar.com###lastnews:remove()
 uploadrar.com##+js(aopr, ez_ad_units)
 uploadrar.com##+js(aopw, ez_ad_units)
 uploadrar.com##+js(aopw, window.adsbygoogle)
@@ -44393,30 +44355,23 @@ uploadrar.com##+js(abort-on-property-read, _gaq)
 uploadrar.com##+js(abort-on-property-write, _gaq)
 uploadrar.com##+js(set-constant, urls, {})
 uploadrar.com##+js(set-constant, zoneNativeSett, {})
-uploadrar.com##+js(window.open-defuser)
-uploadrar.com##.btn-lg.btn-success.btn
-uploadrar.com##.btn-primary.btn
-uploadrar.com##.vticker
-uploadrar.com##a[class="btn btn-info btn-lg"]
-uploadrar.com##a[href*="://adzpub.com/search.php"]
-uploadrar.com##div[class="as_ads_guard"]
+uploadrar.com##+js(no-window-open-if)
+uploadrar.com##.btn-lg.btn-success.btn:remove()
+uploadrar.com##.btn-primary.btn:remove()
+uploadrar.com##.vticker:remove()
+uploadrar.com##a[class="btn btn-info btn-lg"]:remove()
+uploadrar.com##a[href*="://adzpub.com/search.php"]:remove()
 uploadrar.com##div[class="as_ads_guard"]:remove()
-uploadrar.com##div[class="banner1"]
-uploadrar.com##div[class="banner3"]
+uploadrar.com##div[class="banner1"]:remove()
 uploadrar.com##div[class="banner3"]:remove()
-uploadrar.com##div[class="banner4"]
 uploadrar.com##div[class="banner4"]:remove()
-uploadrar.com##div[id="banner_ad"]
-uploadrar.com##div[id="countdown"]
-uploadrar.com##div[id="gdpr-cookie-notice"]
+uploadrar.com##div[id="banner_ad"]:remove()
+uploadrar.com##div[id="countdown"]:remove()
 uploadrar.com##div[id="gdpr-cookie-notice"]:remove()
-uploadrar.com##iframe
-uploadrar.com##input[id="adblock_detected"]
+uploadrar.com##iframe:remove()
 uploadrar.com##input[id="adblock_detected"]:remove()
-uploadrar.com##ins[data-ad-client]
 uploadrar.com##ins[data-ad-client]:remove()
 ! div[id="tritqwt"] is scripted to reappear if deleted
-uploadrar.com##div[id="tritqwt"]
 uploadrar.com##div[id="tritqwt"]:remove()
 uploadrar.com^$inline-script
 ||uploadrar.com^$xhr
@@ -45504,32 +45459,23 @@ www.imdb.com##+js(set-constant, doWithAds, noopFunc)
 www.imdb.com##+js(set-constant, document.ad, {})
 www.imdb.com##+js(set-constant, document.adSlotConfig, {})
 www.imdb.com##+js(set-constant, document.defaultAd, {})
-www.imdb.com##.ad_fadein
-!www.imdb.com##.placeholder_pattern
-www.imdb.com##.sponsored_label
+www.imdb.com##.ad_fadein:remove()
+!www.imdb.com##.placeholder_pattern:remove()
+www.imdb.com##.sponsored_label:remove()
 www.imdb.com##^script:has-text(adCustomAction)
 www.imdb.com##^script:has-text(adCustomAction):remove()
-www.imdb.com##^script[type="data-doubleclick"]
-www.imdb.com##^script[type="data-doubleclick"]:remove()
-www.imdb.com##a[aria-labelledby="ad"]
-www.imdb.com##div[aria-label^="Sponsored Ad"]
-www.imdb.com##div[id="ad"]
-www.imdb.com##div[id="ad"]:remove()
-www.imdb.com##div[id="top_ad_webbug"]
-www.imdb.com##div[id="top_ad_webbug"]:remove()
-www.imdb.com##div[id^="div-gpt-ad-"]
-www.imdb.com##div[id^="div-gpt-ad-"]:remove()
-www.imdb.com##iframe[id="sis_pixel_sitewide"]
-www.imdb.com##iframe[id="sis_pixel_sitewide"]:remove()
-www.imdb.com##img[id="mobile-ad-image"]
-www.imdb.com##img[id="mobile-ad-image"]:remove()
-www.imdb.com##ins[class="dcmads"]
-www.imdb.com##ins[class="dcmads"]:remove()
-www.imdb.com##script[id="ad_feedback_handler"]
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+www.imdb.com##script[type="data-doubleclick"]:remove()
 www.imdb.com##script[id="ad_feedback_handler"]:remove()
-www.imdb.com##script[type="text/javascript"]:has-text(adCustomAction)
 www.imdb.com##script[type="text/javascript"]:has-text(adCustomAction):remove()
-www.imdb.com##span[id="inline50_sponsored"]
+www.imdb.com##a[aria-labelledby="ad"]:remove()
+www.imdb.com##div[aria-label^="Sponsored Ad"]:remove()
+www.imdb.com##div[id="ad"]:remove()
+www.imdb.com##div[id="top_ad_webbug"]:remove()
+www.imdb.com##div[id^="div-gpt-ad-"]:remove()
+www.imdb.com##iframe[id="sis_pixel_sitewide"]:remove()
+www.imdb.com##img[id="mobile-ad-image"]:remove()
+www.imdb.com##ins[class="dcmads"]:remove()
 www.imdb.com##span[id="inline50_sponsored"]:remove()
 www.imdb.com##+js(aopr, _comscore)
 www.imdb.com##+js(aopw, _comscore)
@@ -46403,8 +46349,8 @@ streamadblocker.cc##iframe[src^="https://zimpolo.com/"]:remove()
 streamadblocker.cc##+js(set-constant, trigger, '')
 streamadblocker.cc##+js(aeld, contextmenu)
 streamadblocker.cc##+js(disable-newtab-links)
-!streamadblocker.cc##+js(window.open-defuser)
-streamadblocker.cc##+js(window.open-defuser, !/paikoasa\.tv/i)
+!streamadblocker.cc##+js(no-window-open-if)
+streamadblocker.cc##+js(no-window-open-if, !/paikoasa\.tv/i)
 ! two scripts have "_ohknjom" in them
 streamadblocker.cc##:xpath(//script[contains(text(), '_ohknjom')]):remove()
 streamadblocker.cc##:xpath(//html/body/div[1]/div/div[1]/script[2]):remove()
@@ -46427,7 +46373,7 @@ streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(trusted-replace-node-
 !||streamtape.com/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||stapadblockuser.xyz/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 streamtape.com,stapadblockuser.xyz##div[id="adb"]:remove()
-streamtape.com,stapadblockuser.xyz##^script[class="nunush"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 streamtape.com,stapadblockuser.xyz##script[class="nunush"]:remove()
 streamtape.com,stapadblockuser.xyz##:xpath(//script[contains(text(), 'debugger;')]):remove()
 streamtape.com,stapadblockuser.xyz##^script:has-text(/debugger;/):remove()
@@ -46460,8 +46406,8 @@ streamtape.com,stapadblockuser.xyz##+js(acs, document.write, unescape)
 !||hr.prositzapas.com^*
 ||prositzapas.com^*
 ||gloorsie.com^*
-!down.fast-down.com,down.mdiaload.com##center
-!down.fast-down.com,down.mdiaload.com##div[class="download-option-btn"]
+!down.fast-down.com,down.mdiaload.com##center:remove()
+!down.fast-down.com,down.mdiaload.com##div[class="download-option-btn"]:remove()
 down.fast-down.com,down.mdiaload.com###adblock_detected:remove-attr(value)
 down.fast-down.com,down.mdiaload.com##input[id="adblock_detected"]:remove()
 down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_invisible, 0)
@@ -46474,33 +46420,21 @@ down.fast-down.com,down.mdiaload.com##+js(saa, type, submit, .downloadbtn)
 down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:remove-attr(disabled)
 down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:style(display: inline !important;)
 !down.fast-down.com,down.mdiaload.com##button[class="downloadbtn btn btn-success"]:style(display: inline !important;)
-down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"]
 down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"]:remove()
-down.fast-down.com##a[class="create"][href*="//down.fast-down.com/download20.htm"]
 down.fast-down.com##a[class="create"][href*="//down.fast-down.com/download20.htm"]:remove()
-!down.mdiaload.com##a[class="create"][title="Download"][href$="//down.mdiaload.com/free-download.html"]
 !down.mdiaload.com##a[class="create"][title="Download"][href$="//down.mdiaload.com/free-download.html"]:remove()
 ! TODO: using title tag does not work for some reason
-down.mdiaload.com##a[class="create"][href$="//down.mdiaload.com/free-download.html"]
 down.mdiaload.com##a[class="create"][href$="//down.mdiaload.com/free-download.html"]:remove()
-down.fast-down.com,down.mdiaload.com##div[class="btn btn-success"]
 down.fast-down.com,down.mdiaload.com##div[class="btn btn-success"]:remove()
-down.fast-down.com,down.mdiaload.com##div[data-ad]
 down.fast-down.com,down.mdiaload.com##div[data-ad]:remove()
-down.fast-down.com,down.mdiaload.com##div[class="demand-supply"]
 down.fast-down.com,down.mdiaload.com##div[class="demand-supply"]:remove()
 down.fast-down.com,down.mdiaload.com##div[id="generate1"]:remove()
-down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:296px"]
 down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:296px"]:remove()
-down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:280px"]
 down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:280px"]:remove()
-down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '.adsbox')])
 down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '.adsbox')]):remove()
-down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '#adblock_detected')])
 down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '#adblock_detected')]):remove()
 ||down.mdiaload.com/js/share.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||img.cartooncdn.xyz/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-kisscartoon.sh##div[id="upgrade_pop"]
 kisscartoon.sh##div[id="upgrade_pop"]:remove()
 embed.vodstream.xyz##div[id="playback-fake"]:remove()
 ||a.magsrv.com/ad-provider.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -46935,7 +46869,7 @@ sporttuna.com,sporttuna.sx,sporttuna.site##+js(set-constant, aclib.runPop, noopF
 !sporttuna.com,sporttuna.sx,sporttuna.site##+js(set-constant, aclib.runPop, noopFunc, complete)
 sporttuna.com,sporttuna.sx,sporttuna.site##:xpath(//script[contains(text(), 'aclib.runPop')]):remove()
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(disable-newtab-links)
-sporttuna.com,sporttuna.sx,sporttuna.site##+js(window.open-defuser)
+sporttuna.com,sporttuna.sx,sporttuna.site##+js(no-window-open-if)
 ||honoursimmoderate.com^*
 ||smitealter.com^*
 ||slobgrandmadryer.com^*
@@ -46946,7 +46880,7 @@ sporttuna.com,sporttuna.sx,sporttuna.site##+js(window.open-defuser)
 ||directresulto.org^*
 ! TODO: the following rule does not work; because the script is anonymous/generated?
 www.niaomea.me##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-www.niaomea.me##^script[adblock-settings]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 www.niaomea.me##script[adblock-settings]:remove()
 www.niaomea.me##script[mads]:remove()
 www.niaomea.me##iframe[class="padPreload"]:remove()
@@ -46974,8 +46908,8 @@ www.niaomea.me##+js(aopw, window.kkp4a5x5tv)
 www.niaomea.me##+js(aopr, window.kkp4a5x5tv)
 www.niaomea.me##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 www.niaomea.me##+js(disable-newtab-links)
-!www.niaomea.me##+js(nowoif)
-www.niaomea.me##+js(nowoif, !/\.niaomea\.me/i)
+!www.niaomea.me##+js(no-window-open-if)
+www.niaomea.me##+js(no-window-open-if, !/\.niaomea\.me/i)
 ||embedstreams.me/partytown/partytown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 embedstreams.me##script[type="text/partytown"]:remove()
 embedstreams.me##+js(set-constant, aclib.runPop, noopFunc, end)
@@ -46994,7 +46928,7 @@ embedstreams.me##:xpath(//script[contains(text(), 'adcashLib')]):remove()
 !||ctrtrk.com/ut/ctr.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ctrtrk.com^*
 ||www.displayvertising.com/fg9.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-givemereddit.eu,embedstreams.me##^script[adblock-settings]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 givemereddit.eu,embedstreams.me##script[adblock-settings]:remove()
 ||meenetiy.com^*
 ||www.tvknxyisi.com^*
@@ -47024,7 +46958,7 @@ voodc.com##div[class="afs_ads ad-placement"]:remove()
 voodc.com##div[id="UnMutePlayer"]:remove()
 voodc.com##div[id="ForWeb"]:remove()
 voodc.com##:xpath(//script[contains(text(), 'adcashLib')]):remove()
-voodc.com##^script[adblock-settings]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 voodc.com##script[adblock-settings]:remove()
 voodc.com##img[id="pingsts"]:remove()
 voodc.com##+js(set-constant, Pingstat, noopFunc)
@@ -47066,7 +47000,7 @@ www.mediafire.com##.lr-ad
 !www.mediafire.com##figure
 !www.mediafire.com##div[class$="ads-normal"] !makes download links disappear
 www.mediafire.com##script[id="infinity"]:remove()
-www.mediafire.com##+js(nowoif, !/mediafire\.com/i)
+www.mediafire.com##+js(no-window-open-if, !/mediafire\.com/i)
 www.mediafire.com##+js(abort-on-property-read, AD_UNITS_CONFIG)
 www.mediafire.com##+js(abort-on-property-write, AD_UNITS_CONFIG)
 www.mediafire.com##+js(abort-on-property-read, adElement)
@@ -47147,7 +47081,7 @@ olalivehdplay.ru,weblivehdplay.ru##script[disable-devtool-auto]:remove()
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##:xpath(//script[contains(text(), 'window==window.top')]):remove()
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(aopw, window.top)
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(aopr, window.top)
-olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##^script[adblock-settings]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##script[adblock-settings]:remove()
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(set-constant, player.options.allowUserInteraction, true)
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(set-constant, player.options.playback.disableContextMenu, false)
@@ -47295,8 +47229,8 @@ golassiahub.com##+js(set-constant, result, noopFunc)
 ||notablyassn.digital^*
 ||lovesomecommunity.com/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lovesomecommunity.com/z-7123946$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 lovesomecommunity.com,livehdplay.ru##script[adblock-settings]:remove()
-lovesomecommunity.com,livehdplay.ru##^script[adblock-settings]:remove()
 lovesomecommunity.com##span[style="display:none"]:remove()
 lovesomecommunity.com##div[id="player"]:style(height:100vh !important; width:100vw !important;)
 lovesomecommunity.com,livehdplay.ru##+js(set-constant, player.options.allowUserInteraction, true)
@@ -47418,7 +47352,7 @@ antenasport.ru,maxsport.one##+js(aopr, _Hasync)
 antenasport.ru,maxsport.one##+js(aopw, _Hasync)
 antenasport.ru,maxsport.one##+js(trusted-set-constant, currentReferer, https://antenasport.ru/)
 antenasport.ru##iframe[src="about:blank"]:remove()
-antenasport.ru##^script[adblock-settings]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 antenasport.ru##script[adblock-settings]:remove()
 antenasport.ru##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 antenasport.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
@@ -47462,7 +47396,7 @@ aradsport.live##+js(trusted-replace-node-text, script, /player\.setVolume\(((?!1
 ||commarevelation.com^*
 s2watch.link##+js(set-constant, adcash, noopFunc)
 s2watch.link##+js(set-constant, Adcash, noopFunc)
-s2watch.link##^script[adblock-settings]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 s2watch.link##script[adblock-settings]:remove()
 s2watch.link##:xpath(//script[contains(text(), '_Hasync')]):remove()
 s2watch.link##+js(set-constant, _Hasync, [])
@@ -47494,8 +47428,8 @@ nobodywalked.com##^script:has-text(/debugger;/):remove()
 nobodywalked.com##script:has-text(/debugger;/):remove()
 nobodywalked.com##+js(acs, /^debugger;/)
 nobodywalked.com##+js(disable-newtab-links)
-!nobodywalked.com##+js(nowoif)
-nobodywalked.com##+js(nowoif, !/nobodywalked\.com/i)
+!nobodywalked.com##+js(no-window-open-if)
+nobodywalked.com##+js(no-window-open-if, !/nobodywalked\.com/i)
 ! the following rules blocks the video player
 !||nobodywalked.com/player-bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||predictiondisplay.com/jump/next.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -47505,7 +47439,7 @@ nobodywalked.com##+js(nowoif, !/nobodywalked\.com/i)
 !||cdn.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cdn.jsdelivr.net/npm/disable-devtool@latest$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.jsdelivr.net/npm/disable-devtool$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-mrgamingstreams.com##^script[disable-devtool-auto]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 mrgamingstreams.com##script[disable-devtool-auto]:remove()
 ! These two rules change the initial Clapper player configuration options.
 ypamu.ru.com##+js(trusted-replace-node-text, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
@@ -47525,12 +47459,12 @@ ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##:xpath(//script[
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopw, window.top)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopr, window.top)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
-ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##^script[id="_waumqy"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##script[id="_waumqy"]:remove()
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(set-constant, _wau, [])
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopr, _wau)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopw, _wau)
-ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##^script[adblock-settings]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##script[adblock-settings]:remove()
 ! muted is not getting set by saa
 !ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(saa, muted, false, video[data-html5-video])
@@ -47565,14 +47499,15 @@ www.kiplinger.com##div[id="top-leaderboard"][class="ad-unit"]:remove()
 www.kiplinger.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
 www.kiplinger.com##div[id^="ad-unit-"]:remove()
 www.kiplinger.com##div[class="static-leaderboard ad-unit"]:remove()
-www.kiplinger.com##^script[id="selligent-tag"]:remove()
-www.kiplinger.com##^script[id="parsely-cfg"]:remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
+www.kiplinger.com##script[id="selligent-tag"]:remove()
+www.kiplinger.com##script[id="parsely-cfg"]:remove()
 ! The following rule is for the script loaded by the the preceding rule's script tag
 ||cdn.parsely.com/keys/kiplinger.com/p.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.kiplinger.com##^script[id="hawklinks-script"]:remove()
+www.kiplinger.com##script[id="hawklinks-script"]:remove()
 ! The following rule is for the script loaded by the the preceding rule's script tag
 ||search-api.fie.futurecdn.net/hl/es6/hawklinks.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.kiplinger.com##^script[id="hawkAdditionalScripts"]:remove()
+www.kiplinger.com##script[id="hawkAdditionalScripts"]:remove()
 www.kiplinger.com##+js(set-constant, window.adParameters, {})
 www.kiplinger.com##+js(set-constant, handleHeaderError, noopFunc)
 www.kiplinger.com##+js(set-constant, comscoreIntegration, noopFunc)
@@ -47591,8 +47526,9 @@ www.kiplinger.com##+js(set-constant, window.ccpaAppliesPromise, falseFunc)
 www.kiplinger.com##+js(set-constant, reliableConsentGiven, true)
 www.kiplinger.com##+js(set-constant, ccpaApplies, false)
 www.kiplinger.com##+js(set-constant, selligent_initialiser, noopFunc)
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 wykop-stream.blogspot.com##script[src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove-attr(onerror)
-wykop-stream.blogspot.com##^script[src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove()
+wykop-stream.blogspot.com##script[src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove()
 wykop-stream.blogspot.com##+js(set-constant, adblockmesaj, noopFunc)
 wykop-stream.blogspot.com##:xpath(//script[contains(text(), 'adblockmesaj')]):remove()
 wykop-stream.blogspot.com##+js(set-constant, DisableDevtool, noopFunc)
@@ -47692,6 +47628,41 @@ www.abc27.com##+js(aopw, oneTrustAccept)
 ||d3plfjw9uod7ab.cloudfront.net^*
 ||edge.adobedc.net/ee-pre-prd/va/v1/ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||collector-a.px-cloud.net/api/v2/collector/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! The tusfiles.com/.net domains are now defunct as a file host when the following rules were necessary.
+tusfiles.com##button[id="btn_download"]:style(display:block !important;)
+tusfiles.com##button[id="btn_download"]:remove-attr(disabled)
+tusfiles.com##+js(abort-on-property-read, a.admvn_inter___ctc)
+tusfiles.com##+js(abort-on-property-read, a.admvn_inter___ctt)
+tusfiles.com##+js(abort-on-property-read, a.admvn_inter___ddb)
+tusfiles.com##+js(abort-on-property-read, k.admvn_inter___ctc)
+tusfiles.com##+js(abort-on-property-read, k.admvn_inter___ctt)
+tusfiles.com##+js(abort-on-property-read, k.admvn_inter___ddb)
+tusfiles.com##+js(abort-on-property-read, zfgloadedpopup)
+tusfiles.com##+js(abort-on-property-write, Fingerprint2)
+tusfiles.com##+js(abort-on-property-write, a.admvn_inter___ctc)
+tusfiles.com##+js(abort-on-property-write, a.admvn_inter___ctt)
+tusfiles.com##+js(abort-on-property-write, a.admvn_inter___ddb)
+tusfiles.com##+js(abort-on-property-write, k.admvn_inter___ctc)
+tusfiles.com##+js(abort-on-property-write, k.admvn_inter___ctt)
+tusfiles.com##+js(abort-on-property-write, k.admvn_inter___ddb)
+tusfiles.com##+js(abort-on-property-write, zfgloadedpopup)
+tusfiles.com##+js(acs, Math, zfgloaded)
+tusfiles.com##+js(no-window-open-if)
+tusfiles.com##^script:has-text(document.createElement('script'))
+tusfiles.com##body > script:remove()
+tusfiles.com##app > div.padding > script:nth-child(7):remove()
+tusfiles.com##iframe:remove()
+tusfiles.net##.white.btn-lg.btn:remove()
+tusfiles.net##span[id^="div-gpt-ad-"]:remove()
+www.tusfiles.net##.bttn:remove()
+||tusfiles.com/sw.js$script,1p
+||tusfiles.net/images/523523523.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.tusfiles.net/img/TusFiles_728x90.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||z.tusfiles.net/i/dll.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||z.tusfiles.net/images/13.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||z.tusfiles.net/images/WP90.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||z.tusfiles.net/images/tusfilesb.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||z.tusfiles.net/img/WP728_90.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
