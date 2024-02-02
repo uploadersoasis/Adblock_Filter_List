@@ -47669,7 +47669,7 @@ www.tusfiles.net##.bttn:remove()
 ||woodiessnirl.digital^*
 ||www.crichd.com/push.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.crichd.com##div[id="smart_push_smio_window"]:remove()
-www.crichd.com##a[href^="https://procdncache.com/free.php?id="]:remove()
+www.crichd.com,hd.crichdlivecricket.cc##a[href^="https://procdncache.com/free.php?"]:remove()
 ! Put the following rule first or it will not be triggered after the onclick attribute is removed from it.
 www.crichd.com##button[onclick^="window.open('https://procdncache.com/free.php?"]:remove()
 !www.crichd.com##button:remove-attr(onclick)
@@ -47690,13 +47690,14 @@ www.crichd.com##+js(remove-attr, onclick, button[onclick^="window.open('https://
 ||crichdstreaming.xyz/z-7275846$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||crichdstreaming.cc/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||crichdstreaming.xyz/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+hd.crichdlivecricket.cc,stream.crichd.live##iframe[src="ad.html"]:remove()
 crichdstreaming.cc,crichdstreaming.xyz##div[id="floater"]:remove()
 ! The following rule is not necessary since it is under the removed floater div tag.
 !crichdstreaming.cc,crichdstreaming.xyz##span[onmouseup]:has(img[src="https://i.imgur.com/0P0Udsa.png"]):upward(1):remove()
-||stream.crichd.live/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! getting rid of the right column also removes the chatango widget
-hd.crichdlivecricket.cc,stream.crichd.live##div[id="rightcolumn"]:remove()
-hd.crichdlivecricket.cc,stream.crichd.live##iframe[src="ad.html"]:remove()
+stream.crichd.live##div[id="rightcolumn"]:remove()
+! div[id="groupcover"] is the same as div[id="rightcolumn"] for hd.crichdlivecricket.cc
+hd.crichdlivecricket.cc##div[id="groupcover"]:remove()
 !hd.crichdlivecricket.cc,stream.crichd.live##iframe[id="frame_a"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 hd.crichdlivecricket.cc,stream.crichd.live##iframe[src^="https://crichdstreaming.xyz/embed2.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 hd.crichdlivecricket.cc,stream.crichd.live##+js(saa, allow, encrypted-media, iframe[src^="https://crichdstreaming.xyz/embed2.php"])
@@ -47721,6 +47722,20 @@ hd.crichdlivecricket.cc,stream.crichd.live##+js(aopw, window.kkp4a5x5tv)
 escast.xyz##body:remove-attr(oncontextmenu)
 escast.xyz##body:remove-attr(onselectstart)
 escast.xyz##body:remove-attr(ondragstart)
+escast.xyz##div[id="my-player"]:remove-class(vjs-controls-disabled)
+escast.xyz##+js(remove-class, vjs-controls-disabled, div[id="my-player"])
+!escast.xyz##+js(remove-class, vjs-controls-disabled, div[id="my-player"], stay)
+! TODO: While setting/removing the muted values works, it does NOT actually unmute/set the volume level.
+!       player.muted(); still returns true after these rules are applied.
+!       player.volume(); returns the current volume level with 1 being full volume.
+escast.xyz##+js(saa, muted, false, div[id="my-player"])
+! remove muted attribute from video tag instead of setting it with saa instead as that is what happens normally
+escast.xyz##video[id="my-player_html5_api"]:remove-attr(muted)
+escast.xyz##+js(remove-attr, muted, video[id="my-player_html5_api"])
+escast.xyz##+js(saa, controls, true, video[id="my-player_html5_api"])
+escast.xyz##+js(trusted-replace-node-text, script, /mute="true"/gm, mute="false")
+! TODO: need to set this in video tag not script
+!escast.xyz##+js(trusted-replace-node-text, script, /muted="muted"/gm, mute="")
 ||zeekaihu.net^*
 ||stugsoda.com^*
 ||veeloomo.net^*
