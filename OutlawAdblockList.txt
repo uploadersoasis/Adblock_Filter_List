@@ -40793,6 +40793,7 @@ slmaxed.com##div[class="alert alert-info mb-2"]:remove()
 st.chatango.com##div[id="taboola-chat-article-thumbnails"]:remove()
 st.chatango.com##div[class="sdlg-title-bg-hidden"]:remove()
 st.chatango.com##div[class="sdlg-sc"]:has(div[class="OUTBRAIN"][data-widget-id]):remove()
+st.chatango.com##div[id="groupcover"]:remove()
 st.chatango.com##script[id="tb_loader_script"]:remove()
 st.chatango.com##script[id="tsjson"]:remove()
 st.chatango.com##+js(set-constant, window._taboola, [])
@@ -47695,9 +47696,7 @@ crichdstreaming.cc,crichdstreaming.xyz##div[id="floater"]:remove()
 ! The following rule is not necessary since it is under the removed floater div tag.
 !crichdstreaming.cc,crichdstreaming.xyz##span[onmouseup]:has(img[src="https://i.imgur.com/0P0Udsa.png"]):upward(1):remove()
 ! getting rid of the right column also removes the chatango widget
-stream.crichd.live##div[id="rightcolumn"]:remove()
-! div[id="groupcover"] is the same as div[id="rightcolumn"] for hd.crichdlivecricket.cc
-hd.crichdlivecricket.cc,www.crichd.live##div[id="groupcover"]:remove()
+hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##div[id="rightcolumn"]:remove()
 !hd.crichdlivecricket.cc,stream.crichd.live##iframe[id="frame_a"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##iframe[src^="https://crichdstreaming.xyz/embed2.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##+js(saa, allow, encrypted-media, iframe[src^="https://crichdstreaming.xyz/embed2.php"])
