@@ -33449,7 +33449,6 @@ ko.strikeout.cc##^script:has-text(/debugger;/):remove()
 ko.strikeout.cc##:xpath(//script[contains(text(), 'debugger;')]):remove()
 ko.strikeout.cc##+js(acs, /^debugger;/)
 ko.strikeout.cc##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-||www.crichd.com/push.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||oaphoace.net^*
 ||terribledeliberate.com^*
 ||jiufbtrsqpa.com^*
@@ -35935,8 +35934,6 @@ yourtehzeeb.com##script:has-text(/debugger;/):remove()
 yourtehzeeb.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
 yourtehzeeb.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 yourtehzeeb.com##+js(acs, /^debugger;/)
-st.chatango.com##div[id="taboola-chat-article-thumbnails"]
-st.chatango.com##div[class="sdlg-title-bg-hidden"]
 ||ivexjkwo.com^*
 ||strollcurepinching.com^*
 ||reapinject.com^*
@@ -40796,7 +40793,16 @@ slmaxed.com##div[class="alert alert-info mb-2"]:remove()
 !||st.chatango.com/js/gz/emb.js$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
 !||st.chatango.com^$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
 !||st.chatango.com^$all,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+! not www.crichd.com since it has button to optionally open the chat window
 ||st.chatango.com^*$domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+st.chatango.com##div[id="taboola-chat-article-thumbnails"]:remove()
+st.chatango.com##div[class="sdlg-title-bg-hidden"]:remove()
+st.chatango.com##div[class="sdlg-sc"]:has(div[class="OUTBRAIN"][data-widget-id]):remove()
+st.chatango.com##script[id="tb_loader_script"]:remove()
+st.chatango.com##script[id="tsjson"]:remove()
+st.chatango.com##+js(set-constant, window._taboola, [])
+! The following rule prevent the chat widget from working.
+!st.chatango.com##+js(set-constant, _chatangoTagserver, {})
 ||www.facebook.com/ajax/bz?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 tutorialzine.com##+js(set-constant, _gaq, [])
 tutorialzine.com##+js(abort-on-property-write, _gaq)
@@ -47057,9 +47063,13 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||encesprincipledecl.info^*
 !1stream.eu##div[id="video-player"]:has(div[data-player]):style(height: 100vh !important; width: 100vw !important;)
 1stream.eu##div[data-player]:style(height: 100vh !important; width: 100vw !important;)
-*/script/utils.js$domain=s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*/script/suv5.js$domain=s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*/script/ut.js$domain=s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/utils.js$domain=escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/suv5.js$domain=escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/suvv.js$domain=escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/ut.js$domain=escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/ksoxqhlw.js$domain=escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/ut/hb.php$domain=escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/ut/ctr.php$domain=escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 */assets/vjquery.jsonp.min.js$domain=s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||canoemissioninjunction.com^*
 ||fertilizerpokerelations.com^*
@@ -47663,6 +47673,38 @@ www.tusfiles.net##.bttn:remove()
 ||z.tusfiles.net/images/WP90.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||z.tusfiles.net/images/tusfilesb.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||z.tusfiles.net/img/WP728_90.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||abrhydona.com^*
+||pythiosdubs.com^*
+||atweenchokra.digital^*
+||www.fromjoytohappiness.com^*
+||woodiessnirl.digital^*
+||www.crichd.com/push.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.crichd.com##div[id="smart_push_smio_window"]:remove()
+www.crichd.com##a[href^="https://procdncache.com/free.php?id="]:remove()
+! Put the following rule first or it will not be triggered after the onclick attribute is removed from it.
+www.crichd.com##button[onclick^="window.open('https://procdncache.com/free.php?"]:remove()
+!www.crichd.com##button:remove-attr(onclick)
+www.crichd.com##button[onclick^="window.open('https://procdncache.com/free.php?"]:remove-attr(onclick)
+www.crichd.com##+js(remove-attr, onclick, button[onclick^="window.open('https://procdncache.com/free.php?"])
+!||rjdty.irondepthscrafter.top^*
+!||a.irondepthscrafter.top^*
+!||cdnstatic.irondepthscrafter.top^*
+||irondepthscrafter.top^*
+!||rjdty.canopusacrux.top^*
+||canopusacrux.top^*
+||mazror.click^*
+||questioningtosscontradiction.com^*
+||procdncache.com/free.php?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mjsytjw.com^*
+||wuefmls.com^*
+||crichdstreaming.cc/z-7275846$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||crichdstreaming.xyz/z-7275846$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||crichdstreaming.cc/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||crichdstreaming.xyz/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||escast.xyz/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||escast.xyz/z-7275810$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||zeekaihu.net^*
+stream.crichd.live
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
