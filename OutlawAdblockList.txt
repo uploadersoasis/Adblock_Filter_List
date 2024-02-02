@@ -47701,9 +47701,13 @@ www.crichd.com##+js(remove-attr, onclick, button[onclick^="window.open('https://
 ||crichdstreaming.xyz/z-7275846$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||crichdstreaming.cc/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||crichdstreaming.xyz/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||stream.crichd.live/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+stream.crichd.live##iframe[src="ad.html"]:remove()
+stream.crichd.live##div[id="floater"]:remove()
 ||escast.xyz/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||escast.xyz/z-7275810$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||zeekaihu.net^*
+||stugsoda.com^*
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
