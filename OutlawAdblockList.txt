@@ -47725,6 +47725,10 @@ escast.xyz##body:remove-attr(ondragstart)
 escast.xyz##div[id="my-player"]:remove-class(vjs-controls-disabled)
 escast.xyz##+js(remove-class, vjs-controls-disabled, div[id="my-player"])
 !escast.xyz##+js(remove-class, vjs-controls-disabled, div[id="my-player"], stay)
+escast.xyz##:xpath(//script[contains(text(), '_Hasync')]):remove()
+escast.xyz##+js(set-constant, _Hasync, [])
+escast.xyz##+js(aopw, _Hasync)
+escast.xyz##+js(aopr, _Hasync)
 ! TODO: While setting/removing the muted values works, it does NOT actually unmute/set the volume level.
 !       player.muted(); still returns true after these rules are applied.
 !       player.volume(); returns the current volume level with 1 being full volume.
