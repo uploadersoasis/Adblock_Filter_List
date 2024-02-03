@@ -47073,6 +47073,11 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||adfgetlink.net/api/v1/cs?authkey=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||weblivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||olalivehdplay.ru/blast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||olalivehdplay.ru/resources/scripts/disclaimer.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! TODO: The following rule blocks the Cloudflare security test script, but does blocking that script prevent access to the website?
+||olalivehdplay.ru/cdn-cgi/apps/head/$script
+olalivehdplay.ru##div[id="cf-wrapper"]:remove()
+!olalivehdplay.ru##div[id="cookie-alert"]:remove()
 weblivehdplay.ru##+js(aeld, click, function)
 olalivehdplay.ru,weblivehdplay.ru##body:remove-attr(oncontextmenu)
 olalivehdplay.ru,weblivehdplay.ru##script[disable-devtool-auto]:remove()
@@ -47754,6 +47759,11 @@ escast.xyz##+js(trusted-replace-node-text, script, /mute="true"/gm, mute="false"
 ||rfsjuxlip.com^*
 ||www.prdsrnsrksgryz.com^*
 ||prdsrnsrksgryz.com^*
+||www.gtwimkngw.com^*
+||gtwimkngw.com^*
+||www.jieaxwgwnydl.com^*
+||jieaxwgwnydl.com^*
+||zvhprab.com^*
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
