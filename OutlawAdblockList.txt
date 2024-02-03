@@ -31628,12 +31628,9 @@ hot4share.com##+js(remove-attr, disabled, #downloadbtn, stay)
 ||blyckidxmuq.com^*
 ||voonogoa.net^*
 ||othxgfawwmambdx.xyz^*
-oxy.st##div[id="cookies"]
 ||cdn.adlook.me^*
 ||d.gcdn.co/js/rlf.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||news-oginet.cc/code/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||oxy.st/rp-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||oxy.cloud/rp-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ads2.adlook.me^*
 www.system-rescue.org##div[aria-label="cookieconsent"]
 !||news-muxeta.cc/code/https.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -46460,14 +46457,13 @@ www.humblebundle.com##+js(set-constant, window.zdconsent.run.push, noopFunc, end
 ||karanpc.com/wp-content/plugins/deblocker/js/ads.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||karanpc.com/wp-content/uploads/2012/05/download-button.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||karanpc.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||karanpc.com/detroitchicago/greenoaks.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||karanpc.com/detroitchicago/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 karanpc.com##+js(set-constant, countdown, 0, stay)
 !karanpc.com##+js(set-constant, countdownInterval, noopFunc)
 karanpc.com##+js(nano-setTimeout-booster, function, 100, 0.10)
-karanpc.com##div[class^="ads-container"]
 karanpc.com##div[class^="ads-container"]:remove()
-karanpc.com##ins[data-ad-client]
 karanpc.com##ins[data-ad-client]:remove()
-karanpc.com##div[id="countdown"]
 karanpc.com##div[id="countdown"]:remove()
 karanpc.com##div[id="downloadButton"]:style(display: block !important;)
 karanpc.com##div[id="mdp-deblocker-ads"]:remove()
@@ -47764,6 +47760,34 @@ escast.xyz##+js(trusted-replace-node-text, script, /mute="true"/gm, mute="false"
 ||www.jieaxwgwnydl.com^*
 ||jieaxwgwnydl.com^*
 ||zvhprab.com^*
+||js-eu1.hsadspixel.net^*
+||js-eu1.hs-analytics.net/analytics^*
+||js-eu1.hs-banner.com^*
+www.waybook.com##script[id^="cookieBanner-"]:remove()
+www.waybook.com##script[id^="hs-ads-pixel-"]:remove()
+www.waybook.com##script[id^="hs-analytics"]:remove()
+www.waybook.com##+js(set-constant, window.GLOBAL_CONFIG.googletagmanager_id, "")
+www.waybook.com##+js(set-constant, window.GLOBAL_CONFIG.googletagmanager_ga4_id, "")
+www.waybook.com##+js(set-constant, analytics, [])
+www.waybook.com##+js(aopr, analytics)
+www.waybook.com##+js(aopw, analytics)
+||oxy.st/rp-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||oxy.cloud/rp-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+oxy.st,oxy.cloud##div[class^="mikeoscardeltaalphalima"]:remove()
+oxy.st,oxy.cloud##div[id="cookies"]:remove()
+oxy.st,oxy.cloud##a[href^="https://download.oxy.st/d/"]:remove-attr({{onclick}})
+oxy.st,oxy.cloud##+js(remove-attr, {{onclick}}, a[href^="https://download.oxy.st/d/"])
+oxy.st,oxy.cloud##+js(aeld, click)
+! TODO: The following rule to remove the login bar at the bottom of the page is likely randomnly generated class names.
+www.facebook.com##div[class="x78zum5 xdt5ytf x2lah0s x193iq5w x2bj2ny x1ey2m1c xayqjjm x9f619 xds687c x1xy6bms xn6708d x1s14bel x1ye3gou xixxii4 x17qophe x1u8a7rm"]:remove()
+azrotv.com##div[class="adbn-wrap"]:remove()
+||resourcesswallow.com^*
+||sillinesswoollen.com^*
+! splitbee is an analytics website
+||cdn.splitbee.io/sb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+m3u8play.dev##div[id="vjs_video_3"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+m3u8play.dev##+js(set-constant, splitbee, noopFunc)
+div[id="vjs_video_3"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
