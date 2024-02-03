@@ -2804,6 +2804,21 @@ turbobit.net###branding-link
 !||boingboing.net/wp-content/themes/2012/ads/ad_300.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 boingboing.net###ad_squares_frame:remove()
 boingboing.net##.ad:remove()
+boingboing.net##div[data-freestar-ad]:remove()
+boingboing.net##div[id^="boing-"]:has(sellwild):remove()
+boingboing.net##sellwild:remove()
+! TODO: This does not prevent the scripts from loading as they appear to be removed after the page is processed.
+boingboing.net##script[id^="advanced-ads-"]:remove()
+boingboing.net##script[id^="google_gtagjs-js"]:remove()
+boingboing.net##+js(set-constant, gtag, noopFunc)
+boingboing.net##+js(set-constant, advanced_ads_check_adblocker, noopFunc)
+!boingboing.net##+js(set-constant, window.advanced_ads_check_adblocker, noopFunc)
+boingboing.net##+js(set-constant, window.advanced_ads_ready, noopFunc)
+boingboing.net##+js(set-constant, advadsCfpAd, noopFunc)
+boingboing.net##+js(set-constant, _comscore, [])
+boingboing.net##+js(set-constant, _stq, [])
+boingboing.net##+js(set-constant, window.advads_admin_bar_items, [])
+boingboing.net##+js(set-constant, advanced_ads_ga_UID, "")
 ||boingboing.net/wp-content/plugins/advanced-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.sofanti.com/lp/codecperformer/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.sofanti.com^*
