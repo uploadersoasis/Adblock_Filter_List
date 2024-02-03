@@ -30668,7 +30668,6 @@ www.axios.com##amp-ad:remove()
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 www.axios.com##script[custom-element="amp-ad"]:remove()
 www.axios.com##script[custom-element="amp-analytics"]:remove()
-www.pcgamesn.com##div[class="nn_bb ad"]:remove()
 www.law360.com##div[id^="div-gpt-ad"]:remove()
 www.law360.com##+js(remove-class, fade1, ,)
 www.law360.com##+js(remove-class, fade2, ,)
@@ -31406,7 +31405,6 @@ apk4k.fun##div[class="ad"]
 www.gamesradar.com##div[class*="ad-unit"]
 www.rollingstone.com##div[id^="adm-inline-article-ad-"]
 www.rollingstone.com##div[class*="pmc-adm-boomerang-pub-div"]
-www.pcgamesn.com##div[id="nn_bfa_wrapper"]
 www.eonline.com##div[class*="--topad"]
 ||nertablisst.com^*
 ||nizationsuch.com^*
@@ -34112,10 +34110,8 @@ apkmodsapp.com##ins[data-ad-client]
 apkmodsapp.com##+js(aopw, adsbygoogle)
 apkmodsapp.com##+js(aopr, adsbygoogle)
 apkmodsapp.com##div[class="code-block-label"]:has-text(Advertisements):upward(1)
-www.pcgamesn.com##div[id^="nn_mpu"]:upward(1)
 ||kumo.network-n.com/dist/1.20.0/facebook-pixel.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||t.beop.io^*
-||www.pcgamesn.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.sfgate.com##div[class*="adModule"]
 ||hearstnewspapers-d.openx.net^*
 ||count.api.pgs.io^*
@@ -34270,7 +34266,6 @@ www.fcportables.com##ins[data-ad-client]
 !gamicus.fandom.com##div[class="bottom-ads-container"]
 gamicus.fandom.com##div[class*="ads-container"]
 ||dyv1bugovvq1g.cloudfront.net^*
-www.pcgamesn.com##.new_affiliate_embed
 ||baza57.ru^*
 ||drivetrack.ru^*
 ||drnord.ru^*
@@ -34882,8 +34877,6 @@ www.wdrb.com##div[class="csadholder"]:remove()
 yougame.biz##li[data-notice-id]:upward(2):remove()
 getmodsapk.com##div[class*="NR-Ads"]:remove()
 getmodsapk.com##ins[data-ad-client]:remove()
-www.pcgamesn.com##.legion_primiswrapper:remove()
-www.pcgamesn.com###nn_astro_wrapper:remove()
 ||vouruwou.com^*
 www.wysiwygwebbuilder.com##div[aria-label="cookieconsent"]:remove()
 sindenlightgun.miraheze.org##[class^="mw-cookiewarning-"]:upward(1):remove()
@@ -47818,6 +47811,25 @@ butterflyapk.com##+js(set-constant, secondsleft, 0)
 ||servt.unrulyvideo.com^*
 ||tg1.unrulyvideo.com/api/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||e37364.dscd.akamaiedge.net/api/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.pcgamesn.com##div[class="nn_bb ad"]:remove()
+www.pcgamesn.com##div[id="nn_bfa_wrapper"]:remove()
+www.pcgamesn.com##div[id^="nn_mpu"]:upward(1):remove()
+www.pcgamesn.com##div[id^="nn_"][class="ad"]:remove()
+www.pcgamesn.com##.new_affiliate_embed:remove()
+www.pcgamesn.com##.legion_primiswrapper:remove()
+www.pcgamesn.com###nn_astro_wrapper:remove()
+www.pcgamesn.com##+js(set-constant, window.AdSlots, {})
+www.pcgamesn.com##+js(set-constant, gtag, noopFunc)
+||www.pcgamesn.com/wp-content/plugins/legion-advertising-atlasastro/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.pcgamesn.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.pcgamesn.com/wp-content/plugins/legion-permutive/assets/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.pcgamesn.com/wp-content/plugins/legion-permutive/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||consent.pcgamesn.com/unified/wrapperMessagingWithoutDetection.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||consent.pcgamesn.com^*
+||starlight.networknmedia.com/trackingpixel.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||constellation.networknmedia.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.pbxai.com^*
+!||00917082-71e9-498e-8343-00c3df06b798.edge.permutive.app^*
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
