@@ -34556,8 +34556,9 @@ cut-y.net##+js(remove-attr, disabled, #submit-button, stay)
 ||id.a-mx.com^*
 !||stats-dev.brid.tv/ping.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||stats-dev.brid.tv^*
+! Blocking browser.sentry-cdn.com blocks a script used by Cloudflare for access to a protected website.
 !||browser.sentry-cdn.com/6.2.2/bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||browser.sentry-cdn.com^*
+!||browser.sentry-cdn.com^*
 ||cdn.thisiswaldo.com/static/js/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||track.blufpartners.com^*
 forex-gold.net##div[id="con_me"]
@@ -41905,7 +41906,7 @@ www.outlookindia.com##+js(acs, googletag)
 www.outlookindia.com##div[id="_snup-rtdx-ldgr1"]
 www.outlookindia.com##div[id="_snup-rtdx-ldgr1"]:remove()
 www.thebrighterside.news##+js(nosiif, /^/)
-www.thebrighterside.news##+js(acs, browser.sentry-cdn.com, sentry-next.wixpress.com)
+!www.thebrighterside.news##+js(acs, browser.sentry-cdn.com, sentry-next.wixpress.com)
 www.thebrighterside.news##+js(aopr, amzn_assoc_ad_type)
 www.thebrighterside.news##+js(aopw, amzn_assoc_ad_type)
 www.thebrighterside.news##+js(set-constant, amzn_assoc_ad_type, "")
@@ -47559,7 +47560,8 @@ wykop-stream.blogspot.com##+js(saa, scrolling, yes, div[id="tv"]>iframe)
 ||www.towcoaah.com^*
 ! block all third-party scripts except specific exceptions on these domains related to video streaming.
 ! arc.io covers subdomains like static.arc.io but NOT CDN sources like prod-arc-cdn-s3.b-cdn.net or related library sources like unpkg.com
-*$script,3p,denyallow=code.jquery.com|arc.io|prod-arc-cdn-s3.b-cdn.net|unpkg.com,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
+! browser.sentry-cdn.com needs to be allowed on these domains if using Cloudflare protection
+*$script,3p,denyallow=code.jquery.com|arc.io|prod-arc-cdn-s3.b-cdn.net|unpkg.com|browser.sentry-cdn.com,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
 sportstream1.cfd##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 sportstream1.cfd##+js(saa, allow, encrypted-media, #thatframe)
 sportstream1.cfd##+js(saa, scrolling, yes, #thatframe)
