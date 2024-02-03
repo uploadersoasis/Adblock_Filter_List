@@ -1198,9 +1198,6 @@ img.atdmt.com/images/pixel.gif$document,subdocument,script,inline-script,inline-
 ||androidpromedia.blogspot.com/b/stats^*
 !||www.google.com/js/gweb/analytics/autotrack.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.google.com/js/gweb/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-boingboing.net###ad_squares_frame
-boingboing.net##.ad
-||media.boingboing.net/wp-content/themes/2012/ad_squares.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.queenshare.com/queen_pop.htm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||d.addelive.com/widget/render/hash/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d.addelive.com^*
@@ -2800,10 +2797,14 @@ turbobit.net###branding-link
 !||media.boingboing.net/wp-content/themes/2012/ads/ad_google_rect.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||media.boingboing.net/wp-content/themes/2012/ads/ad_t-shirts.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||media.boingboing.net/wp-content/themes/2012/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||media.boingboing.net/wp-content/themes/2012/ad_squares.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||boingboing.net/wp-content/themes/2012/ads/ad_leaderboard.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||boingboing.net/wp-content/themes/2012/ads/ad_skyscraper.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||boingboing.net/wp-content/themes/2012/ads/ad_squares.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||boingboing.net/wp-content/themes/2012/ads/ad_300.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+boingboing.net###ad_squares_frame:remove()
+boingboing.net##.ad:remove()
+||boingboing.net/wp-content/plugins/advanced-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.sofanti.com/lp/codecperformer/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.sofanti.com^*
 !||www.humipapp.com/download/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43732,6 +43733,8 @@ extreme-ip-lookup.com^*$domain=up-load.io
 ||a.pub.network/core/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||a.pub.network/core/pubfig/*/pubfig.engine.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||a.pub.network/core/pubfig/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a.pub.network/boingboing-net/pubfig.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a.pub.network/itsfoss/pubfig.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.pub.network^*$domain=bleepingcomputer.com|www.siliconera.com|itsfoss.com
 !||cdn.confiant-integrations.net/gptprebidnative/202303290926/wrap.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.confiant-integrations.net/gptprebidnative/$script
@@ -45725,7 +45728,6 @@ itsfoss.com##+js(acs, gtag)
 itsfoss.com##script[data-owner="freestar"]
 itsfoss.com##script[data-owner="freestar"]:remove()
 news.itsfoss.com##amp-ad
-||a.pub.network/itsfoss/pubfig.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.datasheetarchive.com##div[class*="ad-content"]
 www.datasheetarchive.com##div[class*="ad-content"]:remove()
 ! prevent download link
@@ -47787,7 +47789,20 @@ azrotv.com##div[class="adbn-wrap"]:remove()
 ||cdn.splitbee.io/sb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 m3u8play.dev##div[id="vjs_video_3"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 m3u8play.dev##+js(set-constant, splitbee, noopFunc)
-div[id="vjs_video_3"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+butterflyapk.com##div[id="gpt-"]:remove()
+! The following two functions control the download timer; setting them to noopFunc prevents the download button from being displayed.
+!butterflyapk.com##+js(set-constant, startChecking, noopFunc)
+!butterflyapk.com##+js(set-constant, startschedule, noopFunc)
+! The following two rules get rid of the download timer.
+butterflyapk.com##+js(set-constant, threshold, 0)
+butterflyapk.com##+js(set-constant, secondsleft, 0)
+||iad1-unruly-lb.nexxen.com/pixels?adslotid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||aniview-diag-server.1rx.io/pixels?adslotid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||track-sc.adservrs.com^*
+!||servt.unrulyvideo.com/track?pid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||servt.unrulyvideo.com^*
+||tg1.unrulyvideo.com/api/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||e37364.dscd.akamaiedge.net/api/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
