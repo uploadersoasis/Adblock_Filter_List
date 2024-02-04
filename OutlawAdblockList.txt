@@ -232,7 +232,6 @@ www.ehow.com##div[id*="dclkAdsFrameID"]
 ||c1.neweggimages.com/WebResource/Scripts/TP_CoreMetrics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s3.amazonaws.com/com.alexa.toolbar/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ggo.directrev.com^*
-||www.adcash.com/script/java.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.crtracker.com/images/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ceu.sitescout.com/disp^pid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.nude.mk/images/nude.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -2164,7 +2163,11 @@ www.nydailynews.com##.yahoo_ads
 ||sanshare.com/images/sanshare2.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bright-on-design.co.uk/main.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.kingsera.com^*
+||www.adcash.com/script/java.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.adcash.com/script/pop_packcpm.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.adcash.com/ban/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||www.adcash.com/ad/display.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.adcash.com/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||truthaboutonlinesluts.com/ru/us/r.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||turbobit.net/js/advertisment.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||downloadbox.me/box.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -2681,7 +2684,6 @@ openfeint.openfeint.openfeint.ibsdl.apk.iandphone.net###fb813
 ||stream1.gamespot.fyre.co/v3.1/collection/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ads42257.hotwords.com/show.jsp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ads*.hotwords.com/show.jsp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.adcash.com/ban/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||hscripts.com/images/buildmylink-ad.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||nexus.ensighten.com/error/e.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||i.answers.microsoft.com/static/js/logging.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -5471,8 +5473,6 @@ www.blogsolute.com###aswift_0
 ||resources.ea.com/omniture/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||rum-collector.pingdom.net/img/beacon.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||rum-collector.pingdom.net^*
-!||www.adcash.com/ad/display.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.adcash.com/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.gossipcop.com##.str-adunit.hosted-video.str-collapsed
 ||qks6bv.security2015.pw^*
 ||a1.vdna-assets.com/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -23881,7 +23881,8 @@ www.gog.com##div[ng-hide="floatingBanner.isDismissed"]
 ||ikunselt.com^*
 ||ptaulrou.net^*
 www.foxebook.net##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-www.foxebook.net##+js(abort-current-script, atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='))
+www.foxebook.net##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
+www.foxebook.net##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 ||graizoah.com^*
 ||edampeci.com^*
 ||uk.proxfree.com/hit^*
@@ -37439,6 +37440,9 @@ dlhd.sx,daddylivehd.sx##div[id="UnMutePlayer"]:remove()
 dlhd.sx,daddylivehd.sx##iframe[id="stats"]:remove()
 dlhd.sx,daddylivehd.sx##iframe[src^="https://st.chatango.com/"]:remove()
 dlhd.sx,daddylivehd.sx##iframe[data-aa]:remove()
+dlhd.sx,daddylivehd.sx##iframe[src*="/online.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src*="/online.php"])
+dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src*="/online.php"])
 dlhd.sx,daddylivehd.sx##iframe[src*="/stream.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 dlhd.sx,daddylivehd.sx##input[type=button]:remove-attr(disabled)
 !dlhd.sx,daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
@@ -37470,6 +37474,8 @@ poscitechs.shop,dlhd.sx##+js(acs, window.kkp4a5x5tv)
 poscitechs.shop,dlhd.sx##+js(aopw, window.kkp4a5x5tv)
 poscitechs.shop,dlhd.sx##+js(aopr, window.kkp4a5x5tv)
 poscitechs.shop,dlhd.sx##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+poscitechs.shop,dlhd.sx##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
+poscitechs.shop,dlhd.sx##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 !poscitechs.shop##+js(nostif)
 !poscitechs.shop##+js(nostif, /^/)
 poscitechs.shop##+js(nostif, /^function\(\)/)
@@ -37745,7 +37751,6 @@ userupload.net,userupload.in##iframe[id^="google_ads_frame"]:remove()
 userupload.net,userupload.in##amp-auto-ads:remove()
 userupload.net,userupload.in##input[id="addon"]:remove()
 userupload.net,userupload.in##div[id="gdpr-cookie-notice"]:remove()
-userupload.net,userupload.net,userupload.in##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 userupload.net,userupload.in##ins[data-ad-client]:remove()
 userupload.net,userupload.in##*[id="vc4c"]:remove()
 userupload.net,userupload.in##*[id="ad-banner-1"]:remove()
@@ -37769,7 +37774,6 @@ userupload.net,userupload.in##*[id="ad"]
 userupload.net,userupload.in##*[id="ads"]
 userupload.net,userupload.in##*[id="adsense"]
 userupload.net,userupload.net,userupload.in##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-userupload.net,userupload.in##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 userupload.net,userupload.in##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 userupload.net,userupload.in##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 ! need to specify third-party for the no-xhr-if; not of !/userupload.in/i, !/userupload.net/i
@@ -37967,7 +37971,7 @@ embedstream.me##+js(set-constant, window.b8ade3936780eab00ffad9d29f8907ff, "")
 embedstream.me##+js(aopr, window.b8ade3936780eab00ffad9d29f8907ff)
 embedstream.me##+js(aopw, window.b8ade3936780eab00ffad9d29f8907ff)
 embedstream.me##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-embedstream.me##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+embedstream.me##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 embedstream.me##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 embedstream.me##+js(aopr, x.withCredentials)
 embedstream.me##+js(aopw, x.withCredentials)
@@ -38085,6 +38089,8 @@ sportskart.click##+js(set-constant, _gaq, [])
 sportskart.click##+js(set-constant, window.u_cfg, {})
 sportskart.click##+js(set-constant, window.c1702bdd64cd85dc6e4723404569127c, "")
 sportskart.click##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+sportskart.click##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
+sportskart.click##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 sportskart.click##script[data-adel][zid]:remove()
 sportskart.click##iframe[id="stats"]:remove()
 sportskart.click###stats:remove()
@@ -41578,7 +41584,7 @@ dooood.com##+js(aopw, x.withCredentials)
 dooood.com##+js(aopr, tryCount)
 dooood.com##+js(aopw, tryCount)
 dooood.com##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-dooood.com##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+dooood.com##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 dooood.com##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 ||www.profitabledisplaynetwork.com/*/invoke.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||platform.linkedin.com/litms/utag/learning-guest-frontend/utag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -41866,7 +41872,7 @@ putlocker.sb##+js(acs, window.kkp4a5x5tv)
 putlocker.sb##+js(aopr, window.kkp4a5x5tv)
 putlocker.sb##+js(aopw, window.kkp4a5x5tv)
 putlocker.sb##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-putlocker.sb##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+putlocker.sb##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 putlocker.sb##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 putlocker.sb##div[id="modalshare"]
 putlocker.sb##div[id="modalshare"]:remove()
@@ -42620,9 +42626,7 @@ clicknupload.*,clickndownload.org,clickndownload.space##:xpath(/html/body/div/di
 clicknupload.*,clickndownload.org,clickndownload.space##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2]):remove()
 !clicknupload.*,clickndownload.org,clickndownload.space##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
 clicknupload.*,clickndownload.org,clickndownload.space##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div)
-clicknupload.*,clickndownload.org,clickndownload.space##^script:has-text(/document\.createElement|atob\(/i)
 clicknupload.*,clickndownload.org,clickndownload.space##^script:has-text(/document\.createElement|atob\(/i):remove()
-clicknupload.*,clickndownload.org,clickndownload.space##^script:has-text(/eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==/)
 clicknupload.*,clickndownload.org,clickndownload.space##^script:has-text(/eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==/):remove()
 clicknupload.*,clickndownload.org,clickndownload.space##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIjcm5fYWRfbmF0aXZlX2o1bXJxfCNybl9hZF9uYXRpdmVfemNpemUifQ==)
@@ -44627,7 +44631,6 @@ letsupload.org,letsupload.to,letsupload.io##+js(set-constant, seconds, 0)
 letsupload.org,letsupload.to,letsupload.io##^script:has-text(runAdblock)
 letsupload.org,letsupload.to,letsupload.io##^script:has-text(runAdblock):remove()
 letsupload.org,letsupload.to,letsupload.io##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-letsupload.org,letsupload.to,letsupload.io##^script:has-text(JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
 letsupload.org,letsupload.to,letsupload.io##^script:has-text(JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='))):remove()
 letsupload.org,letsupload.to,letsupload.io##+js(abort-current-script, atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='))
 letsupload.org,letsupload.to,letsupload.io##+js(abort-current-script, JSON.parse(atob('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')))
@@ -46916,7 +46919,9 @@ embedstreams.me##script[type="text/partytown"]:remove()
 embedstreams.me##+js(set-constant, aclib.runPop, noopFunc, end)
 embedstreams.me##+js(set-constant, aclib.runPop, noopFunc, complete)
 embedstreams.me##+js(set-constant, partytown, {})
-embedstreams.me##:xpath(//script[contains(text(), 'adcashLib')]):remove()
+embedstreams.me##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+embedstreams.me##^script:has-text(adcashLib):remove()
+embedstreams.me##+js(acs, adcashLib)
 ! The following rule prevents the embedded video frame from playing.
 !embedstreams.me##+js(set-constant, siteConfig, {})
 ||www.bypfpuldupkyy.com^*
@@ -46958,7 +46963,9 @@ voodc.com##iframe[src^="https://player.mycraft.click/"]:style(height: 100vh !imp
 voodc.com##div[class="afs_ads ad-placement"]:remove()
 voodc.com##div[id="UnMutePlayer"]:remove()
 voodc.com##div[id="ForWeb"]:remove()
-voodc.com##:xpath(//script[contains(text(), 'adcashLib')]):remove()
+voodc.com##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+voodc.com##^script:has-text(adcashLib):remove()
+voodc.com##+js(acs, adcashLib)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 voodc.com##script[adblock-settings]:remove()
 voodc.com##img[id="pingsts"]:remove()
@@ -47058,16 +47065,20 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||encesprincipledecl.info^*
 !1stream.eu##div[id="video-player"]:has(div[data-player]):style(height: 100vh !important; width: 100vw !important;)
 1stream.eu##div[data-player]:style(height: 100vh !important; width: 100vw !important;)
-*/assets/vjquery.jsonp.min.js$domain=s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*/d3.php$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*/script/i.php$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*/script/utils.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*/script/suv5.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*/script/suvv.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*/script/ut.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*/script/ksoxqhlw.js$domain=escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*/ut/hb.php$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-*/ut/ctr.php$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/assets/vjquery.jsonp.min.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/d3.php$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/i.php$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/utils.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/suv5.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/suvv.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/ut.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/ksoxqhlw.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/main_script_123.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/index_abc_99.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/atgv2.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/script/intrn.js$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/ut/hb.php$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/ut/ctr.php$domain=ceimo.click|rakeq.ru.com|qbxez.click|cvkbl.ru.com|ypamu.ru.com|tutlehd2.xyz|escast.xyz|crichdstreaming.cc|hd.crichdlivecricket.cc|s2watch.link|livehdplay.ru|lovesomecommunity.com|givemereddit.eu|voodc.com|olalivehdplay.ru|weblivehdplay.ru|techclips.net|1stream.eu|www.niaomea.me|sts.niaomea.me|cdn.niaomea.me,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||canoemissioninjunction.com^*
 ||fertilizerpokerelations.com^*
 ||xd.awashemeers.com^*
@@ -47086,7 +47097,8 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||olalivehdplay.ru/cdn-cgi/apps/head/$script
 olalivehdplay.ru##div[id="cf-wrapper"]:remove()
 !olalivehdplay.ru##div[id="cookie-alert"]:remove()
-weblivehdplay.ru##+js(aeld, click, function)
+! Do NOT defuse the click or the video iframe will not play.
+!weblivehdplay.ru##+js(aeld, click, function)
 olalivehdplay.ru,weblivehdplay.ru##body:remove-attr(oncontextmenu)
 olalivehdplay.ru,weblivehdplay.ru##script[disable-devtool-auto]:remove()
 ! TODO: None of the following three rules actually prevent redirection away from the page if the page is not in a frame
@@ -47109,7 +47121,9 @@ olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(trusted-replace-node-tex
 ! sets any value not 100 to 100
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(trusted-replace-node-text, script, /player\.setVolume\(((?!100)\d)+\);/gm, player.setVolume(100);)
 olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##div[id="UnMutePlayer"]:remove()
-olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##^script:has-text(adcashLib):remove()
+olalivehdplay.ru,weblivehdplay.ru,viwlivehdplay.ru##+js(acs, adcashLib)
 olalivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'document.onmousedown')]):remove()
 olalivehdplay.ru,weblivehdplay.ru##+js(acs, document.onkeypress, document.onkeydown, document.onmousedown)
 olalivehdplay.ru,weblivehdplay.ru##iframe[class="padPreload"]:remove()
@@ -47277,6 +47291,8 @@ livehdplay.ru,viwlivehdplay.ru##:xpath(//script[contains(text(), 'allowedDomains
 livehdplay.ru,viwlivehdplay.ru##:xpath(//script[contains(text(), 'currentReferer')]):remove()
 livehdplay.ru##:xpath(//script[contains(text(), 'window==window.top')]):remove()
 livehdplay.ru##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+livehdplay.ru##^script:has-text(adcashLib):remove()
+livehdplay.ru##+js(acs, adcashLib)
 ! The following are domains related to peer-to-peer networking and are used for peer-to-peer video streaming on some websites
 !||arc.io/arc-sw-core.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static.arc.io/widget/js/brokers.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -47369,7 +47385,9 @@ antenasport.ru##script[adblock-settings]:remove()
 antenasport.ru##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 antenasport.ru##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 antenasport.ru##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
-antenasport.ru##:xpath(//script[contains(text(), 'adcashLib')]):remove()
+antenasport.ru##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+antenasport.ru##^script:has-text(adcashLib):remove()
+antenasport.ru##+js(acs, adcashLib)
 antenasport.ru##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 antenasport.ru##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 antenasport.ru##+js(acs, window.kkp4a5x5tv)
@@ -47473,6 +47491,8 @@ ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##:xpath(//script[
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopw, window.top)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopr, window.top)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##^script:has-text(adcashLib):remove()
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(acs, adcashLib)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##script[id="_waumqy"]:remove()
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(set-constant, _wau, [])
@@ -47832,11 +47852,35 @@ www.pcgamesn.com##+js(set-constant, gtag, noopFunc)
 ||constellation.networknmedia.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.pbxai.com^*
 !||00917082-71e9-498e-8343-00c3df06b798.edge.permutive.app^*
-!*##div[oncontextmenu="return false;"]
-*##div[oncontextmenu^="return false"]
 ||www.dttaupjvj.com^*
 ||nsaascp.com^*
 ||gvzsrqp.com^*
+||mvcqerddcnyfx.com^*
+||ishoapty.net^*
+||xkwwnle.com^*
+||ixwloxw.com^*
+||www.occqnaaepflqxw.com^*
+||tutlehd2.xyz/sandblaster.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||tutlehd2.xyz/live/counter.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+tutlehd2.xyz##+js(set-constant, LiveCounter, noopFunc)
+tutlehd2.xyz##+js(set-constant, result, falseFunc)
+tutlehd2.xyz##+js(set-constant, ConsoleBan, noopFunc)
+tutlehd2.xyz##+js(set-constant, _Hasync, [])
+tutlehd2.xyz##+js(aopw, _Hasync)
+tutlehd2.xyz##+js(aopr, _Hasync)
+tutlehd2.xyz##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+tutlehd2.xyz##+js(acs, window.kkp4a5x5tv)
+tutlehd2.xyz##+js(aopw, window.kkp4a5x5tv)
+tutlehd2.xyz##+js(aopr, window.kkp4a5x5tv)
+tutlehd2.xyz##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+tutlehd2.xyz##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
+tutlehd2.xyz##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+tutlehd2.xyz##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+tutlehd2.xyz##^script:has-text(adcashLib):remove()
+tutlehd2.xyz##+js(acs, adcashLib)
+tutlehd2.xyz##div[id="unmute-button-layer"]
+!*##div[oncontextmenu="return false;"]
+*##div[oncontextmenu^="return false"]
 
 !Whitelisted
 ! to prevent civic science surveys from being blocked (overrides ||civicscience.com^*$3p rule in "uBlock filters - Privacy")
