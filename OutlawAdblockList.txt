@@ -47595,7 +47595,7 @@ wykop-stream.blogspot.com##+js(saa, scrolling, yes, div[id="tv"]>iframe)
 ! block all third-party scripts except specific exceptions on these domains related to video streaming.
 ! arc.io covers subdomains like static.arc.io but NOT CDN sources like prod-arc-cdn-s3.b-cdn.net or related library sources like unpkg.com
 ! browser.sentry-cdn.com needs to be allowed on these domains if using Cloudflare protection
-*$script,3p,denyallow=code.jquery.com|arc.io|prod-arc-cdn-s3.b-cdn.net|unpkg.com|browser.sentry-cdn.com,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
+*$script,3p,denyallow=cdn.fluidplayer.com|code.jquery.com|arc.io|prod-arc-cdn-s3.b-cdn.net|unpkg.com|browser.sentry-cdn.com,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
 sportstream1.cfd##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 sportstream1.cfd##+js(saa, allow, encrypted-media, #thatframe)
 sportstream1.cfd##+js(saa, scrolling, yes, #thatframe)
@@ -47861,6 +47861,7 @@ www.pcgamesn.com##+js(set-constant, gtag, noopFunc)
 ||xkwwnle.com^*
 ||ixwloxw.com^*
 ||www.occqnaaepflqxw.com^*
+||www.qnbiiygyrox.com^*
 ||tutlehd2.xyz/sandblaster.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tutlehd2.xyz/live/counter.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 tutlehd2.xyz##+js(set-constant, LiveCounter, noopFunc)
@@ -47895,6 +47896,7 @@ mybrowseraddon.com##script[id="facebook-jssdk"]:remove()
 mybrowseraddon.com##:xpath(//script[@id="facebook-jssdk"]):remove()
 !||mybrowseraddon.com/ads/core.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mybrowseraddon.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+developer.mozilla.org##section[class="place side"]:has(p[class="pong-box"]:has(a[class="pong"])):remove()
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
