@@ -14101,7 +14101,7 @@ sports.yahoo.com###mrt-node-Col2-2-Ad
 ||toro-tags.com/_tags/jstags.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||trafflict.com^*
 !www.andropalace.org##div:nth-of-type(4) > .adsbygoogle
-www.andropalace.org##div[id*="adsbygoogle"]
+www.andropalace.org##div[id*="adsbygoogle"]:remove()
 ||c2s.startappnetwork.com/c2s/1.3/htmlads$subdocument
 ||ad.leadbolt.net^*
 ||www.adnetworkperformance.com/ad/display.php$subdocument
@@ -14278,7 +14278,7 @@ www.owndrives.com##a[href^="http://felafk.com/r/"]
 ||www.azqmmfhmfnpsvb.bid^*
 ||c.adskeeper.co.uk^*
 ||cdn.adskeeper.co.uk^*
-urly.mobi##.adsbygoogle
+urly.mobi##.adsbygoogle:remove()
 ||truefilen32.com^*
 !||urly.mobi/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.rutor.info###ifrm_cd_208
@@ -37265,6 +37265,7 @@ beamtic.com##div[id="_overlay"]
 beamtic.com##script[onerror^="adBlockFunction"]:remove()
 beamtic.com##script[onerror^="adBlockFunction"]
 beamtic.com##+js(acs, adBlockFunction)
+beamtic.com##+js(set-constant, adsbygoogle, [])
 beamtic.com##+js(aopw, adsbygoogle)
 beamtic.com##+js(aopr, adsbygoogle)
 !||beamtic.com/consent/area$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -47879,6 +47880,21 @@ tutlehd2.xyz##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
 tutlehd2.xyz##^script:has-text(adcashLib):remove()
 tutlehd2.xyz##+js(acs, adcashLib)
 tutlehd2.xyz##div[id="unmute-button-layer"]
+mybrowseraddon.com##div[class="container"]:has(ins[data-ad-client]):remove()
+mybrowseraddon.com##ins[data-ad-client]:remove()
+mybrowseraddon.com##div[id="mybrowseraddon-cookie-container"]:remove()
+mybrowseraddon.com##+js(set-constant, adsbygoogle, [])
+mybrowseraddon.com##+js(aopw, adsbygoogle)
+mybrowseraddon.com##+js(aopr, adsbygoogle)
+mybrowseraddon.com##+js(set-constant, adsbygoogle, [])
+mybrowseraddon.com##+js(set-constant, window.dataLayer, [])
+mybrowseraddon.com##+js(set-constant, window.gtag, noopFunc)
+mybrowseraddon.com##+js(acs, gtag)
+! The following two rules do the same thing, but neither was working until the /ads/core.js script was blocked.
+mybrowseraddon.com##script[id="facebook-jssdk"]:remove()
+mybrowseraddon.com##:xpath(//script[@id="facebook-jssdk"]):remove()
+!||mybrowseraddon.com/ads/core.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mybrowseraddon.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
