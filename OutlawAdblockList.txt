@@ -47674,32 +47674,32 @@ www.crichd.com##+js(remove-attr, onclick, button[onclick^="window.open('https://
 ||crichdstreaming.xyz/z-7275846$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||crichdstreaming.cc/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||crichdstreaming.xyz/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-hd.crichdlivecricket.cc,stream.crichd.live##iframe[src="ad.html"]:remove()
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[src="ad.html"]:remove()
 crichdstreaming.cc,crichdstreaming.xyz##div[id="floater"]:remove()
 ! The following rule is not necessary since it is under the removed floater div tag.
 !crichdstreaming.cc,crichdstreaming.xyz##span[onmouseup]:has(img[src="https://i.imgur.com/0P0Udsa.png"]):upward(1):remove()
 ! getting rid of the right column also removes the chatango widget
 hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##div[id="rightcolumn"]:remove()
-!hd.crichdlivecricket.cc,stream.crichd.live##iframe[id="frame_a"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+!hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[id="frame_a"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##iframe[src^="https://crichdstreaming.xyz/embed2.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##+js(saa, allow, encrypted-media, iframe[src^="https://crichdstreaming.xyz/embed2.php"])
 hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##+js(saa, height, 100%, iframe[src^="https://crichdstreaming.xyz/embed2.php"])
 hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##+js(saa, width, 100%, iframe[src^="https://crichdstreaming.xyz/embed2.php"])
 hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##+js(saa, scrolling, yes, iframe[src^="https://crichdstreaming.xyz/embed2.php"])
-hd.crichdlivecricket.cc,stream.crichd.live##iframe[src^="https://crichdstreaming.cc/embed2.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-hd.crichdlivecricket.cc,stream.crichd.live##+js(saa, allow, encrypted-media, iframe[src^="https://crichdstreaming.cc/embed2.php"])
-hd.crichdlivecricket.cc,stream.crichd.live##+js(saa, height, 100%, iframe[src^="https://crichdstreaming.cc/embed2.php"])
-hd.crichdlivecricket.cc,stream.crichd.live##+js(saa, scrolling, yes, iframe[src^="https://crichdstreaming.cc/embed2.php"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[src^="https://crichdstreaming.cc/embed2.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allow, encrypted-media, iframe[src^="https://crichdstreaming.cc/embed2.php"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, height, 100%, iframe[src^="https://crichdstreaming.cc/embed2.php"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, scrolling, yes, iframe[src^="https://crichdstreaming.cc/embed2.php"])
 ! TODO: Is the class name in the following rule random?
-hd.crichdlivecricket.cc,stream.crichd.live##div[class="fdtfxeuhit"]:remove()
-hd.crichdlivecricket.cc,stream.crichd.live##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-hd.crichdlivecricket.cc,stream.crichd.live##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
-hd.crichdlivecricket.cc,stream.crichd.live##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
-hd.crichdlivecricket.cc,stream.crichd.live##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
-hd.crichdlivecricket.cc,stream.crichd.live##+js(set-constant, window.kkp4a5x5tv, noopFunc)
-hd.crichdlivecricket.cc,stream.crichd.live##+js(acs, window.kkp4a5x5tv)
-hd.crichdlivecricket.cc,stream.crichd.live##+js(aopr, window.kkp4a5x5tv)
-hd.crichdlivecricket.cc,stream.crichd.live##+js(aopw, window.kkp4a5x5tv)
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##div[class="fdtfxeuhit"]:remove()
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(set-constant, window.kkp4a5x5tv, noopFunc)
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(acs, window.kkp4a5x5tv)
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(aopr, window.kkp4a5x5tv)
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(aopw, window.kkp4a5x5tv)
 ||www.crichd.live/z-6657014$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||escast.xyz/z-7275810$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 escast.xyz##body:remove-attr(oncontextmenu)
