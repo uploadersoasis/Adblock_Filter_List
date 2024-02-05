@@ -47495,9 +47495,16 @@ mrgamingstreams.com##+js(set-constant, ConsoleBan, noopFunc)
 !mrgamingstreams.com##+js(set-constant, ConsoleBan.init, noopFunc)
 mrgamingstreams.com##+js(aeld, /contextmenu|keydown/)
 mrgamingstreams.com##+js(acs, /e\.preventDefault\(\);/)
+mrgamingstreams.com##div[class="embedchat"]:has(iframe[src^="https://www.youtube.com/live_chat"]):remove()
+mrgamingstreams.com##+js(set-constant, window.dataLayer, [])
+mrgamingstreams.com##+js(set-constant, window.gtag, noopFunc)
+mrgamingstreams.com##+js(acs, gtag)
+! The following two rules and settings only works when the jwplayer is used, e.g. streaming from twitch, NOT with the Clapper player is used.
+! ##+js(set-local-storage-item, <name>, <value>) with $remove$ as value removing that item.
+mrgamingstreams.com##+js(set-local-storage-item, jwplayer.mute, false)
+mrgamingstreams.com##+js(set-local-storage-item, jwplayer.volume, 100)
 ! The following rule removes the YouTube chat widget from the website.
 ! TODO: how to allow the chat widget, but be able to scroll the page horizontally to see it?
-mrgamingstreams.com##div[class="embedchat"]:has(iframe[src^="https://www.youtube.com/live_chat"]):remove()
 ! These two rules change the initial Clapper player configuration options.
 ypamu.ru.com##+js(trusted-replace-node-text, script, /hideVolumeBar: true/gm, hideVolumeBar: false)
 ypamu.ru.com##+js(trusted-replace-node-text, script, /mute: true/gm, mute: false)
@@ -47922,8 +47929,11 @@ mybrowseraddon.com##:xpath(//script[@id="facebook-jssdk"]):remove()
 ||mybrowseraddon.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 developer.mozilla.org##section[class="place side"]:has(p[class="pong-box"]:has(a[class="pong"])):remove()
 developer.mozilla.org##section[class="place bottom-banner"]:has(a[class="pong"]):remove()
+! The following URL delivers ad content after a post request.
+||developer.mozilla.org/pong/get$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! The following is a tracker for the live examples.
 ||developer.mozilla.org/api/v1/whoami$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||analytics.regex101.com^*
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
