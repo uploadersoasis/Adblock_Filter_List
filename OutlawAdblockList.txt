@@ -25763,7 +25763,7 @@ www.mirrored.to##+js(abort-on-property-write, aiptag.cmd.display)
 www.mirrored.to##+js(abort-on-property-read, window.aiptag)
 www.mirrored.to##+js(abort-on-property-write, window.aiptag)
 ! remove existing cookie first
-www.mirrored.to##+js(cookie-remover, ab)
+www.mirrored.to##+js(remove-cookie, ab)
 ! TODO: need to reload page with cookie set?
 !www.mirrored.to##+js(set-cookie, ab, 0, /)
 !www.mirrored.to##+js(set-cookie, ab, 0, , reload, 1)
@@ -34386,7 +34386,7 @@ exey.io##div:style(visibility: visible !important;)
 exey.io##+js(nostif.js, /^/, 1000)
 exey.io##+js(set-constant, force_disable_adblock, 0, stay)
 ! remove existing cookie first
-exey.io##+js(cookie-remover, ab)
+exey.io##+js(remove-cookie, ab)
 ! TODO: need to reload page with cookie set?
 !exey.io##+js(set-cookie, ab, 0, /)
 !exey.io##+js(set-cookie, ab, 0, , reload, 1)
@@ -39508,8 +39508,8 @@ devuploads.com###downloadbtn:remove-attr(disabled)
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(disabled)
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(style)
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:style(display: block !important;)
-! cookie-remover, /^/ removes all cookies since downloads fail after first download
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(cookie-remover, /^/)
+! remove-cookie, /^/ removes all cookies since downloads fail after first download
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(remove-cookie, /^/)
 devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, parseInt)
 devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'parseInt')])
 devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'parseInt')]):remove()
@@ -40911,7 +40911,7 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net###ope
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net###operadata + br + [href][target="_blank"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##body > div[style^="position: fixed; display: block"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##body > div[style^="position: fixed; display: block"]:remove()
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net,newsindi.com##+js(cookie-remover, /^/)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net,newsindi.com##+js(remove-cookie, /^/)
 !||dropgalaxy.com/826-tips-on-home-insurance-for-large-families.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dropgalaxy.com/assets/js/vendor/popper.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dropgalaxy.in/assets/js/vendor/popper.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -41910,7 +41910,7 @@ filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'window
 !filecrypt.co,filecrypt.cc,filecrypt.to##div[class] > i[style][onclick]
 filecrypt.co,filecrypt.cc,filecrypt.to##button[id]:has-text(/High-speed/i)
 ! removing all cookies makes the captcha puzzle infinitely loop
-!filecrypt.co,filecrypt.cc,filecrypt.to##+js(cookie-remover, /^/)
+!filecrypt.co,filecrypt.cc,filecrypt.to##+js(remove-cookie, /^/)
 !/^https?:\/\/(www\.)?filecrypt\.(?:co|cc)\/bla2.php/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.cc/bla2.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||filecrypt.cc/js/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -46642,8 +46642,8 @@ www.inc.com##div[class*="ad-block"][class*="topAdBlock"]:remove()
 ||d162h6x3rxav67.cloudfront.net/vans-adapter-google-ima.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||vip1.g5.cachefly.net/wp-content/themes/ars/assets/js/ars-dc1d08cbd8.ads.us.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.datadoghq-browser-agent.com/datadog-logs-v*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!woowebtools.com##+js(cookie-remover, /.+/)
-woowebtools.com##+js(cookie-remover)
+!woowebtools.com##+js(remove-cookie, /.+/)
+woowebtools.com##+js(remove-cookie)
 ||zirkiterocklay.com^*
 www.crazygames.com##div[id^="div-gpt-ad-"]:upward(1):remove()
 ||www.ocogmhqo.com^*
@@ -46969,6 +46969,8 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||*/d3.php$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|bestsolaris.com|cdn.niaomea.me|ceimo.click|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|embedstream.me|escast.xyz|givemereddit.eu|godzillive.com|hd.crichdlivecricket.cc|klubsports.online|lato.sx|livehdplay.ru|lovesomecommunity.com|mega4upload.com|millionscast.com|ntuplay.xyz|olalivehdplay.ru|qbxez.click|rakeq.ru.com|s2watch.link|sharecast.ws|sportsembed.su|sporttuna.site|sporttuna.sx|strayindicate.net|sts.niaomea.me|switchcast2.com|techclips.net|trustexploration.com|tutlehd2.xyz|tv247.us|tv247us.com|vikistream.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.vipleague.st|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||*/deity.php$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|bestsolaris.com|cdn.niaomea.me|ceimo.click|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|embedstream.me|escast.xyz|givemereddit.eu|godzillive.com|hd.crichdlivecricket.cc|klubsports.online|lato.sx|livehdplay.ru|lovesomecommunity.com|mega4upload.com|millionscast.com|ntuplay.xyz|olalivehdplay.ru|qbxez.click|rakeq.ru.com|s2watch.link|sharecast.ws|sportsembed.su|sporttuna.site|sporttuna.sx|strayindicate.net|sts.niaomea.me|switchcast2.com|techclips.net|trustexploration.com|tutlehd2.xyz|tv247.us|tv247us.com|vikistream.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.vipleague.st|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||*/deb.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|bestsolaris.com|cdn.niaomea.me|ceimo.click|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|embedstream.me|escast.xyz|givemereddit.eu|godzillive.com|hd.crichdlivecricket.cc|klubsports.online|lato.sx|livehdplay.ru|lovesomecommunity.com|mega4upload.com|millionscast.com|ntuplay.xyz|olalivehdplay.ru|qbxez.click|rakeq.ru.com|s2watch.link|sharecast.ws|sportsembed.su|sporttuna.site|sporttuna.sx|strayindicate.net|sts.niaomea.me|switchcast2.com|techclips.net|trustexploration.com|tutlehd2.xyz|tv247.us|tv247us.com|vikistream.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.vipleague.st|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||*/js/deb.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|bestsolaris.com|cdn.niaomea.me|ceimo.click|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|embedstream.me|escast.xyz|givemereddit.eu|godzillive.com|hd.crichdlivecricket.cc|klubsports.online|lato.sx|livehdplay.ru|lovesomecommunity.com|mega4upload.com|millionscast.com|ntuplay.xyz|olalivehdplay.ru|qbxez.click|rakeq.ru.com|s2watch.link|sharecast.ws|sportsembed.su|sporttuna.site|sporttuna.sx|strayindicate.net|sts.niaomea.me|switchcast2.com|techclips.net|trustexploration.com|tutlehd2.xyz|tv247.us|tv247us.com|vikistream.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.vipleague.st|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||*/js/ppnp.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|bestsolaris.com|cdn.niaomea.me|ceimo.click|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|embedstream.me|escast.xyz|givemereddit.eu|godzillive.com|hd.crichdlivecricket.cc|klubsports.online|lato.sx|livehdplay.ru|lovesomecommunity.com|mega4upload.com|millionscast.com|ntuplay.xyz|olalivehdplay.ru|qbxez.click|rakeq.ru.com|s2watch.link|sharecast.ws|sportsembed.su|sporttuna.site|sporttuna.sx|strayindicate.net|sts.niaomea.me|switchcast2.com|techclips.net|trustexploration.com|tutlehd2.xyz|tv247.us|tv247us.com|vikistream.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.vipleague.st|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! The letter preceding the "jsrender" in the following rule intentionally varies.
 ||*/common/*gif.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|bestsolaris.com|cdn.niaomea.me|ceimo.click|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|embedstream.me|escast.xyz|givemereddit.eu|godzillive.com|hd.crichdlivecricket.cc|klubsports.online|lato.sx|livehdplay.ru|lovesomecommunity.com|mega4upload.com|millionscast.com|ntuplay.xyz|olalivehdplay.ru|qbxez.click|rakeq.ru.com|s2watch.link|sharecast.ws|sportsembed.su|sporttuna.site|sporttuna.sx|strayindicate.net|sts.niaomea.me|switchcast2.com|techclips.net|trustexploration.com|tutlehd2.xyz|tv247.us|tv247us.com|vikistream.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.vipleague.st|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||*/script/aclib.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|bestsolaris.com|cdn.niaomea.me|ceimo.click|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|embedstream.me|escast.xyz|givemereddit.eu|godzillive.com|hd.crichdlivecricket.cc|klubsports.online|lato.sx|livehdplay.ru|lovesomecommunity.com|mega4upload.com|millionscast.com|ntuplay.xyz|olalivehdplay.ru|qbxez.click|rakeq.ru.com|s2watch.link|sharecast.ws|sportsembed.su|sporttuna.site|sporttuna.sx|strayindicate.net|sts.niaomea.me|switchcast2.com|techclips.net|trustexploration.com|tutlehd2.xyz|tv247.us|tv247us.com|vikistream.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.vipleague.st|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -47891,7 +47893,16 @@ tutlehd2.xyz##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 tutlehd2.xyz##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
 tutlehd2.xyz##^script:has-text(adcashLib):remove()
 tutlehd2.xyz##+js(acs, adcashLib)
-tutlehd2.xyz##div[id="unmute-button-layer"]
+tutlehd2.xyz##div[id="unmute-button-layer"]:remove()
+! Either of the following two rules removes all cookies.
+!tutlehd2.xyz##+js(remove-cookie)
+!tutlehd2.xyz##+js(remove-cookie, /^/)
+!tutlehd2.xyz##+js(remove-cookie, prefetchAd_6360927)
+tutlehd2.xyz##+js(remove-cookie, '/^prefetchAd_\d+/')
+! TODO: Is this cookie name always the same or does the number vary?
+!tutlehd2.xyz##+js(set-cookie, prefetchAd_6360927, false)
+! The following rule reloads/refreshes the page after setting the cookie value.
+!tutlehd2.xyz##+js(set-cookie, prefetchAd_6360927, false, , reload, 1)
 mybrowseraddon.com##div[class="container"]:has(ins[data-ad-client]):remove()
 mybrowseraddon.com##ins[data-ad-client]:remove()
 mybrowseraddon.com##div[id="mybrowseraddon-cookie-container"]:remove()
@@ -47932,6 +47943,9 @@ developer.mozilla.org##section[class="place bottom-banner"]:has(a[class="pong"])
 ||www.ncaavvcssf.com^*
 ||articulatefootwearmumble.com^*
 ||missilesocalled.com^*
+||www.yfrrsktkzfp.com^*
+||clockwiseleaderfilament.com^*
+||www.tzngtmzpvysh.com^*
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
