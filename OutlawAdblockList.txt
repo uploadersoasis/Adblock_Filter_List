@@ -48030,9 +48030,16 @@ tv.idlixofficial.co##+js(aeld, contextmenu|selectstart)
 ||tv.idlixofficial.co/wp-content/themes/dc812dad0/aed92faa.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||pl21029229.highcpmrevenuegate.com^*
 ||p*.highcpmrevenuegate.com^*
+||txdwvtfnijeixgw.com^*
 ||jeniusplay.com/cdn/vastads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! Blocking the vast video ad library does not prevent the jwplayer from playing the main video source.
-||ssl.p.jwpcdn.com/player/v/*/vast.js$script
+||ssl.p.jwpcdn.com/player/v/*/vast.js$domain=tv.idlixofficial.co,script
+||tracker.adbinead.com^*
+||ad.doyouad.com^*
+||img.koreatimes.co.kr/AD/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.koreatimes.co.kr##iframe[src^="//tracker.adbinead.com/"]:remove()
+www.koreatimes.co.kr##+js(set-constant, googletag, {})
+www.koreatimes.co.kr##+js(set-constant, gtag, noopFunc)
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
