@@ -38642,10 +38642,12 @@ cdn.livetv.sx##table[id="playerblock"]:remove-attr(onmouseout)
 ||ads.cpxinteractive.com^*
 www.thestreameast.to##div[id="GelismisReklams"]:remove()
 www.thestreameast.to##div[id="GelecekMaclarListeleme"]:remove()
+www.thestreameast.to##div[id="alertBanner"]:remove()
 !www.thestreameast.to##div[data-player]:style(height: 720px !important; width: 1280px !important;)
 www.thestreameast.to##div[data-player]:style(height: 100vh !important; width: 100vw !important;)
 www.thestreameast.to##iframe[src^="https://s.amazon-adsystem.com/"]:remove()
 www.thestreameast.to##iframe[id="live-chat-iframe"]:remove()
+||cdn.streambeast.io/aclib.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||apk.rapidstreamz.com^*
 ||milkywaynewspaper.com^*
 ||pizzasaffixt.website^*
@@ -44249,18 +44251,24 @@ www.t-mobile.com##button[mat-flat-button]:remove-attr(disabled)
 ||cdn*.privacy-mgmt.com/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn*.privacy-mgmt.com/Notice.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||cdn-146.privacy-mgmt.com^*
-www.outkick.com##div[id="ad-container"]
-www.outkick.com##div[id="ad-container"]:remove()
-www.outkick.com##div[id="catapult-cookie-bar"]
-www.outkick.com##div[id="catapult-cookie-bar"]:remove()
 ||www.outkick.com/wp-content/plugins/ad-ace/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.outkick.com/wp-content/plugins/advanced-ads-pro/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.outkick.com/wp-content/plugins/advanced-ads-responsive/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.outkick.com/wp-content/plugins/advanced-ads-sticky-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.outkick.com/wp-content/plugins/advanced-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.outkick.com##div[id="ad-container"]:remove()
+www.outkick.com##div[id="catapult-cookie-bar"]:remove()
+www.outkick.com##div[id^="desk-ad-"]:remove()
+www.outkick.com##div[id^="tw-ad-"]:remove()
+www.outkick.com##div[id^="mw-ad-"]:remove()
+www.outkick.com##div[class*="ad-container"][class*="ad-w-"][class*="ad-h-"]:remove()
+www.outkick.com##div[class="afs_ads ad-placement"]:remove()
+www.outkick.com##iframe[id="rufous-sandbox"]:remove()
 www.outkick.com##script[id="outki-ready"]:remove()
 www.outkick.com##script[id^="advanced-ads-"]:remove()
+www.outkick.com##script[id^="utag_"]:remove()
 www.outkick.com##+js(set-constant, _qevents, [])
+www.outkick.com##+js(acs, Strike.insertAd)
 www.outkick.com##+js(abort-on-property-read, _qevents)
 www.outkick.com##+js(abort-on-property-write, _qevents)
 www.outkick.com##+js(set-constant, gtag, noopFunc)
@@ -44273,6 +44281,12 @@ www.outkick.com##+js(abort-on-property-write, window.advads_passive_placements)
 www.outkick.com##+js(set-constant, window.advanced_ads_ready_queue, [], complete)
 www.outkick.com##+js(abort-on-property-read, window.advanced_ads_ready_queue)
 www.outkick.com##+js(abort-on-property-write, window.advanced_ads_ready_queue)
+! 90vw is the most that can be displayed for the video player in the rule below since horizontal scrolling/overflow is disabled.
+www.outkick.com##div[id="video-container-1"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 90vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+! The following division limits the video player to 973 pixels in width.
+www.outkick.com##div[style="height: 1px; width: 973px;"]:remove()
+! The following rule removes the email newsletter signup tag because it overlays the expanded video player viewport.
+www.outkick.com##div[class*="item-newsletter"]:remove()
 !||a.optinmonster.com/app/js/prebid-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.optinmonster.com^*
 ||a.omappapi.com/app/js/api.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -48040,6 +48054,9 @@ tv.idlixofficial.co##+js(aeld, contextmenu|selectstart)
 www.koreatimes.co.kr##iframe[src^="//tracker.adbinead.com/"]:remove()
 www.koreatimes.co.kr##+js(set-constant, googletag, {})
 www.koreatimes.co.kr##+js(set-constant, gtag, noopFunc)
+!||email-analytics.morpace.com/ea/IImB1RCPJg/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||email-analytics.morpace.com^*
+||crookrally.com^*
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
 
