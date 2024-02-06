@@ -48076,7 +48076,10 @@ fmovies.ps##+js(aopr, window.kkp4a5x5tv)
 fmovies.ps##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 fmovies.ps##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 fmovies.ps##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
-fmovies.ps/ajax/banner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! The following two rules defuse the anti-developer tools and console debugger in fmovies.ps/js/group_17/app.min.js
+fmovies.ps##+js(set-constant, _0x39426c, noopFunc)
+fmovies.ps##+js(acs, _0x39426c)
+fmovies.ps/ajax/banner$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||*/5/*/?oo=1&aab=1$xhr
 ||vctuubswo.com^*
 ||shutunga.com^*
