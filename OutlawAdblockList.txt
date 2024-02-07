@@ -42895,9 +42895,15 @@ megaup.net##body:style(overflow-x: hidden !important;)
 ||megaup.net/imageads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||download.megaup.net/images/adds/gamingadult.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||download.megaup.net/images/adds/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||download.megaup.net/images/primary.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||download.megaup.net/oncc-ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||download.megaup.net/openads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 download.megaup.net##div[id="afterdownload"]:remove-class(hide)
+download.megaup.net##+js(remove-class, hide, div[id="afterdownload"])
+download.megaup.net##button[id="btndownload"]:remove()
+!download.megaup.net##button[id="btndownload"]:remove-class(disable)
+!download.megaup.net##+js(remove-class, disable, #btndownload)
+download.megaup.net##+js(saa, class, btn, a[href^="https://megaup.net/"])
 ||s3.amazonaws.com/035946c7be026aeddc2ed1e2896c74f71436d9bb590e3c6a775e9eb9/eb7c649530$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !www.legendsworld.net##div[oncontextmenu]:remove-attr(oncontextmenu)
 ! remove the iframe since it is blocked by default by browser policy.
