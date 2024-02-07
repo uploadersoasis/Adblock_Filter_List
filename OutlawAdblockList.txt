@@ -103,31 +103,28 @@
 ! an in-line script(s) is preventing techydino.net from working properly
 !||techydino.net^$inline-script
 !||techydino.net^$script,redirect=noopjs blocks Cloudflare
-||techydino.net^$3p,script,domain=arc.io
 ||techydino.net^$3p,script,redirect=noopjs
-!||techydino.net/arc-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping does not work for some reason
-!||techydino.net/arc-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-techydino.net##ins[data-ad-client]
+techydino.net##ins[data-ad-client]:remove()
 techydino.net##+js(acs, adsbygoogle)
 techydino.net##+js(aopr, adsbygoogle)
 techydino.net##+js(aopw, adsbygoogle)
 techydino.net##div[id="overlay"]:remove()
-techydino.net##div[id^="div-gpt-ad-"]
-techydino.net##div[id^="hbagency_space_"]
+techydino.net##div[id^="div-gpt-ad-"]:remove()
+techydino.net##div[id^="hbagency_space_"]:remove()
 techydino.net##div[id="Modalad"]:remove()
-techydino.net##div[class="floating-banner"]
-techydino.net##div[class="floawing-banner"]
+techydino.net##div[class="floating-banner"]:remove()
+techydino.net##div[class="floawing-banner"]:remove()
 techydino.net##+js(acs, window.googletag)
 techydino.net##+js(aopr, window.googletag)
 techydino.net##+js(aopw, window.googletag)
-techydino.net##ins[data-sizes-desktop]
+techydino.net##ins[data-sizes-desktop]:remove()
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
-!techydino.net##^script[onerror]
+!techydino.net##^script[onerror]:remove()
 techydino.net##script[onerror]:remove()
 techydino.net##script:remove-attr(onerror)
 !techydino.net##+js(remove-attr, onerror, script, stay)
 techydino.net##+js(remove-attr, onerror)
-techydino.net##^script:has-text(decodeURIComponent)
+techydino.net##^script:has-text(decodeURIComponent):remove()
 techydino.net##+js(acs, decodeURIComponent)
 techydino.net##+js(no-window-open-if, !/techydino\.net/i, log)
 techydino.net##+js(acs, anchorSlot)
@@ -47243,6 +47240,9 @@ lovesomecommunity.com##+js(aopr, _Hasync)
 ||acacdn.com/script/firefox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||asacdn.com/script/compatibility.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||asacdn.com/script/firefox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||techydino.net^$3p,script,domain=arc.io
+!||techydino.net/arc-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping does not work for some reason
+!||techydino.net/arc-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||commercialvalue.org^*
 ||trk.sportsflix4k.club/impression/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||trk.sportsflix4k.club^*
