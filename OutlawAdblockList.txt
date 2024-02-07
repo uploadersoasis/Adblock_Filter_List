@@ -11586,7 +11586,6 @@ krutor.org##vcav0rcydd
 !||www.infoworld.com/www/js/ads/narf_prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.infoworld.com/www/js/ads/prebid_gpt_launcher.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.infoworld.com/www/js/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||igg-games.co/wp-content/plugins/exit-strategy-pro/count.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||lzawbiclvehu.com^*
 ||www.lzawbiclvehu.com^*
 ||api-cache.adsnative.com^*
@@ -45843,6 +45842,7 @@ apkstreamz.com##+js(saa, data-timer, 1, .show_download_links)
 ||ceneverdreams.org^*
 ||krgukepers.org^*
 ||dcbbwymp1bhlf.cloudfront.net^*
+!||igg-games.co/wp-content/plugins/exit-strategy-pro/count.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||igg-games.com/maven/av.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||igg-games.com/wp-content/uploads/2021/02/hh2.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||igg-games.com/wp-content/uploads/2021/02/hh10.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -45858,19 +45858,19 @@ apkstreamz.com##+js(saa, data-timer, 1, .show_download_links)
 ||igg-games.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||igg-games.com/wp-content/uploads/2019/10/AdblockDetected.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||igg-games.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-igg-games.com##a[href*="//tm-offers.gamingadult.com/"]
 igg-games.com##a[href*="//tm-offers.gamingadult.com/"]:remove()
-igg-games.com##a[href$="//igg-games.com/flix1"]
 igg-games.com##a[href$="//igg-games.com/flix1"]:remove()
-igg-games.com##a[href$="//igg-games.com/flix2"]
 igg-games.com##a[href$="//igg-games.com/flix2"]:remove()
-igg-games.com##a[aria-label="ad2"]
 igg-games.com##a[aria-label="ad2"]:remove()
-igg-games.com##div[class*="widget-advads-ad-widget"]
 igg-games.com##div[class*="widget-advads-ad-widget"]:remove()
+igg-games.com##div[id^="advads_ad_widget-"]:remove()
+igg-games.com##script[id="games-ready"]:remove()
 igg-games.com##+js(set-constant, window.advanced_ads_ready, noopFunc)
 igg-games.com##+js(aopw, window.advanced_ads_ready)
 igg-games.com##+js(aopr, window.advanced_ads_ready)
+igg-games.com##+js(set-constant, script_element, null)
+igg-games.com##+js(aopw, script_element)
+igg-games.com##+js(aopr, script_element)
 ||dhyanaquintes.digital^*
 ||liberia.artertapirus.com^*
 ||koronaararao.guru^*
@@ -46513,7 +46513,6 @@ igram.storyy.shop##+js(acs, gtag)
 !||greenfox.ink/d/lg.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||greenfox.ink/d/asyncjs.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||greenfox.ink^*
-||ghabovethec.info^*
 ||revive.stats.rip^*
 new7.filepress.store##div[id^="beacon_"]:remove()
 new7.filepress.store##div[id="banner-reclam"]:remove()
@@ -48120,6 +48119,12 @@ fmovies.ps/ajax/banner$document,subdocument,script,inline-script,inline-font,pop
 ||www.iqwfauzxumyk.com^*
 ||www.dfkoqeunyv.com^*
 ||www.sdscroytmbq.com^*
+||fackinsismal.com^*
+||rcraveoisanikc.com^*
+||herlittleboywhow.info^*
+||d1kx6hl0p7bemr.cloudfront.net^*
+||cipdn.com^*
+||tm-offers.gamingadult.com^*
 ! The following rule is all that is required to defuse the script which terminates the video player if the developer tools/console is opened.
 librarywhispering.com##+js(set-constant, devtoolsDetector, [])
 ! The following four rules don't appear to have any effect.
@@ -48127,6 +48132,16 @@ librarywhispering.com##+js(set-constant, devtoolsDetector, [])
 !librarywhispering.com##+js(acs, devtoolsDetector)
 !librarywhispering.com##+js(aopw, devtoolsDetector)
 !librarywhispering.com##+js(aopr, devtoolsDetector)
+||bluemediadownload.lat/imgads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||bluemediadownload.lat/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+bluemediadownload.lat##+js(set-constant, window.dataLayer, [])
+bluemediadownload.lat##+js(set-constant, window.gtag, noopFunc)
+bluemediadownload.lat##+js(acs, gtag, window.dataLayer)
+bluemediadownload.lat##div[id="anti-adblock"]:remove()
+bluemediadownload.lat##center[id="ads-center"]:remove()
+bluemediadownload.lat##div[id="ads-left"]:remove()
+bluemediadownload.lat##div[id="ads-right"]:remove()
+bluemediadownload.lat##iframe[style="display: none;]:remove()
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
