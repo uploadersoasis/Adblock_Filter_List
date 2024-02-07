@@ -47135,6 +47135,9 @@ wikisport.click,wikisport.se##iframe[src^="https://livehdplay.ru/wiki.php"]:styl
 golassiahub.com##:xpath(//script[contains(text(), 'sandblaster.detect')]):remove()
 golassiahub.com##+js(acs, sandblaster.detect)
 golassiahub.com##+js(set-constant, result, noopFunc)
+golassiahub.com##div[id="ad-overlay2"]:remove()
+golassiahub.com##div[class="clappr-watermark"]:remove()
+golassiahub.com##div[data-watermark]:remove()
 !||cj.moronesphotos.com^*
 ||moronesphotos.com^*
 ||miayarus.com^*
