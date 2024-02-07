@@ -37299,25 +37299,62 @@ stream2watch.games##div[id="left-play"]:style(display: block !important;)
 !stream2watch.games##div[id="green_b"][class="video-box2"]:remove()
 stream2watch.games##div[class="top_comant_box"]:has-text(VPN Player):remove()
 stream2watch.games##div[class="midel_comant_box"]:remove()
-www.cxtvlive.com##div[class*="ad-titulo"]
-www.cxtvlive.com##ins[data-ad-client]
-www.cxtvlive.com##iframe[id^="aswift_"]
-dlhd.sx,daddylivehd.sx##+js(noeval)
-dlhd.sx,daddylivehd.sx##+js(aopw, emulateStorage)
-dlhd.sx,daddylivehd.sx##+js(aopr, emulateStorage)
+www.cxtvlive.com##div[class*="ad-titulo"]:remove()
+www.cxtvlive.com##ins[data-ad-client]:remove()
+www.cxtvlive.com##iframe[id^="aswift_"]:remove()
+! TODO: should this be set for video players in iframes? loading="eager"
+! TODO: should this be set for video players in iframes? referrerpolicy="unsafe-url"
+! The following rule is necessary to expand the division that holds the main video player so expanding the size of the player iframe doesn't extend over the rest of the elements.
+dlhd.sx,daddylivehd.sx##div[id="content"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+! The div tag in the following rule contains an iframe for a video player.
+dlhd.sx,daddylivehd.sx##div[id="77184714_F"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+dlhd.sx,daddylivehd.sx##iframe[src*="/stream.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, iframe[src*="/stream.php"])
 dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src*="/stream.php"])
 dlhd.sx,daddylivehd.sx##+js(saa, allowfullscreen, true, iframe[src*="/stream.php"])
+dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src*="/stream.php"])
+dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src*="/stream.php"])
+dlhd.sx,daddylivehd.sx##+js(saa, scrolling, true, iframe[src*="/stream.php"])
 dlhd.sx,daddylivehd.sx##+js(saa, frameborder, 0, iframe[src*="/stream.php"])
 dlhd.sx,daddylivehd.sx##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, #thatframe)
 dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, #thatframe)
-dlhd.sx,daddylivehd.sx##+js(saa, allowfullscreen, true, #thatframe)
 dlhd.sx,daddylivehd.sx##+js(saa, frameborder, 0, #thatframe)
+dlhd.sx,daddylivehd.sx##+js(saa, allowfullscreen, true, #thatframe)
+dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, #thatframe)
+dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, #thatframe)
+dlhd.sx,daddylivehd.sx##+js(saa, scrolling, true, #thatframe)
 dlhd.sx,daddylivehd.sx##div[id="fluid_video_wrapper_video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 dlhd.sx,daddylivehd.sx##video[id="video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, #video-id)
 dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, #video-id)
+dlhd.sx,daddylivehd.sx##iframe[src*="/online.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src*="/online.php"])
+dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src*="/online.php"])
+dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src*="/online.php"])
+dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src*="/online.php"])
+dlhd.sx,daddylivehd.sx##iframe[src^="https://wwwstream.pro/embed/"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src^="https://wwwstream.pro/embed/"])
+dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="https://wwwstream.pro/embed/"])
+dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src^="https://wwwstream.pro/embed/"])
+dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src^="https://wwwstream.pro/embed/"])
+dlhd.sx,daddylivehd.sx##iframe[src^="https://librarywhispering.com/player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src^="https://librarywhispering.com/player"])
+dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="https://librarywhispering.com/player"])
+dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src^="https://librarywhispering.com/player"])
+dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src^="https://librarywhispering.com/player"])
+dlhd.sx,daddylivehd.sx##div[id="footer"]:remove()
+dlhd.sx,daddylivehd.sx##div[id="sidebar"]:remove()
+dlhd.sx,daddylivehd.sx##div[id="UnMutePlayer"]:remove()
+dlhd.sx,daddylivehd.sx##iframe[id="stats"]:remove()
+dlhd.sx,daddylivehd.sx##iframe[src^="https://st.chatango.com/"]:remove()
+dlhd.sx,daddylivehd.sx##iframe[data-aa]:remove()
+dlhd.sx,daddylivehd.sx##textarea[id="txtarea"]:remove()
+dlhd.sx,daddylivehd.sx##input[type=button]:remove-attr(disabled)
+!dlhd.sx,daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
+dlhd.sx,daddylivehd.sx##+js(noeval)
+dlhd.sx,daddylivehd.sx##+js(aopw, emulateStorage)
+dlhd.sx,daddylivehd.sx##+js(aopr, emulateStorage)
 dlhd.sx,daddylivehd.sx##+js(aopw, _chatangoTagserver)
 dlhd.sx,daddylivehd.sx##+js(aopr, _chatangoTagserver)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
@@ -37330,25 +37367,6 @@ dlhd.sx,daddylivehd.sx##:xpath(//script[contains(text(), 'debugger;')]):remove()
 dlhd.sx,daddylivehd.sx##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 dlhd.sx,daddylivehd.sx##^script:has-text(-parseInt):remove()
 dlhd.sx,daddylivehd.sx##script:has-text(-parseInt):remove()
-dlhd.sx,daddylivehd.sx##div[id="footer"]:remove()
-dlhd.sx,daddylivehd.sx##div[id="sidebar"]:remove()
-dlhd.sx,daddylivehd.sx##div[id="UnMutePlayer"]:remove()
-dlhd.sx,daddylivehd.sx##iframe[id="stats"]:remove()
-dlhd.sx,daddylivehd.sx##iframe[src^="https://st.chatango.com/"]:remove()
-dlhd.sx,daddylivehd.sx##iframe[data-aa]:remove()
-dlhd.sx,daddylivehd.sx##iframe[src*="/online.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src*="/online.php"])
-dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src*="/online.php"])
-dlhd.sx,daddylivehd.sx##iframe[src^="https://wwwstream.pro/embed/"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src^="https://wwwstream.pro/embed/"])
-dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="https://wwwstream.pro/embed/"])
-dlhd.sx,daddylivehd.sx##iframe[src^="https://librarywhispering.com/player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src^="https://librarywhispering.com/player"])
-dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="https://librarywhispering.com/player"])
-dlhd.sx,daddylivehd.sx##iframe[src*="/stream.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##input[type=button]:remove-attr(disabled)
-!dlhd.sx,daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
-dlhd.sx,daddylivehd.sx##textarea[id="txtarea"]:remove()
 dlhd.sx,daddylivehd.sx##+js(acs, /^debugger;/)
 dlhd.sx,daddylivehd.sx##+js(acs, atob, decodeURIComponent)
 dlhd.sx,daddylivehd.sx##+js(acs, document, $._Eu, $.BD)
@@ -37382,28 +37400,34 @@ poscitechs.shop,dlhd.sx##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 !poscitechs.shop##+js(nostif, /^/)
 poscitechs.shop##+js(nostif, /^function\(\)/)
 poscitechs.shop##iframe[src="javascript:false"]:remove()
-poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 poscitechs.shop##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 poscitechs.shop##+js(saa, width, 100%, #thatframe)
 poscitechs.shop##+js(saa, height, 100%, #thatframe)
 poscitechs.shop##+js(saa, allowfullscreen, true, #thatframe)
+poscitechs.shop##+js(saa, webkitallowfullscreen, true, #thatframe)
+poscitechs.shop##+js(saa, mozallowfullscreen, true, #thatframe)
+poscitechs.shop##+js(saa, scrolling, true, #thatframe)
 poscitechs.shop##+js(saa, frameborder, 0, #thatframe)
+poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 poscitechs.shop##+js(saa, width, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(saa, height, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
+poscitechs.shop##+js(saa, webkitallowfullscreen, true, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
+poscitechs.shop##+js(saa, mozallowfullscreen, true, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
+poscitechs.shop##+js(saa, scrolling, true, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(set-constant, popWin, noopFunc)
 poscitechs.shop##+js(set-constant, afScript, noopFunc)
 ||armoryleaseholder.com^*
 ||santstipule.com^*
-!tv.ustvgo.live##object[id="ai-adb-dblclk"]
-!tv.ustvgo.live##object[id="ai-adb-ga"]
-tv.ustvgo.live##object[id^="ai-adb-"]
-tv.ustvgo.live##script[id^="ai-adb-"]
-tv.ustvgo.live##ins[data-ad-client]
-tv.ustvgo.live##iframe[id^="aswift_"]
+!tv.ustvgo.live##object[id="ai-adb-dblclk"]:remove()
+!tv.ustvgo.live##object[id="ai-adb-ga"]:remove()
+tv.ustvgo.live##object[id^="ai-adb-"]:remove()
+tv.ustvgo.live##script[id^="ai-adb-"]:remove()
+tv.ustvgo.live##ins[data-ad-client]:remove()
+tv.ustvgo.live##iframe[id^="aswift_"]:remove()
 tv.ustvgo.live##+js(aopw, adsbygoogle)
 tv.ustvgo.live##+js(aopr, adsbygoogle)
-tv.ustvgo.live##div[id="cdbc5ac9afd3"]
-tv.ustvgo.live##div[id="NR-Ads"]
+tv.ustvgo.live##div[id="cdbc5ac9afd3"]:remove()
+tv.ustvgo.live##div[id="NR-Ads"]:remove()
 ||tv.ustvgo.live/wp-content/uploads/ad-inserter/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tv.ustvgo.live/wp-content/plugins/ad-inserter-pro/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 tv.ustvgo.live##+js(aopw, ai_adb)
@@ -37412,50 +37436,47 @@ tv.ustvgo.live##+js(acs, ai_adb)
 tv.ustvgo.live##+js(aopw, ai_check_block)
 tv.ustvgo.live##+js(aopr, ai_check_block)
 tv.ustvgo.live##+js(acs, ai_check_block)
-tv.ustvgo.live##^script:has-text(ai_check)
+tv.ustvgo.live##^script:has-text(ai_check):remove()
 tv.ustvgo.live##+js(acs, ai_check)
 tv.ustvgo.live##+js(aopw, ai_check)
 tv.ustvgo.live##+js(aopr, ai_check)
-tv.ustvgo.live##div[class="advertisement_above_footer"]
-tv.ustvgo.live##div:has-text(Please disable your ad blocker)
+tv.ustvgo.live##div[class="advertisement_above_footer"]:remove()
 tv.ustvgo.live##div:has-text(Please disable your ad blocker):remove()
-tv.ustvgo.live##header:has-text(Please disable your ad blocker)
 tv.ustvgo.live##header:has-text(Please disable your ad blocker):remove()
-tv.ustvgo.live##nav:has-text(Please disable your ad blocker)
 tv.ustvgo.live##nav:has-text(Please disable your ad blocker):remove()
-tv.ustvgo.live##section:has-text(Please disable your ad blocker)
 tv.ustvgo.live##section:has-text(Please disable your ad blocker):remove()
 tv.ustvgo.live##+js(set-constant, ai_run_scripts, noopFunc)
 !tv.ustvgo.live##*:style(opacity: 1.0 !important; filter: blur(0px) brightness(100%) !important; -webkit-filter: blur(0px) brightness(100%) !important;)
 !tv.ustvgo.live##body > script:nth-child(40):remove()
 !tv.ustvgo.live##body > script:nth-child(41):remove()
-tv.ustvgo.live##img[id="nielsen-s2s-audit-ping"]
-!tv.ustvgo.live##div[class^="ai-"][data-code]
-!tv.ustvgo.live##div[id="banner-advert-container"]
-tv.ustvgo.live##*[class*="ads-wrapper"]
+tv.ustvgo.live##img[id="nielsen-s2s-audit-ping"]:remove()
+!tv.ustvgo.live##div[class^="ai-"][data-code]:remove()
+!tv.ustvgo.live##div[id="banner-advert-container"]:remove()
+tv.ustvgo.live##*[class*="ads-wrapper"]:remove()
 tv.ustvgo.live##div[id="primary"]:style(width: 100vw !important;)
 tv.ustvgo.live##video:remove-attr(disableremoteplayback)
 !tv.ustvgo.live##video:watch-attr(disableremoteplayback):remove-attr(disableremoteplayback)
+tv.ustvgo.live##+js(remove-attr, disableremoteplayback, video)
 ||d2v02itv0y9u9t.cloudfront.net^*
-player.twitch.tv##button[data-a-target="follow-button"]
-player.twitch.tv##figure[aria-label="foxnewsgo"]
-player.twitch.tv##figure[aria-label="espnewsgo"]
+player.twitch.tv##button[data-a-target="follow-button"]:remove()
+player.twitch.tv##figure[aria-label="foxnewsgo"]:remove()
+player.twitch.tv##figure[aria-label="espnewsgo"]:remove()
 !||jewisk.com/script/tailwind.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||jewisk.com^*
-iptvwire.com##div[class*="mysticky-welcomebar-"]
-iptvwire.com##a[href="https://iptvwire.com/vpn-sidebar"]
-iptvwire.com##div[class="su-box su-box-style-default"]:has(a[href="https://iptvwire.com/vpn-tracked"])
-iptvwire.com##div[class="su-button-center"]:has(a[href="https://iptvwire.com/vpn-riskfree"])
+iptvwire.com##div[class*="mysticky-welcomebar-"]:remove()
+iptvwire.com##a[href="https://iptvwire.com/vpn-sidebar"]:remove()
+iptvwire.com##div[class="su-box su-box-style-default"]:has(a[href="https://iptvwire.com/vpn-tracked"]):remove()
+iptvwire.com##div[class="su-button-center"]:has(a[href="https://iptvwire.com/vpn-riskfree"]):remove()
 iptvwire.com##+js(aopr, _stq)
 iptvwire.com##+js(aopw, _stq)
-www.ustream.to##div[class*="adblockz-alert"]
+www.ustream.to##div[class*="adblockz-alert"]:remove()
 ||www.revenuenetworkcpm.com^*
 www.9now.com.au##input[id="toggle_notification_notification-ad-blocker"]:remove()
 ||www.insurancehealth.info^*
 ||insurancehealth.info^*
-chowmain.software##div[role="presentation"][class^="MuiModal-root MuiDialog-root"]
+chowmain.software##div[role="presentation"][class^="MuiModal-root MuiDialog-root"]:remove()
 chowmain.software##body:style(overflow: scroll !important;)
-www.fanatical.com##div[class^="PrivacyChecker"]
+www.fanatical.com##div[class^="PrivacyChecker"]:remove()
 ||chlign.com/script/tailwind.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.betus.com.pa/miscellaneous/landing?offer$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||livecdn.pro/in.php?source=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -48096,6 +48117,16 @@ fmovies.ps/ajax/banner$document,subdocument,script,inline-script,inline-font,pop
 ||shutunga.com^*
 !*##div[oncontextmenu="return false;"]
 *##div[oncontextmenu^="return false"]
+||www.iqwfauzxumyk.com^*
+||www.dfkoqeunyv.com^*
+||www.sdscroytmbq.com^*
+! The following rule is all that is required to defuse the script which terminates the video player if the developer tools/console is opened.
+librarywhispering.com##+js(set-constant, devtoolsDetector, [])
+! The following four rules don't appear to have any effect.
+!librarywhispering.com##+js(acs, /console.clear\(\)/)
+!librarywhispering.com##+js(acs, devtoolsDetector)
+!librarywhispering.com##+js(aopw, devtoolsDetector)
+!librarywhispering.com##+js(aopr, devtoolsDetector)
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
