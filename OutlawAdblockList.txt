@@ -40298,7 +40298,9 @@ rabbitstream.net##vid[class="jw-video jw-reset"]:remove-attr(disableremoteplayba
 rabbitstream.net##+js(set-constant, gtag, noopFunc)
 rabbitstream.net##+js(acs, gtag)
 rabbitstream.net##video:remove-attr(disableremoteplayback)
+||rabbitstream.net/ajax/embed-4/banners$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! Do NOT block as rabbitstream.net is the iframe which plays the video.
+!||rabbitstream.net/embed-4/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||rabbitstream.net/embed-5/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 membed1.com##+js(set-constant, gtag, noopFunc)
 membed1.com##+js(acs, gtag)
@@ -48069,6 +48071,9 @@ www.koreatimes.co.kr##iframe[src^="//tracker.adbinead.com/"]:remove()
 !||email-analytics.morpace.com/ea/IImB1RCPJg/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||email-analytics.morpace.com^*
 ||crookrally.com^*
+fmovies.ps##div[id="vpn-top"]:remove()
+fmovies.ps##+js(saa, height, 100%, iframe[id="iframe-embed"])
+fmovies.ps##+js(saa, scrolling, yes, iframe[id="iframe-embed"])
 fmovies.ps##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 fmovies.ps##+js(acs, window.kkp4a5x5tv)
 fmovies.ps##+js(aopw, window.kkp4a5x5tv)
@@ -48077,8 +48082,14 @@ fmovies.ps##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOi
 fmovies.ps##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 fmovies.ps##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 ! The following two rules defuse the anti-developer tools and console debugger in fmovies.ps/js/group_17/app.min.js
-fmovies.ps##+js(set-constant, _0x39426c, noopFunc)
-fmovies.ps##+js(acs, _0x39426c)
+! Either and both also prevent the playing of videos.
+!fmovies.ps##+js(set-constant, _0x39426c, noopFunc)
+!fmovies.ps##+js(acs, _0x39426c)
+! The following rule prevents all interval functions using the same generic name not just _0x39426c
+!fmovies.ps##+js(nosiif)
+! The following two rules defuse the anti-developer tools and console debugger in fmovies.ps/js/group_17/app.min.js
+fmovies.ps##+js(set-constant, devtoolsDetectInterval, noopFunc)
+fmovies.ps##+js(nosiif, devtoolsDetectInterval)
 fmovies.ps/ajax/banner$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||*/5/*/?oo=1&aab=1$xhr
 ||vctuubswo.com^*
