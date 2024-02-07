@@ -13479,7 +13479,6 @@ www.itv.com##.column.permalink__advert
 ||d1i2v9a8xom2hy.cloudfront.net^*
 ||rryodgeerrvn.com^*
 ||www.rryodgeerrvn.com^*
-||pixel.rubiconproject.com/tap.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||yabs.yandex.ru/metrika/watch.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||yabs.yandex.ru/metrika/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||yandex.ru/clck/jclck/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -36238,13 +36237,19 @@ collider.com##div[id^="div-gpt-ad"]
 !||cdn.resonate.com/analytics.js/v1/200302733/analytics.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.resonate.com/analytics.js/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mbid.marfeelrev.com^*
-www.linkedin.com##div[id="artdeco-global-alert-container"]
-www.linkedin.com##div[class*="_notice_1ywt5s"]:upward(1)
-www.dexerto.com##div[data-placeholder="ad"]
-www.dexerto.com##div[data-cy="GoogleAd"]
-www.dexerto.com##div[data-openweb-ad="true"]
-www.dexerto.com##div[class*="adhesiveAdWrapper"]
-blog.youtube##div[id="cookieBar"]
+www.linkedin.com##div[id="artdeco-global-alert-container"]:remove()
+www.linkedin.com##div[class*="_notice_1ywt5s"]:upward(1):remove()
+www.dexerto.com##div[data-ad-unit-id]:remove()
+www.dexerto.com##div[data-placeholder="ad"]:remove()
+www.dexerto.com##div[data-cy="GoogleAd"]:remove()
+www.dexerto.com##div[data-openweb-ad="true"]:remove()
+www.dexerto.com##div[class*="adhesiveAdWrapper"]:remove()
+www.dexerto.com##div[id^="browsi_adContainer"]:remove()
+www.dexerto.com##noscript[id="comscore-noscript"]:remove()
+www.dexerto.com##aside[data-cy="Sidebar"]:remove()
+www.dexerto.com##div[class^="flex flex-col items-center"]:has(div[class*="text-center"]:has-text(Article continues after ad)):remove()
+www.dexerto.com##div[class="w-full flex items-center justify-center top-0 left-0 lg:min-h-[256px] aspect-[390/219] md:aspect-[192/35] min-h-[56px] bg-neutral-grey p-2"]:remove()
+blog.youtube##div[id="cookieBar"]:remove()
 gameloop.en.softonic.com##div[id="top-leaderboard-article-page-desktop-wrapper"]
 gameloop.en.softonic.com##div[id="top-banner-article-page-desktop-wrapper"]
 gameloop.en.softonic.com##div[id="bottom-leaderboard-article-page-desktop-wrapper"]
@@ -36601,10 +36606,6 @@ kiktu.com##a[href*="://7EvNmdSRz.click/"]:remove()
 ||aswaystumbly.com^*
 ||pepperysergeantrisky.com^*
 ||8ebtdbsjsu.click^*
-www.dexerto.com##div[data-placeholder="ad"]:remove()
-www.dexerto.com##div[id^="browsi_adContainer"]:remove()
-www.dexerto.com##div[data-ad-unit-id]:remove()
-www.dexerto.com##div[class*="adhesiveAdWrapper"]:remove()
 !||macro.adnami.io/macro/hosts/adsm.macro.dexerto.com.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||macro.adnami.io/macro/spec/adsm.macro.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||macro.adnami.io^*
@@ -48132,6 +48133,9 @@ bluemediadownload.lat,bluemedialink.online,bluemediafiles.com##+js(aeld)
 ||erebusdithery.top^*
 ||sudvclh.com^*
 ||jsftzha.com^*
+||pixel.rubiconproject.net.akadns.net^*
+||hx697j1lb.puzztake.com/api/bids/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||batch.cootlogix.com/api/bids/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
