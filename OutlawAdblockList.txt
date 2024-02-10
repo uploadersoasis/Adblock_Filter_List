@@ -23812,10 +23812,6 @@ webproxy.to##+js(abort-on-property-write, cookieChoices.showCookieConsentBar)
 webproxy.to##ins[class="adsbygoogle"]:remove()
 !||cdn.hbplatform.com/adfill/tags/2/1034/adfill.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.hbplatform.com/adfill/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.croxyproxy.com##+js(set-constant, adsbygoogle, [])
-www.croxyproxy.com##+js(abort-on-property-read, adsbygoogle)
-www.croxyproxy.com##+js(abort-on-property-write, adsbygoogle)
-www.croxyproxy.com##ins[class="adsbygoogle"]webproxy.to
 ||cdn.userreport.com/userreport.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 unblockvideos.com##+js(set-constant, adsbygoogle, [])
 unblockvideos.com##+js(abort-on-property-read, adsbygoogle)
@@ -44488,10 +44484,6 @@ support.lenovo.com##+js(set-constant, userOperationCookieBefore, true)
 ||lenovosupport-app.quantummetric.com^*
 ||e7741.d.akamaiedge.net/BannerManagement/track/footprints.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||download.lenovo.com/BannerManagement/track/footprints.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.croxyproxy.com##div[id="gdpr"]
-www.croxyproxy.com##div[id="gdpr"]:remove()
-www.croxyproxy.com##div[class*="gdprContainer"]
-www.croxyproxy.com##div[class*="gdprContainer"]:remove()
 www.filefactory.com###ff-wp-promo-inner
 www.filefactory.com###g367CB268B1094004A3689751E7AC568FFloatingBanner
 !||www.filefactory.com/js/vendor/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -48139,11 +48131,16 @@ mashable.com##+js(acs, window.trackAndReportBibblioInView)
 finance.yahoo.com##div[id="topAd"]:remove()
 finance.yahoo.com##script[id="mnet-script"]:remove()
 finance.yahoo.com##script[id="opus-script"]:remove()
-proxyium.com##ins[data-ad-client]:remove()
-proxyium.com##+js(set-constant, adsbygoogle, [])
-proxyium.com##+js(aopw, adsbygoogle)
-proxyium.com##+js(aopr, adsbygoogle)
-proxyium.com##div[id^="zapper"]:remove()
+www.croxyproxy.com,proxyium.com##+js(set-constant, window._urq, [])
+www.croxyproxy.com,proxyium.com##+js(aopw, window._urq)
+www.croxyproxy.com,proxyium.com##+js(aopr, window._urq)
+www.croxyproxy.com,proxyium.com##+js(set-constant, adsbygoogle, [])
+www.croxyproxy.com,proxyium.com##+js(aopw, adsbygoogle)
+www.croxyproxy.com,proxyium.com##+js(aopr, adsbygoogle)
+www.croxyproxy.com,proxyium.com##div[id^="zapper"]:remove()
+www.croxyproxy.com,proxyium.com##ins[data-ad-client]:remove()
+www.croxyproxy.com,proxyium.com##div[id="gdpr"]:remove()
+www.croxyproxy.com,proxyium.com##div[class*="gdprContainer"]:remove()
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
