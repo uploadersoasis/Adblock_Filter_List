@@ -3624,7 +3624,6 @@ generatorlinkpremium.com##.thirdsky
 ||go.trkxz.com^*
 ||track.sarinavalentina.com^*
 ||a.hotslogan.com^*
-||mashable.com/tripleclick.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||pwox.rcmwi.de/ox/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pwox.rcmwi.de^*
 !||oxdel.musipedia.org/myajsmy.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -18981,9 +18980,8 @@ thewirecutter.com##div[class="feedback_banner___3PN2s"]
 !||telemetry.nvidia.com/installer-telemetry$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||telemetry.nvidia.com^*
 web.archive.org##iframe[id="injected-iframe"]
-mashable.com##.inline-video-seealso
 ||analytics.archive.org^*
-medium.com##.js-stickyFooter
+medium.com##.js-stickyFooter:remove()
 ||medium.com/_/stat?event=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||collector-medium.lightstep.com/api/v0/reports$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||collector-medium.lightstep.com^*
@@ -23624,7 +23622,6 @@ nulleb.com##+js(set-constant, adsbygoogle, [])
 nulleb.com##+js(set-constant, triggerAlert, false)
 nulleb.com##+js(abort-on-property-write, window.location.hash)
 nulleb.com##+js(abort-on-property-read, window.location.hash)
-nulleb.com##+js(set-constant, adsbygoogle, [])
 nulleb.com##+js(abort-on-property-write, adsbygoogle)
 nulleb.com##+js(abort-on-property-read, adsbygoogle)
 nulleb.com##+js(abort-on-property-write, adblockDetectedAlert)
@@ -26583,7 +26580,6 @@ apkcombo.com##.adslink
 ||landing.jerkmate.com^*
 ||www.fthkmwrkqg.com^*
 ||fthkmwrkqg.com^*
-||v.vfgte.com^*
 ||www.ntdvjlvau.com^*
 ||ntdvjlvau.com^*
 ||s3.amazonaws.com/24c07c19ae882c62e69411c517ff1f6fcc6ec485fa16112373925bb7cd3d0f/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -28160,7 +28156,6 @@ indishare.org##a[href*="//9xlust.in"]
 ||uiteligularly.fun^*
 ||market.moonicorn.network/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s3.amazonaws.com/9dad1784ba0f25ee2af1315dccd038d670118d0c016c5724d2e3b93add3/ab4871dad9$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||tm-offers.gamingadult.com^*
 ||rdifferenco.club^*
 ||click.advertnative.com^*
 !||network.eonads.com/adserver/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -30701,10 +30696,7 @@ freeola.com##div[id="cookie-alert"]
 thomas.vanhoutte.be##ins[class="adsbygoogle"]
 thomas.vanhoutte.be##div[class="sense-inline"]
 www.bitrix24.com##div[class*="bx-main-cookie-policy"]
-mashable.com##ins[class="zmgad-full-width"]
-mashable.com##div[data-pogo="incontent"]
-mashable.com##div[id="sidebar-1"]
-www.b12.io##div[class^="gdpr"]
+www.b12.io##div[class^="gdpr"]:remove()
 ||teachingaids-d.openx.net^*
 ||ww1.llive.com^*
 ||xml.sedodna.com^*
@@ -39413,7 +39405,6 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="Blocked"]:remove()
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[class^="stickyads_"]
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[class^="stickyads_"]:remove()
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]:remove()
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]:remove()
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[id="generate-a11y"]:remove()
@@ -39904,7 +39895,6 @@ mixdrop.co,mixdrop.ag,mixdrop.to##+js(aeld, click, function(g))
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(aeld, click, function(a))
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(nosiif, /^function/)
 mixdrop.co,mixdrop.ag,mixdrop.to##body:remove-attr(onclick)
-||mixdrop.co/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, adcashMacros, {})
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, adcashMacros)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-read, adcashMacros)
@@ -43740,6 +43730,7 @@ www.engadget.com##div[class*="enableGAMAds"]:remove-class(enableGAMAds)
 www.engadget.com##div[class*="enableAdSlotsNewMap"]:remove-class(enableAdSlotsNewMap)
 www.engadget.com##div[class*="enableAdSlotsOneSlot"]:remove-class(enableAdSlotsOneSlot)
 !||hb.yahoo.net/checksync.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||hb.yahoo.net/bidexchange.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||hb.yahoo.net^*
 ||s.yimg.com/cv/apiv2/adbuilder/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s.yimg.com/dy/ads/native.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -43992,7 +43983,6 @@ kswplayer.info##+js(no-window-open-if)
 !||ennrv.eayeewlvmebkj.top^*
 ||eayeewlvmebkj.top^*
 ||chargeheadlight.com^*
-||main.proffering.xyz^*
 ||goldangspelled.digital^*
 ||lenapaul.photos^*
 ||fireworksane.com^*
@@ -46457,7 +46447,6 @@ igram.storyy.shop##+js(acs, gtag)
 !||greenfox.ink/d/lg.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||greenfox.ink/d/asyncjs.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||greenfox.ink^*
-||revive.stats.rip^*
 new7.filepress.store##div[id^="beacon_"]:remove()
 new7.filepress.store##div[id="banner-reclam"]:remove()
 new7.filepress.store##+js(set-constant, trackBannerClick, noopFunc)
@@ -47950,7 +47939,6 @@ mybrowseraddon.com##div[id="mybrowseraddon-cookie-container"]:remove()
 mybrowseraddon.com##+js(set-constant, adsbygoogle, [])
 mybrowseraddon.com##+js(aopw, adsbygoogle)
 mybrowseraddon.com##+js(aopr, adsbygoogle)
-mybrowseraddon.com##+js(set-constant, adsbygoogle, [])
 mybrowseraddon.com##+js(set-constant, window.dataLayer, [])
 mybrowseraddon.com##+js(set-constant, window.gtag, noopFunc)
 mybrowseraddon.com##+js(acs, gtag)
@@ -48035,7 +48023,6 @@ www.koreatimes.co.kr##div[data-iwmads-id]:remove()
 www.koreatimes.co.kr##ins[class="adsbyadop"]:remove()
 www.koreatimes.co.kr##iframe[src^="//tracker.adbinead.com/"]:remove()
 ||hmap-asis.hankookilbo.com/service/kt/trk.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||tracker.adbinead.com^*
 ||ads.priel.co.kr^*
 ||compass.adop.cc/assets/js/adop/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||email-analytics.morpace.com/ea/IImB1RCPJg/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -48139,6 +48126,24 @@ bluemediadownload.lat,bluemedialink.online,bluemediafiles.com##+js(aeld)
 ||pixel.rubiconproject.net.akadns.net^*
 ||hx697j1lb.puzztake.com/api/bids/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||batch.cootlogix.com/api/bids/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+mashable.com##.inline-video-seealso:remove()
+mashable.com##ins[class="zmgad-full-width"]:remove()
+!mashable.com##div[data-pogo="incontent"]:remove()
+!mashable.com##div[data-pogo="sidebar"]:remove()
+mashable.com##div[data-pogo]:remove()
+mashable.com##div[id="sidebar-1"]:remove()
+mashable.com##+js(set-constant, window.trackAndReportBibblioInView, noopFunc)
+mashable.com##+js(acs, window.trackAndReportBibblioInView)
+||mashable.com/tripleclick.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||api.bibblio.org/v1/activities/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+finance.yahoo.com##div[id="topAd"]:remove()
+finance.yahoo.com##script[id="mnet-script"]:remove()
+finance.yahoo.com##script[id="opus-script"]:remove()
+proxyium.com##ins[data-ad-client]:remove()
+proxyium.com##+js(set-constant, adsbygoogle, [])
+proxyium.com##+js(aopw, adsbygoogle)
+proxyium.com##+js(aopr, adsbygoogle)
+proxyium.com##div[id^="zapper"]:remove()
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
