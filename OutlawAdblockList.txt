@@ -35179,7 +35179,8 @@ uploadbuzz.cc##a[href*="://7starhd.love/"]
 ||m7hdh-2damu.ads.tremorhub.com^*
 ||mailonline-us-d.openx.net^*
 ||cmp.dmgmediaprivacy.co.uk/ccpa/consent$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cmp.dmgmediaprivacy.co.uk/2.8.18-ccpa-31/iife/mol-ads-cmp.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||cmp.dmgmediaprivacy.co.uk/2.8.18-ccpa-31/iife/mol-ads-cmp.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cmp.dmgmediaprivacy.co.uk/*/iife/mol-ads-cmp.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||euasync01.admantx.com/admantx/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||euasync01.admantx.com^*
 www.nationalreview.com##div[class*="ad-skeleton"]
@@ -48149,6 +48150,13 @@ www.espn.com##div[class="WatchListingsVideo WatchListingsVideo--VideoContainer"]
 www.espn.com##div[id="vjs_video_3"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 ! Don't use the following rule as it removes the video player
 !www.espn.com##div[id="fitt-analytics"]:remove()
+www.betterbird.eu##+js(aeld, click, /function\(ev\)/)
+www.foxsports.com##div[class^="fwAd"]:remove()
+www.newzit.com##div[id="stickyBillboard"]:remove()
+www.newzit.com##+js(set-constant, getAdsConfig, noopFunc)
+!||www.newzit.com/ads/next-release.876344e/newzit-adverts.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.newzit.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||mads.newzit.com^*
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
