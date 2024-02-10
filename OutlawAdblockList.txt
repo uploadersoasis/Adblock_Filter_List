@@ -16101,8 +16101,6 @@ www.microsoft.com###epb
 www.upload4earn.org##div[class^="bannerads"]
 www.upload4earn.org##div[class^="adsbygoogle"]
 ||lh3.googleusercontent.com/-BE3MOM3IeFI/WtzTsCmrDpI/AAAAAAAAAC8/dbF27718Em8oOV1btl9NeZ_ZRF9xvJoegCLcBGAs/h85/upload4earn$image
-www.espn.com##div[class^="ad-slot"]
-www.espn.com##div[class*="ad-wrapper"]
 ||cdn.registerdisney.go.com/v2/responder/responder.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a.espncdn.com/redesign/*/js/espn-analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 veniceunleashed.net##div[class^="adblock"]
@@ -22544,7 +22542,7 @@ www.dodears.info##div[id="quads-ad3"]
 ||wi3brxwr2b3v.com^*
 hexupload.net##^script:has-text(runAdblock)
 ||d1af033869koo7.cloudfront.com^*
-insider.espn.com##.promo-banner-container
+insider.espn.com##.promo-banner-container:remove()
 ||antirgiocub.com^*
 ||www.antirgiocub.com^*
 ||www.alwsbnvialll.com^*
@@ -35874,7 +35872,6 @@ www.pluralsight.com##div[class*="cookie-notification-"]
 ||eiteribesshaints.com^*
 ||komarchlupoid.com^*
 ||www.aexp-static.com/cdaas/one/rum-telemetry/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.espn.com##div[title="Advertisement"]
 ||premium-uploaded.net^*
 ||last0nef1le.com^*
 fc-lc.com##iframe[id="iframe_id"]
@@ -44918,8 +44915,6 @@ dwdisc.com##a[href*="//hantsailsyte.com/"]
 dwdisc.com##a[href*="//hantsailsyte.com/"]:remove()
 ||bossapk.com/banner_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||s3.us-east-1.amazonaws.com/2b023e0529fc8b992e110ad41b381bfcfa43a87535343b6bec412/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.espn.com##input[type="button"][pseudo="-webkit-media-controls-fullscreen-button"]:style(display: block !important;)
-www.espn.com##button[type="button"][class^="vjs-share-control"]:style(display: none !important)
 rexdlbox.com##:xpath(//script[contains(text(), 'd34cixo0lr52lw')])
 rexdlbox.com##:xpath(//script[contains(text(), 'd34cixo0lr52lw')]):remove()
 rexdlbox.com##+js(acs, d34cixo0lr52lw)
@@ -48141,6 +48136,19 @@ www.croxyproxy.com,proxyium.com##div[id^="zapper"]:remove()
 www.croxyproxy.com,proxyium.com##ins[data-ad-client]:remove()
 www.croxyproxy.com,proxyium.com##div[id="gdpr"]:remove()
 www.croxyproxy.com,proxyium.com##div[class*="gdprContainer"]:remove()
+||insistgoodsrespect.com^*
+www.espn.com##input[type="button"][pseudo="-webkit-media-controls-fullscreen-button"]:style(display: block !important;)
+www.espn.com##button[type="button"][class^="vjs-share-control"]:style(display: none !important)
+www.espn.com##div[title="Advertisement"]:remove()
+www.espn.com##div[class^="ad-slot"]:remove()
+www.espn.com##div[class*="ad-wrapper"]:remove()
+www.espn.com##+js(remove-class, evp-new-ad-display, #vjs_video_3)
+www.espn.com##div[id="vjs_video_3"]:remove-class(evp-new-ad-display)
+www.espn.com##main[id="fittPageContainer"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+www.espn.com##div[class="WatchListingsVideo WatchListingsVideo--VideoContainer"]:style(max-width: 100vw !important;)
+www.espn.com##div[id="vjs_video_3"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+! Don't use the following rule as it removes the video player
+!www.espn.com##div[id="fitt-analytics"]:remove()
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
