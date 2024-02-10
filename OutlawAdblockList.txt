@@ -31443,10 +31443,9 @@ mega4up.org##+js(remove-attr, disabled, #downloadbtn, stay)
 !up-load.io##+js(set-constant, tick, 1)
 ! removing or stopping the script with JSON.parse(atob()) will prevent the "create your link" button from being created
 !up-load.io##+js(acs, JSON.parse(atob()))
-!up-load.io##^script:has-text(/y=JSON\.parse\(atob\(\)\)/)
 !up-load.io##^script:has-text(/y=JSON\.parse\(atob\(\)\)/):remove()
-!up-load.io##iframe
-!up-load.io##img[src$="://i.imgur.com/ne03PNi.png"]:upward(3)
+!up-load.io##iframe:remove()
+!up-load.io##img[src$="://i.imgur.com/ne03PNi.png"]:upward(3):remove()
 up-load.io##+js(abort-on-property-read, ael)
 up-load.io##+js(abort-on-property-write, ael)
 up-load.io##+js(acs, ael)
@@ -31458,12 +31457,11 @@ up-load.io##+js(abort-on-property-read, _ofkhpt)
 up-load.io##+js(abort-on-property-write, _ofkhpt)
 up-load.io##+js(acs, _ofkhpt)
 up-load.io##script[id="_ofkhpt"]:remove()
-up-load.io##^script:has-text(\"s65c\")
 up-load.io##^script:has-text(\"s65c\"):remove()
 !up-load.io##+js(acs, s65c)
 up-load.io##+js(acs, \"s65c\")
 up-load.io##span[id="s65c"]:remove()
-up-load.io##+js(aeld, DOMNodeRemoved)
+!up-load.io##+js(aeld, DOMNodeRemoved)
 up-load.io##+js(aeld, DOMNodeRemoved, onload)
 up-load.io##+js(remove-attr, disabled, #downloadbtn, stay)
 up-load.io##+js(remove-class, btn-block, #downloadbtn, stay)
@@ -31483,8 +31481,9 @@ up-s1.com,up-load.io##+js(no-window-open-if)
 ||up-load.io/ds1/img/logo.png#-page-peel//adnetwork468./ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||up-load.io/pcheck.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||up-load.io/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||up-load.io^$xhr
-||up-load.io^$xmlhttprequest,3p
+! TODO: The following rule may prevent "garbage" domains with unwanted ad and tracking scripts from being contacted.
+up-load.io##+js(no-xhr-if, method:HEAD)
+||up-load.io^$3p,xhr
 ||up-load.io^$3p,script,redirect-rule=noopjs
 ||up-load.io/ds1/js/nt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! using remove() above will change the position of the following scripts and make the hard-coded values invalid, so remove the scripts in reverse order of appearance in the page
@@ -31505,13 +31504,13 @@ up-load.io##span:has(*[id="weatherad"]):remove()
 ||pfaijlrcc.xyz^*
 ||ulsfygmmupivd.com^*
 ||oamoatch.com^*
-apkcunk.com##div[class="ad-unit"]
-apkcunk.com##ins[data-ad-client]
-www.medicalnewstoday.com##div[id="ccpa-banner"]
-www.medicalnewstoday.com##div[data-ad="true"]
-www.medicalnewstoday.com##div[data-testid="qualtrics-container"]
-www.medicalnewstoday.com##div[class^="css-"][data-empty="true"]
-www.medicalnewstoday.com##aside[class="css-cd0nvx"]
+apkcunk.com##div[class="ad-unit"]:remove()
+apkcunk.com##ins[data-ad-client]:remove()
+www.medicalnewstoday.com##div[id="ccpa-banner"]:remove()
+www.medicalnewstoday.com##div[data-ad="true"]:remove()
+www.medicalnewstoday.com##div[data-testid="qualtrics-container"]:remove()
+www.medicalnewstoday.com##div[class^="css-"][data-empty="true"]:remove()
+www.medicalnewstoday.com##aside[class="css-cd0nvx"]:remove()
 ||www.zlajnpfqgsleo.com^*
 ||zlajnpfqgsleo.com^*
 ||www.quizz2win.com^*
@@ -39124,8 +39123,6 @@ hdstreamzapp.com##+js(aopw, adsbygoogle)
 hdstreamzapp.com##script[id="generate-a11y"]
 hdstreamzapp.com##script[id="generate-a11y"]:remove()
 ||hdstreamzapp.com/wp-content/plugins/wp-content-copy-protector/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||achcdn.com/script/atg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||achcdn.com^*
 ||rxtbuacedjc.com^*
 !||www.fdorxsat.com/twj.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.fdorxsat.com^*
@@ -46819,13 +46816,15 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 !||superonclick.com/prod/redirect.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||superonclick.com/script/npa3.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||superonclick.com^*
+!||achcdn.com/script/atg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||achcdn.com/script/suv4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||achcdn.com/script/ut.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||achcdn.com^*
 ||acacdn.com/script/ut.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||acacdn.com/script/atg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||acdcdn.com/script/ippg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||acdcdn.com/script/suv4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||acdcdn.com/script/ut.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||achcdn.com/script/suv4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||achcdn.com/script/ut.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||acscdn.com/script/ippg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||acscdn.com/script/suv4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||acscdn.com/script/ut.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -48157,6 +48156,8 @@ www.newzit.com##+js(set-constant, getAdsConfig, noopFunc)
 !||www.newzit.com/ads/next-release.876344e/newzit-adverts.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.newzit.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mads.newzit.com^*
+||emqgavllcdoo.com^*
+||*/ntfc.php$script
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
