@@ -48180,7 +48180,7 @@ www.baeldung.com##+js(set-constant, ai_adb_process_blocks, noopFunc)
 www.baeldung.com##+js(acs, ai_adb_process_blocks)
 www.baeldung.com##div[data-freestar-ad]:remove()
 ! TODO: Does the following rule only prevent video ads and not other video clips?
-!www.baeldung.com##div[id="FreeStarVideoAdContainer"]:remove()
+www.baeldung.com##div[id="FreeStarVideoAdContainer"]:upward(1):remove()
 ! TODO: Is the following id name randomly generated?
 www.baeldung.com##div[id="zddnuw"]:remove()
 
