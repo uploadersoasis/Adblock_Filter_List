@@ -22408,13 +22408,12 @@ www.c-sharpcorner.com##div[id^="LinkAdContainer"]
 ||staging.divebahrain.com^*
 ||att.inq.com/tagserver/logging/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||sarah.tncrun.net^*
-fccid.io##div[class*="adtester-container"]
-fccid.io##span[id^="ezoic-pub-ad-placeholder-"]
-fccid.io##div[class*="ezo_ad"]
+fccid.io##div[class*="adtester-container"]:remove()
+fccid.io##span[id^="ezoic-pub-ad-placeholder-"]:remove()
+fccid.io##div[class*="ezo_ad"]:remove()
 ||fccid.io/detroitchicago/imp.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-83.wt.volleyball-erbach.de##.modal-dialog
-10-0-0-0-1.org###ezmobfooter
-||static.cloudflareinsights.com/beacon.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+83.wt.volleyball-erbach.de##.modal-dialog:remove()
+10-0-0-0-1.org###ezmobfooter:remove()
 !||s2.pluralsight.com/analytics/analytics-facade.v4.5.1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||*.pluralsight.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||onehack.us/assets/google-universal-analytics-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -34424,6 +34423,8 @@ cut-y.net##+js(remove-attr, disabled, #submit-button, stay)
 ||id.a-mx.com^*
 !||stats-dev.brid.tv/ping.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||stats-dev.brid.tv^*
+! Enabling the following rule blocks a script used by Cloudflare for access to a protected website.
+!||static.cloudflareinsights.com/beacon.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! Blocking browser.sentry-cdn.com blocks a script used by Cloudflare for access to a protected website.
 !||browser.sentry-cdn.com/6.2.2/bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||browser.sentry-cdn.com^*
