@@ -3480,7 +3480,7 @@ photoshopdesigntutorials.com##.adsbygoogle
 !www.sockshare.com###7999ef9db3e43
 !www.sockshare.com##.3d8786227602cb28ea28a15104398ebd
 ||sports-ak.espn.go.com/espn/sponsoredlinks/adsense/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-sports-ak.espn.go.com##.sponsors
+sports-ak.espn.go.com##.sponsors:remove()
 ||benchmarkreviews.com/wp-content/uploads/banners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cache.go4up.com/assets/img/Download-button-en.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||bidr.trellian.com^*
@@ -4871,10 +4871,10 @@ kingofshrink.com###google_ads_frame3
 ||advertorials.genieo.com^*
 ||analytics.app.amazonbrowserapp.com^*
 ||turbobit.net/opnauz/turbobit_webpick_gary.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-espn.go.com##.admgr-ifrm
-espn.go.com###ad-320
-news10.com###WNAd1
-news10.com##.wnad.wnad1
+espn.go.com##.admgr-ifrm:remove()
+espn.go.com###ad-320:remove()
+news10.com###WNAd1:remove()
+news10.com##.wnad.wnad1:remove()
 !||www.sq2trk2.com/LTSanitizer.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.sq2trk2.com/click.track$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.sq2trk2.com^*
@@ -48147,6 +48147,8 @@ www.espn.com##div[id="vjs_video_3"]:remove-class(evp-new-ad-display)
 www.espn.com##main[id="fittPageContainer"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 www.espn.com##div[class="WatchListingsVideo WatchListingsVideo--VideoContainer"]:style(max-width: 100vw !important;)
 www.espn.com##div[id="vjs_video_3"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+www.espn.com##iframe[id^="_conviva_iframe_"]:remove()
+www.espn.com##div[class^="ab-iam-root"]:remove()
 ! Don't use the following rule as it removes the video player
 !www.espn.com##div[id="fitt-analytics"]:remove()
 www.betterbird.eu##+js(aeld, click, /function\(ev\)/)
