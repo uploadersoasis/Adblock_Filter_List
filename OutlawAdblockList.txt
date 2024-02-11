@@ -34423,8 +34423,7 @@ cut-y.net##+js(remove-attr, disabled, #submit-button, stay)
 ||id.a-mx.com^*
 !||stats-dev.brid.tv/ping.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||stats-dev.brid.tv^*
-! Enabling the following rule blocks a script used by Cloudflare for access to a protected website.
-!||static.cloudflareinsights.com/beacon.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||static.cloudflareinsights.com/beacon.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! Blocking browser.sentry-cdn.com blocks a script used by Cloudflare for access to a protected website.
 !||browser.sentry-cdn.com/6.2.2/bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||browser.sentry-cdn.com^*
@@ -38628,7 +38627,8 @@ www.thestreameast.to,thestreameast.io##+js(acs, gtag)
 www.thestreameast.to,thestreameast.io##+js(set-constant, alertDiv, null)
 ! The following rule is to block the 4 hour streaming time restriction.
 ! TODO: It also prevents other timed functions with the same generic name.
-www.thestreameast.to,thestreameast.io##+js(nostif, /function\(\)/)
+!       This prevents getting past the Cloudflare protection.
+!www.thestreameast.to,thestreameast.io##+js(nostif, /function\(\)/)
 ! The following rule removes the popup alert when the streaming time has expired.
 www.thestreameast.to,thestreameast.io##div[id="alertBox"]:remove()
 ! player.disableKeyboardShortcuts
