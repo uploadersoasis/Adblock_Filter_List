@@ -31025,7 +31025,6 @@ www.systutorials.com##div[style*="min-height: 250px"]:has(div[class="waldo-displ
 www.systutorials.com##div[class="waldo-display-unit"]
 www.systutorials.com##div[id="carbon-block"]
 www.systutorials.com##div[class="sidebar-item"]:has(div[class="waldo-display-unit"])
-www.baeldung.com##div[data-freestar-ad]
 ||infinitytrk.com^*
 ||yvgbpqsbfidfcch.top^*
 ||itineraryupper.com^*
@@ -43481,15 +43480,6 @@ extreme-ip-lookup.com^*$domain=up-load.io
 !||ecdn.firstimpression.io/fiQuery.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ecdn.firstimpression.io/fi_client.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ecdn.firstimpression.io^*
-!||a.pub.network/core/prebid-analytics-confiant-0.34.1b.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||a.pub.network/core/prebid-analytics-1.10.0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||a.pub.network/core/prebid-analytics-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||a.pub.network/core/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||a.pub.network/core/pubfig/*/pubfig.engine.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||a.pub.network/core/pubfig/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||a.pub.network/boingboing-net/pubfig.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||a.pub.network/itsfoss/pubfig.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||a.pub.network^*$domain=bleepingcomputer.com|www.siliconera.com|itsfoss.com
 !||cdn.confiant-integrations.net/gptprebidnative/202303290926/wrap.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.confiant-integrations.net/gptprebidnative/$script
 !||cdn.confiant-integrations.net/MbZTQS496EB4Sd27ILU4rbHXnJ8/gpt_and_prebid/config.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -48162,6 +48152,37 @@ www.newzit.com##+js(set-constant, getAdsConfig, noopFunc)
 ||mads.newzit.com^*
 ||emqgavllcdoo.com^*
 ||*/ntfc.php$script
+!||collector-api.frspecifics.com/v2/abr$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||collector-api.frspecifics.com^*
+!||a.pub.network/itsfoss/pubfig.$script
+!||a.pub.network/baeldung-com/pubfig.$script
+!||a.pub.network/boingboing-net/pubfig.$script
+||a.pub.network/*/pubfig.$script
+||a.pub.network/core/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a.pub.network/core/prebid-analytics-$script
+||a.pub.network/core/pubfig/*/pubfig.engine.js$script
+!||a.pub.network/core/pubfig/cls.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||a.pub.network^*$domain=bleepingcomputer.com|www.siliconera.com|itsfoss.com|www.baeldung.com
+||www.baeldung.com/linux/wp-content/themes/baeldung/library/dist/js/ad-recovery.$script
+www.baeldung.com##+js(set-constant, window.blocker, false)
+!www.baeldung.com##+js(aopw, window.blocker)
+!www.baeldung.com##+js(aopr, window.blocker)
+www.baeldung.com##+js(set-constant, freestar, {})
+www.baeldung.com##+js(aopw, freestar)
+www.baeldung.com##+js(aopr, freestar)
+www.baeldung.com##+js(set-constant, window.confiant, {})
+www.baeldung.com##+js(aopw, window.confiant)
+www.baeldung.com##+js(aopr, window.confiant)
+www.baeldung.com##+js(set-constant, window.dataLayer, [])
+www.baeldung.com##+js(set-constant, window.gtag, noopFunc)
+www.baeldung.com##+js(acs, gtag)
+www.baeldung.com##+js(set-constant, ai_adb_process_blocks, noopFunc)
+www.baeldung.com##+js(acs, ai_adb_process_blocks)
+www.baeldung.com##div[data-freestar-ad]:remove()
+! TODO: Does the following rule only prevent video ads and not other video clips?
+!www.baeldung.com##div[id="FreeStarVideoAdContainer"]:remove()
+! TODO: Is the following id name randomly generated?
+www.baeldung.com##div[id="zddnuw"]:remove()
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
