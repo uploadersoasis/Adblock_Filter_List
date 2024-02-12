@@ -153,8 +153,9 @@ techydino.net##+js(nobab2)
 ||www.adshost2.com/set-action-cookie.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.adshost2.com/ads^*
 ||www.adshost2.com/js/show_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||pespn.chartbeat.net/ping^*
-||horizon.maxim.com/horizon/track^*
+!||pespn.chartbeat.net/ping/ad?h=ads.espn.go.com$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||pespn.chartbeat.net/ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||horizon.maxim.com/horizon/track$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||yardbarker.tags.crwdcntrl.net^*
 !||pagead2.googlesyndication.com/apps/domainpark/show_afd_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pagead2.googlesyndication.com/apps/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -1495,7 +1496,6 @@ img.atdmt.com/images/pixel.gif$document,subdocument,script,inline-script,inline-
 !||i.i.cbsi.com/cnwk.1d/Ads/common/manta/adFunctionsD-zdnet.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||i.i.cbsi.com/cnwk.1d/Ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.zdnet.com/js/history.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||pespn.chartbeat.net/ping/ad?h=ads.espn.go.com$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||ads.inagist.com/api/v1/record_hbeacon$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ads.inagist.com^*
 ||oasc17.247realmedia.com/Scripts/oas_analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -11760,6 +11760,9 @@ haxdown.com##.bannersinglefot:nth-of-type(2) > a[href^="http://hdwn.siomi.tech/"
 ||app.medyanetads.com^*
 !||1ff98d3f0df77fc9fdedf4209cc4db4cc1844a69.cws.conviva.com^*
 !||885e2dd94adb263c2321d2d0f3778d18523bce4a.cws.conviva.com^*
+!||a6709203f34992a5095d2bc7ceaf2ec504f651a8.cws.conviva.com^*
+!||e12872de91aaca7a39095801bdf5f168d87912fa.cws.conviva.com^*
+!||fc8dbfdc5da519f576628f619306a357f31bd006.cws.conviva.com^*
 !||cws.conviva.com/cws_iframe.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cws.conviva.com^*
 ||kumekqeccmob.com^*
@@ -20947,7 +20950,6 @@ ovagames.com##+js(abort-current-script, __webpack_exports__)
 ||bumcapale.site^*
 ||www.bumcapale.site^*
 ||442d9f2ac50ca502.com^*
-!||a6709203f34992a5095d2bc7ceaf2ec504f651a8.cws.conviva.com^*
 ||2a12be6140880286.com^*
 ||areantaid.site^*
 ||www.areantaid.site^*
@@ -30427,7 +30429,6 @@ www.nationalreview.com##div[class*="modal-overlay--paywall"]
 ||www.nationalreview.com/wp-content/themes/national-review/static/js/ads/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||stag-core.tfla.xyz/serve_onetag?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||a10.nationalreview.com/rest/recommendations/stats?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||dcf.espn.com/error/e.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 redeem.giftcards.com##div[id="cp-overlay"]
 tutorialforlinux.com##div[id="cookie-notice"]
 tutorialforlinux.com##div[class*="cookie-notice"]
@@ -38770,6 +38771,8 @@ www.vipleague.st##+js(nostif, /^function\(\)/)
 www.vipleague.st##+js(nosiif, /^function\(\)/)
 www.vipleague.st##+js(no-setTimeout-if, forceKillplayer)
 ||cdn.espn.com/onetrust/otCCPAiab.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dcf.espn.com/privacy/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dcf.espn.com/error/e.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 abc.com##script[ccpa-opt-out-ids]
 abc.com##div[id^="vjs_video_"]:remove-class(evp-new-ad-display)
 abc.com##div[id^="vjs_video_"]:remove-class(hide-play-button)
@@ -38781,7 +38784,6 @@ www.guru99.com##+js(aopw, pubwise)
 www.guru99.com##+js(set-constant, pubwise.enabled, false)
 ||assets-cdn.watchdisneyfe.com/delta/assets/abc/nielsen.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||assets-cdn.watchdisneyfe.com/delta/assets/abc/nielsen.js$script
-||dcf.espn.com/privacy/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 bosscast.eu##iframe[id="rufous-sandbox"]
 bosscast.eu##iframe[id="rufous-sandbox"]:remove()
 ||bettingoffer.xyz/js/popup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -38832,7 +38834,6 @@ playermyplayer.me##+js(aopr, document.oncontextmenu)
 playermyplayer.me##+js(aopw, document.oncontextmenu)
 playermyplayer.me##div:has(span[onmouseup="document.getElementById('floatLayer1').style.display='none'"])
 playermyplayer.me##div:has(span[onmouseup="document.getElementById('floatLayer1').style.display='none'"]):remove()
-||e12872de91aaca7a39095801bdf5f168d87912fa.cws.conviva.com^*
 ||video-ads-module.ad-tech.nbcuni.com^*
 ||shutesaroph.com^*
 www.cbs.com##div[class="video__player-wrapper"]:remove-attr(data-use-freewheel-ads)
@@ -48147,11 +48148,18 @@ www.espn.com##+js(remove-class, evp-new-ad-display, #vjs_video_3)
 www.espn.com##div[id="vjs_video_3"]:remove-class(evp-new-ad-display)
 www.espn.com##main[id="fittPageContainer"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 www.espn.com##div[class="WatchListingsVideo WatchListingsVideo--VideoContainer"]:style(max-width: 100vw !important;)
-www.espn.com##div[id="vjs_video_3"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+www.espn.com##div[data-box-type^="fitt-adbox-"]:remove()
+www.espn.com##div[id^="ad-slot-"]:remove()
+! Setting the style to full width and height prevent the proper scaling of the video viewport on some pages so only use the following rule on specific paths.
+www.espn.com##:matches-path(/\/watch\/player\//i) div[id="vjs_video_3"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 www.espn.com##iframe[id^="_conviva_iframe_"]:remove()
 www.espn.com##div[class^="ab-iam-root"]:remove()
 ! Don't use the following rule as it removes the video player
 !www.espn.com##div[id="fitt-analytics"]:remove()
+!||micro.rubiconproject.com/prebid/dynamic/18138.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||micro.rubiconproject.com/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||e8960.e2.akamaiedge.net/prebid/dynamic/18138.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||e8960.e2.akamaiedge.net/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.betterbird.eu##+js(aeld, click, /function\(ev\)/)
 www.foxsports.com##div[class^="fwAd"]:remove()
 www.newzit.com##div[id="stickyBillboard"]:remove()
