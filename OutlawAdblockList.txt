@@ -5750,7 +5750,6 @@ up.media1fire.com###download-box
 ||client-verify.adtricity.com^*
 www.niallbrady.com##center > .adsbygoogle
 ||www.uploadable.ch/script/ZeroClipboard$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||hosting.alluc.to/728x90.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||liversia.net^*
 !||video-ad-stats.googlesyndication.com/video/client_events?ad_id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||video-ad-stats.googlesyndication.com^*
@@ -13842,11 +13841,6 @@ documentslide.com###ads_footer
 ||www.fmcwqmwdaubb.com^*
 ||ykqpbuqpfjsh.com^*
 ||www.ykqpbuqpfjsh.com^*
-www.alluc.ee##.kIk71vhA.tAcTAjKv
-!www.alluc.ee###MarketGidWrap55850
-www.alluc.ee##div[id^="MarketGidWrap"]
-www.alluc.ee##div[class^="MarketGidWrap"]
-www.alluc.ee##div[title^="MarketGidWrap"]
 ||nbhubocsduzn.com^*
 ||www.nbhubocsduzn.com^*
 ||www.wizejdnlqwcb.com^*
@@ -14482,8 +14476,6 @@ rustorka.com###sidebar1-wrap
 ||d1gwdqauyvegc9.cloudfront.net/1x1.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||imgur-d.openx.net/w/1.0/jstag$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||imgur-d.openx.net^*
-||cdn1.alluc.ee/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cdn1.alluc.ee/js/cookieconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||forexbulletproof.com/banners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.forex-megadroid.com/banners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.maxback.org/track.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -35619,6 +35611,7 @@ gsuitetips.com##div[aria-label="cookieconsent"]:remove()
 www.linuxquestions.org##ins[data-ad-client]:remove()
 www.linuxquestions.org##div[id^="beacon_"]:remove()
 www.linuxquestions.org##ins[id^="revive-"]:remove()
+www.linuxquestions.org##+js(acs, document.write)
 www.linuxquestions.org##+js(set-constant, gtag, noopFunc)
 www.linuxquestions.org##+js(acs, gtag)
 www.linuxquestions.org##+js(aopr, adsbygoogle)
@@ -48214,6 +48207,31 @@ www.baeldung.com##div[id="zddnuw"]:remove()
 ||dtybyfo.com^*
 ||tcowmrj.com^*
 ||choutchi.net^*
+||hosting.alluc.co/728x90.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+alluc.co##.kIk71vhA.tAcTAjKv:remove()
+!alluc.co###MarketGidWrap55850:remove()
+alluc.co##div[id^="MarketGidWrap"]:remove()
+alluc.co##div[class^="MarketGidWrap"]:remove()
+alluc.co##div[title^="MarketGidWrap"]:remove()
+||cdn1.alluc.co/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn1.alluc.co/js/cookieconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+alluc.co##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+alluc.co##+js(acs, window.kkp4a5x5tv)
+alluc.co##+js(aopw, window.kkp4a5x5tv)
+alluc.co##+js(aopr, window.kkp4a5x5tv)
+alluc.co##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+alluc.co##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
+alluc.co##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+alluc.co##iframe[style="width: 1px; height: 1px; opacity: 0;"]:remove()
+alluc.co##div[id="WzTtDiV"]:remove()
+||caeqgjdtq.xyz^*
+||peerlessgossipytips.com^*
+||raudoabe.com^*
+||pmdcyhkloejh.com^*
+!||od.mucopussamkhya.com^*
+||souvenirresponse.com^*
+||*/pixel/pure$xhr
+||*/pixel/purst$image
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
