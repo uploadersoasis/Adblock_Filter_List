@@ -48224,11 +48224,14 @@ alluc.co##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 alluc.co##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 alluc.co##iframe[style="width: 1px; height: 1px; opacity: 0;"]:remove()
 alluc.co##div[id="WzTtDiV"]:remove()
+! The following will enlarge the width of video player viewport for all iframes inside it that are already set to 100% width.
+alluc.co##div[class="container"]:style(padding:0 !important; margin-left: 10px !important; border-width:0 !important; width: 100vw !important; user-select: all !important; pointer-events: all !important;)
 ||caeqgjdtq.xyz^*
 ||peerlessgossipytips.com^*
 ||raudoabe.com^*
 ||pmdcyhkloejh.com^*
 !||od.mucopussamkhya.com^*
+||mucopussamkhya.com^*
 ||souvenirresponse.com^*
 ||*/pixel/pure$xhr
 ||*/pixel/purst$image
