@@ -35615,13 +35615,20 @@ www.anycodings.com##ins[data-ad-client]
 analyticsindiamag.com##a[href*="://ad.doubleclick.net/"]
 analyticsindiamag.com##img[src*="://ad.doubleclick.net/"]
 ||cdn1.overdrive.io/js/cookieconsent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-gsuitetips.com##div[aria-label="cookieconsent"]
-www.linuxquestions.org##ins[data-ad-client]
+gsuitetips.com##div[aria-label="cookieconsent"]:remove()
+www.linuxquestions.org##ins[data-ad-client]:remove()
+www.linuxquestions.org##div[id^="beacon_"]:remove()
+www.linuxquestions.org##ins[id^="revive-"]:remove()
+www.linuxquestions.org##+js(set-constant, gtag, noopFunc)
+www.linuxquestions.org##+js(acs, gtag)
 www.linuxquestions.org##+js(aopr, adsbygoogle)
 www.linuxquestions.org##+js(aopw, adsbygoogle)
+! TODO: should probably block rev.linuxquestions.org wholesale
+!||rev.linuxquestions.org/www/delivery/lg.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||rev.linuxquestions.org/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||saltsspectacles.com^*
 ||nursecompellingsmother.com^*
-||lmdjlmneovhwe.com//$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||lmdjlmneovhwe.com^*
 ||paiwhoki.com^*
 www.iplocation.net##span[id^="div-gpt-ad"]
 www.iplocation.net##span[id^="ezoic-pub-ad"]
