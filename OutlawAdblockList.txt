@@ -159,6 +159,7 @@ techydino.net##+js(nobab2)
 !||pagead2.googlesyndication.com/apps/domainpark/show_afd_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pagead2.googlesyndication.com/apps/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pagead2.googlesyndication.com/simgad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||pagead2.googlesyndication.com/pagead/managed/js/adsense/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||pagead2.googlesyndication.com/pagead/show_companion_ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||pagead2.googlesyndication.com/pagead/show_ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||pagead2.googlesyndication.com/pagead/osd.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -167,15 +168,19 @@ techydino.net##+js(nobab2)
 !||pagead2.googlesyndication.com/pagead/js/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pagead2.googlesyndication.com/pagead/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pagead2.googlesyndication.com/activeview^*
-||googleads.g.doubleclick.net/pagead/viewthroughconversion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||googleads.g.doubleclick.net/pagead/ads/client$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||googleads.g.doubleclick.net/pagead/ads$subdocument
-!||googleads.g.doubleclick.net/pagead/ads^*
-||googleads.g.doubleclick.net/pagead/drt/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||googleads.g.doubleclick.net/pagead/html/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||googleads.g.doubleclick.net/apps/domainpark/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||googleads.g.doubleclick.net/pagead/ads/client$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||googleads.g.doubleclick.net/pagead/ads$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||googleads.g.doubleclick.net/pagead/adview$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||googleads.g.doubleclick.net/pagead/conversion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||googleads.g.doubleclick.net/pagead/drt/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||googleads.g.doubleclick.net/pagead/html/*/zrt_lookup.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||googleads.g.doubleclick.net/pagead/html/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||googleads.g.doubleclick.net/pagead/id^*
+||googleads.g.doubleclick.net/pagead/interaction/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||googleads.g.doubleclick.net/pagead/lopri^*
+||googleads.g.doubleclick.net/pagead/test_domain.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||googleads.g.doubleclick.net/pagead/viewthroughconversion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.googleadservices.com/pagead/conversion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.googleadservices.com/pagead/conversion.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.googleadservices.com/pagead/conversion$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -17416,7 +17421,6 @@ www.foxebook.net##div[id^="id"][id*="close"]
 ||kfypsloqkccvpl.com^*
 ||www.kfypsloqkccvpl.com^*
 ||www.srmdata.com/beacon$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||googleads.g.doubleclick.net/pagead/id^*
 ||www.cixvlpbnceh.com^*
 ||cixvlpbnceh.com^*
 ||earandmarketing.com^*
@@ -17946,7 +17950,6 @@ tutsgalaxy.com##div[id^="tutsg-"]
 dl.go4up.com##div[id^="epmads-"]
 !||loadus.exelator.com/load/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||loadus.exelator.com^*
-||googleads.g.doubleclick.net/pagead/lopri^*
 ||sczcxmaizy.com^*
 ||www.sczcxmaizy.com^*
 ||bidagent.xad.com^*
@@ -31585,7 +31588,6 @@ viewsb.com##div:has(a[href*="//opcharizardon.com/"])
 ||matomo3.org^*
 ||silklanguish.com^*
 ||boahoupi.com^*
-||googleads.g.doubleclick.net/pagead/test_domain.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||1337x.unblockproject.top/cdn-cgi/apps/head/*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pyropenunmould.com^*
 ||www.wyrtaxbhappt.com^*
@@ -31594,8 +31596,6 @@ www.fosshub.com##div[aria-label="cookieconsent"]
 www.fosshub.com##form[id="donateAdsForm"]
 www.fosshub.com##div[id="adLocation"]
 www.fosshub.com##aside[class="ad"][aria-label="Advertisement"]
-||pagead2.googlesyndication.com/pagead/managed/js/adsense/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||googleads.g.doubleclick.net/pagead/html/*/zrt_lookup.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.fosshub.com/media/js/adblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mpuxzyuiyejwe.com^*
 modgameapk.net##ins[data-ad-client]
@@ -43293,22 +43293,15 @@ www.howtogeek.com##+js(abort-on-property-read, adUnitBidderConfigs)
 !www.howtogeek.com##+js(abort-on-property-read, i.pubads)
 !www.howtogeek.com##+js(acs, pubads)
 !www.howtogeek.com##+js(acs, _aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtMzI)
-!www.howtogeek.com^script:has-text(_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtMzI)
 !www.howtogeek.com^script:has-text(_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtMzI):remove()
-!www.howtogeek.com##:xpath(//script[contains(text(), '_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtMzI')])
 !www.howtogeek.com##:xpath(//script[contains(text(), '_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtMzI')]):remove()
 !www.howtogeek.com##+js(acs, v4ac1eiZr0)
-!www.howtogeek.com^script:has-text(v4ac1eiZr0)
 !www.howtogeek.com^script:has-text(v4ac1eiZr0):remove()
-!www.howtogeek.com##:xpath(//script[contains(text(), 'v4ac1eiZr0')])
 !www.howtogeek.com##:xpath(//script[contains(text(), 'v4ac1eiZr0')]):remove()
 www.howtogeek.com##+js(acs, admbenefits)
-www.howtogeek.com^script:has-text(admbenefits)
 www.howtogeek.com^script:has-text(admbenefits):remove()
-www.howtogeek.com##:xpath(//script[contains(text(), 'admbenefits')])
 www.howtogeek.com##:xpath(//script[contains(text(), 'admbenefits')]):remove()
 ! the following inline anti-adblocking script location may change
-www.howtogeek.com##:xpath(//html/head/script[27])
 www.howtogeek.com##:xpath(//html/head/script[27]):remove()
 ! only block all inline javascript if there is no other way to bypass the inline "admiral" anti-adblocking script
 !www.howtogeek.com^$inline-script
@@ -43320,7 +43313,8 @@ www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disa
 !||static.adsafeprotected.com/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||static.adsafeprotected.com/skeleton.gif?bannnerid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||static.adsafeprotected.com/skeleton.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-! blocking crystalboulevard.com, succeedscene.com, whimsicalgrove.com, functionalfeather.com, delicatecascade.com, potatoinvention.com, and featherstage.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
+! blocking verdantloom.com, crystalboulevard.com, succeedscene.com, whimsicalgrove.com, functionalfeather.com, delicatecascade.com, potatoinvention.com, and featherstage.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
+||verdantloom.com^*
 ||crystalboulevard.com^*
 ||succeedscene.com^*
 ||whimsicalgrove.com^*
@@ -43524,23 +43518,31 @@ www.bleepingcomputer.com##+js(set-constant, adsbygoogle, [])
 www.bleepingcomputer.com##+js(acs, adsbygoogle)
 www.bleepingcomputer.com##+js(abort-on-property-write, adsbygoogle)
 www.bleepingcomputer.com##+js(abort-on-property-read, adsbygoogle)
-www.bleepingcomputer.com##ins[data-ad-client]
 www.bleepingcomputer.com##ins[data-ad-client]:remove()
 ||notepadxtreme.com^*
 www.deskmodder.de##div[class="cookie-modal"]:remove()
-www-deskmodder-de.translate.goog##div[class="cookie-modal"]
 www-deskmodder-de.translate.goog##div[class="cookie-modal"]:remove()
-www.deskmodder.de##div[id="klaro"]
 www.deskmodder.de##div[id="klaro"]:remove()
-www-deskmodder-de.translate.goog##div[id="klaro"]
 www-deskmodder-de.translate.goog##div[id="klaro"]:remove()
-www.skylinewebcams.com##div[id="top_leaderboard"]
 www.skylinewebcams.com##div[id="top_leaderboard"]:remove()
-www.skylinewebcams.com##div[class="cam-vert"]:has(p[class="subt"]:has-text(adv))
-www.skylinewebcams.com##div[class="cam-vert"]:has(p[class="subt"]:has-text(adv)):remove()
-www.247chess.com##div[class="aspace aspace-h"]:has(div[id^="div-gpt-ad-"])
+www.skylinewebcams.com##div[class="cam-vert"]:has(p[class="subt"]:has-text(Advertisement)):remove()
+www.skylinewebcams.com##div[class^="_ap_apex_ad"]:remove()
+www.skylinewebcams.com##div[class="col-xs-12 col-md-9 col-lg-9"]:has(div[id="webcam"]):style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 80vw !important; user-select: all !important; pointer-events: all !important;)
+!www.skylinewebcams.com##div[id="webcam"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 80vw !important; user-select: all !important; pointer-events: all !important;)
+www.skylinewebcams.com##div[class="clappr-watermark"]:remove()
+www.skylinewebcams.com##div[id="utility"]:remove()
+www.skylinewebcams.com###skylinewebcams-ads:remove()
+www.skylinewebcams.com##.ads-top:remove()
+www.skylinewebcams.com##+js(set-constant, loadAp, noopFunc)
+www.skylinewebcams.com##+js(acs, loadAp)
+www.skylinewebcams.com##+js(set-constant, getAd, noopFunc)
+www.skylinewebcams.com##+js(set-constant, adpushup, {})
+www.skylinewebcams.com##+js(abort-on-property-read, adpushup)
+www.skylinewebcams.com##+js(abort-on-property-write, adpushup)
+www.skylinewebcams.com##+js(set-constant, ads_show, 0)
+www.skylinewebcams.com##+js(set-constant, getAD, {})
+||ad.skylinewebcams.com^*
 www.247chess.com##div[class="aspace aspace-h"]:has(div[id^="div-gpt-ad-"]):remove()
-www.247chess.com##div[id^="div-gpt-ad-"]
 www.247chess.com##div[id^="div-gpt-ad-"]:remove()
 ||downtowndisapproval.com^*
 ||evidenceguidance.com^*
@@ -43818,13 +43820,20 @@ citiretailservices.citibankonline.com##div[data-title="mm_promotional_link"]:rem
 ||www.makeuseof.com/iFramedAdTemplate/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.makeuseof.com/public/build/dfp.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.makeuseof.com/public/build/valnet-header-ads.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.makeuseof.com##:xpath(//script[contains(text(), 'adUnitCode')])
+||www.makeuseof.com/public/build/valnet-header.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.makeuseof.com/public/build/valnet-footer-article.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.makeuseof.com/public/build/valnet-footer.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.makeuseof.com/strpixel.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.makeuseof.com##:xpath(//script[contains(text(), 'adUnitCode')]):remove()
-www.makeuseof.com##+js(acs, adUnitCode)
-www.makeuseof.com###axdsense2
+www.makeuseof.com##script[data-ad-client]:remove()
 www.makeuseof.com###axdsense2:remove()
-www.makeuseof.com##.ad-zone-container
-www.makeuseof.com##.ad-zone-container:remove()
+www.makeuseof.com##aside[class*="adsninja-rail-container"]:remove()
+www.makeuseof.com##div[id^="dynamically-injected-refresh-ad-zone"]:remove()
+www.makeuseof.com##div[id^="adsninja-ad-"]:remove()
+www.makeuseof.com##div[class*="adsninja-"]:remove()
+!www.makeuseof.com##.ad-zone-container:remove()
+www.makeuseof.com##div[class^="ad-zone"]:remove()
+www.makeuseof.com##+js(acs, adUnitCode)
 www.makeuseof.com##+js(set-constant, window.maxUnauthenicatedArticleViews, 32767)
 www.makeuseof.com##+js(set-constant, window.apstag, {})
 www.makeuseof.com##+js(set-constant, window.adsNinjaAmazonInitData, {})
@@ -43837,25 +43846,21 @@ www.makeuseof.com##+js(set-constant, window.adsNinja, {})
 www.makeuseof.com##+js(abort-on-property-read, window.adsNinja)
 www.makeuseof.com##+js(abort-on-property-write, window.adsNinja)
 www.makeuseof.com##+js(set-constant, VALNET_GLOBAL_ISADBLOCK, false, stay)
+www.makeuseof.com##+js(set-constant, VALNET_GLOBAL_ADS, "")
 www.makeuseof.com##+js(set-constant, sendToGoogleAnalytics, noopFunc)
 www.makeuseof.com##+js(acs, sendToGoogleAnalytics)
-www.makeuseof.com##script[data-ad-client]:remove()
-www.makeuseof.com##div[class*="adsninja-"]
-www.makeuseof.com##div[class*="adsninja-"]:remove()
-www.makeuseof.com##div[class^="ad-zone"]
-www.makeuseof.com##div[class^="ad-zone"]:remove()
-www.makeuseof.com##aside[class*="adsninja-rail-container"]
-www.makeuseof.com##aside[class*="adsninja-rail-container"]:remove()
-www.makeuseof.com##div[id^="dynamically-injected-refresh-ad-zone"]
-www.makeuseof.com##div[id^="dynamically-injected-refresh-ad-zone"]:remove()
-www.makeuseof.com##div[id^="adsninja-ad-"]
-www.makeuseof.com##div[id^="adsninja-ad-"]:remove()
-||www.makeuseof.com/strpixel.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.makeuseof.com/public/build/valnet-header.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.makeuseof.com/public/build/valnet-footer-article.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||www.makeuseof.com/public/build/valnet-footer.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.makeuseof.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):has(div[class="duogaR"]):has(div[class="dzMDQR"]):has(h3[class="bBWhhG"]:has-text(Something went wrong. Please disable your blocker))
-www.makeuseof.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):has(div[class="duogaR"]):has(div[class="dzMDQR"]):has(h3[class="bBWhhG"]:has-text(Something went wrong. Please disable your blocker)):remove()
+www.makeuseof.com##+js(set-constant, gtag, noopFunc)
+www.makeuseof.com##+js(acs, gtag)
+www.makeuseof.com##+js(set-constant, data-instructions-url, "")
+www.makeuseof.com##+js(acs, data-instructions-url)
+www.makeuseof.com^script:has-text(_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtNg):remove()
+www.makeuseof.com##:xpath(//script[contains(text(), '_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtNg')]):remove()
+www.makeuseof.com^script:has-text(my.g%65%74admira%6c.com/instructions):remove()
+www.makeuseof.com##:xpath(//script[contains(text(), 'my.g%65%74admira%6c.com/instructions')]):remove()
+! TODO: The classes in the following rule are randomly and dynamically generated so need to block the Admiral anti-adblockiong div tag another way.
+!www.makeuseof.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):has(div[class="duogaR"]):has(div[class="dzMDQR"]):has(h3[class="bBWhhG"]:has-text(Something went wrong. Please disable your blocker)):remove()
+! The path of the script in the following rule may change especially as other nodes are removed when processing the page.
+www.makeuseof.com##:xpath(//html/head/script[32]):remove()
 ||cdn.optmn.cloud/hb/valnet-adapter.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.hardwaretimes.com##div[id^="r89-desktop-billboard-atf-"]
 www.hardwaretimes.com##div[id^="r89-desktop-billboard-atf-"]:remove()
