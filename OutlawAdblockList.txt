@@ -43853,12 +43853,14 @@ www.makeuseof.com##+js(set-constant, gtag, noopFunc)
 www.makeuseof.com##+js(acs, gtag)
 www.makeuseof.com##+js(set-constant, data-instructions-url, "")
 www.makeuseof.com##+js(acs, data-instructions-url)
+www.makeuseof.com##+js(remove-cookie, /articlesRead|previousPage/)
 www.makeuseof.com^script:has-text(_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtNg):remove()
 www.makeuseof.com##:xpath(//script[contains(text(), '_aQS01RkY3NzcxNkUyMzFGMTE2QjE3QjE2NUMtNg')]):remove()
 www.makeuseof.com^script:has-text(my.g%65%74admira%6c.com/instructions):remove()
 www.makeuseof.com##:xpath(//script[contains(text(), 'my.g%65%74admira%6c.com/instructions')]):remove()
-! TODO: The classes in the following rule are randomly and dynamically generated so need to block the Admiral anti-adblockiong div tag another way.
-!www.makeuseof.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):has(div[class="duogaR"]):has(div[class="dzMDQR"]):has(h3[class="bBWhhG"]:has-text(Something went wrong. Please disable your blocker)):remove()
+! Either one of the following rules blocks the Admiral anti-adblockiong div tag.
+www.makeuseof.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):has(div[class="duogaR"]):has(div[class="dzMDQR"]):has(h3[class="bBWhhG"]:has-text(Something went wrong. Please disable your blocker)):remove()
+www.makeuseof.com##h3:has-text(Something went wrong. Please disable your blocker):upward(4):remove()
 ! The path of the script in the following rule may change especially as other nodes are removed when processing the page.
 www.makeuseof.com##:xpath(//html/head/script[32]):remove()
 ||cdn.optmn.cloud/hb/valnet-adapter.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
