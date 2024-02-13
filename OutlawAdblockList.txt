@@ -37260,6 +37260,11 @@ stream2watch.games##div[id="left-play"]:style(display: block !important;)
 !stream2watch.games##div[id="green_b"][class="video-box2"]:remove()
 stream2watch.games##div[class="top_comant_box"]:has-text(VPN Player):remove()
 stream2watch.games##div[class="midel_comant_box"]:remove()
+! Do NOT use either of the following rules or the video player viewport will not be displayed.
+!play.stream2watch.com##video[id="video"]:remove-class(video23)
+!play.stream2watch.com##+js(remove-class, video23, #video)
+play.stream2watch.com##div[class="main-inner"]:style(padding:0 !important; margin: 0px !important; border-width:0 !important; width: 100vw !important; height: 100vh !important;)
+play.stream2watch.com##video[id="video"]:style(padding:0 !important; margin-left: 10px !important; border-width:0 !important; width: 100% !important; height: 100% !important;user-select: all !important; pointer-events: all !important;)
 www.cxtvlive.com##div[class*="ad-titulo"]:remove()
 www.cxtvlive.com##ins[data-ad-client]:remove()
 www.cxtvlive.com##iframe[id^="aswift_"]:remove()
@@ -44771,15 +44776,22 @@ snahp.uproxy2.org##+js(abort-on-property-write, _paq)
 ||phamsacm.net^*
 ||washingbustlewhack.com^*
 ||b.kgorilla.net^*
-piraproxy.info,dirproxy.com##div[class="justify-brow"]:has(div[class="nrd-general-d-box"]:has(a[class="all-linked"][href="https://vpnk.net/?vpn"]))
 piraproxy.info,dirproxy.com##div[class="justify-brow"]:has(div[class="nrd-general-d-box"]:has(a[class="all-linked"][href="https://vpnk.net/?vpn"])):remove()
-||filmrls.dirproxy.com/app/apx19.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||filmrls.dirproxy.com/app/apx14.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||filmrls.dirproxy.com/app/x12.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||filmrls.dirproxy.com/app/apx19.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||filmrls.dirproxy.com/app/apx14.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||filmrls.dirproxy.com/app/x12.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||filmrls.dirproxy.com/zpp/zpp4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||filmrls.dirproxy.com/zpp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||filmrls.dirproxy.com/hy.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-solarmovie.dirproxy.com,ettv.dirproxy.com##div[id="lbxUR99472"]
+!||filmrls.dirproxy.com/hy.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||solarmovie.dirproxy.com/app/apx19.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||solarmovie.dirproxy.com/app/apx14.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||solarmovie.dirproxy.com/app/x12.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||solarmovie.dirproxy.com/zpp/zpp4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||solarmovie.dirproxy.com/hy.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dirproxy.com/app/apx19.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dirproxy.com/app/apx14.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dirproxy.com/app/x12.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dirproxy.com/zpp/zpp4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dirproxy.com/hy.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 solarmovie.dirproxy.com,ettv.dirproxy.com##div[id="lbxUR99472"]:remove()
 ettv.dirproxy.com##+js(set-constant, _paq, [])
 ettv.dirproxy.com##+js(abort-on-property-read, _paq)
