@@ -31307,28 +31307,40 @@ www.actualidadiphone.com##div[id="machete_cookie_container"]
 ||beevakum.net^*
 ||trk.quillframe.online^*
 ||gardoult.com^*
-||open.pullshock.icu/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-datalinks.cc##div[class="code-block code-block-4"]:has(script[src*="/pol.azureedge.net/"])
-andoridgameshafeezullahdal.blogspot.com##div[class="overlay"]
-andoridgameshafeezullahdal.blogspot.com##div[id^="cookies"]
-short.sbenny.com##ins[class="adsbygoogle"]
-short.sbenny.com##div[id^="sbenny-com_300X250"]
-andoridgameshafeezullahdal.blogspot.com##div[id^="main-ads"]
-andoridgameshafeezullahdal.blogspot.com##a[class="piki-ads"]
+||open.pullshock.icu^*
+datalinks.cc##div[class="code-block code-block-4"]:has(script[src*="/pol.azureedge.net/"]):remove()
+andoridgameshafeezullahdal.blogspot.com##div[class="overlay"]:remove()
+andoridgameshafeezullahdal.blogspot.com##div[id^="cookies"]:remove()
+short.sbenny.com##ins[class="adsbygoogle"]:remove()
+short.sbenny.com##div[id^="sbenny-com_300X250"]:remove()
+andoridgameshafeezullahdal.blogspot.com##div[id^="main-ads"]:remove()
+andoridgameshafeezullahdal.blogspot.com##a[class="piki-ads"]:remove()
 ||tags.remixd.com^*
 ||androidauth.wpengine.com/wp-json/api/advanced_placement/api-in-article-ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.androidauthority.com/_next/static/chunks/pages/_error-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.androidauthority.com/_next/static/chunks/pages/*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.androidauthority.com/_next/static/chunks/*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||www.androidauthority.com/_next/static/*/_middlewareManifest.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.androidauthority.com##div[class="--___Mb"]:has(div[class="--___jb --___kb"])
 www.androidauthority.com##div[class="--___Mb"]:has(div[class="--___jb --___kb"]):remove()
-www.androidauthority.com##div[class*="ad-banner"]
 www.androidauthority.com##div[class*="ad-banner"]:remove()
-www.androidauthority.com##div[class*="adBanner"]
 www.androidauthority.com##div[class*="adBanner"]:remove()
-||sites.google.com/_/view/logImpressions^*
-xervoo.net##div[id="cookie_notice"]
+www.androidauthority.com##+js(set-constant, window._pwGA4PageviewId, "")
+www.androidauthority.com##+js(set-constant, window.gtag, noopFunc)
+www.androidauthority.com##+js(set-constant, window.dataLayer, [])
+www.androidauthority.com##+js(acs, /gtag\(/)
+www.androidauthority.com##+js(set-constant, addTakeover, noopFunc)
+www.androidauthority.com##+js(acs, /addTakeover\(/)
+! Remove all of the div[class^="--_-___" EXCEPT div[class^="--_-___d"]
+!www.androidauthority.com##div[class^="--_-___"]:remove()
+www.androidauthority.com##div[class^="--_-___mb"]:remove()
+www.androidauthority.com##div[class="--_-___sd"]:remove()
+www.androidauthority.com##div[class="--_-___Pb"]:remove()
+www.androidauthority.com##div[class="--_-___1k"]:remove()
+www.androidauthority.com##div[class="--_-___5c"]:remove()
+www.androidauthority.com##.--_-___0k.--_-___cc.--_-___d:remove()
+www.androidauthority.com##.--_-___0k.--_-___d.--_-___e.--_-___7b:remove()
+||sites.google.com/_/view/logImpressions$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+xervoo.net##div[id="cookie_notice"]:remove()
 ||6ldn4.voluumtrk3.com^*
 ||rndskittytor.com^*
 ! These three block videos.
@@ -44801,14 +44813,25 @@ www.marmaladegamestudio.com##div[aria-labelledby="hu-cookies-notice-message"]:re
 ||eu.messenger-notify.xyz^*
 ||d1t38ngzzazukx.cloudfront.net^
 ||software-network-service.com^*
-www.cnet.com###-idgl-gclj-kfg-2sv610r50uu86
+www.cnet.com###-idgl-gclj-kfg-2sv610r50uu86:remove()
 ! Removing all c-adSkyBox elements prevent images and videos from being displayed
-!www.cnet.com##*[class*="c-adSkyBox"]
 !www.cnet.com##*[class*="c-adSkyBox"]:remove()
-www.cnet.com##div[class*="c-adDisplay"]
 www.cnet.com##div[class*="c-adDisplay"]:remove()
-www.cnet.com##div[data-ad]
 www.cnet.com##div[data-ad]:remove()
+! The following buttons obscure too much of the video viewport, and don't actually work.
+www.cnet.com##button[aria-label="Start video"]:remove()
+www.cnet.com##button[aria-label="Replay video"]:remove()
+www.cnet.com##button[aria-label="Large play-pause toggle"]:remove()
+! The following prevents the buffering animation from obscuring the view when the video is actually playing.
+www.cnet.com##div[class^="uvpjs__buffering-frame"]:remove()
+! The following rule removes the tutorial videos on pages not just the button text.
+!www.cnet.com##button[aria-label="Play pause"]:remove()
+! The following rule removes the tutorial videos on pages not just ad videos.
+!www.cnet.com##div[id^="ad_container_"]:remove()
+www.cnet.com##div[id^="container_"][class^="video-container"]:remove-class(uvpjs--controlbar-hidden)
+www.cnet.com##+js(remove-class, uvpjs--controlbar-hidden, div[id^="container_"][class^="video-container"], stay)
+www.cnet.com##div[class^="uvpjs__controlbar"]:remove-class(uvpjs__controlbar--hidden)
+www.cnet.com##+js(remove-class, uvpjs__controlbar--hidden, div[class^="uvpjs__controlbar"], stay)
 !www.cnet.com##+js(set-constant, window.BidBarrel, {}, complete)
 www.cnet.com##+js(set-constant, window.BidBarrel, {})
 !www.cnet.com##+js(set-constant, window.chsn_ad_id, "", complete)
@@ -44818,8 +44841,10 @@ www.cnet.com##+js(abort-on-property-write, window.BidBarrel)
 www.cnet.com##+js(abort-on-property-read, window.chsn_ad_id)
 www.cnet.com##+js(abort-on-property-write, window.chsn_ad_id)
 www.cnet.com##iframe[id="chsn-xs-frame"]:remove()
+www.cnet.com##iframe[title="Advertisement"]:remove()
 www.cnet.com##script[class*="optanon-"]:remove()
 www.cnet.com##script[data-script-id="taboola_pixel"]:remove()
+www.cnet.com##script[id="boomr-if-as"]:remove()
 ||www.cnet.com/ext/cohesion/cdn/cohesion/cohesion-latest.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.cnet.com/ext/onetrust/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||nbfkexqbr8elolwk-redventures.siteintercept.qualtrics.com^*
@@ -48086,6 +48111,7 @@ www.croxyproxy.com,proxyium.com##ins[data-ad-client]:remove()
 www.croxyproxy.com,proxyium.com##div[id="gdpr"]:remove()
 www.croxyproxy.com,proxyium.com##div[class*="gdprContainer"]:remove()
 ||insistgoodsrespect.com^*
+www.espn.com##div[class^="vjs-logolink"]:remove()
 www.espn.com##input[type="button"][pseudo="-webkit-media-controls-fullscreen-button"]:style(display: block !important;)
 www.espn.com##button[type="button"][class^="vjs-share-control"]:style(display: none !important)
 www.espn.com##div[title="Advertisement"]:remove()
@@ -48197,7 +48223,6 @@ dokumen.tips##script[data-cookiecategory]:remove()
 ||turbobit.net/fd1/js/brinpopup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||turbobit.net/js/adcontrol.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||149.cdn.turbobit.net/js/advertisment.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||*.turbobit.net/js/advertisment.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||turbobit.net/js/advertisment.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||turbobit.net/js/gate.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||turbobit.net/opnauz/turbobit_webpick_gary.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -48269,6 +48294,44 @@ scloud.ws##+js(aopr, Ya.Metrika)
 ||trk.yieldtrk.com^*
 preparedfile.com##+js(set-constant, helpMe, noopFunc)
 ||preparedfile.com^*
+compress-pdf.kitomura.com##ins[data-ad-client]:remove()
+compress-pdf.kitomura.com##+js(set-constant, adsbygoogle, [])
+compress-pdf.kitomura.com##+js(aopw, adsbygoogle)
+compress-pdf.kitomura.com##+js(aopr, adsbygoogle)
+ww1.stagatv.com##div[class="ad-banner"]:remove()
+ww1.stagatv.com##+js(set-constant, mi_track_user, false)
+ww1.stagatv.com##+js(set-constant, __gtagTrackerIsOptedOut, trueFunc)
+ww1.stagatv.com##+js(set-constant, __gtagTrackerOptout, noopFunc)
+ww1.stagatv.com##+js(set-constant, __gtagTracker, noopFunc)
+ww1.stagatv.com##+js(aopw, __gtagTracker)
+ww1.stagatv.com##+js(aopr, __gtagTracker)
+ww1.stagatv.com,cdn.stagatvfiles.com##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+ww1.stagatv.com,cdn.stagatvfiles.com##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
+ww1.stagatv.com,cdn.stagatvfiles.com##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+||ww1.stagatv.com/wp-content/plugins/google-analytics-for-wordpress/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+cdn.stagatvfiles.com##+js(set-constant, atOptions, {})
+cdn.stagatvfiles.com##+js(aopw, atOptions)
+cdn.stagatvfiles.com##+js(aopr, atOptions)
+cdn.stagatvfiles.com##:xpath(//script[contains(text(), '_Hasync')]):remove()
+cdn.stagatvfiles.com##+js(set-constant, _Hasync, [])
+cdn.stagatvfiles.com##+js(aopw, _Hasync)
+cdn.stagatvfiles.com##+js(aopr, _Hasync)
+cdn.stagatvfiles.com##+js(set-constant, gtag, noopFunc)
+cdn.stagatvfiles.com##+js(set-constant, window.gtag, noopFunc)
+cdn.stagatvfiles.com##+js(set-constant, window.dataLayer, [])
+cdn.stagatvfiles.com##+js(acs, gtag, window.dataLayer)
+! sets href value to onclick's value
+!cdn.stagatvfiles.com##+js(set-attr, 'button[class="btn btn-primary btn-lg mt-3"]', href, '[onclick]')
+! Don't remove onclick unless href was set properly above;
+! Don't remove onclick because it will be removed before href is set above, so there will be no value to use.
+!cdn.stagatvfiles.com##button[class="btn btn-primary btn-lg mt-3"]:remove-attr(onclick)
+!cdn.stagatvfiles.com##+js(rename-attr, button[class="btn btn-primary btn-lg mt-3"], onclick, href)
+! /'(https?:\/\/cdn\.stagatvfiles\.com\/[0-9a-zA-Z]+\/\S+\?download_token=[0-9a-zA-Z]+)'/i
+||www.topcreativeformat.com^*
+||nabauxou.net^*
+||udccpfhi.com^*
+||kognoaka.net^*
+||feefoamo.net^*
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
