@@ -28598,8 +28598,9 @@ revclouds.com##div[id="cookie-notice"]
 ||lockingadmitted.com^*
 ||upshroomishtor.com^*
 www.cbackup.com##div[class="ensureCookie"]
-syncthing.net##a[href*="/forum.syncthing.net/t/the-syncthing-foundation-stands-against-racism/"]
-syncthing.net##div[class*="alert"]:has-text(/racism/i)
+syncthing.net##a[href*="/forum.syncthing.net/t/the-syncthing-foundation-stands-against-racism/"]:remove()
+syncthing.net##div[class^="alert"]:has-text(/racism/i):remove()
+syncthing.net##div[class^="alert"]:has-text(/Ukrain/i):remove()
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
 s0ft4pc.com##script[data-ad-client]:remove()
 s0ft4pc.com##+js(noeval)
@@ -44818,6 +44819,8 @@ www.cnet.com###-idgl-gclj-kfg-2sv610r50uu86:remove()
 !www.cnet.com##*[class*="c-adSkyBox"]:remove()
 www.cnet.com##div[class*="c-adDisplay"]:remove()
 www.cnet.com##div[data-ad]:remove()
+www.cnet.com##div[class*="c-InlineWidget_"]:has(div[data-ad-id]):remove()
+www.cnet.com##div[data-ad-id]:remove()
 ! The following buttons obscure too much of the video viewport, and don't actually work.
 www.cnet.com##button[aria-label="Start video"]:remove()
 www.cnet.com##button[aria-label="Replay video"]:remove()
