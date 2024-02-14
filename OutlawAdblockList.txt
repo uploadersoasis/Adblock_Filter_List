@@ -21740,25 +21740,38 @@ upload.ac##.eww
 ||wassevertorshap.pro^*
 ||userscloud.helpscoutdocs.com^*
 !userscloud.com###my_div !removes download link
-userscloud.com###content > .container > .innerLR > div:nth-of-type(1) > form > .text-center.widget > .innerTB > a[href^="http://websitedhoome.com/useranan/"]:nth-of-type(1)
 userscloud.com###content > .st-content > .st-content-inner > .container > .text-center.panel-default.panel > .innerTB > center > .btn-icon-stacked.btn-white.btn
-userscloud.com###content > center > a[href^="http://jobsetter.info/useranan"]
+userscloud.com##a[href^="http://jobsetter.info/useranan"]:remove()
+userscloud.com##a[href^="http://websitedhoome.com/useranan/"]:remove()
 userscloud.com###div-1507717209618
 userscloud.com###gXHq5xUuwGWkJVFh
 userscloud.com###p_1991296
-userscloud.com##.alert-success.alert
+userscloud.com##.alert-success.alert:remove()
 !userscloud.com##div[class="adsbox"]
 userscloud.com##div[class^="glx-teaser-"]
-userscloud.com##div[id="adblock_detected_warning"]
-userscloud.com##div[id="banner"]
+userscloud.com##div[id="adblock_detected_warning"]:remove()
+userscloud.com##div[id="banner"]:remove()
 userscloud.com##div[id="gk7FroDRjMsV6rJF"]
 userscloud.com##input[id="adblock_detected"]:remove()
+userscloud.com##input[name="adblock_detected"]:remove()
+userscloud.com###btn_download:remove-attr(disabled)
+userscloud.com##button[id="btn_download"]:style(display:block !important;)
+userscloud.com##iframe[style="display: none;"]:remove()
+userscloud.com##+js(set-constant, window.__cfRLUnblockHandlers, true, stay)
+userscloud.com##^script:has-text(/astancerta\.fun|esusivebe\.top|dtv5loup63fac\.cloudfront.net/):remove()
+!userscloud.com##script[type="36a936178ecce1dd77e68197-text/javascript"]:remove()
+userscloud.com##+js(acs, decodeURIComponent)
+!userscloud.com##+js(acs, console.clear)
+userscloud.com##+js(acs, /console\.clear\(\);/)
+userscloud.com##+js(aopr, FingerprintJS)
+userscloud.com##+js(aopw, FingerprintJS)
 ||userscloud.com//images/300x250d.png$image
 ||userscloud.com/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||userscloud.com/i/dlnitro.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||userscloud.com/i/nitro.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||userscloud.com/images/banner_300x250.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||userscloud.com/images/download-button.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||userscloud.com/js/de.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||userscloud.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||install.tinychill.com^*
 ||www.tinychill.com^*
@@ -24441,7 +24454,6 @@ www.usatoday.com##aside[aria-label="advertisement"]
 ||inabsolor.com^*
 ||agafurretor.com^*
 ||expresentc.top^*
-userscloud.com##input[name="adblock_detected"]:remove()
 !||cdn.snigelweb.com/adconsent/adconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.snigelweb.com/adconsent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.zvmldjxh.com^*
@@ -26301,7 +26313,7 @@ crazymodapk.com##aside[class*="ads_download_"]
 !www.paragon-software.com##div[class="cookies_msg"]
 www.paragon-software.com##div[class^="cookies_msg"]
 ||nostop.go2cloud.org^*
-||trk.playstretch.host/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||trk.playstretch.host^*
 !cydiasources.net##div[class="vce-ad vce-ad-container"]
 cydiasources.net##div[class*="vce-ad"]
 cydiasources.net##ins[class="adsbygoogle"]
@@ -27373,11 +27385,6 @@ www.programmers-books.com##div[id="bvcdksg-blanket"]:remove()
 ||ads.golem.de^*
 ||cilcountee.top^*
 ||ssaffortyya.club^*
-userscloud.com###btn_download:remove-attr(disabled)
-userscloud.com##button[id="btn_download"]:style(display:block !important;)
-userscloud.com##iframe[style="display: none;"]:remove()
-userscloud.com##+js(set-constant, window.__cfRLUnblockHandlers, true, stay)
-userscloud.com##^script:has-text(/astancerta\.fun|esusivebe\.top|dtv5loup63fac\.cloudfront.net/)
 ||annelinterv.fun^*
 ||meetsourhig.biz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||d1ac2du043ydir.cloudfront.net^*
@@ -35529,13 +35536,6 @@ www.univention.com##div[class="wt-cli-cookie-bar-container"]
 ||maticalaccurate.one^*
 ||goomaphy.com^*
 ||tackchen.gitee.io^*
-!userscloud.com##script[type="36a936178ecce1dd77e68197-text/javascript"]
-userscloud.com##+js(acs, decodeURIComponent)
-!userscloud.com##+js(acs, console.clear)
-userscloud.com##+js(acs, /console\.clear\(\);/)
-userscloud.com##+js(aopr, FingerprintJS)
-userscloud.com##+js(aopw, FingerprintJS)
-||userscloud.com/js/de.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cleardexchange.com^*
 1cloudfile.com##+js(aopr, CookieConsent)
 1cloudfile.com##+js(aopw, CookieConsent)
@@ -48257,6 +48257,18 @@ turbobit.net##a[id="__bgd_link"]:remove()
 ||a502da1d34.df077d05e6.com^*
 ||cdn22904910.ahacdn.me^*
 freebookspot.dirproxy.biz##a[id="HyperLink6"]:remove()
+||hufiranz.click^*
+scloud.ws##a[href^="https://hufiranz.click/"]:remove()
+scloud.ws##+js(set-constant, Ya.Metrika, noopFunc)
+scloud.ws##+js(aopw, Ya.Metrika)
+scloud.ws##+js(aopr, Ya.Metrika)
+||d39xxywi4dmut5.cloudfront.net^*
+||stherewerealo.org^*
+||eamsanswer.com^*
+||yourjsdelivery.com^*
+||trk.yieldtrk.com^*
+preparedfile.com##+js(set-constant, helpMe, noopFunc)
+||preparedfile.com^*
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
