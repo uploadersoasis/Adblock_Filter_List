@@ -18977,7 +18977,6 @@ medium.com##.js-stickyFooter:remove()
 ||wenacil.info/banners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||wenacil.info/banners.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||traflib36.download/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||ec.editmysite.com/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||asideru.info/nlp/index.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||asideru.info^*
 ||www.asideru.info^*
@@ -20466,7 +20465,6 @@ rutracker.org##div[class="bn-idx"]
 ||wlrzptntiqez.com^*
 ||iutqdjtajrhpi.com^*
 ||www.iutqdjtajrhpi.com^*
-||snowplow.wetransfer.com/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||tjcorfsynjppv.com^*
 ||www.tjcorfsynjppv.com^*
 !||hixpfhoon.com/Mg.htm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -22273,7 +22271,6 @@ file.cm##+js(abort-on-property-read, setTrackerUrl)
 !||hooify.com/winpush^*
 ||hooify.com^*
 ||smetrics.att.com^*
-||t1.os-data.com/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.weathfront.com^*
 ||qualaroo.com^*
 ||b0omr3wn6u4b.com^*
@@ -25244,8 +25241,8 @@ www.driver4vr.com##div[class="gdpr gdpr-general-confirmation"]:remove()
 ||cdn.fuseplatform.net/publift/tags/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||b56f9c50130def4d.com^*
 ||racaty.net/racaty_new/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-racaty.net##div[id="mobile_sticky_ad"]
-racaty.net##span[id="countdown"]
+racaty.net##div[id="mobile_sticky_ad"]:remove()
+racaty.net##span[id="countdown"]:remove()
 racaty.net##*[class="after"]:style(display: inline !important;)
 racaty.net###uniqueExpirylink:style(visibility: visible !important;)
 racaty.net###downloadbtn > div:style(display: inline !important;)
@@ -29961,7 +29958,6 @@ exbulletin.com##+js(set-constant, ai_adb_active, 0, stay)
 exbulletin.com##+js(aopr, _ezaq)
 exbulletin.com##+js(aopw, _ezaq)
 www.xoom.com##div[id="cookiePolicyBanner"]
-!||collector.sophi.io/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||collector.sophi.io^*
 ||satisfycork.com^*
 ||pub.doubleverify.com/signals/pub.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -30224,10 +30220,6 @@ www.eib.org##div[id="eib-popup-policy"]
 ||veewhaiw.com^*
 mail.yahoo.com##li[role="list-item"]:has(a[data-test-id^="pencil-ad-message"])
 ||mail.yahoo.com/d/log?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-dokumen.tips##div[id="cookie-law"]
-dokumen.tips##ins[class*="adsbygoogle"]
-dokumen.tips##div[class*="gg_ads_"]
-dokumen.tips##+js(set-constant, i, 0, stay)
 www.alcatelunleashed.com##div[aria-label="cookieconsent"]
 www.scribd.com##div[aria-label="Consent Manager by Osano"]
 www.att.com##div[class="advertisementpanel"]
@@ -31780,7 +31772,6 @@ www.videogameschronicle.com##+js(aopw, ad__games)
 ||vooshagy.net^*
 ||terrifictooth.com^*
 ||superficialeyes.com^*
-||spc.dotesports.com/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 dotesports.com##div[class^="proper-ad-"]
 dotesports.com##div[id^="proper-ad-"]
 apkxmods.com##div[class="contentbox"]:has(h4:has-text(/Google Adsense/i))
@@ -34044,17 +34035,6 @@ www.psdly.com##div[class*="ads-wrapper"]
 ||d27genukseznht.cloudfront.net^*
 fileaxa.com##div[class*="ad300side"]
 ||nedaugha.buzz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-anydebrid.com##ins[data-ad-client]
-!anydebrid.com##div[class="responsive-ads-vertical"]
-!anydebrid.com##div[class="responsive-ad-wrapper"]
-anydebrid.com##div[class*="responsive-ad-"]
-!||anydebrid.com/assets/js/bunddlev35.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-anydebrid.com##+js(set-constant, ablocker, 0)
-! override the 0 with '0' since quotations may be required by the script
-anydebrid.com##+js(trusted-set-constant, ablocker, '0')
-anydebrid.com##+js(set-constant, showDisable(), {}, stay)
-anydebrid.com##+js(set-constant, skipABCheck, true, stay)
-anydebrid.com##+js(set-constant, maxLoop, 0, stay)
 ||turbobut.com^*
 ||turbo.to^*
 www.collectiveray.com##span[class*="adtester-container"]
@@ -35307,13 +35287,6 @@ eio.io##+js(acs, disableItToContinue)
 eio.io##^script:has-text(disableItToContinue)
 ||unitystr.com/?wmcAction=wmcTrack&$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||mobileprice.site^*
-anydebrid.com##ins[data-ad-slot]
-anydebrid.com##*[class*="responsive-ad"]
-anydebrid.com##+js(aopr, adsbygoogle)
-anydebrid.com##+js(aopw, adsbygoogle)
-anydebrid.com##+js(set-constant, customclass, '', stay)
-anydebrid.com##script[data-ad-client]:remove()
-anydebrid.com##+js(acs, parseInt)
 ||endangersquarereducing.com^*
 ||granddaughterrepresentationintroduce.com^*
 ||eliss-vas.com^*
@@ -36294,7 +36267,6 @@ windows10gadgets.pro##+js(aopr, adsbygoogle)
 windows10gadgets.pro##+js(aopw, adsbygoogle)
 ||aab.devicetests.com^*
 ||cdn.snigelweb.com/adengine/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||sp.chip.de/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ssl.1.damoh.chip.de/hic_qos?ads&adserv=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.chip.de##div[id="notice"]:upward(1):remove()
 www.chip.de##div[id^="contentad-topbanner-"]:upward(1):remove()
@@ -37437,10 +37409,8 @@ www.fanatical.com##div[class^="PrivacyChecker"]:remove()
 !||tags.tiqcdn.com/utag/tiqapp/utag.v.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ! blocks pluto.tv video streams
 !||tags.tiqcdn.com^*
-pluto.tv##div[class^="clickableAd"]
-pluto.tv##div[aria-labelledby="terms-of-use-heading"]
+pluto.tv##div[class^="clickableAd"]:remove()
 pluto.tv##div[aria-labelledby="terms-of-use-heading"]:remove()
-||sp.pluto.tv/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||siloh.pluto.tv/679_53_ad/creative/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||siloh-aka.plutotv.net/318_79_ad/creative/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||siloh-aka.plutotv.net/*_ad/creative/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -37449,8 +37419,8 @@ pluto.tv##+js(remove-class, vjs-controls-disabled, , stay)
 pluto.tv##+js(remove-class, vjs-user-inactive, , stay)
 pubads.g.doubleclick.net^$xhr,domain=pluto.tv
 pagead2.googlesyndication.com^$xhr,domain=pluto.tv
-pluto.tv##div[data-role="adContainer"]
-pluto.tv##div[data-role="adClickEl"]
+pluto.tv##div[data-role="adContainer"]:remove()
+pluto.tv##div[data-role="adClickEl"]:remove()
 ||g.bidbrain.app^*
 ||pingpepa.xyz^*
 www.audioholics.com##div[id="sitemodal"]
@@ -42456,7 +42426,6 @@ unitystr.com##+js(set-constant, gtag, noopFunc)
 ||cdn-client.medium.com/lite/static/js/reporting.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 medium.com##h2:has-text(Support independent authors and access the):upward(4)
 medium.com##h2:has-text(Support independent authors and access the):upward(4):remove()
-||www.zergnet.com/zerg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ads.livetv686.me^*
 ||rouwhapt.com^*
 ||saiceezu.xyz^*
@@ -45248,7 +45217,6 @@ mail.yahoo.com##li[class="H_A hd_n p_a L_0 R_0"]:has(img[src*="//images.taboola.
 mail.yahoo.com##button[tabindex="-1"]:has-text(Ad):upward(4)
 ! The following rule blocks inline ads in the email message list, BUT it also prevents the UI from working properly.
 !||s.yimg.com/nq/nr/js/mail_app_es6_vendor_*.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||cadmus.script.ac/d49ph8jz3wewg/script.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 mail.yahoo.com##+js(aeld, click, Rr)
 mail.yahoo.com##+js(set-constant, Rr, noopFunc)
 mail.yahoo.com##span[data-test-id="ad-summary"]
@@ -45293,9 +45261,6 @@ us.cnn.com,www.cnn.com##iframe[class="smartad_iframe"]
 us.cnn.com,www.cnn.com##iframe[class="smartad_iframe"]:remove()
 !||cdn.cnn.com/ads/cnn/cnn_quantum_leaf.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||cdn.cnn.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||a80a9201ee101bbc3.awsglobalaccelerator.com/com.snowplowanalytics.snowplow/tp2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||*.awsglobalaccelerator.com/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||collector.cdp.cnn.com/com.snowplowanalytics.snowplow/tp2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||collector.cdp.cnn.com^*
 ||www.dianomi.com/cgi-bin/smartads_video_json.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.dianomi.com/cgi-bin/pixeltrack.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -45770,6 +45735,7 @@ apkstreamz.com##+js(saa, data-timer, 1, .show_download_links)
 ||dcbbwymp1bhlf.cloudfront.net^*
 !||igg-games.co/wp-content/plugins/exit-strategy-pro/count.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||igg-games.com/maven/av.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||igg-games.com/admaven/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||igg-games.com/wp-content/uploads/2021/02/hh2.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||igg-games.com/wp-content/uploads/2021/02/hh10.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||igg-games.com/wp-content/uploads/2021/02/hh*.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -45797,6 +45763,8 @@ igg-games.com##+js(aopr, window.advanced_ads_ready)
 igg-games.com##+js(set-constant, script_element, null)
 igg-games.com##+js(aopw, script_element)
 igg-games.com##+js(aopr, script_element)
+igg-games.com##+js(set-constant, gtag, noopFunc)
+igg-games.com##+js(acs, gtag)
 ||dhyanaquintes.digital^*
 ||liberia.artertapirus.com^*
 ||koronaararao.guru^*
@@ -48217,10 +48185,6 @@ alluc.co##div[class="container"]:style(padding:0 !important; margin-left: 10px !
 ||eforhedidnota.com^*
 ||ecoastandhei.org^*
 ||cdn.bvfront.com/bidvertiser/images/ad_image/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-dokumen.tips##ins[data-ad-client]:remove()
-dokumen.tips##div[class*="ads-detail-"]:remove()
-dokumen.tips##div[class*="ads-text"]:remove()
-dokumen.tips##script[data-cookiecategory]:remove()
 ||app.turbobit.net/js/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||turbobit.net/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||turbobit.net/fd1/js/brinpopup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -48335,6 +48299,160 @@ cdn.stagatvfiles.com##+js(acs, gtag, window.dataLayer)
 ||udccpfhi.com^*
 ||kognoaka.net^*
 ||feefoamo.net^*
+bnnbreaking.com##script[custom-element="amp-sticky-ad"]:remove()
+bnnbreaking.com##script[custom-element="amp-analytics"]:remove()
+bnnbreaking.com##+js(set-constant, googletag, {})
+bnnbreaking.com##+js(aopw, googletag)
+bnnbreaking.com##+js(aopr, googletag)
+bnnbreaking.com##+js(set-constant, ga4MeasurementId, "")
+! Don't abort scripts with gtag because it is include in scripts on this site that should run.
+bnnbreaking.com##+js(set-constant, gtag, noopFunc)
+||saffiantaily.com^*
+||preyersbowe.top^*
+||derriregliss.top^*
+!||kiosk.empeoarmet.top^*
+||empeoarmet.top^*
+||lurchedchafted.top^*
+||1b14e0ee42d5e195c9aa1a2f5b42c710.com^*
+||cosmatitacker.top^*
+www.hypergridbusiness.com##div[id="cookie-law-info-again"]:remove()
+||accounts.google.com/_/IdpIFrameHttp/cspreport$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||anydebrid.com/assets/js/bunddlev35.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+anydebrid.com##+js(aopr, adsbygoogle)
+anydebrid.com##+js(aopw, adsbygoogle)
+anydebrid.com##+js(set-constant, customclass, '', stay)
+anydebrid.com##+js(set-constant, maxLoop, 0, stay)
+anydebrid.com##+js(set-constant, skipABCheck, true, stay)
+anydebrid.com##+js(set-constant, ablocker, 0)
+! override the 0 with '0' since quotations may be required by the script
+anydebrid.com##+js(trusted-set-constant, ablocker, '0')
+anydebrid.com##button[id="dlBtn"]:remove-class(disabled)
+anydebrid.com##+js(remove-class, disabled, #dlBtn, stay)
+!anydebrid.com##div[class="responsive-ads-vertical"]:remove()
+!anydebrid.com##div[class="responsive-ad-wrapper"]:remove()
+!anydebrid.com##div[class*="responsive-ad-"]:remove()
+anydebrid.com##*[class*="responsive-ad"]:remove()
+anydebrid.com##ins[data-ad-client]:remove()
+anydebrid.com##ins[data-ad-slot]:remove()
+anydebrid.com##script[data-ad-client]:remove()
+anydebrid.com,maxdebrid.com,nitroflaree.download##ins[class="adsbygoogle"]:remove()
+! Do not block the script that runs the following four variables and three functions.
+anydebrid.com,maxdebrid.com,nitroflaree.download##+js(trusted-set, chck, ',')
+anydebrid.com,maxdebrid.com,nitroflaree.download##+js(set-constant, abCheck, false)
+anydebrid.com,maxdebrid.com,nitroflaree.download##+js(set-constant, showIntersistial, false)
+anydebrid.com,maxdebrid.com,nitroflaree.download##+js(set-constant, intersistialAd, "")
+maxdebrid.com,nitroflaree.download##+js(set-constant, _paq, [])
+! TODO: Any of the following three rules prevent the "get link" button from working.
+!anydebrid.com,maxdebrid.com,nitroflaree.download##+js(set-constant, showDisable, noopFunc)
+!anydebrid.com,maxdebrid.com,nitroflaree.download##+js(set-constant, showInstructionAdsense, noopFunc)
+!anydebrid.com,maxdebrid.com,nitroflaree.download##+js(set-constant, showAd, noopFunc)
+nitroflaree.download##+js(set-constant, window.AnalyticsTracker, noopFunc)
+maxdebrid.com##+js(set-constant, ICBAd, noopFunc)
+maxdebrid.com##+js(aopw, ICBAd)
+maxdebrid.com##+js(aopr, ICBAd)
+! The following rule will remove the input form NOT just the anti-adblocking message.
+!maxdebrid.com##div[id="app"]:remove()
+||anydebrid.com/splash.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||anydebrid.com/assets/js/mato.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||nitroflaree.download/splash.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||nitroflaree.download/assets/js/mato.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||maxdebrid.com/splash.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||maxdebrid.com/assets/js/mato.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||downloadallfiles.net/offer/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||cdn.downloadallfiles.net^*
+||com-evvnt-prod1.collector.snplow.net^*
+||insticator-d.openx.net^*
+||ex.ingage.tech/v1/openrtb$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||api.assertcom.de/auction$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||bidder.criteo.com/cdb?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dashboard.insticator.com/embeds/backfillad?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||ec.editmysite.com/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||snowplow.wetransfer.com/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||t1.os-data.com/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||collector.sophi.io/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||spc.dotesports.com/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||sp.chip.de/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||sp.pluto.tv/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||a80a9201ee101bbc3.awsglobalaccelerator.com/com.snowplowanalytics.snowplow/tp2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||sp-20230201110230995100000008-1530450753.us-east-2.elb.amazonaws.com/com.snowplowanalytics.snowplow/tp2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||collector.cdp.cnn.com/com.snowplowanalytics.snowplow/tp2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||com-evvnt-prod1.collector.snplow.net/com.snowplowanalytics.snowplow/tp2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+! set the following rule without leading || so that it covers CDN and other hosts for the same services
+!*/com.snowplowanalytics.snowplow/tp2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+*/com.snowplowanalytics.snowplow/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.bentoncourier.com/shared-content/art/stats/common/tracker.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.bentoncourier.com/shared-content/art/stats/common/tracker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.bentoncourier.com/shared-content/art/tncms/tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+www.bentoncourier.com##iframe[id="amazonBidsIframe"]:remove()
+www.bentoncourier.com##iframe[id="Insticator-Auth-Frame"]:remove()
+www.bentoncourier.com##template[class^="template meter"]:remove()
+www.bentoncourier.com##+js(set-constant, __tnt.trackEvent, noopFunc)
+www.bentoncourier.com##+js(acs, /__tnt\./)
+www.bentoncourier.com##+js(set-constant, window.assertive, {})
+www.bentoncourier.com##+js(aopw, window.assertive)
+www.bentoncourier.com##+js(aopr, window.assertive)
+www.bentoncourier.com##div[id="subscription-modal"]:remove()
+www.bentoncourier.com##div[class*="tnt-ads-container"]:remove()
+www.bentoncourier.com##div[id^="ad-"]:remove()
+www.bentoncourier.com##div[class="redacted-overlay"]:remove()
+www.bentoncourier.com##div[class="subscription-required"]:remove()
+www.bentoncourier.com##div[class*="subscriber-only"]:remove-class(hide)
+www.bentoncourier.com##+js(remove-class, hide, div[class*="subscriber-only"])
+www.bentoncourier.com##div[class*="subscriber-only"]:style(display: block !important;)
+www.bentoncourier.com##div[id^="tncms-region-article"]:remove-class(hidden-print)
+www.bentoncourier.com##+js(remove-class, hidden-print, div[id^="tncms-region-article"])
+www.bentoncourier.com##div[class="main-sidebar"]:remove-class(hidden-print)
+www.bentoncourier.com##+js(remove-class, hidden-print, div[class="main-sidebar"])
+www.bentoncourier.com##div[class="optin"]:remove()
+www.bentoncourier.com##div[class^="screen"]:remove-class(optIn)
+www.bentoncourier.com##+js(remove-class, optIn, div[class^="screen"])
+www.bentoncourier.com##div[class^="screen"]:remove-class(c00105)
+www.bentoncourier.com##+js(remove-class, c00105, div[class^="screen"])
+www.bentoncourier.com##div[class*="content ad overlay modal"]:remove()
+www.bentoncourier.com##div[id*="div-insticator-ad-"]:remove()
+||bloximages.newyork1.vip.townnews.com/bentoncourier.com/shared-content/art/tncms/templates/libraries/flex/components/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||demand.qortex.ai/api/v1/monetize/resources$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.zergnet.com/zerg-lk.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.zergnet.com/zerg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||event.insticator.com/v1/event?event_name=event_adunit-load$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||k8s-default-insticat-866597d3fe-1559487265.us-east-1.elb.amazonaws.com/v1/event?event_name=event_adunit-load$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||*.elb.amazonaws.com/v1/event?event_name=event_adunit-load$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+dokumen.tips##div[class*="ads-detail-"]:remove()
+dokumen.tips##div[class*="ads-text"]:remove()
+dokumen.tips##div[class*="gg_ads_"]:remove()
+dokumen.tips##div[id="cookie-law"]:remove()
+dokumen.tips##ins[class*="adsbygoogle"]:remove()
+dokumen.tips##ins[data-ad-client]:remove()
+dokumen.tips##script[data-cookiecategory]:remove()
+dokumen.tips##+js(set-constant, i, 0, stay)
+dokumen.pub##div[id="DOKUMENPUB_cookie_box"]:remove()
+dokumen.pub##+js(set-constant, DOKUMENPUB_cookie_box_viewed, true)
+! TODO: The following four rules are completely ignored by the countdown.  Why?
+! Do NOT set icount to 0 or the countdown(s) will never finish.
+!dokumen.pub##+js(set-constant, icount, 0)
+! Do NOT set interval or the countdown(s) will never finish.
+!dokumen.pub##+js(set-constant, interval, noopFunc)
+!dokumen.pub##+js(aopw, icount)
+!dokumen.pub##+js(aopr, icount)
+! This makes the countdown very quick instead of the specified seconds, BUT it does NOT stop the countdown from refreshing constantly until the download is finally ready.
+dokumen.pub##+js(nano-sib, , *, 0.01)
+thepostmillennial.com##div[class^="advertisment"]:remove()
+thepostmillennial.com##+js(set-constant, gtag, noopFunc)
+thepostmillennial.com##+js(set-constant, window.dataLayer, [])
+thepostmillennial.com##+js(acs, gtag, window.dataLayer)
+thepostmillennial.com##*[class^="article-ad"]:remove()
+thepostmillennial.com##small[class="topAlertAds"]:remove()
+thepostmillennial.com##+js(set-constant, tude.refreshAdsViaDivMappings, noopFunc)
+thepostmillennial.com##+js(acs, tude.refreshAdsViaDivMappings)
+thepostmillennial.com##iframe[id="rufous-sandbox"]:remove()
+thepostmillennial.com##+js(set-constant, gdprApplies, false)
+thepostmillennial.com##+js(set-constant, checkIfUspIsReady, noopFunc)
+thepostmillennial.com##+js(set-constant, uspInterval, noopFunc)
+thepostmillennial.com##+js(nosiif, checkIfUspIsReady)
+||cadmus.script.ac/*/script.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dn0qt3r0xannq.cloudfront.net/tpm-sTDaTcae8k/default/prebid-wrapper.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dn0qt3r0xannq.cloudfront.net/tpm-sTDaTcae8k/default/prebid-load.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||dn0qt3r0xannq.cloudfront.net/plugins/ad-server.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
@@ -48532,3 +48650,4 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip#@#div[id^="div-gpt-ad"]:style(width:
 @@||services.vlitag.com/adv1/$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|unlockapk.com|dgdrive.xyz
 @@||static.criteo.net/js/ld/publishertag.prebid.js$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||tag.vlitag.com/v1/$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+@@||pagead2.googlesyndication.com/pagead/js/$domain=anydebrid.com,script
