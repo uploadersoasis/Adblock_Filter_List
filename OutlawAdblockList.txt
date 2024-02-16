@@ -27184,10 +27184,9 @@ stfly.me##div[class="ad-banner"]:remove()
 get-to.link##^script:has-text(window.open)
 get-to.link##+js(set-constant, ai_js_code, false)
 get-to.link##^script:has-text(ai_adb_process_blocks)
-null-byte.wonderhowto.com##:xpath(//script[contains(text(), 'w.top.location.replace')])
 null-byte.wonderhowto.com##:xpath(//script[contains(text(), 'w.top.location.replace')]):remove()
-null-byte.wonderhowto.com##^script:has-text(w.top.location.replace)
-null-byte.wonderhowto.com##^script:has-text(window.rxMatchDomain)
+null-byte.wonderhowto.com##^script:has-text(w.top.location.replace):remove()
+null-byte.wonderhowto.com##^script:has-text(window.rxMatchDomain):remove()
 ||www.countok.de/cgi-bin/cnt.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.onworks.net##*[class*="eupopup-"]
 monitorsanywhere.com##div[id="cookie-notice"]
@@ -29870,21 +29869,24 @@ apk-galaxy.site##script[src="https://cdn.adf.ly/js/link-converter.js"]:remove()
 techyneed.com##script[data-ad-client]:remove()
 techyneed.com##^script:has-text(/debugger;/):remove()
 techyneed.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
-techyneed.com##+js(acs, /^debugger;/)
-techyneed.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+techyneed.com##+js(acs, /debugger;/)
+!techyneed.com##+js(trusted-replace-node-text, script, /debugger;/gm, "")
+!techyneed.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+techyneed.com##+js(remove-node-text, script, /debugger;/gm)
 techyneed.com##ins[class="adsbygoogle"]:remove()
 techyneed.com##+js(aopr, _0x3344)
 techyneed.com##+js(aopw, _0x3344)
 techyneed.com##+js(aopr, adsbygoogle)
 techyneed.com##+js(aopw, adsbygoogle)
 techyneed.com##+js(set-constant, _0x3344, [])
-techyneed.com##div[id="alertmsg"]
+techyneed.com##div[id="alertmsg"]:remove()
 techyneed.com##iframe[data-aa]:remove()
 techyneed.com##+js(noeval)
 jaanmusic.in,techyneed.com##+js(nosiif, _0x)
-jaanmusic.in##.adsbygoogle
-jaanmusic.in,techyneed.com##div[style="background:#ededed;"]
-jaanmusic.in,techyneed.com###galax2
+jaanmusic.in##.adsbygoogle:remove()
+jaanmusic.in,techyneed.com##div[style="background:#ededed;"]:remove()
+jaanmusic.in,techyneed.com###galax2:remove()
 alfacast.net##div[id^="cookie-law-info"]:remove()
 alfacast.net##div[id="cliSettingsPopup"]:remove()
 apkxmods.com##ins[class="adsbygoogle"]:remove()
@@ -31848,10 +31850,12 @@ www.ign.com##div[class*="adunit-wrapper"]
 ||cdn.pushmaster-cdn.xyz^*
 kisscartoon.sh##+js(set-constant, check_adblock, false, stay)
 kisscartoon.sh##+js(nosiif, break)
-kisscartoon.sh##+js(acs, /^debugger;/)
-kisscartoon.sh##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+kisscartoon.sh##+js(acs, /debugger;/)
 kisscartoon.sh##+js(aopr, debugger)
 kisscartoon.sh##+js(aopw, debugger)
+!kisscartoon.sh##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+kisscartoon.sh##+js(remove-node-text, script, /debugger;/gm)
 ||announcem.com^*
 findanyanswer.com##div[class^="sellwild-banner"]
 findanyanswer.com##div[id^="ad-"]
@@ -32041,7 +32045,8 @@ baominh.tech##+js(acs, adsbygoogle)
 baominh.tech##+js(aopr, adsbygoogle)
 baominh.tech##+js(aopw, adsbygoogle)
 !baominh.tech##^script:has-text(/debugger;/):remove()
-baominh.tech##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+!baominh.tech##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+baominh.tech##+js(remove-node-text, script, /debugger;/gm)
 baominh.tech##+js(acs, mdpDeBlocker)
 baominh.tech##+js(aopr, mdpDeBlocker)
 baominh.tech##+js(aopw, mdpDeBlocker)
@@ -32403,12 +32408,14 @@ coursesghar.com##+js(set-constant, adsbygoogle, [])
 coursesghar.com##+js(acs, adsbygoogle)
 coursesghar.com##+js(aopr, adsbygoogle)
 coursesghar.com##+js(aopw, adsbygoogle)
-coursesghar.com##+js(acs, /^debugger;/)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+coursesghar.com##+js(acs, /debugger;/)
 coursesghar.com##+js(aopr, debugger)
 coursesghar.com##+js(aopw, debugger)
 coursesghar.com##^script:has-text(/debugger;/):remove()
 coursesghar.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
-coursesghar.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+!coursesghar.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+coursesghar.com##+js(remove-node-text, script, /debugger;/gm)
 ! This line prevents the need to block all inline scripts in dynamic filter for coursesghar.com.
 coursesghar.com##^script:has-text(/escape\(r\)/i):remove()
 !||coursesghar.com/wp-content/plugins/deblocker/js/ads.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -33281,8 +33288,10 @@ firstrowsport.org##div[class="module-desc"]:style(display: inline;)
 ko.strikeout.cc##body > script:nth-child(10):remove()
 ko.strikeout.cc##^script:has-text(/debugger;/):remove()
 ko.strikeout.cc##:xpath(//script[contains(text(), 'debugger;')]):remove()
-ko.strikeout.cc##+js(acs, /^debugger;/)
-ko.strikeout.cc##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+ko.strikeout.cc##+js(acs, /debugger;/)
+!ko.strikeout.cc##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+ko.strikeout.cc##+js(remove-node-text, script, /debugger;/gm)
 ||oaphoace.net^*
 ||terribledeliberate.com^*
 ||jiufbtrsqpa.com^*
@@ -33307,8 +33316,6 @@ hd.crichd.run##div[id="UnMutePlayer"]:remove()
 ||clkv4.extyoneplus-3.com^*
 ||tq.adventurefeeds.com^*
 ||kuno-gae.com^*
-!streamgo.to##+js(aopr, dto_krispl1)
-!streamgo.to##+js(aopw, dto_krispl1)
 ||fclnmqhwc.com^*
 ||t.dtscout.com^*
 ||a.dtssrv.com^*
@@ -33323,7 +33330,6 @@ theappstore.org##div[id="bodypanel"]:style(filter: blur(0px) !important; -webkit
 ||www.sports-stream.site/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||1d6cbc1f2ba.kinkylotto.com^*
 ||register.push.dog/js/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-streamgo.to##div[id="atContainer-"]
 ||forearmthrobjanuary.com^*
 ||assia22.com/css/banr-adstera.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||inflectionquake.com^*
@@ -33337,9 +33343,6 @@ streamgo.to##div[id="atContainer-"]
 ||get.hundredpercentmargin.com^*
 ||assia4.com/css/vast-adstera.xml$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pitchedfurs.com^*
-||streamgo.to/css/banr-adstera.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-||streamgo.to/css/stat.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-streamgo.to##iframe[id^="ifre"]
 ||z.cdn.trafficdok.com^*
 ||cdn.trafficdok.com^*
 ||assia22.com/css/stat.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -33358,21 +33361,13 @@ streamgo.to##iframe[id^="ifre"]
 ||s7.zerodeltanode.shop/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||qualitydestructionhouse.com^*
 ||ad.apl139.me^*
-||streamgo.to/counter.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ad.apl122.me^*
 ||js.revmasters.com/javascript.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 !||revmasters.elb.myaffiliates.com/javascript.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||revmasters.elb.myaffiliates.com^*
 ||media.revmasters.com/uploads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-streamgo.to##div[id="ads"]
 ||cdn.livetv549.me/img/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||ii.apl139.me/js/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-streamgo.to##div[id="adbtm"]
-streamgo.to##div[id="ban1"]
-streamgo.to##+js(aopr, ct_SuUrl)
-streamgo.to##+js(aopw, ct_SuUrl)
-streamgo.to##td:has-text(This ad will close in 30 seconds):remove()
-streamgo.to##div[class^="adv-ad ad-"]:remove()
 ||qdqlyoqpxyh.com^*
 ||ekgloczbsblg.com^*
 www.xmyip.com##section[id="bottom-ad"]
@@ -33386,22 +33381,8 @@ www.askwoody.com##img[alt="Hive"]:upward(1)
 ||uwzknashjrhw.com^*
 ||www.jyklotgnhldsxyn.com^*
 ||jyklotgnhldsxyn.com^*
-!||streamgo.to/cdb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-!||streamgo.to/cda.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pl16164575.safestgatetocontent.com^*
 ||vcdnads.ru.com^*
-rkc.primetubsub.xyz##+js(aopw, document.oncontextmenu)
-rkc.primetubsub.xyz##+js(aopr, document.oncontextmenu)
-streamgo.to##+js(aopw, document.oncontextmenu)
-streamgo.to##+js(aopr, document.oncontextmenu)
-streamgo.to##^script:has-text(/debugger;/):remove()
-streamgo.to##:xpath(//script[contains(text(), 'debugger;')]):remove()
-streamgo.to##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-streamgo.to##+js(acs, /^debugger;/)
-rkc.primetubsub.xyz##^script:has-text(/debugger;/):remove()
-rkc.primetubsub.xyz##:xpath(//script[contains(text(), 'debugger;')]):remove()
-rkc.primetubsub.xyz##+js(acs, /^debugger;/)
-rkc.primetubsub.xyz##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 ||www.ddihirqhtyw.com^*
 ||ddihirqhtyw.com^*
 ||www.sutmjpoja.com^*
@@ -33414,8 +33395,6 @@ rkc.primetubsub.xyz##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 ||livenewsof.com/wp-content/cache/min/1/wp-content/uploads/slwjbx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 livenewsof.com##ins[data-ad-client]
 livenewsof.com##script[id^="adunblocker-js"]
-streamgo.to##^script:has-text(-parseInt)
-rkc.primetubsub.xyz##^script:has-text(-parseInt)
 ||www.nexusmods.com/Contents/Scripts/adblocker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.nexusmods.com##div[class*="ad-unit"]
 www.nexusmods.com##div[class*="video-ad"]
@@ -35194,12 +35173,14 @@ www.wemod.com##div[class*="cookie-policy"]
 ||gfxtra.dirp.app/&/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||fz.noaon2.com^*
 ||brain.foresee.com/state/att/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-gfxtra.dirp.app##div[id^="cookieConsent"]
+gfxtra.dirp.app##div[id^="cookieConsent"]:remove()
 gfxtra.dirp.app##^script:has-text(/debugger;/):remove()
 gfxtra.dirp.app##script:has-text(/debugger;/):remove()
 gfxtra.dirp.app##:xpath(//script[contains(text(), 'debugger;')]):remove()
-gfxtra.dirp.app##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-gfxtra.dirp.app##+js(acs, /^debugger;/)
+!gfxtra.dirp.app##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+gfxtra.dirp.app##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+gfxtra.dirp.app##+js(acs, /debugger;/)
 abc7news.com##div[data-ad-placeholder]:remove()
 ||zn5hsliyrlhlj7ndr-abcotv.siteintercept.qualtrics.com^*
 www.jdsupra.com##div[id="cookiesModal"]:remove()
@@ -35631,13 +35612,15 @@ www.uploadcloud.pro##a[title="Putin, Stop the War in Ukraine!"]:remove()
 www.uploadcloud.pro##^script:has-text(/debugger;/):remove()
 www.uploadcloud.pro##script:has-text(/debugger;/):remove()
 www.uploadcloud.pro##:xpath(//script[contains(text(), 'debugger;')]):remove()
-www.uploadcloud.pro##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-www.uploadcloud.pro##+js(acs, /^debugger;/)
-www.nydailynews.com##div[class*="ad_container"]
-!www.nydailynews.com##div[class="top_ad_wrapper"]
-www.nydailynews.com##div[class*="ad_wrapper"]
-www.nydailynews.com##div[aria-label="Paywall"]
-www.nydailynews.com##div[id="zephr-overlay"]
+!www.uploadcloud.pro##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+www.uploadcloud.pro##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+www.uploadcloud.pro##+js(acs, /debugger;/)
+www.nydailynews.com##div[class*="ad_container"]:remove()
+!www.nydailynews.com##div[class="top_ad_wrapper"]:remove()
+www.nydailynews.com##div[class*="ad_wrapper"]:remove()
+www.nydailynews.com##div[aria-label="Paywall"]:remove()
+www.nydailynews.com##div[id="zephr-overlay"]:remove()
 ||smoggysnakes.com^*
 !||www.tribdss.com/meter/assets/nydnarc-reaction-1q2w3-4227101563976737884.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.tribdss.com/meter/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -35688,8 +35671,10 @@ www.linkedin.com##+js(aopw, window.impressionTracking)
 nw.freestreams-live1.com##^script:has-text(/debugger;/):remove()
 nw.freestreams-live1.com##script:has-text(/debugger;/):remove()
 nw.freestreams-live1.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
-nw.freestreams-live1.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-nw.freestreams-live1.com##+js(acs, /^debugger;/)
+!nw.freestreams-live1.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+nw.freestreams-live1.com##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+nw.freestreams-live1.com##+js(acs, /debugger;/)
 nw.freestreams-live1.com##+js(acs, anonymous)
 nw.freestreams-live1.com##script[cdnd="acacdn.com"]
 nw.freestreams-live1.com##a[class="pf-br-icon"]:upward(1):remove()
@@ -35738,8 +35723,10 @@ yourtehzeeb.com##+js(remove-class, media-control-hide, , stay)
 yourtehzeeb.com##^script:has-text(/debugger;/):remove()
 yourtehzeeb.com##script:has-text(/debugger;/):remove()
 yourtehzeeb.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
-yourtehzeeb.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-yourtehzeeb.com##+js(acs, /^debugger;/)
+!yourtehzeeb.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+yourtehzeeb.com##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+yourtehzeeb.com##+js(acs, /debugger;/)
 ||ivexjkwo.com^*
 ||strollcurepinching.com^*
 ||reapinject.com^*
@@ -36240,8 +36227,10 @@ livsavr.co##div[class$="-blackout active"]
 livsavr.co##^script:has-text(/debugger;/):remove()
 livsavr.co##script:has-text(/debugger;/):remove()
 livsavr.co##:xpath(//script[contains(text(), 'debugger;')]):remove()
-livsavr.co##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-livsavr.co##+js(acs, /^debugger;/)
+!livsavr.co##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+livsavr.co##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+livsavr.co##+js(acs, /debugger;/)
 livsavr.co##+js(aopr, _audins_dom)
 livsavr.co##+js(aopw, _audins_dom)
 livsavr.co##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
@@ -37271,10 +37260,12 @@ dlhd.sx,daddylivehd.sx##script[data-adel][zid]:remove()
 dlhd.sx,daddylivehd.sx##^script:has-text(/debugger;/):remove()
 dlhd.sx,daddylivehd.sx##script:has-text(/debugger;/):remove()
 dlhd.sx,daddylivehd.sx##:xpath(//script[contains(text(), 'debugger;')]):remove()
-dlhd.sx,daddylivehd.sx##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+!dlhd.sx,daddylivehd.sx##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+dlhd.sx,daddylivehd.sx##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+dlhd.sx,daddylivehd.sx##+js(acs, /debugger;/)
 dlhd.sx,daddylivehd.sx##^script:has-text(-parseInt):remove()
 dlhd.sx,daddylivehd.sx##script:has-text(-parseInt):remove()
-dlhd.sx,daddylivehd.sx##+js(acs, /^debugger;/)
 dlhd.sx,daddylivehd.sx##+js(acs, atob, decodeURIComponent)
 dlhd.sx,daddylivehd.sx##+js(acs, document, $._Eu, $.BD)
 dlhd.sx,daddylivehd.sx##+js(aopw, document.oncontextmenu)
@@ -37685,8 +37676,10 @@ time4tv.stream,time4tv.xyz##+js(noeval)
 time4tv.stream,time4tv.xyz##^script:has-text(/debugger;/):remove()
 time4tv.stream,time4tv.xyz##script:has-text(/debugger;/):remove()
 time4tv.stream,time4tv.xyz##:xpath(//script[contains(text(), 'debugger;')]):remove()
-time4tv.stream,time4tv.xyz##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-time4tv.stream,time4tv.xyz##+js(acs, /^debugger;/)
+!time4tv.stream,time4tv.xyz##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+time4tv.stream,time4tv.xyz##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+time4tv.stream,time4tv.xyz##+js(acs, /debugger;/)
 time4tv.stream,time4tv.xyz##^script:has-text(/detectDevTool/):remove()
 time4tv.stream,time4tv.xyz##script:has-text(/detectDevTool/):remove()
 time4tv.stream,time4tv.xyz##:xpath(//script[contains(text(), 'detectDevTool')]):remove()
@@ -37977,8 +37970,10 @@ freestreams-live1.tv,fsl-streams.click##+js(noeval)
 freestreams-live1.tv,fsl-streams.click##:xpath(//script[contains(text(), 'debugger;')]):remove()
 freestreams-live1.tv,fsl-streams.click##^script:has-text(/debugger;/):remove()
 freestreams-live1.tv,fsl-streams.click##script:has-text(/debugger;/):remove()
-freestreams-live1.tv,fsl-streams.click##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-freestreams-live1.tv,fsl-streams.click##+js(acs, /^debugger;/)
+!freestreams-live1.tv,fsl-streams.click##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+freestreams-live1.tv,fsl-streams.click##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+freestreams-live1.tv,fsl-streams.click##+js(acs, /debugger;/)
 freestreams-live1.tv,fsl-streams.click##+js(set-constant, keepChecking, noopFunc)
 ! also need no-setTimeout-if to prevent running keepChecking() on a loop
 freestreams-live1.tv,fsl-streams.click##+js(no-setTimeout-if, keepChecking)
@@ -39445,8 +39440,10 @@ watchsb.com##+js(set-constant, isadb, false)
 watchsb.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
 watchsb.com##^script:has-text(/debugger;/):remove()
 watchsb.com##script:has-text(/debugger;/):remove()
-watchsb.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-watchsb.com##+js(acs, /^debugger;/)
+!watchsb.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+watchsb.com##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+watchsb.com##+js(acs, /debugger;/)
 watchsb.com##+js(aeld, /contextmenu|keydown/)
 watchsb.com##+js(nostif, check)
 ||appcdn01.xyz/vast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -39577,19 +39574,12 @@ streamvid.net##+js(set-constant, clickplayer, null)
 streamvid.net##+js(set-constant, cRAds, false)
 streamvid.net##+js(set-constant, googleAd, false)
 streamvid.net##+js(set-constant, xRds, false)
-streamvid.net##^script:has-text(__webpack_exports__)
 streamvid.net##^script:has-text(__webpack_exports__):remove()
-streamvid.net##script:has-text(s3ii)
 streamvid.net##script:has-text(s3ii):remove()
-streamvid.net##div[id="adbd"]
 streamvid.net##div[id="adbd"]:remove()
-streamvid.net##div[id="histats_counter"]
 streamvid.net##div[id="histats_counter"]:remove()
-streamvid.net##div[class*="google-ad"]
 streamvid.net##div[class*="google-ad"]:remove()
-streamvid.net##iframe[src="about:blank"]
 streamvid.net##iframe[src="about:blank"]:remove()
-streamvid.net##iframe[data-aa]
 streamvid.net##iframe[data-aa]:remove()
 !streamvid.net##+js(aeld, click, clickplayer)
 streamvid.net##+js(aeld, click)
@@ -39601,19 +39591,18 @@ streamvid.net##+js(acs, _Hasync)
 streamvid.net##+js(aopr, _Hasync)
 streamvid.net##+js(aopw, _Hasync)
 streamvid.net##div[id="dl_versions"]:style(display: block !important;)
-streamvid.net##a[id="dl_versions_btn"]
 streamvid.net##a[id="dl_versions_btn"]:remove()
-streamvid.net##span[id="countdown_str"]
 streamvid.net##span[id="countdown_str"]:remove()
-streamvid.net##div[id="alert_msg"]
 streamvid.net##div[id="alert_msg"]:remove()
 streamvid.net##+js(nostif, /countDown/)
 streamvid.net##+js(acs, s3ii, globalThis)
 streamvid.net##:xpath(//script[contains(text(), 'debugger;')]):remove()
 streamvid.net##^script:has-text(/debugger;/):remove()
 streamvid.net##script:has-text(/debugger;/):remove()
-streamvid.net##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-streamvid.net##+js(acs, /^debugger;/)
+!streamvid.net##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+streamvid.net##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+streamvid.net##+js(acs, /debugger;/)
 streamvid.net##+js(acs, atob, decodeURIComponent)
 streamvid.net##+js(aopr, globalThis)
 streamvid.net##+js(aopw, globalThis)
@@ -39622,7 +39611,7 @@ streamvid.net##+js(aopw, s3ii)
 streamvid.net##+js(aopr, __webpack_exports__)
 streamvid.net##+js(aopw, __webpack_exports__)
 streamvid.net##input[aria-label="play"]:remove-attr(disabled)
-streamvid.net##div[class="vjs-poster"]
+streamvid.net##+js(remove-attr, disabled, input[aria-label="play"])
 streamvid.net##div[class="vjs-poster"]:remove()
 !streamvid.net##div[id="vjsplayer"]:remove-class(vjs-user-inactive)
 ||streamvid.net/js/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -39736,8 +39725,10 @@ dood.re##+js(aopr, minimalUserResponseInMiliseconds)
 dood.re##:xpath(//script[contains(text(), 'debugger;')]):remove()
 dood.re##^script:has-text(/debugger;/):remove()
 dood.re##script:has-text(/debugger;/):remove()
-dood.re##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-dood.re##+js(acs, /^debugger;/)
+!dood.re##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+dood.re##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+dood.re##+js(acs, /debugger;/)
 dood.re##+js(nostif, check)
 !dood.re##+js(aeld, /contextmenu|keydown/, /function\(e\)/)
 dood.re##+js(aeld, /contextmenu|keydown/)
@@ -39919,12 +39910,15 @@ voe.sx,scatch176duplicities.com##+js(aeld, /contextmenu|keydown/)
 voe.sx,scatch176duplicities.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
 voe.sx,scatch176duplicities.com##^script:has-text(/debugger;/):remove()
 voe.sx,scatch176duplicities.com##script:has-text(/debugger;/):remove()
-voe.sx,scatch176duplicities.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-voe.sx,scatch176duplicities.com##+js(acs, /^debugger;/)
+!voe.sx,scatch176duplicities.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+voe.sx,scatch176duplicities.com##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+voe.sx,scatch176duplicities.com##+js(acs, /debugger;/)
 voe.sx,scatch176duplicities.com##:xpath(//script[contains(text(), 'console.clear')]):remove()
 voe.sx,scatch176duplicities.com##^script:has-text(/console\.clear\(\);/):remove()
 voe.sx,scatch176duplicities.com##script:has-text(/console\.clear\(\);/):remove()
-voe.sx,scatch176duplicities.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
+!voe.sx,scatch176duplicities.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
+voe.sx,scatch176duplicities.com##+js(remove-node-text, script, /console\.clear\(\);/gm)
 voe.sx,scatch176duplicities.com##+js(acs, /console.clear\(\);/)
 !voe.sx,scatch176duplicities.com##+js(nostif, c74a68dfbd15fcd6f23a6b26879bc82e)
 voe.sx,scatch176duplicities.com##+js(nostif, /^/)
@@ -39969,8 +39963,10 @@ vtube.to,vtbe.net,vtplay.net##+js(acs, addEventListener, https://google.com/)
 vtube.to,vtbe.net,vtplay.net##:xpath(//script[contains(text(), 'debugger;')]):remove()
 vtube.to,vtbe.net,vtplay.net##^script:has-text(/debugger;/):remove()
 vtube.to,vtbe.net,vtplay.net##script:has-text(/debugger;/):remove()
-vtube.to,vtbe.net,vtplay.net##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-vtube.to,vtbe.net,vtplay.net##+js(acs, /^debugger;/)
+!vtube.to,vtbe.net,vtplay.net##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+vtube.to,vtbe.net,vtplay.net##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+vtube.to,vtbe.net,vtplay.net##+js(acs, /debugger;/)
 vtube.to,vtbe.net,vtplay.net##+js(acs, gtag)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 vtube.to,vtbe.net,vtplay.net##script[data-spots][data-tag][data-subid1]:remove()
@@ -40265,8 +40261,10 @@ membed1.com##+js(acs, /console\.clear\(\);/)
 membed1.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
 membed1.com##^script:has-text(/debugger;/):remove()
 membed1.com##script:has-text(/debugger;/):remove()
-membed1.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-membed1.com##+js(acs, /^debugger;/)
+!membed1.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+membed1.com##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+membed1.com##+js(acs, /debugger;/)
 membed1.com##+js(acs, DevTools, devtoolIsOpening)
 membed1.com##^script:has-text(DevTools):remove()
 membed1.com##script:has-text(DevTools):remove()
@@ -40279,13 +40277,16 @@ embedsito.com##+js(set-constant, devtoolIsOpening, noopFunc)
 embedsito.com##+js(nostif, devtoolIsOpening)
 embedsito.com##+js(acs, devtoolIsOpening)
 embedsito.com##+js(acs, /console\.clear\(\);/)
-embedsito.com##+js(acs, /^debugger;/)
 embedsito.com##+js(acs, USER_ID)
 embedsito.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
 embedsito.com##^script:has-text(/debugger;/):remove()
 embedsito.com##script:has-text(/debugger;/):remove()
-embedsito.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-embedsito.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
+!embedsito.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+embedsito.com##+js(remove-node-text, script, /debugger;/gm)
+!embedsito.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
+embedsito.com##+js(remove-node-text, script, /console\.clear\(\);/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+embedsito.com##+js(acs, /debugger;/)
 embedsito.com##^script:has-text(USER_ID):remove()
 ||moonmov.pro/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||moonmov.pro/js/dnsads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -40371,15 +40372,17 @@ sbnet.one##+js(set-constant, check, noopFunc)
 sbnet.one##:xpath(//script[contains(text(), 'console.clear')]):remove()
 sbnet.one##^script:has-text(/console\.clear\(\);/):remove()
 sbnet.one##script:has-text(/console\.clear\(\);/):remove()
-sbnet.one##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
 sbnet.one##+js(acs, /console\.clear\(\);/)
+!sbnet.one##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
+sbnet.one##+js(remove-node-text, script, /console\.clear\(\);/gm)
+!sbnet.one##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+sbnet.one##+js(remove-node-text, script, /debugger;/gm)
 sbnet.one##+js(acs, minimalUserResponseInMiliseconds)
 sbnet.one##+js(aopw, minimalUserResponseInMiliseconds)
 sbnet.one##+js(aopr, minimalUserResponseInMiliseconds)
 sbnet.one##:xpath(//script[contains(text(), 'debugger;')]):remove()
 sbnet.one##^script:has-text(/debugger;/):remove()
 sbnet.one##script:has-text(/debugger;/):remove()
-sbnet.one##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 sbnet.onee##+js(nostif, check)
 !sbnet.one##+js(aeld, /contextmenu|keydown/, /function\(e\)/)
 sbnet.one##+js(aeld, /contextmenu|keydown/)
@@ -40452,8 +40455,10 @@ slmaxed.com,streamlare.com##+js(set-constant, window.AdBlock, false)
 ! The following two acis lines prevent the video from loading.
 !slmaxed.com,streamlare.com##+js(acs, /console\.clear\(\);/, /^debugger;/)
 !slmaxed.com,streamlare.com##+js(acs, parseInt, console['clear'])
-slmaxed.com,streamlare.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-slmaxed.com,streamlare.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
+!slmaxed.com,streamlare.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+slmaxed.com,streamlare.com##+js(remove-node-text, script, /debugger;/gm)
+!slmaxed.com,streamlare.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
+slmaxed.com,streamlare.com##+js(remove-node-text, script, /console\.clear\(\);/gm)
 slmaxed.com,streamlare.com##+js(set-constant, devtoolIsOpening, noopFunc)
 slmaxed.com,streamlare.com##+js(nostif, devtoolIsOpening)
 slmaxed.com,streamlare.com##+js(set-constant, gtag, noopFunc)
@@ -40534,7 +40539,7 @@ embed2.megaxfer.ru##meta[http-equiv="refresh"]:remove()
 yarnpkg.com##div[class^="css-"]:has(div[class^="css-"]:has(p:has(a[href="https://war.ukraine.ua/support-ukraine/"])))
 ! removal causes successive content to be removed as well.
 !yarnpkg.com##div[class^="css-"]:has(div[class^="css-"]:has(p:has(a[href="https://war.ukraine.ua/support-ukraine/"]))):remove()
-!techssting.com##div[id="analytics"]
+!techssting.com##div[id="analytics"]:remove()
 !techssting.com##+js(trusted-set-constant, document.querySelector("#downloadBtnClick").form, ff1)
 !techssting.com##+js(trusted-set-constant, document.querySelector("#downloadBtnClick").type, submit)
 techssting.com##+js(saa, type, submit, #downloadBtnClick)
@@ -40544,10 +40549,10 @@ techssting.com##+js(remove-attr, name, #downloadBtnClick, stay)
 !techssting.com##button[id="downloadbtn"]:style(display:block !important;)
 !techssting.com##+js(remove-attr, disabled, .downloadbtn, stay)
 !techssting.com##[id="downloadBtnClick"]:style(display: none !important;)
-techssting.com##div[id="overlaypop"]
+techssting.com##div[id="overlaypop"]:remove()
 techssting.com##+js(set-constant, adblock_detected, 0, stay)
 techssting.com##+js(set-constant, adblock_check, 1, stay)
-techssting.com##div[id="countdown"]
+techssting.com##div[id="countdown"]:remove()
 techssting.com##+js(aopr, 0x2bb9)
 techssting.com##+js(aopw, 0x2bb9)
 techssting.com##+js(aopr, _0xab85)
@@ -40556,14 +40561,15 @@ techssting.com##+js(aopr, user)
 techssting.com##+js(aopw, user)
 !techssting.com##+js(aopr, .downloadbtn)
 !techssting.com##+js(aopw, .downloadbtn)
-techssting.com##div[id="warning"]
+techssting.com##div[id="warning"]:remove()
 techssting.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
 techssting.com##^script:has-text(/debugger;/):remove()
 techssting.com##script:has-text(/debugger;/):remove()
-techssting.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+!techssting.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+techssting.com##+js(remove-node-text, script, /debugger;/gm)
 techssting.com##^script:has-text(__CF$cv$params)
 !techssting.com##ins[class="adsbygoogle"]:remove()
-newsindi.com##div[id="alert"]
+newsindi.com##div[id="alert"]:remove()
 newsindi.com,techssting.com##+js(aopr, absda)
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##ins[class="adsbygoogle"]
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.adsbygoogle, .showads
@@ -40613,34 +40619,28 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadBtnClick"]:remov
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadbtn"]:remove-attr(style)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadbtn"]:style(visibility: visible !important; display: block !important;)
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###downloadbtn:style(visibility: visible !important; display: block !important;)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="adm-container-"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="adm-container-"]:remove()
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="method_free2"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="method_free2"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="method_free"]:remove-attr(style)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="method_free"]:style(display: block !important;)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="method_free"]:remove-attr(disabled)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.btn-info.btn-sm.btn-block.btn
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.btn-info.btn-sm.btn-block.btn:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[class="alert alert-danger mb-3"]
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="div-gpt-ad-"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="div-gpt-ad-"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(_0x)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##a:style(display:block !important;)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[id="load"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[id="load"]:remove()
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[class^="modalpop"]
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###gdpr-cookie-notice
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[class^="modalpop"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###gdpr-cookie-notice:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(/document.on/i)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##body:remove-attr(oncontextmenu)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="ad-section"]
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="ad-section"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##:xpath(//script[contains(text(), 'debugger;')]):remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(/debugger;/):remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##script:has-text(/debugger;/):remove()
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(remove-node-text, script, /debugger;/gm)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[v1018myxp]:remove()
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[width="0"][height="0"][style="display:none;width:0;height:0;"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[width="0"][height="0"][style="display:none;width:0;height:0;"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##iframe[v1018myxp]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="main-frame-error"]:remove()
@@ -41997,7 +41997,6 @@ availedsmallest.com##+js(acs, i.Logger.log, o.console)
 !availedsmallest.com##+js(abort-on-property-write, window.a7c07e85bedf339753)
 availedsmallest.com##+js(set-constant, b0uae[554498], noopFunc)
 availedsmallest.com##+js(acs, unescape)
-availedsmallest.com##:xpath(//script[contains(text(), 'unescape')])
 availedsmallest.com##:xpath(//script[contains(text(), 'unescape')]):remove()
 availedsmallest.com##+js(set-constant, e3f65599c9290e11014f9d5f3b877411, noopFunc)
 availedsmallest.com##+js(set-constant, adbStatus, 0)
@@ -42005,12 +42004,15 @@ availedsmallest.com##+js(set-constant, iOS, noopFunc)
 availedsmallest.com##:xpath(//script[contains(text(), 'debugger')]):remove()
 availedsmallest.com##^script:has-text(/debugger;/):remove()
 availedsmallest.com##script:has-text(/debugger;/):remove()
-availedsmallest.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-availedsmallest.com##+js(acs, /^debugger;/)
+!availedsmallest.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+availedsmallest.com##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+availedsmallest.com##+js(acs, /debugger;/)
 availedsmallest.com##:xpath(//script[contains(text(), 'sandbox')]):remove()
 availedsmallest.com##^script:has-text(sandbox):remove()
 availedsmallest.com##script:has-text(sandbox):remove()
-availedsmallest.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
+!availedsmallest.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
+availedsmallest.com##+js(remove-node-text, script, /console\.clear\(\);/gm)
 availedsmallest.com##+js(acs, /console\.clear\(\);/)
 availedsmallest.com##+js(set-constant, console.clear, noopFunc)
 availedsmallest.com##+js(acs, sandbox)
@@ -42503,17 +42505,13 @@ cutty.app##div[data-ad]:remove()
 cutty.app##button[id="submit-button"]:remove-attr(disabled)
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
 cutty.app##+js(trusted-replace-node-text, text, Please Wait ..., Get Download Link)
-cutty.app##div[class="container"]:has(button[class="ab"]:has(span[class="error-message"]:has-text(Please disable Adblock to continue)))
 cutty.app##div[class="container"]:has(button[class="ab"]:has(span[class="error-message"]:has-text(Please disable Adblock to continue))):remove()
 cutty.app##+js(acs, parseInt, document)
 cutty.app##+js(set-constant, gtag, noopFunc)
 cutty.app##+js(acs, gtag)
-cutty.app##div[class="adsbygoogle"]
 cutty.app##div[class="adsbygoogle"]:remove()
 ! the id's in the following four rules may be randomly generated.
-cutty.app##div[id="i0hi07d"]
 cutty.app##div[id="i0hi07d"]:remove()
-cutty.app##a[id="lkmy"]
 cutty.app##a[id="lkmy"]:remove()
 ||forbidcrenels.com^*
 !||live.demand.supply/up.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
@@ -42792,8 +42790,10 @@ axxellanceblog.com##div[class*="cookiesAlertBox"]:remove()
 megaup.net##:xpath(//script[contains(text(), 'debugger;')]):remove()
 megaup.net##^script:has-text(/debugger;/):remove()
 megaup.net##script:has-text(/debugger;/):remove()
-megaup.net##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-megaup.net##+js(acs, /^debugger;/)
+!megaup.net##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+megaup.net##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+megaup.net##+js(acs, /debugger;/)
 megaup.net##+js(set-constant, seconds, 0, stay)
 !megaup.net##+js(nano-setInterval-booster, display, *, 0.15)
 megaup.net##+js(nano-setInterval-booster, display, 1000, 0.15)
@@ -43332,26 +43332,18 @@ sidequestvr.com##div[class^="cky-consent-"]:remove()
 ||cs9.wpc.v0cdn.net/scripts/c/ms.analytics-web-2.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||az416426.vo.msecnd.net/scripts/c/ms.analytics-web-2.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.windowscentral.com/sites/all/libraries/adblockdetection/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.windowscentral.com##*[id^="parsely-"]
 www.windowscentral.com##*[id^="parsely-"]:remove()
 www.windowscentral.com##div:has(div.mobile-leaderboard-320-50 > div#bordeaux-preemptive-ad-2)
 www.windowscentral.com##div:has(div.mobile-leaderboard-320-50 > div#bordeaux-preemptive-ad-2):remove()
-www.windowscentral.com##div[class*="adunit"]
 www.windowscentral.com##div[class*="adunit"]:remove()
-www.windowscentral.com##div[class*="ad-unit"]
 www.windowscentral.com##div[class*="ad-unit"]:remove()
-www.windowscentral.com##div[class="mobile-leaderboard-320-50"]
 www.windowscentral.com##div[class="mobile-leaderboard-320-50"]:remove()
-www.windowscentral.com##div[class="swal-modal detective--splash"]
 www.windowscentral.com##div[class="swal-modal detective--splash"]:remove()
-www.windowscentral.com##div[class="swal-overlay swal-overlay--show-modal"]
 www.windowscentral.com##div[class="swal-overlay swal-overlay--show-modal"]:remove()
 www.windowscentral.com##div[class^="dfp-leaderboard-"]:remove()
 www.windowscentral.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
 www.windowscentral.com##div[id="slice-container-regionRedirectBanner"]:remove()
-www.windowscentral.com##div[id^="bordeaux-preemptive-ad"]
 www.windowscentral.com##div[id^="bordeaux-preemptive-ad"]:remove()
-www.windowscentral.com##div[id^="bordeaux-standard-ad-"]
 www.windowscentral.com##div[id^="bordeaux-standard-ad-"]:remove()
 www.windowscentral.com##div[data-widget-type="ads"]:remove()
 !www.windowscentral.com##div[data-type="ads"][data-ads-type="bordeaux"]:remove()
@@ -43360,19 +43352,30 @@ www.windowscentral.com##footer[id="taboola-below-article-thumbnails"]:remove()
 www.windowscentral.com##footer[id="taboola-mobile-below-article-thumbnails"]:remove()
 www.windowscentral.com##img:remove-attr(onerror)
 www.windowscentral.com##source:remove-attr(onerror)
+www.windowscentral.com##+js(remove-attr, onerror, img)
+www.windowscentral.com##+js(remove-attr, onerror, source)
 www.windowscentral.com##+js(abort-on-property-read, TIMEOUT_DELAY)
 www.windowscentral.com##+js(abort-on-property-write, TIMEOUT_DELAY)
 www.windowscentral.com##+js(aeld, onerror)
 www.windowscentral.com##+js(set-constant, TIMEOUT_DELAY, 0)
 www.windowscentral.com##+js(set-constant, loadTaboola, noopFunc)
 www.windowscentral.com##+js(acs, loadTaboola)
-www.windowscentral.com##^script:has-text(/GdprApplies/i)
 www.windowscentral.com##^script:has-text(/GdprApplies/i):remove()
-www.windowscentral.com##:xpath(//script[contains(text(), 'GdprApplies')])
 www.windowscentral.com##:xpath(//script[contains(text(), 'GdprApplies')]):remove()
+www.windowscentral.com##+js(set-constant, window.vanilla.loadGTM, noopFunc)
+www.windowscentral.com##+js(set-constant, gtmCode, "")
+www.windowscentral.com##+js(trusted-replace-node-text, script, /"clsReporting":{"enabled":true}/, "clsReporting":{"enabled":false})
+www.windowscentral.com##+js(trusted-replace-node-text, script, /"gtm":{"vanilla":true,"sitespecific":true}/, "gtm":{"vanilla":false,"sitespecific":false})
+www.windowscentral.com##+js(trusted-replace-node-text, script, /"selligent":{"enabled":true}/, "selligent":{"enabled":false})
+www.windowscentral.com##+js(trusted-replace-node-text, script, /"freyr":{"enabled":true,"ga4SpecificGTM":{"enabled":true,"code":"GTM-WWBWRXL"}}}/, "freyr":{"enabled":false,"ga4SpecificGTM":{"enabled":false,"code":""}})
+! copy attribute value to src instead of renaming attribute
+! TODO: Always leading space in class name sought?
+! Either of the following attributes will work for src since they are identical value.
+www.windowscentral.com##+js(set-attr, img[class*=" lazy-image-van"], src, [data-original-mos])
+!www.windowscentral.com##+js(set-attr, img[class*=" lazy-image-van"], src, [data-pin-media])
 ! Don't need to remove current src attribute to rename other attribute to it
-!www.windowscentral.com##+js(rna, img[class=" lazy-image-van"], data-pin-media, src)
-www.windowscentral.com##+js(rna, img[class=" lazy-image-van"], data-original-mos, src)
+!www.windowscentral.com##+js(rna, img[class*=" lazy-image-van"], data-original-mos, src)
+!www.windowscentral.com##+js(rna, img[class*=" lazy-image-van"], data-pin-media, src)
 !||champagne.futurecdn.net/champagne.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||n9f8j2f8.stackpathcdn.com/champagne.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||champagne.futurecdn.net^*
@@ -46032,8 +46035,10 @@ streamtape.com,stapadblockuser.xyz##script[class="nunush"]:remove()
 streamtape.com,stapadblockuser.xyz##:xpath(//script[contains(text(), 'debugger;')]):remove()
 streamtape.com,stapadblockuser.xyz##^script:has-text(/debugger;/):remove()
 streamtape.com,stapadblockuser.xyz##script:has-text(/debugger;/):remove()
-streamtape.com,stapadblockuser.xyz##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-streamtape.com,stapadblockuser.xyz##+js(acs, /^debugger;/)
+!streamtape.com,stapadblockuser.xyz##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+streamtape.com,stapadblockuser.xyz##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+streamtape.com,stapadblockuser.xyz##+js(acs, /debugger;/)
 streamtape.com,stapadblockuser.xyz##+js(set-constant, googleAd, false)
 streamtape.com,stapadblockuser.xyz##+js(set-constant, rFrx, false)
 streamtape.com,stapadblockuser.xyz##+js(aeld, contextmenu)
@@ -46525,7 +46530,8 @@ sporttuna.com,sporttuna.sx,sporttuna.site##+js(no-window-open-if)
 ||coutersurlily.digital^*
 ||directresulto.org^*
 ! TODO: the following rule does not work; because the script is anonymous/generated?
-www.niaomea.me##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+!www.niaomea.me##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+www.niaomea.me##+js(remove-node-text, script, /debugger;/gm)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 www.niaomea.me##script[adblock-settings]:remove()
 www.niaomea.me##script[mads]:remove()
@@ -46936,8 +46942,10 @@ wikisport.click,wikisport.se##:xpath(//script[contains(text(), 'window.location.
 wikisport.click,wikisport.se##:xpath(//script[contains(text(), 'debugger;')]):remove()
 wikisport.click,wikisport.se##^script:has-text(/debugger;/):remove()
 wikisport.click,wikisport.se##script:has-text(/debugger;/):remove()
-wikisport.click,wikisport.se##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-wikisport.click,wikisport.se##+js(acs, /^debugger;/)
+!wikisport.click,wikisport.se##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+wikisport.click,wikisport.se##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+wikisport.click,wikisport.se##+js(acs, /debugger;/)
 wikisport.click,wikisport.se##+js(set-constant, show_msg, 0)
 wikisport.click,wikisport.se##+js(set-constant, unsandbox, noopFunc)
 wikisport.click,wikisport.se##+js(aeld, contextmenu)
@@ -47297,8 +47305,10 @@ nobodywalked.com##+js(set-constant, player.options.playback.disableContextMenu, 
 ! This does not actually set the volume level which is still 0 at initial setting.
 nobodywalked.com##+js(set-constant, player.options.mute, false)
 ! TODO: The following rule does not work to remove the debugger command. Is this because the script is obfuscated?
-nobodywalked.com##+js(trusted-replace-node-text, script, /^eval\("debugger;"\);/gm, "")
-nobodywalked.com##+js(trusted-replace-node-text, script, /debugger;/gm, "")
+!nobodywalked.com##+js(trusted-replace-node-text, script, /^eval\("debugger;"\);/gm, "")
+!nobodywalked.com##+js(trusted-replace-node-text, script, /debugger;/gm, "")
+nobodywalked.com##+js(remove-node-text, script, /eval\("debugger;"\);/gm)
+nobodywalked.com##+js(remove-node-text, script, /debugger;/gm)
 nobodywalked.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
 nobodywalked.com##^script:has-text(/debugger;/):remove()
 nobodywalked.com##script:has-text(/debugger;/):remove()
@@ -48556,6 +48566,41 @@ www.gamesradar.com##+js(set-constant, ccpaApplies, false)
 www.gamesradar.com##+js(set-constant, selligentID, "")
 ! The following blocks legitimate URL redirects.
 !||target.georiot.com^*
+en.wikibooks.org##div[class^="mw-dismissable-notice"]:remove()
+en.wikibooks.org##div[id="localNotice"]:remove()
+en.wikibooks.org##div[id="wll2021"]:remove()
+!||streamgo.to/cdb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+!||streamgo.to/cda.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||streamgo.to/counter.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||streamgo.to/css/banr-adstera.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||streamgo.to/css/stat.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+streamgo.to##div[id="adbtm"]:remove()
+streamgo.to##div[id="ban1"]:remove()
+streamgo.to##div[class^="adv-ad ad-"]:remove()
+streamgo.to##div[id="ads"]:remove()
+streamgo.to##div[id="atContainer-"]:remove()
+streamgo.to##iframe[id^="ifre"]
+streamgo.to##td:has-text(This ad will close in 30 seconds):remove()
+streamgo.to##^script:has-text(-parseInt):remove()
+streamgo.to##^script:has-text(/debugger;/):remove()
+streamgo.to##:xpath(//script[contains(text(), 'debugger;')]):remove()
+!streamgo.to##+js(aopr, dto_krispl1)
+!streamgo.to##+js(aopw, dto_krispl1)
+!streamgo.to##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+streamgo.to##+js(remove-node-text, script, /debugger;/gm)
+streamgo.to##+js(acs, /debugger;/)
+streamgo.to##+js(aopr, ct_SuUrl)
+streamgo.to##+js(aopw, ct_SuUrl)
+streamgo.to##+js(aopw, document.oncontextmenu)
+streamgo.to##+js(aopr, document.oncontextmenu)
+rkc.primetubsub.xyz##^script:has-text(-parseInt):remove()
+rkc.primetubsub.xyz##^script:has-text(/debugger;/):remove()
+rkc.primetubsub.xyz##:xpath(//script[contains(text(), 'debugger;')]):remove()
+rkc.primetubsub.xyz##+js(aopw, document.oncontextmenu)
+rkc.primetubsub.xyz##+js(aopr, document.oncontextmenu)
+rkc.primetubsub.xyz##+js(acs, /debugger;/)
+!rkc.primetubsub.xyz##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+rkc.primetubsub.xyz##+js(remove-node-text, script, /debugger;/gm)
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
