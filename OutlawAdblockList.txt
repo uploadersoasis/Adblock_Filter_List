@@ -48486,6 +48486,39 @@ www.scribd.com##div[data-testid="sticky-wrapper"]:remove()
 www.scribd.com##+js(set-constant, docManager.setupPaidDocument, noopFunc)
 !||www.scribd.com/log/dd$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||www.scribd.com/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+5pdf.org##div[id="MainCookie"]:remove()
+||rletcloaksandth.com^*
+||d3ubdcv1nz4dub.cloudfront.net^*
+||ebookchasseur.com/ebook/urchin.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||ebook-hunter.org/ebook/urchin.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+ebook-hunter.org##div[id="header_ads"]:remove()
+ebook-hunter.org##+js(set-constant, _uacct, "")
+ebook-hunter.org##+js(set-constant, urchinTracker, noopFunc)
+ebook-hunter.org##+js(acs, /urchinTracker\(/)
+ebook-hunter.org##+js(aopw, _uacct)
+ebook-hunter.org##+js(aopr, _uacct)
+||dqdrsgankrum.org^*
+||manbycustom.org^*
+||futilepreposterous.com^*
+||*/apu.php?zoneid=$xhr
+tiny-files.com##+js(aeld, click)
+tiny-files.com##input[id="btn_download"]:remove-attr(disabled)
+tiny-files.com##+js(remove-attr, disabled, #btn_download)
+tiny-files.com##span[id="countdown_str"]:remove()
+*$3p,script,domain=tiny-files.com
+! TODO: which domain should have the following three rules, i.e. the main or the domain from which the script is loaded?
+tiny-files.com##+js(set-constant, hasImpressionPixel, falseFunc)
+tiny-files.com##+js(set-constant, updateLatencyPixelLink, noopFunc)
+tiny-files.com##+js(set-constant, latencyPixelPlaced, true)
+ashcdn.com##+js(set-constant, hasImpressionPixel, falseFunc)
+ashcdn.com##+js(set-constant, updateLatencyPixelLink, noopFunc)
+ashcdn.com##+js(set-constant, latencyPixelPlaced, true)
+||holdenthusiastichalt.com^*
+||1r8435gsqldr.com^*
+||yim3eyv5.top^*
+||m73lae5cpmgrv38.com^*
+||andtheircleanw.com^*
+||d34zwq0l4x27a6.cloudfront.net^*
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
