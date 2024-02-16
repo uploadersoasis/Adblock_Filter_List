@@ -30221,7 +30221,6 @@ www.eib.org##div[id="eib-popup-policy"]
 mail.yahoo.com##li[role="list-item"]:has(a[data-test-id^="pencil-ad-message"])
 ||mail.yahoo.com/d/log?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 www.alcatelunleashed.com##div[aria-label="cookieconsent"]
-www.scribd.com##div[aria-label="Consent Manager by Osano"]
 www.att.com##div[class="advertisementpanel"]
 ||www.att.com/scripts/adobe/prod/attmonetization/js/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 blog.getpaint.net##div[id="eu-cookie-law"]
@@ -43187,34 +43186,21 @@ www.247solitaire.com##+js(abort-on-property-read, adsEnabled)
 !||streetuptowind.com/services/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||streetuptowind.com^*
 ||d24g87zbxr4yiz.cloudfront.net^*
-www.howtogeek.com##div[class*="ad-loading"]
-www.howtogeek.com##div[class*="ad-loading"]:remove()
-www.howtogeek.com##div[class*="ad-zone-"]
-www.howtogeek.com##div[class*="ad-zone-"]:remove()
-www.howtogeek.com##div[class*="adsninja-ad-zone"]
-www.howtogeek.com##div[class*="adsninja-ad-zone"]:remove()
-www.howtogeek.com##div[class*="dynamically-injected-refresh-ad-zone"]
-www.howtogeek.com##div[class*="dynamically-injected-refresh-ad-zone"]:remove()
-www.howtogeek.com##div[class="ad-current"]
-www.howtogeek.com##div[class="ad-current"]:remove()
-www.howtogeek.com##div[data-nosnippet]:has(span[class="future_inline_clone_target"]:has-text(/Advertisement/i))
-www.howtogeek.com##div[data-nosnippet]:has(span[class="future_inline_clone_target"]:has-text(/Advertisement/i)):remove()
-www.howtogeek.com##div[id^="ad-zone-"]
-www.howtogeek.com##div[id^="ad-zone-"]:remove()
-www.howtogeek.com##div[id^="adsninja-ad-"]
-www.howtogeek.com##div[id^="adsninja-ad-"]:remove()
-www.howtogeek.com##div[id^="dynamically-injected-refresh-ad-zone"]
-www.howtogeek.com##div[id^="dynamically-injected-refresh-ad-zone"]:remove()
-www.howtogeek.com##strong[class*="ad-zone-advertising-"]
-www.howtogeek.com##strong[class*="ad-zone-advertising-"]:remove()
-www.howtogeek.com##div[class*="adslot"]
-www.howtogeek.com##div[class*="adslot"]:remove()
-www.howtogeek.com##amp-iframe
 www.howtogeek.com##amp-iframe:remove()
-www.howtogeek.com^script:has-text(/tmntag\.adTag/i)
-www.howtogeek.com^script:has-text(/tmntag\.adTag/i):remove()
-www.howtogeek.com###div-thetop1
 www.howtogeek.com###div-thetop1:remove()
+www.howtogeek.com##div[class*="adslot"]:remove()
+www.howtogeek.com##div[class*="ad-loading"]:remove()
+www.howtogeek.com##div[class*="ad-zone-"]:remove()
+www.howtogeek.com##div[class*="adsninja-ad-zone"]:remove()
+www.howtogeek.com##div[class*="dynamically-injected-refresh-ad-zone"]:remove()
+www.howtogeek.com##div[class="ad-current"]:remove()
+www.howtogeek.com##div[data-nosnippet]:has(span[class="future_inline_clone_target"]:has-text(/Advertisement/i)):remove()
+www.howtogeek.com##div[id^="ad-zone-"]:remove()
+www.howtogeek.com##div[id^="adsninja-ad-"]:remove()
+www.howtogeek.com##div[id^="dynamically-injected-refresh-ad-zone"]:remove()
+www.howtogeek.com##div[id="article-limit-container"]:remove()
+www.howtogeek.com##strong[class*="ad-zone-advertising-"]:remove()
+www.howtogeek.com^script:has-text(/tmntag\.adTag/i):remove()
 www.howtogeek.com##+js(set-constant, loadAnalyticsData, noopFunc)
 www.howtogeek.com##+js(set-constant, VALNET_GLOBAL_ADS, "")
 www.howtogeek.com##+js(set-constant, VALNET_GLOBAL_ISADBLOCK, false)
@@ -44085,12 +44071,24 @@ uploadrar.com^$inline-script
 ||d1spc7iz1ls2b1.cloudfront.net^*
 ||pagesix.com/wp-content/plugins/nyp-video-player/build/jwadvertise.bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||pagesix.com/wp-content/plugins/nyp-video-player/build/jwanalytics.bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-pagesix.com##div[id^="div-gpt-ad-"]
+pagesix.com##body:remove-class(nyp-non-membership-view)
+pagesix.com##+js(remove-class, nyp-non-membership-view, body)
+pagesix.com##body:remove-class(header-recirc-bar-enabled)
+pagesix.com##+js(remove-class, header-recirc-bar-enabled, body)
 pagesix.com##div[id^="div-gpt-ad-"]:remove()
-pagesix.com##div[class="nyp-sitewide-notice"]
-pagesix.com##div[class*="billboard-ad"]
-pagesix.com##div[class="content-wrap"]:has(div[class="sitewide-notice"])
+pagesix.com##div[class="nyp-sitewide-notice"]:remove()
+pagesix.com##div[class*="billboard-ad"]:remove()
 pagesix.com##div[class="content-wrap"]:has(div[class="sitewide-notice"]):remove()
+pagesix.com##div[class*="ad--container"]:remove()
+pagesix.com##div[class*="ad__wrapper"]:remove()
+pagesix.com##div[class*="ad__placeholder"]:remove()
+pagesix.com##div[class*="div-gpt-ad-"]:remove()
+pagesix.com##div[class*="ad-slot"]:remove()
+pagesix.com##div[data-recirc-bar]:remove()
+pagesix.com##div[data-ad-target][data-component="billboardOverlay"]:remove()
+pagesix.com##+js(set-constant, window.nypGa, noopFunc)
+pagesix.com##+js(abort-on-property-read, window.nypGa)
+pagesix.com##+js(abort-on-property-write, window.nypGa)
 pagesix.com##+js(set-constant, OptanonWrapper, noopFunc)
 pagesix.com##+js(abort-on-property-read, OptanonWrapper)
 pagesix.com##+js(abort-on-property-write, OptanonWrapper)
@@ -48453,6 +48451,21 @@ thepostmillennial.com##+js(nosiif, checkIfUspIsReady)
 ||dn0qt3r0xannq.cloudfront.net/tpm-sTDaTcae8k/default/prebid-wrapper.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dn0qt3r0xannq.cloudfront.net/tpm-sTDaTcae8k/default/prebid-load.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||dn0qt3r0xannq.cloudfront.net/plugins/ad-server.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+docviewer.xdocs.net##div[id="XDOCSNET_cookie_box"]:remove()
+docviewer.xdocs.net##+js(set-constant, XDOCSNET_cookie_box_viewed, true)
+docviewer.xdocs.net##footer:remove()
+||paunaupa.com^*
+||hribmjvvmuk.com^*
+www.scribd.com##div[aria-label="Consent Manager by Osano"]:remove()
+www.scribd.com##div[class="promo_div"]:remove()
+www.scribd.com##div[id^="outer_page_"]:remove-class(blurred_page)
+www.scribd.com##+js(remove-class, blurred_page, div[id^="outer_page_"])
+www.scribd.com##div[id^="outer_page_"]:remove-attr(unselectable)
+www.scribd.com##+js(remove-attr, unselectable, div[id^="outer_page_"])
+www.scribd.com##div[id^="page"]:remove-attr(unselectable)
+www.scribd.com##+js(remove-attr, unselectable, div[id^="page"])
+! TODO: The following rule (sometimes?) makes the document preview viewport be removed.
+!www.scribd.com##div[class="between_page_portal_root"]:remove()
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
