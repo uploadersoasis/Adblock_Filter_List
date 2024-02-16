@@ -31245,7 +31245,6 @@ fastclick.to##+js(nosiif, /^function\(\)/)
 apk4k.fun##div[class="ad_spoiler"]
 apk4k.fun##div[class="ad"]
 ||wildroid.ru/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-www.gamesradar.com##div[class*="ad-unit"]
 www.rollingstone.com##div[id^="adm-inline-article-ad-"]
 www.rollingstone.com##div[class*="pmc-adm-boomerang-pub-div"]
 www.eonline.com##div[class*="--topad"]
@@ -36623,7 +36622,6 @@ adblockplus.org##+js(remove-class, show-cookies-notice, body)
 www.pythontutorial.net##div[class="whitelist"]
 www.pythontutorial.net##div[data-aa-adunit]
 www.pythontutorial.net##div[class="ad ad-336"]
-||target.georiot.com^*
 ||ads.resetsrv.com^*
 ||www.increaserev.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 secureads.increaserev.com^*
@@ -48519,6 +48517,45 @@ ashcdn.com##+js(set-constant, latencyPixelPlaced, true)
 ||m73lae5cpmgrv38.com^*
 ||andtheircleanw.com^*
 ||d34zwq0l4x27a6.cloudfront.net^*
+freecomputerbooks.com##ins[data-ad-client]:remove()
+freecomputerbooks.com##div[id^="adsense"]:remove()
+freecomputerbooks.com##div[id="ad160x600LeftContent"]:remove()
+freecomputerbooks.com##+js(set-constant, gtag, noopFunc)
+freecomputerbooks.com##+js(set-constant, window.dataLayer, [])
+freecomputerbooks.com##+js(acs, gtag, window.dataLayer)
+! TODO: These two rules don't work either to defuse the contextmenu.
+!freecomputerbooks.com##+js(set-constant, anonymous, noopFunc)
+!freecomputerbooks.com##+js(acs, /anonymous\(\)/)
+! The following six rules defuse the contextmenu.
+freecomputerbooks.com##+js(aopr, document.oncontextmenu)
+freecomputerbooks.com##+js(aopr, document.onmousedown)
+freecomputerbooks.com##+js(aopr, document.onmouseup)
+freecomputerbooks.com##+js(aopw, document.oncontextmenu)
+freecomputerbooks.com##+js(aopw, document.onmousedown)
+freecomputerbooks.com##+js(aopw, document.onmouseup)
+! TODO: The following rule only works once the document.onmousedown and document.onmouseup variables are also defused.
+freecomputerbooks.com##+js(aeld, contextmenu, anonymous)
+www.gamesradar.com##div[class*="ad-unit"]:remove()
+www.gamesradar.com##div[class="dfp-leaderboard-container"]:remove()
+www.gamesradar.com##+js(set-constant, loadTaboola, noopFunc)
+www.gamesradar.com##+js(acs, loadTaboola)
+www.gamesradar.com##+js(set-constant, window.reliableConsentGiven, false)
+www.gamesradar.com##+js(aopr, window.reliableConsentGiven)
+www.gamesradar.com##+js(aopw, window.reliableConsentGiven)
+www.gamesradar.com##footer[id^="taboola-below-article"]:remove()
+www.gamesradar.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
+www.gamesradar.com##div[data-ads-type]:remove()
+! Do NOT abort on injectComscore or callComscore since it will prevent videos from playing.
+www.gamesradar.com##+js(set-constant, injectComscore, noopFunc)
+www.gamesradar.com##+js(set-constant, callComscore, noopFunc)
+www.gamesradar.com##+js(set-constant, selligent_initialiser, noopFunc)
+www.gamesradar.com##script[id="selligent-tag"]:remove()
+www.gamesradar.com##+js(set-constant, consentResponse.consent, false)
+www.gamesradar.com##+js(set-constant, consentResponse.consent.gdprApplies, false)
+www.gamesradar.com##+js(set-constant, ccpaApplies, false)
+www.gamesradar.com##+js(set-constant, selligentID, "")
+! The following blocks legitimate URL redirects.
+!||target.georiot.com^*
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
