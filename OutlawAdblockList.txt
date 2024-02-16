@@ -45749,21 +45749,27 @@ apkstreamz.com##+js(saa, data-timer, 1, .show_download_links)
 ||igg-games.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||igg-games.com/wp-content/uploads/2019/10/AdblockDetected.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 ||igg-games.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
-igg-games.com##a[href*="//tm-offers.gamingadult.com/"]:remove()
-igg-games.com##a[href$="//igg-games.com/flix1"]:remove()
-igg-games.com##a[href$="//igg-games.com/flix2"]:remove()
-igg-games.com##a[aria-label="ad2"]:remove()
-igg-games.com##div[class*="widget-advads-ad-widget"]:remove()
-igg-games.com##div[id^="advads_ad_widget-"]:remove()
-igg-games.com##script[id="games-ready"]:remove()
-igg-games.com##+js(set-constant, window.advanced_ads_ready, noopFunc)
-igg-games.com##+js(aopw, window.advanced_ads_ready)
-igg-games.com##+js(aopr, window.advanced_ads_ready)
-igg-games.com##+js(set-constant, script_element, null)
-igg-games.com##+js(aopw, script_element)
-igg-games.com##+js(aopr, script_element)
-igg-games.com##+js(set-constant, gtag, noopFunc)
-igg-games.com##+js(acs, gtag)
+||pcgamestorrents.com/maven/av.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||pcgamestorrents.com/admaven/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||pcgamestorrents.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||pcgamestorrents.com/wp-content/uploads/2019/10/AdblockDetected.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||pcgamestorrents.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+igg-games.com,pcgamestorrents.com##a[href*="//tm-offers.gamingadult.com/"]:remove()
+igg-games.com,pcgamestorrents.com##a[href$="//igg-games.com/flix1"]:remove()
+igg-games.com,pcgamestorrents.com##a[href$="//igg-games.com/flix2"]:remove()
+igg-games.com,pcgamestorrents.com##a[aria-label="ad2"]:remove()
+igg-games.com,pcgamestorrents.com##div[class*="widget-advads-ad-widget"]:remove()
+igg-games.com,pcgamestorrents.com##div[id^="advads_ad_widget-"]:remove()
+igg-games.com,pcgamestorrents.com##script[id="games-ready"]:remove()
+igg-games.com,pcgamestorrents.com##+js(set-constant, window.advanced_ads_ready, noopFunc)
+igg-games.com,pcgamestorrents.com##+js(aopw, window.advanced_ads_ready)
+igg-games.com,pcgamestorrents.com##+js(aopr, window.advanced_ads_ready)
+igg-games.com,pcgamestorrents.com##+js(set-constant, script_element, null)
+igg-games.com,pcgamestorrents.com##+js(aopw, script_element)
+igg-games.com,pcgamestorrents.com##+js(aopr, script_element)
+igg-games.com,pcgamestorrents.com##+js(set-constant, gtag, noopFunc)
+igg-games.com,pcgamestorrents.com##+js(acs, gtag)
+^*$3p,script,xhr,domain=igg-games.com|pcgamestorrents.com
 ||dhyanaquintes.digital^*
 ||liberia.artertapirus.com^*
 ||koronaararao.guru^*
@@ -45774,7 +45780,6 @@ igg-games.com##+js(acs, gtag)
 ||dreamsofcryingf.com^*
 ||kepersaonwho.org^*
 ||anopportunitytost.info^*
-www.superantispyware.com##div[id="cookie-notification"]
 www.superantispyware.com##div[id="cookie-notification"]:remove()
 ||codedome.online^*
 ||341073be6e9db7d2.com^*
@@ -48601,8 +48606,19 @@ rkc.primetubsub.xyz##+js(aopr, document.oncontextmenu)
 rkc.primetubsub.xyz##+js(acs, /debugger;/)
 !rkc.primetubsub.xyz##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 rkc.primetubsub.xyz##+js(remove-node-text, script, /debugger;/gm)
+||inhumerlire.top^*
+||sarrowgrivois.com^*
+||patakaendymal.top^*
+||*/1clkn/$script
+!||swelty.qianaecrus.top^*
+||qianaecrus.top^*
+||92f77b89a1b2df1b539ff2772282e19b.com^*
+||foggilysyling.top^*
+||inbowedkittled.top^*
 
 !Whitelisted
+!@@||cdn.fastcomments.com^*$3p,script,xhr,domain=igg-games.com|pcgamestorrents.com
+@@||fastcomments.com^*$3p,script,xhr,domain=igg-games.com
 ! TODO: add video streaming websites to the following two rules as need be
 @@|*.rsc.cdn77.org/*/hlsjs.$script,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
 @@|*.rsc.cdn77.org/*/fluidplayer.$script,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
