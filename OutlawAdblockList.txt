@@ -48458,14 +48458,34 @@ docviewer.xdocs.net##footer:remove()
 ||hribmjvvmuk.com^*
 www.scribd.com##div[aria-label="Consent Manager by Osano"]:remove()
 www.scribd.com##div[class="promo_div"]:remove()
-www.scribd.com##div[id^="outer_page_"]:remove-class(blurred_page)
-www.scribd.com##+js(remove-class, blurred_page, div[id^="outer_page_"])
+! TODO: an asterisk doesn't work for the following two rules
+www.scribd.com##div:remove-class(blurred_page)
+www.scribd.com##+js(remove-class, blurred_page, div)
+www.scribd.com##span:remove-class(blurred_page)
+www.scribd.com##+js(remove-class, blurred_page, span)
+!www.scribd.com##div[class^="outer_page_"]:remove-class(blurred_page)
+!www.scribd.com##+js(remove-class, blurred_page, div[class^="outer_page_"])
+!www.scribd.com##div[id^="outer_page_"]:remove-class(blurred_page)
+!www.scribd.com##+js(remove-class, blurred_page, div[id^="outer_page_"])
 www.scribd.com##div[id^="outer_page_"]:remove-attr(unselectable)
 www.scribd.com##+js(remove-attr, unselectable, div[id^="outer_page_"])
 www.scribd.com##div[id^="page"]:remove-attr(unselectable)
 www.scribd.com##+js(remove-attr, unselectable, div[id^="page"])
-! TODO: The following rule (sometimes?) makes the document preview viewport be removed.
-!www.scribd.com##div[class="between_page_portal_root"]:remove()
+www.scribd.com##div[class="text_layer"]:remove-attr(unselectable)
+www.scribd.com##+js(remove-attr, unselectable, div[class="text_layer"])
+www.scribd.com##span:remove-attr(unselectable)
+www.scribd.com##+js(remove-attr, unselectable, span)
+www.scribd.com##+js(trusted-replace-node-text, script, /"isAccessibleForFree":"False"/g, "isAccessibleForFree":"True")
+www.scribd.com##+js(trusted-replace-node-text, script, /"cssSelector":".blurred_page"/g, "cssSelector":"")
+www.scribd.com##+js(trusted-replace-node-text, script, /this.allowedPages=t/g, this.allowedPages=e)
+! TODO: Do NOT add remove() to the following rule as it removes the entire document viewport for some reason.
+www.scribd.com##div[class="between_page_portal_root"]:has(hr[class="separator"])
+! TODO: Do NOT add remove() to the following rule as it removes the entire page for some reason.
+www.scribd.com##div[data-testid="desktop-leaderboard"]
+www.scribd.com##div[data-testid="sticky-wrapper"]:remove()
+www.scribd.com##+js(set-constant, docManager.setupPaidDocument, noopFunc)
+!||www.scribd.com/log/dd$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
+||www.scribd.com/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping
 
 !Whitelisted
 ! TODO: add video streaming websites to the following two rules as need be
