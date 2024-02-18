@@ -40200,9 +40200,40 @@ www.2embed.to##iframe[src="about:blank"]:remove()
 www.2embed.to##:xpath("/html/body/script[1]")
 www.2embed.to##:xpath("/html/body/script[1]"):remove()
 rabbitstream.net##vid[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
+rabbitstream.net##+js(remove-attr, disableremoteplayback, vid[class="jw-video jw-reset"])
 rabbitstream.net##+js(set-constant, gtag, noopFunc)
 rabbitstream.net##+js(acs, gtag)
 rabbitstream.net##video:remove-attr(disableremoteplayback)
+rabbitstream.net##+js(remove-attr, disableremoteplayback, video)
+!rabbitstream.net##+js(set-constant, devtoolsDetector, [])
+! The following rules defuse the rabbitstream.net/js/player/prod/e4-player.min.js script which terminates the video player if the developer tools/console is opened.
+! Redefining devtoolsDetector.launch prevents the interval of checking for the developer tools which clears the console.
+! Running devtoolsDetector.stop(); also stops the interval checks.
+!rabbitstream.net##+js(set-constant, devtoolsDetector.launch, noopFunc, end)
+!rabbitstream.net##+js(set-constant, devtoolsDetector.launch, noopFunc, complete)
+rabbitstream.net##+js(set-constant, devtoolsDetector.launch, noopFunc)
+! These devtoolsDetector rules appear to be optional.
+!rabbitstream.net##+js(set-constant, devtoolsDetector.default._detectLoop, noopFunc, end)
+!rabbitstream.net##+js(set-constant, devtoolsDetector.default._detectLoop, noopFunc, complete)
+rabbitstream.net##+js(set-constant, devtoolsDetector.default._detectLoop, noopFunc)
+!rabbitstream.net##+js(set-constant, devtoolsDetector.default._checkers, {}, end)
+!rabbitstream.net##+js(set-constant, devtoolsDetector.default._checkers, {}, complete)
+rabbitstream.net##+js(set-constant, devtoolsDetector.default._checkers, {})
+!rabbitstream.net##+js(set-constant, devtoolsDetector.addListener, noopFunc, end)
+!rabbitstream.net##+js(set-constant, devtoolsDetector.addListener, noopFunc, complete)
+rabbitstream.net##+js(set-constant, devtoolsDetector.addListener, noopFunc)
+!rabbitstream.net##+js(set-constant, devtoolsDetector.clear, noopFunc, end)
+!rabbitstream.net##+js(set-constant, devtoolsDetector.clear, noopFunc, complete)
+rabbitstream.net##+js(set-constant, devtoolsDetector.clear, noopFunc)
+rabbitstream.net##+js(aeld, beforeunload)
+! TODO: This does NOT stop the interval which is clearing the console.
+!       It does not appear to hurt anything to enable it though as the functions don't appear to be vital to play the video.
+!rabbitstream.net##+js(nosiif)
+! The following four rules don't appear to have any effect.
+!rabbitstream.net##+js(acs, /console.clear\(\)/)
+!rabbitstream.net##+js(acs, devtoolsDetector)
+!rabbitstream.net##+js(aopw, devtoolsDetector)
+!rabbitstream.net##+js(aopr, devtoolsDetector)
 ||rabbitstream.net/ajax/embed-4/banners$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ! Do NOT block as rabbitstream.net is the iframe which plays the video.
 !||rabbitstream.net/embed-4/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -48635,7 +48666,10 @@ putlocker.boo##+js(set-constant, FingerprintJS, noopFunc)
 !putlocker.pe,putlocker.sb##+js(set-constant, _0x39426c, noopFunc)
 !putlocker.pe,putlocker.sb##+js(nosiif, /^function\(\)/)
 putlocker.pe,putlocker.sb##+js(nosiif, /^/)
-putlocker.pe,putlocker.sb##+js(set-constant, devtoolsDetectInterval, noopFunc)
+! The function to detect the developer tools is loaded in the third-party iframes not in putlocker's scope.
+! TODO: Set the interval in the following rule to the maximum value of 32767 or to 0?  The normal value is 7.
+!putlocker.pe,putlocker.sb##+js(set-constant, devtoolsDetectInterval, 0)
+putlocker.pe,putlocker.sb##+js(set-constant, devtoolsDetectInterval, 32767)
 !putlocker.pe,putlocker.sb##+js(set-constant, window.kkp4a5x5tv, noopFunc, end)
 putlocker.pe,putlocker.sb##+js(set-constant, window.kkp4a5x5tv, noopFunc, complete)
 putlocker.pe,putlocker.sb##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
@@ -48648,7 +48682,12 @@ putlocker.pe,putlocker.sb##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 putlocker.pe,putlocker.sb##div[id="modalshare"]:remove()
 putlocker.pe,putlocker.sb##div[id="hgiks-top"]:remove()
 putlocker.pe,putlocker.sb##div[class="mba-block"]:remove()
+putlocker.pe,putlocker.sb##div[id="vpn-top"]:remove()
 putlocker.pe,putlocker.sb##button:has-text(/submit/i):remove-attr(disabled)
+!putlocker.pe,putlocker.sb##iframe[id="iframe-embed"]:style(height: 100vh !important; width: 100vw !important;)
+! width is already set at 100%
+!putlocker.pe,putlocker.sb##+js(saa, width, 100%, iframe[id="iframe-embed"])
+putlocker.pe,putlocker.sb##+js(saa, height, 100%, iframe[id="iframe-embed"])
 ! remove CAM quality movies from putlocker results
 putlocker.pe,putlocker.sb##div[class="flw-item"]:has(div[class="film-poster"]:has(div[class="pick film-poster-quality"]:has-text(CAM))):remove()
 ||putlocker.sb/ajax/banners$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
