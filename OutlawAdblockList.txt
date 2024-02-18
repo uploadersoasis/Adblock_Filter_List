@@ -21931,7 +21931,7 @@ www.youtube.com##+js(set-constant, a.displayAdBlocks_, null, stay)
 www.youtube.com##+js(set-constant, a.videoInstreamAdBlocks_, null, stay)
 !www.youtube.com##+js(set-constant, ytcsi, {}) !breaks youtube completely
 ! stops all settimeout functions @ youtube; also breaks youtube completely
-!www.youtube.com##+js(nostif, /^/)
+!www.youtube.com##+js(no-setTimeout-if, /^/)
 ! Neither of the following override the original setting @ youtube.com
 !www.youtube.com##+js(set-constant, ytcsi.now, noopFunc, end)
 !www.youtube.com##+js(set-constant, ytcsi.now, noopFunc, complete)
@@ -27820,15 +27820,15 @@ online-fix.me##+js(abort-on-property-write, window.K3)
 online-fix.me##+js(abort-current-inline-script, replaceWith)
 !online-fix.me##^script:has-text(w30718356951d090ce9e5eddfe5beed11) !won't work since is a random string that always starts with w
 !online-fix.me##+js(remove-attr.js, src, , stay) !break too many other tags with src attributes
-!online-fix.me##+js(nostif, /^/) !works but stops Google Translate from working https://translate.googleapis.com/element/TE_20210224_00/e/js/element/element_main.js
-online-fix.me##+js(nostif, w, !undefined)
+!online-fix.me##+js(no-setTimeout-if, /^/) !works but stops Google Translate from working https://translate.googleapis.com/element/TE_20210224_00/e/js/element/element_main.js
+online-fix.me##+js(no-setTimeout-if, w, !undefined)
 online-fix.me##+js(set-constant, gdprApplies, false)
 online-fix.me##+js(set-constant, uspInterval, noopFunc)
-online-fix.me##+js(nostif, uspInterval)
+online-fix.me##+js(no-setTimeout-if, uspInterval)
 online-fix.me##+js(set-constant, e8c43d8940_interval, noopFunc)
-online-fix.me##+js(nostif, e8c43d8940_interval)
+online-fix.me##+js(no-setTimeout-if, e8c43d8940_interval)
 online-fix.me##+js(set-constant, e7f652f7be_interval, noopFunc)
-online-fix.me##+js(nostif, e7f652f7be_interval)
+online-fix.me##+js(no-setTimeout-if, e7f652f7be_interval)
 online-fix.me##+js(set-constant, crWEbPushEl, noopFunc)
 online-fix.me##+js(abort-on-property-read, crWEbPushEl)
 online-fix.me##+js(abort-on-property-write, crWEbPushEl)
@@ -28151,8 +28151,8 @@ tii.ai##div[id="ad-banner"]
 !tii.ai##^script:has-text(/checkAdblockUser\(\)/i)
 !tii.ai##+js(set-constant, e, "")
 tii.ai##+js(no-window-open-if, !/tii\.ai/i)
-!tii.ai##+js(nostif, /checkAdblockUser/i)
-tii.ai##+js(nostif, /^/, 1000)
+!tii.ai##+js(no-setTimeout-if, /checkAdblockUser/i)
+tii.ai##+js(no-setTimeout-if, /^/, 1000)
 ||geniusonclick.com^*
 ||hostingcloud.racing^*
 ||www.hostingcloud.racing^*
@@ -34598,9 +34598,9 @@ birdurls.com##+js(aopr, b13f67b4741a3b743cd66cf5acfa61b2)
 birdurls.com##+js(aopw, b13f67b4741a3b743cd66cf5acfa61b2)
 birdurls.com##+js(acs, blocker)
 birdurls.com##^script:has-text(blocker):remove()
-!birdurls.com##+js(nostif, checkAdblockUser, 1000)
-!birdurls.com##+js(nostif, /checkAdblockUser\(\)/, 1000)
-birdurls.com##+js(nostif, /^/, 1000)
+!birdurls.com##+js(no-setTimeout-if, checkAdblockUser, 1000)
+!birdurls.com##+js(no-setTimeout-if, /checkAdblockUser\(\)/, 1000)
+birdurls.com##+js(no-setTimeout-if, /^/, 1000)
 ||noxiousrecklesssuspected.com^*
 ||deceittoured.com^*
 ||rivnstjjaut.com^*
@@ -36006,7 +36006,7 @@ go.techgeek.digital##button[id="invisibleCaptchaShortlink"]:remove-attr(onclick)
 go.techgeek.digital##+js(aeld, { "type": "/click/", "pattern": "/onclick/", "log": 2 })
 !go.techgeek.digital##+js(aeld, { "type": "/click/", "pattern": "/^/", "log": 2 })
 ! (nostif, /^function\(\)/) kills the countdown timer
-!go.techgeek.digital##+js(nostif, /^function\(\)/)
+!go.techgeek.digital##+js(no-setTimeout-if, /^function\(\)/)
 !go.techgeek.digital##+js(set-constant, checkAdblockUser, noopFunc)
 ! #ad-banner is checked by checkAdblockUser();
 !go.techgeek.digital##div[id="ad-banner"]
@@ -37298,8 +37298,8 @@ poscitechs.shop,dlhd.sx##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZ
 poscitechs.shop,dlhd.sx##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 poscitechs.shop,dlhd.sx##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 !poscitechs.shop##+js(nostif)
-!poscitechs.shop##+js(nostif, /^/)
-poscitechs.shop##+js(nostif, /^function\(\)/)
+!poscitechs.shop##+js(no-setTimeout-if, /^/)
+poscitechs.shop##+js(no-setTimeout-if, /^function\(\)/)
 poscitechs.shop##iframe[src="javascript:false"]:remove()
 poscitechs.shop##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 poscitechs.shop##+js(saa, width, 100%, #thatframe)
@@ -37789,10 +37789,10 @@ embedstream.me##+js(set-constant, detectDevTool, noopFunc)
 embedstream.me##+js(set-constant, forceKillplayer, noopFunc)
 embedstream.me##+js(set-constant, debounce, noopFunc)
 embedstream.me##+js(aeld, , detectDevTool)
-!embedstream.me##+js(nostif, function())
-!embedstream.me##+js(nostif, function)
-!embedstream.me##+js(nostif, /^function()/)
-embedstream.me##+js(nostif, /^function\(\)/)
+!embedstream.me##+js(no-setTimeout-if, function())
+!embedstream.me##+js(no-setTimeout-if, function)
+!embedstream.me##+js(no-setTimeout-if, /^function()/)
+embedstream.me##+js(no-setTimeout-if, /^function\(\)/)
 !embedstream.me##+js(nosiif, function())
 !embedstream.me##+js(nosiif, function)
 !embedstream.me##+js(nosiif, /^function()/)
@@ -37826,10 +37826,10 @@ www.nolive.me##+js(set-constant, detectDevTool, noopFunc)
 www.nolive.me##+js(aeld, , detectDevTool)
 www.nolive.me##+js(set-constant, forceKillplayer, noopFunc)
 www.nolive.me##+js(set-constant, debounce, noopFunc)
-!www.nolive.me##+js(nostif, function())
-!www.nolive.me##+js(nostif, function)
-!www.nolive.me##+js(nostif, /^function()/)
-www.nolive.me##+js(nostif, /^function\(\)/)
+!www.nolive.me##+js(no-setTimeout-if, function())
+!www.nolive.me##+js(no-setTimeout-if, function)
+!www.nolive.me##+js(no-setTimeout-if, /^function()/)
+www.nolive.me##+js(no-setTimeout-if, /^function\(\)/)
 !www.nolive.me##+js(nosiif, function())
 !www.nolive.me##+js(nosiif, function)
 !www.nolive.me##+js(nosiif, /^function()/)
@@ -38568,7 +38568,7 @@ www.thestreameast.to,thestreameast.io##+js(set-constant, alertDiv, null)
 ! The following rule is to block the 4 hour streaming time restriction.
 ! TODO: It also prevents other timed functions with the same generic name.
 !       This prevents getting past the Cloudflare protection.
-!www.thestreameast.to,thestreameast.io##+js(nostif, /function\(\)/)
+!www.thestreameast.to,thestreameast.io##+js(no-setTimeout-if, /function\(\)/)
 ! The following rule removes the popup alert when the streaming time has expired.
 www.thestreameast.to,thestreameast.io##div[id="alertBox"]:remove()
 ! player.disableKeyboardShortcuts
@@ -38630,19 +38630,19 @@ www.sawlive.tv###j4qa1s:remove()
 www.sawlive.tv##div[id="hsbv3s"]
 www.sawlive.tv##div[id="s1aqja"]
 www.sawlive.tv##span[id="display300"]
-!www.sawlive.tv##+js(nostif, /^/)
-!www.sawlive.tv##+js(nostif, closeMyAd())
-!www.sawlive.tv##+js(nostif, closeMyAd)
-!www.sawlive.tv##+js(nostif, /^closeMyAd()/)
-www.sawlive.tv##+js(nostif, /^closeMyAd\(\)/)
-!www.sawlive.tv##+js(nostif, closeMyAd2())
-!www.sawlive.tv##+js(nostif, closeMyAd2)
-!www.sawlive.tv##+js(nostif, /^closeMyAd2()/)
-www.sawlive.tv##+js(nostif, /^closeMyAd2\(\)/)
-!www.sawlive.tv##+js(nostif, display())
-!www.sawlive.tv##+js(nostif, display)
-!www.sawlive.tv##+js(nostif, /^display()/)
-www.sawlive.tv##+js(nostif, /^display\(\)/)
+!www.sawlive.tv##+js(no-setTimeout-if, /^/)
+!www.sawlive.tv##+js(no-setTimeout-if, closeMyAd())
+!www.sawlive.tv##+js(no-setTimeout-if, closeMyAd)
+!www.sawlive.tv##+js(no-setTimeout-if, /^closeMyAd()/)
+www.sawlive.tv##+js(no-setTimeout-if, /^closeMyAd\(\)/)
+!www.sawlive.tv##+js(no-setTimeout-if, closeMyAd2())
+!www.sawlive.tv##+js(no-setTimeout-if, closeMyAd2)
+!www.sawlive.tv##+js(no-setTimeout-if, /^closeMyAd2()/)
+www.sawlive.tv##+js(no-setTimeout-if, /^closeMyAd2\(\)/)
+!www.sawlive.tv##+js(no-setTimeout-if, display())
+!www.sawlive.tv##+js(no-setTimeout-if, display)
+!www.sawlive.tv##+js(no-setTimeout-if, /^display()/)
+www.sawlive.tv##+js(no-setTimeout-if, /^display\(\)/)
 www.sawlive.tv###swd646
 www.sawlive.tv###swd646:remove()
 www.sawlive.tv###adba
@@ -38701,10 +38701,10 @@ www.vipleague.st##+js(aopr, _0xc84e)
 www.vipleague.st##+js(aopw, _0xc84e)
 www.vipleague.st##+js(aopr, adcashMacros)
 www.vipleague.st##+js(aopw, adcashMacros)
-!www.vipleague.st##+js(nostif, function())
-!www.vipleague.st##+js(nostif, function)
-!www.vipleague.st##+js(nostif, /^function()/)
-www.vipleague.st##+js(nostif, /^function\(\)/)
+!www.vipleague.st##+js(no-setTimeout-if, function())
+!www.vipleague.st##+js(no-setTimeout-if, function)
+!www.vipleague.st##+js(no-setTimeout-if, /^function()/)
+www.vipleague.st##+js(no-setTimeout-if, /^function\(\)/)
 !www.vipleague.st##+js(nosiif, function())
 !www.vipleague.st##+js(nosiif, function)
 !www.vipleague.st##+js(nosiif, /^function()/)
@@ -38871,11 +38871,11 @@ cricfree.live##+js(saa, width, 100%, iframe[src^="https://cricplay2.xyz/sky-spor
 cricfree.live##+js(saa, height, 100%, iframe[src^="https://cricplay2.xyz/sky-sports-arena"])
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 cricplay2.xyz##script[id="_waumnk"]:remove()
-!cricplay2.xyz##+js(nostif, /^/)
-!cricplay2.xyz##+js(nostif, function())
-!cricplay2.xyz##+js(nostif, function)
-!cricplay2.xyz##+js(nostif, /^function()/)
-cricplay2.xyz##+js(nostif, /^function\(\)/)
+!cricplay2.xyz##+js(no-setTimeout-if, /^/)
+!cricplay2.xyz##+js(no-setTimeout-if, function())
+!cricplay2.xyz##+js(no-setTimeout-if, function)
+!cricplay2.xyz##+js(no-setTimeout-if, /^function()/)
+cricplay2.xyz##+js(no-setTimeout-if, /^function\(\)/)
 cricplay2.xyz##+js(trusted-set-constant, v_width, 100vw)
 !cricplay2.xyz##+js(trusted-set-constant, v_width, 100%)
 cricplay2.xyz##+js(trusted-set-constant, v_height, 100vh)
@@ -39165,8 +39165,8 @@ livenewschat.eu##+js(aopw, _paq)
 livenewschat.eu##+js(set-constant, gtag, noopFunc)
 livenewschat.eu##iframe[name="__tcfapiLocator"]
 livenewschat.eu##iframe[name="__tcfapiLocator"]:remove()
-!livenewschat.eu##+js(nostif, /^/)
-livenewschat.eu##+js(nostif, /location.href/)
+!livenewschat.eu##+js(no-setTimeout-if, /^/)
+livenewschat.eu##+js(no-setTimeout-if, /location.href/)
 ||stats1.wpmudev.com^*
 ||dissolveretinue.com^*
 ||dangerouslygluttony.com^*
@@ -39194,17 +39194,17 @@ stream.crichd.vip##+js(aopw, _Hasync)
 1l1l.to##div[class="ad"]:remove()
 1l1l.to##div[class="overlay_video"]
 1l1l.to##div[class="overlay_video"]:remove()
-1l1l.to##+js(nostif, /location.href/)
+1l1l.to##+js(no-setTimeout-if, /location.href/)
 1l1l.to##+js(aeld, click)
 1l1l.to##+js(acs, sadbl, atob, admc)
 ! the window index characters in the script vary, e.g. s2ss510ff, s2ss413ff
 1l1l.to##^script:has-text(/s2ss\d{3}ff/i)
 1l1l.to##^script:has-text(/s2ss\d{3}ff/i):remove()
-!1l1l.to##+js(nostif, /^/)
-!1l1l.to##+js(nostif, function())
-!1l1l.to##+js(nostif, function)
-!1l1l.to##+js(nostif, /^function()/)
-1l1l.to##+js(nostif, /^function\(\)/)
+!1l1l.to##+js(no-setTimeout-if, /^/)
+!1l1l.to##+js(no-setTimeout-if, function())
+!1l1l.to##+js(no-setTimeout-if, function)
+!1l1l.to##+js(no-setTimeout-if, /^function()/)
+1l1l.to##+js(no-setTimeout-if, /^function\(\)/)
 vikistream.com##div[id="player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 ||vikistream.com/z-6738326$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 vikistream.com##+js(set-constant, window.ab3aa346af6eed01ae8b3084faed5174, "")
@@ -39261,7 +39261,7 @@ uploady.io##input[id="adblock_detected"]:remove()
 uploady.io##div[id="div-mobile"]:remove()
 uploady.io##div[id="div-desktop"]:remove()
 uploady.io##span[class="ad-label"]:remove()
-uploady.io##+js(nostif, tick)
+uploady.io##+js(no-setTimeout-if, tick)
 !uploady.io##a[type="button"][class="btn btn-primary rounded"]:remove-attr(onlick)
 uploady.io##a[class="btn btn-primary rounded"]:remove-attr(onlick)
 ! It's not really necessary to reenable that download button @ uploady.io as the countdown timer is only client-side.
@@ -39341,7 +39341,7 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]:remove()
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[id="generate-a11y"]:remove()
-*$frame,redirect-rule=noopframe,from=djxmaza.in|thecubexguide.com
+*$frame,redirect-rule=noopframe,domain=djxmaza.in|thecubexguide.com
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##html.i-amphtml-inabox
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnc"]
 dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnc"]:remove()
@@ -39361,7 +39361,7 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isadblock, 0, 
 !dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, _0x57e0)
 ! Do NOT remove ipp!
 !devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="ipp"]:remove()
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nostif, tick)
+devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(no-setTimeout-if, tick)
 ! defusing intervals breaks the script which creates the token for the download
 !devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nosiif, /^function\(\)/)
 ! even though blocking the countdown script, still have to wait for the 10 second countdown for the download link to be generated.
@@ -39415,7 +39415,7 @@ abysscdn.com##div[id="player"]:remove-class(jw-no-focus)
 abysscdn.com##iframe[src="about:blank"]
 abysscdn.com##iframe[src="about:blank"]:remove()
 !abysscdn.com##+js(nosiif, /^/)
-!abysscdn.com##+js(nostif, /^/)
+!abysscdn.com##+js(no-setTimeout-if, /^/)
 ! Cannot block these functions or the video will not play.
 !abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
 !abysscdn.com##+js(set-constant, detectAdBlock, noopFunc)
@@ -39446,7 +39446,7 @@ watchsb.com##+js(remove-node-text, script, /debugger;/gm)
 ! TODO: Really abort on debugger as that is what the debugger statement already does?
 watchsb.com##+js(acs, /debugger;/)
 watchsb.com##+js(aeld, /contextmenu|keydown/)
-watchsb.com##+js(nostif, check)
+watchsb.com##+js(no-setTimeout-if, check)
 ||appcdn01.xyz/vast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||lv.chajagibbous.com^*
 !||ssl.p.jwpcdn.com/player/plugins/vast/v/8.6.2/vast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -39595,7 +39595,7 @@ streamvid.net##div[id="dl_versions"]:style(display: block !important;)
 streamvid.net##a[id="dl_versions_btn"]:remove()
 streamvid.net##span[id="countdown_str"]:remove()
 streamvid.net##div[id="alert_msg"]:remove()
-streamvid.net##+js(nostif, /countDown/)
+streamvid.net##+js(no-setTimeout-if, /countDown/)
 streamvid.net##+js(acs, s3ii, globalThis)
 streamvid.net##:xpath(//script[contains(text(), 'debugger;')]):remove()
 streamvid.net##^script:has-text(/debugger;/):remove()
@@ -39687,7 +39687,7 @@ bestsolaris.com##+js(set-constant, attr, {})
 bestsolaris.com##+js(set-constant, scriptSrc, "")
 bestsolaris.com##+js(aopr, autoloadMarker)
 bestsolaris.com##+js(aopw, autoloadMarker)
-bestsolaris.com##+js(nostif, r)
+bestsolaris.com##+js(no-setTimeout-if, r)
 ||redeemlesson.com^*
 ||streampiay.fun/js/adverts-1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||jentent.streampiay.fun/jsa.hh$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -39730,7 +39730,7 @@ dood.re##script:has-text(/debugger;/):remove()
 dood.re##+js(remove-node-text, script, /debugger;/gm)
 ! TODO: Really abort on debugger as that is what the debugger statement already does?
 dood.re##+js(acs, /debugger;/)
-dood.re##+js(nostif, check)
+dood.re##+js(no-setTimeout-if, check)
 !dood.re##+js(aeld, /contextmenu|keydown/, /function\(e\)/)
 dood.re##+js(aeld, /contextmenu|keydown/)
 ||dood.re/push_open/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -39921,8 +39921,8 @@ voe.sx,scatch176duplicities.com##script:has-text(/console\.clear\(\);/):remove()
 !voe.sx,scatch176duplicities.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
 voe.sx,scatch176duplicities.com##+js(remove-node-text, script, /console\.clear\(\);/gm)
 voe.sx,scatch176duplicities.com##+js(acs, /console.clear\(\);/)
-!voe.sx,scatch176duplicities.com##+js(nostif, c74a68dfbd15fcd6f23a6b26879bc82e)
-voe.sx,scatch176duplicities.com##+js(nostif, /^/)
+!voe.sx,scatch176duplicities.com##+js(no-setTimeout-if, c74a68dfbd15fcd6f23a6b26879bc82e)
+voe.sx,scatch176duplicities.com##+js(no-setTimeout-if, /^/)
 voe.sx,scatch176duplicities.com##a[href^="https://desperationembassy.com/"]
 voe.sx,scatch176duplicities.com##a[href^="https://desperationembassy.com/"]:remove()
 voe.sx,scatch176duplicities.com##+js(aopw, window.c1f1f6cd617)
@@ -39942,7 +39942,7 @@ upstream.to##div[class="a178432"]
 upstream.to##div[class="a178432"]:remove()
 upstream.to##div[class="b178432"]
 upstream.to##div[class="b178432"]:remove()
-upstream.to##+js(nostif, checkADB)
+upstream.to##+js(no-setTimeout-if, checkADB)
 ! sUpload.js is anti-adblock script.
 ||upstream.to/js/sUpload.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||upstream.to/google.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -39974,8 +39974,8 @@ vtube.to,vtbe.net,vtplay.net##script[data-spots][data-tag][data-subid1]:remove()
 vtube.to,vtbe.net,vtplay.net##+js(set-constant, _0x3538, [])
 vtube.to,vtbe.net,vtplay.net##+js(aopw, _0x3538)
 vtube.to,vtbe.net,vtplay.net##+js(aopr, _0x3538)
-!vtube.to,vtbe.net,vtplay.net##+js(nostif, argument['callee'], 0x0)
-vtube.to,vtbe.net,vtplay.net##+js(nostif, /^/, 0x0)
+!vtube.to,vtbe.net,vtplay.net##+js(no-setTimeout-if, argument['callee'], 0x0)
+vtube.to,vtbe.net,vtplay.net##+js(no-setTimeout-if, /^/, 0x0)
 vtube.to,vtbe.net,vtplay.net##+js(set-constant, gtag, noopFunc)
 vtube.to,vtbe.net,vtplay.net##+js(set-constant, cRAds, false)
 vtube.to,vtbe.net,vtplay.net##+js(set-constant, xRds,false)
@@ -40192,7 +40192,7 @@ dood.wf##script[data-adel][cdnd][zid]:remove()
 dood.wf##script[src*="//la3c05lr3o.com/"]:remove-attr(onerror)
 dood.wf##script[src*="//la3c05lr3o.com/"]:remove-attr(onloaded)
 dood.wf##script[src*="//la3c05lr3o.com/"]:remove()
-dood.wf##+js(nostif, c3)
+dood.wf##+js(no-setTimeout-if, c3)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 www.2embed.to##script[src*="//whoursie.com/"]:remove-attr(onerror)
 www.2embed.to##script[src*="//whoursie.com/"]:remove-attr(onloaded)
@@ -40253,10 +40253,10 @@ membed1.com##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiO
 membed1.com##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 membed1.com##+js(acs, adblock, excludes)
 ! nostif, /^function\(\)/ triggers an anti-adblocking script and message
-!membed1.com##+js(nostif, /^function\(\)/)
+!membed1.com##+js(no-setTimeout-if, /^function\(\)/)
 membed1.com##+js(set-constant, devtoolIsOpening, noopFunc)
 ! nostif, devtoolIsOpening triggers an anti-adblocking script and message
-!membed1.com##+js(nostif, devtoolIsOpening)
+!membed1.com##+js(no-setTimeout-if, devtoolIsOpening)
 ! The following rule does NOT prevent the developer tools check from working.
 membed1.com##+js(acs, /console\.clear\(\);/)
 membed1.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
@@ -40275,7 +40275,7 @@ embedsito.com##:xpath(//script[contains(text(), 'devtoolIsOpening')]):remove()
 embedsito.com##^script:has-text(devtoolIsOpening):remove()
 embedsito.com##script:has-text(devtoolIsOpening):remove()
 embedsito.com##+js(set-constant, devtoolIsOpening, noopFunc)
-embedsito.com##+js(nostif, devtoolIsOpening)
+embedsito.com##+js(no-setTimeout-if, devtoolIsOpening)
 embedsito.com##+js(acs, devtoolIsOpening)
 embedsito.com##+js(acs, /console\.clear\(\);/)
 embedsito.com##+js(acs, USER_ID)
@@ -40317,8 +40317,8 @@ moonmov.pro##+js(aopr, dance)
 moonmov.pro##+js(aopw, phashc)
 moonmov.pro##+js(aopr, phashc)
 moonmov.pro##+js(nosiif, /^/)
-moonmov.pro##+js(nostif, deploy)
-moonmov.pro##+js(nostif, /^/)
+moonmov.pro##+js(no-setTimeout-if, deploy)
+moonmov.pro##+js(no-setTimeout-if, /^/)
 moonmov.pro##+js(acs, Zordon)
 moonmov.pro##+js(aopw, Zordon)
 moonmov.pro##+js(aopr, Zordon)
@@ -40384,7 +40384,7 @@ sbnet.one##+js(aopr, minimalUserResponseInMiliseconds)
 sbnet.one##:xpath(//script[contains(text(), 'debugger;')]):remove()
 sbnet.one##^script:has-text(/debugger;/):remove()
 sbnet.one##script:has-text(/debugger;/):remove()
-sbnet.onee##+js(nostif, check)
+sbnet.onee##+js(no-setTimeout-if, check)
 !sbnet.one##+js(aeld, /contextmenu|keydown/, /function\(e\)/)
 sbnet.one##+js(aeld, /contextmenu|keydown/)
 ! put this at the end of sbnet.one entries since it is a hard-coded path and removed elements above it would affect it.
@@ -40461,7 +40461,7 @@ slmaxed.com,streamlare.com##+js(remove-node-text, script, /debugger;/gm)
 !slmaxed.com,streamlare.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
 slmaxed.com,streamlare.com##+js(remove-node-text, script, /console\.clear\(\);/gm)
 slmaxed.com,streamlare.com##+js(set-constant, devtoolIsOpening, noopFunc)
-slmaxed.com,streamlare.com##+js(nostif, devtoolIsOpening)
+slmaxed.com,streamlare.com##+js(no-setTimeout-if, devtoolIsOpening)
 slmaxed.com,streamlare.com##+js(set-constant, gtag, noopFunc)
 slmaxed.com,streamlare.com##+js(acs, gtag)
 ! The following lines don't prevent the inline anti-adblock script from executing.
@@ -40687,7 +40687,7 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopw, adsbygoogle)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, adsbygoogle)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, atob)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, got, 0)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(nostif, _0x)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(no-setTimeout-if, _0x)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, adblock_detected, 0, stay)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set-constant, adblock_check, 1, stay)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, gdpr-cookie-consent)
@@ -40823,8 +40823,8 @@ centfile.com##ins[data-ad-client]:remove()
 centfile.com##+js(set-constant, adsDisabled, false)
 centfile.com##+js(set-constant, tick, noopFunc)
 centfile.com##+js(set-constant, remaining, 0)
-centfile.com##+js(nostif, /function\(\)/)
-centfile.com##+js(nostif, /tick\(\)/)
+centfile.com##+js(no-setTimeout-if, /function\(\)/)
+centfile.com##+js(no-setTimeout-if, /tick\(\)/)
 centfile.com##+js(set-constant, adsbygoogle, [])
 centfile.com##+js(aopr, adsbygoogle)
 centfile.com##+js(aopw, adsbygoogle)
@@ -40855,7 +40855,7 @@ usersdrive.com##iframe[id^="ufpIframe-"]
 usersdrive.com##+js(remove-attr, disabled, #downloadbtn, stay)
 usersdrive.com##+js(remove-class, disabled, #downloadbtn, stay)
 usersdrive.com##a[id="316458965"]
-usersdrive.com##+js(nostif, /tick\(\)/)
+usersdrive.com##+js(no-setTimeout-if, /tick\(\)/)
 usersdrive.com###downloadbtn:remove-attr(disabled)
 usersdrive.com###downloadbtn:remove-class(disabled)
 usersdrive.com##input[id="adblock_detected"]:remove()
@@ -41233,7 +41233,7 @@ hurry.stream##+js(aopr, cRAds)
 hurry.stream##+js(aopw, cRAds)
 hurry.stream##+js(set-constant, showADBOverlay, noopFunc)
 hurry.stream##+js(set-constant, checkADB, noopFunc)
-hurry.stream##+js(nostif, checkADB)
+hurry.stream##+js(no-setTimeout-if, checkADB)
 hurry.stream##+js(aopr, window.cRAds)
 hurry.stream##+js(aopw, window.cRAds)
 !hurry.stream##a[id="close-teaser"]:remove-attr(onclick)
@@ -41252,7 +41252,7 @@ hurry.stream##video:style(max-width: 100vw !important; max-height: 100vh !import
 dooood.com##+js(set-constant, disabledEvent, noopFunc)
 dooood.com##+js(set-constant, check, noopFunc)
 dooood.com##+js(aeld, /keydown|contextmenu/i)
-dooood.com##+js(nostif, check)
+dooood.com##+js(no-setTimeout-if, check)
 ||dooood.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 dooood.com##div[class="player-wrap container"]:style(margin-left: 0px !important; margin-right: 0px !important; padding-left: 0px !important; padding-right: 0px !important;)
 dooood.com##div[id="os_player"]:style(--aspect-ratio: 16/9; max-width: 100vw !important; max-height: 100vh !important;width: 100vw !important; height: 100vh !important;)
@@ -41372,7 +41372,7 @@ an1.com##a[id="pre_download"]:style(display: inline !important;)
 an1.com##a[id="pre_download"]:remove-attr(onclick)
 an1.com##a[rel="sponsored nofollow"]
 an1.com##a[rel="sponsored nofollow"]:remove()
-an1.com##+js(nostif, /countdown/)
+an1.com##+js(no-setTimeout-if, /countdown/)
 ||ak.uncleffaan.com^*
 outlook.live.com##div[class="Ogqyq"]:has(button[class="Soq5F"]):has-text(Upgrade to Microsoft 365 with)
 outlook.live.com##div[class="Ogqyq"]:has(button[class="Soq5F"]):has-text(Upgrade to Microsoft 365 with):remove()
@@ -41450,8 +41450,8 @@ slwatch.co##+js(acs, gtag)
 slwatch.co##+js(acs, '/blocked.html')
 slwatch.co##:xpath(//script[contains(text(), '/blocked.html')])
 slwatch.co##:xpath(//script[contains(text(), '/blocked.html')]):remove()
-!slwatch.co##+js(nostif, _0x5b6c23, 0x64)
-slwatch.co##+js(nostif, /^/)
+!slwatch.co##+js(no-setTimeout-if, _0x5b6c23, 0x64)
+slwatch.co##+js(no-setTimeout-if, /^/)
 ||obstructdogcollarblockade.com^*
 ||v2.vidsrc.me/sbx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||cdn.hubvisor.io/wrapper/*/hubvisor.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -41512,7 +41512,7 @@ filerice.com##div[class="ads"]:remove()
 ||filerice.com/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 filerice.com##+js(set-constant, tick, noopFunc)
 filerice.com##+js(set-constant, remaining, 0)
-filerice.com##+js(nostif, tick)
+filerice.com##+js(no-setTimeout-if, tick)
 filerice.com##button[id="downloadbtn"]:remove-attr(disabled)
 filerice.com##div[id="countdown"]
 filerice.com##div[id="countdown"]:remove()
@@ -41717,9 +41717,9 @@ open.spotify.com##footer[data-testadtype="ad-type-ad"]:remove()
 engineering.atspotify.com##div[class="wpcc-pushdown-wrap"]
 community.spotify.com###js-message-bar-cookie-notice:remove()
 developer.spotify.com##div[id="cookies-alert"]:remove()
-*$media,3p,redirect-rule=noop-1s.mp4:10,from=open.spotify.com
+*$media,3p,redirect-rule=noop-1s.mp4:10,domain=open.spotify.com
 ! matches https://audio-ak-spotify-com.akamaized.net/audio/
-||akamaized.net/audio/$media,redirect=noop-1s.mp4:10,from=open.spotify.com
+||akamaized.net/audio/$media,redirect=noop-1s.mp4:10,domain=open.spotify.com
 ||scdn.co/audio/$media,redirect=noop-1s.mp4:10,domain=open.spotify.com
 ||fp.weeksth.com^*
 ||niftiesrotonde.com^*
@@ -41958,8 +41958,8 @@ www.up-4ever.net,www.up-4ever.org##ins[id="adblock_detected"]
 www.up-4ever.net,www.up-4ever.org##+js(saa, type, submit, #downloadbtn)
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, 'allowed_countries')
 www.up-4ever.net,www.up-4ever.org##+js(set-constant, cookiesAgree, noopFunc)
-www.up-4ever.net,www.up-4ever.org##+js(nostif, /function\(\)/)
-!www.up-4ever.net,www.up-4ever.org##+js(nostif, /^/)
+www.up-4ever.net,www.up-4ever.org##+js(no-setTimeout-if, /function\(\)/)
+!www.up-4ever.net,www.up-4ever.org##+js(no-setTimeout-if, /^/)
 www.up-4ever.net,www.up-4ever.org##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 ! href-sanitizer no longer works for this
@@ -41998,8 +41998,8 @@ techraptor.net##div[id^="div-insticator-ad-"]:remove()
 ||cdn.requestmetrics.com^*
 ||event.instiengage.com^*
 ||geoip.instiengage.com^*
-!availedsmallest.com##+js(nostif, /function\(\)/)
-availedsmallest.com##+js(nostif, /^/)
+!availedsmallest.com##+js(no-setTimeout-if, /function\(\)/)
+availedsmallest.com##+js(no-setTimeout-if, /^/)
 availedsmallest.com##+js(acs, i.Logger.log, o.console)
 ! This window member name changes (window.ea392926ee1f0eacdd14) so cannot block it this way.
 !availedsmallest.com##+js(set-constant, window.a7c07e85bedf339753, "", end)
@@ -43466,15 +43466,21 @@ www.deskmodder.de##div[class="cookie-modal"]:remove()
 www-deskmodder-de.translate.goog##div[class="cookie-modal"]:remove()
 www.deskmodder.de##div[id="klaro"]:remove()
 www-deskmodder-de.translate.goog##div[id="klaro"]:remove()
+www.skylinewebcams.com###skylinewebcams-ads:remove()
+www.skylinewebcams.com##.ads-top:remove()
 www.skylinewebcams.com##div[id="top_leaderboard"]:remove()
 www.skylinewebcams.com##div[class="cam-vert"]:has(p[class="subt"]:has-text(Advertisement)):remove()
 www.skylinewebcams.com##div[class^="_ap_apex_ad"]:remove()
 www.skylinewebcams.com##div[class="col-xs-12 col-md-9 col-lg-9"]:has(div[id="webcam"]):style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 80vw !important; user-select: all !important; pointer-events: all !important;)
 !www.skylinewebcams.com##div[id="webcam"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 80vw !important; user-select: all !important; pointer-events: all !important;)
 www.skylinewebcams.com##div[class="clappr-watermark"]:remove()
+www.skylinewebcams.com##div[id="hostedby"]:remove()
 www.skylinewebcams.com##div[id="utility"]:remove()
-www.skylinewebcams.com###skylinewebcams-ads:remove()
-www.skylinewebcams.com##.ads-top:remove()
+www.skylinewebcams.com##ins[data-ad-client]:remove()
+www.skylinewebcams.com##div[class^="media-control "]:remove-class(media-control-hide)
+www.skylinewebcams.com##+js(remove-class, media-control-hide, div[class^="media-control "])
+www.skylinewebcams.com##div[class^="bar-container"]:remove-class(seek-disabled)
+www.skylinewebcams.com##+js(remove-class, seek-disabled, div[class^="bar-container"])
 www.skylinewebcams.com##+js(set-constant, loadAp, noopFunc)
 www.skylinewebcams.com##+js(acs, loadAp)
 www.skylinewebcams.com##+js(set-constant, getAd, noopFunc)
@@ -43483,6 +43489,12 @@ www.skylinewebcams.com##+js(abort-on-property-read, adpushup)
 www.skylinewebcams.com##+js(abort-on-property-write, adpushup)
 www.skylinewebcams.com##+js(set-constant, ads_show, 0)
 www.skylinewebcams.com##+js(set-constant, getAD, {})
+www.skylinewebcams.com##+js(set-constant, adsbygoogle, [])
+www.skylinewebcams.com##+js(abort-on-property-read, adsbygoogle)
+www.skylinewebcams.com##+js(abort-on-property-write, adsbygoogle)
+www.skylinewebcams.com##+js(no-setTimeout-if, /chg\(\)/)
+! The following rule prevents the video viewport from being displayed.
+!www.skylinewebcams.com##+js(set-constant, chg, noopFunc)
 ||ad.skylinewebcams.com^*
 www.247chess.com##div[class="aspace aspace-h"]:has(div[id^="div-gpt-ad-"]):remove()
 www.247chess.com##div[id^="div-gpt-ad-"]:remove()
@@ -45493,7 +45505,7 @@ jobnewsj.com##div[id="myTimerDiv"]:remove()
 www.gnome-look.org.www.opendesktop.org##+js(set-constant, count, 0)
 www.gnome-look.org,www.opendesktop.org##+js(set-constant, timer, noopFunc)
 www.gnome-look.org,www.opendesktop.org##button[type="submit"]:remove-attr(disabled)
-www.gnome-look.org,www.opendesktop.org##+js(nostif, cd)
+www.gnome-look.org,www.opendesktop.org##+js(no-setTimeout-if, cd)
 mspoweruser.com##mv-ad-reporter
 mspoweruser.com##mv-ad-reporter:remove()
 mspoweruser.com##div[class*="ad-reporter-"]
@@ -46057,7 +46069,7 @@ streamtape.com,stapadblockuser.xyz##+js(acs, /debugger;/)
 streamtape.com,stapadblockuser.xyz##+js(set-constant, googleAd, false)
 streamtape.com,stapadblockuser.xyz##+js(set-constant, rFrx, false)
 streamtape.com,stapadblockuser.xyz##+js(aeld, contextmenu)
-streamtape.com,stapadblockuser.xyz##+js(nostif, function)
+streamtape.com,stapadblockuser.xyz##+js(no-setTimeout-if, function)
 streamtape.com,stapadblockuser.xyz##+js(acs, document.write, unescape)
 !||yz.linensephraim.com^*
 ||linensephraim.com^*
@@ -48625,6 +48637,7 @@ rkc.primetubsub.xyz##+js(remove-node-text, script, /debugger;/gm)
 ||92f77b89a1b2df1b539ff2772282e19b.com^*
 ||foggilysyling.top^*
 ||inbowedkittled.top^*
+||optedprebend.top^*
 !||media-us.amillionads.com^*$image,media
 ||media-us.amillionads.com^*
 !||o1089883.ingest.sentry.io/api/6106537/envelope/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
