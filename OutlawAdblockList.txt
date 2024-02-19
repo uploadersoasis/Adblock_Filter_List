@@ -27487,40 +27487,40 @@ www.kongregate.com##[class^="policy-bar"]
 ||162.252.214.4/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||1253578754.rsc.cdn77.org^*
 ||1939006693.rsc.cdn77.org^*
-charlieintel.com##.position-sticky
+charlieintel.com##.position-sticky:remove()
 ||scnlog.me/wp-content/themes/scnlog/js/pa.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-nitroflare.com##div[id="popupContent"]
-!nitroflare.com###superbox-innerbox
-!nitroflare.com###superbox-container
-nitroflare.com###superbox-overlay
-nitroflare.com###superbox-wrapper
-www.anymp4.com##div[class="usernotice_pop"]
+nitroflare.com##div[id="popupContent"]:remove()
+!nitroflare.com###superbox-innerbox:remove()
+!nitroflare.com###superbox-container:remove()
+nitroflare.com###superbox-overlay:remove()
+nitroflare.com###superbox-wrapper:remove()
+www.anymp4.com##div[class="usernotice_pop"]:remove()
 iosgods.com##^script:has-text(/GoogleAnalyticsObject/i):remove()
 iosgods.com##div[id="iGSupport"]:remove()
 iosgods.com##.adsbygoogle:remove()
 ||authqeqbnhkdjjklumailssocl.web.app/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-www.filepuma.com##div[class="cookiesTip"]
+www.filepuma.com##div[class="cookiesTip"]:remove()
 www.eltima.com##+js(abort-on-property-read, gdpr)
 www.eltima.com##+js(abort-on-property-write, gdpr)
-sken.io##div[class="js-cookie-consent cookie-consent"]
+sken.io##div[class="js-cookie-consent cookie-consent"]:remove()
 sken.io##+js(abort-on-property-read, window.laravelCookieConsent)
 sken.io##+js(abort-on-property-write, window.laravelCookieConsent)
-stackoverflow.com##div[class*="js-consent-banner"]
+stackoverflow.com##div[class*="js-consent-banner"]:remove()
 onlystream.tv##+js(abort-on-property-read, BetterJsPop.popunderAvailable)
 onlystream.tv##+js(abort-on-property-write, BetterJsPop.popunderAvailable)
 ||erdecisesgeorg.info^*
-pagescreen.io##div[id="cookie-consent"]
-pagescreen.io##div[aria-label="cookieconsent"]
+pagescreen.io##div[id="cookie-consent"]:remove()
+pagescreen.io##div[aria-label="cookieconsent"]:remove()
 ||onbrowse.io/tracker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-onwebchange.com##div[class="cookie_bg"]
-onwebchange.com##div[class="cookie_banner"]
-www.islonline.com##iframe[id="net_cookie_law_setter"]
-www.islonline.com##div[class="cookie-warning"]
-www.redmondpie.com##div[id^="div-gpt-ad-"]
+onwebchange.com##div[class="cookie_bg"]:remove()
+onwebchange.com##div[class="cookie_banner"]:remove()
+www.islonline.com##iframe[id="net_cookie_law_setter"]:remove()
+www.islonline.com##div[class="cookie-warning"]:remove()
+www.redmondpie.com##div[id^="div-gpt-ad-"]:remove()
 ||excelab.info^*
 ||jayler.info^*
 ||trollhost.xyz^*
-serialsofts.com##a[href*="//trollhost.xyz"]
+serialsofts.com##a[href*="//trollhost.xyz"]:remove()
 ||getfileslic.site^*
 ||sonsuziptv.net/resimler/sonsuzresim02.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||www.mrmgiyim.com/resimler/mrmgiyimresim.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -48875,8 +48875,8 @@ sflix.to##+js(set-attr, img[class*="lazyload"], src, [data-src])
 ||www.intelligenceadx.com/tracing.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||www.intelligenceadx.com/cswiper.min.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||tvbox-ag.dirproxy.biz/static/logo.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-!www.newcdn.lol,liveru.sx,livetvsx.org##+js(set-constant, BetterJsPop, noopFunc)
-www.newcdn.lol,liveru.sx,livetvsx.org##+js(acs, BetterJsPop)
+!www.newcdn.lol,vipbox1.com,liveru.sx,livetvsx.org##+js(set-constant, BetterJsPop, noopFunc)
+www.newcdn.lol,vipbox1.com,liveru.sx,livetvsx.org##+js(acs, BetterJsPop)
 liveru.sx,livetvsx.org##div[id="hiddenBannerCanvas"]:remove()
 liveru.sx,livetvsx.org##div[id="bannerInCenter"]:remove()
 livetvsx.org##:xpath(//html/body/table/tbody/tr/td[2]):remove-attr(width)
@@ -48889,9 +48889,9 @@ livetvsx.org##+js(saa, height, 100%, iframe[src^="https://tucaluka.shop/tucaluka
 ||liveru.sx/js/overlay.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||livetvsx.org/js/overlay.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 rentreviews.xyz,liveru.sx,livetvsx.org##a[rel="sponsored"]:remove()
-www.newcdn.lol,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org##+js(set-constant, gtag, noopFunc)
-www.newcdn.lol,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org##+js(set-constant, window.dataLayer, [])
-www.newcdn.lol,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org##+js(acs, gtag, window.dataLayer)
+www.newcdn.lol,vipbox1.com,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org##+js(set-constant, gtag, noopFunc)
+www.newcdn.lol,vipbox1.com,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org##+js(set-constant, window.dataLayer, [])
+www.newcdn.lol,vipbox1.com,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org##+js(acs, gtag, window.dataLayer)
 www.newcdn.lol##div[class="clappr-banner"]:remove()
 www.newcdn.lol##div[id="overover"]:remove()
 www.newcdn.lol##div[id="obrazek"]:remove()
@@ -48959,6 +48959,12 @@ vidplay.online##+js(no-setInterval-if, /_0x65bf0\(\)/)
 !vidsrc.to##+js(nosiif)
 ||customselliot.com^*
 ||plentifulqueen.com^*
+vipbox1.com##a[rel="sponsored"]:remove()
+vipbox1.com##div[id="slot277189_757169"]:remove()
+vipbox1.com##div[id="fb-root"]:remove()
+vipbox1.com##+js(set-constant, window.fbAsyncInit, noopFunc)
+vipbox1.com##body:remove-attr(oncontextmenu)
+vipbox1.com##+js(remove-attr, oncontextmenu, body)
 
 !Whitelisted
 !@@||cdn.fastcomments.com^*$3p,script,xhr,domain=igg-games.com|pcgamestorrents.com
