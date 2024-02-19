@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2023-10-19T11:30:51.391Z",
+    "createdAt": "2024-02-19T08:14:35.640Z",
     "redirects": [
         {
             "description": "Example redirect, try going to http://example.com/anywordhere",
@@ -13,7 +13,7 @@
             "redirectUrl": "https://google.com/search?q=$1",
             "patternType": "W",
             "processMatches": "noProcessing",
-            "disabled": false,
+            "disabled": true,
             "grouped": false,
             "appliesTo": [
                 "main_frame"
@@ -156,13 +156,33 @@
             ]
         },
         {
-            "description": "sbnet.one removal of subtitles URL in query string to prevent CORS error",
-            "exampleUrl": "https://sbnet.one/e/jtpwdb9nz7ti?caption_1=https://sub.membed.net/sub&sub_1=English",
-            "exampleResult": "https://sbnet.one/e/jtpwdb9nz7ti",
+            "description": "vidsrc.to embedded video player URL with no ads",
+            "exampleUrl": "https://vidplay.online/e/M0J52EDOXJ24?t=4xjQAfYkA10Bzg%3D%3D&ads=0&src=vidsrc&autostart=true",
+            "exampleResult": "https://vidplay.online/e/M0J52EDOXJ24?t=4xjQAfYkA10Bzg%3D%3D&ads=0&src=vidsrc&autostart=true",
             "error": null,
-            "includePattern": "(https?:\\/\\/([wW]{3}\\.)?sbnet\\.one\\/e\\/[0-9a-zA-Z]{12,})\\?caption_1=(https?:\\/\\/sub\\.membed\\.net\\/sub\\/?)[-a-zA-Z0-9()@:%_\\+.~#?\\/=]*(&(sub_1=[0-9a-zA-Z:]{2,}))?",
-            "excludePattern": "only removes the URL for the subtitles file from the query string in the URL",
-            "patternDesc": "",
+            "includePattern": "^(https?:\\/\\/([wW]{3}.)?vidplay\\.online\\/e\\/[0-9a-zA-z]{12,}\\?)(\\?|&?t=[0-9a-zA-z]{14,}%3D%3D)*(\\?|&?ads=\\d)*(\\?|&?src=vidsrc)*(\\?|&?autostart=true|false)*",
+            "excludePattern": "",
+            "patternDesc": "just changes the url so that &ads= is always equal to 0",
+            "redirectUrl": "$1$3&ads=0$5$6",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "teleuptv.net redirection to real URL after hostname #9",
+            "exampleUrl": "https://myapp2199.herokuapp.com/https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u816-8d5fdcb159ec/index.m3u8d9-8016-8d5fdcb159ec/index.m3u8",
+            "exampleResult": "https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "error": null,
+            "includePattern": "https?:\\/\\/[A-Za-z]+[\\d]+\\.herokuapp\\.com\\/(https?:\\/\\/cdn1-9p\\.teleuptv\\.net\\/[0-9a-z\\-]+\\/index.m3u8?)",
+            "excludePattern": "",
+            "patternDesc": "extract real URL after hostname",
             "redirectUrl": "$1",
             "patternType": "R",
             "processMatches": "noProcessing",
@@ -172,6 +192,227 @@
                 "main_frame",
                 "sub_frame",
                 "script",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "teleuptv.net redirection to real URL after hostname #8",
+            "exampleUrl": "https://va04.ingress.herokuapp.com/https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u87d9-8016-8d5fdcb159ec/index.m3u8",
+            "exampleResult": "https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "error": null,
+            "includePattern": "https?:\\/\\/[A-Za-z]+[\\d]+\\.ingress\\.herokuapp\\.com\\/(https?:\\/\\/cdn1-9p\\.teleuptv\\.net\\/[0-9a-z\\-]+\\/index.m3u8?)",
+            "excludePattern": "",
+            "patternDesc": "extract real URL after hostname",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "teleuptv.net redirection to real URL after hostname #7",
+            "exampleUrl": "https://venic.herokuapp.com/https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8d9-8016-8d5fdcb159ec/index.m3u8",
+            "exampleResult": "https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "error": null,
+            "includePattern": "https?:\\/\\/[A-Za-z]+\\.herokuapp\\.com\\/(https?:\\/\\/cdn1-9p\\.teleuptv\\.net\\/[0-9a-z\\-]+\\/index.m3u8?)",
+            "excludePattern": "",
+            "patternDesc": "extract real URL after hostname",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "teleuptv.net redirection to real URL after hostname #6",
+            "exampleUrl": "https://va03.ingress.herokuapp.com/https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "exampleResult": "https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "error": null,
+            "includePattern": "https?:\\/\\/va[\\d]+\\.ingress\\.herokuapp\\.com\\/(https?:\\/\\/cdn1-9p\\.teleuptv\\.net\\/[0-9a-z\\-]+\\/index.m3u8?)",
+            "excludePattern": "",
+            "patternDesc": "extract real URL after hostname",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "teleuptv.net redirection to real URL after hostname #5",
+            "exampleUrl": "https://venic.herokuapp.com/https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8d9-8016-8d5fdcb159ec/index.m3u8",
+            "exampleResult": "https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "error": null,
+            "includePattern": "https?:\\/\\/venic\\.herokuapp\\.com\\/(https?:\\/\\/cdn1-9p\\.teleuptv\\.net\\/[0-9a-z\\-]+\\/index.m3u8?)",
+            "excludePattern": "",
+            "patternDesc": "extract real URL after hostname",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "teleuptv.net redirection to real URL after hostname #4",
+            "exampleUrl": "https://ie02.ingress.herokuapp.com/https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "exampleResult": "https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "error": null,
+            "includePattern": "https?:\\/\\/ie[\\d]+\\.ingress\\.herokuapp\\.com\\/(https?:\\/\\/cdn1-9p\\.teleuptv\\.net\\/[0-9a-z\\-]+\\/index.m3u8?)",
+            "excludePattern": "",
+            "patternDesc": "extract real URL after hostname",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "teleuptv.net redirection to real URL after hostname #3",
+            "exampleUrl": "https://srix31.herokuapp.com/https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "exampleResult": "https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "error": null,
+            "includePattern": "https?:\\/\\/srix[\\d]+\\.herokuapp\\.com\\/(https?:\\/\\/cdn1-9p\\.teleuptv\\.net\\/[0-9a-z\\-]+\\/index.m3u8?)",
+            "excludePattern": "",
+            "patternDesc": "extract real URL after hostname",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "teleuptv.net redirection to real URL after hostname #2",
+            "exampleUrl": "https://reposij.herokuapp.com/https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u87d9-8016-8d5fdcb159ec/index.m3u8",
+            "exampleResult": "https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "error": null,
+            "includePattern": "https?:\\/\\/reposij\\.herokuapp\\.com\\/(https?:\\/\\/cdn1-9p\\.teleuptv\\.net\\/[0-9a-z\\-]+\\/index.m3u8?)",
+            "excludePattern": "",
+            "patternDesc": "extract real URL after hostname",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "teleuptv.net redirection to real URL after hostname",
+            "exampleUrl": "https://va01.ingress.herokuapp.com/https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "exampleResult": "https://cdn1-9p.teleuptv.net/4d90954f-147f-47d9-8016-8d5fdcb159ec/index.m3u8",
+            "error": null,
+            "includePattern": "https?:\\/\\/va[\\d]+\\.ingress\\.herokuapp\\.com\\/(https?:\\/\\/cdn1-9p\\.teleuptv\\.net\\/[0-9a-z\\-]+\\/index.m3u8?)",
+            "excludePattern": "",
+            "patternDesc": "extract real URL after hostname",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "apl312.me streaming video Redirector URL resizer",
+            "exampleUrl": "http://embx166032.apl312.me/player/live.php?id=166032&w=700&h=480",
+            "exampleResult": "http://embx166032.apl312.me/player/live.php?id=166032&w=100vw&h=100vh",
+            "error": null,
+            "includePattern": "(https?:\\/\\/embx[\\d]*\\.apl312\\.me\\/player\\/live\\.php\\?id=[0-9]+)&w=[\\d]+&h=[\\d]+",
+            "excludePattern": "",
+            "patternDesc": "only changing the width and height query string values",
+            "redirectUrl": "$1&w=100vw&h=100vh",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "sbnet.one removal of subtitles URL in query string to prevent CORS error",
+            "exampleUrl": "https://sbnet.one/e/jtpwdb9nz7ti?caption_1=https://sub.membed.net/sub&sub_1=English",
+            "exampleResult": "https://sbnet.one/e/jtpwdb9nz7ti",
+            "error": null,
+            "includePattern": "(https?:\\/\\/([wW]{3}\\.)?sbnet\\.one\\/e\\/[0-9a-zA-Z]{12,})\\?caption_1=(https?:\\/\\/sub\\.membed\\.net\\/sub\\/?)[-a-zA-Z0-9()@:%_\\+.~#?\\/=]*(&(sub_1=[0-9a-zA-Z:]{2,}))?",
+            "excludePattern": "",
+            "patternDesc": "only removes the URL for the subtitles file from the query string in the URL",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
                 "xmlhttprequest"
             ]
         },
@@ -306,6 +547,66 @@
             "redirectUrl": "$1://cdn.sportcast.life/nginx.php?id=$2",
             "patternType": "R",
             "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Georiot Direct URL Redirect",
+            "exampleUrl": "https://target.georiot.com/Proxy.ashx?tsid=8426&GR_URL=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0CM74YFSP%3Ftag%3Dhawk-future-20%26linkCode%3Dogi%26th%3D1%26psc%3D1%26ascsubtag%3Dgrd-us-6340367224150411000-20",
+            "exampleResult": "https://www.amazon.com/dp/B0CM74YFSP?tag=hawk-future-20&linkCode=ogi&th=1&psc=1&ascsubtag=grd-us-6340367224150411000-20",
+            "error": null,
+            "includePattern": "(https?:\\/\\/)target\\.georiot\\.com\\/Proxy.ashx\\?(tsid=\\d+&)?GR_URL=(https?\\S+)$",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$3",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Ouo.io Direct URL Redirect",
+            "exampleUrl": "http://ouo.io/qs/n21xCt72?s=https%3A%2F%2Funityassetcollection.com%2Fdownload.php%3Furl%3DTB-33c1afE4E2F2unsB5wpA3rE3PG2BcQZcF2D2C-7D2fD-17daaE4C1C1I-7B-21tA2ntA2ddNvC3ajxD4owC3C3B1C6C1F1G1A4E4A3B10A1C6D6jB1li1jB-21A4YQHNMMBB1%3D%3D",
+            "exampleResult": "https://unityassetcollection.com/download.php?url=TB-33c1afE4E2F2unsB5wpA3rE3PG2BcQZcF2D2C-7D2fD-17daaE4C1C1I-7B-21tA2ntA2ddNvC3ajxD4owC3C3B1C6C1F1G1A4E4A3B10A1C6D6jB1li1jB-21A4YQHNMMBB1==",
+            "error": null,
+            "includePattern": "(https?:\\/\\/)([wW]{3}\\.)?ouo\\.io\\/qs\\/[a-zA-Z0-9]+\\?s=(https?\\S+)$",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$3",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Google Search Ads Redirect",
+            "exampleUrl": "https://www.googleadservices.com/pagead/aclk?sa=L&ai=CPaYnJCBTZYiMJdft0L4P5PGG0Ajunfzxcfum66rZEfuB7ZaRLggEEAgoEGDJtreGwKPYFaABn5zA_gPIAQfIA9ggqgRiT9C-502nVWX1mQKx2Nk35J0izGwfiOGZ_ON8J9fb2ixukhmXiQIFu3BuqTbBDjsLrOH1IuEH0RgkoNLVUz4ZCRksgqlq3pOtQ2DlkK1IaOMb902hjJl6wKFWuj_DGHHH-EHABMb_6Pq3BIgF7N2B_UvABQWgBiaAB9uAjhWIBwGQBwGoB-u4sQKoB6a-G6gHuZqxAqgH89EbqAfu0huoB_-csQKoB8rcG6gHkq-xAqgHu6SxAqgHkqaxAqgH2KaxAqgH3rWxAqgH26qxAqgH0KqxAqgH3LCxAqgHv7mxAqgH6rGxAqgHqrixAqgHlLixAqgH7LixAqgHvrexAqgHvK2xAqgHuauxAqAIy_GmBLAIAcAIAdIIJhACMgSD4IAOOgnC4YCAgIAEgkBCAQRI0ezzKlAJWIiu2qn6woIDmgklaHR0cHM6Ly93d3cuZWJheS5jb20vaXRtLzE4NDU0NTI2ODYyMLEJFJsRHv1jc525CRSbER79Y3Od-AkBmAsB0AsqqgwCCAHoDAaaDQEqqg0CVVPIDQHgEvCcm7feodyE9wGCFAQIARIA0BUB8BW6x_jIAfoVDDE4NDU0NTI2ODYyMIEW6Ki63l_5YFGIFqECmBYB6hYECLKxIPgWAYAXAZIXCBIGCAEQAxhN4BcB&ctype=5&ved=2ahUKEwiylNGp-sKCAxU0k2oFHTyHA5cQ9aACKAB6BAgDEG4&cid=CAASFeRoOLfqgTyLPKVCJUwFaPlDxPiBdg&dblrd=1&sig=AOD64_3f3kiiWcSyRs5O-qcbPxLmEuPw3g&adurl=https://www.ebay.com/itm/184545268620%3Fchn%3Dps%26_trkparms%3Dispr%253D1%26amdata%3Denc%253A1iF3VRTpuRX6GDcMIAuyHtA43%26norover%3D1%26mkevt%3D1%26mkrid%3D711-117182-37290-0%26mkcid%3D2%26mkscid%3D101%26itemid%3D184545268620%26targetid%3D1585159291131%26device%3Dc%26mktype%3Dpla%26googleloc%3D9025739%26poi%3D%26campaignid%3D20394831596%26mkgroupid%3D152460476358%26rlsatarget%3Dpla-1585159291131%26abcId%3D9317319%26merchantid%3D421405626",
+            "exampleResult": "https://www.ebay.com/itm/184545268620?chn=ps&_trkparms=ispr%3D1&amdata=enc%3A1iF3VRTpuRX6GDcMIAuyHtA43&norover=1&mkevt=1&mkrid=711-117182-37290-0&mkcid=2&mkscid=101&itemid=184545268620&targetid=1585159291131&device=c&mktype=pla&googleloc=9025739&poi=&campaignid=20394831596&mkgroupid=152460476358&rlsatarget=pla-1585159291131&abcId=9317319&merchantid=421405626",
+            "error": null,
+            "includePattern": "(https?:\\/\\/)([wW]{3}\\.)?googleadservices\\.com\\/pagead/aclk\\?\\S+(&adurl=(https?\\:\\/\\/\\S+))$",
+            "excludePattern": "",
+            "patternDesc": "requires URL decode enabled",
+            "redirectUrl": "$4",
+            "patternType": "R",
+            "processMatches": "urlDecode",
             "disabled": false,
             "grouped": false,
             "appliesTo": [
@@ -458,7 +759,7 @@
             "exampleUrl": "https://www.anrdoezrs.net/links/7251228/type/dlg/sid/UUmuoUeUpU35995/https://play.google.com/store/apps/details?id=eu.chainfire.tv.sideloadlauncher",
             "exampleResult": "https://play.google.com/store/apps/details?id=eu.chainfire.tv.sideloadlauncher",
             "error": null,
-            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?anrdoezrs\\.net\\/links\\/\\d+\\/type\\/dlg\\/sid\\/[a-zA-Z0-9]+\\/(https?\\:\\/\\/.+)$",
+            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?anrdoezrs\\.net\\/links\\/\\d+\\/type\\/dlg\\/sid\\/[a-zA-Z0-9]+\\/(https?\\:\\/\\/\\S+)$",
             "excludePattern": "",
             "patternDesc": "Any word after example.com leads to google search for that word.",
             "redirectUrl": "$3",
@@ -478,7 +779,7 @@
             "exampleUrl": "https://www.jdoqocy.com/click-7633730-15041379?url=https%3A%2F%2Fwww.directv.com%2Fshop%2Fstream%2Fentertainment-package&",
             "exampleResult": "https://www.directv.com/shop/stream/entertainment-package&",
             "error": null,
-            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?jdoqocy\\.com\\/click-\\d+-\\d+\\?url=(.+)$",
+            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?jdoqocy\\.com\\/click-\\d+-\\d+\\?url=(https?\\S+)$",
             "excludePattern": "",
             "patternDesc": "Any word after example.com leads to google search for that word.",
             "redirectUrl": "$3",
@@ -498,7 +799,7 @@
             "exampleUrl": "https://redirect.viglink.com/?u=https%3A%2F%2Fwww.newegg.com&prodOvrd=RAL&key=b01ff7ca3e728b947b9c76b1293dd5ec&cuid=PF1_en-us",
             "exampleResult": "https://www.newegg.com&prodOvrd=RAL&key=b01ff7ca3e728b947b9c76b1293dd5ec&cuid=PF1_en-us",
             "error": null,
-            "includePattern": "^https?:\\/\\/redirect\\.viglink\\.com/\\?u=(.+)$",
+            "includePattern": "^https?:\\/\\/redirect\\.viglink\\.com/\\?u=(https?\\S+)$",
             "excludePattern": "",
             "patternDesc": "Any word after example.com leads to google search for that word.",
             "redirectUrl": "$1",
@@ -516,14 +817,14 @@
         {
             "description": "unityassetfree.xyz Download Redirect",
             "exampleUrl": "https://unityassetfree.xyz/redirect-to/?url=http://ouo.io/qs/n21xCt72?s=https%3A%2F%2Funityassetcollection.com%2Fdownload.php%3Furl%3DTB-33c1afE4E2F2unsB5wpA3rE3PG2BcQZcF2D2C-7D2fD-17daaE4C1C1I-7B-21tA2ntA2ddNvC3ajxD4owC3C3B1C6C1F1G1A4E4A3B10A1C6D6jB1li1jB-21A4YQHNMMBB1%3D%3D",
-            "exampleResult": "http://ouo.io/qs/n21xCt72?s=https%3A%2F%2Funityassetcollection.com%2Fdownload.php%3Furl%3DTB-33c1afE4E2F2unsB5wpA3rE3PG2BcQZcF2D2C-7D2fD-17daaE4C1C1I-7B-21tA2ntA2ddNvC3ajxD4owC3C3B1C6C1F1G1A4E4A3B10A1C6D6jB1li1jB-21A4YQHNMMBB1%3D%3D",
+            "exampleResult": "http://ouo.io/qs/n21xCt72?s=https://unityassetcollection.com/download.php?url=TB-33c1afE4E2F2unsB5wpA3rE3PG2BcQZcF2D2C-7D2fD-17daaE4C1C1I-7B-21tA2ntA2ddNvC3ajxD4owC3C3B1C6C1F1G1A4E4A3B10A1C6D6jB1li1jB-21A4YQHNMMBB1==",
             "error": null,
-            "includePattern": "^https?:\\/\\/unityassetfree\\.xyz\\/redirect-to/\\?url=(.+)$",
+            "includePattern": "^https?:\\/\\/unityassetfree\\.xyz\\/redirect-to/\\?url=(https?\\:\\/\\/\\S+)$",
             "excludePattern": "",
             "patternDesc": "Any word after example.com leads to google search for that word.",
             "redirectUrl": "$1",
             "patternType": "R",
-            "processMatches": "noProcessing",
+            "processMatches": "urlDecode",
             "disabled": false,
             "grouped": false,
             "appliesTo": [
@@ -752,6 +1053,127 @@
                 "sub_frame",
                 "image",
                 "imageset",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "streamadblocker.cc Redirector to embedded video player",
+            "exampleUrl": "https://streamadblocker.cc/v/O7mpwZrXamukgP/Justice.League.Crisis.on.Infinite.Earths.Part.One.2024.1080p.AMZN.WEBRip.1400MB.DD5.1.x264-GalaxyRG.mkv",
+            "exampleResult": "https://streamadblocker.cc/e/O7mpwZrXamukgP/Justice.League.Crisis.on.Infinite.Earths.Part.One.2024.1080p.AMZN.WEBRip.1400MB.DD5.1.x264-GalaxyRG.mkv",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?streamadblocker\\.cc\\/v/([0-9a-zA-z]+)(\\/.+)?",
+            "excludePattern": "",
+            "patternDesc": "Redirecting to this URL prevents downloading the video from vidoza.net since no download button on the embedded page",
+            "redirectUrl": "$1://$2streamadblocker.cc/e/$3$4",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "anrdoezrs.net Redirects",
+            "exampleUrl": "https://www.anrdoezrs.net/links/7251228/type/dlg/sid/UUmuoUeUpU35995/https://play.google.com/store/apps/details?id=eu.chainfire.tv.sideloadlauncher",
+            "exampleResult": "https://play.google.com/store/apps/details?id=eu.chainfire.tv.sideloadlauncher",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?anrdoezrs\\.net\\/links\\/\\d+\\/type\\/dlg\\/sid\\/[a-zA-Z0-9]+\\/(https?\\:\\/\\/.+)$",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "$3",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "jdoqocy.com Redirects",
+            "exampleUrl": "https://www.jdoqocy.com/click-7633730-15041379?url=https%3A%2F%2Fwww.directv.com%2Fshop%2Fstream%2Fentertainment-package&",
+            "exampleResult": "https://www.directv.com/shop/stream/entertainment-package&",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}\\.)?jdoqocy\\.com\\/click-\\d+-\\d+\\?url=(.+)$",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "$3",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "viglink.com Redirects",
+            "exampleUrl": "https://redirect.viglink.com/?u=https%3A%2F%2Fwww.newegg.com&prodOvrd=RAL&key=b01ff7ca3e728b947b9c76b1293dd5ec&cuid=PF1_en-us",
+            "exampleResult": "https://www.newegg.com&prodOvrd=RAL&key=b01ff7ca3e728b947b9c76b1293dd5ec&cuid=PF1_en-us",
+            "error": null,
+            "includePattern": "^https?:\\/\\/redirect\\.viglink\\.com/\\?u=(.+)$",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "unityassetfree.xyz Download Redirect",
+            "exampleUrl": "https://unityassetfree.xyz/redirect-to/?url=http://ouo.io/qs/n21xCt72?s=https%3A%2F%2Funityassetcollection.com%2Fdownload.php%3Furl%3DTB-33c1afE4E2F2unsB5wpA3rE3PG2BcQZcF2D2C-7D2fD-17daaE4C1C1I-7B-21tA2ntA2ddNvC3ajxD4owC3C3B1C6C1F1G1A4E4A3B10A1C6D6jB1li1jB-21A4YQHNMMBB1%3D%3D",
+            "exampleResult": "http://ouo.io/qs/n21xCt72?s=https%3A%2F%2Funityassetcollection.com%2Fdownload.php%3Furl%3DTB-33c1afE4E2F2unsB5wpA3rE3PG2BcQZcF2D2C-7D2fD-17daaE4C1C1I-7B-21tA2ntA2ddNvC3ajxD4owC3C3B1C6C1F1G1A4E4A3B10A1C6D6jB1li1jB-21A4YQHNMMBB1%3D%3D",
+            "error": null,
+            "includePattern": "^https?:\\/\\/unityassetfree\\.xyz\\/redirect-to/\\?url=(.+)$",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "HeyHey.net Android Downloads Redirect",
+            "exampleUrl": "https://d-e02.winudf.com/b/XAPK/Y29tLnJlZGJ1bGwubW90b18xMzQyNl8xYWM3MGU5OQ?_fn=RGlydCBCaWtlIFVuY2hhaW5lZDogTVggUmFjaW5n&amp;is_hot=false&amp;k=2aa7eeb6b2f609733e9c69a68cb6debc65a40aea&amp;uu=https%3A%2F%2Fd-15.winudf.com%2Fb%2FXAPK%2FY29tLnJlZGJ1bGwubW90b18xMzQyNl8xYWM3MGU5OQ%3Fk%3Daa635d2cf993ff6ea77d548ae25ab0b965a40aea&amp;mu=1-1",
+            "exampleResult": "https://d-15.winudf.com/b/XAPK/Y29tLnJlZGJ1bGwubW90b18xMzQyNl8xYWM3MGU5OQ?k=aa635d2cf993ff6ea77d548ae25ab0b965a40aea&amp;mu=1-1",
+            "error": null,
+            "includePattern": "https?:\\/\\/d-e\\d+\\.winudf\\.com\\/b\\/X?APK\\/[a-zA-Z0-9]+\\?_fn=[a-zA-Z0-9]+&amp;is_hot=(false|true)&amp;k=[a-z0-9]+&amp;uu=(https%3A%2F%2Fd-15.winudf.com%2Fb%2FXAPK%2FY29tLnJlZGJ1bGwubW90b18xMzQyNl8xYWM3MGU5OQ%3Fk%3Daa635d2cf993ff6ea77d548ae25ab0b965a40aea&amp;mu=1-1)",
+            "excludePattern": "",
+            "patternDesc": "Any word after example.com leads to google search for that word.",
+            "redirectUrl": "$2",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "object",
                 "xmlhttprequest"
             ]
         }
