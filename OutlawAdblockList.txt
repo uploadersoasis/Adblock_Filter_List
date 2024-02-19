@@ -48712,7 +48712,7 @@ putlocker.pe,putlocker.sb##div[id="hgiks-top"]:remove()
 putlocker.pe,putlocker.sb##div[class="mba-block"]:remove()
 putlocker.pe,putlocker.sb##div[id="vpn-top"]:remove()
 putlocker.pe,putlocker.sb##button:has-text(/submit/i):remove-attr(disabled)
-!putlocker.pe,putlocker.sb##iframe[id="iframe-embed"]:style(height: 100vh !important; width: 100vw !important;)
+!putlocker.pe,putlocker.sb##iframe[id="iframe-embed"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 ! width is already set at 100%
 !putlocker.pe,putlocker.sb##+js(saa, width, 100%, iframe[id="iframe-embed"])
 putlocker.pe,putlocker.sb##+js(saa, height, 100%, iframe[id="iframe-embed"])
@@ -48798,7 +48798,7 @@ projectfreetv.dirproxy.biz,ecouchtuner.eu##*[class^="cookieConsent"]:remove()
 ||qtkcgsmoyg.com^*
 ||fooptoat.com^*
 ||*/ajax/banner/vpn$domain=putlocker.pe|putlocker.sb|sflix.to|fmovies.ps,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-||*/ajax/banners$$domain=putlocker.pe|putlocker.sb|sflix.to|fmovies.ps,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||*/ajax/banners$domain=putlocker.pe|putlocker.sb|sflix.to|fmovies.ps,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 www.couchtuner.show##+js(set-constant, gtag, noopFunc)
 www.couchtuner.show##+js(set-constant, window.dataLayer, [])
 www.couchtuner.show##+js(acs, gtag, window.dataLayer)
@@ -48815,8 +48815,8 @@ www.couchtuner.show##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 ||www.intelligenceadx.com/tracing.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||www.intelligenceadx.com/cswiper.min.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||tvbox-ag.dirproxy.biz/static/logo.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-!liveru.sx,livetvsx.org##+js(set-constant, BetterJsPop, noopFunc)
-liveru.sx,livetvsx.org##+js(acs, BetterJsPop)
+!www.newcdn.lol,liveru.sx,livetvsx.org##+js(set-constant, BetterJsPop, noopFunc)
+www.newcdn.lol,liveru.sx,livetvsx.org##+js(acs, BetterJsPop)
 liveru.sx,livetvsx.org##div[id="hiddenBannerCanvas"]:remove()
 liveru.sx,livetvsx.org##div[id="bannerInCenter"]:remove()
 ||liveru.sx/js/overlay.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -48825,24 +48825,42 @@ rentreviews.xyz,liveru.sx,livetvsx.org##a[rel="sponsored"]:remove()
 www.newcdn.lol,rentreviews.xyz,liveru.sx,livetvsx.org##+js(set-constant, gtag, noopFunc)
 www.newcdn.lol,rentreviews.xyz,liveru.sx,livetvsx.org##+js(set-constant, window.dataLayer, [])
 www.newcdn.lol,rentreviews.xyz,liveru.sx,livetvsx.org##+js(acs, gtag, window.dataLayer)
-www.newcdn.lol##div[id="overover"]:remove()
 www.newcdn.lol##div[class="clappr-banner"]:remove()
+www.newcdn.lol##div[id="overover"]:remove()
+www.newcdn.lol##div[id="obrazek"]:remove()
 www.newcdn.lol##div[id="adblockmessage"]:remove()
 www.newcdn.lol##div[id="bannerInCenter"]:remove()
+www.newcdn.lol##div[data-player]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 www.newcdn.lol##+js(set-constant, detectIncognito, noopFunc)
 www.newcdn.lol##+js(acs, detectIncognito)
+www.newcdn.lol##+js(set-constant, listenCookieChange, noopFunc)
+www.newcdn.lol##+js(acs, listenCookieChange)
+www.newcdn.lol##+js(set-constant, obrazek_show, 0)
+www.newcdn.lol##+js(set-constant, refresh, noopFunc)
+www.newcdn.lol##+js(no-setTimeout-if, refresh)
+||rentreviews.xyz/vbbig/index.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||rentreviews.xyz/vbsmall/index.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 tucaluka.shop##+js(set-constant, clickNS, noopFunc)
 !tucaluka.shop##+js(acs, /clickNS\(e\)/)
 tucaluka.shop##+js(acs, clickNS)
-tucaluka.shop####iframe[src^="https://www.newcdn.lol/page.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-tucaluka.shop##+js(saa, width, 100%, ##iframe[src^="https://www.newcdn.lol/page.php"])
-tucaluka.shop##+js(saa, height, 100%, ##iframe[src^="https://www.newcdn.lol/page.php"])
+! the script loaded from https://mastercdn.hu/n1.php?hash=tucaluka41 creates the video iframe on tucaluka.shop for the following rule.
+tucaluka.shop##iframe[src^="https://www.newcdn.lol/page.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+tucaluka.shop##+js(saa, width, 100%, iframe[src^="https://www.newcdn.lol/page.php"])
+tucaluka.shop##+js(saa, height, 100%, iframe[src^="https://www.newcdn.lol/page.php"])
+! the floatLayer1 div tag contans an advertising iframe hosted on the same domain (adyydyyydyy.php); removing this div tag removed the iframe.
+tucaluka.shop##div[id="floatLayer1"]:remove()
+tucaluka.shop##a[href^="http://www.linkonclick.com/jump/next.php?"]:remove()
+||www.tucaluka.shop/adyydyyydyy.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 !||blockedtv.xyz/adbdetect/fload.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||blockedtv.xyz/adbdetect/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||blockedtv.xyz/js/ar.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 !||jsdelivr.map.fastly.net/gh/Joe12387/detectIncognito@main/dist/es5/detectIncognito.min.js$3p,script
 !||cdn.jsdelivr.net/gh/Joe12387/detectIncognito@main/dist/es5/detectIncognito.min.js$3p,script
 ||jsdelivr.map.fastly.net/gh/Joe12387/detectIncognito@main/$3p,script
 ||cdn.jsdelivr.net/gh/Joe12387/detectIncognito@main/$3p,script
+! The following two rules are necessary to completely defuse the anti-adblocking from blockedtv.xyz/adbdetect/ @ www.newcdn.lol
+||tumblebit.org/license.packed.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||tumblebit.org/script.packed.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 
 !Whitelisted
 !@@||cdn.fastcomments.com^*$3p,script,xhr,domain=igg-games.com|pcgamestorrents.com
