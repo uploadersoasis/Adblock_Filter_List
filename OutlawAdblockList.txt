@@ -126,7 +126,7 @@ techydino.net##script:remove-attr(onerror)
 techydino.net##+js(remove-attr, onerror)
 techydino.net##^script:has-text(decodeURIComponent):remove()
 techydino.net##+js(acs, decodeURIComponent)
-techydino.net##+js(no-window-open-if, !/techydino\.net/i, log)
+techydino.net##+js(no-window-open-if, !/techydino\.net/i, , , log, 1)
 techydino.net##+js(acs, anchorSlot)
 techydino.net##+js(aopr, anchorSlot)
 techydino.net##+js(aopw, anchorSlot)
@@ -31860,7 +31860,7 @@ diakov.net##div[data-name="adaptiveAd"]
 ||toftheussia.com^*
 !katfile.com##+js(set-constant, download_click, true, stay)
 !katfile.com##+js(set-constant, adEnable, false, stay)
-katfile.com##+js(no-window-open-if, 0, /katfile\.com/i)
+katfile.com##+js(no-window-open-if, /katfile\.com/i)
 ||ableaborah.com^*
 ||eiasninancu.com^*
 ||imps.monu.delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -31869,7 +31869,7 @@ katfile.com##+js(no-window-open-if, 0, /katfile\.com/i)
 ||ads.viralize.tv^*
 ||tgkswchehxpfwff.com^*
 ||1warie.com^*
-uploadev.org##+js(no-window-open-if, 0, /uploadev\.org/i)
+uploadev.org##+js(no-window-open-if, /uploadev\.org/i)
 !||hexagon-analytics.com/images/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||hexagon-analytics.com^*
 ||rmumuhmcogufc.xyz^*
@@ -43497,7 +43497,7 @@ send.cm##+js(aopw, FingerprintJS)
 ||send.cm^$3p,script
 ! This makes it close on pressing the download button everytime.
 !send.cm##+js(disable-newtab-links)
-!send.cm##+js(no-window-open-if, !/send\.cm/i, log)
+!send.cm##+js(no-window-open-if, !/send\.cm/i, , , log, 1)
 send.cm##+js(remove-attr, class, #fileinfo, stay)
 send.cm##a[href*="//agacelebir.com/"]:remove()
 send.cm##a[href*="//pronunciationspecimens.com/"]:upward(1):remove()
@@ -48015,6 +48015,8 @@ librarywhispering.com##+js(set-constant, adConfig, {})
 ! The following rule is all that is required to defuse the librarywhispering.com/player-bundle.min.js script which terminates the video player if the developer tools/console is opened.
 ! It does not stop repeated checking of the value though.
 librarywhispering.com##+js(set-constant, devtoolsDetector, [])
+! TODO: use the following rule to prevent the console error messages regarding the setting of devtoolsDetector; need to find and specify the function calls.
+!librarywhispering.com##+js(call-nothrow, <call to devtoolsDetector>)
 ! Running devtoolsDetector.stop(); also stops the interval checks IF the definition of devtoolsDetector is not overridden.
 ! TODO: These devtoolsDetector set rules don't appear to actually do anything for this domain.
 !librarywhispering.com##+js(set-constant, devtoolsDetector.launch, noopFunc, end)
@@ -48081,7 +48083,7 @@ bluemediadownload.lat,bluemedialink.online,bluemediafiles.com##iframe:remove()
 bluemediadownload.lat,bluemedialink.online,bluemediafiles.com##^script:has-text(window.BB_):remove()
 bluemediadownload.lat,bluemedialink.online,bluemediafiles.com##+js(abort-on-property-read, FingerprintJS)
 bluemediadownload.lat,bluemedialink.online,bluemediafiles.com##+js(abort-on-property-write, FingerprintJS)
-!bluemediadownload.lat,bluemedialink.online,bluemediafiles.com##+js(no-window-open-if, , , log)
+!bluemediadownload.lat,bluemedialink.online,bluemediafiles.com##+js(no-window-open-if, , , , log, 1)
 !bluemediadownload.lat,bluemedialink.online,bluemediafiles.com##+js(no-window-open-if, /tyeatment\.biz/i)
 !bluemediadownload.lat,bluemedialink.online,bluemediafiles.com##+js(no-window-open-if, /apsstoure\.biz/i)
 bluemediadownload.lat,bluemedialink.online,bluemediafiles.com##+js(no-window-open-if, !/bluemediadownload\.lat|bluemedialink\.online|bluemediafiles\.com/i)
@@ -48836,9 +48838,9 @@ livetvsx.org##+js(saa, height, 100%, iframe[src^="https://tucaluka.shop/tucaluka
 ||liveru.sx/js/overlay.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||livetvsx.org/js/overlay.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 rentreviews.xyz,liveru.sx,livetvsx.org##a[rel="sponsored"]:remove()
-www.newcdn.lol,rentreviews.xyz,liveru.sx,livetvsx.org##+js(set-constant, gtag, noopFunc)
-www.newcdn.lol,rentreviews.xyz,liveru.sx,livetvsx.org##+js(set-constant, window.dataLayer, [])
-www.newcdn.lol,rentreviews.xyz,liveru.sx,livetvsx.org##+js(acs, gtag, window.dataLayer)
+www.newcdn.lol,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org##+js(set-constant, gtag, noopFunc)
+www.newcdn.lol,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org##+js(set-constant, window.dataLayer, [])
+www.newcdn.lol,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org##+js(acs, gtag, window.dataLayer)
 www.newcdn.lol##div[class="clappr-banner"]:remove()
 www.newcdn.lol##div[id="overover"]:remove()
 www.newcdn.lol##div[id="obrazek"]:remove()
@@ -48866,10 +48868,11 @@ tucaluka.shop##+js(saa, height, 100%, iframe[src^="https://www.newcdn.lol/page.p
 tucaluka.shop##div[id="floatLayer1"]:remove()
 tucaluka.shop##a[href^="http://www.linkonclick.com/jump/next.php?"]:remove()
 ||www.tucaluka.shop/adyydyyydyy.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-! TODO: The anti-adblocking from blockedtv.xyz/adbdetect/ @ www.newcdn.lol is not completely defused; i.e. it redirects on initial load but not if go back to page.
+! TODO: The anti-adblocking from blockedtv.xyz/adbdetect/ @ livetvsx.org/www.newcdn.lol is not completely defused; i.e. it redirects on initial load but not if go back to page.
+! All the fload.js script does is add an invisible div tag with id of "adsbox".  Blocking it is mroe trouble than it is worth.
 !||blockedtv.xyz/adbdetect/fload.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-||blockedtv.xyz/adbdetect/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||blockedtv.xyz/js/ar.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||record.ab935.com^*
 !||jsdelivr.map.fastly.net/gh/Joe12387/detectIncognito@main/dist/es5/detectIncognito.min.js$3p,script
 !||cdn.jsdelivr.net/gh/Joe12387/detectIncognito@main/dist/es5/detectIncognito.min.js$3p,script
 ||jsdelivr.map.fastly.net/gh/Joe12387/detectIncognito@main/$3p,script
