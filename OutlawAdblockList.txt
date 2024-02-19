@@ -48840,6 +48840,10 @@ sflix.to##+js(no-setTimeout-if, /function\(\)/, F.devtools)
 sflix.to##+js(nosiif, function, _0x39426c)
 ! This function is the one which checks for the developer tools on an interval and is all that is required to defuse the check. 
 sflix.to##+js(set-constant, _0x39426c, noopFunc)
+! Either of the following rules fixes the broken images on lazyloaded image tags.
+! rename-attr requires a non-standard/external scriptlet.
+!sflix.to##+js(rename-attr, img[class*="lazyload"], data-src, src)
+sflix.to##+js(set-attr, img[class*="lazyload"], src, [data-src])
 ||www.intelligenceadx.com/flac.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||www.intelligenceadx.com/jclic.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||www.intelligenceadx.com/json3.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
