@@ -24934,8 +24934,8 @@ www.4shared.com##^script:has-text(trackAdBlock):remove()
 www.4shared.com##^script:has-text(ld.counter):remove()
 ! doesn't work
 !www.4shared.com##^script:has-text(cmwoejfwnldnkg):remove()
-!www.4shared.com##+js(nosiif, /^/)
-www.4shared.com##+js(nosiif, b)
+!www.4shared.com##+js(no-setInterval-if, /^/)
+www.4shared.com##+js(no-setInterval-if, b)
 !www.4shared.com##+js(nano-stb, , *, 0.01)
 www.4shared.com###troublesText1:remove-class(hintDuringCounter)
 www.4shared.com###troublesText2:remove-class(hintDuringCounter)
@@ -28082,7 +28082,7 @@ www.filecad.com##^script:has-text(clear-adblock)
 www.filecad.com##^script:has-text(#adblockinfo)
 !www.filecad.com##+js(remove-class, download-timer)
 www.filecad.com##div[class="download-timer"]:style(display: inline !important;)
-www.filecad.com##+js(nosiif, /^display\(\)/)
+www.filecad.com##+js(no-setInterval-if, /^display\(\)/)
 www.filecad.com##a[class="btn btn-subtle"]:style(display: inline !important;)
 www.filecad.com##+js(set-constant, LOGGED_IN, true)
 www.amazon.es##span[data-action="sp-cc"]
@@ -29855,7 +29855,7 @@ techyneed.com##+js(set-constant, _0x3344, [])
 techyneed.com##div[id="alertmsg"]:remove()
 techyneed.com##iframe[data-aa]:remove()
 techyneed.com##+js(noeval)
-jaanmusic.in,techyneed.com##+js(nosiif, _0x)
+jaanmusic.in,techyneed.com##+js(no-setInterval-if, _0x)
 jaanmusic.in##.adsbygoogle:remove()
 jaanmusic.in,techyneed.com##div[style="background:#ededed;"]:remove()
 jaanmusic.in,techyneed.com###galax2:remove()
@@ -31213,8 +31213,8 @@ fastclick.to##+js(aopw, _gaq)
 fastclick.to##ins[data-ad-client]
 fastclick.to##ins[data-ad-client]:remove()
 fastclick.to##inpur[id="adblock_detected"]:remove()
-!fastclick.to##+js(nosiif, /^/)
-fastclick.to##+js(nosiif, /^function\(\)/)
+!fastclick.to##+js(no-setInterval-if, /^/)
+fastclick.to##+js(no-setInterval-if, /^function\(\)/)
 apk4k.fun##div[class="ad_spoiler"]
 apk4k.fun##div[class="ad"]
 ||wildroid.ru/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -31820,7 +31820,7 @@ www.ign.com##div[class*="adunit-wrapper"]
 ||ads.bidstreamserver.com^*
 ||cdn.pushmaster-cdn.xyz^*
 kisscartoon.sh##+js(set-constant, check_adblock, false, stay)
-kisscartoon.sh##+js(nosiif, break)
+kisscartoon.sh##+js(no-setInterval-if, break)
 ! TODO: Really abort on debugger as that is what the debugger statement already does?
 kisscartoon.sh##+js(acs, /debugger;/)
 kisscartoon.sh##+js(aopr, debugger)
@@ -37754,10 +37754,10 @@ embedstream.me##+js(aeld, , detectDevTool)
 !embedstream.me##+js(no-setTimeout-if, function)
 !embedstream.me##+js(no-setTimeout-if, /^function()/)
 embedstream.me##+js(no-setTimeout-if, /^function\(\)/)
-!embedstream.me##+js(nosiif, function())
-!embedstream.me##+js(nosiif, function)
-!embedstream.me##+js(nosiif, /^function()/)
-embedstream.me##+js(nosiif, /^function\(\)/)
+!embedstream.me##+js(no-setInterval-if, function())
+!embedstream.me##+js(no-setInterval-if, function)
+!embedstream.me##+js(no-setInterval-if, /^function()/)
+embedstream.me##+js(no-setInterval-if, /^function\(\)/)
 embedstream.me##+js(no-setTimeout-if, forceKillplayer)
 ! The following commented out value are all dynamic so don't block.
 !embedstream.me##img[id="f3p7l3q5z8b3a1"]
@@ -37791,10 +37791,10 @@ www.nolive.me##+js(set-constant, debounce, noopFunc)
 !www.nolive.me##+js(no-setTimeout-if, function)
 !www.nolive.me##+js(no-setTimeout-if, /^function()/)
 www.nolive.me##+js(no-setTimeout-if, /^function\(\)/)
-!www.nolive.me##+js(nosiif, function())
-!www.nolive.me##+js(nosiif, function)
-!www.nolive.me##+js(nosiif, /^function()/)
-www.nolive.me##+js(nosiif, /^function\(\)/)
+!www.nolive.me##+js(no-setInterval-if, function())
+!www.nolive.me##+js(no-setInterval-if, function)
+!www.nolive.me##+js(no-setInterval-if, /^function()/)
+www.nolive.me##+js(no-setInterval-if, /^function\(\)/)
 www.nolive.me##+js(no-setTimeout-if, forceKillplayer)
 www.nolive.me##div[class="Ad-Container"]
 www.nolive.me##div[class="Ad-Container"]:remove()
@@ -38042,7 +38042,7 @@ www.foxnews.com##+js(aopw, window._cbq)
 !www.foxnews.com##+js(set-constant, Strike.insertAd, noopFunc, end)
 www.foxnews.com##+js(set-constant, Strike.insertAd, noopFunc, complete)
 www.foxnews.com##+js(acs, Strike.insertAd)
-www.foxnews.com##+js(nosiif, /^function\(\)/)
+www.foxnews.com##+js(no-setInterval-if, /^function\(\)/)
 www.foxnews.com##+js(remove-class, scroll-lock, ,)
 www.foxnews.com##+js(trusted-set-constant, document.querySelector("a.close").href, window.history.back())
 www.foxnews.com##+js(saa, href, window.history.back(), a.close)
@@ -38551,8 +38551,8 @@ www.sportsbaytv.com##+js(set-constant, popurl, '')
 www.sportsbaytv.com##+js(set-constant, popurl2, '')
 www.sportsbaytv.com##+js(set-constant, popurl3, '')
 www.sportsbaytv.com##+js(set-constant, hostname, '')
-!www.sportsbaytv.com##+js(nosiif, vwu)
-www.sportsbaytv.com##+js(nosiif, /^vwu\(\)/)
+!www.sportsbaytv.com##+js(no-setInterval-if, vwu)
+www.sportsbaytv.com##+js(no-setInterval-if, /^vwu\(\)/)
 ! 1rowsportz.info is now defunct as a video streaming website.
 1rowsportz.info##+js(aopr, _Hasync)
 1rowsportz.info##+js(aopw, _Hasync)
@@ -38664,10 +38664,10 @@ www.vipleague.st##+js(aopw, adcashMacros)
 !www.vipleague.st##+js(no-setTimeout-if, function)
 !www.vipleague.st##+js(no-setTimeout-if, /^function()/)
 www.vipleague.st##+js(no-setTimeout-if, /^function\(\)/)
-!www.vipleague.st##+js(nosiif, function())
-!www.vipleague.st##+js(nosiif, function)
-!www.vipleague.st##+js(nosiif, /^function()/)
-www.vipleague.st##+js(nosiif, /^function\(\)/)
+!www.vipleague.st##+js(no-setInterval-if, function())
+!www.vipleague.st##+js(no-setInterval-if, function)
+!www.vipleague.st##+js(no-setInterval-if, /^function()/)
+www.vipleague.st##+js(no-setInterval-if, /^function\(\)/)
 www.vipleague.st##+js(no-setTimeout-if, forceKillplayer)
 ||cdn.espn.com/onetrust/otCCPAiab.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||dcf.espn.com/privacy/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -38717,7 +38717,7 @@ brelif.net##div[id="closebutton"]
 brelif.net##div[id="closebutton"]:remove()
 brelif.net##+js(aopr, google_render_ad)
 brelif.net##+js(aopw, google_render_ad)
-brelif.net##+js(nosiif, secs)
+brelif.net##+js(no-setInterval-if, secs)
 brelif.net##+js(no-setTimeout-if, showClose)
 www.visiblesafe.com##div[id="obrazek"]
 www.visiblesafe.com##div[id="obrazek"]:remove()
@@ -38764,12 +38764,12 @@ www.jokerplayer7.online##snackbar:remove()
 jokerplayer7.online##div[id="close"]
 jokerplayer7.online##div[id="close"]:remove()
 www.jokerplayer7.online##+js(set-constant, setOverlayAds, noopFunc)
-www.jokerplayer7.online##+js(nosiif, /^function/)
+www.jokerplayer7.online##+js(no-setInterval-if, /^function/)
 live.harleyquinnwidget.live##div[id="ad_overlay"]
 live.harleyquinnwidget.live##div[id="ad_overlay"]:remove()
 live.harleyquinnwidget.live##div[id="ads"]
 live.harleyquinnwidget.live##div[id="ads"]:remove()
-live.harleyquinnwidget.live##+js(nosiif, /^vwu\(\)/)
+live.harleyquinnwidget.live##+js(no-setInterval-if, /^vwu\(\)/)
 live.harleyquinnwidget.live##+js(aopr, mamafooty)
 live.harleyquinnwidget.live##+js(aopw, mamafooty)
 live.harleyquinnwidget.live##:xpath(//script[contains(text(), 'top.location')])
@@ -39317,7 +39317,7 @@ dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isadblock, 0, 
 !devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="ipp"]:remove()
 devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(no-setTimeout-if, tick)
 ! defusing intervals breaks the script which creates the token for the download
-!devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(nosiif, /^function\(\)/)
+!devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(no-setInterval-if, /^function\(\)/)
 ! even though blocking the countdown script, still have to wait for the 10 second countdown for the download link to be generated.
 ||devuploads.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||thecubexguide.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -39368,7 +39368,7 @@ abysscdn.com##div[id="player"]:remove-class(jw-flag-user-inactive)
 abysscdn.com##div[id="player"]:remove-class(jw-no-focus)
 abysscdn.com##iframe[src="about:blank"]
 abysscdn.com##iframe[src="about:blank"]:remove()
-!abysscdn.com##+js(nosiif, /^/)
+!abysscdn.com##+js(no-setInterval-if, /^/)
 !abysscdn.com##+js(no-setTimeout-if, /^/)
 ! Cannot block these functions or the video will not play.
 !abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
@@ -39498,12 +39498,12 @@ vidmoly.to,vidmoly.me##a[href*="://vidmoly.to/dl/"]:remove()
 ! Do NOT remove the adsBox or the adblock detection script will trigger.
 !vidmoly.to,vidmoly.me##div[class="adsBox"]
 !vidmoly.to,vidmoly.me##div[class="adsBox"]:remove()
-vidmoly.to,vidmoly.me##+js(nosiif, mg_vd)
-vidmoly.to,vidmoly.me##+js(nosiif, igetas)
-vidmoly.to,vidmoly.me##+js(nosiif, igetlang)
-!vidmoly.to,vidmoly.me##+js(nosiif, dlwed)
-!vidmoly.to,vidmoly.me##+js(nosiif, igetdl)
-vidmoly.to,vidmoly.me##+js(nosiif, lo_metric)
+vidmoly.to,vidmoly.me##+js(no-setInterval-if, mg_vd)
+vidmoly.to,vidmoly.me##+js(no-setInterval-if, igetas)
+vidmoly.to,vidmoly.me##+js(no-setInterval-if, igetlang)
+!vidmoly.to,vidmoly.me##+js(no-setInterval-if, dlwed)
+!vidmoly.to,vidmoly.me##+js(no-setInterval-if, igetdl)
+vidmoly.to,vidmoly.me##+js(no-setInterval-if, lo_metric)
 vidmoly.to,vidmoly.me###vidmolyadblocktest
 vidmoly.to,vidmoly.me###vidmolyadblocktest:remove()
 !vidmoly.to,vidmoly.me##+js(noeval)
@@ -39776,7 +39776,7 @@ mixdrop.co,mixdrop.ag,mixdrop.to##+js(aopw, wpn63s)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(aopr, wpn63s)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(aeld, click, function(g))
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(aeld, click, function(a))
-mixdrop.co,mixdrop.ag,mixdrop.to##+js(nosiif, /^function/)
+mixdrop.co,mixdrop.ag,mixdrop.to##+js(no-setInterval-if, /^function/)
 mixdrop.co,mixdrop.ag,mixdrop.to##body:remove-attr(onclick)
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, adcashMacros, {})
 mixdrop.co,mixdrop.ag,mixdrop.to##+js(abort-on-property-write, adcashMacros)
@@ -40168,12 +40168,16 @@ www.2embed.to##iframe[src="about:blank"]:remove()
 ! put this script rule last since it uses an absolute xpath and its path could change if nodes above it are removed by other rules.
 www.2embed.to##:xpath("/html/body/script[1]")
 www.2embed.to##:xpath("/html/body/script[1]"):remove()
+rabbitstream.net##div[class="afs_ads ad-placement"]:remove()
+rabbitstream.net##div[id="vidcloud-player"]:remove-class(jw-flag-user-inactive)
+rabbitstream.net##+js(remove-class, jw-flag-user-inactive, #vidcloud-player)
+rabbitstream.net##+js(remove-attr, disableremoteplayback, vid[class="jw-video jw-reset"])
 rabbitstream.net##vid[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
 rabbitstream.net##+js(remove-attr, disableremoteplayback, vid[class="jw-video jw-reset"])
-rabbitstream.net##+js(set-constant, gtag, noopFunc)
-rabbitstream.net##+js(acs, gtag)
 rabbitstream.net##video:remove-attr(disableremoteplayback)
 rabbitstream.net##+js(remove-attr, disableremoteplayback, video)
+rabbitstream.net##+js(set-constant, gtag, noopFunc)
+rabbitstream.net##+js(acs, gtag)
 !rabbitstream.net##+js(set-constant, devtoolsDetector, [])
 ! The following rules defuse the rabbitstream.net/js/player/prod/e4-player.min.js script which terminates the video player if the developer tools/console is opened.
 ! Redefining devtoolsDetector.launch prevents the interval of checking for the developer tools which clears the console.
@@ -40302,7 +40306,7 @@ moonmov.pro##+js(aopw, dance)
 moonmov.pro##+js(aopr, dance)
 moonmov.pro##+js(aopw, phashc)
 moonmov.pro##+js(aopr, phashc)
-moonmov.pro##+js(nosiif, /^/)
+moonmov.pro##+js(no-setInterval-if, /^/)
 moonmov.pro##+js(no-setTimeout-if, deploy)
 moonmov.pro##+js(no-setTimeout-if, /^/)
 moonmov.pro##+js(acs, Zordon)
@@ -40751,13 +40755,13 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-replace-node-text, scri
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-replace-node-text, script, /s.src =|s.src/i)
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-replace-node-text, script, /script1.src|script2.src/, lol.noop)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##+js(aeld, , { [native code] })
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##+js(nosiif, [native code])
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##+js(no-setInterval-if, [native code])
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com###analytics
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com###analytics:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##.btn-primary.btn-lg.btn-block.btn:remove-attr(onclick)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##.btn-primary.btn-lg.btn-block.btn:remove-attr(target)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##+js(no-window-open-if)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##+js(nosiif, _0x)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##+js(no-setInterval-if, _0x)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##[href^="https://bit.ly/"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##[href^="https://bit.ly/"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##.adsbygoogle:style(max-height: 1px !important;)
@@ -41551,14 +41555,14 @@ www.outlookindia.com##div[class^="ad_unit_"]
 www.outlookindia.com##div[class^="ad_unit_"]:remove()
 www.outlookindia.com##div[id^="div-gpt-ad-"]
 www.outlookindia.com##div[id^="div-gpt-ad-"]:remove()
-www.outlookindia.com##+js(nosiif, /^function\(\)/)
-!www.outlookindia.com##+js(nosiif, /^/)
+www.outlookindia.com##+js(no-setInterval-if, /^function\(\)/)
+!www.outlookindia.com##+js(no-setInterval-if, /^/)
 !www.outlookindia.com##+js(set-constant, googletag.cmd.push, noopFunc, end)
 www.outlookindia.com##+js(set-constant, googletag.cmd.push, noopFunc, complete)
 www.outlookindia.com##+js(acs, googletag)
 www.outlookindia.com##div[id="_snup-rtdx-ldgr1"]
 www.outlookindia.com##div[id="_snup-rtdx-ldgr1"]:remove()
-www.thebrighterside.news##+js(nosiif, /^/)
+www.thebrighterside.news##+js(no-setInterval-if, /^/)
 !www.thebrighterside.news##+js(acs, browser.sentry-cdn.com, sentry-next.wixpress.com)
 www.thebrighterside.news##+js(aopr, amzn_assoc_ad_type)
 www.thebrighterside.news##+js(aopw, amzn_assoc_ad_type)
@@ -41982,7 +41986,7 @@ availedsmallest.com##+js(acs, /console\.clear\(\);/)
 availedsmallest.com##+js(set-constant, console.clear, noopFunc)
 availedsmallest.com##+js(acs, sandbox)
 availedsmallest.com##+js(no-window-open-if, /parentlargevia\.com/)
-availedsmallest.com##+js(nosiif, /^/)
+availedsmallest.com##+js(no-setInterval-if, /^/)
 ||parentlargevia.com^*
 ||rnynacj.erichorne.net^*
 *##html[data-adblockkey]:remove-attr(data-adblockkey)
@@ -42568,7 +42572,7 @@ mynewsmedia.co,mynewspost.in###footer-sticky-ad
 !||gplinks.in/track/js/main.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 !||gplinks.co/track/js/main.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 !gplinks.co,gplinks.in###go-link > div:nth-child(1):style(display: inline;)
-!gplinks.co,gplinks.in##+js(nosiif, /^/)
+!gplinks.co,gplinks.in##+js(no-setInterval-if, /^/)
 gplinks.co,gplinks.in###cookie-pop
 gplinks.co,gplinks.in###link-btn:style(display: block !important;)
 gplinks.co,gplinks.in###msg:style(display: block !important;)
@@ -42586,8 +42590,8 @@ gplinks.co,gplinks.in##+js(aopr, clickCount)
 gplinks.co,gplinks.in##+js(aopr, Tawk_API)
 gplinks.co,gplinks.in##+js(aopw, Tawk_API)
 gplinks.co,gplinks.in##+js(disable-newtab-links)
-gplinks.co,gplinks.in##+js(nosiif, href)
-gplinks.co,gplinks.in##+js(nosiif, timer)
+gplinks.co,gplinks.in##+js(no-setInterval-if, href)
+gplinks.co,gplinks.in##+js(no-setInterval-if, timer)
 gplinks.co,gplinks.in##+js(remove-attr, disabled, #go-submit, stay)
 gplinks.co,gplinks.in##+js(remove-class, d-none, #go-submit, stay)
 gplinks.co,gplinks.in##+js(remove-class, hidden, #go-submit, stay)
@@ -46546,7 +46550,7 @@ www.niaomea.me##+js(aopr, trkurlprefix)
 !www.niaomea.me##+js(aeld, click)
 www.niaomea.me##+js(set-constant, detectDevTool, noopFunc)
 www.niaomea.me##+js(set-constant, doRedirect, 0)
-www.niaomea.me##+js(nosiif, /^function\(\)/)
+www.niaomea.me##+js(no-setInterval-if, /^function\(\)/)
 www.niaomea.me##+js(aeld, mousemove, detectDevTool)
 www.niaomea.me##+js(aeld, load, detectDevTool)
 www.niaomea.me##+js(aeld, focus, detectDevTool)
@@ -46622,8 +46626,8 @@ voodc.com##script[adblock-settings]:remove()
 voodc.com##img[id="pingsts"]:remove()
 voodc.com##+js(set-constant, Pingstat, noopFunc)
 voodc.com##+js(acs, Pingstat)
-!voodc.com##+js(nosiif, Pingstat)
-voodc.com##+js(nosiif, /^Pingstat\(\)/)
+!voodc.com##+js(no-setInterval-if, Pingstat)
+voodc.com##+js(no-setInterval-if, /^Pingstat\(\)/)
 ||restapi.voodc.com/vping.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ! voodc.com does host the jwplayer javascript player and player functions for some embedded channels.
 ! Don't always want a script to unmute the volume, but this only runs at initial load of the page
@@ -47249,7 +47253,7 @@ player.mycraft.click##+js(trusted-replace-node-text, script, /player\.setVolume\
 player.mycraft.click##+js(trusted-set-constant, PlaySize, style="height: 100vh important!;width: 100vw !important;")
 player.mycraft.click##div[id="UnMutePlayer"]:remove()
 player.mycraft.click##+js(set-constant, vwu, noopFunc)
-player.mycraft.click##+js(nosiif, /^vwu\(\)/)
+player.mycraft.click##+js(no-setInterval-if, /^vwu\(\)/)
 ||fodsoack.com^*
 ||zoawhoal.com^*
 ||totalnicenewz.com^*
@@ -47322,7 +47326,7 @@ s2watch.link##+js(aopw, _Hasync)
 s2watch.link##+js(aopr, _Hasync)
 s2watch.link##:xpath(//script[contains(text(), 'vwu()')]):remove()
 s2watch.link##+js(set-constant, vwu, noopFunc)
-s2watch.link##+js(nosiif, /^vwu\(\)/)
+s2watch.link##+js(no-setInterval-if, /^vwu\(\)/)
 s2watch.link##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 s2watch.link##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 s2watch.link##+js(acs, window.kkp4a5x5tv)
@@ -47688,10 +47692,10 @@ wwwstream.pro##+js(set-constant, killPageConsoleOpen, noopFunc)
 wwwstream.pro##+js(set-constant, runPageBugger, noopFunc)
 wwwstream.pro##+js(set-constant, isConsoleOpen, false)
 wwwstream.pro##+js(set-constant, isOpen, false)
-!wwwstream.pro##+js(nosiif, WSmute)
-wwwstream.pro##+js(nosiif, /^WSmute\(\)/)
-!wwwstream.pro##+js(nosiif, refreshPage)
-wwwstream.pro##+js(nosiif, /^refreshPage\(\)/)
+!wwwstream.pro##+js(no-setInterval-if, WSmute)
+wwwstream.pro##+js(no-setInterval-if, /^WSmute\(\)/)
+!wwwstream.pro##+js(no-setInterval-if, refreshPage)
+wwwstream.pro##+js(no-setInterval-if, /^refreshPage\(\)/)
 wwwstream.pro##+js(set-constant, window.onload, noopFunc)
 wwwstream.pro##div[id="UnMutePlayer"]:remove()
 wwwstream.pro##iframe[src^="/online.php"]:remove()
@@ -48018,7 +48022,7 @@ fmovies.ps##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 !fmovies.ps##+js(nosiif)
 ! The following two rules defuse the anti-developer tools and console debugger in fmovies.ps/js/group_17/app.min.js
 fmovies.ps##+js(set-constant, devtoolsDetectInterval, noopFunc)
-fmovies.ps##+js(nosiif, devtoolsDetectInterval)
+fmovies.ps##+js(no-setInterval-if, devtoolsDetectInterval)
 ||*/5/*/?oo=1&aab=1$xhr
 ||vctuubswo.com^*
 ||shutunga.com^*
@@ -48522,7 +48526,7 @@ thepostmillennial.com##iframe[id="rufous-sandbox"]:remove()
 thepostmillennial.com##+js(set-constant, gdprApplies, false)
 thepostmillennial.com##+js(set-constant, checkIfUspIsReady, noopFunc)
 thepostmillennial.com##+js(set-constant, uspInterval, noopFunc)
-thepostmillennial.com##+js(nosiif, checkIfUspIsReady)
+thepostmillennial.com##+js(no-setInterval-if, checkIfUspIsReady)
 ||cadmus.script.ac/*/script.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||dn0qt3r0xannq.cloudfront.net/tpm-sTDaTcae8k/default/prebid-wrapper.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||dn0qt3r0xannq.cloudfront.net/tpm-sTDaTcae8k/default/prebid-load.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -48716,8 +48720,8 @@ putlocker.boo##+js(set-constant, FingerprintJS, noopFunc)
 ||putlocker.boo/assets/script$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ! redefining _0x39426c prevents the altrernative video hosts/server from being listed on the watch pages
 !putlocker.pe,putlocker.sb##+js(set-constant, _0x39426c, noopFunc)
-!putlocker.pe,putlocker.sb##+js(nosiif, /^function\(\)/)
-putlocker.pe,putlocker.sb##+js(nosiif, /^/)
+!putlocker.pe,putlocker.sb##+js(no-setInterval-if, /^function\(\)/)
+putlocker.pe,putlocker.sb##+js(no-setInterval-if, /^/)
 ! The function to detect the developer tools is loaded in the third-party iframes not in putlocker's scope.
 ! TODO: Set the interval in the following rule to the maximum value of 32767 or to 0?  The normal value is 7.
 !putlocker.pe,putlocker.sb##+js(set-constant, devtoolsDetectInterval, 0)
@@ -48781,10 +48785,10 @@ mylivestream.pro##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVk
 mylivestream.pro##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 mylivestream.pro##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 mylivestream.pro##+js(set-constant, refreshPage, noopFunc)
-mylivestream.pro##+js(nosiif, /refreshPage\(\)/)
-!mylivestream.pro##+js(nosiif, refreshPage)
-mylivestream.pro##+js(nosiif, WSmute)
-!mylivestream.pro##+js(nosiif, /WSmute\(\)/)
+mylivestream.pro##+js(no-setInterval-if, /refreshPage\(\)/)
+!mylivestream.pro##+js(no-setInterval-if, refreshPage)
+mylivestream.pro##+js(no-setInterval-if, WSmute)
+!mylivestream.pro##+js(no-setInterval-if, /WSmute\(\)/)
 mylivestream.pro##script[id="_wau49a"]:remove()
 mylivestream.pro##+js(set-constant, _wau, [])
 mylivestream.pro##+js(acs, /_wau\.push/)
@@ -48835,14 +48839,33 @@ sflix.to,www.couchtuner.show##+js(aopr, window.kkp4a5x5tv)
 sflix.to,www.couchtuner.show##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 sflix.to,www.couchtuner.show##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 sflix.to,www.couchtuner.show##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
-! The following three rules defuse the anti-developer tools script.
-sflix.to##+js(no-setTimeout-if, /function\(\)/, F.devtools)
-sflix.to##+js(nosiif, function, _0x39426c)
-! This function is the one which checks for the developer tools on an interval and is all that is required to defuse the check. 
-sflix.to##+js(set-constant, _0x39426c, noopFunc)
+sflix.to##div[id="fb-root"]:remove()
+sflix.to##div[id="modalshare"]:remove()
+sflix.to##div[id="vpn-top"]:remove()
+! The following three rules set the video viewport to the maximum size.
+sflix.to##div[class="watching_player-area"]:style(max-width:99vw !important;max-height:99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width:99vw !important; height:99vh !important; user-select: all !important; pointer-events: all !important;)
+sflix.to##div[id="watch-iframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
+sflix.to##iframe[id="iframe-embed"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
+sflix.to##+js(saa, height, 100%, iframe[id="iframe-embed"])
+sflix.to##+js(saa, seamless, seamless, iframe[id="iframe-embed"])
+! The following attributes are already set.
+!sflix.to##+js(saa, scrolling, no, iframe[id="iframe-embed"])
+!sflix.to##+js(saa, height, 100%, iframe[id="iframe-embed"])
+!sflix.to##+js(saa, frameborder, 0, iframe[id="iframe-embed"])
+! The following rule isn't necessary and doesn't show the list of servers if the script which generates them isn't run due ot the preceding rule.
+!sflix.to##div[id="servers-list"]:style(display: block !important)
+! This function is the one in https://sflix.to/js/group_11/app.min.js which checks for the developer tools on an interval and is all that is required to defuse the check. 
+! This rule is all that is required to defuse the anti-developer tools function.
+sflix.to##+js(no-setInterval-if, /function\(\){_0x39426c\(\)}/)
+sflix.to##+js(no-setInterval-if, devtoolsDetectInterval)
+! The following rule prevents the list of servers and episodes from being displayed;
+!sflix.to##+js(set-constant, _0x39426c, noopFunc)
+! The following rule prevents the list of servers and episodes from being displayed; it does NOT appear to actually defuse the anti-developer tools.
+!sflix.to##+js(no-setTimeout-if, /function\(\)/, F.devtools)
 ! Either of the following rules fixes the broken images on lazyloaded image tags.
 ! rename-attr requires a non-standard/external scriptlet.
 !sflix.to##+js(rename-attr, img[class*="lazyload"], data-src, src)
+! set-attr creates a new attribute rather than renaming an existing one.
 sflix.to##+js(set-attr, img[class*="lazyload"], src, [data-src])
 ||www.intelligenceadx.com/flac.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||www.intelligenceadx.com/jclic.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -48924,12 +48947,12 @@ vidplay.online##+js(remove-attr, disableremoteplayback, video[class^="jw-video"]
 ! The obfuscated script in the following rule is required to play the video.
 !||vidplay.online/assets/mcloud/min/embed.js$script
 ! The following rule does NOT prevent the video from playing.  It only prevents the intervals with numbers of 100 or 500.
-!vidplay.online##+js(nosiif, [native code])
+!vidplay.online##+js(no-setInterval-if, [native code])
 ! The following rule does NOT prevent the video from playing and doesn't prevent the native code functions from executing.
-!vidplay.online##+js(nosiif, ![native code])
+!vidplay.online##+js(no-setInterval-if, ![native code])
 ! The following rule may be the one which includes the anti-developer tools behavior due to it having an interval of 300000
 ! It also stops the  "Invalid or corrupted PDF file." errors in the console.
-vidplay.online##+js(nosiif, /_0x65bf0\(\)/)
+vidplay.online##+js(no-setInterval-if, /_0x65bf0\(\)/)
 ! The following rule will prevent the video player from working.
 !vidsrc.to##+js(nosiif)
 
