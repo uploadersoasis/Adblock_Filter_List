@@ -39875,12 +39875,15 @@ sandrataxeight.com,voe.sx,scatch176duplicities.com##script:has-text(/console\.cl
 !sandrataxeight.com,voe.sx,scatch176duplicities.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
 sandrataxeight.com,voe.sx,scatch176duplicities.com##+js(remove-node-text, script, /console\.clear\(\);/gm)
 sandrataxeight.com,voe.sx,scatch176duplicities.com##+js(acs, /console.clear\(\);/)
-!sandrataxeight.com,voe.sx,scatch176duplicities.com##+js(no-setTimeout-if, c74a68dfbd15fcd6f23a6b26879bc82e)
-sandrataxeight.com,voe.sx,scatch176duplicities.com##+js(no-setTimeout-if, /^/)
 sandrataxeight.com,voe.sx,scatch176duplicities.com##a[href^="https://desperationembassy.com/"]:remove()
 sandrataxeight.com,voe.sx,scatch176duplicities.com##+js(aopw, window.c1f1f6cd617)
 sandrataxeight.com,voe.sx,scatch176duplicities.com##+js(aopr, window.c1f1f6cd617)
 sandrataxeight.com,voe.sx,scatch176duplicities.com##+js(acs, encodeURIComponent, decodeURIComponent)
+! The following rule prevents legitimate functions including [native code]. 
+!sandrataxeight.com,voe.sx,scatch176duplicities.com##+js(no-setTimeout-if, /^/)
+!sandrataxeight.com,voe.sx,scatch176duplicities.com##+js(no-setTimeout-if, c74a68dfbd15fcd6f23a6b26879bc82e)
+! The following rule defuses blocking of the developer tools.
+sandrataxeight.com,voe.sx,scatch176duplicities.com##+js(no-setTimeout-if, /function\(\)\{var _0x33f118=_0x2ad273;_0x461a13\[_0x33f118\(0x112\)\]\(\);\}/)
 upstream.to##+js(set-constant, gtag, noopFunc)
 upstream.to##+js(set-constant, FabUtils, noopFunc)
 upstream.to##+js(set-constant, FabPlugin, noopFunc)
