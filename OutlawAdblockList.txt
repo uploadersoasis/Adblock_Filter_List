@@ -44680,10 +44680,18 @@ snahp.uproxy2.org##+js(abort-on-property-write, _paq)
 ||a.kgorilla.net^*
 piraproxy.info,dirproxy.com##div[class="justify-brow"]:has(div[class="nrd-general-d-box"]:has(a[class="all-linked"][href="https://vpnk.net/?vpn"])):remove()
 www2.solarmovie.cr##div[id="histats_counter"]:remove()
-! The following two rules set the video viewport to the maximum size.
-www2.solarmovie.cr##div[class="container"]:style(overflow:scroll !important;max-width:99vw !important;max-height:99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
+! The following rules set the video viewport to the maximum size.
+! "main" must be set to a specific size (in pixels or percentage of the view) NOT 100% for width and height or the video viewport will get truncated to a narrow height.
+! TODO:  the height of main is getting set to 700px instead of 99vh for some reason.
+www2.solarmovie.cr##div[id="main"]:style(overflow:scroll !important;max-width:99vw !important;max-height:99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width:99vw !important; height:99vh !important; user-select: all !important; pointer-events: all !important;)
+! There is more than one div with class="container", so don't set the style for it.
+!www2.solarmovie.cr##div[class="container"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
+www2.solarmovie.cr##div[class="main-content main-detail"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
+www2.solarmovie.cr##div[class="md-top"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
 www2.solarmovie.cr##div[id="player-area"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
+www2.solarmovie.cr##div[class="pa-main player-main"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
 www2.solarmovie.cr##div[id="content-embed"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
+www2.solarmovie.cr##iframe[id="iframe-embed"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
 www2.solarmovie.cr##+js(saa, width, 100%, iframe[id="iframe-embed"])
 www2.solarmovie.cr##+js(saa, seamless, seamless, iframe[id="iframe-embed"])
 ! The following attributes are already set.
