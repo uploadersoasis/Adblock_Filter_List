@@ -29,7 +29,7 @@ NOTES:
         property set to "true" in the scriptlets.js file.
 
     2.  The rules with the "replace=" directive after the URL also have the
-        "trusted" restrictions, and therefore must also be listed under the
+        "trusted" restrictions and therefore must also be listed under the
         "My Filters" tab and not just in this list.
 
     3.  Some of these rules utilize the add-on scriptlets like "replace attribute"
