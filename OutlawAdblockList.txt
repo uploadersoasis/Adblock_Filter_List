@@ -48740,8 +48740,11 @@ putlocker.pe,putlocker.sb##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 putlocker.pe,putlocker.sb##div[id="modalshare"]:remove()
 putlocker.pe,putlocker.sb##div[id="hgiks-top"]:remove()
 putlocker.pe,putlocker.sb##div[class="mba-block"]:remove()
+putlocker.pe,putlocker.sb##div[id="fb-root"]:remove()
 putlocker.pe,putlocker.sb##div[id="vpn-top"]:remove()
 putlocker.pe,putlocker.sb##button:has-text(/submit/i):remove-attr(disabled)
+! The following rules sets the video viewport to the maximum size.
+putlocker.pe,putlocker.sb##div[class="watching_player-area"]:style(max-width:99vw !important;max-height:99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width:99vw !important; height:99vh !important; user-select: all !important; pointer-events: all !important;)
 !putlocker.pe,putlocker.sb##iframe[id="iframe-embed"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 ! width is already set at 100%
 !putlocker.pe,putlocker.sb##+js(saa, width, 100%, iframe[id="iframe-embed"])
@@ -48831,9 +48834,9 @@ projectfreetv.dirproxy.biz,ecouchtuner.eu##*[class^="cookieConsent"]:remove()
 ||xeymddqyuyp.com^*
 ||*/ajax/banner/vpn$domain=putlocker.pe|putlocker.sb|sflix.to|fmovies.ps,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||*/ajax/banners$domain=putlocker.pe|putlocker.sb|sflix.to|fmovies.ps,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-sflix.to,www.couchtuner.show##+js(set-constant, gtag, noopFunc)
-sflix.to,www.couchtuner.show##+js(set-constant, window.dataLayer, [])
-sflix.to,www.couchtuner.show##+js(acs, gtag, window.dataLayer)
+sflix.to,www.couchtuner.show,putlocker.pe,putlocker.sb##+js(set-constant, gtag, noopFunc)
+sflix.to,www.couchtuner.show,putlocker.pe,putlocker.sb##+js(set-constant, window.dataLayer, [])
+sflix.to,www.couchtuner.show,putlocker.pe,putlocker.sb##+js(acs, gtag, window.dataLayer)
 sflix.to,www.couchtuner.show##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 sflix.to,www.couchtuner.show##+js(acs, window.kkp4a5x5tv)
 sflix.to,www.couchtuner.show##+js(aopw, window.kkp4a5x5tv)
@@ -49088,6 +49091,8 @@ firstrows.top,firstrowsport.org##+js(set-constant, checkCookie, noopFunc)
 ||xmlwiz.xml.ak-is2.net^*
 ||ip-*.dditscdn.com/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||ctjdwm.com^*
+||wwwe.gnihcacdereit.click^*
+||rrrf.novatechz.dev^*
 ||cs511.wac.edgecastcdn.net/jsm2/master/script/ga/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||cs511.wac.edgecastcdn.net/jsm2/site/livejasmin/script/bundle/consentCookie.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||cs511.wac.edgecastcdn.net/jsm2/site/livejasmin/script/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
