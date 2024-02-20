@@ -42095,7 +42095,6 @@ search.brave.com##div[id^="premium-promo"]:remove()
 ||dnavexch.com^*
 ||www.bostonherald.com/wp-content/client-mu-plugins/src/Ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||abysscdn.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-||cloudflare.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||upsdelivery.info^*
 ||legodelivery.info^*
 ||adidascanadaltd.com^*
@@ -49120,6 +49119,9 @@ linenstandard.net##div[id="btn-unmute"]:remove()
 ! The following rule did not work even though all of the text strings are in the text input to eval().
 !linenstandard.net##+js(noeval-if, /contentango|adsilo|adzhog|mckensecuryr/gm)
 linenstandard.net##+js(noeval-if, /contentango|adsilo|adzhog|mckensecuryr/)
+! Do not use the following rules as the URL's are used for legitimate diagnostic information used by Cloudflare's WARP app.
+!||www.cloudflare.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+!||cloudflare.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 
 !Whitelisted
 ! The following exception rule overrides the rule from the Fuck Fuckadblock: Mining list AND any other rules above to block matching domains with service-worker.js; TODO: need to block */server-worker.js from individual domains in rules using $important directive.
