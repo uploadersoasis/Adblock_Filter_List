@@ -48969,7 +48969,7 @@ vipbox1.com,vipboxi.net##div[class="tallstreambanner"]:remove()
 vipbox1.com,vipboxi.net##div[class="playerImage"]:remove()
 vipbox1.com,vipboxi.net##img[src="/img/flash_hd.png"]:remove()
 vipbox1.com,vipboxi.net##img[alt="Flash HD"]:remove()
-vipbox1.com,vipboxi.net##div[class="playerName"]:has-text(/^HD Flash$/):remove()
+vipbox1.com,vipboxi.net##div[class="playerName"]:has-text(/Flash$/):remove()
 vipbox1.com,vipboxi.net##div[class="linkbar button blue"]:has-text(/Primary Flash Streams/):remove()
 ! The following rule blocks links to "fake" video streams on betting websites.
 vipbox1.com,vipboxi.net##a[rel="sponsored"]:remove()
@@ -48989,6 +48989,7 @@ firstrows.top,firstrowsport.org##div[class="module-desc"]:style(display: inline;
 ! To prevent overflow assume that the randomFromInterval() function changed in the following rule has its returned value multiplied by 1000 when used.
 ||firstrows.top/js/functions.js$replace=/return Math.floor\(Math.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
 ||firstrowsport.org/js/functions.js$replace=/return Math.floor\(Math.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
+||vipboxi.net/js/functions.js$replace=/return Math.floor\(Math.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
 firstrows.top,firstrowsport.org##+js(set-constant, checkCookie, noopFunc)
 ! Can't do both set checkCookie and abort it.
 !firstrows.top,firstrowsport.org##+js(acs, checkCookie)
@@ -49007,15 +49008,26 @@ firstrows.top,firstrowsport.org##+js(set-constant, checkCookie, noopFunc)
 ! The following two rules do not work if the script is loaded directly in the browser window/tab.
 !||mastercdn.hu/*.js$script,xhr,replace=/height=\d{1,3}/height="100%"/gm
 !||mastercdn.hu/*.js$script,xhr,replace=/width=\d{1,3}/width="100%"/gm
-! The following two rules also work if the script is loaded directly in the browser window/tab.
+! The following four rules also work if the script is loaded directly in the browser window/tab.
 ||mastercdn.hu/*.js$replace=/height=\d{1,3}/height="100%"/gm
 ||mastercdn.hu/*.js$replace=/width=\d{1,3}/width="100%"/gm
+! TODO: always n1.php?
+||mastercdn.hu/n1.php$replace=/height=\d{1,3}/height="100%"/gm
+||mastercdn.hu/n1.php$replace=/width=\d{1,3}/width="100%"/gm
 !||pl14991345.pvclouds.com^*
 !||pl14991346.pvclouds.com^*
 ||governessstrengthen.com^*
 ||damnightmareleery.com^*
+||event.getblue.io/r/audience-pixel.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||event.getblue.io/p/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+!||collect.analyse.lnearn.com/sa.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||collect.analyse.lnearn.com^*
+||collect.verify.lnearn.com^*
+||bcgame.sk/service-worker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 
 !Whitelisted
+! The following exception rule overrides the rule from the Fuck Fuckadblock: Mining list AND any other rules above to block matching domains with service-worker.js; TODO: need to block */server-worker.js from individual domains in rules using $important directive.
+@@/^https?:\/\/.*\/(\%?[235][a-fA-F3-6]|[a-f-_]{3,})?[Ss](ervice)?[-_]?[Ww](orker)?[a-zA-Z0-9]?\.js(\?.*)?$/$script,match-case
 !@@||cdn.fastcomments.com^*$3p,script,xhr,domain=igg-games.com|pcgamestorrents.com
 @@||fastcomments.com^*$3p,script,xhr,domain=igg-games.com
 ! TODO: add video streaming websites to the following two rules as need be
