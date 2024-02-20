@@ -3550,15 +3550,16 @@ www.mtv.com###ad_2
 ||9c1f917.se/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||torguard.net/images/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||filesharingtalk.com/adframe.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-||popmyads.com/serve/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||nullreferrer.com/bannerads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 !||nullreferrer.com/ads/js_http.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 !||nullreferrer.com/ads/js.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||nullreferrer.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-generatorlinkpremium.com##.adsbygoogle
-generatorlinkpremium.com###firstleft
-generatorlinkpremium.com##.secondsky
-generatorlinkpremium.com##.thirdsky
+generatorlinkpremium.com##.adsbygoogle:remove()
+generatorlinkpremium.com###firstleft:remove()
+generatorlinkpremium.com##.secondsky:remove()
+generatorlinkpremium.com##.thirdsky:remove()
+||popmyads.com/serve/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||popmyads.com/go/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 !||cdn.popmyads.com/pma.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||cdn.popmyads.com^*
 ||ads.exoclick.com^*
@@ -7120,7 +7121,6 @@ depositfiles.com###CGCandy2066
 ||secureupload.eu/images/wpman_2_2.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 !||secure.statcounter.com/counter/counter.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||secure.statcounter.com^*
-||popmyads.com/go/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||malecona.mastertopforum.info/topframe.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||199.101.98.242/services/GEO_CODE/?callback_func=load_popunder$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 !||c1.onedmp.com/c/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -40150,7 +40150,6 @@ www.2embed.to##:xpath("/html/body/script[1]"):remove()
 rabbitstream.net##div[class="afs_ads ad-placement"]:remove()
 rabbitstream.net##div[id="vidcloud-player"]:remove-class(jw-flag-user-inactive)
 rabbitstream.net##+js(remove-class, jw-flag-user-inactive, #vidcloud-player)
-rabbitstream.net##+js(remove-attr, disableremoteplayback, vid[class="jw-video jw-reset"])
 rabbitstream.net##vid[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
 rabbitstream.net##+js(remove-attr, disableremoteplayback, vid[class="jw-video jw-reset"])
 rabbitstream.net##video:remove-attr(disableremoteplayback)
@@ -44443,7 +44442,6 @@ www.eevblog.com##iframe[src*="//search.supplyframe.com/partner/26/ipo950/"]:remo
 ||analytics.slashdotmedia.com^*
 ||prematuregrumpyunhappy.com^*
 ||downloading-free.com^*
-||yourjsdelivery.com^*
 ||waughtsquint.com^*
 ||enablerubbingjab.com^*
 ||audrault.xyz^*
@@ -45649,7 +45647,6 @@ www.hbo.com##script[id="user-consent-script"]:remove()
 !||edge.aditude.io/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 !||edge.aditude.io/wrapper/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||edge.aditude.io^*
-||dn0qt3r0xannq.cloudfront.net/plugins/ad-server.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||assets.boredpanda.com/blog/wp-content/themes/boredpanda/js/boredpanda.content_tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||stiffgame.com^*
 ||cdn.flipboard.com/dev_O/clear.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
@@ -47091,9 +47088,14 @@ wikisport.click,wikisport.se##iframe[src^="https://livehdplay.ru/wiki.php"]:styl
 ||golassiahub.com/css/jquerymin-adstera.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||golassiahub.com/css/stat.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||golassiahub.com/css/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
-golassiahub.com##:xpath(//script[contains(text(), 'sandblaster.detect')]):remove()
+! result is an array with result["framed"] and result["sandboxed"] = true or false
+golassiahub.com##+js(set-constant, result, [])
+golassiahub.com##+js(set-constant, result["framed"], true)
+golassiahub.com##+js(set-constant, result["sandboxed"], false)
+! TODO: Does aborting sandblaster.detect prevent the video from being played? should not need to abort if result["sandboxed"] is set to false.
+! Video doesn't play because m3u8 playlist isn't retrieved because of CORS error and also because referer in request header isn't allowed?
 golassiahub.com##+js(acs, sandblaster.detect)
-golassiahub.com##+js(set-constant, result, noopFunc)
+golassiahub.com##:xpath(//script[contains(text(), 'sandblaster.detect')]):remove()
 golassiahub.com##div[id="ad-overlay2"]:remove()
 golassiahub.com##div[class="clappr-watermark"]:remove()
 golassiahub.com##div[data-watermark]:remove()
@@ -48049,7 +48051,6 @@ librarywhispering.com##+js(set-constant, devtoolsDetector, [])
 !librarywhispering.com##+js(set-constant, devtoolsDetector.launch, noopFunc, end)
 !librarywhispering.com##+js(set-constant, devtoolsDetector.launch, noopFunc, complete)
 !librarywhispering.com##+js(set-constant, devtoolsDetector.launch, noopFunc)
-!librarywhispering.com##+js(set-constant, devtoolsDetector.default._detectLoop, noopFunc, end)
 !librarywhispering.com##+js(set-constant, devtoolsDetector.default._detectLoop, noopFunc, end)
 !librarywhispering.com##+js(set-constant, devtoolsDetector.default._detectLoop, noopFunc, complete)
 !librarywhispering.com##+js(set-constant, devtoolsDetector.default._detectLoop, noopFunc)
@@ -49068,19 +49069,47 @@ firstrows.top,firstrowsport.org##+js(set-constant, checkCookie, noopFunc)
 ||www.sniejankmqq.com^*
 ||si.castanydm.com^*
 ||www.crninkvhariuh.com^*
+||www.yvlvbcumfhsdeu.com^*
+||3.us.xmlap.com^*
+||acertb.xml.ak-is2.net^*
+||adxnexus.xml.ak-is2.net^*
+||crmtt.livejasmin.com^*
+||revrtb.xml.ak-is2.net^*
+||s.pemsrv.com^*
+||t10.lowtid.com^*
+!||twinrdsyn.com/Redirect.eng$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+!||twinrdsyn.com/link.engine$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||twinrdsyn.com^*
+||www.cachegorilla.net/feed/click/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||xml.acertb.com^*
+||xml.cachegorilla.com^*
+||xml.revrtb.net^*
+||xml.xmlwiz.com^*
+||xmlwiz.xml.ak-is2.net^*
+||ip-*.dditscdn.com/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||ctjdwm.com^*
+||cs511.wac.edgecastcdn.net/jsm2/master/script/ga/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||cs511.wac.edgecastcdn.net/jsm2/site/livejasmin/script/bundle/consentCookie.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||cs511.wac.edgecastcdn.net/jsm2/site/livejasmin/script/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||staticx.dditscdn.com/jsm2/master/script/ga/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||staticx.dditscdn.com/jsm2/site/livejasmin/script/bundle/consentCookie.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+||staticx.dditscdn.com/jsm2/site/livejasmin/script/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 sportsonline.si##script:remove-attr(adblock-settings)	
 sportsonline.si##+js(remove-attr, adblock-settings, script)
 sportsonline.si##div[id="html1"]:remove()
 linenstandard.net##iframe[style*="visibility:hidden"]:remove()
 linenstandard.net##+js(aopw, vw24)
 linenstandard.net##+js(aopr, vw24)
-linenstandard.net##+js(no-setTimeout-if, /function\(\)/)
-! The following line prevents the video player configuration script from running.
-! TODO: use noeval-if for this rule instead, but what value for second parameter?
-!linenstandard.net##+js(noeval)
-!linenstandard.net##+js(noeval-if, ?)
 linenstandard.net##+js(set-constant, startMuted, false)
 linenstandard.net##div[id="btn-unmute"]:remove()
+! The following rule prevents the video from being played.
+!linenstandard.net##+js(no-setTimeout-if, /function\(\)/)
+! The following line prevents the video player configuration script from running.
+!linenstandard.net##+js(noeval)
+! TODO: use noeval-if for this rule instead, but what value for second parameter: string/regular expression matching in payload string
+! The following rule did not work even though all of the text strings are in the text input to eval().
+!linenstandard.net##+js(noeval-if, /contentango|adsilo|adzhog|mckensecuryr/gm)
+linenstandard.net##+js(noeval-if, /contentango|adsilo|adzhog|mckensecuryr/)
 
 !Whitelisted
 ! The following exception rule overrides the rule from the Fuck Fuckadblock: Mining list AND any other rules above to block matching domains with service-worker.js; TODO: need to block */server-worker.js from individual domains in rules using $important directive.
