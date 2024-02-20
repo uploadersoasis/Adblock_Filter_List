@@ -44658,14 +44658,9 @@ snahp.uproxy2.org##+js(abort-on-property-write, _paq)
 piraproxy.info,dirproxy.com##div[class="justify-brow"]:has(div[class="nrd-general-d-box"]:has(a[class="all-linked"][href="https://vpnk.net/?vpn"])):remove()
 www2.solarmovie.cr##div[id="histats_counter"]:remove()
 ! The following rules set the video viewport to the maximum size.
-! "main" must be set to a specific size (in pixels or percentage of the view) NOT 100% for width and height or the video viewport will get truncated to a narrow height.
-! TODO:  the height of main is getting set to 700px instead of 99vh for some reason.
-www2.solarmovie.cr##div[id="main"]:style(overflow:scroll !important;max-width:99vw !important;max-height:99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width:99vw !important; height:99vh !important; user-select: all !important; pointer-events: all !important;)
-! There is more than one div with class="container", so don't set the style for it.
-!www2.solarmovie.cr##div[class="container"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
-www2.solarmovie.cr##div[class="main-content main-detail"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
-www2.solarmovie.cr##div[class="md-top"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
-www2.solarmovie.cr##div[id="player-area"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
+! player-area is the div tag that must be enlarged. Its width and height must be set to a specific size (in pixels or percentage of the view) NOT 100% or the video viewport will get truncated to a narrow height.
+!www2.solarmovie.cr##div[id="player-area"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
+www2.solarmovie.cr##div[id="player-area"]:style(overflow:scroll !important;max-width:99vw !important;max-height:99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width:99vw !important; height:99vh !important; user-select: all !important; pointer-events: all !important;)
 www2.solarmovie.cr##div[class="pa-main player-main"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
 www2.solarmovie.cr##div[id="content-embed"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
 www2.solarmovie.cr##iframe[id="iframe-embed"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
@@ -48960,6 +48955,8 @@ vidplay.online##div[id="player"]:remove-class(jw-flag-user-inactive)
 vidplay.online##+js(remove-class, jw-flag-user-inactive, div[id="player"])
 vidplay.online##video[class^="jw-video"]:remove-attr(disableremoteplayback)
 vidplay.online##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
+! The following rule prevents retrieving the number of views for a video.
+||vidplay.online/views/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ! The obfuscated script in the following rule is required to play the video.
 !||vidplay.online/assets/mcloud/min/embed.js$script
 ! The following rule does NOT prevent the video from playing.  It only prevents the intervals with numbers of 100 or 500.
@@ -49091,12 +49088,16 @@ firstrows.top,firstrowsport.org##+js(set-constant, checkCookie, noopFunc)
 ||xmlwiz.xml.ak-is2.net^*
 ||ip-*.dditscdn.com/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||ctjdwm.com^*
-! TODO:  The following two domains are used legitimately for rabbitstream.net video streams or for click fraud?
+! TODO:  The following two domains are used legitimately for rabbitstream.net video streams or for click fraud?  The traffic appears to be legitimate video segments disguised as general web files.
 !||wwwe.gnihcacdereit.click^*
 !||rrrf.gnihcacdereit.click
 !||gnihcacdereit.click
 !||rrrf.novatechz.dev^*
 !||novatechz.dev^
+||trk.bestmoviesflix.xyz/impression/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
+! Do not block trk.bestmoviesflix.xyz or cariblish-vanitayed.com wholesale or legitimate redirects from it won't work.
+!||trk.bestmoviesflix.xyz^*
+!||cariblish-vanitayed.com^*
 ||cs511.wac.edgecastcdn.net/jsm2/master/script/ga/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||cs511.wac.edgecastcdn.net/jsm2/site/livejasmin/script/bundle/consentCookie.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
 ||cs511.wac.edgecastcdn.net/jsm2/site/livejasmin/script/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media
