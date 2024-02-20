@@ -28,7 +28,11 @@ NOTES:
         The reason for this is these scriptlets have the "requiresTrust"
         property set to "true" in the scriptlets.js file.
 
-    2.  Some of these rules utilize the add-on scriptlets like "replace attribute"
+    2.  The rules with the "replace=" directive after the URL also have the
+        "trusted" restrictions, and therefore must also be listed under the
+        "My Filters" tab and not just in this list.
+
+    3.  Some of these rules utilize the add-on scriptlets like "replace attribute"
         (rpla) and "rename attribute" (rna) from the javascript @
         https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
         so add that URL to the "userResourcesLocation" value in the advanced settings
@@ -36,24 +40,24 @@ NOTES:
         example.com##+js(rpla, [selector], oldattr, newattr, newvalue)  ! newvalue is optional but is "" by default.
         example.com##+js(rna, [selector], oldattr, newattr)  ! don't need to first remove existing attribute with same name
 
-    3.  Some of these rules utilize the "set attribute any value" (set-attr-any.js / saa) scriptlet 
+    4.  Some of these rules utilize the "set attribute any value" (set-attr-any.js / saa) scriptlet 
         from the javascript @ https://github.com/uploadersoasis/Adblock_Filter_List/raw/master/outlaw_scriptlets.js
         so add that URL preceded by a space to the end of the "userResourcesLocation"
         value in the advanced settings so that those rules will work.
 
-    4.  Filters in this list block ads on YouTube.com.  This causes a black screen
+    5.  Filters in this list block ads on YouTube.com.  This causes a black screen
         to appear for each ad that would have otherwise played along with an
         associated delay.
         The video will play or continue to play after this pause.  The delay may
         still be shorter than the ad(s) would have been.
 
-    5.  The countdown period of some file hosts has been removed or shortened.
+    6.  The countdown period of some file hosts has been removed or shortened.
         In some of these cases the countdown may not display, so press the
         button to perform the download anyway.  For file hosts that do server-side
         checks on the countdown, such as Filefactory, you will still have to wait
         the normal period before downloading even if no countdown timer is displayed.
 
-    6.  A relative few websites may still require the use of a custom Javascript
+    7.  A relative few websites may still require the use of a custom Javascript
         snippet to be fully functional even when using these rules.  Such a
         script can be saved as a bookmark in the web browser and selected when
         on the webpage which requires it.
@@ -62,7 +66,7 @@ NOTES:
         The script to activate the download button @ filecr.com is:
 javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 
-    7.  Due to the way that Wikipedia's responsive website design currently
+    8.  Due to the way that Wikipedia's responsive website design currently
         works or rather doesn't work, these rules force a style suited to a
         1920 pixel width screen.  If your screen is a different size, adjust the
         three rules which set this style:
