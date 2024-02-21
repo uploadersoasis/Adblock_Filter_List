@@ -49114,15 +49114,17 @@ www.pcguide.com##+js(set-constant, window.adthriveCLS.disableAds.video, false)
 www.pcguide.com##+js(set-constant, window.adthriveCLS.disableAds.content, true)
 www.pcguide.com##+js(set-constant, window.adthriveCLS.disableAds.recipe, true)
 ||capi.connatix.com/rtb/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-! TODO: does the following rule break video player access?
-!||capi.connatix.com/tr/si?token=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||capi.connatix.com/tr/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||capi.connatix.com/us/google/pixel?$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||cks.connatix.com^*
 ||api.connatix.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||trk.connatix.com^*
 ||vcore.connatix.com/vpaid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||vcore.connatix.com^*
+! The following three rules don't break the connatix video player.
+!||cks.connatix.com/cks?pid=$important
+||cks.connatix.com^*$important
+!||capi.connatix.com/tr/si?token=$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||capi.connatix.com/tr/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||capi.connatix.com/us/google/pixel?$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||pl.connatix.com^*
 ||t.adx.opera.com^*
 !||ssbsync.smartadserver.com/api/sync?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ssbsync.smartadserver.com^*
@@ -49164,11 +49166,13 @@ en.wikiversity.org##div[id="siteNotice"]:remove()
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
-@@connatix.com^$3p
+!@@||connatix.com^$3p
 ! It also has an addition rule which removes the cid parameter from the URL query string, i.e. ||connatix.com^$3p,removeparam=cid
 ! The following rule is necessary to override the cid removal.
 @@||connatix.com^$3p,removeparam=cid
-! The following six rules override that rule.
+! The following six rules override that rule to allow connatix videos to be played.
+@@||img.connatix.com^*
+@@||vid.connatix.com^*
 @@||cd.connatix.com/connatix.player.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 @@||cds.connatix.com/p/*/connatix.player.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 @@||cd.connatix.com/connatix.playspace.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
