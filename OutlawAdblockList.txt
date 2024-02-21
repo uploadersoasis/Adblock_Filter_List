@@ -48785,13 +48785,13 @@ projectfreetv.dirproxy.biz,ecouchtuner.eu##*[class^="cookieConsent"]:remove()
 sflix.to,www.couchtuner.show,putlocker.pe,putlocker.sb##+js(set-constant, gtag, noopFunc)
 sflix.to,www.couchtuner.show,putlocker.pe,putlocker.sb##+js(set-constant, window.dataLayer, [])
 sflix.to,www.couchtuner.show,putlocker.pe,putlocker.sb##+js(acs, gtag, window.dataLayer)
-sflix.to,www.couchtuner.show##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
-sflix.to,www.couchtuner.show##+js(acs, window.kkp4a5x5tv)
-sflix.to,www.couchtuner.show##+js(aopw, window.kkp4a5x5tv)
-sflix.to,www.couchtuner.show##+js(aopr, window.kkp4a5x5tv)
-sflix.to,www.couchtuner.show##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-sflix.to,www.couchtuner.show##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
-sflix.to,www.couchtuner.show##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc##+js(acs, window.kkp4a5x5tv)
+sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc##+js(aopw, window.kkp4a5x5tv)
+sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc##+js(aopr, window.kkp4a5x5tv)
+sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
+sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 sflix.to##div[id="fb-root"]:remove()
 sflix.to##div[id="modalshare"]:remove()
 sflix.to##div[id="vpn-top"]:remove()
@@ -49195,10 +49195,34 @@ ko.strikeout.cc##+js(remove-node-text, script, /debugger;/gm)
 ||strikeout.cc/partytown/partytown*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 strikeout.im,strikeout.cc##script[type="text/partytown"]:remove()
 strikeout.im,strikeout.cc##+js(set-constant, partytown, {})
+! The following rule prevents the embedded chatango widget from working since its configuration ids are in siteConfig. 
+strikeout.im,strikeout.cc##+js(set-constant, siteConfig, {})
+! Do not abort scripts if they simply read siteConfig.
+strikeout.im,strikeout.cc##+js(aopw, siteConfig)
+! TODO: Does this iframe actually get used since niaomea.me creates it via an external script and launches in a separate tab on Firefox?
+strikeout.im,strikeout.cc##iframe[title="embed player"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+strikeout.im,strikeout.cc##+js(saa, width, 100%, iframe[title="embed player"])
+strikeout.im,strikeout.cc##+js(saa, height, 100%, iframe[title="embed player"])
+strikeout.im,strikeout.cc##+js(saa, seamless, seamless, iframe[title="embed player"])
+strikeout.im,strikeout.cc##+js(saa, frameborder, 0, iframe[title="embed player"])
+strikeout.im,strikeout.cc##+js(saa, allowfullscreen, true, iframe[title="embed player"])
+strikeout.im,strikeout.cc##+js(saa, webkitallowfullscreen, true, iframe[title="embed player"])
+strikeout.im,strikeout.cc##+js(saa, mozallowfullscreen, true, iframe[title="embed player"])
+! The following attribute is already set by the page.
+!strikeout.im,strikeout.cc##+js(saa, scrolling, no, iframe[title="embed player"])
+! TODO: is the id in the following rule dynamically generated?
+strikeout.im,strikeout.cc##div[id="w5k3p8v8o2"]:remove()
 ||mgxxuqp.com^*
 ||sclrnnp.com^*
 ||fbdbrtwhlhm.com^*
 ||oachailo.net^*
+||epopthilloa.top^*
+||native-track.com/api/native/track?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||hildrenastheyc.info^*
+||eanangelsa.info^*
+||rouhavenever.com^*
+||d1r9f6frybgiqo.cloudfront.net^*$3p,script
+||xmnagjqhpj.com^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
