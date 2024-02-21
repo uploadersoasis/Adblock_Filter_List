@@ -47662,7 +47662,9 @@ escast.xyz##:xpath(//script[contains(text(), '_Hasync')]):remove()
 escast.xyz##+js(set-constant, _Hasync, [])
 escast.xyz##+js(aopw, _Hasync)
 escast.xyz##+js(aopr, _Hasync)
+escast.xyz##div[id="UnMutePlayer"]:remove()
 ! TODO: While setting/removing the muted values works, it does NOT actually unmute/set the volume level.
+!       player.unmute(); will actually unmutes the volume
 !       player.muted(); still returns true after these rules are applied.
 !       player.volume(); returns the current volume level with 1 being full volume.
 escast.xyz##+js(saa, muted, false, div[id="my-player"])
@@ -47670,9 +47672,9 @@ escast.xyz##+js(saa, muted, false, div[id="my-player"])
 escast.xyz##video[id="my-player_html5_api"]:remove-attr(muted)
 escast.xyz##+js(remove-attr, muted, video[id="my-player_html5_api"])
 escast.xyz##+js(saa, controls, true, video[id="my-player_html5_api"])
+! TODO: Both of the following rules are necessary for different video sources?
+escast.xyz##+js(trusted-replace-node-text, script, /mute: true/gm, mute: false)
 escast.xyz##+js(trusted-replace-node-text, script, /mute="true"/gm, mute="false")
-! TODO: need to set this in video tag not script
-!escast.xyz##+js(trusted-replace-node-text, script, /muted="muted"/gm, mute="")
 ||zeekaihu.net^*
 ||stugsoda.com^*
 ||veeloomo.net^*
