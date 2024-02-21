@@ -47329,7 +47329,9 @@ mrgamingstreams.com##div[id="player"]:style(padding:0 !important; margin:0 !impo
 mrgamingstreams.com##script[disable-devtool-auto]:remove()
 mrgamingstreams.com##+js(set-constant, ConsoleBan, noopFunc)
 !mrgamingstreams.com##+js(set-constant, ConsoleBan.init, noopFunc)
-mrgamingstreams.com##+js(aeld, /contextmenu|keydown/)
+! Do NOT defuse the keydown event listener as it is used by the video player (jwplayer) to control its functions.
+!mrgamingstreams.com##+js(aeld, /contextmenu|keydown/)
+mrgamingstreams.com##+js(aeld, contextmenu)
 mrgamingstreams.com##+js(acs, /e\.preventDefault\(\);/)
 mrgamingstreams.com##div[class="embedchat"]:has(iframe[src^="https://www.youtube.com/live_chat"]):remove()
 mrgamingstreams.com##+js(set-constant, window.dataLayer, [])
