@@ -49113,18 +49113,18 @@ www.pcguide.com##*[class^="adthrive"]:remove()
 www.pcguide.com##+js(set-constant, window.adthriveCLS.disableAds.video, false)
 www.pcguide.com##+js(set-constant, window.adthriveCLS.disableAds.content, true)
 www.pcguide.com##+js(set-constant, window.adthriveCLS.disableAds.recipe, true)
-||capi.connatix.com/rtb/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||api.connatix.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||trk.connatix.com^*
-||vcore.connatix.com/vpaid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||vcore.connatix.com^*
+||capi.connatix.com/rtb/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||api.connatix.com/analytics/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||trk.connatix.com^*$important
+||vcore.connatix.com/vpaid/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||vcore.connatix.com^*$important
 ! The following three rules don't break the connatix video player.
 !||cks.connatix.com/cks?pid=$important
 ||cks.connatix.com^*$important
 !||capi.connatix.com/tr/si?token=$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||capi.connatix.com/tr/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||capi.connatix.com/us/google/pixel?$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||pl.connatix.com^*
+||pl.connatix.com^*$important
 ||t.adx.opera.com^*
 !||ssbsync.smartadserver.com/api/sync?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ssbsync.smartadserver.com^*
@@ -49170,7 +49170,9 @@ en.wikiversity.org##div[id="siteNotice"]:remove()
 ! It also has an addition rule which removes the cid parameter from the URL query string, i.e. ||connatix.com^$3p,removeparam=cid
 ! The following rule is necessary to override the cid removal.
 @@||connatix.com^$3p,removeparam=cid
-! The following six rules override that rule to allow connatix videos to be played.
+! The following eleven rules override that rule to allow connatix videos to be played.
+@@||capi.connatix.com/core/story?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+@@||capi.connatix.com/core/sync$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 @@||img.connatix.com^*
 @@||vid.connatix.com^*
 @@||cd.connatix.com/connatix.player.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
