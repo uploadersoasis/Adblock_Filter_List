@@ -49196,10 +49196,19 @@ ko.strikeout.cc##+js(remove-node-text, script, /debugger;/gm)
 ||strikeout.cc/partytown/partytown*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 strikeout.im,strikeout.cc##script[type="text/partytown"]:remove()
 strikeout.im,strikeout.cc##+js(set-constant, partytown, {})
+! TODO: Do not always set siteConfig because on some pages it is used for wanted information.
 ! The following rule prevents the embedded chatango widget from working since its configuration ids are in siteConfig. 
-strikeout.im,strikeout.cc##+js(set-constant, siteConfig, {})
+!strikeout.im,strikeout.cc##+js(set-constant, siteConfig, {})
 ! Do not abort scripts if they simply read siteConfig.
-strikeout.im,strikeout.cc##+js(aopw, siteConfig)
+!strikeout.im,strikeout.cc##+js(aopw, siteConfig)
+strikeout.im,strikeout.cc##+js(set-constant, empTrack, false)
+strikeout.im,strikeout.cc##+js(set-constant, emprefs, noopFunc)
+strikeout.im,strikeout.cc##+js(set-constant, FingerprintJS, noopFunc)
+! Do not abort scripts if they simply read FingerprintJS.
+strikeout.im,strikeout.cc##+js(aopw, FingerprintJS)
+strikeout.im,strikeout.cc##:xpath(//script[contains(text(), 'eHwIrjaErdaIpjCFqHaEvctGB6lOgfhVBMl7hfsKg70JsSEFqSEFvdaIpdg9rdaIsMlZBMxKh7lIC7w')]):remove()
+strikeout.im,strikeout.cc##^script:has-text(eHwIrjaErdaIpjCFqHaEvctGB6lOgfhVBMl7hfsKg70JsSEFqSEFvdaIpdg9rdaIsMlZBMxKh7lIC7w):remove()
+strikeout.im,strikeout.cc##+js(acs, eHwIrjaErdaIpjCFqHaEvctGB6lOgfhVBMl7hfsKg70JsSEFqSEFvdaIpdg9rdaIsMlZBMxKh7lIC7w)
 ! TODO: Does this iframe actually get used since niaomea.me creates it via an external script and launches in a separate tab on Firefox?
 strikeout.im,strikeout.cc##iframe[title="embed player"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 ! iframe[title="embed player"] won't be selected if used in the following rules. The iframe's name attribute also varies.
