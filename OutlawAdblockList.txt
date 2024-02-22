@@ -45342,6 +45342,8 @@ apkstreamz.com##+js(saa, data-timer, 1, .show_download_links)
 ||igg-games.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||igg-games.com/wp-content/uploads/2019/10/AdblockDetected.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||igg-games.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||igg-games.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||pcgamestorrents.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pcgamestorrents.com/maven/av.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pcgamestorrents.com/admaven/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pcgamestorrents.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -47959,10 +47961,6 @@ turbobit.net##a[id="__bgd_link"]:remove()
 ||cdn22904910.ahacdn.me^*
 freebookspot.dirproxy.biz##a[id="HyperLink6"]:remove()
 ||hufiranz.click^*
-scloud.ws##a[href^="https://hufiranz.click/"]:remove()
-scloud.ws##+js(set-constant, Ya.Metrika, noopFunc)
-scloud.ws##+js(aopw, Ya.Metrika)
-scloud.ws##+js(aopr, Ya.Metrika)
 ||d39xxywi4dmut5.cloudfront.net^*
 ||stherewerealo.org^*
 ||eamsanswer.com^*
@@ -49037,6 +49035,40 @@ googlechromecast.com##+js(aeld, reportEzErrorDefined)
 !||www.ezojs.com/porpoiseant/jellyfish.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.ezojs.com/parsonsmaize/chanute.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.ezojs.com/tardisrocinante/vitals.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+ftuapps.dev##div[id="abDetectorModal"]:remove()
+ftuapps.dev##ins[data-ad-client]:remove()
+ftuapps.dev##iframe[name="googlefcPresent"]:remove()
+ftuapps.dev##body:remove-attr(oncontextmenu)
+ftuapps.dev##+js(remove-attr, oncontextmenu, body)
+! The following rule is necessary if the "infinite scrolling" script is not working.
+ftuapps.dev##body:style(overflow-y: scroll !important;)
+! The following does not defuse the contextmenu event attached to the body by itself; the oncontextmenu attribute must also be removed from the body tag.
+ftuapps.dev##+js(aeld, /keydown|contextmenu/)
+ftuapps.dev##+js(set-constant, oncontextmenu, noopFunc)
+ftuapps.dev##+js(acs, oncontextmenu)
+ftuapps.dev##+js(set-constant, config.secureMode, false)
+ftuapps.dev##+js(set-constant, allowDevToolsAccess, true)
+ftuapps.dev##+js(set-constant, alertModal, "")
+ftuapps.dev##+js(set-constant, abc, noopFunc)
+ftuapps.dev##+js(set-constant, signalGooglefcPresent, noopFunc)
+ftuapps.dev##+js(set-constant, window.OneSignalDeferred, [])
+ftuapps.dev##+js(aopw, window.OneSignalDeferred)
+ftuapps.dev##+js(aopr, window.OneSignalDeferred)
+ftuapps.dev##+js(set-constant, adsbygoogle, [])
+ftuapps.dev##+js(aopw, adsbygoogle)
+ftuapps.dev##+js(aopr, adsbygoogle)
+! The following URL is accessed via xhr not script type.
+||ftuapps.dev/adex.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+scloud.ws##a[href^="https://hufiranz.click/"]:remove()
+scloud.ws##+js(set-constant, Ya.Metrika, noopFunc)
+scloud.ws##+js(aopw, Ya.Metrika)
+scloud.ws##+js(aopr, Ya.Metrika)
+scloud.ws##a[id="no-open-fi"]:remove()
+scloud.ws##a[id="no-open-fd"]:remove()
+scloud.ws##+js(set-constant, clickHandler, noopFunc)
+scloud.ws##+js(aeld, click, /clickHandler\(event\)/)
+||letterslamp.online^*
+||glovedinosaurs.website^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
