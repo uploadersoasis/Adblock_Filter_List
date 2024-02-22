@@ -47461,19 +47461,23 @@ www.waybook.com##+js(aopw, analytics)
 !download.oxy.st,download.oxy.cloud##div[id="cookies"]:remove()
 oxy.st,oxy.cloud##div[id="cookies"]:remove()
 oxy.st,oxy.cloud##div[class^="mikeoscardeltaalphalima"]:remove()
-download.oxy.st,download.oxy.cloud##a[href="//www.liveinternet.ru/click"]:remove()
-download.oxy.st,download.oxy.cloud##div[data-rlf-id]:remove()
 oxy.st,oxy.cloud##a[href^="https://download.oxy.st/d/"]:remove-attr({{onclick}})
 oxy.st,oxy.cloud##+js(remove-attr, {{onclick}}, a[href^="https://download.oxy.st/d/"])
+oxy.st,oxy.cloud##a[href="//www.liveinternet.ru/click"]:remove()
+oxy.st,oxy.cloud##div[data-rlf-id]:remove()
+oxy.st,oxy.cloud##input[id="exampleCheck1"]:remove-attr(disabled)
+oxy.st,oxy.cloud##+js(remove-attr, disabled, #exampleCheck1)
 ! The real download URL is stored in page_url variable in an inline script.
 ! a[id="button_no_tlg"] is the "or via browser" URL with a click event but an empty (#) href value.
 ! TODO: The following rule sets the href to the string literal "page_url" not the value of the page-url variable. [page_url], ${page_url}, and [page_url.valueOf();] also don't work.
 !download.oxy.st,download.oxy.cloud##+js(saa, href, page_url, #button_no_tlg)
 download.oxy.st,download.oxy.cloud##div[class="no_tlg"]:style(display: block !important;)
 ! Do NOT defuse all click events because the one on the real download button (button[id="download"]) is the real download.
-!oxy.st,oxy.cloud##+js(aeld, click)
+!download.oxy.st,download.oxy.cloud##+js(aeld, click)
 ! The function in the following rule is not the one used for the real download click event, but it removes both click events from the button so don't use this rule.
-!oxy.st,oxy.cloud##+js(aeld, click, /function\(t\)/)
+!download.oxy.st,download.oxy.cloud##+js(aeld, click, /function\(t\)/)
+! TODO: Don't specify the function name for the third paramater; specify a string/regex in the function itself.
+oxy.st,oxy.cloud##+js(aeld, click, /localStorage\.p_/)
 download.oxy.st,download.oxy.cloud##+js(remove-node-text, script, /\$\(\"\.no_tlg\"\)\.hide\(\);/gm)
 download.oxy.st,download.oxy.cloud##+js(acs, /\$\(\"\.no_tlg\"\)\.hide\(\);/)
 ! TODO: The following rule to remove the login bar at the bottom of the page is likely randomnly generated class names.
@@ -49080,6 +49084,11 @@ scloud.ws##+js(set-constant, clickHandler, noopFunc)
 scloud.ws##+js(aeld, click, /clickHandler\(event\)/)
 ||letterslamp.online^*
 ||glovedinosaurs.website^*
+!||smatr.net/sm/getcode?$3p,script
+!||smelel.icu/sm/getcode?$3p,xhr
+!||smelel.icu/sm/stat?$3p,xhr
+||smatr.net^*
+||smelel.icu^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
