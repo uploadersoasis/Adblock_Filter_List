@@ -31030,8 +31030,6 @@ www.prepaiddigitalsolutions.com##div[id="cookieConsent"]
 ||unacceptablepit.com^*
 ||www.wppdgupelr.com^*
 ||wppdgupelr.com^*
-!download.oxy.cloud##div[id="cookies"]
-oxy.cloud##div[id="cookies"]
 ||joopaish.com^*
 ||psootchu.net^*
 ||d301cxwfymy227.cloudfront.net^*
@@ -47460,11 +47458,24 @@ www.waybook.com##+js(aopr, analytics)
 www.waybook.com##+js(aopw, analytics)
 ||oxy.st/rp-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||oxy.cloud/rp-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-oxy.st,oxy.cloud##div[class^="mikeoscardeltaalphalima"]:remove()
+!download.oxy.st,download.oxy.cloud##div[id="cookies"]:remove()
 oxy.st,oxy.cloud##div[id="cookies"]:remove()
+oxy.st,oxy.cloud##div[class^="mikeoscardeltaalphalima"]:remove()
+download.oxy.st,download.oxy.cloud##a[href="//www.liveinternet.ru/click"]:remove()
+download.oxy.st,download.oxy.cloud##div[data-rlf-id]:remove()
 oxy.st,oxy.cloud##a[href^="https://download.oxy.st/d/"]:remove-attr({{onclick}})
 oxy.st,oxy.cloud##+js(remove-attr, {{onclick}}, a[href^="https://download.oxy.st/d/"])
-oxy.st,oxy.cloud##+js(aeld, click)
+! The real download URL is stored in page_url variable in an inline script.
+! a[id="button_no_tlg"] is the "or via browser" URL with a click event but an empty (#) href value.
+! TODO: The following rule sets the href to the string literal "page_url" not the value of the page-url variable. [page_url], ${page_url}, and [page_url.valueOf();] also don't work.
+!download.oxy.st,download.oxy.cloud##+js(saa, href, page_url, #button_no_tlg)
+download.oxy.st,download.oxy.cloud##div[class="no_tlg"]:style(display: block !important;)
+! Do NOT defuse all click events because the one on the real download button (button[id="download"]) is the real download.
+!oxy.st,oxy.cloud##+js(aeld, click)
+! The function in the following rule is not the one used for the real download click event, but it removes both click events from the button so don't use this rule.
+!oxy.st,oxy.cloud##+js(aeld, click, /function\(t\)/)
+download.oxy.st,download.oxy.cloud##+js(remove-node-text, script, /\$\(\"\.no_tlg\"\)\.hide\(\);/gm)
+download.oxy.st,download.oxy.cloud##+js(acs, /\$\(\"\.no_tlg\"\)\.hide\(\);/)
 ! TODO: The following rule to remove the login bar at the bottom of the page is likely randomnly generated class names.
 www.facebook.com##div[class="x78zum5 xdt5ytf x2lah0s x193iq5w x2bj2ny x1ey2m1c xayqjjm x9f619 xds687c x1xy6bms xn6708d x1s14bel x1ye3gou xixxii4 x17qophe x1u8a7rm"]:remove()
 azrotv.com##div[class="adbn-wrap"]:remove()
