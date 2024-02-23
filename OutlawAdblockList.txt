@@ -16369,9 +16369,6 @@ www.gocomics.com##.group-item-ad
 ||www.pinterest.com/resource/UserRegisterTrackActionResource/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.pinterest.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||datingfantasies11.com^*
-thehackernews.com##.zoho-box.clear
-thehackernews.com##.banners.av-side-box.clear
-thehackernews.com##.banners.cf
 ||sergeistrelec.ru/templates/sstr/images/reklama.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||74lhpp2gt696.com/tuname.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||74lhpp2gt696.com^*
@@ -20273,8 +20270,6 @@ earn4files.com##div[id="banner_ad"]
 ||three.xjsmtz2.com^*
 ||realcenter-mobileapps2.com^*
 ||analytics.analytics-egain.com^*
-www.techradar.com##div[class="placeholderampad"]
-www.techradar.com##div[class="fallbackampad"]
 ||ratresperheto.pro^*
 ||www.ratresperheto.pro^*
 ||dybxezbel1g44.cloudfront.net^*
@@ -22875,7 +22870,6 @@ www.playground.ru##div[id^="adfox_"]
 !||epl.paypal-communication.com^*
 !||www.paypal-communication.com^*
 !||paypal-communication.com^*
-techradar.com##+js(abort-on-property-read, _sp_._networkListenerData)
 ||offer.slgnt.eu^*
 dropapk.*##+js(acs, Object.defineProperty, vocabulary)
 dropapk.*##+js(acs, document.createElement, 'script')
@@ -26593,7 +26587,6 @@ www.y2mate.com##^script:has-text(popupWindow)
 ||apkpanda.com/service-worker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.att.com/olam/js/common/myattConsoleLogger.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.kinematicsoup.com##div[class^="sqs-cookie-banner-v2"]
-www.techradar.com##footer[class="van_taboola"]
 ||greatedclu.fun^*
 ||ctuggestd.fun^*
 ||dmmzkfd82wayn.cloudfront.net^*
@@ -27314,7 +27307,6 @@ www.kproxy.com##+js(abort-on-property-read, pageTracker)
 www.kproxy.com##+js(abort-on-property-write, pageTracker)
 www.download3k.es##div[class^="cc_banner"]
 ||tj1hkck686s4pw4j0ycd2baxy9.xyz^*
-www.techradar.com##.advertisement-label
 netu.io,netu.tv##div[class^="eupopup-"]
 ||netu.io/js/jquery-eu-cookie-law-popup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||netu.tv/js/jquery-eu-cookie-law-popup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -27654,7 +27646,6 @@ rootmygalaxy.net##div[class*="quads-ad"]
 ||player.adtelligent.com^*
 ||static.pcmag.com/jst/zdconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.pcmag.com/user/eu-check$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.techradar.com##div[class="ad-unit"]
 ubuntuhandbook.org##ins[class="adsbygoogle"]:remove()
 zippyshare.com##^script:has-text(/zippyfake/i)
 zippyshare.com###zippyfake
@@ -31014,7 +31005,6 @@ www.hitc.com##div[class="GRVMpuWrapper"]:has(div[data-ad-type]):remove()
 www.dealabs.com##div[class*="popover--oreo-message"]:remove()
 www.dealabs.com##+js(remove-class, overflow--hidden, , stay)
 fostips.com##aside[id="rb-cookie"]:remove()
-www.techradar.com##div[class*="ad-unit"]:remove()
 www.inverse.com##amp-ad:remove()
 ||www.sbmrwzkwshit.com^*
 ||sbmrwzkwshit.com^*
@@ -42221,8 +42211,6 @@ cutty.app##a[id="lkmy"]:remove()
 ||0lnawd0.com^*
 ||softronline.click^*
 ||tradenewbest.com^*
-www.techradar.com##div[class="dfp-leaderboard-container"]
-www.techradar.com##div[class="dfp-leaderboard-container"]:remove()
 www.newscon.org##div[id="adblock-warning"]
 www.newscon.org##div[id="adblock-warning"]:remove()
 www.newscon.org##+js(set-constant, checkads, trueFunc)
@@ -49137,6 +49125,61 @@ playclassic.games##+js(remove-class, lazy, img[class="lazy"][data-src])
 ! live.primis.tech blocks videos
 !||live.primis.tech^*
 ||live.primis.tech/live/liveView.php?$domain=playclassic.games,3p,script
+www.techradar.com##.advertisement-label:remove()
+www.techradar.com##div[class="placeholderampad"]:remove()
+www.techradar.com##div[class="fallbackampad"]:remove()
+www.techradar.com##div[class="ad-unit"]:remove()
+www.techradar.com##div[class*="ad-unit"]:remove()
+www.techradar.com##div[class="dfp-leaderboard-container"]:remove()
+www.techradar.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
+www.techradar.com##footer[class="van_taboola"]:remove()
+www.techradar.com##iframe[name$="Locator"]:remove()
+www.techradar.com##+js(set-constant, injectComscore, noopFunc)
+www.techradar.com##+js(set-constant, window.vanilla.loadGTM, noopFunc)
+www.techradar.com##+js(set-constant, window._sp_, {})
+www.techradar.com##+js(abort-on-property-read, window._sp_)
+www.techradar.com##+js(abort-on-property-write, window._sp_)
+techradar.com##+js(abort-on-property-read, _sp_._networkListenerData)
+www.techradar.com##+js(set-constant, window.ccpaAppliesPromise, noopFunc)
+www.techradar.com##+js(set-constant, ccpaApplies, false)
+www.techradar.com##+js(set-constant, window.reliableConsentGiven, true)
+www.techradar.com##+js(abort-on-property-read, window.ccpaAppliesPromise)
+www.techradar.com##+js(abort-on-property-write, window.ccpaAppliesPromise)
+www.techradar.com##+js(abort-on-property-read, window.permutive)
+www.techradar.com##+js(abort-on-property-write, window.permutive)
+www.techradar.com##+js(set-constant, createAndAppendPermutive, noopFunc)
+www.techradar.com##+js(set-constant, analytics_ga_data, {})
+www.techradar.com##+js(abort-on-property-read, analytics_ga_data)
+www.techradar.com##+js(abort-on-property-write, analytics_ga_data)
+www.techradar.com##+js(set-constant, window.adParameters, {})
+! TODO: The following rule blocks all error events which is not the desired outcome.
+!www.techradar.com##+js(aeld, error)
+www.techradar.com##img[class^="image__image loaded"]:remove-class(loaded)
+www.techradar.com##+js(remove-class, loaded, img[class^="image__image loaded"])
+www.techradar.com##img[loading="lazy"]:remove-attr(loading)
+www.techradar.com##+js(remove-attr, loading, img[loading="lazy"])
+! Either of the following attributes will work for src since they are identical value.
+www.techradar.com##+js(set-attr, img[data-original-mos], src, [data-original-mos])
+!www.techradar.com##+js(set-attr, img[data-pin-media], src, [data-pin-media])
+! Don't need to remove current src attribute to rename other attribute to it
+!www.techradar.com##+js(rna, img[data-original-mos], data-original-mos, src)
+!www.techradar.com##+js(rna, img[data-pin-media], data-pin-media, src)
+||vanilla.futurecdn.net/techradar/media/shared/js/slide-analytics.$script
+||d3du2k8g1u832i.cloudfront.net/techradar/media/shared/js/slide-analytics.$script
+thehackernews.com##.zoho-box.clear:remove()
+thehackernews.com##.banners.av-side-box.clear:remove()
+thehackernews.com##.banners.cf:remove()
+thehackernews.com##a[href="https://thehackernews.uk/EgEMen"]:remove()
+thehackernews.com##a[href="https://thehackernews.uk/freedom728"]:remove()
+thehackernews.com##a[href="https://thehackernews.uk/4BcJriH4"]:remove()
+thehackernews.com##a[rel*="sponsored"]:remove()
+thehackernews.com##+js(aeld, load)
+thehackernews.com##div[class="pp-2 cf"]:has(center[class="cf"]):remove()
+thehackernews.com##+js(set-attr, img[class*="lazyload"][data-src], src, [data-src])
+! Don't need to remove current src attribute to rename other attribute to it
+!thehackernews.com##+js(rna, img[class*="lazyload"][data-src], data-src, src)
+||thehackernews.com/cdn-cgi/zaraz/t$xhr
+||thehackernews.com/cdn-cgi/zaraz/s.js$script
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
