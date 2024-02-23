@@ -49152,6 +49152,8 @@ www.techradar.com##+js(set-constant, analytics_ga_data, {})
 www.techradar.com##+js(abort-on-property-read, analytics_ga_data)
 www.techradar.com##+js(abort-on-property-write, analytics_ga_data)
 www.techradar.com##+js(set-constant, window.adParameters, {})
+www.techradar.com##+js(set-constant, adToolVersion, "")
+www.techradar.com##+js(set-constant, window.disableBordeaux, true)
 ! TODO: The following rule blocks all error events which is not the desired outcome.
 !www.techradar.com##+js(aeld, error)
 www.techradar.com##img[class^="image__image loaded"]:remove-class(loaded)
