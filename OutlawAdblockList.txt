@@ -49142,7 +49142,7 @@ www.techradar.com##+js(abort-on-property-write, window._sp_)
 techradar.com##+js(abort-on-property-read, _sp_._networkListenerData)
 www.techradar.com##+js(set-constant, window.ccpaAppliesPromise, noopFunc)
 www.techradar.com##+js(set-constant, ccpaApplies, false)
-www.techradar.com##+js(set-constant, window.reliableConsentGiven, true)
+www.techradar.com##+js(set-constant, window.reliableConsentGiven, trueFunc)
 www.techradar.com##+js(abort-on-property-read, window.ccpaAppliesPromise)
 www.techradar.com##+js(abort-on-property-write, window.ccpaAppliesPromise)
 www.techradar.com##+js(abort-on-property-read, window.permutive)
@@ -49166,6 +49166,7 @@ www.techradar.com##+js(set-attr, img[data-original-mos], src, [data-original-mos
 ! Don't need to remove current src attribute to rename other attribute to it
 !www.techradar.com##+js(rna, img[data-original-mos], data-original-mos, src)
 !www.techradar.com##+js(rna, img[data-pin-media], data-pin-media, src)
+||search-api.fie.future.net.uk/send_metrics$xhr
 ||vanilla.futurecdn.net/techradar/media/shared/js/slide-analytics.$script
 ||d3du2k8g1u832i.cloudfront.net/techradar/media/shared/js/slide-analytics.$script
 thehackernews.com##.zoho-box.clear:remove()
