@@ -23390,10 +23390,13 @@ eu.hidester.com##div[id^="beacon_"]
 ||ntdload.com^*
 ||beonixom.com^*
 ||install.search-converter.com^*
-||www.mirrored.to/_offer.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!www.mirrored.to##+js(abort-on-property-write, antiClickjack)
-!www.mirrored.to##+js(abort-on-property-read, antiClickjack)
-www.mirrored.to##.bottom-sticky-g
+mirrored.to##+js(alert-buster.js)
+www.mirrored.to##.bottom-sticky-g:remove()
+www.mirrored.to##div[id="modal-bg"]:remove()
+www.mirrored.to##div[class^="dialog-javascript"]:remove()
+www.mirrored.to##style[id="antiClickjack"]:remove()
+www.mirrored.to##+js(abort-on-property-write, antiClickjack)
+www.mirrored.to##+js(abort-on-property-read, antiClickjack)
 www.mirrored.to##+js(abort-on-property-write, chain)
 www.mirrored.to##+js(abort-on-property-read, chain)
 www.mirrored.to##+js(abort-on-property-write, blockAdBlock)
@@ -23409,13 +23412,27 @@ www.mirrored.to##+js(abort-on-property-read, window.dataLayer)
 www.mirrored.to##+js(set-constant, ab, 0)
 www.mirrored.to##+js(set-constant, adb, 0)
 www.mirrored.to##+js(set-constant, interval, 1)
-||www.mirrored.to/js/sweetalert.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.mirrored.to/js/bab.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||www.mirrored.to/mirstats.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.mirrored.to##+js(set-constant, pageTracker, noopFunc)
 www.mirrored.to##+js(acs, pageTracker)
 www.mirrored.to##+js(set-constant, gtag, noopFunc)
 www.mirrored.to##+js(acs, gtag)
+www.mirrored.to##+js(abort-on-property-read, aiptag.cmd.display)
+www.mirrored.to##+js(abort-on-property-write, aiptag.cmd.display)
+www.mirrored.to##+js(abort-on-property-read, window.aiptag)
+www.mirrored.to##+js(abort-on-property-write, window.aiptag)
+! remove existing cookie first
+www.mirrored.to##+js(remove-cookie, ab)
+! TODO: need to reload page with cookie set?
+www.mirrored.to##+js(set-cookie, ab, 0, /)
+! TODO: Do NOT use reload with set-cookie on this website as it will cause the page to continually reload.
+!www.mirrored.to##+js(set-cookie, ab, 0, , reload, 1)
+!www.mirrored.to##+js(set-cookie, ab, 0, /, reload, 1)
+www.mirrored.to##+js(trusted-set-constant, document.cookie, ab=0; path=/;)
+||www.mirrored.to/_offer.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mirrored.to/js/sweetalert.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mirrored.to/js/bab.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rule blocks the list of files.
+!||www.mirrored.to/mirstats.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||oosl6q5prri3.com^*
 ||hidester.postaffiliatepro.com^*
 www.diskpart.com##div[class="ensureCookie"]:remove()
@@ -23448,8 +23465,6 @@ service.bypass123.com##div[class="proxy_footer_box"]
 ||tag.targeting.unrulymedia.com^*
 ||www.facebook.com/plugins/like.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.nexusmods.com/Contents/Scripts/advert.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||linkvertise.net/api/v1/redirect/link/100856/100856366795662/countdown_impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||linkvertise.net/cdn/linkvertise.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||get.pdfconverters-search.com/log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||get.pdfconverters-search.com^*
 ||get.kzgdy.com^*
@@ -25178,7 +25193,6 @@ www.biemmeitalia.net##div[id="cookie-bar"]:remove()
 ||ruwertur.com^*
 ||sheenaup.net^*
 www.realvnc.com##div[id="cookie-notice"]:remove()
-www.mirrored.to##div[id="modal-bg"]
 !||api.adinplay.com/libs/aiptag/assets/adsbygoogle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||api.adinplay.com^*
 ||anonfiles.com/sw_anonfiles.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -25414,8 +25428,6 @@ www.win-raid.com##div[aria-label="cookieconsent"]:remove()
 ||tracking.trnox.com^*
 ||survey.bignox.com^*
 ||tracking.apptrackerlink.com^*
-!www.mirrored.to##div[class="dialog-javascript slide"]
-www.mirrored.to##div[class^="dialog-javascript"]
 www.omgubuntu.co.uk##div[class="CookieWarning is-active"]:remove()
 www.linuxandubuntu.com##div[class="penci-wrap-gprd-law"]:remove()
 ||skladchik.com^*
@@ -25600,18 +25612,6 @@ www.pcmag.com##aside[class="zmgad-full-width"]
 download.gg##iframe[name="googlefcPresent"]
 download.gg##div[id="udRVCwqeYyHh"]
 download.gg##body > script:nth-child(20)
-www.mirrored.to##style[id="antiClickjack"]
-www.mirrored.to##+js(abort-on-property-read, aiptag.cmd.display)
-www.mirrored.to##+js(abort-on-property-write, aiptag.cmd.display)
-www.mirrored.to##+js(abort-on-property-read, window.aiptag)
-www.mirrored.to##+js(abort-on-property-write, window.aiptag)
-! remove existing cookie first
-www.mirrored.to##+js(remove-cookie, ab)
-! TODO: need to reload page with cookie set?
-!www.mirrored.to##+js(set-cookie, ab, 0, /)
-!www.mirrored.to##+js(set-cookie, ab, 0, , reload, 1)
-www.mirrored.to##+js(set-cookie, ab, 0, /, reload, 1)
-www.mirrored.to##+js(trusted-set-constant, document.cookie, ab=0; path=/;)
 !||analytics-ingress-global.bitmovin.com/analytics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||analytics-ingress-global.bitmovin.com^*
 ||licensing.bitmovin.com/impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -25988,7 +25988,6 @@ www.games2gether.com##div[id="cookies-settings"]
 !golang.org##div[class="Header-banner"]
 golang.org##div[class="Header-banner"]:nth-child(1)
 *##a[href*="support.eji.org"]
-mega.nz##div[class="fm-dialog mega-dialog cookie-dialog lato"]
 developers.google.com##div[class="devsite-banner-message"]
 !||www.apple.com/metrics/ac-analytics/2.12.0/scripts/ac-analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.apple.com/metrics/ac-analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -27299,7 +27298,6 @@ netu.io,netu.tv##div[class^="eupopup-"]
 ||mustardlearnfourteenth.com^*
 ||cdn.yourwebbars.com^*
 ||providentsopport.site^*
-mirrored.to##+js(alert-buster.js)
 ||aheadmachine.com^*
 www.linuxtechi.com##span[class*="ezoic-ad"]:remove()
 www.linuxtechi.com##span[id^="div-gpt-ad-"]
@@ -27428,7 +27426,6 @@ msendpointmgr.com##div[class="rcc-wrapper group"]
 msendpointmgr.com##li[class="sponsors-item all"]
 ||type48yardbase.live^*
 ||prize-winner-k2dk.live^*
-!||www.mirrored.to/mirstats.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css !blocks list of files
 ||events.launchdarkly.com/events/diagnostic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 windowsmatters.com###dkxqne-blanket
 windowsmatters.com##+js(abort-on-property-read, disableStr)
@@ -28324,7 +28321,10 @@ ulozto.net##div[class*="js-advert"]
 ulozto.net##div[class*="t-advert"]
 ulozto.net##div[class*="adFull"]
 rutracker.org##div[class="bn-topic products"]
-mega.nz##div[class*="cookie-dialog"]
+!mega.nz##div[class="fm-dialog mega-dialog cookie-dialog lato"]:remove()
+mega.nz##div[class*="cookie-dialog"]:remove()
+mega.nz##.ads-left-block, .ads-right-block, .active.top-login-warning, .red.download-button.button, .checkbox-bl.download:remove()
+||mega.nz/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||codegeekz.com/wp-content/js/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 codegeekz.com##div[id="google-post-adbottom"]
 codegeekz.com##ins[class="adsbygoogle"]:remove()
@@ -29258,31 +29258,6 @@ boustahe.com##div[class*="push-notice"]
 ||nativepu.sh^*
 !||cdn.adapex.io/hb/aaw.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.adapex.io^*
-!linkvertise.com##span[id="cookieconsent:desc"]:remove()
-linkvertise.com##div[aria-label="cookieconsent"]:remove()
-! TODO:  ^script doesn't work with attributes since checked before DOM created?
-linkvertise.com##script[id="tb_loader_script"]:remove()
-||linkvertise.com/assets/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-linkvertise.com##+js(aopr, isAdBlockActive)
-linkvertise.com##+js(aopw, isAdBlockActive)
-linkvertise.com##+js(set-constant, isAdBlockActive, false, stay)
-linkvertise.com##^script:has-text(/checkForAdBlock/i)
-!linkvertise.com##^script:has-text(/adsense/i)
-linkvertise.com##+js(aeld, /^(?:lvAdblock)$/)
-!linkvertise.com##div[class*="ad-wrapper"]:remove()
-!linkvertise.com##div[class*="ad_box"]:remove()
-||publisher.linkvertise.com/api/v1/redirect/link/*/countdown_impression^*
-||linkvertise.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||linkvertise.com/main-es2015.f453cfc680cd904a73c0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css !edit this script to prevent adblocking
-linkvertise.com##+js(acs, addEventListener, DOMNodeRemoved)
-linkvertise.com##+js(acs, document.dispatchEvent, CustomEvent)
-linkvertise.com##+js(acs, onload, adsbygoogle)
-linkvertise.com##+js(aeld, load, nextFunction)
-linkvertise.com##+js(json-prune, data.meta.require_addon data.meta.require_captcha data.meta.require_notifications data.meta.require_og_ads data.meta.require_video data.meta.require_web)
-linkvertise.com##+js(nano-sib)
-linkvertise.*##lv-msnnewsfeed:remove()
-linkvertise.com##.cc-window:remove()
-||linkvertise.net^$3p
 ||streamrail.net^$script,domain=linkvertise.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! https://github.com/uBlockOrigin/uAssets/issues/6487
 www.techspot.com##div.paragraphAdinsert:remove()
@@ -32285,10 +32260,6 @@ coursesghar.com##div[class*="-wrapper"]
 coursesghar.com##+js(aeld, blur)
 !coursesghar.com##+js(aeld, blur, function(n){if(e.bypassEventsInProxies||a.indexOf(t)<0)return s.call(this,n)})
 coursesghar.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
-!linkvertise.com##*[class*="ng-star-inserted"]
-linkvertise.com##div[class^="ad-dp"]
-linkvertise.com##div[id="headerTopAd"]
-linkvertise.com##div[id="advertise-block"]
 ||r.toptopix.com^*
 www.coursef.com##div[id^="afscontainer"]
 www.coursef.com##div[class*="box-afs"]
@@ -40566,14 +40537,17 @@ www.takez.co##+js(aopr, window.googletag)
 www.takez.co##+js(aopw, window.googletag)
 www.trustedsec.com##div[class="ck-modal"]:has(p:has-text(This website stores cookies on your computer.)):remove()
 ||usersdrive.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-usersdrive.com##iframe[id^="ufpIframe-"]
-usersdrive.com##+js(remove-attr, disabled, #downloadbtn, stay)
-usersdrive.com##+js(remove-class, disabled, #downloadbtn, stay)
-usersdrive.com##a[id="316458965"]
-usersdrive.com##+js(no-setTimeout-if, /tick\(\)/)
+usersdrive.com##a[href^="https://href.li/?https://khncham.cfd/"]:remove()
+usersdrive.com##a[href^="https://href.li/?https://hamzapc.click/"]:remove()
+usersdrive.com##a[id="316458965"]:remove()
+usersdrive.com##iframe[id^="ufpIframe-"]:remove()
 usersdrive.com###downloadbtn:remove-attr(disabled)
 usersdrive.com###downloadbtn:remove-class(disabled)
 usersdrive.com##input[id="adblock_detected"]:remove()
+usersdrive.com##+js(no-setTimeout-if, /tick\(\)/)
+usersdrive.com##+js(remove-attr, disabled, #downloadbtn, stay)
+usersdrive.com##+js(remove-class, disabled, #downloadbtn, stay)
+||usersdrive.com/propellersw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! can't skip countdown since server-side
 !usersdrive.com##span[id="countdown"]:remove()
 ||usersdrive.com/userdrive/assets/js/countdown.js$popup,document,inline-script,inline-font,popunder,subdocument,script,other
@@ -41897,7 +41871,6 @@ filerio.in##+js(abort-on-property-read, adsurl)
 filerio.in##+js(abort-on-property-write, adsurl)
 filerio.in##body > script:nth-child(7):remove()
 ! the following five entries are from https://raw.githubusercontent.com/uBlock-user/uBO-Personal-Filters/master/uPF.txt
-mega.nz##.ads-left-block, .ads-right-block, .active.top-login-warning, .red.download-button.button, .checkbox-bl.download:remove()
 thewrap.com##style:has-text(wallkit-paywall-block):remove()
 thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:remove()
 ||cloudflare.com/__log^
@@ -45560,8 +45533,6 @@ karanpc.com##+js(aopr, document.oncontextmenu)
 karanpc.com##+js(aopr, document.body.concontextmenu)
 ||whounsou.com^*
 ||khncham.cfd^*
-||usersdrive.com/propellersw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-usersdrive.com##a[href^="https://href.li/?https://khncham.cfd/"]:remove()
 ||c.aps.amazon-adsystem.com/apstag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||featherstage.com^*
 ||static.adsafeprotected.com/skeleton.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49011,6 +48982,7 @@ thehackernews.com##+js(set-attr, img[class*="lazyload"][data-src], src, [data-sr
 ||dts.gnpge.com^*
 ||pxlgnpgecom-a.akamaihd.net^*
 ||qqurzfi.com^*
+||hamzapc.click^*
 ||nbastreamswatch.com/z-6229510.js$script
 ! TODO: use noeval-if for this rule instead, but what value for second parameter: string/regular expression matching in payload string
 nbastreamswatch.com##+js(noeval-if, /debugger/)
@@ -49031,7 +49003,49 @@ methstreams.com##+js(saa, scrolling, no, iframe[src^="https://nbastreamswatch.co
 !methstreams.com##+js(saa, height, 100%, iframe[src^="https://nbastreamswatch.com/"])
 !methstreams.com##+js(saa, frameborder, 0, iframe[src^="https://nbastreamswatch.com/"])
 !methstreams.com##+js(saa, allowfullscreen, true, iframe[src^="https://nbastreamswatch.com/"])
-https://st.chatango.com/js/gz/emb.js
+! TODO: block all third-party types or just scripts?
+||linkvertise.net^$3p
+!||linkvertise.net/cdn/linkvertise.js$3p,script
+||publisher.linkvertise.com^$3p
+!||publisher.linkvertise.com/cdn/linkvertise.js$3p,script
+||publisher.linkvertise.com/api/v1/redirect/link/*/countdown_impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||linkvertise.net/api/v1/redirect/link/100856/100856366795662/countdown_impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||linkvertise.net/api/v1/redirect/link/*/countdown_impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||linkvertise.com/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||linkvertise.com/assets/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!linkvertise.com,linkvertise.net##span[id="cookieconsent:desc"]:remove()
+linkvertise.com,linkvertise.net##div[aria-label="cookieconsent"]:remove()
+! edit the script in the following rule to prevent adblocking
+!||linkvertise.com/main-es2015.f453cfc680cd904a73c0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+linkvertise.com,linkvertise.net##lv-msnnewsfeed:remove()
+linkvertise.com,linkvertise.net##.cc-window:remove()
+linkvertise.com,linkvertise.net##div[class^="ad-dp"]:remove()
+linkvertise.com,linkvertise.net##div[id="headerTopAd"]:remove()
+linkvertise.com,linkvertise.net##div[id="advertise-block"]:remove()
+!linkvertise.com,linkvertise.net##div[class*="ad-wrapper"]:remove()
+!linkvertise.com,linkvertise.net##div[class*="ad_box"]:remove()
+!linkvertise.com,linkvertise.net##*[class*="ng-star-inserted"]:remove()
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+linkvertise.com,linkvertise.net##script[id="tb_loader_script"]:remove()
+linkvertise.com,linkvertise.net##^script:has-text(/checkForAdBlock/i):remove()
+!linkvertise.com,linkvertise.net##^script:has-text(/adsense/i):remove()
+linkvertise.com,linkvertise.net##+js(json-prune, data.meta.require_addon data.meta.require_captcha data.meta.require_notifications data.meta.require_og_ads data.meta.require_video data.meta.require_web)
+linkvertise.com,linkvertise.net##+js(set-constant, isAdBlockActive, false, stay)
+linkvertise.com,linkvertise.net##+js(aopr, isAdBlockActive)
+linkvertise.com,linkvertise.net##+js(aopw, isAdBlockActive)
+linkvertise.com,linkvertise.net##+js(aeld, /^(?:lvAdblock)$/)
+linkvertise.com,linkvertise.net##+js(aeld, load, nextFunction)
+linkvertise.com,linkvertise.net##+js(acs, addEventListener, DOMNodeRemoved)
+linkvertise.com,linkvertise.net##+js(acs, document.dispatchEvent, CustomEvent)
+linkvertise.com,linkvertise.net##+js(acs, onload, adsbygoogle)
+linkvertise.com,linkvertise.net##+js(nano-sib)
+www.novahax.com##+js(set-constant, script.src, "")
+www.novahax.com##+js(set-constant, linkvertise, noopFunc)
+www.novahax.com##+js(acs, linkvertise)
+||cdn.fuseplatform.net/telemetry/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||a1956.dscr.akamai.net/telemetry/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn.fuseplatform.net/prebid/prebid-$3p,script
+
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
 !@@||connatix.com^$3p
@@ -49257,3 +49271,5 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip#@#div[id^="div-gpt-ad"]:style(width:
 @@||static.criteo.net/js/ld/publishertag.prebid.js$script,xhr,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||tag.vlitag.com/v1/$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
 @@||pagead2.googlesyndication.com/pagead/js/$domain=anydebrid.com,script
+! The following rule allows legitimate URL redirects; TODO: use a domain list for this?
+@@||secure.avangate.com/affiliate.php?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
