@@ -37604,23 +37604,25 @@ ntuplay.xyz##+js(aopw, document.onkeypress)
 ntuplay.xyz##+js(aopr, document.onkeydown)
 ntuplay.xyz##+js(aopw, document.onkeydown)
 ntuplay.xyz##div[id="UnMutePlayer"]:remove()
+ntuplay.xyz##div[id="myCookieConsent"]:remove()
+ntuplay.xyz##div[id="cookie-alert"]:remove()
 ntuplay.xyz##+js(aopr, autoloadMarker)
 ntuplay.xyz##+js(aopw, autoloadMarker)
-ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]
 ntuplay.xyz##a[href*="://youradexchange.com/ad/visit.php"]:remove()
+! TODO: Is document.referrer value passed to XMLHttpRequest()?
+ntuplay.xyz##+js(trusted-set-constant, document.referrer, https://wikisport.click/)
 ntuplay.xyz##+js(trusted-set-constant, currentReferer, https://wikisport.click/)
-ntuplay.xyz##+js(set-constant, attr, {})
+! TODO: the following three rules doesn't abort the redirection script upon wrong referer request header.
 ntuplay.xyz##+js(acs, currentReferer)
 ntuplay.xyz##+js(aopr, currentReferer)
 ntuplay.xyz##+js(aopw, currentReferer)
+ntuplay.xyz##+js(aopw, window.location)
+ntuplay.xyz##+js(set-constant, attr, {})
 ntuplay.xyz##+js(acs, window)
 ntuplay.xyz##+js(aopr, window)
 ntuplay.xyz##+js(aopw, window)
-||ntuplay.xyz/resources/scripts/disclaimer.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-ntuplay.xyz##div[id="myCookieConsent"]
 ntuplay.xyz##+js(set-constant, cookieEl, {})
-ntuplay.xyz##div[id="cookie-alert"]
-ntuplay.xyz##div[id="cookie-alert"]:remove()
+||ntuplay.xyz/resources/scripts/disclaimer.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||neewhoum.net^*
 ||aivdoyvicfn.com^*
 ||waufooke.com^*
@@ -38658,7 +38660,14 @@ cdn.stream-24.net##+js(aopw, web3)
 cdn.stream-24.net##+js(acs, pu)
 cdn.stream-24.net##+js(aopr, pu)
 cdn.stream-24.net##+js(aopw, pu)
+! TODO: Is document.referrer value passed to XMLHttpRequest()?
+primasport.one##+js(trusted-set-constant, document.referrer, https://primasport.one/)
 primasport.one##+js(trusted-set-constant, currentReferer, https://primasport.one/)
+! TODO: the following three rules doesn't abort the redirection script upon wrong referer request header.
+primasport.one##+js(acs, currentReferer)
+primasport.one##+js(aopr, currentReferer)
+primasport.one##+js(aopw, currentReferer)
+primasport.one##+js(aopw, window.location)
 pluto.tv###omid_v1_present:remove()
 pluto.tv##input[aria-label="pause"]:remove-attr(disabled)
 pluto.tv##input[aria-label="pause"]:style(display: inline !important;)
@@ -46338,10 +46347,15 @@ fiveyardlab.com##:xpath(//script[contains(text(), 'allowedDomains')]):remove()
 fiveyardlab.com##:xpath(//script[contains(text(), 'currentReferer')]):remove()
 fiveyardlab.com##+js(aopw, allowedDomains)
 fiveyardlab.com##+js(aopr, allowedDomains)
-fiveyardlab.com##+js(aopw, currentReferer)
+! TODO: the following three rules doesn't abort the redirection script upon wrong referer request header.
+fiveyardlab.com##+js(acs, currentReferer)
 fiveyardlab.com##+js(aopr, currentReferer)
+fiveyardlab.com##+js(aopw, currentReferer)
+fiveyardlab.com##+js(aopw, window.location)
 fiveyardlab.com##span[style="display:none"]:remove()
 fiveyardlab.com##div[id="player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+! TODO: Is document.referrer value passed to XMLHttpRequest()?
+fiveyardlab.com##+js(trusted-set-constant, document.referrer, https://wikisport.se/)
 fiveyardlab.com##+js(trusted-set-constant, currentReferer, https://wikisport.se/)
 fiveyardlab.com##+js(trusted-set-constant, PlaySize, style="height: 100vh important!;width: 100vw !important;")
 fiveyardlab.com##+js(set-constant, player.options.allowUserInteraction, true)
@@ -46557,9 +46571,15 @@ livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##iframe[class="padPreload"]:remove()
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(acs, sandDetect)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(trusted-set-constant, currentReferer, https://antenasport.ru/)
+! TODO: Is document.referrer value passed to XMLHttpRequest()?
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(trusted-set-constant, document.referrer, https://antenasport.ru/)
+! TODO: Is document.referrer value passed to XMLHttpRequest()?
+fiveyardlab.com##+js(trusted-set-constant, document.referrer, https://wikisport.se/)
+! TODO: the following three rules doesn't abort the redirection script upon wrong referer request header.
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(acs, currentReferer)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopr, currentReferer)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopw, currentReferer)
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopw, window.location)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopw, allowedDomains)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopr, allowedDomains)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'allowedDomains')]):remove()
@@ -46674,22 +46694,29 @@ antenasport.ru,maxsport.one##+js(set-constant, _Hasync, [])
 antenasport.ru,maxsport.one##+js(acs, _Hasync)
 antenasport.ru,maxsport.one##+js(aopr, _Hasync)
 antenasport.ru,maxsport.one##+js(aopw, _Hasync)
+! TODO: Is document.referrer value passed to XMLHttpRequest()?
+antenasport.ru,maxsport.one##+js(trusted-set-constant, document.referrer, https://antenasport.ru/)
 antenasport.ru,maxsport.one##+js(trusted-set-constant, currentReferer, https://antenasport.ru/)
-antenasport.ru##iframe[src="about:blank"]:remove()
+! TODO: the following three rules doesn't abort the redirection script upon wrong referer request header.
+antenasport.ru,maxsport.one##+js(acs, currentReferer)
+antenasport.ru,maxsport.one##+js(aopr, currentReferer)
+antenasport.ru,maxsport.one##+js(aopw, currentReferer)
+antenasport.ru,maxsport.one##+js(aopw, window.location)
+antenasport.ru,maxsport.one##iframe[src="about:blank"]:remove()
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
-antenasport.ru##script[adblock-settings]:remove()
-antenasport.ru##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-antenasport.ru##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
-antenasport.ru##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
-antenasport.ru##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
-antenasport.ru##^script:has-text(adcashLib):remove()
-antenasport.ru##+js(acs, adcashLib)
-antenasport.ru##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
-antenasport.ru##+js(set-constant, window.kkp4a5x5tv, noopFunc)
-antenasport.ru##+js(acs, window.kkp4a5x5tv)
-antenasport.ru##+js(aopr, window.kkp4a5x5tv)
-antenasport.ru##+js(aopw, window.kkp4a5x5tv)
-antenasport.ru##+js(set-constant, ydjsm, noopFunc)
+antenasport.ru,maxsport.one##script[adblock-settings]:remove()
+antenasport.ru,maxsport.one##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+antenasport.ru,maxsport.one##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
+antenasport.ru,maxsport.one##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+antenasport.ru,maxsport.one##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+antenasport.ru,maxsport.one##^script:has-text(adcashLib):remove()
+antenasport.ru,maxsport.one##+js(acs, adcashLib)
+antenasport.ru,maxsport.one##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+antenasport.ru,maxsport.one##+js(set-constant, window.kkp4a5x5tv, noopFunc)
+antenasport.ru,maxsport.one##+js(acs, window.kkp4a5x5tv)
+antenasport.ru,maxsport.one##+js(aopr, window.kkp4a5x5tv)
+antenasport.ru,maxsport.one##+js(aopw, window.kkp4a5x5tv)
+antenasport.ru,maxsport.one##+js(set-constant, ydjsm, noopFunc)
 aradsport.live##span[style="display:none"]:remove()
 aradsport.live##div[id="player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 aradsport.live##:xpath(//script[contains(text(), '_Hasync')]):remove()
@@ -49063,6 +49090,9 @@ apk.support##+js(set-constant, atOptions, {})
 ||tomtrokr.com^*
 ||www.rbljioow.com^*
 ||rbljioow.com^*
+||dubzenom.com^*
+||lkooxfoqgot.com^*
+||bctusalj.com^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
