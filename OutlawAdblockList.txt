@@ -21734,70 +21734,84 @@ uploadbuzz.cc##div[class="adbutton"]
 ||d3hj4iyx6t1waz.cloudfront.net^*
 ||societingna.info^*
 ||8bef5bb6b351ca5e.com^*
-zenkit.com##.cookie-alert
 zenkit.com##.cookie-alert:remove()
-!us8.proxy-youtube.com##.bounceInDown.animated.btn
-proxy-youtube.com##.bounceInDown.animated.btn
-!www.youtube.com##.branded-page-box
-!www.youtube.com###ad_creative_1.ad-div.mastad
-www.youtube.com###ad_creative_1
-www.youtube.com###banner
-www.youtube.com###merch-shelf
-www.youtube.com###movie_player > .html5-video-container > .html5-stop-propagation.video-ads
-www.youtube.com###player-ads
+!us8.proxy-youtube.com##.bounceInDown.animated.btn:remove()
+proxy-youtube.com##.bounceInDown.animated.btn:remove()
+!www.youtube.com###ad_creative_1.ad-div.mastad:remove()
+!www.youtube.com###results > .pyv-afc-mute.yt-section-hover-container.spf-nolink.pyv-afc-ads-container > .pyv-afc-ads-inner > div:nth-of-type(3) > .yt-lockup-tile.yt-lockup-video.yt-uix-tile.clearfix.yt-lockup:remove()
+!www.youtube.com##.ad-container-single-media-element-annotations:remove()
+!www.youtube.com##.ad-created:remove()
+!www.youtube.com##.ad-interrupting:remove()
+!www.youtube.com##.ad-showing:remove()
+!www.youtube.com##.branded-page-box:remove()
+!www.youtube.com##.ytd-player.style-scope:remove()
+!www.youtube.com##.ytp-ad-display-override:remove()
+!www.youtube.com##.ytp-ad-overlay-closed:remove()
+!www.youtube.com##.ytp-error-content-wrap-reason:remove()
+!www.youtube.com##.ytp-error-content-wrap:remove()
+!www.youtube.com##.ytp-error-content:remove()
+!www.youtube.com##.ytp-error:remove()
+www.youtube.com###ad_creative_1:remove()
+www.youtube.com###banner:remove()
+www.youtube.com###merch-shelf:remove()
+www.youtube.com###movie_player > .html5-video-container > .html5-stop-propagation.video-ads:remove()
+www.youtube.com###movie_player.ytp-ad-display-override.ad-interrupting.ad-showing.ytp-ad-overlay-closed.ad-created:remove()
 www.youtube.com###player-ads:remove()
-www.youtube.com###premium-yva
-!www.youtube.com###results > .pyv-afc-mute.yt-section-hover-container.spf-nolink.pyv-afc-ads-container > .pyv-afc-ads-inner > div:nth-of-type(3) > .yt-lockup-tile.yt-lockup-video.yt-uix-tile.clearfix.yt-lockup
-www.youtube.com###results > .pyv-afc-mute.yt-section-hover-container.spf-nolink.pyv-afc-ads-container
-www.youtube.com###video-masthead
-!www.youtube.com##.ad-container
-!www.youtube.com##.ad-container-single-media-element-annotations
-www.youtube.com##*[class^="ad-container"]
+www.youtube.com###premium-yva:remove()
+www.youtube.com###results > .pyv-afc-mute.yt-section-hover-container.spf-nolink.pyv-afc-ads-container:remove()
+www.youtube.com###video-masthead:remove()
 www.youtube.com##*[class^="ad-container"]:remove()
-www.youtube.com##.ad-overlay
-www.youtube.com##.ad-overlay:remove()
-www.youtube.com##.opened
-www.youtube.com##.premium-yva-
-www.youtube.com##.ytd-merch-shelf-renderer
-www.youtube.com##.ytp-ad-module.video-ads
-www.youtube.com##.ytp-ad-module.video-ads:remove()
-!www.youtube.com##.ytp-error-content-wrap-reason
-!www.youtube.com##.ytp-error-content-wrap
-!www.youtube.com##.ytp-error-content
-!www.youtube.com##.ytp-error
-www.youtube.com##*[class^="ytp-error"]
 www.youtube.com##*[class^="ytp-error"]:remove()
-www.youtube.com###movie_player.ytp-ad-display-override.ad-interrupting.ad-showing.ytp-ad-overlay-closed.ad-created
-!www.youtube.com##.ad-interrupting
-!www.youtube.com##.ad-showing
-!www.youtube.com##.ad-created
-!www.youtube.com##.ytd-player.style-scope
-!www.youtube.com##.ytp-ad-display-override
-!www.youtube.com##.ytp-ad-overlay-closed
-www.youtube.com##div[class*="ytd-display-ad-renderer"]
-www.youtube.com##ytd-display-ad-renderer
-www.youtube.com##dom-if[class$="ytd-video-masthead-ad-v3-renderer"]
-www.youtube.com##ytd-thumbnail[class$="ytd-video-masthead-ad-v3-renderer"]
-www.youtube.com##div[class$="ytd-video-masthead-ad-advertiser-info-renderer"]
-www.youtube.com##div[class*="ytd-video-masthead-ad-primary-video-renderer"]
-www.youtube.com##iframe[class$="ytd-video-masthead-ad-primary-video-renderer"]
-www.youtube.com##div[class*="ytd-promoted-sparkles-web-renderer"]
-www.youtube.com##div[class*="ytd-promoted-video-renderer"]
-www.youtube.com##div[id="banner-spacer"]
-www.youtube.com##div[id="masthead-ad"]
-www.youtube.com##div[id="show-ad"]
-www.youtube.com##div[id^="ad_creative_expand_btn"]
-!||s.youtube.com/api/stats/watchtime^*
+www.youtube.com##.ad-overlay:remove()
+www.youtube.com##.opened:remove()
+www.youtube.com##.premium-yva-:remove()
+www.youtube.com##.ytd-merch-shelf-renderer:remove()
+www.youtube.com##.ytp-ad-module.video-ads:remove()
+www.youtube.com##ad-badge-view-model:remove()
+www.youtube.com##ad-details-line-view-model:remove()
+www.youtube.com##badge-shape[class*="shape-wiz--ads"]:remove() 
+www.youtube.com##div[class$="ytd-video-masthead-ad-advertiser-info-renderer"]:remove()
+www.youtube.com##div[class*="ytd-display-ad-renderer"]:remove()
+www.youtube.com##div[class*="ytd-promoted-sparkles-web-renderer"]:remove()
+www.youtube.com##div[class*="ytd-promoted-video-renderer"]:remove()
+www.youtube.com##div[class*="ytd-video-masthead-ad-primary-video-renderer"]:remove()
+www.youtube.com##div[id="rendering-content"][class*="ytd-in-feed-ad-layout-renderer"]:remove()
+www.youtube.com##div[id="banner-spacer"]:remove()
+www.youtube.com##div[id="masthead-ad"]:remove()
+www.youtube.com##div[id="show-ad"]:remove()
+www.youtube.com##div[id^="ad-badge"]:remove()
+www.youtube.com##div[id^="ad_creative_expand_btn"]:remove()
+www.youtube.com##dom-if[class$="ytd-video-masthead-ad-v3-renderer"]:remove()
+www.youtube.com##iframe[class$="ytd-video-masthead-ad-primary-video-renderer"]:remove()
+www.youtube.com##ytd-compact-promoted-video-renderer[class*="ytd-in-feed-ad-layout-renderer"]:remove()
+www.youtube.com##ytd-display-ad-renderer:remove()
+www.youtube.com##ytd-thumbnail[class$="ytd-video-masthead-ad-v3-renderer"]:remove()
+youtube.com##+js(json-prune, adPlacements)
+www.youtube.com##+js(set-constant, AD_BLOCK, 0, stay)
+www.youtube.com##+js(set-constant, a.displayAdBlocks_, null, stay)
+www.youtube.com##+js(set-constant, a.videoInstreamAdBlocks_, null, stay)
+www.youtube.com##+js(set-constant, chain, '', stay)
+www.youtube.com##+js(set-constant, f.adblock, 0, stay)
+www.youtube.com##+js(set-constant, this.adBlockId, 0, stay)
+www.youtube.com##+js(set-constant, this.displayAdBlocks_, [], stay)
+www.youtube.com##+js(set-constant, this.videoInstreamAdBlocks_, [], stay)
+www.youtube.com##+js(set-constant, window.google_ad_status, 1, stay)
+! stops all settimeout functions @ youtube; also breaks youtube completely
+!www.youtube.com##+js(no-setTimeout-if, /^/)
+!www.youtube.com##+js(set-constant, ytcsi, {}) !breaks youtube completely
+! Neither of the following override the original setting @ youtube.com
+!www.youtube.com##+js(set-constant, ytcsi.now, noopFunc, end)
+!www.youtube.com##+js(set-constant, ytcsi.now, noopFunc, complete)
+!||s.youtube.com/api/stats/watchtime$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.youtube.com/yts/jsbin/www-pagead-id-vflQArhct/www-pagead-id.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s.youtube.com/api/stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s.youtube.com/stream_204?event=streamingstats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/ad_frame$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/annotations_invideo?instream_ad=1$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.youtube.com/api/stats/ads?ad_id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||www.youtube.com/api/stats/ads^*
-!||www.youtube.com/api/stats/atr^*
+!||www.youtube.com/api/stats/ads$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.youtube.com/api/stats/atr$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.youtube.com/api/stats/atr?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||www.youtube.com/api/stats/watchtime^*
 !||www.youtube.com/api/stats/watchtime?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 !||www.youtube.com/api/stats/playback?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/api/stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -21805,36 +21819,21 @@ www.youtube.com##div[id^="ad_creative_expand_btn"]
 ||www.youtube.com/get_video_info*&el=adunit$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/pagead/conversion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/pagead/viewthroughconversion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.youtube.com/ptracking^*
+||www.youtube.com/ptracking$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/youtubei/v1/log_event$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/youtubei/v1/log_interaction$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/yts/jsbin/www-pagead-id-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/yva_video?adformat=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.youtube.com/youtubei/v1/player/ad_break?key=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.youtube.com/youtubei/v1/player/ad_break^*
-||www.youtube.com/pagead/adview^*
+||www.youtube.com/youtubei/v1/player/ad_break$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.youtube.com/pagead/adview$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.youtube.com/s/desktop/3d8e40b0/jsbin/www-tampering.vflset/www-tampering.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/s/desktop/*/jsbin/www-tampering.vflset/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/pagead/interaction/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.youtube.com/s/desktop/1422277c/jsbin/intersection-observer.min.vflset/intersection-observer.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/s/desktop/1422277c/jsbin/intersection-observer.min.vflset/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-youtube.com##+js(json-prune, adPlacements)
-www.youtube.com##+js(set-constant, window.google_ad_status, 1, stay)
-www.youtube.com##+js(set-constant, AD_BLOCK, 0, stay)
-www.youtube.com##+js(set-constant, f.adblock, 0, stay)
-www.youtube.com##+js(set-constant, chain, '', stay)
-www.youtube.com##+js(set-constant, this.adBlockId, 0, stay)
-www.youtube.com##+js(set-constant, this.videoInstreamAdBlocks_, [], stay)
-www.youtube.com##+js(set-constant, this.displayAdBlocks_, [], stay)
-www.youtube.com##+js(set-constant, a.displayAdBlocks_, null, stay)
-www.youtube.com##+js(set-constant, a.videoInstreamAdBlocks_, null, stay)
-!www.youtube.com##+js(set-constant, ytcsi, {}) !breaks youtube completely
-! stops all settimeout functions @ youtube; also breaks youtube completely
-!www.youtube.com##+js(no-setTimeout-if, /^/)
-! Neither of the following override the original setting @ youtube.com
-!www.youtube.com##+js(set-constant, ytcsi.now, noopFunc, end)
-!www.youtube.com##+js(set-constant, ytcsi.now, noopFunc, complete)
+||accounts.youtube.com/_/IdentityRotateCookiesHttp/cspreport/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads.youtube.com^*
 !||tv.youtube.com/api/stats/playback^*
 ||tv.youtube.com/api/stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
