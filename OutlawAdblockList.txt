@@ -41319,9 +41319,15 @@ open.spotify.com##._668f8eb097574762d66d361cc6d37850-scss > .btn-black.btn--no-m
 open.spotify.com##.grecaptcha-badge:remove()
 open.spotify.com##[src="/blank"]:remove()
 open.spotify.com##a[data-context-item-type="ad"]:remove()
+open.spotify.com##a[data-testid="context-item-info-ad-title"]:remove()
 open.spotify.com##div[id="ad-tracking-pixel"]:remove()
 open.spotify.com##div[class*="os-host"]:remove-class(os-host-resize-disabled)
 open.spotify.com##footer[data-testadtype="ad-type-ad"]:remove()
+open.spotify.com##button[data-testid="control-button-playpause"]:remove-attr(disabled)
+open.spotify.com##button[data-testid="control-button-skip-back"]:remove-attr(disabled)
+open.spotify.com##button[data-testid="control-button-shuffle"]:remove-attr(disabled)
+open.spotify.com##button[data-testid="control-button-skip-forward"]:remove-attr(disabled)
+open.spotify.com##button[data-testid="control-button-repeat"]:remove-attr(disabled)
 !||open.spotify.com/log/pageview$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||open.spotify.com/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||adeventtrackermonitoring.spotify.com/monitoring?pload=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49100,6 +49106,7 @@ apk.support##+js(set-constant, atOptions, {})
 ||lkvgyjnbsuqrr.com**
 ||www.xbvcyqkh.com^*
 ||gocast.pro/ds.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||gocast.pro/online.php?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
