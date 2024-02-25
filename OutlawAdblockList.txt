@@ -13,6 +13,8 @@
 ! now or in the future.
 ! Therefore regularly update your filters in uBlock and report any websites which
 ! do not work to https://github.com/uploadersoasis/Adblock_Filter_List/issues .
+! Rules in this list also frequently contain comments to explain what the rule does
+! and to assist in troubleshooting should the it need to be changed or removed in the future.
 ! 
 ! NOTES:
 !
@@ -4962,6 +4964,14 @@ forum.videohelp.com##ins[data-ad-client]:remove()
 forum.videohelp.com##+js(set-constant, adsbygoogle, []) 
 forum.videohelp.com##+js(aopr, adsbygoogle)
 forum.videohelp.com##+js(aopw, adsbygoogle)
+! TODO:  Are the ids in the following two rules randomly generated?
+forum.videohelp.com##div[id="ADJKHDF834"]:remove()
+forum.videohelp.com##div[id="qvMym2bCOpKBX"]:remove()
+forum.videohelp.com##div[id="thisisatest"]:remove()
+forum.videohelp.com##+js(set-constant, checkingjava, noopFunc) 
+forum.videohelp.com##+js(set-constant, checkingjavaagain, noopFunc) 
+forum.videohelp.com##+js(set-constant, checkingjavatest, noopFunc) 
+forum.videohelp.com##+js(no-setTimeout-if, /checkingjava/)
 ||www.hp.com/cma/ng/lib/hpanalytics_common.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||h10025.www1.hp.com/ewfrf/wc/pages/javascript/qualtricsLoader.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||h10025.www1.hp.com/ewfrf/wc/pages/javascript/jqOmniture.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -42276,13 +42286,13 @@ www.eurogamer.net##div[class*="advertContainer"]:remove()
 www.eurogamer.net##div[class*="advert_container"]:remove()
 www.eurogamer.net##div[class^="advert"]:remove()
 www.eurogamer.net##div[class="paywall"]:remove()
+www.eurogamer.net##div[class^="message-container"]:has(div[class="message-overlay"], div[id="notice"]):remove()
 www.eurogamer.net##+js(aopr, o.d.abp)
 www.eurogamer.net##+js(aopw, o.d.abp)
 www.eurogamer.net##+js(aopr, adConfig)
 www.eurogamer.net##+js(aopw, adConfig)
 !www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true, end)
 www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true, complete)
-www.eurogamer.net##div[class^="message-container"]:has(div[class="message-overlay"], div[id="notice"]):remove()
 www.eurogamer.net##+js(set-constant, permutiveOptIn, noopFunc)
 www.eurogamer.net##+js(set-constant, permutiveOptOut, noopFunc)
 www.eurogamer.net##+js(set-constant, permutivePageData, {})
@@ -42298,14 +42308,12 @@ www.eurogamer.net##+js(aeld, BrockmanFunctionalCookiesAllowed)
 www.eurogamer.net##+js(aeld, BrockmanFunctionalCookiesDisallowed)
 www.eurogamer.net##+js(aeld, BrockmanTargetingCookiesAllowed)
 www.eurogamer.net##+js(aeld, BrockmanTargetingCookiesDisallowed)
+www.eurogamer.net##+js(set-attr, body, data-ads, false)
 www.eurogamer.net##+js(set-constant, gtag, noopFunc)
 www.eurogamer.net##+js(acs, gtag, permutive, OneSignal)
 www.eurogamer.net##+js(set-constant, updateGoogleAnalyticsConsent, noopFunc)
 www.eurogamer.net##+js(set-constant, updateGoogleAnalyticsConsentAnonymous, noopFunc)
 www.eurogamer.net##+js(set-constant, performanceCookiesAllowed, noopFunc)
-www.eurogamer.net##+js(set-attr, body, data-ads, false)
-!||cmpsp.eurogamer.net/unified/4.10.1/gdpr-tcf.04abc9c12f5845f5ba5b.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||cmpsp.eurogamer.net/unified/*/gdpr-tcf.*.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.eurogamer.net##+js(set-constant, performanceCookiesDisallowed, noopFunc)
 www.eurogamer.net##+js(set-constant, functionalCookiesAllowed, noopFunc)
 www.eurogamer.net##+js(set-constant, functionalCookiesDisallowed, noopFunc)
@@ -42315,12 +42323,16 @@ www.eurogamer.net##+js(set-constant, getSubscriber3pCookie, noopFunc)
 www.eurogamer.net##+js(set-constant, BrockmanAds, noopFunc)
 www.eurogamer.net##+js(set-constant, appendBrockmanAds, noopFunc)
 www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, trueFunc)
-www.eurogamer.net##+js(set-constant,  adConfig, {})
+www.eurogamer.net##+js(set-constant, adConfig, {})
+www.eurogamer.net##+js(set-constant, _paq, [])
+www.eurogamer.net##+js(set-constant, trackAnonymously, trueFunc)
 ! TODO:  The javascript still doesn't run even with the src attribute set; is this because it is set too late in the page load process?
 ! must use [data-cookies-src] in the following rule to get the value from data-cookies-src attribute
 www.eurogamer.net##+js(set-attr, script[data-lazyload="true"][data-cookies-src], src, [data-cookies-src])
 ! Don't need to remove current src attribute to rename other attribute to it
 !www.eurogamer.net##+js(rna, script[data-lazyload="true"][data-cookies-src], data-cookies-src, src)
+!||cmpsp.eurogamer.net/unified/4.10.1/gdpr-tcf.04abc9c12f5845f5ba5b.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cmpsp.eurogamer.net/unified/*/gdpr-tcf.*.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 *##iframe[id^="google_ads_iframe_dummy_"]:remove()
 amli.sekindo.com##iframe[id^="google_ads_iframe_dummy_"]:remove()
 ||www.uploadcloud.pro/js/cookieinfo.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49146,6 +49158,7 @@ newatlas.com##+js(rna, img[loading="lazy"][data-src], data-src, src)
 ||jsdelivr.map.fastly.net/npm/devtools-detector$3p,script
 !||atervinesor.com/scripts/trex.php$3p,script
 ||atervinesor.com^*
+! servertraff.com serves video ads via VAST plug-in for jwplayer
 ||servetraff.com^*
 ||forgivenessdeportdearly.com^*
 ||economiaeseguros.com^*
@@ -49157,6 +49170,32 @@ newatlas.com##+js(rna, img[loading="lazy"][data-src], data-src, src)
 ! Do NOT put a ^ at end of regex as it does not work as it does on non-regex strings in rules.
 !/^https?:\/\/pl\d{8}\.toprevenuegate\.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 /^https?:\/\/pl\d+\.toprevenuegate\.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+brbeast.com##video[class^="jw-video"]:remove-attr(disableremoteplayback)
+brbeast.com##+js(set-constant, devtoolsDetector, {})
+brbeast.com##+js(set-constant, devtoolsDetector.launch, noopFunc)
+brbeast.com##+js(acs, /devtoolsDetector\./)
+brbeast.com##body:remove-attr(oncontextmenu)
+brbeast.com##+js(remove-attr, oncontextmenu, body)
+! TODO: Why doesn't the context menu appear over the video player?
+brbeast.com##+js(addEventListener-defuser, contextmenu)
+!brbeast.com##+js(acs, contextmenu)
+brbeast.com##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
+! TODO: Neither of the following rules work because "1 nodes present before installing mutation observer".
+brbeast.com##+js(trusted-replace-node-text, script, /document\.addEventListener\('contextmenu', event => event.preventDefault\(\)\);/gm, null;)
+brbeast.com##+js(remove-node-text, script, /document\.addEventListener\('contextmenu', event => event.preventDefault\(\)\);/gm)
+brbeast.com##div[class="cc-overlay"]:style(display: inline !important;)
+brbeast.com##div[class="afs_ads ad-placement"]:remove()
+
+<script type="text/javascript">
+    var _paq = _paq || [];
+    (function () {
+        var trackAnonymously = (function() { return window.sevenTag.getVariableValue('Piwik PRO Anonymization', 4) })()('analytics');
+        if (trackAnonymously) {
+            _paq.push(['setUserIsAnonymous', 1]);
+            _paq.push(['disableCookies']);
+        }
+    }());
+</script>
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
