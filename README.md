@@ -12,6 +12,8 @@ given that websites on the Internet are continually changing, some may not work
 now or in the future.
 Therefore regularly update your filters in uBlock and report any websites which
 do not work to https://github.com/uploadersoasis/Adblock_Filter_List/issues .
+Rules in this list also frequently contain comments to explain what the rule does
+and to assist in troubleshooting should the it need to be changed or removed in the future.
  
 NOTES:
 
