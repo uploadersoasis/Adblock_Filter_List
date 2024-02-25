@@ -42287,18 +42287,6 @@ www.eurogamer.net##div[class*="advert_container"]:remove()
 www.eurogamer.net##div[class^="advert"]:remove()
 www.eurogamer.net##div[class="paywall"]:remove()
 www.eurogamer.net##div[class^="message-container"]:has(div[class="message-overlay"], div[id="notice"]):remove()
-www.eurogamer.net##+js(aopr, o.d.abp)
-www.eurogamer.net##+js(aopw, o.d.abp)
-www.eurogamer.net##+js(aopr, adConfig)
-www.eurogamer.net##+js(aopw, adConfig)
-!www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true, end)
-www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true, complete)
-www.eurogamer.net##+js(set-constant, permutiveOptIn, noopFunc)
-www.eurogamer.net##+js(set-constant, permutiveOptOut, noopFunc)
-www.eurogamer.net##+js(set-constant, permutivePageData, {})
-www.eurogamer.net##+js(set-constant, appendOneSignal, noopFunc)
-www.eurogamer.net##+js(set-constant, sendToPiwik, noopFunc)
-www.eurogamer.net##+js(set-constant, sendToPermutive, noopFunc)
 www.eurogamer.net##+js(aeld, onConsentReady)
 www.eurogamer.net##+js(aeld, BrockmanTCFConsent)
 www.eurogamer.net##+js(aeld, BrockmanTCFOptOut)
@@ -42308,7 +42296,19 @@ www.eurogamer.net##+js(aeld, BrockmanFunctionalCookiesAllowed)
 www.eurogamer.net##+js(aeld, BrockmanFunctionalCookiesDisallowed)
 www.eurogamer.net##+js(aeld, BrockmanTargetingCookiesAllowed)
 www.eurogamer.net##+js(aeld, BrockmanTargetingCookiesDisallowed)
+www.eurogamer.net##+js(aopr, o.d.abp)
+www.eurogamer.net##+js(aopw, o.d.abp)
+www.eurogamer.net##+js(aopr, adConfig)
+www.eurogamer.net##+js(aopw, adConfig)
 www.eurogamer.net##+js(set-attr, body, data-ads, false)
+!www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true, end)
+www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true, complete)
+www.eurogamer.net##+js(set-constant, permutiveOptIn, noopFunc)
+www.eurogamer.net##+js(set-constant, permutiveOptOut, noopFunc)
+www.eurogamer.net##+js(set-constant, permutivePageData, {})
+www.eurogamer.net##+js(set-constant, appendOneSignal, noopFunc)
+www.eurogamer.net##+js(set-constant, sendToPiwik, noopFunc)
+www.eurogamer.net##+js(set-constant, sendToPermutive, noopFunc)
 www.eurogamer.net##+js(set-constant, gtag, noopFunc)
 www.eurogamer.net##+js(acs, gtag, permutive, OneSignal)
 www.eurogamer.net##+js(set-constant, updateGoogleAnalyticsConsent, noopFunc)
@@ -49185,17 +49185,67 @@ brbeast.com##+js(trusted-replace-node-text, script, /document\.addEventListener\
 brbeast.com##+js(remove-node-text, script, /document\.addEventListener\('contextmenu', event => event.preventDefault\(\)\);/gm)
 brbeast.com##div[class="cc-overlay"]:style(display: inline !important;)
 brbeast.com##div[class="afs_ads ad-placement"]:remove()
-
-<script type="text/javascript">
-    var _paq = _paq || [];
-    (function () {
-        var trackAnonymously = (function() { return window.sevenTag.getVariableValue('Piwik PRO Anonymization', 4) })()('analytics');
-        if (trackAnonymously) {
-            _paq.push(['setUserIsAnonymous', 1]);
-            _paq.push(['disableCookies']);
-        }
-    }());
-</script>
+!||rxreedpop.piwik.pro/ppms.php^$3p
+!||rxreedpop.containers.piwik.pro/ppms.js^$3p,script
+||rxreedpop.piwik.pro^*
+||rxreedpop.containers.piwik.pro^*
+! TODO: Is the id in the following rule randomnly generated? No, as the anti-adblocking function which generates it has the same name.
+ottverse.com##div[id="owczersy-blanket"]:remove()
+ottverse.com##ins[class="adsbygoogle"]:remove()
+ottverse.com##script[id="allowme-tracking"]:remove()
+ottverse.com##script[id="allowme-ready"]:remove()
+ottverse.com##script[id="advanced_ads_pro/visitor_conditions-js-extra"]:remove()
+!ottverse.com##script[id="advanced-ads-sticky-footer-js-js-extra"]:remove()
+!ottverse.com##script[id="advanced-ads-pro/front-js-extra"]:remove()
+!ottverse.com##script[id="advanced-ads-pro/cache_busting-js-extra"]:remove()
+!ottverse.com##script[id="advanced-ads-advanced-js-js-extra"]:remove()
+ottverse.com##script[id^="advanced-ads-"]:remove()
+!ottverse.com##script[id="advadsTrackingScript-js-extra"]:remove()
+!ottverse.com##script[id="advadsTrackingGAFront-js-extra"]:remove()
+ottverse.com##script[id^="advadsTracking"]:remove()
+! TODO: Are the windows.advanced_* and advanced_* variables in the following rules actually the same?
+ottverse.com##+js(set-constant, window.advanced_ads_ready_queue, [])
+ottverse.com##+js(set-constant, window.advanced_ads_ready, noopFunc)
+ottverse.com##+js(set-constant, window.advanced_ads_ready, falseFunc)
+ottverse.com##+js(set-constant, window.advanced_ads_pro, false)
+ottverse.com##+js(set-constant, window.advanced_ads_ga_anonymIP, true)
+ottverse.com##+js(set-constant, window.advanced_ads_check_adblocker, noopFunc)
+ottverse.com##+js(set-constant, window.advads_has_ads, [])
+ottverse.com##+js(set-constant, window.advads_admin_bar_items, [])
+ottverse.com##+js(set-constant, window.advadsGATracking, {})
+ottverse.com##+js(set-constant, advanced_ads_sticky_settings, {})
+ottverse.com##+js(set-constant, advanced_ads_responsive, {})
+ottverse.com##+js(set-constant, advanced_ads_ready_queue.push, falseFunc)
+ottverse.com##+js(set-constant, advanced_ads_ready, falseFunc)
+ottverse.com##+js(set-constant, advanced_ads_pro_visitor_conditions, {})
+ottverse.com##+js(set-constant, advanced_ads_pro_ajax_object, {})
+ottverse.com##+js(set-constant, advanced_ads_ga_anonymIP, true)
+ottverse.com##+js(set-constant, advanced_ads_ga_UID, "")
+ottverse.com##+js(set-constant, advanced_ads_cookies, {})
+ottverse.com##+js(set-constant, advads_tracking_urls, {})
+ottverse.com##+js(set-constant, advads_tracking_parallel, {})
+ottverse.com##+js(set-constant, advads_tracking_methods, {})
+ottverse.com##+js(set-constant, advads_tracking_linkbases, {})
+ottverse.com##+js(set-constant, advads_tracking_ads, {})
+ottverse.com##+js(set-constant, advads_options, {})
+ottverse.com##+js(set-constant, advads_gatracking_uids, {})
+ottverse.com##+js(set-constant, advads_gatracking_transmitpageqs, {})
+ottverse.com##+js(set-constant, advads_gatracking_anonym, true)
+ottverse.com##+js(set-constant, advads_gatracking_allads, {})
+ottverse.com##+js(set-constant, advadsTracking, {})
+ottverse.com##+js(set-constant, advadsProCfp, {})
+ottverse.com##+js(set-constant, advadsGALocale, {})
+ottverse.com##+js(set-constant, advadsCfpQueue, [])
+ottverse.com##+js(set-constant, advadsCfpInfo, {})
+ottverse.com##+js(set-constant, advadsCfpAd, noopFunc)
+ottverse.com##+js(set-constant, adID, "")
+ottverse.com##+js(set-constant, aadvads_items, {})
+ottverse.com##+js(set-constant, _paq, [])
+! The following three rules defuse the anti-adblocking related functions.
+ottverse.com##+js(no-setInterval-if, /t\.owczersy_fn_ibf\(\)/)
+ottverse.com##+js(no-setInterval-if, /t\.daadb_get_data\(\)/)
+ottverse.com##+js(no-setInterval-if, /t\.owczersy_fn_sm\(\)/)
+||cdn.matomo.cloud/ottverse.matomo.cloud/matomo.js^$3p,script
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
