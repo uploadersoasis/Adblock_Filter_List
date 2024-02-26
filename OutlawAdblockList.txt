@@ -1151,9 +1151,13 @@ img.atdmt.com/images/pixel.gif$document,subdocument,script,inline-script,inline-
 ||cdn3.kovla.com/static/js/popunder.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.prelist.ws/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.prelist.ws/js/stats.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||search.spotxchange.com/track/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||search.spotxchange.com/ad/js.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||search.spotxchange.com/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||search.spotxchange.com/track/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||search.spotxchange.com/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||search.spotxchange.com/openrtb/*/dados$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||search.spotxchange.com/vast/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||search.spotxchange.com^*
+! The following rule has an exception for pluto.tv
+||sync.search.spotxchange.com/partner?adv_id=$domain=~pluto.tv,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.cpmfun.com/getad-.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ad2games.com/slave.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.cpmfun.com/getad.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -1190,7 +1194,7 @@ img.atdmt.com/images/pixel.gif$document,subdocument,script,inline-script,inline-
 !||ad.onlineadserv.com/st^*
 ||ox.irrawaddy.org^*
 ||count.9yx.com^*
-||servedby.openxmarket.asia/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||servedby.openxmarket.asia^*
 ||tracking.cindyclips.com^*
 ||ad.onlineadserv.com^*
 !||d.nster.net/a/319/2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -1321,7 +1325,6 @@ img.atdmt.com/images/pixel.gif$document,subdocument,script,inline-script,inline-
 !||extras.mnginteractive.com/live/js/mngiads/AdsInclude.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||extras.mnginteractive.com/live/js/mngiads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||video.dmtracker.com/images/zig.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||sync.search.spotxchange.com/partner?adv_id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||track.eyeviewads.com/sync/adaptv$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||track.eyeviewads.com^*
 ||ads.adap.tv/creative?creativeid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -2528,13 +2531,13 @@ www.techpowerup.com##div[class="no-ad-found"]:remove()
 ||www.untrackd.com/libs/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||carnage.spider.ad/spider3.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||carnage.spider.ad/generateCookie.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||carnage.spider.ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||carnage.spider.ad^*
 ||ro2.biz/popup.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||banners.coolmirage.com^*
 ||extra33.com/apu.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn4.spider.ad/img/sidebanner_sprites_new1.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn4.spider.ad/js/spider_ad_jquery.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||cdn4.spider.ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn4.spider.ad^*
 !||impr.adsafiliados.com.br/impressao/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||impr.adsafiliados.com.br/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||adsafiliados.com.br/analytics_1.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -4145,8 +4148,6 @@ groups.yahoo.com##.yg-mb
 ||rtb.adsrvr.org^*
 !||geo-lb02.w55c.net/x/brs1024^*
 ||geo-lb02.w55c.net^*
-!||search.spotxchange.com/vast/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||search.spotxchange.com^*
 !||rtb-lr-west.chango.com/bidder/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rtb-lr-west.chango.com^*
 ||la.flvmplayer.com^*
@@ -9110,8 +9111,8 @@ dropapk.com###mngez-wrapper > .mngez-container > .mngez-download1 > .mngez-downl
 ||360popunder.com^*
 !||lizard1301.spider.ad/spd_display$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||lizard1301.spider.ad/spider3.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||lizard1301.spider.ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||venom1301.spider.ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||lizard1301.spider.ad^*
+||venom1301.spider.ad^*
 ||s3.amazonaws.com/cdn4.mediakit.com.br/campaign/spider/adcash---display/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||s3.amazonaws.com/cdn4.spider.ad/js/spider_ad_jquery.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s3.amazonaws.com/cdn4.spider.ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -9324,8 +9325,8 @@ nethd.org###ads_zone20627
 !||filter.anytheengmedia.com/filter^*
 ||filter.anytheengmedia.com^*
 ||c.codeonclick.com/script/wait.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||gsn.chameleon.ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||static.chameleon.ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||gsn.chameleon.ad^*
+||static.chameleon.ad^*
 ||uptobox.com/js/c.ad6media.fr_l.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||pwk.uptobox.com/piwik.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pwk.uptobox.com^*
@@ -9757,8 +9758,15 @@ www.msn.com###atwAdFrame5
 !||www3.wannasport.com/tpx/px.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www1.wannasport.com^*
 ||www3.wannasport.com^*
-!||bid.contextweb.com/header/tag^*
+!||bid.contextweb.com/header/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bid.contextweb.com^*
+!||bh.contextweb.com/visitormatch/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||bh.contextweb.com/bh/rtset$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||bh.contextweb.com^*
+!||ads.contextweb.com/TagPublish/getvideo.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||ads.contextweb.com^*
+!||tag-st.contextweb.com/getjs.static.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||tag-st.contextweb.com^*
 ||allbreakingnews.com^*
 !||www1.allbreakingnews.com/te/as.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www3.allbreakingnews.com/js/utracker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -12764,8 +12772,6 @@ erpman1.tripod.com###FooterAd
 ||seminings.info^*
 ||www.seminings.info^*
 ||lp.privatesearches.info^*
-!||ads.contextweb.com/TagPublish/getvideo.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||ads.contextweb.com^*
 ||www3.smartadserver.com^*
 ||hqxtsqwpvort.com^*
 ||www.hqxtsqwpvort.com^*
@@ -13509,8 +13515,6 @@ www.cnbc.com##.player-error-placeholder
 ||www.awogbtinorwx.com^*
 ||xbzmworkoyrx.com^*
 ||www.xbzmworkoyrx.com^*
-!||tag-st.contextweb.com/getjs.static.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||tag-st.contextweb.com^*
 !||wt.alcmpn.com/wt/108/webtag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||wt.alcmpn.com^*
 ||wtjmnbjktbci.com^*
@@ -15070,7 +15074,7 @@ cilidaquan.xyz###vaea_22840_vvva_1
 ||sync.datamind.ru/cookie/accepter$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||relap.io/partners/tfcs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||relap.io/partners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||ad-m.asia/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||ad-m.asia^*
 !||ip.hivps.xyz/system-cilidaquan$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ip.hivps.xyz^*
 !||n0-r2d2.piguiqproxy.com^*
@@ -16103,8 +16107,6 @@ http://eicm-global.dsp.io/opx$document,subdocument,script,inline-script,inline-f
 ||px.powerlinks.com/user/sync/ssps$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||um.videmob.com/pixel?partner=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||um.videmob.com^*
-!||bh.contextweb.com/bh/rtset$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||bh.contextweb.com^*
 !||cdn.tynt.com/rciv.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||sc.tynt.com/script/sc/aji7UkwBmr6jfYaKlId8sQ.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||sync.smrtb.com/sync/ssp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -18082,6 +18084,15 @@ www.wsj.com##div[id="wsj-mobile-ad-target"]
 ||rb.adnxs.com^*
 ||prebid.adnxs.com^*
 ||secure-nym.adnxs.com^*
+!||acdn.adnxs.com/* !blocks foxnews.com videos
+!||acdn.adnxs-simple.com/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||acdn.adnxs-simple.com/prebid/appnexus-mapping/mappings.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||acdn.adnxs.com/prebid/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||acdn.adnxs.com/ib/static/usersync/v3/async_usersync.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||acdn.adnxs.com/dmp/async_usersync.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||acdn.adnxs.com/ast/ast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||acdn.adnxs.com/ast/static/*/ast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||acdn.adnxs.com/dmp/up/pixie.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||acdn.adnxs.com/vx/static/w/anwrapper-1.800.0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||acdn.adnxs.com/vx/static/w/anwrapper-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.adnxs.com^*
@@ -19267,9 +19278,6 @@ pureinfotech.com##div[class="optin-form-wrapper"]
 ||www.tczvikamowfjte.com^*
 ||zpaimilpqx.com^*
 ||www.zpaimilpqx.com^*
-!||acdn.adnxs.com/prebid/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||acdn.adnxs.com/ib/static/usersync/v3/async_usersync.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||acdn.adnxs.com/* !blocks foxnews.com videos
 !||adservice.google.com/adsid/google/ui$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||adservice.google.com/adsid/integrator.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||adservice.google.com^*
@@ -23664,7 +23672,6 @@ www.cultofmac.com##span[class^="ezoic-ad"]:remove()
 ||petiteumbrella.com^*
 www.hidemyass.com##div[class="js-cookie-bar cookie-bar visible"]:remove()
 ||a.optmnstr.com^*
-||graph.instagram.com/logging_client_events$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.unblock123.com##ins[class="adsbygoogle"]:remove()
 www.unblock123.com##+js(set-constant, adsbygoogle, [])
 www.unblock123.com##+js(abort-on-property-read, adsbygoogle)
@@ -25199,7 +25206,6 @@ www.realvnc.com##div[id="cookie-notice"]:remove()
 ||anonfiles.com/sw_anonfiles.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||anonfiles.com/analytics/collect$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||anonfiles.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||acdn.adnxs.com/dmp/async_usersync.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||piunikaweb.com^*
 ||foodprogrammesdiscreet.com^*
 !||bam-cell.nr-data.net/jserrors/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -34006,7 +34012,6 @@ www.purexbox.com##div[id="onetrust-consent-sdk"]
 www.purexbox.com##div[data-dfp-id]
 ||kclykjjbkdituln.com^*
 ||zebumpes.net^*
-||www.instagram.com/logging/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.disneyplusinformer.com##div[class*="adthrive"]
 asia.nikkei.com##*[class^="cookie-banner"]
 asia.nikkei.com##div[ng-show="!terminalError"]:remove()
@@ -34768,9 +34773,7 @@ apkses.com##section[id^="apk-post-ad"]
 apkses.com##div[class*="adace-"]
 eiblogs.com##ins[data-ad-client]:upward(1):remove()
 ||dnn4px252i5wx.cloudfront.net^*
-||eavailandb.asia/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||acdn.adnxs.com/ast/ast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||acdn.adnxs.com/ast/static/*/ast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||eavailandb.asia^*
 coursecatalog.us##+js(remove-attr, data-adblockkey, html)
 ||coursecatalog.us/sk-logabpstatus.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 coursecatalog.us##+js(acs, handleABPDetect)
@@ -35538,7 +35541,7 @@ www.pluralsight.com##div[class*="cookie-notification-"]
 ||fuylufrn.com^*
 ||trafficbooster.xyz^*
 ||ebodyfairesra.xyz^*
-||rnoddenkn.asia/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||rnoddenkn.asia^*
 ||d2sp5g360gsxjh.cloudfront.net^*
 ||s3.us-east-1.amazonaws.com/f7d83c504bee3c500e2fdcef6fc5a5a6c63c48ed56792a90dce945a/b405c38d7f$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||treatycalculator.com^*
@@ -35555,14 +35558,13 @@ www.pluralsight.com##div[class*="cookie-notification-"]
 ||record.webpartners.co^*
 ||metrics1.thankyou.com^*
 ||www.betus.com.pa/sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||acdn.adnxs.com/dmp/up/pixie.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||bm.adentifi.com/pixel/conv/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bm.adentifi.com^*
 ||acuityplatform.com/Adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||px.adentifi.com/Pixels$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||px.adentifi.com^*
 !||up.pixel.ad/assets/up.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||up.pixel.ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||up.pixel.ad^*
 ||eiteribesshaints.com^*
 ||komarchlupoid.com^*
 ||www.aexp-static.com/cdaas/one/rum-telemetry/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -37040,7 +37042,7 @@ poscitechs.shop,dlhd.sx##+js(aopr, window.kkp4a5x5tv)
 poscitechs.shop,dlhd.sx##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
 poscitechs.shop,dlhd.sx##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
 poscitechs.shop,dlhd.sx##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
-!poscitechs.shop##+js(nostif)
+!poscitechs.shop##+js(no-setTimeout-if)
 !poscitechs.shop##+js(no-setTimeout-if, /^/)
 poscitechs.shop##+js(no-setTimeout-if, /^function\(\)/)
 poscitechs.shop##iframe[src="javascript:false"]:remove()
@@ -41271,17 +41273,18 @@ filesusr.co##div[class^="didna-ad-slot"]:remove()
 ||static.parastorage.com/services/cookie-consent-banner-for-uou/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||didna-d.openx.net^*
 ||cdn.adnxs-simple.com^*
+!||ib.adnxs.com^* !blocks Shopyourway/Sears/Kmart offer links
 !||ib.adnxs.com/ttj?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ib.adnxs.com/jpt?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ib.adnxs.com/bounce$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ib.adnxs.com/async_usersync_file$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||ib.adnxs.com/ut/v3/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||ib.adnxs.com^* !blocks Shopyourway/Sears/Kmart offer links
 ||ib.adnxs.com/getuid?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||ib.adnxs.com/ut/v3/prebid$xhr,domain=www.247checkers.com
-! thebrighterside.news domain only for the following four rules
-||ib.adnxs.com/ut/v3/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css,domain=thebrighterside.news|www-thebrighterside-news.filesusr.com
-||btlr.sharethrough.com/universal/v1?supply_id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css,domain=thebrighterside.news|www-thebrighterside-news.filesusr.com
+!||ib.adnxs.com/ut/v3/prebid$xhr,domain=www.247checkers.com|thebrighterside.news|www-thebrighterside-news.filesusr.com
+||ib.adnxs.com/ut/v3/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||ib.adnxs-simple.com/ut/v3/prebid$xhr,domain=www.247checkers.com|thebrighterside.news|www-thebrighterside-news.filesusr.com
+||ib.adnxs-simple.com/ut/v3/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! thebrighterside.news domain only for the following rule.
+||btlr.sharethrough.com/universal/v1?supply_id=$domain=thebrighterside.news|www-thebrighterside-news.filesusr.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following will erase the contents of some WIX hosted websites.
 !||static.parastorage.com/services/wix-thunderbolt/dist/feature-telemetry-wix-code-sdk.a1cb8825.chunk.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||static.parastorage.com/services/wix-thunderbolt/dist/feature-telemetry-wix-code-sdk.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -42317,6 +42320,8 @@ www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, trueFunc)
 www.eurogamer.net##+js(set-constant, adConfig, {})
 www.eurogamer.net##+js(set-constant, _paq, [])
 www.eurogamer.net##+js(set-constant, trackAnonymously, trueFunc)
+! The following rule should not be necessary if live.primis.tech/content/prebid/prebidVid.*.js is blocked.
+www.eurogamer.net##+js(set-constant, window.SKpbjs, falseFunc)
 ! TODO:  The javascript still doesn't run even with the src attribute set; is this because it is set too late in the page load process?
 ! must use [data-cookies-src] in the following rule to get the value from data-cookies-src attribute
 www.eurogamer.net##+js(set-attr, script[data-lazyload="true"][data-cookies-src], src, [data-cookies-src])
@@ -44731,6 +44736,7 @@ nypost.com##+js(acs, gtag)
 ||nypost.com/wp-content/themes/nypost-2016/client/build/js/nyp-show-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vop.sundaysky.com^*
 ||api.id5-sync.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||id5-sync.com/api/config/prebid$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.siliconera.com##+js(set-constant, __gaTracker, noopFunc)
 www.siliconera.com##+js(set-constant, __gtagDataLayer, noopFunc)
 www.siliconera.com##+js(set-constant, __gtagTrackerIsOptedOut, trueFunc)
@@ -48591,7 +48597,7 @@ firstrows.top,firstrowsport.org##+js(set-constant, checkCookie, noopFunc)
 ||aktrack.pubmatic.com^*
 !||gads.pubmatic.com/AdServer/AdCallAggregator^*
 ||gads.pubmatic.com^*
-!||hbopenbid.pubmatic.com/translator^*
+!||hbopenbid.pubmatic.com/translator$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hbopenbid.pubmatic.com^*
 !||image8.pubmatic.com/AdServer/ImgSync?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||image6.pubmatic.com/AdServer/UCookieSetPug$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -48772,8 +48778,6 @@ robots.net##*[class^="moove-gdpr-"]:remove()
 ||cs-server-s2s.yellowblue.io/sync-iframe?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! comma used to separate multiple elements in has()
 www.tumblr.com##div[style="background: rgb(124, 92, 255); color: rgb(255, 255, 255);"]:has(button[aria-label="Sign me up"], button[aria-label="Log in"]):remove()
-||prebid.media.net/rtb/prebid/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||prebid.media.net/rtb/prebid?$3p,xhr
 !||g.ezoic.net/detroitchicago/erjs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||g.ezoic.net^*
 ||go.ezodn.com/porpoiseant/ezadloadamzn.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -48949,9 +48953,6 @@ playclassic.games##+js(set-attr, img[data-src], src, [data-src])
 ! If the data-src attribute is renamed, the following rule will not select the images.
 playclassic.games##img[class="lazy"][data-src]:remove-class(lazy)
 playclassic.games##+js(remove-class, lazy, img[class="lazy"][data-src])
-! live.primis.tech blocks videos
-!||live.primis.tech^*
-||live.primis.tech/live/liveView.php?$domain=playclassic.games,3p,script
 www.techradar.com##.advertisement-label:remove()
 www.techradar.com##div[class="placeholderampad"]:remove()
 www.techradar.com##div[class="fallbackampad"]:remove()
@@ -49278,6 +49279,50 @@ abcnews.go.com##.video-js:style(width: 100% !important; height: 100% !important;
 ||a.abcnews.go.com/assets/static/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||abcnews.hb-api.omtrdc.net/api/v1/sessions$xhr
 ||abcnews.hb-api.omtrdc.net^*
+||sync.intentiq.com/profiles_engine/ProfilesEngineServlet?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||api.intentiq.com/profiles_engine/ProfilesEngineServlet?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following four domains serve video ad scripts
+!||prebid-outstream.yieldmo.com/bundle.js^3p,script
+||prebid-outstream.yieldmo.com^3p,xhr,script
+!||prebid.media.net/video/bundle.js^3p,script
+||prebid.media.net^3p,xhr,script
+||prebid.media.net/rtb/prebid?$3p,xhr,script
+||prebid.media.net/rtb/prebid/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||prebid.the-ozone-project.com/ozone-renderer.js$3p,xhr,script
+||prebid.the-ozone-project.com^$3p,xhr,script
+||fast.nexx360.io/prebid^3p,xhr,script
+||hb.minutemedia-prebid.com^*
+! live.primis.tech blocks all videos
+!||live.primis.tech^*
+! TODO: "vpaidManager=" is always part of query string for URL of video ad?
+!||live.primis.tech/live/liveView.php?$domain=playclassic.games|www.eurogamer.net,3p,script
+||live.primis.tech/live/liveVideo.php?vpaidManager=$3p,script
+! The URL in the following rule is a CDN mirror for live.primis.tech/live/liveView.php .
+||d2wcz8sc48ztgm.cloudfront.net/live/liveVideo.php?vpaidManager=$3p,script
+||live.primis.tech/content/prebid/prebidVid.*.js^$3p,script
+! TODO: The following may need to be added for each domain which utilitizes the live.primis.tech/content/prebid/prebidVid.*.js script
+live.primis.tech##+js(set-constant, window.SKpbjs, falseFunc)
+www.instagram.com##html:style(overflow: scroll !important;)
+www.instagram.com##div[id="scrollview"]:style(overflow: scroll !important;)
+www.instagram.com##div[id="fb-root"]:remove()
+www.instagram.com##div[id="splash-screen"]:remove()
+www.instagram.com##div[role="dialog"]:has(form[id="loginForm"]):remove()
+www.instagram.com##div[id="has-finished-comet-page"]:remove()
+www.instagram.com##div[data-visualcompletion="ignore"][style="position: fixed; top: env(safe-area-inset-top); right: env(safe-area-inset-right); bottom: env(safe-area-inset-bottom); left: env(safe-area-inset-left); pointer-events: none; contain: strict; z-index: -9999;"]:style(pointer-events: all !important;)
+!www.instagram.com##+js(aeld, /pointerdown|pointerup/)
+www.instagram.com##+js(aeld, /contextmenu/)
+www.instagram.com##+js(no-setTimeout-if, /function\(\){b\(g\.unstable_now\(\)\)}/)
+www.instagram.com##+js(set-constant, FBLogger, noopFunc)
+! The following rule prevents disabling scrolling and dimming the page if the user is not logged in.
+! TODO: Do the class names in the following rule vary?
+www.instagram.com##div[class="x1n2onr6 xzkaem6"]:remove()
+! TODO: The following rule causes an error when the page is scrolled vertically towards the bottom of the page.
+!www.instagram.com##div[class="xoegz02"]:has(span[aria-label="Close"], span[aria-label="Log in"]):remove()
+||www.instagram.com/ajax/bz?$xhr
+||www.instagram.com/logging/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||graph.instagram.com/logging_client_events$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following script prints a message to the develoepr console if it is opened.
+||static.cdninstagram.com/rsrc.php/v3iwnF4/yi/l/en_US/VGxjaLeg-EZH6X7_0-thwdA1FobubvfjJwcd8aQJsZs0hJAXYLuXCy6fVj73Xe3BBSqkaf6dE6uJd0PpzqfO2w-j3-gWuZotLLKsZMPNOxOH1hHYoXKiUUUNglaTXG0kqyeEOTraowLBZC6.js$script
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
