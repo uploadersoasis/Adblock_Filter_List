@@ -976,7 +976,6 @@ img.atdmt.com/images/pixel.gif$document,subdocument,script,inline-script,inline-
 ||www.megavisites.com/promote.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||fr.1sponsor.com/js/popunder_auto.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||fr.1sponsor.com/aclk/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||a.abcnews.go.com/assets/static/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.mirrorupload.net/js/ads.ad6media.fr.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||x.porn.fr/js/tc_promo_functions.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||x.porn.fr^*
@@ -1681,38 +1680,28 @@ mediarouting.com/ads/landing/$document,subdocument,script,inline-script,inline-f
 mail.google.com##.Zs
 mail.google.com##.oM
 ||www.klixfeed.com/popup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||rma-api.gravity.com/v1/beacons/log^*
+||rma-api.gravity.com/v1/beacons/log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||espn.go.com/espn/sponsoredlinks/adsense/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||softarchive.net/js/getBanner.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.huffingtonpost.com/ads/ad_html_wh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.huffingtonpost.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static4.businessinsider.com/assets/js/track.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||permutive.businessinsider.com/v2.0/internal/metrics^*
-||analytics.businessinsider.com^*
-||horizon.businessinsider.com/horizon/track^*
+||permutive.businessinsider.com/v2.0/internal/metrics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||analytics.businessinsider.com$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||horizon.businessinsider.com/horizon/track$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.businessinsider.com/track.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.businessinsider.com/adframe^*
-www.businessinsider.com##.tp-modal
-www.businessinsider.com##.tp-active.tp-backdrop
-www.businessinsider.com##div[class*="ad-wrapper"]
+||www.businessinsider.com/adframe$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.businessinsider.com##.tp-modal:remove()
+www.businessinsider.com##.tp-active.tp-backdrop:remove()
 www.businessinsider.com##div[class*="ad-wrapper"]:remove()
-www.businessinsider.com##div[class*="subnav-ad-"]
 www.businessinsider.com##div[class*="subnav-ad-"]:remove()
-www.businessinsider.com##div[class*="ad-label"]
 www.businessinsider.com##div[class*="ad-label"]:remove()
-www.businessinsider.com##div[class*="ad-callout-wrapper"]
 www.businessinsider.com##div[class*="ad-callout-wrapper"]:remove()
-www.businessinsider.com##div[class*="sticky-rail-ad-container"]
 www.businessinsider.com##div[class*="sticky-rail-ad-container"]:remove()
-www.businessinsider.com##div[data-type="ad"]
 www.businessinsider.com##div[data-type="ad"]:remove()
-www.businessinsider.com##div[data-adunit]
 www.businessinsider.com##div[data-adunit]:remove()
-www.businessinsider.com##aside[class*="has-video-ad"]
 www.businessinsider.com##aside[class*="has-video-ad"]:remove()
-www.businessinsider.com##script[data-osano="ANALYTICS"]
 www.businessinsider.com##script[data-osano="ANALYTICS"]:remove()
-www.businessinsider.com##script[id="consent-manager-script"]
 www.businessinsider.com##script[id="consent-manager-script"]:remove()
 www.businessinsider.com##+js(set-constant, gtag, noopFunc)
 www.businessinsider.com##+js(acs, gtag)
@@ -3991,7 +3980,6 @@ www.dsogaming.com##.adsbygoogle
 ||www.odnoklassniki.ru/oauth/authorize^*
 ||retargetpro.net/api/get_user_data_js.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||advombat.ru/0.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-abcnews.go.com##.ad-300x250
 ||www.havysoft.cl/mt_b.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||srvabc.com/ctrd/click/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||s.yimg.com/av/moneyball/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -42287,6 +42275,7 @@ www.eurogamer.net##div[class*="advert_container"]:remove()
 www.eurogamer.net##div[class^="advert"]:remove()
 www.eurogamer.net##div[class="paywall"]:remove()
 www.eurogamer.net##div[class^="message-container"]:has(div[class="message-overlay"], div[id="notice"]):remove()
+www.eurogamer.net##script[id="kueezrtb_latest"]:remove()
 www.eurogamer.net##+js(aeld, onConsentReady)
 www.eurogamer.net##+js(aeld, BrockmanTCFConsent)
 www.eurogamer.net##+js(aeld, BrockmanTCFOptOut)
@@ -42301,6 +42290,8 @@ www.eurogamer.net##+js(aopw, o.d.abp)
 www.eurogamer.net##+js(aopr, adConfig)
 www.eurogamer.net##+js(aopw, adConfig)
 www.eurogamer.net##+js(set-attr, body, data-ads, false)
+www.eurogamer.net##+js(set-constant, appendAnonymised, noopFunc)
+www.eurogamer.net##+js(set-constant, window.anonymisedDone, true)
 !www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true, end)
 www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true, complete)
 www.eurogamer.net##+js(set-constant, permutiveOptIn, noopFunc)
@@ -42618,7 +42609,9 @@ gamesnacks.com##div[class="sSVlic"]:remove()
 !||6093eccf-6734-4877-ac8b-83d6d0e27b46.edge.permutive.app^*
 !||a9695278-4085-40b3-9f02-8d4c38a6ff01.edge.permutive.app^*
 !||3a6b0682-f3e1-4576-a706-5eb4101b9cc3.edge.permutive.app^*
-||*.edge.permutive.app^*
+!||*.edge.permutive.app^*
+! Do NOT put a ^ at end of regex as it does not work as it does on non-regex strings in rules.
+/^https?:\/\/[0-9a-f-A-F\-]+\.edge.permutive.app/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||query.petametrics.com^*
 !||hummingbird.mavencoalition.io/collect$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hummingbird.mavencoalition.io^*
@@ -49246,6 +49239,45 @@ ottverse.com##+js(no-setInterval-if, /t\.owczersy_fn_ibf\(\)/)
 ottverse.com##+js(no-setInterval-if, /t\.daadb_get_data\(\)/)
 ottverse.com##+js(no-setInterval-if, /t\.owczersy_fn_sm\(\)/)
 ||cdn.matomo.cloud/ottverse.matomo.cloud/matomo.js^$3p,script
+developer-tools.jwplayer.com##div[id="stream-tester-player-https"]:remove-attr(jw-flag-user-inactive)
+developer-tools.jwplayer.com##+js(remove-attr, jw-flag-user-inactive, div[id="stream-tester-player-https"])
+developer-tools.jwplayer.com##video[class^="jw-video"]:remove-attr(disableremoteplayback)
+developer-tools.jwplayer.com##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
+developer-tools.jwplayer.com##div[id="player-preview"]:remove-class(ds-col)
+developer-tools.jwplayer.com##+js(remove-class, ds-col, div[id="player-preview"])
+developer-tools.jwplayer.com##div[class="ds-page ds-page--fixed tools"]:style(overflow:auto !important; max-width:99vw !important;max-height:99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width:99vw !important; height:99vh !important; user-select: all !important; pointer-events: all !important;)
+! Do NOT use the following rule as it shrinks the left column too much in favor of the video viewport.
+!developer-tools.jwplayer.com##div[id="player-preview"]:style(max-width:99vw !important;max-height:99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width:99vw !important; height:99vh !important; user-select: all !important; pointer-events: all !important;)
+developer-tools.jwplayer.com##div[id="player-preview"]:style(max-width:67% !important;)
+developer-tools.jwplayer.com##div[id="stream-tester-player-https"]:style(overflow:hidden !important; max-width:99vw !important;max-height:99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width:99vw !important; height:99vh !important; user-select: all !important; pointer-events: all !important;)
+! The following rules remove this element since it is overlaid over the video viewport when expanded to 100vw.
+players.akamai.com##app-player-info:remove()
+players.akamai.com##app-general-stats:remove()
+! The following rule the MPEG-DASH video player video viewport.
+players.akamai.com##.player-container:style(width:99vw;height:99vh;left:0;top:0;bottom:0px;opacity:1)
+! The following rule the HLS video player video viewport.
+players.akamai.com##.hls-container:style(width:99vw;height:99vh;left:0;top:0;bottom:0px;opacity:1)
+! The following rule removes the left indent for the video viewport so horizontal scrolling is not needed.
+players.akamai.com##div[class="row justify-content-center my-3"]:remove-class(justify-content-center)
+players.akamai.com##+js(remove-class, justify-content-center, div[class="row justify-content-center my-3"])
+abcnews.go.com##.ad-300x250:remove()
+abcnews.go.com##div[data-testid^="prism-ad"]:remove()
+abcnews.go.com##div[data-testid="prism-sticky-ad"]:remove()
+! Don't remove vjs-user-inactive class as it changes to vjs-user-active when the cursor is over the video viewport.
+! Don't remove video-js class as it screws up the display of the video player controls.
+!abcnews.go.com##div[id="vjs_video_3"]:remove-class(/video-js|evp-new-ad-display|vjs-user-inactive/)
+!abcnews.go.com##+js(remove-class, /video-js|evp-new-ad-display|vjs-user-inactive/, div[id="vjs_video_3"])
+abcnews.go.com##div[id="vjs_video_3"]:remove-class(evp-new-ad-display)
+abcnews.go.com##+js(remove-class, evp-new-ad-display, div[id="vjs_video_3"])
+! The following rule expands the video player AFTER the play button is clicked and the video starts playing.
+abcnews.go.com##div[class*="VideoPlayer"]:style(max-width:99vw !important;max-height:99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width:99vw !important; height:99vh !important; user-select: all !important; pointer-events: all !important;)
+abcnews.go.com##.video-js:style(width: 100% !important; height: 100% !important;)
+!abcnews.go.com##div[id="vjs_video_3"]:style(max-width:99vw !important;max-height:99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width:99vw !important; height:99vh !important; user-select: all !important; pointer-events: all !important;)
+! TODO: The following rule doesn't defuse this click for some reason.
+!abcnews.go.com##+js(aeld, click, /function Dn\(\)/)
+||a.abcnews.go.com/assets/static/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||abcnews.hb-api.omtrdc.net/api/v1/sessions$xhr
+||abcnews.hb-api.omtrdc.net^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
