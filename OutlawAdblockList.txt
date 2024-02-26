@@ -18898,8 +18898,6 @@ thewirecutter.com##div[class="feedback_banner___3PN2s"]
 ||telemetry.nvidia.com^*
 web.archive.org##iframe[id="injected-iframe"]
 ||analytics.archive.org^*
-medium.com##.js-stickyFooter:remove()
-||medium.com/_/stat?event=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||collector-medium.lightstep.com/api/v0/reports$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||collector-medium.lightstep.com^*
 ||qurhdjkms.com^*
@@ -24134,7 +24132,6 @@ www.swanndvr.net##div[id="bodgd"]:remove()
 love2dev.com##div[class^="gdpr-prompt"]:remove()
 ||server.ethicalads.io^*
 jsbin.com##div[id="ea-wrapper"]
-medium.com##div[class="n o of"]
 filesupload.org##div[class="footerAds"]:remove()
 stackabuse.com##.ad.content:remove()
 stackabuse.com##div[class="content ad"]:remove()
@@ -28244,7 +28241,6 @@ www.nintendolife.com##div[class="dgp-consent"]
 www.w3schools.com##div[id="midcontentadcontainer"]
 www.studytonight.com##div[id="liveToast"]
 ||ascendeum-d.openx.net^*
-||medium.com/_/clientele/reports/performance/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||track.capitaloneshopping.com^*
 ||minimizeglanceanyway.com^*
 ||x1337x.ws^$popunder
@@ -42009,8 +42005,14 @@ unitystr.com##+js(set-constant, gtag, noopFunc)
 ||vv8h9vyjgnst.com^*
 ||find-prizes.life^*
 ||cdn-client.medium.com/lite/static/js/reporting.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-medium.com##h2:has-text(Support independent authors and access the):upward(4)
 medium.com##h2:has-text(Support independent authors and access the):upward(4):remove()
+medium.com##.js-stickyFooter:remove()
+medium.com##div[class="n o of"]:remove()
+! TODO: The following rule is too broad and will remove the root div tag which has this h2 tag branch.
+!medium.com##div:has(h2:has-text(Sign up to discover human stories that deepen your understanding of the world.)):remove()
+medium.com##div[class="bw ts tt bg xh"][style="bottom: 0px;"]:has(h2:has-text(Sign up to discover human stories that deepen your understanding of the world.)):remove()
+||medium.com/_/stat?event=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||medium.com/_/clientele/reports/performance/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads.livetv686.me^*
 ||rouwhapt.com^*
 ||saiceezu.xyz^*
@@ -46108,6 +46110,8 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||banquetunarmedgrater.com^*
 !||capaciousdrewreligion.com/advertisers.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||capaciousdrewreligion.com^*
+!||a4mt150303tl.com/sbar.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||a4mt150303tl.com^*
 ||adexchangetracker.com/script/suurl.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bitonclick.com/script/suurl.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||clearonclick.com/script/suurl.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49341,6 +49345,16 @@ integration.widevine.com##.player_video-pane-shaka:style(vertical-align: top; pa
 ||gtm.udemy.com^*
 ||gipsytrumpet.com^*
 ||demiseskill.com^*
+||qituduwios.com^$important
+||bihunekus.com^*
+||only-soft.org/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+only-soft.org##a[href="/1269.html"]:remove()
+||adblockology.com^*
+||offergate-software3.com^*
+||bkrkv.com^*
+||ixjwi.xyz^*
+||statinside.com/counter.js$3p,script
+||statinside.com/api/add-hit$3p,xhr
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
