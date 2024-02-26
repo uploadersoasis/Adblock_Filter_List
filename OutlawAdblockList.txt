@@ -24362,6 +24362,7 @@ www.usatoday.com##aside[aria-label="advertisement"]
 ||expresentc.top^*
 !||cdn.snigelweb.com/adconsent/adconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.snigelweb.com/adconsent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn.snigelweb.com/adengine/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.zvmldjxh.com^*
 ||zvmldjxh.com^*
 ||www.movebaystar.com^*
@@ -36010,7 +36011,6 @@ windows10gadgets.pro##img[src*="advertisement.gif"]
 windows10gadgets.pro##+js(aopr, adsbygoogle)
 windows10gadgets.pro##+js(aopw, adsbygoogle)
 ||aab.devicetests.com^*
-||cdn.snigelweb.com/adengine/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ssl.1.damoh.chip.de/hic_qos?ads&adserv=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.chip.de##div[id="notice"]:upward(1):remove()
 www.chip.de##div[id^="contentad-topbanner-"]:upward(1):remove()
@@ -49332,6 +49332,15 @@ www.instagram.com##div[class="x1n2onr6 xzkaem6"]:remove()
 ||graph.instagram.com/logging_client_events$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following script prints a message to the develoepr console if it is opened.
 ||static.cdninstagram.com/rsrc.php/v3iwnF4/yi/l/en_US/VGxjaLeg-EZH6X7_0-thwdA1FobubvfjJwcd8aQJsZs0hJAXYLuXCy6fVj73Xe3BBSqkaf6dE6uJd0PpzqfO2w-j3-gWuZotLLKsZMPNOxOH1hHYoXKiUUUNglaTXG0kqyeEOTraowLBZC6.js$script
+downforeveryoneorjustme.com##div[id="bsa"]:remove()
+downforeveryoneorjustme.com##div[id="carbonDiv"]:remove()
+www.isitdownrightnow.com##+js(set-constant, window.snigelPubConf, {})
+www.isitdownrightnow.com##+js(aopr, window.snigelPubConf)
+www.isitdownrightnow.com##div[id^="adngin-"]:remove()
+www.isitdownrightnow.com##div[class="ad336"]:remove()
+integration.widevine.com##.player_video-pane-shaka:style(vertical-align: top; padding-left: 0px !important; padding-bottom: 0px !important; width: 100% !important; height: 100% !important;)
+!||gtm.udemy.com/gtag/js?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||gtm.udemy.com^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
