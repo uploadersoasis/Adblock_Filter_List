@@ -24777,7 +24777,7 @@ flacplayer.ehubsoft.net##script[onerror="gadb=true;"]:remove()
 !flacplayer.ehubsoft.net##script:remove-attr(onerror)
 !flacplayer.ehubsoft.net##maintable > tbody > tr:nth-child(1) > td > center > script:nth-child(1)
 !flacplayer.ehubsoft.net##maintable > tbody > tr:nth-child(1) > td > center > script:nth-child(2)
-!||seeptoag.net/pfe/current/service-worker.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||seeptoag.net/pfe/current/service-worker.min.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||seeptoag.net^*
 www.quaddicted.com##div[aria-label="cookieconsent"]:remove()
 ||edvisualtye.space^*
@@ -24803,7 +24803,7 @@ www.gamersgate.com##div[aria-label="cookieconsent"]:remove()
 ||zingtormanc.top^*
 ||dl-ready.com^*
 !||dl-ready.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||dl-ready.com/service-worker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||dl-ready.com/service-worker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||aj1090.online/dc9e97fb.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdnstatic.4shared.com/js/blockDetect/blockDetect.4min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||epomads2.4shared.com/ads-async.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -25092,8 +25092,8 @@ fc.lc##div[class="cookie-message"]:remove()
 chocolatey.org##div[class^="cookies-popup"]:remove()
 arstechnica.com##.ad_wrapper:remove()
 www.rarlab.com##div[id="cookiewarning"]:remove()
-!||www.epicgames.com/store/epic-service-worker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||www.unrealengine.com/epic-service-worker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.epicgames.com/store/epic-service-worker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.unrealengine.com/epic-service-worker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.unrealengine.com/epic-analytics-worker.js
 ||www.epicgames.com/store/epic-analytics-worker.js
 !*/epic-analytics-worker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -26564,7 +26564,7 @@ www.y2mate.com##^script:has-text(popupWindow)
 ||push-*.pushails.com^*
 !||href.li/* blocks legitimate links
 !||cds.j3z9t3p6.hwcdn.net/* blocks bootstrap CSS
-||apkpanda.com/service-worker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||apkpanda.com/service-worker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.att.com/olam/js/common/myattConsoleLogger.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.kinematicsoup.com##div[class^="sqs-cookie-banner-v2"]
 ||greatedclu.fun^*
@@ -26744,7 +26744,7 @@ www.wifimap.io##div[class="_2PfBI6K7JwmWPipDUq09x5"]
 ||bold.affiliatetracker.io^*
 apkmodload.com##aside[id="rb-cookie"]
 cutx.me##div[id="cookie-pop"]
-!||kumteerg.com/pfe/current/service-worker.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||kumteerg.com/pfe/current/service-worker.min.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kumteerg.com^*
 !||cutx.me/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cutx.me/swproadspush.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -27421,7 +27421,7 @@ serialsofts.com##a[href*="//trollhost.xyz"]:remove()
 repo.packix.com##a[href*="//blacklivesmatters.carrd.co/"]
 www.topbestalternatives.com##ins[class="adsbygoogle"]:remove()
 ||pushpad.xyz^*
-||freebitco.in/service-worker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||freebitco.in/service-worker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.addictivetips.com##div[class="mv-ad-box"]
 www.addictivetips.com##div[class*="adunitwrapper"]
 msendpointmgr.com##div[class="rcc-wrapper group"]
@@ -49137,7 +49137,7 @@ www.unilad.com##+js(aopw, window.permutive)
 www.unilad.com##+js(set-constant, gtag, noopFunc)
 www.unilad.com##+js(set-constant, window.dataLayer, [])
 www.unilad.com##+js(acs, gtag)
-||www.unilad.com/service-worker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.unilad.com/service-worker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||assets.ladbible.com/assets/ads.*.js$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||consent.unilad.com^*
 ||cdn.ocelot.studio/clients/prebid*.js$3p,script
