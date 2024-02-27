@@ -18551,7 +18551,6 @@ ally.shortens.co##div[id="qvl812c"]
 ally.shortens.co##div[class="center-captcha hidden"]
 ||cbsdigitalmedia.hb.omtrdc.net^*
 ||www.summerhamster.com^*
-||d2x3bkdslnxkuj.cloudfront.net^*
 ||cdn.grateful.io/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mfad.inskinad.com^*
 ||dsum-sec.casalemedia.com^*
@@ -49354,6 +49353,7 @@ www.slashgear.com##script[data-on-widget-ad-impression]:remove()
 www.slashgear.com##+js(set-constant, gtag, noopFunc)
 www.slashgear.com##+js(set-constant, window.dataLayer, [])
 www.slashgear.com##+js(set-constant, googletag.pubads, noopFunc)
+www.slashgear.com##+js(set-constant, OptanonWrapper, noopFunc)
 www.slashgear.com##+js(set-constant, window.admiral, noopFunc)
 www.slashgear.com##+js(set-constant, loopAdsConfig, {})
 www.slashgear.com##+js(aopw, window.admiral)
@@ -49362,6 +49362,8 @@ www.slashgear.com##+js(aopw, gads)
 www.slashgear.com##+js(aopr, gads)
 ||www.slashgear.com/wp-content/themes/unified/js/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sync.cootlogix.com/api/sync/iframe/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rule prevents images from zergnet.com from loading
+!||d2x3bkdslnxkuj.cloudfront.net^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
