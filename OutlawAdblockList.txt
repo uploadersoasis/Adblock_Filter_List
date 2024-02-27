@@ -23381,7 +23381,9 @@ eu.hidester.com##div[id^="beacon_"]
 !||prebid-match.dotomi.com/prebid/match?rurl=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||prebid-match.dotomi.com/match/bounce/current?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||prebid-match.dotomi.com^*
-||eb2.3lift.com/getuid?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||eb2.3lift.com/getuid?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||eb2.3lift.com/sync?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||eb2.3lift.com^*
 ||img.3lift.com^*
 !||ib.3lift.com/rev/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ib.3lift.com/ttj?inv_code=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -45071,15 +45073,15 @@ apkdone.com##div[style="height:250px;"]:has(script[src*="//theekedgleamed.com/"]
 www.hbo.com##+js(set-constant, toastDiv, {})
 www.hbo.com##+js(aopw, toastDiv)
 www.hbo.com##+js(aopr, toastDiv)
-www.hbo.com##div[class^="hbo-toast"]
 www.hbo.com##div[class^="hbo-toast"]:remove()
-www.hbo.com##script[id="user-consent-script"]
 www.hbo.com##script[id="user-consent-script"]:remove()
 !||www.hbo.com/js/ccpa/geo-fallback.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.hbo.com/js/ccpa/user-consent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||static.vidazoo.com/basev/*/prebid/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||static.vidazoo.com/basev/*/prebid/intent-iq.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||static.vidazoo.com/basev/*/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||static.vidazoo.com/basev/*/prebid/prebid.js$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||static.vidazoo.com/basev/*/prebid/intent-iq.js$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.vidazoo.com/basev/*/prebid/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.vidazoo.com/basev/vwpt/next/vwpt.js$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.vidazoo.com/basev/vwpt.js$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||edge.aditude.io/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||edge.aditude.io/wrapper/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||edge.aditude.io^*
@@ -45094,7 +45096,6 @@ www.hbo.com##script[id="user-consent-script"]:remove()
 !ao.pressreader.com##img[src$="/images/1x1.gif"]:remove()
 www.pressreader.com##+js(set-constant, isLoggedIn, trueFunc)
 ao.pressreader.com##+js(set-constant, isLoggedIn, trueFunc)
-www.pressreader.com##script[id="Cookiebot"]
 www.pressreader.com##script[id="Cookiebot"]:remove()
 www.pressreader.com##div:remove-class(subscriber-content)
 ao.pressreader.com##div:remove-class(subscriber-content)
@@ -45120,6 +45121,7 @@ www.androidpolice.com##+js(acs, sendToGoogleAnalytics, loadAnalyticsData)
 ||cmp.setupcmp.com^*
 !||ii.woolensulking.com^*
 ||woolensulking.com^*
+apkstreamz.com##+js(set-attr, .show_download_links, data-timer, 1)
 apkstreamz.com##+js(saa, data-timer, 1, .show_download_links)
 !||lg.kerryfluence.com^*
 ||kerryfluence.com^*
@@ -45142,10 +45144,10 @@ apkstreamz.com##+js(saa, data-timer, 1, .show_download_links)
 ||igg-games.com/wp-content/uploads/2021/03/hh*.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||igg-games.com/wp-content/uploads/2021/06/ch1.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||igg-games.com/wp-content/uploads/2021/06/ch*.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||igg-games.com/D50TylifqfObebGPIDLBjGJusUNqe-.gif$image
-||igg-games.com/D50TylifgMDEJY-AH757sX8ZT4wwHF.jpg$image
-||igg-games.com/D50Tylif_XJkSY-3GeDPgVObdjahn-.jpg$image
-||igg-games.com/D50TylifBHN08NVsH1y04tWNeLa3vV.jpg$image
+||igg-games.com/D50TylifqfObebGPIDLBjGJusUNqe-.gif$image:remove()
+||igg-games.com/D50TylifgMDEJY-AH757sX8ZT4wwHF.jpg$image:remove()
+||igg-games.com/D50Tylif_XJkSY-3GeDPgVObdjahn-.jpg$image:remove()
+||igg-games.com/D50TylifBHN08NVsH1y04tWNeLa3vV.jpg$image:remove()
 ||igg-games.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||igg-games.com/wp-content/uploads/2019/10/AdblockDetected.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||igg-games.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -45173,7 +45175,7 @@ igg-games.com,pcgamestorrents.com##+js(aopw, script_element)
 igg-games.com,pcgamestorrents.com##+js(aopr, script_element)
 igg-games.com,pcgamestorrents.com##+js(set-constant, gtag, noopFunc)
 igg-games.com,pcgamestorrents.com##+js(acs, gtag)
-^*$3p,script,xhr,domain=igg-games.com|pcgamestorrents.com
+^$3p,script,xhr,domain=igg-games.com|pcgamestorrents.com
 ||dhyanaquintes.digital^*
 ||liberia.artertapirus.com^*
 ||koronaararao.guru^*
@@ -45191,18 +45193,14 @@ www.superantispyware.com##div[id="cookie-notification"]:remove()
 file-mods.ru##+js(trusted-set-constant, secs, -1)
 file-mods.ru##+js(aopr, stime)
 file-mods.ru##+js(aopw, stime)
-file-mods.ru##a[class="hide-but"]
 file-mods.ru##a[class="hide-but"]:remove()
-file-mods.ru##a[href*="//methoxyunpaled.com/"]
 file-mods.ru##a[href*="//methoxyunpaled.com/"]:remove()
-file-mods.ru##a[href*="//clickdome.online/track/"]
 file-mods.ru##a[href*="//clickdome.online/track/"]:remove()
 !||apkadmin.com/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following three rules together mean that the countdown to download can be ignored
 apkadmin.com##+js(set-constant, remaining, 0)
 apkadmin.com##button[id="downloadbtn"]:remove-attr(disabled)
 apkadmin.com##button[id="downloadbtn"]:style(visibility: visible !important;)
-apkadmin.com##div[id^="apkadmin_com_336x280_mobile_test"]
 apkadmin.com##div[id^="apkadmin_com_336x280_mobile_test"]:remove()
 apkadmin.com##+js(set-constant, gtag, noopFunc)
 apkadmin.com##+js(acs, gtag)
@@ -45232,16 +45230,12 @@ mega4upload.com##+js(no-xhr-if, method:HEAD)
 ! mega4upload currently only uses xhr not fetch.
 mega4upload.com##+js(no-fetch-if, method:HEAD)
 mega4upload.com##+js(remove-attr, onclick, a.btn.btn-sm.btn-dark)
-mega4upload.com##script[sadbl]
 mega4upload.com##script[sadbl]:remove()
-mega4upload.com##script[id="adex"]
 mega4upload.com##script[id="adex"]:remove()
 mega4upload.com##+js(set-constant, gtag, noopFunc)
 mega4upload.com##+js(acs, gtag)
 mega4upload.com##+js(acs, googletag)
-mega4upload.com##div[id="gdpr-cookie-notice"]
 mega4upload.com##div[id="gdpr-cookie-notice"]:remove()
-mega4upload.com##:xpath(//html/body/script[14])
 mega4upload.com##:xpath(//html/body/script[14]):remove()
 mega4upload.com##button[id="downloadbtn"]:remove-attr(disabled)
 !||cdn.amplitude.com/libs/amplitude-5.8.0-min.gz.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -45266,24 +45260,16 @@ moddroid.com##+js(set-constant, gtag, noopFunc)
 moddroid.com##+js(acs, gtag)
 moddroid.com##+js(set-constant, fadeOutDonatePopup, false)
 moddroid.com##+js(acs, fadeOutDonatePopup)
-moddroid.com##dialog[id="adBlockDialog"]
 moddroid.com##dialog[id="adBlockDialog"]:remove()
-moddroid.com##span[id="donate-popup"]
 moddroid.com##span[id="donate-popup"]:remove()
-moddroid.com##div[id="ad_block_reminder_dialog"]
 moddroid.com##div[id="ad_block_reminder_dialog"]:remove()
-moddroid.com##div[id="reminder_dialog"]
 moddroid.com##div[id="reminder_dialog"]:remove()
-moddroid.com##div[class="download-ads"]
 moddroid.com##div[class="download-ads"]:remove()
 moddroid.com##a[id="download-app-button"]:remove-attr(onclick)
 moddroid.com##a[id="download-app-button"]:style(display: flex !important;)
-moddroid.com##a[id="download-button"]
 moddroid.com##a[id="download-button"]:remove()
 ! this makes the real download button disappear.
-!moddroid.com##div[class="download_app--btn-wrapper mobile_download--info"]
 !moddroid.com##div[class="download_app--btn-wrapper mobile_download--info"]:remove()
-moddroid.com##div[class="download_button--wrapper"]
 moddroid.com##div[class="download_button--wrapper"]:remove()
 moddroid.com##*[class*="mobile_download--info"]:remove-class(hidden)
 ||moddroid.com/static/video/adblock-plus.mp4$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -45312,11 +45298,8 @@ moddroid.com##*[class*="mobile_download--info"]:remove-class(hidden)
 ||pengobyzant.com^*
 ||s3.us-east-1.amazonaws.com/66f3bb56903251d49988722f99a184b12fad26d6eb3ee9d71bce254a33215b4/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dl.pcgamestorrents.org/img/AdblockDetected.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-dl.pcgamestorrents.org##div[id="anti-adblock"]
 dl.pcgamestorrents.org##div[id="anti-adblock"]:remove()
-dl.pcgamestorrents.org##div[id="ads-right"]
 dl.pcgamestorrents.org##div[id="ads-right"]:remove()
-dl.pcgamestorrents.org##div[id="ads-left"]
 dl.pcgamestorrents.org##div[id="ads-left"]:remove()
 dl.pcgamestorrents.org##+js(set-constant, gtag, noopFunc)
 dl.pcgamestorrents.org##+js(acs, gtag)
@@ -45335,17 +45318,11 @@ linkoops.com##+js(aopr, _0xc70e)
 linkoops.com##+js(set-constant, _0x5aa6, [])
 linkoops.com##+js(aopw, _0x5aa6)
 linkoops.com##+js(aopr, _0x5aa6)
-linkoops.com##:xpath(//script[contains(text(), 'adsBox')])
 linkoops.com##:xpath(//script[contains(text(), 'adsBox')]):remove()
-linkoops.com##:xpath(//script[contains(text(), 'AdBlock')])
 linkoops.com##:xpath(//script[contains(text(), 'AdBlock')]):remove()
-linkoops.com##:xpath(//script[contains(text(), 'YRBYRlYRBBRlRRYBlRRYBlYYBYYlYYRRBl')])
 linkoops.com##:xpath(//script[contains(text(), 'YRBYRlYRBBRlRRYBlRRYBlYYBYYlYYRRBl')]):remove()
-linkoops.com##:xpath(//script[contains(text(), 'eval(function(h,u,n,t,e,r)')])
 linkoops.com##:xpath(//script[contains(text(), 'eval(function(h,u,n,t,e,r)')]):remove()
-!linkoops.com##:xpath(//html/body/div[4]/div/div[1]/div/div[2]/p[9]/script[1])
 !linkoops.com##:xpath(//html/body/div[4]/div/div[1]/div/div[2]/p[9]/script[1]):remove()
-!linkoops.com##:xpath(//html/body/script)
 !linkoops.com##:xpath(//html/body/script):remove()
 ||alwingulla.com^*
 ||haykavlwa.com^*
@@ -45509,7 +45486,6 @@ embed.vodstream.xyz##div[id="playback-fake"]:remove()
 ||plusungratefulinstruction.com^*
 ||aitsatho.com^*
 ||abyss.to/auth/logged$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.mp4upload.com##div[id="overlayads"]
 www.mp4upload.com##div[id="overlayads"]:remove()
 www.mp4upload.com##+js(set-constant, AdProvider, [])
 www.mp4upload.com##+js(aopr, AdProvider)
@@ -45520,9 +45496,7 @@ www.yourupload.com/images/watermark.png$document,subdocument,script,inline-scrip
 !||mxxzxhnr.ivoryworthwhilebadger.com^*
 ||ivoryworthwhilebadger.com^*
 ||glelroum.com^*
-www.yourupload.com##div[class="afs_ads"]
 www.yourupload.com##div[class="afs_ads"]:remove()
-www.humblebundle.com##div[id="zdcFloatingBtn"]
 www.humblebundle.com##div[id="zdcFloatingBtn"]:remove()
 ||d.mailer.humblebundle.com/track.v2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.ziffstatic.com/jst/zdconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49369,6 +49343,25 @@ only-soft.org##a[href="/1269.html"]:remove()
 ||www.xwlrrmhwgre.com^*
 ||www.nyqpgzohhllvx.com^*
 ||wokm8isd4zit.com^*
+www.gamingonlinux.com##ins[data-ad-client]:remove()
+www.gamingonlinux.com##+js(set-constant, adsbygoogle, [])
+www.gamingonlinux.com##+js(aopw, adsbygoogle)
+www.gamingonlinux.com##+js(aopr, adsbygoogle)
+www.slashgear.com##div[id^="adslot-"]:remove()
+www.slashgear.com##div[class="sticky-ad-container"]:remove()
+www.slashgear.com##div[data-ad-pos]:remove()
+www.slashgear.com##script[data-on-widget-ad-impression]:remove()
+www.slashgear.com##+js(set-constant, gtag, noopFunc)
+www.slashgear.com##+js(set-constant, window.dataLayer, [])
+www.slashgear.com##+js(set-constant, googletag.pubads, noopFunc)
+www.slashgear.com##+js(set-constant, window.admiral, noopFunc)
+www.slashgear.com##+js(set-constant, loopAdsConfig, {})
+www.slashgear.com##+js(aopw, window.admiral)
+www.slashgear.com##+js(aopr, window.admiral)
+www.slashgear.com##+js(aopw, gads)
+www.slashgear.com##+js(aopr, gads)
+||www.slashgear.com/wp-content/themes/unified/js/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||sync.cootlogix.com/api/sync/iframe/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
