@@ -49329,10 +49329,15 @@ www.instagram.com##+js(set-constant, FBLogger, noopFunc)
 www.instagram.com##div[class="x1n2onr6 xzkaem6"]:remove()
 ! TODO: The following rule causes an error when the page is scrolled vertically towards the bottom of the page.
 !www.instagram.com##div[class="xoegz02"]:has(span[aria-label="Close"], span[aria-label="Log in"]):remove()
+! TODO: The following rule prevents the page from disabling the scrollbars (the mousewheel still scrolls regardless), BUT it also prevents further images from being loaded when that event is defused.
+!www.instagram.com##+js(aeld, onscroll)
+www.instagram.com##+js(acs, /b\.preventDefault\(\)/)
 ||www.instagram.com/ajax/bz?$xhr
 ||www.instagram.com/logging/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||graph.instagram.com/logging_client_events$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-! The following script prints a message to the develoepr console if it is opened.
+! The following script prints a message to the developer console if it is opened.
+! TODO: This script URL changes.
+||static.cdninstagram.com/rsrc.php/v3iMs44/yK/l/en_US/VGxjaLeg-EZH6X7_0-thwd-DBkpuX75Imwcd8aQJsZs0cODMRbMmuFahJAXYLuXCy6fVj73Xe3BBSqkaf6dE6uJd3-gWuZotLLKGjN6UteGNgMsZMPNOxOH1h3apmgqT9UR0HYoXKiUUUNglaTXG0kqyeEOTraowLBZC6Czi8HgQvIKP.js?$script
 ||static.cdninstagram.com/rsrc.php/v3iwnF4/yi/l/en_US/VGxjaLeg-EZH6X7_0-thwdA1FobubvfjJwcd8aQJsZs0hJAXYLuXCy6fVj73Xe3BBSqkaf6dE6uJd0PpzqfO2w-j3-gWuZotLLKsZMPNOxOH1hHYoXKiUUUNglaTXG0kqyeEOTraowLBZC6.js$script
 downforeveryoneorjustme.com##div[id="bsa"]:remove()
 downforeveryoneorjustme.com##div[id="carbonDiv"]:remove()
@@ -49355,6 +49360,9 @@ only-soft.org##a[href="/1269.html"]:remove()
 ||ixjwi.xyz^*
 ||statinside.com/counter.js$3p,script
 ||statinside.com/api/add-hit$3p,xhr
+!||id.rlcdn.com/712202.gif?$3p
+||id.rlcdn.com^*
+||sync.colossusssp.com^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
