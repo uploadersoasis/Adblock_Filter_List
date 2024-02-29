@@ -46856,6 +46856,7 @@ ypamu.ru.com##+js(trusted-replace-node-text, script, /mute: true/gm, mute: false
 ||cvkbl.ru.com/framebox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ypamu.ru.com/framebox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: None of the following three rules actually prevent redirection away from the page if the page is not in a frame
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##div[id="protected"]:remove()
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##^script:has-text(/window==window.top/):remove()
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##:xpath(//script[contains(text(), 'window==window.top')]):remove()
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopw, window.top)
@@ -46870,6 +46871,8 @@ ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##script[id="_waum
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(set-constant, _wau, [])
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopr, _wau)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopw, _wau)
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(trusted-set-constant, width, "100%")
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(trusted-set-constant, height, "100%")
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##script[adblock-settings]:remove()
 ! muted is not getting set by saa
@@ -47103,21 +47106,26 @@ www.crichd.com##+js(remove-attr, onclick, button[onclick^="window.open('https://
 ||crichdstreaming.cc/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||crichdstreaming.xyz/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[src="ad.html"]:remove()
-crichdstreaming.cc,crichdstreaming.xyz##div[id="floater"]:remove()
-! The following rule is not necessary since it is under the removed floater div tag.
-!crichdstreaming.cc,crichdstreaming.xyz##span[onmouseup]:has(img[src="https://i.imgur.com/0P0Udsa.png"]):upward(1):remove()
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##div[id="floater"]:remove()
 ! getting rid of the right column also removes the chatango widget
-hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##div[id="rightcolumn"]:remove()
-!hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[id="frame_a"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##iframe[src^="https://crichdstreaming.xyz/embed2.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##+js(saa, allow, encrypted-media, iframe[src^="https://crichdstreaming.xyz/embed2.php"])
-hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##+js(saa, height, 100%, iframe[src^="https://crichdstreaming.xyz/embed2.php"])
-hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##+js(saa, width, 100%, iframe[src^="https://crichdstreaming.xyz/embed2.php"])
-hd.crichdlivecricket.cc,www.crichd.live,stream.crichd.live##+js(saa, scrolling, yes, iframe[src^="https://crichdstreaming.xyz/embed2.php"])
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[src^="https://crichdstreaming.cc/embed2.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allow, encrypted-media, iframe[src^="https://crichdstreaming.cc/embed2.php"])
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, height, 100%, iframe[src^="https://crichdstreaming.cc/embed2.php"])
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, scrolling, yes, iframe[src^="https://crichdstreaming.cc/embed2.php"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##div[id="rightcolumn"]:remove()
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##div[id="sidebar-right"]:remove()
+! TODO: does the id in the following rule change?
+!hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[id="7056040020000354382971890"]:remove()
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[src^="https://st.chatango.com/]:remove()
+! The following rule is not necessary since it is under the removed floater div tag.
+!hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##span[onmouseup]:has(img[src="https://i.imgur.com/0P0Udsa.png"]):upward(1):remove()
+!hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[src^="https://crichdstreaming.xyz/embed2.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+!hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[src^="https://crichdstreaming.cc/embed2.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[id="frame_a"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, width, 100%, iframe[id="frame_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, height, 100%, iframe[id="frame_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, marginheight, 0, iframe[id="frame_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, marginwidth, 0, iframe[id="frame_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, frameborder, 0, iframe[id="frame_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, scrolling, yes, iframe[id="frame_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allowfullscreen, true, iframe[id="frame_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allow, encrypted-media; picture-in-picture, iframe[id="frame_a"])
 ! TODO: Is the class name in the following rule random?
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##div[class="fdtfxeuhit"]:remove()
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live,wwwstream.pro##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
@@ -49399,7 +49407,8 @@ iacopodeenosee.wordpress.com##script[id^="crowdsignal-rating"]:remove()
 wordpress.com##div[id="eu-cookie-law"]:remove()
 ||www.udgpjfdzxrvecn.com^*
 ||www.ahaxoenizuaon.com^*
-
+||dhkecbu.com^*
+hd.crichdlivecricket.cc
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
 !@@||connatix.com^$3p
