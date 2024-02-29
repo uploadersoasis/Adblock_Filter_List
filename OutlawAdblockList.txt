@@ -26880,7 +26880,8 @@ www.nulled-scripts.info##.tie-popup-container
 ||outlook.live.com/search/api/v1/suggestions^*
 ||arc.msn.com/v3/Delivery/Events/Impression^*
 ||arc.msn.com/v4/api/selection?placement=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||match.sharethrough.com/sync/v1?supply_$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||match.sharethrough.com/sync/v1?supply_id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||match.sharethrough.com/universal/v1?supply_id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||match.sharethrough.com^*
 ||outlook-1.cdn.office.net/owamail/*/resources/images/adbarmetrosprite.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||outlook-1.cdn.office.net/owamail/*/srienabled/resources/analytics-ping.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -47641,8 +47642,9 @@ www.espn.com##iframe[id^="_conviva_iframe_"]:remove()
 www.espn.com##div[class^="ab-iam-root"]:remove()
 ! Don't use the following rule as it removes the video player
 !www.espn.com##div[id="fitt-analytics"]:remove()
-!||e8960.e2.akamaiedge.net/prebid/dynamic/18138.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||e8960.e2.akamaiedge.net/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||e8960.e2.akamaiedge.net/utils/xapi/multi-sync.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||e8960.b.akamaiedge.net/usync.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.betterbird.eu##+js(aeld, click, /function\(ev\)/)
 www.foxsports.com##div[class^="fwAd"]:remove()
 www.newzit.com##div[id="stickyBillboard"]:remove()
