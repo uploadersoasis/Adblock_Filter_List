@@ -46391,13 +46391,20 @@ fiveyardlab.com##+js(trusted-replace-node-text, script, /player\.setVolume\(((?!
 poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io##+js(set-constant, _Hasync, [])
 poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io##+js(aopw, _Hasync)
 poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io##+js(aopr, _Hasync)
-bestmlb.buffstream.io,streameast.buffstream.io##iframe[src^="http://streameast.buffstream.io/emb/"]:style(height: 100vh !important; width: 100vw !important;)
+!bestmlb.buffstream.io,streameast.buffstream.io##iframe[src^="http://streameast.buffstream.io/emb/"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+!bestmlb.buffstream.io,streameast.buffstream.io##iframe[src^="http://wikisport.click/"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+!bestmlb.buffstream.io,streameast.buffstream.io##iframe[src^="https://d.daddylivehd.sx/embed/"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+bestmlb.buffstream.io,streameast.buffstream.io##iframe:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 ! TODO: 100vw and 100vh do not work as values for the width and height attributes of an iframe.  Why?
-bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, width, 100%, iframe[src^="http://streameast.buffstream.io/emb/"])
-bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, height, 100%, iframe[src^="http://streameast.buffstream.io/emb/"])
-bestmlb.buffstream.io,streameast.buffstream.io##iframe[src^="http://wikisport.click/"]:style(height: 100vh !important; width: 100vw !important;)
-bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, width, 100%, iframe[src^="http://wikisport.click/"])
-bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, height, 100%, iframe[src^="http://wikisport.click/"])
+bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, width, 100%, iframe)
+bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, height, 100%, iframe)
+bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, seamless, seamless, iframe)
+bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, webkitallowfullscreen, true, iframe)
+bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, mozallowfullscreen, true, iframe)
+bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, scrolling, no, iframe)
+! The following attributes are already set by the page.
+!bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, frameborder, 0, iframe)
+!bestmlb.buffstream.io,streameast.buffstream.io##+js(saa, allowfullscreen, true, iframe)
 !||wikisport.click/iptv2/$inline-script
 ||wikisport.click/usa/tn5.bpo$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !wikisport.click,wikisport.se##iframe[src^="https://wikisport.click/"]:remove-attr(width)
@@ -49034,7 +49041,7 @@ methstreams.com##+js(saa, seamless, seamless, iframe[src^="https://nbastreamswat
 methstreams.com##+js(saa, webkitallowfullscreen, true, iframe[src^="https://nbastreamswatch.com/"])
 methstreams.com##+js(saa, mozallowfullscreen, true, iframe[src^="https://nbastreamswatch.com/"])
 methstreams.com##+js(saa, scrolling, no, iframe[src^="https://nbastreamswatch.com/"])
-! The following attribute is already set by the page.
+! The following attributes are already set by the page.
 !methstreams.com##+js(saa, width, 100%, iframe[src^="https://nbastreamswatch.com/"])
 !methstreams.com##+js(saa, height, 100%, iframe[src^="https://nbastreamswatch.com/"])
 !methstreams.com##+js(saa, frameborder, 0, iframe[src^="https://nbastreamswatch.com/"])
@@ -49390,6 +49397,8 @@ www.cyberdaily.au##a[aria-label="Momentum Media Client"]:remove()
 iacopodeenosee.wordpress.com##script[id^="crowdsignal-rating"]:remove()
 !||iacopodeenosee.wordpress.com##div[id="eu-cookie-law"]:remove()
 wordpress.com##div[id="eu-cookie-law"]:remove()
+||www.udgpjfdzxrvecn.com^*
+||www.ahaxoenizuaon.com^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
