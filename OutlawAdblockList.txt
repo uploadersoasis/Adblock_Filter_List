@@ -37391,7 +37391,6 @@ time4tv.stream,time4tv.xyz##script:has-text(top.location):remove()
 time4tv.stream,time4tv.xyz##+js(acs, top.location)
 time4tv.stream,time4tv.xyz##+js(aopr, top.location)
 time4tv.stream,time4tv.xyz##+js(aopw, top.location)
-time4tv.stream,time4tv.xyz##iframe[src^="https://st.chatango.com/"]
 time4tv.stream,time4tv.xyz##iframe[src^="https://st.chatango.com/"]:remove()
 time4tv.stream,time4tv.xyz##a[href^="https://xijgedjgg5f55.com/"]
 time4tv.stream,time4tv.xyz##div[id="floatLayer1"]
@@ -37679,15 +37678,15 @@ puffer.stanford.edu##+js(aopw, w.rdt)
 !puffer.stanford.edu##div[class*="alert"][role="alert"]
 ||puffer.stanford.edu/error_reporting/$xhr
 puffer.stanford.edu##button[type="button"]:remove-attr(disabled)
-!la.freestreams-live1.tv,fsl-streams.click##aside[id="custom_html-71"]
-!la.freestreams-live1.tv,fsl-streams.click##iframe[src^="https://st.chatango.com"]
-!la.freestreams-live1.tv,fsl-streams.click##div[id="footer-widgets"]
-!gs.freestreams-live1.tv,fsl-streams.click##aside[id="custom_html-71"]
-!gs.freestreams-live1.tv,fsl-streams.click##iframe[src^="https://st.chatango.com"]
-!gs.freestreams-live1.tv,fsl-streams.click##div[id="footer-widgets"]
-freestreams-live1.tv,fsl-streams.click##aside[id="custom_html-71"]
-freestreams-live1.tv,fsl-streams.click##iframe[src^="https://st.chatango.com"]
-freestreams-live1.tv,fsl-streams.click##div[id="footer-widgets"]
+!la.freestreams-live1.tv,fsl-streams.click##aside[id="custom_html-71"]:remove()
+!la.freestreams-live1.tv,fsl-streams.click##iframe[src^="https://st.chatango.com"]:remove()
+!la.freestreams-live1.tv,fsl-streams.click##div[id="footer-widgets"]:remove()
+!gs.freestreams-live1.tv,fsl-streams.click##aside[id="custom_html-71"]:remove()
+!gs.freestreams-live1.tv,fsl-streams.click##iframe[src^="https://st.chatango.com"]:remove()
+!gs.freestreams-live1.tv,fsl-streams.click##div[id="footer-widgets"]:remove()
+freestreams-live1.tv,fsl-streams.click##aside[id="custom_html-71"]:remove()
+freestreams-live1.tv,fsl-streams.click##iframe[src^="https://st.chatango.com"]:remove()
+freestreams-live1.tv,fsl-streams.click##div[id="footer-widgets"]:remove()
 freestreams-live1.tv,fsl-streams.click##+js(aopr, window.dataLayer)
 freestreams-live1.tv,fsl-streams.click##+js(aopw, window.dataLayer)
 ! freestreams-live1.tv,fsl-streams.click uses a generated javascript to check for the debugger so use (noeval) to bypass this.
@@ -40176,11 +40175,11 @@ slmaxed.com##div[class="alert alert-info mb-2"]:remove()
 ||lp.pickmysearch.com^*
 ||www.edqbparlheuj.com^*
 ||edqbparlheuj.com^*
-!||st.chatango.com/js/gz/emb.js$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+!||st.chatango.com/js/gz/emb.js$3p,script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
 !||st.chatango.com^$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
 !||st.chatango.com^$all,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
 ! not www.crichd.com since it has button to optionally open the chat window
-||st.chatango.com^*$domain=methstreams.com|time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+||st.chatango.com^$3p,domain=methstreams.com|time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net|hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live
 st.chatango.com##div[id="taboola-chat-article-thumbnails"]:remove()
 st.chatango.com##div[class="sdlg-title-bg-hidden"]:remove()
 st.chatango.com##div[class="sdlg-sc"]:has(div[class="OUTBRAIN"][data-widget-id]):remove()
@@ -47105,6 +47104,8 @@ www.crichd.com##+js(remove-attr, onclick, button[onclick^="window.open('https://
 ||crichdstreaming.xyz/z-7275846$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||crichdstreaming.cc/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||crichdstreaming.xyz/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+crichdstreaming.cc##div[id="floater"]:remove()
+crichdstreaming.cc##iframe[src="ad.html"]:remove()
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[src="ad.html"]:remove()
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##div[id="floater"]:remove()
 ! getting rid of the right column also removes the chatango widget
@@ -47117,15 +47118,15 @@ hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[src^="https:/
 !hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##span[onmouseup]:has(img[src="https://i.imgur.com/0P0Udsa.png"]):upward(1):remove()
 !hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[src^="https://crichdstreaming.xyz/embed2.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 !hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[src^="https://crichdstreaming.cc/embed2.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[id="frame_a"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, width, 100%, iframe[id="frame_a"])
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, height, 100%, iframe[id="frame_a"])
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, marginheight, 0, iframe[id="frame_a"])
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, marginwidth, 0, iframe[id="frame_a"])
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, frameborder, 0, iframe[id="frame_a"])
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, scrolling, yes, iframe[id="frame_a"])
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allowfullscreen, true, iframe[id="frame_a"])
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allow, encrypted-media; picture-in-picture, iframe[id="frame_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##iframe[id="iframe_a"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, width, 100%, iframe[id="iframe_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, height, 100%, iframe[id="iframe_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, marginheight, 0, iframe[id="iframe_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, marginwidth, 0, iframe[id="iframe_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, frameborder, 0, iframe[id="iframe_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, scrolling, yes, iframe[id="iframe_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allowfullscreen, true, iframe[id="iframe_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allow, encrypted-media; picture-in-picture, iframe[id="iframe_a"])
 ! TODO: Is the class name in the following rule random?
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##div[class="fdtfxeuhit"]:remove()
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live,wwwstream.pro##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
@@ -47176,7 +47177,15 @@ escast.xyz##:xpath(//script[contains(text(), '_Hasync')]):remove()
 escast.xyz##+js(set-constant, _Hasync, [])
 escast.xyz##+js(aopw, _Hasync)
 escast.xyz##+js(aopr, _Hasync)
+escast.xyz##+js(aopw, document.location)
+escast.xyz##+js(aopr, document.location)
+escast.xyz##+js(aopw, window.top)
+escast.xyz##+js(aopr, window.top)
+escast.xyz##+js(set-constant, window.gtag, noopFunc)
+escast.xyz##+js(acs, gtag)
 escast.xyz##div[id="UnMutePlayer"]:remove()
+escast.xyz##div[data-seekbar]:remove-class(seek-disabled)
+escast.xyz##+js(remove-class, seek-disabled, div[data-seekbar])
 ! TODO: While setting/removing the muted values works, it does NOT actually unmute/set the volume level.
 !       player.unmute(); will actually unmutes the volume
 !       player.muted(); still returns true after these rules are applied.
