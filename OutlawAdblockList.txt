@@ -47104,7 +47104,7 @@ www.crichd.com##+js(remove-attr, onclick, button[onclick^="window.open('https://
 ||crichdstreaming.xyz/z-7275846$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||crichdstreaming.cc/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||crichdstreaming.xyz/ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-// The following two rules defuse page refresh schedules for every 20 minutes (1200 seconds)
+! The following two rules defuse page refresh schedules for every 20 minutes (1200 seconds)
 crichdstreaming.cc,crichdstreaming.xyz##+js(set-constant, refreshPage, noopFunc)
 crichdstreaming.cc,crichdstreaming.xyz##+js(no-setInterval-if, /refreshPage\(\)/)
 !crichdstreaming.cc,crichdstreaming.xyz##+js(no-setInterval-if, refreshPage)
