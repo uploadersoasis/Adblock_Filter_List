@@ -41799,14 +41799,8 @@ thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:rem
 ||clicknupload.click/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||clicknupload.click/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! block all third-party scripts except those from any clicknupload domain
-!||clicknupload.*^$3p,script,denyallow=clickndownload.org|clickndownload.space|clicknupload.click
-!||clickndownload.org^$3p,script,denyallow=clicknupload.*|clickndownload.space|clicknupload.click
-!||clickndownload.space^$3p,script,denyallow=clicknupload.*|clickndownload.org|clickndownload.space
-||clicknupload.click^$3p,script,denyallow=clicknupload.*|clickndownload.org|clicknupload.click
-||clicknupload.*^$3p,script,domain=~clickndownload.org|~clickndownload.space|clicknupload.click
-||clicknupload.click^$3p,script,domain=~clicknupload.*|~clickndownload.org|clickndownload.space
-||clickndownload.org^$3p,script,domain=~clicknupload.*|~clickndownload.space|clicknupload.click
-||clickndownload.space^$3p,script,domain=~clicknupload.*|~clickndownload.org|clicknupload.click
+! denyallow rule cannot have asterisks in it
+||*^$3p,script,denyallow=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click,domain=clicknupload.*|clickndownload.org|clickndownload.space|clicknupload.click
 ! the location of the following xpaths may change especially if remove() is used on any elements above it
 clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1]):remove()
 clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2]):remove()
@@ -41903,9 +41897,7 @@ yougame.biz##div[class="sponsor-banner-ss"]:remove()
 !skiddirectgamespages.site##iframe[id="hdfdssvgddvd"]:remove()
 ||skiddirectgamespages.site^*
 ||uploadgameserver11.space^*
-unitystr.com##div[aria-label="Close Ads"]
 unitystr.com##div[aria-label="Close Ads"]:remove()
-unitystr.com##script[id^="google_gtag"]
 unitystr.com##script[id^="google_gtag"]:remove()
 unitystr.com##+js(set-constant, gtag, noopFunc)
 ||instrumenttactics.com^*
@@ -49421,6 +49413,10 @@ www.digitaltrends.com##+js(set-attr, div[class="h-embedded-video"][data-url], sr
 !||zladocfpftjl.incues.com^*
 !||media.incues.com^*
 ||incues.com^*
+||drizzlefirework.com^*
+||durgenweesh.com^*
+!||dca.booddianoia.top^*
+||booddianoia.top^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
