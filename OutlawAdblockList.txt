@@ -41800,7 +41800,8 @@ thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:rem
 ||clicknupload.click/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! block all third-party scripts except those from any clicknupload domain
 ! denyallow rule cannot have asterisks in it
-||*^$3p,script,denyallow=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click,domain=clicknupload.*|clickndownload.org|clickndownload.space|clicknupload.click
+!*$3p,script,denyallow=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click,domain=clicknupload.*|clickndownload.org|clickndownload.space|clicknupload.click
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?/$3p,script,denyallow=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click,domain=clicknupload.*|clickndownload.org|clickndownload.space|clicknupload.click
 ! the location of the following xpaths may change especially if remove() is used on any elements above it
 clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1]):remove()
 clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2]):remove()
@@ -42524,7 +42525,7 @@ gamesnacks.com##div[class="sSVlic"]:remove()
 !||3a6b0682-f3e1-4576-a706-5eb4101b9cc3.edge.permutive.app^*
 !||*.edge.permutive.app^*
 ! Do NOT put a ^ at end of regex as it does not work as it does on non-regex strings in rules.
-/^https?:\/\/[0-9a-f-A-F\-]+\.edge.permutive.app/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/[0-9a-f-A-F\-]+\.edge.permutive.app\/?/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||query.petametrics.com^*
 !||hummingbird.mavencoalition.io/collect$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hummingbird.mavencoalition.io^*
@@ -43323,8 +43324,9 @@ kimcartoon.li,kimcartoon.to##+js(set-constant, hideAdsCd, 0, stay)
 !kimcartoon.li,kimcartoon.to##div[id="adsIfrme"]:remove()
 ||kimcartoon.li/Content/images/adb.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 kswplayer.info##div[id="adbd"]:remove()
-kswplayer.info##+js(no-window-open-if)
-!*##+js(window-close-if, /^https?://(www\.)?kswplayer\.info/)
+!kswplayer.info##+js(no-window-open-if)
+kswplayer.info##+js(no-window-open-if, !/^https?:\/\/(www\.)?kswplayer\.info\/?/)
+!*##+js(window-close-if, /^https?:\/\/(www\.)?kswplayer\.info\/?/)
 ||streamwish.com/js/dnsads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ennrv.eayeewlvmebkj.top^*
 ||eayeewlvmebkj.top^*
@@ -49059,8 +49061,8 @@ newatlas.com##+js(rna, img[loading="lazy"][data-src], data-src, src)
 !||pl20623807.toprevenuegate.com^*
 ! TODO: always 8 digits after "pl" in subdomain name?
 ! Do NOT put a ^ at end of regex as it does not work as it does on non-regex strings in rules.
-!/^https?:\/\/pl\d{8}\.toprevenuegate\.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-/^https?:\/\/pl\d+\.toprevenuegate\.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!/^https?:\/\/pl\d{8}\.toprevenuegate\.com\/?/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/pl\d+\.toprevenuegate\.com\/?/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 brbeast.com##video[class^="jw-video"]:remove-attr(disableremoteplayback)
 brbeast.com##+js(set-constant, devtoolsDetector, {})
 brbeast.com##+js(set-constant, devtoolsDetector.launch, noopFunc)
