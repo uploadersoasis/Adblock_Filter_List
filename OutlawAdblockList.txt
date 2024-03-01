@@ -1626,7 +1626,7 @@ mediarouting.com/ads/landing/$document,subdocument,script,inline-script,inline-f
 !||aff.optionbit.com/l.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||aff.optionbit.com^*
 ||y3.analytics.yahoo.com^*
-!||beap.adx.yahoo.com/av^*
+!||beap.adx.yahoo.com/av$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||beap.adx.yahoo.com^*
 ||l6.yimg.com/av/moneyball/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||u2sb.interclick.com/beacon.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -1797,7 +1797,6 @@ nbcnews.com##.ideaScale-widget
 ||www.subs.to/search/tsc.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads-by.vemba.com^*
 ||adrotator.se/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-news.yahoo.com##.rmx-ad
 !||a.abcnews.com/assets/static/ads/digcsserver.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||a.abcnews.com/assets/static/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||a.abcnews.com/assets/js/adCallOverride.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -3226,11 +3225,11 @@ abclocal.go.com###bannerTop
 !||y.analytics.yahoo.com/p.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||y.analytics.yahoo.com^*
 ||www.thewrap.com/ad_frame.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||mf.sitescout.com/disp^*
+!||mf.sitescout.com/disp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mf.sitescout.com^*
 ||www.nbcchicago.com/includes/ots_omniture_code.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.nbcchicago.com/includes/customOmnitureData_Tremor.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.uploadable.ch##.top_t_banner
+www.uploadable.ch##.top_t_banner:remove()
 ||df80d3j0ved7h.cloudfront.net/px.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cpm.flashplayertrack.com^*
 ||0427d7.se/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -3825,7 +3824,7 @@ sendspace.com##.ads_holder.holder160x600
 ||content.hollywire.com/hly_advertising_iframe.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.womensunitedonline.com/js/ga-tracking.5.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.sheknows.com/js/siteCatalyst.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||beap.adss.yahoo.com/mbcsc^*
+!||beap.adss.yahoo.com/mbcsc$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||beap.adss.yahoo.com^*
 !||news.yahoo.com/__perf_log_only/freshness.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||news.yahoo.com/__perf_log_only/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -4110,7 +4109,6 @@ phys.org##.notice-inside
 ||www.sofler.com^*
 !||trpxl.com/dl.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||trpxl.com^*
-groups.yahoo.com##.yg-mb
 ||delivery.us.myswitchads.com^*
 ||www.hwbox.gr/images/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hwbot.org/banner.img$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -4307,7 +4305,6 @@ kitchen.manualsonline.com##.searchResult.adResult
 ||109.236.82.94/img/spriteBanner.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||saxp.zedo.com/jsc/fm.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||saxp.zedo.com^*
-news.yahoo.com##.Ad-Container.Carousel.Pos-r.yom-ad.yom-ad-LREC
 ||static.adzerk.net/reddit/ads.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||images.iskysoft.com/script/download_stat.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cbs.iskysoft.com/jslibs/track.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -6270,12 +6267,9 @@ www.cpuid.com###main__content > .main-wrapper > .block_100:nth-of-type(1) > .wid
 www.cpuid.com###downloading > .advert.block_33 > .widget-advert-336.widget-block
 www.cpuid.com###main__content > .main-wrapper > .block_100:nth-of-type(2) > .widget-advert-970.widget-block
 ||nethd.org/pic/1000gem.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-nethd.org###ads_zone20631
-nethd.org###ads_zone20633
-finance.yahoo.com###yui_3_18_1_1_1435952069987_289
-finance.yahoo.com###yui_3_18_1_1_1435955836169_2081
-finance.yahoo.com###yui_3_18_1_1_1435955836169_196
-finance.yahoo.com###yui_3_18_1_1_1435955836169_294
+!nethd.org###ads_zone20631:remove()
+!nethd.org###ads_zone20633:remove()
+nethd.org##*[id^="ads_zone"]:remove()
 ||track.109k.com^*
 ||fhb9n.trackvoluum.com^*
 ||clkoffers.com/banners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -6431,21 +6425,19 @@ www.securityweek.com###simplemodal-overlay
 ||www.seedhost.eu/images/banners/*.swf$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.torrent-invites.com###header > .torrinvcustom-wrapper > .ad_global_header
 ||sears.112.2o7.net^*
-answers.yahoo.com###ya-q-4170-textads
-answers.yahoo.com###ya-q-4815-textads
-answers.yahoo.com###ya-q-1066-textads
-answers.yahoo.com###ya-darla-LREC
 ||beap-bc.yahoo.com^*
 ||pr.ybp.yahoo.com/ab/secure/true/imp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||us.af.beap.bc.yahoo.com^*
 ||screenrant.com/wp-content/plugins/ad_management/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-screenrant.com###ad-zone-list-sidebar-default
-screenrant.com###ad-zone-list-content-below-next-button
-screenrant.com###ad-zone-list-content-below-widget-1
-screenrant.com###ad-zone-list-header
-screenrant.com###ad-zone-list-sidebar-first
-screenrant.com###ad-zone-regular-sidebar-first
-screenrant.com###ad-zone-regular-header
+!screenrant.com###ad-zone-list-sidebar-default
+!screenrant.com###ad-zone-list-content-below-next-button
+!screenrant.com###ad-zone-list-content-below-widget-1
+!screenrant.com###ad-zone-list-header
+!screenrant.com###ad-zone-list-sidebar-first
+!screenrant.com###ad-zone-regular-sidebar-first
+!screenrant.com###ad-zone-regular-header
+screenrant.com##*[id^="ad-zone-list-"]:remove()
+screenrant.com##*[id^="ad-zone-regular-"]:remove()
 ||tracking.justpremium.com^*
 ||ads.nexage.com^*
 ||webtrends2.epsilon.com^*
@@ -6459,7 +6451,6 @@ screenrant.com###ad-zone-regular-header
 ||www.terraclicks.com^*
 ||tk2zz.allaff.8637.info^*
 ||allaff.8637.info^*
-answers.yahoo.com###dmRosAdWrapper-MainNorth
 ||www.teleate.info^*
 ||engine.phn.doublepimp.com^*
 !||8ekq.safesafenow.com^*
@@ -6468,7 +6459,6 @@ answers.yahoo.com###dmRosAdWrapper-MainNorth
 !||keentracking.xyz/tracking202/redirect/rtr.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||keentracking.xyz^*
 ||www.topshape.me^*
-www.yahoo.com###my-adsMAST
 faststore.org###add_text > .alert-error.alert
 ||faststore.org/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cts.w55c.net/ct/cookie-pixel-lib.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -10696,7 +10686,6 @@ uptobox.com##div[id^="adleave"]
 ||yastatic.net/pcode/adfox/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||i.blogads.com^*
 ||coed-d.openx.net^*
-||news.digitaltrends.com/newdata/adpreview^*
 ||fls-na.amazon-adsystem.com/*/associates-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||fls-na.amazon-adsystem.com/*/action-impressions/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.computerworld.com/www/js/ads/jquery.lazyload-ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -10714,6 +10703,7 @@ www.pcmag.com##div[class^="google_ads_iframe"]
 !www.pcmag.com###google_ads_iframe_\/4585\/zd\.pcmagBTF\/softwaresection_BTF_0__container__
 ||digitaltrends-d.openx.net^*
 ||product.pcmag.com/CSE/Ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||vstats.digitaltrends.com:8128/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vstats.digitaltrends.com^*
 ||cdn2.lockerdome.com/_js/ajs.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.wendgames.com##div[id*="adsbygoogle"]:remove()
@@ -14007,9 +13997,6 @@ scribol.com##.ad-wrapper.top-ad-wrapper
 scribol.com##.cntnt-06.sidebar-ad-wrapper.ad-wrapper
 scribol.com##.tablet-up.ad-wrapper.inner-ad-wrapper
 scribol.com##div[id^="ad-wrapper.inner-ad-wrapper"]
-sports.yahoo.com###Col2Ext-1-Ad-Proxy
-sports.yahoo.com###mrt-node-Col2Ext-3-Ad
-sports.yahoo.com###mrt-node-Col2-2-Ad
 ||toro-tags.com/_tags/jstags.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||trafflict.com^*
 !www.andropalace.org##div:nth-of-type(4) > .adsbygoogle
@@ -16399,7 +16386,6 @@ www.pcmag.com##.privacy-content
 www.pcmag.com###_evh-button
 !||consent.cookiebot.com/uc.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||consent.cookiebot.com^*
-||vstats.digitaltrends.com:8128/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 draxe.com##.a-8.g-single > .ads
 draxe.com##.a-7.g-single > .ads
 www.techtimes.com##div[class^="videojs-ad-wrap"]
@@ -23602,8 +23588,8 @@ infinityfree.net##+js(abort-on-property-read, adsbygoogle)
 !||jill.fc.yahoo.com/v1/ads/js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||jill.fc.yahoo.com/v1/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||nunhoefey.com^*
-www.wonderplugin.com##div[class="wonderplugin-box-top"]
-www.wonderplugin.com##div[class="wonderplugin-box-bottom"]
+www.wonderplugin.com##div[class="wonderplugin-box-top"]:remove()
+www.wonderplugin.com##div[class="wonderplugin-box-bottom"]:remove()
 www.hideoxy.com##ins[class="adsbygoogle"]:remove()
 www.hideoxy.com##+js(set-constant, adsbygoogle, [])
 www.hideoxy.com##+js(abort-on-property-read, adsbygoogle)
@@ -24258,8 +24244,6 @@ pixeldrain.com##div[class="sponsors"]:remove()
 ||choinsiden.club^*
 www.capitalone.com###prebootOverlay
 ||notifier.rarlab.com^*
-login.yahoo.com###sb_rel_login-ad-rich:remove()
-mail.yahoo.com##div[data-test-id="pencil-ad"]:remove()
 ||s.yimg.com/av/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tag.sp.advertising.com^*
 ||insectadvertisesecretly.com^*
@@ -24289,7 +24273,6 @@ www.prodad.com##div[class="cookie_consent"]:remove()
 !www.actalis.it##div[id="cookiesdirective"]:remove()
 !extrassl.actalis.it##div[id="cookiesdirective"]:remove()
 actalis.it##div[id="cookiesdirective"]:remove()
-smallbusiness.yahoo.com##div[id="gdpr"]:remove()
 www.nvidia.co.uk##div[id="cookiePolicy-layer"]:remove()
 yazing.com##div[class="cookie-alert"]:remove()
 freehostingnoads.net##div[id="cookieChoiceInfo"]:remove()
@@ -26765,12 +26748,10 @@ androidapksdl.com##ins[class="adsbygoogle"]:remove()
 freeupload.info###at-btn-download:remove-attr(disabled)
 ||s3.amazonaws.com/93c2badb0ef152b5e53b4384ed2a864ee159475a62a0efd880873192fd906/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||riminghoggoofy.com^*
-currently.att.yahoo.com##amp-ad
-currently.att.yahoo.com##amp-analytics
 playacademy.exceedlms.com##div[id="gdpr-consent"]
-www.win-rar.com##div[id="cookiewarning"]
-letsview.com##div[id="cookielink"]
-letsview.com##div[class="cookielink"]
+www.win-rar.com##div[id="cookiewarning"]:remove()
+letsview.com##div[id="cookielink"]:remove()
+letsview.com##div[class="cookielink"]:remove()
 ||wx-analytics.cn-hongkong.log.aliyuncs.com^*
 ||humdrumhat.com^*
 ||www.qbcpicrtdje.com^*
@@ -28599,8 +28580,6 @@ unicode-table.com##div[id="js-cookie"]
 www.gsmarena.com##span[class="ad-label"]
 www.gsmarena.com##span[class="ad-c-label"]
 www.gsmarena.com##div[id^="div-gpt-ad-"]
-www.digitaltrends.com##+js(aopr, window.dtadsExperiences)
-www.digitaltrends.com##+js(aopw, window.dtadsExperiences)
 gpuopen.com##div[id="cookie-notice"]
 www.hanselman.com##div[aria-label="cookieconsent"]
 www.hanselman.com##div[aria-label="cookieconsent"]:remove()
@@ -29351,9 +29330,6 @@ xdarom.com##+js(aopr, mdp_deblocker)
 xdarom.com##+js(aopw, mdp_deblocker)
 xdarom.com##+js(aopr, adsbygoogle)
 xdarom.com##+js(aopw, adsbygoogle)
-news.yahoo.com##div[class="vp-adview-wrapper"]:remove()
-news.yahoo.com##ins[class="adsbygoogle"]:remove()
-news.yahoo.com##[class*="native-ad-item"]:remove()
 ||s.yimg.com/nn/lib/metro/g/myy/advertisement_$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||news.yahoo.com/_td_api/beacon/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||edgecast-vod.yimg.com/geminivideoads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -29834,18 +29810,6 @@ www.thedailybeast.com##.PageTopAd
 ||optyruntchan.com^*
 !uk.godaddy.com##div[id="gtm_privacy"]
 godaddy.com##div[id="gtm_privacy"]
-mail.yahoo.com##div[id^="adxcel_id_"]
-mail.yahoo.com##ins[class="adsbygoogle"]:remove()
-mail.yahoo.com##span[id^="te-clearads-"]
-mail.yahoo.com##+js(aopr, window.OATH.AdFeedback)
-mail.yahoo.com##+js(aopw, window.OATH.AdFeedback)
-mail.yahoo.com##+js(aopr, window.adxcel_ttd_hash)
-mail.yahoo.com##+js(aopw, window.adxcel_ttd_hash)
-mail.yahoo.com##+js(aopr, adContent)
-mail.yahoo.com##+js(aopw, adContent)
-mail.yahoo.com##div[data-test-id="right-rail-ad"]
-mail.yahoo.com##div[data-yaft-module^="norrin_ad_lrec"]
-mail.yahoo.com##a[data-test-id="pencil-ad-messageList"]
 ||cf.artsai.com/campaigns/adcouncil/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s.yimg.com/cb/af/adfeedback-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||va6-bid.adsrvr.org/bid/feedback/rightmedia$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -29904,22 +29868,17 @@ onestore.nokia.com##div[class*="nokia-cookies-wrapper"]
 www.geeksforgeeks.org##div[class="_ap_apex_ad"]
 www.geeksforgeeks.org##+js(aopr, adpushup)
 www.geeksforgeeks.org##+js(aopw, adpushup)
-currently.att.yahoo.com##+js(aopr, adsConfig)
-currently.att.yahoo.com##+js(aopw, adsConfig)
-currently.att.yahoo.com##+js(aopr, _pendingAds)
-currently.att.yahoo.com##+js(aopw, _pendingAds)
-www.t-mobile.com##div[class*="cookie-modal"]
-www.t-mobile.com##div[data-analytics-config]
+www.t-mobile.com##div[class*="cookie-modal"]:remove()
+www.t-mobile.com##div[data-analytics-config]:remove()
 www.t-mobile.com##+js(remove-class, modal-backdrop)
 www.t-mobile.com##+js(remove-class, fade)
 www.t-mobile.com##+js(remove-class, body--no-scroll)
 www.t-mobile.com##.ng-isolate-scope.modal.in.modal-front
 ||1music-online.me^*
-web.archive.org##div[class*="ia-deprecated-browser"]
-www.snbforums.com##*[class*="notice--cookie"]
-www.redhat.com##div[class*="redhat-cookie-banner"]
+web.archive.org##div[class*="ia-deprecated-browser"]:remove()
+www.snbforums.com##*[class*="notice--cookie"]:remove()
+www.redhat.com##div[class*="redhat-cookie-banner"]:remove()
 ||s.yimg.com/aaq/nel/css/tdv2-wafer-adfeedback.AdFeedbackAllComponents.atomic.ltr.4b857720588ebe2f9bf6bb1a8c48d411.min.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-currently.att.yahoo.com##^script:has-text(/geminiAds/i)
 ||hblg.media.net/log?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ad-resources.brandcdn.com/ad_assets/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ad-resources.brandcdn.com^*
@@ -29931,17 +29890,12 @@ currently.att.yahoo.com##^script:has-text(/geminiAds/i)
 !||5.at.atwola.com/adcount$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||*.at.atwola.com/adcount$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads.brandcdn.com^*
-currently.att.yahoo.com##button[class*="collapse-button"]
-currently.att.yahoo.com##+js(remove-class, caas-readmore-collapse)
-currently.att.yahoo.com##a[class="creative"]
 !||s.yimg.com/cv/apiv2/partner-portals/att/adobe_analytics/1.1.17/s_code_yahoo.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s.yimg.com/cv/apiv2/partner-portals/att/adobe_analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||usw-ca2.adsrvr.org/bid/feedback/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||usw-ca2.adsrvr.org^*
 ||s.update.adsrvr.org^*
 ||adserverwc.adtechus.com^*
-www.yahoo.com##button[class*="collapse-button"]
-www.yahoo.com##+js(remove-class, caas-readmore-collapse)
 !||web-oao.ssp.yahoo.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||web-oao.ssp.yahoo.com/admax/adEvent.do$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||oao-js-tag.onemobile.yahoo.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -29956,14 +29910,6 @@ www.yahoo.com##+js(remove-class, caas-readmore-collapse)
 ||prod-m-node-1111.ssp.advertising.com/admax/adEvent.do$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||c2shb.pubgw.yahoo.com/admax/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||c2shb.pubgw.yahoo.com/admax/bid/partners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-news.yahoo.com##div[class*="vp-adview-wrapper"]
-news.yahoo.com##+js(remove-class, enableInArticleAd)
-news.yahoo.com##+js(remove-class, vp-disable)
-news.yahoo.com##+js(remove-class, vp-hide)
-news.yahoo.com##+js(aopr, adContent)
-news.yahoo.com##+js(aopw, adContent)
-news.yahoo.com##button[class*="collapse-button"]
-news.yahoo.com##+js(remove-class, caas-readmore-collapse)
 ||quixel.com/app/src/UiComponents/CookieNotice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 quixel.com##div[class="css-wzviqn"]:has(h1:has-text(Cookies & Privacy)):remove()
 ||inspirationhistorical.com^*
@@ -30047,7 +29993,6 @@ www.eib.org##div[id="eib-popup-policy"]:remove()
 ||gloxeept.com^*
 *##+js(no-floc)
 ||veewhaiw.com^*
-mail.yahoo.com##li[role="list-item"]:has(a[data-test-id^="pencil-ad-message"]):remove()
 ||mail.yahoo.com/d/log?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.alcatelunleashed.com##div[aria-label="cookieconsent"]:remove()
 www.att.com##div[class="advertisementpanel"]:remove()
@@ -30429,11 +30374,6 @@ www.tutorialspoint.com##+js(aopw, adPos)
 www.tutorialspoint.com##*:remove-class(google-right-ads)
 www.tutorialspoint.com##+js(remove-class, google-right-ads, ,)
 www.bbc.com##.dotcom-ad:remove()
-currently.att.yahoo.com##div[id^="my-ads"]:remove()
-currently.att.yahoo.com##iframe[id^="my-ads"]:remove()
-currently.att.yahoo.com##div[id*="_my-ads"]:remove()
-currently.att.yahoo.com##ins[class="adsbygoogle"]:remove()
-currently.att.yahoo.com##div[id="gpt-passback"]:remove()
 ||service.idsync.analytics.yahoo.com/sp/v0/pixels$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||s.uicdn.com/pos-cdn/tracklib/3.7.0/tracklib.poly.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s.uicdn.com/pos-cdn/tracklib/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -30585,7 +30525,6 @@ www.inverse.com##div[id^="ad-"]
 www.google.com##*[class*="chr-cookie-banner"]
 kifarunix.com##*[class*="ezoic-ad"]
 www.popsci.com##.Article-advert
-news.yahoo.com##div[id="act-adContent"]
 ||s.yimg.com/rq/darla/4-6-0/html/r-sf.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$subdocument
 ||s.yimg.com/rq/darla/4-6-0/html/r-sf-flx.html$subdocument
 ||s.yimg.com/bx/adb/$image
@@ -30991,12 +30930,6 @@ www.rlslog.net##div[style="text-align:center;font-family:Tahoma;"]:has(div:has-t
 !||supportmetrics.apple.com/content/services/stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||supportmetrics.apple.com^*
 ||supportmetrics.v.aaplimg.com^*
-www.digitaltrends.com##div[class*="dtads-"]
-!www.digitaltrends.com##div[class*="dtads-slot"]
-!www.digitaltrends.com##div[class*="dtads-hub"]
-!www.digitaltrends.com##div[class*="dtads-leaderboard"]
-!www.digitaltrends.com##div[class*="dtads-desktop"]
-!www.digitaltrends.com##div[class*="dtads-tablet"]
 ||infuriateharder.com^*
 ||caperedlevi.com^*
 ||impressivepointcircular.com^*
@@ -33988,25 +33921,20 @@ www.neowin.net##div[class="stickyAd"]
 ||megaupload.nz/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 usebottles.com##div[class="cookies-panel"]
 ||www.freshports.org/images/notbug.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.forbes.com##div[class="footer-ad-labeling"]
-www.forbes.com##div[class*="ad-unit"]
-www.forbes.com##div[class*="fbs-ad--media_net_"]
-www.purexbox.com##div[id="onetrust-consent-sdk"]
-www.purexbox.com##div[data-dfp-id]
+www.forbes.com##div[class="footer-ad-labeling"]:remove()
+www.forbes.com##div[class*="ad-unit"]:remove()
+www.forbes.com##div[class*="fbs-ad--media_net_"]:remove()
+www.purexbox.com##div[id="onetrust-consent-sdk"]:remove()
+www.purexbox.com##div[data-dfp-id]:remove()
 ||kclykjjbkdituln.com^*
 ||zebumpes.net^*
-www.disneyplusinformer.com##div[class*="adthrive"]
-asia.nikkei.com##*[class^="cookie-banner"]
+www.disneyplusinformer.com##div[class*="adthrive"]:remove()
+asia.nikkei.com##*[class^="cookie-banner"]:remove()
 asia.nikkei.com##div[ng-show="!terminalError"]:remove()
-asia.nikkei.com##div[data-o-ads-name]
+asia.nikkei.com##div[data-o-ads-name]:remove()
 asia.nikkei.com##div[id="GD04_01"]:remove()
-asia.nikkei.com##body[id="ng-app"]
-asia.nikkei.com##section[class="advertorial"]
-currently.att.yahoo.com##div[class*="caas-iframe-"]
-!currently.att.yahoo.com##div[class="caas-content-wrapper"]
-currently.att.yahoo.com##div[class*="adsStreamWrapper"]
-!currently.att.yahoo.com##div[class*="enableAdSlotsOneSlot"]
-currently.att.yahoo.com##div[ata-wf-sticky-target="#adsStream"]
+asia.nikkei.com##body[id="ng-app"]:remove()
+asia.nikkei.com##section[class="advertorial"]:remove()
 ||currently.att.yahoo.com/_td_api/beacon/reporting-observer$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||warp.media.net/rtb/resource/adperformance.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||qsearch-a.akamaihd.net/log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -34889,7 +34817,6 @@ nulledenvato.com##+js(aopw, adsbygoogle)
 ||t.dailymail.co.uk^*
 ||ted.dailymail.co.uk^*
 ||crta.dailymail.co.uk^*
-finance.yahoo.com##div[id="sda-MAST"]
 www.therecord.com##div[class*="leaderboard-ad-component"]
 www.therecord.com##div[class*="adview-"]
 www.therecord.com##div[class*="c-googleadslot"]
@@ -34914,7 +34841,7 @@ distrowatch.com##div[id^="div-ub-gpt-ad"]:style(height: 0px)
 !||cdn.unblockia.com/prebid6.20.0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.unblockia.com^*
 ||t.unblockia.com^*
-www.khronos.org##div[id="cookie_decline"]
+www.khronos.org##div[id="cookie_decline"]:remove()
 ||entirelysacrament.com^*
 ||nutattorneyjack.com^*
 ||www.syaomlovqeq.com^*
@@ -41516,11 +41443,6 @@ www.dailymail.co.uk##+js(aopr, window.adverts)
 www.dailymail.co.uk##+js(aopw, window.adverts)
 !www.dailymail.co.uk##div[id="content"]:remove()
 ||xypthe.com^*
-www.yahoo.com##div[id^="sda-MAST2"]:upward(1):remove()
-www.yahoo.com##div[id^="sda-MAST2"]
-www.yahoo.com##div[id^="sda-MAST2"]:remove()
-www.yahoo.com##div[id^="cluster-LDRB2-"]
-www.yahoo.com##div[id^="cluster-LDRB2-"]:remove()
 www.jetbrains.com##div[class^="jetbrains-cookies-banner-"]
 www.jetbrains.com##div[class^="jetbrains-cookies-banner-"]:remove()
 ||arttrk.com/pixel/?ad_log=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -41675,10 +41597,6 @@ availedsmallest.com##+js(no-setInterval-if, /^/)
 ||misfields.com^*
 ||www.ambrs.online^*
 ||muzzlematrix.com^*
-!finance.yahoo.com##div[class*="adsStreamWrapper"]
-!finance.yahoo.com##div[class*="adsStreamWrapper"]:remove()
-finance.yahoo.com##div[id="jacPosition_OpenWebWidget"]
-finance.yahoo.com##div[id="jacPosition_OpenWebWidget"]:remove()
 ||superbet.pl^*
 ||dzapk.com/vendor/cookieconsent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 uvnc.com##iframe[id^="google_ads_"]:remove()
@@ -44654,20 +44572,6 @@ sfist.com##mv-ad-reporter:remove()
 ||josephineravine.com^*
 ! alteredapk.shop is legitimately used for doodrive downloads
 !||alteredapk.shop^*
-! blocking AND removing these ads causes a generic error message
-!mail.yahoo.com##li[class="H_A hd_n p_a L_0 R_0"]:has(img[src*="//images.taboola.com/taboola/image/fetch/"]):remove()
-!mail.yahoo.com##button[tabindex="-1"]:has-text(Ad):upward(4):remove()
-mail.yahoo.com##li[class="H_A hd_n p_a L_0 R_0"]:has(img[src*="//images.taboola.com/taboola/image/fetch/"])
-mail.yahoo.com##button[tabindex="-1"]:has-text(Ad):upward(4)
-! The following rule blocks inline ads in the email message list, BUT it also prevents the UI from working properly.
-!||s.yimg.com/nq/nr/js/mail_app_es6_vendor_*.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-mail.yahoo.com##+js(aeld, click, Rr)
-mail.yahoo.com##+js(set-constant, Rr, noopFunc)
-mail.yahoo.com##span[data-test-id="ad-summary"]
-mail.yahoo.com##span[data-test-id="ad-summary"]:remove()
-mail.yahoo.com##div[data-test-id="ad-feedback-menu"]
-mail.yahoo.com##div[data-test-id="ad-feedback-menu"]:remove()
-www.reddit.com.com##faceplate-perfmetric-collector
 www.reddit.com.com##faceplate-perfmetric-collector:remove()
 ||reddit.map.fastly.net/reports$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||w3-reporting.reddit.com/reports$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -44681,27 +44585,20 @@ www.reddit.com.com##faceplate-perfmetric-collector:remove()
 ||www.redditstatic.com/shreddit/en-US/media-telemetry-observer-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dualstack.reddit.map.fastly.net/shreddit/en-US/ad-event-tracker-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.redditstatic.com/shreddit/en-US/ad-event-tracker-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.reddit.com##shreddit-comments-page-ad
 www.reddit.com##shreddit-comments-page-ad:remove()
-www.reddit.com##shreddit-sidebar-ad
 www.reddit.com##shreddit-sidebar-ad:remove()
 ||www.redditstatic.com/shreddit/en-US/telemetry-event-struct-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.redditstatic.com/shreddit/en-US/xpromo-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.redditstatic.com/shreddit/en-US/report-flow-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.redditstatic.com/shreddit/en-US/report-flow-provider-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-sbupload.com##div[aria-label="cookieconsent"]
 sbupload.com##div[aria-label="cookieconsent"]:remove()
-www.economist.com##div[class*="adComponent_"]
 www.economist.com##div[class*="adComponent_"]:remove()
 www.economist.com##+js(set-constant, NREUM, {})
 www.economist.com##+js(aopr, NREUM)
 www.economist.com##+js(aopw, NREUM)
 ||consent.economist.com^*
-us.cnn.com,www.cnn.com##div[class^="ad-slot"]
 us.cnn.com,www.cnn.com##div[class^="ad-slot"]:remove()
-us.cnn.com,www.cnn.com##div[class^="container__ads"]
 us.cnn.com,www.cnn.com##div[class^="container__ads"]:remove()
-us.cnn.com,www.cnn.com##iframe[class="smartad_iframe"]
 us.cnn.com,www.cnn.com##iframe[class="smartad_iframe"]:remove()
 !||cdn.cnn.com/ads/cnn/cnn_quantum_leaf.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.cnn.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -44718,33 +44615,19 @@ us.cnn.com,www.cnn.com##iframe[class="smartad_iframe"]:remove()
 ||cnn.com.102.122.2o7.net^*
 ||www.cnn.com/media/sites/js/bundles/business-adfuel*.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||meadowlullaby.com^*
-nypost.com##div[class*="ad--container"]
 nypost.com##div[class*="ad--container"]:remove()
-nypost.com##div[class*="ad-slot"]
 nypost.com##div[class*="ad-slot"]:remove()
-nypost.com##div[class*="ad-wrapper"]
 nypost.com##div[class*="ad-wrapper"]:remove()
-nypost.com##div[class*="ad__placeholder"]
 nypost.com##div[class*="ad__placeholder"]:remove()
-nypost.com##div[class*="ad__wrapper"]
 nypost.com##div[class*="ad__wrapper"]:remove()
-nypost.com##div[class*="billboard-ad"]
 nypost.com##div[class*="billboard-ad"]:remove()
-nypost.com##div[class="nyp-sitewide-notice"]
 nypost.com##div[class="nyp-sitewide-notice"]:remove()
-nypost.com##div[class="sitewide-notice"]
 nypost.com##div[class="sitewide-notice"]:remove()
-nypost.com##div[id^="div-gpt-ad-"]
 nypost.com##div[id^="div-gpt-ad-"]:remove()
-nypost.com##iframe[id="zephr-component-1"]
 nypost.com##iframe[id="zephr-component-1"]:remove()
-nypost.com##iframe[id="revvyiframe"]
 nypost.com##iframe[id="revvyiframe"]:remove()
-nypost.com##iframe[rel="sponsored"]
 nypost.com##iframe[rel="sponsored"]:remove()
-nypost.com##script[class^="optanon-category"]
 nypost.com##script[class^="optanon-category"]:remove()
-nypost.com##script[src*="//cdn.cookielaw.org/"]
 nypost.com##script[src*="//cdn.cookielaw.org/"]:remove()
 nypost.com##+js(set-constant, gtag, noopFunc)
 nypost.com##+js(acs, gtag)
@@ -44895,8 +44778,6 @@ www.manualslib.com##+js(abort-on-property-read, AdUnit)
 www.manualslib.com##+js(abort-on-property-write, AdUnit)
 thinkpad-forum.de##div[class="u-bottomFixer js-bottomFixTarget"]:has(li[class*="notice--cookie"]):remove()
 thinkpad-forum.de##div[class="firstbn"]:remove()
-finance.yahoo.com##div[data-content="Advertisement"]:remove()
-finance.yahoo.com##i[data-content="Advertisement"]:remove()
 jobnewsj.com##div[id="AdbModel"]:remove()
 jobnewsj.com##div[id^="div-gpt-ad-"]:remove()
 jobnewsj.com##+js(set-constant, window.googletag, {})
@@ -47639,9 +47520,6 @@ mashable.com##+js(set-constant, window.trackAndReportBibblioInView, noopFunc)
 mashable.com##+js(acs, window.trackAndReportBibblioInView)
 ||mashable.com/tripleclick.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||api.bibblio.org/v1/activities/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-finance.yahoo.com##div[id="topAd"]:remove()
-finance.yahoo.com##script[id="mnet-script"]:remove()
-finance.yahoo.com##script[id="opus-script"]:remove()
 www.croxyproxy.com,proxyium.com##+js(set-constant, window._urq, [])
 www.croxyproxy.com,proxyium.com##+js(aopw, window._urq)
 www.croxyproxy.com,proxyium.com##+js(aopr, window._urq)
@@ -49422,6 +49300,114 @@ wordpress.com##div[id="eu-cookie-law"]:remove()
 ||www.udgpjfdzxrvecn.com^*
 ||www.ahaxoenizuaon.com^*
 ||dhkecbu.com^*
+answers.yahoo.com###dmRosAdWrapper-MainNorth:remove()
+answers.yahoo.com###ya-darla-LREC:remove()
+!answers.yahoo.com###ya-q-1066-textads:remove()
+!answers.yahoo.com###ya-q-4170-textads:remove()
+!answers.yahoo.com###ya-q-4815-textads:remove()
+answers.yahoo.com##*[id$="-textads"]:remove()
+!currently.att.yahoo.com##div[class*="enableAdSlotsOneSlot"]:remove()
+!currently.att.yahoo.com##div[class="caas-content-wrapper"]:remove()
+currently.att.yahoo.com##^script:has-text(/geminiAds/i):remove()
+currently.att.yahoo.com##a[class="creative"]:remove()
+currently.att.yahoo.com##amp-ad:remove()
+currently.att.yahoo.com##amp-analytics:remove()
+currently.att.yahoo.com##button[class*="collapse-button"]:remove()
+currently.att.yahoo.com##div[ata-wf-sticky-target="#adsStream"]:remove()
+currently.att.yahoo.com##div[class*="adsStreamWrapper"]:remove()
+currently.att.yahoo.com##div[class*="caas-iframe-"]:remove()
+currently.att.yahoo.com##div[id*="_my-ads"]:remove()
+currently.att.yahoo.com##div[id="gpt-passback"]:remove()
+currently.att.yahoo.com##div[id^="my-ads"]:remove()
+currently.att.yahoo.com##div[id^="sda-"][data-content="Advertisement"]:remove()
+currently.att.yahoo.com##iframe[id^="my-ads"]:remove()
+currently.att.yahoo.com##ins[class="adsbygoogle"]:remove()
+currently.att.yahoo.com##+js(aopr, _pendingAds)
+currently.att.yahoo.com##+js(aopr, adsConfig)
+currently.att.yahoo.com##+js(aopw, _pendingAds)
+currently.att.yahoo.com##+js(aopw, adsConfig)
+currently.att.yahoo.com##+js(remove-class, caas-readmore-collapse)
+!finance.yahoo.com##div[class*="adsStreamWrapper"]:remove()
+! TODO: remove all with id^="ui_3_18_1_1_1435955836169" or something similar?
+finance.yahoo.com###yui_3_18_1_1_1435952069987_289:remove()
+finance.yahoo.com###yui_3_18_1_1_1435955836169_196:remove()
+finance.yahoo.com###yui_3_18_1_1_1435955836169_2081:remove()
+finance.yahoo.com###yui_3_18_1_1_1435955836169_294:remove()
+finance.yahoo.com##div[data-content="Advertisement"]:remove()
+finance.yahoo.com##div[id="jacPosition_OpenWebWidget"]:remove()
+finance.yahoo.com##div[id="sda-MAST"]:remove()
+finance.yahoo.com##div[id="topAd"]:remove()
+finance.yahoo.com##i[data-content="Advertisement"]:remove()
+finance.yahoo.com##script[id="mnet-script"]:remove()
+finance.yahoo.com##script[id="opus-script"]:remove()
+groups.yahoo.com##.yg-mb:remove()
+login.yahoo.com###sb_rel_login-ad-rich:remove()
+mail.yahoo.com##a[data-test-id="pencil-ad-messageList"]:remove()
+mail.yahoo.com##button[tabindex="-1"]:has-text(Ad):upward(4):remove()
+mail.yahoo.com##div[data-test-id="ad-feedback-menu"]:remove()
+mail.yahoo.com##div[data-test-id="pencil-ad"]:remove()
+mail.yahoo.com##div[data-test-id="right-rail-ad"]:remove()
+mail.yahoo.com##div[data-yaft-module^="norrin_ad_lrec"]:remove()
+mail.yahoo.com##div[id^="adxcel_id_"]:remove()
+mail.yahoo.com##ins[class="adsbygoogle"]:remove()
+mail.yahoo.com##li[class="H_A hd_n p_a L_0 R_0"]:has(img[src*="//images.taboola.com/taboola/image/fetch/"]):remove()
+mail.yahoo.com##li[role="list-item"]:has(a[data-test-id^="pencil-ad-message"]):remove()
+mail.yahoo.com##span[data-test-id="ad-summary"]:remove()
+mail.yahoo.com##span[id^="te-clearads-"]:remove()
+mail.yahoo.com##+js(aeld, click, Rr)
+mail.yahoo.com##+js(aopr, adContent)
+mail.yahoo.com##+js(aopr, window.OATH.AdFeedback)
+mail.yahoo.com##+js(aopr, window.adxcel_ttd_hash)
+mail.yahoo.com##+js(aopw, adContent)
+mail.yahoo.com##+js(aopw, window.OATH.AdFeedback)
+mail.yahoo.com##+js(aopw, window.adxcel_ttd_hash)
+mail.yahoo.com##+js(set-constant, Rr, noopFunc)
+news.yahoo.com##.Ad-Container.Carousel.Pos-r.yom-ad.yom-ad-LREC:remove()
+news.yahoo.com##.rmx-ad:remove()
+news.yahoo.com##*[class*="native-ad-item"]:remove()
+news.yahoo.com##button[class*="collapse-button"]:remove()
+news.yahoo.com##div[class*="vp-adview-wrapper"]:remove()
+news.yahoo.com##div[id="act-adContent"]:remove()
+news.yahoo.com##ins[class="adsbygoogle"]:remove()
+news.yahoo.com##+js(aopr, adContent)
+news.yahoo.com##+js(aopw, adContent)
+news.yahoo.com##+js(remove-class, caas-readmore-collapse)
+news.yahoo.com##+js(remove-class, enableInArticleAd)
+news.yahoo.com##+js(remove-class, vp-disable)
+news.yahoo.com##+js(remove-class, vp-hide)
+smallbusiness.yahoo.com##div[id="gdpr"]:remove()
+sports.yahoo.com###Col2Ext-1-Ad-Proxy:remove()
+sports.yahoo.com###mrt-node-Col2-2-Ad:remove()
+sports.yahoo.com###mrt-node-Col2Ext-3-Ad:remove()
+www.yahoo.com###my-adsMAST:remove()
+www.yahoo.com##button[class*="collapse-button"]:remove()
+www.yahoo.com##div[class*="caas-sda-benji-ad"]:remove()
+www.yahoo.com##div[id^="cluster-LDRB2-"]:remove()
+www.yahoo.com##div[id^="sda-MAST2"]:upward(1):remove()
+www.yahoo.com##div[id^="sda-MAST2"]:remove()
+www.yahoo.com##div[id^="sda-"][data-content="Advertisement"]:remove()
+www.yahoo.com##+js(remove-class, caas-readmore-collapse)
+! blocking AND removing these ads causes a generic error message
+!mail.yahoo.com##li[class="H_A hd_n p_a L_0 R_0"]:has(img[src*="//images.taboola.com/taboola/image/fetch/"]):remove()
+!mail.yahoo.com##button[tabindex="-1"]:has-text(Ad):upward(4):remove()
+! The following rule blocks inline ads in the email message list, BUT it also prevents the UI from working properly.
+!||s.yimg.com/nq/nr/js/mail_app_es6_vendor_*.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!www.digitaltrends.com##div[class*="dtads-slot"]:remove()
+!www.digitaltrends.com##div[class*="dtads-hub"]:remove()
+!www.digitaltrends.com##div[class*="dtads-leaderboard"]:remove()
+!www.digitaltrends.com##div[class*="dtads-desktop"]:remove()
+!www.digitaltrends.com##div[class*="dtads-tablet"]:remove()
+www.digitaltrends.com##div[class*="dtads-"]:remove()
+www.digitaltrends.com##+js(aopr, window.dtadsExperiences)
+www.digitaltrends.com##+js(aopw, window.dtadsExperiences)
+||www.digitaltrends.com/wp-content/themes/dt-stardust/assets/scripts/js/dt-snowplow.min.js$script
+||www.digitaltrends.com/wp-content/themes/dt-stardust/assets/scripts/js/dt-consent.min.js$script
+||www.digitaltrends.com/wp-content/themes/dt-stardust/assets/scripts/js/dt-ads-manager.min.js?v=09f5e480
+||www.digitaltrends.com/wp-content/themes/dt-stardust/assets/scripts/js/dt-metrics.min.js?v=09f5e480
+||ccp.digitaltrends.com/scripts/cc-tracking.js$script
+||news.digitaltrends.com/newdata/adpreview$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||d16dv0fpfdbyng.cloudfront.net/scripts/cc-tracking.js$3p,script
+||cdn.cookielaw.org/scripttemplates/otSDKStub.js$important,3p,script
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
