@@ -49400,6 +49400,12 @@ www.yahoo.com##+js(remove-class, caas-readmore-collapse)
 www.digitaltrends.com##div[class*="dtads-"]:remove()
 www.digitaltrends.com##+js(aopr, window.dtadsExperiences)
 www.digitaltrends.com##+js(aopw, window.dtadsExperiences)
+www.digitaltrends.com##+js(set-constant, window.htlbid, {})
+www.digitaltrends.com##+js(set-constant, playerIdAbTest, true)
+www.digitaltrends.com##+js(set-attr, img[data-dt-lazy-src], src, [data-dt-lazy-src])
+www.digitaltrends.com##img[data-dt-lazy-src]:style(opacity: 1 !important;)
+! TODO: need to change div[class="h-embedded-video"] into an iframe; a custom scriptlet is needed.
+www.digitaltrends.com##+js(set-attr, div[class="h-embedded-video"][data-url], src, [data-url])
 ||www.digitaltrends.com/wp-content/themes/dt-stardust/assets/scripts/js/dt-snowplow.min.js$script
 ||www.digitaltrends.com/wp-content/themes/dt-stardust/assets/scripts/js/dt-consent.min.js$script
 ||www.digitaltrends.com/wp-content/themes/dt-stardust/assets/scripts/js/dt-ads-manager.min.js?v=09f5e480
