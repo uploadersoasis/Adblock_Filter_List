@@ -2780,22 +2780,54 @@ glo.msn.com##.adId
 !||boingboing.net/wp-content/themes/2012/ads/ad_squares.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||boingboing.net/wp-content/themes/2012/ads/ad_300.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 boingboing.net###ad_squares_frame:remove()
+boingboing.net###ds_content_frame_parent:remove()
+boingboing.net###ds_cpp:remove()
+boingboing.net###ds_player_container:remove()
 boingboing.net##.ad:remove()
+boingboing.net##div[class*="dtads-"]:remove()
+boingboing.net##div[class="ds_sponsorbox"]:remove()
+boingboing.net##div[class^="ad ad300"]:remove()
+boingboing.net##div[class*="ad_unit"]:remove()
+boingboing.net##div[class*="ad-unit"]:remove()
+boingboing.net##div[class*="text-ad"]:remove()
+boingboing.net##div[class*="text_ad"]:remove()
 boingboing.net##div[data-freestar-ad]:remove()
+boingboing.net##div[id="boing-512091316"]:remove()
+boingboing.net##div[id^="FreeStarVideoAd"]:remove()
+boingboing.net##div[id*="pmAdTag"]:remove()
+boingboing.net##div[id="ds_ad_container"]:remove()
 boingboing.net##div[id^="boing-"]:has(sellwild):remove()
+boingboing.net##div[id^="dtads-"]:remove()
 boingboing.net##sellwild:remove()
+boingboing.net##iframe[class="youtube-player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+boingboing.net##+js(saa, width, 100%, iframe[class="youtube-player"])
+boingboing.net##+js(saa, height, 100%, iframe[class="youtube-player"])
+boingboing.net##+js(saa, webkitallowfullscreen, true, iframe[class="youtube-player"])
+boingboing.net##+js(saa, mozallowfullscreen, true, iframe[class="youtube-player"])
+boingboing.net##+js(saa, scrolling, true, iframe[class="youtube-player"])
+boingboing.net##+js(saa, frameborder, 0, iframe[class="youtube-player"])
+! The following is already set by the page.
+!boingboing.net##+js(saa, allowfullscreen, true, iframe[class="youtube-player"])
 ! TODO: This does not prevent the scripts from loading as they appear to be removed after the page is processed.
 boingboing.net##script[id^="advanced-ads-"]:remove()
 boingboing.net##script[id^="google_gtagjs-js"]:remove()
+boingboing.net##script[id="boing-ready"]:remove()
+boingboing.net##script[id^="jetpack-stats-"]:remove()
+boingboing.net##script[id="bidstream-lite-script"]:remove()
 boingboing.net##+js(set-constant, gtag, noopFunc)
 boingboing.net##+js(set-constant, advanced_ads_check_adblocker, noopFunc)
 !boingboing.net##+js(set-constant, window.advanced_ads_check_adblocker, noopFunc)
 boingboing.net##+js(set-constant, window.advanced_ads_ready, noopFunc)
+boingboing.net##+js(set-constant, advadsCfpQueue, [])
 boingboing.net##+js(set-constant, advadsCfpAd, noopFunc)
 boingboing.net##+js(set-constant, _comscore, [])
 boingboing.net##+js(set-constant, _stq, [])
 boingboing.net##+js(set-constant, window.advads_admin_bar_items, [])
 boingboing.net##+js(set-constant, advanced_ads_ga_UID, "")
+boingboing.net##+js(set-constant, freestar, {})
+boingboing.net##+js(set-constant, _hbopts, {})
+boingboing.net##+js(set-constant, _hbwrap, [])
+boingboing.net##+js(set-constant, hbldr, noopFunc)
 ||boingboing.net/wp-content/plugins/advanced-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.sofanti.com/lp/codecperformer/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.sofanti.com^*
@@ -16875,13 +16907,6 @@ download.cnet.com##div[id^="google_ads_iframe_"]
 download.cnet.com###mpu_top
 !||download.cnet.com/g00/@p1/clientprofiler/adframestats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||download.cnet.com/g00/@p1/clientprofiler/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-boingboing.net##div[class^="ad ad300"]
-boingboing.net##div[id^="dtads-"]
-boingboing.net##div[class*="dtads-"]
-boingboing.net##div[class="ds_sponsorbox"]
-!boingboing.net##div[id="”pmAdTag”"]
-boingboing.net##div[id*="pmAdTag"]
-boingboing.net##div[id="ds_ad_container"]
 ||i.jsrdn.com/i/1.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||stats3.unrulymedia.com/blank.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||stats3.unrulymedia.com^*
@@ -17670,9 +17695,6 @@ www.mediaite.com##div[id^="AdThrive_Content_"]
 ||biddr.brealtime.com^*
 !||adadvisor.net/adscores/g.pixel$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||adadvisor.net/adscores/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-boingboing.net###ds_content_frame_parent
-boingboing.net###ds_player_container
-boingboing.net###ds_cpp
 ||www.tricsdqejmu.com^*
 ||tricsdqejmu.com^*
 ||www.lcolevwciuwj.com^*
@@ -30651,7 +30673,6 @@ www.vaultproject.io##div[data-testid="consent-banner"]
 droidrant.com##span[class="ezoic-adpicker-ad"]
 droidrant.com##div[class*="ezo_ad"]
 nucco.org##div[id="icc_message"]
-boingboing.net##div[data-freestar-ad]
 linux-talks.com##div[class="cookie-notification"]
 ||www.linkconnector.com/tr.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||7667.imgix.net/banners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -43424,6 +43445,10 @@ get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-write
 get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(set-constant, _gaq, [])
 get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-read, _gaq)
 get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-write, _gaq)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-read, top)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-write, top)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-read, self)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-write, self)
 get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(set-constant, urls, {})
 get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(set-constant, zoneNativeSett, {})
 get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(no-window-open-if)
@@ -43444,7 +43469,7 @@ get.getpczone.com,uploadrar.com,miui.rahim-soft.com##input[id="adblock_detected"
 get.getpczone.com,uploadrar.com,miui.rahim-soft.com##ins[data-ad-client]:remove()
 ! div[id="tritqwt"] is scripted to reappear if deleted
 get.getpczone.com,uploadrar.com,miui.rahim-soft.com##div[id="tritqwt"]:remove()
-1 The following two rules keep the website from loading since it uses a POST request from an inline script to get the page
+! The following rules blocking inline scripts keeps the website from loading since it uses a POST request from an inline script to get the page
 !||uploadrar.com^$inline-script
 !||miui.rahim-soft.com^$inline-script
 !||get.getpczone.com^$inline-script
