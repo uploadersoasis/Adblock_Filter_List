@@ -43474,8 +43474,9 @@ uploadrar.com,miui.rahim-soft.com##input[id="adblock_detected"]:remove()
 uploadrar.com,miui.rahim-soft.com##ins[data-ad-client]:remove()
 ! div[id="tritqwt"] is scripted to reappear if deleted
 uploadrar.com,miui.rahim-soft.com##div[id="tritqwt"]:remove()
-uploadrar.com^$inline-script
-miui.rahim-soft.com^$inline-script
+1 The following two rules keep the website from loading since it uses a POST request from an inline script to get the page
+!||uploadrar.com^$inline-script
+!||miui.rahim-soft.com^$inline-script
 ||miui.rahim-soft.com^$xhr
 ||miui.rahim-soft.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||miui.rahim-soft.com/uploadrar_style/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
