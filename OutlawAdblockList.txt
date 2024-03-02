@@ -7930,7 +7930,6 @@ u3d.at.ua##div.uPreroll-holder
 ||settings-win.data.microsoft.com^*
 ||fun-music.work/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||aclick.adhoc1.net^*
-||beap.gemini.yahoo.com^*
 ||js.adsrvr.org^*
 ||filescdn.com/clipboard.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cofe-super.top^*
@@ -49455,6 +49454,9 @@ frdl.to##button[id="downloadbtn"]:remove-attr(disabled)
 frdl.to##+js(remove-attr, disab;ed, button[id="downloadbtn"])
 frdl.to##div[id="countdown"]:remove()
 ||frdl.to/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rules blocks legitimate URL redirects
+!||a.beap.gemini.yahoo.com^*
+!||beap.gemini.yahoo.com^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
