@@ -15696,10 +15696,8 @@ www.receivesmsonline.net###mADSFooter
 ||a1.consoletarget.com/!_bb.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||a1.consoletarget.com/!_lb.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||a1.consoletarget.com/!_bn.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-apkmb.com##center:nth-of-type(1) > .btnDownload
-apkmb.com##center:nth-of-type(2) > .btnDownload
-dl.apkhouse.com##center:nth-of-type(1) > center > .btnDownload
-dl.apkhouse.com##center:nth-of-type(2) > .btnDownload
+dl.apkhouse.com##center:nth-of-type(1) > center > .btnDownload:remove()
+dl.apkhouse.com##center:nth-of-type(2) > .btnDownload:remove()
 ||get.securybrowse.com^*
 !||mybestmv.com/adServe/feedclick$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mybestmv.com^*
@@ -29729,7 +29727,6 @@ www.ugmfree.it##div[id="divPolicyBar"]
 ||pigtre.com^*
 !||stuiop.com/v1/sdk.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||stuiop.com^*
-short-ly.co##a[class="btnDownload"]
 ||js.mobileoffers-ac-download.com^*
 ||mobileoffers-7-d-download.com^*
 www.bostonglobe.com##html,body:style(overflow:auto !important;)
@@ -30637,9 +30634,6 @@ writeimei.com##ins[class*="adsbygoogle"]
 ||railcowboy.com^*
 ||unpleasantconcrete.com^*
 ||unworthytongue.com^*
-apkmb.com##aside[class*="ads_single_"]
-apkmb.com##aside[class*="ads_header"]
-apkmb.com##iframe[data-id="apkmb.com_300x250_double_"]
 ||mobileoffers-cw-download.com^*
 browserleaks.com##ins[class*="adsbygoogle"]
 deviceatlas.com##div[id="cookie-consent"]
@@ -49441,6 +49435,8 @@ www.digitaltrends.com##+js(set-attr, div[class="h-embedded-video"][data-url], sr
 ||9123c34615.com^*
 !||d1eyw3m16hfg9c.cloudfront.net^$3p,script
 ||d1eyw3m16hfg9c.cloudfront.net^*
+!||d1ugiptma3cglb.cloudfront.net^$3p,script
+||d1ugiptma3cglb.cloudfront.net^*
 ||e24084.dscd.akamaiedge.net/api/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tg1.vidcrunch.com/api/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d280h7aj1u7b0w.cloudfront.net/shim/embed.js$3p,script
@@ -49475,6 +49471,26 @@ frdl.to##div[id="countdown"]:remove()
 ! The following rules blocks legitimate URL redirects
 !||a.beap.gemini.yahoo.com^*
 !||beap.gemini.yahoo.com^*
+dl2.apkmb.com##div[id="dl2_apkmb_com_980x300_responsive"]:remove()
+dl2.apkmb.com##div[id="dl2_apkmb_com_1000x100_anchor_responsive"]:remove()
+apkmb.com##center:nth-of-type(1) > .btnDownload:remove()
+apkmb.com##center:nth-of-type(2) > .btnDownload:remove()
+apkmb.com##aside[class*="ads_single_"]:remove()
+apkmb.com##aside[class*="ads_header"]:remove()
+apkmb.com##aside[class*="ads_download_"]:remove()
+apkmb.com##iframe[data-id^="apkmb.com_300x250_double_"]:remove()
+apkmb.com##script[id^="jetpack-stats-"]:remove()
+apkmb.com##+js(set-constant, stpd.initializeAdUnit, noopFunc)
+apkmb.com##+js(set-constant, googletag.display, noopFunc)
+apkmb.com,short-ly.co##+js(aopr, window.googletag)
+apkmb.com,short-ly.co##+js(aopw, window.googletag)
+short-ly.co##a[class="btnDownload"]:remove()
+short-ly.co##+js(set-constant, interstitialSlot, false)
+short-ly.co##div[id="detect-app"]:remove()
+||short-ly.co/static/detect.app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||short-ly.co/static/frontend/libs/blockadblock/blockadblock.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||short-ly.co/static/frontend/libs/blockadblock/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||short-ly.co/static/frontend/libs/cookieconsent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
