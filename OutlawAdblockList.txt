@@ -49526,6 +49526,19 @@ short-ly.co##div[id="detect-app"]:remove()
 !||short-ly.co/static/frontend/libs/blockadblock/blockadblock.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||short-ly.co/static/frontend/libs/blockadblock/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||short-ly.co/static/frontend/libs/cookieconsent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||1437953666.rsc.cdn77.org/publisher/be1599a3-3836-11ee-beef-c38853046dd8/truereachAdRender.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+foodtechnos.in##script[id="interactive_js_adcode"]:remove()
+foodtechnos.in##+js(set-constant, gtag, noopFunc)
+foodtechnos.in##+js(set-constant, window.dataLayer, [])
+foodtechnos.in##div[class="ad-space"]:has(div[id^="TR-"]):remove()
+foodtechnos.in##div[id="ad-wrapper"]:remove()
+foodtechnos.in##div[id^="break-wrapper"]:remove()
+foodtechnos.in##div[id="get-now-button"]:remove()
+foodtechnos.in##div[id="countdown-display"]:remove()
+foodtechnos.in##div[id="dwform"]:style(display: block !important;)
+! Do NOT use the following rule or the page will redirect instead of providing the download links.
+!foodtechnos.in##div[id="outer-wrapper"]:remove()
+!foodtechnos.in##iframe[src^="https://10drives.com/"]:remove()
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
