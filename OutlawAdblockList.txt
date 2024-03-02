@@ -43430,6 +43430,10 @@ www.cgdirector.com##+js(acs, adthrive)
 www.cgdirector.com##body:remove-class(adthrive-device-desktop)
 www.cgdirector.com##script[id^="gainwp-tracking-analytics-events-js"]:remove()
 ||www.cgdirector.com/wp-content/plugins/ga-in/front/js/tracking-analytics-events.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The anti-adblocking script is an inline script defused by the following three rules.
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com##:xpath(//script[contains(text(), 'banner_ad')]):remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com##^script:has-text(banner_ad):remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(acs, /banner_ad/)
 get.getpczone.com,uploadrar.com,miui.rahim-soft.com###lastnews:remove()
 get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aopr, ez_ad_units)
 get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aopw, ez_ad_units)
