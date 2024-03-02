@@ -38849,121 +38849,105 @@ uploady.io##a[class="btn btn-primary rounded"]:remove-attr(onlick)
 uploady.io##input[id="sb_frm"]:style(display: block !important;)
 !uploady.io##div[id="downloadbtn"]:remove-attr(onclick)
 uploady.io##div[id="downloadbtn"]:remove()
-devuploads.com##body:style(visibility: visible !important; display: block !important;)
-!devuploads.com##input[name="fadb"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##body:style(visibility: visible !important; display: block !important;)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[name="fadb"]:remove()
 ! adblock_detected needs to be 1 and xd to have a proper value (token) for the download post submission to work.
-!devuploads.com##input[id="adblock_detected"]:remove()
-devuploads.com##+js(set-constant, remaining, 0)
-devuploads.com##+js(set-constant, antiAdBlockerHandler, noopFunc)
-devuploads.com##+js(acs, iframenone, iframev)
-devuploads.com##img[id="featuredimage"]
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="adblock_detected"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, remaining, 0)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, antiAdBlockerHandler, noopFunc)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, iframenone, iframev)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##img[id="featuredimage"]
 ! removing img[id="featuredimage"] prevents the xd value from being set so the final download will not work.
-!devuploads.com##img[id="featuredimage"]:remove()
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'googletag.')])
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'googletag.')]):remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##img[id="featuredimage"]
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##img[id="featuredimage"]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isAdmin, true)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(trusted-set-constant, ai_front, {"":""})
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_js_code, false)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, b2a, noopFunc)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_adb_process_blocks, noopFunc)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, ai_js_code)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, ai_js_code)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, ai_front)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, ai_front)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, ai_adb_process_blocks)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, ai_adb_process_blocks)
-dev.miuiflash.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, atob, decodeURIComponent)
-dev.miuiflash.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, iframenone, iframev)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, gtag, noopFunc)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, gtag)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##ins[data-ad-client]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, adsbygoogle)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, adsbygoogle)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(remove-class, disabled, #formpost, stay)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(remove-attr, onmouseover, body, stay)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, TIME_LIMIT, 0)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, timeLeft, 0)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, remaining, 0)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, antiAdBlockerHandler, noopFunc)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, antiAdBlockerHandler)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##iframe[data-aa]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##iframe[data-aa]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="div-MWebStickyAds"]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="div-MWebStickyAds"]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="div-DStickyAds"]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="div-DStickyAds"]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="adBlocked"]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="adBlocked"]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="336x280_"]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="336x280_"]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="300x250_"]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="300x250_"]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag, {})
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, window.googletag, [])
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, window.googletag)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, window.googletag)
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.cmd.push, noopFunc, end)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.cmd.push, noopFunc, complete)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, googletag.cmd.push)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, googletag.cmd.push)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.enableServices, noopFunc)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, googletag.enableServices)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, googletag.enableServices)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="plzwait"]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="plzwait"]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="Blocked"]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="Blocked"]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[class^="stickyads_"]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[class^="stickyads_"]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##img[id="featuredimage"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'googletag.')])
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'googletag.')]):remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isAdmin, true)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(trusted-set-constant, ai_front, {"":""})
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_js_code, false)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, b2a, noopFunc)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_adb_process_blocks, noopFunc)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, ai_js_code)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, ai_js_code)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, ai_front)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, ai_front)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, ai_adb_process_blocks)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, ai_adb_process_blocks)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, atob, decodeURIComponent)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, gtag, noopFunc)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, gtag)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##ins[data-ad-client]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, adsbygoogle)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, adsbygoogle)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(remove-class, disabled, #formpost, stay)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(remove-attr, onmouseover, body, stay)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, TIME_LIMIT, 0)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, timeLeft, 0)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, antiAdBlockerHandler)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##iframe[data-aa]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="div-MWebStickyAds"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="div-DStickyAds"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="adBlocked"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="336x280_"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="300x250_"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag, {})
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, window.googletag, [])
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, window.googletag)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, window.googletag)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.cmd.push, noopFunc, end)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.cmd.push, noopFunc, complete)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, googletag.cmd.push)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, googletag.cmd.push)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, googletag.enableServices, noopFunc)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, googletag.enableServices)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, googletag.enableServices)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="plzwait"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="Blocked"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[class^="stickyads_"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]:remove()
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[id="generate-a11y"]:remove()
-*$frame,redirect-rule=noopframe,domain=djxmaza.in|thecubexguide.com
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##html.i-amphtml-inabox
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnc"]
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnc"]:remove()
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:style(display: block !important;)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[disable-devtool-auto]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##script[id="generate-a11y"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##html.i-amphtml-inabox:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnc"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:style(display: block !important;)
 ! downloadbtnf needs to issue strtd() function (onclick)
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:remove()
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtnf"]:remove()
 ! adblock_detected needs to be 1 and xd to have a proper value (token) not the default of 1 for the download post submission to work.
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="adblock_detected"]:remove()
 ! Both isblocked and isadblock need to be 0 for the event listener on the final download button to work.
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isblocked, 0, stay)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isadblock, 0, stay)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isblocked, 0, stay)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isadblock, 0, stay)
 ! an inline script needs to execute to retrieve the download token so don't abort on "unescape".
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, unescape)
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, _0x49fcx2)
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, _0x57e0)
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, _0x57e0)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, unescape)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, _0x49fcx2)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopw, _0x57e0)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(aopr, _0x57e0)
 ! Do NOT remove ipp!
-!devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="ipp"]:remove()
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(no-setTimeout-if, tick)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##input[id="ipp"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(no-setTimeout-if, tick)
 ! defusing intervals breaks the script which creates the token for the download
-!devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(no-setInterval-if, /^function\(\)/)
-! even though blocking the countdown script, still have to wait for the 10 second countdown for the download link to be generated.
-||devuploads.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||thecubexguide.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||djxmaza.in/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="downloadNow"]:remove-attr(style)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="downloadNow"]:style(display: block !important;)
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com###downloadNow:remove-attr(style)
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com###downloadNow:style(display: block !important;)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(no-setInterval-if, /^function\(\)/)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="downloadNow"]:remove-attr(style)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id="downloadNow"]:style(display: block !important;)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com###downloadNow:remove-attr(style)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com###downloadNow:style(display: block !important;)
 ! remove disabled attribute from #downloadbtn but don't make it visible because the #downloadbtnf button needs to be pressed first.
-devuploads.com###downloadbtn:remove-attr(disabled)
-dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(disabled)
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(style)
-!dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:style(display: block !important;)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com###downloadbtn:remove-attr(disabled)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(disabled)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:remove-attr(style)
+!jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##button[id="downloadbtn"]:style(display: block !important;)
 ! remove-cookie, /^/ removes all cookies since downloads fail after first download
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(remove-cookie, /^/)
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, parseInt)
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'parseInt')])
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'parseInt')]):remove()
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="div-gpt-ad-"]
-devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="div-gpt-ad-"]:remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(remove-cookie, /^/)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(acs, parseInt)
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'parseInt')]):remove()
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##div[id^="div-gpt-ad-"]:remove()
+*$frame,redirect-rule=noopframe,domain=jytechs.in|devfiles.pages.dev|devuploads.com|dev.miuiflash.com|djxmaza.in|thecubexguide.com
+! even though blocking the countdown script, still have to wait for the 10 second countdown for the download link to be generated.
+||dev.miuiflash.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||devfiles.pages.dev/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||devfiles.pages.dev/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||devuploads.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||djxmaza.in/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||thecubexguide.com/devfiles/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||adoto.net/dashboard/common/js/common.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.jsdelivr.net/gh/devuploads/devfiles@main/fonts/wp-content/plugins/best-ads-block-detector/main.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.jsdelivr.net/gh/devuploads/devfiles@main/fonts/wp-content/plugins/best-ads-block-detector/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -40190,7 +40174,6 @@ newsindi.com,techssting.com##+js(aopr, absda)
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aopw, got)
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[class="adsbox"]
 ! removing stickyunit triggers the anti-adblock script @ dropgalaxy
-!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="stickyunit"]
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="stickyunit"]:remove()
 ! changing the ads variable will trigger the anti-adblocking script @ dropgalaxy
 ! setting ads to [] also makes the fetch script continually contact the site
@@ -40203,7 +40186,6 @@ newsindi.com,techssting.com##+js(aopr, absda)
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-write, brute)
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(abort-on-property-read, brute)
 ! The countdown div tag is needed because the countdown is still used.
-!dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="countdown"]
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="countdown"]:remove()
 ! Do not remove any of these input tags as these values are required for the download link to be given:
 ! The id's with a value of 0 probably could be successfully removed, but only would be needed if they are otherwise triggered to a non-zero value.
@@ -40217,10 +40199,8 @@ newsindi.com,techssting.com##+js(aopr, absda)
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="ag7e3x"] value="0" name="ag7e3x">
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="badipp"] value="0" name="badipp">
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##input[id="dgl"] name="dgl" value="1">
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(setTimeout)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(setTimeout):remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadBtnClick"]:style(visibility: hidden !important; display: none !important;)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadBtnClick"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="downloadBtnClick"]:remove()
 ! Don't enable the button before the countdown completes or the anti-adblock page will display.
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(remove-attr, disabled, #downloadbtn, stay)
@@ -40236,12 +40216,12 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##button[id="method_free"]:remove-att
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.btn-info.btn-sm.btn-block.btn:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[class="alert alert-danger mb-3"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="div-gpt-ad-"]:remove()
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(_0x)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(_0x):remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##a:style(display:block !important;)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##img[id="load"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[class^="modalpop"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###gdpr-cookie-notice:remove()
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(/document.on/i)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(/document.on/i):remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##body:remove-attr(oncontextmenu)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id^="ad-section"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##:xpath(//script[contains(text(), 'debugger;')]):remove()
@@ -40268,12 +40248,11 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="proxymsg"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##script[onerror="absda()"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##script[id="interactive_js_adcode"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.GoogleActiveViewElement, .middle-container, .mys-wrapper
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.ns-mulii-l-square-editorial
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.pgAdWrapper
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##[src^="//ad.a-ads.com/"]
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##[id^="apkad"]
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###nativefluid
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###dmAZuTknHuCIIWY
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.ns-mulii-l-square-editorial:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##.pgAdWrapper:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##[src^="//ad.a-ads.com/"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##[id^="apkad"]:remove()
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###nativefluid:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip###dmAZuTknHuCIIWY:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="warning"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##div[id="modalpop"]:remove()
@@ -40358,7 +40337,7 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, document.createElement, /b
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aeld, DOMContentLoaded, handler)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(aeld, , loadScripts)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(set, window.isAdblockActive, false)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(break;case $.)
+dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##^script:has-text(break;case $.):remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(acs, parseInt, break;case $.)
 ! remove-node-text (rmnt), <node name>, <pattern to contain causing removal of node>
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(remove-node-text, script, break;case $.)
@@ -40374,25 +40353,18 @@ dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-replace-node-text, scri
 !dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip##+js(trusted-replace-node-text, script, /script1.src|script2.src/, lol.noop)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##+js(aeld, , { [native code] })
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##+js(no-setInterval-if, [native code])
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com###analytics
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com###analytics:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##.btn-primary.btn-lg.btn-block.btn:remove-attr(onclick)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com##.btn-primary.btn-lg.btn-block.btn:remove-attr(target)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##+js(no-window-open-if)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##+js(no-setInterval-if, _0x)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##[href^="https://bit.ly/"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##[href^="https://bit.ly/"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##.adsbygoogle:style(max-height: 1px !important;)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##[id^="aswift"]:style(display:none!important;)
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##[target="_blank"]:has-text(Download)
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##[target="_blank"]:has-text(Download):remove()
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net###modalpop
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net###modalpop:remove()
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##iframe[id*="_mN_main_"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##iframe[id*="_mN_main_"]:remove()
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net###operadata + br + [href][target="_blank"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net###operadata + br + [href][target="_blank"]:remove()
-dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##body > div[style^="position: fixed; display: block"]
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net##body > div[style^="position: fixed; display: block"]:remove()
 dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net,newsindi.com##+js(remove-cookie, /^/)
 !||dropgalaxy.com/826-tips-on-home-insurance-for-large-families.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49444,6 +49416,8 @@ www.digitaltrends.com##+js(set-attr, div[class="h-embedded-video"][data-url], sr
 !||dt.betoyanracks.com^*
 ||betoyanracks.com^*
 ||arvigorothan.com^*
+!||cf035299fa.9123c34615.com^*
+||9123c34615.com^*
 !||d1eyw3m16hfg9c.cloudfront.net^$3p,script
 ||d1eyw3m16hfg9c.cloudfront.net^*
 ||e24084.dscd.akamaiedge.net/api/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
