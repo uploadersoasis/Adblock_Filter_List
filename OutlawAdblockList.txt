@@ -19482,7 +19482,7 @@ kusidate.web.fc2.com###fc2_bottom_bnr
 ||dorehernowi.pro^*
 ||onhax.me/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.sendpulse.com^*
-5play.ru##.clearfix.rek-blue.rek-but
+5play.org,5play.ru##.clearfix.rek-blue.rek-but:remove()
 !||competition2056.linetotime55.agency/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||*.linetotime55.agency/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||nova.collect.igodigital.com/c2/100009483/track_page_view^*
@@ -44800,11 +44800,8 @@ www.gnome-look.org.www.opendesktop.org##+js(set-constant, count, 0)
 www.gnome-look.org,www.opendesktop.org##+js(set-constant, timer, noopFunc)
 www.gnome-look.org,www.opendesktop.org##button[type="submit"]:remove-attr(disabled)
 www.gnome-look.org,www.opendesktop.org##+js(no-setTimeout-if, cd)
-mspoweruser.com##mv-ad-reporter
 mspoweruser.com##mv-ad-reporter:remove()
-mspoweruser.com##div[class*="ad-reporter-"]
 mspoweruser.com##div[class*="ad-reporter-"]:remove()
-mspoweruser.com##div[data-adtype]
 mspoweruser.com##div[data-adtype]:remove()
 ||ganda-ljo.com^*
 ||revive.stats.rip^*
@@ -49080,7 +49077,7 @@ newatlas.com##+js(rna, img[loading="lazy"][data-src], data-src, src)
 ||servetraff.com^*
 ||forgivenessdeportdearly.com^*
 ||economiaeseguros.com^*
-||www.toprevenuegate.com^$3p
+||www.toprevenuegate.com^*
 !||pl21574782.toprevenuegate.com^*
 !||pl15821666.toprevenuegate.com^*
 !||pl20623807.toprevenuegate.com^*
@@ -49566,12 +49563,12 @@ downloadkai.top##+js(aopr, popunder)
 downloadkai.top##+js(aopw, popunder)
 downloadkai.top##+js(aopr, hb17)
 downloadkai.top##+js(aopw, hb17)
-downloadkai.top,www.babup.com##ins[data-ad-client]:remove()
-downloadkai.top,www.babup.com##+js(set-constant, adsbygoogle, [])
-downloadkai.top,www.babup.com##+js(aopw, adsbygoogle)
-downloadkai.top,www.babup.com##+js(aopr, adsbygoogle)
-downloadkai.top,www.babup.com##+js(set-constant, gtag, noopFunc)
-downloadkai.top,www.babup.com##+js(set-constant, window.dataLayer, [])
+apkexit.comdownloadkai.top,www.babup.com##ins[data-ad-client]:remove()
+apkexit.comdownloadkai.top,www.babup.com##+js(set-constant, adsbygoogle, [])
+apkexit.comdownloadkai.top,www.babup.com##+js(aopw, adsbygoogle)
+apkexit.comdownloadkai.top,www.babup.com##+js(aopr, adsbygoogle)
+modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, gtag, noopFunc)
+modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, window.dataLayer, [])
 ||www.babup.com/page1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.babup.com/page2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.babup.com/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49584,6 +49581,11 @@ www.babup.com##+js(set-constant, detected, false)
 www.babup.com##+js(set-constant, blockAdBlock, false)
 www.babup.com##+js(set-constant, adBlockDetected, falseFunc)
 www.babup.com##+js(set-constant, adBlockNotDetected, trueFunc)
+apkexit.com##script[id^="tptn_tracker-js"]:remove()
+apkexit.com##+js(set-constant, ajax_tptn_tracker, {})
+||analytics.tango.me^*
+||lidsaich.net^*
+||kuthoost.net^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
