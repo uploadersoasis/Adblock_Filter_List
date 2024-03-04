@@ -40299,7 +40299,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="ppp"][value=""])
 ! TODO: the id name in the following rule varies with each refresh of the page, but is always a total of six lowercase letters and sometimes numbers, i.e. [a-z0-9]{6}
 ! The following rule also changes any input tags with a value of 1 including dgl and admaven_popup to no ill effect.
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"])
 ! TODO: matches-attr() doesn't work in the following rule.  Why?
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/))
 ! TODO: Could input[id=<varies>] be removed and downloads still work since a value of "0" works?
