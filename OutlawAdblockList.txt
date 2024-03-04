@@ -32728,7 +32728,28 @@ www.wsj.com##div[class*="staticAd"]
 www.wsj.com##+js(aopr, adOptions)
 www.wsj.com##+js(aopw, adOptions)
 www.gamedeveloper.com##div[class*="cookie-popup"]:remove()
-www.gamedeveloper.com##div[id="cookie-popup-wrapper"]
+www.gamedeveloper.com##div[id="cookie-popup-wrapper"]:remove()
+www.gamedeveloper.com##*:remove-class(gptHideContent)
+www.gamedeveloper.com##div[class*="doubleclick"]:remove()
+www.gamedeveloper.com##div[class*="ad-placement"]:remove()
+www.gamedeveloper.com##div[class*="carbon-ads"]:remove()
+www.gamedeveloper.com##div[id="300_1v_article"]:remove()
+www.gamedeveloper.com##div[id="728_2v"]:remove()
+www.gamedeveloper.com##div[id="adhesion_v"]:remove()
+www.gamedeveloper.com##div[id="300_2v"]:remove()
+www.gamedeveloper.com##div[id="native_right_3v"]:remove()
+www.gamedeveloper.com##div[class^="Ad Ad_pos_"]:remove()
+www.gamedeveloper.com##div[class="Ad Sidebar-SidebarItem"]:remove()
+www.gamedeveloper.com##iframe[src^="https://www.googletagmanager.com/"]:remove()
+www.gamedeveloper.com##+js(set-constant, isTargetingCookieSetPrev, true)
+www.gamedeveloper.com##+js(set-constant, isTargetingCookieSet, true)
+www.gamedeveloper.com##+js(set-constant, NREUM, {})
+www.gamedeveloper.com##+js(set-constant, NREUM.info, {})
+www.gamedeveloper.com##+js(aopr, NREUM.info)
+www.gamedeveloper.com##+js(aopw,NREUM.info)
+!www.gamedeveloper.com##+js(set-constant, googletag.pubads, noopFunc, end)
+!www.gamedeveloper.com##+js(set-constant, googletag.pubads, noopFunc, complete)
+www.gamedeveloper.com##+js(set-constant, googletag.pubads, noopFunc)
 www.encodedna.com##ins[data-ad-client]:remove()
 www.encodedna.com##+js(aopr, _gaq)
 www.encodedna.com##+js(aopw, _gaq)
@@ -40250,12 +40271,12 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, runA
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, ggggg, noopFunc)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, /ggggg\(\)/)
 ! The id's with a value of 0 probably could be successfully removed, but only would be needed if they are otherwise triggered to a non-zero value.
-! TODO: set testty input tag to 5 or 99? or remove altogether to defuse anti-adblocking?
+! TODO: set testty input tag to 5 or 99? or remove altogether to defuse anti-adblocking? Setting to 99 works.
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 99, input[id="testty"])
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="testty"]:remove()
-! TODO: set bich to 11 or remove altogether to defuse anti-adblocking? setting to 11 works.
+! TODO: set bich to 11 or remove altogether to defuse anti-adblocking? Setting to 11 works.
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="bich"])
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="bich"]:remove()
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="bich"]:remove()
 ! [dropgalaxy.com][set-constant, badip, false] Aborted because value set to true; blocking tmp.isavetube.com/js/badip.js fixes this.
 ||tmp.isavetube.com/js/badip.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, badip, false)
@@ -40290,7 +40311,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="xd"][value="1"]:remove()
 ! TODO: It appears that any value above 1 for ppp will be successfully accepted, e.g. 6, 11 are examples
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 6, input[id="ppp"][value=""])
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="ppp"][value=""])
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="ppp"][value=""])
 ! TODO: the id name in the following rule varies with each refresh of the page, but is always a total of six lowercase letters and sometimes numbers, i.e. [a-z0-9]{6}
 ! The following rule also changes any input tags with a value of 1 including dgl and admaven_popup to no ill effect.
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"])
@@ -42165,6 +42186,8 @@ www.eurogamer.net##+js(set-attr, article, data-paywalled, false)
 www.eurogamer.net##+js(set-attr, article, data-premium, false)
 www.eurogamer.net##+js(set-attr, article, data-ads, false)
 www.eurogamer.net##+js(set-attr, body, data-ads, false)
+www.eurogamer.net##+js(set-attr, script[data-cookies-src], src, [data-cookies-src])
+www.eurogamer.net##+js(set-attr, body, data-ads, false)
 www.eurogamer.net##div[class*="ads-rail"]:remove()
 www.eurogamer.net##div[class*="advertContainer"]:remove()
 www.eurogamer.net##div[class*="advert_container"]:remove()
@@ -42185,7 +42208,6 @@ www.eurogamer.net##+js(aopr, o.d.abp)
 www.eurogamer.net##+js(aopw, o.d.abp)
 www.eurogamer.net##+js(aopr, adConfig)
 www.eurogamer.net##+js(aopw, adConfig)
-www.eurogamer.net##+js(set-attr, body, data-ads, false)
 www.eurogamer.net##+js(set-constant, appendAnonymised, noopFunc)
 www.eurogamer.net##+js(set-constant, window.anonymisedDone, true)
 !www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, true, end)
@@ -42224,6 +42246,7 @@ www.eurogamer.net##+js(set-attr, script[data-lazyload="true"][data-cookies-src],
 !www.eurogamer.net##+js(rna, script[data-lazyload="true"][data-cookies-src], data-cookies-src, src)
 !||cmpsp.eurogamer.net/unified/4.10.1/gdpr-tcf.04abc9c12f5845f5ba5b.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cmpsp.eurogamer.net/unified/*/gdpr-tcf.*.bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! TODO: The following rule may prevent video from live.primis.tech from playing since they are placed in this iframe?
 *##iframe[id^="google_ads_iframe_dummy_"]:remove()
 amli.sekindo.com##iframe[id^="google_ads_iframe_dummy_"]:remove()
 ||www.uploadcloud.pro/js/cookieinfo.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
