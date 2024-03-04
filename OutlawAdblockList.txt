@@ -8463,7 +8463,7 @@ www.abandonia.com###container > .right_outside_ads
 !||t05.wildcdn.com/ast/b/ntv-a-gamma-2.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||t05.wildcdn.com/ast/b/ntv-b-gamma-2.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||t05.wildcdn.com^*
-###invideo_wrapper
+*###invideo_wrapper:remove()
 ||p10055.ic-live.com/hit.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||hearstmagazines-d.openx.net/w/1.0/acj?cc=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||hearstmagazines-d.openx.net/w/1.0/jstag?nc=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -9284,10 +9284,10 @@ apk4play.com###__admvnlb_609456_modal_container
 ||cdn.contentspread.net/cdn/toolbox/itag.dyn$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||toolbox.contentspread.net/integration/olusenetnl/35763e.dyn$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||toolbox.contentspread.net/integration/olusenetnl/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!torhash.net/##div#__admvnlb_606500_modal_container
-!torhash.net/##div#__admvnlb_606500_modal
-##div#__admvnlb_606500_modal_container
-##div#__admvnlb_606500_modal
+!torhash.net##div#__admvnlb_606500_modal_container:remove()
+!torhash.net##div#__admvnlb_606500_modal:remove()
+*###__admvnlb_606500_modal_container:remove()
+*###__admvnlb_606500_modal:remove()
 !||s1.slimtrade.com/in.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||s1.slimtrade.com/s6292.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s1.slimtrade.com^*
@@ -21022,8 +21022,8 @@ www.ccn.com##+js(abort-on-property-write, adrequeststart)
 www.ccn.com##div[class="i-amphtml-ad-default-holder"]
 !www.ccn.com##+js(abort-on-property-read, googleRichMediaAd)
 !www.ccn.com##+js(abort-on-property-write, googleRichMediaAd)
-##+js(abort-on-property-read, googleRichMediaAd)
-##+js(abort-on-property-write, googleRichMediaAd)
+*##+js(abort-on-property-read, googleRichMediaAd)
+*##+js(abort-on-property-write, googleRichMediaAd)
 ||tpc.googlesyndication.com/sadbundle/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tpc.googlesyndication.com/pagead/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tpc.googlesyndication.com^$domain=forbes.com
@@ -21709,7 +21709,7 @@ zippyshare.com##+js(abort-on-property-read, zippyfake)
 ||www.contehos.com^*
 ||grensauy.com^*
 ||joorejou.net^*
-##[href*="postlnk.com"]
+*##[href*="postlnk.com"]
 !||static.t-ru.org/pic/vpn/NordVPN-Gift-2020-bn-4.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.t-ru.org/pic/vpn/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.admitad-connect.com^*
@@ -21844,8 +21844,8 @@ www.youtube.com##+js(set-constant, window.google_ad_status, 1, stay)
 ||ads.youtube.com^*
 !||tv.youtube.com/api/stats/playback^*
 ||tv.youtube.com/api/stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-##+js(set-constant, settings.adBlockerDetection, false)
-##+js(set-constant, adblock_detected, 0)
+*##+js(set-constant, settings.adBlockerDetection, false)
+*##+js(set-constant, adblock_detected, 0)
 down.ali213.net##div[id="cs_DIV_cscpvrich8388C"]
 ||p.gm99.com/chuangsu_api_log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||p.gm99.com/api/chuangsu_api.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -21904,8 +21904,8 @@ shon.xyz##.hidden-sm.hidden-xs
 ||oefyjdykepx.com^*
 !1337x.123unblock.pink##+js(abort-on-property-write, antiClickjack)
 !1337x.123unblock.pink##+js(abort-on-property-read, antiClickjack)
-##+js(abort-on-property-write, antiClickjack)
-##+js(abort-on-property-read, antiClickjack)
+*##+js(abort-on-property-write, antiClickjack)
+*##+js(abort-on-property-read, antiClickjack)
 ||1337x.123unblock.pink/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||1337x.unblocked.is/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bitdownload.ir/wp-content/uploads/ban/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -21914,9 +21914,9 @@ bitdownload.ir##div[class="bx-ads"]
 !||anlcld.com/wnload^*
 ||anlcld.com^*
 ||lnkd.demdex.net^*
-!1337x.123unblock.pink##cloudflare-app
-!go.unblocksource.com##cloudflare-app
-##cloudflare-app
+!1337x.123unblock.pink##cloudflare-app:remove()
+!go.unblocksource.com##cloudflare-app:remove()
+*##cloudflare-app:remove()
 ||adsaturn.com/display/items.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||shortearn.eu/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sendmepush.com^*
@@ -23760,8 +23760,8 @@ www.oneangrygamer.net##div[id="fb-root"]
 www.oneangrygamer.net##div[id^="amzn-assoc-ad-"]:remove()
 !www.oneangrygamer.net##+js(abort-on-property-read, cli_cookiebar_settings)
 !www.oneangrygamer.net##+js(abort-on-property-write, cli_cookiebar_settings)
-##+js(abort-on-property-read, cli_cookiebar_settings)
-##+js(abort-on-property-write, cli_cookiebar_settings)
+*##+js(abort-on-property-read, cli_cookiebar_settings)
+*##+js(abort-on-property-write, cli_cookiebar_settings)
 www.oneangrygamer.net##div[id="cookie-law-info-bar"]:remove()
 www.oneangrygamer.net##div[class="cli-modal"]
 www.oneangrygamer.net##div[class="adsbyvli"]:remove()
@@ -23901,7 +23901,7 @@ w3snoop.com##div[class="cookie-consent-container"]:remove()
 w3snoop.com##div[id="appCookieConsent"]:remove()
 w3snoop.com##span[class="ezoic-adpicker-ad"]:remove()
 filesupload.org##+js(set-constant, countdownTimer, 0)
-##div[id="cookie-law-info-bar"]:remove()
+*##div[id="cookie-law-info-bar"]:remove()
 ||staitchu.com^*
 ||ushoofop.com^*
 downace.com##.ace-download-panel.uk-margin-remove.tm-primary.uk-panel-box-primary.uk-panel-box.uk-panel > .uk-grid > .uk-text-center.uk-width-1-1 > a[href^="http://bvn-inv.com/ref"]
@@ -24400,7 +24400,7 @@ www.usatoday.com##aside[aria-label="advertisement"]
 ||saumooly.net^*
 ||vaia06o630os.com^*
 ||vashoaft.net^*
-##iframe[class="padPreload"]
+*##iframe[class="padPreload"]
 ||www.ngumyydbupv.com^*
 ||ngumyydbupv.com^*
 ||www.jnctgldbxc.com^*
@@ -24682,7 +24682,7 @@ www.sadeempc.com##button:nth-of-type(2)
 www.sadeempc.com##button:nth-of-type(1)
 ||www.advinci.uno^*
 amistacx.com##div[id="catapult-cookie-bar"]:remove()
-##+js(set-constant, __cfRLUnblockHandlers, 1)
+*##+js(set-constant, __cfRLUnblockHandlers, 1)
 ||kqaoe.ritishdeliv.top^*
 ||ritishdeliv.top^*
 ||s3.us-east-2.amazonaws.com/triumphantdownloadapps/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -36763,47 +36763,47 @@ www.w3schools.com##div[class="sn_ad_label"]
 ||www10.securybrowseapp.com^*
 ||coundt.com/script/vppdzdrw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.apriorit.com##nav[id="header"]
-##a[href*="://war.ukraine.ua/"]
-##a[href*="://payproglobal.com/ukraine-help"]
+*##a[href*="://war.ukraine.ua/"]:remove()
+*##a[href*="://payproglobal.com/ukraine-help"]:remove()
 ||www.host-tracker.com/Content/img/UA2.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.udemy.com##span[data-purpose="smart-bar-title"]:has-text(/Black History Month/i)
 www.udemy.com##a[href*="://about.udemy.com/udemy-news/honoring-black-history-month-with-transparency/"]
 www.udemy.com##+js(aopw, window.__onConsentChanged)
 www.udemy.com##+js(aopr, window.__onConsentChanged)
-www.belloflostsouls.net##div[id^="ad-container-"]
+www.belloflostsouls.net##div[id^="ad-container-"]:remove()
 ||gloos-zus.info^*
-tech-latest.com##div[id="brxe-aimgnb"]
-tech-latest.com##div[id="brxe-agxfna"]
-tech-latest.com##div[id="brxe-vznprt"]
+tech-latest.com##div[id="brxe-aimgnb"]:remove()
+tech-latest.com##div[id="brxe-agxfna"]:remove()
+tech-latest.com##div[id="brxe-vznprt"]:remove()
 tech-latest.com##ins[data-ad-client]:remove()
-tech-latest.com##iframe[id^="google_ads_frame"]
+tech-latest.com##iframe[id^="google_ads_frame"]:remove()
 blog.desdelinux.net##ins[data-ad-client]:remove()
-blog.desdelinux.net##aside[id="abn_singlestealer"]
-ubuntuguide.net##div[id="ad1"]
-www.mcvuk.com##div[class="theme-notice"]
+blog.desdelinux.net##aside[id="abn_singlestealer"]:remove()
+ubuntuguide.net##div[id="ad1"]:remove()
+www.mcvuk.com##div[class="theme-notice"]:remove()
 !||ads.datateam.co.uk/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads.datateam.co.uk^*
-www.tumblr.com##div[role="dialog"][class="Lq1wm"]
-www.tumblr.com##div[id="adBanner"]
-www.tumblr.com##div[data-testid="adBlockTest"]
+www.tumblr.com##div[role="dialog"][class="Lq1wm"]:remove()
+www.tumblr.com##div[id="adBanner"]:remove()
+www.tumblr.com##div[data-testid="adBlockTest"]:remove()
 www.tumblr.com##body:style(overflow: scroll !important;)
-!github.com/pieroproietti/penguins-eggs##a[href*="://vshymanskyy.github.io/StandWithUkraine"]
-*##a[href*="://vshymanskyy.github.io/StandWithUkraine"]
+!github.com/pieroproietti/penguins-eggs##a[href*="://vshymanskyy.github.io/StandWithUkraine"]:remove()
+*##a[href*="://vshymanskyy.github.io/StandWithUkraine"]:remove()
 ||raw.githubusercontent.com/vshymanskyy/StandWithUkraine/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||odestech.com^*
 ||www.highperformancegate.com^*
-!www.thomas-krenn.com##div[class*="xtx-privacy-cookie"]:upward(1)
-www.thomas-krenn.com##div[class*="xtx-privacy-cookie"]
-www.thomas-krenn.com##div[class*="xtxNavigationOffCanvasOverlayCookie"]
-www.thomas-krenn.com##div[data-toggle="xtxNavigationOffCookiePolicy"]
-www.thomas-krenn.com##div[id="xtxNavigationOffCookiePolicy"]
+!www.thomas-krenn.com##div[class*="xtx-privacy-cookie"]:upward(1):remove()
+www.thomas-krenn.com##div[class*="xtx-privacy-cookie"]:remove()
+www.thomas-krenn.com##div[class*="xtxNavigationOffCanvasOverlayCookie"]:remove()
+www.thomas-krenn.com##div[data-toggle="xtxNavigationOffCookiePolicy"]:remove()
+www.thomas-krenn.com##div[id="xtxNavigationOffCookiePolicy"]:remove()
 www.thomas-krenn.com##+js(remove-attr, data-disabled-over-scrolling)
 www.thomas-krenn.com##+js(remove-attr, data-gtm-tracking-id)
 www.thomas-krenn.com##+js(remove-attr, data-xtx-default-gtm-tracking-event-name-generic)
 www.thomas-krenn.com##+js(remove-attr, data-xtx-default-gtm-tracking-event-name-virtual-page-view)
 www.thomas-krenn.com##+js(remove-attr, data-xtx-default-gtm-tracking)
-haydenjames.io##div[id^="advads_ad_widget"]
-haydenjames.io##div[id^="hayden-"]
+haydenjames.io##div[id^="advads_ad_widget"]:remove()
+haydenjames.io##div[id^="hayden-"]:remove()
 ||amazingfilehosting.com/wp-content/plugins/cookie-law-info/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 cs.rin.ru##a[href$="/ucp.php?i=pm&folder=inbox"]:style(color:red !important; font-weight:bold)
 csrinrutkb3tshptdctl5lyei4et35itl22qvk5ktdcat6aeavy6nhid.onion##a[href$="/ucp.php?i=pm&folder=inbox"]:style(color:red !important; font-weight:bold)
@@ -40154,9 +40154,7 @@ embed2.megaxfer.ru##meta[http-equiv="refresh"]:remove()
 ! TODO: test the following rule to make sure it does not remove wanted content
 yarnpkg.com##div[class^="css-"]:has(div[class^="css-"], p, a[href="https://war.ukraine.ua/support-ukraine/"]):remove()
 ! dropgalaxy.co,dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net,newsindi.com are dropgalaxy domains
-! Don't enable the button before the countdown completes or the anti-adblock page will display.
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
-! The id's with a value of 0 probably could be successfully removed, but only would be needed if they are otherwise triggered to a non-zero value.
 ! changing the brute variable will trigger the anti-adblocking script @ dropgalaxy
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, brute)
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, brute)
@@ -40167,7 +40165,11 @@ yarnpkg.com##div[class^="css-"]:has(div[class^="css-"], p, a[href="https://war.u
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, ads)
 ! setting ads to [] also makes the fetch script continually contact the site
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, ads, [])
+! Don't enable the button before the countdown completes or the anti-adblock page will display.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com###downloadbtn:style(visibility: visible !important; display: block !important;)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, disabled, #downloadbtn, stay)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, disabled, .downloadbtn, stay)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, style, #downloadbtn, stay)
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, .downloadbtn)
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, adblock_check)
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, usrblock)
@@ -40178,13 +40180,9 @@ yarnpkg.com##div[class^="css-"]:has(div[class^="css-"], p, a[href="https://war.u
 ! blocking all xhr and fetch will prevent downloads
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-fetch-if, /^/)
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-xhr-if, /^/)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, disabled, #downloadbtn, stay)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, disabled, .downloadbtn, stay)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, style, #downloadbtn, stay)
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, /s.src =|s.src/i)
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, /script1.src|script2.src/, lol.noop)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##.adsbygoogle, .showads
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##[id="downloadBtnClick"]:style(display: none !important;)
 ! div[class="adsbox"] is part of the anti-adblocking test/check
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[class="adsbox"]:remove()
@@ -40192,100 +40190,33 @@ yarnpkg.com##div[class^="css-"]:has(div[class^="css-"], p, a[href="https://war.u
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="countdown"]:remove()
 ! removing stickyunit triggers the anti-adblock script @ dropgalaxy
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="stickyunit"]:remove()
-! Do NOT remove #apkad as it removes the download form
+! Do NOT remove #apkad as it removes the download form.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##[id^="apkad"]:remove()
-! TODO: WTF is the following rule?
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com###operadata + br + [href][target="_blank"]:remove()
-! TODO: should any of the following 24 rules be used?
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, atob)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, 0x2bb9)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, _0xab85)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, parseInt, break;case $.)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aeld, , loadScripts)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aeld, , { [native code] })
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aeld, /mousehandler/)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aeld, DOMContentLoaded, handler)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, 0x2bb9)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, _0xab85)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-setInterval-if, [native code])
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-setInterval-if, _0x)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-setTimeout-if, _0x)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, script, break;case $.)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##^script:has-text(/document.on/i):remove()
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##^script:has-text(_0x):remove()
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##^script:has-text(__CF$cv$params):remove()
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##^script:has-text(break;case $.):remove()
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##^script:has-text(setTimeout):remove()
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, document.createElement, /break;case \$\.|popunder/)
-!*$frame,redirect-rule=noopframe,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!*$xhr,redirect-rule=nooptext,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!*$image,redirect-rule=32x32.png,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!*$script,redirect-rule=noopjs,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-! TODO: Is the following necessary?
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, true;, false;)
+! Do NOT remove span[id="vi-smartbanner"] since it removes the download form.
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##span[id="vi-smartbanner"]:remove()
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="analytics"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com###analytics:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com###dmAZuTknHuCIIWY:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com###gdpr-cookie-notice:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com###nativefluid:remove()
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id^="vi-smartbanner"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="uniconsent-config"]:remove()
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="vi-smartbanner"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id^="gpt-passback-dropgalaxy"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id^="div-gpt-ad-"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##ins[class="adsbygoogle"]:remove()
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-current-inline-script, fullAdsRendered)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, ad114caa64152aac18535dbf18d9ed74)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, ad114caa64152aac18535dbf18d9ed74)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, deAmpEnabled)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, forbiddenKeys)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, noFetchIf)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, pageData)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, scriptletGlobals)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, window.googletag)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, window.protag)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, xhrInstances)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, deAmpEnabled)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, forbiddenKeys)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, noFetchIf)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, pageData)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, scriptletGlobals)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, window.googletag)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, window.protag)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, xhrInstances)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, adsbygoogle)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, data-ad-client)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, document.oncontextmenu, document.onmousedown, document.onmouseup, document.onkeydown)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, document.oncontextmenu, document.onmousedown, document.onmouseup)
+! Do NOT abort on document.onkeydown because it is in the same inline script as the download token generation function call.
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, gdpr-cookie-consent)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, adsbygoogle)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, data-ad-client)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, dmAZuTknHuCIIWY)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, document.documentElement.clientWidth)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, document.oncontextmenu, document.onmousedown, document.onmouseup, document.onkeydown)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, forbiddenKeys)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, document.oncontextmenu, document.onmousedown, document.onmouseup)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, gdpr-cookie-consent)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, user)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, adsbygoogle)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, data-ad-client)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, dmAZuTknHuCIIWY)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, document.documentElement.clientWidth)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, document.oncontextmenu, document.onmousedown, document.onmouseup, document.onkeydown)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, forbiddenKeys)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, user)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-fetch-if, /adtrue\.com|eningspon\.com|freychang\.fun|orquideassp\.com|popunder/)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, document.oncontextmenu, document.onmousedown, document.onmouseup)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-window-open-if)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-xhr-if, /a-mo\.net|adnxs\.com|prebid|creativecdn\.com|e-planning\.net|quantumdex\.io/)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, name, #downloadBtnClick, stay)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, oncontextmenu, body)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##body:remove-attr(oncontextmenu)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-cookie, /^/)
 ! remove-node-text (rmnt), <node name>, <pattern to contain causing removal of node>
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, script, /debugger;/gm)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, form, ff1, #downloadBtnClick)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, type, submit, #downloadBtnClick)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, window.isAdblockActive, false)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, ad114caa64152aac18535dbf18d9ed74, "")
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, adblock_check, 1, stay)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, adblock_detected, 0, stay)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, disableCtrlKeyCombination, noopFunc)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, downloadTimer, noopFunc)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, forbiddenKeys, [])
@@ -40299,7 +40230,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, resp
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, responsiveAdSlot3, null)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, responsiveAdSlot4, null)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, scriptletGlobals, noopFunc)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, window._initAds, false, stay)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, window._initAds, false)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, window.googletag, {})
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, window.protag, {})
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, xhrInstances, noopFunc)
@@ -40324,6 +40255,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, chec
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, runAfterGptLoaded, noopFunc)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, ggggg, noopFunc)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, /ggggg\(\)/)
+! The id's with a value of 0 probably could be successfully removed, but only would be needed if they are otherwise triggered to a non-zero value.
 ! TODO: set testty input tag to 5 or 99? or remove altogether to defuse anti-adblocking?
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 99, input[id="testty"])
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="testty"]:remove()
@@ -40337,6 +40269,37 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, badi
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="badipp"])
 ! TODO: could input[id="badipp"] be removed and downloads still work?
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="badipp"]:remove()
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="adblock_check"])
+! TODO: could input[id="adblock_check"] be removed and downloads still work?
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="adblock_check"]:remove()
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="dropgalaxyisbest"])
+! TODO: could input[id="dropgalaxyisbest"] be removed and downloads still work?
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="dropgalaxyisbest"]:remove()
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="adblock_detected"])
+! TODO: could input[id="adblock_detected"] be removed and downloads still work?
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="adblock_detected"]:remove()
+! TODO: Don't manually set admaven_popup since existing value of 1 does not prevent download form from working successfully.
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 1, input[id="admaven_popup"])
+! TODO: Don't manually set downloadhash since existing value of 0 does not prevent download form from working successfully.
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="downloadhash"])
+! TODO: Don't manually set adb since existing value of 0 does not prevent download form from working successfully.
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="adb"])
+! TODO: Don't manually set dgl since existing value of 1 does not prevent download form from working successfully.
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 1, input[id="dgl"])
+! TODO: is removing value attribute the same as setting it to "" with regards to validation by the server?
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="xd"][value="1"]:remove-attr(value)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value, input[id="xd"][value="1"])
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, "", input[id="xd"][value="1"])
+! TODO: Could input[id="xd"] be removed and downloads still work since a value of "" for XD works?
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="xd"][value="1"]:remove()
+! TODO: must the ppp value always be 6 or is the default? of 2 acceptable for successful validation?
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 6, input[id="ppp"])
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 2, input[id="ppp"])
+! TODO: the id name in the following rule varies with each refresh of the page, but is always a total of six lowercase letters and sometimes numbers, i.e. [a-z0-9]{6}
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/))
+! TODO: Could input[id=<varies>] be removed and downloads still work since a value of "0" works?
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/):remove()
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[class^="modalpop"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="modalpop"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="modalpop-content"]:has(span:has-text(Adblock Detected!)):remove()
@@ -40353,6 +40316,9 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##button[id="method_free
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, style, button[id="method_free"])
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##button[id="method_free"]:remove-attr(style)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##button[id="method_free"]:style(display: block !important; visibility: visible !important;)
+! TODO: linksuccess() is called when the download form is submitted. Preventing this doesn't prevent the submission from succeeding?
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, linksucess, noopFunc)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, links, [])
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, text, / wait\.\.\.5/gm)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, timeleft, 0)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, /none|hidden/, 0, condition, getComputedStyle)
@@ -40370,8 +40336,8 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-no
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, holymoly, '0')
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, document.querySelector("#downloadBtnClick").form, ff1)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, document.querySelector("#downloadBtnClick").type, submit)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##.GoogleActiveViewElement, .middle-container, .mys-wrapper
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##.adsbygoogle:style(max-height: 1px !important;)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, form, ff1, #downloadBtnClick)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, type, submit, #downloadBtnClick)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##.btn-info.btn-sm.btn-block.btn:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##.btn-primary.btn-lg.btn-block.btn:remove-attr(onclick)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##.btn-primary.btn-lg.btn-block.btn:remove-attr(target)
@@ -40402,7 +40368,6 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="overlaypop"]:r
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="proxymsg"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="warning"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id^="ad-section"]:remove()
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id^="vi-smartbanner"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##iframe[id*="_mN_main_"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##iframe[id="VIEventStats"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##iframe[id="debug_vi-smartbanner-unit"]:remove()
@@ -49806,35 +49771,3 @@ www.youtube.com#@#ytd-popup-container.ytd-app.style-scope
 @@||pagead2.googlesyndication.com/pagead/js/$domain=anydebrid.com,script
 ! The following rule allows legitimate URL redirects; TODO: use a domain list for this?
 @@||secure.avangate.com/affiliate.php?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-! Are the following really necessary for dropgalaxy downloads to work?
-!@@.jpg$image,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@.png$image,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||googlesyndication.com^$script,xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||dropgalaxy.co,dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net,newsindi.com,techthematter.xyz,dgdrive.xyz^$generichide
-!dropgalaxy.co,dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net,newsindi.com,techthematter.xyz,dgdrive.xyz#@#div[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important;)
-!@@*$script,from=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz,to=a2zapk.com|adoto.net|doubleclick.net|googlesyndication.com|login.popmonetizer.com|rsc.cdn77.org|vlitag.com
-!@@||a2zapk.com^$script,xhr,3p,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||adoto.net^$script,xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||adservice.google.*/adsid/integrator.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||assets.vlitag.com/prebid/default/prebid-$domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!@@||challenges.cloudflare.com/cdn-cgi/challenge-platform/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!!@@||challenges.cloudflare.com^$subdocument,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||cloudfront.net/publishers/dropgalaxycom.min.js$domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||cmp.uniconsent.com^$script,xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||contextual.media.net/*/fcmain.js$domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||contextual.media.net/dmedianet.js?cid=$domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||dnhfi5nn2dt67.cloudfront.net/ui-bootstrap-tpls.min.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||googletagmanager.com/gtag/js$xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||googletagservices.com/tag/js/gpt.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!! TODO: gum.criteo.com is already blocked in my hosts file.
-!@@||gum.criteo.com/sid/json?origin=prebid&topUrl=$xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||jscdn.greeter.me/dropgalaxy.onlinehead.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||mp.4dex.io/prebid$xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||popads.net/js/adblock.js$script,xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!!||protagcdn.com/s/dropgalaxy.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!!||protagcdn.com/s/dropgalaxy.com/site.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!@@||protagcdn.com/s/dropgalaxy.com/site.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
-!@@||script.4dex.io/adagio.js$xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
-!@@||static.criteo.net/js/ld/publishertag.prebid.js$script,xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
