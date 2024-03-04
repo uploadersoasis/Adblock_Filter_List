@@ -40338,7 +40338,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, inp
 ! TODO: could input[id="badipp"] be removed and downloads still work?
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="badipp"]:remove()
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[class^="modalpop"]:remove()
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="modalpop"]:remove()
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="modalpop"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="modalpop-content"]:has(span:has-text(Adblock Detected!)):remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##*[id^="TR-"][tr-id][style*="z-index: 9999"]
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="creditDiv"]:remove()
