@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2024-02-19T08:14:35.640Z",
+    "createdAt": "2024-03-03T22:45:15.087Z",
     "redirects": [
         {
             "description": "Example redirect, try going to http://example.com/anywordhere",
@@ -156,14 +156,95 @@
             ]
         },
         {
-            "description": "vidsrc.to embedded video player URL with no ads",
-            "exampleUrl": "https://vidplay.online/e/M0J52EDOXJ24?t=4xjQAfYkA10Bzg%3D%3D&ads=0&src=vidsrc&autostart=true",
-            "exampleResult": "https://vidplay.online/e/M0J52EDOXJ24?t=4xjQAfYkA10Bzg%3D%3D&ads=0&src=vidsrc&autostart=true",
+            "description": "ad.turn.com direct Redirector",
+            "exampleUrl": "https://ad.turn.com/r/cs?pid=67&redir=https%3A%2F%2Fcks.connatix.com%2Fcks%3Fpid%3D21%26ev%3D0061449f787c4be780bf9a49a178f9b3%26pname%3DAmobee%26api-tier%3D2%26uid%3D%23USER_ID%23&gdpr=0",
+            "exampleResult": "https://cks.connatix.com/cks?pid=21&ev=0061449f787c4be780bf9a49a178f9b3&pname=Amobee&api-tier=2&uid=#USER_ID#&gdpr=0",
             "error": null,
-            "includePattern": "^(https?:\\/\\/([wW]{3}.)?vidplay\\.online\\/e\\/[0-9a-zA-z]{12,}\\?)(\\?|&?t=[0-9a-zA-z]{14,}%3D%3D)*(\\?|&?ads=\\d)*(\\?|&?src=vidsrc)*(\\?|&?autostart=true|false)*",
+            "includePattern": "^(https?):\\/\\/ad\\.turn\\.com\\/r\\/cs\\?pid=\\d+\\&redir=(https?\\%3A\\%2F\\%2F\\S+)",
             "excludePattern": "",
-            "patternDesc": "just changes the url so that &ads= is always equal to 0",
-            "redirectUrl": "$1$3&ads=0$5$6",
+            "patternDesc": "Using this redirector prevents getting the download link to download the file",
+            "redirectUrl": "$2",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "image",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "DropGalaxy.vip Redirector ",
+            "exampleUrl": "https://dropgalaxy.vip/oobd4p7y5txo",
+            "exampleResult": "https://dropgalaxy.com/drive/oobd4p7y5txo",
+            "error": null,
+            "includePattern": "(https?):\\/\\/([wW]{3}\\.)?dropgalaxy\\.vip\\/([0-9a-zA-Z]{12})",
+            "excludePattern": "",
+            "patternDesc": "This is required because the POST request redirect does not work for some reason.",
+            "redirectUrl": "$1://dropgalaxy.com/drive/$3",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "AnonymZ Redirector ",
+            "exampleUrl": "https://anonymz.com/?https://www.ashampoo.com/ashampoo_3d_cad_architecture_11_sm.exe",
+            "exampleResult": "https://www.ashampoo.com/ashampoo_3d_cad_architecture_11_sm.exe",
+            "error": null,
+            "includePattern": "https?:\\/\\/anonymz\\.com/\\?(http?s:\\/\\/\\S+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "avangate.com Redirector ",
+            "exampleUrl": "https://secure.avangate.com/affiliate.php?ACCOUNT=SIAASCEN&AFFILIATE=3305&PATH=http%3A%2F%2Fwww.onlyoffice.com&AFFSRC=111346X1569483Xd0c2bd79e5f0c1d6181749382eed43a1",
+            "exampleResult": "http://www.onlyoffice.com",
+            "error": null,
+            "includePattern": "https?:\\/\\/secure\\.avangate\\.com/affiliate\\.php\\?(&?ACCOUNT=\\w+)?(&?AFFILIATE=\\d+)?(&?AFFSRC=\\w+)?&?PATH=(https?\\%3A\\%2F\\%2F\\S+(?=&AFFSRC=\\w+)(?=&ACCOUNT=\\w+)?(?=&AFFILIATE=\\d+)?)",
+            "excludePattern": "",
+            "patternDesc": "redirect to the real URL listed after PATH= ; will not work if &AFFSRC doesn't follow the path since putting ? after that capture group doesn't work for some reason",
+            "redirectUrl": "$4",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "vidsrc.to/vidplay.online embedded video player URL with no ads",
+            "exampleUrl": "https://vidplay.online/e/GQP46ZGV8Y93?sub.info=https%3A%2F%2Fvidsrc.to%2Fajax%2Fembed%2Fepisode%2FofJkPsxg%2Fsubtitles&t=4xjQAfEkAlIKzA%3D%3D&ads=0&src=vidsrc&autostart=true",
+            "exampleResult": "https://vidplay.online/e/GQP46ZGV8Y93?sub.info=https%3A%2F%2Fvidsrc.to%2Fajax%2Fembed%2Fepisode%2FofJkPsxg%2Fsubtitles&t=4xjQAfEkAlIKzA%3D%3D&ads=0&src=vidsrc&autostart=true",
+            "error": null,
+            "includePattern": "^(https?:\\/\\/([wW]{3}.)?vidplay\\.online\\/e\\/[0-9a-zA-z]{12,})\\?(sub\\.info=https?\\%3A\\%2F\\%2F[^&\\s]+)?(\\?|&)?(t=[0-9a-zA-z]{14,}\\%3D\\%3D)?(\\?|&)?(ads=\\d)?(\\?|&)?(src=vidsrc)?(\\?|&)?(autostart=(true|false))?",
+            "excludePattern": "",
+            "patternDesc": "just changes the url so that &ads= is always equal to 0; autostart=true is also added because cannot have more than 9 capture groups",
+            "redirectUrl": "$1?$3$4$5$6ads=0$8$9&autostart=true",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": false,
