@@ -40259,8 +40259,8 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, /ggggg\(\)/)
 ! TODO: set testty input tag to 5 or 99? or remove altogether to defuse anti-adblocking?
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 99, input[id="testty"])
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="testty"]:remove()
-! TODO: set bich to 11 or or remove altogether to defuse anti-adblocking?
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="bich"])
+! TODO: set bich to 11 or remove altogether to defuse anti-adblocking? setting to 11 works.
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="bich"])
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="bich"]:remove()
 ! [dropgalaxy.com][set-constant, badip, false] Aborted because value set to true; blocking tmp.isavetube.com/js/badip.js fixes this.
 ||tmp.isavetube.com/js/badip.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -40284,19 +40284,23 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, inp
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="downloadhash"])
 ! TODO: Don't manually set adb since existing value of 0 does not prevent download form from working successfully.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="adb"])
-! TODO: Don't manually set dgl since existing value of 1 does not prevent download form from working successfully.
+! TODO: Don't manually set dgl since existing value of 1 does not prevent download form from working successfully. A value of 0 also successfully works for dgl.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 1, input[id="dgl"])
 ! TODO: is removing value attribute the same as setting it to "" with regards to validation by the server?
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="xd"][value="1"]:remove-attr(value)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value, input[id="xd"][value="1"])
+! TODO: a value of 0 also works for xd
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="xd"][value="1"])
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, "", input[id="xd"][value="1"])
 ! TODO: Could input[id="xd"] be removed and downloads still work since a value of "" for XD works?
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="xd"][value="1"]:remove()
-! TODO: must the ppp value always be 6 or is the default? of 2 acceptable for successful validation?
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 6, input[id="ppp"])
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 2, input[id="ppp"])
+! TODO: It appears that any value above 1 for ppp will be successfully accepted, e.g. 6, 11 are examples
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 6, input[id="ppp"][value=""])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="ppp"][value=""])
 ! TODO: the id name in the following rule varies with each refresh of the page, but is always a total of six lowercase letters and sometimes numbers, i.e. [a-z0-9]{6}
+! The following rule also changes any input tags with a value of 1 including dgl and admaven_popup to no ill effect.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"])
+! TODO: matches-attr() doesn't work in the following rule.  Why?
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/))
 ! TODO: Could input[id=<varies>] be removed and downloads still work since a value of "0" works?
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/):remove()
@@ -40319,8 +40323,15 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##button[id="method_free
 ! TODO: linksuccess() is called when the download form is submitted. Preventing this doesn't prevent the submission from succeeding?
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, linksucess, noopFunc)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, links, [])
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, text, / wait\.\.\.5/gm)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, timeleft, 0)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, go, noopFunc)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##button[id="dl"]:remove-attr(onclick)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, onclick, button[id="dl"])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##button[id="downloadbtn2"]:remove-attr(onclick)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, onclick, button[id="downloadbtn2"])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##a[onclick="go();"]:remove-attr(onclick)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, onclick, a[onclick="go();"])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, text, /\s?wait\.\.\.5/gm)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, /none|hidden/, 0, condition, getComputedStyle)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, ads, [""])
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, document.visibilityState, visible)
@@ -40330,7 +40341,8 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-consta
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, displayPropertyValue, block)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, computedStyle, block)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, statusTxt, success)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, text, Free Download wait...5, Free Download)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, text, Free Download wait...5, Free Download)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, text, /Free Download\s?wait\.\.\.\d?/, Free Download)
 ! set 0 in single quotes as script may require it
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, holymoly, 0)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, holymoly, '0')
