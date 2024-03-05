@@ -469,10 +469,8 @@ www.shacknews.com/ads/blank.htm$document,subdocument,script,inline-script,inline
 ||blstj.msn.com/br/chan/udc/js/udctrack.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||blstj.msn.com/br/chan/om/js/s_code.2010.12.13.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||blstj.msn.com/br/chan/om/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.infoworld.com/ss/player/overlay-iframe.html?ac=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,cssa.collective-media.net/adj/idge.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||a.collective-media.net/adj/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||a.collective-media.net^*
-||www.infoworld.com/modules/DCP/custom/doubleclick_ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.privateinternetaccess.com/ads/serve.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.privateinternetaccess.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||icdn.toolbox.com/BUILD_2018/js/z.omniture.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -11561,12 +11559,80 @@ krutor.org##vcav0rcydd
 ||nottoke.com^*
 ||www.currentupdateconcepts.com^*
 ||currentupdateconcepts.com^*
+||www.infoworld.com/www/js/analytics/tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.infoworld.com/ss/player/overlay-iframe.html?ac=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,cssa.collective-media.net/adj/idge.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.infoworld.com/modules/DCP/custom/doubleclick_ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.infoworld.com/www.idge/js/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.infoworld.com/www/js/ads/gpt_includes.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.infoworld.com/www/js/ads/jquery.lazyload-ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.infoworld.com/www/js/ads/narf_prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.infoworld.com/www/js/ads/prebid_gpt_launcher.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.infoworld.com/www/js/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.infoworld.com##div[id="catfish"]:remove()
+www.infoworld.com##div[id="gpt-skin"]:remove()
+www.infoworld.com##div[id="mobilewelcomead"]:remove()
+www.infoworld.com##div[id="skinAdTarget"]:remove()
+www.infoworld.com##div[id="superadunit"]:remove()
+www.infoworld.com##div[id="oc_ad_1"]:remove()
+www.infoworld.com##div[id="gpt-overlay"]:remove()
+www.infoworld.com##iframe[name$="Locator"][name^="__"]:remove()
+www.infoworld.com##+js(set-constant, adLayer, [])
+www.infoworld.com##+js(aopr, adLayer)
+www.infoworld.com##+js(aopw, adLayer)
+www.infoworld.com##+js(set-constant, _comscore, [])
+www.infoworld.com##+js(aopr, _comscore)
+www.infoworld.com##+js(aopw, _comscore)
+www.infoworld.com##+js(set-constant, loadGPT, noopFunc)
+www.infoworld.com##+js(set-constant, window.canRunAds, trueFunc)
+www.infoworld.com##+js(set-constant, insiderSignedIn, true)
+www.infoworld.com##+js(set-constant, amazonAPSEnabled, false)
+www.infoworld.com##+js(set-constant, aaxEnabled, false)
+www.infoworld.com##+js(set-constant, selectedAds, [])
+www.infoworld.com##+js(set-constant, dataLayer, [])
+www.infoworld.com##+js(set-constant, dataLayer, [])
+www.infoworld.com##+js(set-constant, cx, "")
+www.infoworld.com##+js(set-constant, gcse, {})
+www.infoworld.com##+js(set-constant, calcAdHeight, noopFunc)
+www.infoworld.com##+js(set-constant, isEU, false)
+www.infoworld.com##+js(set-constant, isEuVisitor, false)
+www.infoworld.com##+js(set-constant, checkIfInEU, falseFunct)
+www.infoworld.com##+js(set-constant, checkCCPAOptOut, trueFunct)
+www.infoworld.com##+js(set-constant, checkConsent, trueFunct)
+www.infoworld.com##+js(set-constant, consentOk, true)
+www.infoworld.com##+js(set-constant, idgus, {})
+www.infoworld.com##+js(set-constant, window.idgus, {})
+www.infoworld.com##+js(aopr, idgus)
+www.infoworld.com##+js(aopw, idgus)
+www.infoworld.com##+js(set-constant, consentedCustomVendors, [])
+www.infoworld.com##+js(set-constant, consentedPurposes, [])
+www.infoworld.com##+js(set-constant, vendorGrants, {})
+www.infoworld.com##+js(set-constant, videoPlayerBidding, false)
+www.infoworld.com##+js(set-constant, amazonAPSEnabled, false)
+www.infoworld.com##+js(set-constant, custAdTag, "")
+www.infoworld.com##+js(set-constant, PRIVACY_MANAGER_IDENT, 0)
+www.infoworld.com##+js(set-constant, STORE_ACCESS_ON_DEVICE, "")
+www.infoworld.com##+js(set-constant, SELECT_PERSONSALISED_CONTENT_ID, "")
+www.infoworld.com##+js(set-constant, SELECT_PERSONSALISED_ADS_ID, "")
+www.infoworld.com##+js(set-constant, SELECT_BASIC_ADS_ID, "")
+www.infoworld.com##+js(set-constant, CREATE_PERSONALISED_ADS_PROFILE_ID, "")
+www.infoworld.com##+js(set-constant, CREATE_PERSONALISED_CONTENT_PROFILE_ID, "")
+www.infoworld.com##+js(set-constant, MEASURE_ADS_PERFORMANCE_ID, "")
+www.infoworld.com##+js(set-constant, MEASURE_CONTENT_PERFORMANCE_ID, "")
+www.infoworld.com##+js(set-constant, APPLY_MARKET_RESEARCH_ID, "")
+www.infoworld.com##+js(set-constant, DEVELOP_AND_IMPROVE_PRODUCTS_ID, "")
+www.infoworld.com##+js(set-constant, SOCIAL_MEDIA_CONSENTS_PURPOSE_ID, "")
+www.infoworld.com##+js(set-constant, GOOGLE_AD_MANAGER_VENDOR_ID, "")
+www.infoworld.com##+js(set-constant, GOOGLE_ANALYTICS_VENDOR_ID, "")
+www.infoworld.com##+js(set-constant, TWITTER_VENDOR_ID, "")
+www.infoworld.com##+js(set-constant, FACEBOOK_VENDOR_ID, "")
+www.infoworld.com##+js(set-constant, LINKEDIN_VENDOR_ID, "")
+www.infoworld.com##+js(set-constant, BLUECONIC_VENDOR_ID, "")
+www.infoworld.com##+js(acs, /IDG\.GPT\.addDisplayedAd\(/)
+www.infoworld.com##+js(acs, /IDG\.GPT\.displayGoogleTagSlot\(/)
+www.infoworld.com##+js(acs, /lazyLoadAd\(/)
+www.infoworld.com##+js(trusted-set-constant, countryCode, "us")
+! trusted-set is necessary for the following rule since the value must be a string not a boolean.
+www.infoworld.com##+js(trusted-set-constant, adBlockStatus, 'false')
 ||lzawbiclvehu.com^*
 ||www.lzawbiclvehu.com^*
 ||api-cache.adsnative.com^*
@@ -40299,7 +40365,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, "", input[id="xd"][value="1"])
 ! TODO: Could input[id="xd"] be removed and downloads still work since a value of "" for XD works?
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="xd"][value="1"]:remove()
-! TODO: It appears that any value above 1 for ppp will be successfully accepted, e.g. 6, 11 are examples
+! TODO: It appears that any value above 1 for ppp will be successfully accepted, e.g. 6, 11 are examples. "" also works successfully.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 6, input[id="ppp"][value=""])
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="ppp"][value=""])
 ! TODO: the id name in the following rule varies with each refresh of the page, but is always a total of six lowercase letters and sometimes numbers, i.e. [a-z0-9]{6}
@@ -49434,8 +49500,16 @@ yahoo.com##+js(set-attr, img[class*="caas-lazy"][data-src], src, [data-src])
 !www.digitaltrends.com##div[class*="dtads-hub"]:remove()
 !www.digitaltrends.com##div[class*="dtads-leaderboard"]:remove()
 !www.digitaltrends.com##div[class*="dtads-desktop"]:remove()
+!www.digitaltrends.com##div[class*="dtads-mobile"]:remove()
 !www.digitaltrends.com##div[class*="dtads-tablet"]:remove()
+!www.digitaltrends.com##div[class*="dtads-content"]:remove()
+!www.digitaltrends.com##div[class*="dtads-location"]:remove()
 www.digitaltrends.com##div[class*="dtads-"]:remove()
+!www.digitaltrends.com##div[class="htlad-mobile-content"]:remove()
+!www.digitaltrends.com##div[class="htlad-tablet-content"]:remove()
+!www.digitaltrends.com##div[class="htlad-desktop-content"]:remove()
+www.digitaltrends.com##div[class*="htlad-"]:remove()
+www.digitaltrends.com##script[id^="dt-ads-"]:remove()
 www.digitaltrends.com##+js(aopr, window.dtadsExperiences)
 www.digitaltrends.com##+js(aopw, window.dtadsExperiences)
 www.digitaltrends.com##+js(set-constant, window.htlbid, {})
