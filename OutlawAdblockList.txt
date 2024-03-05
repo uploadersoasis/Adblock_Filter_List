@@ -49422,7 +49422,7 @@ login.yahoo.com###sb_rel_login-ad-rich:remove()
 ||mail.yahoo.com/d/log?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 mail.yahoo.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
 mail.yahoo.com##iframe[id="gpt-iframe"]:remove()
-mail.yahoo.com##a[data-test-id="pencil-ad-messageList"]:remove()
+mail.yahoo.com##a[data-test-id^="pencil-ad-messageList"]:remove()
 mail.yahoo.com##div[data-test-id="ad-feedback-menu"]:remove()
 mail.yahoo.com##div[data-test-id="pencil-ad"]:remove()
 mail.yahoo.com##div[data-test-id="right-rail-ad"]:remove()
