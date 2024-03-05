@@ -40376,13 +40376,14 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value
 ! TODO: Could input[id="xd"] be removed and downloads still work since a value of "" for XD works?
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="xd"][value="1"]:remove()
 ! TODO: It appears that any value above 1 for ppp will be successfully accepted, e.g. 6, 11 are examples. "" also works successfully.
+! The value for ppp increases with every switch away from and return to (not fresh of) the page, i.e. views.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 6, input[id="ppp"][value=""])
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="ppp"][value=""])
 ! TODO: the id name in the following rule varies with each refresh of the page, but is always a total of six lowercase letters and sometimes numbers, i.e. [a-z0-9]{6}
 ! The following rule also changes any input tags with a value of 1 including dgl and admaven_popup to no ill effect.
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"])
 ! TODO: matches-attr() doesn't work in the following rule because the underlying javascript uses Document.querySelectorAll and "input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/) is not a valid selector".
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/))
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/))
 ! TODO: Could input[id=<varies>] be removed and downloads still work since a value of "0" works?
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/):remove()
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[class^="modalpop"]:remove()
