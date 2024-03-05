@@ -49421,9 +49421,6 @@ login.yahoo.com###sb_rel_login-ad-rich:remove()
 ||us.mg204.mail.yahoo.com/dc/rs^log=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mail.yahoo.com/d/log?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 mail.yahoo.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
-! TODO: is div[data-test-id="gam-iframe"] in the following rule always the parent of iframe[id="gpt-iframe"]?
-! Using upward(1) in the following rule expands the width of message list like the premium subscription does.
-mail.yahoo.com##div[data-test-id="gam-iframe"]:upward(1):remove()
 mail.yahoo.com##iframe[id="gpt-iframe"]:remove()
 mail.yahoo.com##a[data-test-id="pencil-ad-messageList"]:remove()
 mail.yahoo.com##div[data-test-id="ad-feedback-menu"]:remove()
@@ -49488,6 +49485,10 @@ mail.yahoo.com##+js(set-constant, AppState.reduxState.ads.searchAds, {})
 !mail.yahoo.com##+js(set-constant, AppState.reduxState.ads.searchPlaAds, {}, end)
 !mail.yahoo.com##+js(set-constant, AppState.reduxState.ads.searchPlaAds, {}, complete)
 mail.yahoo.com##+js(set-constant, AppState.reduxState.ads.searchPlaAds, {})
+! Is div[data-test-id="gam-iframe"] in the following rule always the parent of iframe[id="gpt-iframe"]?
+! Using upward(1) in the following rule expands the width of message list like the premium subscription does.
+! Do NOT use the following rule as it triggers an error in mail_app_es6_vendor_0f03712fcf529c9bd5a4.bundle.js which displays a error screen which overwrite the current viewport.
+!mail.yahoo.com##div[data-test-id="gam-iframe"]:upward(1):remove()
 ! blocking AND removing these ads causes a generic error message
 !mail.yahoo.com##li[class="H_A hd_n p_a L_0 R_0"]:has(img[src*="//images.taboola.com/taboola/image/fetch/"]):remove()
 !mail.yahoo.com##button[tabindex="-1"]:has-text(Ad):upward(4):remove()
