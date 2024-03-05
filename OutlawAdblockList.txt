@@ -40230,7 +40230,6 @@ embed2.megaxfer.ru##meta[http-equiv="refresh"]:remove()
 ! TODO: test the following rule to make sure it does not remove wanted content
 yarnpkg.com##div[class^="css-"]:has(div[class^="css-"], p, a[href="https://war.ukraine.ua/support-ukraine/"]):remove()
 ! dropgalaxy.co,dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net,newsindi.com are dropgalaxy domains
-! TODO: ^script doesn't work with attributes since checked before DOM created?
 ! changing the brute variable will trigger the anti-adblocking script @ dropgalaxy
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, brute)
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, brute)
@@ -40247,8 +40246,7 @@ yarnpkg.com##div[class^="css-"]:has(div[class^="css-"], p, a[href="https://war.u
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, /s.src =|s.src/i)
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, /script1.src|script2.src/, lol.noop)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##[id="downloadBtnClick"]:style(display: none !important;)
-! div[class="adsbox"] is part of the anti-adblocking test/check
+! div[class="adsbox"] is part of the anti-adblocking test/check.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[class="adsbox"]:remove()
 ! The countdown div tag is needed because the countdown is still used.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="countdown"]:remove()
@@ -40258,6 +40256,25 @@ yarnpkg.com##div[class^="css-"]:has(div[class^="css-"], p, a[href="https://war.u
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##[id^="apkad"]:remove()
 ! Do NOT remove span[id="vi-smartbanner"] since it removes the download form.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##span[id="vi-smartbanner"]:remove()
+! The following 14 "badfilter" rules are necessary because these rules are present in the "uBlock filters – Quick fixes" list.  The first one will prevent the rules in this list with cosmetic filters from working.
+! Appending "badfilter" to any instance of static network filter will prevent the loading of that filter.
+! generichide/ghide in an exception filter will turn off generic cosmetic filtering which are filters that apply to all pages, e.g. ##.ad-class .
+! TODO: Despite the following two rules, the cosmetic filters are not applied for this site if the uBlocker Origin logger window is opened while loading the Dropgalaxy website.  Is this a bug in uBlock Origin?
+@@||dropgalaxy.$generichide,badfilter
+! TODO: Is the following rule needed too since it is functionally equivalent to the preceding rule?
+@@||dropgalaxy.*^$ghide,badfilter
+@@||histats.com/js.js$script,domain=dropgalaxy.*,badfilter
+@@||popads.net/js/adblock.js$script,domain=dropgalaxy.*,badfilter
+@@||cdn.jsdelivr.net/gh/prebid/*$script,domain=dropgalaxy.*,badfilter
+@@||fundingchoicesmessages.google.com^$script,domain=dropgalaxy.*,badfilter
+@@*$script,xhr,from=dropgalaxy.*,to=googlesyndication.com|doubleclick.net|rsc.cdn77.org|vlitag.com|adoto.net|a2zapk.com|login.popmonetizer.com,badfilter
+*$frame,redirect-rule=noopframe,domain=dropgalaxy.*,badfilter
+*$frame,redirect-rule=noopframe,from=dropgalaxy.*,badfilter
+*$image,redirect-rule=32x32.png,domain=dropgalaxy.*,badfilter
+*$script,redirect-rule=noopjs,domain=dropgalaxy.*,badfilter
+*$script,redirect-rule=noopjs,from=dropgalaxy.*,badfilter
+*$xhr,redirect-rule=nooptext,domain=dropgalaxy.*,badfilter
+*$xhr,redirect-rule=nooptext,from=dropgalaxy.*,badfilter
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="analytics"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com###analytics:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com###dmAZuTknHuCIIWY:remove()
@@ -40364,7 +40381,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value
 ! TODO: the id name in the following rule varies with each refresh of the page, but is always a total of six lowercase letters and sometimes numbers, i.e. [a-z0-9]{6}
 ! The following rule also changes any input tags with a value of 1 including dgl and admaven_popup to no ill effect.
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"])
-! TODO: matches-attr() doesn't work in the following rule.  Why?
+! TODO: matches-attr() doesn't work in the following rule because the underlying javascript uses Document.querySelectorAll and "input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/) is not a valid selector".
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/))
 ! TODO: Could input[id=<varies>] be removed and downloads still work since a value of "0" works?
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/):remove()
@@ -40398,7 +40415,8 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, oncli
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##a[onclick="go();"]:remove-attr(onclick)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, onclick, a[onclick="go();"])
 ! TODO: The following rule to remove "waiting..." does not work.
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, text, /\s?wait\.\.\.5/gm)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, text, /\s?wait\.\.\.5/gm)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, button[id="method_free"], /\s?wait\.\.\.5/gm)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, /none|hidden/, 0, condition, getComputedStyle)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, ads, [""])
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, document.visibilityState, visible)
@@ -40409,7 +40427,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-consta
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, computedStyle, block)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, statusTxt, success)
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, text, Free Download wait...5, Free Download)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, text, /Free Download\s?wait\.\.\.\d?/, Free Download)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, button[id="method_free"], /Free Download\s?wait\.\.\.\d?/, Free Download)
 ! set 0 in single quotes as script may require it
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, holymoly, 0)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, holymoly, '0')
@@ -40436,6 +40454,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##[href^="https://bit.ly
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##[id^="aswift"]:style(display:none!important;)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##[src^="//ad.a-ads.com/"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##[target="_blank"]:has-text(Download):remove()
+! TODO: ^script doesn't work with attributes since checked before DOM created?
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##^script:has-text(/debugger;/):remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##a:style(display:block !important;)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##body > div[style^="position: fixed; display: block"]:remove()
@@ -49727,6 +49746,8 @@ modsfire.com##iframe[style*="visibility: hidden;"]:remove()
 ||kumo.network-n.com/dist/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 muhimasri.com##div[class="CookieConsent"]:remove()
 muhimasri.com##div[id="carbonAd"]:remove()
+! Only use the following rule with third-party websites
+||pocpoc.io^$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
