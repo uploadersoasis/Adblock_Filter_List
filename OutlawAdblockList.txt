@@ -37674,7 +37674,7 @@ sportskart.click##+js(aopw, t.Tn)
 sportskart.click##^script:has-text(/delete window\[/):remove()
 sportskart.click##:xpath(//script[contains(text(), 'delete window[')]):remove()
 sportskart.click##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-sportskart.click##+js(saa, width, 100vw, #thatframe)
+sportskart.click##+js(saa, width, 99vw, #thatframe)
 sportskart.click##+js(saa, height, 99vh, #thatframe)
 sportskart.click##+js(saa, allowfullscreen, true, #thatframe)
 sportskart.click##+js(saa, frameborder, 0, #thatframe)
@@ -37896,7 +37896,7 @@ reddit-tv1-streams.blogspot.com##+js(aopw, window.location)
 !r-strm.blogspot.com##iframe[src^="https://sportskart.click/embed/stream-"]:remove-attr(height)
 !r-strm.blogspot.com##iframe[src^="https://daddylivehd.sx/embed/stream-"]:remove-attr(height)
 worldstreams.click##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-worldstreams.click##+js(saa, width, 100vw, #thatframe)
+worldstreams.click##+js(saa, width, 99vw, #thatframe)
 worldstreams.click##+js(saa, height, 99vh, #thatframe)
 worldstreams.click##+js(saa, allowfullscreen, true, #thatframe)
 worldstreams.click##+js(saa, frameborder, 0, #thatframe)
@@ -40775,10 +40775,10 @@ play.xumo.com##script[id="script-gtm-inline"]:remove()
 !play.xumo.com##span[class="header-inner"]:upward(1):remove()
 !play.xumo.com##main[class="pageType-live-guide"]:style(overflow: hidden !important;)
 !play.xumo.com##div[class="epgList-outer"]:style(overflow: scroll !important;)
-! change main.pageType-live-guide .epgPlayer-player width and height to 100vw/99vh in https://play.xumo.com/_next/static/css/c80ac5485d35d529.css
+! change main.pageType-live-guide .epgPlayer-player width and height to 99vw/99vh in https://play.xumo.com/_next/static/css/c80ac5485d35d529.css
 ! using over 50% for the video container (epgPlayer-player) breaks the guide spacing and scrolling.
 play.xumo.com##div[class="epgPlayer-player"]:style(width: 50vw !important; height: 50vh !important;)
-! jw-player should be 100vw width and 99vh height as it is contained within epgPlayer-player and is relative to that container's size.
+! jw-player should be 99vw width and 99vh height as it is contained within epgPlayer-player and is relative to that container's size.
 play.xumo.com##div[id="jw-player"]:style(width: 99vw !important; height: 99vh !important;)
 ! The comments lines are continually repeated checks and removals
 play.xumo.com##video:remove-attr(disableremoteplayback)
@@ -48365,7 +48365,7 @@ www.newcdn.lol##div[id="overover"]:remove()
 www.newcdn.lol##div[id="obrazek"]:remove()
 www.newcdn.lol##div[id="adblockmessage"]:remove()
 www.newcdn.lol##div[id="bannerInCenter"]:remove()
-! set the following to 100% not 100vw/100vh since this iframe is in another iframe
+! set the following to 100% not 99vw/99vh since this iframe is in another iframe
 www.newcdn.lol##div[data-player]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 www.newcdn.lol##+js(set-constant, detectIncognito, noopFunc)
 www.newcdn.lol##+js(acs, detectIncognito)
@@ -49251,7 +49251,7 @@ developer-tools.jwplayer.com##div[class="ds-page ds-page--fixed tools"]:style(ov
 !developer-tools.jwplayer.com##div[id="player-preview"]:style(max-width: 99vw !important;max-height: 99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 developer-tools.jwplayer.com##div[id="player-preview"]:style(max-width:67% !important;)
 developer-tools.jwplayer.com##div[id="stream-tester-player-https"]:style(overflow:hidden !important; max-width: 99vw !important;max-height: 99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-! The following rules remove this element since it is overlaid over the video viewport when expanded to 100vw.
+! The following rules remove this element since it is overlaid over the video viewport when expanded to 99vw.
 players.akamai.com##app-player-info:remove()
 players.akamai.com##app-general-stats:remove()
 ! The following rule the MPEG-DASH video player video viewport.
