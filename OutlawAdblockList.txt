@@ -49435,14 +49435,29 @@ mail.yahoo.com##ins[class="adsbygoogle"]:remove()
 mail.yahoo.com##li[role="list-item"]:has(a[data-test-id^="pencil-ad-message"]):remove()
 mail.yahoo.com##span[data-test-id="ad-summary"]:remove()
 mail.yahoo.com##span[id^="te-clearads-"]:remove()
-mail.yahoo.com##+js(aeld, click, Rr)
+! None of the following div elements which contain the list of emails need to have their styles changed to get a wider viewport.
+!mail.yahoo.com##div[id="app"][data-test-id="mail-app"]:style(overflow-x: scroll !important;)
+!mail.yahoo.com##div[id="mail-app-component"]:style(min-width: 100% !important; width: 100% !important;)
+!mail.yahoo.com##div[data-test-id="virtual-list-container"]:style(min-width: 100% !important; width: 100% !important;)
+!mail.yahoo.com##div[data-test-id="mail-reader-sticky-header"]:style(min-width: 100% !important; width: 100% !important;)
+! TODO: setting width to a percentage of vw instead of % in the following rule expands the width of the mail list view, BUT not the viewport; scrollbars do appear to allow scrolling to see the entire width though.
+!mail.yahoo.com##div[data-test-id="virtual-list-container"]:style(min-width: 100% !important; width: 100% !important;)
+!mail.yahoo.com##div[data-test-id="mail-reader-list-container"]:style(min-width: 100% !important; width: 100% !important;)
+!mail.yahoo.com##div[data-test-id="virtual-list"]:style(min-width: 100% !important; width: 100% !important; overflow-x: auto !important;)
+! Remove the "premium" expand mail view width button and just shrink the width of div[data-test-id="mail-right-rail"]
+mail.yahoo.com##div[title="Hide Advertisement"][data-test-id="right-rail-hidead-btn"]:remove()
+! To make the mail list view wider without losing functionality of the right sidebar, the following rull will limit its maximum width and add a horizontal scrollbar if needed.
+mail.yahoo.com##div[data-test-id="mail-right-rail"]:style(max-width: 7.5% !important; overflow-x: auto !important;)
+! TODO: The following rule doesn't actually remove the click event attached to div[title="Hide Advertisement"][data-test-id="right-rail-hidead-btn"]
+mail.yahoo.com##+js(aeld, click, /function Rr\(\)/)
 mail.yahoo.com##+js(aopr, adContent)
 mail.yahoo.com##+js(aopr, window.OATH.AdFeedback)
 mail.yahoo.com##+js(aopr, window.adxcel_ttd_hash)
 mail.yahoo.com##+js(aopw, adContent)
 mail.yahoo.com##+js(aopw, window.OATH.AdFeedback)
 mail.yahoo.com##+js(aopw, window.adxcel_ttd_hash)
-!mail.yahoo.com##+js(set-constant, Rr, noopFunc)
+mail.yahoo.com##+js(set-constant, Rr, noopFunc)
+mail.yahoo.com##+js(set-constant, adobeAnalytics, false)
 !mail.yahoo.com##+js(set-constant, AppBootstrapData.adsPrivacyData.showLimitedAds, true, end)
 !mail.yahoo.com##+js(set-constant, AppBootstrapData.adsPrivacyData.showLimitedAds, true, complete)
 mail.yahoo.com##+js(set-constant, AppBootstrapData.adsPrivacyData.showLimitedAds, true)
@@ -49902,3 +49917,559 @@ www.youtube.com#@#ytd-popup-container.ytd-app.style-scope
 @@||pagead2.googlesyndication.com/pagead/js/$domain=anydebrid.com,script
 ! The following rule allows legitimate URL redirects; TODO: use a domain list for this?
 @@||secure.avangate.com/affiliate.php?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+
+
+https://googlechromecast.com/ez-vasts?ads_enabled=0&autoplay=1&content_id=627425966344176911-outstream&floating=1&pageview_id=fbed41ff-afab-4195-58df-9ad6a3159886&player_id=ez-o&position_id=15&floor_version=0&ad_index=1
+
+https://crichdstreaming.xyz/embed2.php?id=skyarena
+https://escast.xyz/embed.php?v=skysare&vw=100%&vh=100%
+
+Currently defunct
+https://klubsports.click/live/player2.php?id=148
+https://1rowsportz.info/player/2/134 <- this number is always added to end of "ufeed" @ godzillive.com
+
+https://godzillive.com/footy.php?player=desktop&live=ufeed134
+
+reddit-tv1-streams.blogspot.com <- defunct
+document.querySelector("#Blog1 > div.blog-posts.hfeed > div.post > iframe").width = "100vw";
+document.querySelector("#Blog1 > div.blog-posts.hfeed > div.post > iframe").height = "100vh";
+document.querySelector("#Blog1 > div.blog-posts.hfeed > div.post > iframe").allowfullscreen = "true";
+document.querySelector("#Blog1 > div.blog-posts.hfeed > div.post").style.height = "100vh";
+document.querySelector("#Blog1 > div.blog-posts.hfeed > div.post").style.width = "100vw";
+
+http://r-strm.blogspot.com/p/317.html <- now defunct
+document.querySelector("#tv > iframe").height = "100vh";
+document.querySelector("#tv > iframe").width = "100vw";
+document.querySelector("#tv > iframe").allowfullscreen = "true";
+
+These three are done
+https://worldstreams.click/embed/stream-317.php
+document.querySelector("#thatframe").height = "100vh";
+document.querySelector("#thatframe").width = "100vw";
+document.querySelector("#thatframe").allowfullscreen = "true";
+
+https://sportskart.click/embed/stream-317.php
+document.querySelector("#thatframe").height = "100vh";
+document.querySelector("#thatframe").width = "100vw";
+document.querySelector("#thatframe").allowfullscreen = "true";
+
+https://dlhd.sx/embed/stream-317.php
+document.querySelector("#thatframe").height = "100vh";
+document.querySelector("#thatframe").width = "100vw";
+document.querySelector("#thatframe").allowfullscreen = "true";
+
+
+Add these URL's to the rules?
+https://cs.media.net/cksync?cs=37&type=cn&redirect=https%3A%2F%2Fcapi.connatix.com%2Fcore%2Fus%3FDemandPartner%3D31%26UserId%3Db8157a8285f244449b37faaf740fc62e%26DemandPartnerName%3DMediaNet%26tier%3D1%26DemandPartnerUserId%3D%3Cvsid%3E&gdpr=0
+https://envoy-hl.envoy-csync1.core-b8mf.ov1o.com/?redirect=https%3A%2F%2Fcks.connatix.com%2Fcks%3Fpid%3D18%26ev%3Db8157a8285f244449b37faaf740fc62e%26pname%3DLoopMe%26api-tier%3D1%26uid%3D%7Bdevice_id%7D%26pubid%3D11186&gdpr=0
+https://i.ctnsnet.com/int/cm?exc=24&redir=https%3A%2F%2Fcks.connatix.com%2Fcks%3Fpid%3D28%26ev%3Db8157a8285f244449b37faaf740fc62e%26pname%3DCrimtan%26api-tier%3D1%26uid%3D%5Buser_id%5D&gdpr=0
+https://sync.go.sonobi.com/us?loc=https%3A%2F%2Fcks.connatix.com%2Fcks%3Fpid%3D43%26ev%3Db8157a8285f244449b37faaf740fc62e%26pname%3DSonobi%26api-tier%3D1%26uid%3D%5BUID%5D&gdpr=0
+https://sync.resetdigital.co/csync?pid=connatix&redir=https%3A%2F%2Fcks.connatix.com%2Fcks%3Fpid%3D35%26ev%3Db8157a8285f244449b37faaf740fc62e%26pname%3DResetDigital%26api-tier%3D1%26uid%3D%24USER_ID&gdpr=0
+
+
+The following logs all event listeners without defusing because /.^/ will not match anything
+##+js(aeld, { "type": "/.^/", "log": 2 })
+
+##+js(aeld, , , log, 1) <- also logs all events
+
+##+js(addEventListener-logger) <- deprecated
+
+
+all
+The all option is equivalent to specifying all network-based types + popup, document, inline-font and inline-script.
+Example:
+||bet365.com/$popup,document,inline-script,inline-font,popunder,subdocument,script,other,xhr
+Above will block all network requests, block all popups and prevent inline fonts/scripts from bet365.com.
+ The EasyList-compatible syntax does not allow this when using only ||bet365.com^.
+The Brave browser's native adblocking requires
+||bet365.com^$popup,document,inline-script,inline-font,popunder,subdocument,script,other,xhr
+instead.
+
+For Brave specify popup, document, inline-font and inline-script explicitly instead:
+/$popup,document,inline-script,inline-font,popunder,subdocument,script,other
+
+The Brave browser's native adblocking requires using ^ NOT / after just a
+hostname, so use
+search
+(?!^\|\|[a-zA-Z0-9\-]+\.[a-zA-Z]{3,})\/\$popup,document,inline-script,inline-font,popunder,subdocument,script,other$
+replace
+^$popup,document,inline-script,inline-font,popunder,subdocument,script,other
+to find and replace "/$popup,document,inline-script,inline-font,popunder,subdocument,script,other"
+after just hostnames.
+
+Search for this
+(^\|\|[a-zA-Z0-9\-]+[^\/]\.[a-zA-Z]{3,})(\/\$popup,document,inline-script,inline-font,popunder,subdocument,script,other)$
+And replace matching group 2 with ^$popup,document,inline-script,inline-font,popunder,subdocument,script,other
+
+For Brave browser version use this to search and replace:
+[\/^]+\$all$
+replace (cannot be a regex)
+/$popup,document,inline-script,inline-font,popunder,subdocument,script,other
+
+
+webpack://national-review/client/src/components/AdUnit/AdUnit.js
+webpack://national-review/client/src/components/AdUnit/adUnitConfig.js
+webpack://national-review/client/src/react-components/App/components/Advertising/AdvertisingProvider/context.js
+
+##div[id^="wrap-twredfrontads_"]
+
+zcpa-us.blogspot.com
+
+https://href.li/?
+
+https://arc.msn.com.nsatc.net/
+https://c-msn-com-nsatc.trafficmanager.net/
+
+This isn't necessary as my other changes allow the download button to work.
+Find this button with class="download" and then take the link and add it to 
+location.href='https://filecrypt.cc/Link/'+<openLink>+'.html'
+<button onclick="openLink('1pEo3ZMuckM9A-M93HdUbXAVZMNxzd9E_ISLDpT9Z5wuhokLn4Y0_ZE5Sp_k6hGk1EmD516T3TflaE3MUhUHsGUDawElpq9QOttsA-_AlzC5f35nEUbr3QabvoQ3ZkTl', this, true)" class="download" target="_blank" title="Download" data-i18n="Download"></button>
+
+||sinetcol.co/*.jpg*
+||becasmedikal.com.tr/*.jpg*
+||risu.fi/*.jpg*
+||topometria.com.cy/*.jpg*
+||bouinteriorismo.com/*.jpg*
+||optovision.gr/*.jpg*
+||hotelaretes.gr/*.jpg*
+||jetfleet24.com/*.jpg*
+
+4 | static.doubleclick.net | Blacklist | 4
+
+POST (NOT GET!)	https://drive.google.com/uc?id=1QLHjMC1JvY5JYZ_SNk5Jcf6xn7C1E0QD&authuser=1&export=download
+Returns (for file that is NOT shared and logged into one's own account)
+This cookie in the request header is needed to download from the downloadURL:
+Cookie: AUTH_l1iil9g64mnutv9sr9vq34rkd2idpckk_nonce=3ffoiu7cq631s
+https://doc-0k-30-docs.googleusercontent.com/docs/securesc/af39m9i25m94iluc3mta1rnpq6vokkfl/fsfb3q1n8m1h4pfgsr4ioct74dj2qre9/1610002500000/17512634931931207966/17512634931931207966/1QLHjMC1JvY5JYZ_SNk5Jcf6xn7C1E0QD?e=download&authuser=1&nonce=3ffoiu7cq631s&user=17512634931931207966&hash=p6n01l2qo0cs50o99gibd2e0f1ho8co7
+
+
+I also discovered something interesting about our Uploadbuzz.cc accounts.  On the [url=https://uploadbuzz.cc/?op=my_account]configuration page[/url] there is a "Direct downloads" option.  If you check it, then the normal download links work as direct download links as long as you are logged into your account.  It doesn't work if you are not logged in.  That means it shouldn't cause problems for other users who download your publicly shared links by denying Uploadbuzz the ad revenue from those.
+
+By the way I don't know if you have noticed this or not, but there is a "direct download" setting in our Uploadbuzz accounts for premium users.  I have enabled it in both yours and my accounts.  It allows the normal download links to work as direct download links, but it only works if logged into your account.  So, turning it on shouldn't jeopardize our free premium accounts by bypassing the advertising when other users download the files.
+
+||google.com/adsense/ad
+firebase.google.com#gc-wrapper > main > devsite-content > article > div.devsite-banner.devsite-banner-announcement > div > div > text
+
+window.open-defuser.js is nowoif / no-window-open-if
+
+<iframe class="padPreload" src="data:text/html;charset=utf-8;base64,PGltZyBzcmM9Imh0dHBzOi8vbGx1cmwuY28vZmF2aWNvbi5pY28iPg==" style="width: 0px; height: 0px; position: absolute; border: none; margin: 0px; padding: 0px; outline: none;"></iframe>
+<iframe class="padPreload" src="data:text/html;charset=utf-8;base64,PGltZyBzcmM9Imh0dHBzOi8vc3BlcmFucy1iZWFjdG9yLmNvbS9mYXZpY29uLmljbyI+" style="width: 0px; height: 0px; position: absolute; border: none; margin: 0px; padding: 0px; outline: none;"></iframe>
+atob("PGltZyBzcmM9Imh0dHBzOi8vc3BlcmFucy1iZWFjdG9yLmNvbS9mYXZpY29uLmljbyI+"); to get real source
+
+<img src="https://sperans-beactor.com/favicon.ico"> <- using this as source prevents the iframe from being much data to load or from loading scripts which would be run while still complying with CORS policy.
+Chrome now only delivers cookies with cross-site requests if they are set with `SameSite=None` and `Secure`.
+
+Even if favicon.ico does not exist and a 404 is return, the domain is still correct so cors request will work.
+The cookie value won't stay set until a page successfully loads.
+document.cookie="s=eefks09pb8qooqhtla32fu4oj5";
+
+{"status":"ok","data":{"code":"123Abc","adminCode":"3ZcBq12nTgb4cbSwJVY
+
+31219
+
+Using the API counts as a website login too for Letsupload (only if accessed the API through the same web browser and/or if reused the "filehosting=" cookie?), so since you were already logged in when I used your keys, it assumed too many logins or unauthorized login when I tried. I logged out using the function on the web server, but I did not revoke my API access token. I don't know what the timeout period on the tokens are. Let me know if you have an issue when accessing your account.
+
+window.setTimeout
+
+How to remove CSS blur?
+ /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+In javascript use
+object.style.filter = "none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia()"
+object.style.filter = "none" removes all filters
+object.style.filter = "blur(0px)" removes only blur
+
+!To get rid of CSS blur on every website use one of the following:
+!No the domain name is necessary
+!*##*:style(filter: none !important; -webkit-filter: none !important;)
+!*##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
+Example:
+nulljungle.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
+
+
+Manually setting "adblock_detected=0;" in the console before making the post worked. <- only worked once; that ruined it because adblock_detected is NOT an int or boolean!
+use adblock_detected.value=0; instead
+However manually editing this in the "elements" tab worked:
+<input type="hidden" id="adblock_detected" name="adblock_detected" value="0"> <- change value from 1 to 0
+BUT must use the send/lower create link button!  The upper button is fake!
+giga-down.com##input[name="adblock_detected"]:remove() <- this worked since adblock_detected is set to 0 if not submitted on form.
+These get rid of the "fake" buttons:  one on post form submission and one for final download.
+giga-down.com##center:nth-of-type(3) > .btn-dow.btn
+giga-down.com##div.download-option-btn:nth-of-type(2) > .btn-success.btn
+
+giga-down.com
+			<div class="container">
+				
+
+				<form name="F1" method="POST" action="">
+				<input type="hidden" name="op" value="download2">
+				<input type="hidden" name="id" value="4j3abmxigk4q">
+				<input type="hidden" name="rand" value="lmsvpblbwkfmjep32fzjs3hs4u6stdq3an4hd6gvym">
+				<input name="dons" id="dons" type="hidden">
+				<input type="hidden" name="referer" value="http://www.rlslog.net/">
+
+				<input type="hidden" name="method_free" value="Free Download">
+				<input type="hidden" name="method_premium" value="">
+				
+				
+				<input type="hidden" id="adblock_detected" name="adblock_detected"> <- manually set this value
+
+   			
+   			<div class="adsbox"></div>
+   			<script>
+            if(!$('.adsbox').is(':visible')) $('#adblock_detected').val(1);
+   			</script>
+
+   			<div class="adsbox"></div>
+   			<script>
+            if(!$('.adsbox').is(':visible')) $('#adblock_detected').val(1);
+   			</script>
+
+$(document).ready(function()
+{
+	$('#countdown').each(function(i, e)
+	{
+      console.log("e =", e);
+		if(timeout) return;
+		var downloadbtn = $(e).parent().find('.downloadbtn');
+		$(downloadbtn).attr('disabled', true);
+		$(downloadbtn).css("display", "none");
+		timeout = setTimeout(tick, 1000);
+
+		function tick()
+		{
+			console.log('Tick');
+			var remaining = parseInt($(e).find(".seconds").text()) - 1;
+			if(remaining <= 0)
+			{
+				$(e).find(".seconds").text("0");
+				$('.downloadbtn').attr('disabled', false);
+				$('.downloadbtn').css("display", "inline");
+			}
+			else
+			{
+				$(e).find(".seconds").text(remaining.toString());
+				setTimeout(tick, 1000);
+			}
+		}
+	});
+});
+
+
+
+https://dailyuploads.net/images/redbutton.png
+change to display:inline which is default AND remove the hidden attribute
+<img src="https://dailyuploads.net/images/redbutton.png" hidden="" style="display: none !important;">
+
+
+###downloadbtn
+
+example.com##html:style(visibility: visible !important;)
+
+Change this to display: block from none and block the script which changes it
+<button id="downloadbtn" style="display: none;" class="downloadbtn btn btn-block btn-primary btn-lg mt-3">
+<button style="display: block;" class="downloadbtn btn btn-block btn-primary btn-lg mt-3" id="downloadBtnClick" name="fs_download_file">
+function usrblock(){
+	var got = $('#adblock_check').val();
+	if(got == "1"){
+	$(".downloadbtn").html('ADBLOCK DETECTED!');
+				$('.downloadbtn').attr('disabled', true);
+    }else{
+    				$('.downloadbtn').attr('disabled', false);
+    
+    }
+	
+	}
+
+
+||wupfile.com/js/countdown.js*
+<div class="adsbox"></div>
+<script>
+			$('#adblock_detected').val($('.adsbox').is(':visible') ? 0 : 1);
+If adsbox = visible set 0, otherwise set 1.
+So force adsbox to visible or adblock_detected to 0
+			</script>
+<input type="hidden" id="adblock_detected" name="adblock_detected"> <- needs to be 0 on download link for form submission
+
+!||www.youtube.com/yts/jsbin/player_ias-vflyfIBHt/en_US/endscreen.js*
+||www.youtube.com/yts/jsbin/player_ias-*/en_US/endscreen.js*
+
+abort-current-inline-script,
+mediafire.com##+js(abort-current-inline-script, document.getElementById, adblocker)
+upload.ac##+js(remove-attr.js, checked, #chkIsAdd)
+!domain.com##+js(abort-on-property-write, <variable>)
+!domain.com##^script:inject(abort-on-property-read, adBlockDetected)
+scnlog.me##^script:inject(popads.net.js) <- runs the script instead of blocking it?
+
+||abload.de/picload404.php*
+shorten.asia/rKuWH8aC​​​​​
+https://2df7e.v.fwmrm.net/ad/l/1?ct=4&metr=959&s=e39a9&n=188286%3B188286%3B187827%3B375524%3B375613%3B375617%3B375620%3B378491%3B382283%3B382314%3B382315&t=1560644920979912029&f=&r=188286&adid=17350005&reid=6132847&arid=0&auid=&cn=midPoint&et=i&_cc=&tpos=0&iw=&uxnw=&uxss=&uxct=&pingids=118
+
+https://cdn.adaptv.advertising.com/msft/msftsync.html
+
+||yuunj.com/1.php*
+247-inc.net
+||cdnondemand.org/*
+
+||clients4.google.com/invalidation/lcs/request*
+vast.extremereach.io/vast?line_item=14767465&subid1=novpaid&er_ap=0&er_ar=0&ba_cb=382661789
+||c5x8i7c7.ssl.hwcdn.net/vplayer-parallel/20180830_1458/videojs/show.html$subdocument
+
+whitelist this for silk coupon?  irxcm.com/RevTrax/js/fp/fp.min.jsp
+
+https://wms-na.amazon-adsystem.com/js/popup.js
+https://wms-na.amazon-adsystem.com/panda/20070822/US/js/8005.js
+https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Foneanggam-20%2F8005%2F7bec104c-1c41-46f5-9b03-72fcd374fccc
+https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00ZC294LW&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=oneanggam-20
+
+
+Other domains used by NOX Player:
+8.bignox.com
+android.bignox.com
+androiden.duapp.com
+api-new.bignox.com
+api.bignox.com
+api.mobula.sdk.duapps.com
+app.bignox.com
+app.static.bignox.com
+app.test.bignox.com
+attitude.applinzi.com
+au.umeng.com
+bbs.bignox.com
+bi.yeshen.com
+bignox.com
+cn.bignox.com
+common.duapps.com
+de.bignox.com
+dev.bignox.com
+download.bignox.com
+en.bignox.com
+es.bignox.com
+feed.bignox.com
+fr.bignox.com
+game.bignox.com
+gift.bignox.com
+gray.bignox.com
+group.bignox.com
+hm.e.shifen.com
+hmma.baidu.com
+image.bignox.com
+info.bignox.com
+ios.bignox.com
+kr.bignox.com
+launcher-us.yeshen.com
+launcher.us.yeshen.com
+mail.bignox.com
+mis.bignox.com
+mobile.bignox.com
+ms.bignox.com
+my.bignox.com
+news.bignox.com
+noxagile.bceapp.com
+noxagile.duapp.com
+nrc.tapas.net
+open.bignox.com
+passport-us.bignox.com
+passport.bignox.com
+pasta.esfile.duapps.com
+pay.bignox.com
+ph.bignox.com
+phone.bignox.com
+plat-api.bignox.com
+player.bignox.com
+pop3.bignox.com
+pt.bignox.com
+pubstatus.sinaapp.com
+res.bignox.com
+res.noxmobi.com
+res02.bignox.com
+res05.bignox.com
+res06.bignox.com
+res09.bignox.com
+res11.bignox.com
+res12.bignox.com
+ru.bignox.com
+sdk.bignox.com
+sdk.open.inc2.igexin.com
+shouyou.bignox.com
+sj.bignox.com
+sns.bignox.com
+ssp-3-9f58.trnox.com
+st.bignox.com
+t.bignox.com
+tdcv3.talkingdata.net
+tl.bignox.com
+tui.bignox.com
+tv.bignox.com
+tw.bignox.com
+union.bignox.com
+user.bignox.com
+vip.bignox.com
+wap.bignox.com
+www.bignox.com
+www.yeshen.com
+www.yeshen.com.w.kunlungr.com
+
+
+Old Adblock plus header: <- uBlock does not require this.
+# Adblock Plus preferences
+version=4
+
+[Subscription]
+url=~user~585130
+title=blockingGroup_title
+defaults=blocking
+ 
+[Subscription filters]
+
+
+
+megaup.net script which creates download form:
+function DeObfuscate_String_and_Create_Form_With_Mhoa_URL(d1, d2, FileName, FileSize)
+/html/body/section[1]/div/div/script[1]
+
+function DeObfuscate_String_and_Create_Form_With_Mhoa_URL(d1, d2, FileName, FileSize) {var _0x2aaf93=_0x55bc;(function(_0x763482,_0x56e01d){var _0x337a5b=_0x55bc,_0x44d66e=_0x763482();while(!![]){try{var _0x383043=-parseInt(_0x337a5b(0x1bb))/0x1*(-parseInt(_0x337a5b(0x1a5))/0x2)+parseInt(_0x337a5b(0x1af))/0x3+parseInt(_0x337a5b(0x1a0))/0x4*(parseInt(_0x337a5b(0x1a9))/0x5)+parseInt(_0x337a5b(0x1b1))/0x6*(-parseInt(_0x337a5b(0x1aa))/0x7)+-parseInt(_0x337a5b(0x19d))/0x8+-parseInt(_0x337a5b(0x1ba))/0x9*(-parseInt(_0x337a5b(0x1b7))/0xa)+-parseInt(_0x337a5b(0x1b5))/0xb*(parseInt(_0x337a5b(0x1b2))/0xc);if(_0x383043===_0x56e01d)break;else _0x44d66e['push'](_0x44d66e['shift']());}catch(_0x3052d7){_0x44d66e['push'](_0x44d66e['shift']());}}}(_0x4511,0xd83d3));var url_da_encrypt='';for(i=d1[_0x2aaf93(0x1b3)]/0x4-0x1;i>=0x0;i--){url_da_encrypt+=d1[i];}for(i=d1[_0x2aaf93(0x1b3)]/0x4*0x3-0x1;i>=d1[_0x2aaf93(0x1b3)]/0x4*0x2;i--){url_da_encrypt+=d1[i];}for(i=(d2[_0x2aaf93(0x1b3)]-0x3)/0x2+0x2;i>=0x3;i--){url_da_encrypt+=d2[i];}function _0x4511(){var _0x16dd4b=['13882PCmLyx','round','5176030zAWYDW','idfilename','display','18dZkZqi','211xaIjdJ','idurl','11176688SVkWKt','clientWidth','value','52Bdpfaj','documentElement','getElementById','body','<form\x20action=\x27https://download.megaup.net/\x27\x20method=\x27get\x27\x20style=\x27text-align:\x20center;\x27><input\x20id=\x27idurl\x27\x20type=\x27hidden\x27\x20name=\x27idurl\x27><input\x20id=\x27idfilename\x27\x20type=\x27hidden\x27\x20name=\x27idfilename\x27><input\x20id=\x27idfilesize\x27\x20type=\x27hidden\x27\x20name=\x27idfilesize\x27><input\x20id=\x27btnsubmit\x27\x20type=\x27submit\x27\x20class=\x27btn\x20btn-default\x27\x20value=\x27Create\x20Download\x20Link\x27></form>','622WPRFIg','.download-timer','.imgAds','html','610595vXotXo','462zJQKZe','innerWidth','clientHeight','idfilesize','setAttribute','4405371TKHXyo','height','49788qKzftx','12612UvgHFW','length','<img\x20src=\x27https://megaup.net/themes/flow/frontend_assets/images/adblock/primary.png\x27>'];_0x4511=function(){return _0x16dd4b;};return _0x4511();}var width_trinh_duyet=window[_0x2aaf93(0x1ab)]||document[_0x2aaf93(0x1a1)][_0x2aaf93(0x19e)]||document['body'][_0x2aaf93(0x19e)],height_trinh_duyet=window['innerHeight']||document[_0x2aaf93(0x1a1)]['clientHeight']||document[_0x2aaf93(0x1a3)][_0x2aaf93(0x1ac)];function _0x55bc(_0x2d4513,_0x5f4ee9){var _0x4511a1=_0x4511();return _0x55bc=function(_0x55bccc,_0x3e2312){_0x55bccc=_0x55bccc-0x19d;var _0x4fcbee=_0x4511a1[_0x55bccc];return _0x4fcbee;},_0x55bc(_0x2d4513,_0x5f4ee9);}if(width_trinh_duyet>0x0&&height_trinh_duyet>0x0){}else url_da_encrypt+=url_da_encrypt[Math[_0x2aaf93(0x1b6)](url_da_encrypt[_0x2aaf93(0x1b3)]/0x3)],url_da_encrypt+=url_da_encrypt[Math[_0x2aaf93(0x1b6)](url_da_encrypt[_0x2aaf93(0x1b3)]/0x2)];if($('.metaRedirectWrapperBottomAds')['css'](_0x2aaf93(0x1b9))=='none'||$('#M9319823')[_0x2aaf93(0x1b0)]()==0x0||$(_0x2aaf93(0x1a7))[_0x2aaf93(0x1b0)]()==0x0||$('.imgAds')[_0x2aaf93(0x1b0)]()==0x20||$(_0x2aaf93(0x1a7))[_0x2aaf93(0x1b0)]()==0x1a||$('.imgAds')[_0x2aaf93(0x1b0)]()==0x10||$('.imgAds')['height']()==0x64||$(_0x2aaf93(0x1a7))['length']==0x0){$('.download-timer')[_0x2aaf93(0x1a8)](_0x2aaf93(0x1b4));return;}$(_0x2aaf93(0x1a6))[_0x2aaf93(0x1a8)](_0x2aaf93(0x1a4)),document[_0x2aaf93(0x1a2)](_0x2aaf93(0x1bc))[_0x2aaf93(0x1ae)](_0x2aaf93(0x19f),url_da_encrypt),document[_0x2aaf93(0x1a2)](_0x2aaf93(0x1b8))[_0x2aaf93(0x1ae)]('value',FileName),document[_0x2aaf93(0x1a2)](_0x2aaf93(0x1ad))[_0x2aaf93(0x1ae)](_0x2aaf93(0x19f),FileSize);};
+
+function DeObfuscate_String_and_Create_Form_With_Mhoa_URL(d1, d2, FileName, FileSize) {var _0x2aaf93=_0x55bc;(function(_0x763482,_0x56e01d){var _0x337a5b=_0x55bc,_0x44d66e=_0x763482();while(!![]){try{var _0x383043=-parseInt(_0x337a5b(0x1bb))/0x1*(-parseInt(_0x337a5b(0x1a5))/0x2)+parseInt(_0x337a5b(0x1af))/0x3+parseInt(_0x337a5b(0x1a0))/0x4*(parseInt(_0x337a5b(0x1a9))/0x5)+parseInt(_0x337a5b(0x1b1))/0x6*(-parseInt(_0x337a5b(0x1aa))/0x7)+-parseInt(_0x337a5b(0x19d))/0x8+-parseInt(_0x337a5b(0x1ba))/0x9*(-parseInt(_0x337a5b(0x1b7))/0xa)+-parseInt(_0x337a5b(0x1b5))/0xb*(parseInt(_0x337a5b(0x1b2))/0xc);_0x44d66e['push'](_0x44d66e['shift']());}catch(_0x3052d7){_0x44d66e['push'](_0x44d66e['shift']());}}}(_0x4511,0xd83d3));var url_da_encrypt='';for(i=d1[_0x2aaf93(0x1b3)]/0x4-0x1;i>=0x0;i--){url_da_encrypt+=d1[i];}for(i=d1[_0x2aaf93(0x1b3)]/0x4*0x3-0x1;i>=d1[_0x2aaf93(0x1b3)]/0x4*0x2;i--){url_da_encrypt+=d1[i];}for(i=(d2[_0x2aaf93(0x1b3)]-0x3)/0x2+0x2;i>=0x3;i--){url_da_encrypt+=d2[i];}function _0x4511(){var _0x16dd4b=['13882PCmLyx','round','5176030zAWYDW','idfilename','display','18dZkZqi','211xaIjdJ','idurl','11176688SVkWKt','clientWidth','value','52Bdpfaj','documentElement','getElementById','body','<form\x20action=\x27https://download.megaup.net/\x27\x20method=\x27get\x27\x20style=\x27text-align:\x20center;\x27><input\x20id=\x27idurl\x27\x20type=\x27hidden\x27\x20name=\x27idurl\x27><input\x20id=\x27idfilename\x27\x20type=\x27hidden\x27\x20name=\x27idfilename\x27><input\x20id=\x27idfilesize\x27\x20type=\x27hidden\x27\x20name=\x27idfilesize\x27><input\x20id=\x27btnsubmit\x27\x20type=\x27submit\x27\x20class=\x27btn\x20btn-default\x27\x20value=\x27Create\x20Download\x20Link\x27></form>','622WPRFIg','.download-timer','.imgAds','html','610595vXotXo','462zJQKZe','innerWidth','clientHeight','idfilesize','setAttribute','4405371TKHXyo','height','49788qKzftx','12612UvgHFW','length',''];_0x4511=function(){return _0x16dd4b;};return _0x4511();}var width_trinh_duyet=window[_0x2aaf93(0x1ab)]||document[_0x2aaf93(0x1a1)][_0x2aaf93(0x19e)]||document['body'][_0x2aaf93(0x19e)],height_trinh_duyet=window['innerHeight']||document[_0x2aaf93(0x1a1)]['clientHeight']||document[_0x2aaf93(0x1a3)][_0x2aaf93(0x1ac)];function _0x55bc(_0x2d4513,_0x5f4ee9){var _0x4511a1=_0x4511();return _0x55bc=function(_0x55bccc,_0x3e2312){_0x55bccc=_0x55bccc-0x19d;var _0x4fcbee=_0x4511a1[_0x55bccc];return _0x4fcbee;},_0x55bc(_0x2d4513,_0x5f4ee9);}url_da_encrypt+=url_da_encrypt[Math[_0x2aaf93(0x1b6)](url_da_encrypt[_0x2aaf93(0x1b3)]/0x3)],url_da_encrypt+=url_da_encrypt[Math[_0x2aaf93(0x1b6)](url_da_encrypt[_0x2aaf93(0x1b3)]/0x2)];$(_0x2aaf93(0x1a6))[_0x2aaf93(0x1a8)](_0x2aaf93(0x1a4)),document[_0x2aaf93(0x1a2)](_0x2aaf93(0x1bc))[_0x2aaf93(0x1ae)](_0x2aaf93(0x19f),url_da_encrypt),document[_0x2aaf93(0x1a2)](_0x2aaf93(0x1b8))[_0x2aaf93(0x1ae)]('value',FileName),document[_0x2aaf93(0x1a2)](_0x2aaf93(0x1ad))[_0x2aaf93(0x1ae)](_0x2aaf93(0x19f),FileSize);};
+DeObfuscate_String_and_Create_Form_With_Mhoa_URL('bV3lpRVfMHJ07joebUXHcmaKJ98L5VaLxil0CKBQb/ot53hZhRrqTNyELsGrdNVyZg5pQjwYA12yhUQRpZEHEwI+5IHJtlhPDy+QaKXjuhrZY+pCO5/V2hR3V/1zw6M7g37U9AiUeNYd2QUk', 'CYm=MbtWKg7Clky5GPPN+us8ao/56VxPK1ytWA7mfxl6RonZnrffKY0rcDbtmcXxKrTtnO7L7k=', 'Hyper.Echelon.v1.0.3-DARKZER 0.rar', '262.73 MB');
+
+This calls the above script:
+
+    var milisec = 0;
+    var seconds = 5;
+
+    function display()
+    {
+        $('.btn-free').hide();
+        $('.download-timer').show();
+        if (seconds == 0)
+        {	
+			//Create URL
+			DeObfuscate_String_and_Create_Form_With_Mhoa_URL('+JJbJWriyrgDGHXtnisp+iebUXHcmaKJ98L5VaLxil0CKBQb/ot53hZhRrqTNyELrlgvS+pvYmigWEuszFNY0Vq/5u6UHV3L1wpUWZitSKt7sDVOls4qWxdF23aRlu4++zYu/MQ4J94cZkrUrlPfnqFyhwNj60onUsvGGNCtMaui', 'CzMx1YhZaTDRGvVbP7FlZGX0iUSq38yutc5RBC5EOTB3lMd+PdEnC45OgPwRw0cxxtxp0VZX39iLpxSf8RqQFHh', 'Hyper.Echelon.v1.0.3-DARKZER 0.rar', '262.73 MB');
+        }
+        else
+        {
+            $('.download-timer-seconds').html(seconds);
+        }
+        seconds--;
+    }
+
+    $(document).ready(function() {
+        $('.download-timer-seconds').html(5);
+        countdownTimer = setInterval('display()', 1000);
+    });
+
+
+DropGalaxy rules that are not needed:
+
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, .downloadbtn)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, adblock_check)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, usrblock)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, .downloadbtn)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, got)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, .downloadbtn)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, got)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-current-inline-script, fullAdsRendered)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, ad114caa64152aac18535dbf18d9ed74)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, ad114caa64152aac18535dbf18d9ed74)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, deAmpEnabled)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, forbiddenKeys)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, noFetchIf)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, pageData)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, scriptletGlobals)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, window.googletag)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, window.protag)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-read, xhrInstances)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, deAmpEnabled)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, forbiddenKeys)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, noFetchIf)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, pageData)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, scriptletGlobals)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, window.googletag)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, window.protag)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(abort-on-property-write, xhrInstances)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, adsbygoogle)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, adsbygoogle)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, adsbygoogle)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, data-ad-client)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, data-ad-client)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, data-ad-client)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, dmAZuTknHuCIIWY)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, document.documentElement.clientWidth)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, forbiddenKeys)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, forbiddenKeys)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, user)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, user)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, dmAZuTknHuCIIWY)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, document.documentElement.clientWidth)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-fetch-if, /adtrue\.com|eningspon\.com|freychang\.fun|orquideassp\.com|popunder/)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-xhr-if, /a-mo\.net|adnxs\.com|prebid|creativecdn\.com|e-planning\.net|quantumdex\.io/)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, name, #downloadBtnClick, stay)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##.GoogleActiveViewElement, .middle-container, .mys-wrapper
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##.adsbygoogle:style(max-height: 1px !important;)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, ad114caa64152aac18535dbf18d9ed74, "")
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, adblock_check, 1, stay)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, adblock_detected, 0, stay)
+
+! TODO: should any of the following 24 rules be used?
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, atob)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, 0x2bb9)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopr, _0xab85)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, parseInt, break;case $.)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aeld, , loadScripts)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aeld, , { [native code] })
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aeld, /mousehandler/)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aeld, DOMContentLoaded, handler)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, 0x2bb9)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(aopw, _0xab85)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-setInterval-if, [native code])
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-setInterval-if, _0x)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(no-setTimeout-if, _0x)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, script, break;case $.)
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##^script:has-text(/document.on/i):remove()
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##^script:has-text(_0x):remove()
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##^script:has-text(__CF$cv$params):remove()
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##^script:has-text(break;case $.):remove()
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##^script:has-text(setTimeout):remove()
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, document.createElement, /break;case \$\.|popunder/)
+!*$frame,redirect-rule=noopframe,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!*$xhr,redirect-rule=nooptext,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!*$image,redirect-rule=32x32.png,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!*$script,redirect-rule=noopjs,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+! TODO: Is the following necessary?
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, true;, false;)
+
+! TODO: Are the following really necessary for dropgalaxy downloads to work?
+!@@.jpg$image,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@.png$image,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||googlesyndication.com^$script,xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||dropgalaxy.co,dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net,newsindi.com,techthematter.xyz,dgdrive.xyz^$generichide
+!dropgalaxy.co,dropgalaxy.com,dropgalaxy.in,dropgalaxy.vip,techssting.com,financemonk.net,newsindi.com,techthematter.xyz,dgdrive.xyz#@#div[id^="div-gpt-ad"]:style(width:1px!important;height:1px!important;min-width:1px!important;min-height:1px!important;margin:0!important;padding:0!important;overflow:hidden!important;opacity:0!important;)
+!@@*$script,from=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz,to=a2zapk.com|adoto.net|doubleclick.net|googlesyndication.com|login.popmonetizer.com|rsc.cdn77.org|vlitag.com
+!@@||a2zapk.com^$script,xhr,3p,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||adoto.net^$script,xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||adservice.google.*/adsid/integrator.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||assets.vlitag.com/prebid/default/prebid-$domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!@@||challenges.cloudflare.com/cdn-cgi/challenge-platform/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!!@@||challenges.cloudflare.com^$subdocument,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||cloudfront.net/publishers/dropgalaxycom.min.js$domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||cmp.uniconsent.com^$script,xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||contextual.media.net/*/fcmain.js$domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||contextual.media.net/dmedianet.js?cid=$domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||dnhfi5nn2dt67.cloudfront.net/ui-bootstrap-tpls.min.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||googletagmanager.com/gtag/js$xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||googletagservices.com/tag/js/gpt.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!! TODO: gum.criteo.com is already blocked in my hosts file.
+!@@||gum.criteo.com/sid/json?origin=prebid&topUrl=$xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||jscdn.greeter.me/dropgalaxy.onlinehead.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||mp.4dex.io/prebid$xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||popads.net/js/adblock.js$script,xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!!||protagcdn.com/s/dropgalaxy.com/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!!||protagcdn.com/s/dropgalaxy.com/site.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!@@||protagcdn.com/s/dropgalaxy.com/site.js$script,domain=dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|financemonk.net|dgdrive.xyz
+!@@||script.4dex.io/adagio.js$xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
+!@@||static.criteo.net/js/ld/publishertag.prebid.js$script,xhr,domain=dropgalaxy.co|dropgalaxy.com|dropgalaxy.in|dropgalaxy.vip|techssting.com|financemonk.net|newsindi.com|techthematter.xyz|dgdrive.xyz
