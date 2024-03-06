@@ -16875,7 +16875,6 @@ best4pc.com##a.button:nth-of-type(5)
 best4pc.com##a.button:nth-of-type(4)
 best4pc.com##a.button:nth-of-type(3)
 best4pc.com##a.button:nth-of-type(2)
-1fichier.com##div[id^="rn_ad_native"]
 ||www.nulledteam.com/data/siropu/am/user/15bd0a9b617446.png$image
 www.nulledteam.com##.samCustomSize.samAlignCenter.samBannerUnit
 !www.softpedia.com##div[class="ad adl ad-300x600 adwblue fr mgleft_30 mgbot_20 mgtop_10"]
@@ -20259,9 +20258,6 @@ bjorn3d.com##div[id^="div-gpt-ad-"]
 thefpsreview.com##ins[class="adsbygoogle"]:remove()
 thefpsreview.com##div[class*="td-g-rec-id-custom_ad_"]
 www.xtube.com##.cnt > .removeAds
-1fichier.com###cookie_box
-1fichier.com###cookie_box:remove()
-||img.1fichier.com/ui/ui-bg_highlight-soft_100_eeeeee_1x100.png$image
 ||www.facebook.com/tr?id=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||web.vortex.data.microsoft.com/collect/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mscom.demdex.net^*
@@ -20378,10 +20374,9 @@ torrentgalaxy.to##+js(abort-on-property-write, real-href)
 ||torrentgalaxy.to/common/exs/exs.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 torrentgalaxy.to##iframe[id="twitter-widget-0"]
 ||cdn.thegamerspost.com/themes/v2/img/adblock.png$image
-1fichier.com##.n-728-90.f1.hasAdLogo-true
 ||mx-sh.net/js/blockadblock-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mx-sh.net/css_newTheme/adblock.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-mx-sh.net##div[id="bannerad"]
+mx-sh.net##div[id="bannerad"]:remove()
 ||mx-sh.net/js/remodal.min-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 mx-sh.net##+js(abort-on-property-read, adblockinfo)
 mx-sh.net##+js(abort-on-property-write, adblockinfo)
@@ -21651,10 +21646,8 @@ www.pennlive.com##div[class="ad--sponsor-content"]
 www.pennlive.com##div[class*="ad--topRail-Below-Flex"]
 www.pennlive.com##div[class*="ads--no-preload"]
 www.pennlive.com###below-toprail
-ulozto.net###freeDownloadAd
-ulozto.net###mask
-!1fichier.com##.ui-front.ui-widget-content.ui-widget.ui-corner-all.ui-dialog
-!1fichier.com##.ui-front.ui-widget-overlay
+ulozto.net###freeDownloadAd:remove()
+ulozto.net###mask:remove()
 ||otnolatrnup.com^*
 ||www.getflash-now.com^*
 ||getflash-now.com^*
@@ -21662,7 +21655,6 @@ ulozto.net###mask
 ||d141wsrw9m4as6.cloudfront.net^*
 ||ulrementpati.info^*
 ||ackgroupsevention.info^*
-www.auslogics.com##.b-cookie-policy
 www.auslogics.com##.b-cookie-policy:remove()
 www.heaventools.com##.cc-color-override-688238583.cc-top.cc-theme-block.cc-type-info.cc-banner.cc-window
 www.digitalcitizen.life###eu-cookies-consent:remove()
@@ -22909,8 +22901,6 @@ mylink.vc##+js(abort-on-property-write, bmdfvtquoURL)
 ||esasoud.net^*
 ||vimjarawl.com^*
 ||cogleapad.com^*
-||img.1fichier.com/flipclock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-1fichier.com##+js(set-constant, time, 0)
 www.gamesindustry.biz###onetrust-consent-sdk
 www.gamelife.com###ezmobfooter
 www.gamelife.com##.cookie-notice-container
@@ -23869,18 +23859,17 @@ www.arachnosoft.com##+js(abort-on-property-read, adsbygoogle)
 www.arachnosoft.com##+js(abort-on-property-write, adsbygoogle)
 ||passback.free.fr/pub/pp_120x600.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||passback.free.fr/pub/pp_300x250.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||usd.engel-eva.com/zcredirect^*
+!||usd.engel-eva.com/zcredirect$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||usd.engel-eva.com/zcvisitor/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||usd.engel-eva.com^*
 www.arachnosoft.com##.left-menu
 www.arachnosoft.com##.right-menu
-community.spiceworks.com##div[class="zd-privacy-content"]
-!www.vpnbook.com##div[class="align-left adsense"]
-www.vpnbook.com##div[class$="adsense"]
+community.spiceworks.com##div[class="zd-privacy-content"]:remove()
+!www.vpnbook.com##div[class="align-left adsense"]:remove()
+www.vpnbook.com##div[class$="adsense"]:remove()
 www.vpnbook.com##ins[class="adsbygoogle"]:remove()
 www.vpnbook.com##+js(abort-on-property-read, adsbygoogle)
 www.vpnbook.com##+js(abort-on-property-write, adsbygoogle)
-1fichier.com##div[aria-describedby="modal-msg"]
 !||flow.aquaplatform.com/lg.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||flow.aquaplatform.com/asyncjs.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||flow.aquaplatform.com^*
@@ -23888,7 +23877,6 @@ proxite.ws##+js(abort-on-property-read, scJsHost)
 proxite.ws##+js(abort-on-property-write, scJsHost)
 www.seagullscientific.com##div[aria-label="cookieconsent"]:remove()
 support.seagullscientific.com##div[id="cookie-popper"]:remove()
-1fichier.com##.ui-front.ui-widget-overlay
 ||mypenny.xyz^*
 !||d1gwclp1pmzk26.cloudfront.net/agile/stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !horizondatasys.com##+js(abort-on-property-read, Agile_API)
@@ -24139,7 +24127,6 @@ www.gamasutra.com##div[class="gdpr-popup-border"]:remove()
 ||www.lfendascra.club^*
 ||lfendascra.club^*
 ||tablebehav.club^*
-1fichier.com##input[name="adz"]:remove()
 silk.com##div[id="cookie-bar"]:remove()
 silk.com##div[class="cookiealert show"]:remove()
 free-proxysite.com##div[id="ad1sector"]:remove()
@@ -28057,10 +28044,9 @@ www.filecad.com##div[class="download-timer"]:style(display: inline !important;)
 www.filecad.com##+js(no-setInterval-if, /^display\(\)/)
 www.filecad.com##a[class="btn btn-subtle"]:style(display: inline !important;)
 www.filecad.com##+js(set-constant, LOGGED_IN, true)
-www.amazon.es##span[data-action="sp-cc"]
-www.amazon.es##div[class^="sp-cc-"]
-www.javascripttutorial.net##div[class="whitelist"]
-!1fichier.com##div[class="ct_warn"]
+www.amazon.es##span[data-action="sp-cc"]:remove()
+www.amazon.es##div[class^="sp-cc-"]:remove()
+www.javascripttutorial.net##div[class="whitelist"]:remove()
 ||www.hgzuqrtzt.com^*
 ||hgzuqrtzt.com^*
 indishare.org##a[href*="//9xlust.in"]
@@ -33992,11 +33978,10 @@ www.patrickmin.com##ins[data-ad-client]:remove()
 www.neowin.net##span[class="header-banner-advertising"]
 www.neowin.net##div[data-freestar-ad]
 www.neowin.net##div[data-freestar-ad]:remove()
-www.looper.com##div[data-ad-height]
-www.washingtontimes.com##div[id="ad-lead"]
-www.washingtontimes.com##div[data-ad-settings]
+www.looper.com##div[data-ad-height]:remove()
+www.washingtontimes.com##div[id="ad-lead"]:remove()
+www.washingtontimes.com##div[data-ad-settings]:remove()
 ||ping.seedtag.com^*
-1fichier.com##+js(remove-attr, disabled, #dlw, stay)
 ||lingamretene.com^*
 ||bailifftent.com^*
 ||c.sf-syn.com/conversion_outbound_tracker/sf$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49817,6 +49802,27 @@ www.vulture.com##section[class="ad-splash"]:remove()
 www.vulture.com##section[data-editable="adSplash"]:remove()
 www.vulture.com##section[data-track-zone="ad-splash"]:remove()
 ||www.vulture.com/_components/ad/instances/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||img.1fichier.com/ui/ui-bg_highlight-soft_100_eeeeee_1x100.png$image
+||img.1fichier.com/flipclock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+1fichier.com##.ui-front.ui-widget-overlay:remove()
+1fichier.com##.n-728-90.f1.hasAdLogo-true:remove()
+1fichier.com###cookie_box:remove()
+1fichier.com##input[name="adz"]:remove()
+1fichier.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+1fichier.com##div[id^="rn_ad_native"]:remove()
+1fichier.com##div[aria-describedby="modal-msg"]:remove()
+1fichier.com##script[data-cmp-ab="1"]:remove()
+1fichier.com##+js(set-constant, time, 0)
+1fichier.com##+js(remove-attr, disabled, #dlw, stay)
+!1fichier.com##+js(set-cookie, show_cm, no, , reload, 1)
+1fichier.com##+js(set-cookie, show_cm, no)
+! Do not use the following rule or the waiting time to next download will not be displayed.
+!1fichier.com##div[class="ct_warn"]
+!1fichier.com##.ui-front.ui-widget-content.ui-widget.ui-corner-all.ui-dialog
+!||tags.refinery89.com/prebid/prebid7.54.3-2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||tags.refinery89.com/v2/1fichiercom.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||tags.refinery89.com^*
+||a.delivery.consentmanager.net^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
