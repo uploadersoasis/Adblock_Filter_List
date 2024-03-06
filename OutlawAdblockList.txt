@@ -42539,6 +42539,8 @@ powvdeo.lol##div[id="banner"]:remove()
 !||js.stripe.com/v3/fingerprinted/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||plirkep.com^*
 pallabmobile.in##article[id^="post-"]:remove()
+pallabmobile.in##button[name="verify"]:remove-attr(disabled)
+pallabmobile.in##+js(remove-attr, disabled, button[name="verify"])
 pallabmobile.in##div[style="position: fixed; width: 100vw; background: rgba(0, 0, 0, 0.5); top: 0; bottom: 0; left: 0; display: flex; z-index: 999999;"]:has(h3:has-text(Disable Adblock)):remove()
 pallabmobile.in##iframe[id^="google_ads_frame"]:remove()
 pallabmobile.in##ins[data-ad-client]:remove()
