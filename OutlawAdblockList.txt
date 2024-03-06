@@ -41350,6 +41350,7 @@ filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, lj, null)
 filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, _popsThisDay, 1)
 filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, popWait, 1)
 filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, popsMax, 1, stay)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(set-constant, CNLPOP, noopFunc)
 filecrypt.co,filecrypt.cc,filecrypt.to##+js(abort-on-property-read, WaynePop3)
 filecrypt.co,filecrypt.cc,filecrypt.to##+js(abort-on-property-write, WaynePop3)
 filecrypt.co,filecrypt.cc,filecrypt.to##+js(abort-on-property-read, _popsThisDay)
@@ -41364,27 +41365,31 @@ filecrypt.co,filecrypt.cc,filecrypt.to##+js(acs, absda)
 !filecrypt.co,filecrypt.cc,filecrypt.to##+js(acs, Boolean, decodeURIComponent)
 filecrypt.co,filecrypt.cc,filecrypt.to##+js(acs, Boolean, decodeURIComponent, replace)
 filecrypt.co,filecrypt.cc,filecrypt.to##+js(acs, parseInt, open)
-filecrypt.co,filecrypt.cc,filecrypt.to##.content > .small.box > .container > tbody > tr:nth-of-type(2) > td > a[href^="https://www.g2a.com/"]:remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##div[class^="fiIltheadblockqueue"]:remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##div[class^="fiIItheadblockqueue"]:remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##button[title="block this!"]:remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##button[type="submit"]:has-text(/Confirm/i):style(display: block !important;)
-filecrypt.co,filecrypt.cc,filecrypt.to##button[id][onclick*=".html"]:remove-attr(onclick)
-! The following would remove the legitimate download link.
-!filecrypt.co,filecrypt.cc,filecrypt.to##button[data-i18n="Download"][onclick^="openLink("]:remove-attr(onclick)
-filecrypt.co,filecrypt.cc,filecrypt.to##div > [href*=".html"]:upward(div):remove()
-filecrypt.co,filecrypt.cc,filecrypt.to###jvb:remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##li:has-text(100% Anonym):remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##.bums:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##.support:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to###jvb:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##[src^="https://filecrypt.cc/images/"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##[src^="../../../images/"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##[href^="/xux/"]:remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##div[class] > i[style*="background:url"][onclick*="openLink"]:remove()
-! The following rule won't work because this class name is randomly generated.
-!filecrypt.co,filecrypt.cc,filecrypt.to##div[class="obldnweby"]:remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##div[style="pointer-events: none; position: absolute; top: 0px; left: 0px; width: 1522px; height: 566px; z-index: 2147483647;"]:has(div[style="position: absolute; top: 0px; left: 0px; width: 1522px; height: 566px; z-index: 2147483647; pointer-events: auto;"]):remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##div[class="filItheadbIockgueue3"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##a[href^="https://ausoafab.net/"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##button[title="block this!"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##button[type="submit"]:has-text(/Confirm/i):style(display: block !important;)
+filecrypt.co,filecrypt.cc,filecrypt.to##button[id][onclick*=".html"]:remove-attr(onclick)
+filecrypt.co,filecrypt.cc,filecrypt.to##button[id]:has-text(/High-speed/i)
+! The following would remove the legitimate download link.
+!filecrypt.co,filecrypt.cc,filecrypt.to##button[data-i18n="Download"][onclick^="openLink("]:remove-attr(onclick)
+! TODO: The following rule won't work because this class name is randomly generated?
+filecrypt.co,filecrypt.cc,filecrypt.to##div[class="ooxt"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##div[class]:matches-attr(style=/pointer-events:\s?none;\s?position:\s?absolute;\s?top:\s?0px;\s?left:\s?0px;\s?width:\s?\d+px;\s?height:\s?\d+px;\s?z-index:\s?2147483647;/):remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##div[class^="fiIltheadblockqueue"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##div[class^="fiIItheadblockqueue"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##div[class^="filItheadbIockgueue"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##div[style^="z-index: 999999; background-image: url("]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##div > [href*=".html"]:upward(div):remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##form[onsubmit]:remove-attr(onsubmit)
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(remove-attr, onsubmit, form[onsubmit])
+filecrypt.co,filecrypt.cc,filecrypt.to##img[style]:matches-attr(style=/display:\s?none;/):remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##li:has-text(100% Anonym):remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id^="AdServer_"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="AdHeader"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="Adcode"]:remove()
@@ -41396,33 +41401,29 @@ filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="NavAD"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="ad-300x250-wrapper"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id^="ad-2-"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id="above-the-fold-ad"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[id^="hidden"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[src$="/muh.php"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[src^="https://filecrypt.cc/bla2.php"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##iframe[src="about:blank"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##script[id^="AdContent_"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##script[src^="//ausoafab.net/"]:remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'bla2.php?container=')]):remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+! removing all cookies makes the captcha puzzle infinitely loop
+!filecrypt.co,filecrypt.cc,filecrypt.to##+js(remove-cookie, /^/)
 ||filecrypt.cc/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.co/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.to/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.cc/meh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.co/meh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.to/meh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-filecrypt.co,filecrypt.cc,filecrypt.to##iframe[src$="/muh.php"]:remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##img[style="display:none;"]:remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##img[style="display: none;"]:remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##script[id^="AdContent_"]:remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'bla2.php?container=')]):remove()
-filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
-! The following is too general?
-!filecrypt.co,filecrypt.cc,filecrypt.to##div[class] > i[style][onclick]
-filecrypt.co,filecrypt.cc,filecrypt.to##button[id]:has-text(/High-speed/i)
-! removing all cookies makes the captcha puzzle infinitely loop
-!filecrypt.co,filecrypt.cc,filecrypt.to##+js(remove-cookie, /^/)
-!/^https?:\/\/(www\.)?filecrypt\.(?:co|cc)\/bla2.php\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||filecrypt.cc/bla2.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?filecrypt\.(?:co|cc|to)\/bla2\.php\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.cc/js/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.cc/js/blockmefuckingadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.cc/p.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||filecrypt.co/bla2.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.co/js/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.co/js/blockmefuckingadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.co/p.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||filecrypt.to/bla2.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.to/js/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.to/js/blockmefuckingadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filecrypt.to/p.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49749,6 +49750,8 @@ muhimasri.com##div[class="CookieConsent"]:remove()
 muhimasri.com##div[id="carbonAd"]:remove()
 ! Only use the following rule with third-party websites
 ||pocpoc.io^$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||jurtaith.net^*
+||swutimfvudd.com^*
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
