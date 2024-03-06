@@ -4111,7 +4111,6 @@ phys.org##.notice-inside
 ||radar.network.coull.com^*
 !||cdn.vidible.tv/prod/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.vidible.tv^*
-||www.merriam-webster.com/ads.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||download.wowreadydownloads.com^*
 ||go.wowreadydownloads.com^*
 ||wowreadydownloads.com^*
@@ -21535,8 +21534,6 @@ multifilemirror.com##div[id^="gpt-passback-stpd-"]
 ||mediadojo-d.openx.net^*
 ||stampscom.sc.omtrdc.net^*
 ||s2s.aniview.com/api/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.merriam-webster.com##div[id="mw-ad-slot-top"]
-www.merriam-webster.com##div[class="flex-ad-wrapper"]
 !||track.vdo.ai/pixel.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||track.vdo.ai^*
 ||pixel.adtelligent.com^*
@@ -21719,32 +21716,41 @@ upload.ac##.eww
 ||cdn.jsdelivr.net/gh/johnroy-ui/up@master/download.gif$image
 ||wassevertorshap.pro^*
 ||userscloud.helpscoutdocs.com^*
-!userscloud.com###my_div !removes download link
-userscloud.com###content > .st-content > .st-content-inner > .container > .text-center.panel-default.panel > .innerTB > center > .btn-icon-stacked.btn-white.btn
+!userscloud.com###my_div:remove() !removes download link
+userscloud.com###content > .st-content > .st-content-inner > .container > .text-center.panel-default.panel > .innerTB > center > .btn-icon-stacked.btn-white.btn:remove()
 userscloud.com##a[href^="http://jobsetter.info/useranan"]:remove()
 userscloud.com##a[href^="http://websitedhoome.com/useranan/"]:remove()
-userscloud.com###div-1507717209618
-userscloud.com###gXHq5xUuwGWkJVFh
-userscloud.com###p_1991296
+userscloud.com##a[href^="http://outlookreservebennet.com/"]:remove()
 userscloud.com##.alert-success.alert:remove()
-!userscloud.com##div[class="adsbox"]
-userscloud.com##div[class^="glx-teaser-"]
+!userscloud.com##div[class="adsbox"]:remove()
+userscloud.com##div[class^="glx-teaser-"]:remove()
 userscloud.com##div[id="adblock_detected_warning"]:remove()
 userscloud.com##div[id="banner"]:remove()
-userscloud.com##div[id="gk7FroDRjMsV6rJF"]
 userscloud.com##input[id="adblock_detected"]:remove()
 userscloud.com##input[name="adblock_detected"]:remove()
 userscloud.com###btn_download:remove-attr(disabled)
 userscloud.com##button[id="btn_download"]:style(display:block !important;)
 userscloud.com##iframe[style="display: none;"]:remove()
-userscloud.com##+js(set-constant, window.__cfRLUnblockHandlers, true, stay)
 userscloud.com##^script:has-text(/astancerta\.fun|esusivebe\.top|dtv5loup63fac\.cloudfront.net/):remove()
 !userscloud.com##script[type="36a936178ecce1dd77e68197-text/javascript"]:remove()
+userscloud.com##+js(set-constant, window.__cfRLUnblockHandlers, true, stay)
 userscloud.com##+js(acs, decodeURIComponent)
 !userscloud.com##+js(acs, console.clear)
 userscloud.com##+js(acs, /console\.clear\(\);/)
 userscloud.com##+js(aopr, FingerprintJS)
 userscloud.com##+js(aopw, FingerprintJS)
+userscloud.com##+js(set-constant, window.dataLayer, [])
+userscloud.com##+js(set-constant, gtag, noopFunc)
+userscloud.com##:xpath(//script[contains(text(), 'VG8gY29udGludWUgd2F0Y2hpbmcgcHJlc3MgIkFsbG93Ig==')]):remove()
+userscloud.com##^script:has-text(VG8gY29udGludWUgd2F0Y2hpbmcgcHJlc3MgIkFsbG93Ig==):remove()
+userscloud.com##+js(acs, VG8gY29udGludWUgd2F0Y2hpbmcgcHJlc3MgIkFsbG93Ig==)
+! TODO: The following rules with cosmetic filters are most likely randomly generated.
+userscloud.com###gXHq5xUuwGWkJVFh
+userscloud.com##a[id="lkfd4"]:remove()
+userscloud.com##div[id="gk7FroDRjMsV6rJF"]
+userscloud.com##div[id="fhlruh2"]:remove()
+userscloud.com###div-1507717209618:remove()
+userscloud.com###p_1991296:remove()
 ||userscloud.com//images/300x250d.png$image
 ||userscloud.com/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||userscloud.com/i/dlnitro.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -23418,8 +23424,9 @@ news.ubisoft.com##div[id="footer_tc_privacy"]
 ||pubads.g.doubleclick.net/gampad/live/ads$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pubads.g.doubleclick.net/pagead/adview^*
 !||pubads.g.doubleclick.net/pagead/conversion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||cdn.cookielaw.org/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||cdn.cookielaw.org/opt-out/otCCPAiab.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||cdn.cookielaw.org/consent/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||cdn.cookielaw.org/opt-out/otCCPAiab.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn.cookielaw.org^$important,3p
 ||cdn.cookielaw.org^*
 www.onlinecourses.ooo##span[id^="div-gpt-ad-"]:remove()
 www.onlinecourses.ooo##span[id^="ezoic-pub-ad-placeholder"]:remove()
@@ -27808,10 +27815,30 @@ coupons.cnet.com##div[data-testid="CookieBanner"]
 ||hb.aralego.com^*
 ||sync.aralego.com^*
 ||pagead2.googlesyndication.com/gampad/ads$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.merriam-webster.com##div[id="fixed-ad-bottom"]
-!www.merriam-webster.com##div[class*="mw-ad-slot-top"]
-!www.merriam-webster.com##div[class*="mw-ad-slot-right1"]
-www.merriam-webster.com##div[class*="mw-ad-slot-"]
+www.merriam-webster.com,www.m-w.com##div[id="fixed-ad-bottom"]:remove()
+www.merriam-webster.com,www.m-w.com##div[id^="mw-ad-slot-"]:remove()
+www.merriam-webster.com,www.m-w.com##div[id="main-banner-ad-container"]:remove()
+www.merriam-webster.com,www.m-w.com##div[class*="mw-ad-slot-"]:remove()
+www.merriam-webster.com,www.m-w.com##div[class^="cafemedia-ad-slot-"]:remove()
+www.merriam-webster.com,www.m-w.com##div[class="flex-ad-wrapper"]:remove()
+www.merriam-webster.com,www.m-w.com##+js(set-constant, window.Sentry, {})
+www.merriam-webster.com,www.m-w.com##+js(set-constant, googletag, {})
+www.merriam-webster.com,www.m-w.com##+js(set-constant, window.googletag, {})
+www.merriam-webster.com,www.m-w.com##+js(abort-on-property-read, googletag)
+www.merriam-webster.com,www.m-w.com##+js(abort-on-property-write, googletag)
+www.merriam-webster.com,www.m-w.com##+js(set-constant, window.disableAllAds, true)
+www.merriam-webster.com,www.m-w.com##+js(set-constant, window.mwdata.processAds, false)
+www.merriam-webster.com,www.m-w.com##+js(set-constant, window.mwdata.gaNoTrackOnLoad, true)
+www.merriam-webster.com,www.m-w.com##+js(set-constant, w.adthrive, {})
+www.merriam-webster.com,www.m-w.com##+js(abort-on-property-read, w.adthrive)
+www.merriam-webster.com,www.m-w.com##+js(abort-on-property-write, w.adthrive)
+www.merriam-webster.com,www.m-w.com##+js(set-constant, window.dataLayer, [])
+www.merriam-webster.com,www.m-w.com##+js(set-constant, gtag, noopFunc)
+www.merriam-webster.com,www.m-w.com##+js(acs, gtag)
+www.merriam-webster.com,www.m-w.com##+js(set-constant, plausible, noopFunc)
+www.merriam-webster.com,www.m-w.com##+js(set-constant, window.plausible, noopFunc)
+||www.merriam-webster.com/lapi/v1/mwol-search/stats/lookup$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.merriam-webster.com/ads.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||stats.merriam-webster.com^*
 ||telemetry.art19.com^*
 www.projects-software.com##div[class="cookie-box"]:remove()
@@ -27828,8 +27855,8 @@ www.chip.de##svg:style(overflow: scroll !important; overflow-y: scroll !importan
 ||www.blackhatworld.com/js/xf/preamble.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.blackhatworld.com##+js(abort-on-property-read, _avp)
 www.blackhatworld.com##+js(abort-on-property-write, _avp)
-www.blackhatworld.com##.notice--cookie
-www.blackhatworld.com##div[class*="bhw-banner-"]
+www.blackhatworld.com##.notice--cookie:remove()
+www.blackhatworld.com##div[class*="bhw-banner-"]:remove()
 ||payhitproveold.live^*
 ||eveningroundindustrytrade.live^*
 ||check-primeprize.life^*
@@ -27868,7 +27895,7 @@ www.cybermania.ws##div[class^="san_howtowhitelist"]
 ||www.paypalobjects.com/en_US/i/scr/pixel.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.cybermania.ws##+js(abort-on-property-read, adsbygoogle)
 www.cybermania.ws##+js(abort-on-property-write, adsbygoogle)
-www.cybermania.ws##^script:has-text(/Adblock/i)
+www.cybermania.ws##^script:has-text(/Adblock/i):remove()
 ||www.ecjkroklyxvod.com^*
 ||ecjkroklyxvod.com^*
 ||altowriestwispy.com^*
@@ -28228,7 +28255,6 @@ www.tomsguide.com##+js(abort-on-property-read, window.askForConsent)
 www.tomsguide.com##+js(abort-on-property-write, window.askForConsent)
 www.tomsguide.com##+js(abort-on-property-read, window.waitForConsent)
 www.tomsguide.com##+js(abort-on-property-write, window.waitForConsent)
-||jac.yahoosandbox.com^*
 ||www.findresults.xyz^*
 ||findresults.xyz^*
 ||m.mobilesearch.app^*
@@ -29417,7 +29443,7 @@ xdarom.com##+js(aopr, mdp_deblocker)
 xdarom.com##+js(aopw, mdp_deblocker)
 xdarom.com##+js(aopr, adsbygoogle)
 xdarom.com##+js(aopw, adsbygoogle)
-||s.yimg.com/nn/lib/metro/g/myy/advertisement_$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s.yimg.com/nn/lib/metro/g/myy/advertisement_$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||news.yahoo.com/_td_api/beacon/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||edgecast-vod.yimg.com/geminivideoads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.igorslab.de##div[id="cc-window"]:remove()
@@ -32722,9 +32748,27 @@ www.post-gazette.com##div[id="csadspot"]:remove()
 www.post-gazette.com##+js(aopr, adpath)
 www.post-gazette.com##+js(aopw, adpath)
 www.post-gazette.com##div[class="pgevoke-story-mobileads"]:remove()
-regex101.com##div[class]:has-text(/^If you\'re running an ad blocker/i):remove()
-regex101.com##div[class]:has-text(/^Sponsors/):remove()
+! Removing the following rules instead of just hiding them triggers an error screen which prevents the website from loading.
+!regex101.com##div[class]:has-text(/^Sponsors/):remove()
 !regex101.com##div[class]:has-text(/^Sponsors/):upward(1):remove()
+!regex101.com##div[class]:has-text(/^If you\'re running an ad blocker/i):remove()
+!regex101.com##div[class="jyUE5 XNbml"]:remove()
+!regex101.com##div[class="M4byA"]:remove()
+!regex101.com##div[class="tSxrO"]:remove()
+!regex101.com##div[class="_gHmG"]:remove()
+!regex101.com##div[class="ZHUJ9"]:remove()
+regex101.com##div[class="jyUE5 XNbml"]
+regex101.com##div[class="M4byA"]
+regex101.com##div[class="tSxrO"]
+regex101.com##div[class="_gHmG"]
+regex101.com##div[class="ZHUJ9"]
+regex101.com##div[class]:has-text(/^Please support regex101/)
+regex101.com##div[class]:has-text(/^If you\'re running an ad blocker/i)
+||regex101.com/buysellads$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||regex101.com/static/vendors-sentry.*.chunk.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rule prevents the calculator page from loading.
+!||regex101.com/static/vendors-bundle.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||analytics.regex101.com^*
 www.geeksforgeeks.org##div[class="textBasedMannualAds"]:remove()
 www.freecodecamp.org##div[class^="ad-container"]:remove()
 www.freecodecamp.org##ins[data-ad-client]:remove()
@@ -36736,9 +36780,6 @@ www.cyberciti.biz##ins[data-ad-client]:remove()
 ||directcpmrev.com^*
 !||matomo.uptobox.com/matomo.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||matomo.uptobox.com^*
-regex101.com##div[class="_gHmG"]:remove()
-regex101.com##div[class="ZHUJ9"]:remove()
-||regex101.com/buysellads$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 docs.bibisco.com##div[data-rnwrdesktop-1moh23t-e1k2in="true"][data-rnwr700-1moh23t-e1k2in-tceitz="true"]:remove()
 ||rhemistdimyary.tech^*
 ||pyxiscablese.com^*
@@ -42530,7 +42571,8 @@ powvdeo.lol##div[id="banner"]:remove()
 ||www.lopsidedmine.pro^*
 ||amused-ground.com^*
 ||broredir1s.site^*
-!||geolocation.onetrust.com/cookieconsentpub/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||geolocation.onetrust.com/cookieconsentpub/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||geolocation.onetrust.com^$important,3p
 ||geolocation.onetrust.com^*
 ||www.paypalobjects.com/muse/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||b.stats.paypal.com/counter.cgi$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -42823,19 +42865,32 @@ www.incentivespro.com##+js(set-constant, _gaq, [])
 www.incentivespro.com##+js(acs, _gaq)
 www.incentivespro.com##+js(abort-on-property-write, _gaq)
 www.incentivespro.com##+js(abort-on-property-read, _gaq)
-www.breitbart.com###iscnewsmaxwidgetid
-!www.breitbart.com##.SWW.Hmobi.ad:nth-of-type(5)
-www.breitbart.com##div[id^="SWW.Hmobi.ad"]
-||www.breitbart.com/t/assets/iframe/newsmax-ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.breitbart.com##div[id="social-share-footer"]
-||media.breitbart.com/ads.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.breitbart.com###iscnewsmaxwidgetid:remove()
+www.breitbart.com##a[href^="https://d2.ads.rmbl.ws/"]:remove()
+www.breitbart.com##img[src^="//d2.ads.rmbl.ws/"]:remove()
 www.breitbart.com##aside[id="social-share-mobile-sticky"]:remove()
+www.breitbart.com##div[id^="SWW.Hmobi.ad"]:remove()
+www.breitbart.com##div[id="social-share-footer"]:remove()
 www.breitbart.com##iframe[id="rufous-sandbox"]:remove()
+www.breitbart.com##iframe[src^="https://d2.ads.rmbl.ws/"]:remove()
 www.breitbart.com##script[id="spmmin_js"]:remove()
 www.breitbart.com##ins[data-ad-client]:remove()
+www.breitbart.com##+js(set-constant, bnnConsent.hasConsented, falseFunc)
+www.breitbart.com##+js(set-constant, bnnConsent.isCPRA, falseFunc)
+www.breitbart.com##+js(set-constant, bnnConsent.isGDPR, falseFunc)
+www.breitbart.com##+js(set-constant, ISC_IS.adblock, false)
+www.breitbart.com##+js(set-constant, gtag, noopFunc)
+www.breitbart.com##+js(set-constant, adsbygoogle, [])
+www.breitbart.com##+js(abort-on-property-write, adsbygoogle)
+www.breitbart.com##+js(abort-on-property-read, adsbygoogle)
+www.breitbart.com##+js(acs, OnetrustActiveGroups)
 www.breitbart.com##+js(trusted-set-constant, BB_Y, {ads:0})
 www.breitbart.com##+js(abort-on-property-write, BB_Y)
 www.breitbart.com##+js(abort-on-property-read, BB_Y)
+||www.breitbart.com/t/assets/iframe/newsmax-ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||media.breitbart.com/ads.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||a-cdn.rmbl.ws/creatives/ac/3f/20008/d8/37657.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||a-cdn.rmbl.ws/creatives/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||overlay-track.sailthru.cloud^*
 sidequestvr.com##div[class^="cky-consent-"]:remove()
 !||log.cookieyes.com/api/v1/log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -42877,10 +42932,10 @@ www.windowscentral.com##^script:has-text(/GdprApplies/i):remove()
 www.windowscentral.com##:xpath(//script[contains(text(), 'GdprApplies')]):remove()
 www.windowscentral.com##+js(set-constant, window.vanilla.loadGTM, noopFunc)
 www.windowscentral.com##+js(set-constant, gtmCode, "")
-www.windowscentral.com##+js(trusted-replace-node-text, script, /"clsReporting":{"enabled":true}/, "clsReporting":{"enabled":false})
-www.windowscentral.com##+js(trusted-replace-node-text, script, /"gtm":{"vanilla":true,"sitespecific":true}/, "gtm":{"vanilla":false,"sitespecific":false})
-www.windowscentral.com##+js(trusted-replace-node-text, script, /"selligent":{"enabled":true}/, "selligent":{"enabled":false})
-www.windowscentral.com##+js(trusted-replace-node-text, script, /"freyr":{"enabled":true,"ga4SpecificGTM":{"enabled":true,"code":"GTM-WWBWRXL"}}}/, "freyr":{"enabled":false,"ga4SpecificGTM":{"enabled":false,"code":""}})
+www.windowscentral.com##+js(trusted-replace-node-text, script, /\"clsReporting\":{\"enabled\":true}/, "clsReporting":{"enabled":false})
+www.windowscentral.com##+js(trusted-replace-node-text, script, /\"gtm\":{\"vanilla\":true,\"sitespecific\":true}/, "gtm":{"vanilla":false,"sitespecific":false})
+www.windowscentral.com##+js(trusted-replace-node-text, script, /\"selligent\":{\"enabled\":true}/, "selligent":{"enabled":false})
+www.windowscentral.com##+js(trusted-replace-node-text, script, /\"freyr\":{\"enabled\":true,\"ga4SpecificGTM"\:{\"enabled\":true,\"code\":\"GTM-WWBWRXL\"}}}/, "freyr":{"enabled":false,"ga4SpecificGTM":{"enabled":false,"code":""}})
 ! copy attribute value to src instead of renaming attribute
 ! TODO: Always leading space in class name sought?
 ! Either of the following attributes will work for src since they are identical value.
@@ -43151,39 +43206,48 @@ www.engadget.com##+js(set-constant, adsConfig, {})
 www.engadget.com##+js(abort-on-property-read, adsConfig)
 www.engadget.com##+js(abort-on-property-write, adsConfig)
 www.engadget.com##+js(set-constant, window.YAHOO, {})
-www.engadget.com##div[data-content="Advertisement"]
+www.engadget.com##+js(abort-on-property-read, window.YAHOO)
+www.engadget.com##+js(abort-on-property-write, window.YAHOO)
+www.engadget.com##+js(set-constant, w.YAHOO, {})
+www.engadget.com##+js(abort-on-property-read, w.YAHOO)
+www.engadget.com##+js(abort-on-property-write, w.YAHOO)
+www.engadget.com##+js(set-constant, w._comscore, [])
+www.engadget.com##+js(abort-on-property-read, w._comscore)
+www.engadget.com##+js(abort-on-property-write, w._comscore)
 www.engadget.com##div[data-content="Advertisement"]:remove()
-www.engadget.com##div[data-component="JacAd"]
 www.engadget.com##div[data-component="JacAd"]:remove()
-www.engadget.com##div[id^="article-ads-"]
-www.engadget.com##div[id^="article-ads-"]:remove()
-www.engadget.com##div[id="sda-LDRB-iframe"]
+www.engadget.com##div[id="adsStream"]:remove()
 www.engadget.com##div[id="sda-LDRB-iframe"]:remove()
-www.engadget.com##div[id^="sda-LDRB2-"]
+www.engadget.com##div[id="sda-LREC3-iframe"]:remove()
+www.engadget.com##div[id^="article-ads-"]:remove()
 www.engadget.com##div[id^="sda-LDRB2-"]:remove()
-www.engadget.com##div[id="advertisement-thamba"]
+www.engadget.com##div[id^="sdaAdvText-"]:remove()
 www.engadget.com##div[id="advertisement-thamba"]:remove()
-www.engadget.com##div[class="ads-cont"]
-www.engadget.com##div[class^="index__adWrapper-"]
-www.engadget.com##div[class*="post-article-ad"]
-www.engadget.com##div[class*="post-article-ad"]:remove()
-www.engadget.com##div[class*="ads-cont"]
+www.engadget.com##div[class="ads-cont"]:remove()
+www.engadget.com##div[class^="index__adWrapper-"]:remove()
 www.engadget.com##div[class*="ads-cont"]:remove()
+www.engadget.com##div[class*="caas-sda-adv-"]:remove()
+www.engadget.com##div[class*="caas-sda-benji-ad"]:remove()
+www.engadget.com##div[class*="caas-sda-gam-"]:remove()
+www.engadget.com##div[class*="post-article-ad"]:remove()
+www.engadget.com##div[class*="wafer-caas-ad-visited"]:remove()
 www.engadget.com##iframe[id="mnet"]:remove()
-www.engadget.com##img[alt="Relevant ads info"]
+www.engadget.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
 www.engadget.com##img[alt="Relevant ads info"]:remove()
+www.engadget.com##script[id="spotim-config"]:remove()
+www.engadget.com##+js(set-constant, benjiConfig, {})
+www.engadget.com##+js(set-constant, benjiConsent, {})
+www.engadget.com##+js(set-constant, runBenji, noopFunc)
+www.engadget.com##+js(set-constant, runFromDidomiEvent, noopFunc)
+www.engadget.com##+js(trusted-replace-node-text, script, /\"enableGAMAds\": true/, "enableGAMAds": false)
+www.engadget.com##+js(trusted-replace-node-text, script, /\"showRightRailAds\": true/, "showRightRailAds": false)
 ||www.engadget.com/_td_api/beacon/error?code=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.engadget.com/_td/beacon?beaconType=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! blocking the following divisions will eliminate the article contents too
-!www.engadget.com##div[class*="enableAdSlots"]
 !www.engadget.com##div[class*="enableAdSlots"]:remove()
-!www.engadget.com##div[class*="enableRRAdsSlots"]
 !www.engadget.com##div[class*="enableRRAdsSlots"]:remove()
-!www.engadget.com##div[class*="enableGAMMomentsAds"]
 !www.engadget.com##div[class*="enableGAMMomentsAds"]:remove()
-!www.engadget.com##div[class*="rrAdsAlignWithCover"]
 !www.engadget.com##div[class*="rrAdsAlignWithCover"]:remove()
-!www.engadget.com##div[class*="enableGAMAds"]
 !www.engadget.com##div[class*="enableGAMAds"]:remove()
 www.engadget.com##div[class*="enableRRAdsSlots"]:remove-class(enableRRAdsSlots)
 www.engadget.com##div[class*="enableGAMMomentsAds"]:remove-class(enableGAMMomentsAds)
@@ -43191,6 +43255,8 @@ www.engadget.com##div[class*="rrAdsAlignWithCover"]:remove-class(rrAdsAlignWithC
 www.engadget.com##div[class*="enableGAMAds"]:remove-class(enableGAMAds)
 www.engadget.com##div[class*="enableAdSlotsNewMap"]:remove-class(enableAdSlotsNewMap)
 www.engadget.com##div[class*="enableAdSlotsOneSlot"]:remove-class(enableAdSlotsOneSlot)
+||s.yimg.com/ss/analytics-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||edge.gycpi.b.yahoodns.net/ss/analytics-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||hb.yahoo.net/checksync.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||hb.yahoo.net/bidexchange.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hb.yahoo.net^*
@@ -44380,11 +44446,7 @@ truthsocial.com##div[item="[object Object]"]:has(a[href="/@TruthAds"]):remove()
 ||s.yimg.com/cx/pv/perf-vitals*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||3p-geo.yahoo.com/p?s=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||3p-geo.yahoo.com^*
-! Yahoo ad & tracking script
-||openweb.jac.yahoosandbox.com/*/jac.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.theloadout.com##div[class*="venatus_ad"]
 www.theloadout.com##div[class*="venatus_ad"]:remove()
-www.theloadout.com##div[class*="advertising_slot_"]
 www.theloadout.com##div[class*="advertising_slot_"]:remove()
 www.theloadout.com##+js(set-constant, venatus_ad_slots, {})
 www.theloadout.com##+js(abort-on-property-read, venatus_ad_slots)
@@ -44400,17 +44462,11 @@ www.theloadout.com##+js(set-constant, window.spaceBetweenAds, {})
 www.theloadout.com##+js(set-constant, window.spaceBetweenAds.desktop, 0)
 !www.theloadout.com##+js(set-constant, window.spaceBetweenAds.mobile, 0, end)
 www.theloadout.com##+js(set-constant, window.spaceBetweenAds.mobile, 0)
-www.jpost.com##div[data-aa-adunit]
 www.jpost.com##div[data-aa-adunit]:remove()
-www.jpost.com##section[class*="hide-for-premium"]
 www.jpost.com##section[class*="hide-for-premium"]:remove()
-www.jpost.com##ins[id^="gpt_unit_"]
 www.jpost.com##ins[id^="gpt_unit_"]:remove()
-www.jpost.com##section[class="label-body-bannner"]:has-text(Advertisement)
 www.jpost.com##section[class="label-body-bannner"]:has-text(Advertisement):remove()
-www.jpost.com##script[id="Adoric_Script"]
 www.jpost.com##script[id="Adoric_Script"]:remove()
-www.jpost.com##script[id="gpt_script"]
 www.jpost.com##script[id="gpt_script"]:remove()
 www.jpost.com##+js(set-constant, generalAdapex, noopFunc)
 www.jpost.com##+js(acs, generalAdapex)
@@ -45389,7 +45445,7 @@ streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(set-constant, adblock
 ! pcl is number of clicks on the overlay
 streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(set-constant, pcl, 3)
 ! TODO: always 12 letters in the *.adblock variable?
-streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(trusted-replace-node-text, script, /pcl<2\s?&&\s?!\w{12}.adblock/gm, pcl<0)
+streamadblocker.cc,streamtape.com,stapadblockuser.xyz##+js(trusted-replace-node-text, script, /pcl<2\s?&&\s?!\w{12}\.adblock/gm, pcl<0)
 ||streamtape.com/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||stapadblockuser.xyz/ad.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! blocking the adgpt.js removes the main iframe with the video in it
@@ -46765,9 +46821,9 @@ nobodywalked.com##+js(set-constant, player.options.playback.disableContextMenu, 
 ! This does not actually set the volume level which is still 0 at initial setting.
 nobodywalked.com##+js(set-constant, player.options.mute, false)
 ! TODO: The following rule does not work to remove the debugger command. Is this because the script is obfuscated?
-!nobodywalked.com##+js(trusted-replace-node-text, script, /^eval\("debugger;"\);/gm, "")
+!nobodywalked.com##+js(trusted-replace-node-text, script, /^eval\(\"debugger;\"\);/gm, "")
 !nobodywalked.com##+js(trusted-replace-node-text, script, /debugger;/gm, "")
-nobodywalked.com##+js(remove-node-text, script, /eval\("debugger;"\);/gm)
+nobodywalked.com##+js(remove-node-text, script, /eval\(\"debugger;\"\);/gm)
 nobodywalked.com##+js(remove-node-text, script, /debugger;/gm)
 nobodywalked.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
 nobodywalked.com##^script:has-text(/debugger;/):remove()
@@ -46791,7 +46847,7 @@ mrgamingstreams.com##footer[class="footerformat"]:remove()
 mrgamingstreams.com##div[id="playerContainer"]:style(flex-basis: 99vw !important; padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 mrgamingstreams.com##+js(saa, height, 100%, div[id="playerContainer"])
 ! TODO: The following rule does change the script text, but the created iframe still has the original value.
-mrgamingstreams.com##+js(trusted-replace-node-text, script, /height: \d{1,3}/gm, height: "100%")
+mrgamingstreams.com##+js(trusted-replace-node-text, script, /height: \d{1,3}(?:px)?/gm, height: "100%")
 ! The following iframe is only present if the page is streaming from the twitch service.
 mrgamingstreams.com##iframe[id="twitchPlayer"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 mrgamingstreams.com##+js(saa, height, 100%, iframe[id="twitchPlayer"])
@@ -46922,8 +46978,8 @@ wykop-stream.blogspot.com##+js(saa, height, 100%, #playdiv)
 wykop-stream.blogspot.com##+js(saa, allowfullscreen, true, #playdiv)
 wykop-stream.blogspot.com##+js(saa, frameborder, 0, #playdiv)
 ! TODO: The following rules do change the script text, but the created iframe still has the original values.
-wykop-stream.blogspot.com##+js(trusted-replace-node-text, script, /height="450"/gm, height="100%")
-wykop-stream.blogspot.com##+js(trusted-replace-node-text, script, /scrolling="no"/gm, scrolling="yes")
+wykop-stream.blogspot.com##+js(trusted-replace-node-text, script, /height=\"450\"/gm, height="100%")
+wykop-stream.blogspot.com##+js(trusted-replace-node-text, script, /scrolling=\"no\"/gm, scrolling="yes")
 wykop-stream.blogspot.com##div[id="tv"]>iframe:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 wykop-stream.blogspot.com##+js(saa, width, 100%, div[id="tv"]>iframe)
 wykop-stream.blogspot.com##+js(saa, height, 100%, div[id="tv"]>iframe)
@@ -47174,7 +47230,7 @@ escast.xyz##+js(remove-attr, muted, video[id="my-player_html5_api"])
 escast.xyz##+js(saa, controls, true, video[id="my-player_html5_api"])
 ! TODO: Both of the following rules are necessary for different video sources?
 escast.xyz##+js(trusted-replace-node-text, script, /mute: true/gm, mute: false)
-escast.xyz##+js(trusted-replace-node-text, script, /mute="true"/gm, mute="false")
+escast.xyz##+js(trusted-replace-node-text, script, /mute=\"true\"/gm, mute="false")
 ||zeekaihu.net^*
 ||stugsoda.com^*
 ||veeloomo.net^*
@@ -47396,7 +47452,6 @@ developer.mozilla.org##section[class="place bottom-banner"]:has(a[class="pong"])
 ||developer.mozilla.org/pong/get$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following is a tracker for the live examples.
 ||developer.mozilla.org/api/v1/whoami$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||analytics.regex101.com^*
 ||www.idrsklar.com^*
 ||idrsklar.com^*
 ||www.xxbeyqowtdjgqr.com^*
@@ -48011,8 +48066,8 @@ www.scribd.com##div[class="text_layer"]:remove-attr(unselectable)
 www.scribd.com##+js(remove-attr, unselectable, div[class="text_layer"])
 www.scribd.com##span:remove-attr(unselectable)
 www.scribd.com##+js(remove-attr, unselectable, span)
-www.scribd.com##+js(trusted-replace-node-text, script, /"isAccessibleForFree":"False"/g, "isAccessibleForFree":"True")
-www.scribd.com##+js(trusted-replace-node-text, script, /"cssSelector":".blurred_page"/g, "cssSelector":"")
+www.scribd.com##+js(trusted-replace-node-text, script, /\"isAccessibleForFree\":\"False\"/g, "isAccessibleForFree":"True")
+www.scribd.com##+js(trusted-replace-node-text, script, /\"cssSelector\":\".blurred_page\"/g, "cssSelector":"")
 www.scribd.com##+js(trusted-replace-node-text, script, /this.allowedPages=t/g, this.allowedPages=e)
 ! TODO: Do NOT add remove() to the following rule as it removes the entire document viewport for some reason.
 www.scribd.com##div[class="between_page_portal_root"]:has(hr[class="separator"])
@@ -48493,8 +48548,8 @@ firstrows.top,firstrowsport.org##+js(set-constant, checkCookie, noopFunc)
 ||cupidirresolute.com^*
 ! The following two rules don't work because the contents of the mastercdn.hu/n1.js script are not a script node loaded into a DOM object, e.g. inline-script.
 ! /height=\"\d{1,3}\"/gm is the format of the attributes of the created iframe not the script text.
-!mastercdn.hu##+js(trusted-replace-node-text, script, /height=\d{1,3}/gm, height="100%")
-!mastercdn.hu##+js(trusted-replace-node-text, script, /width=\d{1,3}/gm, width="100%")
+!mastercdn.hu##+js(trusted-replace-node-text, script, /height=\d{1,3}(?:px)?/gm, height="100%")
+!mastercdn.hu##+js(trusted-replace-node-text, script, /width=\d{1,3}(?:px)?/gm, width="100%")
 ! Don't escape " or . in the replace syntax.
 ! The following two rules do not work if the script is loaded directly in the browser window/tab.
 !||mastercdn.hu/*.js$script,xhr,replace=/height=\d{1,3}/height="100%"/gm
@@ -49744,6 +49799,18 @@ muhimasri.com##div[id="carbonAd"]:remove()
 ||pocpoc.io^$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||jurtaith.net^*
 ||swutimfvudd.com^*
+||outlookreservebennet.com^*
+||killerrubacknowledge.com^*
+||sterfrownedan.info^*
+||bug-reporting-xalgha6.m-w.com^*
+! TODO: ONly block third-party access to the host in the following rule?
+!||d2zf5gu5e5mp87.cloudfront.net^*
+||d2zf5gu5e5mp87.cloudfront.net^$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||encyclopaediabritann.tt.omtrdc.net^*
+! Yahoo ad & tracking script
+||openweb.jac.yahoosandbox.com/*/jac.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||openweb.jac.yahoosandbox.com^*
+||jac.yahoosandbox.com^*
 www.vulture.com##aside[id^="ad-cid-"]:remove()
 www.vulture.com##p[class^="disclaimer-text_revenue"]:remove()
 www.vulture.com##section[class="ad-splash"]:remove()
@@ -49752,6 +49819,8 @@ www.vulture.com##section[data-track-zone="ad-splash"]:remove()
 ||www.vulture.com/_components/ad/instances/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
+! The following bad filter is from AakList (Anti-Adblock Killer).
+@@/advertisement*.js$script,badfilter
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
 !@@||connatix.com^$3p
 ! It also has an addition rule which removes the cid parameter from the URL query string, i.e. ||connatix.com^$3p,removeparam=cid
