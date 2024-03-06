@@ -41409,6 +41409,9 @@ filecrypt.co,filecrypt.cc,filecrypt.to##script[id^="AdContent_"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##script[src^="//ausoafab.net/"]:remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'bla2.php?container=')]):remove()
 filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
+filecrypt.co,filecrypt.cc,filecrypt.to##+js(acs, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
 ! removing all cookies makes the captcha puzzle infinitely loop
 !filecrypt.co,filecrypt.cc,filecrypt.to##+js(remove-cookie, /^/)
 ||filecrypt.cc/muh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
