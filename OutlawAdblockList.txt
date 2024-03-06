@@ -24105,7 +24105,6 @@ techgenix.com##.adtester-container:remove()
 !||euncoordi.club/popunder.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.euncoordi.club^*
 ||euncoordi.club^*
-download.gg##div[id="cookiecontainer"]:remove()
 gamesmojo.com##.adsense:remove()
 gamesmojo.com##div[class="gdpr-block-wrap slide-up"]:remove()
 ||get.vid-search.com^*
@@ -25671,11 +25670,7 @@ www.pcmag.com##aside[class="zmgad-full-width"]
 ||adblockorigin.com^*
 ||product.directredirection.com^*
 ||twnt1.rdtk.io^*
-||download.gg/js/doubleclick.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||srv.cloudfilt.com/analyzC.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-download.gg##iframe[name="googlefcPresent"]
-download.gg##div[id="udRVCwqeYyHh"]
-download.gg##body > script:nth-child(20)
 !||analytics-ingress-global.bitmovin.com/analytics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||analytics-ingress-global.bitmovin.com^*
 ||licensing.bitmovin.com/impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49788,9 +49783,11 @@ muhimasri.com##div[id="carbonAd"]:remove()
 ||killerrubacknowledge.com^*
 ||sterfrownedan.info^*
 ||bug-reporting-xalgha6.m-w.com^*
-! TODO: ONly block third-party access to the host in the following rule?
+! TODO: Only block third-party access to the host in the following two rules?
 !||d2zf5gu5e5mp87.cloudfront.net^*
 ||d2zf5gu5e5mp87.cloudfront.net^$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||d2yeczd6cyyd0z.cloudfront.net^*
+||d2yeczd6cyyd0z.cloudfront.net^$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||encyclopaediabritann.tt.omtrdc.net^*
 ! Yahoo ad & tracking script
 ||openweb.jac.yahoosandbox.com/*/jac.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49823,6 +49820,45 @@ www.vulture.com##section[data-track-zone="ad-splash"]:remove()
 !||tags.refinery89.com/v2/1fichiercom.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tags.refinery89.com^*
 ||a.delivery.consentmanager.net^*
+!||ah.crateshoover.com^*
+||crateshoover.com^*
+||tapproveofchild.info^*
+||makingsilverrip.info^*
+||wynvalur.com^*
+||download.gg/js/doubleclick.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+download.gg##body > script:nth-child(20):remove()
+download.gg##div[id="udRVCwqeYyHh"]:remove()
+download.gg##div[id="cookiecontainer"]:remove()
+download.gg##iframe[name="googlefcPresent"]:remove()
+||qiwi.gg/api/log$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+qiwi.gg,qiwi.lol##script[id^="google-"]:remove()
+qiwi.gg,qiwi.lol##a[class*="DownloadButton_DownloadButtonInactive__QuXI0"]:remove-class(DownloadButton_DownloadButtonInactive__QuXI0)
+qiwi.gg,qiwi.lol##+js(remove-class, DownloadButton_DownloadButtonInactive__QuXI0, a[class*="DownloadButton_DownloadButtonInactive__QuXI0"])
+qiwi.gg,qiwi.lol##a[aria-label="Download file"]:style(user-select: all !important; -moz-user-select: all !important; -webkit-user-select: all !important;)
+qiwi.gg,qiwi.lol##+js(set-constant, s3ii, [])
+qiwi.gg,qiwi.lol##+js(set-constant, DEBUG_MODE, true)
+qiwi.gg,qiwi.lol##+js(set-constant, ENABLE_LOGS, true)
+qiwi.gg,qiwi.lol##+js(set-constant, ENABLE_ONLINE_DEBUGGER, true)
+qiwi.gg,qiwi.lol##+js(aopw, DEBUG_MODE)
+qiwi.gg,qiwi.lol##+js(aopr, DEBUG_MODE)
+qiwi.gg,qiwi.lol##+js(aopw, ENABLE_LOGS)
+qiwi.gg,qiwi.lol##+js(aopr, ENABLE_LOGS)
+qiwi.gg,qiwi.lol##+js(aopw, ENABLE_ONLINE_DEBUGGER)
+qiwi.gg,qiwi.lol##+js(aopr, ENABLE_ONLINE_DEBUGGER)
+qiwi.gg,qiwi.lol##+js(set-constant, gtag, noopFunc)
+qiwi.gg,qiwi.lol##+js(set-constant, window.dataLayer, [])
+! TODO: Apparently the toknst() function is not needed to get a download token.
+qiwi.gg,qiwi.lol##+js(set-constant, toknst, noopFunc)
+! TODO: redirect https://qiwi.gg/file/<filename without extension> to https://qiwi.lol/<filename with extension> to get direct download URL.
+!       get filename for redirected URL from text content of h1[class="page_TextHeading__VsM7r"]
+! The button in the following rule CANNOT be removed or the anchor tag with the real download link will not get an href with the download URL.
+!qiwi.gg,qiwi.lol##button[class^="DownloadButton_ButtonSoScraperCanTakeThisName__"]:remove()
+! Do NOT remove debugger from using any of the following four rules as it prevents the "click to unlock" button and rj() function and click event from appears and working.
+!qiwi.gg,qiwi.lol##+js(trusted-replace-node-text, script, /debugger;/gm, null;)
+!qiwi.gg,qiwi.lol##+js(trusted-replace-node-text, script, /!\(\/debugger\/\)/gm, null;)
+! There are at least two instances of "debugger" covered by the following rules.
+!qiwi.gg,qiwi.lol##+js(remove-node-text, script, /debugger;/gm)
+!qiwi.gg,qiwi.lol##+js(remove-node-text, script, /\/debugger\/gm)
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
