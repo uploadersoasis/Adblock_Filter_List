@@ -26338,17 +26338,12 @@ wiki.dd-wrt.com##div[class="cookieinfo"]
 www.cox.com##script[id="cookie-notice-mark-up"]:remove()
 www.cox.com##div[class="cookie-notice-container"]
 www.cox.com##+js(set-constant, shouldShowCookieNotice, false)
-doodrive.com##:xpath(//script[contains(text(), '\x20second')])
 doodrive.com##:xpath(//script[contains(text(), '\x20second')]):remove()
-doodrive.com##:xpath(//script[contains(text(), 'rn\x20this\x22')])
 doodrive.com##:xpath(//script[contains(text(), 'rn\x20this\x22')]):remove()
-doodrive.com##:xpath(/html/body/div[5]/div/div/script[3])
 doodrive.com##:xpath(/html/body/div[5]/div/div/script[3]):remove()
-doodrive.com##:xpath(/html/body/div[6]/div/div[1]/div[1]/script[3])
 doodrive.com##:xpath(/html/body/div[6]/div/div[1]/div[1]/script[3]):remove()
 doodrive.com##div[class="uk-grid uk-grid-medium uk-child-width-expand uk-flex-middle"]:has(a[title="NordVPN"]):remove()
 doodrive.com##div[class="uk-grid uk-grid-medium uk-child-width-expand uk-flex-middle"]:has(button[class^="uk-button uk-button-secondary"]:has-text(Download NordVPN!)):remove()
-doodrive.com##div[class="uk-card uk-card-default uk-card-body uk-text-center"]
 doodrive.com##div[class="uk-card uk-card-default uk-card-body uk-text-center"]:remove()
 doodrive.com##div[class="uk-card uk-card-default uk-card-small"]:has(h4:has-text(Are you protected with a VPN?)):remove()
 doodrive.com##ins[class="adsbygoogle"]:remove()
@@ -26363,13 +26358,9 @@ doodrive.com##+js(acs, rn\x20this\x22)
 doodrive.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 doodrive.com##div:style(visibility: visible !important;)
 doodrive.com##.uk-margin-auto > div:nth-child(4):remove-attr(hidden) 
-doodrive.com##a[id="lkzlu"]
 doodrive.com##a[id="lkzlu"]:remove()
-doodrive.com##a[class="hqoni2rvyn"]
 doodrive.com##a[class="hqoni2rvyn"]:remove()
-doodrive.com##iframe[data-aa]
 doodrive.com##iframe[data-aa]:remove()
-doodrive.com##div[id="patron-modal"]
 doodrive.com##div[id="patron-modal"]:remove()
 doodrive.com##button[data-download]:remove-attr(disabled)
 !doodrive.com##div:hidden(false)
@@ -26378,10 +26369,9 @@ doodrive.com##button[data-download]:remove-attr(disabled)
 ||doodrive.com/assets/js/cookieconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||doodrive.com/8846620859/3787866411.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||doodrive.com/8846620859/5681175743.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!realmike.org##aside[class="widget widget_eu_cookie_law_widget"]
-realmike.org##aside[class$="widget_eu_cookie_law_widget"]
-www.samsung.com##div[class^="cm-cookie-geo"]
-www.samsung.com##div[class^="cookie-bar"]
+realmike.org##aside[class$="widget_eu_cookie_law_widget"]:remove()
+www.samsung.com##div[class^="cm-cookie-geo"]:remove()
+www.samsung.com##div[class^="cookie-bar"]:remove()
 !||www.upsellit.com/analytics/hit.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.upsellit.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.upsellit.com/launch/samsung.jsp$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -26404,9 +26394,9 @@ www.appledystopia.com##*[class*="ezoic-ad"]:remove()
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
 www.appledystopia.com##script[ez-screx="true"]:remove()
 ||h-discover.online-metrix.net^*
-www.muo.com##div[class^="ad-zone"]
-www.muo.com##div[id^="div-gpt-ad"]
-hostapk.com##div[class="pace-progress"]
+www.muo.com##div[class^="ad-zone"]:remove()
+www.muo.com##div[id^="div-gpt-ad"]:remove()
+hostapk.com##div[class="pace-progress"]:remove()
 hostapk.com##ins[class="adsbygoogle"]:remove()
 hostapk.com##+js(abort-on-property-write, adsbygoogle)
 hostapk.com##+js(abort-on-property-read, adsbygoogle)
@@ -26417,8 +26407,8 @@ hostapk.com##+js(abort-on-property-read, adsbygoogle)
 ||kolombox.com/images/downicon.png$image
 ||kolompc.com/wp-content/uploads/2020/02/downloadas1.jpg$image
 ||kolompc.com/wp-content/uploads/2020/02/downloadad21.jpg$image
-www.mipony.net##div[id="cookie-notice"]
-file.dlandroid.com##.xs-btn-dl
+www.mipony.net##div[id="cookie-notice"]:remove()
+file.dlandroid.com##.xs-btn-dl:remove()
 ||www.acapps.online^*
 ||anniversarytoothbrush.com^*
 ||payingnoodlescam.com^*
@@ -26426,8 +26416,8 @@ file.dlandroid.com##.xs-btn-dl
 ||pestilentdarwinuphill.com^*
 ||pianistrefutationgoose.com^*
 ||gjw5qbyn93b8.com^*
-crowdin.com##div[aria-label="cookieconsent"]
-getoutline.org##div[class="cookie-bar-container"]
+crowdin.com##div[aria-label="cookieconsent"]:remove()
+getoutline.org##div[class="cookie-bar-container"]:remove()
 ||peskyexecutionyouthful.com^*
 ||sb-inv1.com^*
 ||directoryexertion.com^*
@@ -26437,10 +26427,9 @@ getoutline.org##div[class="cookie-bar-container"]
 ||eyefuneve.com^*
 ||widget.pushbullet.com^*
 ||api.pushbullet.com^*
-cariuma.com##div[id="shopify-section-cookies-bar"]
-cariuma.com##div[class="cookies-bar"]
-!openwrt.org##div[class="cookielaw-banner cookielaw-bottom"]
-openwrt.org##div[class*="cookielaw-banner"]
+cariuma.com##div[id="shopify-section-cookies-bar"]:remove()
+cariuma.com##div[class="cookies-bar"]:remove()
+openwrt.org##div[class*="cookielaw-"]:remove()
 ||get.ziplink.stream/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||crackheap.net^*
 play.google.com##.gb_Dd > div:nth-child(1):remove()
@@ -26449,12 +26438,12 @@ play.google.com##.gb_ma.gb_Qd.gb_2c.gb_Dd:remove()
 ||s.4pda.to/img/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||4pda.ru/ad/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||4pda.ru/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-androidbiits.com##.adsbygoogle
+androidbiits.com##.adsbygoogle:remove()
 forum.gsmhosting.com##ins[class="adsbygoogle"]:remove()
 forum.gsmhosting.com##+js(abort-on-property-write, adsbygoogle)
 forum.gsmhosting.com##+js(abort-on-property-read, adsbygoogle)
-xdroidapps.com##div[id="cookie-notice"]
-!m.downloadatoz.com##script[id="cookieScriptId"]
+xdroidapps.com##div[id="cookie-notice"]:remove()
+!m.downloadatoz.com##script[id="cookieScriptId"]:remove()
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
 downloadatoz.com##script[id="cookieScriptId"]:remove()
 !m.downloadatoz.com##div[class="cookie-fixd"]:remove()
@@ -26469,25 +26458,24 @@ downloadatoz.com##div[class="cookie-main clearfix"]:remove()
 ||mantodea.mantisadnetwork.com^*
 ||publisherdesk-d.openx.net^*
 m.downloadatoz.com##.fot-float-box:remove()
-www.bemobi.com.br##div[class^="cookie-banner-lgpd"]
+www.bemobi.com.br##div[class^="cookie-banner-lgpd"]:remove()
 techwiser.com##ins[class="adsbygoogle"]:remove()
-gifs.com##div[id="gifsad"]
-gifs.com##span[id="hidead"]
-gifs.com##span[id="adsby"]
-gifs.com##a[id="overlayLink"]
+gifs.com##div[id="gifsad"]:remove()
+gifs.com##span[id="hidead"]:remove()
+gifs.com##span[id="adsby"]:remove()
+gifs.com##a[id="overlayLink"]:remove()
 ||storage.googleapis.com/cdn.gifs.com/build/js/tracking-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cash-app.me^*
 ||cash-app.com^*
-!www.droidviews.com##span[id="ezoic-pub-ad-placeholder-100"]
-www.droidviews.com##span[id^="ezoic-pub-ad-placeholder"]
+www.droidviews.com##span[id^="ezoic-pub-ad-placeholder"]:remove()
 www.droidviews.com##span[class*="ezoic-ad"]:remove()
-apkfab.com##div[class="cookie-notice-container"]
-tidal.com##div[class*="cookie-info"]
-developer.samsung.com##div[id="cookie-bottom-layer"]
-dplayout.bce.lu##div[id="cookie-notice"]
-www.hardreset.info##div[class="adp_interactive_ad"]
-apkcombo.com##.ad-box-header
-apkcombo.com##.adslink
+apkfab.com##div[class="cookie-notice-container"]:remove()
+tidal.com##div[class*="cookie-info"]:remove()
+developer.samsung.com##div[id="cookie-bottom-layer"]:remove()
+dplayout.bce.lu##div[id="cookie-notice"]:remove()
+www.hardreset.info##div[class="adp_interactive_ad"]:remove()
+apkcombo.com##.ad-box-header:remove()
+apkcombo.com##.adslink:remove()
 ||tolyafbnjt9dedjj10.com^*
 ||cds.q4u3k7c6.hwcdn.net^*
 ||static.jerkmate.com^*
@@ -38013,6 +38001,7 @@ www.fox.com##+js(aopw, window.pintrk)
 ||gorin.multiup.io/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 multiup.org,multiup.eu,multiup.io##div[class="mfp-wrap mfp-auto-cursor"]:has(div[class="mfp-container mfp-ajax-holder mfp-s-error"]):remove()
 multiup.org,multiup.eu,multiup.io##div[class="mfp-preloader"]:remove()
+multiup.org,multiup.eu,multiup.io##div[class="loading-overlay"]:remove()
 multiup.org,multiup.eu,multiup.io##div[id="custom-content"]:remove()
 multiup.org,multiup.eu,multiup.io##div[class="mfp-bg mfp-ready"]:remove()
 multiup.org,multiup.eu,multiup.io##div[class="mfp-container mfp-ajax-holder mfp-s-ready"]:remove()
@@ -42549,15 +42538,25 @@ powvdeo.lol##div[id="banner"]:remove()
 ! js.stripe.com/v3/fingerprinted/ blocking prevents payment forms from working.
 !||js.stripe.com/v3/fingerprinted/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||plirkep.com^*
+pallabmobile.in##article[id^="post-"]:remove()
+pallabmobile.in##div[style="position: fixed; width: 100vw; background: rgba(0, 0, 0, 0.5); top: 0; bottom: 0; left: 0; display: flex; z-index: 999999;"]:has(h3:has-text(Disable Adblock)):remove()
 pallabmobile.in##iframe[id^="google_ads_frame"]:remove()
+pallabmobile.in##ins[data-ad-client]:remove()
+pallabmobile.in##script[src*="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove()
+pallabmobile.in##:xpath(//script[contains(text(), '}return decodeURIComponent')]):remove()
+pallabmobile.in##:xpath(//script[contains(text(), 'eval(function(h,u,n,t,e,r)')]):remove()
+pallabmobile.in##:xpath(//script[contains(text(), 'adsbygoogle')]):remove()
+pallabmobile.in##+js(set-constant, adsbygoogle, [])
+pallabmobile.in##+js(aopw, adsbygoogle)
+pallabmobile.in##+js(aopr, adsbygoogle)
 pallabmobile.in##+js(abort-on-property-write, adsbygoogle)
 pallabmobile.in##+js(abort-on-property-read, adsbygoogle)
-pallabmobile.in##ins[data-ad-client]:remove()
+! The following scripts have to be in this order since removal would otherwise change the xpath.
+!pallabmobile.in##:xpath(//html/body/div[1]/div[2]/div[3]/div/div[2]/div/script[2]):remove()
+!pallabmobile.in##:xpath(//html/body/div[1]/div[2]/div[3]/div/div[2]/div/script[1]):remove()
 ||pallabmobile.in/6720046757/3197548844.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||images.vfl.ru/ii/1692683354/52a10b2a/38996699.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-x1337x.ws##a[href="https://x1337x.ws/netflixPromo728.php"]
 x1337x.ws##a[href="https://x1337x.ws/netflixPromo728.php"]:remove()
-x1337x.ws##a[href="https://x1337x.ws/anoydl9-VpnHideMe"]
 x1337x.ws##a[href="https://x1337x.ws/anoydl9-VpnHideMe"]:remove()
 x1337x.ws##+js(set-constant, lf6893388e60a6dec8e8b0bacb72c8a518fa1b6ee, "")
 x1337x.ws##+js(abort-on-property-write, lf6893388e60a6dec8e8b0bacb72c8a518fa1b6ee)
@@ -45538,18 +45537,6 @@ quakewiki.org##div[class^="mw-cookiewarning-"]:remove()
 www.popsci.com##aside[class="mtc-unit-prefill-container"]:has(div[id="mtc-unit-header__desktop__article-0"]):remove()
 www.popsci.com##div[class^="ad-slot-wrapper"]:remove()
 www.popsci.com##div[aria-label="Advertisement"]:remove()
-pallabmobile.in##div[style="position: fixed; width: 99vw; background: rgba(0, 0, 0, 0.5); top: 0; bottom: 0; left: 0; display: flex; z-index: 999999;"]:remove()
-pallabmobile.in##article[id^="post-"]:remove()
-pallabmobile.in##+js(set-constant, adsbygoogle, [])
-pallabmobile.in##+js(aopw, adsbygoogle)
-pallabmobile.in##+js(aopr, adsbygoogle)
-pallabmobile.in##:xpath(//script[contains(text(), 'adsbygoogle')]):remove()
-pallabmobile.in##:xpath(//script[contains(text(), 'eval(function(h,u,n,t,e,r)')]):remove()
-pallabmobile.in##:xpath(//script[contains(text(), '}return decodeURIComponent')]):remove()
-pallabmobile.in##script[src*="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove()
-! The following scripts have to be in this order since removal would otherwise change the xpath.
-!pallabmobile.in##:xpath(//html/body/div[1]/div[2]/div[3]/div/div[2]/div/script[2]):remove()
-!pallabmobile.in##:xpath(//html/body/div[1]/div[2]/div[3]/div/div[2]/div/script[1]):remove()
 *##script[src*="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]:remove()
 ||ads.aralego.com^*
 ||economictimes.indiatimes.com/js_monetize/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49755,6 +49742,12 @@ muhimasri.com##div[id="carbonAd"]:remove()
 ||pocpoc.io^$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||jurtaith.net^*
 ||swutimfvudd.com^*
+www.vulture.com##aside[id^="ad-cid-"]:remove()
+www.vulture.com##p[class^="disclaimer-text_revenue"]:remove()
+www.vulture.com##section[class="ad-splash"]:remove()
+www.vulture.com##section[data-editable="adSplash"]:remove()
+www.vulture.com##section[data-track-zone="ad-splash"]:remove()
+||www.vulture.com/_components/ad/instances/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
