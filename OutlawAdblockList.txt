@@ -49838,7 +49838,9 @@ blog.onlineshoppingtools.com##+js(aopr, window._tfa)
 blog.onlineshoppingtools.com##+js(set-constant, SOURCE_LINKS, {})
 blog.onlineshoppingtools.com##+js(aopw, SOURCE_LINKS)
 blog.onlineshoppingtools.com##+js(aopr, SOURCE_LINKS)
-
+! Most (or all?) of the time both of the following rules aren't necessary because data-src and data-retina-src are both present and have the same value.
+blog.onlineshoppingtools.com##+js(set-attr, img[class*="img-lazy"][data-src], src, [data-src])
+blog.onlineshoppingtools.com##+js(set-attr, img[class*="img-lazy"][data-retina-src], src, [data-retina-src])
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
