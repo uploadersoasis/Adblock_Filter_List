@@ -40393,11 +40393,12 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="ppp"][value=""])
 ! TODO: the id name in the following rule varies with each refresh of the page, but is always a total of six lowercase letters and sometimes numbers, i.e. [a-z0-9]{6}
 ! The following rule also changes any input tags with a value of 1 including dgl and admaven_popup to no ill effect.
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"])
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"])
 ! TODO: matches-attr() doesn't work in the following rule because the underlying javascript uses Document.querySelectorAll and "input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/) is not a valid selector".
+! document.querySelectorAll('input[name][value="1"][id=/[a-z0-9]{6}/]'); is not valid
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/))
 ! TODO: Could input[id=<varies>] be removed and downloads still work since a value of "0" works?
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/):remove()
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/):remove()
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[class^="modalpop"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="modalpop"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="modalpop-content"]:has(span:has-text(Adblock Detected!)):remove()
@@ -41881,59 +41882,57 @@ thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:rem
 ||clickndownload.org/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||clickndownload.space/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||clickndownload.space/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||clicknupload.click/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||clicknupload.click/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! block all third-party scripts except those from any clicknupload domain
 ! denyallow rule cannot have asterisks in it
-!*$3p,script,denyallow=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click,domain=clicknupload.*|clickndownload.org|clickndownload.space|clicknupload.click
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click,domain=clicknupload.*|clickndownload.org|clickndownload.space|clicknupload.click
+!*$3p,script,denyallow=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click,domain=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click,domain=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click
 ! the location of the following xpaths may change especially if remove() is used on any elements above it
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1]):remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2]):remove()
-!clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div):remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div):remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##^script:has-text(/document\.createElement|atob\(/i):remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##^script:has-text(/eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==/):remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIjcm5fYWRfbmF0aXZlX2o1bXJxfCNybl9hZF9uYXRpdmVfemNpemUifQ==)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(abort-current-script, zfgloadedpopup)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(abort-on-property-read, zfgloadedpopup)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(abort-current-script, apu.php)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(abort-on-property-read, window['__CF$cv$params'])
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(abort-on-property-write, window['__CF$cv$params'])
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(aopr, AaDetector)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(acs, Math, zfgloaded)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(abort-on-property-write, oaxDyt)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(abort-on-property-read, oaxDyt)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(set-constant, timeout, 0)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(set-constant, tick, 0)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(aopr, document.onmousedown)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(aopw, document.onmousedown)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(aeld, /^(?:mousedown)$/)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(set-constant, gtag, noopFunc)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(acs, gtag)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##input[id="adblock_detected"]:remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##div[class="adsbox"]:remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##div[id^="contentad"]:remove()
-!clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##div[id="rn_ad_native_uak91"]:remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##div[id^="rn_ad_native_"]:remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click###adblock_detected:remove()
-! clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##iframe blocks the captcha needed to download
-!clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##iframe:remove()
-!clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##body > script:remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##*[class*="captcha_code"]:remove-class(captcha_code)
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##style[id^="__web-inspector-hide"]:remove()
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##div[class^="__web-inspector-hide"]:remove()
+clicknupload.*,clickndownload.org,clickndownload.space##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1]):remove()
+clicknupload.*,clickndownload.org,clickndownload.space##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2]):remove()
+!clicknupload.*,clickndownload.org,clickndownload.space##:xpath(//*[@id="commonId"]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div):remove()
+clicknupload.*,clickndownload.org,clickndownload.space##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/form/div[2]/div[3]/div/table/tbody/tr/td/center/table/tbody/tr[2]/td[2]/input//div):remove()
+clicknupload.*,clickndownload.org,clickndownload.space##^script:has-text(/document\.createElement|atob\(/i):remove()
+clicknupload.*,clickndownload.org,clickndownload.space##^script:has-text(/eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==/):remove()
+clicknupload.*,clickndownload.org,clickndownload.space##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIjcm5fYWRfbmF0aXZlX2o1bXJxfCNybl9hZF9uYXRpdmVfemNpemUifQ==)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-current-script, zfgloadedpopup)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-on-property-read, zfgloadedpopup)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-current-script, apu.php)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-on-property-read, window['__CF$cv$params'])
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-on-property-write, window['__CF$cv$params'])
+clicknupload.*,clickndownload.org,clickndownload.space##+js(aopr, AaDetector)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(acs, Math, zfgloaded)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-on-property-write, oaxDyt)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(abort-on-property-read, oaxDyt)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(set-constant, timeout, 0)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(set-constant, tick, 0)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(aopr, document.onmousedown)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(aopw, document.onmousedown)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(aeld, /^(?:mousedown)$/)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(set-constant, gtag, noopFunc)
+clicknupload.*,clickndownload.org,clickndownload.space##+js(acs, gtag)
+clicknupload.*,clickndownload.org,clickndownload.space##input[id="adblock_detected"]:remove()
+clicknupload.*,clickndownload.org,clickndownload.space##div[class="adsbox"]:remove()
+clicknupload.*,clickndownload.org,clickndownload.space##div[id^="contentad"]:remove()
+!clicknupload.*,clickndownload.org,clickndownload.space##div[id="rn_ad_native_uak91"]:remove()
+clicknupload.*,clickndownload.org,clickndownload.space##div[id^="rn_ad_native_"]:remove()
+clicknupload.*,clickndownload.org,clickndownload.space###adblock_detected:remove()
+! clicknupload.*,clickndownload.org,clickndownload.space##iframe blocks the captcha needed to download
+!clicknupload.*,clickndownload.org,clickndownload.space##iframe:remove()
+!clicknupload.*,clickndownload.org,clickndownload.space##body > script:remove()
+clicknupload.*,clickndownload.org,clickndownload.space##*[class*="captcha_code"]:remove-class(captcha_code)
+clicknupload.*,clickndownload.org,clickndownload.space##style[id^="__web-inspector-hide"]:remove()
+clicknupload.*,clickndownload.org,clickndownload.space##div[class^="__web-inspector-hide"]:remove()
 ||undefined^$script,domain=clicknupload.*|clickndownload.org|clickndownload.space|clicknupload.click
 ! existing href must NOT be removed to set href value to onclick's value
-!clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##button[id="downloadbtn"]:remove-attr(href)
+!clicknupload.*,clickndownload.org,clickndownload.space##button[id="downloadbtn"]:remove-attr(href)
 ! sets href value to onclick's value
-clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(set-attr, 'button[id="downloadbtn"]', href, '[onclick]')
+clicknupload.*,clickndownload.org,clickndownload.space##+js(set-attr, 'button[id="downloadbtn"]', href, '[onclick]')
 ! Don't remove onclick unless href was set properly above;
 ! Don't remove onclick because it will be removed before href is set above, so there will be no value to use.
-!clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##button[id="downloadbtn"]:remove-attr(onclick)
+!clicknupload.*,clickndownload.org,clickndownload.space##button[id="downloadbtn"]:remove-attr(onclick)
 ! existing href must NOT be removed to rename onclick to href; it replaces it anyway.
-!clicknupload.*,clickndownload.org,clickndownload.space,clicknupload.click##+js(rename-attr, button[id="downloadbtn"], onclick, href)
+!clicknupload.*,clickndownload.org,clickndownload.space##+js(rename-attr, button[id="downloadbtn"], onclick, href)
 ||makesembezzlementconsume.com^*
 ||seedlingneurotic.com^*
 ||forms.hsforms.com/embed/v3/counters.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49861,6 +49860,10 @@ qiwi.gg,qiwi.lol##+js(set-constant, toknst, noopFunc)
 ! There are at least two instances of "debugger" covered by the following rules.
 !qiwi.gg,qiwi.lol##+js(remove-node-text, script, /debugger;/gm)
 !qiwi.gg,qiwi.lol##+js(remove-node-text, script, /\/debugger\/gm)
+||commtu.com^*
+dev.to##div[class*="crayons-sponsorship"][class*="popover-billboard"]:remove()
+dev.to##div[id="cookie-consent"]:remove()
+||dev.to/fallback_activity_recorder$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
