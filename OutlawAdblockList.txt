@@ -8316,7 +8316,7 @@ usercloud.com##div.st-container
 ||cdn.taboola.com/libtrc/cpxinteractive-sc/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.taboola.com/libtrc/cbsinteractive-cbsnews/loader.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.taboola.com/libtrc/cbsinteractive-cbsnews/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||cdn.taboola.com/libtrc/unip/1479485/tfa.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn.taboola.com/libtrc/unip/*/tfa.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.taboola.com/libtrc/msn-sc/tfa.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.taboola.com/libtrc/msn-network/trk.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.taboola.com/libtrc/mirrorcreator/loader.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49813,6 +49813,32 @@ qiwi.gg,qiwi.lol##+js(set-constant, toknst, noopFunc)
 dev.to##div[class*="crayons-sponsorship"][class*="popover-billboard"]:remove()
 dev.to##div[id="cookie-consent"]:remove()
 ||dev.to/fallback_activity_recorder$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||heatmap-events-collector.instapage.com/static/lib.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||heatmap-events-collector.instapage.com^*
+||ec.instapagemetrics.com^*
+||cdn.instapagemetrics.com^*
+!||d63784ea7f.cbd2dd06ba.com^*
+||cbd2dd06ba.com^*
+||g.fastcdn.co/js/sptw.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||g.fastcdn.co/js/cm.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+blog.onlineshoppingtools.com##script[id="ip-trkr"]:remove()
+blog.onlineshoppingtools.com##script[id="ip-cm"]:remove()
+blog.onlineshoppingtools.com##script[id="ip-analytics"]:remove()
+blog.onlineshoppingtools.com##+js(set-constant, setupGTM, noopFunc)
+blog.onlineshoppingtools.com##+js(aopw, setupGTM)
+blog.onlineshoppingtools.com##+js(aopr, setupGTM)
+blog.onlineshoppingtools.com##+js(json-prune, trackingData snowplowWrapperUrl snowplowUrl)
+blog.onlineshoppingtools.com##+js(set-constant, window._instapageSnowplow, noopFunc)
+blog.onlineshoppingtools.com##+js(set-constant, trackingData, {})
+blog.onlineshoppingtools.com##+js(aopw, trackingData)
+blog.onlineshoppingtools.com##+js(aopr, trackingData)
+blog.onlineshoppingtools.com##+js(set-constant, window._tfa, [])
+blog.onlineshoppingtools.com##+js(aopw, window._tfa)
+blog.onlineshoppingtools.com##+js(aopr, window._tfa)
+blog.onlineshoppingtools.com##+js(set-constant, SOURCE_LINKS, {})
+blog.onlineshoppingtools.com##+js(aopw, SOURCE_LINKS)
+blog.onlineshoppingtools.com##+js(aopr, SOURCE_LINKS)
+
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
