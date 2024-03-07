@@ -24940,7 +24940,7 @@ www.4shared.com##+js(set-constant, sendNativeAnalytics, noopFunc)
 www.4shared.com##+js(acs, sendNativeAnalytics)
 www.4shared.com##+js(set-constant, Config.detectAd, {})
 ! trusted-replace-node-text will replace the textContent of any element such as an anchor tag in the following rule.
-www.4shared.com##+js(trusted-replace-node-text, text, Report Abuse, Download This)
+www.4shared.com##+js(trusted-replace-node-text, #text, Report Abuse, Download This)
 !www.4shared.com##+js(move-attr-prop, a[class*="reportAbuse"], input[id="baseDownloadLink"], href, value)
 !www.4shared.com##a[class*="reportAbuse"]:remove-class(light-gray)
 !www.4shared.com##a[class*="reportAbuse"]:remove-class(f11)
@@ -38096,7 +38096,7 @@ multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download|host|btn|btn-md
 !multiup.org,multiup.eu,multiup.io##+js(add-class, fa|fa-download|host|btn|btn-md|btn-default|btn-block|btn-3d, #welcome-message > i)
 !multiup.org,multiup.eu,multiup.io###welcome-message > i:remove-class(fa-star)
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
-multiup.org,multiup.eu,multiup.io##+js(trusted-replace-node-text, text, Welcome, Download)
+multiup.org,multiup.eu,multiup.io##+js(trusted-replace-node-text, #text, Welcome, Download)
 ! hide and disable the original download button for 1fichier.com using those button
 ! attributes, so it won't be clicked.
 ! hidden attribute set to true is not enough to hide the button.
@@ -40348,6 +40348,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, chec
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, runAfterGptLoaded, noopFunc)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, ggggg, noopFunc)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, /ggggg\(\)/)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, image.onerror, noopFunc)
 ! The id's with a value of 0 probably could be successfully removed, but only would be needed if they are otherwise triggered to a non-zero value.
 ! TODO: set testty input tag to 5 or 99? or remove altogether to defuse anti-adblocking? Setting to 99 works.
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 99, input[id="testty"])
@@ -40428,9 +40429,8 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##button[id="downloadbtn
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, onclick, button[id="downloadbtn2"])
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##a[onclick="go();"]:remove-attr(onclick)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, onclick, a[onclick="go();"])
-! TODO: The following rule to remove "waiting..." does not work.
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, text, /\s?wait\.\.\.5/gm)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, button[id="method_free"], /\s?wait\.\.\.5/gm)
+! Do NOT use remove-node-text here because it removes all of the text NOT just the portion specified in the rule.
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, #text, /\s?wait\.\.\.5/gm)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, /none|hidden/, 0, condition, getComputedStyle)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, ads, [""])
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, document.visibilityState, visible)
@@ -40440,8 +40440,9 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-consta
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, displayPropertyValue, block)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, computedStyle, block)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, statusTxt, success)
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, text, Free Download wait...5, Free Download)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, button[id="method_free"], /Free Download\s?wait\.\.\.\d?/, Free Download)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, #text, Free Download wait...5, Free Download)
+! css selector element doesn't work as input for trusted-replace-node-text
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, button[id="method_free"], /Free Download\s?wait\.\.\.\d?/, Free Download)
 ! set 0 in single quotes as script may require it
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, holymoly, 0)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, holymoly, '0')
@@ -42066,7 +42067,7 @@ cutty.app##+js(set-constant, stcih, {})
 cutty.app##div[data-ad]:remove()
 cutty.app##button[id="submit-button"]:remove-attr(disabled)
 ! replace-node-text.js will replace the textContent of any element such as an anchor tag in the following rule.
-cutty.app##+js(trusted-replace-node-text, text, Please Wait ..., Get Download Link)
+cutty.app##+js(trusted-replace-node-text, #text, Please Wait ..., Get Download Link)
 cutty.app##div[class="container"]:has(button[class="ab"], span[class="error-message"]:has-text(Please disable Adblock to continue)):remove()
 cutty.app##+js(acs, parseInt, document)
 cutty.app##+js(set-constant, gtag, noopFunc)
@@ -49854,7 +49855,7 @@ apkcombo.com##div[class*="ad-box"]:remove()
 apkcombo.com##div[data-ad-status]:remove()
 apkcombo.com##pubtag[data-ad-slot]:remove()
 apkcombo.com##p[class="diseanmeevrtt"]:has-text(/Advertisement/i):remove()
-apkcombo.com/serviceworker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+apkcombo.com/serviceworker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
