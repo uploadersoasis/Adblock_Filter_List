@@ -37876,6 +37876,7 @@ foxnews.com##+js(trusted-set-constant, data, {authenticated: true})
 ||static.foxnews.com/static/v/all/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! Blocking the following script may prevent the political cartoon slideshow from working @ foxnews
 ||static.foxnews.com/static/orion/scripts/core/base/app/modules/ad-strike.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+static.foxnews.com##+js(trusted-replace-node-text, script, /window\.location\.href\.indexOf\('video-embed'\)/gm, 1)
 ||s.yimg.com/dy/ads/readmo.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s.yimg.com/dy/readmo-pixel.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !jlym52rvaw7g5y.trustexploration.com##+js(aopr, autoloadMarker)
@@ -49163,8 +49164,8 @@ brbeast.com##+js(addEventListener-defuser, contextmenu)
 !brbeast.com##+js(acs, contextmenu)
 brbeast.com##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
 ! TODO: Neither of the following rules work because "1 nodes present before installing mutation observer".
-brbeast.com##+js(trusted-replace-node-text, script, /document\.addEventListener\('contextmenu', event => event.preventDefault\(\)\);/gm, null;)
-brbeast.com##+js(remove-node-text, script, /document\.addEventListener\('contextmenu', event => event.preventDefault\(\)\);/gm)
+brbeast.com##+js(trusted-replace-node-text, script, /document\.addEventListener\('contextmenu', event => event\.preventDefault\(\)\);/gm, null;)
+brbeast.com##+js(remove-node-text, script, /document\.addEventListener\('contextmenu', event => event\.preventDefault\(\)\);/gm)
 brbeast.com##div[class="cc-overlay"]:style(display: inline !important;)
 brbeast.com##div[class="afs_ads ad-placement"]:remove()
 !||rxreedpop.piwik.pro/ppms.php^$3p
@@ -49668,6 +49669,7 @@ foodtechnos.in##div[id="dwform"]:style(display: block !important;)
 ||sync.quantumdex.io^*
 ||useast.quantumdex.io/auction/pbjs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||useast.quantumdex.io^*
+||ss-pbs.quantumdex.io^*
 !||bidder.criteo.com/cdb?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bidder.criteo.com^*
 !||static.criteo.net/js/ld/ld.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49694,8 +49696,8 @@ apkexit.com,downloadkai.top,www.babup.com##ins[data-ad-client]:remove()
 apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, adsbygoogle, [])
 apkexit.com,downloadkai.top,www.babup.com##+js(aopw, adsbygoogle)
 apkexit.com,downloadkai.top,www.babup.com##+js(aopr, adsbygoogle)
-www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, gtag, noopFunc)
-www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, window.dataLayer, [])
+apkcombo.com,www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, gtag, noopFunc)
+apkcombo.com,www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, window.dataLayer, [])
 ||www.babup.com/page1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.babup.com/page2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.babup.com/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49813,10 +49815,10 @@ qiwi.gg,qiwi.lol##+js(set-constant, toknst, noopFunc)
 !       get filename for redirected URL from text content of h1[class="page_TextHeading__VsM7r"]
 ! The button in the following rule CANNOT be removed or the anchor tag with the real download link will not get an href with the download URL.
 !qiwi.gg,qiwi.lol##button[class^="DownloadButton_ButtonSoScraperCanTakeThisName__"]:remove()
-! Do NOT remove debugger from using any of the following four rules as it prevents the "click to unlock" button and rj() function and click event from appears and working.
-!qiwi.gg,qiwi.lol##+js(trusted-replace-node-text, script, /debugger;/gm, null;)
-!qiwi.gg,qiwi.lol##+js(trusted-replace-node-text, script, /!\(\/debugger\/\)/gm, null;)
-! There are at least two instances of "debugger" covered by the following rules.
+! Do NOT remove or abort the entire script containing "debugger" as it prevents the "click to unlock" button and rj() function and click event from appearing and working.
+qiwi.gg,qiwi.lol##+js(trusted-replace-node-text, script, /debugger;/gm, null;)
+qiwi.gg,qiwi.lol##+js(trusted-replace-node-text, script, /!\(\/debugger\/\)/gm, null;)
+! Do not use remove-node-text as it will remove the entire script not just the third argument form the script.
 !qiwi.gg,qiwi.lol##+js(remove-node-text, script, /debugger;/gm)
 !qiwi.gg,qiwi.lol##+js(remove-node-text, script, /\/debugger\/gm)
 ||commtu.com^*
@@ -49870,9 +49872,16 @@ apkcombo.com##.adslink:remove()
 apkcombo.com##div[class="ad-holder"]:remove()
 apkcombo.com##div[class*="ad-box"]:remove()
 apkcombo.com##div[data-ad-status]:remove()
+apkcombo.com##div[id="elgoogybsda2"]:remove()
 apkcombo.com##pubtag[data-ad-slot]:remove()
-apkcombo.com##p[class="diseanmeevrtt"]:has-text(/Advertisement/i):remove()
-apkcombo.com/serviceworker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+apkcombo.com##p[class^="diseanme"][class$="vrtt"]:has-text(/Advertisement/i):remove()
+apkcombo.com##p[class="diseanmevrtt is-mobile-only"]:has-text(/Advertisement/i):remove()
+apkcombo.com##+js(set-attr, img[class="lazyloaded"][data-src], src, [data-src])
+apkcombo.com##+js(set-constant, powerTag, {})
+apkcombo.com##+js(set-constant, powerTag.gdprShowConsentToolButton, false)
+apkcombo.com##+js(set-constant, powerTag.preAdLoader, "")
+apkcombo.com##+js(set-constant, onError, noopFunc)
+||apkcombo.com/serviceworker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
