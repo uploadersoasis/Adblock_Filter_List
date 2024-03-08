@@ -1856,12 +1856,12 @@ www.facebook.com##.ego_column
 ||clkmon.com/static/rdr.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.softologicsb.com/download/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.noyapps.com/media/videoperformer/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.noyapps.com###ib-download-popup
-www.noyapps.com##.plugleft
+www.noyapps.com###ib-download-popup:remove()
+www.noyapps.com##.plugleft:remove()
 !||www.media-save.com/ft/42/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.media-save.com^*
 ||bwp.zdnet.com/search^*
-www.zdnet.com##.bidwar
+www.zdnet.com##.bidwar:remove()
 ||aad73c550c.se^*
 ||downote.com/images/468x60_003.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||downote.com/images/ads*.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -1873,23 +1873,23 @@ hugefiles.net##.ad-top:remove()
 ||www.clickandownload.com^*
 !||www.1clickmoviedownloader.net/download/url.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.1clickmoviedownloader.net^*
-!||api.lanistaads.com/ServeAd^*
+!||api.lanistaads.com/ServeAd$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||api.lanistaads.com^*
 !||ad.leadboltmobile.net/show_app_wall$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ad.leadboltmobile.net^*
 ||krebsonsecurity.com/a-tr/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||krebsonsecurity.com/b-ver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||krebsonsecurity.com/b-spi/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-krebsonsecurity.com###top-banner-image
-krebsonsecurity.com##.a-img
-krebsonsecurity.com###sidebar-box
+krebsonsecurity.com###top-banner-image:remove()
+krebsonsecurity.com##.a-img:remove()
+krebsonsecurity.com###sidebar-box:remove()
 !||cm.npc-suntimes.overture.com^*
 !||cm.npc-nydn.overture.com^*
 ||cm.npc-*.overture.com^*
 ||southtownstar.suntimes.com/csp/cms/sites/STM/assets/js/omniture-integration.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s.krebsonsecurity.com^*
 ||dev.virtualearth.net/webservices/v1/LoggingService/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.nydailynews.com##.yahoo_ads
+www.nydailynews.com##.yahoo_ads:remove()
 ||www.nydailynews.com/logger/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||scontent-a-iad.xx.fbcdn.net^*
 !||nlets.ru/item.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -1897,7 +1897,7 @@ www.nydailynews.com##.yahoo_ads
 ||jmn.jangonetwork.com^*
 ||playtime.tubemogul.com/ad_promoted_videos/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sanzpont.com/swldo.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||offers.bittorrent.com/w/1.0/afr^*
+!||offers.bittorrent.com/w/1.0/afr$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||offers.bittorrent.com^*
 ||stattracker.meiamso.me^*
 ||u20295832.letitbit.net/images/download/ins_728_90_1.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -1946,7 +1946,7 @@ www.nydailynews.com##.yahoo_ads
 !||sharesuper.info/up1/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sharesuper.info^*
 ||bookmyzip.in^*
-||ad.adlantis.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||ad.adlantis.jp^*
 ||tracking.servebom.com^*
 ||188.40.210.169/message.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||1.rp-api.com//repost/log_button.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -4268,7 +4268,7 @@ kitchen.manualsonline.com##.searchResult.adResult:remove()
 !||dpdnav.com/Redirect/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||dpdnav.com/click?data=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dpdnav.com^*
-!||rtb.gumgum.com/usersync^*
+!||rtb.gumgum.com/usersync$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rtb.gumgum.com^*
 !||rtg2.salespidermedia.com/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rtg2.salespidermedia.com^*
@@ -6221,7 +6221,7 @@ www.rlslog.net###content > div:nth-of-type(2) > div > a[href^="http://clickeu.te
 ||androidgozar.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cnd.gingermedia.com/gingermedia/tags/xdirect/xdirect.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||getandroid.ir/Files/Banner/Ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||stat.infinitegra.co.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||stat.infinitegra.co.jp^*
 ||www.musixlib.com/wi/lp6/thankyou/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||affrh2020.com/adServe/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||filenuke.com/a/js/ZeroClipboard.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -6519,7 +6519,7 @@ zorofiles.com###container > .mainag > .contentback > form > table > tbody > tr >
 ||www.terrapops.com^*
 ||winmorecoin.com/upload_dynamics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||trackbar.navigator-bs.gmx.com^*
-||servedby.openxmarket.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||servedby.openxmarket.jp^*
 ||displayincloud.adk2x.com^*
 ||media.adtrack1.pl^*
 ||trk.pbjtime.xyz^*
@@ -7385,7 +7385,7 @@ gamepolitics.com##*[id^="pw_adbox_"]:remove()
 ||ox-d.qz.com^*
 ||ox-d.journatic.com^*
 ||ox-d.gamer-network.net^*
-||ox-d.openx.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||ox-d.openx.jp^*
 ||ox-d.gamerpublishing.com^*
 ||ox-d.adaptivem.com^*
 ||ox-d.crisppremium.com^*
@@ -8480,7 +8480,7 @@ www.abandonia.com###container > .right_outside_ads
 !||cs.gssprt.jp/yie/ld/cs?dspid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cs.gssprt.jp/yie/ld/mcs?ver=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cs.gssprt.jp/yie/ld/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||cs.gssprt.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cs.gssprt.jp^*
 !||am.adlooxtracking.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||am.adlooxtracking.com^*
 ||www.performanceadexchange.com/a/display.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -8514,12 +8514,12 @@ www.abandonia.com###container > .right_outside_ads
 !||ialaddin.genieesspv.jp/yie/ld/gl1?zid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ialaddin.genieesspv.jp/yie/ld/gl3?zid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ialaddin.genieesspv.jp/yie/ld/jsk?zoneid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||ialaddin.genieesspv.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||ialaddin.genieesspv.jp^*
 !||js.genieessp.com/t/074/345/a1074345.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||js.genieessp.com^*
 ||pr-bh.ybp.yahoo.com/sync/geniee/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||rt.gsspat.jp/yie/ld/gcs?v=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||rt.gsspat.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||rt.gsspat.jp^*
 ||s-jp.acxiomapac.com^*
 ||d29usylhdk1xyu.cloudfront.net/load/login.prevention.com$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||shipthankrecognizing.info/path/ads/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -9520,7 +9520,7 @@ gamesresources.forumfree.it##body > .ads:nth-of-type(4)
 ||htl.bid/build/bidder-mediaite.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||edge.simplereach.com^*
 ||inityreper.info^*
-!||omni.springserve.com/hb^*
+!||omni.springserve.com/hb$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||omni.springserve.com^*
 ||www.torlock.gq/track.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads.twitter.com^*
@@ -15522,18 +15522,17 @@ www.arcadepunks.com###wbounce-modal
 ||s.yimg.jp/images/listing/tool/yads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||s.yimg.jp/images/advertising/common/js/iicon.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||yads.yahoo.co.jp/js/yads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||yads.yahoo.co.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||yads.yjtag.yahoo.co.jp/tag^*
-||yads.yjtag.yahoo.co.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||yads.yahoo.co.jp^*
+||yads.yjtag.yahoo.co.jp^*
 !||yads.c.yimg.jp/js/yads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||yads.c.yimg.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||yads.c.yimg.jp^*
 ||im.ov.yahoo.co.jp/tag/?adprodset=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.explorewin.com##.gradient.btn-lg.btn-primary.btn:nth-of-type(2)
-www.explorewin.com##.gradient.btn-lg.btn-primary.btn:nth-of-type(1)
-uploadbuzz.net##.btn-dl-plus.btn-info.btn
-www.pccrack.net##.code-block-7.code-block > center > a[href^="https://href.li/"]
-gadgets.ndtv.com##.lhs_top_banner
-gadgets.ndtv.com###adslot300x250ATF
+www.explorewin.com##.gradient.btn-lg.btn-primary.btn:nth-of-type(2):remove()
+www.explorewin.com##.gradient.btn-lg.btn-primary.btn:nth-of-type(1):remove()
+uploadbuzz.net##.btn-dl-plus.btn-info.btn:remove()
+www.pccrack.net##.code-block-7.code-block > center > a[href^="https://href.li/"]:remove()
+gadgets.ndtv.com##.lhs_top_banner:remove()
+gadgets.ndtv.com###adslot300x250ATF:remove()
 ||arfttojxv.com^*
 ||vimenhhpqnb.com^*
 ||ftymjfywuyv.com^*
@@ -15605,15 +15604,15 @@ magazine.odroid.com##.all-services
 ||windowssecurity.network/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||colches.com^*
 ||www.colches.com^*
-!threadsphere.bid###_bd.sm_content
-threadsphere.bid###fade
+!threadsphere.bid###_bd.sm_content:remove()
+threadsphere.bid###fade:remove()
 ||isavetube.com/a2zapk/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||colchesi.info^*
 ||www.colchesi.info^*
 ||spsvcpc-tls.i-mobile.co.jp/ad_spot.aspx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||sh.adingo.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||i.adingo.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||cdn-fluct.sh.adingo.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||sh.adingo.jp^*
+||i.adingo.jp^*
+||cdn-fluct.sh.adingo.jp^*
 ||spdeliver.i-mobile.co.jp/script/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||spdeliver.i-mobile.co.jp/script/adcore_pc_inline.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||x9.shinobi.jp/track?cid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -16520,12 +16519,12 @@ www.techtimes.com##div[class^="videojs-ad-wrap"]
 ||x.bidswitch.net^*
 ||uod2quk646.com^*
 ||www.uod2quk646.com^*
-www.nytimes.com##.e1i2wxpm0.css-mlcs8h.shown
-www.nytimes.com###story-ad-1-wrapper
-www.nytimes.com###story-ad-2-wrapper
-www.nytimes.com###story-ad-3-wrapper
-www.nytimes.com###story-ad-4-wrapper
-www.techarp.com##div.clearfix.momizat-ads.widget
+www.nytimes.com##.e1i2wxpm0.css-mlcs8h.shown:remove()
+www.nytimes.com###story-ad-1-wrapper:remove()
+www.nytimes.com###story-ad-2-wrapper:remove()
+www.nytimes.com###story-ad-3-wrapper:remove()
+www.nytimes.com###story-ad-4-wrapper:remove()
+www.techarp.com##div.clearfix.momizat-ads.widget:remove()
 !||parking.parklogic.com/page/enhance.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||parking.parklogic.com^*
 ||ww*.downtraining.net/track.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -16821,6 +16820,7 @@ www.bostonglobe.com##.meter-social-connect__container
 !||log.adaptv.advertising.com/crossdomain.xml$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||pixel.advertising.com/crossdomain.xm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||pixel.advertising.com/ups/7/occ$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||pixel.advertising.com/ups/56466/sync$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||secure.bannerfarm.ace.advertising.com/msft/msn.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||sync.adaptv.advertising.com/falk_user_sync^*
 ||ads.adaptv.advertising.com^*
@@ -16844,11 +16844,12 @@ www.bostonglobe.com##.meter-social-connect__container
 ||mediavine-d.openx.net^*
 ||src.ebay-us.com/fp/clear.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||us-ads.openx.net^*
-!||www.sdad.guru/i10c@p1/cenome/endpoint/nanovisor^* !blocks video clips on IGN
-www.msn.com##div[class*="aaiflkvirutfekrzevi"]
+! blocks video clips on IGN
+!||www.sdad.guru/i10c@p1/cenome/endpoint/nanovisor$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.msn.com##div[class*="aaiflkvirutfekrzevi"]:remove()
 !||g.bing.com/uac/request?size=728x90;noperf=1;adclntid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.sendtransfer.com##.vrsek.col-md-12.col-sm-12.col-xs-12.transfer
-www.sendtransfer.com##.col-md-12.col-sm-12.col-xs-12.text-left.noPadding.reklamaObal
+www.sendtransfer.com##.vrsek.col-md-12.col-sm-12.col-xs-12.transfer:remove()
+www.sendtransfer.com##.col-md-12.col-sm-12.col-xs-12.text-left.noPadding.reklamaObal:remove()
 ||suthepar.info^*
 ||www.suthepar.info^*
 ||cdn.fileepic.com/download-12-be403168ae029563de7e1c686bebc94e.png$image
@@ -16861,27 +16862,25 @@ www.sendtransfer.com##.col-md-12.col-sm-12.col-xs-12.text-left.noPadding.reklama
 ||www.varielcontentdelivery.info^*
 ||naganoadigei.com^*
 ||www.naganoadigei.com^*
-uploadproper.com###content > .big_res.ads_big
-uploadproper.com##div.ads_small:nth-of-type(3)
-uploadproper.com##div.ads_small:nth-of-type(4)
-uploadproper.com##div.big_res.ads_big:nth-of-type(4)
-uploadproper.com##div.big_res.ads_big:nth-of-type(7)
+uploadproper.com###content > .big_res.ads_big:remove()
+uploadproper.com##div.ads_small:remove()
+uploadproper.com##div.big_res.ads_big:remove()
 ||uploadproper.com/images/dl-now.PNG$image
 ||livedomain829.site^*
 ||www.livedomain829.site^*
 ||best4pc.com/wp-content/uploads/2015/05/dnn3.png$image
-best4pc.com##a[href^="http://livedomain829.site/go.php"]:nth-of-type(1)
-best4pc.com##a.button:nth-of-type(5)
-best4pc.com##a.button:nth-of-type(4)
-best4pc.com##a.button:nth-of-type(3)
-best4pc.com##a.button:nth-of-type(2)
+best4pc.com##a[href^="http://livedomain829.site/go.php"]:remove()
+best4pc.com##a.button:nth-of-type(5):remove()
+best4pc.com##a.button:nth-of-type(4):remove()
+best4pc.com##a.button:nth-of-type(3):remove()
+best4pc.com##a.button:nth-of-type(2):remove()
 ||www.nulledteam.com/data/siropu/am/user/15bd0a9b617446.png$image
-www.nulledteam.com##.samCustomSize.samAlignCenter.samBannerUnit
-!www.softpedia.com##div[class="ad adl ad-300x600 adwblue fr mgleft_30 mgbot_20 mgtop_10"]
-www.softpedia.com##div[class*="ad-300x600"]
-www.softpedia.com##div[class*="adwblue"]
-www.masterkreatif.com##button#user-act:nth-of-type(2)
-www.masterkreatif.com##button#user-act:nth-of-type(1)
+www.nulledteam.com##.samCustomSize.samAlignCenter.samBannerUnit:remove()
+!www.softpedia.com##div[class="ad adl ad-300x600 adwblue fr mgleft_30 mgbot_20 mgtop_10"]:remove()
+www.softpedia.com##div[class*="ad-300x600"]:remove()
+www.softpedia.com##div[class*="adwblue"]:remove()
+www.masterkreatif.com##button#user-act:nth-of-type(2):remove()
+www.masterkreatif.com##button#user-act:nth-of-type(1):remove()
 ||kbx1sth37s.com^*
 ||www.kbx1sth37s.com^*
 !www.buzzfeednews.com###mod-subbuzz-text-1 > .ad-placement--wide.ad-inline.js-ad-placement.clearfix
@@ -16898,21 +16897,21 @@ www.masterkreatif.com##button#user-act:nth-of-type(1)
 !www.buzzfeednews.com##div.xs-mb2:nth-of-type(8) > .xs-pt1.md-mt0.ad-flexible.ad-bfnews-fullwidth.ad-wireframe-wrapper--labeled.ad-wireframe-wrapper
 !www.buzzfeednews.com##li.ad-wireframe-wrapper--labeled.ad-wireframe-wrapper:nth-of-type(9)
 !www.buzzfeednews.com##.xs-my2 > .xs-pt1.md-mt0.ad-flexible.ad-bfnews-fullwidth.ad-wireframe-wrapper--labeled.ad-wireframe-wrapper
-www.buzzfeednews.com##div[class*="ad-placement--wide.ad-inline.js-ad-placement.clearfix"]
-www.buzzfeednews.com##div[class*="ad-wireframe-wrapper--labeled.ad-wireframe-wrapper"]
-www.buzzfeednews.com##div[class^="ad-wireframe-wrapper"]
-www.buzzfeednews.com##div[id^="div-gpt-ad-"]
+www.buzzfeednews.com##div[class*="ad-placement--wide.ad-inline.js-ad-placement.clearfix"]:remove()
+www.buzzfeednews.com##div[class*="ad-wireframe-wrapper--labeled.ad-wireframe-wrapper"]:remove()
+www.buzzfeednews.com##div[class^="ad-wireframe-wrapper"]:remove()
+www.buzzfeednews.com##div[id^="div-gpt-ad-"]:remove()
 !||cdn.run-syndicate.com/sdk/v1/n.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.run-syndicate.com^*
 ||smothere.pro^*
 ||www.smothere.pro^*
-lawandcrime.com###AdThrive_Content_2_desktop
-lawandcrime.com###AdThrive_Content_1_desktop
-lawandcrime.com###AdThrive_Content_4_desktop
-lawandcrime.com###AdThrive_Content_5_desktop
-lawandcrime.com###AdThrive_Content_3_desktop
+lawandcrime.com###AdThrive_Content_2_desktop:remove()
+lawandcrime.com###AdThrive_Content_1_desktop:remove()
+lawandcrime.com###AdThrive_Content_4_desktop:remove()
+lawandcrime.com###AdThrive_Content_5_desktop:remove()
+lawandcrime.com###AdThrive_Content_3_desktop:remove()
 ||connect.facebook.net/en_US/fbds.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.theverge.com##div.m-ad__desktop_article_medrec_dynamic
+www.theverge.com##div.m-ad__desktop_article_medrec_dynamic:remove()
 ||i62e2b4mfy.com^*
 ||www.i62e2b4mfy.com^*
 ||poogriry.click^*
@@ -16924,14 +16923,14 @@ www.sarna.net###right-ad-1
 ||marvin-joomla.ml^*
 ||nihilist.pw^*
 ||www.nihilist.pw^*
-outlook.live.com##._2qPmszDwBfYpF7PO9Mn3KN
-www.facebook.com##.egoOrganicColumn.q_7vilt8dou.pagelet
-www.facebook.com##._6i_i
+outlook.live.com##._2qPmszDwBfYpF7PO9Mn3KN:remove()
+www.facebook.com##.egoOrganicColumn.q_7vilt8dou.pagelet:remove()
+www.facebook.com##._6i_i:remove()
 ||megalevelmarketing.info^*
 ||www.megalevelmarketing.info^*
 ||withdromnit.pro^*
 ||www.withdromnit.pro^*
-fileflares.com##div[class="adsbygoogle"]
+fileflares.com##div[class="adsbygoogle"]:remove()
 ||barbitinnovans.info^*
 ||www.barbitinnovans.info^*
 ||h0uw.barbitinnovans.info^*
@@ -17431,7 +17430,7 @@ www.itechtics.com###ezmobfooter
 ||openload.co/advert2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pewdewgeehc.com^*
 ||www.pewdewgeehc.com^*
-!||ssum.casalemedia.com/usermatch^*
+!||ssum.casalemedia.com/usermatch$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ssum.casalemedia.com^*
 ||update.googleapis.com/service/update2$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kbdstwnruc.com^*
@@ -18857,7 +18856,7 @@ xehelp.com###adinj-4
 ||d63a3au5lqmtu.cloudfront.net^*
 ||s3.amazonaws.com/0afba0b32c48f1516e6787200d4b233226d21f81a313572154f91bf82d2c3/c23b0abfa0$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||img.ak.impact-ad.jp/ut/a1/dax-tracking.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||img.ak.impact-ad.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||img.ak.impact-ad.jp^*
 !||bypass.ad-stir.com/csync?site=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bypass.ad-stir.com^*
 ||twa.netcoresmartech.com/webactivity/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -22088,8 +22087,8 @@ www.nytimes.com##.e1x0szx60.css-16r57cp.expanded-dock.shown.MAG_web_anon_new-jou
 ||ctrlaltdel99.com^*
 !||b1t-nydc1.zemanta.com/t/imp/impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||b1t-nydc1.zemanta.com/t/imp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-webdesign.tutsplus.com##.post__inarticle-ad-template
-webdesign.tutsplus.com##.post__article-ad
+webdesign.tutsplus.com##.post__inarticle-ad-template:remove()
+webdesign.tutsplus.com##.post__article-ad:remove()
 ||lowtyroguer.com^*
 ||downloads27136.downloadsfls.com^*
 ||d2px5ezy95nb1j.cloudfront.net^*
@@ -22631,7 +22630,7 @@ tuiskeimode.web.fc2.com##div[id="fc2_bottom_bnr"]
 ||hb.adscale.de^*
 ||c-ng.imedia.cz/impression?d=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||res.ads.nicovideo.jp/assets/js/ads2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||res.ads.nicovideo.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||res.ads.nicovideo.jp^*
 www.vector.co.jp##+js(acs, adsbygoogle)
 www.vector.co.jp##div[id="ad_listing"]
 www.vector.co.jp##div[id="ad_dlsquare"]
@@ -25334,8 +25333,8 @@ www.google-analytics.com^$script,domain=daddylivehd.sx|dlhd.sx
 ||www.googletagservices.com/tag/js/gpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||530q7tul3rk734tzmjb3uxdjz7ro2ev36q7lczkwf7282b064f2e795esac.d.aa.online-metrix.net^*
 !||530q7tulxttrw6cozsyuythxdb6g655ojuyskfb71a8e2fe5e09abf68sac.d.aa.online-metrix.net^*
-!||ad.tagdelivery.com/impression^*
-!||ad.tagdelivery.com/request^*
+!||ad.tagdelivery.com/impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||ad.tagdelivery.com/request$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ad.tagdelivery.com^*
 ||analytics-api.cloudinary.com^*
 !||analytics.audioeye.com/p/v0/send$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -25343,15 +25342,14 @@ www.google-analytics.com^$script,domain=daddylivehd.sx|dlhd.sx
 !||ma1498-r.analytics.edgekey.net/9.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ma1498-r.analytics.edgekey.net/config/beacon-29282.xml$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ma1498-r.analytics.edgekey.net^*
-!||pixel.tapad.com/idsync/ex/receive^*
+!||pixel.tapad.com/idsync/ex/receive$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||px.ads.linkedin.com^*
 ||s.yimg.com/dy/sponsored.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||h.online-metrix.net/fp/sid_fp.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.officedepot.com/js/analytics_monetate.min.202979ff12b1731c6764.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.officedepot.com/js/analytics_monetate.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.wishpond.com/popups.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||yjtag.yahoo.co.jp/tag^*
-||yjtag.yahoo.co.jp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||yjtag.yahoo.co.jp^*
 !||tag.apxlv.com/tag/partner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tag.apxlv.com^*
 !||tag.cogocast.net/tag/partner/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -25772,7 +25770,6 @@ login.northlane.com##div[class="privacycontainer"]
 ||cdn.attn.tv/sears/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.attn.tv/sears/dtag.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||tag.targeting.unrulymedia.com/rmp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||pixel.advertising.com/ups/56466/sync$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||public-prod-playerdiagnosticscollector.dmxleo.com^*
 !||ads.samba.tv/cookie_sync$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ads.yahoo.com/cms/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -37850,6 +37847,7 @@ foxnews.com##+js(trusted-set-constant, data, {authenticated: true})
 !||foxnewsplayer-a.akamaihd.net/player/9.0.23/akamai/amp/amazonbidder/Amazonbidder.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/amazonbidder/$script
 ||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp//omniture/Omniture.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/nielsenlegacy/Nielsenlegacy.min.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||profiles.tagger.opecloud.com/api/v1/adalliance/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||profiles.tagger.opecloud.com^*
 !||fox.tagger.opecloud.com^*
@@ -49882,6 +49880,16 @@ apkcombo.com##+js(set-constant, powerTag.gdprShowConsentToolButton, false)
 apkcombo.com##+js(set-constant, powerTag.preAdLoader, "")
 apkcombo.com##+js(set-constant, onError, noopFunc)
 ||apkcombo.com/serviceworker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||tv.springserve.com/ssusersync?us_privacy=$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||tv.springserve.com^*
+!||sync.bfmio.com/syncb?pid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||sync.bfmio.com^*
+||cs.emxdgt.com^*
+!||pbs.publishers.tremorhub.com/pubsync?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||pbs.publishers.tremorhub.com^*
+!||sync.sxp.smartclip.net/sync?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||sync.sxp.smartclip.net^*
+||cs.media.net/cksync?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
