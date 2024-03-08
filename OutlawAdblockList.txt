@@ -44369,7 +44369,6 @@ dlpure.com##script[id^="google_gtagjs-js"]:remove()
 ||ddtvskish.com^*
 ||haveredsiren.space^*
 ||rauvoaty.net^*
-||api-ad-admin.jojoy.io^*
 !||uh.calepinphrasal.com^*
 ||calepinphrasal.com^*
 ||hoickpinyons.com^*
@@ -45010,6 +45009,10 @@ flipp.com##div[class^="cky-consent-"]:remove()
 !||flipp.com/build/*/static/happy-analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn-cookieyes.com/client_data/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 developer.mozilla.org##div[class^="top-banner"]:has(*[class^="pong"]):remove()
+jojoy.io##div[id="fixed-donate"]:remove()
+jojoy.io##+js(set-constant, showDonate, noopFunc)
+jojoy.io##+js(acs, /showDonate\(/)
+jojoy.io##script[id="aclib"]:remove()
 jojoy.io##div[id^="ad_block_"]:remove()
 jojoy.io##div[id^="div-gpt-ad-"]:remove()
 jojoy.io##div[class="download-ads"]:remove()
@@ -45019,10 +45022,14 @@ jojoy.io##+js(acs, detectAdBlock)
 jojoy.io##+js(set-constant, adBlockEnabled, false)
 jojoy.io##+js(set-constant, gtag, noopFunc)
 jojoy.io##+js(acs, gtag)
+jojoy.io##+js(trusted-replace-node-text, script, /let url = ''/gm, null;)
+jojoy.io##+js(trusted-replace-node-text, script, /\/\/ let url =/gm, let url =)
+jojoy.io##+js(trusted-replace-node-text, script, /window\.open\(/gm, console.log()
 ||jojoy.io/z-et2uqr2gfd$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||jojoy.io/static/video/adblock-plus.mp4$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||etpweb.jojoy.io/event/report/web?data=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||etpweb.jojoy.io^*
+||api-ad-admin.jojoy.io^*
 ||ou.samogonmarvy.com^*
 ||sirmianow.top^*
 ||theekedgleamed.com^*
@@ -49876,6 +49883,7 @@ apkcombo.com##+js(set-constant, onError, noopFunc)
 ||ihnhnpz.com^*
 ||zoeaethenar.com^*
 ||irbtwjy.com^*
+||offmantiner.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
