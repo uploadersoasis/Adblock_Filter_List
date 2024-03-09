@@ -36584,20 +36584,17 @@ fm.solewe.com^script:has-text(banner_ad)
 www.cablefree.net##div[id="cmplz-cookiebanner-container"]
 !||www.cablefree.net/wp-content/uploads/complianz/css/banner-1-optin.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.cablefree.net/wp-content/uploads/complianz/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-rmprepusb.com##div[id^="cookie-law"]
-rmprepusb.com##div[id="cliSettingsPopup"]
-discussion.fedoraproject.org##div[aria-label="cookieconsent"]
-!||r.apkpure.net/report?project=channelReport$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||r.apkpure.net^*
-www.emtec-international.com##div[class*="cookiealert"]
-speedify.com##*[id^="cookie-notice-"]
+rmprepusb.com##div[id^="cookie-law"]:remove()
+rmprepusb.com##div[id="cliSettingsPopup"]:remove()
+discussion.fedoraproject.org##div[aria-label="cookieconsent"]:remove()
+www.emtec-international.com##div[class*="cookiealert"]:remove()
+speedify.com##*[id^="cookie-notice-"]:remove()
 ||speedify.com/wp-content/plugins/cookie-notice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.sberbank.com##div[data-pid^="KomCookieWarning"]
-games.digipen.edu##div[id="cookieToast"]
-www.lawyer-turkey.com##div[id="buton"]
-www.openpr.com##div[id="cmpbox2"]
-www.openpr.com##div[id="cmpbox"]
-www.openpr.com##div[id="ad-leaderboard"]
+www.sberbank.com##div[data-pid^="KomCookieWarning"]:remove()
+games.digipen.edu##div[id="cookieToast"]:remove()
+www.lawyer-turkey.com##div[id="buton"]:remove()
+www.openpr.com##div[id^="cmpbox"]:remove()
+www.openpr.com##div[id="ad-leaderboard"]:remove()
 www.openpr.com##ins[data-ad-client]:remove()
 www.openpr.com##body:style(overflow: scroll !important;)
 !||cdn.consentmanager.net/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -44267,27 +44264,31 @@ rutor.org##+js(set-constant, executed, true)
 ||personalityleftoverwhiskers.com^*
 ||track.bannerboo.com^*
 ||embed.bannerboo.com^*
-android-zone.ws##div[id="elGuestTerms"]
+android-zone.ws##div[id="elGuestTerms"]:remove()
 android-zone.ws##+js(set-attr, img[data-src], src, [data-src])
+!||r.apkpure.net/report?project=channelReport$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||r.apkpure.net^*
+||m.apkpure.com/sw_v3.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.apkpure.com/www/static/script/sweetalert.*.min.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||a.apkpure.com/* !blocks download captchas
 !||a.apkpure.com/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||a.apkpure.com/analytics_v1018.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||a.apkpure.com/analytics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||apkpure.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||apkpure.com/workbox-sw.prod.v*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-apkpure.com###policy-info:remove()
-apkpure.com##div[class="ad-box-auto"]:remove()
-m.apkpure.com##div.ad-box:remove()
-||m.apkpure.com/sw_v3.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||static.apkpure.com/www/static/script/sweetalert.*.min.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-apkpure.com##ins[data-ad-client]:remove()
-apkpure.com##div[class*="ad-box"]:remove()
-apkpure.com##div[class*="js-ad-slot"]:remove()
-apkpure.com##div[class*="ad-adsense"]:remove()
-!apkpure.com##+js(set-constant, window.apkpureAdUnfilledConfig, {}, end)
-apkpure.com##+js(set-constant, window.apkpureAdUnfilledConfig, {}, complete)
-apkpure.com##+js(abort-on-property-read, window.apkpureAdUnfilledConfig)
-apkpure.com##+js(abort-on-property-write, _paq)
+||apkpure.com/workbox-sw.prod.v*.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||apkpure.net/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||apkpure.net/workbox-sw.prod.v*.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!m.apkpure.com,apkpure.net##div.ad-box:remove()
+apkpure.com,apkpure.net###policy-info:remove()
+apkpure.com,apkpure.net##div[class*="ad-adsense"]:remove()
+apkpure.com,apkpure.net##div[class*="ad-box"]:remove()
+apkpure.com,apkpure.net##div[class*="js-ad-slot"]:remove()
+apkpure.com,apkpure.net##div[id="policy-info"]:remove()
+apkpure.com,apkpure.net##ins[data-ad-client]:remove()
+!apkpure.com,apkpure.net##+js(set-constant, window.apkpureAdUnfilledConfig, {}, end)
+apkpure.com,apkpure.net##+js(set-constant, window.apkpureAdUnfilledConfig, {}, complete)
+apkpure.com,apkpure.net##+js(abort-on-property-read, window.apkpureAdUnfilledConfig)
+apkpure.com,apkpure.net##+js(abort-on-property-write, _paq)
 !games.slashdot.org##div[class*="adwrap"]:remove()
 !games.slashdot.org##div[id^="div-gpt-ad-"]:remove()
 slashdot.org##div[class*="adwrap"]:remove()
@@ -45083,14 +45084,31 @@ ao.pressreader.com##div:remove-class(subscriber-content)
 ||cdn.blueconic.net^*
 ||eminentbubble.com^*
 ||dn6rwwtxa647p.cloudfront.net/76/www.androidpolice.com/best-apple-news-alternatives/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.androidpolice.com##aside[class*="adsninja-rail-container"]:remove()
 www.androidpolice.com##div[class*="adsninja-ad-zone"]:remove()
 www.androidpolice.com##div[id*="div-gpt-ad"]:remove()
 www.androidpolice.com##div[id^="adsninja-ad-zone"]:remove()
 www.androidpolice.com##div[class="ad-odd"]:remove()
 www.androidpolice.com##div[class="bOvWNQ"]:has(div[class="ghwPHX"]):remove()
+www.androidpolice.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
 www.androidpolice.com##script[id="optimera-ops"]:remove()
 www.androidpolice.com##+js(set-constant, sendToGoogleAnalytics, noopFunc)
 www.androidpolice.com##+js(acs, sendToGoogleAnalytics, loadAnalyticsData)
+www.androidpolice.com##+js(set-constant, window.adsNinja, {})
+www.androidpolice.com##+js(aopw, window.adsNinja)
+www.androidpolice.com##+js(aopr, window.adsNinja)
+www.androidpolice.com##+js(set-constant, window.pbjs, {})
+www.androidpolice.com##+js(aopw, window.pbjs)
+www.androidpolice.com##+js(aopr, window.pbjs)
+www.androidpolice.com##+js(set-constant, window.adsNinjaAmazonInitData, {})
+www.androidpolice.com##+js(aopw, window.adsNinjaAmazonInitData)
+www.androidpolice.com##+js(aopr, window.adsNinjaAmazonInitData)
+www.androidpolice.com##+js(set-constant, adUnitBidderConfigs, [])
+www.androidpolice.com##+js(acs, /adUnitBidderConfigs\[/)
+www.androidpolice.com##+js(set-constant, _comscore, [])
+www.androidpolice.com##+js(aopw, _comscore)
+www.androidpolice.com##+js(aopr, _comscore)
+!||www.androidpolice.com/public/build/valnet-footer*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.androidpolice.com/strpixel.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||random-affiliate.atimaze.com^*
 !||chs03.cookie-script.com^*
@@ -45742,7 +45760,7 @@ www.downloadsource.net##+js(aopr, adsbygoogle)
 ||riweeboo.com^*
 ||yotuqblgnug.com^*
 ||bssyhrubrcs.com^*
-apkpure.net##div[id="policy-info"]:remove()
+*##ins[data-ad-client]:remove()
 easyupload.io##+js(remove-attr.js, disabled, #expiration > option:nth-child(5), stay)
 easyupload.io##ins[data-ad-client]:remove()
 easyupload.io##div[class="desktopad"]:remove()
@@ -49693,9 +49711,9 @@ downloadkai.top##+js(aopw, popunder)
 downloadkai.top##+js(aopr, hb17)
 downloadkai.top##+js(aopw, hb17)
 apkexit.com,downloadkai.top,www.babup.com##ins[data-ad-client]:remove()
-ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, adsbygoogle, [])
-ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(aopw, adsbygoogle)
-ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(aopr, adsbygoogle)
+moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, adsbygoogle, [])
+moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(aopw, adsbygoogle)
+moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(aopr, adsbygoogle)
 apkcombo.com,www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, gtag, noopFunc)
 apkcombo.com,www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, window.dataLayer, [])
 ||www.babup.com/page1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49908,6 +49926,7 @@ ubuntuhandbook.org##+js(aopw, _gaq)
 ubuntuhandbook.org##+js(aopr, _gaq)
 ubuntuhandbook.org##script[id^="cookie-notice-front-js"]:remove()
 ||ubuntuhandbook.org/wp-content/plugins/cookie-notice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||tapi.pureapk.com/report/search_report?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
