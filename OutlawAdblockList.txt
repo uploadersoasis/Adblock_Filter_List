@@ -38862,7 +38862,6 @@ livenewschat.eu##div[class="container container-choice-footer-msg"]:remove()
 livenewschat.eu##+js(aopr, _paq)
 livenewschat.eu##+js(aopw, _paq)
 livenewschat.eu##+js(set-constant, gtag, noopFunc)
-livenewschat.eu##iframe[name="__tcfapiLocator"]
 livenewschat.eu##iframe[name="__tcfapiLocator"]:remove()
 !livenewschat.eu##+js(no-setTimeout-if, /^/)
 livenewschat.eu##+js(no-setTimeout-if, /location.href/)
@@ -43747,6 +43746,7 @@ www.t-mobile.com##button[mat-flat-button]:remove-attr(disabled)
 ||cdn*.privacy-mgmt.com/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn*.privacy-mgmt.com/Notice.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn-146.privacy-mgmt.com^*
+||tl.outkick.com/jssdk/0692af3644ec47b4af0e3647d402640a.min.js?adobe_evar=eVar65&adobe_obj=omtr$script
 ||www.outkick.com/wp-content/plugins/ad-ace/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.outkick.com/wp-content/plugins/advanced-ads-pro/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.outkick.com/wp-content/plugins/advanced-ads-responsive/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -43760,11 +43760,14 @@ www.outkick.com##div[id^="mw-ad-"]:remove()
 www.outkick.com##div[class*="ad-container"][class*="ad-w-"][class*="ad-h-"]:remove()
 www.outkick.com##div[class="afs_ads ad-placement"]:remove()
 www.outkick.com##iframe[id="rufous-sandbox"]:remove()
+www.outkick.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
 www.outkick.com##script[id="outki-ready"]:remove()
 www.outkick.com##script[id^="advanced-ads-"]:remove()
 www.outkick.com##script[id^="utag_"]:remove()
+www.outkick.com##:xpath(//script[contains(text(), 'Strike.insertAd')]):remove()
 www.outkick.com##+js(set-constant, _qevents, [])
-www.outkick.com##+js(acs, Strike.insertAd)
+www.outkick.com##+js(set-constant, Strike.insertAd, noopFunc)
+www.outkick.com##+js(acs, /Strike.insertAd\(/)
 www.outkick.com##+js(abort-on-property-read, _qevents)
 www.outkick.com##+js(abort-on-property-write, _qevents)
 www.outkick.com##+js(set-constant, gtag, noopFunc)
@@ -43783,6 +43786,10 @@ www.outkick.com##div[id="video-container-1"]:style(padding:0 !important; margin:
 www.outkick.com##div[style="height: 1px; width: 973px;"]:remove()
 ! The following rule removes the email newsletter signup tag because it overlays the expanded video player viewport.
 www.outkick.com##div[class*="item-newsletter"]:remove()
+!||dualstack.n.sni.global.fastly.net/web/v2/consent/outkick/get$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||dualstack.n.sni.global.fastly.net/web/v2/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||global.ketchcdn.com/web/v2/consent/outkick/get$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||global.ketchcdn.com/web/v2/consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||a.optinmonster.com/app/js/prebid-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||a.optinmonster.com^*
 ||a.omappapi.com/app/js/api.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -44373,7 +44380,6 @@ dlpure.com##script[id^="google_gtagjs-js"]:remove()
 ||calepinphrasal.com^*
 ||hoickpinyons.com^*
 ||etpweb.doodoo.love^*
-||data-etp-testweb.rockeyops.com^*
 ||dwdisc.com/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 dwdisc.com##a[href*="//hantsailsyte.com/"]
 dwdisc.com##a[href*="//hantsailsyte.com/"]:remove()
@@ -44881,16 +44887,18 @@ mspoweruser.com##div[data-adtype]:remove()
 ||apkmody.io/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||apkmody.io/ads01.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||apkmody.io/ads02.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||etpweb.apkmody.io/event/report/web?data=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||etpweb.apkmody.io/event/report/web?data=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||etpweb.apkmody.io^*
+||data-etp-testweb.rockeyops.com^*
 apkmody.io##div[class="ad-unit"]:remove()
-apkmody.io##div[id="above-the-fold-ad"]:remove()
 apkmody.io##div[class="download-ads"]:remove()
+apkmody.io##div[id="above-the-fold-ad"]:remove()
 apkmody.io##div[id="fixed-donate"]:remove()
+apkmody.io##div[id^="div-gpt-ad-"]:remove()
 apkmody.io##ins[class="adsbygoogle"]:remove()
 apkmody.io##span[id="donate-popup"]:remove()
 apkmody.io##span[id="fixed-donate-us"]:remove()
 apkmody.io##a[id="download-button"][href$="://worker.happymod.cool/releases/Apkmody-latest.apk"]:remove()
-apkmody.io##+js(set-constant, fadeOutDonatePopup, noopFunc)
 apkmody.io##+js(set-constant, gtag, noopFunc)
 apkmody.io##+js(acs, gtag)
 apkmody.io##+js(set-constant, window.googletag, {})
@@ -44901,8 +44909,11 @@ apkmody.io##+js(set-constant, googletag.pubads, noopFunc, complete)
 apkmody.io##+js(acs, googletag.pubads)
 apkmody.io##+js(set-constant, downLoadTrack, noopFunc)
 apkmody.io##+js(set-constant, etpTrack, noopFunc)
-apkmody.io##+js(acs, downLoadTrack, etpTrack)
+apkmody.io##+js(acs, downLoadTrack, etpTrack, downLoadTrackByDetail)
+apkmody.io##+js(set-constant, downLoadTrackByDetail, noopFunc)
 apkmody.io##+js(set-constant, showDonate, noopFunc)
+apkmody.io##+js(set-constant, showDonatePrompt, noopFunc)
+apkmody.io##+js(set-constant, fadeOutDonatePopup, noopFunc)
 apkmody.io##+js(set-constant, downloadAds, noopFunc)
 apkmody.io##+js(set-constant, detectAdBlock, noopFunc)
 apkmody.io##+js(set-constant, adBlockEnabled, false)
@@ -44912,6 +44923,7 @@ apkmody.io##+js(set-constant, _fvgctrp, noopFunc)
 apkmody.io##+js(set-constant, _qqksa, noopFunc)
 apkmody.io##script[onload]:remove-attr(onload)
 apkmody.io##script[onerror]:remove-attr(onerror)
+apkmody.io##+js(json-prune, sdk_url server_url)
 modded-1.com##ins[data-ad-client]:remove()
 modded-1.com##div[class="ad-unit"]:remove()
 modded-1.com##+js(set-constant, adsbygoogle, [])
@@ -45011,11 +45023,14 @@ flipp.com##div[class^="cky-consent-"]:remove()
 developer.mozilla.org##div[class^="top-banner"]:has(*[class^="pong"]):remove()
 jojoy.io##div[id="fixed-donate"]:remove()
 jojoy.io##+js(set-constant, showDonate, noopFunc)
+jojoy.io##+js(set-constant, aclib.runBanner, noopFunc)
 jojoy.io##+js(acs, /showDonate\(/)
 jojoy.io##script[id="aclib"]:remove()
 jojoy.io##div[id^="ad_block_"]:remove()
 jojoy.io##div[id^="div-gpt-ad-"]:remove()
 jojoy.io##div[class="download-ads"]:remove()
+jojoy.io##div[onclick^="window.open("]:remove-attr(onclick)
+jojoy.io##+js(remove-attr, onclick, div[onclick^="window.open("])
 jojoy.io##+js(set-constant, googleAdUrl, "")
 jojoy.io##+js(set-constant, detectAdBlock, noopFunc)
 jojoy.io##+js(acs, detectAdBlock)
@@ -49678,9 +49693,9 @@ downloadkai.top##+js(aopw, popunder)
 downloadkai.top##+js(aopr, hb17)
 downloadkai.top##+js(aopw, hb17)
 apkexit.com,downloadkai.top,www.babup.com##ins[data-ad-client]:remove()
-apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, adsbygoogle, [])
-apkexit.com,downloadkai.top,www.babup.com##+js(aopw, adsbygoogle)
-apkexit.com,downloadkai.top,www.babup.com##+js(aopr, adsbygoogle)
+ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, adsbygoogle, [])
+ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(aopw, adsbygoogle)
+ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(aopr, adsbygoogle)
 apkcombo.com,www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, gtag, noopFunc)
 apkcombo.com,www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, window.dataLayer, [])
 ||www.babup.com/page1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49884,6 +49899,15 @@ apkcombo.com##+js(set-constant, onError, noopFunc)
 ||zoeaethenar.com^*
 ||irbtwjy.com^*
 ||offmantiner.com^*
+! The script in the following rule contains the etpTrack() function.
+!||1558334541.rsc.cdn77.org/nfs/202210281/etp.min.js$3p,script
+||1558334541.rsc.cdn77.org/nfs/*/etp.min.js$3p,script
+||rigelbetelgeuse.top^*
+ubuntuhandbook.org##+js(set-constant, _gaq, [])
+ubuntuhandbook.org##+js(aopw, _gaq)
+ubuntuhandbook.org##+js(aopr, _gaq)
+ubuntuhandbook.org##script[id^="cookie-notice-front-js"]:remove()
+||ubuntuhandbook.org/wp-content/plugins/cookie-notice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
