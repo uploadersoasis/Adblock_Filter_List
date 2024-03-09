@@ -20601,7 +20601,6 @@ full.badr4soft.com##div[class="banner__ad-info"]
 ||sadbads.com^*
 ||www.sadbads.com^*
 www.uploadship.com##.cc-color-override-688238583.cc-bottom.cc-theme-classic.cc-type-info.cc-banner.cc-window
-www.thewindowsclub.com##.adtester-container-104
 ||tybwfgqq.com^*
 ||www.tybwfgqq.com^*
 ||nxtipyczkivm.com^*
@@ -25232,9 +25231,6 @@ www.opera.com##input[id="cookie-consent-expander"]:remove()
 www.opera.com##div[class="cookie-consent"]:remove()
 www.opera.com##div[id="cookie-consent"]:remove()
 www.opera.com##p[class^="cookie-consent"]:remove()
-www.thewindowsclub.com##span[id^="div-gpt-ad-"]:remove()
-www.thewindowsclub.com##span[class^="ezoic-ad"]:remove()
-www.thewindowsclub.com##div[class^="ezmob-footer"]:remove()
 www.remoteutilities.com##div[class="eupopup eupopup-container eupopup-container-block eupopup-container-bottom"]
 www.groovypost.com##div[id="cookie-notice"]:remove()
 www.groovypost.com##div[class="cookie-notice-container"]:remove()
@@ -40218,18 +40214,13 @@ st.chatango.com##+js(set-constant, window._taboola, [])
 tutorialzine.com##+js(set-constant, _gaq, [])
 tutorialzine.com##+js(abort-on-property-write, _gaq)
 tutorialzine.com##+js(abort-on-property-read, _gaq)
-www.playmods.net##div[class="cookie-fl"]
 www.playmods.net##div[class="cookie-fl"]:remove()
-www.playmods.net##div[class^="cookie-menu"]
 www.playmods.net##div[class^="cookie-menu"]:remove()
 www.playmods.net##+js(set-constant, isCookieAds, 1)
 www.playmods.net##+js(abort-on-property-write, isCookieAds)
 www.playmods.net##+js(abort-on-property-read, isCookieAds)
-www.playmods.net##div[id="banner-ad"]
 www.playmods.net##div[id="banner-ad"]:remove()
-www.playmods.net##div[class^="gpt-banner"]
 www.playmods.net##div[class^="gpt-banner"]:remove()
-www.playmods.net##iframe[id="ads-iframe"]
 www.playmods.net##iframe[id="ads-iframe"]:remove()
 !www.playmods.net##+js(set-constant, window.adsTag, {})
 !www.playmods.net##+js(set-constant, window.adsTag.renderAds, noopFunc, end)
@@ -44885,16 +44876,17 @@ mspoweruser.com##div[data-adtype]:remove()
 !||ou.jezailmasking.com^*
 ||jezailmasking.com^*
 ||px.greenfox.ink/pixel.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||apkmody.io/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||apkmody.io/ads01.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||apkmody.io/ads02.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||etpweb.apkmody.io/event/report/web?data=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||etpweb.apkmody.io^*
 ||data-etp-testweb.rockeyops.com^*
+||apkmody.io/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||apkmody.io/ads01.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||apkmody.io/ads02.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 apkmody.io##div[class="ad-unit"]:remove()
 apkmody.io##div[class="download-ads"]:remove()
 apkmody.io##div[id="above-the-fold-ad"]:remove()
 apkmody.io##div[id="fixed-donate"]:remove()
+apkmody.io##div[class="donate-button"]:remove()
 apkmody.io##div[id^="div-gpt-ad-"]:remove()
 apkmody.io##ins[class="adsbygoogle"]:remove()
 apkmody.io##span[id="donate-popup"]:remove()
@@ -44908,14 +44900,16 @@ apkmody.io##+js(acs, window.googletag)
 !apkmody.io##+js(set-constant, googletag.pubads, noopFunc, end)
 apkmody.io##+js(set-constant, googletag.pubads, noopFunc, complete)
 apkmody.io##+js(acs, googletag.pubads)
-apkmody.io##+js(set-constant, downLoadTrack, noopFunc)
 apkmody.io##+js(set-constant, etpTrack, noopFunc)
-apkmody.io##+js(acs, downLoadTrack, etpTrack, downLoadTrackByDetail)
+apkmody.io##+js(set-constant, downLoadTrack, noopFunc)
 apkmody.io##+js(set-constant, downLoadTrackByDetail, noopFunc)
+apkmody.io##+js(acs, downLoadTrack, etpTrack, downLoadTrackByDetail)
+! TODO: The following rule prevents downloading of the real Android package?
+apkmody.io##+js(set-constant, downLoadTrackByChoosePackage, noopFunc)
+apkmody.io##+js(set-constant, downloadAds, noopFunc)
 apkmody.io##+js(set-constant, showDonate, noopFunc)
 apkmody.io##+js(set-constant, showDonatePrompt, noopFunc)
 apkmody.io##+js(set-constant, fadeOutDonatePopup, noopFunc)
-apkmody.io##+js(set-constant, downloadAds, noopFunc)
 apkmody.io##+js(set-constant, detectAdBlock, noopFunc)
 apkmody.io##+js(set-constant, adBlockEnabled, false)
 apkmody.io##+js(set-constant, googleAdUrl, "")
@@ -45108,6 +45102,7 @@ www.androidpolice.com##+js(acs, /adUnitBidderConfigs\[/)
 www.androidpolice.com##+js(set-constant, _comscore, [])
 www.androidpolice.com##+js(aopw, _comscore)
 www.androidpolice.com##+js(aopr, _comscore)
+! The following rule prevents the embedded Youtube video and the image gallery from being rendered and working.
 !||www.androidpolice.com/public/build/valnet-footer*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.androidpolice.com/strpixel.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||random-affiliate.atimaze.com^*
@@ -46041,6 +46036,7 @@ mediafire.com##+js(abort-current-inline-script, document.getElementById, adblock
 ||www.mediafire.com/js/prebid*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||static.mediafire.com/images/backgrounds/header/mf_logo_full_color.svg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||the.gatekeeperconsent.com/cmp.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||the.gatekeeperconsent.com/gpp/v1/gppstub.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||the.gatekeeperconsent.com^*
 !||privacy.gatekeeperconsent.com/consent_modules.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||privacy.gatekeeperconsent.com^*
@@ -49927,6 +49923,46 @@ ubuntuhandbook.org##+js(aopr, _gaq)
 ubuntuhandbook.org##script[id^="cookie-notice-front-js"]:remove()
 ||ubuntuhandbook.org/wp-content/plugins/cookie-notice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tapi.pureapk.com/report/search_report?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.thewindowsclub.com##.adtester-container-104:remove()
+www.thewindowsclub.com##div[class^="ezmob-footer"]:remove()
+www.thewindowsclub.com##div[class="ac-lre-ima-ad-wrapper"]:remove()
+www.thewindowsclub.com##div[class="ac-lre-display-ad-container"]:remove()
+www.thewindowsclub.com##div[class="ac-lre-ad-bar"]:remove()
+www.thewindowsclub.com##div[class="ac-luminous-x-container"]:remove()
+www.thewindowsclub.com##iframe:has(script[src^="https://c.amazon-adsystem.com/"]):remove()
+www.thewindowsclub.com##span[id^="div-gpt-ad-"]:remove()
+www.thewindowsclub.com##span[id^="ezoic-pub-ad-"]:remove()
+www.thewindowsclub.com##span[class^="ezoic-ad"]:remove()
+www.thewindowsclub.com##span[data-ez-ph-id]:remove()
+www.thewindowsclub.com##+js(set-constant, _ez_ab_test, "")
+www.thewindowsclub.com##+js(aopw, _ez_ab_test)
+www.thewindowsclub.com##+js(aopr, _ez_ab_test)
+www.thewindowsclub.com##+js(set-constant, __ezHttpConsent, {})
+www.thewindowsclub.com##+js(aopw, __ezHttpConsent)
+www.thewindowsclub.com##+js(aopr, __ezHttpConsent)
+www.thewindowsclub.com##+js(set-constant, getEzConsentData, noopFunc)
+www.thewindowsclub.com##+js(aopw, ezTcfConsent)
+www.thewindowsclub.com##+js(aopr, ezTcfConsent)
+www.thewindowsclub.com##+js(aopw, window.ezTcfConsent)
+www.thewindowsclub.com##+js(aopr, window.ezTcfConsent)
+www.thewindowsclub.com##+js(set-constant, productEzoicAds, noopFunc)
+www.thewindowsclub.com##+js(set-constant, window.google_reactive_ads_global_state, {})
+www.thewindowsclub.com##+js(aopw, window.google_reactive_ads_global_state)
+www.thewindowsclub.com##+js(aopr, window.google_reactive_ads_global_state)
+www.thewindowsclub.com##+js(set-constant, _setAllEzConsentTrue, noopFunc)
+www.thewindowsclub.com##+js(set-constant, _reloadAds, noopFunc)
+www.thewindowsclub.com##+js(set-constant, __ezapsFetchBids, noopFunc)
+www.thewindowsclub.com##+js(set-constant, ezapsFetchBids, noopFunc)
+www.thewindowsclub.com##+js(set-constant, _emitEzConsentEvent, noopFunc)
+www.thewindowsclub.com##+js(set-constant, amazonHasRun, true)
+www.thewindowsclub.com##+js(set-constant, tcdata.gdprApplies, false)
+www.thewindowsclub.com##div[class="ac-player-wrapper ac-floated-player"]:style(width: 33vw !important; height: 33vh !important)
+!www.thewindowsclub.com##div[class*="video-js"][aria-label="Video Player"][id^="ac-lre-vjs-"]:style(width: 33vw !important; height: 33vh !important)
+www.thewindowsclub.com##div[class="ac-luminous-x-close-button"]:remove()
+||player.anyclip.com/anyclip-widget/lre-widget/prod/v1/src/display-ads-manager.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||player.anyclip.com/lreprx/js/v1/src/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||pixel.anyclip.com/vmp.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||marketplace.anyclip.com/v1/events?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
