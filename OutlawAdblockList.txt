@@ -15574,7 +15574,6 @@ magazine.odroid.com##.all-services
 ||lp.easyziptab.com^*
 ||newtab-media.com^*
 ||search.newtab-mediasearch.com^*
-||appvn.com/popup/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||b.adexchangemachine.com/script/wait.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||b.adexchangemachine.com^*
 ||crrepo.com/ban/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -40212,16 +40211,21 @@ tutorialzine.com##+js(abort-on-property-write, _gaq)
 tutorialzine.com##+js(abort-on-property-read, _gaq)
 www.playmods.net##div[class="cookie-fl"]:remove()
 www.playmods.net##div[class^="cookie-menu"]:remove()
-www.playmods.net##+js(set-constant, isCookieAds, 1)
-www.playmods.net##+js(abort-on-property-write, isCookieAds)
-www.playmods.net##+js(abort-on-property-read, isCookieAds)
-www.playmods.net##div[id="banner-ad"]:remove()
 www.playmods.net##div[class^="gpt-banner"]:remove()
+www.playmods.net##div[id="banner-ad"]:remove()
+www.playmods.net##div[^id="yandex_rtb_"]:remove()
 www.playmods.net##iframe[id="ads-iframe"]:remove()
+www.playmods.net##+js(abort-on-property-read, isCookieAds)
+www.playmods.net##+js(abort-on-property-write, isCookieAds)
+www.playmods.net##+js(set-constant, isCookieAds, 1)
 !www.playmods.net##+js(set-constant, window.adsTag, {})
 !www.playmods.net##+js(set-constant, window.adsTag.renderAds, noopFunc, end)
 www.playmods.net##+js(set-constant, window.adsTag.renderAds, noopFunc, complete)
 www.playmods.net##+js(acs, window.adsTag.renderAds)
+www.playmods.net##+js(acs, /window.yaContextCb.push\(/)
+www.playmods.net##+js(acs, /Ya.Context.AdvManager.render\(/)
+||qn-resource.playmods.net/www/*/static/css/exclusive/include/cookie.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||qn-resource.playmods.net/www/*/static/js/cookie_msg.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sdk.enjoy4fun.com/cdn/prebid/*/prebid.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ce.ditchesteenish.com^*
 ||zr.changarreviver.com^*
@@ -42841,14 +42845,14 @@ www.incentivespro.com##+js(abort-on-property-write, _gaq)
 www.incentivespro.com##+js(abort-on-property-read, _gaq)
 www.breitbart.com###iscnewsmaxwidgetid:remove()
 www.breitbart.com##a[href^="https://d2.ads.rmbl.ws/"]:remove()
-www.breitbart.com##img[src^="//d2.ads.rmbl.ws/"]:remove()
 www.breitbart.com##aside[id="social-share-mobile-sticky"]:remove()
 www.breitbart.com##div[id^="SWW.Hmobi.ad"]:remove()
 www.breitbart.com##div[id="social-share-footer"]:remove()
 www.breitbart.com##iframe[id="rufous-sandbox"]:remove()
 www.breitbart.com##iframe[src^="https://d2.ads.rmbl.ws/"]:remove()
-www.breitbart.com##script[id="spmmin_js"]:remove()
+www.breitbart.com##img[src^="//d2.ads.rmbl.ws/"]:remove()
 www.breitbart.com##ins[data-ad-client]:remove()
+www.breitbart.com##script[id="spmmin_js"]:remove()
 www.breitbart.com##+js(set-constant, bnnConsent.hasConsented, falseFunc)
 www.breitbart.com##+js(set-constant, bnnConsent.isCPRA, falseFunc)
 www.breitbart.com##+js(set-constant, bnnConsent.isGDPR, falseFunc)
@@ -42861,6 +42865,7 @@ www.breitbart.com##+js(acs, OnetrustActiveGroups)
 www.breitbart.com##+js(trusted-set-constant, BB_Y, {ads:0})
 www.breitbart.com##+js(abort-on-property-write, BB_Y)
 www.breitbart.com##+js(abort-on-property-read, BB_Y)
+www.breitbart.com##+js(set-attr, video[class*="lazy-loop"][data-harry], src, [data-harry])
 ||www.breitbart.com/t/assets/iframe/newsmax-ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||media.breitbart.com/ads.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||a-cdn.rmbl.ws/creatives/ac/3f/20008/d8/37657.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49709,8 +49714,8 @@ apkexit.com,downloadkai.top,www.babup.com##ins[data-ad-client]:remove()
 moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, adsbygoogle, [])
 moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(aopw, adsbygoogle)
 moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(aopr, adsbygoogle)
-happymod.com,apkcombo.com,www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, gtag, noopFunc)
-happymod.com,apkcombo.com,www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, window.dataLayer, [])
+www.playmods.net,www.happymoddl.com,happymod.com,apkcombo.com,www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, gtag, noopFunc)
+www.playmods.net,www.happymoddl.com,happymod.com,apkcombo.com,www.apksum.com,www.apkshub.com,modsfire.com,modyolo.com,apkexit.com,downloadkai.top,www.babup.com##+js(set-constant, window.dataLayer, [])
 ||www.babup.com/page1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.babup.com/page2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.babup.com/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49962,12 +49967,20 @@ www.thewindowsclub.com##div[class="ac-luminous-x-close-button"]:remove()
 ||player.anyclip.com/lreprx/js/v1/src/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pixel.anyclip.com/vmp.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||marketplace.anyclip.com/v1/events?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-happymod.com##div[class="cookie-fixd"]:remove()
-happymod.com##div[class="fot-fixd"]:remove()
+happymod.com,www.happymoddl.com##div[class="cookie-fixd"]:remove()
+happymod.com,www.happymoddl.com##div[class="fot-fixd"]:remove()
+happymod.com,www.happymoddl.com##button[class*="download-btn"]:style(opacity:1.0 !important;)
+happymod.com,www.happymoddl.com##button[class*="download-btn"][class*="inactive"]:remove-class(inactive)
+happymod.com,www.happymoddl.com##+js(remove-class, inactive, button[class*="download-btn"][class*="inactive"])
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
-happymod.com##script[id="cookieScriptId"]:remove()
-happymod.com##+js(set-constant, gatrack, noopFunc)
-happymod.com##+js(set-constant, have_obb, 0)
+happymod.com,www.happymoddl.com##script[id="cookieScriptId"]:remove()
+happymod.com,www.happymoddl.com##+js(set-constant, gatrack, noopFunc)
+happymod.com,www.happymoddl.com##+js(set-constant, have_obb, 0)
+happymod.com,www.happymoddl.com##+js(set-constant, i, 6)
+||appvn.com/popup/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+appvn.com##div[id="M660801ScriptRootC1041361"]:remove()
+!||cy.chettikmacrli.com^*
+||chettikmacrli.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
