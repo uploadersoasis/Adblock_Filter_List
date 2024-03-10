@@ -40213,7 +40213,7 @@ www.playmods.net##div[class="cookie-fl"]:remove()
 www.playmods.net##div[class^="cookie-menu"]:remove()
 www.playmods.net##div[class^="gpt-banner"]:remove()
 www.playmods.net##div[id="banner-ad"]:remove()
-www.playmods.net##div[class="recommend-container height-right"]:has(div[id^="yandex_rtb_"]):remove()
+www.playmods.net##div[class*="recommend-container"]:has(div[id^="yandex_rtb_"]):remove()
 www.playmods.net##div[id^="yandex_rtb_"]:remove()
 www.playmods.net##iframe[id="ads-iframe"]:remove()
 www.playmods.net##+js(abort-on-property-read, isCookieAds)
@@ -49642,9 +49642,10 @@ frdl.to##^script:has-text(d3d3LmRpc3BsYXl2ZXJ0aXNpbmcuY29tL2Nzcy9pbWFnZXMveWpxdW
 frdl.to##+js(saa, type, submit, button[id="downloadbtn"])
 frdl.to##+js(acs, aclib)
 frdl.to##button[id="downloadbtn"]:remove-attr(disabled)
-frdl.to##+js(remove-attr, disab;ed, button[id="downloadbtn"])
-frdl.to##div[id="countdown"]:remove()
-||frdl.to/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+frdl.to##+js(remove-attr, disabled, button[id="downloadbtn"])
+! The countdown for frdl.to is server-side checked.
+!frdl.to##div[id="countdown"]:remove()
+!||frdl.to/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following rules blocks legitimate URL redirects
 !||a.beap.gemini.yahoo.com^*
 !||beap.gemini.yahoo.com^*
