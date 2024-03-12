@@ -49487,8 +49487,9 @@ qiwi.gg,qiwi.lol##+js(set-constant, toknst, noopFunc)
 ! The button in the following rule CANNOT be removed or the anchor tag with the real download link will not get an href with the download URL.
 !qiwi.gg,qiwi.lol##button[class^="DownloadButton_ButtonSoScraperCanTakeThisName__"]:remove()
 ! Do NOT remove or abort the entire script containing "debugger" as it prevents the "click to unlock" button and rj() function and click event from appearing and working.
-qiwi.gg,qiwi.lol##+js(trusted-replace-node-text, script, /debugger;/gm, null;)
-qiwi.gg,qiwi.lol##+js(trusted-replace-node-text, script, /!\(\/debugger\/\)/gm, null;)
+! TODO: The following rules prevent the "Click here to unlock" button from appearing. Why?
+!qiwi.gg,qiwi.lol##+js(trusted-replace-node-text, script, /debugger;/gm, null;)
+!qiwi.gg,qiwi.lol##+js(trusted-replace-node-text, script, /\!\(\/debugger\/)/gm, !(/null/))
 ! Do not use remove-node-text as it will remove the entire script not just the third argument form the script.
 !qiwi.gg,qiwi.lol##+js(remove-node-text, script, /debugger;/gm)
 !qiwi.gg,qiwi.lol##+js(remove-node-text, script, /\/debugger\/gm)
