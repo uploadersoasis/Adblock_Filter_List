@@ -252,7 +252,6 @@ www.ehow.com##div[id*="dclkAdsFrameID"]
 ||b.siftscience.com^*
 ||ehow.us.intellitxt.com^*
 ||counter.d.delivery45.com^*
-||pastebin.com/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ad.doubleclick.net/adj/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !ad.doubleclick.net/N6839/adj/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !ad.doubleclick.net/N701/adj/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -21432,8 +21431,7 @@ voxc.org###cookie-pop:remove()
 ||portantreadedagree.info^*
 ||rutrk.org/240x400/191001_01_ALL.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rutrk.org/800x160/191025_02.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-rutracker.org##div[id="bn-page-bottom-block"]
-pastebin.com###float-box-2
+rutracker.org##div[id="bn-page-bottom-block"]:remove()
 ||www.jkushhov.com^*
 ||jkushhov.com^*
 www.france24.com##.m-interstitial__ad
@@ -25066,7 +25064,6 @@ www.raspberrypi.org##div[class="c-cookie-banner"]:remove()
 ||nmwalbwu.com^*
 ||www.yfomeimset.com^*
 ||yfomeimset.com^*
-||s.yimg.com/dy/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 phoenixpoint.info##div[class^="termly-consent-banner-"]:remove()
 www.indiegala.com##div[class="cookie-policy-popup display-none"]:remove()
 www.indiegala.com##div[id="cookie-policy-popup"]:remove()
@@ -25404,7 +25401,6 @@ sonydadc.com##div[class="cookie-banner js-cookiebanner"]:remove()
 www.sega.com##div[id="ccc"]:remove()
 unetbootin.github.io##div[id="helpful"]:remove()
 freecommander.com##div[id="cookie-notice"]:remove()
-pastebin.com##div[class="popup-box -cookies"]:remove()
 ||ssp.rambler.ru^*
 ||cmjs.rambler.ru^*
 linuxnewbieguide.org##div[class^="ezmob-footer"]:remove()
@@ -32951,16 +32947,15 @@ www.anoopcnair.com##ins[data-ad-client]:remove()
 www.anoopcnair.com##+js(aopr, adsbygoogle)
 www.anoopcnair.com##+js(aopw, adsbygoogle)
 www.anoopcnair.com##ins[class="dcmads"]:remove()
-pastebin.com##div[data-ad-slot]:remove()
 ||phicmune.net^*
 ||5hjdbfjfd5.monster^*
 ||tiwhaiph.net^*
 apk4free.org##a[href*="://5hjdbfjfd5.monster/"]:remove()
 apkmos.com##ins[data-ad-client]:remove()
-apkmos.com##div[class="apkmo-adlabel"]
-apkmos.com##div[id="apkmo-1914913151"]
-apkmos.com##div[id="apkmo-2087922620"]
-apkmos.com##div[id^="ezoic-pub-ad-placeholder"]
+apkmos.com##div[class="apkmo-adlabel"]:remove()
+apkmos.com##div[id="apkmo-1914913151"]:remove()
+apkmos.com##div[id="apkmo-2087922620"]:remove()
+apkmos.com##div[id^="ezoic-pub-ad-placeholder"]:remove()
 ||pseekree.com^*
 ||chedrive.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.adsenseguard.com^*
@@ -35674,15 +35669,14 @@ downloadudemy.com##+js(set-constant, disableHotKeys, noopFunc)
 downloadudemy.com##+js(set-constant, disableDeveloperTools, noopFunc)
 downloadudemy.com##+js(acs, decodeURIComponent)
 downloadudemy.com##ins[data-ad-client]:remove()
-!downloadudemy.com##div[class="notice text underline-effect"]
+!downloadudemy.com##div[class="notice text underline-effect"]:remove()
 !downloadudemy.com##div[class="grid-container"]:has(div[class="info"], a[href$="epcl-action=remove-notice"]):remove()
 downloadudemy.com##div[class="info"]:has(a[href$="epcl-action=remove-notice"]):remove()
 link.downloadr.in##div[id="cookie-pop"]:remove()
-pastebin.com##div[id^="div-gpt-ad-"]:upward(1):remove()
 app.pluralsight.com##+js(aopr, window.analytics)
 app.pluralsight.com##+js(aopw, window.analytics)
 www.aparat.com##div[id="sideAds"]:remove()
-app.pluralsight.com##*[class^="psds-navcookiebanner"]
+app.pluralsight.com##*[class^="psds-navcookiebanner"]:remove()
 smsreceivefree.com##div[id="ezmobfooter"]:remove()
 smsreceivefree.com##span[class*="ezoic-ad"]:remove()
 smsreceivefree.com##span[class*="adtester-container"]:remove()
@@ -37811,7 +37805,6 @@ foxnews.com##+js(trusted-set-constant, data, {authenticated: true})
 ! Blocking the following script may prevent the political cartoon slideshow from working @ foxnews
 ||static.foxnews.com/static/orion/scripts/core/base/app/modules/ad-strike.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 static.foxnews.com##+js(trusted-replace-node-text, script, /window\.location\.href\.indexOf\('video-embed'\)/gm, 1)
-||s.yimg.com/dy/ads/readmo.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s.yimg.com/dy/readmo-pixel.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !jlym52rvaw7g5y.trustexploration.com##+js(aopr, autoloadMarker)
 !jlym52rvaw7g5y.trustexploration.com##+js(aopw, autoloadMarker)
@@ -43022,7 +43015,9 @@ www.engadget.com##div[class*="enableAdSlotsOneSlot"]:remove-class(enableAdSlotsO
 !||hb.yahoo.net/bidexchange.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hb.yahoo.net^*
 ||s.yimg.com/cv/apiv2/adbuilder/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||s.yimg.com/dy/ads/native.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||s.yimg.com/dy/ads/readmo.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||s.yimg.com/dy/ads/native.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s.yimg.com/dy/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||edge.gycpi.b.yahoodns.net/oa/consent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s.yimg.com/oa/consent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.techspot.com##div[class="cta grey"]:has(div[class="wrapper"], div[class^="billboard_placeholder"], div[class="tsadpre"]):remove()
@@ -49858,6 +49853,23 @@ portable4pc.com##+js(set-constant, b2a, noopFunc)
 !portable4pc.com##+js(set-constant, kdxrcsznptqyload, true)
 !||portable4pc.com/wp-content/plugins/deblocker/js/ads.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||portable4pc.com/wp-content/plugins/deblocker/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||extinguishtogethertoad.com^*
+pastebin.com##div[id^="div-gpt-ad-"]:upward(1):remove()
+pastebin.com##div[data-ad-slot]:remove()
+pastebin.com##div[class="popup-box -cookies"]:remove()
+pastebin.com###float-box-2:remove()
+! TODO: Why doesn't the following rule work but using two rules does?
+!pastebin.com##div[style^="padding-bottom"]:has(div:has-text(Advertisement), script:has-text(vitag.)):remove()
+pastebin.com##div[style^="padding-bottom"]:has(div:has-text(Advertisement)):remove()
+pastebin.com##div[style^="padding-bottom"]:has(script:has-text(vitag.)):remove()
+pastebin.com##+js(set-constant, vitag, {})
+pastebin.com##+js(aopw, vitag)
+pastebin.com##+js(aopr, vitag)
+pastebin.com##+js(set-constant, viAPItag.display, noopFunc)
+||pastebin.com/adserver/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||themeulterior.com^*
+||rodecommercial.com^*
+||mingleassertiveregard.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
