@@ -49819,6 +49819,45 @@ thefederalist.com##+js(set-constant, monsterinsights_youtube_percentage_tracking
 ||a.publir.com/platform/common/prebid838.js$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||highlyrecomemu.info^*
 ||brookredheadpowerfully.com^*
+||junon-amn.info^*
+portable4pc.com##div[id="mdp-deblocker-js-disabled"]:remove()
+portable4pc.com##div[id="SH-Ads"]:remove()
+portable4pc.com##*[class^="mdpDeblocker-"]:remove()
+portable4pc.com##script[id^="mdp-deblocker-ads-js"]:remove()
+portable4pc.com##:xpath(//script[contains(text(), 'document.write(atob(')]):remove()
+portable4pc.com##^script:has-text(/document\.write\(atob\(/):remove()
+portable4pc.com##+js(set-constant, atOptions, {})
+portable4pc.com##+js(aopw, atOptions)
+portable4pc.com##+js(aopr, atOptions)
+portable4pc.com##+js(acs, /document\.write\(atob\(/)
+portable4pc.com##+js(set-constant, adsBlocked, noopFunc)
+portable4pc.com##+js(set-constant, callbackAdsBlocked, noopFunc)
+portable4pc.com##+js(set-constant, disableTextSelection, noopFunc)
+portable4pc.com##+js(set-constant, disableContextMenu, noopFunc)
+portable4pc.com##+js(set-constant, disableHotKeys, noopFunc)
+portable4pc.com##+js(set-constant, disableDeveloperTools, noopFunc)
+portable4pc.com##+js(acs, /disableTextSelection\(/)
+portable4pc.com##+js(acs, /disableContextMenu\(/)
+portable4pc.com##+js(acs, /disableHotKeys\(/)
+portable4pc.com##+js(acs, /disableDeveloperTools\(/)
+portable4pc.com##+js(aeld, contextmenu, /function\(e\)/)
+! The following two rules were required to defuse the contentmenu event
+portable4pc.com##+js(aopw, document.oncontextmenu)
+portable4pc.com##+js(aopr, document.oncontextmenu)
+portable4pc.com##+js(set-constant, runLoop, noopFunc)
+portable4pc.com##+js(acs, /runLoop\(/)
+portable4pc.com##+js(set-constant, isFairAdBlocker, falseFunc)
+portable4pc.com##+js(set-constant, adsSrc, "")
+portable4pc.com##+js(set-constant, b2a, noopFunc)
+! TODO: the variable names in the following rules are dynamically generated and change with each load of the page.
+!portable4pc.com##+js(aopw, kdxrcsznptqyload)
+!portable4pc.com##+js(aopr, kdxrcsznptqyload)
+!portable4pc.com##+js(set-constant, kdxrcsznptqyreceived, true)
+!portable4pc.com##+js(set-constant, kdxrcsznptqyon, noopFunc)
+!portable4pc.com##+js(set-constant, kdxrcsznptqy, {})
+!portable4pc.com##+js(set-constant, kdxrcsznptqyload, true)
+!||portable4pc.com/wp-content/plugins/deblocker/js/ads.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||portable4pc.com/wp-content/plugins/deblocker/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
