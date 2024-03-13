@@ -21961,19 +21961,20 @@ www.howtoforge.com##.bsa-apiads
 ||fadskis.com/pixel/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||srt.leechpremium.link/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||katerigordas.pro/v3/a/pop/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-slink.bid##div.banner-captcha
-voxc.org##.demo
-shon.xyz##.hidden-sm.hidden-xs
+slink.bid##div.banner-captcha:remove()
+voxc.org##.demo:remove()
+shon.xyz##.hidden-sm.hidden-xs:remove()
 ||www.bing.com/BingDSW.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.linkedin.com/lynda/tracking$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.jazdoxthxiv.com^*
 ||jazdoxthxiv.com^*
 ||www.oefyjdykepx.com^*
 ||oefyjdykepx.com^*
-!1337x.123unblock.pink##+js(abort-on-property-write, antiClickjack)
-!1337x.123unblock.pink##+js(abort-on-property-read, antiClickjack)
+! domain=chinnica.net|www.mirrored.to for the following AntiClickjack rules
+!*##+js(set-constant, antiClickjack, {})
 *##+js(abort-on-property-write, antiClickjack)
 *##+js(abort-on-property-read, antiClickjack)
+*###antiClickjack:remove()
 ||1337x.123unblock.pink/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||1337x.unblocked.is/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bitdownload.ir/wp-content/uploads/ban/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -23358,7 +23359,6 @@ uplod.net##+js(abort-on-property-read, mdpDeBlocker)
 ||www.redditstatic.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||gizmodo.com/api/kala/stats/beacon^
 ||gizmodo.com/api/kala/stats/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||x.kinja-static.com/assets/new-client/sidebar-dynamic-ads.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.maketecheasier.com##ins[class="adsbygoogle"]:remove()
 www.maketecheasier.com##div[class$="ad-slot"]
 www.maketecheasier.com##div[class^="ad-slot"]
@@ -23469,8 +23469,6 @@ www.mirrored.to##.bottom-sticky-g:remove()
 www.mirrored.to##div[id="modal-bg"]:remove()
 www.mirrored.to##div[class^="dialog-javascript"]:remove()
 www.mirrored.to##style[id="antiClickjack"]:remove()
-www.mirrored.to##+js(abort-on-property-write, antiClickjack)
-www.mirrored.to##+js(abort-on-property-read, antiClickjack)
 www.mirrored.to##+js(abort-on-property-write, chain)
 www.mirrored.to##+js(abort-on-property-read, chain)
 www.mirrored.to##+js(abort-on-property-write, blockAdBlock)
@@ -25780,10 +25778,8 @@ chinnica.net##div[id="bottomAd"]
 ||ssionsupre.fun^*
 ||ueaggress.top^*
 ||d20903hof2l33q.cloudfront.net^*
-chinnica.net##+js(abort-on-property-write, antiClickjack)
-chinnica.net##+js(abort-on-property-read, antiClickjack)
-chinnica.net##div[id="_bd"]
-chinnica.net###fade
+chinnica.net##div[id="_bd"]:remove()
+chinnica.net###fade:remove()
 chinnica.net##+js(set-constant, optout_adfly, 1)
 chinnica.net##a[id="skip_bu2tton"]:style(display:block !important;)
 !||ee94e5.lifeimpressions.net^*
@@ -41347,9 +41343,11 @@ fikper.com##button[class*="Mui-disabled"]:remove-class(Mui-disabled)
 ||dnqlunngvdmfam.com^*
 ||theronadforyou24.com^*
 ||okcquqjuu.com^*
-||www.up-4ever.net/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! Do not remove the countdown as it is server-side checked.
+!||www.up-4ever.net/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.up-4ever.org/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!www.up-4ever.net,www.up-4ever.org##span[id="countdown"]:remove()
 ||www.up-4ever.net/z-6683946$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.up-4ever.org/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.up-4ever.org/z-6683946$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.up-4ever.net,www.up-4ever.org##div[class="adsbox"]:remove()
 www.up-4ever.net,www.up-4ever.org##div[class="alert alert-danger"]:remove()
@@ -41360,7 +41358,6 @@ www.up-4ever.net,www.up-4ever.org##ins[id="adblock_detected"]:remove()
 www.up-4ever.net,www.up-4ever.org##iframe[id^="aswift_"]:remove()
 www.up-4ever.net,www.up-4ever.org##iframe[id^="google_ads_frame"]:remove()
 www.up-4ever.net,www.up-4ever.org##iframe[src^="https://ctrtrk.com"]:remove()
-www.up-4ever.net,www.up-4ever.org##span[id="countdown"]:remove()
 www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, modal-image-wrapper)
 www.up-4ever.net,www.up-4ever.org##+js(abort-current-script, modal-image-wrapper)
 www.up-4ever.net,www.up-4ever.org##+js(abort-on-property-read, adblock_detected)
@@ -49015,7 +49012,6 @@ only-soft.org##a[href="/1269.html"]:remove()
 ||statinside.com/api/add-hit$3p,xhr
 !||id.rlcdn.com/712202.gif?$3p
 ||id.rlcdn.com^*
-||sync.colossusssp.com^*
 ||www.xwlrrmhwgre.com^*
 ||www.nyqpgzohhllvx.com^*
 ||wokm8isd4zit.com^*
@@ -49870,6 +49866,66 @@ pastebin.com##+js(set-constant, viAPItag.display, noopFunc)
 ||themeulterior.com^*
 ||rodecommercial.com^*
 ||mingleassertiveregard.com^*
+||static.foxtv.com/static/orion/scripts/core/utils/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||a1831.dscr.akamai.net/static/orion/scripts/core/utils/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.foxtv.com/static/orion/scripts/core/utils/comscore/NativeComscorePlugin.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||a1831.dscr.akamai.net/static/orion/scripts/core/utils/comscore/NativeComscorePlugin.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.foxtv.com/static/orion/scripts/core/utils/comscore/comscore.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||a1831.dscr.akamai.net/static/orion/scripts/core/utils/comscore/comscore.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.fox13news.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+www.fox13news.com##iframe[title="Advertisement"]:remove()
+www.fox13news.com##div[class="anv-ad-content"]:remove()
+www.fox13news.com##div[id^="desk-ad-"]:remove()
+www.fox13news.com##div[class*="ad-container"]:remove()
+www.fox13news.com##div[id^="taboola-mid-article-thumbnails"]:remove()
+www.fox13news.com##div[data-ad-size]:remove()
+!www.fox13news.com##canvas[id^="player-"][id$="-canvas-content"]:style(width: 100% !important; height: 100% !important)
+!www.fox13news.com##+js(saa, width, 67vw, video[id^="player-"][id$="-video-content"])
+!www.fox13news.com##+js(saa, height, 67vh, video[id^="player-"][id$="-video-content"])
+!www.fox13news.com##+js(saa, width, 67vw, video[class="anv-video-content"])
+!www.fox13news.com##+js(saa, height, 67vh, video[class="anv-video-content"])
+!www.fox13news.com##+js(saa, width, 67vw, iframe[id^="player-"])
+!www.fox13news.com##+js(saa, height, 67vh, iframe[id^="player-"])
+www.fox13news.com##+js(saa, webkitallowfullscreen, true, iframe[id^="player-"])
+www.fox13news.com##+js(saa, mozallowfullscreen, true, iframe[id^="player-"])
+www.fox13news.com##+js(saa, allowfullscreen, true, iframe[id^="player-"])
+! The following is already set by the page.
+!www.fox13news.com##+js(saa, frameborder, 0, iframe[id^="player-"])
+!www.fox13news.com##+js(saa, scrolling, true, iframe[id^="player-"])
+!www.fox13news.com##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[id^="player-"])
+!www.fox13news.com##+js(saa, x-webkit-airplay, allow, video[class="anv-video-content"])
+!www.fox13news.com##+js(saa, data-autoplay-mute-lock, false, video[class="anv-video-content"])
+||foxentertainment.hb-api.omtrdc.net^*
+||sync.colossusssp.com^*
+||colossusssp.com^*
+||x.kinja-static.com/assets/new-client/sidebar-dynamic-ads.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||x.kinja-static.com/assets/new-client/ad-manager-bulbs.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||x.kinja-static.com/assets/new-client/prebid-js-prod.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||x.kinja-static.com/assets/new-client/ad-units-default.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||qz.com/x-kinja-static/assets/new-client/adManager.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||qz.com/x-kinja-static/assets/new-client/runtime~adManager.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rule will disable one of the video players one the page; it's not used for video ads.
+!||qz.com/x-kinja-static/assets/new-client/adManager~video-html5-playlist~videoHtml5.*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+qz.com##div[class*="advertisement"]:remove()
+qz.com##div[class*="ad-unit ad-mobile"]:remove()
+qz.com##div[class*="ad-mobile-dynamic"]:remove()
+qz.com##div[class*="js_ad-dynamic"]:remove()
+qz.com##cnx[class^="cnx-ad-"]:remove()
+qz.com##div[class^="cnx-ad-"]:remove()
+qz.com##video[class^="cnx-ad-"]:remove()
+qz.com##video[disablepictureinpicture]:remove-attr(disablepictureinpicture)
+qz.com##+js(remove-attr, disablepictureinpicture, video[disablepictureinpicture])
+qz.com##div[data-ad-unit]:remove()
+qz.com##div[class*="js_sticky-top-ad"]:remove()
+qz.com##div[id="splashy-ad-container-top"]:remove()
+qz.com##iframe[style="width: 1px; height: 1px; display: none; border: 0px; margin: 0px; padding: 0px;"]:remove()
+qz.com##span[class="bt-uid-tg"]:remove()
+qz.com##+js(set-constant, _comscore, [])
+qz.com##+js(aopw, _comscore)
+qz.com##+js(aopr, _comscore)
+qz.com##+js(aopw, trackerData)
+qz.com##+js(aopr, trackerData)
+qz.com##+js(acs, /api2\.on\(/)
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
@@ -49981,7 +50037,6 @@ www.pcguide.com#@#div[id^="cls-video-container"][class^="adthrive"]
 @@*$ghide,domain=jaanmusic.in|techyneed.com
 @@||googlesyndication.com/pagead/$script,domain=jaanmusic.in|techyneed.com
 @@*$image,domain=jaanmusic.in|techyneed.com
-@@||ib.adnxs.com^$document
 @@||pop.semantictec.com^$document
 @@||click.semantictec.com^$document
 @@||apply.everbank.com^$document
@@ -50063,3 +50118,6 @@ www.youtube.com#@#ytd-popup-container.ytd-app.style-scope
 @@||pagead2.googlesyndication.com/pagead/js/$domain=anydebrid.com,script
 ! The following rule allows legitimate URL redirects; TODO: use a domain list for this?
 @@||secure.avangate.com/affiliate.php?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.1337x.to,1337x.123unblock.pink,1337x.unblocked.is#@#+js(abort-on-property-write, antiClickjack)
+www.1337x.to,1337x.123unblock.pink,1337x.unblocked.is#@#+js(abort-on-property-read, antiClickjack)
+www.1337x.to,1337x.123unblock.pink,1337x.unblocked.is#@##antiClickjack:remove()
