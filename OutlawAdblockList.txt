@@ -49774,10 +49774,19 @@ www.w3schools.com##a[id="upperfeatureshowcaselink"]:remove()
 www.w3schools.com##a[id="lowerfeatureshowcaselink"]:remove()
 www.w3schools.com##+js(set-constant, gptAdSlots, [])
 www.w3schools.com##+js(set-constant, k42, true)
-www.w3schools.com##+js(abort-on-property-write, gptAdSlots)
 www.w3schools.com##+js(abort-on-property-write, adsbygoogle)
-www.w3schools.com##+js(abort-on-property-read, gptAdSlots)
 www.w3schools.com##+js(abort-on-property-read, adsbygoogle)
+www.w3schools.com##+js(abort-on-property-write, gptAdSlots)
+www.w3schools.com##+js(abort-on-property-read, gptAdSlots)
+www.w3schools.com##+js(set-constant, uic_r_a, noopFunc)
+www.w3schools.com##+js(set-constant, window.snigelPubConf, {})
+www.w3schools.com##+js(abort-on-property-write, window.snigelPubConf)
+www.w3schools.com##+js(abort-on-property-read, window.snigelPubConf)
+www.w3schools.com##+js(acs, /adngin\./)
+www.w3schools.com##div[id="container"]:style(top: 48px !important;)
+www.w3schools.com##div[class="trytopnav"]:style(top: 0px !important; bottom: 0px !important;)
+www.w3schools.com##a[id="dragbar"]:style(top: 48px !important;)
+||www.w3schools.com/lib/uic.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
