@@ -22781,9 +22781,6 @@ d2.consoletarget.com##^script:has-text(adsbygoogle)
 ||rugames.net/templates/rugames/images/bnr/ya1.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||gg.wiretarget.com/aa_bb.htm$subdocument
 ||gg.wiretarget.com/a_b.htm$subdocument
-apnews.com##.persistent-ad
-apnews.com##.bellow-article
-apnews.com##.RightRail
 !||getfilelic.site/download/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||getfilelic.site^*
 ||crackreactor.org^*
@@ -27608,9 +27605,6 @@ www.accuweather.com##div[class="privacy-policy-banner"]:remove()
 www.toolbox.com##div[class="adchoice-tag"]:remove()
 www.toolbox.com##div[id="cookie-consent"]:remove()
 www.toolbox.com##div[class="privacy-content"]:remove()
-apnews.com##div[data-key="ad-placeholder"]:remove()
-apnews.com##div[class^="Component-adTitle"]:remove()
-apnews.com##div[class^="Component-placeholderWrapper"]:remove()
 ||bikesopden.com/fO2GGjLBl1dcvoF/22621$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.homeyloanedmes.work^*
 ||www.jelabboody.com^*
@@ -29406,8 +29400,6 @@ www.igorslab.de##button[class*="cmplz-accept-marketing"]:remove()
 ||servedbyadbutler.com^*
 ||js.srvtrck.com^*
 ||www.igorslab.de/wp-content/plugins/complianz-gdpr/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-apnews.com##div[id="div-gpt-ad"]:remove()
-apnews.com##div[id="onetrust-banner-sdk"]:remove()
 www.androidcentral.com##section[class*="article-footer--taboola"]
 www.skidrowreloaded.com##+js(aeld, /mousedown/i)
 www.skidrowreloaded.com##+js(aeld, /click/i)
@@ -29635,10 +29627,6 @@ www.builtbybel.com##div[id="easycookieinfo"]
 ||kesmatic.com^*
 a2zrom.com##*:style(-moz-user-select:text; -webkit-user-select:text; -webkit-touch-callout: text; -khtml-user-select: text; -ms-user-select: text; user-select: text;)
 ||perfads.bouncex.net^*
-decider.com##div[id="header-billboard-ad"]
-decider.com##div[class*="ad-wrapper"]
-decider.com##div[class*="dfp-ad"]
-decider.com##div[id^="div-gpt-ad-"]
 www.gsmware.com##div[id="ezmobfooter"]:remove()
 www.gsmware.com##span[id^="div-gpt-ad"]
 www.gsmware.com##span[class*="ezoic-ad"]:remove()
@@ -30855,7 +30843,6 @@ daylifetips.com##script[id^="google_gtagjs"]:remove()
 ||daylifetips.com/wp-content/plugins/content-egg/res/js/price_alert.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 daylifetips.com##div[class*="td-header-ad-wrap"]:remove()
 daylifetips.com##div[class*="td-ad"]:remove()
-apnews.com##div[class*="Component-adTitle"]:remove()
 www.droid8k.com##div[id="cookie-notice"]:remove()
 linuxconfig.org##div[class="incontent_ads"]:remove()
 linuxconfig.org##p:has-text(/in-article-ads-banner/i):remove()
@@ -34509,9 +34496,6 @@ tutflix.org##ins[data-ad-client]:remove()
 share.tutflix.org##div[class="ad-container"]:remove()
 tutflix.org##div[class="fa-2x"]:has-text(AdBlock Detected):upward(2):remove()
 ||sohrabii.com^*
-apnews.com##div[class*="dfpAdTitle-"]:remove()
-apnews.com##div[class="proper-ad-unit"]:remove()
-apnews.com##div[id^="proper-ad-"]:remove()
 ||grirault.net^*
 learn.unity.com##div[class="backdrop_1t7ADNYQ"]:remove()
 !learn.unity.com##div[class^="modal_"]:has(div[class^="container-title_"]:has-text(Sorry, this learning content is no longer available.)):remove()
@@ -41495,7 +41479,6 @@ kandi.openweaver.com##*[class^="Cookie_"]:remove()
 ||truanet.com^*
 ! redirection from Kroger survey website
 !||8451cx.az1.qualtrics.com^*
-decider.com##div[class="content-wrap"]:has(div[class="sitewide-notice"]):remove()
 www.yourpickenscounty.com##li[class="banners-125"]:remove()
 www.yourpickenscounty.com##+js(abort-on-property-read, _gaq)
 www.yourpickenscounty.com##+js(abort-on-property-write, _gaq)
@@ -49122,15 +49105,6 @@ skyve.io,skyve.top##div[class="rgt downsecrgt"]:remove()
 ||skyve.top/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! block all third-party scripts for skyve.io
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$denyallow=maxcdn.bootstrapcdn.com,domain=skyve.io|skyve.top,3p,script
-frdl.to##:xpath(//script[contains(text(), 'd3d3LmRpc3BsYXl2ZXJ0aXNpbmcuY29tL2Nzcy9pbWFnZXMveWpxdWVyeS5pbWdhcmVhc2VsZWN0Lm1pbi5qcw==')]):remove()
-frdl.to##^script:has-text(d3d3LmRpc3BsYXl2ZXJ0aXNpbmcuY29tL2Nzcy9pbWFnZXMveWpxdWVyeS5pbWdhcmVhc2VsZWN0Lm1pbi5qcw==):remove()
-frdl.to##+js(saa, type, submit, button[id="downloadbtn"])
-frdl.to##+js(acs, aclib)
-frdl.to##button[id="downloadbtn"]:remove-attr(disabled)
-frdl.to##+js(remove-attr, disabled, button[id="downloadbtn"])
-! The countdown for frdl.to is server-side checked.
-!frdl.to##div[id="countdown"]:remove()
-!||frdl.to/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following rules blocks legitimate URL redirects
 !||a.beap.gemini.yahoo.com^*
 !||beap.gemini.yahoo.com^*
@@ -49787,6 +49761,82 @@ www.w3schools.com##div[id="container"]:style(top: 48px !important;)
 www.w3schools.com##div[class="trytopnav"]:style(top: 0px !important; bottom: 0px !important;)
 www.w3schools.com##a[id="dragbar"]:style(top: 48px !important;)
 ||www.w3schools.com/lib/uic.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||activity.wisepops.com^*
+||wisepops.net/embed/visitor?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+wisepops.com##script[id="show-banner"]:remove()
+wisepops.com##div[id="cookies-consent"]:remove()
+css-tricks.com,wisepops.com##+js(abort-on-property-write, analytics)
+css-tricks.com,wisepops.com##+js(abort-on-property-read, analytics)
+css-tricks.com,wisepops.com##+js(set-constant, analytics, [])
+css-tricks.com##script[id="jp-tracks-js"]:remove()
+css-tricks.com##+js(abort-on-property-write, consent)
+css-tricks.com##+js(abort-on-property-read, consent)
+decider.com##div[class*="ad--container"]:remove()
+decider.com##div[class*="ad-wrapper"]:remove()
+decider.com##div[class*="dfp-ad"]:remove()
+decider.com##div[class*="ad__placeholder"]:remove()
+decider.com##div[class*="ad__slot"]:remove()
+decider.com##div[class*="ad__wrapper"]:remove()
+decider.com##div[class*="content-wrap"]:has(div[class="sitewide-notice"]):remove()
+decider.com##div[data-openweb-ad]:remove()
+decider.com##div[id="header-billboard-ad"]:remove()
+decider.com##div[id^="div-gpt-ad-"]:remove()
+decider.com##script[class="optanon-category-C0023"]:remove()
+decider.com##script[id^="jetpack-stats-js"]:remove()
+decider.com##script[id="parsely-script"]:remove()
+decider.com##+js(set-constant, gaCreateOptions, {})
+decider.com##+js(set-constant, OptanonWrapper, noopFunc)
+decider.com##+js(abort-on-property-write, tracker)
+decider.com##+js(abort-on-property-read, tracker)
+decider.com##+js(abort-on-property-write, gaCreateOptions)
+decider.com##+js(abort-on-property-read, gaCreateOptions)
+decider.com##+js(set-constant, _stq, [])
+decider.com##+js(abort-on-property-write, _stq)
+decider.com##+js(abort-on-property-read, _stq)
+decider.com##+js(set-attr, img[class="lazyload"][data-src], src, [data-src])
+||decider.com/wp-content/plugins/nyp-video-player/build/jwadvertise.bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||decider.com/wp-content/plugins/nyp-video-player/build/jwanalytics.bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||0cf17917-395b-4f25-91cc-db3bdd6044b0.edge.permutive.app^*
+!||507b28fb-2ef1-4c34-8bda-ba32030bb199.edge.permutive.app
+apnews.com##.RightRail:remove()
+apnews.com##.bellow-article:remove()
+apnews.com##.persistent-ad:remove()
+apnews.com##div[class*="dfpAdTitle-"]:remove()
+apnews.com##div[class="proper-ad-unit"]:remove()
+apnews.com##div[class*="Component-adTitle"]:remove()
+apnews.com##div[class^="Component-placeholderWrapper"]:remove()
+apnews.com##div[data-key="ad-placeholder"]:remove()
+apnews.com##div[id="div-gpt-ad"]:remove()
+apnews.com##div[id="onetrust-banner-sdk"]:remove()
+apnews.com##div[id^="proper-ad-"]:remove()
+apnews.com##html:remove-class(AdBlockerIn)
+apnews.com##+js(remove-class, AdBlockerIn, html)
+apnews.com##+js(set-constant, _comscore, [])
+apnews.com##+js(aopw, _comscore)
+apnews.com##+js(aopr, _comscore)
+apnews.com##bsp-header-leaderboard[class="Page-header-leaderboardAd"]:remove()
+apnews.com##div[class*="SovrnAd"]:remove()
+apnews.com##div[class*="Advertisement"]:remove()
+||bureausdenning.com^*
+||jasminefisetin.top^*
+||compasswhitest.top^*
+||sealycopular.top^*
+||sexydimension.com^*
+||www.gaming-adult.com^*
+frdl.to##:xpath(//script[contains(text(), 'd3d3LmRpc3BsYXl2ZXJ0aXNpbmcuY29tL2Nzcy9pbWFnZXMveWpxdWVyeS5pbWdhcmVhc2VsZWN0Lm1pbi5qcw==')]):remove()
+frdl.to##^script:has-text(d3d3LmRpc3BsYXl2ZXJ0aXNpbmcuY29tL2Nzcy9pbWFnZXMveWpxdWVyeS5pbWdhcmVhc2VsZWN0Lm1pbi5qcw==):remove()
+frdl.to##script[id="_wauhvp"]:remove()
+frdl.to##+js(set-constant, _wau, [])
+frdl.to##+js(aopw, _wau)
+frdl.to##+js(aopr, _wau)
+frdl.to##+js(saa, type, submit, button[id="downloadbtn"])
+frdl.to##+js(acs, /aclib\./)
+frdl.to##button[id="downloadbtn"]:remove-attr(disabled)
+frdl.to##+js(remove-attr, disabled, button[id="downloadbtn"])
+frdl.to##+js(set-attr, input[id="adblock_detected"], value, 0)
+! The countdown for frdl.to is server-side checked.
+!frdl.to##div[id="countdown"]:remove()
+!||frdl.to/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
