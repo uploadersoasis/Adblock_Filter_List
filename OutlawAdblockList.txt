@@ -49067,17 +49067,21 @@ www.digitaltrends.com##+js(set-attr, div[class="h-embedded-video"][data-url], sr
 !||streann-static.s3.amazonaws.com/inside-ad-ima-2/player2.js$3p,script
 ||s3-w.us-east-1.amazonaws.com/inside-ad-ima-2/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||streann-static.s3.amazonaws.com/inside-ad-ima-2/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-skyve.io,skyve.top##+js(set-constant, appendToDeviceDebugger, noopFunc)
-skyve.io,skyve.top##+js(acs, appendToDeviceDebugger)
-skyve.io,skyve.top##:xpath(//script[contains(text(), 'ENABLE_ONLINE_DEBUGGER')]):remove()
-skyve.io,skyve.top##^script:has-text(ENABLE_ONLINE_DEBUGGER):remove()
-skyve.io,skyve.top##div[class="ads_space"]:remove()
-skyve.io,skyve.top##button[onclick][class="buttonPress-175"]:remove-attr(onclick)
-skyve.io,skyve.top##+js(remove-attr, onclick, button[onclick][class="buttonPress-175"])
-skyve.io,skyve.top##[class="buttonPress-175"]:remove()
 skyve.io,skyve.top###adblock_detected:remove()
-skyve.io,skyve.top##div[class="lft downseclft"]:remove()
+skyve.io,skyve.top##div[class^="a728_90"]:remove()
 skyve.io,skyve.top##div[class="rgt downsecrgt"]:remove()
+skyve.io,skyve.top##div[class="lft downseclft"]:remove()
+skyve.io,skyve.top##div[class="ads_space"]:remove()
+skyve.io,skyve.top##div[class="ads-728x90"]:remove()
+skyve.io,skyve.top##button[onclick][class="buttonPress-175"]:remove-attr(onclick)
+skyve.io,skyve.top##a[id="div1"]:style(pointer-events: all !important; background: #0c5adb !important;)
+skyve.io,skyve.top##a[id="div2"]:remove()
+skyve.io,skyve.top##^script:has-text(ENABLE_ONLINE_DEBUGGER):remove()
+skyve.io,skyve.top##[class="buttonPress-175"]:remove()
+skyve.io,skyve.top##:xpath(//script[contains(text(), 'ENABLE_ONLINE_DEBUGGER')]):remove()
+skyve.io,skyve.top##+js(set-constant, appendToDeviceDebugger, noopFunc)
+skyve.io,skyve.top##+js(remove-attr, onclick, button[onclick][class="buttonPress-175"])
+skyve.io,skyve.top##+js(acs, appendToDeviceDebugger)
 ||skyve.io/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||skyve.top/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! block all third-party scripts for skyve.io
@@ -49891,6 +49895,27 @@ weebly.com##+js(set-constant, ccLinks, false)
 weebly.com##+js(set-constant, ccLinksVisible, true)
 weebly.com##+js(no-setTimeout-if, forceShowCcLinksForever)
 ||cdn2.editmysite.com/js/wsnbn/snowday262.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+forum.release-apk.com##div[class^="adblock_"]:upward(7):remove()
+forum.release-apk.com###chp_ads_blocker-modal:remove()
+forum.release-apk.com##*[class^="chp_ad_block"]:remove()
+forum.release-apk.com##div[data-phpbb-ads-id]:remove()
+forum.release-apk.com##div[id="phpbb-aJHwDeoSqLhW"]:remove()
+forum.release-apk.com##div[id="darkenwrapper"]:remove()
+forum.release-apk.com##+js(abort-on-property-read, window.cookieconsent)
+forum.release-apk.com##+js(abort-on-property-write, window.cookieconsent)
+forum.release-apk.com##+js(set-constant, detected, false)
+forum.release-apk.com##+js(acs, /justDetectAdblock\.detectAnyAdblocker\(\)/)
+||forum.release-apk.com/assets/cookieconsent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||forum.release-apk.com/ext/phpbb/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||alowbowohefl.info^*
+||hilarlymcken.info^*
+||edbehindforhewa.info^*
+thoptv.pro##div[class*="ads_id"]:remove()
+thoptv.pro##+js(abort-on-property-write, adsbygoogle)
+thoptv.pro##+js(abort-on-property-read, adsbygoogle)
+thoptv.pro##iframe[style="display: none;"]:remove()
+||d2osk0po1oybwz.cloudfront.net^$3p,script
+||drt78iol.xyz^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
