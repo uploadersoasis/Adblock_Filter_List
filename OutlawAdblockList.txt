@@ -3357,11 +3357,10 @@ depositfiles.com###networkdownloader_submit
 ||a.rmgserving.com^*
 ||b.rmgserving.com^*
 ||c.rmgserving.com^*
-||www.androidcentral.com/sites/all/modules/mbn_offers/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-freesoft.ru###div-gpt-ad-1378492102616-4
-freesoft.ru###banner_1
-www.phonescoop.com###admid
-findthebest.com##.ad
+freesoft.ru###div-gpt-ad-1378492102616-4:remove()
+freesoft.ru###banner_1:remove()
+www.phonescoop.com###admid:remove()
+findthebest.com##.ad:remove()
 ||www.mpt34m.net/documents/counter.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||metrics.esd.intuit.com^*
 ||cdn1sitescout.edgesuite.net/*/bannerad_$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -19598,9 +19597,6 @@ www.experts-exchange.com##.bg0.interceptBackgroundBlocker:remove()
 ||doubleclick.net/instream/ad_status.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.skidrowcodex.net/cdn-cgi/l/chk_jschl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sstats.arstechnica.com^*
-||www.androidcentral.com/sites/androidcentral.com/files/article_images/2017/10/gamestash-970x460_2.jpg$image
-!www.androidcentral.com##div[class^="adunit-wrap"]
-www.androidcentral.com##div[class^="adunit"]
 dl.gamemod.io##ins[class="adsbygoogle"]:remove()
 dl.gamemod.io##+js(abort-on-property-read, CheckAdLoad)
 dl.gamemod.io##+js(abort-current-script, CheckAdLoad)
@@ -27145,10 +27141,7 @@ upload.ac##^script:has-text(#downloadBtnClick)
 ||ahaumplab.com^*
 ||apkmagic.com.ar/wp-content/uploads/2021/02/05/downloadbutton.png$image
 ||plus.tubroaffs.org^*
-forums.androidcentral.com##div[class*="netshelter-ad"]
-forums.androidcentral.com##div[class="adunit"]
-forums.androidcentral.com##^script:has-text(tmntag.adTag)
-z3x-team.com##section[class="cookie-bottom"]
+z3x-team.com##section[class="cookie-bottom"]:remove()
 !||www.techeligible.com/cdn-cgi/apps/head/6GCD7YbiNhC9SEuJhhbqqlOmGBc.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.techeligible.com/cdn-cgi/apps/body/-6q6Gdnftl_0r-eQG1LM7IYjBe0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.techeligible.com/wp-content/uploads/siteground-optimizer-assets/mobmenujs.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -29400,12 +29393,11 @@ www.igorslab.de##button[class*="cmplz-accept-marketing"]:remove()
 ||servedbyadbutler.com^*
 ||js.srvtrck.com^*
 ||www.igorslab.de/wp-content/plugins/complianz-gdpr/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.androidcentral.com##section[class*="article-footer--taboola"]
 www.skidrowreloaded.com##+js(aeld, /mousedown/i)
 www.skidrowreloaded.com##+js(aeld, /click/i)
 www.skidrowreloaded.com##+js(aeld, /securitypolicyviolation/i)
 ||hjmagamal.com^*
-www.coolblue.nl##div[class="cookie"]
+www.coolblue.nl##div[class="cookie"]:remove()
 www.coolblue.nl##html,body:style(overflow: auto;)
 ||yydtbpms8tf4.com^*
 ||headstonerinse.com^*
@@ -30564,24 +30556,23 @@ www.popsci.com##.Article-advert
 ||s.yimg.com/rq/darla/4-6-0/html/r-sf.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css$subdocument
 ||s.yimg.com/rq/darla/4-6-0/html/r-sf-flx.html$subdocument
 ||s.yimg.com/bx/adb/$image
-www.nokia.com##div[id="cmp-modal"]
+www.nokia.com##div[id="cmp-modal"]:remove()
 www.nokia.com##+js(remove-class, scroll-lock, , stay)
-www.nokia.com##style[data-emotion-css="17kut7t-CookieScripts"]
+www.nokia.com##style[data-emotion-css="17kut7t-CookieScripts"]:remove()
 www.nokia.com##html,body:style(overflow: scroll !important;)
 ||www.nokia.com/phones/en_int/external/analytics-helper.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-mcmw.abilitynet.org.uk##div[class*="cookie-bar"]
-www.androidcentral.com##div[class*="article-body__suppl_content--taboola-mid-article"]
-solveforum.com##*[class*="notice--cookie"]
-firmwarespro.com##ins[class*="adsbygoogle"]
+mcmw.abilitynet.org.uk##div[class*="cookie-bar"]:remove()
+solveforum.com##*[class*="notice--cookie"]:remove()
+firmwarespro.com##ins[class*="adsbygoogle"]:remove()
 ||chpok.site^*
-www.siliconera.com##.article.leaderboard-ad
-www.siliconera.com##.PicoSignal.eg-custom-ad
-web.archive.org##div[id="adhesive_banner"]
-web.archive.org###adhesive_container
-forum.xda-developers.com##div[id="adhesive_banner"]
-forum.xda-developers.com##div[id="adhesive_container"]
-airvpn.org##div[id^="air_cookielaw_"]
-www.linuxtopia.org##*[class*="ezoic-ad"]
+www.siliconera.com##.article.leaderboard-ad:remove()
+www.siliconera.com##.PicoSignal.eg-custom-ad:remove()
+web.archive.org##div[id="adhesive_banner"]:remove()
+web.archive.org###adhesive_container:remove()
+forum.xda-developers.com##div[id="adhesive_banner"]:remove()
+forum.xda-developers.com##div[id="adhesive_container"]:remove()
+airvpn.org##div[id^="air_cookielaw_"]:remove()
+www.linuxtopia.org##*[class*="ezoic-ad"]:remove()
 ||spokeninspiredtruck.com^*
 ||concealedtripssurgical.com^*
 ||wardgrazeunarmed.com^*
@@ -30609,8 +30600,8 @@ www.metrobyt-mobile.com##+js(remove-attr, disabled, button.trade-in-button, stay
 ||cdn4.buysellads.net^*
 ||a.omappapi.com/app/js/prebid-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||b2c.insticator.com/v3/pages/usertracking$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-labs.ripe.net##div[class*="iscookiebanner"]
-www.gsmfirmware.net##*[class*="ezoic-ad"]
+labs.ripe.net##div[class*="iscookiebanner"]:remove()
+www.gsmfirmware.net##*[class*="ezoic-ad"]:remove()
 ||deorganizati.co^*
 ||d1u1byonn4po0b.cloudfront.net^*
 !||www44.alfonzoheriberto.pro^*
@@ -30620,22 +30611,22 @@ www.gsmfirmware.net##*[class*="ezoic-ad"]
 ||ehinkitwkuo.co^*
 !||usfinf.net/2market_bidshow.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.usfinf.net/static/js/view117_bidshow.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!usfinf.net##iframe
-usfinf.net##div[id="cookie_notice"]
+!usfinf.net##iframe:remove()
+usfinf.net##div[id="cookie_notice"]:remove()
 ||ricewaterh.co^*
 !||trk.bloodearthquake.icu^*
 ||bloodearthquake.icu^*
 ||chatigabe.com^*
 ||uldhukelpmet.co^*
 ||wuzathoxa.com^*
-usfinf.net##div[id="_bd"]
-usfinf.net##div[id="fade"]
+usfinf.net##div[id="_bd"]:remove()
+usfinf.net##div[id="fade"]:remove()
 !||www62.orvilleandrea.pro^*
 !||www56.orvilleandrea.pro^*
 ||orvilleandrea.pro^*
 ||phoalard.net^*
 ||usfinf.net/funcript*.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!networklessons.com##div[class*="block--content-teaser"]
+!networklessons.com##div[class*="block--content-teaser"]:remove()
 ||owlerydominos.cam^*
 ||philyraauklet.com^*
 ||cinglecitrals.com^*
@@ -30656,9 +30647,9 @@ usfinf.net##div[id="fade"]
 !||loxitdat.com/counter$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||loxitdat.com^*
 ||ww25.hamrobajung.com^*
-spflashtools.com##ins[class*="adsbygoogle"]
-snwritetool.com##ins[class*="adsbygoogle"]
-writeimei.com##ins[class*="adsbygoogle"]
+spflashtools.com##ins[class*="adsbygoogle"]:remove()
+snwritetool.com##ins[class*="adsbygoogle"]:remove()
+writeimei.com##ins[class*="adsbygoogle"]:remove()
 ||kidnappingendless.com^*
 ||hopefullyapricot.com^*
 ||pxl.tsyndicate.com^*
@@ -30675,53 +30666,53 @@ writeimei.com##ins[class*="adsbygoogle"]
 ||unpleasantconcrete.com^*
 ||unworthytongue.com^*
 ||mobileoffers-cw-download.com^*
-browserleaks.com##ins[class*="adsbygoogle"]
-deviceatlas.com##div[id="cookie-consent"]
-financemonk.net##div[id="alert"]
-financemonk.net##iframe[data-aa]
-financemonk.net##div[id="alertmsg"]
+browserleaks.com##ins[class*="adsbygoogle"]:remove()
+deviceatlas.com##div[id="cookie-consent"]:remove()
+financemonk.net##div[id="alert"]:remove()
+financemonk.net##iframe[data-aa]:remove()
+financemonk.net##div[id="alertmsg"]:remove()
 financemonk.net##+js(abort-current-inline-script, _0x3344)
-apkdone.com##div[class="adplaceholder-top"]
-www.gsmchoice.com##div[id^="AdArea"]
-www.gsmchoice.com##ins[class="adPushupAds"]
+apkdone.com##div[class="adplaceholder-top"]:remove()
+www.gsmchoice.com##div[id^="AdArea"]:remove()
+www.gsmchoice.com##ins[class="adPushupAds"]:remove()
 www.gsmchoice.com##+js(abort-current-inline-script, w.adpushup)
-www.initpals.com##div[id="boxzilla-overlay-777"]
+www.initpals.com##div[id="boxzilla-overlay-777"]:remove()
 computingforgeeks.com##span[class*="ezoic-ad"]:remove()
-www.vaultproject.io##div[data-testid="consent-banner"]
-droidrant.com##span[class="ezoic-adpicker-ad"]
-droidrant.com##div[class*="ezo_ad"]
-nucco.org##div[id="icc_message"]
-linux-talks.com##div[class="cookie-notification"]
+www.vaultproject.io##div[data-testid="consent-banner"]:remove()
+droidrant.com##span[class="ezoic-adpicker-ad"]:remove()
+droidrant.com##div[class*="ezo_ad"]:remove()
+nucco.org##div[id="icc_message"]:remove()
+linux-talks.com##div[class="cookie-notification"]:remove()
 ||www.linkconnector.com/tr.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||7667.imgix.net/banners/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-newbedev.com##ins[class*="adsbygoogle"]
-newbedev.com##div[class*="ads-728-90"]
-www.idownloadblog.com##div[class*="adthrive-"]
-www.freeformatter.com##div[class="ad-wrapper"]
+newbedev.com##ins[class*="adsbygoogle"]:remove()
+newbedev.com##div[class*="ads-728-90"]:remove()
+www.idownloadblog.com##div[class*="adthrive-"]:remove()
+www.freeformatter.com##div[class="ad-wrapper"]:remove()
 www.freeformatter.com##ins[class="adsbygoogle"]:remove()
 ||edge.uniconsent.com^*
-classroom.synonym.com##div[data-ad-unit-name]
-classroom.synonym.com##div[class="ad-adsense-inline"]
-classroom.synonym.com##div[class="mobile-display-ad"]
-classroom.synonym.com##div[class*="ad-right-column"]
-classroom.synonym.com##div[class="fixed-bottom-ad"]
-classroom.synonym.com##div[class="rightrail-display-ad"]
-www.pcmag.com##ins[class*="zmgad-full-width"]
-www.pcmag.com##div[data-adunit]
-www.pcmag.com##aside[class*="zmgad-right-rail"]
-www.psychz.net##div[id="cookieBox"]
-docs.cpanel.net##div[aria-label="cookieconsent"]
-googlechromecast.com##div[class*="ezo_ad"]
+classroom.synonym.com##div[data-ad-unit-name]:remove()
+classroom.synonym.com##div[class="ad-adsense-inline"]:remove()
+classroom.synonym.com##div[class="mobile-display-ad"]:remove()
+classroom.synonym.com##div[class*="ad-right-column"]:remove()
+classroom.synonym.com##div[class="fixed-bottom-ad"]:remove()
+classroom.synonym.com##div[class="rightrail-display-ad"]:remove()
+www.pcmag.com##ins[class*="zmgad-full-width"]:remove()
+www.pcmag.com##div[data-adunit]:remove()
+www.pcmag.com##aside[class*="zmgad-right-rail"]:remove()
+www.psychz.net##div[id="cookieBox"]:remove()
+docs.cpanel.net##div[aria-label="cookieconsent"]:remove()
+googlechromecast.com##div[class*="ezo_ad"]:remove()
 googlechromecast.com##span[class*="ezoic-ad"]:remove()
-robots.net##div[id="cookieNotice"]
+robots.net##div[id="cookieNotice"]:remove()
 ||robots.net/wp-content/themes/blog-prime-child/assets/js/cookie_consent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-robots.net##div[id="sticky-footer-ads"]
+robots.net##div[id="sticky-footer-ads"]:remove()
 technowikis.com##span[class*="ezoic-ad"]:remove()
-technowikis.com##*[class*="ezoic-ad"]
-www.hp.com##div[class*="blog-ad-image"]
-www.hp.com##div[class*="blog-content-ad"]
+technowikis.com##*[class*="ezoic-ad"]:remove()
+www.hp.com##div[class*="blog-ad-image"]:remove()
+www.hp.com##div[class*="blog-content-ad"]:remove()
 www.slashdigit.com##ins[class="adsbygoogle"]:remove()
-www.askdavetaylor.com##div[class*="ezo_ad"]
+www.askdavetaylor.com##div[class*="ezo_ad"]:remove()
 www.askdavetaylor.com##span[class*="ezoic-ad"]:remove()
 www.askdavetaylor.com##span[class*="adtester-container"]:remove()
 www.tvsadmin.com##pre[class="wp-block-preformatted"]:has(div[class="code-block code-block-3"], ins[class="adsbygoogle"]):remove()
@@ -41538,10 +41529,10 @@ thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:rem
 ||clickndownload.*/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||clickndownload.*/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||undefined^$script,domain=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clicknupload.net
-! block all third-party scripts except those from any clicknupload domain
+! block all third-party scripts and XHR traffic except those from any clicknupload domain
 ! denyallow rule cannot have asterisks in it
-!*$3p,script,denyallow=clicknupload.net|clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click,domain=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clicknupload.net
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=clicknupload.net|clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click,domain=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clicknupload.net
+!*$3p,script,xhr,denyallow=clicknupload.net|clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clickndownload.link|clicknupload.space,domain=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clicknupload.net|clickndownload.link|clicknupload.space
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,xhr,denyallow=clicknupload.net|clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clickndownload.link|clicknupload.space,domain=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clicknupload.net|clickndownload.link|clicknupload.space
 ! the location of the following xpaths may change especially if remove() is used on any elements above it
 clicknupload.*,clickndownload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1]):remove()
 clicknupload.*,clickndownload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2]):remove()
@@ -49837,6 +49828,54 @@ frdl.to##+js(set-attr, input[id="adblock_detected"], value, 0)
 ! The countdown for frdl.to is server-side checked.
 !frdl.to##div[id="countdown"]:remove()
 !||frdl.to/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.androidcentral.com/sites/all/modules/mbn_offers/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.androidcentral.com/sites/androidcentral.com/files/article_images/2017/10/gamestash-970x460_2.jpg$image
+www.androidcentral.com##div[class*="article-body__suppl_content--taboola-mid-article"]:remove()
+www.androidcentral.com##section[class*="article-footer--taboola"]:remove()
+!www.androidcentral.com##div[class^="adunit-wrap"]:remove()
+www.androidcentral.com##div[class^="adunit"]:remove()
+www.androidcentral.com##div[class*="ad-unit"]:remove()
+www.androidcentral.com##div[class="dfp-leaderboard-container"]:remove()
+www.androidcentral.com##div[id^="ad-unit-"]:remove()
+www.androidcentral.com##div[id^="ads-middle-"]:remove()
+www.androidcentral.com##div[id^="bdx_flexi_ads_"]:remove()
+www.androidcentral.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
+www.androidcentral.com##div[data-ads-type]:remove()
+www.androidcentral.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+www.androidcentral.com##script[id="selligent-tag"]:remove()
+www.androidcentral.com##+js(set-constant, window.vanilla.loadGTM, noopFunc)
+www.androidcentral.com##+js(aopw, gtmCode)
+www.androidcentral.com##+js(aopr, gtmCode)
+www.androidcentral.com##+js(set-constant, window.__gpp_addFrame, noopFunc)
+www.androidcentral.com##+js(aopw, window.__gpp_addFrame)
+www.androidcentral.com##+js(aopr, window.__gpp_addFrame)
+www.androidcentral.com##+js(set-constant, loadTaboola, noopFunc)
+www.androidcentral.com##+js(no-setTimeout-if, /loadTaboola/)
+!www.androidcentral.com##+js(set-constant, comscoreIntegration, noopFunc)
+!www.androidcentral.com##+js(set-constant, comscorePayload, {})
+www.androidcentral.com##+js(set-constant, callComscore, noopFunc)
+www.androidcentral.com##+js(set-constant, injectComscore, noopFunc)
+www.androidcentral.com##+js(set-constant, selligent_initialiser, noopFunc)
+www.androidcentral.com##+js(set-constant, selligentID, '')
+www.androidcentral.com##+js(aopw, selligentID)
+www.androidcentral.com##+js(aopr, selligentID)
+www.androidcentral.com##+js(set-constant, ccpaApplies, false)
+www.androidcentral.com##+js(set-constant, window.vanilla.featureFlags.selligent.enabled, false)
+www.androidcentral.com##+js(set-constant, waitConsent, falseFunc)
+forums.androidcentral.com##div[class*="netshelter-ad"]:remove()
+forums.androidcentral.com##div[class="adunit"]:remove()
+forums.androidcentral.com##^script:has-text(tmntag.adTag):remove()
+||weanyergravely.com^*
+!||rimpled.echevintrunnel.top^*
+||echevintrunnel.top^*
+||exogenattuned.top^*
+||nonegoreclude.com^*
+!||driptrip.trckswrm.com^*
+||trckswrm.com^*
+||3dfcff2ec15099df0a24ad2cee74f21a.com^*
+||unsnibass.guru^*
+||plainanyways.top^*
+||www.ovardu.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
