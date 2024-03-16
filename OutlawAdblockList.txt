@@ -9004,6 +9004,7 @@ my.pcloud.com##div.desktop-message.ad
 ||stat.lianmeng.360.cn^*
 ||api.so.lianmeng.360.cn/searchthrow/api/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vid.springserve.com/vast/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||vid.springserve.com/ssusersync$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cm.lianmeng.360.cn^*
 ||cm.mediav.com^*
 ||afpeng.alimama.com^*
@@ -37320,9 +37321,6 @@ embedstream.me##iframe[src*="//easysemblyjusti.info/"]
 embedstream.me##iframe[src*="//easysemblyjusti.info/"]:remove()
 embedstream.me##+js(set-constant, sandDetect, noopFunc)
 embedstream.me##+js(set-constant, refObj, true)
-! siteConfig contains the URL for the video element? No.
-embedstream.me##+js(aopr, siteConfig)
-embedstream.me##+js(aopw, siteConfig)
 embedstream.me##+js(acs, sandDetect)
 embedstream.me##+js(set-constant, window.b8ade3936780eab00ffad9d29f8907ff, "")
 embedstream.me##+js(aopr, window.b8ade3936780eab00ffad9d29f8907ff)
@@ -38199,6 +38197,8 @@ www.vipleague.st##+js(no-setTimeout-if, /^function\(\)/)
 !www.vipleague.st##+js(no-setInterval-if, /^function()/)
 www.vipleague.st##+js(no-setInterval-if, /^function\(\)/)
 www.vipleague.st##+js(no-setTimeout-if, forceKillplayer)
+||www.vipleague.la/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.vipleague.la##button[class*="btn-danger"][data-openuri]:remove()
 ||cdn.espn.com/onetrust/otCCPAiab.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dcf.espn.com/privacy/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dcf.espn.com/error/e.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -38223,11 +38223,9 @@ bosscast.eu##iframe[id="rufous-sandbox"]:remove()
 !||blokstvs.xyz/js/ar.js$script
 !||myopyrum.digital/rf/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||myopyrum.digital^*
-bettingoffer.xyz##div[id="advertisement"]
 bettingoffer.xyz##div[id="advertisement"]:remove()
 bettingoffer.xyz##+js(aopr, redlink_url)
 bettingoffer.xyz##+js(aopw, redlink_url)
-lgbtrans.xyz##div[id="advertisement"]
 lgbtrans.xyz##div[id="advertisement"]:remove()
 lgbtrans.xyz##+js(aopr, redlink_url)
 lgbtrans.xyz##+js(aopw, redlink_url)
@@ -45468,17 +45466,9 @@ www.niaomea.me##+js(remove-attr, disableremoteplayback, video[class^="jw-video"]
 www.niaomea.me##+js(disable-newtab-links)
 !www.niaomea.me##+js(no-window-open-if)
 www.niaomea.me##+js(no-window-open-if, !/\.niaomea\.me/i)
-||embedstreams.me/partytown/partytown*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||embedstreams.me/partytown/partytown-sandbox-sw.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-embedstreams.me##script[type="text/partytown"]:remove()
-embedstreams.me##+js(set-constant, partytown, {})
-embedstreams.me##+js(set-constant, aclib.runPop, noopFunc, end)
-embedstreams.me##+js(set-constant, aclib.runPop, noopFunc, complete)
-embedstreams.me,sportsonline.si,linenstandard.net##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
-embedstreams.me,sportsonline.si,linenstandard.net##^script:has-text(adcashLib):remove()
-embedstreams.me,sportsonline.si,linenstandard.net##+js(acs, adcashLib)
-! The following rule prevents the embedded video frame from playing.
-!embedstreams.me##+js(set-constant, siteConfig, {})
+!||embedstreams.me/partytown/partytown*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||embedstreams.me/partytown/partytown-sandbox-sw.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||embedstreams.me/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.bypfpuldupkyy.com^*
 ||bypfpuldupkyy.com^*
 ||dukingdraon.com^*
@@ -45518,9 +45508,6 @@ voodc.com##iframe[src^="https://player.mycraft.click/"]:style(height: 99vh !impo
 voodc.com##div[class="afs_ads ad-placement"]:remove()
 voodc.com##div[id="UnMutePlayer"]:remove()
 voodc.com##div[id="ForWeb"]:remove()
-voodc.com##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
-voodc.com##^script:has-text(adcashLib):remove()
-voodc.com##+js(acs, adcashLib)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 voodc.com##script[adblock-settings]:remove()
 voodc.com##img[id="pingsts"]:remove()
@@ -45543,24 +45530,27 @@ mobmodapk.com##+js(aopw, adsbygoogle)
 mobmodapk.com##+js(aopr, adsbygoogle)
 www.mediafire.com##div[class="WZ-content"]:remove()
 www.mediafire.com##div[class*="Avast"]:remove()
-www.mediafire.com##div[id^="div-gpt-ad-"]
+www.mediafire.com##div[class="ezoic_ad_unit"]:remove()
 www.mediafire.com##div[id^="div-gpt-ad-"]:remove()
-www.mediafire.com##div[id="adwrapper"]
-www.mediafire.com##div[id="cookie-accept-footer"]
-www.mediafire.com##[href="http://t.mfroute.com/a19c1479-7d02-47e6-9b2e-9f3f1292a222"]
-www.mediafire.com###d40b3vrmmc0
-www.mediafire.com###ds80aoc3kvy
-www.mediafire.com###y83khvhddgc
-www.mediafire.com###grxc757gfao
-www.mediafire.com###DlPreCheck-invalid
-www.mediafire.com###abnotify
-www.mediafire.com###hyocj956tx
-www.mediafire.com##.ad
-www.mediafire.com##.lb-ad
-www.mediafire.com##.loaded
-www.mediafire.com##.lr-ad
-!www.mediafire.com##figure
-!www.mediafire.com##div[class$="ads-normal"] !makes download links disappear
+www.mediafire.com##div[id="adwrapper"]:remove()
+www.mediafire.com##div[id="cookie-accept-footer"]:remove()
+www.mediafire.com##div[id^="ezoic-pub-ad-"]:remove()
+www.mediafire.com##[href="http://t.mfroute.com/a19c1479-7d02-47e6-9b2e-9f3f1292a222"]:remove()
+www.mediafire.com###d40b3vrmmc0:remove()
+www.mediafire.com###ds80aoc3kvy:remove()
+www.mediafire.com###y83khvhddgc:remove()
+www.mediafire.com###grxc757gfao:remove()
+www.mediafire.com###DlPreCheck-invalid:remove()
+www.mediafire.com###abnotify:remove()
+www.mediafire.com###hyocj956tx:remove()
+www.mediafire.com##.ad:remove()
+www.mediafire.com##.lb-ad:remove()
+www.mediafire.com##.loaded:remove()
+www.mediafire.com##.lr-ad:remove()
+!www.mediafire.com##figure:remove()
+!www.mediafire.com##div[class$="ads-normal"]:remove() !makes download links disappear
+www.mediafire.com##main[class*="ads-enabled"]:remove-class(ads-enabled)
+www.mediafire.com##+js(remove-class, ads-enabled, main[class*="ads-enabled"])
 www.mediafire.com##script[id="infinity"]:remove()
 www.mediafire.com##+js(no-window-open-if, !/mediafire\.com/i)
 www.mediafire.com##+js(abort-on-property-read, AD_UNITS_CONFIG)
@@ -45573,19 +45563,35 @@ www.mediafire.com##+js(abort-on-property-read, pbjs.initAdserverSet)
 www.mediafire.com##+js(abort-on-property-write, pbjs.initAdserverSet)
 www.mediafire.com##+js(set-constant, gtag, noopFunc)
 www.mediafire.com##+js(acs, gtag)
-www.mediafire.com##+js(set-constant, window.displayAds, false)
+!www.mediafire.com##+js(set-constant, window.displayAds, false)
+www.mediafire.com##+js(set-constant, window.ezstandalone, {})
+www.mediafire.com##+js(abort-on-property-read, window.ezstandalone)
+www.mediafire.com##+js(abort-on-property-write, window.ezstandalone)
 ! use trusted-set-constant since "false" needs to be a string
 www.mediafire.com##+js(trusted-set-constant, window.displayAds, false)
 !www.mediafire.com##+js(set-constant, pbjs.initAdserverSet, false)
 www.mediafire.com##+js(set-constant, pbjs.initAdserverSet, false, end)
 !www.mediafire.com##+js(set-constant, pbjs.initAdserverSet, false, complete)
 www.mediafire.com##+js(set-constant, amplitude, {})
-www.mediafire.com##+js(set-constant, amp, noopFunc)
+!www.mediafire.com##+js(set-constant, amp, noopFunc)
+www.mediafire.com##+js(abort-on-property-read, amp)
+www.mediafire.com##+js(abort-on-property-write, amp)
 www.mediafire.com##+js(acs, amplitude)
+www.mediafire.com##+js(set-constant, acceptCookieFooter, noopFunc)
 www.mediafire.com##+js(set-constant, iAdCount, 3)
 www.mediafire.com##+js(set-constant, sticky, {})
 www.mediafire.com##+js(abort-on-property-read, sticky)
 www.mediafire.com##+js(abort-on-property-write, sticky)
+www.mediafire.com##+js(set-constant, window.displayGoogleAdUnits, noopFunc)
+www.mediafire.com##+js(set-constant, sAdSupplier, "")
+www.mediafire.com##+js(set-constant, sStartSrc, "")
+www.mediafire.com##+js(set-constant, window.fLoadGoogleAds, noopFunc)
+www.mediafire.com##+js(set-constant, initAdserver, noopFunc)
+www.mediafire.com##+js(set-constant, adLoaded, [])
+www.mediafire.com##+js(set-constant, window.checkAdUnitView, noopFunc)
+www.mediafire.com##+js(set-constant, adRefreshing, [])
+www.mediafire.com##+js(set-constant, window.checkQueuedAdUnitViews, noopFunc)
+www.mediafire.com##+js(no-setTimeout-if, initAdserver)
 mediafire.com##+js(abort-on-property-write, UAParser)
 mediafire.com##+js(abort-current-inline-script, document.getElementById, adblocker)
 ||www.mediafire.com/dynamic/track_adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -46131,9 +46137,6 @@ livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.
 ! sets any value not 100 to 100
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(trusted-replace-node-text, script, /player\.setVolume\(((?!100)\d)+\);/gm, player.setVolume(100);)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##div[id="UnMutePlayer"]:remove()
-livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
-livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##^script:has-text(adcashLib):remove()
-livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(acs, adcashLib)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'document.onmousedown')]):remove()
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(acs, document.onkeypress, document.onkeydown, document.onmousedown)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##iframe[class="padPreload"]:remove()
@@ -46273,9 +46276,6 @@ antenasport.ru,maxsport.one##+js(aopw, window.location)
 antenasport.ru,maxsport.one##iframe[src="about:blank"]:remove()
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 antenasport.ru,maxsport.one##script[adblock-settings]:remove()
-antenasport.ru,maxsport.one##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
-antenasport.ru,maxsport.one##^script:has-text(adcashLib):remove()
-antenasport.ru,maxsport.one##+js(acs, adcashLib)
 antenasport.ru,maxsport.one##+js(set-constant, ydjsm, noopFunc)
 aradsport.live##span[style="display:none"]:remove()
 aradsport.live##div[id="player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
@@ -46397,9 +46397,6 @@ ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopw, window
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopr, window.top)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(acs, window.top)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(acs, window.location.replace)
-ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
-ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##^script:has-text(adcashLib):remove()
-ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(acs, adcashLib)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##script[id="_waumqy"]:remove()
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(set-constant, _wau, [])
@@ -46909,9 +46906,6 @@ tutlehd2.xyz,tutlehd3.xyz##+js(set-constant, ConsoleBan, noopFunc)
 tutlehd2.xyz,tutlehd3.xyz##+js(set-constant, _Hasync, [])
 tutlehd2.xyz,tutlehd3.xyz##+js(aopw, _Hasync)
 tutlehd2.xyz,tutlehd3.xyz##+js(aopr, _Hasync)
-tutlehd2.xyz,tutlehd3.xyz##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
-tutlehd2.xyz,tutlehd3.xyz##^script:has-text(adcashLib):remove()
-tutlehd2.xyz,tutlehd3.xyz##+js(acs, adcashLib)
 tutlehd2.xyz,tutlehd3.xyz##div[id="unmute-button-layer"]:remove()
 ! Either of the following two rules removes all cookies.
 !tutlehd2.xyz,tutlehd3.xyz##+js(remove-cookie)
@@ -48186,18 +48180,11 @@ ko.strikeout.cc##:xpath(//script[contains(text(), 'debugger;')]):remove()
 ko.strikeout.cc##+js(acs, /debugger;/)
 !ko.strikeout.cc##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 ko.strikeout.cc##+js(remove-node-text, script, /debugger;/gm)
-||strikeout.im/partytown/partytown-sandbox-sw.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||strikeout.cc/partytown/partytown-sandbox-sw.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||strikeout.im/partytown/partytown-sandbox-sw.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||strikeout.im/partytown/partytown-sw.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||strikeout.im/partytown/partytown*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||strikeout.cc/partytown/partytown*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-strikeout.im,strikeout.cc##script[type="text/partytown"]:remove()
-strikeout.im,strikeout.cc##+js(set-constant, partytown, {})
-! TODO: Do not always set siteConfig because on some pages it is used for wanted information.
-! The following rule prevents the embedded chatango widget from working since its configuration ids are in siteConfig. 
-!strikeout.im,strikeout.cc##+js(set-constant, siteConfig, {})
-! Do not abort scripts if they simply read siteConfig.
-!strikeout.im,strikeout.cc##+js(aopw, siteConfig)
+!||strikeout.im/partytown/partytown*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||strikeout.im/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||strikeout.cc/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 strikeout.im,strikeout.cc##+js(set-constant, empTrack, false)
 strikeout.im,strikeout.cc##+js(set-constant, emprefs, noopFunc)
 strikeout.im,strikeout.cc##+js(set-constant, FingerprintJS, noopFunc)
@@ -49937,16 +49924,6 @@ thoptv.pro##iframe[style="display: none;"]:remove()
 ||hewokhn.com^*
 www.viprow.nu##iframe[aria-hidden="true"]:remove()
 www.viprow.nu##iframe[style="display: none;"]:remove()
-www.viprow.nu##script[type="text/partytown"]:remove()
-www.viprow.nu##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
-www.viprow.nu##^script:has-text(adcashLib.):remove()
-www.viprow.nu##+js(acs, /aclib\.runPop\(/)
-www.viprow.nu##+js(set-constant, siteConfig, {})
-www.viprow.nu##+js(set-constant, partytown, {})
-www.viprow.nu##+js(abort-on-property-write, partytown)
-www.viprow.nu##+js(abort-on-property-read, partytown)
-www.viprow.nu##+js(abort-on-property-write, siteConfig)
-www.viprow.nu##+js(abort-on-property-read, siteConfig)
 www.viprow.nu##+js(aeld, /function\(_0x59a769\)/)
 www.viprow.nu,tennisonline.me,nflbox.me##+js(set-constant, empTrack, false)
 www.viprow.nu,tennisonline.me,nflbox.me##+js(set-constant, empTrackUrl, "")
@@ -49974,6 +49951,62 @@ firstsrowsports.tv##a[rel="sponsored"]:remove()
 thetvapp.to##div[id="myPlayer"]:style(max-width: 99vw !important;max-height: 99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 thetvapp.to##video[class^="jw-video"]:remove-attr(disableremoteplayback)
 thetvapp.to##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
+thetvapp.to##div[id="schedule"]
+*##^script:has-text(/adcashLib\./):remove()
+*##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+*##+js(acs, /adcashLib\./)
+!##+js(set-constant, aclib.runPop, noopFunc, end)
+!##+js(set-constant, aclib.runPop, noopFunc, complete)
+*##+js(set-constant, aclib.runPop, noopFunc)
+*##+js(acs, /aclib\.runPop\(/)
+!www.viprow.nu,www.vipleague.la,voodc.com,tutlehd2.xyz,tutlehd3.xyz,livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru,embedstreams.me,sportsonline.si,linenstandard.net,embedstreams.me,ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com,antenasport.ru,maxsport.one##^script:has-text(/adcashLib\./):remove()
+!www.viprow.nu,www.vipleague.la,voodc.com,tutlehd2.xyz,tutlehd3.xyz,livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru,embedstreams.me,sportsonline.si,linenstandard.net,embedstreams.me,ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com,antenasport.ru,maxsport.one##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
+!www.viprow.nu,www.vipleague.la,voodc.com,tutlehd2.xyz,tutlehd3.xyz,livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru,embedstreams.me,sportsonline.si,linenstandard.net,embedstreams.me,ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com,antenasport.ru,maxsport.one##+js(acs, /adcashLib\./)
+!www.viprow.nu,www.vipleague.la,voodc.com,tutlehd2.xyz,tutlehd3.xyz,livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru,embedstreams.me,sportsonline.si,linenstandard.net,embedstreams.me,ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com,antenasport.ru,maxsport.one##+js(set-constant, aclib.runPop, noopFunc, end)
+!www.viprow.nu,www.vipleague.la,voodc.com,tutlehd2.xyz,tutlehd3.xyz,livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru,embedstreams.me,sportsonline.si,linenstandard.net,embedstreams.me,ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com,antenasport.ru,maxsport.one##+js(set-constant, aclib.runPop, noopFunc, complete)
+!www.viprow.nu,www.vipleague.la,voodc.com,tutlehd2.xyz,tutlehd3.xyz,livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru,embedstreams.me,sportsonline.si,linenstandard.net,embedstreams.me,ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com,antenasport.ru,maxsport.one##+js(set-constant, aclib.runPop, noopFunc)
+!www.viprow.nu,www.vipleague.la,voodc.com,tutlehd2.xyz,tutlehd3.xyz,livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru,embedstreams.me,sportsonline.si,linenstandard.net,embedstreams.me,ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com,antenasport.ru,maxsport.one##+js(acs, /aclib\.runPop\(/)
+*##script[type^="text/partytown"]:remove()
+!embedstreams.me,strikeout.im,strikeout.cc,www.viprow.nu,www.vipleague.la##script[type^="text/partytown"]:remove()
+*##+js(set-constant, partytown, {})
+!embedstreams.me,strikeout.im,strikeout.cc,www.viprow.nu,www.vipleague.la##+js(set-constant, partytown, {})
+*##+js(abort-on-property-write, partytown)
+*##+js(abort-on-property-read, partytown)
+!embedstreams.me,strikeout.im,strikeout.cc,www.viprow.nu,www.vipleague.la##+js(abort-on-property-write, partytown)
+!embedstreams.me,strikeout.im,strikeout.cc,www.viprow.nu,www.vipleague.la##+js(abort-on-property-read, partytown)
+||e7.pngegg.com/pngimages/984/587/png-clipart-state-of-palestine-flag-of-palestine-free-palestine-movement-t-shirt-logo-others-flag-text-thumbnail.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+apktodo.io##div[class*="adsBox"]:remove()
+apktodo.io##div[class="ads-wrap"]:remove()
+apktodo.io##div[id="cookie-notice-bar"]:remove()
+apktodo.io##+js(set-constant, adscode, "")
+apktodo.io##+js(set-constant, showads, false)
+apktodo.io##+js(set-constant, lazyLoadAds, noopFunc)
+apktodo.io##+js(set-constant, lazyAds, noopFunc)
+apktodo.io##+js(set-constant, allTheLazyAds, [])
+apktodo.io##+js(set-attr, img[class="img-lazy"][data-src], src, [data-src])
+apktodo.io##a[href^="https://apktodo.io/download/"][onclick]:remove-attr(onclick)
+apktodo.io##+js(remove-attr, onclick, a[href^="https://apktodo.io/download/"][onclick])
+! TODO: Does the following attribute name change?
+!zeam.com##iframe[d36bwklor]:remove()
+zeam.com##iframe[width="1"][height="1"]:remove()
+!zeam.com##button[id="clickToPlay"]:remove-attr(hidden)
+!zeam.com##+js(remove-attr, hidden, button[id="clickToPlay"])
+zeam.com##div[class="publisherContainer main-container"]:style(margin-left: 0px !important;)
+zeam.com##div[class="videoPlayerArea"]:style(max-width: 99vw !important;max-height: 99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+zeam.com##div[class="publisherTabs"]:style(margin-top: 280px !important;)
+!zeam.com##div[id="videoJsContainer"]:style(max-width: 99vw !important;max-height: 99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+zeam.com##div[id="videojs-player"]:style(padding-top: 99vh !important;)
+zeam.com##div[id="videojs-player"]:remove-class(vjs-user-inactive)
+zeam.com##+js(remove-class, vjs-user-inactive, div[id="videojs-player"])
+zeam.com##+js(aeld, ads-manager)
+!||zeam.com/api/log/liveheartbeatevent$xhr
+||zeam.com/api/log/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||zeam.com/api/services/AdCtx$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||sync.springserve.com/usersync/json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||sync.springserve.com^*
+||zeam.com/js/ad-controller.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! Do NOT use the following rule or the video player will not be rendered.
+!||zeam.com/js/logging-controller.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
