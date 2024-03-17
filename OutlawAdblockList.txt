@@ -21848,6 +21848,7 @@ www.youtube.com##iframe[class$="ytd-video-masthead-ad-primary-video-renderer"]:r
 www.youtube.com##ytd-compact-promoted-video-renderer[class*="ytd-in-feed-ad-layout-renderer"]:remove()
 www.youtube.com##ytd-display-ad-renderer:remove()
 www.youtube.com##ytd-thumbnail[class$="ytd-video-masthead-ad-v3-renderer"]:remove()
+! +js(json-prune, <list of space-separated properties to remove>, <list of space-separated properties which must be all present for the pruning to occur>)
 youtube.com##+js(json-prune, adPlacements)
 www.youtube.com##+js(set-constant, AD_BLOCK, 0, stay)
 www.youtube.com##+js(set-constant, a.displayAdBlocks_, null, stay)
@@ -38199,7 +38200,7 @@ www.vipleague.st##+js(no-setInterval-if, /^function\(\)/)
 www.vipleague.st##+js(no-setTimeout-if, forceKillplayer)
 ||www.vipleague.la/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.vipleague.la##button[class*="btn-danger"][data-openuri]:remove()
-www.vipleague.la##div[class="h-100 position-absolute w-100 bg-light bg-opacity-25 text-success top-0"]:has(div:has-text(seconds to hide banner)):remove()
+www.vipleague.la##div[class="h-100 position-absolute w-100 bg-light bg-opacity-25 text-success top-0"]:matches-attr(id=/[0-9a-z]{10}/):remove()
 www.vipleague.la##div[data-item="chat"]:remove()
 www.vipleague.la##iframe[src^="https://st.chatango.com/"]:remove()
 www.vipleague.la##iframe[loading="lazy"][title="embed player"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
@@ -44501,6 +44502,7 @@ apkmody.io##+js(set-constant, _fvgctrp, noopFunc)
 apkmody.io##+js(set-constant, _qqksa, noopFunc)
 apkmody.io##script[onload]:remove-attr(onload)
 apkmody.io##script[onerror]:remove-attr(onerror)
+! +js(json-prune, <list of space-separated properties to remove>, <list of space-separated properties which must be all present for the pruning to occur>)
 apkmody.io##+js(json-prune, sdk_url server_url)
 modded-1.com##ins[data-ad-client]:remove()
 modded-1.com##div[class="ad-unit"]:remove()
@@ -45810,7 +45812,7 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||*/common/*waterfall.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The letter preceding the "maple" in the following rule intentionally varies.
 ||*/common/assets/*maple.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||*common/assets/*htmlgl.min.css$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||*/common/assets/*htmlgl.min.css$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The letter preceding the "path.min.css" in the following rule intentionally varies.
 ||*/css/images/*path.min.css$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||*/css/images/*sidy.css$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -45894,6 +45896,7 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||cdnquality.com/prod/redirect.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||uptimecdn.com/prod/redirect.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css,domain=cricplay2.xyz
 ||velocecdn.com/prod/redirect.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! +js(json-prune, <list of space-separated properties to remove>, <list of space-separated properties which must be all present for the pruning to occur>)
 velocecdn.com##+js(json-prune, ab_test)
 !||velocecdn.com^*
 ||badskies.com^*
@@ -48558,6 +48561,7 @@ linkvertise.com,linkvertise.net##div[id="advertise-block"]:remove()
 linkvertise.com,linkvertise.net##script[id="tb_loader_script"]:remove()
 linkvertise.com,linkvertise.net##^script:has-text(/checkForAdBlock/i):remove()
 !linkvertise.com,linkvertise.net##^script:has-text(/adsense/i):remove()
+! +js(json-prune, <list of space-separated properties to remove>, <list of space-separated properties which must be all present for the pruning to occur>)
 linkvertise.com,linkvertise.net##+js(json-prune, data.meta.require_addon data.meta.require_captcha data.meta.require_notifications data.meta.require_og_ads data.meta.require_video data.meta.require_web)
 linkvertise.com,linkvertise.net##+js(set-constant, isAdBlockActive, false, stay)
 linkvertise.com,linkvertise.net##+js(aopr, isAdBlockActive)
@@ -49318,6 +49322,7 @@ blog.onlineshoppingtools.com##script[id="ip-analytics"]:remove()
 blog.onlineshoppingtools.com##+js(set-constant, setupGTM, noopFunc)
 blog.onlineshoppingtools.com##+js(aopw, setupGTM)
 blog.onlineshoppingtools.com##+js(aopr, setupGTM)
+! +js(json-prune, <list of space-separated properties to remove>, <list of space-separated properties which must be all present for the pruning to occur>)
 blog.onlineshoppingtools.com##+js(json-prune, trackingData snowplowWrapperUrl snowplowUrl)
 blog.onlineshoppingtools.com##+js(set-constant, window._instapageSnowplow, noopFunc)
 blog.onlineshoppingtools.com##+js(set-constant, trackingData, {})
@@ -49556,6 +49561,7 @@ www.1011now.com##div[class*="ad-flex-leaderboard"]:remove()
 www.1011now.com##div[class*="ad-footer-"]:remove()
 www.1011now.com##div[class*="ad-fixed-"]:remove()
 www.1011now.com##+js(set-constant, window._taboola, [])
+! +js(json-prune, <list of space-separated properties to remove>, <list of space-separated properties which must be all present for the pruning to occur>)
 www.1011now.com##+js(json-prune, arcAdsDisclaimerPosition arcAdsDisplay arcAdsIsSticky arcAdsType)
 !||www.1011now.com/pf/resources/js/analytics/comscore.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.1011now.com/pf/resources/js/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -50103,6 +50109,25 @@ rapidcloud.cc##+js(remove-attr, disabled, button[id="downloadbtn"])
 rapidcloud.cc##div[class="download-btn mb-4"]:remove-attr(style)
 rapidcloud.cc##+js(remove-attr, style, div[class="download-btn mb-4"])
 rapidcloud.cc##button[id="downloadbtn"]:style(display: block !important;)
+! TODO: Do not always set siteConfig because on some pages it is used for wanted information.
+! The following rule prevents the embedded chatango widget from working since its configuration ids are in siteConfig. 
+!##+js(set-constant, siteConfig, {})
+! Do not abort scripts if they simply read siteConfig.
+!##+js(abort-on-property-read, siteConfig)
+!##+js(abort-on-property-write, siteConfig)
+!www.vipleague.la,www.viprow.nu,strikeout.im,strikeout.cc,embedstreams.me##+js(abort-on-property-write, siteConfig)
+! siteConfig{} isn't parsed with JSON so json-prune won't work to change its contents.
+! ##+js(json-prune, <list of space-separated properties to remove>, <list of space-separated properties which must be all present for the pruning to occur>)
+!*##+js(json-prune, siteConfig.adId2 siteConfig.adId siteConfig.buttonad siteConfig.adCloseId siteConfig.trackerUrl siteConfig.tracker)
+!www.vipleague.la,www.viprow.nu,strikeout.im,strikeout.cc,embedstreams.me##+js(json-prune, siteConfig.adId2 siteConfig.adId siteConfig.buttonad siteConfig.adCloseId siteConfig.trackerUrl siteConfig.tracker)
+*##+js(set-constant, siteConfig.adId2, "")
+*##+js(set-constant, siteConfig.adId, "")
+*##+js(set-constant, siteConfig.buttonad, "")
+*##+js(set-constant, siteConfig.adCloseId, "")
+*##+js(set-constant, siteConfig.trackerUrl, "")
+*##+js(set-constant, siteConfig.tracker, "")
+*##+js(trusted-replace-node-text, script, /"countTs":30/gm, "countTs": 0)
+!www.vipleague.la,www.viprow.nu,strikeout.im,strikeout.cc,embedstreams.me##+js(trusted-replace-node-text, script, /"countTs":30/gm, "countTs": 0)
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
