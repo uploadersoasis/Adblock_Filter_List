@@ -22244,12 +22244,10 @@ file.cm##+js(abort-on-property-read, setTrackerUrl)
 ||nqrkzcd7ixwr.com^*
 ||mjbuuxt7l18r.com^*
 ||pushnotifications.click^*
-lifehacker.com##video[title="Advertisement"]
-lifehacker.com##div[id="zdcFloatingBtn"]
+lifehacker.com##video[title="Advertisement"]:remove()
 lifehacker.com##div[id="zdcFloatingBtn"]:remove()
-lifehacker.com##div[class*="js_ad-"]
-lifehacker.com##div[class^="ad-container"]
-lifehacker.com##ins[class="zmgad-full-width"]
+lifehacker.com##div[class*="js_ad-"]:remove()
+lifehacker.com##div[class^="ad-container"]:remove()
 lifehacker.com##ins[class="zmgad-full-width"]:remove()
 ||lifehacker.com/api/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||lifehacker.com/x-kinja-static/assets/new-client/ads~$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -22288,12 +22286,12 @@ lifehacker.com##ins[class="zmgad-full-width"]:remove()
 ||atpqczsqjsxvln.com^*
 piratebays.win##div[id="vpnvpn"]
 ||ladsatz.com^*
-shortearn.eu##div[id^="adm-container"]
+shortearn.eu##div[id^="adm-container"]:remove()
 shortearn.eu##+js(abort-on-property-write, zfgloadedpopup)
 shortearn.eu##+js(abort-on-property-read, zfgloadedpopup)
-shortearn.eu##div[id^="atContainer-"]
-shortearn.eu##div[class="ad-title"]
-shortearn.eu##div[class="ad-skip"]
+shortearn.eu##div[id^="atContainer-"]:remove()
+shortearn.eu##div[class="ad-title"]:remove()
+shortearn.eu##div[class="ad-skip"]:remove()
 !||prebid.admedia.com/bidder/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||prebid.admedia.com^*
 ||www.knutenegros.pro^*
@@ -28545,56 +28543,55 @@ www.includehelp.com##div[id="vi-ad"]
 www.includehelp.com##div[class="adsbyvli"]
 www.includehelp.com##div:nth-child(1):has-text(/advertisement/i)
 www.includehelp.com##div[class="main-panel"]:style(width: 99vw !important;)
-neurosciencenews.com##div[class="mv-ad-box"]
-!neurosciencenews.com##div[class="adunitwrapper"]
-neurosciencenews.com##div[class*="adunit"]
+neurosciencenews.com##div[class="mv-ad-box"]:remove()
+!neurosciencenews.com##div[class="adunitwrapper"]:remove()
+neurosciencenews.com##div[class*="adunit"]:remove()
 ||oa.openxcdn.net^*
-krakenfiles.com##div[id="cc_div"]
+krakenfiles.com##div[id="cc_div"]:remove()
 ||krakenfiles.com/assets/js/cookie-banner.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-add0n.com##div[id="cookie"]
-webbrowsertools.com##div[class="card shadow card-body mb-2 m-lr description"]:has-text(/Advertisement/i)
-www.section.io##div[id="termly-code-snippet-support"]
-www.base64decode.org##ins[class*="adsbypublift"]
+add0n.com##div[id="cookie"]:remove()
+webbrowsertools.com##div[class="card shadow card-body mb-2 m-lr description"]:has-text(/Advertisement/i):remove()
+www.section.io##div[id="termly-code-snippet-support"]:remove()
+www.base64decode.org##ins[class*="adsbypublift"]:remove()
 ||firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?database=projects%2Fi-cnet-engagement-prod$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||newimagitasinc.hb.omtrdc.net^*
-linuxsecurity.com##div[class="cadre_alert_cookies"]
-linuxsecurity.com##div[class="adtype"]
-linuxsecurity.com##div[class^="ad_prev_main"]
+linuxsecurity.com##div[class="cadre_alert_cookies"]:remove()
+linuxsecurity.com##div[class="adtype"]:remove()
+linuxsecurity.com##div[class^="ad_prev_main"]:remove()
 ||linuxsecurity.com/component/socialads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.devart.com##div[class="popup-wrapper js-popup-height"]
-www.remove.bg##div[class*="cookie-consent-info"]
-www.remove.bg##*[class*="consent-class"]
-www.remove.bg##div[data-v-7c792270]
-www.pngtosvg.com##div[class*="ezo_ad"]
-www.pngtosvg.com##*[class*="ezmob-footer"]
-www.pngtosvg.com##*[class*="ezoic-ad"]
-www.aconvert.com##div[id="cck-box"]
+www.devart.com##div[class="popup-wrapper js-popup-height"]:remove()
+www.remove.bg##div[class*="cookie-consent-info"]:remove()
+www.remove.bg##*[class*="consent-class"]:remove()
+www.remove.bg##div[data-v-7c792270]:remove()
+www.pngtosvg.com##div[class*="ezo_ad"]:remove()
+www.pngtosvg.com##*[class*="ezmob-footer"]:remove()
+www.pngtosvg.com##*[class*="ezoic-ad"]:remove()
+www.aconvert.com##div[id="cck-box"]:remove()
 svg-converter.com##div[id="catapult-cookie-bar"]:remove()
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
 svg-converter.com##script[id^="cookie-consent-js"]:remove()
 ||svg-converter.com/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||svg-converter.com/wp-content/plugins/uk-cookie-consent/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 svg-converter.com##ins[class="adsbygoogle"]:remove()
-svg-converter.com##div[id="vBOdfHgubrSo"]
+svg-converter.com##div[id="vBOdfHgubrSo"]:remove()
 ||barbedgoodnight.com^*
 ||polldenunciationdeveloping.com^*
 ||clutchsavage.com^*
 ||hibernateagitationpre.com^*
 svg-clipart.com##ins[class="adsbygoogle"]:remove()
-www.gamersnexus.net##div[id^="div-gpt-ad-"]
-www.gamersnexus.net##div[class="gsc-adBlockInvisible"]
-www.gamersnexus.net##div[class="googlead"]
+www.gamersnexus.net##div[id^="div-gpt-ad-"]:remove()
+www.gamersnexus.net##div[class="gsc-adBlockInvisible"]:remove()
+www.gamersnexus.net##div[class="googlead"]:remove()
 www.gamersnexus.net##ins[class="adsbygoogle"]:remove()
-softgateon.herokuapp.com##:xpath(//div[5])
 softgateon.herokuapp.com##:xpath(//div[5]):remove()
-sedo.com##div[class^="cookie__"]
-sedo.com##aside[data-cookie-banner]
-masterkreatif.net##button:has-text(/Download Crack/i)
-www.mazterize.com##button[id="dl-b"]
-www.mazterize.com##button[id="dl-r"]
-www.mazterize.com##button[id="dl-g"]
-ouo.io##span[class="msg-adblock"]
-ouo.io##div[id^="M282855ScriptRootC"]
+sedo.com##div[class^="cookie__"]:remove()
+sedo.com##aside[data-cookie-banner]:remove()
+masterkreatif.net##button:has-text(/Download Crack/i):remove()
+www.mazterize.com##button[id="dl-b"]:remove()
+www.mazterize.com##button[id="dl-r"]:remove()
+www.mazterize.com##button[id="dl-g"]:remove()
+ouo.io##span[class="msg-adblock"]:remove()
+ouo.io##div[id^="M282855ScriptRootC"]:remove()
 ||cdn.sedo.com/components/TfcP3WYRyZ9A/cookie-banner.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 uploadev.org##+js(remove-attr.js, disabled, #downloadbtn, stay)
 ||uc-static.azureedge.net/static/js/new-design/ctr/cookies.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -36443,6 +36440,7 @@ www.enttec.com##div[id="gdpr-notice"]:remove()
 tv247.us,tv247us.com##article[id="post-1978"]:style(width: 99vw !important;)
 !tv247.us,tv247us.com##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
 tv247.us,tv247us.com##video[class*="jw-video"]:remove-attr(disableremoteplayback)
+tv247.us,tv247us.com##+js(saa, x-webkit-airplay, allow, video[class*="jw-video"])
 tv247.us,tv247us.com##div[class*="jw-logo"]:remove()
 tv247.us,tv247us.com##div[class^="afs_ads"]:remove()
 tv247.us,tv247us.com##div[class*="adsbyvli"]:remove()
@@ -36455,12 +36453,12 @@ tv247.us,tv247us.com##div[id="vvv"]:remove-class(jw-flag-user-inactive)
 tv247.us,tv247us.com##div[id="vvv"]:style(width: 99vw !important; height: 99vh !important;)
 tv247.us,tv247us.com##div[id="tv247-75013289"]:remove()
 tv247.us,tv247us.com##input[type="button"][aria-label="play"]:remove-attr(disabled)
-tv247.us,tv247us.com##^script:has-text(decodeURIComponent):remove()
 tv247.us,tv247us.com##^script:has-text(advanced_ads_ready):remove()
 tv247.us,tv247us.com##+js(remove-class, hantads, div)
 tv247.us,tv247us.com##+js(acs, eval)
 tv247.us,tv247us.com##+js(noeval)
-tv247.us,tv247us.com##+js(acs, decodeURIComponent)
+!tv247.us,tv247us.com##^script:has-text(decodeURIComponent):remove()
+!tv247.us,tv247us.com##+js(acs, decodeURIComponent)
 tv247.us,tv247us.com##+js(set-constant, b9231331f17013bbdfc6ca79fbe61a84, "")
 tv247.us,tv247us.com##+js(acs, 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=')
 tv247.us,tv247us.com##+js(set-constant, advanced_ads_ready, noopFunc)
@@ -36768,6 +36766,7 @@ stream2watch.games##div[class="midel_comant_box"]:remove()
 !play.stream2watch.com##+js(remove-class, video23, #video)
 play.stream2watch.com##div[class="main-inner"]:style(padding:0 !important; margin: 0px !important; border-width:0 !important; width: 99vw !important; height: 99vh !important;)
 play.stream2watch.com##video[id="video"]:style(padding:0 !important; margin-left: 10px !important; border-width:0 !important; width: 100% !important; height: 100% !important;user-select: all !important; pointer-events: all !important;)
+play.stream2watch.com##+js(saa, x-webkit-airplay, allow, video[id="video"])
 www.cxtvlive.com##div[class*="ad-titulo"]:remove()
 www.cxtvlive.com##ins[data-ad-client]:remove()
 www.cxtvlive.com##iframe[id^="aswift_"]:remove()
@@ -36795,6 +36794,7 @@ dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, #thatframe)
 dlhd.sx,daddylivehd.sx##+js(saa, scrolling, true, #thatframe)
 dlhd.sx,daddylivehd.sx##div[id="fluid_video_wrapper_video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 dlhd.sx,daddylivehd.sx##video[id="video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+dlhd.sx,daddylivehd.sx##+js(saa, x-webkit-airplay, allow, #video-id)
 dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, #video-id)
 dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, #video-id)
 dlhd.sx,daddylivehd.sx##iframe[src*="/online.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
@@ -37480,6 +37480,7 @@ puffer.stanford.edu##div[pseudo="-webkit-media-controls-panel"]:style(display:in
 ! removing muted doesn't restore the audio
 ! Don't stay on removing muted attribute so it can be manually reapplied.
 !puffer.stanford.edu##video[id="tv-video"]:remove-attr(muted)
+puffer.stanford.edu##+js(saa, x-webkit-airplay, allow, video[id="tv-video"])
 !puffer.stanford.edu##+js(remove-attr, muted, #tv-video)
 ! Setting the following two items for some reason prevents the audio from ever being enabled.
 !puffer.stanford.edu##+js(set-constant, video.muted, false)
@@ -37516,9 +37517,7 @@ freestreams-live1.tv,fsl-streams.click##+js(set-constant, keepChecking, noopFunc
 ! also need no-setTimeout-if to prevent running keepChecking() on a loop
 freestreams-live1.tv,fsl-streams.click##+js(no-setTimeout-if, keepChecking)
 freestreams-live1.tv,fsl-streams.click##div[id="primary"]:style(left: 0px !important; right: 0px !important; width: 99vw !important; height: 99vh !important;)
-freestreams-live1.tv,fsl-streams.click##div[id="headb"]
 freestreams-live1.tv,fsl-streams.click##div[id="headb"]:remove()
-freestreams-live1.tv,fsl-streams.click##div[id="adz1"]
 freestreams-live1.tv,fsl-streams.click##div[id="adz1"]:remove()
 ||cdn.jsdelivr.net/gh/fz6m/console-ban$script
 ||isprocessingnow.com^*
@@ -37922,6 +37921,7 @@ katv.com##+js(aopr, adsBlocked)
 katv.com##+js(aopw, adsBlocked)
 katv.com##+js(set-constant, isBlocked, false)
 katv.com##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
+katv.com##+js(saa, x-webkit-airplay, allow, video[class="jw-video jw-reset"])
 ||amp.akamaized.net/amp.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||internetgoals.com^*
 !||js.alpixtrack.com/alphpixel.js$script
@@ -38199,6 +38199,18 @@ www.vipleague.st##+js(no-setInterval-if, /^function\(\)/)
 www.vipleague.st##+js(no-setTimeout-if, forceKillplayer)
 ||www.vipleague.la/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.vipleague.la##button[class*="btn-danger"][data-openuri]:remove()
+www.vipleague.la##div[class="h-100 position-absolute w-100 bg-light bg-opacity-25 text-success top-0"]:has(div:has-text(seconds to hide banner)):remove()
+www.vipleague.la##div[data-item="chat"]:remove()
+www.vipleague.la##iframe[src^="https://st.chatango.com/"]:remove()
+www.vipleague.la##iframe[loading="lazy"][title="embed player"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+www.vipleague.la##+js(saa, seamless, seamless, iframe[loading="lazy"][title="embed player"])
+www.vipleague.la##+js(saa, webkitallowfullscreen, true, iframe[loading="lazy"][title="embed player"])
+www.vipleague.la##+js(saa, mozallowfullscreen, true, iframe[loading="lazy"][title="embed player"])
+www.vipleague.la##+js(saa, scrolling, no, iframe[loading="lazy"][title="embed player"])
+www.vipleague.la##+js(saa, width, 100%, iframe[loading="lazy"][title="embed player"])
+www.vipleague.la##+js(saa, height, 100%, iframe[loading="lazy"][title="embed player"])
+www.vipleague.la##+js(saa, frameborder, 0, iframe[loading="lazy"][title="embed player"])
+www.vipleague.la##+js(saa, allowfullscreen, true, iframe[loading="lazy"][title="embed player"])
 ||cdn.espn.com/onetrust/otCCPAiab.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dcf.espn.com/privacy/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dcf.espn.com/error/e.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -38781,12 +38793,10 @@ jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecub
 ||cdn.heycdn25.xyz^*
 !||cdn.heycdn58.xyz/404$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.heycdn58.xyz^*
-abysscdn.com,abyss.to##:xpath(//script[contains(text(), 'top.location')])
 abysscdn.com,abyss.to##:xpath(//script[contains(text(), 'top.location')]):remove()
 abysscdn.com,abyss.to##+js(acs, top.location)
 abysscdn.com,abyss.to##+js(aopr, top.location)
 abysscdn.com,abyss.to##+js(aopw, top.location)
-abysscdn.com,abyss.to##div[id="loader"]
 abysscdn.com,abyss.to##div[id="loader"]:remove()
 abysscdn.com##+js(set-constant, js, "")
 abysscdn.com##+js(acs, js)
@@ -38799,9 +38809,9 @@ abysscdn.com##+js(acs, config_ads)
 abysscdn.com##+js(acs, /\.remove\(\)/)
 !abysscdn.com##+js(acs, remove())
 abysscdn.com##video[class*="jw-video"]:remove-attr(disableremoteplayback)
+abysscdn.com##+js(saa, x-webkit-airplay, allow, video[class*="jw-video"])
 abysscdn.com##div[id="player"]:remove-class(jw-flag-user-inactive)
 abysscdn.com##div[id="player"]:remove-class(jw-no-focus)
-abysscdn.com##iframe[src="about:blank"]
 abysscdn.com##iframe[src="about:blank"]:remove()
 !abysscdn.com##+js(no-setInterval-if, /^/)
 !abysscdn.com##+js(no-setTimeout-if, /^/)
@@ -39368,6 +39378,7 @@ vtube.to,vtbe.net,vtplay.net##div[id="vplayer"]:style(user-select: all !importan
 !vtube.to,vtbe.net,vtplay.net##:xpath("/html/body/main/div[2]/div/div/div/div/div/div[1]/div/div[2]/div[1]"):remove()
 vtube.to,vtbe.net,vtplay.net##div[class="afs_ads ad-placement"]:remove()
 vtube.to,vtbe.net,vtplay.net##video[class*="jw-video"]:remove-attr(disableremoteplayback)
+vtube.to,vtbe.net,vtplay.net##+js(saa, x-webkit-airplay, allow, video[class*="jw-video"])
 vtube.to,vtbe.net,vtplay.net##body[id="top"]:remove-attr(data-aos-duration)
 ||8afb7f9e2c1a7a9e.vtube.to/t5kKmg1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||8afb7f9e2c1a7a9e.vtbe.net/t5kKmg1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -39731,6 +39742,7 @@ movhide.pro##+js(acs, _ASO.loadPushHelper, _ASO.PushOptions)
 movhide.pro##+js(aopw, _ASO.PushOptions)
 movhide.pro##+js(aopr, _ASO.PushOptions)
 movhide.pro##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
+movhide.pro##+js(saa, x-webkit-airplay, allow, video[class="jw-video jw-reset"])
 sbnet.one##div[class*="jw-logo-top-right"]:remove()
 sbnet.one##+js(acs, /gtag\(/)
 !sbnet.one##+js(set-constant, _ASO, {})
@@ -40539,6 +40551,7 @@ www.visualon.com##div[id="player-frame"]:style(width: 99vw !important; height: 9
 www.visualon.com##div[id="TTMLRenderingDiv"]:style(width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 ||www.visualon.com/html5/SamplePlayer/libs/voplayer-analytics.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 castable-video.vercel.app##video[id="castable"]:style(max-width: 99vw !important; max-height: 99vh !important; width: 99vw !important; height: 99vh !important; user-select: all !important;)
+castable-video.vercel.app##+js(saa, x-webkit-airplay, allow, video[id="castable"])
 ! 100vw will make the video element too wide.
 !*##div[class^="MuiBox-root css-c3hhc1"]:style(top: 0px !important; max-width: 99vw !important; max-height: 99vh !important; width: 99vw !important; height: 99vh !important; user-select: all !important;)
 *##div[class^="MuiBox-root css-c3hhc1"]:style(top: 0px !important; max-width: 82vw !important; max-height: 82vh !important; width: 82vw !important; height: 82vh !important; user-select: all !important;)
@@ -42143,9 +42156,8 @@ powvdeo.lol##input[pseudo="-internal-media-controls-overlay-cast-button"]:style(
 powvdeo.lol##input[type="button"][aria-label="play"]:remove-attr(disabled)
 powvdeo.lol##div[id="vplayer"]:remove-class(jw-flag-user-inactive)
 powvdeo.lol##video[class^="jw-video"]:remove-class(disableremoteplayback)
-powvdeo.lol##div[id="banner"]
+powvdeo.lol##+js(saa, x-webkit-airplay, allow, video[class^="jw-video"])
 powvdeo.lol##div[id="banner"]:remove()
-!powvdeo.lol##div[id="oly"]
 !powvdeo.lol##div[id="oly"]:remove()
 !powvdeo.lol##+js(set-constant, showBanner, noopFunc)
 !powvdeo.lol##+js(set-constant, closeBanner, noopFunc)
@@ -42465,6 +42477,7 @@ www.breitbart.com##+js(trusted-set-constant, BB_Y, {ads:0})
 www.breitbart.com##+js(abort-on-property-write, BB_Y)
 www.breitbart.com##+js(abort-on-property-read, BB_Y)
 www.breitbart.com##+js(set-attr, video[class*="lazy-loop"][data-harry], src, [data-harry])
+www.breitbart.com##+js(saa, x-webkit-airplay, allow, video[class*="lazy-loop"])
 ||www.breitbart.com/t/assets/iframe/newsmax-ad.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||media.breitbart.com/ads.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||a-cdn.rmbl.ws/creatives/ac/3f/20008/d8/37657.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -42672,6 +42685,7 @@ send.cm##link[rel="preconnect"]:remove()
 send.cm##script[data-cf-beacon]:remove()
 send.cm##script[disable-devtool-auto]:remove()
 send.cm##video[id="vjsplayer"]:style(padding-top: 0% !important;)
+send.cm##+js(saa, x-webkit-airplay, allow, video[id="vjsplayer"])
 ! sets button[id="downloadbtn"] type to "submit"
 send.cm##+js(saa, type, submit, #downloadbtn)
 ! sets the form id to F1 so the button will be associated with it
@@ -45463,9 +45477,11 @@ www.niaomea.me##div[class^="jwplayer"][aria-label="Video Player"]:remove-class(j
 www.niaomea.me##+js(remove-class, jw-flag-user-inactive, div[class^="jwplayer"][aria-label="Video Player"])
 www.niaomea.me##video[class^="jw-video"]:remove-attr(disableremoteplayback)
 www.niaomea.me##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
+www.niaomea.me##+js(saa, x-webkit-airplay, allow, video[class^="jw-video"])
 www.niaomea.me##+js(disable-newtab-links)
 !www.niaomea.me##+js(no-window-open-if)
 www.niaomea.me##+js(no-window-open-if, !/\.niaomea\.me/i)
+*$3p,script,denyallow=sts.niaomea.me|cdn.niaomea.me,domain=www.niaomea.me
 !||embedstreams.me/partytown/partytown*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||embedstreams.me/partytown/partytown-sandbox-sw.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||embedstreams.me/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -45794,6 +45810,7 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ||*/common/*waterfall.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The letter preceding the "maple" in the following rule intentionally varies.
 ||*/common/assets/*maple.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||*common/assets/*htmlgl.min.css$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The letter preceding the "path.min.css" in the following rule intentionally varies.
 ||*/css/images/*path.min.css$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||*/css/images/*sidy.css$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -45831,6 +45848,7 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ! The letter preceding the "basicModal" in the following rule intentionally varies.
 ||*/scripts/*basicModal.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||*/scripts/*caver.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||*/scripts/*can.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||*/scripts/*ZSchema-browser-min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The letter preceding the "buybutton" in the following rule intentionally varies.
 ||*/static/*buybutton.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -46406,6 +46424,7 @@ ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopr, _wau)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopw, _wau)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(trusted-set-constant, width, "100%")
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(trusted-set-constant, height, "100%")
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(saa, x-webkit-airplay, allow, video[data-html5-video])
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##script[adblock-settings]:remove()
 ! muted is not getting set by saa
@@ -46725,6 +46744,7 @@ escast.xyz##+js(saa, muted, false, div[id="my-player"])
 escast.xyz##video[id="my-player_html5_api"]:remove-attr(muted)
 escast.xyz##+js(remove-attr, muted, video[id="my-player_html5_api"])
 escast.xyz##+js(saa, controls, true, video[id="my-player_html5_api"])
+escast.xyz##+js(saa, x-webkit-airplay, allow, video[id="my-player_html5_api"])
 ! TODO: Both of the following rules are necessary for different video sources?
 escast.xyz##+js(trusted-replace-node-text, script, /mute: true/gm, mute: false)
 escast.xyz##+js(trusted-replace-node-text, script, /mute=\"true\"/gm, mute="false")
@@ -47899,6 +47919,7 @@ vidplay.online##div[id="player"]:remove-class(jw-flag-user-inactive)
 vidplay.online##+js(remove-class, jw-flag-user-inactive, div[id="player"])
 vidplay.online##video[class^="jw-video"]:remove-attr(disableremoteplayback)
 vidplay.online##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
+vidplay.online##+js(saa, x-webkit-airplay, allow, video[class^="jw-video"])
 ! The following rule prevents retrieving the number of views for a video.
 ||vidplay.online/views/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The obfuscated script in the following rule is required to play the video.
@@ -48630,6 +48651,8 @@ newatlas.com##+js(rna, img[loading="lazy"][data-src], data-src, src)
 !/^https?:\/\/pl\d{8}\.toprevenuegate\.com\/?\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 /^https?:\/\/pl\d+\.toprevenuegate\.com\/?\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 brbeast.com##video[class^="jw-video"]:remove-attr(disableremoteplayback)
+brbeast.com##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
+brbeast.com##+js(saa, x-webkit-airplay, allow, video[class^="jw-video"])
 brbeast.com##+js(set-constant, devtoolsDetector, {})
 brbeast.com##+js(set-constant, devtoolsDetector.launch, noopFunc)
 brbeast.com##+js(acs, /devtoolsDetector\./)
@@ -48638,7 +48661,6 @@ brbeast.com##+js(remove-attr, oncontextmenu, body)
 ! TODO: Why doesn't the context menu appear over the video player?
 brbeast.com##+js(addEventListener-defuser, contextmenu)
 !brbeast.com##+js(acs, contextmenu)
-brbeast.com##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
 ! TODO: Neither of the following rules work because "1 nodes present before installing mutation observer".
 brbeast.com##+js(trusted-replace-node-text, script, /document\.addEventListener\('contextmenu', event => event\.preventDefault\(\)\);/gm, null;)
 brbeast.com##+js(remove-node-text, script, /document\.addEventListener\('contextmenu', event => event\.preventDefault\(\)\);/gm)
@@ -48709,6 +48731,7 @@ developer-tools.jwplayer.com##div[id="stream-tester-player-https"]:remove-attr(j
 developer-tools.jwplayer.com##+js(remove-attr, jw-flag-user-inactive, div[id="stream-tester-player-https"])
 developer-tools.jwplayer.com##video[class^="jw-video"]:remove-attr(disableremoteplayback)
 developer-tools.jwplayer.com##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
+developer-tools.jwplayer.com##+js(saa, x-webkit-airplay, allow, video[class^="jw-video"])
 developer-tools.jwplayer.com##div[id="player-preview"]:remove-class(ds-col)
 developer-tools.jwplayer.com##+js(remove-class, ds-col, div[id="player-preview"])
 developer-tools.jwplayer.com##div[class="ds-page ds-page--fixed tools"]:style(overflow:auto !important; max-width: 99vw !important;max-height: 99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
@@ -49712,6 +49735,7 @@ qz.com##div[class^="cnx-ad-"]:remove()
 qz.com##video[class^="cnx-ad-"]:remove()
 qz.com##video[disablepictureinpicture]:remove-attr(disablepictureinpicture)
 qz.com##+js(remove-attr, disablepictureinpicture, video[disablepictureinpicture])
+qz.com##+js(saa, x-webkit-airplay, allow, video)
 qz.com##div[data-ad-unit]:remove()
 qz.com##div[class*="js_sticky-top-ad"]:remove()
 qz.com##div[id="splashy-ad-container-top"]:remove()
@@ -49951,6 +49975,8 @@ novafile.org##+js(remove-attr, onclick, button[class="btn-green load_plan_2"])
 ||www.stzhnfcxx.com^*
 ||www.zbxrjczqs.com^*
 ||www.ppxicxfneoibf.com^*
+||pavfazbwiap.com^*
+||www.sgbebegfer.com^*
 firstsrowsports.tv##a[rel="sponsored"]:remove()
 thetvapp.to##div[class="afs_ads ad-placement"]:remove()
 thetvapp.to##div[id="schedule"]:style(margin-top: 91vh !important;)
@@ -49959,6 +49985,7 @@ thetvapp.to##div[class="jw-aspect jw-reset"]:style(padding-top: 0% !important;)
 thetvapp.to##div[id="myPlayer"]:style(max-width: 99vw !important;max-height: 99vh !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 thetvapp.to##video[class^="jw-video"]:remove-attr(disableremoteplayback)
 thetvapp.to##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
+thetvapp.to##+js(saa, x-webkit-airplay, allow, video[class^="jw-video"])
 *##^script:has-text(/adcashLib\./):remove()
 *##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
 *##+js(acs, /adcashLib\./)
@@ -50014,15 +50041,24 @@ zeam.com##+js(aeld, ads-manager)
 ||zeam.com/js/ad-controller.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! Do NOT use the following rule or the video player will not be rendered.
 !||zeam.com/js/logging-controller.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+deadline.com##div[class="markplace-ads"]:remove()
+deadline.com##div[id="adm-after-comments"]:remove()
+deadline.com##div[id="adm-header"]:remove()
 deadline.com##div[id="pmc-ad-bait"]:remove()
 deadline.com##div[id^="adm-inline-article-ad-"]:remove()
+deadline.com##li[id^="pmc-ads-widget-"]:remove()
 deadline.com##iframe[id="rufous-sandbox"]:remove()
 deadline.com##script[class="pmc-admiral"]:remove()
-deadline.com##script[id^="jetpack-stats-js"]:remove()
-deadline.com##script[id="pmc-onetrust-banner-js"]:remove()
 deadline.com##script[id="pmc-adm-display-js"]:remove()
-deadline.com##script[id="pmc-social-share-bar-tracking-js"]:remove()
+deadline.com##script[id="pmc-adm-setup-js"]:remove()
+deadline.com##script[id="pmc-ads-grid-js"]:remove()
+deadline.com##script[id="pmc-async-adm-boomerang-script-js"]:remove()
+deadline.com##script[id="pmc-async-adm-boomerang-theme-script-js"]:remove()
+deadline.com##script[id="pmc-async-gtm-js-js"]:remove()
+deadline.com##script[id="pmc-onetrust-banner-js"]:remove()
 deadline.com##script[id="pmc-social-share-bar-frontend-js-extra"]:remove()
+deadline.com##script[id="pmc-social-share-bar-tracking-js"]:remove()
+deadline.com##script[id^="jetpack-stats-js"]:remove()
 deadline.com##script[id^="pmc-ga-event-tracking-js"]:remove()
 deadline.com##+js(acs, /\.pubads/)
 deadline.com##+js(set-constant, pmc_do_analytics_pagecount, false)
@@ -50045,11 +50081,28 @@ deadline.com##+js(abort-on-property-write, pmc_share_bar_lob_ga_tracking)
 deadline.com##+js(set-constant, pmc_ga_event_tracking, {})
 deadline.com##+js(abort-on-property-read, pmc_ga_event_tracking)
 deadline.com##+js(abort-on-property-write, pmc_ga_event_tracking)
+!||deadline.com/wp-content/plugins/pmc-plugins/pmc-ads-grid/build/index.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||deadline.com/wp-content/plugins/pmc-plugins/pmc-ads-grid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||deadline.com/wp-content/plugins/pmc-plugins/pmc-google-universal-analytics/js/event-tracking.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||deadline.com/wp-content/plugins/pmc-plugins/pmc-google-universal-analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||deadline.com/wp-content/plugins/pmc-plugins/pmc-social-share-bar/build/tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||deadline.com/wp-content/plugins/pmc-plugins/pmc-adm-v2/build/display-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||deadline.com/wp-content/plugins/pmc-plugins/pmc-adm-v2/build/setup-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pmc-pp-tou.s3.us-west-1.amazonaws.com/privacy-notice.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||e.widgetbot.io/service-worker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+*$3p,script,denyallow=hcaptcha.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|cdnjs.cloudflare.com,domain=rapidcloud.cc
+! Do not block the countdown script as the delay is server-side checked.
+!||rapidcloud.cc/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! using the following rules to enable the download button and/or reduce the time remaining is pointless since the delay is server-side checked.
+rapidcloud.cc##+js(set-constant, remaining, 0)
+! TODO: Neither of the following rules works to change rapidcloud.cc/xfst_theme2/js/countdown.js
+rapidcloud.cc##+js(trusted-replace-node-text, script, /var remaining = parseInt\(\$\(e\)\.find\("\.seconds"\)\.text\(\)\) - 1;/gm, var remaining = 0;)
+rapidcloud.cc##+js(trusted-replace-node-text, script, /remaining <= 0/gm, remaining)
+rapidcloud.cc##button[id="downloadbtn"]:remove-attr(disabled)
+rapidcloud.cc##+js(remove-attr, disabled, button[id="downloadbtn"])
+rapidcloud.cc##div[class="download-btn mb-4"]:remove-attr(style)
+rapidcloud.cc##+js(remove-attr, style, div[class="download-btn mb-4"])
+rapidcloud.cc##button[id="downloadbtn"]:style(display: block !important;)
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
