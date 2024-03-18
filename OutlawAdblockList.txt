@@ -50109,6 +50109,10 @@ rapidcloud.cc##+js(remove-attr, disabled, button[id="downloadbtn"])
 rapidcloud.cc##div[class="download-btn mb-4"]:remove-attr(style)
 rapidcloud.cc##+js(remove-attr, style, div[class="download-btn mb-4"])
 rapidcloud.cc##button[id="downloadbtn"]:style(display: block !important;)
+! siteConfig{} isn't parsed with JSON so the json-prune scriptlet won't work to change its contents.
+! ##+js(json-prune, <list of space-separated properties to remove>, <list of space-separated properties which must be all present for the pruning to occur>)
+!*##+js(json-prune, siteConfig.adId2 siteConfig.adId siteConfig.buttonad siteConfig.adCloseId siteConfig.trackerUrl siteConfig.tracker)
+!www.vipleague.la,www.viprow.nu,strikeout.im,strikeout.cc,embedstreams.me##+js(json-prune, siteConfig.adId2 siteConfig.adId siteConfig.buttonad siteConfig.adCloseId siteConfig.trackerUrl siteConfig.tracker)
 ! TODO: Do not always set siteConfig because on some pages it is used for wanted information.
 ! The following rule prevents the embedded chatango widget from working since its configuration ids are in siteConfig. 
 !##+js(set-constant, siteConfig, {})
@@ -50116,18 +50120,26 @@ rapidcloud.cc##button[id="downloadbtn"]:style(display: block !important;)
 !##+js(abort-on-property-read, siteConfig)
 !##+js(abort-on-property-write, siteConfig)
 !www.vipleague.la,www.viprow.nu,strikeout.im,strikeout.cc,embedstreams.me##+js(abort-on-property-write, siteConfig)
-! siteConfig{} isn't parsed with JSON so json-prune won't work to change its contents.
-! ##+js(json-prune, <list of space-separated properties to remove>, <list of space-separated properties which must be all present for the pruning to occur>)
-!*##+js(json-prune, siteConfig.adId2 siteConfig.adId siteConfig.buttonad siteConfig.adCloseId siteConfig.trackerUrl siteConfig.tracker)
-!www.vipleague.la,www.viprow.nu,strikeout.im,strikeout.cc,embedstreams.me##+js(json-prune, siteConfig.adId2 siteConfig.adId siteConfig.buttonad siteConfig.adCloseId siteConfig.trackerUrl siteConfig.tracker)
-*##+js(set-constant, siteConfig.adId2, "")
-*##+js(set-constant, siteConfig.adId, "")
-*##+js(set-constant, siteConfig.buttonad, "")
-*##+js(set-constant, siteConfig.adCloseId, "")
-*##+js(set-constant, siteConfig.trackerUrl, "")
-*##+js(set-constant, siteConfig.tracker, "")
+! TODO: The following don't work unless siteConfig is set first, but doing so eliminates the useful/wanted values.  Using the "end" or "complete" parameter doesn't solve this problem.
+!*##+js(set-constant, siteConfig.adId2, "")
+!*##+js(set-constant, siteConfig.adId, "")
+!*##+js(set-constant, siteConfig.buttonad, "")
+!*##+js(set-constant, siteConfig.adCloseId, "")
+!*##+js(set-constant, siteConfig.countDownId, "")
+!*##+js(set-constant, siteConfig.trackerUrl, "")
+!*##+js(set-constant, siteConfig.tracker, "")
+!*##+js(set-constant, siteConfig.trackImgId, "")
+! TODO: replacing the 30 seconds countdown timer value with 0 deosn't actually eliminate the countdown; it's just cosmetic.
 *##+js(trusted-replace-node-text, script, /"countTs":30/gm, "countTs": 0)
 !www.vipleague.la,www.viprow.nu,strikeout.im,strikeout.cc,embedstreams.me##+js(trusted-replace-node-text, script, /"countTs":30/gm, "countTs": 0)
+*##+js(trusted-replace-node-text, script, /"tracker":/gm, "replace1":)
+*##+js(trusted-replace-node-text, script, /"buttonad":/gm, "replace2":)
+*##+js(trusted-replace-node-text, script, /"adId2":/gm, "replace3":)
+*##+js(trusted-replace-node-text, script, /"trackerUrl":/gm, "replace4":)
+*##+js(trusted-replace-node-text, script, /"countDownId":/gm, "replace5":)
+*##+js(trusted-replace-node-text, script, /"adCloseId"/gm, "replace6":)
+*##+js(trusted-replace-node-text, script, /"adId":/gm, "replace7":)
+*##+js(trusted-replace-node-text, script, /"trackImgId":/gm, "replace8":)
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
