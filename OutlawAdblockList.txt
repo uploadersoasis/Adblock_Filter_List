@@ -5613,7 +5613,8 @@ binbox.io###adblocker-warning
 !||dx.steelhousemedia.com/spx?dxver=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dx.steelhousemedia.com^*
 www.zoosk.com/mkt?mt=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||sp.analytics.yahoo.com/spp.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||sp.analytics.yahoo.com/spp.pl?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||sp.analytics.yahoo.com/sp.pl?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sp.analytics.yahoo.com^*
 !||www.advconversion.com/ads-conversiontrack/conversion/set.do$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.advconversion.com/ads-conversiontrack/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -15431,7 +15432,7 @@ cracksnow.com##.entry-content > center > .btn-raised.btn-primary.btn:nth-of-type
 ||www.fridrici.info^*
 ||snopes-d.openx.net^*
 ||analytics.m2.ai^*
-||www.npttech.com/advertising.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.npttech.com/advertising.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||chachatool.com/r/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||chachatool.com^*
 ||www.chachatool.com^*
@@ -32327,37 +32328,43 @@ rapidgator.net##a[href*="//donate.redcrossredcrescent.org/"]:remove()
 ||player.aplhb.adipolo.com/prebidlink/457716/wrapper_hb_572560_14534.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn53741731.ahacdn.me/prebidlink/457716/wrapper_hb_572560_14534.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 tekmods.com##div[id="cookieConsentContainer"]:remove()
-tekmods.com##+js(aopr, purecookieTitle)
-tekmods.com##+js(aopw, purecookieTitle)
-tekmods.com##+js(acs, purecookieTitle)
 tekmods.com##div[class^="code-block"]:has(div[class="join-ads"]):remove()
 !tekmods.com##div[class^="mb-3"]:has(div[class="join-ads"]):remove()
 !tekmods.com##div[class="join-ads"]:upward(1):remove()
 tekmods.com##div[class="join-ads"]:remove()
+tekmods.com##iframe[style="display: none;"]
+tekmods.com##p[id="notifx"]:style(display: block !important;)
+tekmods.com##script[id="join-ads-load"]:remove()
+tekmods.com##+js(aopr, purecookieTitle)
+tekmods.com##+js(aopw, purecookieTitle)
+tekmods.com##+js(acs, purecookieTitle)
+tekmods.com##+js(set-constant, progressval, 0)
+tekmods.com##+js(trusted-set-constant, counter, -1)
+tekmods.com##+js(trusted-replace-node-text, script, /counter < 0/gm, counter <= 0)
 ||script.joinads.me^*
 jimtechs.biz##body,html:style(overflow: scroll)
 !||cutedrive.com/page/bouncy.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cutedrive.com^*
 ||api.enthusiastgaming.net/eg-logger/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.ibtimes.com##div[class^="vuukle-ad"]
-www.ibtimes.com##div[id^="div-gpt-ad-"]
+www.ibtimes.com##div[class^="vuukle-ad"]:remove()
+www.ibtimes.com##div[id^="div-gpt-ad-"]:remove()
 ||mableyable.com^*
 ||cangomamblu.com^*
-!uwo.papayaplay.com##article[class*="cont--cookie"]
-papayaplay.com##article[class*="cont--cookie"]
-www.reviewgeek.com##div[class*="adslot"]
-www.reviewgeek.com##div[id="future_Y_R_0_1"]
+!uwo.papayaplay.com##article[class*="cont--cookie"]:remove()
+papayaplay.com##article[class*="cont--cookie"]:remove()
+www.reviewgeek.com##div[class*="adslot"]:remove()
+www.reviewgeek.com##div[id="future_Y_R_0_1"]:remove()
 ||mambkooocango.com^*
 pytutorial.com##div[id="ezmobfooter"]:remove()
-pytutorial.com##div[class*="ezo_ad"]
-pytutorial.com##span[id^="ezoic-pub-ad-"]
-pytutorial.com##span[id^="div-gpt-ad-"]
+pytutorial.com##div[class*="ezo_ad"]:remove()
+pytutorial.com##span[id^="ezoic-pub-ad-"]:remove()
+pytutorial.com##span[id^="div-gpt-ad-"]:remove()
 pytutorial.com##span[class*="ezoic-ad"]:remove()
 pytutorial.com##span[class*="adtester-container"]:remove()
 www.datasciencelearner.com##div[id="ezmobfooter"]:remove()
-www.datasciencelearner.com##div[class*="ezo_ad"]
-www.datasciencelearner.com##span[id^="ezoic-pub-ad-"]
-www.datasciencelearner.com##span[id^="div-gpt-ad-"]
+www.datasciencelearner.com##div[class*="ezo_ad"]:remove()
+www.datasciencelearner.com##span[id^="ezoic-pub-ad-"]:remove()
+www.datasciencelearner.com##span[id^="div-gpt-ad-"]:remove()
 www.datasciencelearner.com##span[class*="ezoic-ad"]:remove()
 www.datasciencelearner.com##span[class*="adtester-container"]:remove()
 !softhints.com##ins[data-ad-client]:upward(1):remove()
@@ -32407,14 +32414,13 @@ seriousbit.com##+js(aopw, analyticsFileTypes)
 ||mucinshasht.com^*
 ||royvfccrlki.com^*
 ||chooxail.com^*
-webhostingpost.com##div[id="adb_detected"]
 webhostingpost.com##div[id="adb_detected"]:remove()
 webhostingpost.com##button[id="invisibleCaptchaShortlink"]:style(display: block !important;)
 webhostingpost.com##+js(remove-attr, disabled, #invisibleCaptchaShortlink)
 !webhostingpost.com##+js(remove-attr, onclick, #invisibleCaptchaShortlink)
 webhostingpost.com##+js(remove-class, disabled, #invisibleCaptchaShortlink)
 webhostingpost.com##+js(remove-class, disabled, #surl, stay)
-webhostingpost.com##div[id^="div-gpt-ad-"]
+webhostingpost.com##div[id^="div-gpt-ad-"]:remove()
 webhostingpost.com##div[style="display:none;"]:style(display: block !important;)
 webhostingpost.com##div[class*="g-recaptcha"]:style(display: block !important;)
 ! blocks captcha from working
@@ -32422,20 +32428,16 @@ webhostingpost.com##div[class*="g-recaptcha"]:style(display: block !important;)
 ! This stops the script that generates the final destination link (contains var domain = "https://fc.lc/links/go").
 ! It is needed to get past the captcha screen though.
 !webhostingpost.com##+js(acs, /adBlockDetected/i)
-!webhostingpost.com##^script:has-text(/adBlockDetected/i)
+!webhostingpost.com##^script:has-text(/adBlockDetected/i):remove()
 !webhostingpost.com##+js(acs, /function\(\$\,document\)/i)
-!webhostingpost.com##^script:has-text(/function\(\$\,document\)/i)
+!webhostingpost.com##^script:has-text(/function\(\$\,document\)/i):remove()
 !webhostingpost.com##+js(acs, googletag)
-!webhostingpost.com##^script:has-text(googletag)
+!webhostingpost.com##^script:has-text(googletag):remove()
 webhostingpost.com##+js(acs, \"s65c\")
-webhostingpost.com##^script:has-text(\"s65c\")
-webhostingpost.com##iframe[id="iframe_id"]
+webhostingpost.com##^script:has-text(\"s65c\"):remove()
 webhostingpost.com##iframe[id="iframe_id"]:remove()
-webhostingpost.com##a[href^="https://0lnawd0.com/r?token="]
 webhostingpost.com##a[href^="https://0lnawd0.com/r?token="]:remove()
-webhostingpost.com##div[id="overlay"]
 webhostingpost.com##div[id="overlay"]:remove()
-webhostingpost.com##div[data-aa-adunit]
 webhostingpost.com##div[data-aa-adunit]:remove()
 ! example generated href for #surl is href="https://slink.bid/?go=aHR0cHM6Ly9ncGxpbmtzLmNvL1NPQlVi" not https://fc.lc/links/go
 webhostingpost.com##+js(add-class, btn-success, #surl)
@@ -32458,13 +32460,13 @@ webhostingpost.com##button[id="invisibleCaptchaShortlink"]:remove-attr(onclick)
 ||hognaivee.com^*
 ||augrezoa.net^*
 ||toqowtsyfcjbha.com^*
-rudebees.com.ng##ins[data-ad-slot]
-rudebees.com.ng##div[class*="afw_ad"]
-rudebees.com.ng##div[class*="afwadid-"]
+rudebees.com.ng##ins[data-ad-slot]:remove()
+rudebees.com.ng##div[class*="afw_ad"]:remove()
+rudebees.com.ng##div[class*="afwadid-"]:remove()
 deasilex.com##div[id="ezmobfooter"]:remove()
-deasilex.com##iframe[id^="google_ads_"]
-deasilex.com##*[class*="ezoic-ad"]
-deasilex.com##*[class*="adtester-container"]
+deasilex.com##iframe[id^="google_ads_"]:remove()
+deasilex.com##*[class*="ezoic-ad"]:remove()
+deasilex.com##*[class*="adtester-container"]:remove()
 ||tookimookin.com^*
 ||mokkilooki.com^*
 ||d2ers4gi7coxau.cloudfront.net^*
@@ -34775,8 +34777,8 @@ gfxtra.dirp.app##div[id^="cookieConsent"]:remove()
 gfxtra.dirp.app##^script:has-text(/debugger;/):remove()
 gfxtra.dirp.app##script:has-text(/debugger;/):remove()
 gfxtra.dirp.app##:xpath(//script[contains(text(), 'debugger;')]):remove()
-!gfxtra.dirp.app##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-gfxtra.dirp.app##+js(remove-node-text, script, /debugger;/gm)
+gfxtra.dirp.app##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+!gfxtra.dirp.app##+js(remove-node-text, script, /debugger;/gm)
 ! TODO: Really abort on debugger as that is what the debugger statement already does?
 gfxtra.dirp.app##+js(acs, /debugger;/)
 abc7news.com##div[data-ad-placeholder]:remove()
@@ -49967,6 +49969,11 @@ www.viprow.nu,tennisonline.me,nflbox.me##+js(set-constant, emprefs, noopFunc)
 ||www.viprow.nu/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||nflbox.me/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tennisonline.me/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+tennisonline.me##button[data-openuri="|BTN_URL|"]:remove()
+tennisonline.me##img[width="1"][height="1"][class="d-none"]:remove()
+! The following two rules are actually redundant.
+tennisonline.me##div[class^="h-100 position-absolute w-100 bg-light bg-opacity-50"][class$="text-white top-0"]:matches-attr(id=/[0-9a-z]{10}/):remove()
+tennisonline.me##div:matches-attr(id=/[0-9a-z]{10}/):has-text(this banner will hide in):has(span:matches-attr(id=/[0-9a-z]{10}/)):remove()
 novafile.org##button[class="btn-green load_plan_2"]:remove-attr(onclick)
 novafile.org##+js(remove-attr, onclick, button[class="btn-green load_plan_2"])
 ! setting num 0 will skip the countdown, but the countdown is server-side checked, so skipping the countdown is pointless.
@@ -50151,6 +50158,19 @@ twitter.com##div[data-testid="mask"]:remove()
 twitter.com##div[aria-labelledby="modal-header"][role="dialog"]:has(input[id="tim_input"][name="ui_metrics"]):remove()
 ||www.wozwmffiwpy.com^*
 ||www.wsfpwiih.com^*
+techcrunch.com##div[class*="ad-unit"]:remove()
+techcrunch.com##div[class*="ad-leaderboard-article"]:remove()
+techcrunch.com##div[class*="ad-size-"]:remove()
+techcrunch.com##div[id^="tc-ad-leaderboard-"]:remove()
+techcrunch.com##script[id^="jetpack-stats-js"]:remove()
+techcrunch.com##script[id="tc-gdpr-cmp"]:remove()
+techcrunch.com##script[id="tc-adblock-internal"]:remove()
+techcrunch.com##script[id="adblocker-check"]:remove()
+!||techcrunch.com/wp-content/themes/techcrunch-2017/features/analytics/adblocker/sailthru.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||techcrunch.com/wp-content/themes/techcrunch-2017/features/analytics/adblocker/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/d05b2fbe3cf1cb98f39a29b001ee440901588ba1c1115beab0bfa45756751/c3ebf2b50d$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||ndtheyeiedm.info^*
+||d2sffavqvyl9dp.cloudfront.net^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
