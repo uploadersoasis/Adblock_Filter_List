@@ -27483,55 +27483,44 @@ apkboxdl.com##a[href*="//www.linkonclick.com/jump/next.php"]:remove()
 ||www.notorietycheerypositively.com^*
 androidrepublic.org##div[class="u-bottomFixer js-bottomFixTarget"]:remove()
 ||wikkenenwegen.hln.be/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.com/mngez/js/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.com/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||www.file-upload.com/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.com/sw_may.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.in/mngez/js/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.in/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.in/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||www.file-upload.in/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.in/sw_may.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.org/mngez/js/app.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.org/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.org/js/advertisement.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||www.file-upload.org/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.org/sw_may.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.in/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.org/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.file-upload.com/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/mngez\/js\/app\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/sw\.js\S*/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/sw_may\.js\S*/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/advertisement\.js\S*/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/blockadblock\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! Do not block the countdown script as the countdown is server-side checked.
+!/^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/countdown\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !blocks download links
-!www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id^="ads_container_"]:remove()
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, timeout, noopFunc)
+!www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id^="ads_container_"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, timeout, noopFunc)
 ! can't set or redfine a function using trusted-set-constant since it is for strings and would need eval() to execute the function
-!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(trusted-set-constant, timeout, setTimeout\(tick\, 1\))
-!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(trusted-set-constant, timeout, setTimeout(tick, 1))
-www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="adblockinfo"]:remove()
-www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="bannerad"]:remove()
+!www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(trusted-set-constant, timeout, setTimeout\(tick\, 1\))
+!www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(trusted-set-constant, timeout, setTimeout(tick, 1))
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="adblockinfo"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="bannerad"]:remove()
 ! TODO: The following rule blocks an overlay which has a click event for ads, but the exact style attribute contents will vary in width and height values.
-www.file-upload.org,www.file-upload.com,www.file-upload.in##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:"]:remove()
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(aeld, click, function)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, tick, 0)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##button[id="downloadbtn"]:style(visibility: visible !important;)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(aeld, click, function)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, tick, 0)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##button[id="downloadbtn"]:style(visibility: visible !important;)
 ! The following rule is necessary if click events are defused/suppressed.
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(saa, type, submit, button[id="downloadbtn"])
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, .downloadbtn, stay)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, disabled, #downloadbtn, stay)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(remove-attr, onclick, #downloadbtn, stay)
-!www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(no-setTimeout-if)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(saa, type, submit, button[id="downloadbtn"])
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(remove-attr, disabled, .downloadbtn, stay)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(remove-attr, disabled, #downloadbtn, stay)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(remove-attr, onclick, #downloadbtn, stay)
+!www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(no-setTimeout-if)
 ! This makes the countdown very quick from 10 seconds, but the server checks the time so it errors if the button is pressed too soon.
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(nano-stb, /.?/, 1000)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##button[id="downloadbtn"]:remove-attr(onclick)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##.mnbt1.btn-primary.btn-xs.btn:remove-attr(onclick)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="vb9h7ma"]:remove()
-www.file-upload.org,www.file-upload.com,www.file-upload.in##div[id="ldrsr3r"]:remove()
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, detected, false, stay)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, BlockAdBlock, noopFunc)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, adBlockDetected, falseFunc)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(set-constant, adBlockNotDetected, trueFunc)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(abort-on-property-read, detected)
-www.file-upload.org,www.file-upload.com,www.file-upload.in##+js(abort-on-property-write, detected)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(nano-stb, /.?/, 1000)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##button[id="downloadbtn"]:remove-attr(onclick)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##.mnbt1.btn-primary.btn-xs.btn:remove-attr(onclick)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="vb9h7ma"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="ldrsr3r"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, detected, false, stay)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, BlockAdBlock, noopFunc)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, adBlockDetected, falseFunc)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, adBlockNotDetected, trueFunc)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(abort-on-property-read, detected)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(abort-on-property-write, detected)
 paladinmod.com##div[id="wait-done"]:style(display: block !important; margin-top: 25px !important;)
 paladinmod.com##+js(remove-attr, style, #wait-done, stay)
 paladinmod.com##div[id="wait-me"]:remove()
@@ -39133,11 +39122,11 @@ dood.re##+js(aeld, /contextmenu|keydown/)
 ||go.adstico.io^*
 ||q.popbutler.com^*
 ||ak.phumpauk.com^*
-!/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1})mixdrop\.(co|to|ag|si)\/js\/script\.min\.js\S?/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1})mixdrop\.(co|to|ag|si)\/xvideo-js\.js\S?/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1})mixdrop\.(co|to|ag|si)\/js\/ads\.js\S?/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1})mixdrop\.(co|to|ag|si)\/sw\.js\S?/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1})mixdrop\.(co|to|ag|si)\/xads\.js\S?/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1})mixdrop\.(co|to|ag|si)\/js\/script\.min\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1})mixdrop\.(co|to|ag|si)\/xvideo-js\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1})mixdrop\.(co|to|ag|si)\/js\/ads\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1})mixdrop\.(co|to|ag|si)\/sw\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1})mixdrop\.(co|to|ag|si)\/xads\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !mixdrop.si,mixdrop.co,mixdrop.ag,mixdrop.to##iframe:remove()
 mixdrop.si,mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, adblock, 0)
 mixdrop.si,mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, blockAB, false)
@@ -39209,14 +39198,13 @@ mixdrop.si,mixdrop.co,mixdrop.ag,mixdrop.to##+js(set-constant, window.plausible,
 ||static.addtoany.com/menu/locale/ru.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vidoza.net/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 vidoza.net##+js(set-constant, ownerAdblockLock, 0)
-vidoza.net##^script:has-text(GoogleAnalyticsObject)
 vidoza.net##^script:has-text(GoogleAnalyticsObject):remove()
 vidoza.net##+js(acs, GoogleAnalyticsObject)
-vidoza.net##^script:has-text(gtm.)
+vidoza.net##^script:has-text(gtm.):remove()
 vidoza.net##+js(acs, gtm., www.googletagmanager.com)
 !vidoza.net##+js(set-constant, Ya.Metrika, noopFunc, end)
 vidoza.net##+js(set-constant, Ya.Metrika, noopFunc, complete)
-vidoza.net##^script:has-text(/Metrika/i)
+vidoza.net##^script:has-text(/Metrika/i):remove()
 vidoza.net##+js(acs, /Metrika/i)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 vidoza.net##script[data-spots][data-tag][data-subid1]:remove()
@@ -39244,8 +39232,8 @@ vidoza.net##+js(aeld, notificationclick)
 ! from ublock Origin main list:
 vidoza.net##+js(noeval)
 vidoza.net##+js(no-window-open-if)
-!vidoza.net##.in-block
-!vidoza.net###plo_0
+!vidoza.net##.in-block:remove()
+!vidoza.net###plo_0:remove()
 !vidoza.net##[id*="ScriptRoot"]:remove()
 !vidoza.net##.simpleToast:remove()
 !vidoza.net##.download-green:remove()
@@ -42221,7 +42209,7 @@ gamesnacks.com##div[class="sSVlic"]:remove()
 !||00917082-71e9-498e-8343-00c3df06b798.edge.permutive.app^*
 !||*.edge.permutive.app^*
 ! Do NOT put a ^ at end of regex as it does not work as it does on non-regex strings in rules.
-/^https?:\/\/[0-9a-f-A-F\-]+\.edge.permutive.app\/?\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/[0-9a-f-A-F\-]+\.edge\.permutive\.app\/?\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||query.petametrics.com^*
 !||hummingbird.mavencoalition.io/collect$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hummingbird.mavencoalition.io^*
@@ -50171,6 +50159,9 @@ techcrunch.com##script[id="adblocker-check"]:remove()
 ||s3.us-east-1.amazonaws.com/d05b2fbe3cf1cb98f39a29b001ee440901588ba1c1115beab0bfa45756751/c3ebf2b50d$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ndtheyeiedm.info^*
 ||d2sffavqvyl9dp.cloudfront.net^*
+||x-delivery.icu^*
+||turbansatenism.top^*
+||savinist.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
