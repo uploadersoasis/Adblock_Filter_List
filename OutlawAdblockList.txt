@@ -3667,6 +3667,12 @@ generatorlinkpremium.com##.thirdsky:remove()
 daclips.in###player_ads
 ||horizon.mashable.com/horizon/track^*
 ||fm.cnbc.com/applications/cnbc.com/staticcontent/scripts/foresee/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.cnbc.com##.player-error-placeholder:remove()
+www.cnbc.com##div[id^="div-gpt-"]:remove()
+www.cnbc.com##div[data-mps-slot]:remove()
+www.cnbc.com##div[data-analytics*="adTopBanner"]:remove()
+www.cnbc.com##div[data-analytics*="adFlexBox"]:remove()
+||www.cnbc.com/staticContent/showads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.cnbc.com/staticcontent/jquery-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||yieldmanager.adbooth.com^*
 ||www.mexicosoft.net/images/der/des.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -11755,7 +11761,6 @@ spartagames.net###ppsPopupBgOverlay
 ||fjcvncxrmmru.com^*
 ||ubopxbdwtnlf.com^*
 ||www.ubopxbdwtnlf.com^*
-||www.cnbc.com/staticContent/showads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.polygon.com/services/entry_stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sbnationbidder-d.openx.net^*
 !||static.yieldmo.com/ym.m1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -13580,7 +13585,6 @@ music.yandex.ru##.slider-hider__content > .ads-block_side.smalladv.ads-block
 ||usasync01.admantx.com^*
 ||jtumenosmrte.com^*
 ||www.jtumenosmrte.com^*
-www.cnbc.com##.player-error-placeholder
 ||v12group.com^*
 ||www.v12group.com^*
 !||d3135glefggiep.cloudfront.net/anvtp.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -45452,7 +45456,8 @@ www.niaomea.me##+js(saa, x-webkit-airplay, allow, video[class^="jw-video"])
 www.niaomea.me##+js(disable-newtab-links)
 !www.niaomea.me##+js(no-window-open-if)
 www.niaomea.me##+js(no-window-open-if, !/\.niaomea\.me/i)
-*$3p,script,denyallow=sts.niaomea.me|cdn.niaomea.me,domain=www.niaomea.me
+!*$3p,script,denyallow=sts.niaomea.me|cdn.niaomea.me,domain=www.niaomea.me
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=sts.niaomea.me|cdn.niaomea.me,domain=www.niaomea.me
 !||embedstreams.me/partytown/partytown*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||embedstreams.me/partytown/partytown-sandbox-sw.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||embedstreams.me/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -47548,7 +47553,8 @@ tiny-files.com##+js(aeld, click)
 tiny-files.com##input[id="btn_download"]:remove-attr(disabled)
 tiny-files.com##+js(remove-attr, disabled, #btn_download)
 tiny-files.com##span[id="countdown_str"]:remove()
-*$3p,script,domain=tiny-files.com
+!*$3p,script,domain=tiny-files.com|liteapks.com
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,domain=tiny-files.com|liteapks.com
 ! TODO: which domain should have the following three rules, i.e. the main or the domain from which the script is loaded?
 tiny-files.com##+js(set-constant, hasImpressionPixel, falseFunc)
 tiny-files.com##+js(set-constant, updateLatencyPixelLink, noopFunc)
@@ -48223,8 +48229,8 @@ strikeout.im,strikeout.cc##div[id="w5k3p8v8o2"]:remove()
 ||hildrenastheyc.info^*
 ||eanangelsa.info^*
 ||rouhavenever.com^*
-||d1r9f6frybgiqo.cloudfront.net^*$3p,script
-||d2qf34ln5axea0.cloudfront.net^*$3p,script
+||d1r9f6frybgiqo.cloudfront.net^$3p,script
+||d2qf34ln5axea0.cloudfront.net^$3p,script
 ||xmnagjqhpj.com^*
 ||cjewz.com^*
 ||agauinsist.top^*
@@ -50094,7 +50100,8 @@ deadline.com##+js(abort-on-property-write, pmc_ga_event_tracking)
 ||deadline.com/wp-content/plugins/pmc-plugins/pmc-adm-v2/build/setup-ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pmc-pp-tou.s3.us-west-1.amazonaws.com/privacy-notice.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||e.widgetbot.io/service-worker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-*$3p,script,denyallow=hcaptcha.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|cdnjs.cloudflare.com,domain=rapidcloud.cc
+!*$3p,script,denyallow=hcaptcha.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|cdnjs.cloudflare.com,domain=rapidcloud.cc
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=hcaptcha.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|cdnjs.cloudflare.com,domain=rapidcloud.cc
 ! Do not block the countdown script as the delay is server-side checked.
 !||rapidcloud.cc/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! using the following rules to enable the download button and/or reduce the time remaining is pointless since the delay is server-side checked.
@@ -50162,6 +50169,9 @@ techcrunch.com##script[id="adblocker-check"]:remove()
 ||x-delivery.icu^*
 ||turbansatenism.top^*
 ||savinist.com^*
+||yespetor.com^*
+!||hu.garonzenith.com^*
+||garonzenith.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
@@ -50193,22 +50203,22 @@ techcrunch.com##script[id="adblocker-check"]:remove()
 www.pcguide.com#@#div[id^="cls-video-container"][class^="adthrive"]
 ! The following exception rule overrides the rule from the Fuck Fuckadblock: Mining list AND any other rules above to block matching domains with service-worker.js; TODO: need to block */server-worker.js from individual domains in rules using $important directive.
 @@/^https?:\/\/.*\/(\%?[235][a-fA-F3-6]|[a-f-_]{3,})?[Ss](ervice)?[-_]?[Ww](orker)?[a-zA-Z0-9]?\.js(\?.*)?$/$script,match-case
-!@@||cdn.fastcomments.com^*$3p,script,xhr,domain=igg-games.com|pcgamestorrents.com
-@@||fastcomments.com^*$3p,script,xhr,domain=igg-games.com
+!@@||cdn.fastcomments.com^$3p,script,xhr,domain=igg-games.com|pcgamestorrents.com
+@@||fastcomments.com^$3p,script,xhr,domain=igg-games.com
 ! TODO: add video streaming websites to the following two rules as need be
 @@|*.rsc.cdn77.org/*/hlsjs.$script,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
 @@|*.rsc.cdn77.org/*/fluidplayer.$script,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
-! to prevent civic science surveys from being blocked (overrides ||civicscience.com^*$3p rule in "uBlock filters - Privacy")
+! to prevent civic science surveys from being blocked (overrides ||civicscience.com^$3p rule in "uBlock filters - Privacy")
 ! The first four rules are not enough to override the rule in the official ublock privacy file list.
 !@@||www.civicscience.com/widget/api/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css,domain=pluto.tv
 !@@||www.civicscience.com/jot?$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css,domain=pluto.tv
 !@@||get.civicscience.com/jspoll/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css,domain=pluto.tv
 !@@||cdn.civicscience.com/jspoll/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css,domain=pluto.tv
-@@||get.civicscience.com^*$3p
-@@||cdn.civicscience.com^*$3p
-@@||www.civicscience.com^*$3p
+@@||get.civicscience.com^$3p
+@@||cdn.civicscience.com^$3p
+@@||www.civicscience.com^$3p
 ! The following rule would completely override the rule in the official ublock privacy file list.
-!@@||civicscience.com^*$3p
+!@@||civicscience.com^$3p
 ! to prevent breaking Google map context menu.
 !www.google.com#@#div[oncontextmenu^="return false"]
 ! for Google Drive
