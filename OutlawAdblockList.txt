@@ -50072,7 +50072,7 @@ rapidcloud.cc##+js(set-constant, remaining, 0)
 ! TODO: the following rule doesn't work for some reason.
 !||rapidcloud.cc/xfst_theme2/js/countdown.js$script,doc,replace=/var remaining = parseInt\(\$\(e\)\.find\(\"\.seconds\"\)\.text\(\)\) - 1;/var remaining = 0;/gm
 ||rapidcloud.cc/xfst_theme2/js/countdown.js$script,doc,replace=/var remaining = /var remaining = 0;/gm
-||rapidcloud.cc/xfst_theme2/js/countdown.js$script,doc,replace=/remaining <= 0/remaining/gm
+!||rapidcloud.cc/xfst_theme2/js/countdown.js$script,doc,replace=/remaining <= 0/remaining/gm
 rapidcloud.cc##button[id="downloadbtn"]:remove-attr(disabled)
 rapidcloud.cc##+js(remove-attr, disabled, button[id="downloadbtn"])
 rapidcloud.cc##div[class="download-btn mb-4"]:remove-attr(style)
