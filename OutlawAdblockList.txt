@@ -39595,6 +39595,7 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 123movie.skin##div[id="persoff"]:remove()
 123movie.skin##div[id="player-area"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 123movie.skin##div[id="embed-player"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
+123movie.skin##div[class="pa-main"]:style(overflow:auto !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 123movie.skin##+js(set-attr, iframe[id="vsrcs"][data-src], src, [data-src])
 123movie.skin##iframe[id="vsrcs"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 123movie.skin##+js(saa, seamless, seamless, iframe[id="vsrcs"])
@@ -39608,7 +39609,8 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 !123movie.skin##+js(saa, width, 100%, iframe[id="vsrcs"])
 !123movie.skin##+js(saa, frameborder, 0, iframe[id="vsrcs"])
 !123movie.skin##+js(saa, scrolling, no, iframe[id="vsrcs"])
-123movie.skin##iframe[id="iframesrc"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
+! The following must be set to width: 99vw and height: 99vh or else the video player viewport will be truncated to ~150px for some reason. Also use overflow: auto or hidden to prevent scrollbars if width and/or height is 100vw/100vh.
+123movie.skin##iframe[id="iframesrc"]:style(overflow:auto !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 123movie.skin##+js(saa, seamless, seamless, iframe[id="iframesrc"])
 123movie.skin##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[id="iframesrc"])
 123movie.skin##+js(saa, height, 100%, iframe[id="iframesrc"])
@@ -47956,13 +47958,12 @@ tucaluka.shop,pererecadoida.life##+js(acs, clickNS)
 ||accountantpacketassail.com^*
 ||inventoryproducedjustice.com^*
 ||carpfreshtying.com^*
-vidsrc.to##+js(remove-node-text, script, /_1 = setInterval,/gm)
-! The following rule covers both domains since both employ these events even when vidplay.online is an iframe of vidsrc.to.
-vidsrc.to,vidplay.online##+js(aeld, contextmenu|keydown)
-! The following rule does NOT abort the entire https://vidsrc.to/assets/embed/min/all.js or https://vidplay.online/assets/mcloud/min/embed.js scripts.
-vidsrc.to,vidplay.online##+js(acs, console.clear)
+! The following rule covers vidplay.online even when it is an iframe of a vidsrc domain.
+vidplay.online##+js(aeld, contextmenu|keydown)
+! The following rule does NOT abort the entire https://vidplay.online/assets/mcloud/min/embed.js scripts.
+vidplay.online##+js(acs, console.clear)
 ! TODO: The following does not work, but the developer tools are defused though aborting the interval of _0x65bf0() with the rule below.
-!vidsrc.to,vidplay.online##+js(acs, ondevtoolopen)
+!vidplay.online##+js(acs, ondevtoolopen)
 vidplay.online##div[id="player"]:remove-class(jw-flag-user-inactive)
 vidplay.online##+js(remove-class, jw-flag-user-inactive, div[id="player"])
 vidplay.online##video[class^="jw-video"]:remove-attr(disableremoteplayback)
@@ -47985,8 +47986,6 @@ vidplay.online##+js(saa, height, 100%, video[class^="jw-video"])
 ! The following rule may be the one which includes the anti-developer tools behavior due to it having an interval of 300000
 ! It also stops the  "Invalid or corrupted PDF file." errors in the console.
 vidplay.online##+js(no-setInterval-if, /_0x65bf0\(\)/)
-! The following rule will prevent the video player from working.
-!vidsrc.to##+js(nosiif)
 ||customselliot.com^*
 ||plentifulqueen.com^*
 ||ads.aws.rubiconproject.com^*
@@ -50374,7 +50373,8 @@ checkyourfact.com##+js(no-setInterval-if, /dcRefreshInterval/)
 ||stbeautifuleedeha.info^*
 !||xml.plane-pusherbidder.org^*
 ||plane-pusherbidder.org^*
-||synthospheretech9.link^*
+! synthospheretech9.link contains m3u8 video playlists
+!||synthospheretech9.link^*
 ! roborift8.link contains m3u8 video playlists
 !||roborift8.link^*
 ||cooperateboneco.com^*
@@ -50394,6 +50394,17 @@ www.ign.com##div[class="jsx-3577397028 privacy-content"]:remove()
 www.ign.com##div[class^="google_ads_iframe_"]:remove()
 www.ign.com##div[data-mix-name="bigAd"]:remove()
 www.ign.com##div[id^="google_ads_iframe_"]:remove()
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(remove-node-text, script, /_1 = setInterval,/gm)
+! The following rule will prevent the video player from working.
+!vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(nosiif)
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(aeld, contextmenu|keydown)
+! The following rule does NOT abort the entire https://vidsrc.to/assets/embed/min/all.js script.
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, console.clear)
+! TODO: The following does not work, but the developer tools are defused though aborting the interval of _0x65bf0() with the rule below.
+!vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, ondevtoolopen)
+! The following rule may be the one which includes the anti-developer tools behavior due to it having an interval of 300000
+! It also stops the  "Invalid or corrupted PDF file." errors in the console.
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(no-setInterval-if, /_0x65bf0\(\)/)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(set-constant, DisableDevtool, noopFunc)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(set-constant, dtc_sbx, noopFunc)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, /DisableDevtool\(/)
@@ -50549,7 +50560,9 @@ player.smashy.stream##iframe[src^="https://vaitotoo.net/"]:remove()
 ||ouabecrib.com^*
 ||tetrdracausa.com^*
 ||tropaiariskful.top^*
+||eashasvsucoc.info^*
 ||s3.us-east-1.amazonaws.com/ef272c9a54869e62dc29ec70f92aedac4b3d355a396a103ccaf459865ace7/45a9c272fe$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||translate.googleapis.com/element/log?$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
