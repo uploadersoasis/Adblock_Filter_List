@@ -50507,6 +50507,7 @@ streambucket.net##+js(acs, /adcash\.runPop\(/)
 !streambucket.net##+js(set-constant, _0x5bd0, [])
 !streambucket.net##+js(aeld, click, /function _0x14b603\(_0x5ddbce\)/)
 streambucket.net##+js(remove-node-text, script, /btoa\(document\.referrer\);/gm)
+streambucket.net##^script:has-text(/btoa\(document\.referrer\);/):remove()
 streambucket.net##:xpath(//script[contains(text(), 'btoa(document.referrer);')]):remove()
 streambucket.net##+js(acs, /btoa\(document\.referrer\);/)
 streambucket.net##+js(acs, /_0x32e7\['NICUCI'\]/)
@@ -50633,10 +50634,18 @@ databasegdriveplayer.xyz##+js(aopr, host)
 ||www.rqbugumvsprr.com^*
 ||dimnessslick.com^*
 ||alxmmoodltpa.com^*
+||mdoirsw.com^*
 ||superiorityfriction.com^*
 ||dfidhqoaunepq.cloudfront.net^$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s3.us-east-1.amazonaws.com/ef272c9a54869e62dc29ec70f92aedac4b3d355a396a103ccaf459865ace7/45a9c272fe$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||translate.googleapis.com/element/log?$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||rvksvsy8hbpzlkexm.ay.delivery/client-v2-mm.js$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||rvksvsy8hbpzlkexm.ay.delivery/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.earth.com##mv-ad-reporter:remove()
+www.earth.com##div[class^="ad-reporter-"]:remove()
+www.earth.com##div[class="mv-ad-box"]:remove()
+www.earth.com##iframe[id="grow-login-iframe"]:remove()
+||some.growplow.events^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
