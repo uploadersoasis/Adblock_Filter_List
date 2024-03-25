@@ -28237,9 +28237,9 @@ www.studytonight.com##div[id="liveToast"]
 ||partssubquery.com^*
 ||cookie-cdn.cookiepro.com^*
 www.lexology.com##div[id="optanon-popup-bottom"]
-||cs.rin.ru$removeparam=hilit
+||cs.rin.ru^$removeparam=hilit
 ||csrinrutkb3tshptdctl5lyei4et35itl22qvk5ktdcat6aeavy6nhid.onion$removeparam=hilit
-||forum.torrminatorr.com$removeparam=hilit
+||forum.torrminatorr.com^$removeparam=hilit
 ||ade.googlesyndication.com/ddm/activity_ext/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css,domain=www.youtube.com
 ||www.tvjkilgfanpt.com^*
 ||tvjkilgfanpt.com^*
@@ -38603,10 +38603,13 @@ www.primewire.tf##+js(set-constant, sc, noopFunc)
 www.primewire.tf##+js(set-constant, console.clear, noopFunc)
 www.primewire.tf##+js(set-constant, ondevtoolopen, noopFunc)
 www.primewire.tf##+js(set-constant, disableMenu, noopFunc)
-www.primewire.tf##+js(acs, ondevtoolopen, disableMenu)
+www.primewire.tf##+js(acs, disableMenu)
+! TODO: The following rule does not work because ondevtoolopen is an event?
+www.primewire.tf##+js(acs, ondevtoolopen)
+www.primewire.tf##+js(aeld, ondevtoolopen)
 www.primewire.tf##+js(acs, /console\.clear\(\);/)
 www.primewire.tf##+js(acs, break;case $.)
-www.primewire.tf##^script:has-text(break;case $.)
+www.primewire.tf##^script:has-text(break;case $.):remove()
 www.primewire.tf##+js(acs, /^You ar not allow to use DEVTOOL!/)
 www.primewire.tf##a[t^="/links/sponsored/"]:remove-attr(onclick)
 www.primewire.tf##a[t^="/links/sponsored/"]:remove()
@@ -48012,8 +48015,9 @@ tucaluka.shop,pererecadoida.life##+js(acs, clickNS)
 vidplay.online##+js(aeld, contextmenu|keydown)
 ! The following rule does NOT abort the entire https://vidplay.online/assets/mcloud/min/embed.js scripts.
 vidplay.online##+js(acs, console.clear)
-! TODO: The following does not work, but the developer tools are defused though aborting the interval of _0x65bf0() with the rule below.
+! TODO: The following rule does not work because ondevtoolopen is an event?
 !vidplay.online##+js(acs, ondevtoolopen)
+vidplay.online##+js(aeld, ondevtoolopen)
 !vidplay.online##div[id="player"]:remove-class(jw-flag-user-inactive)
 !vidplay.online##+js(remove-class, jw-flag-user-inactive, div[id="player"])
 vidplay.online##video[class^="jw-video"]:remove-attr(disableremoteplayback)
@@ -48035,6 +48039,7 @@ vidplay.online##+js(saa, height, 100%, video[class^="jw-video"])
 !vidplay.online##+js(no-setInterval-if, ![native code])
 ! The following rule may be the one which includes the anti-developer tools behavior due to it having an interval of 300000
 ! It also stops the  "Invalid or corrupted PDF file." errors in the console.
+! TODO: The developer tools were defused though aborting the interval of _0x65bf0() , but _0x65bf0() is no longer in https://vidsrc.to/assets/embed/min/all.js
 vidplay.online##+js(no-setInterval-if, /_0x65bf0\(\)/)
 !*$3p,script,denyallow=cdnjs.cloudflare.com,domain=vidplay.online
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=cdnjs.cloudflare.com,domain=vidplay.online
@@ -50455,11 +50460,15 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(aeld, contextmenu|keydown)
 ! The following rule does NOT abort the entire https://vidsrc.to/assets/embed/min/all.js script.
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, console.clear)
-! TODO: The following does not work, but the developer tools are defused though aborting the interval of _0x65bf0() with the rule below.
+! TODO: The following rule does not work because ondevtoolopen is an event?
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, ondevtoolopen)
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(aeld, ondevtoolopen)
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets/embed/min/all.js\S*/$replace=/ondevtoolopen\:function\(t,n\) \{W\(\),n\(\);\}/ondevtoolopen:function(){}/gm
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets/embed/min/all.js\S*/$replace=/isDevToolOpened\:N/isDevToolOpened:false/gm
 ! The following rule may be the one which includes the anti-developer tools behavior due to it having an interval of 300000
 ! It also stops the  "Invalid or corrupted PDF file." errors in the console.
-vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(no-setInterval-if, /_0x65bf0\(\)/)
+! TODO: The developer tools were defused though aborting the interval of _0x65bf0() , but _0x65bf0() is no longer in https://vidsrc.to/assets/embed/min/all.js
+!vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(no-setInterval-if, /_0x65bf0\(\)/)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(set-constant, DisableDevtool, noopFunc)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(set-constant, dtc_sbx, noopFunc)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, /DisableDevtool\(/)
@@ -50515,6 +50524,8 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js
 /^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/sbx\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 /^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/reporting\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 /^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/disable-devtool(?:@\d\.\d\.\d)\/\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rule is necessary because the video won't play if the "test=2embed" is in the query string.
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/embed\/(movie)|(tv)\/(tt)?\d+/$removeparam=/^test=2embed/,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||vidsrc.xyz/sbx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||v2.vidsrc.me/sbx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.vidsrc.stream/disable-devtool@0.3.6/disable-devtool.min.js#/misdir.js
@@ -50598,6 +50609,7 @@ player.smashy.stream,embed.smashystream.com##+js(remove-node-text, script, /func
 player.smashy.stream,embed.smashystream.com##+js(set-constant, _0x28ffe1, [])
 !*$3p,script,denyallow=www.gstatic.com|embed.smashystream.com|player.smashy.stream,domain=player.smashy.stream|embed.smashystream.com
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.gstatic.com|embed.smashystream.com|player.smashy.stream,domain=player.smashy.stream|embed.smashystream.com
+!moviesapi.club##iframe[id="frame2"]
 moviesapi.club##+js(remove-attr, oncontextmenu, body)
 moviesapi.club##body:remove-attr(oncontextmenu)
 moviesapi.club##script[disable-devtool-auto]:remove()
@@ -50708,6 +50720,8 @@ www.earth.com##div[class="mv-ad-box"]:remove()
 www.earth.com##iframe[id="grow-login-iframe"]:remove()
 ||some.growplow.events^*
 ||tquvbfl.com^*
+!||jwmb.jbzmwqmqwojjl.top^*
+||jbzmwqmqwojjl.top^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
