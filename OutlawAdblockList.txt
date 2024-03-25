@@ -5966,7 +5966,7 @@ soma.smaato.net/oapi/reqAd.jsp$document,subdocument,script,inline-script,inline-
 ||hul0y.coldtrkredirect.com^*
 !||aflrm.com/nav?q=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||aflrm.com^*
-www.hardocp.com##body > div:nth-of-type(5)
+www.hardocp.com##body > div:nth-of-type(5):remove()
 ||groupeurs.com^*
 !||download2-cdn.com/direct/download.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||download2-cdn.com^*
@@ -37368,14 +37368,11 @@ www.nolive.me##+js(set-constant, forceKillplayer, noopFunc)
 www.nolive.me##+js(set-constant, debounce, noopFunc)
 !www.nolive.me##+js(no-setTimeout-if, function())
 !www.nolive.me##+js(no-setTimeout-if, function)
-!www.nolive.me##+js(no-setTimeout-if, /^function()/)
 www.nolive.me##+js(no-setTimeout-if, /^function\(\)/)
 !www.nolive.me##+js(no-setInterval-if, function())
 !www.nolive.me##+js(no-setInterval-if, function)
-!www.nolive.me##+js(no-setInterval-if, /^function()/)
 www.nolive.me##+js(no-setInterval-if, /^function\(\)/)
 www.nolive.me##+js(no-setTimeout-if, forceKillplayer)
-www.nolive.me##div[class="Ad-Container"]
 www.nolive.me##div[class="Ad-Container"]:remove()
 www.nolive.me##+js(aopr, startTime)
 www.nolive.me##+js(aopw, startTime)
@@ -38184,11 +38181,9 @@ www.vipleague.st##+js(aopr, adcashMacros)
 www.vipleague.st##+js(aopw, adcashMacros)
 !www.vipleague.st##+js(no-setTimeout-if, function())
 !www.vipleague.st##+js(no-setTimeout-if, function)
-!www.vipleague.st##+js(no-setTimeout-if, /^function()/)
 www.vipleague.st##+js(no-setTimeout-if, /^function\(\)/)
 !www.vipleague.st##+js(no-setInterval-if, function())
 !www.vipleague.st##+js(no-setInterval-if, function)
-!www.vipleague.st##+js(no-setInterval-if, /^function()/)
 www.vipleague.st##+js(no-setInterval-if, /^function\(\)/)
 www.vipleague.st##+js(no-setTimeout-if, forceKillplayer)
 ||www.vipleague.la/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -38757,6 +38752,8 @@ jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecub
 ||cdn.heycdn25.xyz^*
 !||cdn.heycdn58.xyz/404$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.heycdn58.xyz^*
+||sex.rip^*
+||jookouky.net^*
 abysscdn.com,abyss.to##:xpath(//script[contains(text(), 'top.location')]):remove()
 abysscdn.com,abyss.to##+js(acs, top.location)
 abysscdn.com,abyss.to##+js(aopr, top.location)
@@ -38801,8 +38798,6 @@ abysscdn.com##iframe[src="about:blank"]:remove()
 !||cdn.iamcdn.net/js/5924ab7d14546e4e82e903aa16ca3071.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.iamcdn.net/js/5a0f9e712f654c47c3e903ad16c23071.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.iamcdn.net/js/$script
-||sex.rip^*
-||jookouky.net^*
 watchsb.com##+js(set-constant, e, noopFunc)
 watchsb.com##+js(set-constant, check, noopFunc)
 ! disabledEvent() actually removes unwanted event listener
@@ -38815,7 +38810,7 @@ watchsb.com##script:has-text(/debugger;/):remove()
 watchsb.com##+js(remove-node-text, script, /debugger;/gm)
 ! TODO: Really abort on debugger as that is what the debugger statement already does?
 watchsb.com##+js(acs, /debugger;/)
-watchsb.com##+js(aeld, /contextmenu|keydown/)
+iamcdn.net,watchsb.com##+js(aeld, /contextmenu|keydown/)
 watchsb.com##+js(no-setTimeout-if, check)
 ||appcdn01.xyz/vast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||lv.chajagibbous.com^*
@@ -39542,6 +39537,7 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 123chill.to##+js(aopr, $pe)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##body:remove-attr(oncontextmenu)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(remove-attr, oncontextmenu, body)
+2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##:matches-path(/(\/embed)|(\/movie\/)/i) html,body:style(max-height: 99vh !important; height: 99vh !important; max-width: 99vw !important; width: 99vw !important; padding:0 !important; margin:0 !important; border: none !important;overflow:auto !important;)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##iframe[id="player_iframe"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, seamless, seamless, iframe[id="player_iframe"])
 ! The following attributes are already set by the page as normal.
@@ -39568,11 +39564,14 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, mozallowfullscreen, true, iframe[id$="framesrc"])
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, scrolling, no, iframe[id$="framesrc"])
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, referrerpolicy, origin, iframe[id$="framesrc"])
-2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##iframe[src="about:blank"]:remove()
-123movie.skin,2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##^script:has-text(/\(window==window\.top\)/):remove()
-123movie.skin,2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(remove-node-text, script, /\(window==window\.top\)/gm)
-123movie.skin,2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(aopw, window.top)
-123movie.skin,2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(aopr, window.top)
+!2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##iframe[src="about:blank"]:remove()
+! TODO:  Do NOT use the following rules to remove the script with window.top as it also contains the go(loc) definition which is required to set the iframe src field
+!123movie.skin,2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##^script:has-text(/\(window==window\.top\)/):remove()
+!123movie.skin,2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(remove-node-text, script, /\(window==window\.top\)/gm)
+!123movie.skin,2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(aopw, window.top)
+!123movie.skin,2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(aopr, window.top)
+! Change (window==window.top) to null instead which will prevent the condition from being true. 
+123movie.skin,2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(trusted-replace-node-text, script, /\(window==window\.top\)/gm, (null))
 123movie.skin,2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##script[disable-devtool-auto]:remove()
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##script[src*="//whoursie.com/"]:remove-attr(onerror)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##script[src*="//whoursie.com/"]:remove-attr(onloaded)
@@ -39592,11 +39591,18 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##:xpath("/html/body/script[1]"):remove()
 ! The following rule blocks an anti-developer tools script.
 ||www.2embed.cc/js/block-inspect.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+123movie.skin##:not(:matches-path(/\/embed/)) html:style(max-height: 100vh !important; height: 100vh !important; max-width: 100vw !important; width: 100vw !important; padding:0 !important; margin:0 !important; border: none !important;overflow:auto !important;)
 123movie.skin##div[id="persoff"]:remove()
-123movie.skin##div[id="player-area"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-123movie.skin##div[id="embed-player"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
-123movie.skin##div[class="pa-main"]:style(overflow:auto !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
+! div[id="player-area"] is the root area where all of the nested embedded iframes reside.
+123movie.skin##div[id="player-area"]:style(overflow:auto !important;padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 100vw !important; max-height: 100vh !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
+123movie.skin##div[class="pa-main"]:style(overflow:hidden !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
+123movie.skin##div[id="embed-player"]:style(overflow:hidden !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 123movie.skin##+js(set-attr, iframe[id="vsrcs"][data-src], src, [data-src])
+! TODO: For some reason, the following rule causes the control bar to be in the middle of the video player viewport instead of at the bottom of it.
+! the height value of the style property is set to 90% when the toggleBar() function is executed.
+123movie.skin##+js(trusted-replace-node-text, script, /document\.getElementById\('vsrcs'\)\.style\.height = "90%";/, document.getElementById('vsrcs').style.height = "100%";)
+! removing that line from the script would also work.
+!123movie.skin##+js(trusted-replace-node-text, script, /document\.getElementById\('vsrcs'\)\.style\.height = "90%";/, "")
 123movie.skin##iframe[id="vsrcs"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 123movie.skin##+js(saa, seamless, seamless, iframe[id="vsrcs"])
 123movie.skin##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[id="vsrcs"])
@@ -39610,7 +39616,7 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 !123movie.skin##+js(saa, frameborder, 0, iframe[id="vsrcs"])
 !123movie.skin##+js(saa, scrolling, no, iframe[id="vsrcs"])
 ! The following must be set to width: 99vw and height: 99vh or else the video player viewport will be truncated to ~150px for some reason. Also use overflow: auto or hidden to prevent scrollbars if width and/or height is 100vw/100vh.
-123movie.skin##iframe[id="iframesrc"]:style(overflow:auto !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+123movie.skin##iframe[id="iframesrc"]:style(overflow:hidden !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 123movie.skin##+js(saa, seamless, seamless, iframe[id="iframesrc"])
 123movie.skin##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[id="iframesrc"])
 123movie.skin##+js(saa, height, 100%, iframe[id="iframesrc"])
@@ -39813,9 +39819,11 @@ sbnet.one##+js(set-constant, check, noopFunc)
 sbnet.one##:xpath(//script[contains(text(), 'console.clear')]):remove()
 sbnet.one##^script:has-text(/console\.clear\(\);/):remove()
 sbnet.one##script:has-text(/console\.clear\(\);/):remove()
+sbnet.one##+js(remove-node-text, script, /^console\.clear\(\);/gm)
+sbnet.one##+js(remove-node-text, script, /^debugger;/gm)
 sbnet.one##+js(acs, /console\.clear\(\);/)
-sbnet.one##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
-sbnet.one##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+!sbnet.one##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
+!sbnet.one##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 sbnet.one##+js(acs, minimalUserResponseInMiliseconds)
 sbnet.one##+js(aopw, minimalUserResponseInMiliseconds)
 sbnet.one##+js(aopr, minimalUserResponseInMiliseconds)
@@ -39886,10 +39894,11 @@ slmaxed.com,streamlare.com##+js(set-constant, window.AdBlock, false)
 ! The following two acis lines prevent the video from loading.
 !slmaxed.com,streamlare.com##+js(acs, /console\.clear\(\);/, /^debugger;/)
 !slmaxed.com,streamlare.com##+js(acs, parseInt, console['clear'])
-!slmaxed.com,streamlare.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-slmaxed.com,streamlare.com##+js(remove-node-text, script, /debugger;/gm)
-!slmaxed.com,streamlare.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
-slmaxed.com,streamlare.com##+js(remove-node-text, script, /console\.clear\(\);/gm)
+! TODO: Don't remove the entire script with debugger and console.clear()?
+slmaxed.com,streamlare.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
+!slmaxed.com,streamlare.com##+js(remove-node-text, script, /debugger;/gm)
+slmaxed.com,streamlare.com##+js(trusted-replace-node-text, script, /^console\.clear\(\);/gm, "")
+!slmaxed.com,streamlare.com##+js(remove-node-text, script, /console\.clear\(\);/gm)
 slmaxed.com,streamlare.com##+js(set-constant, devtoolIsOpening, noopFunc)
 slmaxed.com,streamlare.com##+js(no-setTimeout-if, devtoolIsOpening)
 slmaxed.com,streamlare.com##+js(acs, /gtag\(/)
@@ -41300,8 +41309,8 @@ availedsmallest.com##+js(set-constant, iOS, noopFunc)
 availedsmallest.com##:xpath(//script[contains(text(), 'debugger')]):remove()
 availedsmallest.com##^script:has-text(/debugger;/):remove()
 availedsmallest.com##script:has-text(/debugger;/):remove()
-!availedsmallest.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 availedsmallest.com##+js(remove-node-text, script, /debugger;/gm)
+!availedsmallest.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 ! TODO: Really abort on debugger as that is what the debugger statement already does?
 availedsmallest.com##+js(acs, /debugger;/)
 availedsmallest.com##:xpath(//script[contains(text(), 'sandbox')]):remove()
@@ -47964,8 +47973,8 @@ vidplay.online##+js(aeld, contextmenu|keydown)
 vidplay.online##+js(acs, console.clear)
 ! TODO: The following does not work, but the developer tools are defused though aborting the interval of _0x65bf0() with the rule below.
 !vidplay.online##+js(acs, ondevtoolopen)
-vidplay.online##div[id="player"]:remove-class(jw-flag-user-inactive)
-vidplay.online##+js(remove-class, jw-flag-user-inactive, div[id="player"])
+!vidplay.online##div[id="player"]:remove-class(jw-flag-user-inactive)
+!vidplay.online##+js(remove-class, jw-flag-user-inactive, div[id="player"])
 vidplay.online##video[class^="jw-video"]:remove-attr(disableremoteplayback)
 vidplay.online##+js(remove-attr, disableremoteplayback, video[class^="jw-video"])
 vidplay.online##video[class^="jw-video"]:remove-attr(disablepictureinpicture)
@@ -47986,6 +47995,8 @@ vidplay.online##+js(saa, height, 100%, video[class^="jw-video"])
 ! The following rule may be the one which includes the anti-developer tools behavior due to it having an interval of 300000
 ! It also stops the  "Invalid or corrupted PDF file." errors in the console.
 vidplay.online##+js(no-setInterval-if, /_0x65bf0\(\)/)
+!*$3p,script,denyallow=cdnjs.cloudflare.com,domain=vidplay.online
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=cdnjs.cloudflare.com,domain=vidplay.online
 ||customselliot.com^*
 ||plentifulqueen.com^*
 ||ads.aws.rubiconproject.com^*
@@ -50394,6 +50405,7 @@ www.ign.com##div[class="jsx-3577397028 privacy-content"]:remove()
 www.ign.com##div[class^="google_ads_iframe_"]:remove()
 www.ign.com##div[data-mix-name="bigAd"]:remove()
 www.ign.com##div[id^="google_ads_iframe_"]:remove()
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(remove-node-text, script, /var FingerprintJS=function/gm)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(remove-node-text, script, /_1 = setInterval,/gm)
 ! The following rule will prevent the video player from working.
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(nosiif)
@@ -50410,6 +50422,9 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, /DisableDevtool\(/)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, /dtc_sbx\(\)/)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##div[id="pop_asdf"]:remove()
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##iframe[style="display: none;"]:remove()
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##iframe[id="pjsfrrsplayer_parent"]:remove()
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##iframe[id="player_iframe"]:style(border: none !important;)
 ! Do not remove use the following rule or the embedded videos will not play.
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##div[id="hidden"]:remove()
 ! Overflow needs to be set to auto or scroll in the following rule because the form control at the top of the iframe dynamically uses space which would otherwise reduce the space for the video player viewport.
@@ -50449,6 +50464,8 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##vid
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(remove-attr, disableremoteplayback, video[src^="blob:https://vidsrc."])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, data-autoplay-mute-lock, false, video[src^="blob:https://vidsrc."])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, controls, true, video[src^="blob:https://vidsrc."])
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, width, 100%, video[class*="jw-video"])
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, height, 100%, video[class*="jw-video"])
 ! The following attributes are already set as normal.
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, x-webkit-airplay, allow, video[src^="blob:https://vidsrc."])
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, preload, metadata, video[src^="blob:https://vidsrc."])
@@ -50526,8 +50543,55 @@ uqloads.xyz,streamwish.to,streamwish.com##+js(saa, controls, true, video[class="
 ||streamwish.to/assets/jquery/app0.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! vast.js is a video ad plugin script.
 ||streamwish.to/player/jw8/vast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-player.smashy.stream##div[class^="react-responsive-modal-"]:has(iframe[src^="https://vaitotoo.net/"]):remove()
-player.smashy.stream##iframe[src^="https://vaitotoo.net/"]:remove()
+player.smashy.stream,embed.smashystream.com##body:style(max-height: 99vh !important; height: 99vh !important; max-width: 99vw !important; width: 99vw !important; padding:0 !important; margin:0 !important; border: none !important;overflow:auto !important;)
+player.smashy.stream,embed.smashystream.com##+js(aeld, click, /function ni\(\)/)
+player.smashy.stream,embed.smashystream.com##iframe[id="pjsfrrsplayer"]:remove()
+player.smashy.stream,embed.smashystream.com##div[class="react-responsive-modal-root"][data-testid="root"]:remove()
+!player.smashy.stream,embed.smashystream.com##div[class^="react-responsive-modal-"]:has(iframe[src^="https://vaitotoo.net/"]):remove()
+player.smashy.stream,embed.smashystream.com##iframe[src^="https://vaitotoo.net/"]:remove()
+player.smashy.stream,embed.smashystream.com##+js(remove-node-text, script, /function _0x4695\(\){var _0x28ffe1=\[/gm)
+player.smashy.stream,embed.smashystream.com##+js(set-constant, _0x28ffe1, [])
+!*$3p,script,denyallow=www.gstatic.com|embed.smashystream.com|player.smashy.stream,domain=player.smashy.stream|embed.smashystream.com
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.gstatic.com|embed.smashystream.com|player.smashy.stream,domain=player.smashy.stream|embed.smashystream.com
+moviesapi.club##+js(remove-attr, oncontextmenu, body)
+moviesapi.club##body:remove-attr(oncontextmenu)
+moviesapi.club##script[disable-devtool-auto]:remove()
+moviesapi.club##+js(remove-node-text, script, /function dtc_sbx\(\) {/gm)
+moviesapi.club##+js(set-constant, dtc_sbx, noopFunc)
+moviesapi.club##+js(acs, /dtc_sbx\(\)/)
+! TODO: The following does not work to prevent the iframe with the embedded video from constantly refreshing.
+!moviesapi.club##+js(refresh-defuser)
+! TODO: preventing the obfuscated inline scripts stored in JScripts from running will return a false 404 status error for the video iframe.
+!moviesapi.club##+js(aopw, JScripts)
+!moviesapi.club##+js(aopr, JScripts)
+!moviesapi.club##+js(no-setTimeout-if, /^/)
+!moviesapi.club##+js(no-setInterval-if, /^/)
+! TODO: the following rule blocks all inline scripts on the embedded video iframe, but it does not allow the video to play.
+!||w1.moviesapi.club/v/$inline-script
+||moviesapi.club/sbx.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||w1.moviesapi.club/assets/js/devtools-detector_2.0.15.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||moviesapi.club/assets/js/devtools-detector*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!*$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com,domain=moviesapi.club
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com,domain=moviesapi.club
+! TODO: either remove the entire script with detectDevTool or simply don't "eval" it?
+databasegdriveplayer.xyz##^script:has-text(/detectDevTool/):remove()
+databasegdriveplayer.xyz##+js(remove-node-text, script, /detectDevTool/gm)
+! TODO: noeval-if second parameter is the string/regular expression matching in payload string
+databasegdriveplayer.xyz##+js(noeval-if, /detectDevTool/)
+! The following two rules will defusee the anti-developer tools script it is if not removed by any of the rules above.
+databasegdriveplayer.xyz##+js(set-constant, detectDevTool, noopFunc)
+databasegdriveplayer.xyz##+js(aeld, , detectDevTool)
+databasegdriveplayer.xyz##^script:has-text(/jwplayer\(\)\.remove\(\);/):remove()
+databasegdriveplayer.xyz##+js(remove-node-text, script, /jwplayer\(\)\.remove\(\);/gm)
+! The following two rules should not be necessary if the rule above which removed the script is successful.
+databasegdriveplayer.xyz##+js(aopw, host)
+databasegdriveplayer.xyz##+js(aopr, host)
+!*$3p,script,denyallow=ajax.googleapis.com|cdnjs.cloudflare.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|ssl.p.jwpcdn.com|jwplayer-dualstack.map.fastly.net,domain=databasegdriveplayer.xyz
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=ajax.googleapis.com|cdnjs.cloudflare.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|ssl.p.jwpcdn.com|jwplayer-dualstack.map.fastly.net,domain=databasegdriveplayer.xyz
+||stageseshoals.com^*
+!||zlyb.zebjlmmejbybz.top^*
+||zebjlmmejbybz.top^*
+||keelieejidos.com^*
 ||www.bjpuxhsmeiui.com^*
 ||bjpuxhsmeiui.com^*
 ||www.kyqmvggqijilsf.com^*
@@ -50561,6 +50625,16 @@ player.smashy.stream##iframe[src^="https://vaitotoo.net/"]:remove()
 ||tetrdracausa.com^*
 ||tropaiariskful.top^*
 ||eashasvsucoc.info^*
+||nandtheathema.info^*
+||weredthechild.info^*
+||dmetherearlyinhes.info^*
+||jzycnlq.com^*
+||www.sdjqhxmg.com^*
+||www.rqbugumvsprr.com^*
+||dimnessslick.com^*
+||alxmmoodltpa.com^*
+||superiorityfriction.com^*
+||dfidhqoaunepq.cloudfront.net^$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s3.us-east-1.amazonaws.com/ef272c9a54869e62dc29ec70f92aedac4b3d355a396a103ccaf459865ace7/45a9c272fe$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||translate.googleapis.com/element/log?$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
