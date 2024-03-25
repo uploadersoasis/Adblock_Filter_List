@@ -39593,6 +39593,7 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##:xpath("/html/body/script[1]"):remove()
 ! The following rule blocks an anti-developer tools script.
 ||www.2embed.cc/js/block-inspect.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.2embed.skin/js/block-inspect.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 123movie.skin##:not(:matches-path(/\/embed/)) html:style(max-height: 100vh !important; height: 100vh !important; max-width: 100vw !important; width: 100vw !important; padding:0 !important; margin:0 !important; border: none !important;overflow:auto !important;)
 123movie.skin##div[id="persoff"]:remove()
 ! div[id="player-area"] is the root area where all of the nested embedded iframes reside.
