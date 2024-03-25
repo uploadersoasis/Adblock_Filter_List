@@ -21707,8 +21707,8 @@ userscloud.com##^script:has-text(/astancerta\.fun|esusivebe\.top|dtv5loup63fac\.
 !userscloud.com##script[type="36a936178ecce1dd77e68197-text/javascript"]:remove()
 userscloud.com##+js(set-constant, window.__cfRLUnblockHandlers, true, stay)
 userscloud.com##+js(acs, decodeURIComponent)
-!userscloud.com##+js(acs, console.clear)
-userscloud.com##+js(acs, /console\.clear\(\);/)
+userscloud.com##+js(acs, console.clear)
+!userscloud.com##+js(acs, /console\.clear\(\);/)
 userscloud.com##+js(aopr, FingerprintJS)
 userscloud.com##+js(aopw, FingerprintJS)
 userscloud.com##:xpath(//script[contains(text(), 'VG8gY29udGludWUgd2F0Y2hpbmcgcHJlc3MgIkFsbG93Ig==')]):remove()
@@ -31016,8 +31016,6 @@ kisscenter.net##a[href*="/ak.hetaruvg.com/"]:remove()
 ||track.cam4tracking.com^*
 ||tendontoss.com^*
 ||eu.messenger-notify.digital^*
-!Block video player?
-!||tracker.idocdn.com^*
 digital.olivesoftware.com##div[class*="fancybox-overlay"]:remove()
 ||plugins.blueconic.net/lightboxinteractiontype/2.4.1/frontend/src/lib/fancybox/fancybox_overlay.png$image
 ||sedna-aca.com^*
@@ -38754,40 +38752,73 @@ jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecub
 ||cdn.heycdn58.xyz^*
 ||sex.rip^*
 ||jookouky.net^*
-abysscdn.com,abyss.to##:xpath(//script[contains(text(), 'top.location')]):remove()
-abysscdn.com,abyss.to##+js(acs, top.location)
-abysscdn.com,abyss.to##+js(aopr, top.location)
-abysscdn.com,abyss.to##+js(aopw, top.location)
+! ||abysscdn.com/?v=0nBdh2D73 is an example video.  TODO: must be in an iframe? The video player is removed when not.
+abysscdn.com,abyss.to##+js(set-constant, url, "")
+abysscdn.com,abyss.to##+js(set-constant, url2, "")
+abysscdn.com,abyss.to##+js(aopr, url)
+abysscdn.com,abyss.to##+js(aopw, url)
+abysscdn.com,abyss.to##+js(aopr, url2)
+abysscdn.com,abyss.to##+js(aopw, url2)
+abysscdn.com,abyss.to##+js(set-constant, isNoAds, true)
+abysscdn.com,abyss.to##+js(set-constant, config_ads, {})
+abysscdn.com,abyss.to##+js(aopr, config_ads)
+abysscdn.com,abyss.to##+js(aopw, config_ads)
+abysscdn.com,abyss.to##div[id="playback-fake"]:remove()
+! The id in the following rule changes with each load/refresh of the page, so use the class="playover" rule instead.
+!abysscdn.com,abyss.to##div[id="jPCMTM"]:remove()
+abysscdn.com,abyss.to##div[class="playover"]:remove()
 abysscdn.com,abyss.to##div[id="loader"]:remove()
-abysscdn.com##+js(set-constant, js, "")
-abysscdn.com##+js(acs, js)
-abysscdn.com##+js(aopr, js)
-abysscdn.com##+js(aopw, js)
-abysscdn.com##+js(set-constant, config_ads, {})
-abysscdn.com##+js(set-constant, generateRandomPHPUrl, noopFunc)
-abysscdn.com##+js(set-constant, aab , noopFunc)
-abysscdn.com##+js(acs, config_ads)
-abysscdn.com##+js(acs, /\.remove\(\)/)
-!abysscdn.com##+js(acs, remove())
-abysscdn.com##video[class*="jw-video"]:remove-attr(disableremoteplayback)
-abysscdn.com##+js(remove-attr, disableremoteplayback, video[class*="jw-video"])
-abysscdn.com##video[class*="jw-video"]:remove-attr(disablepictureinpicture)
-abysscdn.com##+js(remove-attr, disablepictureinpicture, video[class*="jw-video"])
-abysscdn.com##+js(saa, data-autoplay-mute-lock, false, video[class*="jw-video"])
-abysscdn.com##+js(saa, x-webkit-airplay, allow, video[class*="jw-video"])
-abysscdn.com##+js(saa, controls, true, video[class*="jw-video"])
-abysscdn.com##+js(saa, width, 100%, video[class*="jw-video"])
-abysscdn.com##+js(saa, height, 100%, video[class*="jw-video"])
-abysscdn.com##div[id="player"]:remove-class(jw-flag-user-inactive)
-abysscdn.com##div[id="player"]:remove-class(jw-no-focus)
-abysscdn.com##iframe[src="about:blank"]:remove()
-!abysscdn.com##+js(no-setInterval-if, /^/)
-!abysscdn.com##+js(no-setTimeout-if, /^/)
+abysscdn.com,abyss.to##+js(set-constant, generateRandomPHPUrl, noopFunc)
+abysscdn.com,abyss.to##+js(set-constant, aab, noopFunc)
+abysscdn.com,abyss.to##video[class*="jw-video"]:remove-attr(disableremoteplayback)
+abysscdn.com,abyss.to##+js(remove-attr, disableremoteplayback, video[class*="jw-video"])
+abysscdn.com,abyss.to##video[class*="jw-video"]:remove-attr(disablepictureinpicture)
+abysscdn.com,abyss.to##+js(remove-attr, disablepictureinpicture, video[class*="jw-video"])
+abysscdn.com,abyss.to##+js(saa, data-autoplay-mute-lock, false, video[class*="jw-video"])
+abysscdn.com,abyss.to##+js(saa, x-webkit-airplay, allow, video[class*="jw-video"])
+abysscdn.com,abyss.to##+js(saa, controls, true, video[class*="jw-video"])
+abysscdn.com,abyss.to##+js(saa, width, 100%, video[class*="jw-video"])
+abysscdn.com,abyss.to##+js(saa, height, 100%, video[class*="jw-video"])
+abysscdn.com,abyss.to##div[id="player"]:remove-class(jw-flag-user-inactive)
+abysscdn.com,abyss.to##div[id="player"]:remove-class(jw-no-focus)
+abysscdn.com,abyss.to##iframe[src="about:blank"]:remove()
 ! Cannot block these functions or the video will not play.
-!abysscdn.com##+js(set-constant, detectAdBlockAll, noopFunc)
-!abysscdn.com##+js(set-constant, detectAdBlock, noopFunc)
-!abysscdn.com##+js(acs, detectAdBlockAll, detectAdBlock)
-!abysscdn.com##+js(acs, detectAdBlock1, detectAdBlock2)
+!abysscdn.com,abyss.to##+js(set-constant, detectAdBlockAll, noopFunc)
+!abysscdn.com,abyss.to##+js(set-constant, detectAdBlock, noopFunc)
+!abysscdn.com,abyss.to##+js(acs, detectAdBlockAll, detectAdBlock)
+!abysscdn.com,abyss.to##+js(acs, detectAdBlock1, detectAdBlock2)
+!abysscdn.com,abyss.to##+js(set-constant, timeout, noopFunc)
+! TODO: The timeout interval may be useful.
+!abysscdn.com,abyss.to##+js(no-setInterval-if, /timeout/)
+!abysscdn.com,abyss.to##+js(set-constant, js, "")
+!abysscdn.com,abyss.to##+js(acs, js)
+!abysscdn.com,abyss.to##+js(aopr, js)
+!abysscdn.com,abyss.to##+js(aopw, js)
+||abysscdn.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||abyss.to/auth/logged$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! TODO: iamcdn.net/players/playhydrax.min.js has the anti-developer tools functions in it.
+||iamcdn.net/players/playhydrax.min.js$script,doc,replace=/if\(top\.location==self\.location\)/if (null)/gm
+! The following rule does NOT abort the entire https://iamcdn.net/players/playhydrax.min.js script.
+! The following rule by itself defuses the anti-developer tools function.
+abysscdn.com,abyss.to##+js(acs, console.clear)
+! The following does not work even though that domain hosts the playhydrax.min.js script not abysscdn.com/abyss.to
+!iamcdn.net##+js(acs, console.clear)
+abysscdn.com,abyss.to##+js(set-constant, devtoolsOpen, false)
+abysscdn.com,abyss.to##+js(no-setInterval-if, /devtoolsOpen/)
+! removeJwp() removes the video player.
+! Do NOT redefine removeJwp() or the video player will not be initialized.
+!abysscdn.com,abyss.to##+js(set-constant, removeJwp, noopFunc)
+abysscdn.com,abyss.to##+js(acs, /removeJwp\(\)/)
+!abysscdn.com,abyss.to##+js(acs, remove())
+abysscdn.com,abyss.to##+js(acs, /\.remove\(\)/)
+abysscdn.com,abyss.to##+js(set-constant, urlBan, "")
+abysscdn.com,abyss.to##+js(aopr, urlBan)
+abysscdn.com,abyss.to##+js(aopw, urlBan)
+! Redefining devtoolsDetector.launch prevents the interval of checking for the developer tools which clears the console.
+! Running devtoolsDetector.stop(); also stops the interval checks.
+!abysscdn.com,abyss.to##+js(set-constant, devtoolsDetector.launch, noopFunc, end)
+!abysscdn.com,abyss.to##+js(set-constant, devtoolsDetector.launch, noopFunc, complete)
+abysscdn.com,abyss.to##+js(set-constant, devtoolsDetector.launch, noopFunc)
 ! iamcdn.net/ban.html blocks embedded videos
 !||iamcdn.net/ban.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! These are anti-adblocking scripts apparently with randomnly generated names, but they cannot be blocked wholesale.
@@ -38798,6 +38829,12 @@ abysscdn.com##iframe[src="about:blank"]:remove()
 !||cdn.iamcdn.net/js/5924ab7d14546e4e82e903aa16ca3071.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.iamcdn.net/js/5a0f9e712f654c47c3e903ad16c23071.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.iamcdn.net/js/$script
+! The following is a GIF tracker for abysscdn.com/abyss.to videos.
+! The port must be specified in the rule.
+!||connect.idocdn.com/1x1.jpg?$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||connect.idocdn.com:3016/1x1.jpg?$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!Block video player?
+!||tracker.idocdn.com^*
 watchsb.com##+js(set-constant, e, noopFunc)
 watchsb.com##+js(set-constant, check, noopFunc)
 ! disabledEvent() actually removes unwanted event listener
@@ -41429,7 +41466,6 @@ search.brave.com##div[id^="premium-promo"]:remove()
 ||search.anonymous.ads.brave.com^*
 ||dnavexch.com^*
 ||www.bostonherald.com/wp-content/client-mu-plugins/src/Ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||abysscdn.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||upsdelivery.info^*
 ||legodelivery.info^*
 ||adidascanadaltd.com^*
@@ -45118,7 +45154,6 @@ embed.vodstream.xyz##div[id="playback-fake"]:remove()
 ||comitalmows.com^*
 ||plusungratefulinstruction.com^*
 ||aitsatho.com^*
-||abyss.to/auth/logged$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.mp4upload.com##div[id="overlayads"]:remove()
 www.mp4upload.com##+js(set-constant, AdProvider, [])
 www.mp4upload.com##+js(aopr, AdProvider)
