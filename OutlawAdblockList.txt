@@ -7359,7 +7359,6 @@ uptobox.com##.mhdyxrvq-bg
 !||files.innovid.com/creative/omd/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||files.innovid.com/creative/omd/altima_f4/Altima_Breakup_30_NOAL2893H.flv$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||files.innovid.com/creative/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||rtr.innovid.com/r1.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||s-cdn.innovid.com/*/iroll-runtimes/iRoll.swf$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||s-cdn.innovid.com/*/platform/vpaid/VPAIDIRollPackage.swf$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||s-cdn.innovid.com/iroll/companion/asset/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -7603,7 +7602,11 @@ www.facebook.com###u_0_1s._4-u8
 ||stats.berkman.harvard.edu/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||whonami.info/async?crc=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||whonami.info^*
-thehill.com##.connatix
+thehill.com##.connatix:remove()
+thehill.com###dfp-ad-incontent_desk_2:remove()
+thehill.com##*[id^="dfp-ad-incontent_desk_"]:remove()
+thehill.com##*[class^="ad-unit"]:remove()
+thehill.com##div[id="acm-ad-tag-"]:remove()
 ||l.ooyala.com/errors/report^log=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||opf.ooyala.com/3rdparty/freewheel_ads_manager_module_51.swf$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||opf.ooyala.com/3rdparty/freewheel_sdk55_ads_manager_*.swf$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -8893,9 +8896,9 @@ www.emutor.com###s-article > .data_block > .advB
 ||ad.doubleclick.net/ddm/ad/vsxhwufx/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ad.doubleclick.net/ddm/trackclk/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ad.doubleclick.net/ddm/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||ade.googlesyndication.com/ddm/activity/dc_oe$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ade.googlesyndication.com/ddm/activity_ext/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||ade.googlesyndication.com/ddm/activity/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||ade.googlesyndication.com/ddm/activity/dc_oe=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||ade.googlesyndication.com/ddm/activity/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.bigfile.to/script/ZeroClipboard.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.bigfile.to/script/jquery.popunder.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.ipromote.com/media/t/v05/01/adchoices/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -10762,7 +10765,6 @@ free-music-free.890m.com##.header-bottom-second
 ||vjrpdagpjwyt.com^*
 ||d31qbv1cthcecs.cloudfront.net^*
 ||d5nxst8fruw4z.cloudfront.net^*
-||z.cdn.cnn.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||redirecting.host^*
 !||xml.kds.media/click^*
 ||xml.kds.media/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -12547,7 +12549,6 @@ www.imagerzone.com###pe27 > td > center > a[href^="probanners.php"]
 ||aqryyhyzjveh.com^*
 ||www.aqryyhyzjveh.com^*
 ||secure.accessify.com/track.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||social-login.cnn.com/gscounters.sendReport$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||z.cdn.turner.com/xslo/aspen/config/theo/cnn/aspenanalytics.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||z.cdn.turner.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s10-cmobads.com^*
@@ -24766,8 +24767,6 @@ www.emailonacid.com##div[id="moove_gdpr_cookie_info_bar"]:remove()
 ||www.dkdmygipll.com^*
 ||dkdmygipll.com^*
 ||winfreewares.xyz^*
-thehill.com###dfp-ad-incontent_desk_2:remove()
-thehill.com##*[id^="dfp-ad-incontent_desk_"]:remove()
 ||www.rihnogames.com/wp-content/uploads/2020/10/Screenshot_3.png$image
 ||www.mcmhatmt.com^*
 ||mcmhatmt.com^*
@@ -36641,27 +36640,101 @@ wikipedia.org##html:style(width: 99vw !important; height: 99vh !important; margi
 wikipedia.org##div[class="mw-page-container"]:style(width: 99vw !important; height: 99vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
 wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 99vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important;)
 !wikipedia.org##div[class="mw-body"]:style(width: 1190px !important; height: 99vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important;)
-sosmediacorp.com##div[id="cookie"]
-us.cnn.com,www.cnn.com##div[class^="terms-of-service"]
-!||www.cnn.com/media/sites/js/bundles/business-adfuel.min.js
+sosmediacorp.com##div[id="cookie"]:remove()
+us.cnn.com,www.cnn.com##div[class^="terms-of-service"]:remove()
+us.cnn.com,www.cnn.com##div[class^="ad-slot"]:remove()
+us.cnn.com,www.cnn.com##div[class^="container__ads"]:remove()
+us.cnn.com,www.cnn.com##div[class^="tui-ad-slate"]:remove()
+us.cnn.com,www.cnn.com##div[id^="waterfall-"]:remove()
+us.cnn.com,www.cnn.com##div[id="ad-feedback__modal-overlay"]:remove()
+us.cnn.com,www.cnn.com##div[data-ad-identifier]:remove()
+us.cnn.com,www.cnn.com##iframe[class="smartad_iframe"]:remove()
+us.cnn.com,www.cnn.com##iframe[id="omid_v1_present"]:remove()
+us.cnn.com,www.cnn.com##iframe[id^="omid-verification-script-frame-"]:remove()
+us.cnn.com,www.cnn.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+us.cnn.com,www.cnn.com##iframe[name="_usrConWBD"]:remove()
+us.cnn.com,www.cnn.com##+js(set-constant, wminst.nielsenPageBeacon, noopFunc)
+us.cnn.com,www.cnn.com##+js(set-constant, wminst.nielsenVideoBeacon, noopFunc)
+us.cnn.com,www.cnn.com##+js(set-constant, wminst.comscorePageBeacon, noopFunc)
+us.cnn.com,www.cnn.com##+js(acs, /wminst\.comscorePageBeacon\(/)
+us.cnn.com,www.cnn.com##+js(acs, /wminst\.comscorePageBeacon\(/)
+us.cnn.com,www.cnn.com##+js(acs, /wminst\.comscorePageBeacon\(/)
+us.cnn.com,www.cnn.com##+js(set-constant, window.COMSCORE, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ADFUEL_BUSINESS_EDITION_SRC,"")
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ADFUEL_BUSINESS_SRC, "")
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ADFUEL_CNN_EDITION_SRC, "")
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ADFUEL_CNN_SRC, "")
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.AD_SLOT_CLIENT_INJECTOR_REGISTRY, "")
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ENABLE_ADFUEL, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ENABLE_ADFUEL_METRICS, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ENABLE_AD_FEEDBACK_DISPLAY_ADS, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ENABLE_AD_FEEDBACK_VIDEO_ADS, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ENABLE_AD_SLOT_CLIENT_INJECTOR, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ENABLE_OPENWEB_AD, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ENABLE_OPENWEB_MIDPROMO, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ENABLE_DATADOG_TELEMETRY, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ENABLE_SERVER_AD_REGISTRIES, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ENABLE_ZION_ANALYTICS_CLICK_EVENTS, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ENABLE_ZION_ANALYTICS_ON_OFF_EVENTS, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ONE_TRUST_SRC, "")
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.PLEDGE_DONATION_ENABLED, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.REGWALL_FEATURE_ENABLED, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.TOP_AD_RENDER_STICKY_TIMEOUT, 1)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.TRINITY_CONFIGURATION.domestic.michonne.features.enableAmazonDisplayAds, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.TRINITY_CONFIGURATION.domestic.michonne.features.enableIntegralAdScience, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.TRINITY_CONFIGURATION.domestic.michonne.features.enablePrebid, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.TRINITY_CONFIGURATION.international.michonne.features.enableAmazonDisplayAds, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.TRINITY_CONFIGURATION.international.michonne.features.enableCep, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.TRINITY_CONFIGURATION.international.michonne.features.enableIntegralAdScience, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.TRINITY_CONFIGURATION.international.michonne.features.enablePrebid, false)
+us.cnn.com,www.cnn.com##+js(set-constant, window.env.ZION_TELEMETRY_ENDPOINT, "")
+us.cnn.com,www.cnn.com##section[class="layout__wrapper layout-with-bottom-rail__wrapper"]:style(max-width: 100vw !important; width: 100vw !important)
+! TODO: expanding the video player viewport isn't working with only these changes as it overlaps the rest of the page which doesn't dynamically change size.
+!us.cnn.com,www.cnn.com##div[class="video"]:style(padding:0 !important; margin: 0px !important; border-width:0 !important; min-width: 99vw !important; width: 99vw !important; min-height: 99vh !important; height: 99vh !important;)
+!us.cnn.com,www.cnn.com##div[id^="top-container-"]:style(padding:0 !important; margin: 0px !important; border-width:0 !important; min-width: 99vw !important; width: 99vw !important; min-height: 99vh !important; height: 99vh !important;)
+!us.cnn.com,www.cnn.com##div[id="top-player-container-"]:style(padding:0 !important; margin: 0px !important; border-width:0 !important; min-width: 99vw !important; width: 99vw !important; min-height: 99vh !important; height: 99vh !important;)
+! TODO: have to move video playlist if expand the video player viewport.
+!us.cnn.com,www.cnn.com##div[class="video-playlist"]
+us.cnn.com,www.cnn.com##video[id^="bitmovinplayer-video-top-player-container"]:style(padding:0 !important; margin: 0px !important; border-width:0px !important; width: 100% !important; height: 100% !important;user-select: all !important; pointer-events: all !important;)
+us.cnn.com,www.cnn.com##video[id^="bitmovinplayer-video-top-player-container"]:remove-attr(disableremoteplayback)
+us.cnn.com,www.cnn.com##+js(remove-attr, disableremoteplayback, video[id^="bitmovinplayer-video-top-player-container"])
+us.cnn.com,www.cnn.com##video[id^="bitmovinplayer-video-top-player-container"]:remove-attr(disablepictureinpicture)
+us.cnn.com,www.cnn.com##+js(remove-attr, disablepictureinpicture, vvideo[id^="bitmovinplayer-video-top-player-container"])
+us.cnn.com,www.cnn.com##+js(saa, x-webkit-airplay, allow, video[id^="bitmovinplayer-video-top-player-container"])
+us.cnn.com,www.cnn.com##+js(saa, data-autoplay-mute-lock, false, video[id^="bitmovinplayer-video-top-player-container"])
+us.cnn.com,www.cnn.com##+js(saa, controls, true, video[id^="bitmovinplayer-video-top-player-container"])
+us.cnn.com,www.cnn.com##+js(saa, width, 100%, video[id^="bitmovinplayer-video-top-player-container"])
+us.cnn.com,www.cnn.com##+js(saa, height, 100%, video[id^="bitmovinplayer-video-top-player-container"])
+us.cnn.com,www.cnn.com##div[class="video-inline__video-resource"]:style(padding:0 !important; margin: 0px !important; border-width:0px !important; width: 100% !important; height: 100% !important;user-select: all !important; pointer-events: all !important;)
+!||www.cnn.com/media/sites/js/bundles/business-adfuel.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.cnn.com/media/sites/js/bundles/business-adfuel-body.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.cnn.com/media/sites/js/bundles/business-adfuel$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.cnn.com/media/sites/js/bundles/cnn-adfuel$script
-www.fosslinux.com##div[id="div-pw-1648737234"]
-venturebeat.com##div[id^="tude-cw-aa-"]
-venturebeat.com##div[class="tude-cw-wrap"]
-www.bbc.com##div[class^="dotcom-ad"]
-www.bbc.com##div[id="sticky-mpu"]
+!||cdn.cnn.com/ads/cnn/cnn_quantum_leaf.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn.cnn.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||smetrics.cnn.com/b/ss/cnn-adbp-domestic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||smetrics.cnn.com^*
+||z.cdn.cnn.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||social-login.cnn.com/gscounters.sendReport$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||cnn.com.102.122.2o7.net/b/ss/cnn-adbp-domestic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cnn.com.102.122.2o7.net^*
+||collector.cdp.cnn.com^*
+||atom.warnermedia.com/api/v1/events*=ad-break-event-breakStart$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.fosslinux.com##div[id="div-pw-1648737234"]:remove()
+venturebeat.com##div[id^="tude-cw-aa-"]:remove()
+venturebeat.com##div[class="tude-cw-wrap"]:remove()
+www.bbc.com##div[class^="dotcom-ad"]:remove()
+www.bbc.com##div[id="sticky-mpu"]:remove()
 !||emupedia.net/emupedia-app-vscode/static/vs/platform/telemetry/common/telemetryService.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||emupedia.net/emupedia-app-vscode/static/vs/platform/telemetry/common/telemetryUtils.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||emupedia.net/emupedia-app-vscode/static/vs/platform/telemetry/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.gog-games.com##+js(remove-class, no-js-hide, , stay)
 gog-games.com##+js(remove-class, no-js-hide, , stay)
-www.fosslinux.com##div[id="penci-adblocker-popup-adblock"]
-www.fosslinux.com##*[class*="penci-adblocker-"]
-www.fosslinux.com##div[class*="penci-promo-popup-wrapper"]
+www.fosslinux.com##div[id="penci-adblocker-popup-adblock"]:remove()
+www.fosslinux.com##*[class*="penci-adblocker-"]:remove()
+www.fosslinux.com##div[class*="penci-promo-popup-wrapper"]:remove()
 www.fosslinux.com##html:style(overflow:scroll !important;)
-www.fosslinux.com##div[class*="penci-google-adsense"]
+www.fosslinux.com##div[class*="penci-google-adsense"]:remove()
 www.fosslinux.com##ins[data-ad-client]:remove()
 ||www.fosslinux.com/wp-content/themes/soledad/js/detector.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||files-downloader-express.com^*
@@ -44395,23 +44468,12 @@ www.economist.com##+js(set-constant, NREUM, {})
 www.economist.com##+js(aopr, NREUM)
 www.economist.com##+js(aopw, NREUM)
 ||consent.economist.com^*
-us.cnn.com,www.cnn.com##div[class^="ad-slot"]:remove()
-us.cnn.com,www.cnn.com##div[class^="container__ads"]:remove()
-us.cnn.com,www.cnn.com##iframe[class="smartad_iframe"]:remove()
-!||cdn.cnn.com/ads/cnn/cnn_quantum_leaf.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||cdn.cnn.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||collector.cdp.cnn.com^*
 ||www.dianomi.com/cgi-bin/smartads_video_json.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.dianomi.com/cgi-bin/pixeltrack.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||logs.browser-intake-datadoghq.com/api/v2/logs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||alb-logs-http-browser-pub-s0-1899014706.us-east-1.elb.amazonaws.com/api/v2/logs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||smetrics.cnn.com/b/ss/cnn-adbp-domestic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||cnn.com.102.122.2o7.net/b/ss/cnn-adbp-domestic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||logs.browser-intake-datadoghq.com^*
 ||alb-logs-http-browser-pub-s0-1899014706.us-east-1.elb.amazonaws.com^*
-||smetrics.cnn.com^*
-||cnn.com.102.122.2o7.net^*
-||www.cnn.com/media/sites/js/bundles/business-adfuel*.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||meadowlullaby.com^*
 nypost.com##div[class*="ad--container"]:remove()
 nypost.com##div[class*="ad-slot"]:remove()
@@ -50768,6 +50830,13 @@ www.earth.com##iframe[id="grow-login-iframe"]:remove()
 ||jbzmwqmqwojjl.top^*
 ||stretchsquirrel.com^*
 ||piquantgrove.com^$important
+!||vae-bid.adsrvr.org/bid/feedback/freewheel?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||vae-bid.adsrvr.org^*
+!||rtr.innovid.com/r1.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||rtr.innovid.com/placement/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||track.activemetering.com/pixel/v1/all/pixel.gif$xhr
+||track.activemetering.com^*
+||zion-telemetry.api.cnn.io^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
