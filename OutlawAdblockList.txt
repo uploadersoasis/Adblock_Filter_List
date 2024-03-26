@@ -24219,6 +24219,7 @@ avr.i-trailer.ru##+js(abort-on-property-write, advark2)
 ||tdugvspdnq.com^*
 ||marketplace.visualstudio.com/_apis/customerintelligence/Events$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.samsclub.com/px/PXsLC3j22K/xhr/api/v2/collector$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.samsclub.com/akam/13/pixel_$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||d10lpsik1i8c69.cloudfront.net/w.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d10lpsik1i8c69.cloudfront.net^*
 ||faigroas.net^*
@@ -42391,6 +42392,7 @@ reflect4.me##button[type="submit"]:remove-attr(disabled)
 !||streetuptowind.com/services/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||streetuptowind.com^*
 ||d24g87zbxr4yiz.cloudfront.net^*
+||dn6rwwtxa647p.cloudfront.net/76/www.howtogeek.com/$3p,script
 www.howtogeek.com##amp-iframe:remove()
 www.howtogeek.com###div-thetop1:remove()
 www.howtogeek.com##div[class*="adslot"]:remove()
@@ -44033,9 +44035,10 @@ www.asus.com##*[class^="cookie-policy-lightbox-"]:remove()
 !||dlcdnimgs.asus.com/vendor/location-reminder/js/locationreminder.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dlcdnimgs.asus.com/vendor/location-reminder/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 truthsocial.com##div[data-testid="banner"]:has(p[class*="tracking-normal"]):remove()
+truthsocial.com##div[item="[object Object]"]:has(a[href="/@TruthAds"]):remove()
+||truthsocial.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! blocking the following error handling script is necessary if the cookie consent banner is also blocked.
 ||truthsocial.com/packs/js/error-*.chunk.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-truthsocial.com##div[item="[object Object]"]:has(a[href="/@TruthAds"]):remove()
 ||ae.mmstat.com^*
 ||moduleanalysis.aliexpress.com^*
 ||stubhub.prf.hn^*
@@ -50628,8 +50631,8 @@ moviesapi.club##+js(acs, /dtc_sbx\(\)/)
 ||moviesapi.club/sbx.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||w1.moviesapi.club/assets/js/devtools-detector_2.0.15.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||moviesapi.club/assets/js/devtools-detector*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!*$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com,domain=moviesapi.club
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com,domain=moviesapi.club
+!*$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com|code.jquery.com,domain=moviesapi.club
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com|code.jquery.com,domain=moviesapi.club
 ! TODO: either remove the entire script with detectDevTool or simply don't "eval" it?
 databasegdriveplayer.xyz##^script:has-text(/detectDevTool/):remove()
 databasegdriveplayer.xyz##+js(remove-node-text, script, /detectDevTool/gm)
@@ -50722,6 +50725,7 @@ www.earth.com##iframe[id="grow-login-iframe"]:remove()
 ||tquvbfl.com^*
 !||jwmb.jbzmwqmqwojjl.top^*
 ||jbzmwqmqwojjl.top^*
+||stretchsquirrel.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
