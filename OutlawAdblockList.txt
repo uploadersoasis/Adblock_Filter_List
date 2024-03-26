@@ -3154,8 +3154,11 @@ www.nbcnews.com##.stack-l-ad-center
 www.moviestalk.com##.adsbygoogle:remove()
 ||p.brealtime.com^*
 ||screenrant.com/adsindie/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||screenrant.com/public/build/valnet-header.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||screenrant.com/public/build/valnet-header.$script
+!||screenrant.com/public/build/valnet-footer.$script
+!||screenrant.com/public/build/valnet-footer-article.$script
 ||screenrant.com/wp-content/plugins/ad_management/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||screenrant.com/public/build/send-web-vitals.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !screenrant.com###ad-zone-list-sidebar-default:remove()
 !screenrant.com###ad-zone-list-content-below-next-button:remove()
 !screenrant.com###ad-zone-list-content-below-widget-1:remove()
@@ -3173,28 +3176,65 @@ screenrant.com##.ad-even:remove()
 !screenrant.com##.width728.ad-zone-container-content-below-main-pic.ad-zone-container:remove()
 !screenrant.com##.width728.ad-zone-container-content-below-widget.ad-zone-container:remove()
 !screenrant.com##.width728.ad-zone-container-content-transition-1.ad-zone-container:remove()
+screenrant.com##*[class="ad-zone-"]:remove()
+screenrant.com##:matches-path(/whats-on-tv-tonight/) aside[id="secondary"]:remove()
+screenrant.com##:matches-path(/whats-on-tv-tonight/) footer[class="article-footer"]:remove()
 screenrant.com##div[class*="ad-zone"]:remove()
 screenrant.com##div[id^="div_gpt_ad"]:remove()
-screenrant.com##script[id="optimera-ops"]:remove()
 screenrant.com##div[id^="adsninja-"]:remove()
 screenrant.com##div[id^="div-gpt-ad-"]:remove()
 screenrant.com##div[id^="ad-zone-"]:remove()
 screenrant.com##div[class="ad-current"]:remove()
-screenrant.com##*[class="ad-zone-"]:remove()
 screenrant.com##div[id="ccpa-link"]:remove()
-screenrant.com##:matches-path(/whats-on-tv-tonight/) aside[id="secondary"]:remove()
-screenrant.com##:matches-path(/whats-on-tv-tonight/) footer[class="article-footer"]:remove()
 screenrant.com##div[class^="heading_image responsive-img img-size-heading-image-full-width expandable"][data-modal-id][data-modal-container-id]:remove()
-screenrant.com##iframe[name$="apiLocator"]:remove()
+screenrant.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+screenrant.com##iframe[id="rufous-sandbox"]:remove()
+screenrant.com##script[id="optimera-ops"]:remove()
+screenrant.com##+js(set-constant, VALNET_GLOBAL_GOOGLEANALYTICSPROPERTYID, "")
+screenrant.com##+js(set-constant, VALNET_GLOBAL_ISADBLOCK, false)
+screenrant.com##+js(set-constant, valnet_hideAds, true)
+screenrant.com##+js(set-constant, window.maxUnauthenicatedArticleViews, 32767)
+screenrant.com##+js(set-constant, window.isUserLoggedIn, true)
+screenrant.com##+js(set-constant, window.adsNinjaScriptLocation, "")
+screenrant.com##+js(set-constant, window.an_sentinelScriptLocation, "")
+screenrant.com##+js(set-constant, window.adsNinjaWorkerScriptLocation, "")
+screenrant.com##+js(set-constant, window.adsNinjaAdBehaviourOptions, {})
+screenrant.com##+js(aopr, window.adsNinjaAdBehaviourOptions)
+screenrant.com##+js(aopw, window.adsNinjaAdBehaviourOptions)
+!screenrant.com##+js(set-constant, el.innerHTML, "", complete)
+!screenrant.com##+js(set-constant, el.innerHTML, "", end)
+screenrant.com##+js(set-constant, el.innerHTML, "")
+screenrant.com##+js(trusted-set-constant, VALNET_GLOBAL_ADS, "noAds")
+screenrant.com##+js(trusted-set-constant, VALNET_GLOBAL_ISPREMIUM, "true")
+screenrant.com##+js(trusted-set-constant, VALNET_GLOBAL_SUBSCRIPTIONPLAN, "premium")
+screenrant.com##+js(remove-node-text, script, /\(function\(i,s,o,g,r,a,m\)\{i\['GoogleAnalyticsObject'\]/gm)
+screenrant.com##+js(remove-node-text, script, /googletag\.cmd\.push\(/gm)
+screenrant.com##+js(remove-node-text, script, /"admbenefits"/gm)
+screenrant.com##+js(acs, /"admbenefits"/)
+screenrant.com##+js(set-constant, window.an_sentinel, {})
+screenrant.com##+js(acs, /window\.an_sentinel\.init\(/)
+screenrant.com##+js(set-constant, window.adsNinjaAdBehaviourOptions, {})
+screenrant.com##+js(aopr, googletag)
+screenrant.com##+js(aopw, googletag)
+screenrant.com##+js(set-constant, adUnitBidderConfigs, {})
+screenrant.com##+js(aopr, adUnitBidderConfigs)
+screenrant.com##+js(aopw, adUnitBidderConfigs)
+screenrant.com##+js(aopr, window.pbjs)
+screenrant.com##+js(aopw, window.pbjs)
+screenrant.com##+js(set-constant, window.adsNinja, {})
+screenrant.com##+js(acs, /window\.adsNinja\.run\(/)
+screenrant.com##html:style(max-width: 100vw !important; width: 100vw !important; overflow:auto !important;)
+screenrant.com##header[class^="article_heading"]:style(max-width: 100% !important; width: 100% !important; overflow:auto !important;)
 ! Changes to the style of both elements are necessary for the table to properly fill a 1920x1080p display with horizontal scrollbars.
 ! Leaving out "overflow-x: scroll !important;" prevents there from being horizontal scrollbars which are needed.
-! BUT, put it in causes the width of the table to be constrained to 750px, which is half the size it should be.
+! TODO: BUT, putting it in causes the width of the table to be constrained to 750px, which is half the size it should be.
 ! width: 100vw is 100% of the viewport's width.
 ! width: 100% is 100% of the parent element's width which may not be 100% of the viewport.
-! width must be set before overscroll.
+! width must be set before overflow.
 ! height: 100vh is 100% of the viewport's height.
-screenrant.com##article[class^="w-article infinite-scroll"]:style(width: 100vw !important; max-width: 100vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
-screenrant.com##section[id="article-body"]:style(width: 100vw !important; max-width: 100vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
+! 100vw is too wide and setting margin-left and margin-right doesn't work as well for this article element.
+screenrant.com##article[class^="w-article infinite-scroll widget"]:style(max-width: 99vw !important; width: 99vw !important; overflow-x: scroll !important;)
+!screenrant.com##section[id="article-body"]:style(width: 100vw !important; max-width: 100vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
 !screenrant.com##:xpath('//*[@id="article-body"]/div[1]/div[1]') class["table-container"]:style(width: 100vw !important; max-width: 100vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
 ! would remove the next article if scrolling down which isn't necessary to reformat the schedule table.
 !screenrant.com##article[class*="infinite-scroll"]:remove()
@@ -6114,9 +6154,9 @@ thegioitinhoc.vn###ad_global_below_navbar > center
 ge.tt###reklame > .reklame-wrapper
 driverpacks.net/files/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.adbrau.com^*
-www.ubuntuvibes.com###aswift_2
-www.shootemall.net###header > .header-inner > .top-ad-728
-www.shootemall.net###aswift_1
+www.ubuntuvibes.com###aswift_2:remove()
+www.shootemall.net###header > .header-inner > .top-ad-728:remove()
+www.shootemall.net###aswift_1:remove()
 !||cdne.cpmstar.com/cached/creatives/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdne.cpmstar.com^*
 ||downfmvplayer.com^*
@@ -25263,8 +25303,8 @@ gofile.io##.swal2-backdrop-show.swal2-center.swal2-container:remove()
 !||www.google-analytics.com/siteopt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.google-analytics.com/urchin.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.google-analytics.com^$script,domain=daddylivehd.sx|dlhd.sx
-||google-analytics.com^*
-||googletagmanager.com/gtm.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||google-analytics.com^$important,3p
+||googletagmanager.com/gtm.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||googletagservices.com/gpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.googletagmanager.com/gtag/js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.googletagmanager.com/gtm.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -40499,6 +40539,7 @@ dlapk4all.com##script[data-domain="22filexstarted22.com"]:remove()
 android.gadgethacks.com##+js(acs, /gtag\(/)
 !||cdn.adsninja.ca/adsninja_client.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.adsninja.ca/videojs.ads.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||cdn.adsninja.ca/an_sentinel.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.adsninja.ca^*
 ||adtechvideo.s3.amazonaws.com^*
 ||launchpad-wrapper.privacymanager.io^*
@@ -42452,7 +42493,7 @@ www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disa
 !||static.adsafeprotected.com/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||static.adsafeprotected.com/skeleton.gif?bannnerid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.adsafeprotected.com/skeleton.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-! blocking verdantloom.com, crystalboulevard.com, succeedscene.com, whimsicalgrove.com, functionalfeather.com, delicatecascade.com, potatoinvention.com, and featherstage.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
+! blocking verdantloom.com, crystalboulevard.com, succeedscene.com, whimsicalgrove.com, functionalfeather.com, delicatecascade.com, potatoinvention.com, featherstage.com, and piquantgrove.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
 ||verdantloom.com^*
 ||crystalboulevard.com^*
 ||succeedscene.com^*
@@ -50726,6 +50767,7 @@ www.earth.com##iframe[id="grow-login-iframe"]:remove()
 !||jwmb.jbzmwqmqwojjl.top^*
 ||jbzmwqmqwojjl.top^*
 ||stretchsquirrel.com^*
+||piquantgrove.com^$important
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
