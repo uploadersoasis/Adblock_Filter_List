@@ -3154,6 +3154,52 @@ www.nbcnews.com##.stack-l-ad-center
 www.moviestalk.com##.adsbygoogle:remove()
 ||p.brealtime.com^*
 ||screenrant.com/adsindie/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||screenrant.com/public/build/valnet-header.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||screenrant.com/wp-content/plugins/ad_management/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!screenrant.com###ad-zone-list-sidebar-default:remove()
+!screenrant.com###ad-zone-list-content-below-next-button:remove()
+!screenrant.com###ad-zone-list-content-below-widget-1:remove()
+!screenrant.com###ad-zone-list-header:remove()
+!screenrant.com###ad-zone-list-sidebar-first:remove()
+!screenrant.com###ad-zone-regular-sidebar-first:remove()
+!screenrant.com###ad-zone-regular-header:remove()
+screenrant.com##*[id^="ad-zone-list-"]:remove()
+screenrant.com##*[id^="ad-zone-regular-"]:remove()
+screenrant.com##.ad-even:remove()
+!screenrant.com##.ad-zone-container-sidebar-trending-1.ad-zone-container:remove()
+!screenrant.com##.width300.ad-zone-container-sidebar-default.ad-zone-container:remove()
+!screenrant.com##.width300.ad-zone-container-sidebar-first.ad-zone-container:remove()
+!screenrant.com##.width728.ad-zone-container-content-below-article.ad-zone-container:remove()
+!screenrant.com##.width728.ad-zone-container-content-below-main-pic.ad-zone-container:remove()
+!screenrant.com##.width728.ad-zone-container-content-below-widget.ad-zone-container:remove()
+!screenrant.com##.width728.ad-zone-container-content-transition-1.ad-zone-container:remove()
+screenrant.com##div[class*="ad-zone"]:remove()
+screenrant.com##div[id^="div_gpt_ad"]:remove()
+screenrant.com##script[id="optimera-ops"]:remove()
+screenrant.com##div[id^="adsninja-"]:remove()
+screenrant.com##div[id^="div-gpt-ad-"]:remove()
+screenrant.com##div[id^="ad-zone-"]:remove()
+screenrant.com##div[class="ad-current"]:remove()
+screenrant.com##*[class="ad-zone-"]:remove()
+screenrant.com##div[id="ccpa-link"]:remove()
+screenrant.com##:matches-path(/whats-on-tv-tonight/) aside[id="secondary"]:remove()
+screenrant.com##:matches-path(/whats-on-tv-tonight/) footer[class="article-footer"]:remove()
+screenrant.com##div[class^="heading_image responsive-img img-size-heading-image-full-width expandable"][data-modal-id][data-modal-container-id]:remove()
+screenrant.com##iframe[name$="apiLocator"]:remove()
+! Changes to the style of both elements are necessary for the table to properly fill a 1920x1080p display with horizontal scrollbars.
+! Leaving out "overflow-x: scroll !important;" prevents there from being horizontal scrollbars which are needed.
+! BUT, put it in causes the width of the table to be constrained to 750px, which is half the size it should be.
+! width: 100vw is 100% of the viewport's width.
+! width: 100% is 100% of the parent element's width which may not be 100% of the viewport.
+! width must be set before overscroll.
+! height: 100vh is 100% of the viewport's height.
+screenrant.com##article[class^="w-article infinite-scroll"]:style(width: 100vw !important; max-width: 100vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
+screenrant.com##section[id="article-body"]:style(width: 100vw !important; max-width: 100vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
+!screenrant.com##:xpath('//*[@id="article-body"]/div[1]/div[1]') class["table-container"]:style(width: 100vw !important; max-width: 100vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
+! would remove the next article if scrolling down which isn't necessary to reformat the schedule table.
+!screenrant.com##article[class*="infinite-scroll"]:remove()
+! removing the class from this makes the table smaller and fits more of it on the page BUT it eliminates the horizontal scrollbar for some reason.
+!screenrant.com##section[id="article-body"]:remove-class(article-body)
 !||counter.d.delivery49.com/blank.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||counter.d.delivery49.com^*
 ||d.delivery49.com^*
@@ -3161,10 +3207,10 @@ www.moviestalk.com##.adsbygoogle:remove()
 ||stat.komoona.com^*
 ||p.videologygroup.com/DSPMedia/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||aol-pubnet.telemetryaudit.com^*
-www.huffingtonpost.com##.hp-ss-service-ad-wrapper
-funnyordie.com##.mrec
-funnyordie.com##.content-page-mrec
-funnyordie.com##.content-page-short-mrec
+www.huffingtonpost.com##.hp-ss-service-ad-wrapper:remove()
+funnyordie.com##.mrec:remove()
+funnyordie.com##.content-page-mrec:remove()
+funnyordie.com##.content-page-short-mrec:remove()
 !||vw.btrll.com/Pix-1x1.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vw.btrll.com^*
 !||cache.btrll.com/default/Pix-1x1.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -6470,16 +6516,6 @@ www.torrent-invites.com###header > .torrinvcustom-wrapper > .ad_global_header
 ||beap-bc.yahoo.com^*
 ||pr.ybp.yahoo.com/ab/secure/true/imp/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||us.af.beap.bc.yahoo.com^*
-||screenrant.com/wp-content/plugins/ad_management/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!screenrant.com###ad-zone-list-sidebar-default
-!screenrant.com###ad-zone-list-content-below-next-button
-!screenrant.com###ad-zone-list-content-below-widget-1
-!screenrant.com###ad-zone-list-header
-!screenrant.com###ad-zone-list-sidebar-first
-!screenrant.com###ad-zone-regular-sidebar-first
-!screenrant.com###ad-zone-regular-header
-screenrant.com##*[id^="ad-zone-list-"]:remove()
-screenrant.com##*[id^="ad-zone-regular-"]:remove()
 ||tracking.justpremium.com^*
 ||ads.nexage.com^*
 ||webtrends2.epsilon.com^*
@@ -15388,16 +15424,6 @@ x1337x.ws##.mgbox
 ||tags.fulllab.com.br^*
 !||tags.t.tailtarget.com/t3m.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tags.t.tailtarget.com^*
-screenrant.com##.ad-even
-!screenrant.com##.ad-zone-container-sidebar-trending-1.ad-zone-container
-!screenrant.com##.width300.ad-zone-container-sidebar-default.ad-zone-container
-!screenrant.com##.width300.ad-zone-container-sidebar-first.ad-zone-container
-!screenrant.com##.width728.ad-zone-container-content-below-article.ad-zone-container
-!screenrant.com##.width728.ad-zone-container-content-below-main-pic.ad-zone-container
-!screenrant.com##.width728.ad-zone-container-content-below-widget.ad-zone-container
-!screenrant.com##.width728.ad-zone-container-content-transition-1.ad-zone-container
-screenrant.com##div[class*="ad-zone"]
-screenrant.com##div[id^="div_gpt_ad"]
 !||mg.marketgid.com/mghtml/framehtml/c/n/n/nnm.me.648120.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mg.marketgid.com^*
 !||d.t.tailtarget.com/profile$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -40477,32 +40503,6 @@ android.gadgethacks.com##+js(acs, /gtag\(/)
 ||adtechvideo.s3.amazonaws.com^*
 ||launchpad-wrapper.privacymanager.io^*
 ||tru.am/scripts/custom/valnet.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||screenrant.com/public/build/valnet-header.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-screenrant.com##script[id="optimera-ops"]:remove()
-screenrant.com##div[id^="adsninja-"]:remove()
-screenrant.com##div[id^="div-gpt-ad-"]:remove()
-screenrant.com##div[id^="ad-zone-"]:remove()
-screenrant.com##div[class="ad-current"]:remove()
-screenrant.com##*[class="ad-zone-"]:remove()
-screenrant.com##div[id="ccpa-link"]:remove()
-screenrant.com##:matches-path(/whats-on-tv-tonight/) aside[id="secondary"]:remove()
-screenrant.com##:matches-path(/whats-on-tv-tonight/) footer[class="article-footer"]:remove()
-screenrant.com##div[class^="heading_image responsive-img img-size-heading-image-full-width expandable"][data-modal-id][data-modal-container-id]:remove()
-screenrant.com##iframe[name$="apiLocator"]:remove()
-! Changes to the style of both elements are necessary for the table to properly fill a 1920x1080p display with horizontal scrollbars.
-! Leaving out "overflow-x: scroll !important;" prevents there from being horizontal scrollbars which are needed.
-! BUT, put it in causes the width of the table to be constrained to 750px, which is half the size it should be.
-! width: 99vw is 100% of the viewport's width.
-! width: 100% is 100% of the parent element's width which may not be 100% of the viewport.
-! width must be set before overscroll.
-! height: 99vh is 100% of the viewport's height.
-screenrant.com##article[class="w-article infinite-scroll   article"]:style(width: 99vw !important; max-width: 99vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
-screenrant.com##section[id="article-body"]:style(width: 99vw !important; max-width: 99vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
-!screenrant.com##:xpath('//*[@id="article-body"]/div[1]/div[1]') class["table-container"]:style(width: 99vw !important; max-width: 99vw !important; overflow-x: scroll !important; margin-left: 10px !important;)
-! would remove the next article if scrolling down which isn't necessary to reformat the schedule table.
-!screenrant.com##article[class*="infinite-scroll"]:remove()
-! removing the class from this makes the table smaller and fits more of it on the page BUT it eliminates the horizontal scrollbar for some reason.
-!screenrant.com##section[id="article-body"]:remove-class(article-body)
 ||semicircleanalyzerequire.com^*
 ||d2ef20sk9hi1u3.cloudfront.net^*
 ||dr3fr5q4g2ul9.cloudfront.net^*
