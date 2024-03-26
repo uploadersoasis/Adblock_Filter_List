@@ -36719,7 +36719,9 @@ us.cnn.com,www.cnn.com##div[class="video-inline__video-resource"]:style(padding:
 !||cnn.com.102.122.2o7.net/b/ss/cnn-adbp-domestic/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cnn.com.102.122.2o7.net^*
 ||collector.cdp.cnn.com^*
-||atom.warnermedia.com/api/v1/events*=ad-break-event-breakStart$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||atom.warnermedia.com/api/v1/events*=ad-break-event-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||atom.warnermedia.com/api/v1/events*=ad-event-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||atom.warnermedia.com/api/v1/events*=impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.fosslinux.com##div[id="div-pw-1648737234"]:remove()
 venturebeat.com##div[id^="tude-cw-aa-"]:remove()
 venturebeat.com##div[class="tude-cw-wrap"]:remove()
