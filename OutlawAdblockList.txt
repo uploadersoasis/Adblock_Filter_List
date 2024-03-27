@@ -7549,6 +7549,7 @@ windowsforum.com###BrowserBar:remove()
 !||tweaktown.us.intellitxt.com^*
 www.tweaktown.com##div[class="adcon"]:remove()
 www.tweaktown.com##div[class="ad"]:remove()
+www.tweaktown.com##div[class="center-tag-rightad"]:upward(1):remove()
 www.tweaktown.com##div[class="center-tag-rightad"]:remove()
 ||www.tweaktown.com/logger.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.tweaktown.com/logger_news.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
