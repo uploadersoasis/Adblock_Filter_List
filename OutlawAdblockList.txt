@@ -7607,6 +7607,41 @@ thehill.com###dfp-ad-incontent_desk_2:remove()
 thehill.com##*[id^="dfp-ad-incontent_desk_"]:remove()
 thehill.com##*[class^="ad-unit"]:remove()
 thehill.com##div[id="acm-ad-tag-"]:remove()
+thehill.com##div[id="taboola-tracking-pixel"]:remove()
+thehill.com##script[id^="jetpack-stats-js"]:remove()
+thehill.com##script[class*="ns-ad-handler-js"]:remove()
+thehill.com##script[id="the-hill-ad-loader-js-js"]:remove()
+thehill.com##script[id^="htlbid_"]:remove()
+thehill.com##script[id="adobe-analytics-library-js"]:remove()
+thehill.com##+js(set-constant, CompanionAd, {})
+thehill.com##+js(acs, /CompanionAd\.init\(\)/)
+thehill.com##+js(set-constant, window.isHtlbidEnabled, false)
+thehill.com##+js(aopr, window.isHtlbidEnabled)
+thehill.com##+js(aopw, window.isHtlbidEnabled)
+! Do not refine or block all window.amScripts.
+thehill.com##+js(set-constant, window.amScripts["gpt"], {})
+thehill.com##+js(aopr, window.amScripts["gpt"])
+thehill.com##+js(aopw, window.amScripts["gpt"])
+thehill.com##+js(set-constant, window.isAdSponsorshipEnabled, false)
+thehill.com##+js(aopr, window.isAdSponsorshipEnabled)
+thehill.com##+js(aopw, window.isAdSponsorshipEnabled)
+thehill.com##+js(set-constant, window.consentGranted, noopFunc)
+thehill.com##+js(set-constant, window.permutive, {})
+thehill.com##+js(aopr, window.permutive)
+thehill.com##+js(aopw, window.permutive)
+thehill.com##+js(set-constant, window.permutive.consent, noopFunc)
+thehill.com##+js(aopw, oneTrustAccept)
+thehill.com##+js(aopw, window.NXSTdata.ads.blockthroughStatus)
+thehill.com##+js(aeld, load, /permutive\.consent\(/)
+thehill.com##+js(aeld, load, /window\.consentGranted/)
+thehill.com##+js(set-constant, window.isAdRefreshEnabled, false)
+thehill.com##+js(set-constant, window.isAdSponsorshipEnabled, false)
+thehill.com##+js(set-constant, window.adRefreshConfig, {})
+||thehill.com/wp-content/themes/the-hill/client/build/js/ad-loader.bundle.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||thehill.com/wp-content/plugins/nxst-advertising/dist/htlbid-advertising.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||thehill.com/wp-content/plugins/nxst-advertising/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||thehill.com/*/xhr/api/v2/collector$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||blue.thehill.com/rest/v2/recommendations/stats?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||l.ooyala.com/errors/report^log=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||opf.ooyala.com/3rdparty/freewheel_ads_manager_module_51.swf$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||opf.ooyala.com/3rdparty/freewheel_sdk55_ads_manager_*.swf$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
