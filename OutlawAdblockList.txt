@@ -21954,6 +21954,8 @@ www.youtube.com##+js(set-constant, window.google_ad_status, 1, stay)
 ||www.youtube.com/ptracking$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/youtubei/v1/log_event$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/youtubei/v1/log_interaction$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rule only blocks outgoing post requests.
+||www.youtube.com/youtubei/v1/updated_metadata?$xhr,method=post
 ||www.youtube.com/yts/jsbin/www-pagead-id-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/yva_video?adformat=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -39532,7 +39534,7 @@ upstream.to##+js(trusted-replace-node-text, script, /{debugger;}/gm, {null;})
 ||upstream.to/js/dnsads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||upstream.to/js/jdadbl.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !*$3p,script,denyallow=upstreamcdn.co,domain=upstream.to
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=upstreamcdn.co,domain=upstream.to
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=upstreamcdn.co,domain=upstream.to
 ||*.amazonaws.com^$3p,xhr,domain=upstream.to
 ||rmaticalacm.info^*
 ||titlerwilhelm.com^*
@@ -41742,11 +41744,11 @@ thewrap.com##.wallkit-paywall-block, .wrappro-paywall-member-link-for-reader:rem
 ||clicknupload.*/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||clickndownload.*/freshway.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||clickndownload.*/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||undefined^$script,domain=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clickndownload.click|clicknupload.net
+||undefined^$script,domain=clicknupload.cc|clickndownload.cc|clicknupload.to|clickndownload.to|clicknupload.space|clickndownload.space|clicknupload.click|clickndownload.click|clicknupload.net|clickndownload.net|clicknupload.link|clickndownload.link|clicknupload.org|clickndownload.org
 ! block all third-party scripts and XHR traffic except those from any clicknupload domain
 ! denyallow rule cannot have asterisks in it
-!*$3p,script,xhr,denyallow=clicknupload.net|clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clickndownload.click|clickndownload.link|clicknupload.space,domain=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clicknupload.net|clickndownload.link|clicknupload.space
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,xhr,denyallow=clicknupload.net|clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clickndownload.click|clickndownload.link|clicknupload.space,domain=clicknupload.cc|clicknupload.to|clickndownload.org|clickndownload.space|clicknupload.click|clicknupload.net|clickndownload.link|clicknupload.space
+!*$3p,script,xhr,denyallow=clicknupload.cc|clickndownload.cc|clicknupload.to|clickndownload.to|clicknupload.space|clickndownload.space|clicknupload.click|clickndownload.click|clicknupload.net|clickndownload.net|clicknupload.link|clickndownload.link|clicknupload.org|clickndownload.org,domain=clicknupload.cc|clickndownload.cc|clicknupload.to|clickndownload.to|clicknupload.space|clickndownload.space|clicknupload.click|clickndownload.click|clicknupload.net|clickndownload.net|clicknupload.link|clickndownload.link|clicknupload.org|clickndownload.org
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,xhr,denyallow=clicknupload.cc|clickndownload.cc|clicknupload.to|clickndownload.to|clicknupload.space|clickndownload.space|clicknupload.click|clickndownload.click|clicknupload.net|clickndownload.net|clicknupload.link|clickndownload.link|clicknupload.org|clickndownload.org,domain=clicknupload.cc|clickndownload.cc|clicknupload.to|clickndownload.to|clicknupload.space|clickndownload.space|clicknupload.click|clickndownload.click|clicknupload.net|clickndownload.net|clicknupload.link|clickndownload.link|clicknupload.org|clickndownload.org
 ! the location of the following xpaths may change especially if remove() is used on any elements above it
 clicknupload.*,clickndownload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/div/script[1]):remove()
 clicknupload.*,clickndownload.*##:xpath(/html/body/div/div[3]/div[2]/div[3]/script[2]):remove()
@@ -44414,6 +44416,7 @@ www.imdb.com##div[aria-label^="Sponsored Ad"]:remove()
 www.imdb.com##div[id="ad"]:remove()
 www.imdb.com##div[id="top_ad_webbug"]:remove()
 www.imdb.com##div[id^="div-gpt-ad-"]:remove()
+www.imdb.com##div[id^="sis_pixel_"]:remove()
 www.imdb.com##iframe[id="sis_pixel_sitewide"]:remove()
 www.imdb.com##img[id="mobile-ad-image"]:remove()
 www.imdb.com##ins[class="dcmads"]:remove()
@@ -44427,7 +44430,7 @@ www.imdb.com##+js(aopw, imdbads)
 www.imdb.com##+js(set-constant, imdbads.cmd, [])
 www.imdb.com##+js(aopr, window.ads_js_start)
 www.imdb.com##+js(aopw, window.ads_js_start)
-www.imdb.com##+js(set-constant, ad_utils, {})
+www.imdb.com##+js(set-constant, ad_utils, false)
 www.imdb.com##+js(set-constant, doWithAds, noopFunc)
 www.imdb.com##+js(acs, /doWithAds\(/)
 www.imdb.com##+js(set-constant, document.ad, {})
@@ -44435,6 +44438,8 @@ www.imdb.com##+js(set-constant, document.adSlotConfig, {})
 www.imdb.com##+js(set-constant, document.defaultAd, {})
 www.imdb.com##+js(acs, /'LoadAds'/)
 www.imdb.com##+js(acs, /apstag\.init\(/)
+www.imdb.com##+js(set-constant, window.ad_utils, false)
+www.imdb.com##+js(acs, /window\.ad_utils\.makeAtfSlotsCall\(/)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 www.imdb.com##^script:has-text(adCustomAction):remove()
 www.imdb.com##script[type="data-doubleclick"]:remove()
@@ -45236,7 +45241,7 @@ streamtape.com##+js(saa, height, 100%, video[id="mainvideo"])
 !||streamtape.com/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||stapadblockuser.xyz/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !*$3p,script,denyallow=www.google.com|www.gstatic.com,domain=streamtape.com
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.google.com|www.gstatic.com,domain=streamtape.com
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.google.com|www.gstatic.com,domain=streamtape.com
 !||yz.linensephraim.com^*
 ||linensephraim.com^*
 !||bygliscortor.com/impression/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -45710,7 +45715,7 @@ www.niaomea.me##+js(disable-newtab-links)
 !www.niaomea.me##+js(no-window-open-if)
 www.niaomea.me##+js(no-window-open-if, !/\.niaomea\.me/i)
 !*$3p,script,denyallow=sts.niaomea.me|cdn.niaomea.me,domain=www.niaomea.me
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=sts.niaomea.me|cdn.niaomea.me,domain=www.niaomea.me
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=sts.niaomea.me|cdn.niaomea.me,domain=www.niaomea.me
 !||embedstreams.me/partytown/partytown*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||embedstreams.me/partytown/partytown-sandbox-sw.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||embedstreams.me/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -46110,12 +46115,12 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ! TODO: have the following two rules apply to all domains or all third-party usage?
 ! The following rule looks for a 32 length hexadecimal number in the path to the script.
 !||pl14995214.pvclouds.com/db483f2db0b5ba289622e783ee7cdf82/invoke.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/[0-9a-fA-F]{32}\/invoke\.js\S*/$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/[0-9a-fA-F]{32}\/invoke\.js\S*/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/[0-9a-fA-F]{32}\/invoke\.js\S*/$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/[0-9a-fA-F]{32}\/invoke\.js\S*/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||pl15052426.pvclouds.com/f3/05/6f/f3056fd5ef688eff5343ab2724659d89.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||pl9195645.pvclouds.com/c2/84/dc/c284dccfdc0ea6f8a0a4db7ab0960bd3.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{32}\.js\S*/$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{32}\.js\S*/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{32}\.js\S*/$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{2}\/[0-9a-fA-F]{32}\.js\S*/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following rule blocks the same scripts as the preceding rule, but it allows a 2 or 3 instead of just 3 hexadecimal series paths.
 /^https?:\/\/(?:www\.|[0-9a-zA-Z]{7,10}\.)?[-0-9a-zA-Z]{5,}\.com\/\/?(?:[0-9a-fA-F]{2}\/){2,3}[0-9a-fA-F]{32}\.js\S*/$script,3p
 ||*/tag.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -46123,13 +46128,13 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ! TODO: The following is a list of third-party domains which host the tag.min.js script to be blocked, but these domains have already been blocked wholesale.
 !domain=api.adinplay.com|shorteh.com|louchees.net|pushmejs.com|pushagim.com|sotchoum.com|waufooke.com|seeptoag.net|inklinkor.com|choupsee.com|get.s-onetag.com|stimtavy.net|choogeet.net|i.arianelab.com|bbcdn-tag.ibillboard.com
 !||*/tag.min.js$3p,script
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/tag\.min\.js\S*/$3p,script
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/tag\.min\.js\S*/$3p,script
 !||*/common/tag.min.js$3p,script
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/common\/tag\.min\.js\S*/$3p,script
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/common\/tag\.min\.js\S*/$3p,script
 !||*/pfe/current/tag.min.js$3p,script
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/pfe\/current\/tag\.min\.js\S*/$3p,script
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/pfe\/current\/tag\.min\.js\S*/$3p,script
 !||*/pixel/puclc/$3p
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/pixel\/puclc\/\S*/$3p,script
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/pixel\/puclc\/\S*/$3p,script
 ||zintrack.com/api/event$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||event-collector.udsrv.com/api/event$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||event-collector.udsrv.com^*
@@ -47797,7 +47802,7 @@ tiny-files.com##input[id="btn_download"]:remove-attr(disabled)
 tiny-files.com##+js(remove-attr, disabled, #btn_download)
 tiny-files.com##span[id="countdown_str"]:remove()
 !*$3p,script,domain=tiny-files.com|liteapks.com
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,domain=tiny-files.com|liteapks.com
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,domain=tiny-files.com|liteapks.com
 ! TODO: which domain should have the following three rules, i.e. the main or the domain from which the script is loaded?
 tiny-files.com##+js(set-constant, hasImpressionPixel, falseFunc)
 tiny-files.com##+js(set-constant, updateLatencyPixelLink, noopFunc)
@@ -48173,7 +48178,7 @@ vidplay.online##+js(saa, height, 100%, video[class^="jw-video"])
 ! TODO: The developer tools were defused though aborting the interval of _0x65bf0() , but _0x65bf0() is no longer in https://vidsrc.to/assets/embed/min/all.js
 vidplay.online##+js(no-setInterval-if, /_0x65bf0\(\)/)
 !*$3p,script,denyallow=cdnjs.cloudflare.com,domain=vidplay.online
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=cdnjs.cloudflare.com,domain=vidplay.online
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=cdnjs.cloudflare.com,domain=vidplay.online
 ||customselliot.com^*
 ||plentifulqueen.com^*
 ||ads.aws.rubiconproject.com^*
@@ -49369,7 +49374,7 @@ skyve.io,skyve.top##+js(acs, appendToDeviceDebugger)
 ||skyve.io/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||skyve.top/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! block all third-party scripts for skyve.io
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$denyallow=maxcdn.bootstrapcdn.com,domain=skyve.io|skyve.top,3p,script
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$denyallow=maxcdn.bootstrapcdn.com,domain=skyve.io|skyve.top,3p,script
 ! The following rules blocks legitimate URL redirects
 !||a.beap.gemini.yahoo.com^*
 !||beap.gemini.yahoo.com^*
@@ -50130,7 +50135,7 @@ frdl.to##+js(remove-attr, disabled, button[id="downloadbtn"])
 frdl.to##+js(set-attr, input[id="adblock_detected"], value, 0)
 ||frdl.to/js/pop.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !*$3p,script,denyallow=cdnjs.cloudflare.com,domain=frdl.to
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=cdnjs.cloudflare.com,domain=frdl.to
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=cdnjs.cloudflare.com,domain=frdl.to
 ! The countdown for frdl.to is server-side checked.
 !frdl.to##div[id="countdown"]:remove()
 !||frdl.to/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -50395,7 +50400,7 @@ deadline.com##+js(abort-on-property-write, pmc_ga_event_tracking)
 ||pmc-pp-tou.s3.us-west-1.amazonaws.com/privacy-notice.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||e.widgetbot.io/service-worker.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !*$3p,script,denyallow=hcaptcha.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|cdnjs.cloudflare.com,domain=rapidcloud.cc
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=hcaptcha.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|cdnjs.cloudflare.com,domain=rapidcloud.cc
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=hcaptcha.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|cdnjs.cloudflare.com,domain=rapidcloud.cc
 ! Do not block the countdown script as the delay is server-side checked.
 !||rapidcloud.cc/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! using the following rules to enable the download button and/or reduce the time remaining is pointless since the delay is server-side checked.
@@ -50701,7 +50706,7 @@ streambucket.net##:xpath(//script[contains(text(), 'btoa(document.referrer);')])
 streambucket.net##+js(acs, /btoa\(document\.referrer\);/)
 streambucket.net##+js(acs, /_0x32e7\['NICUCI'\]/)
 !*$3p,script,denyallow=www.gstatic.com,domain=streambucket.net
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.gstatic.com,domain=streambucket.net
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.gstatic.com,domain=streambucket.net
 *##+js(set-constant, _Hasync, [])
 *##+js(aopw, _Hasync)
 *##+js(aopr, _Hasync)
@@ -50746,7 +50751,7 @@ player.smashy.stream,embed.smashystream.com##iframe[src^="https://vaitotoo.net/"
 player.smashy.stream,embed.smashystream.com##+js(remove-node-text, script, /function _0x4695\(\){var _0x28ffe1=\[/gm)
 player.smashy.stream,embed.smashystream.com##+js(set-constant, _0x28ffe1, [])
 !*$3p,script,denyallow=www.gstatic.com|embed.smashystream.com|player.smashy.stream,domain=player.smashy.stream|embed.smashystream.com
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.gstatic.com|embed.smashystream.com|player.smashy.stream,domain=player.smashy.stream|embed.smashystream.com
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.gstatic.com|embed.smashystream.com|player.smashy.stream,domain=player.smashy.stream|embed.smashystream.com
 !moviesapi.club##iframe[id="frame2"]
 moviesapi.club##+js(remove-attr, oncontextmenu, body)
 moviesapi.club##body:remove-attr(oncontextmenu)
@@ -50767,7 +50772,7 @@ moviesapi.club##+js(acs, /dtc_sbx\(\)/)
 !||w1.moviesapi.club/assets/js/devtools-detector_2.0.15.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||moviesapi.club/assets/js/devtools-detector*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !*$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com|code.jquery.com,domain=moviesapi.club
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com|code.jquery.com,domain=moviesapi.club
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com|code.jquery.com,domain=moviesapi.club
 ! TODO: either remove the entire script with detectDevTool or simply don't "eval" it?
 databasegdriveplayer.xyz##^script:has-text(/detectDevTool/):remove()
 databasegdriveplayer.xyz##+js(remove-node-text, script, /detectDevTool/gm)
@@ -50782,7 +50787,7 @@ databasegdriveplayer.xyz##+js(remove-node-text, script, /jwplayer\(\)\.remove\(\
 databasegdriveplayer.xyz##+js(aopw, host)
 databasegdriveplayer.xyz##+js(aopr, host)
 !*$3p,script,denyallow=ajax.googleapis.com|cdnjs.cloudflare.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|ssl.p.jwpcdn.com|jwplayer-dualstack.map.fastly.net,domain=databasegdriveplayer.xyz
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=ajax.googleapis.com|cdnjs.cloudflare.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|ssl.p.jwpcdn.com|jwplayer-dualstack.map.fastly.net,domain=databasegdriveplayer.xyz
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=ajax.googleapis.com|cdnjs.cloudflare.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|ssl.p.jwpcdn.com|jwplayer-dualstack.map.fastly.net,domain=databasegdriveplayer.xyz
 ! kerapoxy.cc is a filemoon.sx domain.
 kerapoxy.cc##+js(set-constant, FabUtils, noopFunc)
 kerapoxy.cc##+js(set-constant, Fab, noopFunc)
@@ -50800,7 +50805,7 @@ kerapoxy.cc##:xpath(//script[contains(text(), '("sandbox")')]):remove()
 ! The following rule blocks a "Fuck Adblock" script.
 ||kerapoxy.cc/js/baf.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !*$3p,script,denyallow=moonjscdn.info,domain=kerapoxy.cc
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[a-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=moonjscdn.info,domain=kerapoxy.cc
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=moonjscdn.info,domain=kerapoxy.cc
 ||stageseshoals.com^*
 !||zlyb.zebjlmmejbybz.top^*
 ||zebjlmmejbybz.top^*
@@ -50929,6 +50934,14 @@ www.videogameschronicle.com##+js(aopw, window.googletag)
 !||www.videogameschronicle.com/ads/prebid.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.videogameschronicle.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cmp.videogameschronicle.com^*
+||comation-visonging.com^*
+||noisyoursarrears.com^*
+||glochisprp.com^*
+!||bassus.miraells.top^*
+||miraells.top^*
+||bylinaoenone.top^*
+||analytics.tango.me^*
+||usheredbruting.top^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
