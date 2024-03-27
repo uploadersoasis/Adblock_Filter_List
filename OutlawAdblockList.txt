@@ -1712,8 +1712,6 @@ guyspeed.com/wp-content/plugins/google-analyticator/$document,subdocument,script
 ||www2.localdirectory.com/banners.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kotaku.com/assets/ad_iframe-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||resource.guim.co.uk/global/survey/foresee/foresee-trigger.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||seattletimes.com/js/standardFunctionality/AdTags.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||seattletimes.com/js/paywall/st_ad_position_redefinition.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||haymarket-whistleout.s3.amazonaws.com/iTnews_Ad.htm$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.arstechnica.net/wp-content/themes/arstechnica/assets/js/cn/cn.ad.lotame.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.arstechnica.net/wp-content/themes/arstechnica/assets/js/cn/cn.ad.yieldex.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -6833,6 +6831,7 @@ uptobox.com###fanback
 ||js.matheranalytics.com^*
 ||loggingservices.tribune.com^*
 ||www.i.matheranalytics.com^*
+||i.matheranalytics.com^*
 ||metakeyproducer.com^*
 ||singleice.link/collector?report=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||barlive.link^*
@@ -25287,7 +25286,6 @@ us.msi.com##div[id="ccc-notify"]:remove()
 !||revboostprocdnadsprod.azureedge.net/scripts/latest/min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||revboostprocdnadsprod.azureedge.net^*
 ||rtpetworki.fun^*
-||rum-http-intake.logs.datadoghq.com^*
 ||sessions.bugsnag.com^*
 wincdemu.sysprogs.org##div[id="cookie-banner"]:remove()
 www.biemmeitalia.net##div[id="cookie-bar"]:remove()
@@ -31559,29 +31557,6 @@ listoffreeware.com##div[class="listo-before-content"]:has(ins[data-ad-client]):r
 www.onyxbits.de##div[class="adsense"]:remove()
 80.lv##div[class^="_"]:has(h3[class^="_"]:has-text(/We need your consent/i)):remove()
 www.rgcd.co.uk##div[id="cookieChoiceInfo"]:remove()
-!www.videogameschronicle.com##div[id="ad__leaderboard"]:remove()
-!www.videogameschronicle.com##div[id="ad__billboard"]:remove()
-www.videogameschronicle.com##div[id^="ad__"]:remove()
-www.videogameschronicle.com##+js(set-constant, performanceCookiesAllowed, falseFunc)
-www.videogameschronicle.com##+js(set-constant, performanceCookiesDisallowed, trueFunc)
-www.videogameschronicle.com##+js(set-constant, targetingCookiesAllowed, falseFunc)
-www.videogameschronicle.com##+js(set-constant, targetingCookiesDisallowed, trueFunc)
-www.videogameschronicle.com##+js(set-constant, functionalCookiesAllowed, trueFunc)
-www.videogameschronicle.com##+js(set-constant, functionalCookiesDisallowed, falseFunc)
-www.videogameschronicle.com##+js(acs, /gtag\(/)
-www.videogameschronicle.com##+js(aopr, window.googletag)
-www.videogameschronicle.com##+js(aopw, window.googletag)
-www.videogameschronicle.com##+js(set-constant, ad__source, [])
-www.videogameschronicle.com##+js(set-constant, ad__tags, [])
-www.videogameschronicle.com##+js(set-constant, ad__games, [])
-www.videogameschronicle.com##+js(aopr, ad__source)
-www.videogameschronicle.com##+js(aopw, ad__source)
-www.videogameschronicle.com##+js(aopr, ad__tags)
-www.videogameschronicle.com##+js(aopw, ad__tags)
-www.videogameschronicle.com##+js(aopr, ad__games)
-www.videogameschronicle.com##+js(aopw, ad__games)
-||www.videogameschronicle.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||cmp.videogameschronicle.com^*
 ||brioletredeyes.com^*
 ||nestledmph.com^*
 ||vooshagy.net^*
@@ -32497,14 +32472,37 @@ www.apexsql.com##div[id^="cookiesWarning"]:remove()
 ||moedgapers.com^*
 www.sexiezpix.com###lkq6y:remove()
 www.sexiezpix.com###jw7152t:remove()
+www.seattletimes.com##a[class*="ad-skip-link"]:remove()
 www.seattletimes.com##div[class*="ad-top-"]:remove()
 www.seattletimes.com##div[class*="ad-container"]:remove()
 www.seattletimes.com##div[class*="ad-label"]:remove()
+www.seattletimes.com##div[class*="native-ad-article"]:remove()
+www.seattletimes.com##div[id="htlad_wallpaper"]:remove()
+www.seattletimes.com##div[id="ad-wallpaper"]:remove()
+www.seattletimes.com##div[id="ad-container-bottom"]:remove()
+www.seattletimes.com##div[id="htlad_bottom"]:remove()
+www.seattletimes.com##div[id="htlad_right"]:remove()
+www.seattletimes.com##div[id="ccpa-test"]:remove()
+www.seattletimes.com##script[class^="optanon-category-"]:remove()
+www.seattletimes.com##script[id="finish-ccpa"]:remove()
+www.seattletimes.com##script[id="ads_script-script"]:remove()
+www.seattletimes.com##script[id="st-analytics-script"]:remove()
 www.seattletimes.com##zeus-ad:remove()
-www.seattletimes.com##a[class*="ad-skip-link"]:remove()
+www.seattletimes.com##+js(set-constant, window.SEATIMESCO.ads.disabled, true)
+www.seattletimes.com##+js(set-constant, window.SEATIMESCO.ads.adUnitPath, "")
+www.seattletimes.com##+js(set-constant, window.SEATIMESCO.ads.htlUrl, "")
+www.seattletimes.com##+js(set-constant, window.SEATIMESCO.abTimeout, 1)
+www.seattletimes.com##+js(set-constant, window.SEATIMESCO.privacy.ccpaLoaded, false)
+www.seattletimes.com##+js(aopr, OTTag)
+www.seattletimes.com##+js(aopw, OTTag)
+!||www.seattletimes.com/wp-content/plugins/st-advertising/dist/st-advertising-bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.seattletimes.com/wp-content/plugins/st-advertising/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.seattletimes.com/wp-content/plugins/st-analytics/dist/st-analytics-article-bundle.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.seattletimes.com/wp-content/plugins/st-analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||seattletimes.com/js/standardFunctionality/AdTags.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||seattletimes.com/js/paywall/st_ad_position_redefinition.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||seattle-times.zeustechnology.com/main.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||seattle-times-d.openx.net^*
-||i.matheranalytics.com^*
 ||stats.bluebillywig.com^*
 www.wikihow.com##div[id="article_courses_banner"]:remove()
 www.wikihow.com##+js(aopr, WH.hasAdBlockers)
@@ -33718,7 +33716,6 @@ releaselog.thefreeproxy.info##div[id^="cookieConsent"]:remove()
 ||ln.ruelliaforgift.com^*
 ||rw.coninemelior.com^*
 ||greatvpnoffers.com^*
-||browser-http-intake.logs.datadoghq.com^*
 ||katefinegan.ink/gdpr/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.pncqcqdj.com^*
 !phx.4everproxy.com##img[alt="4everproxy VPN"]:remove()
@@ -34071,7 +34068,6 @@ cut-y.net##+js(remove-attr, disabled, #submit-button, stay)
 ||cmp.quantcast.com/choice/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||static.smilewanted.com/js/decode_consent/decode_consent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.smilewanted.com^*
-||intake.pbstck.com^*
 ||chingmathecia.website^*
 !||id.a-mx.com/sync/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||id.a-mx.com^*
@@ -44506,10 +44502,6 @@ www.economist.com##+js(aopw, NREUM)
 ||consent.economist.com^*
 ||www.dianomi.com/cgi-bin/smartads_video_json.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.dianomi.com/cgi-bin/pixeltrack.pl$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||logs.browser-intake-datadoghq.com/api/v2/logs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||alb-logs-http-browser-pub-s0-1899014706.us-east-1.elb.amazonaws.com/api/v2/logs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||logs.browser-intake-datadoghq.com^*
-||alb-logs-http-browser-pub-s0-1899014706.us-east-1.elb.amazonaws.com^*
 ||meadowlullaby.com^*
 nypost.com##div[class*="ad--container"]:remove()
 nypost.com##div[class*="ad-slot"]:remove()
@@ -45636,7 +45628,6 @@ www.inc.com##div[class*="ad-block"][class*="topAdBlock"]:remove()
 ||static.adsafeprotected.com/vans-adapter-google-ima.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d162h6x3rxav67.cloudfront.net/vans-adapter-google-ima.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vip1.g5.cachefly.net/wp-content/themes/ars/assets/js/ars-dc1d08cbd8.ads.us.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.datadoghq-browser-agent.com/datadog-logs-v*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !woowebtools.com##+js(remove-cookie, /.+/)
 woowebtools.com##+js(remove-cookie)
 ||zirkiterocklay.com^*
@@ -49806,6 +49797,9 @@ romenewstribune-ga.newsmemory.com##+js(aopr, googleAnalyticsAccount4)
 ! TODO: Don't abort scripts with gtag on every domain because it is include in scripts on this site that should run.
 !*##+js(acs, /gtag\(|window\.dataLayer/)
 !*##+js(acs, gtag, window.dataLayer)
+*##+js(set-constant, window.aax, {})
+*##+js(set-constant, window.aax.cmd, [])
+*##+js(acs, /window\.aax\.cmd\.push\(/)
 romenewstribune-ga.newsmemory.com,www.unilad.com,www.newcdn.lol,vipbox1.com,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org,methstreams.com,thepostmillennial.com,freecomputerbooks.com,apk.support,playclassic.games,sflix.to,www.couchtuner.show,putlocker.pe,putlocker.sb,strikeout.im,strikeout.cc##+js(acs, /gtag\(|window\.dataLayer/)
 !healthyteeth.tips,jabbr.net,www.aroged.com,thinkkers.com,apkdone.com,apklit.com,apkloo.com,www.whatsmyip.org,net-informations.com,snakify.org,apkmos.com,www.anoopcnair.com,www.bestprog.net,blog.jongallant.com,www.csharp-examples.net,www.thecustomdroid.com,www.adbusbdriver.com,www.encodedna.com,www.w3resource.com,www.freecodecamp.org,wwww.techwalla.com,www.psdly.com,softhints.com,sbenny.com,www.androidblip.com,argudanmousosh1.ru,topclassactions.com,www.free-tutorials.us,www.tutsgalaxys.com,coursesghar.com,borncity.com,www.coursef.com,onvideo.org,freemagazines.top,www.linuxcompatible.org,www.ebooksyard.com,beebom.com,www.comss.ru,techtodown.com,modandroid.org,fileaxa.com,xapkmod.com,modxda.com,listoffreeware.com,lapelotita.com,dl.tech-story.net,gbplus.org,www.windowslatest.com,apkgods.net,apkcunk.com,techydino.net,www.hiapphere.com,www.apk4fun.com,cellularnews.com,ccm.net,fastclick.to,modgameapk.net,linux.how2shout.com,www.fresherslive.com,www.skylinewebcams.com,www.bleepingcomputer.com,www.breitbart.com,cardgames.io,pallabmobile.in,www.cpu-world.com,render-state.to,uvnc.com,d.tousecurity.com.www.websitedown.info,wooseotools.com,udemycourses.me,www.gametop.com,nullpk.com,cut-y.net,forum.videohelp.com,apkexit.com,downloadkai.top,www.babup.com,yuzu-emu.org,www.gamingonlinux.com,compress-pdf.kitomura.com##ins[data-ad-client]:remove()
 *##ins[data-ad-client]:remove()
@@ -50719,6 +50713,10 @@ streambucket.net##+js(acs, /_0x32e7\['NICUCI'\]/)
 *##+js(remove-node-text, script, /function\(m,e,t,r,i,k,a\)/gm)
 *##:xpath(//script[contains(text(), 'function(m,e,t,r,i,k,a)')]):remove()
 *##^script:has-text(/function\(m,e,t,r,i,k,a\)/):remove()
+*##+js(set-constant, window.htlbid, {})
+*##+js(set-constant, htlbid.cmd, [])
+*##+js(acs, /htlbid\.cmd\.push\(/)
+*##+js(acs, /htlbid\.setTargeting\(/)
 uqloads.xyz##div[id="adbd"]:remove()
 ||uqloads.xyz/player/jw8/vast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 streamwish.to,streamwish.com##+js(set-constant, ym, noopFunc)
@@ -50871,6 +50869,66 @@ www.earth.com##iframe[id="grow-login-iframe"]:remove()
 !||track.activemetering.com/pixel/v1/all/pixel.gif$xhr
 ||track.activemetering.com^*
 ||zion-telemetry.api.cnn.io^*
+!||cdn-adm.pbstck.com/config/05b17750/31b4931f/8f9fab78-da6b-425e-bf45-1207c06f92c2/22/desktop.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||cdn-adm.pbstck.com/config/*/desktop.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||cdn-adm.pbstck.com/config/*/mobile.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||cdn-adm.pbstck.com/kleanads-prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn-adm.pbstck.com^*
+!||intake.pbstck.com/v1/intake/error$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||intake.pbstck.com/v1/intake/gam-impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||intake.pbstck.com/v1/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||intake.pbstck.com^*
+!||cdn-kleanads-poc.pbstck.com/js/kleanads-2403221048.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn-kleanads-poc.pbstck.com^*
+!||boot.pbstck.com/v1/tag/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||boot.pbstck.com/v1/adm/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||boot.pbstck.com^*
+||www.datadoghq-browser-agent.com/datadog-logs-v*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||rum-http-intake.logs.datadoghq.com^*
+!||browser-http-intake.logs.datadoghq.com/v1/input/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||browser-http-intake.logs.datadoghq.com^*
+!||logs.browser-intake-datadoghq.com/api/v2/logs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||logs.browser-intake-datadoghq.com^*
+!||alb-logs-http-browser-pub-s0-1899014706.us-east-1.elb.amazonaws.com/api/v2/logs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||alb-logs-http-browser-pub-s0-1899014706.us-east-1.elb.amazonaws.com^*
+www.videogameschronicle.com##div[class*="vgc-layout__adbreak"]:remove()
+www.videogameschronicle.com##div[class*="adwrapper"]:remove()
+!www.videogameschronicle.com##div[id="ad__leaderboard"]:remove()
+!www.videogameschronicle.com##div[id="ad__billboard"]:remove()
+www.videogameschronicle.com##div[id^="ad__"]:remove()
+www.videogameschronicle.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+www.videogameschronicle.com##script[id="kueezrtb_latest"]:remove()
+www.videogameschronicle.com##+js(set-constant, performanceCookiesAllowed, falseFunc)
+www.videogameschronicle.com##+js(set-constant, performanceCookiesDisallowed, trueFunc)
+www.videogameschronicle.com##+js(set-constant, targetingCookiesAllowed, falseFunc)
+www.videogameschronicle.com##+js(set-constant, targetingCookiesDisallowed, trueFunc)
+www.videogameschronicle.com##+js(set-constant, functionalCookiesAllowed, trueFunc)
+www.videogameschronicle.com##+js(set-constant, functionalCookiesDisallowed, falseFunc)
+www.videogameschronicle.com##+js(set-constant, window._sp_.gdpr, {}, complete)
+www.videogameschronicle.com##+js(set-constant, window.VGCAllowedCookies, {}, complete)
+! TODO: manually setting these to true doesn't enable the embedded elements which rely on that value.
+www.videogameschronicle.com##+js(set-constant, window.VGCAllowedCookies.performance, true, complete)
+www.videogameschronicle.com##+js(set-constant, window.VGCAllowedCookies.functional, true, complete)
+www.videogameschronicle.com##+js(set-constant, window.VGCAllowedCookies.targeting, true, complete)
+www.videogameschronicle.com##+js(set-constant, ad__source, [])
+www.videogameschronicle.com##+js(set-constant, ad__tags, [])
+www.videogameschronicle.com##+js(set-constant, ad__games, [])
+www.videogameschronicle.com##+js(aopr, ad__source)
+www.videogameschronicle.com##+js(aopw, ad__source)
+www.videogameschronicle.com##+js(aopr, ad__tags)
+www.videogameschronicle.com##+js(aopw, ad__tags)
+www.videogameschronicle.com##+js(aopr, ad__games)
+www.videogameschronicle.com##+js(aopw, ad__games)
+www.videogameschronicle.com##+js(aopw, window.permutive)
+www.videogameschronicle.com##+js(aopr, window.permutive)
+www.videogameschronicle.com##+js(acs, /gtag\(/)
+www.videogameschronicle.com##+js(aopr, window.googletag)
+www.videogameschronicle.com##+js(aopw, window.googletag)
+||www.videogameschronicle.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.videogameschronicle.com/ads/gn-ad-script.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.videogameschronicle.com/ads/prebid.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.videogameschronicle.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cmp.videogameschronicle.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
@@ -50955,6 +51013,7 @@ www.pcguide.com#@#div[id^="cls-video-container"][class^="adthrive"]
 @@unpkg.com/vue-recaptcha@*/dist/vue-recaptcha.js$script,domain=vidoza.net
 @@||videojs-http-streaming.netlify.app^*
 @@||click.justwatch.com^*
+! TODO: Why allow rum.browser-intake-datadoghq.com but not also rum-http-intake.logs.datadoghq.com and logs.browser-intake-datadoghq.com?  because those domains are only for logging?
 @@||rum.browser-intake-datadoghq.com^*
 @@||session-replay.browser-intake-datadoghq.com^*
 !@@||events.launchdarkly.com/events/bulk/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
