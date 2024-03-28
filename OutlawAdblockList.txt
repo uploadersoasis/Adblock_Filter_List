@@ -29622,10 +29622,10 @@ cdmadev1.blogspot.com.translate.goog##+js(acs, document.onmousedown)
 cdmadev1.blogspot.com.translate.goog##+js(acs, document.oncontextmenu)
 www.protocol.com##div[class="gdpr-cookie"]:remove()
 www.protocol.com##div[class*="rm-gdpr"]:remove()
-www.theregister.com##div[class*="gtag_display"]:remove()
-www.theregister.com##div[class^="adun"]:remove()
-www.theregister.com##+js(set-constant, RegSendGA, noopFunc)
-www.theregister.com##+js(acs, /RegSendGA\(/)
+www.theregister.com,forums.theregister.com##div[class*="gtag_display"]:remove()
+www.theregister.com,forums.theregister.com##div[class^="adun"]:remove()
+www.theregister.com,forums.theregister.com##+js(set-constant, RegSendGA, noopFunc)
+www.theregister.com,forums.theregister.com##+js(acs, /RegSendGA\(/)
 !||www.theregister.com/design_picker/c00f80f04b0eaf0123d821f6c9488fc1cb55fd0a/javascript/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.theregister.com/design_picker/*/javascript/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rudderstack.cdp.prod.data.typeform.com/v1/track$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
