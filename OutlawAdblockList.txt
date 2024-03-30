@@ -51086,6 +51086,41 @@ interestingengineering.com##+js(acs, /trkrdt\(/)
 !||cs-tam.minutemedia-prebid.com/sync-iframe?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cs-tam.minutemedia-prebid.com^*
 ||config.aps.amazon-adsystem.com^*
+||d3bfricg2zhkdf.cloudfront.net^*
+||dtheharityhild.info^*
+||sonalrecomefu.info^*
+gdl.freegogpcgames.xyz##h2[id="dem"]:upward(1):remove()
+gdl.freegogpcgames.xyz##div[id="DLINK"]:remove-class(hide)
+gdl.freegogpcgames.xyz##+js(remove-class, hide, #DLINK)
+gdl.freegogpcgames.xyz##+js(set-constant, time, 0)
+gdl.freegogpcgames.xyz##+js(set-constant, i, 0)
+gdl.freegogpcgames.xyz##+js(set-constant, sc_invisible, 0)
+gdl.freegogpcgames.xyz##+js(no-setInterval-if, interval)
+gdl.freegogpcgames.xyz##+js(no-setTimeout-if, /function\(\)/)
+gdl.freegogpcgames.xyz##h4[style="text-align: center;"]:has(span:has-text(/Your links will be created in \d seconds please wait.../)):remove()
+gdl.freegogpcgames.xyz##+js(aopw, DEBUG_MODE)
+gdl.freegogpcgames.xyz##+js(aopr, DEBUG_MODE)
+gdl.freegogpcgames.xyz##+js(aopw, ENABLE_ONLINE_DEBUGGER)
+gdl.freegogpcgames.xyz##+js(aopr, ENABLE_ONLINE_DEBUGGER)
+gdl.freegogpcgames.xyz##:xpath(//script[contains(text(), 'var DEBUG_MODE,ENABLE_LOGS,ENABLE_ONLINE_DEBUGGER,')]):remove()
+gdl.freegogpcgames.xyz##^script:has-text(/var DEBUG_MODE,ENABLE_LOGS,ENABLE_ONLINE_DEBUGGER,/):remove()
+gdl.freegogpcgames.xyz##script:has-text(/var DEBUG_MODE,ENABLE_LOGS,ENABLE_ONLINE_DEBUGGER,/):remove()
+gdl.freegogpcgames.xyz##+js(remove-node-text, script, /var DEBUG_MODE,ENABLE_LOGS,ENABLE_ONLINE_DEBUGGER,/gm)
+! TODO: The following rule does not work for some reason.
+gdl.freegogpcgames.xyz##+js(aeld, /contextmenu|keydown|keypress|selectstart/)
+gdl.freegogpcgames.xyz##+js(aopr, document.onkeydown)
+gdl.freegogpcgames.xyz##+js(aopw, document.onkeydown)
+gdl.freegogpcgames.xyz##+js(aopr, document.onselectstart)
+gdl.freegogpcgames.xyz##+js(aopw, document.onselectstart)
+gdl.freegogpcgames.xyz##+js(aopr, document.oncontextmenu)
+gdl.freegogpcgames.xyz##+js(aopw, document.oncontextmenu)
+gdl.freegogpcgames.xyz##+js(aopr, document.onmousedown)
+gdl.freegogpcgames.xyz##+js(aopw, document.onmousedown)
+gdl.freegogpcgames.xyz##+js(aopr, document.onclick)
+gdl.freegogpcgames.xyz##+js(aopw, document.onclick)
+!*$3p,script,denyallow=ajax.googleapis.com,domain=gdl.freegogpcgames.xyz
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=ajax.googleapis.com,domain=gdl.freegogpcgames.xyz
+||s3.us-east-1.amazonaws.com/08a762955f4503fbf02f024558307ca2d330253ada26719ef701914f12070/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
