@@ -14219,6 +14219,7 @@ www.extremetech.com##div[id^="google_ads_iframe"]:remove()
 www.extremetech.com##div[class*="AdChoiceContainer"]:remove()
 www.extremetech.com##div[id="top-1"]:remove()
 www.extremetech.com##iframe[width="1"][height="1"]:remove()
+www.extremetech.com##ins[class="zmgad-full-width"]:remove()
 www.extremetech.com##+js(set-constant, _comscore, [])
 www.extremetech.com##+js(abort-on-property-read, _comscore)
 www.extremetech.com##+js(abort-on-property-write, _comscore)
@@ -16428,6 +16429,10 @@ ntknetwork.com##div[id^="div-gpt-ad-"]:remove()
 !||22wu431hsd443oqi9831411b-wpengine.netdna-ssl.com/wp-content/themes/ntk/assets/js/adlayout.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||publisher-assets.spot.im/yad/ad-choises.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||publisher-assets.spot.im/yad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||publisher-assets.spot.im/ad/event-tracking/pixel-ads-google-adsense.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||publisher-assets.spot.im/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||static-cdn.spot.im/production/ads/tags/v16.4.3-1/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static-cdn.spot.im/production/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||dynamic-cdn.spot.im/yad/index.v2.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dynamic-cdn.spot.im/yad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.stardoll.com###sdads_bt_2:remove()
@@ -27692,24 +27697,20 @@ www.toolbox.com##div[class="privacy-content"]:remove()
 ||e1f95201b19594.site^*
 ||direct-events-collector.spot.im^*
 ||events-collector.spot.im^*
-!||publisher-assets.spot.im/ad/event-tracking/pixel-ads-google-adsense.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||publisher-assets.spot.im/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||static-cdn.spot.im/production/ads/tags/v16.4.3-1/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||static-cdn.spot.im/production/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.pcmag.com##aside[class*="zmgad-"]
+www.pcmag.com##aside[class*="zmgad-"]:remove()
 www.getdroidtips.com##ins[class="adsbygoogle"]:remove()
-www.getdroidtips.com##div[class="_ap_apex_ad"]
+www.getdroidtips.com##div[class="_ap_apex_ad"]:remove()
 www.getdroidtips.com##+js(abort-on-property-read, adpushup)
 www.getdroidtips.com##+js(abort-on-property-write, adpushup)
 rootmygalaxy.net##ins[class="adsbygoogle"]:remove()
-!rootmygalaxy.net##div[class*="quads-ad1"]
-rootmygalaxy.net##div[class*="quads-ad"]
+!rootmygalaxy.net##div[class*="quads-ad1"]:remove()
+rootmygalaxy.net##div[class*="quads-ad"]:remove()
 ||player.adtelligent.com^*
 ||static.pcmag.com/jst/zdconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.pcmag.com/user/eu-check$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ubuntuhandbook.org##ins[class="adsbygoogle"]:remove()
-zippyshare.com##^script:has-text(/zippyfake/i)
-zippyshare.com###zippyfake
+zippyshare.com##^script:has-text(/zippyfake/i):remove()
+zippyshare.com###zippyfake:remove()
 ||cupidrecession.com^*
 ||declinedisobey.com^*
 ||check.analytics.rlcdn.com^*
