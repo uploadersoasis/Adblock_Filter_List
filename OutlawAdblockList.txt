@@ -14212,17 +14212,26 @@ www.andropalace.org##div[id*="adsbygoogle"]:remove()
 ||zybztgtsxq.bid^*
 ||malgyhuytbnjb.bid^*
 ||www.malgyhuytbnjb.bid^*
-www.extremetech.com###bannerad
-!www.extremetech.com###google_ads_iframe_\/4585\/zd\.extech\/computingsection_BTF_0__container__
-!www.extremetech.com###google_ads_iframe_\/4585\/zd\.extech\/computingsection_ATF_1__container__
-www.extremetech.com##div[id^="google_ads_iframe"]
+www.extremetech.com###bannerad:remove()
+!www.extremetech.com###google_ads_iframe_\/4585\/zd\.extech\/computingsection_BTF_0__container__:remove()
+!www.extremetech.com###google_ads_iframe_\/4585\/zd\.extech\/computingsection_ATF_1__container__:remove()
+www.extremetech.com##div[id^="google_ads_iframe"]:remove()
+www.extremetech.com##div[class*="AdChoiceContainer"]:remove()
+www.extremetech.com##div[id="top-1"]:remove()
+www.extremetech.com##iframe[width="1"][height="1"]:remove()
+www.extremetech.com##+js(set-constant, _comscore, [])
+www.extremetech.com##+js(abort-on-property-read, _comscore)
+www.extremetech.com##+js(abort-on-property-write, _comscore)
+www.extremetech.com##+js(acs, /_comscore\.push\(/)
 ||www.extremetech.com/wgac/js/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.extremetech.com/sbs/beacon.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.extremetech.com/jst/zdconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn.ziffstatic.com/pg/extremetech.prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.mrkzgulf.com/do.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||api.limbik.com/static/trackScript.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.hmdmvaxmmwoso.bid^*
 ||hmdmvaxmmwoso.bid^*
-mic.com##.new-user-modal--showing.new-user-modal
+mic.com##.new-user-modal--showing.new-user-modal:remove()
 ||www.ptsdnvgn.bid^*
 ||ptsdnvgn.bid^*
 ||www.gouytrujxuhkzk.bid^*
@@ -29672,8 +29681,6 @@ writeimei.com##+js(acs, document.onmousedown)
 writeimei.com##+js(acs, document.ondragstart)
 tricksmash.com##div[aria-label="cookieconsent"]:remove()
 www.rockpapershotgun.com##.advert_container:remove()
-www.extremetech.com##div[class*="AdChoiceContainer"]:remove()
-||static.extremetech.com/jst/zdconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sejs.moatads.com^*
 ||pg.ziffstatic.com/zmg/pogoadk.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||pagead2.googlesyndication.com/omsdk/releases/live/omweb-v1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -51071,6 +51078,13 @@ interestingengineering.com##+js(set-constant, trkclk, noopFunc)
 interestingengineering.com##+js(acs, /trkclk\(/)
 interestingengineering.com##+js(set-constant, trkrdt, noopFunc)
 interestingengineering.com##+js(acs, /trkrdt\(/)
+!||sync-amz.ads.yieldmo.com/tamptsync?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||sync-amz.ads.yieldmo.com^*
+!||amazon-tam-match.dotomi.com/match/bounce/current?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||amazon-tam-match.dotomi.com^*
+!||cs-tam.minutemedia-prebid.com/sync-iframe?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cs-tam.minutemedia-prebid.com^*
+||config.aps.amazon-adsystem.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
