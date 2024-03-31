@@ -51204,14 +51204,14 @@ m.imagenesderopaparaperros.com##+js(set-constant, checkIfUspIsReady, noopFunc)
 m.imagenesderopaparaperros.com##+js(set-constant, uspInterval, noopFunc)
 m.imagenesderopaparaperros.com##+js(trusted-set-constant, app_vars.force_disable_adblock, "0")
 m.imagenesderopaparaperros.com##+js(trusted-set-constant, app_vars.cookie_notification_bar, false)
-m.imagenesderopaparaperros.com##+js(trusted-replace-node-text, script, /"force_disable_adblock":"1",/gm, "force_disable_adblock":"0",)
-m.imagenesderopaparaperros.com##+js(trusted-replace-node-text, script, /"counter_value":"10",/gm, "counter_value":"1",)
-m.imagenesderopaparaperros.com##+js(trusted-replace-node-text, script, /"cookie_notification_bar":true,/gm, "cookie_notification_bar":false,)
+m.imagenesderopaparaperros.com##+js(trusted-replace-node-text, script, /"force_disable_adblock":"1"\,/gm, "force_disable_adblock":"0",)
+m.imagenesderopaparaperros.com##+js(trusted-replace-node-text, script, /"counter_value":"10"\,/gm, "counter_value":"1",)
+m.imagenesderopaparaperros.com##+js(trusted-replace-node-text, script, /"cookie_notification_bar":true\,/gm, "cookie_notification_bar":false,)
 ! The counter is server-side checked as setting to 0 doesn't return the download link.
 !m.imagenesderopaparaperros.com##+js(trusted-set-constant, app_vars.counter_value, "0")
 ! If the captcha setting is disabled, an error message will result.
 !m.imagenesderopaparaperros.com##+js(trusted-set-constant, app_vars.enable_captcha, "no")
-!m.imagenesderopaparaperros.com##+js(trusted-replace-node-text, script, /"enable_captcha"\:"yes",/gm, "enable_captcha":"no",)
+!m.imagenesderopaparaperros.com##+js(trusted-replace-node-text, script, /"enable_captcha":"yes"\,/gm, "enable_captcha":"no",)
 ! Blocking the script with the following rule triggers anti-adblocking.
 !||m.imagenesderopaparaperros.com/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !*$3p,script,denyallow=www.gstatic.com|www.recaptcha.net|unicons.iconscout.com|zshorte.net,domain=m.imagenesderopaparaperros.com
