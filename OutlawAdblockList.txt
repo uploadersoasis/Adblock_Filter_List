@@ -50776,6 +50776,8 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js
 !||vidsrc.xyz/sbx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||v2.vidsrc.me/sbx.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.vidsrc.stream/disable-devtool@0.3.6/disable-devtool.min.js#/misdir.js
+!||vidsrc.to/lm/com/annulmentequitycereals/88/1d/c4/881dc4c310ba96ddca859431babfc89b.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||vidsrc.to/lm/com/annulmentequitycereals/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! no third-party popups from vidsrc domains
 *$3p,popup,domain=vidsrc.me|vidsrc.stream|vidsrc.to|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net
 ||theajack.github.io/disable-devtool/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -50862,24 +50864,40 @@ player.smashy.stream,embed.smashystream.com##+js(set-constant, _0x28ffe1, [])
 !*$3p,script,denyallow=www.gstatic.com|embed.smashystream.com|player.smashy.stream,domain=player.smashy.stream|embed.smashystream.com
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.gstatic.com|embed.smashystream.com|player.smashy.stream,domain=player.smashy.stream|embed.smashystream.com
 !moviesapi.club##iframe[id="frame2"]
+##div[style="position:fixed;inset:0px;z-index:999999;height:100%;width:100%"]:upward(1):remove()
 moviesapi.club##+js(remove-attr, oncontextmenu, body)
 moviesapi.club##body:remove-attr(oncontextmenu)
 moviesapi.club##script[disable-devtool-auto]:remove()
 moviesapi.club##+js(remove-node-text, script, /function dtc_sbx\(\) {/gm)
 moviesapi.club##+js(set-constant, dtc_sbx, noopFunc)
 moviesapi.club##+js(acs, /dtc_sbx\(\)/)
+moviesapi.club##+js(set-constant, isOpen, false)
+! The following rule prevents the page form being continually reloaded as back of the anti-adblocking scheme.
+moviesapi.club##+js(acs, /location.reload/)
+moviesapi.club##+js(set-constant, devtoolsDetector, {})
+moviesapi.club##+js(set-constant, devtoolsDetector.launch, noopFunc)
+moviesapi.club##+js(acs, /devtoolsDetector.launch\(\)/)
+moviesapi.club##+js(set-constant, ReportError, 0)
+moviesapi.club##+js(set-constant, Seeking, true)
+moviesapi.club##+js(set-constant, Clicked, true)
+moviesapi.club##+js(set-constant, Count_Popup, 0)
+moviesapi.club##+js(set-constant, Require_Popup, false)
+moviesapi.club##+js(no-setInterval-if, /devtoolsDetector/)
+!moviesapi.club##+js(no-setInterval-if, /function \(\) \{/)
+! no third-party popups from vidsrc domains
+*$3p,popup,domain=moviesapi.club
 ! TODO: The following does not work to prevent the iframe with the embedded video from constantly refreshing.
 !moviesapi.club##+js(refresh-defuser)
 ! TODO: preventing the obfuscated inline scripts stored in JScripts from running will return a false 404 status error for the video iframe.
 !moviesapi.club##+js(aopw, JScripts)
 !moviesapi.club##+js(aopr, JScripts)
-!moviesapi.club##+js(no-setTimeout-if, /^/)
-!moviesapi.club##+js(no-setInterval-if, /^/)
 ! TODO: the following rule blocks all inline scripts on the embedded video iframe, but it does not allow the video to play.
 !||w1.moviesapi.club/v/$inline-script
 ||moviesapi.club/sbx.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||w1.moviesapi.club/assets/js/devtools-detector_2.0.15.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||w1.moviesapi.club/assets/js/devtools-detector_2.0.16.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||moviesapi.club/assets/js/devtools-detector*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||moviesapi.club/assets/js/devtools-detector*.js$script,doc,replace=/location\.reload\(true\);/null;/gm
+||moviesapi.club/assets/js/devtools-detector*.js$script,doc,replace=/devtoolsDetector\.launch\(\);/null;/gm
 !*$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com|code.jquery.com,domain=moviesapi.club
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com|code.jquery.com,domain=moviesapi.club
 ! TODO: either remove the entire script with detectDevTool or simply don't "eval" it?
@@ -51233,6 +51251,8 @@ steamunlocked.pro##div[style="height: 48.8px; width: 149.217px; z-index: 2147483
 ||hji98ij90.click^*
 ||softmaker.de/analyze/matomo.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.softmaker.com/templates/joomaker/js/cookieconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||downstairsnegotiatebarren.com/sfp.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||downstairsnegotiatebarren.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
