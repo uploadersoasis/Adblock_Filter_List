@@ -48908,7 +48908,7 @@ thehackernews.com##a[href="https://thehackernews.uk/freedom728"]:remove()
 thehackernews.com##a[href="https://thehackernews.uk/4BcJriH4"]:remove()
 thehackernews.com##a[rel*="sponsored"]:remove()
 thehackernews.com##div[class="pp-2 cf"]:has(center[class="cf"]):remove()
-thehackernews.com##div[class="pixpix cf"]:has(center[class="cf"]):remove()
+thehackernews.com##section[class="pixpix cf"]:has(center[class="cf"]):remove()
 thehackernews.com##+js(aeld, load)
 thehackernews.com##+js(set-attr, img[class*="lazyload"][data-src], src, [data-src])
 ! Don't need to remove current src attribute to rename other attribute to it
