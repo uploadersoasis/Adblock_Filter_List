@@ -48907,8 +48907,9 @@ thehackernews.com##a[href="https://thehackernews.uk/EgEMen"]:remove()
 thehackernews.com##a[href="https://thehackernews.uk/freedom728"]:remove()
 thehackernews.com##a[href="https://thehackernews.uk/4BcJriH4"]:remove()
 thehackernews.com##a[rel*="sponsored"]:remove()
-thehackernews.com##+js(aeld, load)
 thehackernews.com##div[class="pp-2 cf"]:has(center[class="cf"]):remove()
+thehackernews.com##div[class="pixpix cf"]:has(center[class="cf"]):remove()
+thehackernews.com##+js(aeld, load)
 thehackernews.com##+js(set-attr, img[class*="lazyload"][data-src], src, [data-src])
 ! Don't need to remove current src attribute to rename other attribute to it
 !thehackernews.com##+js(rna, img[class*="lazyload"][data-src], data-src, src)
@@ -51354,6 +51355,15 @@ abc7ny.com##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[title
 ||lkxahvf.com^*
 ||kissedthetrain.com^*
 ||receivedachest.com^*
+www.glamourmagazine.co.uk##div[class*="AdWrapper-"]:remove()
+www.glamourmagazine.co.uk##div[class*="ad--mid-content"]:remove()
+www.glamourmagazine.co.uk##div[class*="ad-stickymidcontent"]:remove()
+www.glamourmagazine.co.uk##div[class*="ad__slot"]:remove()
+www.glamourmagazine.co.uk##div[class*="ad-height-hold"]:remove()
+www.glamourmagazine.co.uk##+js(aopr, window.permutiveCohorts)
+www.glamourmagazine.co.uk##+js(aopw, window.permutiveCohorts)
+||condenast.map.fastly.net/beacon$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||rum.condenastdigital.com/beacon$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
