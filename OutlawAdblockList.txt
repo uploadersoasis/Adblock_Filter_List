@@ -45351,6 +45351,7 @@ streamtape.com,stapadblockuser.xyz##+js(set-constant, googleAd, false)
 streamtape.com,stapadblockuser.xyz##+js(set-constant, rFrx, false)
 streamtape.com,stapadblockuser.xyz##+js(aeld, contextmenu)
 streamtape.com,stapadblockuser.xyz##+js(acs, document.write, unescape)
+streamtape.com,stapadblockuser.xyz##+js(acs, /aclib\.runInPagePush\(/)
 ! The following rule prevents the video from playing.
 !streamtape.com,stapadblockuser.xyz##+js(no-setTimeout-if, function)
 streamtape.com##iframe[id="innerframe"]:remove()
@@ -45370,6 +45371,8 @@ streamtape.com##+js(saa, height, 100%, video[id="mainvideo"])
 ! blocking the adgpt.js removes the main iframe with the video in it
 !||streamtape.com/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||stapadblockuser.xyz/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||streamtape.com/js/functions.js$replace=/var googleAd = true;/var googleAd = false;/gm
+||stapadblockuser.xyz/js/functions.js$replace=/var googleAd = true;/var googleAd = false;/gm
 !*$3p,script,denyallow=www.google.com|www.gstatic.com,domain=streamtape.com
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.google.com|www.gstatic.com,domain=streamtape.com
 !||yz.linensephraim.com^*
@@ -48399,9 +48402,9 @@ firstrows.top,firstrowsport.org##div[class="module-desc"]:style(display: inline;
 ! Don't return 0 as this function is used as the delay value for setTimeout(), and a value of 0 makes the function run continuously without delay until/unless clearTimeout() is executed. 
 ! The largest delay value for setTimeout() 2147483647; larger values cause an integer overflow.
 ! To prevent overflow assume that the randomFromInterval() function changed in the following rule has its returned value multiplied by 1000 when used.
-||firstrows.top/js/functions.js$replace=/return Math.floor\(Math.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
-||firstrowsport.org/js/functions.js$replace=/return Math.floor\(Math.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
-||vipboxi.net/js/functions.js$replace=/return Math.floor\(Math.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
+||firstrows.top/js/functions.js$replace=/return Math\.floor\(Math\.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
+||firstrowsport.org/js/functions.js$replace=/return Math\.floor\(Math\.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
+||vipboxi.net/js/functions.js$replace=/return Math\.floor\(Math\.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
 firstrows.top,firstrowsport.org##+js(set-constant, checkCookie, noopFunc)
 ! Can't do both set checkCookie and abort it.
 !firstrows.top,firstrowsport.org##+js(acs, checkCookie)
@@ -50788,8 +50791,8 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js
 ! TODO: The following rule does not work because ondevtoolopen is an event?
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, ondevtoolopen)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(aeld, ondevtoolopen)
-/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets/embed/min/all.js\S*/$replace=/ondevtoolopen\:function\(t,n\) \{W\(\),n\(\);\}/ondevtoolopen:function(){}/gm
-/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets/embed/min/all.js\S*/$replace=/isDevToolOpened\:N/isDevToolOpened:false/gm
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets/embed/min/all\.js\S*/$replace=/ondevtoolopen\:function\(t,n\) \{W\(\),n\(\);\}/ondevtoolopen:function(){}/gm
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets/embed/min/all\.js\S*/$replace=/isDevToolOpened\:N/isDevToolOpened:false/gm
 ! The following rule may be the one which includes the anti-developer tools behavior due to it having an interval of 300000
 ! It also stops the  "Invalid or corrupted PDF file." errors in the console.
 ! TODO: The developer tools were defused though aborting the interval of _0x65bf0() , but _0x65bf0() is no longer in https://vidsrc.to/assets/embed/min/all.js
@@ -51378,6 +51381,32 @@ www.glamourmagazine.co.uk##+js(aopw, window.permutiveCohorts)
 ||olzoszotwhki.com^*
 ||ouknowsaidthea.info^*
 ||clerrrep.com^*
+||www.qokoodhqfpp.com^*
+||www.emuqotbkibdmdc.com^*
+||a9nf3hg5c2.com^*
+kokostream.net##a[title="For video ad companies"]:remove()
+kokostream.net##div[id="clickj"]:remove()
+kokostream.net##div[id="thispays"]:remove()
+kokostream.net##div[id="adp"]:remove()
+kokostream.net##+js(remove-node-text, script, /document\.location\.href =/gm)
+kokostream.net##+js(aeld, /click|touchstart/, /function togglePopupWindow\(e\)/)
+kokostream.net##+js(set-constant, openAuc, noopFunc)
+kokostream.net##+js(acs, /openAuc\(\)/)
+kokostream.net##+js(acs, /self\.location\.replace\(/)
+kokostream.net##+js(set-constant, window.dopopup, false)
+kokostream.net##+js(set-constant, adblockcheck, false)
+kokostream.net##+js(set-constant, adscoreload, false)
+kokostream.net##+js(set-constant, duration, 0)
+kokostream.net##+js(set-constant, new_ad, false)
+kokostream.net##+js(set-constant, fuckAdBlock, false)
+kokostream.net##+js(set-constant, IqGYkz, 1)
+!||kokostream.net/ad/top/popunder.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||kokostream.net/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||sadjklq.com/netu.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||sadjklq.com^*
+!||videocdnshop.com/f.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||videocdnshop.com^*
+||tagbom.com/vstnetu/vast.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
