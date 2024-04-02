@@ -28516,6 +28516,8 @@ www.foxbusiness.com##div[id^="tw-ad-"]:remove()
 www.foxbusiness.com##div[id^="mw-ad-"]:remove()
 www.foxbusiness.com##div[data-ad-init]:remove()
 www.foxbusiness.com##div[data-ad-size]:remove()
+www.foxbusiness.com##iframe[id="measurementKnotchReporter"]:remove()
+www.foxbusiness.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
 www.foxbusiness.com##script[src*="/bat.bing.com/"]:remove()
 www.foxbusiness.com##script[src*="/static.foxnews.com/static/isa/app/lib/omtr_code.js"]:remove()
@@ -28525,6 +28527,7 @@ www.foxbusiness.com##script[src*="/u.openx.net/"]:remove()
 www.foxbusiness.com##script[src*="acdn.adnxs.com/"]:remove()
 www.foxbusiness.com##+js(set-constant, Strike.insertAd, noopFunc)
 www.foxbusiness.com##+js(acs, /Strike\.insertAd\(/)
+||units.knotch.it/reporter/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 en.cdprojektred.com##div[id="eu-cookie"]:remove()
 ||en.cdprojektred.com/wp-content/themes/evp-cdpr/js/js-cookie.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 speakingjs.com##div[id="adbox"]:remove()
@@ -37869,7 +37872,7 @@ foxnews.com##+js(trusted-set-constant, data, {authenticated: true})
 ||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/nielsenlegacy/$script
 !||a948.g.akamai.net/player/9.0.12/akamai/amp/chartbeatanalytics/Chartbeatanalytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||a948.g.akamai.net/player/9.0.12/akamai/amp/chartbeatanalytics/$script
-! Do NOT use the following rules as they prevent videos from playing.
+! Do NOT use the following rules blocking prebid.js as they prevent videos from playing.
 !||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/prebid/libs/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/prebid/$script
 !||a948.g.akamai.net/player/9.0.12/akamai/amp/prebid/libs/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -37901,6 +37904,9 @@ foxnews.com##+js(trusted-set-constant, data, {authenticated: true})
 ||static.foxnews.com/static/v/all/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! Blocking the following script may prevent the political cartoon slideshow from working @ foxnews
 ||static.foxnews.com/static/orion/scripts/core/base/app/modules/ad-strike.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! Do NOT use the following rules blocking amp-ads as they prevent videos from playing.
+!static.foxnews.com##div[class*="amp-ad-"]:remove()
+!static.foxnews.com##div[class="amp-ads"]:remove()
 static.foxnews.com##+js(trusted-replace-node-text, script, /window\.location\.href\.indexOf\('video-embed'\)/gm, 1)
 ||s.yimg.com/dy/readmo-pixel.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !jlym52rvaw7g5y.trustexploration.com##+js(aopr, autoloadMarker)
