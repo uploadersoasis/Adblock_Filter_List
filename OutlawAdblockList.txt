@@ -12451,7 +12451,6 @@ extratorrent.cc##div[id^="M188445Composite"]
 ||www.bebufuspldzh.com^*
 ||cds.*.hwcdn.net/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads.blbrd.co^*
-||www.theverge.com/services/entry_stats^*
 ||7dae6370827c9731.com^*
 ||charmstroy.info^*
 ||www.charmstroy.info^*
@@ -16390,7 +16389,6 @@ clk.press###yx-sli12186:remove()
 !blocks Adguard license check
 ||api.adguard.com^*
 www.videogamer.com##.body_constrain.page-skin > div:nth-of-type(2) > .vm-placement:remove()
-www.theverge.com##.m-ad__btf_medium_rectangle_variable.m-ad__dynamic_ad_unit.m-ad:remove()
 simplecoupondeals.com###sgcboxWrapper:remove()
 ||simplecoupondeals.com/wp-content/plugins/popup-builder-platinum/img/colorbox6/colorbox_overlay.png$image
 !||app.link^*
@@ -16995,7 +16993,6 @@ lawandcrime.com###AdThrive_Content_1_desktop:remove()
 lawandcrime.com###AdThrive_Content_4_desktop:remove()
 lawandcrime.com###AdThrive_Content_5_desktop:remove()
 lawandcrime.com###AdThrive_Content_3_desktop:remove()
-www.theverge.com##div.m-ad__desktop_article_medrec_dynamic:remove()
 ||i62e2b4mfy.com^*
 ||www.i62e2b4mfy.com^*
 ||poogriry.click^*
@@ -19960,9 +19957,7 @@ www.omaredomex.org###fbox-background
 ||vdo.ai/core/trigtent/ads_vmap.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vdo.ai/core/trigtent/adframe.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.trigtent.com/uPushSW.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.aiosearch.com###watch-now
-www.theverge.com##.m-ad__athena
-www.theverge.com##.m-ad__btf_leaderboard_variable
+www.aiosearch.com###watch-now:remove()
 ||essedaccur.info^*
 ||sketsthropo.info^*
 ||rtclocketsun.info^*
@@ -25970,10 +25965,9 @@ www.altap.cz##a[class="FinePortrait"]
 www.altap.cz##div[class^="FinePortrait-"]
 ||www.altap.cz/images/fine-portrait.jpg$image
 ||cdn.concert.io/lib/adblock/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.theverge.com##div[class^="adblock-allowlist-messaging"]
-dxgl.org##div[class="cookiebanner"]
-linuxreviews.org##div[class="mw-cookiewarning-container banner-container"]
-rustorka.com##div[id^="epom-pushdown"]
+dxgl.org##div[class="cookiebanner"]:remove()
+linuxreviews.org##div[class="mw-cookiewarning-container banner-container"]:remove()
+rustorka.com##div[id^="epom-pushdown"]:remove()
 ||aj1907.online^*
 ||aj1616.online^*
 ||aj2178.online^*
@@ -25982,16 +25976,16 @@ rustorka.com##div[id^="epom-pushdown"]
 ||cdn-t.vb17120ayeshajenkins.pw^*
 ||n.naylo.top/games-pc.png$image
 ||rutrk.org/bn/sk/07/index.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-rutracker.org##*[class="ext-links.products.bn-idx"]
+rutracker.org##*[class="ext-links.products.bn-idx"]:remove()
 ||rustorka.com/games-pc.png$image
 ||rutrk.org/bn/sk/07/index.html$subdocument
-thevore.com##div[id="cookie-notice"]
-www.abqjournal.com##div[class="story-ad"]
-www.abqjournal.com##div[id="advertisement"]
-www.abqjournal.com##p[class="disclaimer"]
-www.abqjournal.com##div[id="story-ad-0-skip-target"]
-!www.vice.com##.adph--border.adph
-www.vice.com##*[class^="adph"]
+thevore.com##div[id="cookie-notice"]:remove()
+www.abqjournal.com##div[class="story-ad"]:remove()
+www.abqjournal.com##div[id="advertisement"]:remove()
+www.abqjournal.com##p[class="disclaimer"]:remove()
+www.abqjournal.com##div[id="story-ad-0-skip-target"]:remove()
+!www.vice.com##.adph--border.adph:remove()
+www.vice.com##*[class^="adph"]:remove()
 ||search.discoverweb.com^*
 ||ca432853280e21f681b68fc319b1302712a1f4a0.xyz^*
 ||xcsypkknp.com^*
@@ -26086,11 +26080,11 @@ s0ft4pc.com##div[id="banner_ad"]
 !||pl15150629.highrevenuecpm.com^*
 !||pl136774.highrevenuecpm.com^*
 ||pl*.highrevenuecpm.com^*
-jdownloader.org##div[id="cookie_info"]
-svn.jdownloader.org##div[class="cc_banner-wrapper "]
-regexr.com##div[class="noad"]
-www.indishare.org##[href="https://9xlust.in"]
-aporasal.net##div[id="cookie_notice"]
+jdownloader.org##div[id="cookie_info"]:remove()
+svn.jdownloader.org##div[class="cc_banner-wrapper "]:remove()
+regexr.com##div[class="noad"]:remove()
+www.indishare.org##[href="https://9xlust.in"]:remove()
+aporasal.net##div[id="cookie_notice"]:remove()
 ||cdnpure.com/static/js/ads-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||yaksgames.com/promotion/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www10.richardwashington.pro^*
@@ -26101,19 +26095,17 @@ aporasal.net##div[id="cookie_notice"]
 ||www38.richardwashington.pro^*
 ||www47.richardwashington.pro^*
 ||www5.richardwashington.pro^*
-!internet-access-guide.com##span[class="ezoic-ad ezoic-adl"]
-internet-access-guide.com##span[class^="ezoic-ad"]
-internet-access-guide.com##span[class="ezoic-adpicker-ad"]
-www.theverge.com##div[class="ad-wrapper"]
-www.theverge.com##div[class="outbrain-wrapper"]
-blisk.io##div[id="cookie-notification"]
-!||analytics.supplyframe.com/trackingservlet/impression^*
+!internet-access-guide.com##span[class="ezoic-ad ezoic-adl"]:remove()
+internet-access-guide.com##span[class^="ezoic-ad"]:remove()
+internet-access-guide.com##span[class="ezoic-adpicker-ad"]:remove()
+blisk.io##div[id="cookie-notification"]:remove()
+!||analytics.supplyframe.com/trackingservlet/impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||analytics.supplyframe.com^*
-hackaday.com##div[class="cookie-notifications"]
-www.cloudsavvyit.com###purch_Y_R_1_1
-rd.consoletarget.com##div[id="cookie_notice"]
+hackaday.com##div[class="cookie-notifications"]:remove()
+www.cloudsavvyit.com###purch_Y_R_1_1:remove()
+rd.consoletarget.com##div[id="cookie_notice"]:remove()
 ||a2.consoletarget.com/ii/var/passion_bb_3.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-gonorthforge.com##div[id="cookie-notice"]
+gonorthforge.com##div[id="cookie-notice"]:remove()
 ||4b05ca5688bff79.com^*
 ||b44a98d1901e5b7.com^*
 ||c7a1d9b97c.com^*
@@ -34459,7 +34451,6 @@ getmodsapk.com##ins[data-ad-client]:remove()
 ||vouruwou.com^*
 www.wysiwygwebbuilder.com##div[aria-label="cookieconsent"]:remove()
 sindenlightgun.miraheze.org##[class^="mw-cookiewarning-"]:upward(1):remove()
-www.theverge.com##.remixd-wrapper:remove()
 www.destructoid.com##.eg-ad:remove()
 www.game-designers.net##ins[data-ad-client]:remove()
 mobillegends.net##div[class*="cookiealert"]:remove()
@@ -39885,6 +39876,7 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##body:remove-attr(oncontextmenu)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(remove-attr, oncontextmenu, body)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##:matches-path(/(\/embed)|(\/movie\/)/i) html,body:style(max-height: 99vh !important; height: 99vh !important; max-width: 99vw !important; width: 99vw !important; padding:0 !important; margin:0 !important; border: none !important;overflow:auto !important;)
+2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##img[src="/images/player.png"]:style(right:0px !important;top:0px !important;padding: 0px !important)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##iframe[id="player_iframe"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, seamless, seamless, iframe[id="player_iframe"])
 ! The following attributes are already set by the page as normal.
@@ -42729,14 +42721,14 @@ www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disa
 !||static.adsafeprotected.com/skeleton.gif?adslot=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||static.adsafeprotected.com/skeleton.gif?bannnerid=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.adsafeprotected.com/skeleton.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-! blocking verdantloom.com, crystalboulevard.com, succeedscene.com, whimsicalgrove.com, functionalfeather.com, delicatecascade.com, potatoinvention.com, featherstage.com, and piquantgrove.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
+! blocking verdantloom.com, crystalboulevard.com, succeedscene.com, whimsicalgrove.com, functionalfeather.com, delicatecascade.com, potatoinvention.com, featherstage.com, piquantgrove.com, and monacobeatles.com triggers an inline anti-adblocking script called "admiral" https://getadmiral.com/pb/
 ||verdantloom.com^*
 ||crystalboulevard.com^*
 ||succeedscene.com^*
 ||whimsicalgrove.com^*
 ||delicatecascade.com^*
 ||potatoinvention.com^*
-www.ionos.com##div[id="cookieinfo-container"]
+||monacobeatles.com^*
 www.ionos.com##div[id="cookieinfo-container"]:remove()
 !||hb.yellowblue.io/hb-multi$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hb.yellowblue.io^*
@@ -42744,14 +42736,11 @@ www.ionos.com##div[id="cookieinfo-container"]:remove()
 outlook.live.com##div[data-animatable="true"]:has(div[class="Ogt7j"]):remove()
 !||carrick-ui.advoncommerce.com/gw/api/track/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||carrick-ui.advoncommerce.com^*
-www.xda-developers.com##div[class*="honor-spon-banner"]
-www.xda-developers.com##div[class*="spon_banner"]
+www.xda-developers.com##div[class*="honor-spon-banner"]:remove()
+www.xda-developers.com##div[class*="spon_banner"]:remove()
 ||www.xda-developers.com/strpixel.png$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.xda-developers.com##div[id^="adsninja-ad-zone"]
 www.xda-developers.com##div[id^="adsninja-ad-zone"]:remove()
-www.xda-developers.com##div[id^="ad-zone-container"]
 www.xda-developers.com##div[id^="ad-zone-container"]:remove()
-www.xda-developers.com##div[id*="div-gpt-ad-"]
 www.xda-developers.com##div[id*="div-gpt-ad-"]:remove()
 www.xda-developers.com##iframe[style="display: none;"][name="__tcfapiLocator"]:remove()
 www.xda-developers.com##iframe[style="display: none;"][name="__uspapiLocator"]:remove()
@@ -42866,6 +42855,7 @@ www.windowscentral.com##+js(trusted-replace-node-text, script, /\"clsReporting\"
 www.windowscentral.com##+js(trusted-replace-node-text, script, /\"gtm\":{\"vanilla\":true,\"sitespecific\":true}/, "gtm":{"vanilla":false,"sitespecific":false})
 www.windowscentral.com##+js(trusted-replace-node-text, script, /\"selligent\":{\"enabled\":true}/, "selligent":{"enabled":false})
 www.windowscentral.com##+js(trusted-replace-node-text, script, /\"freyr\":{\"enabled\":true,\"ga4SpecificGTM"\:{\"enabled\":true,\"code\":\"GTM-WWBWRXL\"}}}/, "freyr":{"enabled":false,"ga4SpecificGTM":{"enabled":false,"code":""}})
+www.windowscentral.com##+js(set-attr, iframe[data-lazy-src], src, [data-lazy-src])
 ! copy attribute value to src instead of renaming attribute
 ! TODO: Always leading space in class name sought?
 ! Either of the following attributes will work for src since they are identical value.
@@ -43469,11 +43459,21 @@ casavogue.ca##div[aria-label="cookieconsent"]:remove()
 ! allow on Dell.com for service tag search will work
 !||api.iperceptions.com/InviteTriggers$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||api.iperceptions.com^*
-www.theverge.com##div[data-concert="tablet_leaderboard"]
-www.theverge.com##div[data-concert="tablet_leaderboard"]:remove()
-www.theverge.com##div[data-concert="desktop_leaderboard_variable"]
+www.theverge.com##.m-ad__athena:remove()
+www.theverge.com##.m-ad__btf_leaderboard_variable:remove()
+www.theverge.com##.m-ad__btf_medium_rectangle_variable.m-ad__dynamic_ad_unit.m-ad:remove()
+www.theverge.com##.remixd-wrapper:remove()
+www.theverge.com##div.m-ad__desktop_article_medrec_dynamic:remove()
+www.theverge.com##div[class="ad-wrapper"]:remove()
+www.theverge.com##div[class="outbrain-wrapper"]:remove()
+www.theverge.com##div[class^="adblock-allowlist-messaging"]:remove()
 www.theverge.com##div[data-concert="desktop_leaderboard_variable"]:remove()
-www.cgdirector.com##div[id^="fixed_ad_container_"]
+www.theverge.com##div[data-concert="tablet_leaderboard"]:remove()
+www.theverge.com##div[data-native-ad-id]:remove()
+www.theverge.com##iframe[src^="https://events.release.narrativ.com/"]:remove()
+www.theverge.com##script[id="admiral"]:remove()
+www.theverge.com##+js(remove-node-text, script, /typeof i\.pubads === n/gm)
+||www.theverge.com/services/entry_stats$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.cgdirector.com##div[id^="fixed_ad_container_"]:remove()
 www.cgdirector.com##+js(set-constant, gainwpUAEventsData, {})
 www.cgdirector.com##+js(abort-on-property-read, gainwpUAEventsData)
@@ -44375,12 +44375,9 @@ www.xda-developers.com##div[id="article-limit-container"]:remove()
 lingojam.com##+js(set-constant, window.adProviderName, "")
 lingojam.com##+js(aopr, window.adProviderName)
 lingojam.com##+js(aopw, window.adProviderName)
-lingojam.com##p[id^="adsense-area"]
 lingojam.com##p[id^="adsense-area"]:remove()
-lingojam.com##div[class="adsense-area"]
 lingojam.com##div[class="adsense-area"]:remove()
 ! The following is an admiral anti-adblocking frame.  TODO: Does the class name ever change?
-lingojam.com##div[class="dgEhJe6g"]
 lingojam.com##div[class="dgEhJe6g"]:remove()
 !||bids.proper.io/api/bidding$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bids.proper.io^*
@@ -50934,11 +50931,17 @@ player.smashy.stream,embed.smashystream.com##iframe[id="pjsfrrsplayer"]:remove()
 player.smashy.stream,embed.smashystream.com##div[class="react-responsive-modal-root"][data-testid="root"]:remove()
 !player.smashy.stream,embed.smashystream.com##div[class^="react-responsive-modal-"]:has(iframe[src^="https://vaitotoo.net/"]):remove()
 player.smashy.stream,embed.smashystream.com##iframe[src^="https://vaitotoo.net/"]:remove()
-player.smashy.stream,embed.smashystream.com##+js(remove-node-text, script, /function _0x4695\(\){var _0x28ffe1=\[/gm)
-player.smashy.stream,embed.smashystream.com##+js(set-constant, _0x28ffe1, [])
+! This script is necessary to embed the video player as there is nothing else in the page @ https://player.smashy.stream/movie/<IMDB id> to do it.
+!player.smashy.stream,embed.smashystream.com##+js(remove-node-text, script, /function _0x4695\(\){var _0x28ffe1=\[/gm)
+!player.smashy.stream,embed.smashystream.com##+js(remove-node-text, script, /_0x4695=function\(\)\{return _0x28ffe1;\}/gm)
+!player.smashy.stream,embed.smashystream.com##+js(set-constant, _0x28ffe1, [])
+player.smashy.stream,embed.smashystream.com##+js(set-constant, museywg, noopFunc)
+player.smashy.stream,embed.smashystream.com##+js(acs, /museywg\(\)/)
+player.smashy.stream,embed.smashystream.com##script[onerror]:remove-attr(onerror)
+player.smashy.stream,embed.smashystream.com##+js(remove-attr, onerror, script[onerror])
 !*$3p,script,denyallow=www.gstatic.com|embed.smashystream.com|player.smashy.stream,domain=player.smashy.stream|embed.smashystream.com
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.gstatic.com|embed.smashystream.com|player.smashy.stream,domain=player.smashy.stream|embed.smashystream.com
-!moviesapi.club##iframe[id="frame2"]
+!moviesapi.club##iframe[id="frame2"]:remove()
 ##div[style="position:fixed;inset:0px;z-index:999999;height:100%;width:100%"]:upward(1):remove()
 moviesapi.club##+js(remove-attr, oncontextmenu, body)
 moviesapi.club##body:remove-attr(oncontextmenu)
@@ -51364,6 +51367,11 @@ www.glamourmagazine.co.uk##+js(aopr, window.permutiveCohorts)
 www.glamourmagazine.co.uk##+js(aopw, window.permutiveCohorts)
 ||condenast.map.fastly.net/beacon$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rum.condenastdigital.com/beacon$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||qajb.qwvvoaykyebb.top^*
+||qwvvoaykyebb.top^*
+||olzoszotwhki.com^*
+||ouknowsaidthea.info^*
+||clerrrep.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
