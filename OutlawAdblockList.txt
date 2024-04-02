@@ -45371,8 +45371,8 @@ streamtape.com##+js(saa, height, 100%, video[id="mainvideo"])
 ! blocking the adgpt.js removes the main iframe with the video in it
 !||streamtape.com/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||stapadblockuser.xyz/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||streamtape.com/js/functions.js$replace=/var googleAd = true;/var googleAd = false;/gm
-||stapadblockuser.xyz/js/functions.js$replace=/var googleAd = true;/var googleAd = false;/gm
+||streamtape.com/adgpt.js$replace=/var googleAd = true;/var googleAd = false;/gm
+||stapadblockuser.xyz/adgpt.js$replace=/var googleAd = true;/var googleAd = false;/gm
 !*$3p,script,denyallow=www.google.com|www.gstatic.com,domain=streamtape.com
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.google.com|www.gstatic.com,domain=streamtape.com
 !||yz.linensephraim.com^*
@@ -50791,8 +50791,13 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js
 ! TODO: The following rule does not work because ondevtoolopen is an event?
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, ondevtoolopen)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(aeld, ondevtoolopen)
-/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(t,n\) \{W\(\),n\(\);\}/ondevtoolopen:function(){}/gm
-/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:N/isDevToolOpened:false/gm
+! Only vidsrc.to/assets/embed/min/all.js actually exists.
+!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(t,n\) \{W\(\),n\(\);\}/ondevtoolopen:function(){}/gm
+!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(n,t\) \{s\(\),t\(\);\}/ondevtoolopen:function(){}/gm
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(\w,\w\) \{\w\(\),\w\(\);\}/ondevtoolopen:function(){}/gm
+!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:N/isDevToolOpened:false/gm
+!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:I/isDevToolOpened:false/gm
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:[A-Z]/isDevToolOpened:false/gm
 ! The following rule may be the one which includes the anti-developer tools behavior due to it having an interval of 300000
 ! It also stops the  "Invalid or corrupted PDF file." errors in the console.
 ! TODO: The developer tools were defused though aborting the interval of _0x65bf0() , but _0x65bf0() is no longer in https://vidsrc.to/assets/embed/min/all.js
