@@ -50805,18 +50805,48 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js
 ! The following rule will prevent the video player from working.
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(nosiif)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(aeld, contextmenu|keydown)
-! The following rule does NOT abort the entire https://vidsrc.to/assets/embed/min/all.js script.
-vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, console.clear)
-! TODO: The following rule does not work because ondevtoolopen is an event?
-!vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, ondevtoolopen)
-vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(aeld, ondevtoolopen)
+! The following rule does NOT abort the entire https://vidsrc.to/assets/embed/min/all.js or https://e69975b881.nl/assets/mcloud/min/embed.js script.
+! It is still necessary even with the replacements made to those two scripts.
+! TODO: It does not eliminate the console.clear caused by https://e69975b881.nl/assets/mcloud/min/embed.js
+!       Need to eliminate console["clear"] calls.
+!       Change to console["info"]? 
+e69975b881.nl,vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, /console\.clear/)
+! TODO: Neither of the following two rules work.
+!e69975b881.nl,vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, ondevtoolopen)
+!e69975b881.nl,vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(aeld, ondevtoolopen)
 ! Only vidsrc.to/assets/embed/min/all.js actually exists.
+! The query string, e.g. ?v=660cbe20 , matters as the contents of the script change based upon it.
 !/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(t,n\) \{W\(\),n\(\);\}/ondevtoolopen:function(){}/gm
 !/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(n,t\) \{s\(\),t\(\);\}/ondevtoolopen:function(){}/gm
 /^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(\w,\w\) \{\w\(\),\w\(\);\}/ondevtoolopen:function(){}/gm
+! h(); is the name of the function in all.js that contains "ondevtoolopen". TODO: does this function name change?
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/,h\(\);/,null;/gm
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/\{h&&h\(\);/{null;/gm
 !/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:N/isDevToolOpened:false/gm
 !/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:I/isDevToolOpened:false/gm
 /^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:[A-Z]/isDevToolOpened:false/gm
+! TODO: The following eliminates the console.clear() call if developer tools are opened? No.
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/\{console\[\w+\]\(\w\);}/{null;}/gm
+! a1() is the console clearing function in https://vidsrc.to/assets/embed/min/all.js
+! TODO: The following rule works to prevent clearing the console, BUT the video player is still removed when the console is opened and the interval is still running.
+!       Need to defuse the entire function containing developer tools check and interval: function h().
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/&&a1\(\);\}/&&null;}/gm
+! TODO: The following rule won't work if a1() if removed from the function with the preceding rule.
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, /^a1\(\)/)
+! TODO: The following two rules work? Either that or removing calls to h(); in all.js do.
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(no-setInterval-if, /^h\(\)/)
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, /^h\(\)/)
+! https://e69975b881.nl/assets/mcloud/min/embed.js also contains "ondevtoolopen and "isDevToolOpened" and is called by vidsrc.to/embed/ pages.
+! The replacement patterns are different though.
+||e69975b881.nl/assets/mcloud/min/embed.js$replace=/'isDevToolOpened':\w+\}/'isDevToolOpened':false}/gm
+||e69975b881.nl/assets/mcloud/min/embed.js$replace=/\{'ondevtoolopen'\:function\(\w+,\w+\)\{\w+\(\),\w+\(\);\}\}/{'ondevtoolopen':function(){}}/gm
+! _0x13d174(); is the name of the function in embed.js that contains "ondevtoolopen". TODO: does this function name change?
+||e69975b881.nl/assets/mcloud/min/embed.js$replace=/,_0x13d174\(\);/,null;/gm
+! TODO: The following two rules work? Either that or removing calls to _0x13d174(); in embed.js do.
+e69975b881.nl##+js(no-setInterval-if, /_0x13d174\(\)/)
+e69975b881.nl##+js(acs, /_0x13d174\(\)/)
+! TODO: The following eliminates the console.clear() call if developer tools are opened? No.
+||e69975b881.nl/assets/mcloud/min/embed.js$replace=/\{console\[\w+\]\(\w+\);}/{null;}/gm
 ! The following rule may be the one which includes the anti-developer tools behavior due to it having an interval of 300000
 ! It also stops the  "Invalid or corrupted PDF file." errors in the console.
 ! TODO: The developer tools were defused though aborting the interval of _0x65bf0() , but _0x65bf0() is no longer in https://vidsrc.to/assets/embed/min/all.js
@@ -51741,6 +51771,7 @@ netu.ac##+js(acs, /go_roulete\(numb, message\)/)
 ||xml.car-bidpush.org^*
 ||terabigyellowmotha.info^*
 ||0ijvby90.skin^*
+||zoroxtv.to/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
