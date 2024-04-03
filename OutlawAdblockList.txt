@@ -51027,23 +51027,53 @@ databasegdriveplayer.xyz##+js(aopr, host)
 !*$3p,script,denyallow=ajax.googleapis.com|cdnjs.cloudflare.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|ssl.p.jwpcdn.com|jwplayer-dualstack.map.fastly.net,domain=databasegdriveplayer.xyz
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=ajax.googleapis.com|cdnjs.cloudflare.com|cdn.jsdelivr.net|jsdelivr.map.fastly.net|ssl.p.jwpcdn.com|jwplayer-dualstack.map.fastly.net,domain=databasegdriveplayer.xyz
 ! kerapoxy.cc is a filemoon.sx domain.
+! The following rule blocks the overlay used for click event popup redirects.
+kerapoxy.cc##div[style="width:100%;height:100%;position:fixed;top:0;left:0;z-index:9999999;display:none;"]:remove()
+kerapoxy.cc##div[class="afs_ads ad-placement"]:remove()
 kerapoxy.cc##+js(set-constant, FabUtils, noopFunc)
 kerapoxy.cc##+js(set-constant, Fab, noopFunc)
 kerapoxy.cc##+js(set-constant, FabPluginHtml, noopFunc)
+kerapoxy.cc##+js(set-constant, getAdLink, noopFunc)
+kerapoxy.cc##+js(acs, /getAdLink\(\)/)
+kerapoxy.cc##+js(set-constant, window.Baras, "")
+kerapoxy.cc##+js(aopw, window.Baras)
+kerapoxy.cc##+js(aopr, window.Baras)
+kerapoxy.cc##+js(aeld, click, /function h\(t\)/)
+kerapoxy.cc##+js(acs, /AckMe.add\(/)
+kerapoxy.cc##+js(set-constant, urls, [])
+kerapoxy.cc##+js(aopw, urls)
+kerapoxy.cc##+js(aopr, urls)
 kerapoxy.cc##+js(aopw, Zordon)
 kerapoxy.cc##+js(aopr, Zordon)
-! TODO: The following two rules block legitimate/useful functions too.
-!kerapoxy.cc##+js(no-setTimeout-if, /function\(\)/)
-!kerapoxy.cc##+js(no-setInterval-if, /function\(\)/)
+kerapoxy.cc##+js(remove-node-text, script, /try\{var [a-z]=parseInt\(localStorage\[/gm)
+kerapoxy.cc##^script:has-text(/try\{var [a-z]=parseInt\(localStorage\[/gm):remove()
+kerapoxy.cc##:xpath(//script[contains(text(), 'try{var q=parseInt(localStorage[')]):remove()
 kerapoxy.cc##+js(remove-node-text, script, /\("sandbox"\)/gm)
 kerapoxy.cc##^script:has-text(/\("sandbox"\)/):remove()
 kerapoxy.cc##:xpath(//script[contains(text(), '("sandbox")')]):remove()
+kerapoxy.cc##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
+kerapoxy.cc##+js(remove-attr, disableremoteplayback, video[class="jw-video jw-reset"])
+kerapoxy.cc##video[class="jw-video jw-reset"]:remove-attr(disablepictureinpicture)
+kerapoxy.cc##+js(remove-attr, disablepictureinpicture, video[class="jw-video jw-reset"])
+kerapoxy.cc##+js(saa, x-webkit-airplay, allow, video[class="jw-video jw-reset"])
+kerapoxy.cc##+js(saa, data-autoplay-mute-lock, false, video[class="jw-video jw-reset"])
+kerapoxy.cc##+js(saa, controls, true, video[class="jw-video jw-reset"])
+kerapoxy.cc##+js(saa, width, 100%, video[class="jw-video jw-reset"])
+kerapoxy.cc##+js(saa, height, 100%, video[class="jw-video jw-reset"])
+! TODO: The following two rules block legitimate/useful functions too.
+!       Blocking timeouts and intervals isn't necessary when the function which creates them is removed using the rules above.
+!kerapoxy.cc##+js(no-setTimeout-if, /function\(\)/)
+!kerapoxy.cc##+js(no-setInterval-if, /function\(\)/)
 ||kerapoxy.cc/advertises/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kerapoxy.cc/js/dnsads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following rule blocks a "Fuck Adblock" script.
 ||kerapoxy.cc/js/baf.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !*$3p,script,denyallow=moonjscdn.info,domain=kerapoxy.cc
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=moonjscdn.info,domain=kerapoxy.cc
+! no third-party popups for kerapoxy.cc
+*$3p,popup,domain=kerapoxy.cc
+! using the following rule doesn't block popups from about:blank
+!/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,popup,domain=kerapoxy.cc
 ||stageseshoals.com^*
 !||zlyb.zebjlmmejbybz.top^*
 ||zebjlmmejbybz.top^*
@@ -51705,6 +51735,12 @@ netu.ac##+js(acs, /go_roulete\(numb, message\)/)
 ||www.vonciejsx.com^*
 ||www.shothix.com/landing?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||172.255.103.118/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||co6j5ighubcc73a5s240.junctionspeedforum.co.in^*
+||junctionspeedforum.co.in^*
+||ivauvoor.net^*
+||xml.car-bidpush.org^*
+||terabigyellowmotha.info^*
+||0ijvby90.skin^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
