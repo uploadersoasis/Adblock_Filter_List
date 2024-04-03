@@ -51397,6 +51397,8 @@ www.glamourmagazine.co.uk##+js(aopw, window.permutiveCohorts)
 ||www.emuqotbkibdmdc.com^*
 ||a9nf3hg5c2.com^*
 kokostream.net##a[title="For video ad companies"]:remove()
+kokostream.net##a[id="netulink"]:remove()
+! TODO: The following doesn't work to remove the adblock background image because it is placed on the body tag via inline script after window.onload.
 kokostream.net##body[id="body"]:remove-attr(style)
 kokostream.net##+js(remove-attr, style, body[id="body"])
 kokostream.net##body[id="body"]:style(overflow: auto !important; maximum width: 100vw !important; width: 100vw important!; maximum height: 100vh !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
@@ -51404,13 +51406,14 @@ kokostream.net##div[id="clickj"]:remove()
 kokostream.net##div[id="thispays"]:remove()
 kokostream.net##div[id="adp"]:remove()
 kokostream.net##div[class="vjs-ad-loading"]:remove()
-! TODO: Do not hide bot_click image or can't play the video?
-!kokostream.net##img[id="bot_click"]:remove()
 kokostream.net##script[data-admpid]:remove()
 kokostream.net##script[src*="//pagead2.googlesyndication.com/"][onerror]:remove-attr(onerror)
 kokostream.net##+js(remove-attr, onerror, script[src*="//pagead2.googlesyndication.com/"][onerror])
+kokostream.net##+js(set-constant, atOptions, {})
+kokostream.net##+js(aopr, atOptions)
+kokostream.net##+js(aopw, atOptions)
+kokostream.net##+js(remove-node-text, script, /var sNew = document\.createElement\("script"\);/gm)
 kokostream.net##+js(remove-node-text, script, /document\.location\.href =/gm)
-kokostream.net##+js(aeld, /click|touchstart/, /function togglePopupWindow\(e\)/)
 kokostream.net##+js(set-constant, openAuc, noopFunc)
 kokostream.net##+js(acs, /openAuc\(\)/)
 kokostream.net##+js(acs, /self\.location\.replace\(/)
@@ -51422,12 +51425,17 @@ kokostream.net##+js(set-constant, cantOpenWindows, false)
 ! 7 is the current minimum value for openedSecondPop to be skipped.
 kokostream.net##+js(set-constant, openedSecondPop, 999)
 ! 4 is the current minimum value for adtype to be skipped.
-kokostream.net##+js(set-constant, adtype, 999)
+! adtype is a string not int with "3" as initial value except it is checked using adtype < 4.
+!kokostream.net##+js(set-constant, adtype, 999)
+kokostream.net##+js(trusted-set-constant, adtype, "999")
 ! 3 is the current minimum value for dosecondpopcounter to be skipped.
 kokostream.net##+js(set-constant, dosecondpopcounter, 999)
+kokostream.net##+js(set-constant, send_ad, false)
 kokostream.net##+js(set-constant, popUrl, "")
 kokostream.net##+js(set-constant, urllpop, "")
-kokostream.net##+js(set-constant, is_g, true)
+kokostream.net##+js(set-constant, spotUrl, "")
+kokostream.net##+js(set-constant, vasturl, "")
+kokostream.net##+js(aeld, /click|touchstart/, /function togglePopupWindow\(e\)/)
 kokostream.net##+js(set-constant, togglePopupWindow, noopFunc)
 kokostream.net##+js(set-constant, startpops, noopFunc)
 kokostream.net##+js(set-constant, doSecondPop, noopFunc)
@@ -51442,23 +51450,97 @@ kokostream.net##+js(set-constant, getAdsUrl, noopFunc)
 kokostream.net##+js(set-constant, adscore, noopFunc)
 kokostream.net##+js(set-constant, AdscoreInit, noopFunc)
 kokostream.net##+js(set-constant, loadadscore, noopFunc)
-! adfree is a string not int or boolean.
+! adfree is a string not int or boolean and is set to '0' by default.
 kokostream.net##+js(trusted-set-constant, adfree, "1")
 ! adb1 = window.waiy,
 kokostream.net##+js(set-constant, adb1, false)
 ! const checkad = window.ebhSd;
 kokostream.net##+js(set-constant, checkad, false)
-kokostream.net##+js(set-constant, ads_playing, false)
 kokostream.net##+js(set-constant, adbl, 0)
+! adscoreload should be true to prevent loading from a.labadena.com/api/spots/
+kokostream.net##+js(set-constant, adscoreload, true)
+kokostream.net##+js(set-constant, adscorestored, "")
+kokostream.net##+js(set-constant, fuckAdBlock, falseFunc)
+! TODO: adbn is the id for the video ad banner?
+kokostream.net##+js(set-constant, adbn, "")
+! TODO: popCount should be low since comparisons are made against it, and it does not increase.
+kokostream.net##+js(set-constant, popCount, 0)
+! TODO: Should free be 1 or 0 to have no ads and to play the video? 0 since it is set to 1 by default?
+kokostream.net##+js(set-constant, free, 0)
+! TODO: minimumVisibleDuration should be 1 or 0?
+kokostream.net##+js(set-constant, minimumVisibleDuration, 1)
+! TODO: Visible flag should be set to true since false prevents video from playing?
+kokostream.net##+js(set-constant, vsbl, true)
+! TODO: olplayer.src contains the URL with the m3u8 playlist.
+! TODO: force olplayerready to true?
+kokostream.net##+js(set-constant, olplayerready, true)
+! TODO:  [kokostream.net][set-constant ⁝ duration ⁝ 0] Aborted because value set to 5000
+!        Why does duration return a string value in the console, e.g. "5000"? Because there is an in-line script which sets that value.
+!        Changed with the trusted-replace-node-text scriptlet instead.
+!kokostream.net##+js(set-constant, duration, 0)
+kokostream.net##+js(trusted-set-constant, duration, "0")
+! TODO: Do not hide bot_click image or can't play the video?
+!kokostream.net##img[id="bot_click"]:remove()
+! TODO: if(!new_ad){goasg(); <- function name varies; set new_ad to true instead?  It is set true at initialization.
+!kokostream.net##+js(set-constant, new_ad, false)
+! TODO: Should opendpops be locked to its initial value of 0 if free is not 1?
+!kokostream.net##+js(set-constant, opendpops, 0)
+! TODO: is_g has something to do with Google.
+!kokostream.net##+js(set-constant, is_g, true)
 ! TODO: Should adblock's value be true or false because the value may be used opposite of its obvious meaning on this website?
 kokostream.net##+js(set-constant, adblock, false)
 ! TODO: should the following function always return false if on phone or tablet? openpopplayer() isn't used if mobile device.
 kokostream.net##+js(set-constant, window.mobileAndTabletCheck, falseFunc)
+! TODO: The following rule is likely not useful since it is only for logging purposes and to call olplayer.pause();
+kokostream.net##+js(set-constant, ads_playing, false)
 ! TODO: do the following two function names change? yes
 !kokostream.net##+js(set-constant, oXONvp, noopFunc)
 !kokostream.net##+js(set-constant, NvdXMFd, noopFunc)
 ! TODO: does the name of window.YPpFckIt change? yes
 !kokostream.net##+js(set-constant, window.YPpFckIt, true)
+! TODO: what does the following value do?  The variable name varies, e.g. var TeUhIO = !1;
+!kokostream.net##+js(set-constant, IqGYkz, 1)
+! TODO: Should not wait to load the video player? Do not set this manually as it just checks if olplayer object exists.
+!kokostream.net##+js(set-constant, waitloadplayer, false)
+! TODO: Should not wait to load the video player? Do not set this manually as it just checks if olplayer object exists.
+!kokostream.net##+js(trusted-replace-node-text, script, /var waitloadplayer = true;/gm, var waitloadplayer = false;)
+! TODO: use the following rule to skip the video ads?
+!kokostream.net##+js(trusted-replace-node-text, script, /\/\/olplayer.play\(\);/gm, olplayer.play();)
+! TODO: Visible flag should be set to true since false prevents video from playing?
+kokostream.net##+js(trusted-replace-node-text, script, /var vsbl = false;/gm, var vsbl = true;)
+! TODO: minimumVisibleDuration should be 1 or 0?
+kokostream.net##+js(trusted-replace-node-text, script, /const minimumVisibleDuration = 1000;/gm, const minimumVisibleDuration = 1;)
+! TODO: Should free be 1 or 0 to have no ads and to play the video? 0 since it is set to 1 by default?
+kokostream.net##+js(trusted-replace-node-text, script, /const free = 1;/gm, const free = 0;)
+! TODO: popCount should be low since comparisons are made against it, and it does not increase.
+kokostream.net##+js(trusted-replace-node-text, script, /const popCount = 10;/gm, const popCount = 0;)
+! TODO: The following rule is likely not useful since it is only for logging purposes?
+kokostream.net##+js(trusted-replace-node-text, script, /ads_playing = !1,/gm, ads_playing = false,)
+! TODO: adbn is the id for the video ad banner?
+kokostream.net##+js(trusted-replace-node-text, script, /adbn = '186363',/gm, adbn = "",)
+! TODO: force olplayerready to true?
+kokostream.net##+js(trusted-replace-node-text, script, /olplayerready = !1,/gm, olplayerready = true,)
+! TODO: Why does duration return a string value in the console, e.g. "5000"?  Because there is an in-line script which sets that value.
+! TODO:  [kokostream.net][set-constant ⁝ duration ⁝ 0] Aborted because value set to 5000
+!        Why does duration return a string value in the console, e.g. "5000"? Because there is an in-line script which sets that value.
+!        Changed with the trusted-replace-node-text scriptlet instead.
+kokostream.net##+js(trusted-replace-node-text, script, /var duration = 5000;/gm, var duration = 0;)
+kokostream.net##+js(trusted-replace-node-text, script, /var duration = "5000";/gm, var duration = "0";)
+! adfree is a string not int or boolean and is set to '0' by default.
+kokostream.net##+js(trusted-replace-node-text, script, /var adfree = '0';/gm, var adfree = '1';)
+! 4 is the current minimum value for adtype to be skipped.
+! adtype is a string not int with "3" as initial value except it is checked using adtype < 4.
+kokostream.net##+js(trusted-replace-node-text, script, /var adtype = '3';/gm, var adtype = '999';)
+! 3 is the current minimum value for dosecondpopcounter to be skipped.
+kokostream.net##+js(trusted-replace-node-text, script, /dosecondpopcounter=0;/gm, dosecondpopcounter=999;)
+! adscoreload should be true to prevent loading from a.labadena.com/api/spots/
+kokostream.net##+js(trusted-replace-node-text, script, /var adscoreload = false;/gm, var adscoreload = true;)
+! The following three rules are for the video player cast button.
+kokostream.net##+js(trusted-replace-node-text, script, /addButtonToControlBar: false/gm, addButtonToControlBar: true)
+kokostream.net##+js(trusted-replace-node-text, script, /\/\/airPlay: \{/gm, airPlay: {)
+kokostream.net##+js(trusted-replace-node-text, script, /\/\/addButtonToControlBar: true/gm, addButtonToControlBar: true)
+kokostream.net##+js(remove-node-text, script, /document\.getElementById\('body'\)\.style\.background = 'url\(\/images\/adblock\.jpg\) no-repeat';/gm)
+kokostream.net##+js(trusted-replace-node-tex, script, /\$\('#olvideo'\)\.css\('background','url\(\/images\/adblock\.jpg\) no-repeat'\);/gm, "")
 kokostream.net##+js(trusted-replace-node-text, script, /adsEnabled: true,/gm, adsEnabled: false,)
 kokostream.net##+js(trusted-replace-node-text, script, /adCancelTimeout: 15000,/gm, adCancelTimeout: 1,)
 kokostream.net##+js(trusted-replace-node-text, script, /playAdAlways: true,/gm, playAdAlways: false,)
@@ -51468,13 +51550,11 @@ kokostream.net##+js(trusted-replace-node-text, script, /if \(self\!\=top\)/gm, i
 kokostream.net##+js(trusted-replace-node-text, script, /if\(adblockcheck\)/gm, if (null))
 kokostream.net##+js(trusted-replace-node-text, script, /someFunction\('[A-Za-z]+','[A-Za-z]+','[A-Za-z]+'\);/gm, null;)
 kokostream.net##+js(trusted-replace-node-text, script, /olplayer\.muted\(true\);/gm, olplayer.muted(false);)
-kokostream.net##+js(set-constant, adscoreload, false)
-kokostream.net##+js(set-constant, duration, 0)
-! TODO: if(!new_ad){goasg(); <- function name varies
-!kokostream.net##+js(set-constant, new_ad, false)
-kokostream.net##+js(set-constant, fuckAdBlock, falseFunc)
-! TODO: what does the following value do?  The variable name varies, e.g. var TeUhIO = !1;
-!kokostream.net##+js(set-constant, IqGYkz, 1)
+kokostream.net##+js(trusted-replace-node-text, script, /\/\/olplayer\.muted\(true\);/gm, olplayer.muted(false);)
+kokostream.net##+js(trusted-replace-node-text, script, /\/\/olplayer.chromecast\(\);/gm, olplayer.chromecast\(\);)
+kokostream.net##+js(trusted-replace-node-text, script, /style='height:450px;width:720px'/gm, style='height:100%;width:100%')
+kokostream.net##+js(trusted-replace-node-text, script, /adblockcheck = null,/gm, adblockcheck = false,)
+kokostream.net##+js(trusted-replace-node-text, script, /cantOpenWindows = null,/gm, cantOpenWindows = false,)
 ! script_33.11.js controls the popup ads, i.e. togglePopupWindow function
 !||kokostream.net/js/script_33.11.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 /^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/script_\d+\.\d+\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -51494,6 +51574,8 @@ kokostream.net##+js(set-constant, fuckAdBlock, falseFunc)
 /^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/while\(true\)\{eval\("debugger"\);\}/null;/gm
 /^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/document\.body\.innerHTML="";/null;/gm
 /^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/adbl=1;/adbl=0;/gm
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/document\.oncontextmenu=function\(\)\{return false;\};/null;/gm
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/document\.onselectstart=function\(\)\{return false;\};/null;/gm
 !||kokostream.net/ad/top/popunder.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kokostream.net/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kokostream.net/js/adv/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -51546,6 +51628,23 @@ vidcloud1.com##+js(saa, allowtransparency, true, iframe[src*="//multiembed.mov/"
 vidcloud1.com##+js(saa, frameborder, 0, iframe[src*="//multiembed.mov/"])
 vidcloud1.com##+js(saa, scrolling, no, iframe[src*="//multiembed.mov/"])
 vidcloud1.com##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[src*="//multiembed.mov/"])
+||netu.ac/js/jquery-eu-cookie-law-popup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||netu.ac/styles/global/jquery-eu-cookie-law-popup.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+netu.ac##iframe[src^="https://wp.aliexpress.com/"]:remove()
+netu.ac##iframe[src^="https://wp.aliexpress.com/"]:remove()
+netu.ac##+js(set-constant, getBonus, noopFunc)
+netu.ac##+js(acs, /getBonus\(\)/)
+netu.ac##+js(set-constant, go_roulete, noopFunc)
+netu.ac##+js(acs, /go_roulete\(numb, message\)/)
+! The script in the following rule adds the a11ybar.com/stat.js script to the current page.
+||a11ybar.com/ok6.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||hz.aserver-ae.aliexpress.com.gds.alibabadns.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||best.aliexpress.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! deliver.vkcdnservice.com serves ad videos.
+!||deliver.vkcdnservice.com/api/spots/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||deliver.vkcdnservice.com^*
+||matchesdetectplays.com^*
+||webpinp.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
