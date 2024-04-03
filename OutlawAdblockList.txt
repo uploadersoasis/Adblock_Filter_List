@@ -51430,6 +51430,8 @@ kokostream.net##+js(set-constant, openedSecondPop, 999)
 kokostream.net##+js(trusted-set-constant, adtype, "999")
 ! 3 is the current minimum value for dosecondpopcounter to be skipped.
 kokostream.net##+js(set-constant, dosecondpopcounter, 999)
+! TODO: What is isec the countdown for?
+kokostream.net##+js(set-constant, isec, 0)
 kokostream.net##+js(set-constant, send_ad, false)
 kokostream.net##+js(set-constant, popUrl, "")
 kokostream.net##+js(set-constant, urllpop, "")
@@ -51460,8 +51462,13 @@ kokostream.net##+js(set-constant, adbl, 0)
 ! adscoreload should be true to prevent loading from a.labadena.com/api/spots/
 kokostream.net##+js(set-constant, adscoreload, true)
 kokostream.net##+js(set-constant, adscorestored, "")
+! someFunction(fadb, fadbn, fadbk) is an anti-adblocking function defined in https://kokostream.net/js/embed.232.js and called in an inline script.
+kokostream.net##+js(set-constant, someFunction, noopFunc)
 kokostream.net##+js(set-constant, fuckAdBlock, falseFunc)
-! TODO: adbn is the id for the video ad banner?
+! prem standard for premium traffic.  Its default value is 1 unless adtype < 4 then it is 0.
+kokostream.net##+js(set-constant, prem, 1)
+! TODO: adbn is the userid on the end of the ws variable.  It's user for the video ad banners?
+!       var ws = '?serv=4&md5=VhBvnYxjphFmy0dCQCbfwA&time=1712135205&ip=MjYwMDoxNzAwOjkwNjA6YWNmMDozNTU1OmRmMWU6ZmEzMDplYzll&userid=186363';
 kokostream.net##+js(set-constant, adbn, "")
 ! TODO: popCount should be low since comparisons are made against it, and it does not increase.
 kokostream.net##+js(set-constant, popCount, 0)
@@ -51474,14 +51481,9 @@ kokostream.net##+js(set-constant, vsbl, true)
 ! TODO: olplayer.src contains the URL with the m3u8 playlist.
 ! TODO: force olplayerready to true?
 kokostream.net##+js(set-constant, olplayerready, true)
-! TODO:  [kokostream.net][set-constant ⁝ duration ⁝ 0] Aborted because value set to 5000
-!        Why does duration return a string value in the console, e.g. "5000"? Because there is an in-line script which sets that value.
-!        Changed with the trusted-replace-node-text scriptlet instead.
-!kokostream.net##+js(set-constant, duration, 0)
-kokostream.net##+js(trusted-set-constant, duration, "0")
 ! TODO: Do not hide bot_click image or can't play the video?
 !kokostream.net##img[id="bot_click"]:remove()
-! TODO: if(!new_ad){goasg(); <- function name varies; set new_ad to true instead?  It is set true at initialization.
+! TODO: if(!new_ad){goasg(); <- function name may not vary; set new_ad to true instead?  It is set true at initialization.
 !kokostream.net##+js(set-constant, new_ad, false)
 ! TODO: Should opendpops be locked to its initial value of 0 if free is not 1?
 !kokostream.net##+js(set-constant, opendpops, 0)
@@ -51493,6 +51495,11 @@ kokostream.net##+js(set-constant, adblock, false)
 kokostream.net##+js(set-constant, window.mobileAndTabletCheck, falseFunc)
 ! TODO: The following rule is likely not useful since it is only for logging purposes and to call olplayer.pause();
 kokostream.net##+js(set-constant, ads_playing, false)
+! TODO:  [kokostream.net][set-constant ⁝ duration ⁝ 0] Aborted because value set to 5000
+!        Why does duration return a string value in the console, e.g. "5000"? Because there is an in-line script which sets that value.
+!        Changed with the trusted-replace-node-text scriptlet instead.
+!kokostream.net##+js(set-constant, duration, 0)
+!kokostream.net##+js(trusted-set-constant, duration, "0")
 ! TODO: do the following two function names change? yes
 !kokostream.net##+js(set-constant, oXONvp, noopFunc)
 !kokostream.net##+js(set-constant, NvdXMFd, noopFunc)
@@ -51516,7 +51523,8 @@ kokostream.net##+js(trusted-replace-node-text, script, /const free = 1;/gm, cons
 kokostream.net##+js(trusted-replace-node-text, script, /const popCount = 10;/gm, const popCount = 0;)
 ! TODO: The following rule is likely not useful since it is only for logging purposes?
 kokostream.net##+js(trusted-replace-node-text, script, /ads_playing = !1,/gm, ads_playing = false,)
-! TODO: adbn is the id for the video ad banner?
+! TODO: adbn is the userid on the end of the ws variable.  It's user for the video ad banners?
+!       var ws = '?serv=4&md5=VhBvnYxjphFmy0dCQCbfwA&time=1712135205&ip=MjYwMDoxNzAwOjkwNjA6YWNmMDozNTU1OmRmMWU6ZmEzMDplYzll&userid=186363';
 kokostream.net##+js(trusted-replace-node-text, script, /adbn = '186363',/gm, adbn = "",)
 ! TODO: force olplayerready to true?
 kokostream.net##+js(trusted-replace-node-text, script, /olplayerready = !1,/gm, olplayerready = true,)
@@ -51525,7 +51533,7 @@ kokostream.net##+js(trusted-replace-node-text, script, /olplayerready = !1,/gm, 
 !        Why does duration return a string value in the console, e.g. "5000"? Because there is an in-line script which sets that value.
 !        Changed with the trusted-replace-node-text scriptlet instead.
 kokostream.net##+js(trusted-replace-node-text, script, /var duration = 5000;/gm, var duration = 0;)
-kokostream.net##+js(trusted-replace-node-text, script, /var duration = "5000";/gm, var duration = "0";)
+kokostream.net##+js(trusted-replace-node-text, script, /duration = "5000",/gm, duration = "0",)
 ! adfree is a string not int or boolean and is set to '0' by default.
 kokostream.net##+js(trusted-replace-node-text, script, /var adfree = '0';/gm, var adfree = '1';)
 ! 4 is the current minimum value for adtype to be skipped.
@@ -51548,8 +51556,9 @@ kokostream.net##+js(trusted-replace-node-text, script, /autoplay: true/gm, autop
 kokostream.net##+js(trusted-replace-node-text, script, /if\(adtype < 4\)/gm, if (null))
 kokostream.net##+js(trusted-replace-node-text, script, /if \(self\!\=top\)/gm, if (null))
 kokostream.net##+js(trusted-replace-node-text, script, /if\(adblockcheck\)/gm, if (null))
-kokostream.net##+js(trusted-replace-node-text, script, /someFunction\('[A-Za-z]+','[A-Za-z]+','[A-Za-z]+'\);/gm, null;)
-kokostream.net##+js(trusted-replace-node-text, script, /olplayer\.muted\(true\);/gm, olplayer.muted(false);)
+! someFunction(fadb, fadbn, fadbk) is an anti-adblocking function defined in https://kokostream.net/js/embed.232.js
+! TODO: The following rule does not work to change someFunction('PyAYt','BAZCwVAj','JxmnmnH');
+kokostream.net##+js(trusted-replace-node-text, script, /someFunction\(\'[A-Za-z]+\',\'[A-Za-z]+\',\'[A-Za-z]+\'\);/gm, null;)
 kokostream.net##+js(trusted-replace-node-text, script, /\/\/olplayer\.muted\(true\);/gm, olplayer.muted(false);)
 kokostream.net##+js(trusted-replace-node-text, script, /\/\/olplayer.chromecast\(\);/gm, olplayer.chromecast\(\);)
 kokostream.net##+js(trusted-replace-node-text, script, /style='height:450px;width:720px'/gm, style='height:100%;width:100%')
@@ -51561,6 +51570,11 @@ kokostream.net##+js(trusted-replace-node-text, script, /cantOpenWindows = null,/
 ! embed.232.js contains the anti-adblocking and contextmenu suppression functions, BUT it is needed to play the videos.
 !||kokostream.net/js/embed.232.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following change is necessary because adtype is manually set constant to "999" in a previous rule not to 4.
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/if\(pop==1\|\|adtype==4\)/if(pop==1||adtype>=4)/gm
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/if\(adtype<4\)/if(null)/gm
+! prem standard for premium traffic.  Its default value is 1 unless adtype < 4 then it is 0.
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/prem=0;/prem=1;/gm
 /^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/numAttempts:2,/numAttempts:1,/gm
 /^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/playAdAlways:true,/playAdAlways:false,/gm
 /^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/adCancelTimeout:8000,/adCancelTimeout:1,/gm
@@ -51576,9 +51590,15 @@ kokostream.net##+js(trusted-replace-node-text, script, /cantOpenWindows = null,/
 /^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/adbl=1;/adbl=0;/gm
 /^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/document\.oncontextmenu=function\(\)\{return false;\};/null;/gm
 /^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/document\.onselectstart=function\(\)\{return false;\};/null;/gm
+! TODO: What is isec the countdown for?
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/isec=5;/isec=0;/gm
+! someFunction(fadb, fadbn, fadbk) is an anti-adblocking function defined in https://kokostream.net/js/embed.232.js and called in an inline script.
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/function someFunction\(fadb\,fadbn\,fadbk\)/function noFunction()/gm
 !||kokostream.net/ad/top/popunder.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kokostream.net/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kokostream.net/js/adv/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The script in the following rule creates as counter from counter.yadro.ru.
+||kokostream.net/js/video.counters.2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kokostream.net/images/adblock.jpg$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !*$3p,script,denyallow=unpkg.com,domain=kokostream.net
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=unpkg.com,domain=kokostream.net
@@ -51645,6 +51665,7 @@ netu.ac##+js(acs, /go_roulete\(numb, message\)/)
 ||deliver.vkcdnservice.com^*
 ||matchesdetectplays.com^*
 ||webpinp.com^*
+||xnrowzw.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
