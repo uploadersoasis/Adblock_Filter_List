@@ -2791,6 +2791,8 @@ boingboing.net##+js(saa, webkitallowfullscreen, true, iframe[class="youtube-play
 boingboing.net##+js(saa, mozallowfullscreen, true, iframe[class="youtube-player"])
 boingboing.net##+js(saa, scrolling, true, iframe[class="youtube-player"])
 boingboing.net##+js(saa, frameborder, 0, iframe[class="youtube-player"])
+boingboing.net##+js(saa, marginwidth, 0, iframe[class="youtube-player"])
+boingboing.net##+js(saa, marginheight, 0, iframe[class="youtube-player"])
 ! The following is already set by the page.
 !boingboing.net##+js(saa, allowfullscreen, true, iframe[class="youtube-player"])
 ! TODO: This does not prevent the scripts from loading as they appear to be removed after the page is processed.
@@ -35433,18 +35435,6 @@ www.statnews.com##div[data-ad-unit]:remove()
 csoft.com##div[id="pvc"]:remove()
 www.linkedin.com##+js(aopr, window.impressionTracking)
 www.linkedin.com##+js(aopw, window.impressionTracking)
-nw.freestreams-live1.com##^script:has-text(/debugger;/):remove()
-nw.freestreams-live1.com##script:has-text(/debugger;/):remove()
-nw.freestreams-live1.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
-nw.freestreams-live1.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-!nw.freestreams-live1.com##+js(remove-node-text, script, /debugger;/gm)
-! TODO: Really abort on debugger as that is what the debugger statement already does?
-nw.freestreams-live1.com##+js(acs, /debugger;/)
-nw.freestreams-live1.com##+js(acs, anonymous)
-nw.freestreams-live1.com##script[cdnd="acacdn.com"]:remove()
-nw.freestreams-live1.com##a[class="pf-br-icon"]:upward(1):remove()
-nw.freestreams-live1.com##div[id^="pf-"]:remove()
-!nw.freestreams-live1.com##div[id="UnMutePlayer"]:remove()
 ||browsobsolete.com^*
 ||thiem-csl.com^*
 ||fyngood.com^*
@@ -35480,16 +35470,13 @@ msfreemicrosoft.ru##div[aria-label="cookieconsent"]:remove()
 ||rechargemind.com/wp-content/plugins/advanced-ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||aihoasso.net^*
 ||smashofferss.com^*
-nw.freestreams-live1.com##+js(remove-class, seek-disabled, , stay)
-nw.freestreams-live1.com##+js(remove-class, media-control-hide, , stay)
 ||wfpsdwkebqgj.com^*
 yourtehzeeb.com##+js(remove-class, seek-disabled, , stay)
 yourtehzeeb.com##+js(remove-class, media-control-hide, , stay)
 yourtehzeeb.com##^script:has-text(/debugger;/):remove()
 yourtehzeeb.com##script:has-text(/debugger;/):remove()
 yourtehzeeb.com##:xpath(//script[contains(text(), 'debugger;')]):remove()
-yourtehzeeb.com##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-!yourtehzeeb.com##+js(remove-node-text, script, /debugger;/gm)
+yourtehzeeb.com##+js(remove-node-text, script, /debugger;/gm)
 ! TODO: Really abort on debugger as that is what the debugger statement already does?
 yourtehzeeb.com##+js(acs, /debugger;/)
 ||ivexjkwo.com^*
@@ -35512,14 +35499,10 @@ yourtehzeeb.com##+js(acs, /debugger;/)
 ||stats.hd24.watch^*
 ||milips.com^*
 jokersplayer.xyz##div[id="close"]:remove()
-nw.freestreams-live1.com##+js(aopr, adsno)
-nw.freestreams-live1.com##+js(aopw, adsno)
 ||jokersplayer.xyz/ad1.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 jokersplayer.xyz##div[id="ad_overlay"]:remove()
 jokersplayer.xyz##div[id="ad"]:remove()
 jokersplayer.xyz##div[class="snackbar message bottom center slideUp"]:has(img[src="/snack/video-hd-2-xxl.png"]):remove()
-nw.freestreams-live1.com##+js(aopr, window.googletag)
-nw.freestreams-live1.com##+js(aopw, window.googletag)
 www.whattowatch.com##div[class*="ad-unit"]:remove()
 www.whattowatch.com##div[class="dfp-leaderboard-container"]:remove()
 ||trkn.us/pixel/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -37026,6 +37009,8 @@ radamel.icu##+js(saa, mozallowfullscreen, true, iframe[src^="https://cdn.sportca
 radamel.icu##+js(saa, allowfullscreen, true, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
 radamel.icu##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
 radamel.icu##+js(saa, allowtransparency, true, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
+radamel.icu##+js(saa, marginwidth, 0, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
+radamel.icu##+js(saa, marginheight, 0, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
 ! The following are already set by the page.
 radamel.icu##+js(saa, width, 100%, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
 radamel.icu##+js(saa, height, 100%, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
@@ -37036,6 +37021,8 @@ radamel.icu##+js(saa, webkitallowfullscreen, true, iframe[src^="https://tucanald
 radamel.icu##+js(saa, mozallowfullscreen, true, iframe[src^="https://tucanaldeportivo.com/"])
 radamel.icu##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://tucanaldeportivo.com/"])
 radamel.icu##+js(saa, allowtransparency, true, iframe[src^="https://tucanaldeportivo.com/"])
+radamel.icu##+js(saa, marginwidth, 0, iframe[src^="https://tucanaldeportivo.com/"])
+radamel.icu##+js(saa, marginheight, 0, iframe[src^="https://tucanaldeportivo.com/"])
 ! The following are already set by the page.
 radamel.icu##+js(saa, width, 100%, iframe[src^="https://tucanaldeportivo.com/"])
 radamel.icu##+js(saa, height, 100%, iframe[src^="https://tucanaldeportivo.com/"])
@@ -37049,6 +37036,8 @@ radamel.icu##+js(saa, webkitallowfullscreen, true, iframe[src^="https://livehdpl
 radamel.icu##+js(saa, mozallowfullscreen, true, iframe[src^="https://livehdplay.ru/"])
 radamel.icu##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://livehdplay.ru/"])
 radamel.icu##+js(saa, allowtransparency, true, iframe[src^="https://livehdplay.ru/"])
+radamel.icu##+js(saa, marginwidth, 0, iframe[src^="https://livehdplay.ru/"])
+radamel.icu##+js(saa, marginheight, 0, iframe[src^="https://livehdplay.ru/"])
 ! The following are already set by the page.
 radamel.icu##+js(saa, allowfullscreen, true, iframe[src^="https://livehdplay.ru/"])
 radamel.icu##+js(saa, frameborder, 0, iframe[src^="https://livehdplay.ru/"])
@@ -37076,6 +37065,8 @@ daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="http
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, true, iframe[src^="https://radamel.icu/reproductor/"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src^="https://radamel.icu/reproductor/"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src^="https://radamel.icu/reproductor/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginwidth, 0, iframe[src^="https://radamel.icu/reproductor/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginheight, 0, iframe[src^="https://radamel.icu/reproductor/"])
 ! The following are already set by the page.
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, allowfullscreen, true, iframe[src^="https://radamel.icu/reproductor/"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, frameborder, 0, iframe[src^="https://radamel.icu/reproductor/"])
@@ -37090,6 +37081,8 @@ daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, ifram
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, true, iframe[src*="/stream.php"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, frameborder, 0, iframe[src*="/stream.php"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, allowtransparency, true, iframe[src*="/stream.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginwidth, 0, iframe[src*="/stream.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginheight, 0, iframe[src*="/stream.php"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, #thatframe)
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, #thatframe)
@@ -37099,6 +37092,8 @@ daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, #t
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, #thatframe)
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, true, #thatframe)
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, allowtransparency, true, #thatframe)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginwidth, 0, #thatframe)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginheight, 0, #thatframe)
 daddylive.watch,dlhd.sx,daddylivehd.sx##div[id="fluid_video_wrapper_video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 daddylive.watch,dlhd.sx,daddylivehd.sx##video[id="video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 daddylive.watch,dlhd.sx,daddylivehd.sx##video[id="video-id"]:remove-attr(disableremoteplayback)
@@ -37115,16 +37110,22 @@ daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src*="/o
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src*="/online.php"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src*="/online.php"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src*="/online.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginwidth, 0, iframe[src*="/online.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginheight, 0, iframe[src*="/online.php"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[src^="https://wwwstream.pro/embed/"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src^="https://wwwstream.pro/embed/"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="https://wwwstream.pro/embed/"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src^="https://wwwstream.pro/embed/"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src^="https://wwwstream.pro/embed/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginwidth, 0, iframe[src^="https://wwwstream.pro/embed/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginheight, 0, iframe[src^="https://wwwstream.pro/embed/"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[src^="https://librarywhispering.com/player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src^="https://librarywhispering.com/player"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="https://librarywhispering.com/player"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src^="https://librarywhispering.com/player"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src^="https://librarywhispering.com/player"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginwidth, 0, iframe[src^="https://librarywhispering.com/player"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, marginheight, 0, iframe[src^="https://librarywhispering.com/player"])
 daddylive.watch,dlhd.sx,daddylivehd.sx##div[id="footer"]:remove()
 daddylive.watch,dlhd.sx,daddylivehd.sx##div[id="sidebar"]:remove()
 daddylive.watch,dlhd.sx,daddylivehd.sx##div[id="UnMutePlayer"]:remove()
@@ -37186,12 +37187,16 @@ poscitechs.shop##+js(saa, webkitallowfullscreen, true, #thatframe)
 poscitechs.shop##+js(saa, mozallowfullscreen, true, #thatframe)
 poscitechs.shop##+js(saa, scrolling, true, #thatframe)
 poscitechs.shop##+js(saa, frameborder, 0, #thatframe)
+poscitechs.shop##+js(saa, marginwidth, 0, iframe[id="thatframe"])
+poscitechs.shop##+js(saa, marginheight, 0, iframe[id="thatframe"])
 poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 poscitechs.shop##+js(saa, width, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(saa, height, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(saa, webkitallowfullscreen, true, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(saa, mozallowfullscreen, true, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(saa, scrolling, true, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
+poscitechs.shop##+js(saa, marginwidth, 0, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
+poscitechs.shop##+js(saa, marginheight, 0, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(set-constant, popWin, noopFunc)
 poscitechs.shop##+js(set-constant, afScript, noopFunc)
 ||armoryleaseholder.com^*
@@ -37802,32 +37807,6 @@ puffer.stanford.edu##+js(aopw, w.rdt)
 !puffer.stanford.edu##div[class*="alert"][role="alert"]
 ||puffer.stanford.edu/error_reporting/$xhr
 puffer.stanford.edu##button[type="button"]:remove-attr(disabled)
-!la.freestreams-live1.tv,fsl-streams.click##aside[id="custom_html-71"]:remove()
-!la.freestreams-live1.tv,fsl-streams.click##iframe[src^="https://st.chatango.com"]:remove()
-!la.freestreams-live1.tv,fsl-streams.click##div[id="footer-widgets"]:remove()
-!gs.freestreams-live1.tv,fsl-streams.click##aside[id="custom_html-71"]:remove()
-!gs.freestreams-live1.tv,fsl-streams.click##iframe[src^="https://st.chatango.com"]:remove()
-!gs.freestreams-live1.tv,fsl-streams.click##div[id="footer-widgets"]:remove()
-freestreams-live1.tv,fsl-streams.click##aside[id="custom_html-71"]:remove()
-freestreams-live1.tv,fsl-streams.click##iframe[src^="https://st.chatango.com"]:remove()
-freestreams-live1.tv,fsl-streams.click##div[id="footer-widgets"]:remove()
-freestreams-live1.tv,fsl-streams.click##+js(aopr, window.dataLayer)
-freestreams-live1.tv,fsl-streams.click##+js(aopw, window.dataLayer)
-! freestreams-live1.tv,fsl-streams.click uses a generated javascript to check for the debugger so use (noeval) to bypass this.
-freestreams-live1.tv,fsl-streams.click##+js(noeval)
-freestreams-live1.tv,fsl-streams.click##:xpath(//script[contains(text(), 'debugger;')]):remove()
-freestreams-live1.tv,fsl-streams.click##^script:has-text(/debugger;/):remove()
-freestreams-live1.tv,fsl-streams.click##script:has-text(/debugger;/):remove()
-!freestreams-live1.tv,fsl-streams.click##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-freestreams-live1.tv,fsl-streams.click##+js(remove-node-text, script, /debugger;/gm)
-! TODO: Really abort on debugger as that is what the debugger statement already does?
-freestreams-live1.tv,fsl-streams.click##+js(acs, /debugger;/)
-freestreams-live1.tv,fsl-streams.click##+js(set-constant, keepChecking, noopFunc)
-! also need no-setTimeout-if to prevent running keepChecking() on a loop
-freestreams-live1.tv,fsl-streams.click##+js(no-setTimeout-if, keepChecking)
-freestreams-live1.tv,fsl-streams.click##div[id="primary"]:style(left: 0px !important; right: 0px !important; width: 99vw !important; height: 99vh !important;)
-freestreams-live1.tv,fsl-streams.click##div[id="headb"]:remove()
-freestreams-live1.tv,fsl-streams.click##div[id="adz1"]:remove()
 ||cdn.jsdelivr.net/gh/fz6m/console-ban$script
 ||isprocessingnow.com^*
 !||rdrsec.com/hp$script
@@ -38530,6 +38509,8 @@ www.vipleague.la##+js(saa, width, 100%, iframe[loading="lazy"][title="embed play
 www.vipleague.la##+js(saa, height, 100%, iframe[loading="lazy"][title="embed player"])
 www.vipleague.la##+js(saa, frameborder, 0, iframe[loading="lazy"][title="embed player"])
 www.vipleague.la##+js(saa, allowfullscreen, true, iframe[loading="lazy"][title="embed player"])
+www.vipleague.la##+js(saa, marginwidth, 0, iframe[loading="lazy"][title="embed player"])
+www.vipleague.la##+js(saa, marginheight, 0, iframe[loading="lazy"][title="embed player"])
 ||cdn.espn.com/onetrust/otCCPAiab.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dcf.espn.com/privacy/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dcf.espn.com/error/e.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -38664,6 +38645,8 @@ www.digitbin.com##div[class^="code-block code-block-"]:has(div:has-text(Advertis
 cricfree.live##iframe[src^="https://cricplay2.xyz/sky-sports-arena"]:style(height: 99vh !important; width: 99vw !important;)
 cricfree.live##+js(saa, width, 100%, iframe[src^="https://cricplay2.xyz/sky-sports-arena"])
 cricfree.live##+js(saa, height, 100%, iframe[src^="https://cricplay2.xyz/sky-sports-arena"])
+cricfree.live##+js(saa, marginwidth, 0, iframe[src^="https://cricplay2.xyz/sky-sports-arena"])
+cricfree.live##+js(saa, marginheight, 0, iframe[src^="https://cricplay2.xyz/sky-sports-arena"])
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 cricplay2.xyz##script[id="_waumnk"]:remove()
 !cricplay2.xyz##+js(no-setTimeout-if, /^/)
@@ -38682,6 +38665,8 @@ cricplay2.xyz##+js(acs, /gtag\(/)
 cricplay2.xyz##iframe[src*="/embedcr.php"]:style(height: 99vh !important; width: 99vw !important;)
 cricplay2.xyz##+js(saa, width, 100%, iframe[src*="/embedcr.php"])
 cricplay2.xyz##+js(saa, height, 100%, iframe[src*="/embedcr.php"])
+cricplay2.xyz##+js(saa, marginwidth, 0, iframe[src*="/embedcr.php"])
+cricplay2.xyz##+js(saa, marginheight, 0, iframe[src*="/embedcr.php"])
 cricplay2.xyz##+js(aeld, click)
 ||millionscast.com/z-6854882$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 millionscast.com##div[id="UnMutePlayer"]:remove()
@@ -39953,6 +39938,8 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##iframe[id="player_iframe"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, seamless, seamless, iframe[id="player_iframe"])
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id="player_iframe"])
+2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, marginwidth, 0, iframe[id="player_iframe"])
+2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, marginheight, 0, iframe[id="player_iframe"])
 ! The following attributes are already set by the page as normal.
 ! TODO: 99vw and 100vh do not work as values for the width and height attributes of an iframe.  Why?
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, width, 100%, iframe[id="player_iframe"])
@@ -39967,6 +39954,8 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(set-attr, iframe[id$="framesrc"][data-src], src, [data-src])
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, seamless, seamless, iframe[id$="framesrc"])
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id$="framesrc"])
+2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, marginwidth, 0, iframe[id$="framesrc"])
+2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, marginheight, 0, iframe[id$="framesrc"])
 ! The following attributes are already set by the page as normal.
 ! TODO: 99vw and 100vh do not work as values for the width and height attributes of an iframe.  Why?
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, width, 100%, iframe[id$="framesrc"])
@@ -40025,6 +40014,8 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 123movie.skin##+js(saa, webkitallowfullscreen, true, iframe[id="vsrcs"])
 123movie.skin##+js(saa, mozallowfullscreen, true, iframe[id="vsrcs"])
 123movie.skin##+js(saa, allowfullscreen, true, iframe[id="vsrcs"])
+123movie.skin##+js(saa, marginwidth, 0, iframe[id="vsrcs"])
+123movie.skin##+js(saa, marginheight, 0, iframe[id="vsrcs"])
 !123movie.skin##+js(saa, referrerpolicy, origin, iframe[id="vsrcs"])
 ! The following attributes are already set by the page as normal.
 !123movie.skin##+js(saa, width, 100%, iframe[id="vsrcs"])
@@ -40037,6 +40028,8 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 123movie.skin##+js(saa, height, 100%, iframe[id="iframesrc"])
 123movie.skin##+js(saa, webkitallowfullscreen, true, iframe[id="iframesrc"])
 123movie.skin##+js(saa, mozallowfullscreen, true, iframe[id="iframesrc"])
+123movie.skin##+js(saa, marginwidth, 0, iframe[id="iframesrc"])
+123movie.skin##+js(saa, marginheight, 0, iframe[id="iframesrc"])
 !123movie.skin##+js(saa, referrerpolicy, origin, iframe[id="iframesrc"])
 ! The following attributes are already set by the page as normal.
 !123movie.skin##+js(saa, width, 100%, iframe[id="iframesrc"])
@@ -40347,11 +40340,11 @@ slmaxed.com##div[class="alert alert-info mb-2"]:remove()
 ||lp.pickmysearch.com^*
 ||www.edqbparlheuj.com^*
 ||edqbparlheuj.com^*
-!||st.chatango.com/js/gz/emb.js$3p,script,domain=time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
-!||st.chatango.com^$script,domain=time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
-!||st.chatango.com^$all,domain=time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+!||st.chatango.com/js/gz/emb.js$3p,script,domain=time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.im|fsl-streams.click|klubsports.online|cdn.stream-24.net
+!||st.chatango.com^$script,domain=time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.im|fsl-streams.click|klubsports.online|cdn.stream-24.net
+!||st.chatango.com^$all,domain=time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.im|fsl-streams.click|klubsports.online|cdn.stream-24.net
 ! not www.crichd.com since it has button to optionally open the chat window
-||st.chatango.com^$3p,domain=methstreams.com|time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net|hd.crichdlivecricket.cc|stream.crichd.live|www.crichd.live
+||st.chatango.com^$3p,domain=methstreams.com|time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.im|fsl-streams.click|klubsports.online|cdn.stream-24.net|hd.crichdlivecricket.cc|stream.crichd.live|www.crichd.live
 st.chatango.com##div[id="taboola-chat-article-thumbnails"]:remove()
 st.chatango.com##div[class="sdlg-title-bg-hidden"]:remove()
 st.chatango.com##div[class="sdlg-sc"]:has(div[class="OUTBRAIN"][data-widget-id]):remove()
@@ -44209,6 +44202,8 @@ www2.solarmovie.cr##div[id="content-embed"]:style(padding:0 !important; margin:0
 www2.solarmovie.cr##iframe[id="iframe-embed"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
 www2.solarmovie.cr##+js(saa, width, 100%, iframe[id="iframe-embed"])
 www2.solarmovie.cr##+js(saa, seamless, seamless, iframe[id="iframe-embed"])
+www2.solarmovie.cr##+js(saa, marginwidth, 0, iframe[id="iframe-embed"])
+www2.solarmovie.cr##+js(saa, marginheight, 0, iframe[id="iframe-embed"])
 ! The following attributes are already set.
 !www2.solarmovie.cr##+js(saa, scrolling, no, iframe[id="iframe-embed"])
 !www2.solarmovie.cr##+js(saa, height, 100%, iframe[id="iframe-embed"])
@@ -45856,16 +45851,23 @@ sporttuna.com,sporttuna.sx,sporttuna.site##script[src^="https://www.displayverti
 sporttuna.com,sporttuna.sx,sporttuna.site##iframe[src^="https://voodc.com/embed/"]:style(height: 99vh !important; width: 99vw !important;)
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, width, 100%, iframe[src^="https://voodc.com/embed/"])
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, height, 100%, iframe[src^="https://voodc.com/embed/"])
+sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, marginwidth, 0, iframe[src^="https://voodc.com/embed/"])
+sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, marginheight, 0, iframe[src^="https://voodc.com/embed/"])
 sporttuna.com,sporttuna.sx,sporttuna.site##iframe[src^="https://embedstreams.me/"]:style(height: 99vh !important; width: 99vw !important;)
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, width, 100%, iframe[src^="https://embedstreams.me/"])
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, height, 100%, iframe[src^="https://embedstreams.me/"])
+sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, marginwidth, 0, iframe[src^="https://embedstreams.me/"])
+sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, marginheight, 0, iframe[src^="https://embedstreams.me/"])
 ! The following should apply to all first level iframes regardless of source.
 sporttuna.com,sporttuna.sx,sporttuna.site##.embed-responsive > iframe:nth-child(1):style(height: 99vh !important; width: 99vw !important;)
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, width, 100%, .embed-responsive > iframe:nth-child(1))
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, height, 100%, .embed-responsive > iframe:nth-child(1))
+sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, marginwidth, 0, .embed-responsive > iframe:nth-child(1))
+sporttuna.com,sporttuna.sx,sporttuna.site##+js(saa, marginheight, 0, .embed-responsive > iframe:nth-child(1))
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(set-constant, aclib.runPop, noopFunc, end)
 !sporttuna.com,sporttuna.sx,sporttuna.site##+js(set-constant, aclib.runPop, noopFunc, complete)
 sporttuna.com,sporttuna.sx,sporttuna.site##:xpath(//script[contains(text(), 'aclib.runPop')]):remove()
+sporttuna.com,sporttuna.sx,sporttuna.site##+js(remove-node-text, script, /aclib\.runPop/gm)
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(disable-newtab-links)
 sporttuna.com,sporttuna.sx,sporttuna.site##+js(no-window-open-if)
 ||honoursimmoderate.com^*
@@ -46453,10 +46455,10 @@ wikisport.click,wikisport.se##a[href="//pubfuture.com"][class="pf-br-icon"]:remo
 !wikisport.click,wikisport.se##:xpath("//script[4]"):remove()
 !wikisport.click,wikisport.se##:xpath(//script[10]):remove()
 wikisport.click,wikisport.se##:xpath(//script[contains(text(), 'window.location.replace')]):remove()
+wikisport.click,wikisport.se##+js(remove-node-text, script, /window\.location\.replace/gm)
 wikisport.click,wikisport.se##:xpath(//script[contains(text(), 'debugger;')]):remove()
 wikisport.click,wikisport.se##^script:has-text(/debugger;/):remove()
 wikisport.click,wikisport.se##script:has-text(/debugger;/):remove()
-!wikisport.click,wikisport.se##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 wikisport.click,wikisport.se##+js(remove-node-text, script, /debugger;/gm)
 ! TODO: Really abort on debugger as that is what the debugger statement already does?
 wikisport.click,wikisport.se##+js(acs, /debugger;/)
@@ -46467,16 +46469,18 @@ wikisport.click,wikisport.se##+js(aeld, 'cut copy paste print')
 wikisport.click,wikisport.se##+js(aeld, 'drag drop')
 wikisport.click,wikisport.se##^script:has-text(mustave):remove()
 wikisport.click,wikisport.se##:xpath(//script[contains(text(), 'mustave')]):remove()
+wikisport.click,wikisport.se##+js(remove-node-text, script, /mustave/gm)
 ! to prevent being in an iframe detection
 wikisport.click,wikisport.se##:xpath(//script[contains(text(), 'window==window.top')]):remove()
-wikisport.click,wikisport.se##^script:has-text(/window==window.top/):remove()
+wikisport.click,wikisport.se##^script:has-text(/window==window\.top/):remove()
+wikisport.click,wikisport.se##+js(remove-node-text, script, /window==window\.top/gm)
 wikisport.click,wikisport.se##+js(aopr, window.top)
 wikisport.click,wikisport.se##+js(aopw, window.top)
-wikisport.click,wikisport.se##+js(acs, window.top)
-wikisport.click,wikisport.se##+js(acs, window.location.replace)
+wikisport.click,wikisport.se##+js(acs, /window\.top/)
+wikisport.click,wikisport.se##+js(acs, /window\.location\.replace/)
 ! can't set or redfine a function using trusted-set-constant since it is for strings and would need eval() to execute the function
 !wikisport.click,wikisport.se##+js(trusted-set-constant, mustave, atob('L2hscy9zdHJlYW0ubTN1OD9jaD1zcG4='))
-wikisport.click,wikisport.se##+js(trusted-set-constant, mustave, /hls/stream.m3u8?ch=spn)
+wikisport.click,wikisport.se##+js(trusted-set-constant, mustave, "/hls/stream.m3u8?ch=spn")
 wikisport.click,wikisport.se##+js(set-constant, clearTimeout, noopFunc)
 wikisport.click,wikisport.se##+js(set-constant, keepChecking, noopFunc)
 wikisport.click,wikisport.se##+js(set-constant, addScript, noopFunc)
@@ -46597,11 +46601,12 @@ livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.
 ! to prevent being in an iframe detection
 ! TODO: None of the following six rules actually prevent redirection away from the page if the page is not in a frame
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'window==window.top')]):remove()
-livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##^script:has-text(/window==window.top/):remove()
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##^script:has-text(/window==window\.top/):remove()
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(remove-node-text, script, /window==window\.top/gm)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopw, window.top)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopr, window.top)
-livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(acs, window.top)
-livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(acs, window.location.replace)
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(acs, /window\.top/)
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(acs, /window\.location\.replace/)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##script[adblock-settings]:remove()
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##script[disable-devtool-auto]:remove()
@@ -46620,25 +46625,38 @@ livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(trusted-replace-node-text, script, /player\.setVolume\(((?!100)\d)+\);/gm, player.setVolume(100);)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##div[id="UnMutePlayer"]:remove()
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'document.onmousedown')]):remove()
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(remove-node-text, script, /document\.onmousedown/gm)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(acs, document.onkeypress, document.onkeydown, document.onmousedown)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##iframe[class="padPreload"]:remove()
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(acs, sandDetect)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(trusted-set-constant, currentReferer, https://antenasport.ru/)
 ! TODO: Is document.referrer value passed to XMLHttpRequest()?
-livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(trusted-set-constant, document.referrer, https://antenasport.ru/)
-! TODO: Is document.referrer value passed to XMLHttpRequest()?
-fiveyardlab.com##+js(trusted-set-constant, document.referrer, https://wikisport.se/)
-! TODO: the following three rules doesn't abort the redirection script upon wrong referer request header.
+!livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(trusted-set-constant, document.referrer, https://antenasport.ru/)
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(trusted-set-constant, document.referrer, https://wikisport.se/)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(acs, currentReferer)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopr, currentReferer)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopw, currentReferer)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopw, window.location)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopw, allowedDomains)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(aopr, allowedDomains)
+! The following four rules rules get rid of the redirection script upon wrong referer request header.
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'allowedDomains')]):remove()
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##:xpath(//script[contains(text(), 'currentReferer')]):remove()
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(remove-node-text, script, /allowedDomains/gm)
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(remove-node-text, script, /currentReferer/gm)
 livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##span[style="display:none"]:remove()
-livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##div[id="player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+! Because this domain is used as an iframe, set the div[id="player"] width and height to 100% instead of 99vw/99vh.
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##div[id="player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(saa, x-webkit-airplay, allow, video[data-html5-video])
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##video[data-html5-video]:remove-attr(disableremoteplayback)
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(remove-attr, disableremoteplayback, video[data-html5-video])
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(saa, data-autoplay-mute-lock, false, video[data-html5-video])
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(saa, controls, true, video[data-html5-video])
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(saa, width, 100%, video[data-html5-video])
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(saa, height, 100%, video[data-html5-video])
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##video[data-html5-video]:remove-attr(disablepictureinpicture)
+livehdplay.ru,claplivehdplay.ru,olalivehdplay.ru,viwlivehdplay.ru,weblivehdplay.ru##+js(remove-attr, disablepictureinpicture, video[data-html5-video])
+! TODO: preload="auto" attribute for video tag does what?
 ||lovesomecommunity.com/z-7123946$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 lovesomecommunity.com##script[adblock-settings]:remove()
@@ -46829,6 +46847,8 @@ mrgamingstreams.com##+js(trusted-replace-node-text, script, /height: \d{1,3}(?:p
 ! The following iframe is only present if the page is streaming from the twitch service.
 mrgamingstreams.com##iframe[id="twitchPlayer"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 mrgamingstreams.com##+js(saa, height, 100%, iframe[id="twitchPlayer"])
+mrgamingstreams.com##+js(saa, marginwidth, 0, iframe[id="twitchPlayer"])
+mrgamingstreams.com##+js(saa, marginheight, 0, iframe[id="twitchPlayer"])
 ! The following three attributes are already normally set to these values by the page.
 !mrgamingstreams.com##+js(saa, width, 100%, iframe[id="twitchPlayer"])
 !mrgamingstreams.com##+js(saa, allowfullscreen, true, iframe[id="twitchPlayer"])
@@ -46860,8 +46880,9 @@ ypamu.ru.com##+js(trusted-replace-node-text, script, /mute: true/gm, mute: false
 ||ypamu.ru.com/framebox.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: None of the following three rules actually prevent redirection away from the page if the page is not in a frame
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##div[id="protected"]:remove()
-ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##^script:has-text(/window==window.top/):remove()
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##^script:has-text(/window==window\.top/):remove()
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##:xpath(//script[contains(text(), 'window==window.top')]):remove()
+ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(remove-node-text, script, /window==window\.top/gm)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopw, window.top)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(aopr, window.top)
 ceimo.click,rakeq.ru.com,qbxez.click,cvkbl.ru.com,ypamu.ru.com##+js(acs, window.top)
@@ -47140,13 +47161,16 @@ hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, frameborder
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, scrolling, yes, iframe[id="iframe_a"])
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allowfullscreen, true, iframe[id="iframe_a"])
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id="iframe_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, marginwidth, 0, iframe[id="iframe_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, marginheight, 0, iframe[id="iframe_a"])
 ! TODO: Is the class name in the following rule random?
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##div[class="fdtfxeuhit"]:remove()
 ||www.crichd.live/z-6657014$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||wwwstream.pro/z-6153174$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 wwwstream.pro##div[id="localpp"]:remove()
 wwwstream.pro##:xpath(//script[contains(text(), 'window==window.top')]):remove()
-wwwstream.pro##^script:has-text(/window==window.top/):remove()
+wwwstream.pro##^script:has-text(/window==window\.top/):remove()
+wwwstream.pro##+js(remove-node-text, script, /window==window\.top/gm)
 wwwstream.pro##+js(aopw, window.top)
 wwwstream.pro##+js(aopr, window.top)
 wwwstream.pro##+js(acs, window.top)
@@ -47344,6 +47368,8 @@ azrotv.com##+js(saa, allowtransparency, true, iframe[src^="/pyr/?id="])
 azrotv.com##+js(saa, frameborder, 0, iframe[src^="/pyr/?id="])
 azrotv.com##+js(saa, scrolling, no, iframe[src^="/pyr/?id="])
 azrotv.com##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="/pyr/?id="])
+azrotv.com##+js(saa, marginwidth, 0, iframe[src^="/pyr/?id="])
+azrotv.com##+js(saa, marginheight, 0, iframe[src^="/pyr/?id="])
 azrotv.com##video[id="player"]:remove-attr(disableremoteplayback)
 azrotv.com##+js(remove-attr, disableremoteplayback, video[id="player"])
 azrotv.com##video[id="player"]:remove-attr(disablepictureinpicture)
@@ -48202,6 +48228,8 @@ putlocker.pe,putlocker.sb##div[class="watching_player-area"]:style(max-width: 99
 ! width is already set at 100%
 !putlocker.pe,putlocker.sb##+js(saa, width, 100%, iframe[id="iframe-embed"])
 putlocker.pe,putlocker.sb##+js(saa, height, 100%, iframe[id="iframe-embed"])
+putlocker.pe,putlocker.sb##+js(saa, marginwidth, 0, iframe[id="iframe-embed"])
+putlocker.pe,putlocker.sb##+js(saa, marginheight, 0, iframe[id="iframe-embed"])
 ! remove CAM quality movies from putlocker results
 putlocker.pe,putlocker.sb##div[class="flw-item"]:has(div[class="film-poster"], div[class="pick film-poster-quality"]:has-text(CAM)):remove()
 ||www.ihcyscnkogx.com^*
@@ -48287,6 +48315,8 @@ sflix.to##div[id="watch-iframe"]:style(padding:0 !important; margin:0 !important
 sflix.to##iframe[id="iframe-embed"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width:100% !important; height:100% !important; user-select: all !important; pointer-events: all !important;)
 sflix.to##+js(saa, height, 100%, iframe[id="iframe-embed"])
 sflix.to##+js(saa, seamless, seamless, iframe[id="iframe-embed"])
+sflix.to##+js(saa, marginwidth, 0, iframe[id="iframe-embed"])
+sflix.to##+js(saa, marginheight, 0, iframe[id="iframe-embed"])
 ! The following attributes are already set.
 !sflix.to##+js(saa, scrolling, no, iframe[id="iframe-embed"])
 !sflix.to##+js(saa, height, 100%, iframe[id="iframe-embed"])
@@ -48323,6 +48353,8 @@ firstrowsports.be##div[id="share"]:remove()
 firstrowsports.be##iframe[src^="https://pererecadoida.life/perereca"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 firstrowsports.be##+js(saa, width, 100%, iframe[src^="https://pererecadoida.life/perereca"])
 firstrowsports.be##+js(saa, height, 100%, iframe[src^="https://pererecadoida.life/perereca"])
+firstrowsports.be##+js(saa, marginwidth, 0, iframe[src^="https://pererecadoida.life/perereca"])
+firstrowsports.be##+js(saa, marginheight, 0, iframe[src^="https://pererecadoida.life/perereca"])
 ! The following attributes are already set.
 !firstrowsports.be##+js(saa, scrolling, no, iframe[src^="https://pererecadoida.life/perereca"])
 !firstrowsports.be##+js(saa, seamless, seamless, iframe[src^="https://pererecadoida.life/perereca"])
@@ -48334,6 +48366,8 @@ livetvsx.org##:xpath(//html/body/table/tbody/tr/td[2]):remove-attr(width)
 liveru.sx,livetvsx.org,vipbox1.com,vipboxi.net##iframe[src^="https://tucaluka.shop/tucaluka"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 liveru.sx,livetvsx.org,vipbox1.com,vipboxi.net##+js(saa, width, 100%, iframe[src^="https://tucaluka.shop/tucaluka"])
 liveru.sx,livetvsx.org,vipbox1.com,vipboxi.net##+js(saa, height, 100%, iframe[src^="https://tucaluka.shop/tucaluka"])
+liveru.sx,livetvsx.org,vipbox1.com,vipboxi.net##+js(saa, marginwidth, 0, iframe[src^="https://tucaluka.shop/tucaluka"])
+liveru.sx,livetvsx.org,vipbox1.com,vipboxi.net##+js(saa, marginheight, 0, iframe[src^="https://tucaluka.shop/tucaluka"])
 ! The following attributes are already set.
 !liveru.sx,livetvsx.org,vipbox1.com,vipboxi.net##+js(saa, scrolling, no, iframe[src^="https://tucaluka.shop/tucaluka"])
 !liveru.sx,livetvsx.org,vipbox1.com,vipboxi.net##+js(saa, seamless, seamless, iframe[src^="https://tucaluka.shop/tucaluka"])
@@ -48374,6 +48408,8 @@ tucaluka.shop,pererecadoida.life##div[id="floatLayer1"]:remove()
 tucaluka.shop,pererecadoida.life##iframe[src^="https://www.newcdn.lol/page.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 tucaluka.shop,pererecadoida.life##+js(saa, width, 100%, iframe[src^="https://www.newcdn.lol/page.php"])
 tucaluka.shop,pererecadoida.life##+js(saa, height, 100%, iframe[src^="https://www.newcdn.lol/page.php"])
+tucaluka.shop,pererecadoida.life##+js(saa, marginwidth, 0, iframe[src^="https://www.newcdn.lol/page.php"])
+tucaluka.shop,pererecadoida.life##+js(saa, marginheight, 0, iframe[src^="https://www.newcdn.lol/page.php"])
 tucaluka.shop,pererecadoida.life##+js(aopw, document.oncontextmenu)
 tucaluka.shop,pererecadoida.life##+js(aopr, document.oncontextmenu)
 tucaluka.shop,pererecadoida.life##+js(set-constant, clickNS, noopFunc)
@@ -49025,6 +49061,8 @@ methstreams.com##+js(saa, seamless, seamless, iframe[src^="https://nbastreamswat
 methstreams.com##+js(saa, webkitallowfullscreen, true, iframe[src^="https://nbastreamswatch.com/"])
 methstreams.com##+js(saa, mozallowfullscreen, true, iframe[src^="https://nbastreamswatch.com/"])
 methstreams.com##+js(saa, scrolling, no, iframe[src^="https://nbastreamswatch.com/"])
+methstreams.com##+js(saa, marginwidth, 0, iframe[src^="https://nbastreamswatch.com/"])
+methstreams.com##+js(saa, marginheight, 0, iframe[src^="https://nbastreamswatch.com/"])
 ! The following attributes are already set by the page.
 !methstreams.com##+js(saa, width, 100%, iframe[src^="https://nbastreamswatch.com/"])
 !methstreams.com##+js(saa, height, 100%, iframe[src^="https://nbastreamswatch.com/"])
@@ -50242,6 +50280,14 @@ www.fox13news.com##div[data-ad-size]:remove()
 www.fox13news.com##+js(saa, webkitallowfullscreen, true, iframe[id^="player-"])
 www.fox13news.com##+js(saa, mozallowfullscreen, true, iframe[id^="player-"])
 www.fox13news.com##+js(saa, allowfullscreen, true, iframe[id^="player-"])
+www.fox13news.com##+js(saa, marginwidth, 0, iframe[id^="player-"])
+www.fox13news.com##+js(saa, marginheight, 0, iframe[id^="player-"])
+www.fox13news.com##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id^="player-"])
+! The following is already set by the page.
+!www.fox13news.com##+js(saa, frameborder, 0, iframe[id^="player-"])
+!www.fox13news.com##+js(saa, scrolling, true, iframe[id^="player-"])
+!www.fox13news.com##+js(saa, x-webkit-airplay, allow, video[class="anv-video-content"])
+!www.fox13news.com##+js(saa, data-autoplay-mute-lock, false, video[class="anv-video-content"])
 www.fox13news.com##video[class="anv-video-content"]:remove-attr(disableremoteplayback)
 www.fox13news.com##+js(remove-attr, disableremoteplayback, video[class="anv-video-content"])
 www.fox13news.com##video[class="anv-video-content"]:remove-attr(disablepictureinpicture)
@@ -50249,12 +50295,6 @@ www.fox13news.com##+js(remove-attr, disablepictureinpicture, video[class="anv-vi
 www.fox13news.com##+js(saa, controls, true, video[class="anv-video-content"])
 www.fox13news.com##+js(saa, width, 100%, video[class="anv-video-content"])
 www.fox13news.com##+js(saa, height, 100%, video[class="anv-video-content"])
-www.fox13news.com##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id^="player-"])
-! The following is already set by the page.
-!www.fox13news.com##+js(saa, frameborder, 0, iframe[id^="player-"])
-!www.fox13news.com##+js(saa, scrolling, true, iframe[id^="player-"])
-!www.fox13news.com##+js(saa, x-webkit-airplay, allow, video[class="anv-video-content"])
-!www.fox13news.com##+js(saa, data-autoplay-mute-lock, false, video[class="anv-video-content"])
 ||foxentertainment.hb-api.omtrdc.net^*
 ||sync.colossusssp.com^*
 ||colossusssp.com^*
@@ -50963,12 +51003,16 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##ifr
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, frameborder, 0, iframe[src^="https://vidsrc."][src*="/embed/"])
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, scrolling, true, iframe[src^="https://vidsrc."][src*="/embed/"])
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://vidsrc."][src*="/embed/"])
+!vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, marginwidth, 0, iframe[src^="https://vidsrc."][src*="/embed/"])
+!vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, marginheight, 0, iframe[src^="https://vidsrc."][src*="/embed/"])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, webkitallowfullscreen, true, iframe)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, mozallowfullscreen, true, iframe)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allowfullscreen, true, iframe)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, frameborder, 0, iframe)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, scrolling, true, iframe)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe)
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, marginwidth, 0, iframe)
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, marginheight, 0, iframe)
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##div[id="the_frame"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##iframe[id="player_iframe"]:style(width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, webkitallowfullscreen, true, iframe[id="player_iframe"])
@@ -50977,6 +51021,8 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, frameborder, 0, iframe[id="player_iframe"])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, scrolling, true, iframe[id="player_iframe"])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id="player_iframe"])
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, marginwidth, 0, iframe[id="player_iframe"])
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, marginheight, 0, iframe[id="player_iframe"])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##video[src^="blob:https://vidsrc."]:remove-attr(disablepictureinpicture)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(remove-attr, disablepictureinpicture, video[src^="blob:https://vidsrc."])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##video[src^="blob:https://vidsrc."]:remove-attr(disableremoteplayback)
@@ -51010,6 +51056,8 @@ streambucket.net##+js(saa, webkitallowfullscreen, true, iframe[class^="source-fr
 streambucket.net##+js(saa, mozallowfullscreen, true, iframe[class^="source-frame"])
 streambucket.net##+js(saa, allowfullscreen, true, iframe[class^="source-frame"])
 streambucket.net##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[class^="source-frame"])
+streambucket.net##+js(saa, marginwidth, 0, iframe[class^="source-frame"])
+streambucket.net##+js(saa, marginheight, 0, iframe[class^="source-frame"])
 ! The following attributes are already set.
 !streambucket.net##+js(saa, allowtransparency, true, iframe[class^="source-frame"])
 !streambucket.net##+js(saa, frameborder, 0, iframe[class^="source-frame"])
@@ -51533,6 +51581,8 @@ abc7ny.com##+js(saa, allowtransparency, true, iframe[title="video.title"])
 abc7ny.com##+js(saa, frameborder, 0, iframe[title="video.title"])
 abc7ny.com##+js(saa, scrolling, no, iframe[title="video.title"])
 abc7ny.com##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[title="video.title"])
+abc7ny.com##+js(saa, marginwidth, 0, iframe[title="video.title"])
+abc7ny.com##+js(saa, marginheight, 0, iframe[title="video.title"])
 ||lkxahvf.com^*
 ||kissedthetrain.com^*
 ||receivedachest.com^*
@@ -51794,6 +51844,8 @@ vidcloud1.com##+js(saa, allowtransparency, true, iframe[src*="//vidcloud1.com/st
 vidcloud1.com##+js(saa, frameborder, 0, iframe[src*="//vidcloud1.com/streaming.php"])
 vidcloud1.com##+js(saa, scrolling, no, iframe[src*="//vidcloud1.com/streaming.php"])
 vidcloud1.com##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src*="//vidcloud1.com/streaming.php"])
+vidcloud1.com##+js(saa, marginwidth, 0, iframe[src*="//vidcloud1.com/streaming.php"])
+vidcloud1.com##+js(saa, marginheight, 0, iframe[src*="//vidcloud1.com/streaming.php"])
 vidcloud1.com##iframe[src*="//multiembed.mov/"]:style(padding:0 !important; margin:0 !important; border: none !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; overflow:hidden !important; user-select: all !important; pointer-events: all !important;)
 vidcloud1.com##+js(saa, width, 100%, iframe[src*="//multiembed.mov/"])
 vidcloud1.com##+js(saa, height, 100%, iframe[src*="//multiembed.mov/"])
@@ -51804,9 +51856,10 @@ vidcloud1.com##+js(saa, allowtransparency, true, iframe[src*="//multiembed.mov/"
 vidcloud1.com##+js(saa, frameborder, 0, iframe[src*="//multiembed.mov/"])
 vidcloud1.com##+js(saa, scrolling, no, iframe[src*="//multiembed.mov/"])
 vidcloud1.com##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src*="//multiembed.mov/"])
+vidcloud1.com##+js(saa, marginwidth, 0, iframe[src*="//multiembed.mov/"])
+vidcloud1.com##+js(saa, marginheight, 0, iframe[src*="//multiembed.mov/"])
 ||netu.ac/js/jquery-eu-cookie-law-popup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||netu.ac/styles/global/jquery-eu-cookie-law-popup.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-netu.ac##iframe[src^="https://wp.aliexpress.com/"]:remove()
 netu.ac##iframe[src^="https://wp.aliexpress.com/"]:remove()
 netu.ac##+js(set-constant, getBonus, noopFunc)
 netu.ac##+js(acs, /getBonus\(\)/)
@@ -51867,6 +51920,52 @@ netu.ac##+js(acs, /go_roulete\(numb, message\)/)
 ||www.ovcenehu.com^*
 ||www.xambxhihx.com^*
 ||playgroundordinarilymess.com^*
+||humoralpurline.com^*
+||taxismaned.top^*
+freestreams-live1.im,fsl-streams.click##^script:has-text(/debugger;/):remove()
+freestreams-live1.im,fsl-streams.click##script:has-text(/debugger;/):remove()
+freestreams-live1.im,fsl-streams.click##:xpath(//script[contains(text(), 'debugger;')]):remove()
+freestreams-live1.im,fsl-streams.click##+js(remove-node-text, script, /debugger;/gm)
+! TODO: Really abort on debugger as that is what the debugger statement already does?
+freestreams-live1.im,fsl-streams.click##+js(acs, /debugger;/)
+freestreams-live1.im,fsl-streams.click##a[class="pf-br-icon"]:upward(1):remove()
+freestreams-live1.im,fsl-streams.click##aside[id="custom_html-71"]:remove()
+freestreams-live1.im,fsl-streams.click##div[id="adz1"]:remove()
+freestreams-live1.im,fsl-streams.click##div[id="headb"]:remove()
+freestreams-live1.im,fsl-streams.click##div[id^="pf-"]:remove()
+freestreams-live1.im,fsl-streams.click##div[id="footer-widgets"]:remove()
+!freestreams-live1.im,fsl-streams.click##div[id="UnMutePlayer"]:remove()
+freestreams-live1.im,fsl-streams.click##iframe[src^="https://st.chatango.com"]:remove()
+freestreams-live1.im,fsl-streams.click##script[cdnd="acacdn.com"]:remove()
+freestreams-live1.im,fsl-streams.click##+js(acs, anonymous)
+freestreams-live1.im,fsl-streams.click##+js(remove-class, seek-disabled, , stay)
+!freestreams-live1.im,fsl-streams.click##+js(remove-class, media-control-hide, , stay)
+freestreams-live1.im,fsl-streams.click##+js(aopr, adsno)
+freestreams-live1.im,fsl-streams.click##+js(aopw, adsno)
+freestreams-live1.im,fsl-streams.click##+js(aopr, window.googletag)
+freestreams-live1.im,fsl-streams.click##+js(aopw, window.googletag)
+freestreams-live1.im,fsl-streams.click##+js(aopr, window.dataLayer)
+freestreams-live1.im,fsl-streams.click##+js(aopw, window.dataLayer)
+! freestreams-live1.im,fsl-streams.click uses a generated javascript to check for the debugger so use (noeval) to bypass this.
+freestreams-live1.im,fsl-streams.click##+js(noeval)
+freestreams-live1.im,fsl-streams.click##+js(set-constant, keepChecking, noopFunc)
+! also need no-setTimeout-if to prevent running keepChecking() on a loop
+freestreams-live1.im,fsl-streams.click##+js(no-setTimeout-if, keepChecking)
+freestreams-live1.im,fsl-streams.click##iframe[src^="https://wikisport.se/fsl/"]:style(left: 0px !important; right: 0px !important; padding:0 !important; margin:0 !important; border: none !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; overflow:auto !important; user-select: all !important; pointer-events: all !important;)
+freestreams-live1.im,fsl-streams.click##+js(saa, height, 100%, iframe[src^="https://wikisport.se/fsl/"])
+freestreams-live1.im,fsl-streams.click##+js(saa, webkitallowfullscreen, true, iframe[src^="https://wikisport.se/fsl/"])
+freestreams-live1.im,fsl-streams.click##+js(saa, mozallowfullscreen, true, iframe[src^="https://wikisport.se/fsl/"])
+freestreams-live1.im,fsl-streams.click##+js(saa, allowtransparency, true, iframe[src^="https://wikisport.se/fsl/"])
+freestreams-live1.im,fsl-streams.click##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://wikisport.se/fsl/"])
+freestreams-live1.im,fsl-streams.click##+js(saa, scrolling, yes, iframe[src^="https://wikisport.se/fsl/"])
+! The following attributes are already set by the page.
+freestreams-live1.im,fsl-streams.click##+js(saa, width, 100%, iframe[src^="https://wikisport.se/fsl/"])
+freestreams-live1.im,fsl-streams.click##+js(saa, frameborder, 0, iframe[src^="https://wikisport.se/fsl/"])
+freestreams-live1.im,fsl-streams.click##+js(saa, allowfullscreen, true, iframe[src^="https://wikisport.se/fsl/"])
+freestreams-live1.im,fsl-streams.click##+js(saa, marginwidth, 0, iframe[src^="https://wikisport.se/fsl/"])
+freestreams-live1.im,fsl-streams.click##+js(saa, marginheight, 0, iframe[src^="https://wikisport.se/fsl/"])
+!*$3p,script,domain=freestreams-live1.im|fsl-streams.click
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,domain=freestreams-live1.im|fsl-streams.click
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
