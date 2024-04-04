@@ -25324,7 +25324,7 @@ gofile.io##.swal2-backdrop-show.swal2-center.swal2-container:remove()
 !||www.google-analytics.com/r/collect$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.google-analytics.com/siteopt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.google-analytics.com/urchin.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.google-analytics.com^$script,domain=daddylivehd.sx|dlhd.sx
+www.google-analytics.com^$script,domain=daddylive.watch|daddylivehd.sx|dlhd.sx
 ||google-analytics.com^$important,3p
 ||googletagmanager.com/gtm.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||googletagservices.com/gpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -37002,92 +37002,172 @@ play.stream2watch.com##+js(remove-attr, disablepictureinpicture, video[id="video
 www.cxtvlive.com##div[class*="ad-titulo"]:remove()
 www.cxtvlive.com##ins[data-ad-client]:remove()
 www.cxtvlive.com##iframe[id^="aswift_"]:remove()
+! The following domain hosts streaming video
+!||tucanaldeportivo.com^*
+! daddylive.watch uses the following script for its video player iframe.
+! https://radamel.icu/reproductor/canal45.php?width=1100&height=430 has the values from embedt1.js.
+! Xvw and Xvh don't work with these width and height attributes?
+!||radamel.icu/js/embedt1.js$script,doc,xhr,replace=/width = 600;/width = "99vw";/gm
+!||radamel.icu/js/embedt1.js$script,doc,xhr,replace=/height = 500;/height = "99vh";/gm
+||radamel.icu/js/embedt1.js$replace=/width = 600;/width = "100%";/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||radamel.icu/js/embedt1.js$replace=/height = 500;/height = "100%";/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+radamel.icu##body[oncontextmenu]:remove-attr(oncontextmenu)
+radamel.icu##+js(remove-attr, oncontextmenu, body[oncontextmenu])
+radamel.icu##body[onkeydown]:remove-attr(onkeydown)
+radamel.icu##+js(remove-attr, onkeydown, body[onkeydown])
+! The following rule removes the unmute button if present.
+radamel.icu##div[id="floatLayer1"]:remove()
+radamel.icu##+js(remove-node-text, script, /\{return\{'popunderCondition':function\(\)\{/gm)
+radamel.icu##+js(acs, /'adsBox',/)
+radamel.icu##iframe[src^="https://cdn.sportcast.fun/nginx.php?id="]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
+radamel.icu##+js(saa, scrolling, true, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
+radamel.icu##+js(saa, webkitallowfullscreen, true, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
+radamel.icu##+js(saa, mozallowfullscreen, true, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
+radamel.icu##+js(saa, allowfullscreen, true, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
+radamel.icu##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
+radamel.icu##+js(saa, allowtransparency, true, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
+! The following are already set by the page.
+radamel.icu##+js(saa, width, 100%, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
+radamel.icu##+js(saa, height, 100%, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
+radamel.icu##+js(saa, frameborder, 0, iframe[src^="https://cdn.sportcast.fun/nginx.php?id="])
+radamel.icu##iframe[src^="https://tucanaldeportivo.com/"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
+radamel.icu##+js(saa, scrolling, true, iframe[src^="https://tucanaldeportivo.com/"])
+radamel.icu##+js(saa, webkitallowfullscreen, true, iframe[src^="https://tucanaldeportivo.com/"])
+radamel.icu##+js(saa, mozallowfullscreen, true, iframe[src^="https://tucanaldeportivo.com/"])
+radamel.icu##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://tucanaldeportivo.com/"])
+radamel.icu##+js(saa, allowtransparency, true, iframe[src^="https://tucanaldeportivo.com/"])
+! The following are already set by the page.
+radamel.icu##+js(saa, width, 100%, iframe[src^="https://tucanaldeportivo.com/"])
+radamel.icu##+js(saa, height, 100%, iframe[src^="https://tucanaldeportivo.com/"])
+radamel.icu##+js(saa, allowfullscreen, true, iframe[src^="https://tucanaldeportivo.com/"])
+radamel.icu##+js(saa, frameborder, 0, iframe[src^="https://tucanaldeportivo.com/"])
+radamel.icu##iframe[src^="https://livehdplay.ru/"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
+radamel.icu##+js(saa, width, 100%, iframe[src^="https://livehdplay.ru/"])
+radamel.icu##+js(saa, height, 100%, iframe[src^="https://livehdplay.ru/"])
+radamel.icu##+js(saa, scrolling, true, iframe[src^="https://livehdplay.ru/"])
+radamel.icu##+js(saa, webkitallowfullscreen, true, iframe[src^="https://livehdplay.ru/"])
+radamel.icu##+js(saa, mozallowfullscreen, true, iframe[src^="https://livehdplay.ru/"])
+radamel.icu##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://livehdplay.ru/"])
+radamel.icu##+js(saa, allowtransparency, true, iframe[src^="https://livehdplay.ru/"])
+! The following are already set by the page.
+radamel.icu##+js(saa, allowfullscreen, true, iframe[src^="https://livehdplay.ru/"])
+radamel.icu##+js(saa, frameborder, 0, iframe[src^="https://livehdplay.ru/"])
 ! TODO: should this be set for video players in iframes? loading="eager"
 ! TODO: should this be set for video players in iframes? referrerpolicy="unsafe-url"
 ! The following rule is necessary to expand the division that holds the main video player so expanding the size of the player iframe doesn't extend over the rest of the elements.
-dlhd.sx,daddylivehd.sx##div[id="content"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+daddylive.watch,dlhd.sx,daddylivehd.sx##div[id="content"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 ! The div tag in the following rule contains an iframe for a video player.
-dlhd.sx,daddylivehd.sx##div[id="77184714_F"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##iframe[src*="/stream.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, iframe[src*="/stream.php"])
-dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src*="/stream.php"])
-dlhd.sx,daddylivehd.sx##+js(saa, allowfullscreen, true, iframe[src*="/stream.php"])
-dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src*="/stream.php"])
-dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src*="/stream.php"])
-dlhd.sx,daddylivehd.sx##+js(saa, scrolling, true, iframe[src*="/stream.php"])
-dlhd.sx,daddylivehd.sx##+js(saa, frameborder, 0, iframe[src*="/stream.php"])
-dlhd.sx,daddylivehd.sx##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, #thatframe)
-dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, #thatframe)
-dlhd.sx,daddylivehd.sx##+js(saa, frameborder, 0, #thatframe)
-dlhd.sx,daddylivehd.sx##+js(saa, allowfullscreen, true, #thatframe)
-dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, #thatframe)
-dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, #thatframe)
-dlhd.sx,daddylivehd.sx##+js(saa, scrolling, true, #thatframe)
-dlhd.sx,daddylivehd.sx##div[id="fluid_video_wrapper_video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##video[id="video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##video[id="video-id"]:remove-attr(disableremoteplayback)
-dlhd.sx,daddylivehd.sx##video[id="video-id"]:remove-attr(disablepictureinpicture)
-dlhd.sx,daddylivehd.sx##+js(remove-attr, disablepictureinpicture, video[id="video-id"])
-dlhd.sx,daddylivehd.sx##+js(remove-attr, disableremoteplayback, video[id="video-id"])
-dlhd.sx,daddylivehd.sx##+js(saa, data-autoplay-mute-lock, false, video[id="video-id"])
-dlhd.sx,daddylivehd.sx##+js(saa, controls, true, video[id="video-id"])
-dlhd.sx,daddylivehd.sx##+js(saa, x-webkit-airplay, allow, video[id="video-id"])
-dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, video[id="video-id"])
-dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, video[id="video-id"])
-dlhd.sx,daddylivehd.sx##iframe[src*="/online.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src*="/online.php"])
-dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src*="/online.php"])
-dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src*="/online.php"])
-dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src*="/online.php"])
-dlhd.sx,daddylivehd.sx##iframe[src^="https://wwwstream.pro/embed/"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src^="https://wwwstream.pro/embed/"])
-dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="https://wwwstream.pro/embed/"])
-dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src^="https://wwwstream.pro/embed/"])
-dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src^="https://wwwstream.pro/embed/"])
-dlhd.sx,daddylivehd.sx##iframe[src^="https://librarywhispering.com/player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src^="https://librarywhispering.com/player"])
-dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="https://librarywhispering.com/player"])
-dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src^="https://librarywhispering.com/player"])
-dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src^="https://librarywhispering.com/player"])
-dlhd.sx,daddylivehd.sx##div[id="footer"]:remove()
-dlhd.sx,daddylivehd.sx##div[id="sidebar"]:remove()
-dlhd.sx,daddylivehd.sx##div[id="UnMutePlayer"]:remove()
-dlhd.sx,daddylivehd.sx##iframe[id="stats"]:remove()
-dlhd.sx,daddylivehd.sx##iframe[src^="https://st.chatango.com/"]:remove()
-dlhd.sx,daddylivehd.sx##iframe[data-aa]:remove()
-dlhd.sx,daddylivehd.sx##textarea[id="txtarea"]:remove()
-dlhd.sx,daddylivehd.sx##input[type=button]:remove-attr(disabled)
-!dlhd.sx,daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
-dlhd.sx,daddylivehd.sx##+js(noeval)
-dlhd.sx,daddylivehd.sx##+js(aopw, emulateStorage)
-dlhd.sx,daddylivehd.sx##+js(aopr, emulateStorage)
-dlhd.sx,daddylivehd.sx##+js(aopw, _chatangoTagserver)
-dlhd.sx,daddylivehd.sx##+js(aopr, _chatangoTagserver)
+daddylive.watch,dlhd.sx,daddylivehd.sx##div[id="77184714_F"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+! The following three rules are replacements for inline script values.
+! width and height have to be integers or the URL will have the values as "undefined", i.e. "https://radamel.icu/reproductor/canal382.php?width=undefined&height=undefined"
+! 1523 x 857 is 16:9 web viewport for a 1920 x 1080p display monitor.
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(set-constant, width, 1523)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(set-constant, height, 857)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(trusted-replace-node-text, script, /;width=1100;height=430;/gm, ;width=1523;height=857;)
+!daddylive.watch,dlhd.sx,daddylivehd.sx##+js(trusted-set-constant, width, "100%")
+!daddylive.watch,dlhd.sx,daddylivehd.sx##+js(trusted-set-constant, height, "100%")
+!daddylive.watch,dlhd.sx,daddylivehd.sx##+js(trusted-replace-node-text, script, /;width=1100;height=430;/gm, ;width="100%";height="100%";)
+!daddylive.watch,dlhd.sx,daddylivehd.sx##+js(trusted-set-constant, width, "99vw")
+!daddylive.watch,dlhd.sx,daddylivehd.sx##+js(trusted-set-constant, height, "99vh")
+!daddylive.watch,dlhd.sx,daddylivehd.sx##+js(trusted-replace-node-text, script, /;width=1100;height=430;/gm, ;width="99vw";height="99vh";)
+daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[src^="https://radamel.icu/reproductor/"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, iframe[src^="https://radamel.icu/reproductor/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="https://radamel.icu/reproductor/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, true, iframe[src^="https://radamel.icu/reproductor/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src^="https://radamel.icu/reproductor/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src^="https://radamel.icu/reproductor/"])
+! The following are already set by the page.
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, allowfullscreen, true, iframe[src^="https://radamel.icu/reproductor/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, frameborder, 0, iframe[src^="https://radamel.icu/reproductor/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, allowtransparency, true, iframe[src^="https://radamel.icu/reproductor/"])
+!daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://radamel.icu/reproductor/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[src*="/stream.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, iframe[src*="/stream.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src*="/stream.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, allowfullscreen, true, iframe[src*="/stream.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src*="/stream.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src*="/stream.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, true, iframe[src*="/stream.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, frameborder, 0, iframe[src*="/stream.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, allowtransparency, true, iframe[src*="/stream.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, #thatframe)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, #thatframe)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, frameborder, 0, #thatframe)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, allowfullscreen, true, #thatframe)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, #thatframe)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, #thatframe)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, true, #thatframe)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, allowtransparency, true, #thatframe)
+daddylive.watch,dlhd.sx,daddylivehd.sx##div[id="fluid_video_wrapper_video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+daddylive.watch,dlhd.sx,daddylivehd.sx##video[id="video-id"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+daddylive.watch,dlhd.sx,daddylivehd.sx##video[id="video-id"]:remove-attr(disableremoteplayback)
+daddylive.watch,dlhd.sx,daddylivehd.sx##video[id="video-id"]:remove-attr(disablepictureinpicture)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(remove-attr, disablepictureinpicture, video[id="video-id"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(remove-attr, disableremoteplayback, video[id="video-id"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, data-autoplay-mute-lock, false, video[id="video-id"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, controls, true, video[id="video-id"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, x-webkit-airplay, allow, video[id="video-id"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, width, 100%, video[id="video-id"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, video[id="video-id"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[src*="/online.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src*="/online.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src*="/online.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src*="/online.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src*="/online.php"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[src^="https://wwwstream.pro/embed/"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src^="https://wwwstream.pro/embed/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="https://wwwstream.pro/embed/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src^="https://wwwstream.pro/embed/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src^="https://wwwstream.pro/embed/"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[src^="https://librarywhispering.com/player"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, scrolling, yes, iframe[src^="https://librarywhispering.com/player"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, height, 100%, iframe[src^="https://librarywhispering.com/player"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, webkitallowfullscreen, true, iframe[src^="https://librarywhispering.com/player"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(saa, mozallowfullscreen, true, iframe[src^="https://librarywhispering.com/player"])
+daddylive.watch,dlhd.sx,daddylivehd.sx##div[id="footer"]:remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##div[id="sidebar"]:remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##div[id="UnMutePlayer"]:remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[id="stats"]:remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[src^="https://st.chatango.com/"]:remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##iframe[data-aa]:remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##textarea[id="txtarea"]:remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##input[type=button]:remove-attr(disabled)
+!daddylive.watch,dlhd.sx,daddylivehd.sx##+js(remove-attr, disabled, input[type=button], stay)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(noeval)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopw, emulateStorage)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopr, emulateStorage)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopw, _chatangoTagserver)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopr, _chatangoTagserver)
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
-dlhd.sx,daddylivehd.sx##script[data-admpid]:remove()
-dlhd.sx,daddylivehd.sx##script[id="tsjson"]:remove()
-dlhd.sx,daddylivehd.sx##script[data-adel][zid]:remove()
-dlhd.sx,daddylivehd.sx##^script:has-text(/debugger;/):remove()
-dlhd.sx,daddylivehd.sx##script:has-text(/debugger;/):remove()
-dlhd.sx,daddylivehd.sx##:xpath(//script[contains(text(), 'debugger;')]):remove()
-!dlhd.sx,daddylivehd.sx##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
-dlhd.sx,daddylivehd.sx##+js(remove-node-text, script, /debugger;/gm)
+daddylive.watch,dlhd.sx,daddylivehd.sx##script[data-admpid]:remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##script[id="tsjson"]:remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##script[data-adel][zid]:remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##^script:has-text(/debugger;/):remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##script:has-text(/debugger;/):remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##:xpath(//script[contains(text(), 'debugger;')]):remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(remove-node-text, script, /debugger;/gm)
 ! TODO: Really abort on debugger as that is what the debugger statement already does?
-dlhd.sx,daddylivehd.sx##+js(acs, /debugger;/)
-dlhd.sx,daddylivehd.sx##^script:has-text(-parseInt):remove()
-dlhd.sx,daddylivehd.sx##script:has-text(-parseInt):remove()
-dlhd.sx,daddylivehd.sx##+js(acs, atob, decodeURIComponent)
-dlhd.sx,daddylivehd.sx##+js(acs, document, $._Eu, $.BD)
-dlhd.sx,daddylivehd.sx##+js(aopw, document.oncontextmenu)
-dlhd.sx,daddylivehd.sx##+js(aopr, document.oncontextmenu)
-dlhd.sx,daddylivehd.sx##+js(aopw, document.onkeypress)
-dlhd.sx,daddylivehd.sx##+js(aopr, document.onkeypress)
-dlhd.sx,daddylivehd.sx##+js(aopw, document.onmousedown)
-dlhd.sx,daddylivehd.sx##+js(aopr, document.onmousedown)
-dlhd.sx,daddylivehd.sx##+js(aopw, x.withCredentials)
-dlhd.sx,daddylivehd.sx##+js(aopr, x.withCredentials)
-dlhd.sx,daddylivehd.sx##+js(set-constant, hs, {})
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(acs, /debugger;/)
+daddylive.watch,dlhd.sx,daddylivehd.sx##^script:has-text(-parseInt):remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##script:has-text(-parseInt):remove()
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(set-constant, _gaq, [])
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(abort-on-property-read, _gaq)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(abort-on-property-write, _gaq)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(acs, /_gaq\.push\(/)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(acs, atob, decodeURIComponent)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(acs, document, $._Eu, $.BD)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopw, document.oncontextmenu)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopr, document.oncontextmenu)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopw, document.onkeypress)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopr, document.onkeypress)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopw, document.onmousedown)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopr, document.onmousedown)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopw, x.withCredentials)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(aopr, x.withCredentials)
+daddylive.watch,dlhd.sx,daddylivehd.sx##+js(set-constant, hs, {})
+||daddylive.watch/embed/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||daddylive.watch/stream/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||daddylivehd.sx/embed/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||daddylivehd.sx/stream/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dlhd.sx/embed/adblock.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -37098,7 +37178,7 @@ poscitechs.shop,dlhd.sx##div[style="position: fixed; display: block; width: 100%
 !poscitechs.shop##+js(no-setTimeout-if, /^/)
 poscitechs.shop##+js(no-setTimeout-if, /^function\(\)/)
 poscitechs.shop##iframe[src="javascript:false"]:remove()
-poscitechs.shop##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+poscitechs.shop##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 poscitechs.shop##+js(saa, width, 100%, #thatframe)
 poscitechs.shop##+js(saa, height, 100%, #thatframe)
 poscitechs.shop##+js(saa, allowfullscreen, true, #thatframe)
@@ -37106,7 +37186,7 @@ poscitechs.shop##+js(saa, webkitallowfullscreen, true, #thatframe)
 poscitechs.shop##+js(saa, mozallowfullscreen, true, #thatframe)
 poscitechs.shop##+js(saa, scrolling, true, #thatframe)
 poscitechs.shop##+js(saa, frameborder, 0, #thatframe)
-poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+poscitechs.shop##iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 poscitechs.shop##+js(saa, width, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(saa, height, 100%, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
 poscitechs.shop##+js(saa, webkitallowfullscreen, true, iframe[src^="https://olalivehdplay.ru/premiumtv/poscitechs.php"])
@@ -37459,7 +37539,6 @@ time4tv.stream,time4tv.xyz##+js(noeval)
 time4tv.stream,time4tv.xyz##^script:has-text(/debugger;/):remove()
 time4tv.stream,time4tv.xyz##script:has-text(/debugger;/):remove()
 time4tv.stream,time4tv.xyz##:xpath(//script[contains(text(), 'debugger;')]):remove()
-!time4tv.stream,time4tv.xyz##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 time4tv.stream,time4tv.xyz##+js(remove-node-text, script, /debugger;/gm)
 ! TODO: Really abort on debugger as that is what the debugger statement already does?
 time4tv.stream,time4tv.xyz##+js(acs, /debugger;/)
@@ -37680,9 +37759,12 @@ sportskart.click##+js(aopr, t.Tn)
 sportskart.click##+js(aopw, t.Tn)
 sportskart.click##^script:has-text(/delete window\[/):remove()
 sportskart.click##:xpath(//script[contains(text(), 'delete window[')]):remove()
-sportskart.click##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+sportskart.click##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+! TODO: use vw and vh values in the following two rules?
 sportskart.click##+js(saa, width, 99vw, #thatframe)
 sportskart.click##+js(saa, height, 99vh, #thatframe)
+!sportskart.click##+js(saa, width, 100%, #thatframe)
+!sportskart.click##+js(saa, height, 100%, #thatframe)
 sportskart.click##+js(saa, allowfullscreen, true, #thatframe)
 sportskart.click##+js(saa, frameborder, 0, #thatframe)
 ! The following three lines would leave the play button up forever
@@ -38643,7 +38725,6 @@ voraciousglove.net##div[id="btn-unmute"]:remove()
 ! prevents rotating the player iframe with a different source every 5 seconds
 ||klubsports.online/player/refresh.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||jinxrussian.com^*
-||tucanaldeportivo.com^*
 ||pl14979773.highrevenuegate.com^*
 klubsports.online##+js(acs, x.withCredentials)
 klubsports.online##+js(aopr, x.withCredentials)
@@ -39068,7 +39149,7 @@ abysscdn.com,abyss.to,player-cdn.com,playhydrax.com##iframe[src="about:blank"]:r
 !abysscdn.com,abyss.to,player-cdn.com,playhydrax.com##+js(aopw, js)
 ||abysscdn.com/cdn-cgi/trace$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||abyss.to/auth/logged$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||iamcdn.net/players/playhydrax.min.js$script,doc,replace=/if\(top\.location==self\.location\)/if (null)/gm
+||iamcdn.net/players/playhydrax.min.js$replace=/if\(top\.location==self\.location\)/if (null)/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: The iamcdn.net/players/playhydrax.min.js script also uses top.location and should not be aborted.
 !abysscdn.com,abyss.to,player-cdn.com,playhydrax.com##+js(aopr, top.location)
 !abysscdn.com,abyss.to,player-cdn.com,playhydrax.com##+js(aopw, top.location)
@@ -39871,6 +39952,7 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##img[src="/images/player.png"]:style(right:0px !important;top:0px !important;padding: 0px !important)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##iframe[id="player_iframe"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, seamless, seamless, iframe[id="player_iframe"])
+2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id="player_iframe"])
 ! The following attributes are already set by the page as normal.
 ! TODO: 99vw and 100vh do not work as values for the width and height attributes of an iframe.  Why?
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, width, 100%, iframe[id="player_iframe"])
@@ -39881,11 +39963,10 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, mozallowfullscreen, true, iframe[id="player_iframe"])
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, scrolling, true, iframe[id="player_iframe"])
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, referrerpolicy, origin, iframe[id="player_iframe"])
-!2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[id="player_iframe"])
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##iframe[id$="framesrc"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(set-attr, iframe[id$="framesrc"][data-src], src, [data-src])
 2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, seamless, seamless, iframe[id$="framesrc"])
-2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[id$="framesrc"])
+2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id$="framesrc"])
 ! The following attributes are already set by the page as normal.
 ! TODO: 99vw and 100vh do not work as values for the width and height attributes of an iframe.  Why?
 !2embed.skin,streamsrcs.2embed.cc,www.2embed.cc,www.2embed.to##+js(saa, width, 100%, iframe[id$="framesrc"])
@@ -39939,7 +40020,7 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 !123movie.skin##+js(trusted-replace-node-text, script, /document\.getElementById\('vsrcs'\)\.style\.height = "90%";/, "")
 123movie.skin##iframe[id="vsrcs"]:style(overflow:scroll !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 123movie.skin##+js(saa, seamless, seamless, iframe[id="vsrcs"])
-123movie.skin##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[id="vsrcs"])
+123movie.skin##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id="vsrcs"])
 123movie.skin##+js(saa, height, 100%, iframe[id="vsrcs"])
 123movie.skin##+js(saa, webkitallowfullscreen, true, iframe[id="vsrcs"])
 123movie.skin##+js(saa, mozallowfullscreen, true, iframe[id="vsrcs"])
@@ -39952,7 +40033,7 @@ a2zapk.io,a2zapk.com##+js(acs, /gtag\(/)
 ! The following must be set to width: 99vw and height: 99vh or else the video player viewport will be truncated to ~150px for some reason. Also use overflow: auto or hidden to prevent scrollbars if width and/or height is 100vw/100vh.
 123movie.skin##iframe[id="iframesrc"]:style(overflow:hidden !important;padding:0 !important; margin:0 !important; border-width:0 !important; width: 100vw !important; height: 100vh !important; user-select: all !important; pointer-events: all !important;)
 123movie.skin##+js(saa, seamless, seamless, iframe[id="iframesrc"])
-123movie.skin##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[id="iframesrc"])
+123movie.skin##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id="iframesrc"])
 123movie.skin##+js(saa, height, 100%, iframe[id="iframesrc"])
 123movie.skin##+js(saa, webkitallowfullscreen, true, iframe[id="iframesrc"])
 123movie.skin##+js(saa, mozallowfullscreen, true, iframe[id="iframesrc"])
@@ -40266,11 +40347,11 @@ slmaxed.com##div[class="alert alert-info mb-2"]:remove()
 ||lp.pickmysearch.com^*
 ||www.edqbparlheuj.com^*
 ||edqbparlheuj.com^*
-!||st.chatango.com/js/gz/emb.js$3p,script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
-!||st.chatango.com^$script,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
-!||st.chatango.com^$all,domain=time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+!||st.chatango.com/js/gz/emb.js$3p,script,domain=time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+!||st.chatango.com^$script,domain=time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
+!||st.chatango.com^$all,domain=time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net
 ! not www.crichd.com since it has button to optionally open the chat window
-||st.chatango.com^$3p,domain=methstreams.com|time4tv.stream|time4tv.xyz|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net|hd.crichdlivecricket.cc|stream.crichd.live|www.crichd.live
+||st.chatango.com^$3p,domain=methstreams.com|time4tv.stream|time4tv.xyz|daddylive.watch|daddylivehd.sx|dlhd.sx|freestreams-live1.tv|fsl-streams.click|klubsports.online|cdn.stream-24.net|hd.crichdlivecricket.cc|stream.crichd.live|www.crichd.live
 st.chatango.com##div[id="taboola-chat-article-thumbnails"]:remove()
 st.chatango.com##div[class="sdlg-title-bg-hidden"]:remove()
 st.chatango.com##div[class="sdlg-sc"]:has(div[class="OUTBRAIN"][data-widget-id]):remove()
@@ -45361,8 +45442,8 @@ streamtape.com##+js(saa, height, 100%, video[id="mainvideo"])
 ! blocking the adgpt.js removes the main iframe with the video in it
 !||streamtape.com/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||stapadblockuser.xyz/adgpt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||streamtape.com/adgpt.js$replace=/var googleAd = true;/var googleAd = false;/gm
-||stapadblockuser.xyz/adgpt.js$replace=/var googleAd = true;/var googleAd = false;/gm
+||streamtape.com/adgpt.js$replace=/var googleAd = true;/var googleAd = false;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||stapadblockuser.xyz/adgpt.js$replace=/var googleAd = true;/var googleAd = false;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !*$3p,script,denyallow=www.google.com|www.gstatic.com,domain=streamtape.com
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.google.com|www.gstatic.com,domain=streamtape.com
 !||yz.linensephraim.com^*
@@ -46174,11 +46255,13 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 ! The letter preceding the "path.min.css" in the following rule intentionally varies.
 ||*/css/images/*path.min.css$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||*/css/images/*sidy.css$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||*/*/*jquery.fittext.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||*/*/*/*botui.min.css$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||*/*/*midnight.jquery.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||*/*/*/*jssip.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||*/*floatlabels.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||*/*countrySelect.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||*/*/*midnight.jquery.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||*/*/*jquery.fittext.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||*/*/*/*jssip.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||*/*/*/*botui.min.css$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||*/*/*/*GeoExt.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The letter preceding the "d3-geo-projection" in the following rule intentionally varies.
 ||*/js/*d3-geo-projection.min.js$domain=123ecast.me|1l1l.to|1stream.eu|aradsport.live|anonymz.com|apk.support|appvn.com|a.mylink.vc|bestsolaris.com|buffstream.io|cdn.niaomea.me|ceimo.click|claplivehdplay.ru|crichdstreaming.cc|cricplay2.xyz|cvkbl.ru.com|dlhd.sx|embedstream.me|escast.xyz|eztv1.xyz|givemereddit.eu|gocast.pro|godzillive.com|hd.crichdlivecricket.cc|jojoy.io|klubsports.online|kokostream.net|lato.sx|librarywhispering.com|linenstandard.net|livehdplay.ru|lovesomecommunity.com|mega4upload.com|methstreams.com|millionscast.com|modsfire.com|mylivestream.pro|nflbox.me|ntuplay.xyz|olalivehdplay.ru|pererecadoida.life|qbxez.click|rakeq.ru.com|sandrataxeight.com|s2watch.link|scolie.net|sharecast.ws|sportsembed.su|sportsonline.si|sporttuna.site|sporttuna.sx|strayindicate.net|streambucket.net|strikeout.im|sts.niaomea.me|switchcast2.com|techclips.net|tucaluka.shop|trustexploration.com|tutlehd2.xyz|tutlehd3.xyz|tv247.us|tv247us.com|vidsrc.to|vidsrc.me|vidsrc.stream|vidsrc.in|vidsrc.pm|vidsrc.xyz|vidsrc.net|vikistream.com|vincentincludesuccessful.com|viwlivehdplay.ru|voodc.com|voraciousglove.net|warnforlese.net|weblivehdplay.ru|www2.solarmovie.cr|www.crichd.live|www.niaomea.me|www.nolive.me|www.thestreameast.to|www.thestreameast.io|www.up-4ever.net|www.up-4ever.org|www.vipleague.st|wwwstream.pro|ypamu.ru.com,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The letter preceding the "pnp" in the following rule intentionally varies.
@@ -46260,8 +46343,10 @@ mp1st.com##+js(abort-on-property-write, window.adthriveCLS)
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/common\/tag\.min\.js\S*/$3p,script
 !||*/pfe/current/tag.min.js$3p,script
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/pfe\/current\/tag\.min\.js\S*/$3p,script
+!||*/script/naN.js$3p,script
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/script\/naN\.js\S*/$3p,script
 !||*/pixel/puclc/$3p
-/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/pixel\/puclc\/\S*/$3p,script
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/pixel\/puclc\/\S*/$3p
 ||zintrack.com/api/event$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||event-collector.udsrv.com/api/event$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||event-collector.udsrv.com^*
@@ -46892,9 +46977,9 @@ wykop-stream.blogspot.com##+js(saa, scrolling, yes, div[id="tv"]>iframe)
 ! block all third-party scripts except specific exceptions on these domains related to video streaming.
 ! arc.io covers subdomains like static.arc.io but NOT CDN sources like prod-arc-cdn-s3.b-cdn.net or related library sources like unpkg.com
 ! browser.sentry-cdn.com needs to be allowed on these domains if using Cloudflare protection
-*$script,3p,denyallow=vaguedinosaurs.com|cdn.fluidplayer.com|code.jquery.com|arc.io|prod-arc-cdn-s3.b-cdn.net|unpkg.com|browser.sentry-cdn.com,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
+*$script,3p,denyallow=radamel.icu|vaguedinosaurs.com|cdn.fluidplayer.com|code.jquery.com|arc.io|prod-arc-cdn-s3.b-cdn.net|unpkg.com|browser.sentry-cdn.com,domain=sportstream1.cfd|poscitechs.shop|daddylive.watch|daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
 sportstream1.cfd##iframe[id="thatframe"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 99vw !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
-sportstream1.cfd##+js(saa, allow, encrypted-media, #thatframe)
+sportstream1.cfd##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, #thatframe)
 sportstream1.cfd##+js(saa, scrolling, yes, #thatframe)
 ||www.abc27.com/wp-content/plugins/civic-science/js/pixel.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! blocking all of of the civic science plug-in blocks the surveys too
@@ -47054,7 +47139,7 @@ hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, marginwidth
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, frameborder, 0, iframe[id="iframe_a"])
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, scrolling, yes, iframe[id="iframe_a"])
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allowfullscreen, true, iframe[id="iframe_a"])
-hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allow, encrypted-media; picture-in-picture, iframe[id="iframe_a"])
+hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id="iframe_a"])
 ! TODO: Is the class name in the following rule random?
 hd.crichdlivecricket.cc,stream.crichd.live,www.crichd.live##div[class="fdtfxeuhit"]:remove()
 ||www.crichd.live/z-6657014$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -47258,7 +47343,7 @@ azrotv.com##+js(saa, allowfullscreen, true, iframe[src^="/pyr/?id="])
 azrotv.com##+js(saa, allowtransparency, true, iframe[src^="/pyr/?id="])
 azrotv.com##+js(saa, frameborder, 0, iframe[src^="/pyr/?id="])
 azrotv.com##+js(saa, scrolling, no, iframe[src^="/pyr/?id="])
-azrotv.com##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[src^="/pyr/?id="])
+azrotv.com##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="/pyr/?id="])
 azrotv.com##video[id="player"]:remove-attr(disableremoteplayback)
 azrotv.com##+js(remove-attr, disableremoteplayback, video[id="player"])
 azrotv.com##video[id="player"]:remove-attr(disablepictureinpicture)
@@ -48396,9 +48481,9 @@ firstrows.top,firstrowsport.org##div[class="module-desc"]:style(display: inline;
 ! Don't return 0 as this function is used as the delay value for setTimeout(), and a value of 0 makes the function run continuously without delay until/unless clearTimeout() is executed. 
 ! The largest delay value for setTimeout() 2147483647; larger values cause an integer overflow.
 ! To prevent overflow assume that the randomFromInterval() function changed in the following rule has its returned value multiplied by 1000 when used.
-||firstrows.top/js/functions.js$replace=/return Math\.floor\(Math\.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
-||firstrowsport.org/js/functions.js$replace=/return Math\.floor\(Math\.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
-||vipboxi.net/js/functions.js$replace=/return Math\.floor\(Math\.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm
+||firstrows.top/js/functions.js$replace=/return Math\.floor\(Math\.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||firstrowsport.org/js/functions.js$replace=/return Math\.floor\(Math\.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||vipboxi.net/js/functions.js$replace=/return Math\.floor\(Math\.random\(\)\*\(to\-from\+1\)\+from\);/return 2147483;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 firstrows.top,firstrowsport.org##+js(set-constant, checkCookie, noopFunc)
 ! Can't do both set checkCookie and abort it.
 !firstrows.top,firstrowsport.org##+js(acs, checkCookie)
@@ -48415,15 +48500,15 @@ firstrows.top,firstrowsport.org##+js(set-constant, checkCookie, noopFunc)
 !mastercdn.hu##+js(trusted-replace-node-text, script, /height=\d{1,3}(?:px)?/gm, height="100%")
 !mastercdn.hu##+js(trusted-replace-node-text, script, /width=\d{1,3}(?:px)?/gm, width="100%")
 ! Don't escape " or . in the replace syntax.
-! The following two rules do not work if the script is loaded directly in the browser window/tab.
-!||mastercdn.hu/*.js$script,xhr,replace=/height=\d{1,3}/height="100%"/gm
-!||mastercdn.hu/*.js$script,xhr,replace=/width=\d{1,3}/width="100%"/gm
+! The following two rules do not work if the script is loaded directly in the browser window/tab.  need to add "doc" for that
+!||mastercdn.hu/*.js$script,xhr,doc,replace=/height=\d{1,3}/height="100%"/gm
+!||mastercdn.hu/*.js$script,xhr,doc,replace=/width=\d{1,3}/width="100%"/gm
 ! The following four rules also work if the script is loaded directly in the browser window/tab.
-||mastercdn.hu/*.js$replace=/height=\d{1,3}/height="100%"/gm
-||mastercdn.hu/*.js$replace=/width=\d{1,3}/width="100%"/gm
+||mastercdn.hu/*.js$replace=/height=\d{1,3}/height="100%"/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||mastercdn.hu/*.js$replace=/width=\d{1,3}/width="100%"/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: always n1.php?
-||mastercdn.hu/n1.php$replace=/height=\d{1,3}/height="100%"/gm
-||mastercdn.hu/n1.php$replace=/width=\d{1,3}/width="100%"/gm
+||mastercdn.hu/n1.php$replace=/height=\d{1,3}/height="100%"/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||mastercdn.hu/n1.php$replace=/width=\d{1,3}/width="100%"/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||governessstrengthen.com^*
 ||damnightmareleery.com^*
 ||event.getblue.io/r/audience-pixel.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -50164,10 +50249,10 @@ www.fox13news.com##+js(remove-attr, disablepictureinpicture, video[class="anv-vi
 www.fox13news.com##+js(saa, controls, true, video[class="anv-video-content"])
 www.fox13news.com##+js(saa, width, 100%, video[class="anv-video-content"])
 www.fox13news.com##+js(saa, height, 100%, video[class="anv-video-content"])
+www.fox13news.com##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id^="player-"])
 ! The following is already set by the page.
 !www.fox13news.com##+js(saa, frameborder, 0, iframe[id^="player-"])
 !www.fox13news.com##+js(saa, scrolling, true, iframe[id^="player-"])
-!www.fox13news.com##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[id^="player-"])
 !www.fox13news.com##+js(saa, x-webkit-airplay, allow, video[class="anv-video-content"])
 !www.fox13news.com##+js(saa, data-autoplay-mute-lock, false, video[class="anv-video-content"])
 ||foxentertainment.hb-api.omtrdc.net^*
@@ -50618,9 +50703,9 @@ rapidcloud.cc##+js(set-constant, remaining, 0)
 !rapidcloud.cc##+js(trusted-replace-node-text, script, /var remaining = parseInt\(\$\(e\)\.find\("\.seconds"\)\.text\(\)\) - 1;/gm, var remaining = 0;)
 !rapidcloud.cc##+js(trusted-replace-node-text, script, /remaining <= 0/gm, remaining)
 ! TODO: the following rule doesn't work for some reason.
-!||rapidcloud.cc/xfst_theme2/js/countdown.js$script,doc,replace=/var remaining = parseInt\(\$\(e\)\.find\(\"\.seconds\"\)\.text\(\)\) - 1;/var remaining = 0;/gm
-||rapidcloud.cc/xfst_theme2/js/countdown.js$script,doc,replace=/var remaining = /var remaining = 0;/gm
-!||rapidcloud.cc/xfst_theme2/js/countdown.js$script,doc,replace=/remaining <= 0/remaining/gm
+!||rapidcloud.cc/xfst_theme2/js/countdown.js$replace=/var remaining = parseInt\(\$\(e\)\.find\(\"\.seconds\"\)\.text\(\)\) - 1;/var remaining = 0;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||rapidcloud.cc/xfst_theme2/js/countdown.js$replace=/var remaining = /var remaining = 0;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||rapidcloud.cc/xfst_theme2/js/countdown.js$replace=/remaining <= 0/remaining/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 rapidcloud.cc##button[id="downloadbtn"]:remove-attr(disabled)
 rapidcloud.cc##+js(remove-attr, disabled, button[id="downloadbtn"])
 rapidcloud.cc##div[class="download-btn mb-4"]:remove-attr(style)
@@ -50816,21 +50901,21 @@ e69975b881.nl,vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,v
 !e69975b881.nl,vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(aeld, ondevtoolopen)
 ! Only vidsrc.to/assets/embed/min/all.js actually exists.
 ! The query string, e.g. ?v=660cbe20 , matters as the contents of the script change based upon it.
-!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(t,n\) \{W\(\),n\(\);\}/ondevtoolopen:function(){}/gm
-!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(n,t\) \{s\(\),t\(\);\}/ondevtoolopen:function(){}/gm
-/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(\w,\w\) \{\w\(\),\w\(\);\}/ondevtoolopen:function(){}/gm
+!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(t,n\) \{W\(\),n\(\);\}/ondevtoolopen:function(){}/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(n,t\) \{s\(\),t\(\);\}/ondevtoolopen:function(){}/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/ondevtoolopen\:function\(\w,\w\) \{\w\(\),\w\(\);\}/ondevtoolopen:function(){}/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! h(); is the name of the function in all.js that contains "ondevtoolopen". TODO: does this function name change?
-/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/,h\(\);/,null;/gm
-/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/\{h&&h\(\);/{null;/gm
-!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:N/isDevToolOpened:false/gm
-!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:I/isDevToolOpened:false/gm
-/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:[A-Z]/isDevToolOpened:false/gm
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/,h\(\);/,null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/\{h&&h\(\);/{null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:N/isDevToolOpened:false/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:I/isDevToolOpened:false/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/isDevToolOpened\:[A-Z]/isDevToolOpened:false/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: The following eliminates the console.clear() call if developer tools are opened? No.
-/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/\{console\[\w+\]\(\w\);}/{null;}/gm
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/\{console\[\w+\]\(\w\);}/{null;}/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! a1() is the console clearing function in https://vidsrc.to/assets/embed/min/all.js
 ! TODO: The following rule works to prevent clearing the console, BUT the video player is still removed when the console is opened and the interval is still running.
 !       Need to defuse the entire function containing developer tools check and interval: function h().
-/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/&&a1\(\);\}/&&null;}/gm
+/^https?:\/\/((?!-)[A-Za-z0-9-]+([\-\.]{1}))?vidsrc\.(to|me|stream|in|pm|xyz|net)\/assets\/embed\/min\/all\.js\S*/$replace=/&&a1\(\);\}/&&null;}/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: The following rule won't work if a1() if removed from the function with the preceding rule.
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, /^a1\(\)/)
 ! TODO: The following two rules work? Either that or removing calls to h(); in all.js do.
@@ -50838,15 +50923,15 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(acs, /^h\(\)/)
 ! https://e69975b881.nl/assets/mcloud/min/embed.js also contains "ondevtoolopen and "isDevToolOpened" and is called by vidsrc.to/embed/ pages.
 ! The replacement patterns are different though.
-||e69975b881.nl/assets/mcloud/min/embed.js$replace=/'isDevToolOpened':\w+\}/'isDevToolOpened':false}/gm
-||e69975b881.nl/assets/mcloud/min/embed.js$replace=/\{'ondevtoolopen'\:function\(\w+,\w+\)\{\w+\(\),\w+\(\);\}\}/{'ondevtoolopen':function(){}}/gm
+||e69975b881.nl/assets/mcloud/min/embed.js$replace=/'isDevToolOpened':\w+\}/'isDevToolOpened':false}/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||e69975b881.nl/assets/mcloud/min/embed.js$replace=/\{'ondevtoolopen'\:function\(\w+,\w+\)\{\w+\(\),\w+\(\);\}\}/{'ondevtoolopen':function(){}}/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! _0x13d174(); is the name of the function in embed.js that contains "ondevtoolopen". TODO: does this function name change?
-||e69975b881.nl/assets/mcloud/min/embed.js$replace=/,_0x13d174\(\);/,null;/gm
+||e69975b881.nl/assets/mcloud/min/embed.js$replace=/,_0x13d174\(\);/,null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: The following two rules work? Either that or removing calls to _0x13d174(); in embed.js do.
 e69975b881.nl##+js(no-setInterval-if, /_0x13d174\(\)/)
 e69975b881.nl##+js(acs, /_0x13d174\(\)/)
 ! TODO: The following eliminates the console.clear() call if developer tools are opened? No.
-||e69975b881.nl/assets/mcloud/min/embed.js$replace=/\{console\[\w+\]\(\w+\);}/{null;}/gm
+||e69975b881.nl/assets/mcloud/min/embed.js$replace=/\{console\[\w+\]\(\w+\);}/{null;}/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following rule may be the one which includes the anti-developer tools behavior due to it having an interval of 300000
 ! It also stops the  "Invalid or corrupted PDF file." errors in the console.
 ! TODO: The developer tools were defused though aborting the interval of _0x65bf0() , but _0x65bf0() is no longer in https://vidsrc.to/assets/embed/min/all.js
@@ -50877,13 +50962,13 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##ifr
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allowfullscreen, true, iframe[src^="https://vidsrc."][src*="/embed/"])
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, frameborder, 0, iframe[src^="https://vidsrc."][src*="/embed/"])
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, scrolling, true, iframe[src^="https://vidsrc."][src*="/embed/"])
-!vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe)
+!vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://vidsrc."][src*="/embed/"])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, webkitallowfullscreen, true, iframe)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, mozallowfullscreen, true, iframe)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allowfullscreen, true, iframe)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, frameborder, 0, iframe)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, scrolling, true, iframe)
-vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe)
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe)
 !vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##div[id="the_frame"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##iframe[id="player_iframe"]:style(width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, webkitallowfullscreen, true, iframe[id="player_iframe"])
@@ -50891,7 +50976,7 @@ vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allowfullscreen, true, iframe[id="player_iframe"])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, frameborder, 0, iframe[id="player_iframe"])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, scrolling, true, iframe[id="player_iframe"])
-vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[id="player_iframe"])
+vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[id="player_iframe"])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##video[src^="blob:https://vidsrc."]:remove-attr(disablepictureinpicture)
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##+js(remove-attr, disablepictureinpicture, video[src^="blob:https://vidsrc."])
 vidsrc.me,vidsrc.stream,vidsrc.to,vidsrc.in,vidsrc.pm,vidsrc.xyz,vidsrc.net##video[src^="blob:https://vidsrc."]:remove-attr(disableremoteplayback)
@@ -50924,7 +51009,7 @@ streambucket.net##iframe[class^="source-frame"]:style(width: 100% !important; he
 streambucket.net##+js(saa, webkitallowfullscreen, true, iframe[class^="source-frame"])
 streambucket.net##+js(saa, mozallowfullscreen, true, iframe[class^="source-frame"])
 streambucket.net##+js(saa, allowfullscreen, true, iframe[class^="source-frame"])
-streambucket.net##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[class^="source-frame"])
+streambucket.net##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[class^="source-frame"])
 ! The following attributes are already set.
 !streambucket.net##+js(saa, allowtransparency, true, iframe[class^="source-frame"])
 !streambucket.net##+js(saa, frameborder, 0, iframe[class^="source-frame"])
@@ -50956,10 +51041,10 @@ streambucket.net##+js(acs, /_0x32e7\['NICUCI'\]/)
 *##+js(aopw, _Hasync)
 *##+js(aopr, _Hasync)
 *##+js(acs, /_Hasync\./)
-!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(set-constant, _Hasync, [])
-!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(aopw, _Hasync)
-!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(aopr, _Hasync)
-!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(acs, /_Hasync\./)
+!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(set-constant, _Hasync, [])
+!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(aopw, _Hasync)
+!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(aopr, _Hasync)
+!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(acs, /_Hasync\./)
 *##+js(remove-node-text, script, /function\(m,e,t,r,i,k,a\)/gm)
 *##:xpath(//script[contains(text(), 'function(m,e,t,r,i,k,a)')]):remove()
 *##^script:has-text(/function\(m,e,t,r,i,k,a\)/):remove()
@@ -51037,8 +51122,8 @@ moviesapi.club##+js(no-setInterval-if, /devtoolsDetector/)
 ||moviesapi.club/sbx.html$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||w1.moviesapi.club/assets/js/devtools-detector_2.0.16.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||moviesapi.club/assets/js/devtools-detector*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||moviesapi.club/assets/js/devtools-detector*.js$script,doc,replace=/location\.reload\(true\);/null;/gm
-||moviesapi.club/assets/js/devtools-detector*.js$script,doc,replace=/devtoolsDetector\.launch\(\);/null;/gm
+||moviesapi.club/assets/js/devtools-detector*.js$replace=/location\.reload\(true\);/null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||moviesapi.club/assets/js/devtools-detector*.js$replace=/devtoolsDetector\.launch\(\);/null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !*$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com|code.jquery.com,domain=moviesapi.club
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=jwplayer-dualstack.map.fastly.net|ssl.p.jwpcdn.com|code.jquery.com,domain=moviesapi.club
 ! TODO: either remove the entire script with detectDevTool or simply don't "eval" it?
@@ -51438,7 +51523,7 @@ abc7ny.com##+js(saa, data-autoplay-mute-lock, false, video[id="vjs_video_3_html5
 abc7ny.com##+js(saa, controls, true, video[id="vjs_video_3_html5_api"])
 abc7ny.com##+js(saa, width, 100%, video[id="vjs_video_3_html5_api"])
 abc7ny.com##+js(saa, height, 100%, video[id="vjs_video_3_html5_api"])
-abc7ny.com##iframe[title="video.title"]:style(width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
+abc7ny.com##iframe[title="video.title"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; width: 100% !important; height: 100% !important; user-select: all !important; pointer-events: all !important;)
 abc7ny.com##+js(saa, width, 100%, iframe[title="video.title"])
 abc7ny.com##+js(saa, height, 100%, iframe[title="video.title"])
 abc7ny.com##+js(saa, webkitallowfullscreen, true, iframe[title="video.title"])
@@ -51447,7 +51532,7 @@ abc7ny.com##+js(saa, allowfullscreen, true, iframe[title="video.title"])
 abc7ny.com##+js(saa, allowtransparency, true, iframe[title="video.title"])
 abc7ny.com##+js(saa, frameborder, 0, iframe[title="video.title"])
 abc7ny.com##+js(saa, scrolling, no, iframe[title="video.title"])
-abc7ny.com##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[title="video.title"])
+abc7ny.com##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[title="video.title"])
 ||lkxahvf.com^*
 ||kissedthetrain.com^*
 ||receivedachest.com^*
@@ -51643,29 +51728,29 @@ kokostream.net##+js(trusted-replace-node-text, script, /cantOpenWindows = null,/
 !||kokostream.net/js/embed.232.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following change is necessary because adtype is manually set constant to "999" in a previous rule not to 4.
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/if\(pop==1\|\|adtype==4\)/if(pop==1||adtype>=4)/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/if\(adtype<4\)/if(null)/gm
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/if\(pop==1\|\|adtype==4\)/if(pop==1||adtype>=4)/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/if\(adtype<4\)/if(null)/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! prem standard for premium traffic.  Its default value is 1 unless adtype < 4 then it is 0.
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/prem=0;/prem=1;/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/numAttempts:2,/numAttempts:1,/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/playAdAlways:true,/playAdAlways:false,/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/adCancelTimeout:8000,/adCancelTimeout:1,/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/disablePreloadAds:false,/disablePreloadAds:true,/gm
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/prem=0;/prem=1;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/numAttempts:2,/numAttempts:1,/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/playAdAlways:true,/playAdAlways:false,/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/adCancelTimeout:8000,/adCancelTimeout:1,/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/disablePreloadAds:false,/disablePreloadAds:true,/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: The following rule is likely not useful since it is only for logging purposes?
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/ads_playing=true;/ads_playing=false;/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/doSecondPop\(\);/null;/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/self_top\(\);/null;/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/console\.clear\(\);/null;/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/self\.location\.replace\('https:\/\/google.com'\);/null;/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/while\(true\)\{eval\("debugger"\);\}/null;/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/document\.body\.innerHTML="";/null;/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/adbl=1;/adbl=0;/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/document\.oncontextmenu=function\(\)\{return false;\};/null;/gm
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/document\.onselectstart=function\(\)\{return false;\};/null;/gm
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/ads_playing=true;/ads_playing=false;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/doSecondPop\(\);/null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/self_top\(\);/null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/console\.clear\(\);/null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/self\.location\.replace\('https:\/\/google.com'\);/null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/while\(true\)\{eval\("debugger"\);\}/null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/document\.body\.innerHTML="";/null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/adbl=1;/adbl=0;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/document\.oncontextmenu=function\(\)\{return false;\};/null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/document\.onselectstart=function\(\)\{return false;\};/null;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: What is isec the countdown for?
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/isec=5;/isec=0;/gm
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/isec=5;/isec=0;/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! someFunction(fadb, fadbn, fadbk) is an anti-adblocking function defined in https://kokostream.net/js/embed.232.js and called in an inline script.
-/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/function someFunction\(fadb\,fadbn\,fadbk\)/function noFunction()/gm
+/^https?:\/\/(www\.)?kokostream\.(?:net)\/js\/embed\.\d+\.js\S*/$replace=/function someFunction\(fadb\,fadbn\,fadbk\)/function noFunction()/gm,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||kokostream.net/ad/top/popunder.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kokostream.net/ad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kokostream.net/js/adv/fuckadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -51708,7 +51793,7 @@ vidcloud1.com##+js(saa, allowfullscreen, true, iframe[src*="//vidcloud1.com/stre
 vidcloud1.com##+js(saa, allowtransparency, true, iframe[src*="//vidcloud1.com/streaming.php"])
 vidcloud1.com##+js(saa, frameborder, 0, iframe[src*="//vidcloud1.com/streaming.php"])
 vidcloud1.com##+js(saa, scrolling, no, iframe[src*="//vidcloud1.com/streaming.php"])
-vidcloud1.com##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[src*="//vidcloud1.com/streaming.php"])
+vidcloud1.com##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src*="//vidcloud1.com/streaming.php"])
 vidcloud1.com##iframe[src*="//multiembed.mov/"]:style(padding:0 !important; margin:0 !important; border: none !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; overflow:hidden !important; user-select: all !important; pointer-events: all !important;)
 vidcloud1.com##+js(saa, width, 100%, iframe[src*="//multiembed.mov/"])
 vidcloud1.com##+js(saa, height, 100%, iframe[src*="//multiembed.mov/"])
@@ -51718,7 +51803,7 @@ vidcloud1.com##+js(saa, allowfullscreen, true, iframe[src*="//multiembed.mov/"])
 vidcloud1.com##+js(saa, allowtransparency, true, iframe[src*="//multiembed.mov/"])
 vidcloud1.com##+js(saa, frameborder, 0, iframe[src*="//multiembed.mov/"])
 vidcloud1.com##+js(saa, scrolling, no, iframe[src*="//multiembed.mov/"])
-vidcloud1.com##+js(saa, allow, autoplay; fullscreen; encrypted-media;, iframe[src*="//multiembed.mov/"])
+vidcloud1.com##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src*="//multiembed.mov/"])
 ||netu.ac/js/jquery-eu-cookie-law-popup.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||netu.ac/styles/global/jquery-eu-cookie-law-popup.css$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 netu.ac##iframe[src^="https://wp.aliexpress.com/"]:remove()
@@ -51772,6 +51857,16 @@ netu.ac##+js(acs, /go_roulete\(numb, message\)/)
 ||terabigyellowmotha.info^*
 ||0ijvby90.skin^*
 ||zoroxtv.to/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||commtu.com^*
+||5vpbnbkiey24.com^*
+||boxofficehelping.com^*
+||rsldfvt.com^*
+||temperrunnersdale.com^*
+||pioneercomparatively.com^*
+||quartaherbist.com^*
+||www.ovcenehu.com^*
+||www.xambxhihx.com^*
+||playgroundordinarilymess.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
@@ -51806,8 +51901,8 @@ www.pcguide.com#@#div[id^="cls-video-container"][class^="adthrive"]
 !@@||cdn.fastcomments.com^$3p,script,xhr,domain=igg-games.cc|igg-games.com|pcgamestorrents.com
 @@||fastcomments.com^$3p,script,xhr,domain=igg-games.com|igg-games.cc
 ! TODO: add video streaming websites to the following two rules as need be
-@@|*.rsc.cdn77.org/*/hlsjs.$script,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
-@@|*.rsc.cdn77.org/*/fluidplayer.$script,domain=sportstream1.cfd|poscitechs.shop|d.daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
+@@|*.rsc.cdn77.org/*/hlsjs.$script,domain=sportstream1.cfd|poscitechs.shop|daddylive.watch|daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
+@@|*.rsc.cdn77.org/*/fluidplayer.$script,domain=sportstream1.cfd|poscitechs.shop|daddylive.watch|daddylivehd.sx|dlhd.sx|olalivehdplay.ru|weblivehdplay.ru
 ! to prevent civic science surveys from being blocked (overrides ||civicscience.com^$3p rule in "uBlock filters - Privacy")
 ! The first four rules are not enough to override the rule in the official ublock privacy file list.
 !@@||www.civicscience.com/widget/api/$3p,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css,domain=pluto.tv
