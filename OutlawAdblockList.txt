@@ -50612,12 +50612,15 @@ www.viprow.nu,tennisonline.me,nflbox.me##+js(set-constant, emprefs, noopFunc)
 tennisonline.me,strikeout.im,strikeout.cc##button[data-openuri="|BTN_URL|"]:remove()
 tennisonline.me,strikeout.im,strikeout.cc##div[id^="container-"]:remove()
 ! The id's blocked by the following rule are dynamic/random.
-tennisonline.me,strikeout.im,strikeout.cc##img[width="1"][height="1"][class="d-none"]:remove()
+! TODO: The following two rules doen't work for some reason.  They only doesn't work on the initial loading of the page.
+!tennisonline.me,strikeout.im,strikeout.cc##img[width="1"][height="1"][class="d-none"]:remove()
+tennisonline.me,strikeout.im,strikeout.cc##img[width="1"][height="1"]:matches-attr(id=/[0-9a-z]{10}/):remove()
 ! TODO: These rules don't work to block the overlay.  For the first rule due to using class matching twice?  For the third rule can't use matches-attr inside has()?
 !tennisonline.me,strikeout.im,strikeout.cc##div[class^="h-100 position-absolute w-100 bg-light bg-opacity-"][class$="text-white top-0"]:matches-attr(id=/[0-9a-z]{10}/):remove()
 !tennisonline.me,strikeout.im,strikeout.cc##div[class="h-100 position-absolute w-100 bg-light bg-opacity-50 d-none text-white top-0"]:matches-attr(id=/[0-9a-z]{10}/):remove()
 !tennisonline.me,strikeout.im,strikeout.cc##div[class="h-100 position-absolute w-100 bg-light bg-opacity-25 d-none text-white top-0"]:matches-attr(id=/[0-9a-z]{10}/):remove()
-!tennisonline.me,strikeout.im,strikeout.cc##div:matches-attr(id=/[0-9a-z]{10}/):has-text(this banner will hide in):has(span:matches-attr(id=/[0-9a-z]{10}/)):remove()
+!tennisonline.me,strikeout.im,strikeout.cc##div:matches-attr(id=/[0-9a-z]{10}/):has-text(this banner will hide in):has(span:matches-attr(id=/[0-9a-z]{10}/)):upward(2):remove()
+!tennisonline.me,strikeout.im,strikeout.cc##div:matches-attr(id=/[0-9a-z]{10}/):has-text(Overlay close in):has(span:matches-attr(id=/[0-9a-z]{10}/)):upward(2):remove()
 ! The following rules work to block this overlay.  Having a span tag before the end of the text doesn't keep it from matching.
 tennisonline.me,strikeout.im,strikeout.cc##div:matches-attr(id=/[0-9a-z]{10}/):has-text(/this banner will hide in\s+seconds/):upward(2):remove()
 tennisonline.me,strikeout.im,strikeout.cc##div:matches-attr(id=/[0-9a-z]{10}/):has-text(/Overlay close in\s+seconds/):upward(2):remove()
