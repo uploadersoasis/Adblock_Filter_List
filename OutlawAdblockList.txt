@@ -50638,11 +50638,32 @@ www.viprow.nu,tennisonline.me,nflbox.me##+js(set-constant, emprefs, noopFunc)
 ||www.viprow.nu/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||nflbox.me/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tennisonline.me/partytown/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+tennisonline.me##+js(set-constant, partytown, {})
 tennisonline.me##button[data-openuri="|BTN_URL|"]:remove()
+! The id's blocked by the following rule are dynamic/random.
 tennisonline.me##img[width="1"][height="1"][class="d-none"]:remove()
-! The following two rules are actually redundant.
-tennisonline.me##div[class^="h-100 position-absolute w-100 bg-light bg-opacity-50"][class$="text-white top-0"]:matches-attr(id=/[0-9a-z]{10}/):remove()
-tennisonline.me##div:matches-attr(id=/[0-9a-z]{10}/):has-text(this banner will hide in):has(span:matches-attr(id=/[0-9a-z]{10}/)):remove()
+tennisonline.me##div[id^="container-"]:remove()
+! TODO: These rules don't work to block the overlay.  For the first rule due to using class matching twice?  For the third rule can't use matches-attr inside has()?
+!tennisonline.me##div[class^="h-100 position-absolute w-100 bg-light bg-opacity-50"][class$="text-white top-0"]:matches-attr(id=/[0-9a-z]{10}/):remove()
+!tennisonline.me##div[class="h-100 position-absolute w-100 bg-light bg-opacity-50 d-none text-white top-0"]:matches-attr(id=/[0-9a-z]{10}/):remove()
+!tennisonline.me##div:matches-attr(id=/[0-9a-z]{10}/):has-text(this banner will hide in):has(span:matches-attr(id=/[0-9a-z]{10}/)):remove()
+! The following rule works to block this overlay.  Having a span tag before the end of the text doesn't keep it from matching.
+tennisonline.me##div:matches-attr(id=/[0-9a-z]{10}/):has-text(this banner will hide in seconds):upward(1):remove()
+tennisonline.me##iframe[src^="https://embedstream"]:style(left: 0px !important; right: 0px !important; padding:0 !important; margin:0 !important; border: none !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; overflow:auto !important; user-select: all !important; pointer-events: all !important;)
+! TODO: The following rules don't work because the iframe is lazy loaded and is not being used in Firefox since its contents open in a new tab as a popup instead.
+tennisonline.me##+js(saa, webkitallowfullscreen, true, iframe[src^="https://embedstream"])
+tennisonline.me##+js(saa, mozallowfullscreen, true, iframe[src^="https://embedstream"])
+tennisonline.me##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://embedstream"])
+tennisonline.me##+js(saa, scrolling, yes, iframe[src^="https://embedstream"])
+! The following attributes are already set by the page.
+tennisonline.me##+js(saa, width, 100%, iframe[src^="https://embedstream"])
+tennisonline.me##+js(saa, height, 100%, iframe[src^="https://embedstream"])
+tennisonline.me##+js(saa, frameborder, 0, iframe[src^="https://embedstream"])
+tennisonline.me##+js(saa, allowfullscreen, true, iframe[src^="https://embedstream"])
+tennisonline.me##+js(saa, allowtransparency, true, iframe[src^="https://embedstream"])
+tennisonline.me##+js(saa, marginwidth, 0, iframe[src^="https://embedstream"])
+tennisonline.me##+js(saa, marginheight, 0, iframe[src^="https://embedstream"])
+tennisonline.me##+js(saa, referrerpolicy, unsafe-url, iframe[src^="https://embedstream"])
 novafile.org##button[class="btn-green load_plan_2"]:remove-attr(onclick)
 novafile.org##+js(remove-attr, onclick, button[class="btn-green load_plan_2"])
 ! setting num 0 will skip the countdown, but the countdown is server-side checked, so skipping the countdown is pointless.
