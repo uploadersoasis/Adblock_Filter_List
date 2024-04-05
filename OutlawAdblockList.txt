@@ -30078,7 +30078,6 @@ stevessmarthomeguide.com##span[id="more-14246"]:remove()
 www.tp-link.com##div[id="tp-cookie"]:remove()
 www.sbasite.com##div[id="cookieAcceptBar"]:remove()
 ||st2.dialogtech.com/st/log?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-venturebeat.com##div[class*="adslot"]:remove()
 ||ccpa-wrapper.privacymanager.io^*
 ||gdpr-wrapper.privacymanager.io^*
 www.forbes.com##fbs-ad:remove()
@@ -30096,7 +30095,6 @@ www.sciencealert.com##.right-column-ads:remove()
 www.sciencealert.com##div[id="Purch_Y_L_1_1"]:remove()
 www.sciencealert.com##div[id^="Purch_Y_C_0_1"]:remove()
 www.sciencealert.com##div[style="margin:20px 0;height:250px;text-align:center;"]:has(div[id^="Purch_Y_C_0_1"]):remove()
-venturebeat.com##div[id^="browsi_adWrapper"]
 www.fs.com##div[id="agree_cookie_div"]:remove()
 www.weboost.com##div[class="CookieConsent"]:remove()
 www.eib.org##div[id="eib-popup-policy"]:remove()
@@ -36296,7 +36294,6 @@ deadline.com##div[data-is-adhesion-ad]:remove()
 deadline.com##div[class*="rail-ads-"]:remove()
 deadline.com##div[class*="ad-text"]:remove()
 learn.pluralsight.com##div[class="cookie-notification-wrapper"]:remove()
-venturebeat.com##div[class="tude-cw-wrap"]:has(span[class="tude-cw-label"]:has-text(advertisement)):remove()
 !outlook.live.com##i[data-icon-name="Delete"]:has(div[class="_2Frh JMe1C"]):remove()
 outlook.live.com##div[class="_2Frh JMe1C"]:remove()
 outlook.live.com##div[class="Tovoi"]:upward(6):remove()
@@ -36819,8 +36816,6 @@ us.cnn.com,www.cnn.com##div[class="video-inline__video-resource"]:style(padding:
 ||atom.warnermedia.com/api/v1/events*=ad-event-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||atom.warnermedia.com/api/v1/events*=impression$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.fosslinux.com##div[id="div-pw-1648737234"]:remove()
-venturebeat.com##div[id^="tude-cw-aa-"]:remove()
-venturebeat.com##div[class="tude-cw-wrap"]:remove()
 www.bbc.com##div[class^="dotcom-ad"]:remove()
 www.bbc.com##div[id="sticky-mpu"]:remove()
 !||emupedia.net/emupedia-app-vscode/static/vs/platform/telemetry/common/telemetryService.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -48074,8 +48069,12 @@ thepostmillennial.com##+js(set-constant, checkIfUspIsReady, noopFunc)
 thepostmillennial.com##+js(set-constant, uspInterval, noopFunc)
 thepostmillennial.com##+js(no-setInterval-if, checkIfUspIsReady)
 ||cadmus.script.ac/*/script.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||dn0qt3r0xannq.cloudfront.net/tpm-sTDaTcae8k/default/prebid-wrapper.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||dn0qt3r0xannq.cloudfront.net/tpm-sTDaTcae8k/default/prebid-load.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||dn0qt3r0xannq.cloudfront.net/tpm-sTDaTcae8k/default/prebid-wrapper.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||dn0qt3r0xannq.cloudfront.net/tpm-*/default/prebid-wrapper.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||dn0qt3r0xannq.cloudfront.net/tpm-*/default/prebid-load.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||dn0qt3r0xannq.cloudfront.net/venturebeat-ZUVdMvorYO/venturebeat-longform/prebid-load.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||dn0qt3r0xannq.cloudfront.net/venturebeat-*/venturebeat-longform/prebid-load.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||dn0qt3r0xannq.cloudfront.net/venturebeat-*/venturebeat-longform/prebid-wrapper.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dn0qt3r0xannq.cloudfront.net/plugins/ad-server.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 docviewer.xdocs.net##div[id="XDOCSNET_cookie_box"]:remove()
 docviewer.xdocs.net##+js(set-constant, XDOCSNET_cookie_box_viewed, true)
@@ -52099,7 +52098,36 @@ vidhidevip.com##+js(saa, data-autoplay-mute-lock, false, video[class="jw-video j
 vidhidevip.com##+js(saa, controls, true, video[class="jw-video jw-reset"])
 vidhidevip.com##+js(saa, width, 100%, video[class="jw-video jw-reset"])
 vidhidevip.com##+js(saa, height, 100%, video[class="jw-video jw-reset"])
-||ak.aungudie.com^*
+!||ak.aungudie.com^*
+||aungudie.com^*
+venturebeat.com##div[class*="adslot"]:remove()
+venturebeat.com##div[class="tude-cw-wrap"]:has(span[class="tude-cw-label"]:has-text(advertisement)):remove()
+!venturebeat.com##div[class="tude-cw-wrap"]:remove()
+venturebeat.com##div[id^="browsi_adWrapper"]:remove()
+venturebeat.com##div[id^="tude-cw-aa-"]:remove()
+venturebeat.com##div[class="ac-lre-ima-ad-wrapper"]:remove()
+venturebeat.com##div[class="ac-lre-ad-bar"]:remove()
+venturebeat.com##div[class="anti-click-area"]:remove()
+! TODO: could just remove div[class^="sticky-briefings-cta"] altogether; It's the email signup footer that doesn't close despite pressing its close button.
+venturebeat.com##div[class="sticky-briefings-cta show"]:remove-class(show)
+venturebeat.com##+js(remove-class, show, div[class="sticky-briefings-cta show"])
+venturebeat.com##iframe[id^="sync_neustar_"]:remove()
+venturebeat.com##iframe[id^="sync_openx_"]:remove()
+venturebeat.com##iframe[id="rufous-sandbox"]:remove()
+venturebeat.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+venturebeat.com##script[id="clktrk"]:remove()
+venturebeat.com##script[id^="jetpack-stats-js"]:remove()
+venturebeat.com##+js(set-constant, vbGtm, {})
+venturebeat.com##+js(aopr, vbGtm)
+venturebeat.com##+js(aopw, vbGtm)
+venturebeat.com##+js(set-constant, trkclk, noopFunc)
+venturebeat.com##+js(set-constant, trkrdt, noopFunc)
+venturebeat.com##+js(acs, /trkclk\(/)
+venturebeat.com##+js(acs, /trkrdt\(/)
+venturebeat.com##+js(set-constant, _stq, [])
+venturebeat.com##+js(aopr, _stq)
+venturebeat.com##+js(aopw, _stq)
+venturebeat.com##+js(acs, /_stq\.push(/)
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
