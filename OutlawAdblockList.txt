@@ -36621,7 +36621,6 @@ tv247.us,tv247us.com##+js(acs, advanced_ads_ready)
 !tv247.us,tv247us.com##+js(set-constant, timead, 0, stay)
 !tv247.us,tv247us.com##+js(aopw, timead)
 !tv247.us,tv247us.com##+js(aopr, timead)
-||nginx-cf.maxcdn.info/country_blocker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||c.popsads.net^*
 ||adblock-pro-download.com^*
 ||fumuluckt.com^*
@@ -36954,12 +36953,27 @@ www.ustream.to,ustreamix.to,ustreamix.com##+js(noeval-if, /script_adfly/)
 www.ustream.to,ustreamix.to,ustreamix.com##+js(noeval-if, /adb_user_v3/)
 www.ustream.to,ustreamix.to,ustreamix.com##+js(noeval-if, /cookie_adb_ver/)
 www.ustream.to,ustreamix.to,ustreamix.com##+js(noeval-if, /adblockz_alert/)
+www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, ads_blocked, falseFunc)
 www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, skip_anti_adblock_1337, 1)
 www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, user_is_clean, 1)
 www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, user_is_clean2, 1)
-www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, adblock_user, 0)
 www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, country_blocked, 0)
-www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, ads_blocked, falseFunc)
+! TODO: if(country=="ID"){} <- should set country to "ID" to bypass geolocation block?
+!       country is "" when the external country_blocker.js script is not run, and this rule is not used.
+!       The following rule is not working.  country appears to be reset to undefined by another script after being set by this scriptlet.
+www.ustream.to,ustreamix.to,ustreamix.com##+js(trusted-set-constant, country, "ID")
+! sp_user, adblock_user, country_loaded, access_pok are all set by an inline script via eval().
+! if(sp_user==48608){}var access_pok=0;var country_loaded=0;var adblock_user=0;
+www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, adblock_user, 0)
+! TODO: Should access_pok be 1 or some other value to bypass any restrictions?
+www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, access_pok, 0)
+! TODO: Should country_loaded be 1 or some other value to bypass the geolocation checks?
+www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, country_loaded, 0)
+! TODO: Default value for sp_user is 0 as it is set inline on the channel pages, i.e. "sp_user = 0;"
+!       ?sp=<int> is the query string for https://www.ustream.to/var/sp_user.js?sp=<int> The "sp_user" value in the query string changes with subsequent reloads.
+!       How to set sp_user var to the value in the query string?
+! The sp_user value is also specified in this script, e.g. "sp_user|32550|", but this is a dynamically generated value.
+! if sp_user != that value, ads_blocked() is called.
 ! The following rule doesn't work because console.clear is called on an interval. 
 www.ustream.to,ustreamix.to,ustreamix.com##+js(acs, /console\.clear\(\)/)
 ! This defuses console.clear().
@@ -37034,16 +37048,18 @@ www.ustream.to,ustreamix.to,ustreamix.com##+js(saa, height, 100%, video[data-htm
 ! TODO: need to set div[data-player] too because it manually sets the height to a fixed value (298px)?
 www.ustream.to,ustreamix.to,ustreamix.com##div[id="vplayer"]:style(padding:0 !important; margin:0 !important; border: none !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; overflow:hide !important; user-select: all !important; pointer-events: all !important;)
 www.ustream.to,ustreamix.to,ustreamix.com##div[data-player]:style(padding:0 !important; margin:0 !important; border: none !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; overflow:hide !important; user-select: all !important; pointer-events: all !important;)
-! TODO: force isMobile value?
-!www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, isMobile, falseFunc)
-!www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, isMobile, noopFunc)
-!www.ustream.to,ustreamix.to,ustreamix.com##+js(acs, isMobile)
-! TODO: This rule prevents the page from being displayed.
+! TODO: force isMobile value? It appears that anti-adblocking is not imposed if isMobile is true.
+!       isMobile() is a function NOT a value.
+! function isMobile(){var userAgent=navigator.userAgent||navigator.vendor||window.opera;if(/android|ipad|iphone|ipod|windows phone/.test(userAgent.toLowerCase())&&!window.MSStream){return 1;}else{return 0;}}
+www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, isMobile, trueFunc)
+! TODO: This following rule prevents the page from being displayed.
 ! The following rule will only prevent the redirection message.
 !www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, isExternal, falseFunc)
 ! Do not block the fullowing script or videos will not play.
 !||www.ustream.to/src/func.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-nginx-cf.maxcdn.info^$script,domain=www.ustream.to|ustreamix.to
+! nginx-cf.maxcdn.info is currently parked @ sedo.com so scripts won't run from it anyway
+!nginx-cf.maxcdn.info^$script,domain=www.ustream.to|ustreamix.to|tv247.us|tv247us.com
+||nginx-cf.maxcdn.info/country_blocker.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||analytics.tiendaenoferta.com^*
 !stream2watch.games##+js(remove-attr, onclick, .player4)
 !stream2watch.games##+js(remove-attr, onclick, .btn_comant_box2)
