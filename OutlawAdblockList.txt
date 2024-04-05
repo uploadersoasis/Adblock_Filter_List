@@ -52089,6 +52089,7 @@ vidhidevip.com##+js(set-constant, adb, 0)
 vidhidevip.com##+js(aopr, _ASO.PushOptions)
 vidhidevip.com##+js(aopw, _ASO.PushOptions)
 vidhidevip.com##+js(remove-node-text, script, /var amungId=/gm)
+! TODO: Why don't the following rules work?
 vidhidevip.com##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
 vidhidevip.com##+js(remove-attr, disableremoteplayback, video[class="jw-video jw-reset"])
 vidhidevip.com##video[class="jw-video jw-reset"]:remove-attr(disablepictureinpicture)
@@ -52098,6 +52099,7 @@ vidhidevip.com##+js(saa, data-autoplay-mute-lock, false, video[class="jw-video j
 vidhidevip.com##+js(saa, controls, true, video[class="jw-video jw-reset"])
 vidhidevip.com##+js(saa, width, 100%, video[class="jw-video jw-reset"])
 vidhidevip.com##+js(saa, height, 100%, video[class="jw-video jw-reset"])
+||ak.aungudie.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
