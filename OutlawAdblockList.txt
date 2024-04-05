@@ -52069,6 +52069,35 @@ freestreams-live1.im,fsl-streams.click##+js(saa, marginheight, 0, iframe[src^="h
 ||www.profitablegatecpm.com^*
 !||pl20336974.profitablegatecpm.com^*
 ||pl*.profitablegatecpm.com^*
+||thqgxvs.com^*
+||www.supgedcowxkmzr.com^*
+! ydfjing.net hosts legitimate images
+!||ydfjing.net^*
+||cupoabie.net^*
+||glaikrolsoa.com^*
+!*$3p,script,domain=vidhidevip.com
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,domain=vidhidevip.com
+||vidhidevip.com/player/jw8/vast.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+vidhidevip.com##div[id="adbd"]:remove()
+vidhidevip.com##div[class="afs_ads ad-placement"]:remove()
+! The following rule blocks a popup ad click event.
+vidhidevip.com##div[style="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:0px;width:0px;cursor:pointer"]:remove()
+vidhidevip.com##+js(trusted-replace-node-text, script, /player\.playAd\(item\.link\);/gm, null;)
+vidhidevip.com##+js(trusted-replace-node-text, script, /"advertising": \{"client": "vast",/gm, "advertising": {"client": "",)
+vidhidevip.com##+js(trusted-replace-node-text, script, /if\( window\.cRAds1 === undefined \)\{/gm, if (null){)
+vidhidevip.com##+js(set-constant, adb, 0)
+vidhidevip.com##+js(aopr, _ASO.PushOptions)
+vidhidevip.com##+js(aopw, _ASO.PushOptions)
+vidhidevip.com##+js(remove-node-text, script, /var amungId=/gm)
+vidhidevip.com##video[class="jw-video jw-reset"]:remove-attr(disableremoteplayback)
+vidhidevip.com##+js(remove-attr, disableremoteplayback, video[class="jw-video jw-reset"])
+vidhidevip.com##video[class="jw-video jw-reset"]:remove-attr(disablepictureinpicture)
+vidhidevip.com##+js(remove-attr, disablepictureinpicture, video[class="jw-video jw-reset"])
+vidhidevip.com##+js(saa, x-webkit-airplay, allow, video[class="jw-video jw-reset"])
+vidhidevip.com##+js(saa, data-autoplay-mute-lock, false, video[class="jw-video jw-reset"])
+vidhidevip.com##+js(saa, controls, true, video[class="jw-video jw-reset"])
+vidhidevip.com##+js(saa, width, 100%, video[class="jw-video jw-reset"])
+vidhidevip.com##+js(saa, height, 100%, video[class="jw-video jw-reset"])
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
