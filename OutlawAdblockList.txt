@@ -36958,8 +36958,11 @@ www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, skip_anti_adblock_1
 www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, user_is_clean, 1)
 www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, user_is_clean2, 1)
 www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, country_blocked, 0)
+www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, he_is_bot, 0)
+www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, stream_adblock, "")
 ! TODO: if(country=="ID"){} <- should set country to "ID" to bypass geolocation block?
 !       country is "" when the external country_blocker.js script is not run, and this rule is not used.
+! window.readyHandlers=[];window.ready=function ready(handler){window.readyHandlers.push(handler);handleState()};window.handleState=function handleState(){if(['interactive','complete'].indexOf(document.readyState)>-1){while(window.readyHandlers.length>0){(window.readyHandlers.shift())()}}};document.onreadystatechange=window.handleState;if(cdn_loaded==0){}console.log('country: '+country);if(he_is_bot==1){adblock_user=1}var mesaje='<center><h3>Cannot see Streams, only blank / white page? ==> please try <strong> Disable Proxy or VPN </strong> if you re using it.</h3></center>';if(typeof(jdtk)=='undefined'||jdtk==null){var jdtk='';setInterval(function(){console.log('Token 0');location.reload()},30000)}var tsn=jdtk;var hidden="0";var cached="";var nume="fox usa hd";stream='https://'+host_tmg+'/'+file_name+'?token='+tsn;stream_p2p="https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/v6/prog_index.m3u8";stream_p2p="https://p2p.cdn-domain.com/hls/live/2000341/test/level_2.m3u8";var stream_adblock='https://'+host_tmg+'/'+file_name+'?token=adblocker';if(typeof(country)=='undefined'||country==null){var country=''}console.log('country: '+country);
 !       The following rule is not working.  country appears to be reset to undefined by another script after being set by this scriptlet.
 www.ustream.to,ustreamix.to,ustreamix.com##+js(trusted-set-constant, country, "ID")
 ! sp_user, adblock_user, country_loaded, access_pok are all set by an inline script via eval().
@@ -36968,7 +36971,11 @@ www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, adblock_user, 0)
 ! TODO: Should access_pok be 1 or some other value to bypass any restrictions?
 www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, access_pok, 0)
 ! TODO: Should country_loaded be 1 or some other value to bypass the geolocation checks?
-www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, country_loaded, 0)
+!       if country_loaded is 1, access_pok is set to 0 a website script.
+www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, country_loaded, 1)
+! Use the following rule because getCookie() doesn't isn't defined for some reason, e.g. some other rule is preventing it?
+! TODO: if getCookie() returns 0/false, then setCookie() is called so force getCookie() to return true?
+www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, getCookie, trueFunc)
 ! TODO: Default value for sp_user is 0 as it is set inline on the channel pages, i.e. "sp_user = 0;"
 !       ?sp=<int> is the query string for https://www.ustream.to/var/sp_user.js?sp=<int> The "sp_user" value in the query string changes with subsequent reloads.
 !       How to set sp_user var to the value in the query string?
@@ -37052,10 +37059,12 @@ www.ustream.to,ustreamix.to,ustreamix.com##div[data-player]:style(padding:0 !imp
 !       isMobile() is a function NOT a value.
 ! function isMobile(){var userAgent=navigator.userAgent||navigator.vendor||window.opera;if(/android|ipad|iphone|ipod|windows phone/.test(userAgent.toLowerCase())&&!window.MSStream){return 1;}else{return 0;}}
 www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, isMobile, trueFunc)
+! TODO: Always force isHidden() to false? It is used to check if the video iframe is hidden for anti-adblocking.
+www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, isHidden, falseFunc)
 ! TODO: This following rule prevents the page from being displayed.
 ! The following rule will only prevent the redirection message.
 !www.ustream.to,ustreamix.to,ustreamix.com##+js(set-constant, isExternal, falseFunc)
-! Do not block the fullowing script or videos will not play.
+! Do not block the following script or videos will not play.
 !||www.ustream.to/src/func.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! nginx-cf.maxcdn.info is currently parked @ sedo.com so scripts won't run from it anyway
 !nginx-cf.maxcdn.info^$script,domain=www.ustream.to|ustreamix.to|tv247.us|tv247us.com
@@ -52234,6 +52243,7 @@ venturebeat.com##+js(acs, /_stq\.push(/)
 ||www.zyeihixe.com^*
 ||zyeihixe.com^*
 ||soeasytranslation.com^*
+||rgvqcsxqge.com^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
