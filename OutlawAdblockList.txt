@@ -52371,6 +52371,19 @@ www.arkansasonline.com##+js(aopr, dfpAdunit)
 www.arkansasonline.com##+js(aopw, dfpAdunit)
 !||wehco.media.clients.ellingtoncms.com/static-4/prebid/arkansasonline/prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||wehco.media.clients.ellingtoncms.com/static-4/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+edition.arkansasonline.com##div[class*="subscriber-content"]:remove-class(subscriber-content)
+edition.arkansasonline.com##+js(remove-class, subscriber-content, div[class*="subscriber-content"])
+! TODO: need a create a class scriptlet which adds to the class and/or replaces it.
+! add page-unlocked div[class*="page page-"][class*="zoom-o"] elements 
+! TODO: Neither of the following rules work to add or change a class.
+!edition.arkansasonline.com##+js(trusted-replace-node-text, DIV, / zoom-o"/gm, page-unlocked zoom-o")
+!edition.arkansasonline.com##+js(trusted-replace-node-text, DIV.className, /zoom-o/gm, page-unlocked zoom-o)
+! The following rule removes the key icon over thumbnails.
+edition.arkansasonline.com##div[class="pt-in"]:remove()
+! TODO: The following rule doesn't remove the specific contextmenu event that it targets.
+!edition.arkansasonline.com##+js(aeld, contextmenu, /function\(e\)/)
+! TODO: The following rule doesn't remove both of the contextmenu events; it removes the one which could be kept.
+edition.arkansasonline.com##+js(aeld, contextmenu)
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
