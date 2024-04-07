@@ -16380,6 +16380,7 @@ simplecoupondeals.com###sgcboxWrapper:remove()
 ||simplecoupondeals.com/wp-content/plugins/popup-builder-platinum/img/colorbox6/colorbox_overlay.png$image
 !||app.link^*
 !||www.app.link^*
+!||app.link/_r^*
 !fps-creator-glo.ucoz.ru###mainadsdva53g5T:remove()
 fps-creator-glo.ucoz.ru##div[class^="mainadsdva"]:remove()
 ||skl-874.com^*
@@ -20174,7 +20175,6 @@ www.ovagames.com##+js(abort-current-script, adtival_api_token)
 !||page-events-ustats.udemy.com/api-2.0/visits/me/page-events/viewed/instructor_activity/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||s.go-mpulse.net/boomerang/DZLR5-UHNSG-U6UB2-VE6H7-W42ZF$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s.go-mpulse.net^*
-||app.link/_r^*
 !||www.udemy.com/api-2.0/visits/me/datadog-increment-logs$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.udemy.com/api-2.0/visits/me/funnel-logs/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.udemy.com/api-2.0/visits/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -45219,13 +45219,15 @@ www.hbo.com##script[id="user-consent-script"]:remove()
 ||ingress.pressreader.com/services/track/pageview$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ingress.pressreader.com/services/v1/analyticprofiles/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! removing 1x1.gif removes the thumbnails
-!www.pressreader.com##img[src$="/images/1x1.gif"]:remove()
-!ao.pressreader.com##img[src$="/images/1x1.gif"]:remove()
-www.pressreader.com##+js(set-constant, isLoggedIn, trueFunc)
-ao.pressreader.com##+js(set-constant, isLoggedIn, trueFunc)
+!www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##img[src$="/images/1x1.gif"]:remove()
+!www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##img[src$="/images/1x1.gif"]:remove()
+www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##+js(set-constant, isLoggedIn, trueFunc)
 www.pressreader.com##script[id="Cookiebot"]:remove()
-www.pressreader.com##div:remove-class(subscriber-content)
-ao.pressreader.com##div:remove-class(subscriber-content)
+www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##div:remove-class(subscriber-content)
+! The following rule removes the key icon over thumbnails.
+www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##div[class="pt-in"]:remove()
+!www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##:matches-path(/\/hotspot\/map/) div[class="popup-container-panel"]:has(div[class="dialog-tint"]):remove()
+www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##:matches-path(/\/hotspot\/map/) div[class="popup-container-panel"]:has(div[class="dialog-container-panel"] div[class="dialog-tint"]):remove()
 !||cdn.blueconic.net/wehco.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.blueconic.net^*
 ||eminentbubble.com^*
@@ -52356,7 +52358,6 @@ blog.hubspot.com##+js(acs, /_hsq\.push(/)
 ||kkqcnrk.com^*
 ||mhbyzzp.com^*
 ||sakuftaurgo.com^*
-||zeekaihu.net^*
 ! TODO: Use a list of domains with the following rule since this numbered script appears mainly (only?) on video stream websites?
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/[zZ]\-\d{7}/$1p,script
 ||player.procdncache.com/v1/error/ping.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
