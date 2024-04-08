@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2024-03-03T22:45:15.087Z",
+    "createdAt": "2024-04-03T03:53:56.386Z",
     "redirects": [
         {
             "description": "Example redirect, try going to http://example.com/anywordhere",
@@ -77,14 +77,14 @@
             ]
         },
         {
-            "description": "Redirect IMBD TV Episode to 2embed.to Videos of that Episode",
+            "description": "Redirect IMBD TV Episode to 2embed.skin Videos of that Episode",
             "exampleUrl": "https://www.imdb.com/title/tt0112173/episodes?season=1",
-            "exampleResult": "https://www.2embed.to/embed/imdb/tv?id=tt0112173&s=1&e=1",
+            "exampleResult": "https://www.2embed.skin/embed/imdb/tv?id=tt0112173&s=1&e=1",
             "error": null,
             "includePattern": "https?:\\/\\/([wW]{3}\\.)?imdb\\.com\\/title\\/(tt[0-9]{7,})\\/episodes\\?season=([1-9][0-9]*)",
             "excludePattern": "only removes the URL for the subtitles file from the query string in the URL",
             "patternDesc": "Need way to get episode number from IMDB URL",
-            "redirectUrl": "https://www.2embed.to/embed/imdb/tv?id=$2&s=$3&e=1",
+            "redirectUrl": "https://www.2embed.skin/embed/imdb/tv?id=$2&s=$3&e=1",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": true,
@@ -97,14 +97,14 @@
             ]
         },
         {
-            "description": "Redirect IMBD TV Episode to 2embed.to Videos of that Episode",
+            "description": "Redirect IMBD TV Episode to 2embed.skin Videos of that Episode",
             "exampleUrl": "https://www.imdb.com/title/tt0706375/?ref_=ttep_ep3",
-            "exampleResult": "https://www.2embed.to/embed/imdb/tv?id=tt0706375&e=3&s=1",
+            "exampleResult": "https://www.2embed.skin/embed/imdb/tv?id=tt0706375&e=3&s=1",
             "error": null,
             "includePattern": "https?:\\/\\/([wW]{3}\\.)?imdb\\.com\\/title\\/(tt[0-9]{7,})\\/\\?ref_=ttep_ep([1-9][0-9]*)",
             "excludePattern": "only removes the URL for the subtitles file from the query string in the URL",
             "patternDesc": "Need way to get season from IMDB URL",
-            "redirectUrl": "https://www.2embed.to/embed/imdb/tv?id=$2&e=$3&s=1",
+            "redirectUrl": "https://www.2embed.skin/embed/imdb/tv?id=$2&e=$3&s=1",
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": true,
@@ -233,6 +233,100 @@
                 "main_frame",
                 "sub_frame",
                 "script",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "2embed.me embedded video player for movies URL redirect to www.2embed.cc",
+            "exampleUrl": "https://2embed.me/movie/tt9578746",
+            "exampleResult": "https://www.2embed.cc/embed4vidsrc/tt9578746",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}.)?2embed\\.me\\/movie\\/(([tT]{2})?\\d+)(\\S*)",
+            "excludePattern": "",
+            "patternDesc": "This rule is necessary because 2embed.me is defunct, but it is still used by some webites for embedded videos",
+            "redirectUrl": "$1://$2www.2embed.cc/embed4vidsrc/$3$5",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "2embed.me embedded video player for TV episodes URL redirect to www.2embed.cc",
+            "exampleUrl": "https://2embed.me/tv/105971/S3/E8",
+            "exampleResult": "https://www.2embed.cc/embedtv/105971&s=3&e=8",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}.)?2embed\\.me\\/tv\\/(([tT]{2})?\\d+)\\/S(\\d+)\\/E(\\d+)(\\S*)",
+            "excludePattern": "",
+            "patternDesc": "This rule is necessary because 2embed.me is defunct, but it is still used by some webites for embedded videos",
+            "redirectUrl": "$1://$2www.2embed.cc/embedtv/$3&s=$5&e=$6$7",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "THDB.org URL redirect to new domain themoviedb.org",
+            "exampleUrl": "https://image.tmdb.org/t/p/original=0&src=vidsrc&autostart=true",
+            "exampleResult": "https://image.themoviedb.org/t/p/original=0&src=vidsrc&autostart=true",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/(([wW]{3}.)|(image.))?tmdb\\.org\\/(\\S+)",
+            "excludePattern": "",
+            "patternDesc": "This rule is necessary because tmdb.org is defunct, but it is still used by some webites for embedded videos",
+            "redirectUrl": "$1://$4themoviedb.org/$5",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "Mixdrop.co embedded video player URL redirect",
+            "exampleUrl": "https://mixdrop.co/e/mdw7d33waxq8enajax%2Fembed%2Fepisode%2FofJkPsxg%2Fsubtitles&t=4xjQAfEkAlIKzA%3D%3D&ads=0&src=vidsrc&autostart=true",
+            "exampleResult": "https://mixdrop.si/e/mdw7d33waxq8enajax%2Fembed%2Fepisode%2FofJkPsxg%2Fsubtitles&t=4xjQAfEkAlIKzA%3D%3D&ads=0&src=vidsrc&autostart=true",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}.)?mixdrop\\.co\\/e\\/(\\S+)",
+            "excludePattern": "",
+            "patternDesc": "This rule is necessary because mixdrop.co is defunct, but it is still used by some webites for embedded videos",
+            "redirectUrl": "$1://$2mixdrop.si/e/$3",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
                 "xmlhttprequest"
             ]
         },
