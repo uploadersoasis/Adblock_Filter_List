@@ -28465,6 +28465,7 @@ www.varonis.com##div[id="cookie_consent_container"]:remove()
 ! Do NOT remove div tags with the "ad-container" class or videos will not play.
 !www.foxbusiness.com##div[class="pre-content"]:has(div[class*="ad-container"]):remove()
 !www.foxbusiness.com##div[class*="ad-container"]:remove()
+www.foxbusiness.com##div[class="pre-content"]:has(div[class*="ad-container"]):style(display: none !important; visibility: none !important; min-height: 0px !important; height: 0px !important; min-width: 0px !important; width: 0px !important;)
 www.foxbusiness.com##div[class*="ad-container"]:style(display: none !important; visibility: none !important; min-height: 0px !important; height: 0px !important; min-width: 0px !important; width: 0px !important;)
 www.foxbusiness.com##.sticky.sidebar > .desktop.ad-container:remove()
 www.foxbusiness.com##div[data-banner-type="ccpa"]:remove()
