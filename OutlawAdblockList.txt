@@ -49140,6 +49140,7 @@ www.tomshardware.com##+js(set-constant, defaultFlags.raygun.crashReporting, fals
 www.tomshardware.com##+js(set-constant, defaultFlags.gallery.adEveryNItem, 0)
 www.tomshardware.com##+js(set-constant, defaultFlags.forceFeature.jwplayerCarousel, true)
 www.tomshardware.com##+js(set-constant, isVideoCarouselAllowed, trueFunc)
+www.tomshardware.com##+js(set-constant, ensureFirstAdsLoaded, trueFunc)
 !www.tomshardware.com##+js(set-constant, jwDefaults.advertising.schedule, "")
 !www.tomshardware.com##+js(set-constant, jwDefaults.advertising.schedule, "", end)
 www.tomshardware.com##+js(set-constant, jwDefaults.advertising.schedule, "", complete)
@@ -49158,6 +49159,7 @@ www.laptopmag.com##+js(no-setTimeout-if, /loadTaboola/)
 www.laptopmag.com##+js(set-constant, selligent_initialiser, noopFunc)
 www.laptopmag.com##+js(acs, /selligent_initialiser\(\)/)
 www.laptopmag.com##+js(set-constant, isVideoCarouselAllowed, trueFunc)
+www.laptopmag.com##+js(set-constant, ensureFirstAdsLoaded, trueFunc)
 !www.laptopmag.com##+js(set-constant, jwDefaults.advertising.schedule, "")
 !www.laptopmag.com##+js(set-constant, jwDefaults.advertising.schedule, "", end)
 www.laptopmag.com##+js(set-constant, jwDefaults.advertising.schedule, "", complete)
@@ -49237,6 +49239,7 @@ www.techradar.com##+js(set-attr, img[data-original-mos], src, [data-original-mos
 !www.techradar.com##+js(rna, img[data-original-mos], data-original-mos, src)
 !www.techradar.com##+js(rna, img[data-pin-media], data-pin-media, src)
 www.techradar.com##+js(set-constant, isVideoCarouselAllowed, trueFunc)
+www.techradar.com##+js(set-constant, ensureFirstAdsLoaded, trueFunc)
 !www.techradar.com##+js(set-constant, jwDefaults.advertising.schedule, "")
 !www.techradar.com##+js(set-constant, jwDefaults.advertising.schedule, "", end)
 www.techradar.com##+js(set-constant, jwDefaults.advertising.schedule, "", complete)
@@ -52462,6 +52465,13 @@ www.pcmag.com##+js(acs, /bounceExchangeScript\(\)/)
 ||www.pcmag.com/wgac/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.pcmag.com/user/eu-check$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.pcmag.com/jst/zdconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.404media.co##script[id="_monetization_js"]:remove()
+www.404media.co##div[class="post-hero__ad"]:remove()
+www.404media.co##div[class="ad ad-leaderboard"]:remove()
+www.404media.co##div[class="ad ad-sidebar"]:remove()
+www.404media.co##div[id="ad-fixed"]:remove()
+www.404media.co##div[class*="ad-fixed"]:remove()
+worthepenny.com##div[id="privacy_policy_popup"]:remove()
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
