@@ -976,7 +976,6 @@ img.atdmt.com/images/pixel.gif$document,subdocument,script,inline-script,inline-
 ||cheviet.vn/modules/mod_vvisit_counter/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ad2.ycasmd.info^*
 ||wwwstats.info/links.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.pcmag.com/Content/js/omniture-tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.cbs.com/assets/js/ad_utils.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||thewrapapp.com/www/delivery/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.forbes.com/pepe/track.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -8731,8 +8730,6 @@ scene-p2p.com###dle-content > .mainblock > .center > .quote:remove()
 ||safelinking.net/cdn/*/randim.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 safelinking.net###ad728container:remove()
 safelinking.net###ad300container:remove()
-||www.pcmag.com/wgac/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.pcmag.com/bs/beacon.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cityadspix.com^*
 !||cityadspix.com/click-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dfh.abb.tagmetanext.com^*
@@ -10775,9 +10772,9 @@ free-music-free.890m.com##.header-bottom-second
 ||www.qkpwdakgxynv.com^*
 ||qkpwdakgxynv.com^*
 !||a-nj.1rxntv.io/rtbasset/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||a-nj.1rxntv.io/rtbtrkd^*
+!||a-nj.1rxntv.io/rtbtrkd$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||a-nj.1rxntv.io^*
-!||na.thenativepartner.com/rtb-macror^*
+!||na.thenativepartner.com/rtb-macror$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||na.thenativepartner.com^*
 ||bestreviews.com^*
 !||send.bestreviews.com/js/trump.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -10786,9 +10783,9 @@ free-music-free.890m.com##.header-bottom-second
 ||wnzxwgatxjuf.com^*
 ||www.wnzxwgatxjuf.com^*
 ||d240937yockcdo.cloudfront.net^*
-uptobox.com##div.adleave113797396
-uptobox.com##div[class^="adleave"]
-uptobox.com##div[id^="adleave"]
+uptobox.com##div.adleave113797396:remove()
+uptobox.com##div[class^="adleave"]:remove()
+uptobox.com##div[id^="adleave"]:remove()
 ||yastatic.net/pcode/adfox/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||i.blogads.com^*
 ||coed-d.openx.net^*
@@ -10802,11 +10799,6 @@ uptobox.com##div[id^="adleave"]
 ||hb-endpoint-elb-307841411.adomik.com^*
 ||log.publisherdesk.com^*
 ||s.206ads.com^*
-www.pcmag.com##div[id^="google_ads_iframe"]
-www.pcmag.com##div[class^="google_ads_iframe"]
-!www.pcmag.com###google_ads_iframe_\/4585\/zd\.pcmag\/softwaresection_ATF_1__container__
-!www.pcmag.com###google_ads_iframe_\/4585\/zd\.pcmag\/softwaresection_ATF_0__container__
-!www.pcmag.com###google_ads_iframe_\/4585\/zd\.pcmagBTF\/softwaresection_BTF_0__container__
 ||digitaltrends-d.openx.net^*
 ||product.pcmag.com/CSE/Ping$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||vstats.digitaltrends.com:8128/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -16522,16 +16514,12 @@ www.imagefaq.info##div[id="xdelimg"]:remove()
 www.softpedia.com##.adwblue.ad-728x90.adhc.ad.mgleft_40.mgtop_20.mgbot_20
 www.softpedia.com###_wlts_lead
 www.softpedia.com##.grid_10.fl.mgtop_20
-www.pcmag.com##.privacy-content
-||www.pcmag.com/cfn/en_US/fbevents.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.pcmag.com/empty.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||gurgle.zdbb.net^*
-www.pcmag.com###_evh-button
 !||consent.cookiebot.com/uc.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||consent.cookiebot.com^*
-draxe.com##.a-8.g-single > .ads
-draxe.com##.a-7.g-single > .ads
-www.techtimes.com##div[class^="videojs-ad-wrap"]
+draxe.com##.a-8.g-single > .ads:remove()
+draxe.com##.a-7.g-single > .ads:remove()
+www.techtimes.com##div[class^="videojs-ad-wrap"]:remove()
 !||tecassets-1tmxd3aba43noa.stackpathdns.com/common/js/stat/counter_ssl.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tecassets-$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css.stackpathdns.com/common/js/stat/counter_ssl.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||b.scorecardresearch.com/beacon.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -21623,14 +21611,14 @@ upload.ac##.btn-dl-plus
 ||doxurgeoisuniv.info^*
 !||metrics-prod.barclaycardus.com/eumcollector/beacons/browser/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||metrics-prod.barclaycardus.com^*
-greasyfork.org##.cf-wrapper
+greasyfork.org##.cf-wrapper:remove()
 !||vanilla.futurecdn.net/techradar/155679/media/shared/js/onesignal.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vanilla.futurecdn.net/*/*/media/shared/js/onesignal.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||vanilla.futurecdn.net/5gradar/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||vanilla.futurecdn.net/windowscentral/media/shared/js/jwplayer-analytics.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vanilla.futurecdn.net/*/cookieconsent.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vanilla.futurecdn.net/*/media/shared/js/jwplayer-analytics.$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||q6sehz699a.top/pixel/purst^*
+!||q6sehz699a.top/pixel/purst$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||q6sehz699a.top/pixel/pure$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||q6sehz699a.top^*
 ||synccurrentheavilyproduct.icu^*
@@ -21642,11 +21630,11 @@ greasyfork.org##.cf-wrapper
 ||terttalkinhitin.pro^*
 ||seriorladded.info^*
 ||kalilabagon.win^*
-www.pennlive.com##div[class*="ad--in-article"]
-www.pennlive.com##div[class="ad--sponsor-content"]
-www.pennlive.com##div[class*="ad--topRail-Below-Flex"]
-www.pennlive.com##div[class*="ads--no-preload"]
-www.pennlive.com###below-toprail
+www.pennlive.com##div[class*="ad--in-article"]:remove()
+www.pennlive.com##div[class="ad--sponsor-content"]:remove()
+www.pennlive.com##div[class*="ad--topRail-Below-Flex"]:remove()
+www.pennlive.com##div[class*="ads--no-preload"]:remove()
+www.pennlive.com###below-toprail:remove()
 ulozto.net###freeDownloadAd:remove()
 ulozto.net###mask:remove()
 ||otnolatrnup.com^*
@@ -21657,20 +21645,20 @@ ulozto.net###mask:remove()
 ||ulrementpati.info^*
 ||ackgroupsevention.info^*
 www.auslogics.com##.b-cookie-policy:remove()
-www.heaventools.com##.cc-color-override-688238583.cc-top.cc-theme-block.cc-type-info.cc-banner.cc-window
+www.heaventools.com##.cc-color-override-688238583.cc-top.cc-theme-block.cc-type-info.cc-banner.cc-window:remove()
 www.digitalcitizen.life###eu-cookies-consent:remove()
 ||www.sdbeta.com/images/qunyingyun.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.sdbeta.com/images/xianggangyun.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-uloz.to##div[class="adDetail"]
-uloz.to##div[class^="js-advert"]
-uloz.to##iframe[class="adFrame"]
-chomikuj.pl###acceptChomikujTermsContainer
-chomikuj.pl###acceptChomikujTermsOverlay
-marcosfranciscodesouza.blogspot.com##div[id="BiggaponArUpore"]
-www.armaanpc.com##.code-block-2.code-block > div > .user.button-red
-www.armaanpc.com##.code-block-3.code-block > div > button.user.button-red:nth-of-type(1)
-www.armaanpc.com##button.user.button-red:nth-of-type(2)
-www.armaanpc.com##.code-block-1.code-block > div > .user.button-red
+uloz.to##div[class="adDetail"]:remove()
+uloz.to##div[class^="js-advert"]:remove()
+uloz.to##iframe[class="adFrame"]:remove()
+chomikuj.pl###acceptChomikujTermsContainer:remove()
+chomikuj.pl###acceptChomikujTermsOverlay:remove()
+marcosfranciscodesouza.blogspot.com##div[id="BiggaponArUpore"]:remove()
+www.armaanpc.com##.code-block-2.code-block > div > .user.button-red:remove()
+www.armaanpc.com##.code-block-3.code-block > div > button.user.button-red:nth-of-type(1):remove()
+www.armaanpc.com##button.user.button-red:nth-of-type(2):remove()
+www.armaanpc.com##.code-block-1.code-block > div > .user.button-red:remove()
 ||www.bjuodbdjluix.com^*
 ||bjuodbdjluix.com^*
 ||www.kmmtxuxow.com^*
@@ -21691,9 +21679,9 @@ www.mirinsoft.com###easycookieinfo:remove()
 uploadev.org##ins[class="adsbygoogle"]:remove()
 ||www.burbibape.com^*
 ||burbibape.com^*
-free4pc.org##div:nth-of-type(2) > .user.button-red
-free4pc.org##.user.button-black
-free4pc.org##.user.button-green
+free4pc.org##div:nth-of-type(2) > .user.button-red:remove()
+free4pc.org##.user.button-black:remove()
+free4pc.org##.user.button-green:remove()
 ||www.amparcaim.club^*
 ||amparcaim.club^*
 ||www.muzjpkel.com^*
@@ -21703,7 +21691,7 @@ free4pc.org##.user.button-green
 ||www.cweiwoydalr.com^*
 crazy4tv.mrunlock.red##+js(abort-on-property-write, popundersPerIP)
 crazy4tv.mrunlock.red##+js(abort-on-property-read, popundersPerIP)
-upload.ac##.eww
+upload.ac##.eww:remove()
 ||composivel.pro^*
 ||cdn.jsdelivr.net/gh/johnroy-ui/up@master/download_cloud.gif$image
 ||cdn.jsdelivr.net/gh/johnroy-ui/up@master/download.gif$image
@@ -21736,9 +21724,9 @@ userscloud.com##:xpath(//script[contains(text(), 'VG8gY29udGludWUgd2F0Y2hpbmcgcH
 userscloud.com##^script:has-text(VG8gY29udGludWUgd2F0Y2hpbmcgcHJlc3MgIkFsbG93Ig==):remove()
 userscloud.com##+js(acs, VG8gY29udGludWUgd2F0Y2hpbmcgcHJlc3MgIkFsbG93Ig==)
 ! TODO: The following rules with cosmetic filters are most likely randomly generated.
-userscloud.com###gXHq5xUuwGWkJVFh
+userscloud.com###gXHq5xUuwGWkJVFh:remove()
 userscloud.com##a[id="lkfd4"]:remove()
-userscloud.com##div[id="gk7FroDRjMsV6rJF"]
+userscloud.com##div[id="gk7FroDRjMsV6rJF"]:remove()
 userscloud.com##div[id="fhlruh2"]:remove()
 userscloud.com###div-1507717209618:remove()
 userscloud.com###p_1991296:remove()
@@ -25655,8 +25643,6 @@ fearlessrevolution.com##div[aria-label="cookieconsent"]:remove()
 !||newsubscribes.com/fpp.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tentmess.com/pixel/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||newsubscribes.com^*
-www.pcmag.com##div[class^="index__adWrapper-"]
-www.pcmag.com##aside[class="zmgad-full-width"]
 ||d1gzewjq6luteh.cloudfront.net/door.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||uk-script.dotmetrics.net/door.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||uk-script.dotmetrics.net/BeaconEvent.dotmetrics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -26525,11 +26511,6 @@ www.rt.com##div[class^="cookies__banner"]:remove()
 ||secure-open.com^*
 ||mail.elbroos.com/scripts/analitics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||androidforums.com/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-! TODO:  ^script doesn't work with attributes since checked before DOM created?
-www.laptopmag.com##script[id="hawklinks-script"]:remove()
-!||hawk.laptopmag.com/hl/hawklinks.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||hawk.laptopmag.com^*
-www.laptopmag.com##div[class="ad-unit"]:remove()
 ||tucshost.xyz^*
 ||gematsu.org^*
 ||0.nextyourcontent.com^*
@@ -27671,7 +27652,6 @@ www.toolbox.com##div[class="privacy-content"]:remove()
 ||e1f95201b19594.site^*
 ||direct-events-collector.spot.im^*
 ||events-collector.spot.im^*
-www.pcmag.com##aside[class*="zmgad-"]:remove()
 www.getdroidtips.com##ins[class="adsbygoogle"]:remove()
 www.getdroidtips.com##div[class="_ap_apex_ad"]:remove()
 www.getdroidtips.com##+js(abort-on-property-read, adpushup)
@@ -27680,15 +27660,13 @@ rootmygalaxy.net##ins[class="adsbygoogle"]:remove()
 !rootmygalaxy.net##div[class*="quads-ad1"]:remove()
 rootmygalaxy.net##div[class*="quads-ad"]:remove()
 ||player.adtelligent.com^*
-||static.pcmag.com/jst/zdconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.pcmag.com/user/eu-check$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ubuntuhandbook.org##ins[class="adsbygoogle"]:remove()
 zippyshare.com##^script:has-text(/zippyfake/i):remove()
 zippyshare.com###zippyfake:remove()
 ||cupidrecession.com^*
 ||declinedisobey.com^*
 ||check.analytics.rlcdn.com^*
-unix.stackexchange.com##div[class*="js-consent-banner"]
+unix.stackexchange.com##div[class*="js-consent-banner"]:remove()
 !||mxuiso.com/p/waWQiOjEwNzcyNjEsInNpZCI6MTA4NTM3Miwid2lkIjoxNzQyNTksInNyYyI6Mn0=eyJ.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mxuiso.com^*
 !||online-fix.me/cdn-cgi/bm/cv/669835187/api.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -30382,11 +30360,10 @@ www.maketecheasier.com##div[class*="ad-slot"]
 www.skidrowcodex.net##iframe[id="st_gdpr_iframe"]:remove()
 !||annesuspense.com/2a/a0/d7/2aa0d74e87039503a470d3942c5f7ea4.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||annesuspense.com^*
-www.pcmag.com##ins[class="zmgad-full-width"]
-www.freeoffice.com##div[class="cookieconsent"]
-www.freeoffice.com##div[id="CookiePopup"]
-www.softmaker.com##div[class="cookieconsent"]
-www.softmaker.com##div[id="CookiePopup"]
+www.freeoffice.com##div[class="cookieconsent"]:remove()
+www.freeoffice.com##div[id="CookiePopup"]:remove()
+www.softmaker.com##div[class="cookieconsent"]:remove()
+www.softmaker.com##div[id="CookiePopup"]:remove()
 www.lightbrick.com##div[class*="sqs-cookie-banner-v2"]:remove()
 careerkarma.com##div[id^="takeover"]:remove()
 careerkarma.com##html,body:style(overflow: scroll !important;)
@@ -30777,9 +30754,6 @@ classroom.synonym.com##div[class="mobile-display-ad"]:remove()
 classroom.synonym.com##div[class*="ad-right-column"]:remove()
 classroom.synonym.com##div[class="fixed-bottom-ad"]:remove()
 classroom.synonym.com##div[class="rightrail-display-ad"]:remove()
-www.pcmag.com##ins[class*="zmgad-full-width"]:remove()
-www.pcmag.com##div[data-adunit]:remove()
-www.pcmag.com##aside[class*="zmgad-right-rail"]:remove()
 www.psychz.net##div[id="cookieBox"]:remove()
 docs.cpanel.net##div[aria-label="cookieconsent"]:remove()
 googlechromecast.com##div[class*="ezo_ad"]:remove()
@@ -39531,28 +39505,6 @@ streamhide.to##:xpath("/html/body/div"):remove()
 ||streamhide.com/js/dnsads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||media.dalyai.com/js/code.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||track.dalysh.com^*
-www.tomshardware.com##div[id="top-leaderboard"]
-www.tomshardware.com##div[class="advertisement-label"]
-www.tomshardware.com##div[class="bordeaux-slot-root"]
-www.tomshardware.com##div[class^="cash absolute contain"]
-www.tomshardware.com##div[class*="ad-unit"]
-www.tomshardware.com##div[id^="bordeaux-preemptive-ad-"]
-www.tomshardware.com##footer[id^="taboola-"][id$="-below-article-thumbnails"]
-www.tomshardware.com##div[class="dfp-leaderboard-container"]
-www.tomshardware.com##+js(set-constant, window._sp_, {})
-www.tomshardware.com##+js(set-constant, loadGTM, noopFunc)
-www.tomshardware.com##+js(set-constant, dfp_config, {})
-www.tomshardware.com##+js(set-constant, ccpaApplies, false)
-www.tomshardware.com##+js(set-constant, analytics_ga_data, {})
-www.tomshardware.com##+js(set-constant, window.disableBordeaux, true)
-www.tomshardware.com##+js(set-constant, window.adParameters, {})
-www.tomshardware.com##+js(set-constant, adToolVersion, "")
-www.tomshardware.com##+js(aopr, dfp_config.gallery_refresh_interval)
-www.tomshardware.com##+js(aopw, dfp_config.gallery_refresh_interval)
-www.tomshardware.com##+js(aopr, ccpaApplies)
-www.tomshardware.com##+js(aopw, ccpaApplies)
-www.tomshardware.com##+js(aopr, window.VAN.abTest)
-www.tomshardware.com##+js(aopw, window.VAN.abTest)
 ||targetemsecure.blob.core.windows.net/138526d1-8ff9-4de4-b84a-3a11ec020ede/138526d18ff94de4b84a3a11ec020ede_1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pl16164575.highrevenuegate.com^*
 ||dxj6cq8hj162l.cloudfront.net^*
@@ -43034,51 +42986,6 @@ sidequestvr.com##div[class^="cky-consent-"]:remove()
 ||directory.cookieyes.com/api/v1/ip$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cs9.wpc.v0cdn.net/scripts/c/ms.analytics-web-2.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||az416426.vo.msecnd.net/scripts/c/ms.analytics-web-2.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.windowscentral.com/sites/all/libraries/adblockdetection/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.windowscentral.com##*[id^="parsely-"]:remove()
-www.windowscentral.com##div:has(div.mobile-leaderboard-320-50 > div#bordeaux-preemptive-ad-2):remove()
-www.windowscentral.com##div[class*="adunit"]:remove()
-www.windowscentral.com##div[class*="ad-unit"]:remove()
-www.windowscentral.com##div[class="mobile-leaderboard-320-50"]:remove()
-www.windowscentral.com##div[class="swal-modal detective--splash"]:remove()
-www.windowscentral.com##div[class="swal-overlay swal-overlay--show-modal"]:remove()
-www.windowscentral.com##div[class^="dfp-leaderboard-"]:remove()
-www.windowscentral.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
-www.windowscentral.com##div[id="slice-container-regionRedirectBanner"]:remove()
-www.windowscentral.com##div[id^="bordeaux-preemptive-ad"]:remove()
-www.windowscentral.com##div[id^="bordeaux-standard-ad-"]:remove()
-www.windowscentral.com##div[data-widget-type="ads"]:remove()
-!www.windowscentral.com##div[data-type="ads"][data-ads-type="bordeaux"]:remove()
-www.windowscentral.com##div[data-type="ads"]:remove()
-www.windowscentral.com##footer[id="taboola-below-article-thumbnails"]:remove()
-www.windowscentral.com##footer[id="taboola-mobile-below-article-thumbnails"]:remove()
-www.windowscentral.com##img:remove-attr(onerror)
-www.windowscentral.com##source:remove-attr(onerror)
-www.windowscentral.com##+js(remove-attr, onerror, img)
-www.windowscentral.com##+js(remove-attr, onerror, source)
-www.windowscentral.com##+js(abort-on-property-read, TIMEOUT_DELAY)
-www.windowscentral.com##+js(abort-on-property-write, TIMEOUT_DELAY)
-www.windowscentral.com##+js(aeld, onerror)
-www.windowscentral.com##+js(set-constant, TIMEOUT_DELAY, 0)
-www.windowscentral.com##+js(set-constant, loadTaboola, noopFunc)
-www.windowscentral.com##+js(acs, loadTaboola)
-www.windowscentral.com##^script:has-text(/GdprApplies/i):remove()
-www.windowscentral.com##:xpath(//script[contains(text(), 'GdprApplies')]):remove()
-www.windowscentral.com##+js(set-constant, window.vanilla.loadGTM, noopFunc)
-www.windowscentral.com##+js(set-constant, gtmCode, "")
-www.windowscentral.com##+js(trusted-replace-node-text, script, /\"clsReporting\":{\"enabled\":true}/, "clsReporting":{"enabled":false})
-www.windowscentral.com##+js(trusted-replace-node-text, script, /\"gtm\":{\"vanilla\":true,\"sitespecific\":true}/, "gtm":{"vanilla":false,"sitespecific":false})
-www.windowscentral.com##+js(trusted-replace-node-text, script, /\"selligent\":{\"enabled\":true}/, "selligent":{"enabled":false})
-www.windowscentral.com##+js(trusted-replace-node-text, script, /\"freyr\":{\"enabled\":true,\"ga4SpecificGTM"\:{\"enabled\":true,\"code\":\"GTM-WWBWRXL\"}}}/, "freyr":{"enabled":false,"ga4SpecificGTM":{"enabled":false,"code":""}})
-www.windowscentral.com##+js(set-attr, iframe[data-lazy-src], src, [data-lazy-src])
-! copy attribute value to src instead of renaming attribute
-! TODO: Always leading space in class name sought?
-! Either of the following attributes will work for src since they are identical value.
-www.windowscentral.com##+js(set-attr, img[class*=" lazy-image-van"], src, [data-original-mos])
-!www.windowscentral.com##+js(set-attr, img[class*=" lazy-image-van"], src, [data-pin-media])
-! Don't need to remove current src attribute to rename other attribute to it
-!www.windowscentral.com##+js(rna, img[class*=" lazy-image-van"], data-original-mos, src)
-!www.windowscentral.com##+js(rna, img[class*=" lazy-image-van"], data-pin-media, src)
 www.pcgamer.com###gdnhhkbuuqekhwkfzf:remove()
 www.pcgamer.com##div[class="gntyrkjxscxohupdurfvdzyqo"]:remove()
 www.pcgamer.com##div[id^="vpaid-"]:remove()
@@ -43816,7 +43723,6 @@ pagesix.com##script[class="wp-asset-manager ads"]:remove()
 ||warp.media.net/js/tags/prebidrtdclient.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.ziffstatic.com/pg/pcmag.prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||e96286.dsci.akamaiedge.net/pg/pcmag.prebid.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.pcmag.com/js/ga.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||sr.studiostack.com/track/attention-event$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||sr.studiostack.com/track/attention-data$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||waws-prod-blu-227-3bf0.eastus.cloudapp.azure.com/track/attention-data$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -43827,21 +43733,17 @@ pagesix.com##script[class="wp-asset-manager ads"]:remove()
 ||livepixel4-production.bln.liveintent.com^*
 ||rp.liadm.com^*
 ||rp4.liadm.com^*
-!||www.pcworld.com/ads/adData^*
+!||www.pcworld.com/ads/adData$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.pcworld.com/ads/tso$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.pcworld.com/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.pcworld.com/www.idgcsmb.pcw/js/analytics/omniture/pcwmw-pcworld/s_code.js
 ||www.pcworld.com/www.idgcsmb.pcw/js/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.pcworld.com/www.idgcsmb/js/ads/demandbase.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.pcworld.com/www.idgcsmb/js/ads/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||www.pcworld.com###toaster
-www.pcworld.com##div[class="ad-container"]
+!||www.pcworld.com###toaster:remove()
 www.pcworld.com##div[class="ad-container"]:remove()
-www.pcworld.com##div[class*="cookies-eu"]
 www.pcworld.com##div[class*="cookies-eu"]:remove()
-www.pcworld.com##div[data-aa-adunit]
 www.pcworld.com##div[data-aa-adunit]:remove()
-www.pcworld.com##script[id="jetpack-stats-js-after"]
 www.pcworld.com##script[id="jetpack-stats-js-after"]:remove()
 www.pcworld.com##+js(set-constant, ybGPTHook, noopFunc)
 www.pcworld.com##+js(acs, ybGPTHook)
@@ -49197,14 +49099,108 @@ playclassic.games##+js(set-attr, img[data-src], src, [data-src])
 ! If the data-src attribute is renamed, the following rule will not select the images.
 playclassic.games##img[class="lazy"][data-src]:remove-class(lazy)
 playclassic.games##+js(remove-class, lazy, img[class="lazy"][data-src])
+www.tomshardware.com##body:style(overflow: auto !important;)
+www.tomshardware.com##div[id="main"]:style(max-width: 100vw !important; width: 99vw !important;)
+www.tomshardware.com##div[id="widgetArea16"]:style(max-width: 100% !important; width: 100% !important;)
+www.tomshardware.com##div[id="top-leaderboard"]:remove()
+www.tomshardware.com##div[class="dfp-leaderboard-container"]:remove()
+www.tomshardware.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
+www.tomshardware.com##div[class="advertisement-label"]:remove()
+www.tomshardware.com##div[class="bordeaux-slot-root"]:remove()
+www.tomshardware.com##div[class^="cash absolute contain"]:remove()
+www.tomshardware.com##div[class*="ad-unit"]:remove()
+www.tomshardware.com##div[id^="bordeaux-preemptive-ad-"]:remove()
+!www.tomshardware.com##footer[id^="taboola-"][id$="-below-article-thumbnails"]:remove()
+www.tomshardware.com##footer:matches-attr(id=/taboola-\w*below-article-thumbnails/):remove()
+www.tomshardware.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+www.tomshardware.com##+js(set-constant, window._sp_, {})
+www.tomshardware.com##+js(abort-on-property-write, window._sp_)
+www.tomshardware.com##+js(abort-on-property-read, window._sp_)
+www.tomshardware.com##+js(set-constant, loadGTM, noopFunc)
+www.tomshardware.com##+js(set-constant, dfp_config, {})
+www.tomshardware.com##+js(set-constant, analytics_ga_data, {})
+www.tomshardware.com##+js(set-constant, window.disableBordeaux, true)
+www.tomshardware.com##+js(set-constant, window.adParameters, {})
+www.tomshardware.com##+js(set-constant, adToolVersion, "")
+www.tomshardware.com##+js(aopr, dfp_config.gallery_refresh_interval)
+www.tomshardware.com##+js(aopw, dfp_config.gallery_refresh_interval)
+www.tomshardware.com##+js(set-constant, ccpaApplies, false)
+www.tomshardware.com##+js(aopr, ccpaApplies)
+www.tomshardware.com##+js(aopw, ccpaApplies)
+www.tomshardware.com##+js(aopr, window.VAN.abTest)
+www.tomshardware.com##+js(aopw, window.VAN.abTest)
+! TODO: must set defaultFlags first if not yet set by the page?
+!www.tomshardware.com##+js(set-constant, defaultFlags, {})
+www.tomshardware.com##+js(set-constant, defaultFlags.adUnit, {})
+www.tomshardware.com##+js(set-constant, defaultFlags.breadcrumbs.enabled, false)
+www.tomshardware.com##+js(set-constant, defaultFlags.selligent.enabled, false)
+www.tomshardware.com##+js(set-constant, defaultFlags.switchOff.gtm, false)
+www.tomshardware.com##+js(set-constant, defaultFlags.switchOff.permutive, false)
+www.tomshardware.com##+js(set-constant, defaultFlags.raygun.crashReporting, false)
+www.tomshardware.com##+js(set-constant, defaultFlags.gallery.adEveryNItem, 0)
+www.tomshardware.com##+js(set-constant, defaultFlags.forceFeature.jwplayerCarousel, true)
+www.tomshardware.com##+js(set-constant, isVideoCarouselAllowed, trueFunc)
+!www.tomshardware.com##+js(set-constant, jwDefaults.advertising.schedule, "")
+!www.tomshardware.com##+js(set-constant, jwDefaults.advertising.schedule, "", end)
+www.tomshardware.com##+js(set-constant, jwDefaults.advertising.schedule, "", complete)
+www.tomshardware.com##+js(trusted-set-constant, countryCode, "US")
+www.tomshardware.com##+js(trusted-set-constant, getUserGeo, "US")
+www.laptopmag.com##body:style(overflow: auto !important;)
+www.laptopmag.com##div[id="main"]:style(max-width: 100vw !important; width: 99vw !important;)
+www.laptopmag.com##div[id="widgetArea16"]:style(max-width: 100% !important; width: 100% !important;)
+www.laptopmag.com##div[id^="ads-middle-"]:remove()
+www.laptopmag.com##div[class*="ad-unit"]:remove()
+www.laptopmag.com##div[class="dfp-leaderboard-container"]:remove()
+www.laptopmag.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
+www.laptopmag.com##footer:matches-attr(id=/taboola-\w*below-article-thumbnails/):remove()
+www.laptopmag.com##+js(set-constant, loadTaboola, noopFunc)
+www.laptopmag.com##+js(no-setTimeout-if, /loadTaboola/)
+www.laptopmag.com##+js(set-constant, selligent_initialiser, noopFunc)
+www.laptopmag.com##+js(acs, /selligent_initialiser\(\)/)
+www.laptopmag.com##+js(set-constant, isVideoCarouselAllowed, trueFunc)
+!www.laptopmag.com##+js(set-constant, jwDefaults.advertising.schedule, "")
+!www.laptopmag.com##+js(set-constant, jwDefaults.advertising.schedule, "", end)
+www.laptopmag.com##+js(set-constant, jwDefaults.advertising.schedule, "", complete)
+www.laptopmag.com##+js(trusted-set-constant, countryCode, "US")
+www.laptopmag.com##+js(trusted-set-constant, getUserGeo, "US")
+www.laptopmag.com##+js(set-constant, window.vanilla.loadGTM, noopFunc)
+www.laptopmag.com##+js(set-constant, gtmCode, "")
+! TODO: must set defaultFlags first if not yet set by the page?
+!www.laptopmag.com##+js(set-constant, defaultFlags, {})
+www.laptopmag.com##+js(set-constant, defaultFlags.adUnit, {})
+www.laptopmag.com##+js(set-constant, defaultFlags.breadcrumbs.enabled, false)
+www.laptopmag.com##+js(set-constant, defaultFlags.selligent.enabled, false)
+www.laptopmag.com##+js(set-constant, defaultFlags.switchOff.gtm, false)
+www.laptopmag.com##+js(set-constant, defaultFlags.switchOff.permutive, false)
+www.laptopmag.com##+js(set-constant, defaultFlags.raygun.crashReporting, false)
+www.laptopmag.com##+js(set-constant, defaultFlags.gallery.adEveryNItem, 0)
+www.laptopmag.com##+js(set-constant, defaultFlags.forceFeature.jwplayerCarousel, true)
+www.laptopmag.com##+js(set-constant, ccpaApplies, false)
+www.laptopmag.com##+js(set-constant, reliableConsentGiven, true)
+www.laptopmag.com##+js(set-constant, window.reliableConsentGiven, trueFunc)
+www.laptopmag.com##+js(set-constant, window.ccpaAppliesPromise, falseFunc)
+www.laptopmag.com##+js(set-constant, window._sp_, {})
+www.laptopmag.com##+js(abort-on-property-write, window._sp_)
+www.laptopmag.com##+js(abort-on-property-read, window._sp_)
+! TODO:  ^script doesn't work with attributes since checked before DOM created?
+www.laptopmag.com##script[id="hawklinks-script"]:remove()
+www.laptopmag.com##script[id="selligent-tag"]:remove()
+!||hawk.laptopmag.com/hl/hawklinks.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||hawk.laptopmag.com^*
+www.techradar.com##div[id="main"]:style(max-width: 100vw !important; width: 99vw !important;)
+www.techradar.com##div[id="widgetArea16"]:style(max-width: 100% !important; width: 100% !important;)
 www.techradar.com##.advertisement-label:remove()
 www.techradar.com##div[class="placeholderampad"]:remove()
 www.techradar.com##div[class="fallbackampad"]:remove()
 www.techradar.com##div[class*="ad-unit"]:remove()
 www.techradar.com##div[class="dfp-leaderboard-container"]:remove()
+www.techradar.com##div[data-type="ads"]:remove()
+www.techradar.com##div[data-ads-type]:remove()
+www.techradar.com##div[id^="ads-lightbox"]:remove()
 www.techradar.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
+www.techradar.com##li[class="wdn-listv2-item sponsored-post"]:not(:has(a[class^="wdn-listv2-item-link"])):remove()
 www.techradar.com##footer[class="van_taboola"]:remove()
-www.techradar.com##iframe[name$="Locator"]:remove()
+www.techradar.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
 www.techradar.com##script[id="selligent-tag"]:remove()
 www.techradar.com##+js(set-constant, selligent_initialiser, noopFunc)
 www.techradar.com##+js(acs, selligent_initialiser)
@@ -49240,9 +49236,100 @@ www.techradar.com##+js(set-attr, img[data-original-mos], src, [data-original-mos
 ! Don't need to remove current src attribute to rename other attribute to it
 !www.techradar.com##+js(rna, img[data-original-mos], data-original-mos, src)
 !www.techradar.com##+js(rna, img[data-pin-media], data-pin-media, src)
+www.techradar.com##+js(set-constant, isVideoCarouselAllowed, trueFunc)
+!www.techradar.com##+js(set-constant, jwDefaults.advertising.schedule, "")
+!www.techradar.com##+js(set-constant, jwDefaults.advertising.schedule, "", end)
+www.techradar.com##+js(set-constant, jwDefaults.advertising.schedule, "", complete)
+www.techradar.com##+js(trusted-set-constant, countryCode, "US")
+www.techradar.com##+js(trusted-set-constant, getUserGeo, "US")
 ||search-api.fie.future.net.uk/send_metrics$xhr
 ||vanilla.futurecdn.net/techradar/media/shared/js/slide-analytics.$script
 ||d3du2k8g1u832i.cloudfront.net/techradar/media/shared/js/slide-analytics.$script
+||www.androidcentral.com/sites/all/modules/mbn_offers/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.androidcentral.com/sites/androidcentral.com/files/article_images/2017/10/gamestash-970x460_2.jpg$image
+www.androidcentral.com##div[class*="article-body__suppl_content--taboola-mid-article"]:remove()
+www.androidcentral.com##section[class*="article-footer--taboola"]:remove()
+!www.androidcentral.com##div[class^="adunit-wrap"]:remove()
+www.androidcentral.com##div[class^="adunit"]:remove()
+www.androidcentral.com##div[class*="ad-unit"]:remove()
+www.androidcentral.com##div[class="dfp-leaderboard-container"]:remove()
+www.androidcentral.com##div[data-ads-type]:remove()
+www.androidcentral.com##div[id^="ad-unit-"]:remove()
+www.androidcentral.com##div[id^="ads-middle-"]:remove()
+www.androidcentral.com##div[id^="bdx_flexi_ads_"]:remove()
+www.androidcentral.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
+www.androidcentral.com##div[id="main"]:style(max-width: 100vw !important; width: 99vw !important;)
+www.androidcentral.com##footer[id="taboola-below-article-thumbnails"]:remove()
+www.androidcentral.com##footer[id="taboola-mobile-below-article-thumbnails"]:remove()
+www.androidcentral.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+www.androidcentral.com##script[id="selligent-tag"]:remove()
+www.androidcentral.com##+js(set-constant, window.vanilla.loadGTM, noopFunc)
+www.androidcentral.com##+js(aopw, gtmCode)
+www.androidcentral.com##+js(aopr, gtmCode)
+www.androidcentral.com##+js(set-constant, window.__gpp_addFrame, noopFunc)
+www.androidcentral.com##+js(aopw, window.__gpp_addFrame)
+www.androidcentral.com##+js(aopr, window.__gpp_addFrame)
+www.androidcentral.com##+js(set-constant, loadTaboola, noopFunc)
+www.androidcentral.com##+js(no-setTimeout-if, /loadTaboola/)
+!www.androidcentral.com##+js(set-constant, comscoreIntegration, noopFunc)
+!www.androidcentral.com##+js(set-constant, comscorePayload, {})
+www.androidcentral.com##+js(set-constant, callComscore, noopFunc)
+www.androidcentral.com##+js(set-constant, injectComscore, noopFunc)
+www.androidcentral.com##+js(set-constant, selligent_initialiser, noopFunc)
+www.androidcentral.com##+js(set-constant, selligentID, '')
+www.androidcentral.com##+js(aopw, selligentID)
+www.androidcentral.com##+js(aopr, selligentID)
+www.androidcentral.com##+js(set-constant, ccpaApplies, false)
+www.androidcentral.com##+js(set-constant, window.vanilla.featureFlags.selligent.enabled, false)
+www.androidcentral.com##+js(set-constant, waitConsent, falseFunc)
+forums.androidcentral.com##div[class*="netshelter-ad"]:remove()
+forums.androidcentral.com##div[class="adunit"]:remove()
+forums.androidcentral.com##^script:has-text(tmntag.adTag):remove()
+||www.windowscentral.com/sites/all/libraries/adblockdetection/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.windowscentral.com##*[id^="parsely-"]:remove()
+www.windowscentral.com##div:has(div.mobile-leaderboard-320-50 > div#bordeaux-preemptive-ad-2):remove()
+www.windowscentral.com##div[class*="adunit"]:remove()
+www.windowscentral.com##div[class*="ad-unit"]:remove()
+www.windowscentral.com##div[class="mobile-leaderboard-320-50"]:remove()
+www.windowscentral.com##div[class="swal-modal detective--splash"]:remove()
+www.windowscentral.com##div[class="swal-overlay swal-overlay--show-modal"]:remove()
+www.windowscentral.com##div[class^="dfp-leaderboard-"]:remove()
+www.windowscentral.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
+www.windowscentral.com##div[id="slice-container-regionRedirectBanner"]:remove()
+www.windowscentral.com##div[id^="bordeaux-preemptive-ad"]:remove()
+www.windowscentral.com##div[id^="bordeaux-standard-ad-"]:remove()
+www.windowscentral.com##div[data-widget-type="ads"]:remove()
+!www.windowscentral.com##div[data-type="ads"][data-ads-type="bordeaux"]:remove()
+www.windowscentral.com##div[data-type="ads"]:remove()
+www.windowscentral.com##footer[id="taboola-below-article-thumbnails"]:remove()
+www.windowscentral.com##footer[id="taboola-mobile-below-article-thumbnails"]:remove()
+www.windowscentral.com##img:remove-attr(onerror)
+www.windowscentral.com##source:remove-attr(onerror)
+www.windowscentral.com##+js(remove-attr, onerror, img)
+www.windowscentral.com##+js(remove-attr, onerror, source)
+www.windowscentral.com##+js(abort-on-property-read, TIMEOUT_DELAY)
+www.windowscentral.com##+js(abort-on-property-write, TIMEOUT_DELAY)
+www.windowscentral.com##+js(aeld, onerror)
+www.windowscentral.com##+js(set-constant, TIMEOUT_DELAY, 0)
+www.windowscentral.com##+js(set-constant, loadTaboola, noopFunc)
+www.windowscentral.com##+js(acs, loadTaboola)
+www.windowscentral.com##^script:has-text(/GdprApplies/i):remove()
+www.windowscentral.com##:xpath(//script[contains(text(), 'GdprApplies')]):remove()
+www.windowscentral.com##+js(set-constant, window.vanilla.loadGTM, noopFunc)
+www.windowscentral.com##+js(set-constant, gtmCode, "")
+www.windowscentral.com##+js(trusted-replace-node-text, script, /\"clsReporting\":{\"enabled\":true}/, "clsReporting":{"enabled":false})
+www.windowscentral.com##+js(trusted-replace-node-text, script, /\"gtm\":{\"vanilla\":true,\"sitespecific\":true}/, "gtm":{"vanilla":false,"sitespecific":false})
+www.windowscentral.com##+js(trusted-replace-node-text, script, /\"selligent\":{\"enabled\":true}/, "selligent":{"enabled":false})
+www.windowscentral.com##+js(trusted-replace-node-text, script, /\"freyr\":{\"enabled\":true,\"ga4SpecificGTM"\:{\"enabled\":true,\"code\":\"GTM-WWBWRXL\"}}}/, "freyr":{"enabled":false,"ga4SpecificGTM":{"enabled":false,"code":""}})
+www.windowscentral.com##+js(set-attr, iframe[data-lazy-src], src, [data-lazy-src])
+! copy attribute value to src instead of renaming attribute
+! TODO: Always leading space in class name sought?
+! Either of the following attributes will work for src since they are identical value.
+www.windowscentral.com##+js(set-attr, img[class*=" lazy-image-van"], src, [data-original-mos])
+!www.windowscentral.com##+js(set-attr, img[class*=" lazy-image-van"], src, [data-pin-media])
+! Don't need to remove current src attribute to rename other attribute to it
+!www.windowscentral.com##+js(rna, img[class*=" lazy-image-van"], data-original-mos, src)
+!www.windowscentral.com##+js(rna, img[class*=" lazy-image-van"], data-pin-media, src)
 thehackernews.com##.zoho-box.clear:remove()
 thehackernews.com##.banners.av-side-box.clear:remove()
 thehackernews.com##.banners.cf:remove()
@@ -50686,46 +50773,6 @@ frdl.to##+js(set-attr, input[id="adblock_detected"], value, 0)
 ! The countdown for frdl.to is server-side checked.
 !frdl.to##div[id="countdown"]:remove()
 !||frdl.to/xfst_theme2/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.androidcentral.com/sites/all/modules/mbn_offers/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.androidcentral.com/sites/androidcentral.com/files/article_images/2017/10/gamestash-970x460_2.jpg$image
-www.androidcentral.com##div[class*="article-body__suppl_content--taboola-mid-article"]:remove()
-www.androidcentral.com##section[class*="article-footer--taboola"]:remove()
-!www.androidcentral.com##div[class^="adunit-wrap"]:remove()
-www.androidcentral.com##div[class^="adunit"]:remove()
-www.androidcentral.com##div[class*="ad-unit"]:remove()
-www.androidcentral.com##div[class="dfp-leaderboard-container"]:remove()
-www.androidcentral.com##div[data-ads-type]:remove()
-www.androidcentral.com##div[id^="ad-unit-"]:remove()
-www.androidcentral.com##div[id^="ads-middle-"]:remove()
-www.androidcentral.com##div[id^="bdx_flexi_ads_"]:remove()
-www.androidcentral.com##div[id="slice-container-affiliateDisclaimerBar"]:remove()
-www.androidcentral.com##div[id="main"]:style(max-width: 100vw !important; width: 99vw !important;)
-www.androidcentral.com##footer[id="taboola-below-article-thumbnails"]:remove()
-www.androidcentral.com##footer[id="taboola-mobile-below-article-thumbnails"]:remove()
-www.androidcentral.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
-www.androidcentral.com##script[id="selligent-tag"]:remove()
-www.androidcentral.com##+js(set-constant, window.vanilla.loadGTM, noopFunc)
-www.androidcentral.com##+js(aopw, gtmCode)
-www.androidcentral.com##+js(aopr, gtmCode)
-www.androidcentral.com##+js(set-constant, window.__gpp_addFrame, noopFunc)
-www.androidcentral.com##+js(aopw, window.__gpp_addFrame)
-www.androidcentral.com##+js(aopr, window.__gpp_addFrame)
-www.androidcentral.com##+js(set-constant, loadTaboola, noopFunc)
-www.androidcentral.com##+js(no-setTimeout-if, /loadTaboola/)
-!www.androidcentral.com##+js(set-constant, comscoreIntegration, noopFunc)
-!www.androidcentral.com##+js(set-constant, comscorePayload, {})
-www.androidcentral.com##+js(set-constant, callComscore, noopFunc)
-www.androidcentral.com##+js(set-constant, injectComscore, noopFunc)
-www.androidcentral.com##+js(set-constant, selligent_initialiser, noopFunc)
-www.androidcentral.com##+js(set-constant, selligentID, '')
-www.androidcentral.com##+js(aopw, selligentID)
-www.androidcentral.com##+js(aopr, selligentID)
-www.androidcentral.com##+js(set-constant, ccpaApplies, false)
-www.androidcentral.com##+js(set-constant, window.vanilla.featureFlags.selligent.enabled, false)
-www.androidcentral.com##+js(set-constant, waitConsent, falseFunc)
-forums.androidcentral.com##div[class*="netshelter-ad"]:remove()
-forums.androidcentral.com##div[class="adunit"]:remove()
-forums.androidcentral.com##^script:has-text(tmntag.adTag):remove()
 ||weanyergravely.com^*
 !||rimpled.echevintrunnel.top^*
 ||echevintrunnel.top^*
@@ -52383,6 +52430,38 @@ edition.arkansasonline.com##div[class="pt-in"]:remove()
 !edition.arkansasonline.com##+js(aeld, contextmenu, /function\(e\)/)
 ! TODO: The following rule doesn't remove both of the contextmenu events; it removes the one which could be kept.
 edition.arkansasonline.com##+js(aeld, contextmenu)
+!www.pcmag.com##aside[class*="zmgad-right-rail"]:remove()
+!www.pcmag.com##aside[class="zmgad-full-width"]:remove()
+www.pcmag.com##aside[class*="zmgad-"]:remove()
+www.pcmag.com##ins[class*="zmgad-full-width"]:remove()
+www.pcmag.com###_evh-button:remove()
+www.pcmag.com##.privacy-content:remove()
+www.pcmag.com##div[class^="index__adWrapper-"]:remove()
+www.pcmag.com##div[class^="google_ads_iframe"]:remove()
+www.pcmag.com##div[class="bg-gray-100"]:has(a[aria-label="PCMag Mission Statement"]):remove()
+www.pcmag.com##div[data-adunit]:remove()
+www.pcmag.com##div[id^="google_ads_iframe"]:remove()
+www.pcmag.com##+js(set-constant, adUnitName, "")
+www.pcmag.com##+js(aopr, adUnitName)
+www.pcmag.com##+js(aopw, adUnitName)
+www.pcmag.com##+js(set-constant, facebookPixelScript, noopFunc)
+www.pcmag.com##+js(acs, /facebookPixelScript\(\)/)
+www.pcmag.com##+js(set-constant, facebookPixelLoaded, true)
+www.pcmag.com##+js(aopr, facebookPixelLoaded)
+www.pcmag.com##+js(aopw, facebookPixelLoaded)
+www.pcmag.com##+js(set-constant, bounceExchangeLoaded, true)
+www.pcmag.com##+js(aopr, bounceExchangeLoaded)
+www.pcmag.com##+js(aopw, bounceExchangeLoaded)
+www.pcmag.com##+js(set-constant, bounceExchangeScript, noopFunc)
+www.pcmag.com##+js(acs, /bounceExchangeScript\(\)/)
+||www.pcmag.com/bs/beacon.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.pcmag.com/cfn/en_US/fbevents.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.pcmag.com/Content/js/omniture-tracking.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.pcmag.com/empty.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.pcmag.com/js/ga.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.pcmag.com/wgac/analytics.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.pcmag.com/user/eu-check$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.pcmag.com/jst/zdconsent.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
