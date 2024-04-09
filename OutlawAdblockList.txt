@@ -45151,6 +45151,7 @@ www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##div:remove
 www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##div[class="pt-in"]:remove()
 !www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##:matches-path(/\/hotspot\/map/) div[class="popup-container-panel"]:has(div[class="dialog-tint"]):remove()
 www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##:matches-path(/\/hotspot\/map/) div[class="popup-container-panel"]:has(div[class="dialog-container-panel"] div[class="dialog-tint"]):remove()
+pressreader.com##html,body:style(display:block;-moz-user-select: text !important; -khtml-user-select: text !important;-webkit-user-select:text !important;user-select: text !important;)
 !||cdn.blueconic.net/wehco.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.blueconic.net^*
 ||eminentbubble.com^*
@@ -52444,8 +52445,9 @@ www.arkansasonline.com##+js(aopw, dfpAdunit)
 ||wehco.media.clients.ellingtoncms.com/static-4/prebid/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 edition.arkansasonline.com##div[class*="subscriber-content"]:remove-class(subscriber-content)
 edition.arkansasonline.com##+js(remove-class, subscriber-content, div[class*="subscriber-content"])
+edition.arkansasonline.com##html,body:style(display:block;-moz-user-select: text !important; -khtml-user-select: text !important;-webkit-user-select:text !important;user-select: text !important;)
 ! TODO: need a create a class scriptlet which adds to the class and/or replaces it.
-! add page-unlocked div[class*="page page-"][class*="zoom-o"] elements 
+! document.querySelectorAll('div[class*="page page-"][class*="zoom-o"]') then classList.add("page-unlocked") 
 ! Adding this class doesn't appear to do anything more than the existing rules.
 ! TODO: Neither of the following rules work to add or change a class.
 !edition.arkansasonline.com##+js(trusted-replace-node-text, DIV, / zoom-o"/gm, page-unlocked zoom-o")
