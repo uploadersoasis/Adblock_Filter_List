@@ -22928,7 +22928,6 @@ dropapk.*##+js(nowebrtc)
 ||datsgirl.com^*
 ||esmo.pro^*
 ||k4bg1u10omks.com^*
-www.vg247.com###onetrust-consent-sdk
 ||fgddl9szdof7.com^*
 ||crashreporter.epicgames.com^*
 ||datarouter-public-service-prod06.ol.epicgames.com^*
@@ -31934,9 +31933,40 @@ www.deskmodder.de##div[class="cookie-modal"]:remove()
 ||greatase.xyz^*
 ||hceyycgbulddaar.com^*
 ||dxdwmnfppth.xyz^*
+www.vg247.com###onetrust-consent-sdk:remove()
+www.vg247.com##body:remove-attr(data-ads)
 www.vg247.com##div[class*="advert_container"]:remove()
 www.vg247.com##div[class*="advert leaderboard"]:remove()
 www.vg247.com##div[data-dfp-id]:remove()
+www.vg247.com##div[id="sp_message_container_830134"]:remove()
+!www.vg247.com##div[id="notice"]:upward(2):remove()
+www.vg247.com##iframe[id^="sp_message_iframe_"]:remove()
+www.vg247.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+www.vg247.com##+js(set-attr, script[data-cookies-src], src, [data-cookies-src])
+! TODO: remove data-ads attribute for elements where data-ads="true" instead?
+www.vg247.com##+js(saa, data-ads, false, article[data-ads="true"])
+www.vg247.com##+js(set-constant, window.comscoreDone, true)
+www.vg247.com##+js(set-constant, appendComscore, noopFunc)
+www.vg247.com##+js(aeld, /BrockmanTargetingCookies/)
+www.vg247.com##+js(aeld, /BrockmanTCFConsent/)
+www.vg247.com##+js(acs, /_comscore\.push\(/)
+www.vg247.com##+js(set-constant, appendAnonymised, noopFunc)
+www.vg247.com##+js(acs, /appendAnonymised\(\)/)
+www.vg247.com##+js(trusted-set-constant, country, "US")
+www.vg247.com##+js(set-constant, window.brockmanAdsDone, true)
+www.vg247.com##+js(set-constant, appendBrockmanAds, noopFunc)
+www.vg247.com##+js(acs, /appendBrockmanAds\(\)/)
+www.vg247.com##+js(set-constant, adConfig, {})
+www.vg247.com##+js(aopr, adConfig)
+www.vg247.com##+js(aopw, adConfig)
+www.vg247.com##+js(set-constant, adConfig, {})
+www.vg247.com##+js(aopr, adConfig)
+www.vg247.com##+js(aopw, adConfig)
+www.vg247.com##+js(set-constant, window.BrockmanAds, noopFunc)
+www.vg247.com##+js(set-constant, BrockmanAds, noopFunc)
+www.vg247.com##+js(acs, /window\.BrockmanAds\.init\(\)/)
+!||cmpsp.vg247.com/index.html?message_id=*&consentUUID=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cmpsp.vg247.com^*
 ||asdhgysd.xyz^*
 ||tnfklhmlec.com^*
 www.ebooksyard.com##div[class*="admania_headertoplayt5ad"]:remove()
@@ -31997,11 +32027,11 @@ markipli.com##div[id="Modalad"]:remove()
 ||d1ezlc9vy4yc7g.cloudfront.net^*
 ||43753e5ca17ffa01c3fa822117b19cbb40301112b321e6fcd0cafd1013e2c3.s3.amazonaws.com^*
 ||omanifefa.xyz^*
-hungryleech.com##div[class^="social-"]
-linkifier.com##div[id="cookie-notice"]
+hungryleech.com##div[class^="social-"]:remove()
+linkifier.com##div[id="cookie-notice"]:remove()
 ||ajdkksdnnnsfrk.com^*
 ||eomcyykl.xyz^*
-eizone.info##aside[id="moove_gdpr_cookie_info_bar"]
+eizone.info##aside[id="moove_gdpr_cookie_info_bar"]:remove()
 ||s5.cnnx.io/s2static/*/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||lvhkkkrjyhv.com^*
 ||popgecusljq.xyz^*
@@ -32086,39 +32116,39 @@ borncity.com##div[class*="code-block"]:has-text(Advertising):remove()
 ||gdpr-tcfv2.sp-prod.net^*
 ||lmefarketi.com^*
 ||ftheplansa.com^*
-jungleworks.com##div[class*="for-cookies-only"]
-wire.com##*[id^="cookie-law-"]
-www.nbcnews.com##div[id^="div-mps-ad-"]
-www.nbcnews.com##div[id^="div-gpt-"]
-www.nbcnews.com##div[class*="ad-container"]
-www.nbcnews.com##div[class*="topbannerAd"]
-jami.biz##div[id="block-cookiesui"]
-jami.biz##div[class*="cookiesjsr-"]
+jungleworks.com##div[class*="for-cookies-only"]:remove()
+wire.com##*[id^="cookie-law-"]:remove()
+www.nbcnews.com##div[id^="div-mps-ad-"]:remove()
+www.nbcnews.com##div[id^="div-gpt-"]:remove()
+www.nbcnews.com##div[class*="ad-container"]:remove()
+www.nbcnews.com##div[class*="topbannerAd"]:remove()
+jami.biz##div[id="block-cookiesui"]:remove()
+jami.biz##div[class*="cookiesjsr-"]:remove()
 jami.biz##+js(remove-attr, required, #edit-user-email)
 jami.biz##+js(remove-class, required, #edit-user-email)
-constructarcade.com##div[id="cookie-consent"]
+constructarcade.com##div[id="cookie-consent"]:remove()
 ||beacon.zesty.market/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||beacon2.zesty.market/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-vr-on.com##div[id="cookie-notice"]
+vr-on.com##div[id="cookie-notice"]:remove()
 ||c.hit.ua/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||simplemuk.com^*
 ||ewasadirec.com^*
-fex.net##div[class*="modal_type_video-ads"]
+fex.net##div[class*="modal_type_video-ads"]:remove()
 ||aj1913.online^*
 !||fex.net/client/desktop/static/js/main.0cf171f2.chunk.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||fex.net/client/desktop/locales/ru/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-hideproxy.me##div[class="hidemeproxy__content"]
-www.nintendolife.com##div[id="onetrust-consent-sdk"]
+hideproxy.me##div[class="hidemeproxy__content"]:remove()
+www.nintendolife.com##div[id="onetrust-consent-sdk"]:remove()
 www.nintendolife.com##div[id="NL_LB_1"]:upward(2):remove()
-sonic.fandom.com##div[class="top-ads-container"]
-!sonic.fandom.com##div[class*="ad-slot-placeholder"]
-!sonic.fandom.com##div[class*="ad-slot"]
-sonic.fandom.com##div[class*="gpt-ad"]
-tailschannel.com##script[id="eu-cookie-law-script-js"]
-tailschannel.com##div[class*="eu_cookie_law_"]
+sonic.fandom.com##div[class="top-ads-container"]:remove()
+!sonic.fandom.com##div[class*="ad-slot-placeholder"]:remove()
+!sonic.fandom.com##div[class*="ad-slot"]:remove()
+sonic.fandom.com##div[class*="gpt-ad"]:remove()
+tailschannel.com##script[id="eu-cookie-law-script-js"]:remove()
+tailschannel.com##div[class*="eu_cookie_law_"]:remove()
 ||c0.wp.com/p/jetpack/10.1/_inc/build/widgets/eu-cookie-law/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.gamepressure.com##div[class*="ad-2016-top"]
-www.gamepressure.com##div[id="baner-inner2"]
+www.gamepressure.com##div[class*="ad-2016-top"]:remove()
+www.gamepressure.com##div[id="baner-inner2"]:remove()
 ||mqaui928dq.xyz^*
 douploads.com##.downicon
 ||douploads.com/images/download.png$image
@@ -32126,21 +32156,18 @@ douploads.com##.downicon
 ||douploads.net/doup/assets/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following two rules are needed if countdown.js is blocked
 douploads.net##.downloadbtn:remove-attr(disabled)
-douploads.net##div[id="countdown"]
 douploads.net##div[id="countdown"]:remove()
 ||douploads.net/images/StartDownload.gif$image
 ||douploads.net/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||douploads.net/sw_newone.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-douploads.net##:xpath(//script[contains(text(), '#adblock_detected')])
 douploads.net##:xpath(//script[contains(text(), '#adblock_detected')]):remove()
-douploads.net###gdpr-cookie-notice
+douploads.net##+js(remove-node-text, script, /#adblock_detected/gm)
 douploads.net###gdpr-cookie-notice:remove()
 douploads.net##+js(abort-on-property-read, _gaq)
 douploads.net##+js(abort-on-property-write, _gaq)
 douploads.net##div[class="alert alert-danger mb-3"]
 douploads.net##div[class="alert alert-danger mb-3"]:remove()
-douploads.net##div[class="checkbox text-center mt-3 checkbox-info off"]
-douploads.net##label[for="chkIsAdd"]
+douploads.net##div[class="checkbox text-center mt-3 checkbox-info off"]:remove()
 douploads.net##label[for="chkIsAdd"]:remove()
 !douploads.net##+js(trusted-set-constant, document.querySelector("#chkIsAdd").value, off)
 !douploads.net##+js(trusted-set-constant, document.querySelector("#downloadBtnClick").type, submit)
@@ -42102,8 +42129,6 @@ www.att.com##div[id="gpc-banner"]:remove()
 ||tracker.gamemonkey.org^*
 ||tracker.gamedock.io^*
 store.steampowered.com##div[id="cookiePrefPopup"]:remove()
-www.vg247.com##div[id="sp_message_container_830134"]:remove()
-www.vg247.com##body:remove-attr(data-ads)
 radaris.com##div[class*="js-ads-block"]:remove()
 radaris.com##div[class^="ads_"]:remove()
 radaris.com##ins[data-ad-client]:remove()
@@ -42141,6 +42166,7 @@ medium.com##div[class="n o of"]:remove()
 ! TODO: The following rule is too broad and will remove the root div tag which has this h2 tag branch.
 !medium.com##div:has(h2:has-text(Sign up to discover human stories that deepen your understanding of the world.)):remove()
 medium.com##div[class="bw ts tt bg xh"][style="bottom: 0px;"]:has(h2:has-text(Sign up to discover human stories that deepen your understanding of the world.)):remove()
+medium.com##div[class="bw ub uc bg xq"][style="bottom: 0px;"]:has(img[src="https://miro.medium.com/v2/da:true/resize:fit:0/5c50caa54067fd622d2f0fac18392213bf92f6e2fae89b691e62bceb40885e74"]):remove()
 ||medium.com/_/stat?event=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||medium.com/_/clientele/reports/performance/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads.livetv686.me^*
@@ -42784,10 +42810,6 @@ www.real.discount##+js(abort-on-property-read, adsbygoogle)
 www.real.discount##div[class="card"]:remove()
 www.lightreading.com##div[class*="Ad_pos_300_"]:remove()
 ||clouddecrease.com^*
-!||cmpsp.vg247.com/index.html?message_id=*&consentUUID=$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||cmpsp.vg247.com^*
-!www.vg247.com##div[id="notice"]:upward(2):remove()
-www.vg247.com##iframe[id^="sp_message_iframe_"]:remove()
 play.geforcenow.com##gfn-oobe:remove()
 play.geforcenow.com##div[id^="cdk-overlay-"][class*="dialogWelcome"]:remove()
 play.geforcenow.com##div[class="cdk-overlay-container"]:has(div[class="cdk-global-overlay-wrapper"]):remove()
@@ -49912,7 +49934,6 @@ www.digitaltrends.com##script[id^="dt-ads-"]:remove()
 www.digitaltrends.com##+js(aopr, window.dtadsExperiences)
 www.digitaltrends.com##+js(aopw, window.dtadsExperiences)
 www.digitaltrends.com##+js(set-constant, window.htlbid, {})
-www.digitaltrends.com##+js(set-constant, playerIdAbTest, true)
 www.digitaltrends.com##+js(set-attr, img[data-dt-lazy-src], src, [data-dt-lazy-src])
 www.digitaltrends.com##img[data-dt-lazy-src]:style(opacity: 1 !important;)
 ! TODO: need to change div[class="h-embedded-video"] into an iframe; a custom scriptlet is needed.
@@ -52425,6 +52446,7 @@ edition.arkansasonline.com##div[class*="subscriber-content"]:remove-class(subscr
 edition.arkansasonline.com##+js(remove-class, subscriber-content, div[class*="subscriber-content"])
 ! TODO: need a create a class scriptlet which adds to the class and/or replaces it.
 ! add page-unlocked div[class*="page page-"][class*="zoom-o"] elements 
+! Adding this class doesn't appear to do anything more than the existing rules.
 ! TODO: Neither of the following rules work to add or change a class.
 !edition.arkansasonline.com##+js(trusted-replace-node-text, DIV, / zoom-o"/gm, page-unlocked zoom-o")
 !edition.arkansasonline.com##+js(trusted-replace-node-text, DIV.className, /zoom-o/gm, page-unlocked zoom-o)
@@ -52473,6 +52495,7 @@ www.404media.co##div[class="ad ad-sidebar"]:remove()
 www.404media.co##div[id="ad-fixed"]:remove()
 www.404media.co##div[class*="ad-fixed"]:remove()
 worthepenny.com##div[id="privacy_policy_popup"]:remove()
+||www.tiktok.com/embed/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
