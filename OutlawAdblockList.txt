@@ -15733,19 +15733,18 @@ ouo.io##div[id$="_sync"]
 ||cdn2.onlinefreecourse.net/hg/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn3.onlinefreecourse.net/hg/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn1.onlinefreecourse.net/hg/js/advertisement.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-cdn1.onlinefreecourse.net##div[id="adblockinfo"]
-cdn2.onlinefreecourse.net##div[id="adblockinfo"]
-cdn3.onlinefreecourse.net##div[id="adblockinfo"]
-cdn1.onlinefreecourse.net##.btn-dl-plus.btn-info.btn
-cdn2.onlinefreecourse.net##.btn-dl-plus.btn-info.btn
-cdn3.onlinefreecourse.net##.btn-dl-plus.btn-info.btn
-!||rtb.adtube.ir/core/serve^*
+cdn1.onlinefreecourse.net##div[id="adblockinfo"]:remove()
+cdn2.onlinefreecourse.net##div[id="adblockinfo"]:remove()
+cdn3.onlinefreecourse.net##div[id="adblockinfo"]:remove()
+cdn1.onlinefreecourse.net##.btn-dl-plus.btn-info.btn:remove()
+cdn2.onlinefreecourse.net##.btn-dl-plus.btn-info.btn:remove()
+cdn3.onlinefreecourse.net##.btn-dl-plus.btn-info.btn:remove()
+!||rtb.adtube.ir/core/serve$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rtb.adtube.ir^*
-www.yasdl.com##div[class^="adtube"]
+www.yasdl.com##div[class^="adtube"]:remove()
 ||adapi.digikala.com^*
 !||advertising.digikala.com/Content/campaigns/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||advertising.digikala.com^*
-www.reddit.com##.commentsignupbar.infobar
 ||6yezz.jo5xzyikx.s9eh.online^*
 ||760an.donb.gdn^*
 ||apwvx.adsbtrack.com^*
@@ -15829,7 +15828,7 @@ docslide.net##div[class^="adsbygoogle"]:remove()
 ||s0.2mdn.net^$domain=forbes.com
 !||s1.2mdn.net/* !This may block some videos.
 ||s1.2mdn.net/viewad/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.receivesmsonline.net###mADSFooter
+www.receivesmsonline.net###mADSFooter:remove()
 ||swallsix.info^*
 ||shermore.info^*
 !||promo.propellerads.com/728x90-popads_1.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -15908,11 +15907,11 @@ dl.apkhouse.com##center:nth-of-type(2) > .btnDownload:remove()
 !||servicesforoffers.life/advertising/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||servicesforoffers.life^*
 ||js.mobileoffers-a-download.com^*
-apk4free.net##center:nth-of-type(2) > .btnDownload1
+apk4free.net##center:nth-of-type(2) > .btnDownload1:remove()
 ||dealspure.com/outpromotion/$subdocument
-www.techrrival.com###ezoic-pub-ad-placeholder-110
-revdownload.com##.text-ads
-askleo.com##.askleo_adblock1
+www.techrrival.com###ezoic-pub-ad-placeholder-110:remove()
+revdownload.com##.text-ads:remove()
+askleo.com##.askleo_adblock1:remove()
 !||tag.crsspxl.com/s1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tag.crsspxl.com^*
 !||ado.pro-market.net/ads/scripts/dda3-9-8mdt.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -15980,7 +15979,7 @@ a1apk.com###popDiv
 ||lp.weathertab4you.com^*
 ||fapmeth.com^*
 ||www.fapmeth.com^*
-||ad.kisscartoon.ac/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||ad.kisscartoon.ac^*
 !||gb0rd.com/show^*
 ||gb0rd.com^*
 ||www.gb0rd.com^*
@@ -18204,7 +18203,6 @@ subscription.packtpub.com##div[class="fade-out"]
 ||www.redditstatic.com/desktop2x/js/ads.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||c.aaxads.com/aax.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||c.aaxads.com^*
-||www.reddit.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||criteo-sync.teads.tv^*
 !||t.teads.tv/track^*
 ||t.teads.tv^*
@@ -19106,9 +19104,6 @@ valid.x86.fr##.widget-advert
 ||ad.daum.net^*
 ||feed.adrelayer.com^*
 !||co1.qualtrics.com^* !blocks surveys
-www.reddit.com###t3_q\=CgADB8GYAdXZPrEKAAUha-UvzwA0mAgABwAAAAEKAAwH0OxGcmLnbgA\=\&s\=EguK-tQ-NkmjGVcZBhxa9bUyXT4vCrdIH2GsZGAc4zE\=
-www.reddit.com###t3_q\=CgADCEJLrBbrdMQKAAUha-Uv0AA0mAgABwAAAAEKAAwIZiXDEEdUOwA\=\&s\=DVhESybU88mMJdPLHv1WaCoyzjulBL160kljsNkS_fE\=
-www.reddit.com##div[class*="promotedlink"]
 ||gateway.reddit.com/desktopapi/v1/sidebar_ads$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ggprfmbbl.com^*
 ||www.ggprfmbbl.com^*
@@ -21609,8 +21604,7 @@ upload.ac##ins[class="adsbygoogle"]:remove()
 ||upload.ac/hg/js/clipboard.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||upload.ac/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||upload.ac/push-wrap.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-upload.ac##.btn-dl-plus.btn-info.btn
-upload.ac##.btn-dl-plus
+upload.ac##.btn-dl-plus:remove()
 ||www.usinesmycete.info^*
 ||usinesmycete.info^*
 ||dj3ce626jq2zi.cloudfront.net^*
@@ -24764,7 +24758,6 @@ myuploadedpremium.de##+js(abort-on-property-write, window.atob)
 ||www.buyfordnow.com/mpel/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.ford.com/services/fps/checkFPSXDC.json$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||red.mediamarketsstream.com^*
-www.reddit.com###sidebar-atf-0:remove()
 www.geeksforgeeks.org###AP_G4GR_5:remove()
 login.wirecard.com##div[id="cookie-message"]:remove()
 www.sega60th.com##div[aria-label="Cookie Preferences"]:remove()
@@ -27590,22 +27583,27 @@ androidrepublic.org##div[class="u-bottomFixer js-bottomFixTarget"]:remove()
 /^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/sw\.js\S*/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 /^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/sw_may\.js\S*/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 /^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/advertisement\.js\S*/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/js\/advertisement\.js\S*/$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 /^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/blockadblock\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! Do not block the countdown script as the countdown is server-side checked.
 !/^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/countdown\.js\S*/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !blocks download links
 !www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id^="ads_container_"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##button[id="downloadbtn"]:remove-attr(onclick)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##.mnbt1.btn-primary.btn-xs.btn:remove-attr(onclick)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="vb9h7ma"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="ldrsr3r"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="adblockinfo"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="bannerad"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##button[id="downloadbtn"]:style(visibility: visible !important;)
+! TODO: The following rule blocks an overlay which has a click event for ads, but the exact style attribute contents will vary in width and height values.
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:"]:remove()
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, timeout, noopFunc)
 ! can't set or redfine a function using trusted-set-constant since it is for strings and would need eval() to execute the function
 !www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(trusted-set-constant, timeout, setTimeout\(tick\, 1\))
 !www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(trusted-set-constant, timeout, setTimeout(tick, 1))
-www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="adblockinfo"]:remove()
-www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="bannerad"]:remove()
-! TODO: The following rule blocks an overlay which has a click event for ads, but the exact style attribute contents will vary in width and height values.
-www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[style^="position:fixed;inset:0px;z-index:2147483647;background:black;opacity:0.01;height:"]:remove()
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(aeld, click, function)
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, tick, 0)
-www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##button[id="downloadbtn"]:style(visibility: visible !important;)
 ! The following rule is necessary if click events are defused/suppressed.
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(saa, type, submit, button[id="downloadbtn"])
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(remove-attr, disabled, .downloadbtn, stay)
@@ -27614,16 +27612,15 @@ www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download#
 !www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(no-setTimeout-if)
 ! This makes the countdown very quick from 10 seconds, but the server checks the time so it errors if the button is pressed too soon.
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(nano-stb, /.?/, 1000)
-www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##button[id="downloadbtn"]:remove-attr(onclick)
-www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##.mnbt1.btn-primary.btn-xs.btn:remove-attr(onclick)
-www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="vb9h7ma"]:remove()
-www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="ldrsr3r"]:remove()
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, detected, false, stay)
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, BlockAdBlock, noopFunc)
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, adBlockDetected, falseFunc)
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, adBlockNotDetected, trueFunc)
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(abort-on-property-read, detected)
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(abort-on-property-write, detected)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(set-constant, go, noopFunc)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(acs, /go\(\)/)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(remove-node-text, script, /window\.location = "/gm)
 paladinmod.com##div[id="wait-done"]:style(display: block !important; margin-top: 25px !important;)
 paladinmod.com##+js(remove-attr, style, #wait-done, stay)
 paladinmod.com##div[id="wait-me"]:remove()
@@ -36838,7 +36835,6 @@ www.fosslinux.com##ins[data-ad-client]:remove()
 ||bo.yoginsnorland.com^*
 ||filedownloadapp.com^*
 ||tragicbeyond.com^*
-||babup.com/page.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||engine.adlogists.com^*
 ||nudgeworry.com^*
 ||friendshipmale.com^*
@@ -41924,23 +41920,16 @@ poscitech.click##+js(abort-on-property-read, _gaq)
 poscitech.click##+js(abort-on-property-write, _gaq)
 www.toplessrobot.com##footer:has(div[id="vmgInterstitial"]):remove()
 1hd.to##div[class="item-film"]:has(div[class="badge-tag quality"]:has-text(/CAM|TS/)):remove()
-www.reddit.com##div[id="acceptabletest"]:remove()
-www.reddit.com##div[id="adblocktest"]:remove()
-www.reddit.com##script[id="datadome-bot-detection"]:remove()
 ||cdn.opecloud.com/ope-tegna.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: ^script doesn't work with attributes since checked before DOM created?
 www.kvue.com##script[id="utag_data_script"]:remove()
 ! blocks embedded videos
 !www.kvue.com##+js(acs, window.tegna)
-www.kvue.com##div[class^="universal-ad"]
 www.kvue.com##div[class^="universal-ad"]:remove()
 !||www.kvue.com/assets/js-libs/akamai/amp/amazonbidder/Amazonbidder.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.kvue.com/assets/js-libs/akamai/amp/amazonbidder/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-search.brave.com##div[data-creative-instance-id]
 search.brave.com##div[data-creative-instance-id]:remove()
-search.brave.com##div[data-type="ad"]
 search.brave.com##div[data-type="ad"]:remove()
-search.brave.com##div[id^="premium-promo"]
 search.brave.com##div[id^="premium-promo"]:remove()
 ||search.anonymous.ads.brave.com^*
 ||dnavexch.com^*
@@ -42434,9 +42423,11 @@ www.eurogamer.net##+js(set-attr, body, data-ads, false)
 www.eurogamer.net##div[class*="ads-rail"]:remove()
 www.eurogamer.net##div[class*="advertContainer"]:remove()
 www.eurogamer.net##div[class*="advert_container"]:remove()
+www.eurogamer.net##div[class="disclaimer"]:remove()
 www.eurogamer.net##div[class^="advert"]:remove()
 www.eurogamer.net##div[class="paywall"]:remove()
 www.eurogamer.net##div[class^="message-container"]:has(div[class="message-overlay"], div[id="notice"]):remove()
+www.eurogamer.net##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
 www.eurogamer.net##script[id="kueezrtb_latest"]:remove()
 www.eurogamer.net##+js(aeld, onConsentReady)
 www.eurogamer.net##+js(aeld, BrockmanTCFConsent)
@@ -42478,6 +42469,9 @@ www.eurogamer.net##+js(set-constant, window.brockmanAdsDone, trueFunc)
 www.eurogamer.net##+js(set-constant, window.facebookPixelsDone, trueFunc)
 www.eurogamer.net##+js(set-constant, adConfig, {})
 www.eurogamer.net##+js(set-constant, _paq, [])
+www.eurogamer.net##+js(set-constant, window._paq.push, noopFunc)
+www.eurogamer.net##+js(set-constant, sendPiwikEvent, noopFunc)
+www.eurogamer.net##+js(set-constant, sendPiwikTrackEvent, noopFunc)
 www.eurogamer.net##+js(set-constant, trackAnonymously, trueFunc)
 ! The following rule should not be necessary if live.primis.tech/content/prebid/prebidVid.*.js is blocked.
 www.eurogamer.net##+js(set-constant, window.SKpbjs, falseFunc)
@@ -42518,7 +42512,7 @@ axxellanceblog.com##div[class*="cookiesAlertBox"]:remove()
 !megaup.net##.mgbox:style(transform:translate(-999999px,0))
 !megaup.net##div[id="M458395ScriptRootC703218"]
 !megaup.net##.btn-free:style(display: inline !important;)
-!megaup.net##div[class="download-timer"]
+!megaup.net##div[class="download-timer"]:remove()
 !megaup.net##+js(acs, I833)
 !megaup.net##+js(aopr, I833.U6v)
 !megaup.net##+js(aopw, I833.U6v)
@@ -42937,8 +42931,9 @@ www.xda-developers.com##div[class*="spon_banner"]:remove()
 www.xda-developers.com##div[id^="adsninja-ad-zone"]:remove()
 www.xda-developers.com##div[id^="ad-zone-container"]:remove()
 www.xda-developers.com##div[id*="div-gpt-ad-"]:remove()
-www.xda-developers.com##iframe[style="display: none;"][name="__tcfapiLocator"]:remove()
-www.xda-developers.com##iframe[style="display: none;"][name="__uspapiLocator"]:remove()
+!www.xda-developers.com##iframe[style="display: none;"][name="__tcfapiLocator"]:remove()
+!www.xda-developers.com##iframe[style="display: none;"][name="__uspapiLocator"]:remove()
+www.xda-developers.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
 www.xda-developers.com##h3:has-text(/It looks like you\'re blocking our ads/):upward(6):remove()
 www.xda-developers.com##+js(set-constant, window.adsNinja, {})
 www.xda-developers.com##+js(acs, window.adsNinja)
@@ -44501,13 +44496,6 @@ www.christcenteredgamer.com##ins[data-ad-client]:remove()
 www.christcenteredgamer.com##+js(aopr, adsbygoogle)
 www.christcenteredgamer.com##+js(aopw, adsbygoogle)
 www.christcenteredgamer.com##div[id^="kofi-widget-overlay"][id$="-donate-button"]:remove()
-! use reddit.com instead of subdomain pay.reddit.com for the following entries
-reddit.com##div[class*="ad-container"]:remove()
-reddit.com##div[class*="native-ad-container"]:remove()
-reddit.com##div[class*="native-sidebar-ad"]:remove()
-reddit.com##div[data-adserver-imp-pixel]:remove()
-reddit.com##div[data-adserver-impression-id]:remove()
-reddit.com##div[data-adserver-viewable-pixel]:remove()
 www.badcaps.net##div[class*="js-privacy-consent-banner__"]:remove()
 www.badcaps.net##html:remove-class(b-modal-banner--disabled)
 www.badcaps.net##body[id="vb-page-body"]:remove-class(b-modal-banner--disabled)
@@ -44751,11 +44739,9 @@ sfist.com##mv-ad-reporter:remove()
 ||josephineravine.com^*
 ! alteredapk.shop is legitimately used for doodrive downloads
 !||alteredapk.shop^*
-www.reddit.com.com##faceplate-perfmetric-collector:remove()
 ||reddit.map.fastly.net/reports$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||w3-reporting.reddit.com/reports$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||w3-reporting.reddit.com^*
-||www.reddit.com/svc/shreddit/perfMetrics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dualstack.reddit.map.fastly.net/shreddit/en-US/w3-report-from-v2-event-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.redditstatic.com/shreddit/en-US/w3-report-from-v2-event-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dualstack.reddit.map.fastly.net/shreddit/en-US/shreddit-sidebar-ad-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -44764,8 +44750,6 @@ www.reddit.com.com##faceplate-perfmetric-collector:remove()
 ||www.redditstatic.com/shreddit/en-US/media-telemetry-observer-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dualstack.reddit.map.fastly.net/shreddit/en-US/ad-event-tracker-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.redditstatic.com/shreddit/en-US/ad-event-tracker-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.reddit.com##shreddit-comments-page-ad:remove()
-www.reddit.com##shreddit-sidebar-ad:remove()
 ||www.redditstatic.com/shreddit/en-US/telemetry-event-struct-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.redditstatic.com/shreddit/en-US/xpromo-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.redditstatic.com/shreddit/en-US/report-flow-*.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -50070,6 +50054,7 @@ downloadkai.top##+js(aopr, hb17)
 downloadkai.top##+js(aopw, hb17)
 appvn.com,moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(aopw, adsbygoogle)
 appvn.com,moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com##+js(aopr, adsbygoogle)
+||babup.com/page.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.babup.com/page1.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.babup.com/page2.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.babup.com/blockadblock.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -52536,6 +52521,38 @@ www.techinasia.com##script[onerror]:remove-attr(onerror)
 !www.techinasia.com##+js(aopr, bugsnagClient)
 !www.techinasia.com##+js(aopw, bugsnagClient)
 fileditch.com##+js(set-constant, makepeoplestay, noopFunc)
+! use reddit.com instead of subdomain pay.reddit.com for the following entries
+reddit.com##div[class*="ad-container"]:remove()
+reddit.com##div[class*="native-ad-container"]:remove()
+reddit.com##div[class*="native-sidebar-ad"]:remove()
+reddit.com##div[data-adserver-imp-pixel]:remove()
+reddit.com##div[data-adserver-impression-id]:remove()
+reddit.com##div[data-adserver-viewable-pixel]:remove()
+www.reddit.com##shreddit-comments-page-ad:remove()
+www.reddit.com##shreddit-sidebar-ad:remove()
+www.reddit.com##faceplate-perfmetric-collector:remove()
+www.reddit.com###sidebar-atf-0:remove()
+www.reddit.com###t3_q\=CgADB8GYAdXZPrEKAAUha-UvzwA0mAgABwAAAAEKAAwH0OxGcmLnbgA\=\&s\=EguK-tQ-NkmjGVcZBhxa9bUyXT4vCrdIH2GsZGAc4zE\=:remove()
+www.reddit.com###t3_q\=CgADCEJLrBbrdMQKAAUha-Uv0AA0mAgABwAAAAEKAAwIZiXDEEdUOwA\=\&s\=DVhESybU88mMJdPLHv1WaCoyzjulBL160kljsNkS_fE\=:remove()
+www.reddit.com##.commentsignupbar.infobar:remove()
+www.reddit.com##div[class*="promotedlink"]:remove()
+www.reddit.com##div[id="acceptabletest"]:remove()
+www.reddit.com##div[id="adblocktest"]:remove()
+www.reddit.com##script[id="datadome-bot-detection"]:remove()
+||reddit.map.fastly.net/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||embed.reddit.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.reddit.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.reddit.com/svc/shreddit/perfMetrics$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.slashfilm.com##div[id^="adslot-"]:remove()
+www.slashfilm.com##div[class*="google-ad-placeholder"]:remove()
+www.slashfilm.com##div[id="floatingAd"]:remove()
+www.slashfilm.com##script[data-on-widget-ad-impression]:remove()
+www.slashfilm.com##+js(set-constant, googletag.pubads, noopFunc)
+www.slashfilm.com##+js(set-constant, user.adblocking, false)
+www.slashfilm.com##+js(set-constant, LoopAds, noopFunc)
+www.slashfilm.com##+js(set-constant, window.admiral, noopFunc)
+||s3.us-east-1.amazonaws.com/c0af4bd3bd1b74df8bb03cc4efb012a7f67b7e5efb5bd7b98620bea99e66/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.*.amazonaws.com^$3p,xhr,domain=drop.download
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
