@@ -14516,11 +14516,7 @@ gfxpeers.net###noty_center_layout_container
 ||www.qteoslcm.bid^*
 ||qteoslcm.bid^*
 ||p30download.com/agahi/files/loading.gif$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-rahim-soft.org##.PeerFly300x250
-rahim-soft.org##.PeerFly728x90
-rahim-soft.org##div[class^="ezAdsense"]
-rahim-soft.net##.adsense-leadout.adsense.ezAdsense
-uplod.cc##.btn-dl-plus.btn-info.btn
+uplod.cc##.btn-dl-plus.btn-info.btn:remove()
 ||hh-btr.com^*
 !||cdn-z1.perfectgirls.net/thumbs/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn-z2.perfectgirls.net/thumbs/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -17446,8 +17442,6 @@ www.foxebook.net##div[id^="id"][id*="close"]:remove()
 ||gmationothere.club^*
 ||www.gmationothere.club^*
 ||upload4earn.org/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||rahim-soft.co/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||rahim-soft.co/mod_pagespeed_beacon$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pushwhy.com^*
 ||www.pushwhy.com^*
 !||pushno.com/ntfc.php$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -43637,56 +43631,63 @@ www.cgdirector.com##+js(acs, adthrive)
 www.cgdirector.com##body:remove-class(adthrive-device-desktop)
 www.cgdirector.com##script[id^="gainwp-tracking-analytics-events-js"]:remove()
 ||www.cgdirector.com/wp-content/plugins/ga-in/front/js/tracking-analytics-events.min.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+rahim-soft.org##.PeerFly300x250:remove()
+rahim-soft.org##.PeerFly728x90:remove()
+rahim-soft.org##div[class^="ezAdsense"]:remove()
+rahim-soft.net##.adsense-leadout.adsense.ezAdsense:remove()
+||rahim-soft.co/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||rahim-soft.co/mod_pagespeed_beacon$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The anti-adblocking script is an inline script defused by the following three rules.
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##:xpath(//script[contains(text(), 'banner_ad')]):remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##^script:has-text(banner_ad):remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(acs, /banner_ad/)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com###lastnews:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aopr, ez_ad_units)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aopw, ez_ad_units)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aopw, window.adsbygoogle)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aopr, window.adsbygoogle)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(set-constant, adcashMacros, {})
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aopr, adcashMacros)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aopw, adcashMacros)
-!get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aeld, /^(?:blur|click|error)$/)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aeld, blur)
-!get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aeld, click, /function\(aR\)/)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aeld, click)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(aeld, error)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(acs, gtag)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-read, adsbygoogle)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-write, adsbygoogle)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(set-constant, _gaq, [])
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-read, _gaq)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-write, _gaq)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-read, top)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-write, top)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-read, self)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(abort-on-property-write, self)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(set-constant, urls, {})
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(set-constant, zoneNativeSett, {})
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##+js(no-window-open-if)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##.btn-lg.btn-success.btn:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##.btn-primary.btn:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##.vticker:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##a[class="btn btn-info btn-lg"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##a[href*="://adzpub.com/search.php"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##div[class="as_ads_guard"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##div[class="banner1"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##div[class="banner3"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##div[class="banner4"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##div[id="banner_ad"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##div[id="countdown"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##div[id="gdpr-cookie-notice"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##iframe:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##input[id="adblock_detected"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##ins[data-ad-client]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##:xpath(//script[contains(text(), 'banner_ad')]):remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##^script:has-text(banner_ad):remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, /banner_ad/)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com###lastnews:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, ez_ad_units)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, ez_ad_units)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, window.adsbygoogle)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, window.adsbygoogle)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, adcashMacros, {})
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, adcashMacros)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, adcashMacros)
+!get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, /^(?:blur|click|error)$/)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, blur)
+!get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click, /function\(aR\)/)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, error)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, gtag)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, adsbygoogle)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, adsbygoogle)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, _gaq, [])
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, _gaq)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, _gaq)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, top)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, top)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, self)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, self)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, urls, {})
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, zoneNativeSett, {})
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(no-window-open-if)
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-lg.btn-success.btn:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-primary.btn:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.vticker:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[class="btn btn-info btn-lg"]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[href*="://adzpub.com/search.php"]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="as_ads_guard"]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner1"]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner3"]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner4"]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="banner_ad"]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="countdown"]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="gdpr-cookie-notice"]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##iframe:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##input[id="adblock_detected"]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##ins[data-ad-client]:remove()
 ! div[id="tritqwt"] is scripted to reappear if deleted
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com##div[id="tritqwt"]:remove()
+get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="tritqwt"]:remove()
 ! The following rules blocking inline scripts keeps the website from loading since it uses a POST request from an inline script to get the page
 !||uploadrar.com^$inline-script
 !||miui.rahim-soft.com^$inline-script
+!||cloud.rahim-soft.com^$inline-script
 !||get.getpczone.com^$inline-script
 ||get.getpczone.com^$xhr
 ||get.getpczone.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -43694,6 +43695,9 @@ get.getpczone.com,uploadrar.com,miui.rahim-soft.com##div[id="tritqwt"]:remove()
 ||miui.rahim-soft.com^$xhr
 ||miui.rahim-soft.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||miui.rahim-soft.com/uploadrar_style/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cloud.rahim-soft.com^$xhr
+||cloud.rahim-soft.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cloud.rahim-soft.com/uploadrar_style/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||uploadrar.com^$xhr
 ||uploadrar.com/sw.js$important,document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||uploadrar.com/uploadrar_style/js/countdown.js$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -50422,7 +50426,7 @@ romenewstribune-ga.newsmemory.com##+js(aopr, googleAnalyticsAccount4)
 romenewstribune-ga.newsmemory.com,www.unilad.com,www.newcdn.lol,vipbox1.com,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org,methstreams.com,thepostmillennial.com,freecomputerbooks.com,apk.support,playclassic.games,sflix.to,www.couchtuner.show,putlocker.pe,putlocker.sb,tennisonline.me,strikeout.im,strikeout.cc##+js(acs, /gtag\(|window\.dataLayer/)
 !healthyteeth.tips,jabbr.net,www.aroged.com,thinkkers.com,apkdone.com,apklit.com,apkloo.com,www.whatsmyip.org,net-informations.com,snakify.org,apkmos.com,www.anoopcnair.com,www.bestprog.net,blog.jongallant.com,www.csharp-examples.net,www.thecustomdroid.com,www.adbusbdriver.com,www.encodedna.com,www.w3resource.com,www.freecodecamp.org,wwww.techwalla.com,www.psdly.com,softhints.com,sbenny.com,www.androidblip.com,argudanmousosh1.ru,topclassactions.com,www.free-tutorials.us,www.tutsgalaxys.com,coursesghar.com,borncity.com,www.coursef.com,onvideo.org,freemagazines.top,www.linuxcompatible.org,www.ebooksyard.com,beebom.com,www.comss.ru,techtodown.com,modandroid.org,fileaxa.com,xapkmod.com,modxda.com,listoffreeware.com,lapelotita.com,dl.tech-story.net,gbplus.org,www.windowslatest.com,apkgods.net,apkcunk.com,techydino.net,www.hiapphere.com,www.apk4fun.com,cellularnews.com,ccm.net,fastclick.to,modgameapk.net,linux.how2shout.com,www.fresherslive.com,www.skylinewebcams.com,www.bleepingcomputer.com,www.breitbart.com,cardgames.io,pallabmobile.in,www.cpu-world.com,render-state.to,uvnc.com,d.tousecurity.com.www.websitedown.info,wooseotools.com,udemycourses.me,www.gametop.com,nullpk.com,cut-y.net,forum.videohelp.com,apkexit.com,downloadkai.top,www.babup.com,yuzu-emu.org,www.gamingonlinux.com,compress-pdf.kitomura.com##ins[data-ad-client]:remove()
 *##ins[data-ad-client]:remove()
-!linux.how2shout.com,www.fresherslive.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,www.skylinewebcams.com,www.breitbart.com,www.247solitaire.com,www.real.discount,pallabmobile.in,www.cpu-world.com,render-state.to,woowebtools.com,uvnc.com,easyupload.io,www.softwareok.com,androidtop.net,modded-1.com,apkgk.com,www.rawstory.com,www.downloadsource.net,d.tousecurity.com,www.websitedown.info,wooseotools.com,centfile.com,hifi2007reviews.com,beamtic.com,www.gametop.com,nullpk.com,freeudemycourse.com,cut-y.net,baominh.tech,fastclick.to,xdarom.com,nullpress.net,www.apk4fun.com,doodrive.com,nulljungle.com,giga-down.com,proxfree.com,unblockvideos.com,webproxy.to,www.videounblocker.net,zend2.com,www.myipbanned.com,www.hidebux.com,www.unblock123.com,www.hideoxy.com,infinityfree.net,www.4everproxy.com,winscp.net,www.proxysite.com,nulleb.com,onlinecoursebay.com,www.gratisgames24.ch,www.ftuudemy.com,freevideotutorialsus.com,forum.videohelp.com,appvn.com,moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com,yuzu-emu.org,www.gamingonlinux.com,mybrowseraddon.com,mobmodapk.com,www.croxyproxy.com,proxyium.com,compress-pdf.kitomura.com,ftuapps.dev,playclassic.games,www.hiapphere.com,coursesghar.com##+js(set-constant, adsbygoogle, [])
+!linux.how2shout.com,www.fresherslive.com,get.getpczone.com,uploadrar.com,cloud.rahim-soft.com,miui.rahim-soft.com,www.skylinewebcams.com,www.breitbart.com,www.247solitaire.com,www.real.discount,pallabmobile.in,www.cpu-world.com,render-state.to,woowebtools.com,uvnc.com,easyupload.io,www.softwareok.com,androidtop.net,modded-1.com,apkgk.com,www.rawstory.com,www.downloadsource.net,d.tousecurity.com,www.websitedown.info,wooseotools.com,centfile.com,hifi2007reviews.com,beamtic.com,www.gametop.com,nullpk.com,freeudemycourse.com,cut-y.net,baominh.tech,fastclick.to,xdarom.com,nullpress.net,www.apk4fun.com,doodrive.com,nulljungle.com,giga-down.com,proxfree.com,unblockvideos.com,webproxy.to,www.videounblocker.net,zend2.com,www.myipbanned.com,www.hidebux.com,www.unblock123.com,www.hideoxy.com,infinityfree.net,www.4everproxy.com,winscp.net,www.proxysite.com,nulleb.com,onlinecoursebay.com,www.gratisgames24.ch,www.ftuudemy.com,freevideotutorialsus.com,forum.videohelp.com,appvn.com,moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com,yuzu-emu.org,www.gamingonlinux.com,mybrowseraddon.com,mobmodapk.com,www.croxyproxy.com,proxyium.com,compress-pdf.kitomura.com,ftuapps.dev,playclassic.games,www.hiapphere.com,coursesghar.com##+js(set-constant, adsbygoogle, [])
 *##+js(set-constant, adsbygoogle, [])
 ||reconditerespect.com^*
 ||gray-koln-prod.cdn.arcpublishing.com/pf/resources/js/analytics/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -52553,6 +52557,16 @@ www.slashfilm.com##+js(set-constant, LoopAds, noopFunc)
 www.slashfilm.com##+js(set-constant, window.admiral, noopFunc)
 ||s3.us-east-1.amazonaws.com/c0af4bd3bd1b74df8bb03cc4efb012a7f67b7e5efb5bd7b98620bea99e66/$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s3.*.amazonaws.com^$3p,xhr,domain=drop.download
+online2pdf.com##div[id="c9bd3d"]:remove()
+online2pdf.com##div[class*="adboxcontainer"]:remove()
+filefox.cc##+js(set-constant, a, 0)
+filefox.cc##+js(set-constant, focused, 1)
+filefox.cc##+js(set-constant, started, 1)
+! TODO: Do not remove #download1, just hide it by changing the stlye?
+filefox.cc##div[id="download1"]:style(display: none !important;)
+filefox.cc##div[id="generate_dl"]:style(display: block !important;)
+! The following domain is for an analytics platform.
+||hive.splitbee.io^*
 
 !Whitelisted
 ! The following bad filter is from AakList (Anti-Adblock Killer).
