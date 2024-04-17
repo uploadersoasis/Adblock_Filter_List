@@ -41542,16 +41542,19 @@ filesusr.co##div[class^="didna-ad-slot"]:remove()
 !||open.spotifycdn.com/cdn/js/retargeting-pixels.c038ca53.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||open.spotifycdn.com/cdn/js/gtm.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||open.spotifycdn.com/cdn/js/retargeting-pixels.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/getInStreamAd\(\)\{return this\.inStreamAd\}//gm
-/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/p=\(\)=>u\(\)\.getInStreamAd\(\)//gm
-/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/a=t\.getInStreamAd\(\);//gm
-/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/\(\)\.getInStreamAd\(\)//gm
+!/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/getInStreamAd\(\)\{return this\.inStreamAd\}//gm
+/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/getInStreamAd\(\)\{return this\.inStreamAd\}/getInStreamAd(){}/gm
+!/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/setAdSlotEndpoint\(e\)\{_=e,\(0,r\.e\)\("setAdSlotEndpoint",e\)\}//gm
+/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/setAdSlotEndpoint\(e\)\{_=e,\(0,r\.e\)\("setAdSlotEndpoint",e\)\}/setAdSlotEndpoint(e){}/gm
 /^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/n\.restrictions\.disallowSkippingNextReasons\.includes\("ad_disallow"\),//gm
 /^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/\("setAdStatePusherEndpoint",e\)/("",e)/gm
-/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/setAdSlotEndpoint\(e\)\{_=e,\(0,r\.e\)\("setAdSlotEndpoint",e\)\}//gm
 /^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/\("getSponsorshipAd",t\)/("",t)/gm
 /^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/e\.AD_DISALLOW="ad_disallow",/e.AD_DISALLOW="",/gm
 /^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/getAdServerEndpoint:function\(e\)\{return c\.Q\.getSlotConfigurations\(e\)\.then\(\(e=>e\.settings\[0\]\.ad_server_endpoint\)\)\},/getAdServerEndpoint:function(){},/gm
+! TODO: The following rules prevent the Spotify web player from loading.
+!/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/p=\(\)=>u\(\)\.getInStreamAd\(\)//gm
+!/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/a=t\.getInStreamAd\(\);//gm
+!/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/\(\)\.getInStreamAd\(\)//gm
 open.spotify.com##._28f55dbe6c35681a96ab5d1b11d0b0e1-scss :remove()
 open.spotify.com##._668f8eb097574762d66d361cc6d37850-scss > .btn-black.btn--no-margin.btn:remove()
 open.spotify.com##.grecaptcha-badge:remove()
