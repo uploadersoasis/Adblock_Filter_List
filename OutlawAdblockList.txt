@@ -41551,6 +41551,7 @@ filesusr.co##div[class^="didna-ad-slot"]:remove()
 /^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/\("getSponsorshipAd",t\)/("",t)/gm
 /^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/e\.AD_DISALLOW="ad_disallow",/e.AD_DISALLOW="",/gm
 /^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/getAdServerEndpoint:function\(e\)\{return c\.Q\.getSlotConfigurations\(e\)\.then\(\(e=>e\.settings\[0\]\.ad_server_endpoint\)\)\},/getAdServerEndpoint:function(){},/gm
+/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/"data\-testadtype":"ad\-type\-"\+\(s\?"ad":"none"\),/"data-testadtype":"ad-type-"+("none"),/gm
 ! TODO: The following rules prevent the Spotify web player from loading.
 !/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/p=\(\)=>u\(\)\.getInStreamAd\(\)//gm
 !/^https?:\/\/([a-zA-Z0-9\-]+\.spotifycdn\.map\.fastly\.net)|(open\.spotifycdn\.com)\/cdn\/build\/web-player\/web-player\.[0-9a-fA-F]+\.js/$script,doc,xhr,replace=/a=t\.getInStreamAd\(\);//gm
@@ -41563,7 +41564,8 @@ open.spotify.com##a[data-context-item-type="ad"]:remove()
 open.spotify.com##a[data-testid="context-item-info-ad-title"]:remove()
 open.spotify.com##div[id="ad-tracking-pixel"]:remove()
 open.spotify.com##div[class*="os-host"]:remove-class(os-host-resize-disabled)
-open.spotify.com##footer[data-testadtype="ad-type-ad"]:remove()
+open.spotify.com##footer[data-testadtype="ad-type-ad"]:not(:matches-attr(data-testid="now-playing-bar")):remove()
+open.spotify.com##+js(saa, data-testadtype, ad-type-none, footer[data-testid="now-playing-bar"])
 open.spotify.com##button[data-testid="control-button-playpause"]:remove-attr(disabled)
 open.spotify.com##button[data-testid="control-button-skip-back"]:remove-attr(disabled)
 open.spotify.com##button[data-testid="control-button-shuffle"]:remove-attr(disabled)
@@ -49050,10 +49052,14 @@ googlechromecast.com##+js(aeld, reportEzErrorDefined)
 !||*/beardeddragon/gilamonster.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! go.ezodn.com/beardeddragon/iguana.js is the main video player script and has the ezVideoPlayer object.
 !||*/beardeddragon/iguana.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! go.ezodn.com/beardeddragon/turtle.js is a video player script and has the ezOutstreamPlayer object.
+!||*/beardeddragon/turtle.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+*##div[id="ez-video-ad-container-outstream"]:remove()
 ! go.ezodn.com/parsonsmaize/chanute.js has general page and ad management functions
 !||*/parsonsmaize/chanute.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! go.ezodn.com/tardisrocinante/vitals.js has performance measuring functions
-!||*/tardisrocinante/vitals.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||*/tardisrocinante/vitals.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+*##+js(set-constant, reportEzError, noopFunc)
 ||www.ezojs.com/detroitchicago/grapefruit.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.ezojs.com/porpoiseant/lemon.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.ezojs.com/porpoiseant/tangerine.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -52713,8 +52719,32 @@ mixrootmod.com##+js(trusted-replace-node-text, script, /"function"==typeof ai_ad
 ||mixrootmod.com/wp-content/plugins/megamenu/js/maxmegamenu.js?$replace=/"function"==typeof ai_adb_process_blocks&&ai_adb_process_blocks\(\w?\);//gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.adxfire.net/publisher/tags/mixrootmod.com.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.adxfire.net^*
+www.techedubyte.com##div[class^="gmr-floatbanner"]:remove()
+www.techedubyte.com##div[class^="gmr-topbanner"]:remove()
+www.techedubyte.com##div[class^="gmr-banner-insidecontent"]:remove()
+www.techedubyte.com##div[class^="gmr-banner-beforecontent"]:remove()
+www.techedubyte.com##div[id="ez-video-ad-container-outstream"]:remove()
+www.techedubyte.com##div[id="banner-advert-container"]:remove()
+www.techedubyte.com##div[id^="ezoic-pub-ad-"]:remove()
+www.techedubyte.com##span[id^="ezoic-pub-ad-"]:remove()
+www.techedubyte.com##span[data-ez-ph-id]:remove()
+www.techedubyte.com##script[id^="google_gtagjs-js"]:remove()
+www.techedubyte.com##script[id^="ai-adb-"]:remove()
+www.techedubyte.com##script[id^="wp-statistics-tracker-js"]:remove()
+www.techedubyte.com##script[id="wpmedia-analytics-js"]:remove()
+www.techedubyte.com##+js(set-constant, reportEzError, noopFunc)
+www.techedubyte.com##+js(set-constant, productEzoicAds, noopFunc)
+www.techedubyte.com##+js(aopr, productEzoicAds)
+www.techedubyte.com##+js(aopw, productEzoicAds)
+www.techedubyte.com##+js(aeld, ezVigImpression)
+||www.techedubyte.com/wp-content/plugins/ad-inserter/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.techedubyte.com/wp-content/plugins/wp-statistics/assets/js/tracker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||un.stavegroove.com^*
+||stavegroove.com^*
 
 !Whitelisted
+! The following bad filter is from uBlock filters – Unbreak.
+@@||ezodn.com/detroitchicago/$script,badfilter
 ! The following bad filter is from AakList (Anti-Adblock Killer).
 @@/advertisement*.js$script,badfilter
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
