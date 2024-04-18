@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2024-04-03T03:53:56.386Z",
+    "createdAt": "2024-04-16T03:15:01.599Z",
     "redirects": [
         {
             "description": "Example redirect, try going to http://example.com/anywordhere",
@@ -174,6 +174,28 @@
                 "script",
                 "image",
                 "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "Amazon Music Ad Redirector ",
+            "exampleUrl": "https://na.mesk.skill.music.a2z.com/api/audioAdStarted",
+            "exampleResult": "https://na.mesk.skill.music.a2z.com/api/audioAdStopped",
+            "error": null,
+            "includePattern": "(https?):\\/\\/na\\.mesk\\.skill\\.music\\.a2z\\.com\\/api\\/audioAd(Started|Paused|Resumed|Error)",
+            "excludePattern": "",
+            "patternDesc": "This will stop ads and skip to the next track for free tier users? userHash\t'{\"level\":\"FREE_MEMBER\"}'",
+            "redirectUrl": "$1://na.mesk.skill.music.a2z.com/api/audioAdStopped",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "object",
+                "xmlhttprequest",
+                "other"
             ]
         },
         {
