@@ -10804,8 +10804,6 @@ uptobox.com##div[id^="adleave"]:remove()
 ||s.206ads.com^*
 ||digitaltrends-d.openx.net^*
 ||product.pcmag.com/CSE/Ping$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||vstats.digitaltrends.com:8128/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||vstats.digitaltrends.com^*
 ||cdn2.lockerdome.com/_js/ajs.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.wendgames.com##div[id*="adsbygoogle"]:remove()
 www.wendgames.com##div[class*="adsbygoogle"]:remove()
@@ -11047,9 +11045,8 @@ www.fullprogramlarindir.com##.single-alt.single-reklam:remove()
 ||zytpirwai.net^*
 ||www.checkdomain.de/impressum/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||analytics.vendemore.com^*
-||analytics.digitaltrends.com^*
-||2ujo8ayw.racing/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.2ujo8ayw.racing/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||2ujo8ayw.racing^*
+||www.2ujo8ayw.racing^*
 ||ch4ng3d.info^*
 ||www.ch4ng3d.info^*
 ||trk.suprclicks.com^*
@@ -11072,7 +11069,7 @@ www.fullprogramlarindir.com##.single-alt.single-reklam:remove()
 ||ebook-dl.com/assets/images/83924550.png$image
 ||www.rgmgocplioed.com^*
 ||rgmgocplioed.com^*
-!||bar.love.mail.ru/jsonp/bar^*
+!||bar.love.mail.ru/jsonp/bar$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bar.love.mail.ru^*
 ||img.imgsmail.ru/cloud/js/WhatsUp.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.mjanue.info^*
@@ -22159,7 +22156,7 @@ crazy4tv.mrunblock.xyz##+js(set-constant, popundersPerIP, 0)
 ! 32767 /0x7FFF is the highest int allowed for set-constant
 ! in case this trusted-set-constant rule is not in "My Filters" tab
 crazy4tv.mrunblock.xyz##+js(set-constant, delayBetween, 32767)
-crazy4tv.mrunblock.xyz##+js(trusted-set-constant, delayBetween, 999999)
+crazy4tv.mrunblock.xyz##+js(trusted-set-constant, delayBetween, { "value": 999999 })
 !crazy4tv.mrunblock.xyz##+js(set-constant, default, [])
 !crazy4tv.mrunblock.xyz##+js(set-constant, default, undefined)
 crazy4tv.mrunblock.xyz##+js(set-constant, default, null)
@@ -24939,7 +24936,7 @@ www.4shared.com##+js(no-setInterval-if, b)
 www.4shared.com###troublesText1:remove-class(hintDuringCounter)
 www.4shared.com###troublesText2:remove-class(hintDuringCounter)
 www.4shared.com###troublesText2:style(display: block !important;)
-www.4shared.com##+js(trusted-set-constant, d2CounterValue, -1)
+www.4shared.com##+js(trusted-set-constant, d2CounterValue, { "value": -1 })
 www.4shared.com##+js(set-attr, '#jsTrafficLimitExceeded', value, false)
 www.4shared.com##+js(set-attr, '#secondsLeft', value, 0)
 !www.4shared.com##+js(saa, type, text, #baseDownloadLink)
@@ -26604,8 +26601,8 @@ www.ovagames.com##^script:has-text(KVDiGHRQGvz):remove()
 ||vipmods.net/wp-content/plugins/exit-strategy-pro/count.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 vipmods.net##+js(set-constant, gsecs, 1)
 !vipmods.net##+js(set-constant, CountActive, false)
-!vipmods.net##+js(trusted-set-constant, CountStepper, -50)
-vipmods.net##+js(trusted-set-constant, skipit, -1)
+!vipmods.net##+js(trusted-set-constant, CountStepper, { "value": -50 })
+vipmods.net##+js(trusted-set-constant, skipit, { "value": -1 })
 !vipmods.net##+js(set-constant, skipthis, 1)
 !vipmods.net##*:style(overflow:hidden; visibility:hidden)
 ||d31vxm9ubutrmw.cloudfront.net^*
@@ -26639,7 +26636,7 @@ www.kinematicsoup.com##div[class^="sqs-cookie-banner-v2"]:remove()
 ||ctuggestd.fun^*
 ||dmmzkfd82wayn.cloudfront.net^*
 aporasal.net##*[style*="display: none"]:remove()
-aporasal.net##+js(trusted-set-constant, iframe2.indexOf('adf.ly'), -1)
+aporasal.net##+js(trusted-set-constant, iframe2.indexOf('adf.ly'), { "value": -1 })
 ||cdn65182383.ahacdn.me^*
 !||cst.cstwpush.com/static/adManager.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cst.cstwpush.com^*
@@ -28066,12 +28063,12 @@ tii.ai##a[href*="/r3adyt0download.com/"]:remove()
 ||tii.ai/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 tii.ai##+js(abort-on-property-read, elem)
 tii.ai##+js(abort-on-property-write, elem)
-tii.ai##^script:has-text(/\/apu\.php\?zoneid\=/i)
-tii.ai##^script:has-text(/JSON\.parse\(atob\(/i)
-tii.ai##^script:has-text(/document\.createElement\('script'\)/i)
-tii.ai##div[id="ad-banner"]
+tii.ai##^script:has-text(/\/apu\.php\?zoneid\=/i):remove()
+tii.ai##^script:has-text(/JSON\.parse\(atob\(/i):remove()
+tii.ai##^script:has-text(/document\.createElement\('script'\)/i):remove()
+tii.ai##div[id="ad-banner"]:remove()
 !tii.ai##+js(set-constant, go_popup, null)
-!tii.ai##^script:has-text(/checkAdblockUser\(\)/i)
+!tii.ai##^script:has-text(/checkAdblockUser\(\)/i):remove()
 !tii.ai##+js(set-constant, e, "")
 tii.ai##+js(no-window-open-if, !/tii\.ai/i)
 !tii.ai##+js(no-setTimeout-if, /checkAdblockUser/i)
@@ -28095,16 +28092,16 @@ tii.ai##+js(no-setTimeout-if, /^/, 1000)
 ||faststore.org/css/adcss2.css$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rdr.rtbravo.com^*
 ||w.usprotects.com^*
-elamigosedition.com##div[class="cookiePolicyB"]
+elamigosedition.com##div[class="cookiePolicyB"]:remove()
 ||distemshu.biz^*
 ||offclaydolon.com^*
 ||www.gjqhufkamcoc.com^*
 ||gjqhufkamcoc.com^*
-www.deck13.com##aside[id="moove_gdpr_cookie_info_bar"]
-www.dualshockers.com##div[class="GRVAd"]
-www.dualshockers.com##div[data-ad-type]
-www.dualshockers.com##amp-analytics
-www.dualshockers.com##div[class="GRVMpuWrapper"]
+www.deck13.com##aside[id="moove_gdpr_cookie_info_bar"]:remove()
+www.dualshockers.com##div[class="GRVAd"]:remove()
+www.dualshockers.com##div[data-ad-type]:remove()
+www.dualshockers.com##amp-analytics:remove()
+www.dualshockers.com##div[class="GRVMpuWrapper"]:remove()
 !||improving.duckduckgo.com/t/si?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||improving.duckduckgo.com^*
 ||dffg7clyghtm8.cloudfront.net^*
@@ -28112,39 +28109,39 @@ www.dualshockers.com##div[class="GRVMpuWrapper"]
 ||amorphysp.fun^*
 ||d1a3jb5hjny5s4.cloudfront.net^*
 ||s3.amazonaws.com/08e77064246e3e6ac2bfcc9f79f2d49e32f90f61a706599c0aec65f53a9/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-devhints.io##div[id="carbonads"]
-www.thepolyglotdeveloper.com##div[aria-label="cookieconsent"]
-www.thepolyglotdeveloper.com##div[class*="cc-revoke"]
-www.thepolyglotdeveloper.com##div[class*="cc-banner"]
-www.thepolyglotdeveloper.com##div[class*="cc-bottom"]
-www.thepolyglotdeveloper.com##div[class*="cc-compliance"]
-www.thepolyglotdeveloper.com##span[id="cookieconsent:desc"]
+devhints.io##div[id="carbonads"]:remove()
+www.thepolyglotdeveloper.com##div[aria-label="cookieconsent"]:remove()
+www.thepolyglotdeveloper.com##div[class*="cc-revoke"]:remove()
+www.thepolyglotdeveloper.com##div[class*="cc-banner"]:remove()
+www.thepolyglotdeveloper.com##div[class*="cc-bottom"]:remove()
+www.thepolyglotdeveloper.com##div[class*="cc-compliance"]:remove()
+www.thepolyglotdeveloper.com##span[id="cookieconsent:desc"]:remove()
 !||www.ezojs.com/ezoic/sa.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.ezojs.com/ezoic/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.washingtonexaminer.com##div[class^="GoogleDfpAd"]
-www.washingtonexaminer.com##div[id^="googleAd"]
-www.washingtonexaminer.com##div[class="mid-article-banner-ad"]
+www.washingtonexaminer.com##div[class^="GoogleDfpAd"]:remove()
+www.washingtonexaminer.com##div[id^="googleAd"]:remove()
+www.washingtonexaminer.com##div[class="mid-article-banner-ad"]:remove()
 ||www.washingtonexaminer.com/scripts/adload-freestar.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||us.ads.justpremium.com/adserve/js.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !www.solidfiles.com##+js(remove-class, show-ads, , stay)
 www.solidfiles.com##+js(remove-class, show-ads)
-www.solidfiles.com##div[id="outdated"]
-www.irishtimes.com##div[class="adwrapper"]
-www.irishtimes.com##div[class^="ad-inline-article"]
-www.irishtimes.com##div[id^="div-gpt-ad"]
-www.neowin.net##div[class*="widget-ad"]
-dmde.com##div[id="cookiefooter"]
-amp-dailycaller-com.cdn.ampproject.org##amp-ad
-amp-dailycaller-com.cdn.ampproject.org##amp-analytics
-www.desmoinesregister.com##aside[aria-label="advertisement"]
-www.desmoinesregister.com##div[id^="ad-slot"]
-www.desmoinesregister.com##aside[data-u-sr="anon reg"]
-www.electronjs.org##a[href*="blacklivesmatter"]
-www.electronjs.org##a[href*="/support.eji.org/"]
-www.electronjs.org##div:has-text(/Black Lives Matter/i)
-www.deepbrid.com##span[id="cookieconsent:desc"]
-www.deepbrid.com##div[aria-label="cookieconsent"]
-linkspremium.download##div[aria-label="cookieconsent"]
+www.solidfiles.com##div[id="outdated"]:remove()
+www.irishtimes.com##div[class="adwrapper"]:remove()
+www.irishtimes.com##div[class^="ad-inline-article"]:remove()
+www.irishtimes.com##div[id^="div-gpt-ad"]:remove()
+www.neowin.net##div[class*="widget-ad"]:remove()
+dmde.com##div[id="cookiefooter"]:remove()
+amp-dailycaller-com.cdn.ampproject.org##amp-ad:remove()
+amp-dailycaller-com.cdn.ampproject.org##amp-analytics:remove()
+www.desmoinesregister.com##aside[aria-label="advertisement"]:remove()
+www.desmoinesregister.com##div[id^="ad-slot"]:remove()
+www.desmoinesregister.com##aside[data-u-sr="anon reg"]:remove()
+www.electronjs.org##a[href*="blacklivesmatter"]:remove()
+www.electronjs.org##a[href*="/support.eji.org/"]:remove()
+www.electronjs.org##div:has-text(/Black Lives Matter/i):remove()
+www.deepbrid.com##span[id="cookieconsent:desc"]:remove()
+www.deepbrid.com##div[aria-label="cookieconsent"]:remove()
+linkspremium.download##div[aria-label="cookieconsent"]:remove()
 ||www.verified-apps.com^*
 ||abbronzongor.com^*
 ||aylink.co/webroot/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -28200,13 +28197,13 @@ tny.so##script[src$="/a.js"]:remove()
 ||proclaimsubjected.com^*
 ||shockersheva.com^*
 ||d1nssfq3xl2t6b.cloudfront.net^*
-makemoneywithurl.com##div[id^="div-gpt-ad"]
+makemoneywithurl.com##div[id^="div-gpt-ad"]:remove()
 ||adserve.mahimeta.com^*
 ||adserve2.mahimeta.com^*
 ||mahimeta.com/networks/tag_config.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mahimeta.com/networks/tag.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d3f4nuq5dskrej.cloudfront.net^*
-noticiasesports.live##div[class*="eacc-widget-"]
+noticiasesports.live##div[class*="eacc-widget-"]:remove()
 ||static.elfsight.com/apps/cookie-consent/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||adshort.live/script_ad.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||adshort.live^*
@@ -28220,14 +28217,14 @@ noticiasesports.live##script[src*="/ads.adshort.media/"]:remove()
 noticiasesports.live##+js(set-constant, window.adblockDetector, false)
 ||vignerez.net^*
 ||forzubatr.com^*
-www.myvirtualserver.com##div[aria-label="cookieconsent"]
-www.myvirtualserver.com##span[id="cookieconsent:desc"]
-www.websitebuilderexpert.com##div[class="consent-holder consent-show"]
+www.myvirtualserver.com##div[aria-label="cookieconsent"]:remove()
+www.myvirtualserver.com##span[id="cookieconsent:desc"]:remove()
+www.websitebuilderexpert.com##div[class="consent-holder consent-show"]:remove()
 ||www.vwgilkky.com^*
 ||vwgilkky.com^*
-reverseengineering.stackexchange.com##div[class*="js-consent-ban"]
+reverseengineering.stackexchange.com##div[class*="js-consent-ban"]:remove()
 !||t.myvisualiq.net/impression_pixel^*
-www.tomsguide.com##*[class^="hawk-tracking-pixel-"]
+www.tomsguide.com##*[class^="hawk-tracking-pixel-"]:remove()
 www.tomsguide.com##+js(set-constant, window.askForConsent, false)
 www.tomsguide.com##+js(set-constant, window.waitForConsent, false)
 www.tomsguide.com##+js(abort-on-property-read, window.askForConsent)
@@ -28245,16 +28242,16 @@ exploringbits.com##+js(abort-on-property-write, gads)
 exploringbits.com##+js(abort-on-property-read, _ezaq)
 exploringbits.com##+js(abort-on-property-write, _ezaq)
 exploringbits.com##span[class*="ezoic-ad"]:remove()
-www.sync.com##div[class*="eupopup-"]
-www.getfilecloud.com##div[id="gdpr_accept"]
+www.sync.com##div[class*="eupopup-"]:remove()
+www.getfilecloud.com##div[id="gdpr_accept"]:remove()
 www.filehosting.org##+js(abort-on-property-read, QualiGOAdOptions)
 www.filehosting.org##+js(abort-on-property-write, QualiGOAdOptions)
 www.filehosting.org##+js(remove-attr.js, onclick, a.visible-phone, stay)
 www.filehosting.org##+js(remove-attr.js, onclick, a.hidden-phone, stay)
-www.couponxoo.com##div[class*="cookiealert"]
+www.couponxoo.com##div[class*="cookiealert"]:remove()
 www.couponxoo.com##+js(abort-on-property-read, adsenseSettings)
 www.couponxoo.com##+js(abort-on-property-write, adsenseSettings)
-www.couponxoo.com##div[class*="modal-adblock"]
+www.couponxoo.com##div[class*="modal-adblock"]:remove()
 www.couponxoo.com##+js(abort-on-property-read, window.googletag)
 www.couponxoo.com##+js(abort-on-property-write, window.googletag)
 ||www.ukslphcgs.com^*
@@ -28280,27 +28277,27 @@ filefreak.com##+js(remove-attr.js, onclick, .btn-primary)
 !||stpd.cloud/assets/hb/apkadmincom.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||stpd.cloud/assets/hb/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||stpd.cloud/saas/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-sharemods.com##div[id="sharemods.com_980x250"]
-sharemods.com##iframe[data-id^="sharemods.com_"]
-sharemods.com##div[id="sharemods_com_320x50_mobile_sticky"]
-www.business-standard.com##span[id="eu_popup"]
-www.business-standard.com##div[id^="div-gpt-ad-"]
-www.neowin.net##div[class="ad"]
+sharemods.com##div[id="sharemods.com_980x250"]:remove()
+sharemods.com##iframe[data-id^="sharemods.com_"]:remove()
+sharemods.com##div[id="sharemods_com_320x50_mobile_sticky"]:remove()
+www.business-standard.com##span[id="eu_popup"]:remove()
+www.business-standard.com##div[id^="div-gpt-ad-"]:remove()
+www.neowin.net##div[class="ad"]:remove()
 ||7freef.com^*
-www.g2.com##div[class*="js-cookie-consent-"]
+www.g2.com##div[class*="js-cookie-consent-"]:remove()
 !wetransfer.com##+js(abort-on-property-read, __trackjs__)
 !wetransfer.com##+js(abort-on-property-write, __trackjs__)
-wetransfer.com##div[class="banner__container banner__animations-enter-done"]
+wetransfer.com##div[class="banner__container banner__animations-enter-done"]:remove()
 ||d19ptbnuzhibkh.cloudfront.net/2.10.2/sp.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||prod-cdn.wetransfer.net/assets/advertising-$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css$script
-about.wetransfer.com##div[class^="cookie-bar"]
+about.wetransfer.com##div[class^="cookie-bar"]:remove()
 ||ads.blogherads.com^*
-www.cracked.com##section[class*="ad-wrapper"]
-www.cracked.com##section[class*="ad-desktop"]
-www.cracked.com##section[class*="ad-leaderboard"]
-www.cracked.com##div[class="ad-inner-wrapper"]
-www.nintendolife.com##div[class="dgp-consent"]
-www.studytonight.com##div[id="liveToast"]
+www.cracked.com##section[class*="ad-wrapper"]:remove()
+www.cracked.com##section[class*="ad-desktop"]:remove()
+www.cracked.com##section[class*="ad-leaderboard"]:remove()
+www.cracked.com##div[class="ad-inner-wrapper"]:remove()
+www.nintendolife.com##div[class="dgp-consent"]:remove()
+www.studytonight.com##div[id="liveToast"]:remove()
 ||ascendeum-d.openx.net^*
 ||track.capitaloneshopping.com^*
 ||minimizeglanceanyway.com^*
@@ -28309,7 +28306,7 @@ www.studytonight.com##div[id="liveToast"]
 ||fierceharmlessjacket.com^*
 ||partssubquery.com^*
 ||cookie-cdn.cookiepro.com^*
-www.lexology.com##div[id="optanon-popup-bottom"]
+www.lexology.com##div[id="optanon-popup-bottom"]:remove()
 ||cs.rin.ru^$removeparam=hilit
 ||csrinrutkb3tshptdctl5lyei4et35itl22qvk5ktdcat6aeavy6nhid.onion$removeparam=hilit
 ||forum.torrminatorr.com^$removeparam=hilit
@@ -28344,7 +28341,7 @@ onlineproxy.eu##div[id="cookieChoiceInfo"]:remove()
 my-torrent.xyz##a[class="genmed"]:remove()
 my-torrent.xyz##span[id="dedederaha"]:style(display: block)
 ||momijoy.ru/visitors?visitorid=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.tanikal.com##div[id="$_v_banner"]
+www.tanikal.com##div[id="$_v_banner"]:remove()
 ||urmilan.info^*
 !||melongnaw.com/ren.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||melongnaw.com^*
@@ -28366,23 +28363,23 @@ www.tanikal.com##div[id="$_v_banner"]
 ||deviceinfo.capitalone.com^*
 hotlink.cc##+js(set-constant, form_ok, 1, stay)
 hotlink.cc##+js(remove-attr, disabled, #downloadbtn, stay)
-www.discogs.com##div[class*="ad_container"]
-www.discogs.com##div[class*="ad_top"]
+www.discogs.com##div[class*="ad_container"]:remove()
+www.discogs.com##div[class*="ad_top"]:remove()
 ||lngtd.com/prebid/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||addkt-d.openx.net^*
 ||lngtd.com/discogs_a.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-ulozto.net##div[class*="ad-banner"]
-ulozto.net##div[class*="ad-sky"]
-ulozto.net##div[class*="js-advert"]
-ulozto.net##div[class*="t-advert"]
-ulozto.net##div[class*="adFull"]
-rutracker.org##div[class="bn-topic products"]
+ulozto.net##div[class*="ad-banner"]:remove()
+ulozto.net##div[class*="ad-sky"]:remove()
+ulozto.net##div[class*="js-advert"]:remove()
+ulozto.net##div[class*="t-advert"]:remove()
+ulozto.net##div[class*="adFull"]:remove()
+rutracker.org##div[class="bn-topic products"]:remove()
 !mega.nz##div[class="fm-dialog mega-dialog cookie-dialog lato"]:remove()
 mega.nz##div[class*="cookie-dialog"]:remove()
 mega.nz##.ads-left-block, .ads-right-block, .active.top-login-warning, .red.download-button.button, .checkbox-bl.download:remove()
 ||mega.nz/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||codegeekz.com/wp-content/js/analytics.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-codegeekz.com##div[id="google-post-adbottom"]
+codegeekz.com##div[id="google-post-adbottom"]:remove()
 codegeekz.com##ins[class="adsbygoogle"]:remove()
 !nullphpscript.com##+js(aeld) breaks search and other buttons
 nullphpscript.com##+js(aeld)
@@ -28390,13 +28387,13 @@ nullphpscript.com##+js(aopr, document.oncontextmenu)
 nullphpscript.com##+js(aopw, document.oncontextmenu)
 nullphpscript.com##+js(set-constant, vjiezwuqamlbgxo, null)
 ||nullphpscript.com/wp-content/plugins/npsblocker/js/ads.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-nullphpscript.com##div[class*="wp-gqdxya-kqivb-"]
+nullphpscript.com##div[class*="wp-gqdxya-kqivb-"]:remove()
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
 nullphpscript.com##script[src*="/pagead2.googlesyndication.com/"]:remove()
 nullphpscript.com##*:style(-webkit-filter: blur(0px) !important; filter: blur(0px) !important;)
-nullphpscript.com##^script:has-text(/AdBlocker/i)
-www.cloudshare.com##div[id="cookie-notice"]
-www.cloudshare.com##div[class*="cookie-"]
+nullphpscript.com##^script:has-text(/AdBlocker/i):remove()
+www.cloudshare.com##div[id="cookie-notice"]:remove()
+www.cloudshare.com##div[class*="cookie-"]:remove()
 www.howtoforge.com##div[id="ezmobfooter"]:remove()
 www.howtoforge.com##+js(aopr, __inScopeForCCPA)
 www.howtoforge.com##+js(aopw, __inScopeForCCPA)
@@ -28417,11 +28414,10 @@ www.europeup.com##button[class="downloadbtn"]:style(visibility: visible;)
 www.europeup.com##+js(remove-attr.js, disabled, #downloadbtn)
 www.europeup.com##+js(remove-attr.js, disabled, .downloadbtn)
 www.europeup.com##+js(set-constant, timeout, 1)
-www.europeup.com##^script:has-text(/adblock/i)
 www.europeup.com##^script:has-text(/adblock/i):remove()
 www.europeup.com##+js(set-attr, #adblock_detected, value, 0)
 !www.europeup.com###adblock_detected:remove-attr(value)
-gtaforums.com##div[id="elGuestTerms"]
+gtaforums.com##div[id="elGuestTerms"]:remove()
 ||cdn.iubenda.com/cookie_solution/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
 www.snopes.com##script[id="ads-js"]:remove()
@@ -28430,12 +28426,12 @@ www.snopes.com##div[class*="smg-zone-widget-ads-placement"]:remove()
 www.snopes.com##div[data-ad-placement-id]:remove()
 www.techiedelight.com##section[class*="widget_eu_cookie_law_widget"]:remove()
 www.techiedelight.com##div[id="eu-cookie-law"]:remove()
-www.businesswire.com##div[id="onetrust-banner-sdk"]
+www.businesswire.com##div[id="onetrust-banner-sdk"]:remove()
 www.venea.net##ins[class="adsbygoogle"]:remove()
 ||8779.BODIS.com^*
 ||c.trafficcertify.com^*
 ||majorgeeks.com/images/mg/160.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.majorgeeks.com##div[id^="beacon_"]
+www.majorgeeks.com##div[id^="beacon_"]:remove()
 ||ra.majorgeeks.com/www/delivery/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.tgzobwoutuwn.com^*
 ||tgzobwoutuwn.com^*
@@ -28443,15 +28439,15 @@ www.majorgeeks.com##div[id^="beacon_"]
 ||wnmalshuld.com^*
 ||jumotic.com/favicon.ico$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d3g5ovfngjw9bw.cloudfront.net^*
-www.compucalitv.com##a[href*="/track.wg-aff.com/"]
-pkg.go.dev##a[href*="/support.eji.org/"]
-pkg.go.dev##div[class="Banner-message"]:has-text(/Black Lives Matter/i)
+www.compucalitv.com##a[href*="/track.wg-aff.com/"]:remove()
+pkg.go.dev##a[href*="/support.eji.org/"]:remove()
+pkg.go.dev##div[class="Banner-message"]:has-text(/Black Lives Matter/i):remove()
 ||dvanced.club^*
 ||earneydisti.fun^*
 ||d2fbvay81k4ji3.cloudfront.net^*
-www.inputmag.com##div[class*="adWrapper"]
-www.inputmag.com##div[class^="ytp-ad-persistent-"]
-www.inputmag.com##iframe[style="display: none"]
+www.inputmag.com##div[class*="adWrapper"]:remove()
+www.inputmag.com##div[class^="ytp-ad-persistent-"]:remove()
+www.inputmag.com##iframe[style="display: none"]:remove()
 ||pandg.tapad.com^*
 ||d15kdpgjg3unno.cloudfront.net^*
 ||concernedglued.com^*
@@ -28498,37 +28494,37 @@ speakingjs.com##div[id="adbox"]:remove()
 speakingjs.com##script[id="_carbonads_js"]:remove()
 ||www7.securybrowseapp.com^*
 ||securybrowseapp.com^*
-www.pcloud.com##div[class="cookie_consent_holder"]
-cli.co##div[class="CookieConsent"]
+www.pcloud.com##div[class="cookie_consent_holder"]:remove()
+cli.co##div[class="CookieConsent"]:remove()
 ||loadheavilyquickthefile.vip^*document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||one.affiliateland.io^*
 !||sdpytrdr.sapphireintellectualparrot.online^*
 ||sapphireintellectualparrot.online^*
 ||depirsmandk5.com^*
 !||d1dxcvubdbe4ji.cloudfront.net/* !blocks epic games videos
-www.cheatsheet.com##div[class*="top-ad"]
-www.cheatsheet.com##div[class*="has-ad"]
-www.cheatsheet.com##div[class*="ad-loaded"]
+www.cheatsheet.com##div[class*="top-ad"]:remove()
+www.cheatsheet.com##div[class*="has-ad"]:remove()
+www.cheatsheet.com##div[class*="ad-loaded"]:remove()
 ||click.expmediadirect1.com^*
-webnode.es##div[class*="wnd-free-stripe"]
-www.raymond.cc##.adsbygoogle
-www.raymond.cc###adngin-sidebar_1-0
-www.raymond.cc###adngin-sidebar_2-0
-www.raymond.cc###adngin-sidebar_3-0
+webnode.es##div[class*="wnd-free-stripe"]:remove()
+www.raymond.cc##.adsbygoogle:remove()
+www.raymond.cc###adngin-sidebar_1-0:remove()
+www.raymond.cc###adngin-sidebar_2-0:remove()
+www.raymond.cc###adngin-sidebar_3-0:remove()
 ||spl.zeotap.com^*
 ||pop5sjhspear.com^*
 ||pixel.placed.com^*
 ||mp.4dex.io/prebid$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.amd.com##div[id="onetrust-consent-sdk"]
-uploadev.org##div[id="gdpr-cookie-notice"]
-revclouds.com##div[id="cookie-notice"]
+www.amd.com##div[id="onetrust-consent-sdk"]:remove()
+uploadev.org##div[id="gdpr-cookie-notice"]:remove()
+revclouds.com##div[id="cookie-notice"]:remove()
 ||washedinmate.com^*
 ||offsetdamn.com^*
 ||betshucklean.com^*
 ||chultoux.com^*
 ||lockingadmitted.com^*
 ||upshroomishtor.com^*
-www.cbackup.com##div[class="ensureCookie"]
+www.cbackup.com##div[class="ensureCookie"]:remove()
 syncthing.net##a[href*="/forum.syncthing.net/t/the-syncthing-foundation-stands-against-racism/"]:remove()
 syncthing.net##div[class^="alert"]:has-text(/racism/i):remove()
 syncthing.net##div[class^="alert"]:has-text(/Ukrain/i):remove()
@@ -28540,9 +28536,9 @@ s0ft4pc.com##+js(noeval)
 ||www.warez-bb.ir/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||beta.mybetterdl.com^*
 ||165.trackingms.com^*
-www.gdatasoftware.com##div[id="gd-cookie-consent"]
-smartbear.com##div[class*="cc-pop"]
-www.theblaze.com##div[class^="gdpr-cookie"]
+www.gdatasoftware.com##div[id="gd-cookie-consent"]:remove()
+smartbear.com##div[class*="cc-pop"]:remove()
+www.theblaze.com##div[class^="gdpr-cookie"]:remove()
 ||dutorterraom.com^*
 ||roilsnadirink.com^*
 ||comasoiling.casa^*
@@ -28581,30 +28577,30 @@ www.theblaze.com##div[class^="gdpr-cookie"]
 ||sensationaleducate.com^*
 ||muffinyourself.com^*
 ||hadsimz.com^$script
-www.scientificamerican.com##.square-ad
-www.kotaku.com.au^script:has-text(window.adTech)
+www.scientificamerican.com##.square-ad:remove()
+www.kotaku.com.au^script:has-text(window.adTech):remove()
 ||www.kotaku.com.au/content/mu-plugins/ad-tech/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.kotaku.com.au##+js(remove-attr.js, data-ads-displayed)
-www.kotaku.com.au##div[id^="ad-slot_"]
-www.kotaku.com.au##div[class*="ad-slot-wrapper"]
+www.kotaku.com.au##div[id^="ad-slot_"]:remove()
+www.kotaku.com.au##div[class*="ad-slot-wrapper"]:remove()
 ||adsafen.com^*
 ||skimegcolder.com^*
 ||www.onclickmega.com/a/display.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.onclickmega.com/ad/display.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||steamdb.info/static/js/vendor/bugsnag.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-ifastnet.com##div[id="cookiescript_injected"]
+ifastnet.com##div[id="cookiescript_injected"]:remove()
 ||geo.cookie-script.com/s/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cookie-script.com/s/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sproutstarbarnacle.com^*
 ||understandingharmoniousillegal.com^*
 ||anbox.io/js/cookieconsent.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-anbox.io##div[aria-label="cookieconsent"]
-anbox.io##span[id="cookieconsent:desc"]
-www.bonohost.net##div[class*="cookie-notice"]
-crypto.stackexchange.com##div[class*="js-consent-banner"]
-crypto.stackexchange.com##div[class="adsbox"]
-!www.dcode.fr##div[id="xb7295"]
-!www.dcode.fr##div[id="y2097"]
+anbox.io##div[aria-label="cookieconsent"]:remove()
+anbox.io##span[id="cookieconsent:desc"]:remove()
+www.bonohost.net##div[class*="cookie-notice"]:remove()
+crypto.stackexchange.com##div[class*="js-consent-banner"]:remove()
+crypto.stackexchange.com##div[class="adsbox"]:remove()
+!www.dcode.fr##div[id="xb7295"]:remove()
+!www.dcode.fr##div[id="y2097"]:remove()
 !||cdn-a.yieldlove.com/yieldlove-bidder.js?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn-a.yieldlove.com^*
 www.dcode.fr##+js(aopr, insertAds)
@@ -28613,14 +28609,14 @@ www.dcode.fr##+js(aopw, insertAds)
 www.dcode.fr##ins[class="adsbygoogle"]:remove()
 ! breaks playback of all youtube videos
 !||*.googlevideo.com/videoplayback?expire=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-opg.life##*[class*="notice--cookie"]
-www.ghacks.net##div[class="ghacks-ad"]
-www.ghacks.net##div[id^="ghacks_ad_code"]
+opg.life##*[class*="notice--cookie"]:remove()
+www.ghacks.net##div[class="ghacks-ad"]:remove()
+www.ghacks.net##div[id^="ghacks_ad_code"]:remove()
 www.includehelp.com##ins[class="adsbygoogle"]:remove()
-www.includehelp.com##div[id="vi-sticky-ad"]
-www.includehelp.com##div[id="vi-ad"]
-www.includehelp.com##div[class="adsbyvli"]
-www.includehelp.com##div:nth-child(1):has-text(/advertisement/i)
+www.includehelp.com##div[id="vi-sticky-ad"]:remove()
+www.includehelp.com##div[id="vi-ad"]:remove()
+www.includehelp.com##div[class="adsbyvli"]:remove()
+www.includehelp.com##div:nth-child(1):has-text(/advertisement/i):remove()
 www.includehelp.com##div[class="main-panel"]:style(width: 99vw !important;)
 neurosciencenews.com##div[class="mv-ad-box"]:remove()
 !neurosciencenews.com##div[class="adunitwrapper"]:remove()
@@ -28674,23 +28670,22 @@ ouo.io##div[id^="M282855ScriptRootC"]:remove()
 ||cdn.sedo.com/components/TfcP3WYRyZ9A/cookie-banner.$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 uploadev.org##+js(remove-attr.js, disabled, #downloadbtn, stay)
 ||uc-static.azureedge.net/static/js/new-design/ctr/cookies.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-unicode-table.com##div[id="js-cookie"]
+unicode-table.com##div[id="js-cookie"]:remove()
 !||sivian-ebe.com/imp/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sivian-ebe.com^*
 ||ositioninyv.biz^*
 ||ngmillaget.fun^*
 ||d1ev866ubw90c6.cloudfront.net^*
-www.gsmarena.com##span[class="ad-label"]
-www.gsmarena.com##span[class="ad-c-label"]
-www.gsmarena.com##div[id^="div-gpt-ad-"]
-gpuopen.com##div[id="cookie-notice"]
-www.hanselman.com##div[aria-label="cookieconsent"]
+www.gsmarena.com##span[class="ad-label"]:remove()
+www.gsmarena.com##span[class="ad-c-label"]:remove()
+www.gsmarena.com##div[id^="div-gpt-ad-"]:remove()
+gpuopen.com##div[id="cookie-notice"]:remove()
 www.hanselman.com##div[aria-label="cookieconsent"]:remove()
 ||www.hanselman.com/blog/theme/jinyang/scripts/cda-tracker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.hanselman.com##div[id^="div-gpt-ad-"]
-www.hanselman.com##div[class*="ad-item"]
-www.hanselman.com##div[class*="ad-sponsoreditem"]
-www.hanselman.com##div[class="lqm_ad"]
+www.hanselman.com##div[id^="div-gpt-ad-"]:remove()
+www.hanselman.com##div[class*="ad-item"]:remove()
+www.hanselman.com##div[class*="ad-sponsoreditem"]:remove()
+www.hanselman.com##div[class="lqm_ad"]:remove()
 ||www.hanselman.com/blog/theme/jinyang/scripts/cookieconsent.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.nhnuofzjh.com^*
 ||www.xkipnbabzbmwmr.com^*
@@ -28720,20 +28715,20 @@ www.droidviews.com##+js(aopr, __ez)
 www.droidviews.com##+js(aopw, __ez)
 www.droidviews.com##+js(aopr, _ezaq)
 www.droidviews.com##+js(aopw, _ezaq)
-www.droidviews.com##span[class="ezoic-adpicker-ad"]
-www.droidviews.com##span[id^="ezoic-pub-ad-"]
-www.droidviews.com##span[id^="div-gpt-ad-"]
-www.thecustomdroid.com##div[class="sidebar-ad"]
-www.thecustomdroid.com##div[class="_ap_apex_ad"]
+www.droidviews.com##span[class="ezoic-adpicker-ad"]:remove()
+www.droidviews.com##span[id^="ezoic-pub-ad-"]:remove()
+www.droidviews.com##span[id^="div-gpt-ad-"]:remove()
+www.thecustomdroid.com##div[class="sidebar-ad"]:remove()
+www.thecustomdroid.com##div[class="_ap_apex_ad"]:remove()
 www.thecustomdroid.com##+js(aopr, adpushup)
 www.thecustomdroid.com##+js(aopw, adpushup)
-www.thecustomdroid.com##div[class="adsbyvli"]
+www.thecustomdroid.com##div[class="adsbyvli"]:remove()
 www.thecustomdroid.com##+js(aopr, ai_debug_cookie_status)
 www.thecustomdroid.com##+js(aopw, ai_debug_cookie_status)
-www.thecustomdroid.com##ins[class*="adsbygoogle"]
-alabsidev.blogspot.com##div[class="SeoPlusAds"]
-android.stackexchange.com##div[class*="js-consent-banner"]
-www.leakite.com##div[data-ad]
+www.thecustomdroid.com##ins[class*="adsbygoogle"]:remove()
+alabsidev.blogspot.com##div[class="SeoPlusAds"]:remove()
+android.stackexchange.com##div[class*="js-consent-banner"]:remove()
+www.leakite.com##div[data-ad]:remove()
 ||uwoaptee.com^*
 ||stovoori.net^*
 ||egreephu.com^*
@@ -28768,13 +28763,13 @@ cpabuild.com##+js(set-constant, payoutCompleted, 3, stay)
 cpabuild.com##+js(set-constant, logged_impression, true, stay)
 cpabuild.com##+js(set-constant, logged_event, true, stay)
 ||playbuzzltd-d.openx.net^*
-smallbusiness.chron.com##div[data-ad-unit-name]
-smallbusiness.chron.com##div[class="exp-ui__cta-fullscreen"]
+smallbusiness.chron.com##div[data-ad-unit-name]:remove()
+smallbusiness.chron.com##div[class="exp-ui__cta-fullscreen"]:remove()
 ||atrack.avplayer.com^*
 ||prd-collector-anon.ex.co^*
-www.dummies.com##div[class="footer-ads-slide"]
-www.dummies.com##div[class*="du-ad-unit"]
-www.dummies.com##div[class="ads-sidebar"]
+www.dummies.com##div[class="footer-ads-slide"]:remove()
+www.dummies.com##div[class*="du-ad-unit"]:remove()
+www.dummies.com##div[class="ads-sidebar"]:remove()
 ||confiant-integrations.global.ssl.fastly.net/BycVE6aBbhYomq3GgyNrFJLjajc/gpt_and_prebid/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||get.s-onetag.com^*
 ||www.dummies.com/wp-content/plugins/dummies-ads-manager/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -28791,22 +28786,22 @@ www.softwarecrackguru.com##ins[class="adsbygoogle"]:remove()
 ||glow-hostz.xyz^*
 ||ciid2servr.xyz^*
 ||54.145.152.252/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-techznpp.blogspot.com##div[id="pop-body-73868"]
-techznpp.blogspot.com##div[id="header-ads"]
-techznpp.blogspot.com##sbt[class*="sbt-adnet"]
-techznpp.blogspot.com##div[id^="adm-container-"]
-techznpp.blogspot.com##div[id^="xyz-interstitial-background"]
-techznpp.blogspot.com##sbt[id="sbt-block256256"]
-techznpp.blogspot.com##iframe[id^="adm-id-"]
+techznpp.blogspot.com##div[id="pop-body-73868"]:remove()
+techznpp.blogspot.com##div[id="header-ads"]:remove()
+techznpp.blogspot.com##sbt[class*="sbt-adnet"]:remove()
+techznpp.blogspot.com##div[id^="adm-container-"]:remove()
+techznpp.blogspot.com##div[id^="xyz-interstitial-background"]:remove()
+techznpp.blogspot.com##sbt[id="sbt-block256256"]:remove()
+techznpp.blogspot.com##iframe[id^="adm-id-"]:remove()
 !||bulletprofitpop.com/display/index.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bulletprofitpop.com^*
 ||account.bulletprofit.com/upload/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bulletprofitads.com/display/items.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bulletprofitadclick.com/track/index.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 bulletprofitads.com##+js(set-constant, skipinter, 0)
-www.martview-forum.com##li[class*="notice--cookie"]
-www.martview-forum.com##div[class*="samBannerUnit"]
-a2zflashfile.com##div[id^="floating_ads_bottom"]
+www.martview-forum.com##li[class*="notice--cookie"]:remove()
+www.martview-forum.com##div[class*="samBannerUnit"]:remove()
+a2zflashfile.com##div[id^="floating_ads_bottom"]:remove()
 a2zflashfile.com##ins[class="adsbygoogle"]:remove()
 ||fie4host.xyz^*
 ||544bd1e82a9c8c39.com^*
@@ -28847,7 +28842,7 @@ veryfiles.com##+js(aopw, _0x57e0)
 veryfiles.com##+js(aopr, XrhwLPllmYD)
 veryfiles.com##+js(aopw, XrhwLPllmYD)
 veryfiles.com##input[id="adblock_detected"]:remove()
-veryfiles.com##^script:has-text(/adblock/i)
+veryfiles.com##^script:has-text(/adblock/i):remove()
 veryfiles.com##a[href*="/www.passtechusa.com/"]:remove()
 veryfiles.com##div[id="ads-left"]:remove()
 veryfiles.com##div[id="ads-right"]:remove()
@@ -30325,7 +30320,7 @@ unityassetcollection.com##a[href*="/www.buymeacoffee.com/"]
 ||unityassetcollection.com/wp-content/themes/mts_ad_sense/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||unityassetcollection.com/wp-content/themes/mts_ad_sense/js/customscript.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||unityassetcollection.com/wp-content/uploads/qglcxsnfd.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-unityassetcollection.com##+js(trusted-set-constant, totalWaitingTime, -1)
+unityassetcollection.com##+js(trusted-set-constant, totalWaitingTime, { "value": -1 })
 unityassetcollection.com##+js(nano-sib, /function ()/, *, 0.1)
 unityassetcollection.com##+js(remove-class, disabled, #BtnGetLink, stay)
 unityassetcollection.com##+js(remove-attr, disabled, #BtnGetLink, stay)
@@ -32311,7 +32306,7 @@ myshrinker.com##a[id="366813813"]:remove()
 ||heukwasanasse.com^*
 ||moltyeroki.com^*
 ||www.free-tutorials.us/wp-content/uploads/erzsjtnao.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!www.free-tutorials.us##+js(trusted-set-constant, counter, -1)
+!www.free-tutorials.us##+js(trusted-set-constant, counter, { "value": -1 })
 !www.free-tutorials.us##a[id="download"]:style(display:inline !important;)
 www.free-tutorials.us##+js(acs, downloadButton)
 www.free-tutorials.us##+js(aopr, downloadButton)
@@ -32481,7 +32476,7 @@ tekmods.com##+js(aopr, purecookieTitle)
 tekmods.com##+js(aopw, purecookieTitle)
 tekmods.com##+js(acs, purecookieTitle)
 tekmods.com##+js(set-constant, progressval, 0)
-tekmods.com##+js(trusted-set-constant, counter, -1)
+tekmods.com##+js(trusted-set-constant, counter, { "value": -1 })
 tekmods.com##+js(trusted-replace-node-text, script, /counter < 0/gm, counter <= 0)
 ||script.joinads.me^*
 jimtechs.biz##body,html:style(overflow: scroll)
@@ -32609,7 +32604,7 @@ webhostingpost.com##+js(add-class, btn-success, #surl)
 webhostingpost.com##a[id="surl"]:remove-attr(onclick)
 webhostingpost.com##+js(acs, /gtag\(/)
 webhostingpost.com##+js(acs, doc, iframe_id)
-webhostingpost.com##+js(trusted-set-constant, FuckAdBlock, _0xae04)
+webhostingpost.com##+js(trusted-set-constant, FuckAdBlock, { "value": _0xae04 })
 webhostingpost.com##+js(set-constant, _0x491ex3, 0, stay)
 !webhostingpost.com##+js(aeld, { "type": "/click/", "pattern": "/onclick/", "log": 2 })
 webhostingpost.com##+js(aeld, { "type": "/click/", "pattern": "/^/", "log": 2 })
@@ -33294,7 +33289,7 @@ thinkkers.com##div[id="above-the-fold-ad"]:remove()
 !||fleraprt.com/log/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||fleraprt.com^*
 apkloo.com##ins[data-ad-client]:upward(1):remove()
-apkloo.com##+js(trusted-set-constant, secs, -1)
+apkloo.com##+js(trusted-set-constant, secs, { "value": -1 })
 ||ambiliarcarwin.com^*
 ||exchangediscreditmast.com^*
 ||oatmeallump.com^*
@@ -33470,7 +33465,7 @@ newforex.online,world-trips.net##div[id="devozon-wait1"]:remove()
 newforex.online,world-trips.net##div[data-ad]:remove()
 newforex.online,world-trips.net##^script:has-text(/getalladblocks()/i):remove()
 newforex.online,world-trips.net##^script:has-text(/checkAdBlocker()/i):remove()
-newforex.online,world-trips.net##+js(trusted-set-constant, count, -1)
+newforex.online,world-trips.net##+js(trusted-set-constant, count, { "value": -1 })
 newforex.online,world-trips.net##+js(abort-current-inline-script, /getalladblocks\(\)/)
 newforex.online,world-trips.net##+js(abort-current-inline-script, /checkAdBlocker\(\)/)
 newforex.online,world-trips.net##+js(nano-stb, counter, *, 0.01)
@@ -34184,7 +34179,7 @@ shrinke.me##div[id="cookie-pop"]:remove()
 techmody.io##+js(acs, window.googletag)
 techmody.io##+js(aopr, window.googletag)
 techmody.io##+js(aopw, window.googletag)
-techmody.io##+js(trusted-set-constant, count, -1)
+techmody.io##+js(trusted-set-constant, count, { "value": -1 })
 techmody.io##+js(remove-class, disabled, #invisibleCaptchaShortlink, stay)
 techmody.io##+js(remove-attr, disabled, #invisibleCaptchaShortlink, stay)
 techmody.io##+js(acs, adBlockDetected)
@@ -34246,7 +34241,7 @@ icutlink.com##+js(remove-attr, disabled, #go-submit, stay)
 !mobi2c.com##div[class="adb_detected"]:remove()
 !mobi2c.com##div[id="content"]:remove()
 mobi2c.com##div[id="adb_detected"]:remove()
-mobi2c.com##+js(trusted-set-constant, count, -1)
+mobi2c.com##+js(trusted-set-constant, count, { "value": -1 })
 mobi2c.com##div[data-ad]:remove()
 mobi2c.com##+js(abort-current-inline-script, getalladblocks)
 mobi2c.com##+js(abort-current-inline-script, checkAdBlocker)
@@ -38038,13 +38033,15 @@ www.foxnews.com##+js(acs, Strike.insertAd)
 ! TODO: The following rule may be blocking functions which should be run including those that run [native code].
 www.foxnews.com##+js(no-setInterval-if, /^function\(\)/)
 www.foxnews.com##+js(remove-class, scroll-lock, ,)
-www.foxnews.com##+js(trusted-set-constant, document.querySelector("a.close").href, window.history.back())
+www.foxnews.com##+js(trusted-set-constant, document.querySelector("a.close").href, "window.history.back()")
 www.foxnews.com##+js(saa, href, window.history.back(), a.close)
 ! TODO: Why abort on video-embed?
 foxnews.com##+js(aopr, window.location.href.indexOf('video-embed'))
 foxnews.com##+js(aopw, window.location.href.indexOf('video-embed'))
 foxnews.com##+js(set-constant, authenticated, true)
-foxnews.com##+js(trusted-set-constant, data, {authenticated: true})
+! TODO: authenticated should not be a string?
+!foxnews.com##+js(trusted-set-constant, data, {"value": {"authenticated": true}})
+foxnews.com##+js(trusted-set-constant, data, {"value": {authenticated: true}})
 !||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp//omniture/Omniture.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp//omniture/$script
 !||foxnewsplayer-a.akamaihd.net/player/*/akamai/amp/amazonbidder/Amazonbidder.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -39147,7 +39144,7 @@ jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecub
 jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'googletag.')])
 jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##:xpath(//script[contains(text(), 'googletag.')]):remove()
 jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, isAdmin, true)
-jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(trusted-set-constant, ai_front, {"":""})
+jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(trusted-set-constant, ai_front, {"value": {"":""}})
 jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_js_code, false)
 jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, b2a, noopFunc)
 jytechs.in,devfiles.pages.dev,devuploads.com,dev.miuiflash.com,djxmaza.in,thecubexguide.com##+js(set-constant, ai_adb_process_blocks, noopFunc)
@@ -40710,7 +40707,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, oncli
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-node-text, #text, /\s?wait\.\.\.5/gm)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, #text, /\s?wait\.\.\.\d*/gm, "")
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-replace-node-text, script, /none|hidden/, 0, condition, getComputedStyle)
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, ads, [""])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, ads, {"value": [""]})
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, document.visibilityState, visible)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, dgpromo, block)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(trusted-set-constant, displayValue, block)
@@ -41571,6 +41568,7 @@ open.spotify.com##button[data-testid="control-button-skip-back"]:remove-attr(dis
 open.spotify.com##button[data-testid="control-button-shuffle"]:remove-attr(disabled)
 open.spotify.com##button[data-testid="control-button-skip-forward"]:remove-attr(disabled)
 open.spotify.com##button[data-testid="control-button-repeat"]:remove-attr(disabled)
+open.spotify.com##button[data-testid="control-button-queue"]:remove-attr(disabled)
 open.spotify.com##+js(set-constant, getInStreamAd, noopFunc)
 open.spotify.com##+js(set-constant, getSponsorshipAd, noopFunc)
 ! TODO: All of the following rules are necessary since it not currently possible to combine matching properties without having to match all of the properties.
@@ -43016,7 +43014,7 @@ www.breitbart.com##+js(set-constant, ISC_IS.adblock, false)
 www.breitbart.com##+js(abort-on-property-write, adsbygoogle)
 www.breitbart.com##+js(abort-on-property-read, adsbygoogle)
 www.breitbart.com##+js(acs, OnetrustActiveGroups)
-www.breitbart.com##+js(trusted-set-constant, BB_Y, {ads:0})
+www.breitbart.com##+js(trusted-set-constant, BB_Y, {"value": {ads:0}})
 www.breitbart.com##+js(abort-on-property-write, BB_Y)
 www.breitbart.com##+js(abort-on-property-read, BB_Y)
 www.breitbart.com##+js(set-attr, video[class*="lazy-loop"][data-harry], src, [data-harry])
@@ -43954,7 +43952,7 @@ www.fresherslive.com##iframe[id="rufous-sandbox"]:remove()
 !www.fresherslive.com##script[src*="://images.dmca.com/Badges/DMCABadgeHelper.min.js"]:remove()
 *##script[src*="://images.dmca.com/Badges/DMCABadgeHelper.min.js"]:remove()
 ||images.dmca.com/Badges/DMCABadgeHelper.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.gsmtoolpro.com##+js(trusted-set-constant, count, -1)
+www.gsmtoolpro.com##+js(trusted-set-constant, count, {"value": -1})
 www.tenorshare.com##aside[id="gdprAgree"]:remove()
 www.tenorshare.com##div[id="cookies-eu-banner"]:remove()
 ||comparisons.sovrn.com^*
@@ -44480,7 +44478,7 @@ upload.app##div[id="policy-info"]:remove()
 androidtop.net[data-ad-client]:remove()
 androidtop.net##+js(abort-on-property-read, adsbygoogle)
 androidtop.net##+js(abort-on-property-write, adsbygoogle)
-androidtop.net##+js(trusted-set-constant, timeleft, -1)
+androidtop.net##+js(trusted-set-constant, timeleft, {"value": -1})
 androidtop.net##div[class="counterhide"]:style(opacity: 0 !important; visibility: hidden !important; height: 0px !important;)
 androidtop.net##div[class="download-result"]:style(opacity: 1 !important; visibility: visible !important;)
 modcombo.com##div[id="cookie-notice-bar"]:remove()
@@ -45000,7 +44998,7 @@ apkmody.io##span[id="donate-popup"]:remove()
 apkmody.io##span[id="fixed-donate-us"]:remove()
 apkmody.io##a[id="download-button"][href$="://worker.happymod.cool/releases/Apkmody-latest.apk"]:remove()
 apkmody.io##+js(acs, gtag)
-apkmody.io##+js(trusted-set-constant, window.googletag, {cmd: []})
+apkmody.io##+js(trusted-set-constant, window.googletag, {"value": {cmd: []}})
 apkmody.io##+js(acs, window.googletag)
 !apkmody.io##+js(set-constant, googletag.pubads, noopFunc, end)
 apkmody.io##+js(set-constant, googletag.pubads, noopFunc, complete)
@@ -45294,7 +45292,7 @@ www.superantispyware.com##div[id="cookie-notification"]:remove()
 ||codedome.online^*
 ||341073be6e9db7d2.com^*
 ||clickdome.online^*
-file-mods.ru##+js(trusted-set-constant, secs, -1)
+file-mods.ru##+js(trusted-set-constant, secs, { "value": -1 })
 file-mods.ru##+js(aopr, stime)
 file-mods.ru##+js(aopw, stime)
 file-mods.ru##a[class="hide-but"]:remove()
@@ -45911,7 +45909,7 @@ www.inc.com##div[data-ad_slot_type]:remove()
 www.inc.com##+js(set-constant, setNptTechAdblockerCookie, noopFunc)
 www.inc.com##+js(set-constant, adblocker, false)
 ! the following rule is necessary to set adblocker to a string of "false" not the value.
-www.inc.com##+js(trusted-set-constant, adblocker, false)
+www.inc.com##+js(trusted-set-constant, adblocker, "false")
 www.inc.com##div[class*="ad-block"][class*="topAdBlock"]:remove()
 ! the following two rules break styles on the page
 !www.inc.com##div[class*="ad-block"]:remove()
@@ -46083,7 +46081,7 @@ voodc.com##+js(no-setInterval-if, /^Pingstat\(\)/)
 ! sets any value not false to false
 voodc.com##+js(trusted-replace-node-text, script, /jwplayer\(\)\.setMute\(((?!false)\w)+\);/gm, jwplayer().setMute(false);)
 ! cannot set a function with trusted-set-constant since the third parameter is a string and would need eval() to run as a function.
-!voodc.com##+js(trusted-set-constant, WSUnmute, function(){jwplayer().setMute(false);})
+!voodc.com##+js(trusted-set-constant, WSUnmute, { "value": function(){jwplayer().setMute(false);} })
 mobmodapk.com##aside[class^="ads"]:remove()
 mobmodapk.com##ins[data-ad-client]:remove()
 mobmodapk.com##+js(aopw, adsbygoogle)
@@ -46127,7 +46125,7 @@ www.mediafire.com##+js(set-constant, window.ezstandalone, {})
 www.mediafire.com##+js(abort-on-property-read, window.ezstandalone)
 www.mediafire.com##+js(abort-on-property-write, window.ezstandalone)
 ! use trusted-set-constant since "false" needs to be a string
-www.mediafire.com##+js(trusted-set-constant, window.displayAds, false)
+www.mediafire.com##+js(trusted-set-constant, window.displayAds, "false")
 !www.mediafire.com##+js(set-constant, pbjs.initAdserverSet, false)
 www.mediafire.com##+js(set-constant, pbjs.initAdserverSet, false, end)
 !www.mediafire.com##+js(set-constant, pbjs.initAdserverSet, false, complete)
@@ -46591,7 +46589,7 @@ wikisport.click,wikisport.se##+js(aopw, window.top)
 wikisport.click,wikisport.se##+js(acs, /window\.top/)
 wikisport.click,wikisport.se##+js(acs, /window\.location\.replace/)
 ! can't set or redfine a function using trusted-set-constant since it is for strings and would need eval() to execute the function
-!wikisport.click,wikisport.se##+js(trusted-set-constant, mustave, atob('L2hscy9zdHJlYW0ubTN1OD9jaD1zcG4='))
+!wikisport.click,wikisport.se##+js(trusted-set-constant, mustave, { "value": atob('L2hscy9zdHJlYW0ubTN1OD9jaD1zcG4=') })
 wikisport.click,wikisport.se##+js(trusted-set-constant, mustave, "/hls/stream.m3u8?ch=spn")
 wikisport.click,wikisport.se##+js(set-constant, clearTimeout, noopFunc)
 wikisport.click,wikisport.se##+js(set-constant, keepChecking, noopFunc)
@@ -49975,12 +49973,19 @@ www.digitaltrends.com##+js(set-attr, img[data-dt-lazy-src], src, [data-dt-lazy-s
 www.digitaltrends.com##img[data-dt-lazy-src]:style(opacity: 1 !important;)
 ! TODO: need to change div[class="h-embedded-video"] into an iframe; a custom scriptlet is needed.
 www.digitaltrends.com##+js(set-attr, div[class="h-embedded-video"][data-url], src, [data-url])
+! TODO: force playerIdAbTest to false?
+www.digitaltrends.com##+js(set-constant, playerIdAbTest, false)
+! TODO: force country code to GB?
+www.digitaltrends.com##+js(trusted-set-constant, cc, "GB")
 ||www.digitaltrends.com/wp-content/themes/dt-stardust/assets/scripts/js/dt-snowplow.min.js$script
 ||www.digitaltrends.com/wp-content/themes/dt-stardust/assets/scripts/js/dt-consent.min.js$script
 ||www.digitaltrends.com/wp-content/themes/dt-stardust/assets/scripts/js/dt-ads-manager.min.js?v=09f5e480
 ||www.digitaltrends.com/wp-content/themes/dt-stardust/assets/scripts/js/dt-metrics.min.js?v=09f5e480
 ||ccp.digitaltrends.com/scripts/cc-tracking.js$script
 ||news.digitaltrends.com/newdata/adpreview$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||analytics.digitaltrends.com^*
+!||vstats.digitaltrends.com:8128/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||vstats.digitaltrends.com^*
 ||d16dv0fpfdbyng.cloudfront.net/scripts/cc-tracking.js$3p,script
 ||cdn.cookielaw.org/scripttemplates/otSDKStub.js$important,3p,script
 ||ruddsalud.top^*
@@ -50451,8 +50456,8 @@ romenewstribune-ga.newsmemory.com##+js(set-constant, googleAnalyticsAccount4, []
 romenewstribune-ga.newsmemory.com##+js(aopw, googleAnalyticsAccount4)
 romenewstribune-ga.newsmemory.com##+js(aopr, googleAnalyticsAccount4)
 ! TODO: Does changing the date in demoissue change the free edition of the paper?
-!romenewstribune-ga.newsmemory.com##+js(trusted-set-constant, demoissue, "20240218")
-!romenewstribune-ga.newsmemory.com##+js(trusted-replace-node-text, script, /var demoissue = '20240218';/gm, var demoissue = '20240311';)
+!romenewstribune-ga.newsmemory.com##+js(trusted-set-constant, demoissue, "20240418")
+!romenewstribune-ga.newsmemory.com##+js(trusted-replace-node-text, script, /var demoissue = '20240418';/gm, var demoissue = '20240417';)
 ||romenewstribune-ga.newsmemory.com/layout/googleAnalyticsTec.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||us6-bcdn-ama.newsmemory.com/eebrowser/ipad/html5.check.*//tracking/gaMobileTracker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 *##+js(set-constant, gtag, noopFunc)
@@ -51914,7 +51919,7 @@ m.imagenesderopaparaperros.com##+js(set-constant, uspStubFunction, noopFunc)
 m.imagenesderopaparaperros.com##+js(set-constant, checkIfUspIsReady, noopFunc)
 m.imagenesderopaparaperros.com##+js(set-constant, uspInterval, noopFunc)
 m.imagenesderopaparaperros.com##+js(trusted-set-constant, app_vars.force_disable_adblock, "0")
-m.imagenesderopaparaperros.com##+js(trusted-set-constant, app_vars.cookie_notification_bar, false)
+m.imagenesderopaparaperros.com##+js(set-constant, app_vars.cookie_notification_bar, false)
 m.imagenesderopaparaperros.com##+js(trusted-replace-node-text, script, /"force_disable_adblock":"1"\,/gm, "force_disable_adblock":"0",)
 m.imagenesderopaparaperros.com##+js(trusted-replace-node-text, script, /"counter_value":"10"\,/gm, "counter_value":"1",)
 m.imagenesderopaparaperros.com##+js(trusted-replace-node-text, script, /"cookie_notification_bar":true\,/gm, "cookie_notification_bar":false,)
@@ -52667,6 +52672,9 @@ filefox.cc##div[id="generate_dl"]:style(display: block !important;)
 ||d8aqog0hzpkc8.cloudfront.net^$3p,image,domain=music.amazon.com
 ! The following rule redirects the audio to a null file instead.
 ||d8aqog0hzpkc8.cloudfront.net^$3p,media,redirect=noopmp3-0.1s,domain=music.amazon.com
+! The following two rules will remove buttons that lead to automatically purchasing a subscription
+music.amazon.com##div[class="detail-button-container"]:has(music-button:has-text(Try Amazon Music Unlimited)):remove()
+music.amazon.com##music-button[title="UPGRADE"][aria-label="UPGRADE"]:remove()
 ! Enabling the next and previous buttons doesn't really help the free tier of Amazon Music as the button just displays a popup to purchase the premium subscription.
 music.amazon.com##music-button[id="nextButton"][class*="disabled"]:remove-class(disabled)
 music.amazon.com##+js(remove-class, disabled, #nextButton, stay)
@@ -52674,6 +52682,32 @@ music.amazon.com##music-button[aria-label="Previous"][class*="disabled"]:remove-
 music.amazon.com##+js(remove-class, disabled, music-button[aria-label="Previous"][class*="disabled"], stay)
 music.amazon.com##music-button[id="transport-overlay-button"]:remove-attr(disabled)
 music.amazon.com##+js(remove-attr, disabled, #transport-overlay-button, stay)
+! userHash should be the {"level":"HD_MEMBER"} JSON so use the following format:
+music.amazon.com##+js(trusted-set-constant, userHash, {"value": {"level":"HD_MEMBER"}})
+! TODO: The valus in the following four rules are either being overridden or are not being set although they appear to be set according to the logs.
+music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isRedhoodPlusMetricsEnabled", {"value": false})
+music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isAccentOutlineUpsellBadgeEnabled", {"value": false})
+music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isAnonymousFreeTierDialogEnabled", {"value": false})
+music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.weblabV2Enabled", {"value": true})
+! Sets these values in the in-line script instead.
+! TODO:  If using trailing comma's in the following rules, the comma's must be escapes in both the find AND replacement parameters.
+!        Do NOT use commans since the script may reorder the items and the last one won't have a comma.
+music.amazon.com##+js(trusted-replace-node-text, script, /"isRedhoodPlusMetricsEnabled": true/gm, "isRedhoodPlusMetricsEnabled": false)
+music.amazon.com##+js(trusted-replace-node-text, script, /"isAnonymousFreeTierDialogEnabled": true/gm, "isAnonymousFreeTierDialogEnabled": false)
+music.amazon.com##+js(trusted-replace-node-text, script, /"isAccentOutlineUpsellBadgeEnabled": true/gm, "isAccentOutlineUpsellBadgeEnabled": false)
+music.amazon.com##+js(trusted-replace-node-text, script, /"weblabV2Enabled": false/gm, "weblabV2Enabled": true)
+music.amazon.com##+js(trusted-replace-node-text, script, /"isClientMetricsLambdaEnabled": true/gm, "isClientMetricsLambdaEnabled": false)
+! "AMF" is the free tier; "UNLIMITED_HD" is the paid tier.
+! Using the following rule to set the tier will prevent music from playing ("playback error" screen) if on the free tier, i.e. "AMF".
+! This one setting does change the shuffle button to a play button.
+! It also causes a music subscription to be started and charged if no free trial for the account.
+! the colon needs to be escaped in the following rules for some reason.
+!music.amazon.com##+js(trusted-replace-node-text, script, /"tier"\: "AMF"/gm, "tier": "UNLIMITED_HD")
+! Using the following rule to set the tier will prevent music from playing ("playback error" screen) if on the free tier, i.e. "AMF".
+!music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.tier, UNLIMITED_HD)
+! TODO: Finish and use one of the following rules to force the userHash value on an POST request?
+!music.amazon.com##+js(trusted-replace-outbound-text, , /\{"level":"FREE_MEMBER"\}/, {"level":"HD_MEMBER"})
+!music.amazon.com##+js(trusted-replace-outbound-text, , FREE_MEMBER, HD_MEMBER)
 !||global.telemetry.insights.video.a2z.com/Bootstrap/AV20180601
 ||global.telemetry.insights.video.a2z.com^*
 ! The following fule blocks Spotify audio ads.
@@ -52741,6 +52775,16 @@ www.techedubyte.com##+js(aeld, ezVigImpression)
 ||www.techedubyte.com/wp-content/plugins/wp-statistics/assets/js/tracker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||un.stavegroove.com^*
 ||stavegroove.com^*
+filezilla-project.org##div[class="TopAd"]:remove()
+filezilla-project.org##div[id^="rightad"]:remove()
+filezilla-project.org##div[id^="leftad"]:remove()
+||scarcerpokomoo.com^*
+||gymnasiumfilmgale.com^*
+||t7jkhghjk8.world^*
+!*$3p,script,denyallow=www.gstatic.com|www.google.com,domain=datanodes.to
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.gstatic.com|www.google.com,domain=datanodes.to
+datanodes.to##div[class^="buttonAds"]:remove()
+datanodes.to##div[class="flex gap-3"]:has(button[type="button"]):remove()
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Unbreak.
