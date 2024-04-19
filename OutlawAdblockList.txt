@@ -49511,6 +49511,7 @@ newatlas.com##+js(rna, img[loading="lazy"][data-src], data-src, src)
 !||pl21574782.toprevenuegate.com^*
 !||pl15821666.toprevenuegate.com^*
 !||pl20623807.toprevenuegate.com^*
+!||pl22059484.toprevenuegate.com^*
 ! TODO: always 8 digits after "pl" in subdomain name?
 ! Do NOT put a ^ at end of regex as it does not work as it does on non-regex strings in rules.
 !/^https?:\/\/pl\d{8}\.toprevenuegate\.com\/?\S*/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -52693,14 +52694,14 @@ music.amazon.com##music-button[id="transport-overlay-button"]:remove-attr(disabl
 music.amazon.com##+js(remove-attr, disabled, #transport-overlay-button, stay)
 ! userHash should be the {"level":"HD_MEMBER"} JSON so use the following format:
 music.amazon.com##+js(trusted-set-constant, userHash, {"value": {"level":"HD_MEMBER"}})
-! TODO: The valus in the following four rules are either being overridden or are not being set although they appear to be set according to the logs.
+! TODO: The values in the following four rules are either being overridden or are not being set although they appear to be set according to the logs.
 music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isRedhoodPlusMetricsEnabled", {"value": false})
 music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isAccentOutlineUpsellBadgeEnabled", {"value": false})
 music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isAnonymousFreeTierDialogEnabled", {"value": false})
 music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.weblabV2Enabled", {"value": true})
 ! Sets these values in the in-line script instead.
-! TODO:  If using trailing comma's in the following rules, the comma's must be escapes in both the find AND replacement parameters.
-!        Do NOT use commans since the script may reorder the items and the last one won't have a comma.
+! TODO:  If using trailing comma's in the following rules, the comma's must be escaped in both the find AND replacement parameters.
+!        Do NOT use comma's since the script may reorder the items and the last one won't have a comma.
 music.amazon.com##+js(trusted-replace-node-text, script, /"isRedhoodPlusMetricsEnabled": true/gm, "isRedhoodPlusMetricsEnabled": false)
 music.amazon.com##+js(trusted-replace-node-text, script, /"isAnonymousFreeTierDialogEnabled": true/gm, "isAnonymousFreeTierDialogEnabled": false)
 music.amazon.com##+js(trusted-replace-node-text, script, /"isAccentOutlineUpsellBadgeEnabled": true/gm, "isAccentOutlineUpsellBadgeEnabled": false)
@@ -52825,6 +52826,21 @@ filedot.to##span[id="countdown"]:remove()
 !||servedby.flashtalking.com/imp/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||servedby.flashtalking.com^*
 ||d30hfjcp71s79q.cloudfront.net/score.min.js$3p,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||images.mobilism.org/?dm=BEZQ$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||aqw.lol^*
+||stats.affz.top^*
+||gensonal.com^*
+||bestpornsite.su/ban/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! TODO: The following rule removes most of the non-ad content too due to #ad_global_below_navbar.
+!www.mobimart.it##div[id^="ad_global_"]:remove()
+www.mobimart.it##div[id^="ad_thread_"]:remove()
+www.mobimart.it##div[id="ad_global_above_footer"]:remove()
+www.mobimart.it##div[class="resp-container"]:has(iframe[src="https://www.mobimart.it/ban.html"]):remove()
+www.mobimart.it##+js(aopr,  googletag)
+www.mobimart.it##+js(aopw,  googletag)
+www.mobimart.it##+js(aopr,  gads)
+www.mobimart.it##+js(aopw,  gads)
+||www.mobimart.it/ban.html$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
