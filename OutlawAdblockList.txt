@@ -9196,7 +9196,6 @@ dropapk.com###mngez-wrapper > .mngez-container > .mngez-download1 > .mngez-downl
 !||boom.pdanew.com/ggla.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||boom.pdanew.com/gpua.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||boom.pdanew.com^*
-||mobdisc.com/advertisement.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||muzikfury.thewhizmarketing.com^*
 !||letzonke.com/fp.eng$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||letzonke.com/Redirect.a1b$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -17729,7 +17728,7 @@ digg.com##.ad-container--originals-top
 ||www.tensitionschoo.club^*
 ||uploadev.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||api.aerisapi.com/batch/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||twitter.com/push_service_worker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||twitter.com/push_service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hnkkj0b-qwerty.wedeploy.io^*
 ||www.freewebhostingarea.com/images/poweredby.png$image
 ||kqlokjfrnz.com^*
@@ -22130,11 +22129,11 @@ talkerscode.com##div[class="videoAdUiFloatingLayer"]:remove()
 ||pushrev.neptuneadspush.com^*
 ||pushlite.neptuneadspush.com^*
 ||qualityspin.com/back.php?tracker=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||qualityspin.com/service_worker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||qualityspin.com/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||x.secondpromo.com^*
 ||dropsurvey.com/js/fingerprintjs2/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dropsurvey.com/utils/banners/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||dropsurvey.com/service_worker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||dropsurvey.com/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||gg45erl.styuo.company^*
 ||*.styuo.company^*
 !||kq6.securessl.company^*
@@ -25822,8 +25821,8 @@ nulled.link##li[class$="notice--cookie"]:remove()
 ||edgyconnaterag.com^*
 ||www.inflationbreedinghoax.com^*
 ||knockoutwithdrawal.com^*
-||www.darkng.com/service_worker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||dloady.com/service_worker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.darkng.com/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||dloady.com/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||borntonull.com/download/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 borntonull.com##div[id="cookie-pop"]:remove()
 borntonull.com##div[class="ad-banner"]:remove()
@@ -31174,8 +31173,13 @@ xervoo.net##div[id="cookie_notice"]:remove()
 !||www1135.ff-03.com^*
 !||www888.ff-02.com^*
 ||pdalife.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+mobdisc.com##a[class="b-download__button"][href^="//hantsailsyte.com/"]:remove()
+mobdisc.com##+js(set-constant, cur_val, 0)
+||mobdisc.com/advertisement.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!*$3p,script,denyallow=pdalife.com|www.google.com|www.gstatic.com,domain=mobdisc.com
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=pdalife.com|www.google.com|www.gstatic.com,domain=mobdisc.com
 ||spanuletubings.com^*
-dwdisc.com##span[class="b-rec"]
+dwdisc.com##span[class="b-rec"]:remove()
 www.moregameslike.com##div[class="container"]:has(ins[class="adsbygoogle"]):remove()
 www.moregameslike.com##ins[class="adsbygoogle"]:remove()
 www.moregameslike.com##div[class="label top"]:has-text(/ADVERTISEMENT/i):remove()
@@ -31317,7 +31321,7 @@ www.medicalnewstoday.com##aside[class="css-cd0nvx"]:remove()
 ||www.quizz2win.com^*
 ||www.nxuktkuoazvizd.com^*
 ||nxuktkuoazvizd.com^*
-||www.nulledfrm.com/service_worker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.nulledfrm.com/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.easybytez.com##+js(remove-attr, disabled, #btn_download, stay)
 hot4share.com##+js(remove-attr, disabled, #downloadbtn, stay)
 ||blyckidxmuq.com^*
@@ -32448,6 +32452,12 @@ tekmods.com##+js(trusted-set-constant, counter, { "value": -1 })
 tekmods.com##+js(trusted-replace-node-text, script, /counter < 0/gm, counter <= 0)
 ||script.joinads.me^*
 jimtechs.biz##body,html:style(overflow: scroll)
+jimtechs.biz##aside[class*="ads_single_top"]:remove()
+jimtechs.biz##aside[class*="ads_header"]:remove()
+jimtechs.biz##+js(set-constant, signalGooglefcPresent, noopFunc)
+jimtechs.biz##+js(acs, /signalGooglefcPresent\(\)/)
+jimtechs.biz##+js(set-attr, img[class*="lazyload"], src, [data-src])
+||jimtechs.biz/wp-content/plugins/ads-invalid-click-protection/assets/js/script.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cutedrive.com/page/bouncy.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cutedrive.com^*
 ||api.enthusiastgaming.net/eg-logger/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -32597,23 +32607,19 @@ deasilex.com##*[class*="adtester-container"]:remove()
 ||tookimookin.com^*
 ||mokkilooki.com^*
 ||d2ers4gi7coxau.cloudfront.net^*
-||s3.us-east-1.amazonaws.com/a87375b2f3a0673a1d7f03da1d75c0efd93b7e4e4c85ad0df8b221d59663/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 github.com##div[class*="js-notice"]:has(form[action="/settings/dismiss-notice/ukraine_support_message"]):remove()
 !||wp.webpushonline.com/pw_saveUserEventLog.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||wp.webpushonline.com^*
 !||78626.bodis.com/js/parking.2.85.0.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||*.bodis.com/js/parking.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.kitploit.com##img[class="ads72890"]
-www.kitploit.com##div[id="side-banner-1"]
-www.kitploit.com##div[id^="ads_kitploit"]
+www.kitploit.com##img[class="ads72890"]:remove()
+www.kitploit.com##div[id="side-banner-1"]:remove()
+www.kitploit.com##div[id^="ads_kitploit"]:remove()
 www.kitploit.com##+js(aopr, adhtml2)
 www.kitploit.com##+js(aopw, adhtml2)
-www.vice.com##[data-ad-unit-path]
-www.vice.com##*[class^="vice-ad"]
+www.vice.com##[data-ad-unit-path]:remove()
 www.vice.com##*[class^="vice-ad"]:remove()
-www.vice.com##link[id^="ad-lib"]
 www.vice.com##link[id^="ad-lib"]:remove()
-!www.vice.com##div[class="recirc-footer__post-ad-container"]
 !www.vice.com##div[class="recirc-footer__post-ad-container"]:remove()
 !||vice-web-statics-cdn.vice.com/vendor/ad-lib/v2.39.0/vice-ad-lib.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vice-web-statics-cdn.vice.com/vendor/ad-lib/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -32835,7 +32841,6 @@ www.howtosolutions.net##div[class="leadad"]:remove()
 ||hinlargecons.xyz^*
 ||dyj8pbcnat4xv.cloudfront.net^*
 ||tmenttogeth.xyz^*
-||s3.us-east-1.amazonaws.com/635e47e248fe90616d8d87e013fcd4b05d7cbd3feb18df7c16047f735f8/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.adbusbdriver.com##+js(aopr, adsbygoogle)
 www.adbusbdriver.com##+js(aopw, adsbygoogle)
 www.thecustomdroid.com##div[class^="code-block"]:has(ins[data-ad-client]):remove()
@@ -33788,8 +33793,8 @@ fileaxa.com##div[class*="ad300side"]:remove()
 ||turbo.to^*
 www.collectiveray.com##span[class*="adtester-container"]:remove()
 www.collectiveray.com##span[class*="ezoic-ad"]:remove()
-www.collectiveray.com##span[id^="ezoic-pub-ad-"]
-www.collectiveray.com##div[class*="ezo_ad"]
+www.collectiveray.com##span[id^="ezoic-pub-ad-"]:remove()
+www.collectiveray.com##div[class*="ezo_ad"]:remove()
 www.collectiveray.com##+js(aopw, ez_ad_units)
 www.collectiveray.com##+js(aopr, ez_ad_units)
 ||freecourseweb.com/wp-content/uploads/2021/11/gate.io-001.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -33797,7 +33802,6 @@ www.collectiveray.com##+js(aopr, ez_ad_units)
 ||accordaudienceeducational.com^*
 ||diminutioneconomy.com^*
 ||apartslimlettuce.com^*
-||s3.us-east-1.amazonaws.com/919c4b7a9599a4a9479f0130e6a59413c133d9acba7575e03fd22c717/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.newscon.net##div[id="adblock-warning"]:remove()
 udemyfreecourses.org##ins[data-ad-client]:remove()
 www.discudemy.com##section[class="card"]:has(ins[data-ad-client]):remove()
@@ -33820,9 +33824,9 @@ www.fcportables.com##ins[data-ad-client]:remove()
 ||cdn.bmcdn3.com/js/source/389920305973.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.bmcdn3.com/pv/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.bmcdn3.com/js/62b9cc1457d3eaaa0c1a7546.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!gamicus.fandom.com##div[class="top-ads-container"]
-!gamicus.fandom.com##div[class="bottom-ads-container"]
-gamicus.fandom.com##div[class*="ads-container"]
+!gamicus.fandom.com##div[class="top-ads-container"]:remove()
+!gamicus.fandom.com##div[class="bottom-ads-container"]:remove()
+gamicus.fandom.com##div[class*="ads-container"]:remove()
 ||dyv1bugovvq1g.cloudfront.net^*
 ||baza57.ru^*
 ||drivetrack.ru^*
@@ -33905,13 +33909,11 @@ vfxdownload.net##+js(set-constant, adBlockEnabled, false, stay)
 vfxdownload.net##+js(set-constant, googleAdUrl, '', stay)
 vfxdownload.net##+js(set-constant, count, 0, stay)
 ||reflectedintegrity.com^*
-!||animikii-ana.com/zcvisitor/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||animikii-ana.com/zcvisitor/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d1zw85ny9dtn37.cloudfront.net^*
 ||understoodreceivermisunderstand.com^*
 ||albeitinflame.com^*
-||s3.us-east-1.amazonaws.com/1a1e20473e22d78169526610ae86ce08c0bb71779fae585c56bc85fb5/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||downloadfreecourse.com/pwa-sw.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||downloadfreecourse.com/pwa-sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.patrickmin.com##ins[data-ad-client]:remove()
 www.neowin.net##span[class="header-banner-advertising"]:remove()
 www.neowin.net##div[data-freestar-ad]:remove()
@@ -34003,7 +34005,6 @@ asia.nikkei.com##section[class="advertorial"]:remove()
 ||gw.geoedge.be/api/stats$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||julolecalve.website^*
 ||nh.eugeniecor.com^*
-||s3.us-east-1.amazonaws.com/c78bb5934b7b4e4cde3a8c1ffd6178accc4250416a4bbf2f2ed6adf56/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d2r2yqcp8sshc6.cloudfront.net^*
 ||ufundentofi.xyz^*
 ||ertyvaluation.lol/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -34309,10 +34310,9 @@ noweconomy.live##+js(acs, document.oncontextmenu)
 noweconomy.live##+js(aopr, document.oncontextmenu)
 noweconomy.live##+js(aopw, document.oncontextmenu)
 noweconomy.live##+js(set-constant, window.adblockDetector, 0, stay)
-||s3.us-east-1.amazonaws.com/2b0675ae7da5382f956e699a6346d225dadeb2694138231a237336c79/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.wteicogfeyhjk.com^*
 ||www.prbtqjujwzwepv.com^*
-aylink.co##a[href*="://sht.ms/aff.php"]
+aylink.co##a[href*="://sht.ms/aff.php"]:remove()
 ||tr.link/webroot/img/imgpsh_fullsize_anim.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kiiw.icu/mysw.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||webanalysis.dev/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -34331,7 +34331,7 @@ kiiw.icu##+js(acs, _0xf62sadc)
 kiiw.icu##+js(aopr, _0xf62sadc)
 kiiw.icu##+js(aopw, _0xf62sadc)
 kiiw.icu##+js(acs, osspalkiaom.com)
-kiiw.icu##^script:has-text(osspalkiaom.com)
+kiiw.icu##^script:has-text(osspalkiaom.com):remove()
 birdurls.com###body > div.container > div > div > script:nth-child(5):remove()
 birdurls.com##div[class="alert alert-danger"]:remove()
 birdurls.com##+js(acs, b13f67b4741a3b743cd66cf5acfa61b2)
@@ -34488,7 +34488,6 @@ lorebeam.com##ins[data-ad-client]:remove()
 ||chedstimaarr.pics^*
 ||anresultanc.xyz^*
 ||1337x.proxybit.cfd/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||s3.us-east-1.amazonaws.com/df87e3f6aac828c1af09b4c2dd4cfa888f84a8ad1ad701584ad5f241b/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||esmystem.com^*
 ||www.ksdlzcmvmj.com^*
 ||ksdlzcmvmj.com^*
@@ -34555,7 +34554,7 @@ www.gametop.com##+js(acs, showAntiAdsBanner)
 ||fujonusy.com^*
 ||tutflix.org/js/ZgPbQzk7/side-ads-jop.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tutflix.org/js/ZgPbQzk7/BrrErbpk2AZkSU.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||tutflix.org/service_worker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||tutflix.org/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 tutflix.org##+js(nano-sib, , *, 0.01)
 tutflix.org##div[id="banner_ad"]:remove()
 tutflix.org##+js(acs, text_ad)
@@ -34982,7 +34981,6 @@ www.syncs.online##div[aria-label="cookieconsent"]:remove()
 ||tv.gourdycortes.com^*
 ||hhklc.com^*
 ||marfeelrev.com^*
-||s3.us-east-1.amazonaws.com/30d790af5967d68d0dc1af24c052cc253df6f03b8e1426777a35dc23/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 eio.io##div[id="adb_detected"]:remove()
 ||eio.io/js/scripts/nr.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 eio.io##+js(aopr, fuckAdBlock)
@@ -35493,7 +35491,6 @@ www.pluralsight.com##div[class*="cookie-notification-"]:remove()
 ||ebodyfairesra.xyz^*
 ||rnoddenkn.asia^*
 ||d2sp5g360gsxjh.cloudfront.net^*
-||s3.us-east-1.amazonaws.com/f7d83c504bee3c500e2fdcef6fc5a5a6c63c48ed56792a90dce945a/b405c38d7f$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||treatycalculator.com^*
 ||tiltfastest.com^*
 ||cdn.hooliganmedia.com/hmrads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -35877,7 +35874,6 @@ www.psd2html.com##div[class="war-in-ukraine"]:remove()
 ||d3rb9wasp2y8gw.cloudfront.net^*
 ||reswsentativ.xyz^*
 ||andamafraidt.xyz^*
-||s3.us-east-1.amazonaws.com/3810d90e85c66f40a674e4475f3ada9ed843bfea898d724849426ba/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.artec3d.com##div[id="modal_cookie"]:remove()
 www.artec3d.com##div[id="sliding-popup"]:remove()
 spectrum.ieee.org##div[class*="gdpr-cookie"]:remove()
@@ -36073,7 +36069,6 @@ pureinfotech.com##div[id^="bsa-zone_"]:remove()
 ||mployeesihi.xyz^*
 ||d2jp87c2eoduan.cloudfront.net^*
 ||econtinue.xyz^*
-||s3.us-east-1.amazonaws.com/6e4672faa78012eba338bd7e27d4359e11f171e46745cc9c78b50c/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! block Pega platform web browser sharing (co-browse)
 ||us.cobrowse.pega.com^*
 educatiocenter.online##div[id="modalpop"]:remove()
@@ -38448,7 +38443,6 @@ watch.freeiptv.life##a[href^="https://www.kqzyfj.com/click-"]:remove()
 watch.freeiptv.life##a[href^="https://www.anrdoezrs.net/click-"]:remove()
 watch.freeiptv.life##ins[data-ad-client]:remove()
 app.m3u.in##img[src^="/img/stop-war-in-ukraine"]:remove()
-myiptvforum.com##li[class*="notice--cookie"]:upward(2):remove()
 ||d3.c3.b1.a1.top.mail.ru/counter?id$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 cdn.livetv.sx##+js(aopr, RndNum4NoCash)
 cdn.livetv.sx##+js(aopw, RndNum4NoCash)
@@ -39459,7 +39453,6 @@ streamvid.net##+js(abort-on-property-read, _0x3538e)
 ||ethecityonata.com^*
 ||alloverwiththinl.com^*
 ||d1azpphj80lavy.cloudfront.net^*
-||s3.us-east-1.amazonaws.com/5a8cca0cfc3724b3098015d90738ea10397092fb09bb521efd5f837e2f0d/cfc0acc8a5$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||thefacux.com^*
 ||rural-patience.com^*
 ||www.simplistic-potato.pro^*
@@ -39469,15 +39462,12 @@ streamvid.net##+js(abort-on-property-read, _0x3538e)
 ||nancontrast.com^*
 !||cdn.yourwebbars.com/sb/interstitial/software/flash/multi/2/index.html$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||adblock-one-protection.com^*
-streamhide.to##div[id="adbd"]
 streamhide.to##div[id="adbd"]:remove()
 streamhide.to##+js(set-constant, _ASO, {})
 streamhide.to##+js(set-constant, _ASO.PushOptions, {})
 streamhide.to##+js(aopr, _ASO.PushOptions)
 streamhide.to##+js(aopw, _ASO.PushOptions)
-streamhide.to##ins[class="aso-zone"][data-zone]
 streamhide.to##ins[class="aso-zone"][data-zone]:remove()
-streamhide.to##:xpath("/html/body/div")
 streamhide.to##:xpath("/html/body/div"):remove()
 ||streamhide.com/js/dnsads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||media.dalyai.com/js/code.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -43633,57 +43623,61 @@ rahim-soft.net##.adsense-leadout.adsense.ezAdsense:remove()
 ||rahim-soft.co/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rahim-soft.co/mod_pagespeed_beacon$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The anti-adblocking script is an inline script defused by the following three rules.
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##:xpath(//script[contains(text(), 'banner_ad')]):remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##^script:has-text(banner_ad):remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, /banner_ad/)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com###lastnews:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, ez_ad_units)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, ez_ad_units)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, window.adsbygoogle)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, window.adsbygoogle)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, adcashMacros, {})
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, adcashMacros)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, adcashMacros)
-!get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, /^(?:blur|click|error)$/)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, blur)
-!get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click, /function\(aR\)/)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, error)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, gtag)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, adsbygoogle)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, adsbygoogle)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, _gaq, [])
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, _gaq)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, _gaq)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, top)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, top)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, self)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, self)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, urls, {})
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, zoneNativeSett, {})
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(no-window-open-if)
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-lg.btn-success.btn:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-primary.btn:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.vticker:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[class="btn btn-info btn-lg"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[href*="://adzpub.com/search.php"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="as_ads_guard"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner1"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner3"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner4"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="banner_ad"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="countdown"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="gdpr-cookie-notice"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##iframe:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##input[id="adblock_detected"]:remove()
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##ins[data-ad-client]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##:xpath(//script[contains(text(), 'banner_ad')]):remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##^script:has-text(banner_ad):remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, /banner_ad/)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com###lastnews:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, ez_ad_units)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, ez_ad_units)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, window.adsbygoogle)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, window.adsbygoogle)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, adcashMacros, {})
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, adcashMacros)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, adcashMacros)
+!flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, /^(?:blur|click|error)$/)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, blur)
+!flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click, /function\(aR\)/)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, error)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, gtag)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, adsbygoogle)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, adsbygoogle)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, _gaq, [])
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, _gaq)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, _gaq)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, top)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, top)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, self)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, self)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, urls, {})
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, zoneNativeSett, {})
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(no-window-open-if)
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-lg.btn-success.btn:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-primary.btn:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.vticker:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[class="btn btn-info btn-lg"]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[href*="://adzpub.com/search.php"]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="as_ads_guard"]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner1"]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner3"]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner4"]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="banner_ad"]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="countdown"]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="gdpr-cookie-notice"]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##iframe:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##input[id="adblock_detected"]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##ins[data-ad-client]:remove()
 ! div[id="tritqwt"] is scripted to reappear if deleted
-get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="tritqwt"]:remove()
+flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="tritqwt"]:remove()
 ! The following rules blocking inline scripts keeps the website from loading since it uses a POST request from an inline script to get the page
 !||uploadrar.com^$inline-script
 !||miui.rahim-soft.com^$inline-script
 !||cloud.rahim-soft.com^$inline-script
 !||get.getpczone.com^$inline-script
+!||flash.getpczone.com^$inline-script
+||flash.getpczone.com^$xhr
+||flash.getpczone.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||flash.getpczone.com/uploadrar_style/js/countdown.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||get.getpczone.com^$xhr
 ||get.getpczone.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||get.getpczone.com/uploadrar_style/js/countdown.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -44417,10 +44411,8 @@ dlpure.com##script[id^="google_gtagjs-js"]:remove()
 ||hoickpinyons.com^*
 ||etpweb.doodoo.love^*
 ||dwdisc.com/advertisement.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-dwdisc.com##a[href*="//hantsailsyte.com/"]
 dwdisc.com##a[href*="//hantsailsyte.com/"]:remove()
 ||bossapk.com/banner_ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||s3.us-east-1.amazonaws.com/2b023e0529fc8b992e110ad41b381bfcfa43a87535343b6bec412/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 rexdlbox.com##:xpath(//script[contains(text(), 'd34cixo0lr52lw')])
 rexdlbox.com##:xpath(//script[contains(text(), 'd34cixo0lr52lw')]):remove()
 rexdlbox.com##+js(acs, d34cixo0lr52lw)
@@ -44988,6 +44980,8 @@ modded-1.com##ins[data-ad-client]:remove()
 modded-1.com##div[class="ad-unit"]:remove()
 modded-1.com##+js(aopw, adsbygoogle)
 modded-1.com##+js(aopr, adsbygoogle)
+!*$3p,script,denyallow=cdnjs.cloudflare.com,domain=modded-1.com
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=cdnjs.cloudflare.com,domain=modded-1.com
 www.wps.com##div[class^="gdpr"]:remove()
 !||abtest-api-v2.wps.com/api/abtest-core/abtest/2/parameters$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||abtest-api-v2.wps.com^*
@@ -45353,7 +45347,6 @@ moddroid.com##*[class*="mobile_download--info"]:remove-class(hidden)
 ||dephasevittate.com^*
 ||aboardhotdog.com^*
 ||pengobyzant.com^*
-||s3.us-east-1.amazonaws.com/66f3bb56903251d49988722f99a184b12fad26d6eb3ee9d71bce254a33215b4/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dl.pcgamestorrents.org/img/AdblockDetected.jpg$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 dl.pcgamestorrents.org##div[id="anti-adblock"]:remove()
 dl.pcgamestorrents.org##div[id="ads-right"]:remove()
@@ -45517,7 +45510,6 @@ streamtape.com##+js(saa, height, 100%, video[id="mainvideo"])
 ||paikoasa.tv^*
 !||az.mniumlapsers.com^*
 ||mniumlapsers.com^*
-||s3.us-east-1.amazonaws.com/4ac9bc53ca651ed2739bff5ea401e0e6a400e9b50c42f08be818973cc096b2c/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||jgxpwvijstkvomk.com^*
 ||gttquccl.com^*
 !||hr.prositzapas.com^*
@@ -45787,7 +45779,6 @@ new7.filepress.store##div[id^="beacon_"]:remove()
 new7.filepress.store##div[id="banner-reclam"]:remove()
 new7.filepress.store##+js(set-constant, trackBannerClick, noopFunc)
 new7.filepress.store##+js(acs, trackBannerClick)
-||s3.us-east-1.amazonaws.com/957e4f1b5fca420d923566291306036be3bf08c79b3687345c667d0dd2366ca/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vpnrice.com/a/p.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vidhide.com/js/dnsads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 vidhidepro.com##div[id="adbd"]:remove()
@@ -49512,6 +49503,7 @@ newatlas.com##+js(rna, img[loading="lazy"][data-src], data-src, src)
 !||pl15821666.toprevenuegate.com^*
 !||pl20623807.toprevenuegate.com^*
 !||pl22059484.toprevenuegate.com^*
+!||pl20706452.toprevenuegate.com^*
 ! TODO: always 8 digits after "pl" in subdomain name?
 ! Do NOT put a ^ at end of regex as it does not work as it does on non-regex strings in rules.
 !/^https?:\/\/pl\d{8}\.toprevenuegate\.com\/?\S*/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -50029,6 +50021,28 @@ skyve.io,skyve.top##+js(acs, appendToDeviceDebugger)
 ||s3-w.us-east-1.amazonaws.com/4efdb5ab22$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s3-w.us-east-1.amazonaws.com/7640c24428$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s3-w.us-east-1.amazonaws.com/b385dcf0dc$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/2b023e0529fc8b992e110ad41b381bfcfa43a87535343b6bec412/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/6e4672faa78012eba338bd7e27d4359e11f171e46745cc9c78b50c/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/b314de2ae02bb85ad32e0a60fa178a771af64060e774ebfb61a6d51/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/3810d90e85c66f40a674e4475f3ada9ed843bfea898d724849426ba/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/f7d83c504bee3c500e2fdcef6fc5a5a6c63c48ed56792a90dce945a/b405c38d7f$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/30d790af5967d68d0dc1af24c052cc253df6f03b8e1426777a35dc23/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/b4b440d028f3fc1ad5b19d48e9275714aa3b75065e7876da08589dba/820d044b4b$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/df87e3f6aac828c1af09b4c2dd4cfa888f84a8ad1ad701584ad5f241b/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/2b0675ae7da5382f956e699a6346d225dadeb2694138231a237336c79/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/c78bb5934b7b4e4cde3a8c1ffd6178accc4250416a4bbf2f2ed6adf56/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/1a1e20473e22d78169526610ae86ce08c0bb71779fae585c56bc85fb5/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/919c4b7a9599a4a9479f0130e6a59413c133d9acba7575e03fd22c717/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/635e47e248fe90616d8d87e013fcd4b05d7cbd3feb18df7c16047f735f8/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/a87375b2f3a0673a1d7f03da1d75c0efd93b7e4e4c85ad0df8b221d59663/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/c0af4bd3bd1b74df8bb03cc4efb012a7f67b7e5efb5bd7b98620bea99e66/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/5a8cca0cfc3724b3098015d90738ea10397092fb09bb521efd5f837e2f0d/cfc0acc8a5$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/d05b2fbe3cf1cb98f39a29b001ee440901588ba1c1115beab0bfa45756751/c3ebf2b50d$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/ef272c9a54869e62dc29ec70f92aedac4b3d355a396a103ccaf459865ace7/45a9c272fe$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/08a762955f4503fbf02f024558307ca2d330253ada26719ef701914f12070/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/957e4f1b5fca420d923566291306036be3bf08c79b3687345c667d0dd2366ca/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/4ac9bc53ca651ed2739bff5ea401e0e6a400e9b50c42f08be818973cc096b2c/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.us-east-1.amazonaws.com/66f3bb56903251d49988722f99a184b12fad26d6eb3ee9d71bce254a33215b4/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s3.amazonaws.com/009a944b59fcf4a419d1c9f02e55a39d1bfe4d935824d03fb53ca9c78d7/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s3.amazonaws.com/035946c7be026aeddc2ed1e2896c74f71436d9bb590e3c6a775e9eb9/eb7c649530$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s3.amazonaws.com/08e77064246e3e6ac2bfcc9f79f2d49e32f90f61a706599c0aec65f53a9/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -50055,8 +50069,7 @@ skyve.io,skyve.top##+js(acs, appendToDeviceDebugger)
 ||s3.amazonaws.com/edb89aa9866dd533491d765c3b6c84125e88c1efcc67366ce8c126/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s3.amazonaws.com/f2914419d37b51f296b5124af61c87dc048d02887272ca714de79dbd23d76/3d9144192f$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||s3.amazonaws.com/fb262655cbd169be16f4fb77a2c3b7c0c7dbb982089f79b98f431b3872add7/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||s3.us-east-1.amazonaws.com/b314de2ae02bb85ad32e0a60fa178a771af64060e774ebfb61a6d51/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||s3.us-east-1.amazonaws.com/b4b440d028f3fc1ad5b19d48e9275714aa3b75065e7876da08589dba/820d044b4b$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||s3.*.amazonaws.com^$3p,xhr,domain=drop.download
 dl2.apkmb.com##div[id="dl2_apkmb_com_980x300_responsive"]:remove()
 dl2.apkmb.com##div[id="dl2_apkmb_com_1000x100_anchor_responsive"]:remove()
 apkmb.com##center:nth-of-type(1) > .btnDownload:remove()
@@ -51205,7 +51218,6 @@ techcrunch.com##script[id="tc-adblock-internal"]:remove()
 techcrunch.com##script[id="adblocker-check"]:remove()
 !||techcrunch.com/wp-content/themes/techcrunch-2017/features/analytics/adblocker/sailthru.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||techcrunch.com/wp-content/themes/techcrunch-2017/features/analytics/adblocker/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||s3.us-east-1.amazonaws.com/d05b2fbe3cf1cb98f39a29b001ee440901588ba1c1115beab0bfa45756751/c3ebf2b50d$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ndtheyeiedm.info^*
 ||d2sffavqvyl9dp.cloudfront.net^*
 ||x-delivery.icu^*
@@ -51688,7 +51700,6 @@ kerapoxy.cc##+js(saa, height, 100%, video[class="jw-video jw-reset"])
 ||mdoirsw.com^*
 ||superiorityfriction.com^*
 ||dfidhqoaunepq.cloudfront.net^$3p,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||s3.us-east-1.amazonaws.com/ef272c9a54869e62dc29ec70f92aedac4b3d355a396a103ccaf459865ace7/45a9c272fe$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||translate.googleapis.com/element/log?$3p,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||rvksvsy8hbpzlkexm.ay.delivery/client-v2-mm.js$3p,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rvksvsy8hbpzlkexm.ay.delivery/$3p,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -51879,7 +51890,6 @@ gdl.freegogpcgames.xyz##+js(aopr, document.onclick)
 gdl.freegogpcgames.xyz##+js(aopw, document.onclick)
 !*$3p,script,denyallow=ajax.googleapis.com,domain=gdl.freegogpcgames.xyz
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=ajax.googleapis.com,domain=gdl.freegogpcgames.xyz
-||s3.us-east-1.amazonaws.com/08a762955f4503fbf02f024558307ca2d330253ada26719ef701914f12070/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.elamigos-games.net##*[id^="adangle-"]:remove()
 www.elamigos-games.net##script[id="cookieyes"]:remove()
 www.elamigos-games.net##img[id="bannerstargam"]:remove()
@@ -52622,8 +52632,6 @@ www.slashfilm.com##+js(set-constant, googletag.pubads, noopFunc)
 www.slashfilm.com##+js(set-constant, user.adblocking, false)
 www.slashfilm.com##+js(set-constant, LoopAds, noopFunc)
 www.slashfilm.com##+js(set-constant, window.admiral, noopFunc)
-||s3.us-east-1.amazonaws.com/c0af4bd3bd1b74df8bb03cc4efb012a7f67b7e5efb5bd7b98620bea99e66/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||s3.*.amazonaws.com^$3p,xhr,domain=drop.download
 online2pdf.com##div[id="c9bd3d"]:remove()
 online2pdf.com##div[class*="adboxcontainer"]:remove()
 filefox.cc##+js(set-constant, a, 0)
@@ -52830,6 +52838,14 @@ filedot.to##span[id="countdown"]:remove()
 ||aqw.lol^*
 ||stats.affz.top^*
 ||gensonal.com^*
+||rmaticalacm.info^*
+||hantsailsyte.com^*
+!||pinttalewag.com/imp/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||pinttalewag.com^*
+||getrunkhomuto.info^*
+||tionforeathyoug.info^*
+||vecohgmpl.info^*
+||dbw7j2q14is6l.cloudfront.net^*
 ||bestpornsite.su/ban/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: The following rule removes most of the non-ad content too due to #ad_global_below_navbar.
 !www.mobimart.it##div[id^="ad_global_"]:remove()
@@ -52841,6 +52857,54 @@ www.mobimart.it##+js(aopw,  googletag)
 www.mobimart.it##+js(aopr,  gads)
 www.mobimart.it##+js(aopw,  gads)
 ||www.mobimart.it/ban.html$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+apkmody.mobi##div[class="download-ads"]:remove()
+apkmody.mobi##div[class="ad-unit"]:remove()
+apkmody.mobi##+js(set-constant, downloadAds, noopFunc)
+apkmody.mobi##+js(set-constant, showDonate, noopFunc)
+||www.techkings.org/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||teamarman.com/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.worldofiptv.com/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||myiptvforum.com/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+myiptvforum.com##li[class*="notice--cookie"]:upward(2):remove()
+myiptvforum.com##div[id^="_xfUid-"]:has(a[href="https://myiptvforum.com/paid-ads/"]):remove()
+myiptvforum.com##div[class="samBannerUnit"]:remove()
+! TODO: None of the following rules reset the guest view count.
+myiptvforum.com##+js(set-local-storage-item, xf___crossTab, $remove$)
+myiptvforum.com##+js(set-local-storage-item, xf_visitorCounts, $remove$)
+!myiptvforum.com##+js(set-local-storage-item, xf___crossTab, {})
+!myiptvforum.com##+js(set-local-storage-item, xf_visitorCounts, {})
+myiptvforum.com##+js(set-local-storage-item, xf_cacheKey, $remove$)
+! TODO: The cookie in the following rule is not the view count but a Cloudflare cookie?
+!myiptvforum.com##+js(cookie-remover, /cf_chl_rc_m/)
+! TODO:  The following rule doesn't reset the guest views counter.  It also doesn't appear to work.
+myiptvforum.com##+js(cookie-remover, /TM_fire\w{31}_\d{13}/)
+! TODO:  Using the following rule will logout the previous session?  It does reset the guest views counter, BUT this rule doesn't work.
+myiptvforum.com##+js(cookie-remover, /xf_session/)
+!||cdn.adrise.tv/tubitv-assets/js/sentry/7.69.0/bundle.tracing.es5.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||cdn.adrise.tv/tubitv-assets/js/braze/*/service-worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn.adrise.tv^$important
+||d25v1115e8pawl.cloudfront.net/tubitv-assets/js/braze/*/service-worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||analytics-ingestion.production-public.tubi.io^*
+!||tubitv.com/oz/videos/live-ad-finished-metrics$method=post,xhr
+!||tubitv.com/oz/performance/live-player-metrics$method=post,xhr
+!||uapi.production-public.tubi.io/datascience/logging$method=post,xhr
+||uapi.production-public.tubi.io/datascience/logging$method=post,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||tubitv.com/oz/videos/live-ad-finished-metrics$method=post,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||tubitv.com/oz/performance/live-player-metrics$method=post,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+tubitv.com##video:remove-attr(disableremoteplayback)
+tubitv.com##+js(remove-attr, disableremoteplayback, video)
+tubitv.com##video:remove-attr(disablepictureinpicture)
+tubitv.com##+js(remove-attr, disablepictureinpicture, video)
+tubitv.com##+js(saa, x-webkit-airplay, allow, video)
+tubitv.com##+js(saa, data-autoplay-mute-lock, false, video)
+tubitv.com##+js(saa, controls, true, video)
+tubitv.com##+js(saa, width, 100%, video)
+tubitv.com##+js(saa, height, 100%, video)
+tubitv.com##+js(trusted-replace-node-text, script, /"chromecastAutoplayVisible":false/gm, "chromecastAutoplayVisible":true)
+! The comma's in the following two rules must be escaped.
+tubitv.com##+js(trusted-replace-node-text, script, /"show_casting_button"\,"salt":""\,"experiment":""\,"value":false/gm, "show_casting_button"\,"salt":""\,"experiment":""\,"value":true)
+tubitv.com##+js(trusted-replace-node-text, script, /"enable_start_position"\,"salt":""\,"experiment":""\,"value":false/gm, "enable_start_position"\,"salt":""\,"experiment":""\,"value":true)
+freezer.center##+js(set-constant, timer, 0)
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
