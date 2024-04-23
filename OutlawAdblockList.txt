@@ -15913,6 +15913,7 @@ dl.apkhouse.com##center:nth-of-type(2) > .btnDownload:remove()
 ||servicesforoffers.life^*
 ||js.mobileoffers-a-download.com^*
 apk4free.net##center:nth-of-type(2) > .btnDownload1:remove()
+apk4free.net##div[class="code-block code-block-7"]:has(a[href^="https://itndownloads.com/"]):remove()
 ||dealspure.com/outpromotion/$subdocument
 www.techrrival.com###ezoic-pub-ad-placeholder-110:remove()
 revdownload.com##.text-ads:remove()
@@ -26574,7 +26575,17 @@ www.majorgeeks.com##[src^="https://ra.majorgeeks.com/www/images/"]:remove()
 !playcaliber.com##div[class="cookie_notice"]:remove()
 playcaliber.com##div[class^="cookie_notice"]:remove()
 ||7kjfbgkjbfgb.club^*
-uploadking.net##div.mb-4.ads:remove()
+uploadking.net##div[class^="ads"]:remove()
+uploadking.net##button[id="downloadbtn"]:remove-attr(disabled)
+uploadking.net##+js(remove-attr, disabled, #downloadbtn)
+uploadking.net##+js(saa, type, submit, #downloadbtn)
+uploadking.net##div[class^="download-btn"]:style(display: block !important; visibility: visible !important;)
+uploadking.net##+js(set-constant, remaining, 0)
+uploadking.net##+js(set-constant, timeout, true)
+uploadking.net##+js(no-setTimeout-if, /tick/)
+uploadking.net##div[id="countdown"]:remove()
+! no actual need to block the following countdown script with the above rules enabled
+||uploadking.net/ds2/js/countdown.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||v3v9d2b8.rocketcdn.me/wp-content/uploads/2020/07/download-button.png$image
 ||ox-d.adtrackers.net^*
 www.ovagames.com##+js(abort-on-property-write, pop_tag)
@@ -30735,6 +30746,27 @@ www.psychz.net##div[id="cookieBox"]:remove()
 docs.cpanel.net##div[aria-label="cookieconsent"]:remove()
 googlechromecast.com##div[class*="ezo_ad"]:remove()
 googlechromecast.com##span[class*="ezoic-ad"]:remove()
+googlechromecast.com##span[data-ez-ph-id]:remove()
+googlechromecast.com##span[id^="ezoic-pub-ad-"]:remove()
+googlechromecast.com##span[class*="ezoic-autoinsert-ad"]:remove()
+googlechromecast.com##+js(set-constant, getEzErrorURL, noopFunc)
+googlechromecast.com##+js(set-constant, reportEzError, noopFunc)
+googlechromecast.com##+js(set-constant, getSocialLinks, noopFunc)
+googlechromecast.com##+js(set-constant, storeAdBounce, noopFunc)
+googlechromecast.com##+js(aeld, reportEzErrorDefined)
+||googlechromecast.com/ez-vasts$uritransform=/ads_enabled=1/ads_enabled=0/,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||googlechromecast.com/ez-vasts?$replace=/"vastURL":"[^\"]+",/"vastURL":"",/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||googlechromecast.com/ez-vasts?$replace=/"params":\{"min":5000,"max":30000,/"params":{"min":1,"max":1,/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||googlechromecast.com/ez-vasts?$replace=/"bidRetries":7,/"bidRetries":0,/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||googlechromecast.com/ez-vasts?$replace=/"maxduration":30,/"maxduration":1,/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||googlechromecast.com/ez-vasts?$replace=/"minduration":5,/"minduration":1,/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||googlechromecast.com/ez-vasts?$replace=/"skip":0,/"skip":1,/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||googlechromecast.com/ez-vasts?$replace=/"skippable":false,/"skippable":true,/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||googlechromecast.com/wp-content/plugins/td-composer/legacy/Newspaper/js/tdSocialSharing.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rule blocks the main EZ ads script; it is the result of a POST XHR request not GET script so need to block xhr not script
+!||googlechromecast.com/ezais/dynamic?cb=1$method=post,xhr
+! TODO: the following rule likely blocks videos as any video ads.
+||googlechromecast.com/ezais/dynamic?cb=1$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 robots.net##div[id="cookieNotice"]:remove()
 ||robots.net/wp-content/themes/blog-prime-child/assets/js/cookie_consent.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 robots.net##div[id="sticky-footer-ads"]:remove()
@@ -43623,58 +43655,62 @@ rahim-soft.net##.adsense-leadout.adsense.ezAdsense:remove()
 ||rahim-soft.co/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rahim-soft.co/mod_pagespeed_beacon$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The anti-adblocking script is an inline script defused by the following three rules.
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##:xpath(//script[contains(text(), 'banner_ad')]):remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##^script:has-text(banner_ad):remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, /banner_ad/)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com###lastnews:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, ez_ad_units)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, ez_ad_units)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, window.adsbygoogle)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, window.adsbygoogle)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, adcashMacros, {})
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, adcashMacros)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, adcashMacros)
-!flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, /^(?:blur|click|error)$/)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, blur)
-!flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click, /function\(aR\)/)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, error)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, gtag)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, adsbygoogle)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, adsbygoogle)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, _gaq, [])
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, _gaq)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, _gaq)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, top)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, top)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, self)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, self)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, urls, {})
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, zoneNativeSett, {})
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(no-window-open-if)
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-lg.btn-success.btn:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-primary.btn:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.vticker:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[class="btn btn-info btn-lg"]:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[href*="://adzpub.com/search.php"]:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="as_ads_guard"]:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner1"]:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner3"]:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner4"]:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="banner_ad"]:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="countdown"]:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="gdpr-cookie-notice"]:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##iframe:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##input[id="adblock_detected"]:remove()
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##ins[data-ad-client]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##:xpath(//script[contains(text(), 'banner_ad')]):remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##^script:has-text(banner_ad):remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, /banner_ad/)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com###lastnews:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, ez_ad_units)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, ez_ad_units)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, window.adsbygoogle)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, window.adsbygoogle)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, adcashMacros, {})
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, adcashMacros)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, adcashMacros)
+!tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, /^(?:blur|click|error)$/)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, blur)
+!tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click, /function\(aR\)/)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, error)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, gtag)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, adsbygoogle)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, adsbygoogle)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, _gaq, [])
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, _gaq)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, _gaq)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, top)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, top)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, self)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, self)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, urls, {})
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, zoneNativeSett, {})
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(no-window-open-if)
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-lg.btn-success.btn:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-primary.btn:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.vticker:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[class="btn btn-info btn-lg"]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[href*="://adzpub.com/search.php"]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="as_ads_guard"]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner1"]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner3"]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner4"]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="banner_ad"]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="countdown"]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="gdpr-cookie-notice"]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##iframe:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##input[id="adblock_detected"]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##ins[data-ad-client]:remove()
 ! div[id="tritqwt"] is scripted to reappear if deleted
-flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="tritqwt"]:remove()
+tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="tritqwt"]:remove()
 ! The following rules blocking inline scripts keeps the website from loading since it uses a POST request from an inline script to get the page
 !||uploadrar.com^$inline-script
 !||miui.rahim-soft.com^$inline-script
 !||cloud.rahim-soft.com^$inline-script
 !||get.getpczone.com^$inline-script
 !||flash.getpczone.com^$inline-script
+!||tech.getpczone.com^$inline-script
+||tech.getpczone.com^$xhr
+||tech.getpczone.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||tech.getpczone.com/uploadrar_style/js/countdown.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||flash.getpczone.com^$xhr
 ||flash.getpczone.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||flash.getpczone.com/uploadrar_style/js/countdown.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -48940,18 +48976,6 @@ www.tumblr.com##div[style="background: rgb(124, 92, 255); color: rgb(255, 255, 2
 ! TODO: Why was the following rule exempted by the uBlock filters Unbreak list?  It is just a script which creates a script tag for a quantserve.com script
 ||go.ezodn.com/detroitchicago/audins.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||go.ezodn.com/hb/dall.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-googlechromecast.com##span[data-ez-ph-id]:remove()
-googlechromecast.com##span[id^="ezoic-pub-ad-"]:remove()
-googlechromecast.com##span[class*="ezoic-autoinsert-ad"]:remove()
-googlechromecast.com##+js(set-constant, getEzErrorURL, noopFunc)
-googlechromecast.com##+js(set-constant, reportEzError, noopFunc)
-googlechromecast.com##+js(set-constant, getSocialLinks, noopFunc)
-googlechromecast.com##+js(set-constant, storeAdBounce, noopFunc)
-googlechromecast.com##+js(aeld, reportEzErrorDefined)
-||googlechromecast.com/wp-content/plugins/td-composer/legacy/Newspaper/js/tdSocialSharing.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-! The following rule blocks the main EZ ads script; it is the result of a POST XHR request not GET script so need to block xhr not script
-! TODO: the following rule likely blocks as any video ads.
-||googlechromecast.com/ezais/dynamic?cb=1$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: Use the following domains only (and add to this list) in the following EZO-related rules?
 !       domain=linuxtechlab.com|www.codingem.com|www.learncpp.com|gameskeys.net|exploringbits.com|www.applegazette.com|linuxnewbieguide.org|www.itechtics.com|www.faqforge.com|samsungfirmware.net|csharp.hotexamples.com|mspoweruser.com|crazyblog.in|crazyblog.in|googlechromecast.com|commentpicker.com|codingshiksha.com|smsreceivefree.com|code-boxx.com|livsavr.co|news.thewindowsclub.com|pakstech.com|karanpc.com|www.tutorialsteacher.com|windows101tricks.com|myshrinker.com|fccid.io|www.linuxuprising.com|www.thecpuguide.com
 ! TODO: blocking /detroitchicago/ wholesale blocks lazy loaded images on some websites.
@@ -52728,7 +52752,7 @@ music.amazon.com##+js(trusted-replace-node-text, script, /"isClientMetricsLambda
 !music.amazon.com##+js(trusted-replace-outbound-text, , FREE_MEMBER, HD_MEMBER)
 !||global.telemetry.insights.video.a2z.com/Bootstrap/AV20180601
 ||global.telemetry.insights.video.a2z.com^*
-! The following fule blocks Spotify audio ads.
+! The following rule blocks Spotify audio ads.
 ||creativeservice-production.scdn.co/mp3-ad/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dw85st0ijc8if.cloudfront.net^*
 ||funjoobpolicester.info^*
@@ -52905,6 +52929,20 @@ tubitv.com##+js(trusted-replace-node-text, script, /"chromecastAutoplayVisible":
 tubitv.com##+js(trusted-replace-node-text, script, /"show_casting_button"\,"salt":""\,"experiment":""\,"value":false/gm, "show_casting_button"\,"salt":""\,"experiment":""\,"value":true)
 tubitv.com##+js(trusted-replace-node-text, script, /"enable_start_position"\,"salt":""\,"experiment":""\,"value":false/gm, "enable_start_position"\,"salt":""\,"experiment":""\,"value":true)
 freezer.center##+js(set-constant, timer, 0)
+||logs.pressreader.com^*
+||gangstar-vegas.extads.gameloft.com^*
+||skh731.com^*
+||itndownloads.com^*
+!||upgradenote.set4theupdatingforeverfresh.click^*
+||set4theupdatingforeverfresh.click^*
+||islandparcel.site^*
+!||trk.sparkrainstorm.host^*
+||sparkrainstorm.host^*
+||www.biphic.com^*
+||xylomavivat.com^*
+||claspdressmakerburka.com^*
+!||wcxosmeeunfpjoquldbq.proscholarshub.com^*
+||proscholarshub.com^*
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
