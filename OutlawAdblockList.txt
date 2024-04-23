@@ -211,8 +211,6 @@ techydino.net##+js(nobab2)
 ||ads.dedicatedmedia.com^*
 ||i.i.com.com/cnwk.1d/Ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||adlog.com.com/adlog/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||mads.techrepublic.com/mac-ad^*
-||mads.techrepublic.com^*
 ||neoxads.com/data/ad_images/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.mmadsgadget.com/t^id=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||*-events.olark.com^*
@@ -946,7 +944,6 @@ img.atdmt.com/images/pixel.gif$document,subdocument,script,inline-script,font,in
 ||www.newsmaxstore.com/images/promo_tracking/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||objects.tremormedia.com/embed/js/banners.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||t4.nrelate.com/r3/^type=ad&$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||techrepublic.com.com/b.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dw.com.com/rubicsimp/c.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||blitzdown.com/wp-content/plugins/social-traffic-pop/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.linxdown.me/ad/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -1751,7 +1748,6 @@ nbcnews.com##.ideaScale-widget
 ||news.bbcimg.co.uk/js/app/bbccom/0.3.203/advert.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.techcentral.ie/bannercontrol/abmw.aspx$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.techcentral.ie/bannercontrol/banners/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||bwp.techrepublic.com/search?ordinal=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.vcdq.com/tag.html$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||as.ebz.io/api/choixPubJS.htm$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||scripts.chitika.net/getads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -21049,7 +21045,21 @@ apk.suppor##div[ins="adsbygoogle"]:remove()
 !||tr2.cbsistatic.com/fly/js/utils/advertisement-d41d8cd98f-rev.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tr2.cbsistatic.com/fly/js/utils/advertisement-$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tr4.cbsistatic.com/fly/bundles/flyjs/js/managers/dw-tracking-1.0.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.techrepublic.com/resource-library/rds/logevent^*
+!||mads.techrepublic.com/mac-ad^*
+||mads.techrepublic.com^*
+||bwp.techrepublic.com/search?ordinal=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||techrepublic.com.com/b.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.techrepublic.com/resource-library/rds/logevent$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.techrepublic.com/wp-content/themes/techrepublic-theme/js/tr-adv-ads-scripts.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.techrepublic.com##div[id="nav-ad"]:remove()
+www.techrepublic.com##div[data-advadstrackid]:remove()
+www.techrepublic.com##script[id="tr-ads-scripts-js"]:remove()
+www.techrepublic.com##+js(abort-on-property-write, advadsCfpQueue)
+www.techrepublic.com##+js(abort-on-property-read, advadsCfpQueue)
+www.techrepublic.com##+js(abort-on-property-write, advadsProCfp)
+www.techrepublic.com##+js(abort-on-property-read, advadsProCfp)
+www.techrepublic.com##+js(set-constant, advadsCfpAd, noopFunc)
+www.techrepublic.com##+js(set-constant, adID, "")
 ||www.sndgydifipxuui.com^*
 ||sndgydifipxuui.com^*
 ||www.rdrcgrpsakrtn.com^*
@@ -52876,10 +52886,10 @@ filedot.to##span[id="countdown"]:remove()
 www.mobimart.it##div[id^="ad_thread_"]:remove()
 www.mobimart.it##div[id="ad_global_above_footer"]:remove()
 www.mobimart.it##div[class="resp-container"]:has(iframe[src="https://www.mobimart.it/ban.html"]):remove()
-www.mobimart.it##+js(aopr,  googletag)
-www.mobimart.it##+js(aopw,  googletag)
-www.mobimart.it##+js(aopr,  gads)
-www.mobimart.it##+js(aopw,  gads)
+www.mobimart.it##+js(aopr, googletag)
+www.mobimart.it##+js(aopw, googletag)
+www.mobimart.it##+js(aopr, gads)
+www.mobimart.it##+js(aopw, gads)
 ||www.mobimart.it/ban.html$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 apkmody.mobi##div[class="download-ads"]:remove()
 apkmody.mobi##div[class="ad-unit"]:remove()
@@ -52943,6 +52953,20 @@ freezer.center##+js(set-constant, timer, 0)
 ||claspdressmakerburka.com^*
 !||wcxosmeeunfpjoquldbq.proscholarshub.com^*
 ||proscholarshub.com^*
+||cdn.pubfuture-ad.com^*
+foodtechnos.in##+js(aopr, window.pubfuturetag)
+foodtechnos.in##+js(aopw, window.pubfuturetag)
+foodtechnos.in##div[class="PUBFUTURE"]:remove()
+foodtechnos.in##iframe[id^="iframe_pf-passback-"]:remove()
+foodtechnos.in##div[class="header-menu"]:remove()
+foodtechnos.in##div[id="main-wrapper"]:remove()
+foodtechnos.in##div[id="sidebar-wrapper"]:remove()
+foodtechnos.in##button[id="get-now-button"]:remove()
+foodtechnos.in##div[id="dwform"]:style(display: block !important;)
+! TODO: DO NOT use any of the following three rules or the file download links will not be shown.
+!foodtechnos.in##div[id="outer-wrapper"]:remove()
+!foodtechnos.in##div[class="container"]:remove()
+!foodtechnos.in##div[id="footer-wrapper"]:remove()
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
