@@ -30611,6 +30611,20 @@ www.inverse.com##div[id^="ad-"]:remove()
 ||gendksxc.top^*
 www.google.com##*[class*="chr-cookie-banner"]:remove()
 kifarunix.com##*[class*="ezoic-ad"]:remove()
+!kifarunix.com##span[data-ez-ph-id="604"]:remove()
+!kifarunix.com##span[data-ez-ph-id="901"]:remove()
+!kifarunix.com##span[data-ez-ph-id="909"]:remove()
+!kifarunix.com##span[data-ez-ph-id="910"]:remove()
+!kifarunix.com##span[data-ez-ph-id="912"]:remove()
+kifarunix.com##span[data-ez-ph-id][data-ezoic-video-excluded="1"]:remove()
+kifarunix.com##span[id^="ezoic-pub-ad-"]:remove()
+kifarunix.com##+js(set-constant, productEzoicAds(), noopFunc)
+kifarunix.com##+js(acs, /productEzoicAds\(\)/)
+kifarunix.com##+js(set-constant, window._ezaq, {})
+kifarunix.com##+js(aopr, window._ezaq)
+kifarunix.com##+js(aopw, window._ezaq)
+||kifarunix.com/ezais/log?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||kifarunix.com/tardisrocinante/cash.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.popsci.com##.Article-advert:remove()
 ||s.yimg.com/rq/darla/4-6-0/html/r-sf.html$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css$subdocument
 ||s.yimg.com/rq/darla/4-6-0/html/r-sf-flx.html$subdocument
@@ -41732,12 +41746,14 @@ www.dailymail.co.uk##+js(set-constant, window.adverts.config, {}, complete)
 www.dailymail.co.uk##+js(set-constant, adverts.addToArray, noopFunc, complete)
 !www.dailymail.co.uk##+js(set-constant, adverts.addFBRemarketingPixel, noopFunc, end)
 www.dailymail.co.uk##+js(set-constant, adverts.addFBRemarketingPixel, noopFunc, complete)
+www.dailymail.co.uk##+js(set-constant, enableAds, false)
+www.dailymail.co.uk##+js(set-constant, adType, "")
 www.dailymail.co.uk##+js(acs, adverts)
+www.dailymail.co.uk##+js(acs, /adverts\.addTaboolaPosition\(/)
 www.dailymail.co.uk##+js(aopr, window.adverts)
 www.dailymail.co.uk##+js(aopw, window.adverts)
 !www.dailymail.co.uk##div[id="content"]:remove()
 ||xypthe.com^*
-www.jetbrains.com##div[class^="jetbrains-cookies-banner-"]
 www.jetbrains.com##div[class^="jetbrains-cookies-banner-"]:remove()
 ||arttrk.com/pixel/?ad_log=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.secplicity.org/wp-content/plugins/wp-gdpr-compliance/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -44800,6 +44816,7 @@ www.economist.com##+js(aopw, NREUM)
 ||www.dianomi.com/cgi-bin/smartads_video_json.pl$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.dianomi.com/cgi-bin/pixeltrack.pl$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||meadowlullaby.com^*
+nypost.com##div[data-ad-target]:remove()
 nypost.com##div[class*="ad--container"]:remove()
 nypost.com##div[class*="ad-slot"]:remove()
 nypost.com##div[class*="ad-wrapper"]:remove()
@@ -44812,6 +44829,7 @@ nypost.com##div[id^="div-gpt-ad-"]:remove()
 nypost.com##iframe[id="zephr-component-1"]:remove()
 nypost.com##iframe[id="revvyiframe"]:remove()
 nypost.com##iframe[rel="sponsored"]:remove()
+nypost.com##iframe[id^="wpcom-iframe-"]:remove()
 nypost.com##script[class^="optanon-category"]:remove()
 nypost.com##script[class="wp-asset-manager ads"]:remove()
 nypost.com##script[src*="//cdn.cookielaw.org/"]:remove()
@@ -44825,9 +44843,13 @@ nypost.com##+js(no-setInterval-if, checkForRequiredDim)
 nypost.com##+js(set-constant, OptanonWrapper, noopFunc)
 nypost.com##+js(set-constant, window.nypGa, noopFunc)
 nypost.com##+js(set-constant, window.nypScripts["ads"], {})
-||pbcs.nypost.com/p/nyp/nyp/pb.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||nypost.com/wp-content/plugins/nyp-video-player/build/jwadvertise.bundle.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||nypost.com/wp-content/plugins/nyp-video-player/build/jwanalytics.bundle.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||nypost.com/wp-content/plugins/nyp-video-player/build/jwpermutive.bundle.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||nypost.com/wp-content/plugins/nyp-video-player/build/jwcomscore.bundle.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||nypost.com/wp-content/themes/nypost-2016/client/build/js/nyp-show-ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||nypost.com/wp-content/themes/nypost-2016/client/build/js/analytics.bundle.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||pbcs.nypost.com/p/nyp/nyp/pb.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d1udjti6mtxz9q.cloudfront.net/p/nyp/nyp/pb.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vop.sundaysky.com^*
 www.siliconera.com##+js(set-constant, __gaTracker, noopFunc)
@@ -52967,6 +52989,16 @@ foodtechnos.in##div[id="dwform"]:style(display: block !important;)
 !foodtechnos.in##div[id="outer-wrapper"]:remove()
 !foodtechnos.in##div[class="container"]:remove()
 !foodtechnos.in##div[id="footer-wrapper"]:remove()
+studylib.net##div[class="above-content"]:has(span:has-text(advertisement)):remove()
+studylib.net##div[class="below-content"]:has(span:has-text(advertisement)):remove()
+studylib.net##div[class^="sidebar-top-content"]:has(span:has-text(advertisement)):remove()
+studylib.net##+js(aopr, gaUserId)
+studylib.net##+js(aopw, gaUserId)
+studylib.net##+js(trusted-replace-node-text, script, /function m\(c\)\{/gm, function m(c){null;} function z(){)
+petri.com##script[id^="cookieBanner-"]:remove()
+||smetrics.optimum.net^*
+!||optimum.net.ssl.d1.sc.omtrdc.net^*
+||cablevision.demdex.net^*
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
