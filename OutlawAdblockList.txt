@@ -44237,6 +44237,7 @@ help.brother-usa.com##div[id="__tealiumGDPRecModal"]:remove()
 ||ssa.1337x.to^*
 ||1337x.to/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 1337x.to##a[href^="/netflixPromo"]:remove()
+||www.1337x.to/mm.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! removing anticlickjack script makes the page just solid black
 !www.1337x.to##script[id="antiClickjackJS"]:remove()
 www.1337x.to##script[admc="nicmaui.com"]:remove()
@@ -52934,6 +52935,7 @@ apkmody.mobi##div[class="download-ads"]:remove()
 apkmody.mobi##div[class="ad-unit"]:remove()
 apkmody.mobi##+js(set-constant, downloadAds, noopFunc)
 apkmody.mobi##+js(set-constant, showDonate, noopFunc)
+||playking88queen.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.techkings.org/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||teamarman.com/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.worldofiptv.com/service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -53027,6 +53029,15 @@ www.cablefax.com##+js(aopw, waitForAdListener)
 www.cablefax.com##+js(set-constant, maxAttempts, 1)
 www.cablefax.com##+js(aopr, AIAD_aa23b6ddc592f4b986b9780192ed2f03_6629a781866cd)
 www.cablefax.com##+js(aopw, AIAD_aa23b6ddc592f4b986b9780192ed2f03_6629a781866cd)
+||e39296.f.akamaiedge.net/tracking.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn.livechatinc.com/tracking.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||quitesousefulhe.info^*
+||loaksandtheir.info^*
+||onservantasr.info^*
+!||xml.car-bidpush.org^*
+||car-bidpush.org^*
+!||d16sobzswqonxq.cloudfront.net^$3p
+||d16sobzswqonxq.cloudfront.net^*
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
