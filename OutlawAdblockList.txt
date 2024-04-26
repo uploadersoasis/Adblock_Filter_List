@@ -33540,8 +33540,37 @@ yoshare.net##div[id="ignielAdBlock"]:remove()
 ||unibots-d.openx.net^*
 ||droplink.co/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||zegtrends.com/contest.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-down.fast-down.com##a[class="create"][href*="//down.fast-down.com/download30.htm"]:remove()
-down.fast-down.com##a[class="create"][href*="//down.fast-down.com/download31.htm"]:remove()
+!down.fast-down.com,down.mdiaload.com##center:remove()
+!down.fast-down.com,down.mdiaload.com##div[class="download-option-btn"]:remove()
+!down.fast-down.com,down.mdiaload.com##+js(remove-attr, disabled, .downloadbtn, stay)
+down.fast-down.com,down.mdiaload.com###adblock_detected:remove-attr(value)
+down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"]:remove()
+! TODO: using title tag does not work for some reason
+!down.fast-down.com,down.mdiaload.com##a[class="create"][title="Download"][href$="//down.mdiaload.com/free-download.html"]:remove()
+down.fast-down.com,down.mdiaload.com##a[class="create"][href$="//down.mdiaload.com/free-download.html"]:remove()
+down.fast-down.com,down.mdiaload.com##a[class="create"][href*="//down.fast-down.com/download20.htm"]:remove()
+down.fast-down.com,down.mdiaload.com##a[class="create"][href*="//down.fast-down.com/download30.htm"]:remove()
+down.fast-down.com,down.mdiaload.com##a[class="create"][href*="//down.fast-down.com/download31.htm"]:remove()
+down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:remove-attr(disabled)
+!down.fast-down.com,down.mdiaload.com##button[class="downloadbtn btn btn-success"]:style(display: inline !important;)
+down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:style(display: inline !important;)
+down.fast-down.com,down.mdiaload.com##div[class="btn btn-success"]:remove()
+down.fast-down.com,down.mdiaload.com##div[class="demand-supply"]:remove()
+down.fast-down.com,down.mdiaload.com##div[data-ad]:remove()
+down.fast-down.com,down.mdiaload.com##div[id^="div-gpt-ad-"]:remove()
+down.fast-down.com,down.mdiaload.com##div[id="generate1"]:remove()
+down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:280px"]:remove()
+down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:296px"]:remove()
+down.fast-down.com,down.mdiaload.com##input[id="adblock_detected"]:remove()
+down.fast-down.com,down.mdiaload.com##+js(acs, gtag)
+down.fast-down.com,down.mdiaload.com##+js(saa, type, submit, .downloadbtn)
+down.fast-down.com,down.mdiaload.com##+js(set-attr, #adblock_detected, value, 0)
+down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_invisible, 0)
+down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_remove_link, 0)
+down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '#adblock_detected')]):remove()
+down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '.adsbox')]):remove()
+||down.mdiaload.com/js/share.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||down.fast-down.com/js/share.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 zegtrends.com##ins[class*="adCreator"]:remove()
 ||dexpredict.com/script/i.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dexpredict.com/ad/display.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -34864,7 +34893,6 @@ www.darktide.live##*[data-hook^="consent-banner-"]:remove()
 rutracker.net##a[href="info.php?show=advert"]:remove()
 rutracker.net##a[href="https://kwork.ru"]:remove()
 ||jy.olpfeere.com^*
-down.fast-down.com##div[data-ad]:remove()
 ||hw.wgrents.com^*
 ||curacaohaloing.website^*
 ||rf.shroffmere.com^*
@@ -45581,33 +45609,6 @@ streamtape.com##+js(saa, height, 100%, video[id="mainvideo"])
 !||hr.prositzapas.com^*
 ||prositzapas.com^*
 ||gloorsie.com^*
-!down.fast-down.com,down.mdiaload.com##center:remove()
-!down.fast-down.com,down.mdiaload.com##div[class="download-option-btn"]:remove()
-down.fast-down.com,down.mdiaload.com###adblock_detected:remove-attr(value)
-down.fast-down.com,down.mdiaload.com##input[id="adblock_detected"]:remove()
-down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_invisible, 0)
-down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_remove_link, 0)
-down.fast-down.com,down.mdiaload.com##+js(set-attr, #adblock_detected, value, 0)
-down.fast-down.com,down.mdiaload.com##+js(acs, gtag)
-!down.fast-down.com,down.mdiaload.com##+js(remove-attr, disabled, .downloadbtn, stay)
-down.fast-down.com,down.mdiaload.com##+js(saa, type, submit, .downloadbtn)
-down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:remove-attr(disabled)
-down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:style(display: inline !important;)
-!down.fast-down.com,down.mdiaload.com##button[class="downloadbtn btn btn-success"]:style(display: inline !important;)
-down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"]:remove()
-down.fast-down.com##a[class="create"][href*="//down.fast-down.com/download20.htm"]:remove()
-!down.mdiaload.com##a[class="create"][title="Download"][href$="//down.mdiaload.com/free-download.html"]:remove()
-! TODO: using title tag does not work for some reason
-down.mdiaload.com##a[class="create"][href$="//down.mdiaload.com/free-download.html"]:remove()
-down.fast-down.com,down.mdiaload.com##div[class="btn btn-success"]:remove()
-down.fast-down.com,down.mdiaload.com##div[data-ad]:remove()
-down.fast-down.com,down.mdiaload.com##div[class="demand-supply"]:remove()
-down.fast-down.com,down.mdiaload.com##div[id="generate1"]:remove()
-down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:296px"]:remove()
-down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:280px"]:remove()
-down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '.adsbox')]):remove()
-down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '#adblock_detected')]):remove()
-||down.mdiaload.com/js/share.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||img.cartooncdn.xyz/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 kisscartoon.sh##div[id="upgrade_pop"]:remove()
 embed.vodstream.xyz##div[id="playback-fake"]:remove()
