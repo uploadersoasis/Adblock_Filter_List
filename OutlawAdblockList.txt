@@ -3062,9 +3062,6 @@ forums.hardwarezone.com.sg###right-ads:remove()
 !||nm2.newegg.com/TrackingWeb/js/nassau_client_v0.01.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||nm2.newegg.com/TrackingWeb/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||us.battle-wow-on.net^*
-www.latimes.com###pmad-rail:remove()
-www.latimes.com##.pm-ad:remove()
-www.latimes.com###rightrail_ad_td:remove()
 www.firedrive.com###fdba_cont:remove()
 ||www.firedrive.com/300x250.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hgads.com/ads$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -4088,7 +4085,6 @@ www.ebay.com###rtm_html_
 ||gamecopyworld.com/games/@_if_468x120.shtml$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cbanners.virtuagirlhd.com/customdata/banner/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cbanners.virtuagirlhd.com^*
-www.latimes.com##.trb_header_adBanner_large
 ||ws.areyouahuman.com/ws/trackEvent/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ws.areyouahuman.com/ayahwebservices/index.php/ayahwebservice/recordTime/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads.empoweringmedia.net^*
@@ -7997,13 +7993,11 @@ www.rlslog.net###advexit-widget
 !||www1.xmediaserve.com/apu.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www1.xmediaserve.com^*
 ||amd-ssl.cdn.turner.com/cnn/big/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.latimes.com###div_ad_stack_07819e88-6568-bba1-1239-df8c8491272a
-www.latimes.com##.trb_allContentWrapper > .trb_ar_rail > .trb_passfailAd.trb_ar_rail_ad.trb_gptAd:nth-of-type(6)
-www.majorgeeks.com###onscroll-ad-major-geeks-sky-right-sky
-www.experienceproject.com###adultpopup > .adultpopup-content
-www.experienceproject.com##body > .cover:nth-of-type(6)
-www.experienceproject.com##body > .cover:nth-of-type(7)
-www.experienceproject.com##body > .cover:nth-of-type(8)
+www.majorgeeks.com###onscroll-ad-major-geeks-sky-right-sky:remove()
+www.experienceproject.com###adultpopup > .adultpopup-content:remove()
+www.experienceproject.com##body > .cover:nth-of-type(6):remove()
+www.experienceproject.com##body > .cover:nth-of-type(7):remove()
+www.experienceproject.com##body > .cover:nth-of-type(8):remove()
 ||teamvirtualprivateserver.com^*
 ||s1-adfly.com/show.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||uranupdates.com/installers/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -10569,10 +10563,6 @@ www.pinterest.com##div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) 
 ||att.giveaways-news.com^*
 ||megadysk.pl/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||content.synapsys.us/l/n/igloo-pb.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.latimes.com###igloo_0 > .SYNAPIFR
-www.latimes.com###igloo_2 > .SYNAPIFR
-www.latimes.com###igloo_1 > .SYNAPIFR
-www.latimes.com##div.trb_gptAd.trb_ar_rail_ad
 ||w1.synapsys.us/images/psa/$image
 ||download.driversupport.com^*
 ||espn.hb.omtrdc.net^*
@@ -10909,7 +10899,6 @@ www.publicleech.xyz###sd9d
 ||www.cwxblalyyvbj.com^*
 ||alxsite.com^*
 ||serve.adworldmedia.com^*
-uploadgig.com###freevid:remove()
 ||*.narod.ru/abnl/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 share-links.biz##.center.dark.w160.border1dark:remove()
 share-links.biz###i_out:remove()
@@ -31297,8 +31286,14 @@ unityassets4free.com##span[class="background-image-page-header-overlay"]:remove(
 unityassets4free.com##div[id^="floating_ads_"]:remove()
 ||taghaugh.com^*
 ||track.xara.com^*
+uploadgig.com###freevid:remove()
 uploadgig.com##+js(remove-class, hideme, #countdownContainer)
-www.warezbook.org/sw$script
+uploadgig.com##+js(set-constant, free_window, noopFunc)
+uploadgig.com##+js(set-constant, newWindow, noopFunc)
+uploadgig.com##+js(abort-on-property-read, newWindow)
+uploadgig.com##+js(abort-on-property-write, newWindow)
+uploadgig.com##+js(set-constant, counter, 0)
+www.warezbook.org/sw$important,script
 www.warezbook.org##li[class="item-flagrow-ad"]:remove()
 www.warezbook.org##div[class="Flagrow-Ads-under-header"]:remove()
 www.warezbook.org##div[id="alerts"]:remove()
@@ -31542,7 +31537,6 @@ katfile.com##+js(aopw, adenable)
 ||d2kd9y1bp4zc6.cloudfront.net^*
 ||www.hscpbysqsepnyw.com^*
 ||hscpbysqsepnyw.com^*
-!||sanet.st/assets/min/public/all_*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.sttdsrewciiqq.com^*
 ||sttdsrewciiqq.com^*
 ||tlpblwipcipgmtd.com^*
@@ -31574,6 +31568,8 @@ crackshash.com##button[class^="wp-ad"]:remove()
 ||zicyqbpqsg.com^*
 ||www.vahfzpfyg.com^*
 ||vahfzpfyg.com^*
+!||sanet.st/assets/min/public/all_*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||sanet.st^$3p,script
 ||rsc.cdn77.org^$script,domain=sanet.st
 lapelotita.com##+js(remove-class, hidden, #go-submit, stay)
 lapelotita.com##+js(remove-class, disabled, a)
@@ -42865,6 +42861,7 @@ gamesnacks.com##div[class="sSVlic"]:remove()
 !||507b28fb-2ef1-4c34-8bda-ba32030bb199.edge.permutive.app^*
 !||00917082-71e9-498e-8343-00c3df06b798.edge.permutive.app^*
 !||0272ac85-5199-4024-a555-397c3d825d95.edge.permutive.app^*
+!||68547f8f-2fd8-4ff3-9b63-51e86e2edee8.edge.permutive.app^*
 !||*.edge.permutive.app^*
 ! Do NOT put a ^ at end of regex as it does not work as it does on non-regex strings in rules.
 /^https?:\/\/[0-9a-f-A-F\-]+\.edge\.permutive\.app\/?\S*/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -53023,6 +53020,43 @@ www.cablefax.com##+js(aopw, AIAD_aa23b6ddc592f4b986b9780192ed2f03_6629a781866cd)
 !||d16sobzswqonxq.cloudfront.net^$3p
 ||d16sobzswqonxq.cloudfront.net^*
 ||96b600f50a.a0e351a3aa.com^*
+||myiphome.com^*
+!||ojd-suivivn.com/track?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||ojd-suivivn.com^*
+ew.com##div[id^="mm-ads-"]:remove()
+ew.com##div[id^="leaderboard-deferred-footer"]:remove()
+ew.com##div[id^="leaderboard-post-content"]:remove()
+ew.com##div[id="onetrust-consent-sdk"]:remove()
+www.latimes.com##.pm-ad:remove()
+www.latimes.com##.google-dfp-ad-sticky:remove()
+www.latimes.com###pmad-rail:remove()
+www.latimes.com###rightrail_ad_td:remove()
+www.latimes.com###igloo_0 > .SYNAPIFR:remove()
+www.latimes.com###igloo_2 > .SYNAPIFR:remove()
+www.latimes.com###igloo_1 > .SYNAPIFR:remove()
+www.latimes.com##div.trb_gptAd.trb_ar_rail_ad:remove()
+www.latimes.com###div_ad_stack_07819e88-6568-bba1-1239-df8c8491272a:remove()
+www.latimes.com##.trb_allContentWrapper > .trb_ar_rail > .trb_passfailAd.trb_ar_rail_ad.trb_gptAd:nth-of-type(6):remove()
+www.latimes.com##.trb_header_adBanner_large:remove()
+www.latimes.com##div[class*="google-dfp-ad"]:remove()
+www.latimes.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+www.latimes.com##div[class="revcontent"]:has(ps-revcontent[data-adb-wid]):remove()
+www.latimes.com##ps-revcontent[id="rc-adblock-widget"]:remove()
+www.latimes.com##ps-revcontent[data-adb-wid]:remove()
+www.latimes.com##script[id="head-read-content-tracker-config"]:remove()
+www.latimes.com##+js(aopr, readContentTrackerConfig)
+www.latimes.com##+js(aopw, readContentTrackerConfig)
+www.latimes.com##+js(set-constant, readContentTrackerConfig, {})
+www.latimes.com##+js(set-constant, meteringjs.dataLayer.showPaywall, false, complete)
+www.latimes.com##+js(aopr, meteringjs.dataLayer.showPaywall)
+www.latimes.com##+js(aopw, meteringjs.dataLayer.showPaywall)
+||www.latimes.com/push-worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||p.teads.tv/teads-fellow.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||cm.teads.tv/v2/advertiser$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||cm.teads.tv/v3/conversion$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||p.teads.tv^*
+||cm.teads.tv^*
+||libs.platform.californiatimes.com/meteringjs/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
