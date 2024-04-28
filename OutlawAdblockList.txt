@@ -45253,7 +45253,7 @@ pressreader.com##html,body:style(display:block;-moz-user-select: text !important
 /^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetIssueInfo\?/$replace=/"IsFreeContent":false,"RequiredAuthenticatedUser":true/"IsFreeContent":true,"RequiredAuthenticatedUser":false/gm,method=get,document
 ! TODO: The following rules don't do anything by themselves to enable a location-based hotspot to work.
 /^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"currentUserRegion":"\w+"/"currentUserRegion":"Tennessee"/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"currentUserRegion":"Arkansas"/"currentUserRegion":"Tennessee"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"currentUserRegion":"\w+"/"currentUserRegion":"Tennessee"/gm,method=get,document
 /^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"default":\{"lat":"\d+\.\d+","lng":"-\d+\.\d+"/"default":{"lat":"35.1424003","lng":"-90.0523717"/gm,method=get,document
 ! TODO: Combining the following two rules doesn't work for some reason.
 /^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Location":null/"Location":true/gm,method=get,document
