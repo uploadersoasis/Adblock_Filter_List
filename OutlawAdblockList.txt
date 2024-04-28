@@ -203,6 +203,7 @@ techydino.net##+js(nobab2)
 ||www.statcounter.com/counter/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kinja.com/assets/ad_iframe.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.indeed.com/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.indeed.com##div[data-tag-type="publisher"][data-load-status="notloaded"]:remove()
 ||www.telegraph.co.uk/template/ver1-0/js/tracker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vod.espn.go.com/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||assets.espn.go.com/ad/dtdi_test/tracking_test/espnAdLogger.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -45224,6 +45225,65 @@ www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##div[class=
 !www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##:matches-path(/\/hotspot\/map/) div[class="popup-container-panel"]:has(div[class="dialog-tint"]):remove()
 www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##:matches-path(/\/hotspot\/map/) div[class="popup-container-panel"]:has(div[class="dialog-container-panel"] div[class="dialog-tint"]):remove()
 pressreader.com##html,body:style(display:block;-moz-user-select: text !important; -khtml-user-select: text !important;-webkit-user-select:text !important;user-select: text !important;)
+! TODO: The following rules don't work on Brave web browser.  Is this because the Chromium version of uBlock Origin doesn't support replace?
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Export":\{"enable":false,"available":false\}/"Export":{"enable":true,"available":true}/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"Export":\{"enable":false,"available":false\}/"Export":{"enable":true,"available":true}/gm,method=get,document
+! 3600000ms is one hour.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"ServicePollingIntervalMsec":"240000","TrackingIntervalMsec":"1000"\}/"ServicePollingIntervalMsec":"3600000","TrackingIntervalMsec":"3600000"}/gm,method=get,document
+! The following rule covers more than one setting.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"enableForAnonymous":"false"/"enableForAnonymous":"true"/gm,method=get,document
+! The following rule is necessary because of the previous rule to undo one setting.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"enableAutoTranslation":\{"enableForAnonymous":"true"/"enableAutoTranslation":{"enableForAnonymous":"false"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Ad":{"Enabled":true}/"Ad":{"Enabled":false}/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"Ad":{"Enabled":true}/"Ad":{"Enabled":false}/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Context":"Context"\},"Events":\{"Enabled":true\}/"Context":"Context"},"Events":{"Enabled":false}/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"issue.detailsview":false/"issue.detailsview":true/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"enableAutoTranslationForAnonymous":false,"enableTranslationForAnonymous":false/"enableAutoTranslationForAnonymous":true,"enableTranslationForAnonymous":true/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnableWatermark":true/"EnableWatermark":false/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnableWatermarkOnFirstPage":true/"EnableWatermarkOnFirstPage":false/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnableWatermarkForAnonimousUser":true/"EnableWatermarkForAnonimousUser":false/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"EnableWatermark":true/"EnableWatermark":false/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"EnableWatermarkOnFirstPage":true/"EnableWatermarkOnFirstPage":false/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"EnableWatermarkForAnonimousUser":true/"EnableWatermarkForAnonimousUser":false/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"IsDeviceAccount":false/"IsDeviceAccount":true/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"IsCurrentUser":false/"IsCurrentUser":true/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"war-is-always-about-profit-at-the-taxpayers-expense":"1"\},"enabled":true/"war-is-always-about-profit-at-the-taxpayers-expense":"1"},"enabled":false/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"TrialRegistrationForAllEnabled":false/"TrialRegistrationForAllEnabled":true/gm,method=get,document
+! The following changes are most likely just for display purposes only and won't unlock the issue.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetIssueInfo\?/$replace=/"IsFreeContent":false,"RequiredAuthenticatedUser":true/"IsFreeContent":true,"RequiredAuthenticatedUser":false/gm,method=get,document
+! TODO: The following rules don't do anything by themselves to enable a location-based hotspot to work.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"currentUserRegion":"Arkansas"/"currentUserRegion":"Tennessee"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"currentUserRegion":"Arkansas"/"currentUserRegion":"Tennessee"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"default":\{"lat":"\d+\.\d+","lng":"-\d+\.\d+"/"default":{"lat":"35.1424003","lng":"-90.0523717"/gm,method=get,document
+! TODO: Combining the following two rules doesn't work for some reason.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Location":null/"Location":true/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"LocationLatLng":\{"Lat":0.0,"Lng":0.0\}/"LocationLatLng":{"Lat":35.1424003,"Lng":-90.0523717}/gm,method=get,document
+! The following data were returned from the Android app on 4/28/2024.  TODO: When do they expire?
+! The token value in the following rule is the same as the accessToken used in URL query strings.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"auth":\{"Token":"\w+!"/"auth":{"Token":"KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"BearerToken":"\w+"/"BearerToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEwMjE0OTk2NywiYWIiOiJTSXRtNGhEaXRYamt6UUhObUZrTUtDTWZWZ05mOHRNOV9yTGtjUDFEUDFhdzJKaFFQdjZoQzloU3R4dUZlMkw1V3pLbUxFZngwblJmbUhXem4wQ0I4VGVsaG5nSUhsbWxHZnZUdlRNYTBwYyEiLCJhYyI6MTAyMTQ5OTY3LCJhZCI6MSwiYWUiOjEsImFmIjoxLCJhaSI6MywiYWoiOjIxODcsImFrIjoyMDc3NTkyMjUyLCJhbCI6NzkzODEyNTQsImFtIjoiZW4iLCJhbiI6ImVuLVVTIiwiYW8iOjEsImFwIjoxMjkwMDYzOTIyLCJleHAiOjE3MTQzMDUxNTEsImlzcyI6InByIn0.e78AhoWnSDJwFlUdyu-qGNuz0r7wRj81M4E51X0UX2A"/gm,method=get,document
+! TODO: Do NOT use the following four rules if have a subscription or otherwise want to use a login account with Pressreader.
+! Account Number and User Key are the same value except Account Number is not a string.
+! When not logged in, the user key can be a negative 10-digit number.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"UserKey":"-?\d{9,10}"/"UserKey":"102149967"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"AccountNumber":-?\d{1,10}/{"AccountNumber":102149967/gm,method=get,document
+! EnAccountNumber and ProfileID are the same.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnAccountNumber":"\w+"/"EnAccountNumber":"zxnyy1dhG-TfOqnmPxIo6A"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"ProfileId":"\w+"/"ProfileId":"zxnyy1dhG-TfOqnmPxIo6A"/gm,method=get,document
+! The replacement value in the following rule is the value of the "ndstate" response header when the pagekeys are successfully pulled.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Sponsor":null,"Catalog":\{"Hash":"[\w=\/]+"/{"Sponsor":{"Status":2},"Catalog":{"Hash":"hyyUuz1yO\/oLEJ75cDlrRg=="}/gm,method=get,document
+! The accessToken value used in the following rules only works for the issues of publications which I have already activated.
+! TODO: Manually adding the accessToken allows both text view and page view to work.
+! TODO: If you have a subscription to Pressreader, do not use the rules with the accessToken value as it will limit your access to only those issues of publishers.
+        When does this accessToken expire?
+! TODO: Setting the accessToken in the query string does not work when the "Authorization" request header is present since it contains the current Bearer token which may be incorrect for the accessToken.
+!       So, remove the Authorization header using a web browser extensaion or other means.
+! The following rule will eliminate any duplicate accessToken entries in the query string.
+! Do NOT Remove the trailing ampersand as well since it is not getting recreated by the other rule for some reason.
+! This URL will definitely have more than one item in the query string regardless if the accessToken is present.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetPageKeys\?/$uritransform=/\&accessToken=[\w+!-]+//,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rule will add an accesstoken even when it was not present before, but this is necessary because without a valid one for the issue only the key for the first page is returned.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetPageKeys\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||logs.pressreader.com^*
 !||cdn.blueconic.net/wehco.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.blueconic.net^*
@@ -53057,6 +53117,9 @@ www.latimes.com##+js(aopw, meteringjs.dataLayer.showPaywall)
 ||p.teads.tv^*
 ||cm.teads.tv^*
 ||libs.platform.californiatimes.com/meteringjs/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+blog.logrocket.com##a[href="https://lp.logrocket.com/blg/learn-more"][class="embed-link"]:remove()
+blog.logrocket.com##div[id="arcade-interstitial"]:remove()
+www.syncfusion.com##div[id="cookie"]:remove()
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
