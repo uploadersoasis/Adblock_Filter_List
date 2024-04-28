@@ -53121,6 +53121,10 @@ www.latimes.com##+js(aopw, meteringjs.dataLayer.showPaywall)
 blog.logrocket.com##a[href="https://lp.logrocket.com/blg/learn-more"][class="embed-link"]:remove()
 blog.logrocket.com##div[id="arcade-interstitial"]:remove()
 www.syncfusion.com##div[id="cookie"]:remove()
+www.latlong.net##div[data-aa-adunit]:remove()
+www.latlong.net##div[pm-adunit]:remove()
+www.latlong.net##div[class^="stickAd"]:remove()
+www.latlong.net##div[id^="pubmax-"]:remove()
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
