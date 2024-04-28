@@ -45273,11 +45273,12 @@ pressreader.com##html,body:style(display:block;-moz-user-select: text !important
 ! The replacement value in the following rule is the value of the "ndstate" response header when the pagekeys are successfully pulled.
 /^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Sponsor":null,"Catalog":\{"Hash":"[\w=\/]+"/{"Sponsor":{"Status":2},"Catalog":{"Hash":"hyyUuz1yO\/oLEJ75cDlrRg=="}/gm,method=get,document
 ! The accessToken value used in the following rules only works for the issues of publications which I have already activated.
+! Apparently it works for all issues of publications which are eligible under the subscription plan for which it was issued not just those which have already been unlocked IF the token has not expired (after two hours in this case?).
 ! TODO: Manually adding the accessToken allows both text view and page view to work.
 ! TODO: If you have a subscription to Pressreader, do not use the rules with the accessToken value as it will limit your access to only those issues of publishers.
-        When does this accessToken expire?
-! TODO: Setting the accessToken in the query string does not work when the "Authorization" request header is present since it contains the current Bearer token which may be incorrect for the accessToken.
-!       So, remove the Authorization header using a web browser extensaion or other means.
+        When does this accessToken expire?  To unlock new content, two hours after issue.  For previously unlocked content, 3 days? 30 days?
+! TODO: Setting the accessToken in the query string does not work when the "Authorization" request header is present since it contains the current Bearer token which may be incorrect for this accessToken.
+!       So, remove the Authorization header using a web browser extension or other means.  Setting the Authorization header to the correct bearer token value should also work.
 ! The following rule will eliminate any duplicate accessToken entries in the query string.
 ! Do NOT Remove the trailing ampersand as well since it is not getting recreated by the other rule for some reason.
 ! This URL will definitely have more than one item in the query string regardless if the accessToken is present.
