@@ -44650,10 +44650,20 @@ www.uppit.com##:xpath(//html/body/header/div/script[2]):remove()
 techreport.com##div[class*="clickout-banner-regular_native_box"]:remove()
 ||www.247checkers.com/js/support/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.247checkers.com/js/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.247checkers.com,www.247solitaire.com,www.247chess.com##div[class^="aspace-"]:has(div[id^="div-gpt-ad"]):remove()
+www.247checkers.com,www.247solitaire.com,www.247chess.com##div[id^="div-gpt-ad"]:remove()
+www.247checkers.com,www.247solitaire.com,www.247chess.com##div[class^="aspace-"]:has(div[id^="div-ad-space-"]):remove()
+www.247checkers.com,www.247solitaire.com,www.247chess.com##div[id^="div-ad-space-"]:remove()
+www.247checkers.com,www.247solitaire.com,www.247chess.com##div[id^="feature-ad"]:remove()
+www.247checkers.com##div[id="feature"]:style(max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; min-height: 99vh !important;)
+www.247checkers.com##div[class="middle"]:style(max-width: 100% !important; width: 100% !important;)
+www.247checkers.com##canvas[id="app-player-game-canvas"]:style(max-width: 100% !important; width: 100% !important; max-height: 100% !important; height: 100% !important;)
+www.247checkers.com##+js(saa, width, 100%, canvas[id="app-player-game-canvas"])
+www.247checkers.com##+js(saa, height, 100%, canvas[id="app-player-game-canvas"])
 www.247checkers.com##+js(aeld, contextmenu)
-www.247checkers.com##div[class^="aspace"]:has(div[id^="div-gpt-ad"]):remove()
-www.247checkers.com##div[id^="div-gpt-ad"]:remove()
-www.247checkers.com##div[id^="feature-ad"]:remove()
+# TODO: Only use the following two rules so long as no non-ad content is in them.
+www.247checkers.com##div[class="right"]:remove()
+www.247checkers.com##div[class="left"]:remove()
 www.247checkers.com##+js(set-constant, window.adLineup, noopFunc)
 www.247checkers.com##+js(aopr, window.adLineup)
 www.247checkers.com##+js(aopw, window.adLineup)
@@ -44689,11 +44699,6 @@ www.247checkers.com##:xpath(//script[contains(text(), '/www.247games.com/feature
 ! The following script should already be gone per the above rule.
 www.247checkers.com##script[src*="/www.247games.com/feature-lineup/FeatureLineup."]:remove()
 ||www.247games.com/feature-lineup/FeatureLineup.v2.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.247chess.com##div[class="aspace aspace-h"]:has(div[id^="div-gpt-ad-"]):remove()
-www.247chess.com##div[id^="div-gpt-ad-"]:remove()
-www.247solitaire.com##div[id^="feature-ad"]:remove()
-www.247solitaire.com##div[id^="div-gpt-ad-"]:remove()
-www.247solitaire.com##div[id^="aspace-"]:remove()
 !www.247solitaire.com##div:has(div):has-text(/Close Ad/):remove()
 www.247solitaire.com##+js(set-constant, loadAnalyticsData, noopFunc)
 www.247solitaire.com##+js(set-constant, adsStart, noopFunc)
@@ -45273,7 +45278,9 @@ pressreader.com##html,body:style(display:block;-moz-user-select: text !important
 ! Account Number and User Key are the same value except Account Number is not a string.
 ! When not logged in, the user key can be a negative 10-digit number.
 /^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"UserKey":"-?\d{9,10}"/"UserKey":"102149967"/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"AccountNumber":-?\d{1,10}/{"AccountNumber":102149967/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"AccountNumber":-?\d{1,10}/"AccountNumber":102149967/gm,method=get,document
+! "Email" field is the same value as <user-name> in the XML of the POST requests.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Email":null/"Email":"android_7964a20aab82ed90"/gm,method=get,document
 ! EnAccountNumber and ProfileID are the same.
 /^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnAccountNumber":"\w+"/"EnAccountNumber":"zxnyy1dhG-TfOqnmPxIo6A"/gm,method=get,document
 /^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"ProfileId":"\w+"/"ProfileId":"zxnyy1dhG-TfOqnmPxIo6A"/gm,method=get,document
