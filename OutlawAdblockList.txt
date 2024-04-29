@@ -45227,6 +45227,9 @@ www.hbo.com##script[id="user-consent-script"]:remove()
 ||ingress.pressreader.com/services/track/pageview$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ingress.pressreader.com/services/v1/analyticprofiles/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! removing 1x1.gif removes the thumbnails
+! TODO: Removing the is-disabled class in the following two rules doesn't actually enabled the print button on the page because the event for it has been removed.
+www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##li[class="is-disabled"]:remove-class(is-disabled)
+www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##+js(remove-class, is-disabled, li[class="is-disabled"])
 !www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##img[src$="/images/1x1.gif"]:remove()
 !www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##img[src$="/images/1x1.gif"]:remove()
 www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##+js(set-constant, isLoggedIn, trueFunc)
