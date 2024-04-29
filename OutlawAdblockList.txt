@@ -33511,8 +33511,8 @@ newforex.online,world-trips.net##+js(remove-class, d-none, #go_d)
 ||try2link.com/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 try2link.com##div[id="ad-banner"]:remove()
 try2link.com##div[id="contentuy"]:remove()
-try2link.com##+js(abort-current-inline-script, getalladblocks())
-try2link.com##+js(abort-current-inline-script, checkAdBlocker())
+try2link.com##+js(abort-current-inline-script, /getalladblocks\(\)/)
+try2link.com##+js(abort-current-inline-script, /checkAdBlocker\(\)/)
 try2link.com##^script:has-text(/getalladblocks()/i):remove()
 try2link.com##^script:has-text(/checkAdBlocker()/i):remove()
 ||www.dcmgptcbcrogl.com^*
@@ -33537,30 +33537,37 @@ yoshare.net##div[id="ignielAdBlock"]:remove()
 ||unibots-d.openx.net^*
 ||droplink.co/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||zegtrends.com/contest.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!down.fast-down.com,down.mdiaload.com##center:remove()
-!down.fast-down.com,down.mdiaload.com##div[class="download-option-btn"]:remove()
-!down.fast-down.com,down.mdiaload.com##+js(remove-attr, disabled, .downloadbtn, stay)
-down.fast-down.com,down.mdiaload.com###adblock_detected:remove-attr(value)
-down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"]:remove()
-! TODO: using title tag does not work for some reason
-!down.fast-down.com,down.mdiaload.com##a[class="create"][title="Download"][href$="//down.mdiaload.com/free-download.html"]:remove()
-down.fast-down.com,down.mdiaload.com##a[class="create"][href$="//down.mdiaload.com/free-download.html"]:remove()
+! Do NOT use the following rule since the real download link anchor tag uses the same classes.
+!down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"]:remove()
+down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"][href="https://down.mdiaload.com/sr9-mdiaload.html"]:remove()
+down.fast-down.com,down.mdiaload.com##a[title="Download"][href="https://down.mdiaload.com/free-dwnload.html"]:remove()
+down.fast-down.com,down.mdiaload.com##a[title="Download"][href$="//down.mdiaload.com/free-download.html"]:remove()
+!down.fast-down.com,down.mdiaload.com##a[class="create"][href$="//down.mdiaload.com/free-download.html"]:remove()
 down.fast-down.com,down.mdiaload.com##a[class="create"][href*="//down.fast-down.com/download20.htm"]:remove()
 down.fast-down.com,down.mdiaload.com##a[class="create"][href*="//down.fast-down.com/download30.htm"]:remove()
 down.fast-down.com,down.mdiaload.com##a[class="create"][href*="//down.fast-down.com/download31.htm"]:remove()
-down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:remove-attr(disabled)
-!down.fast-down.com,down.mdiaload.com##button[class="downloadbtn btn btn-success"]:style(display: inline !important;)
-down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:style(display: inline !important;)
-down.fast-down.com,down.mdiaload.com##div[class="btn btn-success"]:remove()
+down.fast-down.com,down.mdiaload.com###adblock_detected:remove-attr(value)
+!down.fast-down.com,down.mdiaload.com##center:remove()
+!down.fast-down.com,down.mdiaload.com##div[class="download-option-btn"]:remove()
 down.fast-down.com,down.mdiaload.com##div[class="demand-supply"]:remove()
 down.fast-down.com,down.mdiaload.com##div[data-ad]:remove()
 down.fast-down.com,down.mdiaload.com##div[id^="div-gpt-ad-"]:remove()
 down.fast-down.com,down.mdiaload.com##div[id="generate1"]:remove()
 down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:280px"]:remove()
 down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:296px"]:remove()
+down.fast-down.com,down.mdiaload.com##script[id="ub-script"]:remove()
 down.fast-down.com,down.mdiaload.com##input[id="adblock_detected"]:remove()
-down.fast-down.com,down.mdiaload.com##+js(acs, gtag)
+!down.fast-down.com,down.mdiaload.com##+js(remove-attr, disabled, .downloadbtn, stay)
+down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:remove-attr(disabled)
+!down.fast-down.com,down.mdiaload.com##button[class="downloadbtn btn btn-success"]:style(display: inline !important;)
+down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:style(display: inline !important;)
+! TODO: rather than remove in the button in the following rule, could change its type to submit using saa scriptlet.
+!down.fast-down.com,down.mdiaload.com##+js(saa, type, submit, button[class="btn btn-success"])
+down.fast-down.com,down.mdiaload.com##button[class="btn btn-success"]:remove()
 down.fast-down.com,down.mdiaload.com##+js(saa, type, submit, .downloadbtn)
+down.fast-down.com,down.mdiaload.com##+js(aopw, unblockerPaymentToken)
+down.fast-down.com,down.mdiaload.com##+js(aopr, unblockerPaymentToken)
+down.fast-down.com,down.mdiaload.com##+js(acs, gtag)
 down.fast-down.com,down.mdiaload.com##+js(set-attr, #adblock_detected, value, 0)
 down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_invisible, 0)
 down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_remove_link, 0)
@@ -51621,10 +51628,10 @@ streambucket.net##+js(acs, /_0x32e7\['NICUCI'\]/)
 *##+js(aopw, _Hasync)
 *##+js(aopr, _Hasync)
 *##+js(acs, /_Hasync\./)
-!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(set-constant, _Hasync, [])
-!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(aopw, _Hasync)
-!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(aopr, _Hasync)
-!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip##+js(acs, /_Hasync\./)
+!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip,rlsbb.ru##+js(set-constant, _Hasync, [])
+!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip,rlsbb.ru##+js(aopw, _Hasync)
+!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip,rlsbb.ru##+js(aopr, _Hasync)
+!streambucket.net,millionscast.com,cricplay2.xyz,cdn.sportcast.life,godzillive.com,www.sportsbaytv.com,lato.sx,rapidrar.com,rapidrar.cr,sportskart.click,time4tv.stream,time4tv.xyz,dlhd.sx,daddylivehd.sx,daddylive.watch,mylink.vc,giga-down.com,speed-down.org,dailyuploads.net,sportskart.click,sportsembed.su,1rowsportz.info,cdn.stagatvfiles.com,www2.solarmovie.cr,tutlehd2.xyz,tutlehd3.xyz,escast.xyz,s2watch.link,aradsport.live,antenasport.ru,maxsport.one,lovesomecommunity.com,poscitechs.shop,bestmlb.buffstream.io,streameast.buffstream.io,sporttuna.com,sporttuna.sx,sporttuna.site,letsupload.org,letsupload.to,letsupload.io,1stream.buzz,streamvid.net,amazingstream.net,vikistream.com,casadelfutbol.info,casadelfutbol.tv,kepa.pw,www.playstream.site,stream.crichd.vip,rlsbb.ru##+js(acs, /_Hasync\./)
 ! The commas in the following remove-node-text rule must be escaped?
 *##+js(remove-node-text, script, /function\(m\,e\,t\,r\,i\,k\,a\)/gm)
 *##:xpath(//script[contains(text(), 'function(m,e,t,r,i,k,a)')]):remove()
@@ -53125,6 +53132,19 @@ www.latlong.net##div[data-aa-adunit]:remove()
 www.latlong.net##div[pm-adunit]:remove()
 www.latlong.net##div[class^="stickAd"]:remove()
 www.latlong.net##div[id^="pubmax-"]:remove()
+||jelarp.com^*
+||ww99.softasm.com^*
+!||ww1.playcasino786.lat^*
+||playcasino786.lat^*
+||tpdethnol.com^*
+||bookedbonce.top^*
+||teiankythes.top^*
+rlsbb.ru##+js(set-constant, _gaq, [])
+rlsbb.ru##+js(abort-on-property-read, _gaq)
+rlsbb.ru##+js(abort-on-property-write, _gaq)
+rlsbb.ru##+js(acs, /_gaq\.push\(/)
+!*$xhr,method=post,domain=rlsbb.ru
+/^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$xhr,method=post,domain=rlsbb.ru
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
