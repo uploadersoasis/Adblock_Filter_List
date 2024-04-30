@@ -53158,6 +53158,26 @@ rlsbb.ru##+js(abort-on-property-write, _gaq)
 rlsbb.ru##+js(acs, /_gaq\.push\(/)
 !*$xhr,method=post,domain=rlsbb.ru
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$xhr,method=post,domain=rlsbb.ru
+www.allrecipes.com##+js(abort-on-property-read, geolocationResponse)
+www.allrecipes.com##+js(abort-on-property-write, geolocationResponse)
+www.allrecipes.com##+js(abort-on-property-read, adLazyOffset)
+www.allrecipes.com##+js(abort-on-property-write, adLazyOffset)
+www.allrecipes.com##+js(abort-on-property-read, testIds)
+www.allrecipes.com##+js(abort-on-property-write, testIds)
+www.allrecipes.com##+js(set-constant, Mntl.AdMetrics, false, complete)
+www.allrecipes.com##+js(abort-on-property-read, Mntl.AdMetrics)
+www.allrecipes.com##+js(abort-on-property-write, Mntl.AdMetrics)
+www.allrecipes.com##+js(set-constant, hasConsent, true)
+www.allrecipes.com##div[id^="mm-ads-"]:remove()
+www.allrecipes.com##div[id^="mntl-skip-to-content"]:remove()
+www.allrecipes.com##div[id="onetrust-consent-sdk"]:remove()
+www.allrecipes.com##div[id="onetrust-banner-sdk"]:remove()
+www.allrecipes.com##div[class*="mm-ads-flexible-"]:remove()
+www.allrecipes.com##div[class*="mm-ads-leaderboardfooter-"]:remove()
+www.allrecipes.com##div[class*="js-lazy-ad"]:remove()
+www.allrecipes.com##div[class*="mm-ads-gpt-adunit"]:remove()
+www.allrecipes.com##div[id^="article__broad-video-jw"]:remove-class(is-hidden)
+www.allrecipes.com##+js(remove-class, is-hidden, div[id^="article__broad-video-jw"])
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
