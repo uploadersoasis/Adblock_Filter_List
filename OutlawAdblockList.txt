@@ -27013,6 +27013,9 @@ codingshiksha.com##aside[class*="admania_sidebarsticky"]
 !codingshiksha.com##ins[class="adsbygoogle ezfound"]
 codingshiksha.com##ins[class^="adsbygoogle"]
 livebook.manning.com##+js(set-constant, count, 1000)
+livebook.manning.com##*[id^="paywall-login"]:remove()
+livebook.manning.com##div[class*="inline-promo-container"]:remove()
+livebook.manning.com##div[class*="subscriptions-inline-banner"]:remove()
 devcenter.heroku.com##div[id="heroku-cookie-banner"]
 devcenter.heroku.com##div[class="heroku-cookie-banner"]
 www.theserverside.com##div[class="ad-wrapper ad-embedded"]
