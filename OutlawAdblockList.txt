@@ -15820,6 +15820,16 @@ docslide.net##div[class^="adsbygoogle"]:remove()
 !||s1.2mdn.net/* !This may block some videos.
 ||s1.2mdn.net/viewad/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.receivesmsonline.net###mADSFooter:remove()
+www.receivesmsonline.net##div[class="row"]:has(div[class="mb-3 text-muted"]:has-text(Advertisement)):remove()
+www.receivesmsonline.net##div[class="row"]:has(p[class="text-muted"]:has-text(Advertisement)):remove()
+www.receivesmsonline.net##div[class="ads-container"]:remove()
+www.freeonlinephone.org,www.receivesmsonline.net##div[data-ad]:remove()
+! remove() doesn't work with :: styles
+www.freeonlinephone.org##.freeonlineadaptable::after
+www.freeonlinephone.org##.aviso::after
+www.yunduanxin.xyz##div[class="panel panel-default"]:has(span[style="float: right;"]:has-text(Ad)):remove()
+www.yunduanxin.xyz##+js(set-constant, show_ad, noopFunc)
+www.yunduanxin.xyz##+js(acs, /show_ad\(/)
 ||swallsix.info^*
 ||shermore.info^*
 !||promo.propellerads.com/728x90-popads_1.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -34043,10 +34053,13 @@ www.msn.com##display-ads:remove()
 wccftech.com##div[class="d-none d-md-block"]:has(div[class="bg-horizontal"])::before:remove()
 wccftech.com##div[class="d-none d-md-block bg-horizontal"]:remove()
 wccftech.com##div[class="bg-square"]:has(div[id^="div-gpt-ad-"]):remove()
-wccftech.com##div[class="bg-square"]::before:remove()
+! remove() doesn't work with :: styles
+wccftech.com##div[class="bg-square"]::before
 wccftech.com##div[class="bg-vertical"]:has(div[id^="div-gpt-ad-"]):remove()
-wccftech.com##div[class="bg-vertical"]::before:remove()
+! remove() doesn't work with :: styles
+wccftech.com##div[class="bg-vertical"]::before
 wccftech.com##div[class="bg-horizontal"]:has(div[id^="div-gpt-ad-"]):remove()
+! remove() doesn't work with :: styles
 wccftech.com##div[class="bg-horizontal"]::before:remove()
 wccftech.com##div[id^="div-gpt-ad-"]:remove()
 wccftech.com##div[data-pg-ad-spot]:remove()
@@ -53178,6 +53191,7 @@ www.allrecipes.com##div[class*="js-lazy-ad"]:remove()
 www.allrecipes.com##div[class*="mm-ads-gpt-adunit"]:remove()
 www.allrecipes.com##div[id^="article__broad-video-jw"]:remove-class(is-hidden)
 www.allrecipes.com##+js(remove-class, is-hidden, div[id^="article__broad-video-jw"])
+quackr.io##div[data-fuse]:remove()
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
