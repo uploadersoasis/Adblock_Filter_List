@@ -22106,7 +22106,6 @@ webdesign.tutsplus.com##.post__article-ad:remove()
 ||cdn.adpushup.com^*
 ||metrics.samsclub.com^*
 www.fullversiondl.com##.btngreen.user:remove()
-||media.geeksforgeeks.org/wp-content/cdn-uploads/20200308234252/GfG-Right-Top-P100.png$image
 ||content-cdn.y2mate.com/images/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pagead2.googlesyndication.com/pcs/activeview$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||googleads.g.doubleclick.net/aclk$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -23343,7 +23342,6 @@ uplod.net##+js(abort-on-property-read, mdpDeBlocker)
 www.maketecheasier.com##ins[class="adsbygoogle"]:remove()
 www.maketecheasier.com##div[class$="ad-slot"]:remove()
 www.maketecheasier.com##div[class^="ad-slot"]:remove()
-www.geeksforgeels.org##div[class^="cookie-consent"]:remove()
 ||mb.moatads.com^*
 ||px.moatads.com^*
 ||oo.moatads.com^*
@@ -23587,8 +23585,6 @@ themehunt.com##div[id="sp-cookie-consent"]:remove()
 ||www.dexpredict.com/a/display.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dexpredict.com/a/display.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.dexpredict.com/script/i.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!www.geeksforgeeks.org##div[class="cookie-consent hide-consent show-consent"]:remove()
-www.geeksforgeeks.org##div[class*="cookie-consent"]:remove()
 www.veryload.com##div[aria-label="cookieconsent"]:remove()
 fhscript.com##div[aria-describedby="cookieconsent:desc"]:remove()
 yetishare.com##div[id="cookie-bar"]:remove()
@@ -24757,7 +24753,6 @@ myuploadedpremium.de##+js(abort-on-property-write, window.atob)
 ||www.buyfordnow.com/mpel/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.ford.com/services/fps/checkFPSXDC.json$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||red.mediamarketsstream.com^*
-www.geeksforgeeks.org###AP_G4GR_5:remove()
 login.wirecard.com##div[id="cookie-message"]:remove()
 www.sega60th.com##div[aria-label="Cookie Preferences"]:remove()
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
@@ -29957,9 +29952,6 @@ community.t-mobile.com##div[class*="cookiebar"]:remove()
 ||zn3edajdvgwonv9nr-tmobilecx.siteintercept.qualtrics.com^*
 onestore.nokia.com##div[class*="nokia-cookies-wrapper"]:remove()
 ||prize-winner-ol7e.live^*
-www.geeksforgeeks.org##div[class="_ap_apex_ad"]:remove()
-www.geeksforgeeks.org##+js(aopr, adpushup)
-www.geeksforgeeks.org##+js(aopw, adpushup)
 www.t-mobile.com##div[class*="cookie-modal"]:remove()
 www.t-mobile.com##div[data-analytics-config]:remove()
 www.t-mobile.com##+js(remove-class, modal-backdrop)
@@ -30225,7 +30217,7 @@ www.aol.com##div[class="m-consent__content"]
 !||sync.adtelligent.com/csync?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||sync.adtelligent.com^*
 ||s.yimg.com/rx/vrm/builds/30428082/xdomain-vpaid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.nationalreview.com##div[class="paywall-rollup__content"]
+www.nationalreview.com##div[class="paywall-rollup__content"]:remove()
 www.nationalreview.com##+js(aopr, adLayersAdServer)
 www.nationalreview.com##+js(aopw, adLayersAdServer)
 www.nationalreview.com##+js(aopr, adLayersDFP)
@@ -30243,35 +30235,31 @@ www.nationalreview.com##+js(set-constant, nr_is_metered_content, '0', stay)
 www.nationalreview.com##+js(set-constant, nr_is_truncated_premium, false, stay)
 www.nationalreview.com##+js(set-constant, nr_is_incognito_mode, '1', stay)
 www.nationalreview.com##+js(set-constant, nrPrebidUnits, [], stay)
-www.nationalreview.com##*[class*="ad-unit"]
-www.nationalreview.com##div[class*="dfp-ad"]
-www.nationalreview.com##div[class*="modal-overlay--paywall"]
+www.nationalreview.com##*[class*="ad-unit"]:remove()
+www.nationalreview.com##div[class*="dfp-ad"]:remove()
+www.nationalreview.com##div[class*="modal-overlay--paywall"]:remove()
 !www.nationalreview.com##+js(remove-class, modal-overlay--paywall)
 ||www.nationalreview.com/wp-content/themes/national-review/client/build/js/ads.bundle.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.nationalreview.com/wp-content/themes/national-review/static/js/ads/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||stag-core.tfla.xyz/serve_onetag?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||a10.nationalreview.com/rest/recommendations/stats?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-redeem.giftcards.com##div[id="cp-overlay"]
-tutorialforlinux.com##div[id="cookie-notice"]
-tutorialforlinux.com##div[class*="cookie-notice"]
-code.tutsplus.com##div[class*="fuse-ad"]
+redeem.giftcards.com##div[id="cp-overlay"]:remove()
+tutorialforlinux.com##div[id="cookie-notice"]:remove()
+tutorialforlinux.com##div[class*="cookie-notice"]:remove()
+code.tutsplus.com##div[class*="fuse-ad"]:remove()
 www.pythontutorial.net##div[class="whitelist"]:has(div[class="donation"]):remove()
 www.pythontutorial.net##div[class*="ad-"]:has(div[id^="Ad.Plus"]):remove()
-realpython.com##a:has-text(/Remove ads/i)
-pynative.com##div[class*="adthrive-"]
-www.geeksforgeeks.org##+js(aopr, arrPostCat)
-www.geeksforgeeks.org##+js(aopw, arrPostCat)
-www.geeksforgeeks.org##+js(aopr, s.src)
-www.geeksforgeeks.org##+js(aopw, s.src)
-linuxhint.com##div[class*="adthrive"]
-thispointer.com###cmplz-cookie-config-js-extra
-thispointer.com##div[id="cc-window"]
+realpython.com##a:has-text(/Remove ads/i):remove()
+pynative.com##div[class*="adthrive-"]:remove()
+linuxhint.com##div[class*="adthrive"]:remove()
+thispointer.com###cmplz-cookie-config-js-extra:remove()
+thispointer.com##div[id="cc-window"]:remove()
 !||thispointer.com/wp-content/plugins/complianz-gdpr-premium/assets/css/cookieconsent.min.css$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||thispointer.com/wp-content/plugins/complianz-gdpr-premium/assets/js/cookieconsent.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||thispointer.com/wp-content/plugins/complianz-gdpr-premium/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.programcreek.com##span[class="ez-report-ad-button"]
-www.programcreek.com##*[class*="ezoic-ad"]
-www.programcreek.com##*[class*="adtester-"]
+www.programcreek.com##span[class="ez-report-ad-button"]:remove()
+www.programcreek.com##*[class*="ezoic-ad"]:remove()
+www.programcreek.com##*[class*="adtester-"]:remove()
 ! This blocks ads, but Youtube will try to load them repeatedly before it eventually fails.
 ||*.googlevideo.com/videoplayback?*&ctier=L$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||*.googlevideo.com/videoplayback?*&ctier=L*$document
@@ -30280,27 +30268,27 @@ www.programcreek.com##*[class*="adtester-"]
 ||fugles.net^*
 ||locketamoral.com^*
 ||beefymartpronunciation.com^*
-careerkarma.com##div[id="green-banner"]
-guidefall.com##div[class*="adthrive-"]
+careerkarma.com##div[id="green-banner"]:remove()
+guidefall.com##div[class*="adthrive-"]:remove()
 guidefall.com##+js(aopr, window.adthriveCLS)
 guidefall.com##+js(aopw, window.adthriveCLS)
 guidefall.com##+js(aopr, cls_disable_ads)
 guidefall.com##+js(aopw, cls_disable_ads)
-robots.net##ins[class*="adsbygoogle"]
-!robots.net##ins[class*="responsive-ad"]
-!robots.net##div[class*="responsive-ad"]
-robots.net##*[class*="responsive-ad"]
-robots.net##*[class*="responsive-vertial-ad"]
+robots.net##ins[class*="adsbygoogle"]:remove()
+!robots.net##ins[class*="responsive-ad"]:remove()
+!robots.net##div[class*="responsive-ad"]:remove()
+robots.net##*[class*="responsive-ad"]:remove()
+robots.net##*[class*="responsive-vertial-ad"]:remove()
 robots.net##+js(aopr, window.adthriveCLS)
 robots.net##+js(aopw, window.adthriveCLS)
 ||express-news.me^*
-www.theblaze.com##.ad-tag
-gadgets.ndtv.com##.pagepusheradATF
-gadgets.ndtv.com##.adhead
-www.loginask.com##div[id^="div-gpt-ad"]
-www.loginask.com##div[class="adslabel"]
-stackabuse.com##div[id^="ad-content-"]
-stackabuse.com##.waldo-display-unit
+www.theblaze.com##.ad-tag:remove()
+gadgets.ndtv.com##.pagepusheradATF:remove()
+gadgets.ndtv.com##.adhead:remove()
+www.loginask.com##div[id^="div-gpt-ad"]:remove()
+www.loginask.com##div[class="adslabel"]:remove()
+stackabuse.com##div[id^="ad-content-"]:remove()
+stackabuse.com##.waldo-display-unit:remove()
 ||www.propapps.info^*
 ||dist.propapps.info^*
 ||ugroocuw.net^*
@@ -30310,22 +30298,22 @@ stackabuse.com##.waldo-display-unit
 ||byelvis.de^*
 ||burnihhell.live^*
 ||claspedtwelve.com^*
-kotaku.com##div[class*="js_sticky-top-ad"]
-kotaku.com##div[class*="js_desktop-horizontal-ad"]
-kotaku.com##div[data-ad-unit]
-kotaku.com##div[id^="dfp-ad-"]
-kotaku.com##div[id="commerce-inset-wrapper"]
-theconversation.com##div[class="promo"]
-unityassetcollection.com##div[id="bmc-wbtn"]
-unityassetcollection.com##div[class="shareit floating"]
-!unityassetcollection.com##.popup.blocker-enabled-check.main-container
-unityassetcollection.com##div[class="blocker-overlay"]
-unityassetcollection.com##div[class="blocker-notice"]
-unityassetcollection.com##div[class*="widget_mts_widget_adcode"]
-unityassetcollection.com##div[class*="adcode-widget"]
-!unityassetcollection.com##div[id="mts_widget_adcode-2"]
-unityassetcollection.com##div[id^="mts_widget_adcode-"]
-unityassetcollection.com##a[href*="/www.buymeacoffee.com/"]
+kotaku.com##div[class*="js_sticky-top-ad"]:remove()
+kotaku.com##div[class*="js_desktop-horizontal-ad"]:remove()
+kotaku.com##div[data-ad-unit]:remove()
+kotaku.com##div[id^="dfp-ad-"]:remove()
+kotaku.com##div[id="commerce-inset-wrapper"]:remove()
+theconversation.com##div[class="promo"]:remove()
+unityassetcollection.com##div[id="bmc-wbtn"]:remove()
+unityassetcollection.com##div[class="shareit floating"]:remove()
+!unityassetcollection.com##.popup.blocker-enabled-check.main-container:remove()
+unityassetcollection.com##div[class="blocker-overlay"]:remove()
+unityassetcollection.com##div[class="blocker-notice"]:remove()
+unityassetcollection.com##div[class*="widget_mts_widget_adcode"]:remove()
+unityassetcollection.com##div[class*="adcode-widget"]:remove()
+!unityassetcollection.com##div[id="mts_widget_adcode-2"]:remove()
+unityassetcollection.com##div[id^="mts_widget_adcode-"]:remove()
+unityassetcollection.com##a[href*="/www.buymeacoffee.com/"]:remove()
 ! blocks stylesheets
 !||unityassetcollection.com/wp-content/themes/mts_ad_sense/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||unityassetcollection.com/wp-content/themes/mts_ad_sense/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -32796,7 +32784,6 @@ regex101.com##div[class]:has-text(/^If you\'re running an ad blocker/i)
 ! The following rule prevents the calculator page from loading.
 !||regex101.com/static/vendors-bundle.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||analytics.regex101.com^*
-www.geeksforgeeks.org##div[class="textBasedMannualAds"]:remove()
 www.freecodecamp.org##div[class^="ad-container"]:remove()
 ww.freecodecamp.org##div[class="banner-ad"]:remove()
 www.sqlitetutorial.net##div[class^="donation"]:remove()
@@ -33449,10 +33436,24 @@ www.codegrepper.com##div[id="right_add_long"]:remove()
 !||patterntraffic.com/lga.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||patterntraffic.com^*
 ||geeksforgeeks-d.openx.net^*
-||prg-apac.smartadserver.com^*
+||media.geeksforgeeks.org/wp-content/cdn-uploads/20200308234252/GfG-Right-Top-P100.png$image
 ||media.geeksforgeeks.org/wp-content/post-ads-banner/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdnads.geeksforgeeks.org/gfg_ads.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdnads.geeksforgeeks.org^*
+www.geeksforgeeks.org##img[alt="advertisewithusBannerImg"]:remove()
+www.geeksforgeeks.org##div[class="textBasedMannualAds"]:remove()
+www.geeksforgeeks.org##div[id^="GFG_AD_"]:remove()
+!www.geeksforgeeks.org##div[class="cookie-consent hide-consent show-consent"]:remove()
+www.geeksforgeeks.org##div[class*="cookie-consent"]:remove()
+www.geeksforgeeks.org###AP_G4GR_5:remove()
+www.geeksforgeeks.org##div[class="_ap_apex_ad"]:remove()
+www.geeksforgeeks.org##+js(aopr, adpushup)
+www.geeksforgeeks.org##+js(aopw, adpushup)
+www.geeksforgeeks.org##+js(aopr, arrPostCat)
+www.geeksforgeeks.org##+js(aopw, arrPostCat)
+www.geeksforgeeks.org##+js(aopr, s.src)
+www.geeksforgeeks.org##+js(aopw, s.src)
+||prg-apac.smartadserver.com^*
 ||store.steampowered.com/app/usabilitytracking/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||glizauvo.net^*
 ||opeukasrsihav.xyz^*
@@ -36291,19 +36292,18 @@ linkszia.co##meta[name="eroads_"]:remove()
 linkszia.co##meta[name="adbit-site-verification"]:remove()
 linkszia.co##meta[name="exoclick-site-verification"]:remove()
 linkszia.co##meta[name="juicyads-site-verification"]:remove()
-linkszia.co##div[data-clickadilla-banner]
-linkszia.co##iframe[src*="://viewm.moonicorn.network/"]
+linkszia.co##div[data-clickadilla-banner]:remove()
+linkszia.co##iframe[src*="://viewm.moonicorn.network/"]:remove()
 linkszia.co##+js(remove-class, hidden, #go-submit, stay)
 linkszia.co##+js(aopw, adsurfebe)
 linkszia.co##+js(aopr, adsurfebe)
 linkszia.co##+js(remove-attr, style, div)
-gamecaster.com##div[class="Growl_growl__F6o6x"]
-www.geeksforgeeks.org##div[id^="GFG_AD_"]
+gamecaster.com##div[class="Growl_growl__F6o6x"]:remove()
 www.apowersoft.com##div[class="cookie-tip"]:remove()
 www.theblaze.com##div[class="ad-top-padding"]
 www.theblaze.com##div[id="top_ad_banner"]:remove()
 www.theblaze.com##div[id^="div-gpt-ad"]:remove()
-cycling74.com##div[class*="c74-cookie-check"]
+cycling74.com##div[class*="c74-cookie-check"]:remove()
 techcyan.com##+js(aopw, ai_insert_code)
 techcyan.com##+js(aopr, ai_insert_code)
 techcyan.com##+js(aopw, _0xc17e89)
@@ -44266,28 +44266,29 @@ help.brother-usa.com##div[id="__tealiumGDPRecModal"]:remove()
 !||ssa.1337x.to/show^*
 ||ssa.1337x.to^*
 ||1337x.to/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||1337x.to/mm.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 1337x.to##a[href^="/netflixPromo"]:remove()
-||www.1337x.to/mm.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! removing anticlickjack script makes the page just solid black
-!www.1337x.to##script[id="antiClickjackJS"]:remove()
-www.1337x.to##script[admc="nicmaui.com"]:remove()
-www.1337x.to###mgbl49472:remove()
-www.1337x.to##a[href$="/anoydl9-VpnHideMe"]:remove()
-www.1337x.to##+js(acs, DEBUG_MODE)
+!1337x.to##script[id="antiClickjackJS"]:remove()
+1337x.to##script[admc="nicmaui.com"]:remove()
+1337x.to###mgbl49472:remove()
+1337x.to##a[href$="/anoydl9-VpnHideMe"]:remove()
+1337x.to##+js(acs, DEBUG_MODE)
 ! defusing click prevents the "sort by" drop-down menu from working.
-!www.1337x.to##+js(aeld, click, t)
-www.1337x.to##+js(aeld, click, count)
-www.1337x.to##+js(aeld, mouseout)
-www.1337x.to##+js(set-constant, scriptSrc, "")
-www.1337x.to##+js(set-constant, autoloadMarker, "")
-www.1337x.to##+js(abort-on-property-write, scriptSrc)
-www.1337x.to##+js(abort-on-property-read, scriptSrc)
-www.1337x.to##+js(abort-on-property-write, autoloadMarker)
-www.1337x.to##+js(abort-on-property-read, autoloadMarker)
-www.1337x.to##div[id^="freevpn"]:remove()
-www.1337x.to##a[class*="l91986434ca7b10446f2698619167e695d8e22d35"]:remove-attr(onclick)
-www.1337x.to##a[data-toggle="dropdown"]:remove()
-www.1337x.to##ul[class="dropdown-menu"][aria-labelledby="dropdownMenu1"]:style(display: block !important;)
+!1337x.to##+js(aeld, click, t)
+1337x.to##+js(aeld, click, count)
+1337x.to##+js(aeld, mouseout)
+1337x.to##+js(set-constant, scriptSrc, "")
+1337x.to##+js(set-constant, autoloadMarker, "")
+1337x.to##+js(abort-on-property-write, scriptSrc)
+1337x.to##+js(abort-on-property-read, scriptSrc)
+1337x.to##+js(abort-on-property-write, autoloadMarker)
+1337x.to##+js(abort-on-property-read, autoloadMarker)
+1337x.to##div[id^="freevpn"]:remove()
+1337x.to##a[class*="l91986434ca7b10446f2698619167e695d8e22d35"]:remove-attr(onclick)
+1337x.to##a[href^="https://1337x.vpnonly.site/r?"]:remove()
+1337x.to##a[data-toggle="dropdown"]:remove()
+1337x.to##ul[class="dropdown-menu"][aria-labelledby="dropdownMenu1"]:style(display: block !important;)
 ||get-trust-vpn.info/scripts/ta_stoptrackingme.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 get-trust-vpn.info##+js(acs, gtag)
 !||tribuntekno.com/wp-content/themes/jannah/assets/js/ad.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -53192,6 +53193,7 @@ www.allrecipes.com##div[class*="mm-ads-gpt-adunit"]:remove()
 www.allrecipes.com##div[id^="article__broad-video-jw"]:remove-class(is-hidden)
 www.allrecipes.com##+js(remove-class, is-hidden, div[id^="article__broad-video-jw"])
 quackr.io##div[data-fuse]:remove()
+lab.dynamite.ai##div[class^="CookieConsent_"]:remove()
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
