@@ -42215,7 +42215,8 @@ clicknupload.*,clickndownload.*##+js(set-attr, 'button[id="downloadbtn"]', href,
 ||consent.api.osano.com^*
 ||metrics.media-amazon.com^*
 ||player.stats.live-video.net^*
-||youtrack.jetbrains.com^*
+! The following domain is used for legitimate support issue tracking and hosts a website not telemetry
+!||youtrack.jetbrains.com^*
 www.att.com##div[id="gpc-banner"]:remove()
 ||js.monitor.azure.com/scripts/b/ai.2.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||consentreceiverfd-prod.azurefd.net^*
@@ -45297,8 +45298,11 @@ pressreader.com##html,body:style(display:block;-moz-user-select: text !important
 ! TODO: Do NOT use the following four rules if have a subscription or otherwise want to use a login account with Pressreader.
 ! Account Number and User Key are the same value except Account Number is not a string.
 ! When not logged in, the user key can be a negative 10-digit number.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"UserKey":"-?\d{9,10}"/"UserKey":"102149967"/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"AccountNumber":-?\d{1,10}/"AccountNumber":102149967/gm,method=get,document
+!/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"UserKey":"-?\d{9,10}"/"UserKey":"102149967"/gm,method=get,document
+!/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"AccountNumber":-?\d{1,10}/"AccountNumber":102149967/gm,method=get,document
+! TODO:  Should UserKey and AccountNumber be set to the <client-number> value (negative 10-digit number) from the XML of the POST requests?  That number was the same over days and in both apps.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"UserKey":"-?\d{9,10}"/"UserKey":"-1992747437"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"AccountNumber":-?\d{1,10}/"AccountNumber":-1992747437/gm,method=get,document
 ! "Email" field is the same value as <user-name> in the XML of the POST requests.
 /^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Email":null/"Email":"android_7964a20aab82ed90"/gm,method=get,document
 ! EnAccountNumber and ProfileID are the same.
