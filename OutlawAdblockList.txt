@@ -7208,7 +7208,7 @@ depositfiles.com###CGCandy2066
 !||ijncw.tv/adx.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ijncw.tv/sc.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ijncw.tv^*
-utorrents.space###MarketGidPreloadC30884
+utorrents.space###MarketGidPreloadC30884:remove()
 ||www.torrentz.eu/show_ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||adserver-e7.com/js/show_ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||adserver-e7.com^*
@@ -22383,7 +22383,7 @@ fccid.io##div[class*="ezo_ad"]:remove()
 ||*.pluralsight.com/analytics/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||onehack.us/assets/google-universal-analytics-$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||onehack.us/stylesheets/discourse-adplugin_$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-onehack.us##div[id="data-preloaded"]
+onehack.us##div[id="data-preloaded"]:remove()
 !||onehack.us/javascripts/workbox/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||onehack.us/javascripts/jquery.magnific-popup.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 onehack.us##div[id="BbolhaX"]
@@ -24086,6 +24086,19 @@ www.pluralsight.com##div[class="cookie_notification options"]:remove()
 ||amanda.ttnrd.com^*
 pynative.com##div[id="cookie-notice"]:remove()
 pynative.com##div[class="cookie-notice-container"]:remove()
+pynative.com##div[class*="adthrive-"]:remove()
+pynative.com##script[id^="cls-disable-ads-"]:remove()
+pynative.com##+js(abort-on-property-read, window.adthriveCLS.siteAds)
+pynative.com##+js(abort-on-property-write, window.adthriveCLS.siteAds)
+pynative.com##+js(set-constant, window.adthriveCLS, {}, complete)
+pynative.com##+js(set-constant, window.adthriveCLS.siteAds, {}, complete)
+pynative.com##+js(abort-on-property-read, w.adthrive)
+pynative.com##+js(abort-on-property-write, w.adthrive)
+pynative.com##+js(set-constant, w.adthrive, {}, complete)
+pynative.com##+js(set-constant, cls_disable_ads, trueFunc)
+pynative.com##:xpath(//script[contains(text(), '.adthrive')]):remove()
+pynative.com##^script:has-text(.adthrive):remove()
+pynative.com##+js(remove-node-text, script, /\.adthrive/gm)
 techgenix.com##.adtester-container:remove()
 ||www.vggxxhton.com^*
 ||vggxxhton.com^*
@@ -24125,10 +24138,10 @@ free-proxysite.com##div[id="ad1sector"]:remove()
 free-proxysite.com##div[id="ad2sector"]:remove()
 free-proxysite.com##+js(abort-on-property-read, sc_project)
 free-proxysite.com##+js(abort-on-property-write, sc_project)
-onemonth.com##div[class="supreme-container blur"]
-onemonth.com##div[class="modal-backdrop fade show"]
-onemonth.com##div[style*="visibility: hidden"]
-onemonth.com##div[class="ub-emb-container"]
+onemonth.com##div[class="supreme-container blur"]:remove()
+onemonth.com##div[class="modal-backdrop fade show"]:remove()
+onemonth.com##div[style*="visibility: hidden"]:remove()
+onemonth.com##div[class="ub-emb-container"]:remove()
 ||d3dcc53t14pv6.cloudfront.net/assets/application-b68d798197e3a860c80b84c7602a59ed2080f5b0cdd2189c695766a20a830849.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||o0iaaucapi.eoapxl.com^*
 ||d1e28xq8vu3baf.cloudfront.net^*
@@ -24488,7 +24501,7 @@ www.usatoday.com##aside[aria-label="advertisement"]
 ||saumooly.net^*
 ||vaia06o630os.com^*
 ||vashoaft.net^*
-*##iframe[class="padPreload"]
+*##iframe[class="padPreload"]:remove()
 ||www.ngumyydbupv.com^*
 ||ngumyydbupv.com^*
 ||www.jnctgldbxc.com^*
@@ -24562,7 +24575,7 @@ ubuntudde.com##+js(abort-on-property-read, ai_js_code)
 ||ubuntudde.com/wp-content/plugins/ad-invalid-click-protector/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.aidjodlthdaxq.com^*
 ||aidjodlthdaxq.com^*
-scnlog.me##iframe[class="padPreload"]
+scnlog.me##iframe[class="padPreload"]:remove()
 !||scnlog.me/analytics/piwik.$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||scnlog.me/analytics/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 scnlog.me##div.z9hqY8TBSowQ
@@ -24601,21 +24614,19 @@ signup.heroku.com##div[class="heroku-cookie-banner"]:remove()
 ||terlaby.com^*
 ||zbdvvwpia.com^*
 ||erevtljvo.com^*
-!mirrorace.com,mirrorace.org##.uk-open.uk-modal
-!mirrorace.com,mirrorace.org##.uk-modal-dialog
-mirrorace.com,mirrorace.org##.uk-card-secondary:has-text(VPN)
-mirrorace.com,mirrorace.org##.uk-text-center.uk-padding
-mirrorace.com,mirrorace.org##.uk-text-center.uk-margin-bottom.uk-width-1-1:nth-of-type(2)
-mirrorace.com,mirrorace.org##[href*="search/"]
-mirrorace.com,mirrorace.org##a[href^="http://nottoke.com/ref"]
-mirrorace.com,mirrorace.org##div[class="uk-width-1-1 uk-margin-bottom uk-text-center uk-visible@m"]
-mirrorace.com,mirrorace.org##div[id^="rn_ad_native_"]
-mirrorace.com,mirrorace.org##iframe[class="padPreload"]
+!mirrorace.com,mirrorace.org##.uk-open.uk-modal:remove()
+!mirrorace.com,mirrorace.org##.uk-modal-dialog:remove()
+mirrorace.com,mirrorace.org##.uk-card-secondary:has-text(VPN):remove()
+mirrorace.com,mirrorace.org##.uk-text-center.uk-padding:remove()
+mirrorace.com,mirrorace.org##.uk-text-center.uk-margin-bottom.uk-width-1-1:nth-of-type(2):remove()
+mirrorace.com,mirrorace.org##[href*="search/"]:remove()
+mirrorace.com,mirrorace.org##a[href^="http://nottoke.com/ref"]:remove()
+mirrorace.com,mirrorace.org##div[class="uk-width-1-1 uk-margin-bottom uk-text-center uk-visible@m"]:remove()
+mirrorace.com,mirrorace.org##div[id^="rn_ad_native_"]:remove()
 mirrorace.com,mirrorace.org##iframe[class="padPreload"]:remove()
-mirrorace.com,mirrorace.org##iframe[data-aa]
 mirrorace.com,mirrorace.org##iframe[data-aa]:remove()
 mirrorace.com,mirrorace.org##+js(popads-dummy.js)
-mirrorace.com,mirrorace.org##[href^="https://fastspeedtest.ml/search/"]
+mirrorace.com,mirrorace.org##[href^="https://fastspeedtest.ml/search/"]:remove()
 mirrorace.com,mirrorace.org##+js(abort-on-property-read, _0x4a8e)
 mirrorace.com,mirrorace.org##+js(abort-on-property-write, _0x4a8e)
 mirrorace.com,mirrorace.org##+js(abort-on-property-read, blockAdBlock)
@@ -24633,15 +24644,14 @@ mirrorace.com,mirrorace.org##+js(abort-on-property-read, d9e4130f7e4791eddb39599
 mirrorace.com,mirrorace.org##+js(abort-on-property-write, _0x319d)
 mirrorace.com,mirrorace.org##+js(abort-on-property-write, _0xc10e)
 mirrorace.com,mirrorace.org##+js(abort-on-property-write, d9e4130f7e4791eddb39599c3ff75271)
-mirrorace.com,mirrorace.org##^script:has-text(/UIkit\[/)
 mirrorace.com,mirrorace.org##^script:has-text(/UIkit\[/):remove()
-!mirrorace.com,mirrorace.org##tm-main > div > main > div > div > div:nth-child(4) > div > div.uk-width-1-1.uk-width-auto\@s.uk-grid-margin > script
-!mirrorace.com,mirrorace.org##tm-main > div > main > div > div > div:nth-child(4) > div > div.uk-width-1-1.uk-width-expand\@s.uk-grid-margin.uk-first-column > div > div.uk-width-1-1.uk-width-expand\@s > div:nth-child(3) > div > div > script:nth-child(3)
-!mirrorace.com,mirrorace.org##tm-main > div > main > div > div > div:nth-child(7) > script
-!mirrorace.com,mirrorace.org##tm-main > div > main > script
-!mirrorace.com,mirrorace.org##body > script:nth-child(2)
-!mirrorace.com,mirrorace.org##body > script:nth-child(3)
-!mirrorace.com,mirrorace.org##^script:has-text(document.createElement('script'))
+!mirrorace.com,mirrorace.org##tm-main > div > main > div > div > div:nth-child(4) > div > div.uk-width-1-1.uk-width-auto\@s.uk-grid-margin > script:remove()
+!mirrorace.com,mirrorace.org##tm-main > div > main > div > div > div:nth-child(4) > div > div.uk-width-1-1.uk-width-expand\@s.uk-grid-margin.uk-first-column > div > div.uk-width-1-1.uk-width-expand\@s > div:nth-child(3) > div > div > script:nth-child(3):remove()
+!mirrorace.com,mirrorace.org##tm-main > div > main > div > div > div:nth-child(7) > script:remove()
+!mirrorace.com,mirrorace.org##tm-main > div > main > script:remove()
+!mirrorace.com,mirrorace.org##body > script:nth-child(2):remove()
+!mirrorace.com,mirrorace.org##body > script:nth-child(3):remove()
+!mirrorace.com,mirrorace.org##^script:has-text(document.createElement('script')):remove()
 ||mirrorace.com/m/undefined$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mirrorace.org/m/undefined$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mirrorace.com/themes/mirrorace/assets/img/Jk37VcagIiqrKUtDsT1L.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -30250,7 +30260,6 @@ code.tutsplus.com##div[class*="fuse-ad"]:remove()
 www.pythontutorial.net##div[class="whitelist"]:has(div[class="donation"]):remove()
 www.pythontutorial.net##div[class*="ad-"]:has(div[id^="Ad.Plus"]):remove()
 realpython.com##a:has-text(/Remove ads/i):remove()
-pynative.com##div[class*="adthrive-"]:remove()
 linuxhint.com##div[class*="adthrive"]:remove()
 thispointer.com###cmplz-cookie-config-js-extra:remove()
 thispointer.com##div[id="cc-window"]:remove()
@@ -45259,60 +45268,68 @@ www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##div[class=
 www.pressreader.com,ao.pressreader.com,bentoncourier.pressreader.com##:matches-path(/\/hotspot\/map/) div[class="popup-container-panel"]:has(div[class="dialog-container-panel"] div[class="dialog-tint"]):remove()
 pressreader.com##html,body:style(display:block;-moz-user-select: text !important; -khtml-user-select: text !important;-webkit-user-select:text !important;user-select: text !important;)
 ! TODO: The following rules don't work on Brave web browser.  Is this because the Chromium version of uBlock Origin doesn't support replace?
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Export":\{"enable":false,"available":false\}/"Export":{"enable":true,"available":true}/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"Export":\{"enable":false,"available":false\}/"Export":{"enable":true,"available":true}/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Export":\{"enable":false,"available":false\}/"Export":{"enable":true,"available":true}/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"Export":\{"enable":false,"available":false\}/"Export":{"enable":true,"available":true}/gm,method=get|options,document
 ! 3600000ms is one hour.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"ServicePollingIntervalMsec":"240000","TrackingIntervalMsec":"1000"\}/"ServicePollingIntervalMsec":"3600000","TrackingIntervalMsec":"3600000"}/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"ServicePollingIntervalMsec":"240000","TrackingIntervalMsec":"1000"\}/"ServicePollingIntervalMsec":"3600000","TrackingIntervalMsec":"3600000"}/gm,method=get|options,document
 ! The following rule covers more than one setting.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"enableForAnonymous":"false"/"enableForAnonymous":"true"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"enableForAnonymous":"false"/"enableForAnonymous":"true"/gm,method=get|options,document
 ! The following rule is necessary because of the previous rule to undo one setting.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"enableAutoTranslation":\{"enableForAnonymous":"true"/"enableAutoTranslation":{"enableForAnonymous":"false"/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Ad":{"Enabled":true}/"Ad":{"Enabled":false}/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"Ad":{"Enabled":true}/"Ad":{"Enabled":false}/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Context":"Context"\},"Events":\{"Enabled":true\}/"Context":"Context"},"Events":{"Enabled":false}/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"issue.detailsview":false/"issue.detailsview":true/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"enableAutoTranslationForAnonymous":false,"enableTranslationForAnonymous":false/"enableAutoTranslationForAnonymous":true,"enableTranslationForAnonymous":true/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnableWatermark":true/"EnableWatermark":false/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnableWatermarkOnFirstPage":true/"EnableWatermarkOnFirstPage":false/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnableWatermarkForAnonimousUser":true/"EnableWatermarkForAnonimousUser":false/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"EnableWatermark":true/"EnableWatermark":false/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"EnableWatermarkOnFirstPage":true/"EnableWatermarkOnFirstPage":false/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"EnableWatermarkForAnonimousUser":true/"EnableWatermarkForAnonimousUser":false/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"IsDeviceAccount":false/"IsDeviceAccount":true/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"IsCurrentUser":false/"IsCurrentUser":true/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"war-is-always-about-profit-at-the-taxpayers-expense":"1"\},"enabled":true/"war-is-always-about-profit-at-the-taxpayers-expense":"1"},"enabled":false/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"TrialRegistrationForAllEnabled":false/"TrialRegistrationForAllEnabled":true/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"enableAutoTranslation":\{"enableForAnonymous":"true"/"enableAutoTranslation":{"enableForAnonymous":"false"/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Ad":{"Enabled":true}/"Ad":{"Enabled":false}/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"Ad":{"Enabled":true}/"Ad":{"Enabled":false}/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Context":"Context"\},"Events":\{"Enabled":true\}/"Context":"Context"},"Events":{"Enabled":false}/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"issue.detailsview":false/"issue.detailsview":true/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"enableAutoTranslationForAnonymous":false,"enableTranslationForAnonymous":false/"enableAutoTranslationForAnonymous":true,"enableTranslationForAnonymous":true/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnableWatermark":true/"EnableWatermark":false/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnableWatermarkOnFirstPage":true/"EnableWatermarkOnFirstPage":false/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnableWatermarkForAnonimousUser":true/"EnableWatermarkForAnonimousUser":false/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"EnableWatermark":true/"EnableWatermark":false/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"EnableWatermarkOnFirstPage":true/"EnableWatermarkOnFirstPage":false/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"EnableWatermarkForAnonimousUser":true/"EnableWatermarkForAnonimousUser":false/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"IsDeviceAccount":false/"IsDeviceAccount":true/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"IsCurrentUser":false/"IsCurrentUser":true/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"war-is-always-about-profit-at-the-taxpayers-expense":"1"\},"enabled":true/"war-is-always-about-profit-at-the-taxpayers-expense":"1"},"enabled":false/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config\?/$replace=/"war-is-always-about-profit-at-the-taxpayers-expense":"1"\},"enabled":true/"war-is-always-about-profit-at-the-taxpayers-expense":"1"},"enabled":false/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"TrialRegistrationForAllEnabled":false/"TrialRegistrationForAllEnabled":true/gm,method=get|options,document
 ! The following changes are most likely just for display purposes only and won't unlock the issue.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetIssueInfo\?/$replace=/"IsFreeContent":false,"RequiredAuthenticatedUser":true/"IsFreeContent":true,"RequiredAuthenticatedUser":false/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetIssueInfo\?/$replace=/"IsFreeContent":false,"RequiredAuthenticatedUser":true/"IsFreeContent":true,"RequiredAuthenticatedUser":false/gm,method=get|options,document
 ! TODO: The following rules don't do anything by themselves to enable a location-based hotspot to work.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"currentUserRegion":"\w+"/"currentUserRegion":"Tennessee"/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"currentUserRegion":"\w+"/"currentUserRegion":"Tennessee"/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"default":\{"lat":"\d+\.\d+","lng":"-\d+\.\d+"/"default":{"lat":"35.1424003","lng":"-90.0523717"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/"currentUserRegion":"\w+"/"currentUserRegion":"Tennessee"/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"currentUserRegion":"\w+"/"currentUserRegion":"Tennessee"/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"default":\{"lat":"\d+\.\d+","lng":"-\d+\.\d+"/"default":{"lat":"35.1424003","lng":"-90.0523717"/gm,method=get|options,document
 ! TODO: Combining the following two rules doesn't work for some reason.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Location":null/"Location":true/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"LocationLatLng":\{"Lat":0.0,"Lng":0.0\}/"LocationLatLng":{"Lat":35.1424003,"Lng":-90.0523717}/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Location":null/"Location":true/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"LocationLatLng":\{"Lat":0.0,"Lng":0.0\}/"LocationLatLng":{"Lat":35.1424003,"Lng":-90.0523717}/gm,method=get|options,document
 ! The following data were returned from the Android app on 4/28/2024.  TODO: When do they expire?
 ! The token value in the following rule is the same as the accessToken used in URL query strings.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"auth":\{"Token":"\w+!"/"auth":{"Token":"KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!"/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"BearerToken":"\w+"/"BearerToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEwMjE0OTk2NywiYWIiOiJTSXRtNGhEaXRYamt6UUhObUZrTUtDTWZWZ05mOHRNOV9yTGtjUDFEUDFhdzJKaFFQdjZoQzloU3R4dUZlMkw1V3pLbUxFZngwblJmbUhXem4wQ0I4VGVsaG5nSUhsbWxHZnZUdlRNYTBwYyEiLCJhYyI6MTAyMTQ5OTY3LCJhZCI6MSwiYWUiOjEsImFmIjoxLCJhaSI6MywiYWoiOjIxODcsImFrIjoyMDc3NTkyMjUyLCJhbCI6NzkzODEyNTQsImFtIjoiZW4iLCJhbiI6ImVuLVVTIiwiYW8iOjEsImFwIjoxMjkwMDYzOTIyLCJleHAiOjE3MTQzMDUxNTEsImlzcyI6InByIn0.e78AhoWnSDJwFlUdyu-qGNuz0r7wRj81M4E51X0UX2A"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"auth":\{"Token":"\w+!"/"auth":{"Token":"KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!"/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"BearerToken":"\w+"/"BearerToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEwMjE0OTk2NywiYWIiOiJTSXRtNGhEaXRYamt6UUhObUZrTUtDTWZWZ05mOHRNOV9yTGtjUDFEUDFhdzJKaFFQdjZoQzloU3R4dUZlMkw1V3pLbUxFZngwblJmbUhXem4wQ0I4VGVsaG5nSUhsbWxHZnZUdlRNYTBwYyEiLCJhYyI6MTAyMTQ5OTY3LCJhZCI6MSwiYWUiOjEsImFmIjoxLCJhaSI6MywiYWoiOjIxODcsImFrIjoyMDc3NTkyMjUyLCJhbCI6NzkzODEyNTQsImFtIjoiZW4iLCJhbiI6ImVuLVVTIiwiYW8iOjEsImFwIjoxMjkwMDYzOTIyLCJleHAiOjE3MTQzMDUxNTEsImlzcyI6InByIn0.e78AhoWnSDJwFlUdyu-qGNuz0r7wRj81M4E51X0UX2A"/gm,method=get|options,document
 ! TODO: Do NOT use the following four rules if have a subscription or otherwise want to use a login account with Pressreader.
 ! Account Number and User Key are the same value except Account Number is not a string.
 ! When not logged in, the user key can be a negative 10-digit number.
-!/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"UserKey":"-?\d{9,10}"/"UserKey":"102149967"/gm,method=get,document
-!/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"AccountNumber":-?\d{1,10}/"AccountNumber":102149967/gm,method=get,document
+!/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"UserKey":"-?\d{9,10}"/"UserKey":"102149967"/gm,method=get|options,document
+!/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"AccountNumber":-?\d{1,10}/"AccountNumber":102149967/gm,method=get|options,document
 ! TODO:  Should UserKey and AccountNumber be set to the <client-number> value (negative 10-digit number) from the XML of the POST requests?  That number was the same over days and in both apps.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"UserKey":"-?\d{9,10}"/"UserKey":"-1992747437"/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"AccountNumber":-?\d{1,10}/"AccountNumber":-1992747437/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"UserKey":"-?\d{9,10}"/"UserKey":"-1992747437"/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"AccountNumber":-?\d{1,10}/"AccountNumber":-1992747437/gm,method=get|options,document
 ! "Email" field is the same value as <user-name> in the XML of the POST requests.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Email":null/"Email":"android_7964a20aab82ed90"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Email":null/"Email":"android_7964a20aab82ed90"/gm,method=get|options,document
 ! EnAccountNumber and ProfileID are the same.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnAccountNumber":"\w+"/"EnAccountNumber":"zxnyy1dhG-TfOqnmPxIo6A"/gm,method=get,document
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"ProfileId":"\w+"/"ProfileId":"zxnyy1dhG-TfOqnmPxIo6A"/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"EnAccountNumber":"\w+"/"EnAccountNumber":"zxnyy1dhG-TfOqnmPxIo6A"/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"ProfileId":"\w+"/"ProfileId":"zxnyy1dhG-TfOqnmPxIo6A"/gm,method=get|options,document
 ! The replacement value in the following rule is the value of the "ndstate" response header when the pagekeys are successfully pulled.
-/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Sponsor":null,"Catalog":\{"Hash":"[\w=\/]+"/{"Sponsor":{"Status":2},"Catalog":{"Hash":"hyyUuz1yO\/oLEJ75cDlrRg=="}/gm,method=get,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"Sponsor":null,"Catalog":\{"Hash":"[\w=\/]+"/{"Sponsor":{"Status":2},"Catalog":{"Hash":"hyyUuz1yO\/oLEJ75cDlrRg=="}/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"book_obfuscation.disabled":false/"book_obfuscation.disabled":true/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"search.advanced.optionsenabled":false/"search.advanced.optionsenabled":true/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/(IssueInfo\/)?preload\?/$replace=/"ActivityTracking":\{"Enabled":true/"ActivityTracking":{"Enabled":false/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config\?/$replace=/"book_obfuscation.disabled":false/"book_obfuscation.disabled":true/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config\?/$replace=/"search.advanced.optionsenabled":false/"search.advanced.optionsenabled":true/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config\?/$replace=/"ActivityTracking":\{"Enabled":true/"ActivityTracking":{"Enabled":false/gm,method=get|options,document
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/config/$replace=/ApplicationInsights":\{"Enabled":true/ApplicationInsights":{"Enabled":false/gm,method=get|options,document
 ! The accessToken value used in the following rules only works for the issues of publications which I have already activated.
 ! Apparently it works for all issues of publications which are eligible under the subscription plan for which it was issued not just those which have already been unlocked IF the token has not expired (after two hours in this case?).
-! TODO: Manually adding the accessToken allows both text view and page view to work.
+! TODO: Manually adding the accessToken allows page view but not text view to work.
 ! TODO: If you have a subscription to Pressreader, do not use the rules with the accessToken value as it will limit your access to only those issues of publishers.
         When does this accessToken expire?  To unlock new content, two hours after issue.  For previously unlocked content, 3 days? 30 days?
 ! TODO: Setting the accessToken in the query string does not work when the "Authorization" request header is present since it contains the current Bearer token which may be incorrect for this accessToken.
@@ -45323,6 +45340,29 @@ pressreader.com##html,body:style(display:block;-moz-user-select: text !important
 /^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetPageKeys\?/$uritransform=/\&accessToken=[\w+!-]+//,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following rule will add an accesstoken even when it was not present before, but this is necessary because without a valid one for the issue only the key for the first page is returned.
 /^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetPageKeys\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rules remove the client-side restrictions from the web app.
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/contentRestrictions\/issues\?/$replace=/"readItLater":true/"readItLater":false/gm,method=get|options,document,xhr
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/contentRestrictions\/issues\?/$replace=/"onlinePagePrinting":true/"onlinePagePrinting":false/gm,method=get|options,document,xhr
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/contentRestrictions\/issues\?/$replace=/"onlineArticlePrinting":true/"onlineArticlePrinting":false/gm,method=get|options,document,xhr
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/contentRestrictions\/issues\?/$replace=/"onlineAreaPrinting":true/"onlineAreaPrinting":false/gm,method=get|options,document,xhr
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/contentRestrictions\/issues\?/$replace=/"customPages":true/"customPages":false/gm,method=get|options,document,xhr
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/contentRestrictions\/issues\?/$replace=/"copy":true/"copy":false/gm,method=get|options,document,xhr
+/^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/contentRestrictions\/issues\?/$replace=/"blackout":true/"blackout":false/gm,method=get|options,document,xhr
+! TODO:  The following two rules enable printing for issues which normally prevent it if the above rule if successful, BUT the printed output is watermarked with the Email/<user-name> value above.
+! TODO:  The Authorization request header is what is preventing printing from working, so also remove the Authorization header using a web browser extension or other means.  Setting the Authorization header to the correct bearer token value should also work.
+! TODO:  Could change the response data instead to ""?
+! This URL will definitely have more than one item in the query string regardless if the accessToken is present.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/CheckAccessForPrintingPage\?/$uritransform=/\&accessToken=[\w+!-]+//,method=get|options,document,xhr
+! The following rule will add an accesstoken even when it was not present before, but this is necessary because without a valid one for the issue only the key for the first page is returned.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/CheckAccessForPrintingPage\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,method=get|options,document,xhr
+! This URL will definitely have more than one item in the query string regardless if the accessToken is present.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/GetImageByRegion\?/$uritransform=/\&accessToken=[\w+!-]+//,method=get|options,document,xhr
+! The following rule will add an accesstoken even when it was not present before, but this is necessary because without a valid one for the issue only the key for the first page is returned.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/GetImageByRegion\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,method=get|options,document,xhr
+! This URL will definitely have more than one item in the query string regardless if the accessToken is present.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/devicedownload\/download\?/$uritransform=/\&accessToken=[\w+!-]+//,method=get|options,document,xhr
+! The following rule will add an accesstoken even when it was not present before, but this is necessary because without a valid one for the issue only the key for the first page is returned.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/devicedownload\/download\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,method=get|options,document,xhr
 ||logs.pressreader.com^*
 !||cdn.blueconic.net/wehco.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.blueconic.net^*
@@ -45595,17 +45635,11 @@ www.sportskeeda.com##+js(acs, refreshStickyAdUnit)
 www.sportskeeda.com##+js(set-constant, trackGAEvent, noopFunc)
 www.sportskeeda.com##+js(set-constant, displayAdSlot, noopFunc)
 www.sportskeeda.com##+js(set-constant, checKAndProcessVideoAdPlayersQueue, noopFunc)
-www.sportskeeda.com##div[class="ad-container"]
 www.sportskeeda.com##div[class="ad-container"]:remove()
-www.sportskeeda.com##div[class="ad-declare-explicit"]
 www.sportskeeda.com##div[class="ad-declare-explicit"]:remove()
-www.sportskeeda.com##div[class="sidebar-ad-top"]
 www.sportskeeda.com##div[class="sidebar-ad-top"]:remove()
-www.sportskeeda.com##div[id^="div-gpt-ad-"]
 www.sportskeeda.com##div[id^="div-gpt-ad-"]:remove()
-www.sportskeeda.com##div[id="sticky-ad-container"]
 www.sportskeeda.com##div[id="sticky-ad-container"]:remove()
-www.sportskeeda.com##*[id^="gdpr__consent_revocation"]
 www.sportskeeda.com##*[id^="gdpr__consent_revocation"]:remove()
 ||quillkick.com^*
 ||acortartu.link^*
