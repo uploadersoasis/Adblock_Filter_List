@@ -53242,6 +53242,13 @@ www.allrecipes.com##div[id^="article__broad-video-jw"]:remove-class(is-hidden)
 www.allrecipes.com##+js(remove-class, is-hidden, div[id^="article__broad-video-jw"])
 quackr.io##div[data-fuse]:remove()
 lab.dynamite.ai##div[class^="CookieConsent_"]:remove()
+www.comparitech.com##+js(aopr, pl_beacon)
+www.comparitech.com##+js(aopw, pl_beacon)
+www.comparitech.com##^script:has-text(/pl_beacon/):remove()
+www.comparitech.com##:xpath(//script[contains(text(), 'pl_beacon')]):remove()
+www.comparitech.com##+js(remove-node-text, script, /^pl_beacon/gm)
+developer.android.com##devsite-analytics:remove()
+||developers.google.com/_d/analytics-iframe$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
