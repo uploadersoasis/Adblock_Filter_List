@@ -45349,10 +45349,11 @@ pressreader.com##html,body:style(display:block;-moz-user-select: text !important
 !       So, remove the Authorization header using a web browser extension or other means.  Setting the Authorization header to the correct bearer token value should also work.
 ! The following rule will eliminate any duplicate accessToken entries in the query string.
 ! Do NOT Remove the trailing ampersand as well since it is not getting recreated by the other rule for some reason.
-! This URL will definitely have more than one item in the query string regardless if the accessToken is present.
-/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetPageKeys\?/$uritransform=/\&accessToken=[\w+!-]+//,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetPageKeys\?/$uritransform=/&accessToken=[\w+!-]+//,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following rule will add an accesstoken even when it was not present before, but this is necessary because without a valid one for the issue only the key for the first page is returned.
 /^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetPageKeys\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following line is necessary to eliminate the duplicate accessToken which will trigger a 505 status code error, and prevent page view from working.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/IssueInfo\/GetPageKeys\?/$uritransform=/&accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!//,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following rules remove the client-side restrictions from the web app.
 /^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/contentRestrictions\/issues\?/$replace=/"readItLater":true/"readItLater":false/gm,method=get|options,document,xhr
 /^https?:\/\/ingress\.pressreader\.com(\.cdn\.cloudflare\.net)?\/(se2sky)?services\/contentRestrictions\/issues\?/$replace=/"onlinePagePrinting":true/"onlinePagePrinting":false/gm,method=get|options,document,xhr
@@ -45365,22 +45366,30 @@ pressreader.com##html,body:style(display:block;-moz-user-select: text !important
 ! TODO:  The Authorization request header is what is preventing printing from working, so also remove the Authorization header using a web browser extension or other means.  Setting the Authorization header to the correct bearer token value should also work.
 ! TODO:  Could change the response data instead to ""?
 ! This URL will definitely have more than one item in the query string regardless if the accessToken is present.
-/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/CheckAccessForPrintingPage\?/$uritransform=/\&accessToken=[\w+!-]+//,method=get|options,document,xhr
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/CheckAccessForPrintingPage\?/$uritransform=/&accessToken=[\w+!-]+//,method=get|options,document,xhr
 ! The following rule will add an accesstoken even when it was not present before, but this is necessary because without a valid one the URL will be unauthorized.
 /^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/CheckAccessForPrintingPage\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,method=get|options,document,xhr
+! The following line is necessary to eliminate the duplicate accessToken which will trigger a 505 status code error, and prevent printing from working.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/CheckAccessForPrintingPage\?/$uritransform=/&accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!//,method=get|options,document,xhr
 ! This URL will definitely have more than one item in the query string regardless if the accessToken is present.
-/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/GetImageByRegion\?/$uritransform=/\&accessToken=[\w+!-]+//,method=get|options,document,xhr
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/GetImageByRegion\?/$uritransform=/&accessToken=[\w+!-]+//,method=get|options,document,xhr
 ! The following rule will add an accesstoken even when it was not present before, but this is necessary because without a valid one the URL will be unauthorized.
 /^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/GetImageByRegion\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,method=get|options,document,xhr
+! The following line is necessary to eliminate the duplicate accessToken which will trigger a 505 status code error, and prevent printing from working.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/print\/GetImageByRegion\?/$uritransform=/&accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!//,method=get|options,document,xhr
 ! This URL will definitely have more than one item in the query string regardless if the accessToken is present.
-/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/devicedownload\/download\?/$uritransform=/\&accessToken=[\w+!-]+//,method=get|options,document,xhr
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/devicedownload\/download\?/$uritransform=/&accessToken=[\w+!-]+//,method=get|options,document,xhr
 ! The following rule will add an accesstoken even when it was not present before, but this is necessary because without a valid one the URL will be unauthorized.
 /^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/devicedownload\/download\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,method=get|options,document,xhr
+! The following line is necessary to eliminate the duplicate accessToken which will trigger a 505 status code error, and prevent the device download menu command from working.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/devicedownload\/download\?/$uritransform=/&accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!//,method=get|options,document,xhr
 ! The following two rules will enable all articles in text view in an unlocked issue/periodical if the Authorization request header is also removed or modified.
 ! This URL will definitely have more than one item in the query string regardless if the accessToken is present.
-/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services/articles/GetArticle\?/$uritransform=/\&accessToken=[\w+!-]+//,method=get|options,document,xhr
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/articles\/GetArticle\?/$uritransform=/&accessToken=[\w+!-]+//,method=get|options,document,xhr
 ! The following rule will add an accesstoken even when it was not present before, but this is necessary because without a valid one the URL will be unauthorized.
-/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services/articles/GetArticle\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,method=get|options,document,xhr
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/articles\/GetArticle\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,method=get|options,document,xhr
+! The following line is necessary to eliminate the duplicate accessToken which will trigger a 505 status code error, and prevent text view from working.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/articles\/GetArticle\?/$uritransform=/&accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!//,method=get|options,document,xhr
 ||logs.pressreader.com^*
 !||cdn.blueconic.net/wehco.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.blueconic.net^*
