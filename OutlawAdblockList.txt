@@ -24912,6 +24912,8 @@ www.gamersgate.com##div[aria-label="cookieconsent"]:remove()
 ||static.4shared.com/js/adlogger_tracker.$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.4shared.com/js/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.4shared.com/js/blockDetect/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.4shared.com/js/header.4min.js?ver=$replace=/reloadAdsMobile\(\);/null;/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.4shared.com/js/header.4min.js?ver=$replace=/reloadDesktop\(\);/null;/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.4shared.com/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.4shared.com/show_ad_.html$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.4shared.com/show_ad_.xml$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -24929,27 +24931,17 @@ www.4shared.com##div[class="cookies-holder"]:remove()
 www.4shared.com##div[class^="cookies-notice"]:remove()
 www.4shared.com##div[class*="vidAdHolder"]:remove()
 !www.4shared.com##div[class="freeDownloadButton"]:remove()
-www.4shared.com##+js(abort-on-property-read, targetElemID)
-www.4shared.com##+js(abort-on-property-write, targetElemID)
-www.4shared.com##+js(aopw, cookiesMessage)
-www.4shared.com##+js(aopr, cookiesMessage)
-www.4shared.com##^script:has-text(trackAdBlock):remove()
-www.4shared.com##^script:has-text(ld.counter):remove()
-! doesn't work
-!www.4shared.com##^script:has-text(cmwoejfwnldnkg):remove()
-!www.4shared.com##+js(no-setInterval-if, /^/)
-www.4shared.com##+js(no-setInterval-if, b)
-!www.4shared.com##+js(nano-stb, , *, 0.01)
 www.4shared.com###troublesText1:remove-class(hintDuringCounter)
 www.4shared.com###troublesText2:remove-class(hintDuringCounter)
 www.4shared.com###troublesText2:style(display: block !important;)
+www.4shared.com##+js(set-constant, reloadAdsMobile, noopFunc)
+www.4shared.com##+js(set-constant, reloadAdsDesktop, noopFunc)
 www.4shared.com##+js(trusted-set-constant, d2CounterValue, { "value": -1 })
 www.4shared.com##+js(set-attr, '#jsTrafficLimitExceeded', value, false)
 www.4shared.com##+js(set-attr, '#secondsLeft', value, 0)
 !www.4shared.com##+js(saa, type, text, #baseDownloadLink)
 www.4shared.com##+js(saa, type, submit, #baseDownloadLink)
 www.4shared.com##+js(set-constant, sendNativeAnalytics, noopFunc)
-www.4shared.com##+js(acs, sendNativeAnalytics)
 www.4shared.com##+js(set-constant, Config.detectAd, {})
 ! trusted-replace-node-text will replace the textContent of any element such as an anchor tag in the following rule.
 www.4shared.com##+js(trusted-replace-node-text, #text, Report Abuse, Download This)
@@ -24974,7 +24966,22 @@ www.4shared.com##+js(add-class, freeDownloadButton|linkShowD3|light-blue|f16|flo
 www.4shared.com##a[data-element="h22_3"]:style(box-sizing: content-box !important;)
 www.4shared.com##+js(insert-child-after, div[class^="fileDescription"], a[data-element="h22_3")
 www.4shared.com##+js(move-attr-prop, a[class^="freeDownloadButton"], input[name="d3link"], href, value)
-www.4shared.com##+js(aeld, click, h)
+www.4shared.com##+js(aopw, cookiesMessage)
+www.4shared.com##+js(aopr, cookiesMessage)
+www.4shared.com##+js(abort-on-property-read, targetElemID)
+www.4shared.com##+js(abort-on-property-write, targetElemID)
+www.4shared.com##^script:has-text(trackAdBlock):remove()
+www.4shared.com##^script:has-text(ld.counter):remove()
+! TODO: The following rule doesn't.  Remove the script using either of the two successive rules.
+!www.4shared.com##^script:has-text(cmwoejfwnldnkg):remove()
+www.4shared.com##:xpath(//script[contains(text(), 'cmwoejfwnldnkg')]):remove()
+www.4shared.com##+js(remove-node-text, script, /cmwoejfwnldnkg/gm)
+www.4shared.com##+js(acs, sendNativeAnalytics)
+!www.4shared.com##+js(nano-stb, , *, 0.01)
+!www.4shared.com##+js(no-setInterval-if, /^/)
+! TODO: The following two rules prevent the drop-down menus from working.
+!www.4shared.com##+js(no-setInterval-if, b)
+!www.4shared.com##+js(aeld, click, h)
 ||atharori.net/index/ping$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||api.pushnami.com/scripts/v1/hub$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||api.pushnami.com/scripts/v1/pushnami-adv/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -42006,6 +42013,7 @@ www.tecmint.com##+js(acs, /gtag\(/)
 www.tecmint.com##div[data-freestar-ad]:remove()
 www.tecmint.com##div[id="tecmint_leaderboard_article_top"]:remove()
 www.tecmint.com##div[id="tecmint_incontent"]:remove()
+www.tecmint.com##div[class="hide-on-mobile"]:remove()
 !www.tecmint.com##+js(set-constant, freestar.config.enabled_slots.push, noopFunc, end)
 www.tecmint.com##+js(set-constant, freestar.config.enabled_slots.push, noopFunc, complete)
 www.tecmint.com##+js(acs, freestar.config.enabled_slots.push)
@@ -53249,6 +53257,12 @@ www.comparitech.com##:xpath(//script[contains(text(), 'pl_beacon')]):remove()
 www.comparitech.com##+js(remove-node-text, script, /^pl_beacon/gm)
 developer.android.com##devsite-analytics:remove()
 ||developers.google.com/_d/analytics-iframe$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||ads.digitalcaramel.com^*
+sociumin.com##div[id^="adfox_"]:remove()
+sociumin.com##+js(aopr, dcJs)
+sociumin.com##+js(aopw, dcJs)
+sociumin.com##+js(acs, /window\.Ya\.adfoxCode\.reload\(/)
+sociumin.com##+js(acs, /Ya\.adfoxCode\.createAdaptive\(/)
 
 !Whitelisted
 ! The following bad filter is from uBlock filters – Quick fixes.
