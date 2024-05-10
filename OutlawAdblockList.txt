@@ -29705,8 +29705,6 @@ apkxmods.com##+js(aopr, adsbygoogle)
 betacast.net##div[id^="cookie-law-info"]:remove()
 betacast.net##div[id="cliSettingsPopup"]:remove()
 www.appypie.com##div[id="cookiesPopup"]:remove()
-!||www.mczbf.com/tags/365664/tag.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.mczbf.com/tags/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bomero.net^*
 ||hindversion.com^*
 www.asciitable.com##div[class*="ezo_ad"]:remove()
@@ -53378,8 +53376,13 @@ efhjd.com##:xpath(//html/head/script[2]):remove()
 ! TODO: The following text in the rulw changes too frequently to be used.
 !efhjd.com##+js(remove-node-text, script, /eHU4piEFrdaErcEFrdsFrdkHvctNhfmGDe4RAy0JDfmLvMVKhM1Svdw7vdsIrcEFrdaEvct9AeDZAe4ZCMlEDfmZB75KAe4MBGsIrcFBfiEFvxJDvxJDvyhZBzqVvyhZBzqVvzJ0vdaIsSsIsMDVDzt8BMJOB788Dy1KAe4MBGsIsSsIe89IhMxIC7kIrcESvG0Ur74NDdY8pzPZC6x6hS4TBy08hyhGB749vM4VDcsIrcEEvxJDvdaIriEFvcsSvxJDvctNAyxSB6hVDyZVgG4PBMhLsSESrHnHqjn5qjC8qisIe89IrcEEvcsSvdaIrcESsSESsSEFvctQhfqLC6mNAyxQsSF2XiFBsVnECH9SvcaSkjtyDlUGlNrSvcaSlUDIrytzlj9SvcaSljtyDyqzWyFtixtIhkZmoitDvdaIriEEvctLhehZBNVLCMtVC6m9BS4PBMhLsSFMgeFHhiFMgeFHhiESsSF9CNlVvxISkUC4r7tJWzhhl8xNelC8A9VzBzlTr8tOgUD6h7mzpyDhrTV8hwDIDemflfkSvcaSlVZcA8VgkMFtiwPIg8ZeCyqJlMJohH90sSEYsVtzBzPSl7F3g6C0oisIsctimHUHgM85DVVfkj9SfiFMgeFHhiFBfiESAyxSB6hVDyZVg7V9vMVKhM1Sfn==/gm)
 efhjd.com##+js(remove-node-text, script, /FingerprintJS=function/gm)
+efhjd.com##^script:has-text(/FingerprintJS=function/):remove()
+efhjd.com##:xpath(//script[contains(text(), 'FingerprintJS=function')]):remove()
 ! TODO: The element in the following rule gets regenerated whenever it is removed; The attributes of the element in the following rule may change.
 !efhjd.com##div[style="height: 50px; width: 247.683px; z-index: 2147483647; cursor: pointer; top: 185px; left: 642.15px; position: fixed; display: block;"]:remove()
+efhjd.com##div[style*="z-index: 2147483647; cursor: pointer;"]:remove()
+efhjd.com##+js(addEventListener-defuser, click)
+efhjd.com##+js(addEventListener-defuser, keydown)
 efhjd.com##div[class*="alert-danger"]:has-text(Please disable Adblock to continue.):remove()
 efhjd.com##div[class="adsbygoogle"]:remove()
 efhjd.com##div[class="ad-element"]:remove()
@@ -53399,10 +53402,23 @@ efhjd.com##+js(aopw, FingerprintJS)
 /^https?:\/\/(?!-)[A-Za-z0-9-]+([\-\.]{1}[A-Za-z0-9]+)*\.[A-Za-z]{2,6}\/?\S*/$3p,script,denyallow=www.recaptcha.net|www.gstatic.com,domain=efhjd.com
 !||dlvds9i67c60j.cloudfront.net/a.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dlvds9i67c60j.cloudfront.net^*
+||ads.travelaudience.com^*
+||aid.send.microad.jp^*
+!||www.mczbf.com/tags/365664/tag.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mczbf.com^*
+||cc.adingo.jp^*
+||a.sportradarserving.com^*
+||y4a7e.bemobtrcks.com^*
+||understandassure.com^*
+www.appbrain.com##div[id="topAd"]
+www.appbrain.com##+js(set-constant, loadAdsense, noopFunc)
+www.appbrain.com##+js(set-constant, loadAdsenseScript, noopFunc)
+||www.appbrain.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
-! The following bad filter is from uBlock filters – Quick fixes.
+! The following bad filters are from uBlock filters – Quick fixes.
 @@*$generichide,from=financemonk.net,badfilter
+@@*$generichide,from=dropgalaxy.*,badfilter
 ! The following bad filter is from uBlock filters – Unbreak.
 @@||ezodn.com/detroitchicago/$script,badfilter
 ! The following bad filter is from AakList (Anti-Adblock Killer).
