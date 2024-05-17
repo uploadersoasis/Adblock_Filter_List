@@ -3777,6 +3777,87 @@ depositfiles.com###networkdownloader21_submit
 sendspace.com##.ads_holder:remove()
 !||beacon.www.theguardian.com/px.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||beacon.www.theguardian.com^*
+!www.theguardian.com##html,body:style(overflow: scroll !important; overflow-y: scroll !important;)
+www.theatlantic.com##div[class^="ArticleInjector_clsAvoider__"]:remove()
+www.theatlantic.com##gpt-ad:remove()
+www.theguardian.com##*[class*="sp-message-open"]:remove()
+www.theguardian.com##a[aria-label="Contribute"]:remove()
+!www.theguardian.com##div[class*="ad-slot-container"]:remove()
+www.theguardian.com##div[class*="ad-slot"]:remove()
+www.theguardian.com##div[class*="ad-text"]:remove()
+www.theguardian.com##div[class*="adBanner"]:remove()
+www.theguardian.com##div[class*="adBlock"]:remove()
+www.theguardian.com##div[class*="adContent"]:remove()
+www.theguardian.com##div[class*="adSense"]:remove()
+www.theguardian.com##div[class*="ad_unit"]:remove()
+www.theguardian.com##div[class*="text-ad"]:remove()
+www.theguardian.com##div[class*="textAd"]:remove()
+www.theguardian.com##div[class*="text_ad"]:remove()
+www.theguardian.com##div[class*="top-banner-ad-container"]:remove()
+www.theguardian.com##div[data-cy="sign-in-gate-main"]:remove()
+www.theguardian.com##div[data-link-name="membership message"]:remove()
+www.theguardian.com##div[id="bottom-banner"]:remove()
+www.theguardian.com##div[id="slot-body-end"]:remove()
+www.theguardian.com##div[id="top-right-ad-slot"]:remove()
+www.theguardian.com##div[id^="dfp-ad-"]:remove()
+www.theguardian.com##gu-island[name="Metrics"]:remove()
+www.theguardian.com##gu-island[name="ReaderRevenueDev"]:remove()
+www.theguardian.com##gu-island[name="SetABTests"]:remove()
+www.theguardian.com##gu-island[name="SetAdTargeting"]:remove()
+www.theguardian.com##gu-island[name="SlotBodyEnd"]:remove()
+www.theguardian.com##gu-island[name="StickyBottomBanner"]:remove()
+www.theguardian.com##gu-island[name="SupportTheG"]:remove()
+www.theguardian.com##gu-island[name="TopRightAdSlot"]:remove()
+www.theguardian.com##gu-island[props*="dfp-ad--right"]:remove()
+www.theguardian.com##section:has(span:has-text(/Support high-impact, independent journalism/i)):remove()
+www.theguardian.com##section[class="css-1u8qly9"]:remove()
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidAppnexusUkRow":true/gm, "prebidAppnexusUkRow":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"commercialMetrics":true/gm, "commercialMetrics":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidTrustx":true/gm, "prebidTrustx":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"scAdFreeBanner":false/gm, "scAdFreeBanner":true)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidPermutiveAudience":true/gm, "prebidPermutiveAudience":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"enableSentryReporting":true/gm, "enableSentryReporting":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidAnalytics":true/gm, "prebidAnalytics":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidCriteo":true/gm, "prebidCriteo":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidAppnexusInvcode":true/gm, "prebidAppnexusInvcode":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"ampPrebidPubmatic":true/gm, "ampPrebidPubmatic":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"a9HeaderBidding":true/gm, "a9HeaderBidding":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidAppnexus":true/gm, "prebidAppnexus":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidXaxis":true/gm, "prebidXaxis":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidUserSync":true/gm, "prebidUserSync":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidOzone":true/gm, "prebidOzone":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"ampPrebidOzone":true/gm, "ampPrebidOzone":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidImproveDigitalSkins":true/gm, "prebidImproveDigitalSkins":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"sentinelLogger":true/gm, "sentinelLogger":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"thirdPartyEmbedTracking":true/gm, "thirdPartyEmbedTracking":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"ampAmazon":true/gm, "ampAmazon":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidAdYouLike":true/gm, "prebidAdYouLike":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidSonobi":true/gm, "prebidSonobi":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"ampPrebidCriteo":true/gm, "ampPrebidCriteo":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"comscore":true/gm, "comscore":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"permutive":true/gm, "permutive":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidImproveDigital":true/gm, "prebidImproveDigital":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidPubmatic":true/gm, "prebidPubmatic":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"shouldLoadGoogletag":true/gm, "shouldLoadGoogletag":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidIndexExchange":true/gm, "prebidIndexExchange":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidTriplelift":true/gm, "prebidTriplelift":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidOpenx":true/gm, "prebidOpenx":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidHeaderBidding":true/gm, "prebidHeaderBidding":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidSmart":true/gm, "prebidSmart":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"googletagUrl":"\/\/securepubads\.g\.doubleclick\.net\/tag\/js\/gpt\.js"/gm, "googletagUrl":"")
+www.theguardian.com##+js(trusted-replace-node-text, script, /"facebookIaAdUnitRoot":"facebook-instant-articles"/gm, "facebookIaAdUnitRoot":"")
+www.theguardian.com##+js(trusted-replace-node-text, script, /"shouldHideAdverts":false/gm, "shouldHideAdverts":true)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"googletagJsUrl":"\/\/securepubads\.g\.doubleclick\.net\/tag\/js\/gpt\.js"/gm, "googletagJsUrl":"")
+www.theguardian.com##+js(trusted-replace-node-text, script, /"adUnit":"\/\d+\/theguardian\.com\/\w+\/article\/ng"/gm, "adUnit":"")
+www.theguardian.com##+js(trusted-replace-node-text, script, /"isAdFree":false/gm, "isAdFree":true)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"prebidKargo":true/gm, "prebidKargo":false)
+www.theguardian.com##+js(trusted-replace-node-text, script, /"googletag":"\/\/securepubads\.g\.doubleclick\.net\/tag\/js\/gpt\.js"/gm, "googletag":"")
+www.theguardian.com##+js(trusted-replace-node-text, script, /"confiantAdVerification":true/gm, "confiantAdVerification":false)
+||www.theguardian.com/*/article/$replace=/"isAdFreeUser":false/"isAdFreeUser":true/g,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.theguardian.com/*/article/$replace=/"renderAds":true/"renderAds":false/g,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! TODO: The following two don't rules work to remove <gu-island> props values.  Why?
+!www.theguardian.com##+js(trusted-replace-xhr-response, '/isAdFreeUser&quot;:false/g', isAdFreeUser&quot;:true, /article/)
+!www.theguardian.com##+js(trusted-replace-fetch-response, /renderAds&quot;:true/g, renderAds&quot;:false, /article/)
 ||furorjuegos.com/search/tsc.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||furorjuegos.com/log/jserr.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||furorjuegos.com/log/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -22148,7 +22229,6 @@ talkerscode.com##div[class="videoAdUiFloatingLayer"]:remove()
 ||track.duvallo.com^*
 ||win.dailyhookupsuccess.com^*
 ||horizonprize.com^*
-||fathom.pixeldrain.com/tracker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||i.giphy.com/media/lIbVrBqGGHUl2/giphy.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.qkspafpgg.com^*
 ||qkspafpgg.com^*
@@ -22222,8 +22302,41 @@ ulozto.net##+js(set-constant, adblock_detected, false)
 ||forfile.xyz^*
 ||rowoardog.com^*
 ||mehebborc.com^*
-pixeldrain.com###sponsors
+||fathom.pixeldrain.com/tracker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pixeldrain.com/res/img/misc/banner_as.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||pixeldrain.com/api/misc/rate_limits$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+pixeldrain.com##html:style(overflow:scroll !important;)
+!pixeldrain.com##body[id="body"]:style(overflow:auto !important;)
+pixeldrain.com##div[class="sponsors"]:remove()
+pixeldrain.com##div[class^="sharebar"]:remove()
+pixeldrain.com##div[class^="banner"]:has(div[class^="socials"]):remove()
+pixeldrain.com##div[class^="compatibility_warning"]:remove()
+pixeldrain.com##div[class*="notice"]:has(a[href*="//helpukrainewin.org/"]):remove()
+pixeldrain.com##div[class*="ad_space"]:remove()
+pixeldrain.com##div[id^="div-gpt-ad-"]:remove()
+pixeldrain.com##div[id="sponsors"]:remove()
+pixeldrain.com##div[class*="support_banner"]:remove()
+! TODO: The video player doesn't scroll properly to the right @ 1920x1080px without overlapping the toolbar on the left, but it is viewable.
+pixeldrain.com##div[class^="file_preview"]:style(left: 0px !important; right: 0px !important; padding:0 !important; margin:0 !important; border: none !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; overflow:auto !important;user-select: all !important; pointer-events: all !important;)
+!pixeldrain.com##div[class^="container"]:style(left: 0px !important; right: 0px !important; padding:0 !important; margin:0 !important; border: none !important; border-width:0 !important; max-width: 100% !important; width: 100% !important; max-height: 100% !important; height: 100% !important; overflow:auto !important; user-select: all !important; pointer-events: all !important;)
+!pixeldrain.com##div[class^="container"]:style(overflow:auto !important;)
+pixeldrain.com##div[class^="player_and_controls"]:style(margin-left: 8.2em !important;margin-right: -8.2em !important; overflow:hidden !important;max-width: 100% !important; width: 100% !important; max-height: 100% !important; height: 100% !important;)
+!pixeldrain.com##video[class^="player"]:style(left: 0px !important; right: 0px !important; padding:0 !important; margin:0 !important; border: none !important; border-width:0 !important; max-width: 100% !important; width: 100% !important; max-height: 100% !important; height: 100% !important; overflow:hidden !important; user-select: all !important; pointer-events: all !important;)
+pixeldrain.com##video[class^="player"]:remove-attr(disableremoteplayback)
+pixeldrain.com##+js(remove-attr, disableremoteplayback, video[class^="player"])
+pixeldrain.com##+js(saa, x-webkit-airplay, allow, video[class^="player"])
+pixeldrain.com##+js(saa, data-autoplay-mute-lock, false, video[class^="player"])
+pixeldrain.com##+js(saa, controls, true, video[class^="player"])
+pixeldrain.com##+js(saa, width, 100%, video[class^="player"])
+pixeldrain.com##+js(saa, height, 100%, video[class^="player"])
+pixeldrain.com##video[class^="player"]:remove-attr(disablepictureinpicture)
+pixeldrain.com##+js(remove-attr, disablepictureinpicture, video[class^="player"])
+! The following four rules defuse the anti-developer tools system.
+hexload.com##+js(aeld, dtchange)
+hexload.com##+js(set-constant, mypwpsc, noopFunc)
+hexload.com##+js(acs, /mypwpsc\(\)/)
+hexload.com##+js(trusted-set-constant, dt, { isOpen: false, orientation: undefined, })
+hexload.com##+js(aeld, contextmenu)
 ||analytics.file.cm^*
 file.cm##+js(abort-on-property-write, trackPageView)
 file.cm##+js(abort-on-property-read, trackPageView)
@@ -24318,8 +24431,6 @@ winaero.com##div[id="cookieNotice"]:remove()
 jelastic.com##div[class="jelastic-cookie-bar"]:remove()
 ||www.atticgamez.com/contents/videos_screenshots/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 developer.microsoft.com##div[id="uhfCookieAlert"]:remove()
-pixeldrain.com##div[id="sponsors"]:remove()
-pixeldrain.com##div[class="sponsors"]:remove()
 ||d1ybdlg8aoufn.cloudfront.net^*
 ||eredincreaso.club^*
 ||choinsiden.club^*
@@ -27600,8 +27711,9 @@ androidrepublic.org##div[class="u-bottomFixer js-bottomFixTarget"]:remove()
 /^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/blockadblock\.js\S*/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! Do not block the countdown script as the countdown is server-side checked.
 !/^https?:\/\/(www\.)?file-upload\.(?:com|in|org|download)\/countdown\.js\S*/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!blocks download links
-!www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id^="ads_container_"]:remove()
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="dl_btn_container"]:remove-class(hide)
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##+js(remove-class, hide, div[id="dl_btn_container"])
+www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id^="ads_container_"]:remove()
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##button[id="downloadbtn"]:remove-attr(onclick)
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##.mnbt1.btn-primary.btn-xs.btn:remove-attr(onclick)
 www.file-upload.org,www.file-upload.com,www.file-upload.in,file-upload.download##div[id="vb9h7ma"]:remove()
@@ -32282,9 +32394,6 @@ yoomoney.ru##div[class^="Gdpr__"]:remove()
 ||yjcsgercrlylxdy.com^*
 rambox.app##h2:has-text(/Cookies Policy/i):upward(1):remove()
 freemagazines.top##ins[data-ad-client]:upward(1):remove()
-pixeldrain.com##div[class*="notice"]:has(a[href*="//helpukrainewin.org/"]):remove()
-pixeldrain.com##div[id^="div-gpt-ad-"]:remove()
-pixeldrain.com##div[class*="ad_space"]:remove()
 ||gfruitiesm.com^*
 ||wirsauco.com^*
 www.dummies.com##div[class="bottom-ad"]:remove()
@@ -32537,21 +32646,6 @@ theeadyagency.com##+js(no-window-open-if, !/theeadyagency\.com/i)
 ||yepsawomen.com^*
 ||www.terabox.com/api/analytics?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads.jeded.com^*
-www.theguardian.com##a[aria-label="Contribute"]:remove()
-www.theguardian.com##div[class*="ad-slot"]:remove()
-www.theguardian.com##div[class*="top-banner-ad-container"]:remove()
-www.theguardian.com##div[data-cy="sign-in-gate-main"]:remove()
-www.theguardian.com##div[data-link-name="membership message"]:remove()
-www.theguardian.com##div[id="bottom-banner"]:remove()
-www.theguardian.com##div[id="slot-body-end"]:remove()
-www.theguardian.com##div[id="top-right-ad-slot"]:remove()
-www.theguardian.com##div[id^="dfp-ad-"]:remove()
-www.theguardian.com##gu-island[name="TopRightAdSlot"]:remove()
-www.theguardian.com##section:has(span:has-text(/Support high-impact, independent journalism/i)):remove()
-www.theguardian.com##section[class="css-1u8qly9"]:remove()
-!www.theguardian.com##html,body:style(overflow: scroll !important; overflow-y: scroll !important;)
-www.theguardian.com##*[class*="sp-message-open"]:remove()
-www.theguardian.com##gu-island[name="SlotBodyEnd"]:remove()
 ||ownerfacinglung.com^*
 upload-star.com##div[id="cookie-pop"]:remove()
 !upload-star.com##div[class*="ad-banner"]:remove()
@@ -33701,8 +33795,10 @@ try2link.com##^script:has-text(/checkAdBlocker()/i):remove()
 ||byilfpjcrwy.com^*
 ||explanationsacrifice.com^*
 ||hrrfciikbg.com^*
+! TODO: The following rul prevents some file host downloads from working.
 !||copyrightcontent.org/unblocker/ub/ub.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||copyrightcontent.org/unblocker/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||copyrightcontent.org/e/e.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||copyrightcontent.org/unblocker/ub/ub.js$replace=/abChecked:!1/abChecked:1/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||zk.commovenuba.com^*
 cut-y.net##button[class="ab"]:remove()
 ||simoolkankrej.com^*
@@ -33715,6 +33811,8 @@ yoshare.net##div[id="ignielAdBlock"]:remove()
 ||unibots-d.openx.net^*
 ||droplink.co/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||zegtrends.com/contest.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! TODO: DO NOT remove the following script or downloads won't work.
+!down.fast-down.com,down.mdiaload.com##script[id="ub-script"]:remove()
 ! Do NOT use the following rule since the real download link anchor tag uses the same classes.
 !down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"]:remove()
 down.fast-down.com,down.mdiaload.com##a[class="btn btn-dow"][href="https://down.mdiaload.com/sr9-mdiaload.html"]:remove()
@@ -33733,7 +33831,6 @@ down.fast-down.com,down.mdiaload.com##div[id^="div-gpt-ad-"]:remove()
 down.fast-down.com,down.mdiaload.com##div[id="generate1"]:remove()
 down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:280px"]:remove()
 down.fast-down.com,down.mdiaload.com##div[style^="width:336px; height:296px"]:remove()
-down.fast-down.com,down.mdiaload.com##script[id="ub-script"]:remove()
 down.fast-down.com,down.mdiaload.com##input[id="adblock_detected"]:remove()
 !down.fast-down.com,down.mdiaload.com##+js(remove-attr, disabled, .downloadbtn, stay)
 down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:remove-attr(disabled)
@@ -33743,16 +33840,18 @@ down.fast-down.com,down.mdiaload.com##button[class*="downloadbtn"]:style(display
 !down.fast-down.com,down.mdiaload.com##+js(saa, type, submit, button[class="btn btn-success"])
 down.fast-down.com,down.mdiaload.com##button[class="btn btn-success"]:remove()
 down.fast-down.com,down.mdiaload.com##+js(saa, type, submit, .downloadbtn)
-down.fast-down.com,down.mdiaload.com##+js(aopw, unblockerPaymentToken)
-down.fast-down.com,down.mdiaload.com##+js(aopr, unblockerPaymentToken)
 down.fast-down.com,down.mdiaload.com##+js(acs, gtag)
 down.fast-down.com,down.mdiaload.com##+js(set-attr, #adblock_detected, value, 0)
 down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_invisible, 0)
 down.fast-down.com,down.mdiaload.com##+js(set-constant, sc_remove_link, 0)
 down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '#adblock_detected')]):remove()
 down.fast-down.com,down.mdiaload.com##:xpath(//script[contains(text(), '.adsbox')]):remove()
+!down.fast-down.com,down.mdiaload.com##+js(aopw, unblockerPaymentToken)
+!down.fast-down.com,down.mdiaload.com##+js(aopr, unblockerPaymentToken)
 ||down.mdiaload.com/js/share.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||down.fast-down.com/js/share.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||down.mdiaload.com/js/ticker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||down.fast-down.com/js/ticker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 zegtrends.com##ins[class*="adCreator"]:remove()
 ||dexpredict.com/script/i.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dexpredict.com/ad/display.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -36716,13 +36815,11 @@ nordvpn.com##div[class*="CookieConsentV2"]:remove()
 blog.matrixpost.net##div[id="dsgvomiddlewrap"]:remove()
 pixonic.com##div[id="cmpbox"]:remove()
 ||adoto.net/dashboard/display/items.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||fastly.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||fastly.jsdelivr.net/npm/disable-devtool/disable-devtool.min.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||fastly.jsdelivr.net/npm/disable-devtool*/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||fastly.jsdelivr.net/npm/disable-devtool*/*.ts$popup,document,inline-script,inline-font,popunder,subdocument,script,other
-!||fastly.jsdelivr.net/npm/disable-devtool*/*.js$popup,document,inline-script,inline-font,popunder,subdocument,script,other
 ! just disable the scripts not all content
-||fastly.jsdelivr.net/npm/disable-devtool*/*.ts$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||fastly.jsdelivr.net/npm/disable-devtool*/*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||fastly.jsdelivr.net/npm/disable-devtool*/*.ts$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||fastly.jsdelivr.net/npm/disable-devtool*/*.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ermin-oxj.info^*
 ||kzsfip3v.cfd^*
 ||techthematter.xyz/adsby.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -37771,6 +37868,7 @@ userupload.net,userupload.in##amp-auto-ads:remove()
 userupload.net,userupload.in##input[id="addon"]:remove()
 userupload.net,userupload.in##div[id="gdpr-cookie-notice"]:remove()
 userupload.net,userupload.in##ins[data-ad-client]:remove()
+userupload.net,userupload.in##*[class^="adblock_"]:remove()
 userupload.net,userupload.in##*[id="vc4c"]:remove()
 userupload.net,userupload.in##*[id="ad-banner-1"]:remove()
 userupload.net,userupload.in##*[id="ad-slot-2"]:remove()
@@ -37792,6 +37890,7 @@ userupload.net,userupload.in##*[id="rightAd1"]:remove()
 userupload.net,userupload.in##*[id="ad"]:remove()
 userupload.net,userupload.in##*[id="ads"]:remove()
 userupload.net,userupload.in##*[id="adsense"]:remove()
+userupload.net,userupload.in##script[custom-element="amp-auto-ads"]:remove()
 ! need to specify third-party for the no-xhr-if; not of !/userupload.in/i, !/userupload.net/i
 userupload.net,userupload.in##+js(no-xhr-if, !/userupload.in/i method:HEAD)
 userupload.net,userupload.in##+js(no-xhr-if, !/userupload.net/i method:HEAD)
@@ -37822,6 +37921,21 @@ userupload.net,userupload.in##+js(abort-on-property-write, _gaq)
 userupload.net,userupload.in##+js(aopr, x.withCredentials)
 userupload.net,userupload.in##+js(aopw, x.withCredentials)
 userupload.net,userupload.in##+js(saa, type, submit, #downloadbtn)
+userupload.net,userupload.in##+js(set-constant, AdblockRegixFinder, {})
+userupload.net,userupload.in##+js(aopr, AdblockRegixFinder)
+userupload.net,userupload.in##+js(aopw, AdblockRegixFinder)
+userupload.net,userupload.in##+js(set-constant, Adblock_HTMLTemplate, {})
+userupload.net,userupload.in##+js(set-constant, AdBlock_Helper, {})
+userupload.net,userupload.in##+js(aopr, Adblock_HTMLTemplate)
+userupload.net,userupload.in##+js(aopw, Adblock_HTMLTemplate)
+userupload.net,userupload.in##+js(aopr, AdBlock_Helper)
+userupload.net,userupload.in##+js(aopw, AdBlock_Helper)
+userupload.net,userupload.in##+js(set-constant, CHPAdblock, noopFunc)
+userupload.net,userupload.in##+js(acs, /CHPAdblock\(\)/)
+userupload.net,userupload.in##+js(set-constant, fairAdblock, noopFunc)
+userupload.net,userupload.in##+js(aopr, fairAdblock)
+userupload.net,userupload.in##+js(aopw, fairAdblock)
+userupload.net,userupload.in##+js(remove-node-text, script, /AdblockRegixFinder/gm)
 ! This makes the countdown very quick from 10 seconds
 userupload.net,userupload.in##+js(nano-stb, tick())
 ! The following xpaths may change.
@@ -40775,6 +40889,7 @@ yarnpkg.com##div[class^="css-"]:has(div[class^="css-"], p, a[href="https://war.u
 @@||popads.net/js/adblock.js$script,domain=dropgalaxy.*,badfilter
 @@||cdn.jsdelivr.net/gh/prebid/*$script,domain=dropgalaxy.*,badfilter
 @@||fundingchoicesmessages.google.com^$script,domain=dropgalaxy.*,badfilter
+@@||googlesyndication.com^$image,from=financemonk.net|dropgalaxy.*,badfilter
 @@*$script,xhr,from=dropgalaxy.*,to=googlesyndication.com|doubleclick.net|rsc.cdn77.org|vlitag.com|adoto.net|a2zapk.com|login.popmonetizer.com,badfilter
 *$frame,redirect-rule=noopframe,domain=dropgalaxy.*,badfilter
 *$frame,redirect-rule=noopframe,from=dropgalaxy.*,badfilter
@@ -40831,7 +40946,6 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, scri
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, script2.src, "")
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, triggerError, noopFunc)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, supportedBrowsers, "")
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, dropgalaxyisbest.value, 0)
 ! asfgfga() is an anti-adblock function that sets the XD input value to 1 instead of the proper token value; it also submits the form.
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, asfgfga, noopFunc)
 ! the fttch() function sets the testty value
@@ -40853,35 +40967,50 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, gggg
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(acs, /ggggg\(\)/)
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, image.onerror, noopFunc)
 ! The id's with a value of 0 probably could be successfully removed, but only would be needed if they are otherwise triggered to a non-zero value.
-! TODO: set testty input tag to 5 or 99? or remove altogether to defuse anti-adblocking? Setting to 99 works.
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 99, input[id="testty"])
+! TODO: set testty input tag to 5 or 99? or remove altogether to defuse anti-adblocking? Setting to 99 works as does an empty value.
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 99, input[id="testty"])
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="testty"]:remove()
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="testty"]:remove-attr(value)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value, input[id="testty"])
 ! TODO: set bich to 11 or remove altogether to defuse anti-adblocking? Setting to 11 works.
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="bich"])
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="bich"]:remove()
+! setting asaf to 22 works
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 22, input[id="asaf"])
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="adblock_check"])
+! TODO: could input[id="adblock_check"] be removed and downloads still work?  An empty value does work.
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="adblock_check"]:remove()
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="adblock_check"]:remove-attr(value)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value, input[id="adblock_check"])
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, dropgalaxyisbest.value, 0)
+! TODO: There are two input tags with id="dropgalaxyisbest"; The first one should have a value of 0 and the second one a value of 1.
+! By default the value of the first dropgalaxyisbest input tag is set to "", and the value of the second one is 1.
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="dropgalaxyisbest"][value=""])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 1, input[id="downloadhashad"])
+! Setting adblock_detected to 1 works.
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 1, input[id="adblock_detected"])
+! TODO: Don't manually set admaven_popup since existing value of 1 does not prevent download form from working successfully.
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 1, input[id="admaven_popup"])
+! An empty value for downloadhash works.
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="downloadhash"])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value, input[id="downloadhash"])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="downloadhash"]:remove-attr(value)
+! A value of 1 works for adb and adsns.
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 1, input[id="adb"])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 1, input[id="adsns"])
+! TODO: A value of 16 works for jslog. Always?
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 16, input[id="jslog"])
+! TODO: A value of "track" works for ipn. Always?
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, track, input[id="ipn"])
 ! [dropgalaxy.com][set-constant, badip, false] Aborted because value set to true; blocking tmp.isavetube.com/js/badip.js fixes this.
 ||tmp.isavetube.com/js/badip.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(set-constant, badip, false)
+! badipp is no longer an input tag on the form.
 ! input[id="badipp"].value is set to 1 when using a VPN as determined by https://tmp.isavetube.com/js/badip.js
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="badipp"])
 ! TODO: could input[id="badipp"] be removed and downloads still work?
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="badipp"]:remove()
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="adblock_check"])
-! TODO: could input[id="adblock_check"] be removed and downloads still work?
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="adblock_check"]:remove()
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="dropgalaxyisbest"])
-! TODO: could input[id="dropgalaxyisbest"] be removed and downloads still work?
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="dropgalaxyisbest"]:remove()
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="adblock_detected"])
-! TODO: could input[id="adblock_detected"] be removed and downloads still work?
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="adblock_detected"]:remove()
-! TODO: Don't manually set admaven_popup since existing value of 1 does not prevent download form from working successfully.
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 1, input[id="admaven_popup"])
-! TODO: Don't manually set downloadhash since existing value of 0 does not prevent download form from working successfully.
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="downloadhash"])
-! TODO: Don't manually set adb since existing value of 0 does not prevent download form from working successfully.
-!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id="adb"])
-! TODO: Don't manually set dgl since existing value of 1 does not prevent download form from working successfully. A value of 0 also successfully works for dgl.
+! dgl is no longer an input tag on the form.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 1, input[id="dgl"])
 ! TODO: is removing value attribute the same as setting it to "" with regards to validation by the server?
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="xd"][value="1"]:remove-attr(value)
@@ -40895,6 +41024,11 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value
 ! The value for ppp increases with every switch away from and return to (not fresh of) the page, i.e. views.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 6, input[id="ppp"][value=""])
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 11, input[id="ppp"][value=""])
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="ppp"]:remove-attr(value)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value, input[id="ppp"])
+! An empty value for fnn works.
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id="fnn"]:remove-attr(value)
+dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value, input[id="fnn"])
 ! TODO: the id name in the following rule varies with each refresh of the page, but is always a total of six lowercase letters and sometimes numbers, i.e. [a-z0-9]{6}
 ! The following rule also changes any input tags with a value of 1 including dgl and admaven_popup to no ill effect.
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"])
@@ -40902,7 +41036,7 @@ dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(remove-attr, value
 ! document.querySelectorAll('input[name][value="1"][id=/[a-z0-9]{6}/]'); is not valid
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##+js(saa, value, 0, input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/))
 ! TODO: Could input[id=<varies>] be removed and downloads still work since a value of "0" works?
-dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/):remove()
+!dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##input[id][name][value="1"]:matches-attr(id=/[a-z0-9]{6}/):remove()
 !dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[class^="modalpop"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="modalpop"]:remove()
 dropgalaxy.*,techssting.com,financemonk.net,newsindi.com##div[id="modalpop-content"]:has(span:has-text(Adblock Detected!)):remove()
@@ -41731,9 +41865,9 @@ filesusr.co##div[class^="didna-ad-slot"]:remove()
 !||ib.adnxs.com/bounce$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ib.adnxs.com/async_usersync_file$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ib.adnxs.com/getuid?$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||ib.adnxs.com/ut/v3/prebid$important,xhr,domain=www.247checkers.com|thebrighterside.news|www-thebrighterside-news.filesusr.com
+!||ib.adnxs.com/ut/v3/prebid$important,xhr,domain=www.247checkers.com|www.247chess.com|www.247solitaire.com|www.247pinball.com|www.247games.com|thebrighterside.news|www-thebrighterside-news.filesusr.com
 ||ib.adnxs.com/ut/v3/prebid$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||ib.adnxs-simple.com/ut/v3/prebid$important,xhr,domain=www.247checkers.com|thebrighterside.news|www-thebrighterside-news.filesusr.com
+!||ib.adnxs-simple.com/ut/v3/prebid$important,xhr,domain=www.247checkers.com|www.247chess.com|www.247solitaire.com|www.247pinball.com|www.247games.com|thebrighterside.news|www-thebrighterside-news.filesusr.com
 ||ib.adnxs-simple.com/ut/v3/prebid$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! thebrighterside.news domain only for the following rule.
 ||btlr.sharethrough.com/universal/v1?supply_id=$domain=thebrighterside.news|www-thebrighterside-news.filesusr.com,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -42404,7 +42538,6 @@ yougame.biz##div[class="sponsor-banner-ss"]:remove()
 ||umbrellastep.site^*
 ||rubricagalah.guru^*
 ||sorbentfalsum.com^*
-||pixeldrain.com/api/misc/rate_limits$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||entreatyfungusgaily.com^*
 ||connect.cabbageknee.site^*
 ||ku.yuppdownload.com^*
@@ -43869,7 +44002,11 @@ www.theverge.com##div[class^="adblock-allowlist-messaging"]:remove()
 www.theverge.com##div[data-concert="desktop_leaderboard_variable"]:remove()
 www.theverge.com##div[data-concert="tablet_leaderboard"]:remove()
 www.theverge.com##div[data-native-ad-id]:remove()
+www.theverge.com##li[data-native-ad-id]:remove()
+www.theverge.com##div[class="dynamic-native-ad-native_ad_linkset_link"]:remove()
 www.theverge.com##iframe[src^="https://events.release.narrativ.com/"]:remove()
+www.theverge.com##iframe[id="rufous-sandbox"]:remove()
+www.theverge.com##iframe[name="dv_unity_tag_ready"]:remove()
 www.theverge.com##script[id="admiral"]:remove()
 www.theverge.com##+js(remove-node-text, script, /typeof i\.pubads === n/gm)
 ||www.theverge.com/services/entry_stats$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -43896,60 +44033,60 @@ rahim-soft.org##.PeerFly728x90:remove()
 rahim-soft.org##div[class^="ezAdsense"]:remove()
 rahim-soft.net##.adsense-leadout.adsense.ezAdsense:remove()
 ! The anti-adblocking script is an inline script defused by the following three rules.
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##:xpath(//script[contains(text(), 'banner_ad')]):remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##^script:has-text(banner_ad):remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, /banner_ad/)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com###lastnews:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, ez_ad_units)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, ez_ad_units)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, window.adsbygoogle)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, window.adsbygoogle)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, adcashMacros, {})
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, adcashMacros)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, adcashMacros)
-!fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, /^(?:blur|click|error)$/)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, blur)
-!fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click, /function\(aR\)/)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, error)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, gtag)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, adsbygoogle)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, adsbygoogle)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, _gaq, [])
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, _gaq)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, _gaq)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, top)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, top)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, self)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, self)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, urls, {})
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, zoneNativeSett, {})
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(no-window-open-if)
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-lg.btn-success.btn:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-primary.btn:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.vticker:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[class="btn btn-info btn-lg"]:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[href*="://adzpub.com/search.php"]:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="as_ads_guard"]:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner1"]:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner3"]:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner4"]:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="banner_ad"]:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="countdown"]:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="gdpr-cookie-notice"]:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##iframe:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##input[id="adblock_detected"]:remove()
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##ins[data-ad-client]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##:xpath(//script[contains(text(), 'banner_ad')]):remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##^script:has-text(banner_ad):remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, /banner_ad/)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com###lastnews:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, ez_ad_units)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, ez_ad_units)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, window.adsbygoogle)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, window.adsbygoogle)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, adcashMacros, {})
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopr, adcashMacros)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aopw, adcashMacros)
+!tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, /^(?:blur|click|error)$/)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, blur)
+!tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click, /function\(aR\)/)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, click)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(aeld, error)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(acs, gtag)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, adsbygoogle)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, adsbygoogle)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, _gaq, [])
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, _gaq)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, _gaq)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, top)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, top)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-read, self)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(abort-on-property-write, self)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, urls, {})
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(set-constant, zoneNativeSett, {})
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##+js(no-window-open-if)
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-lg.btn-success.btn:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.btn-primary.btn:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##.vticker:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[class="btn btn-info btn-lg"]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##a[href*="://adzpub.com/search.php"]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="as_ads_guard"]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner1"]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner3"]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[class="banner4"]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="banner_ad"]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="countdown"]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="gdpr-cookie-notice"]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##iframe:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##input[id="adblock_detected"]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##ins[data-ad-client]:remove()
 ! TODO: div[id="tritqwt"] is scripted to reappear if deleted
-fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="tritqwt"]:remove()
+tech.wokaz.com,fingau.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,miui.rahim-soft.com,cloud.rahim-soft.com##div[id="tritqwt"]:remove()
 ! TODO: include .org and .net in the following rules even though those domains are no longer used by uploadrar?  .co is not currently used either
-/^https?:\/\/(?:(cloud|miui|get|flash|tech)?\.?)(?:uploadrar|rahim-soft|getpczone|fingau)\.(?:com|co)/^$xhr
-/^https?:\/\/(?:(cloud|miui|get|flash|tech)?\.?)(?:uploadrar|rahim-soft|getpczone|fingau)\.(?:com|co)\/sw\.js/$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-/^https?:\/\/(?:(cloud|miui|get|flash|tech)?\.?)(?:uploadrar|rahim-soft|getpczone|fingau)\.(?:com|co)\/uploadrar_style\/js\/countdown.js/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(?:(cloud|miui|get|flash|tech)?\.?)(?:uploadrar|rahim-soft|getpczone|fingau|wokaz)\.(?:com|co)/^$xhr
+/^https?:\/\/(?:(cloud|miui|get|flash|tech)?\.?)(?:uploadrar|rahim-soft|getpczone|fingau|wokaz)\.(?:com|co)\/sw\.js/$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(?:(cloud|miui|get|flash|tech)?\.?)(?:uploadrar|rahim-soft|getpczone|fingau|wokaz)\.(?:com|co)\/uploadrar_style\/js\/countdown.js/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following rule is actually defunct as this URL is no contains in the website's pages.
-/^https?:\/\/(?:(cloud|miui|get|flash|tech)?\.?)(?:uploadrar|rahim-soft|getpczone|fingau)\.(?:com|co)\/mod_pagespeed_beacon/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/(?:(cloud|miui|get|flash|tech)?\.?)(?:uploadrar|rahim-soft|getpczone|fingau|wokaz)\.(?:com|co)\/mod_pagespeed_beacon/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following rule blocking inline scripts keeps the website from loading since it uses a POST request from an inline script to get the page
-!/^https?:\/\/(?:(cloud|miui|get|flash|tech)?\.?)(?:uploadrar|rahim-soft|getpczone|fingau)\.(?:com|co)/^$inline-script
+!/^https?:\/\/(?:(cloud|miui|get|flash|tech)?\.?)(?:uploadrar|rahim-soft|getpczone|fingau|wokaz)\.(?:com|co)/^$inline-script
 !||www.freeprivacypolicy.com/public/cookie-consent/4.1.0/cookie-consent.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.freeprivacypolicy.com/public/cookie-consent/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||padsims.com^*
@@ -44820,94 +44957,98 @@ www.uppit.com##:xpath(//html/body/header/div/script[2]):remove()
 ||mdbekjwqa.pw/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cholatetapalos.com^*
 techreport.com##div[class*="clickout-banner-regular_native_box"]:remove()
+||www.247games.com/feature-lineup/FeatureLineup.v2.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.247checkers.com/js/support/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.247checkers.com/js/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.247checkers.com,www.247solitaire.com,www.247chess.com##div[class^="aspace-"]:has(div[id^="div-gpt-ad"]):remove()
-www.247checkers.com,www.247solitaire.com,www.247chess.com##div[id^="div-gpt-ad"]:remove()
-www.247checkers.com,www.247solitaire.com,www.247chess.com##div[class^="aspace-"]:has(div[id^="div-ad-space-"]):remove()
-www.247checkers.com,www.247solitaire.com,www.247chess.com##div[id^="div-ad-space-"]:remove()
-www.247checkers.com,www.247solitaire.com,www.247chess.com##div[id^="feature-ad"]:remove()
-www.247checkers.com##div[id="feature"]:style(max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; min-height: 99vh !important;)
-www.247checkers.com##div[class="middle"]:style(max-width: 100% !important; width: 100% !important;)
-www.247checkers.com##canvas[id="app-player-game-canvas"]:style(max-width: 100% !important; width: 100% !important; max-height: 100% !important; height: 100% !important;)
-www.247checkers.com##+js(saa, width, 100%, canvas[id="app-player-game-canvas"])
-www.247checkers.com##+js(saa, height, 100%, canvas[id="app-player-game-canvas"])
-www.247checkers.com##+js(aeld, contextmenu)
-# TODO: Only use the following two rules so long as no non-ad content is in them.
-www.247checkers.com##div[class="right"]:remove()
-www.247checkers.com##div[class="left"]:remove()
-www.247checkers.com##+js(set-constant, window.adLineup, noopFunc)
-www.247checkers.com##+js(aopr, window.adLineup)
-www.247checkers.com##+js(aopw, window.adLineup)
-!www.247checkers.com##+js(set-constant, window.generateFeatureAdLineup, noopFunc, end)
-!www.247checkers.com##+js(set-constant, window.generateFeatureAdLineup, noopFunc, complete)
-www.247checkers.com##+js(set-constant, window.generateFeatureAdLineup, noopFunc)
-www.247checkers.com##+js(aopr, window.generateFeatureAdLineup)
-www.247checkers.com##+js(aopw, window.generateFeatureAdLineup)
-www.247checkers.com##+js(set-constant, window.games247.FeatureAd, {})
-!www.247checkers.com##+js(set-constant, window.games247.FeatureAd, {}, complete)
-!www.247checkers.com##+js(set-constant, window.games247.FeatureAd, {}, end)
-www.247checkers.com##+js(acs, window.games247.FeatureAd)
-www.247checkers.com##+js(set-constant, window.games247.ads, {})
-www.247checkers.com##+js(set-constant, window.games247.ads.loadBanner300x250, noopFunc)
-www.247checkers.com##+js(set-constant, window.games247.ads.FeatureAd, noopFunc)
-www.247checkers.com##+js(set-constant, adsBlocked, falseFunc)
-www.247checkers.com##+js(set-constant, showad, noopFunc)
-! do not set or abort on googletag or gtag or the game will not load; reloading the page when it stalls on initial load also fixes this issue.
-www.247checkers.com#@#+js(set-constant, gtag, noopFunc)
-www.247checkers.com#@#+js(set-constant, window.gtag, noopFunc)
-www.247checkers.com#@#+js(set-constant, window.googletag, {})
-www.247checkers.com#@#+js(set-constant, googletag, {})
-!www.247checkers.com##+js(aopr, googletag)
-!www.247checkers.com##+js(aopw, googletag)
-!www.247checkers.com##+js(set-constant, pbjs, {})
-! Removing the following scripts will prevent the game from loading 
-!www.247checkers.com##script[data-interstitial-enabled-mobile="true"]:remove()
-!www.247checkers.com##script[data-interstitial-enabled-desktop="true"]:remove()
-! The following rule accelerates 5 second countdown before gameplay
-www.247checkers.com##+js(nano-stb, /.?/, 1000, 0.10)
-www.247checkers.com##:xpath(//script[contains(text(), 'self.games247.FeatureAd.init()')]):remove()
-www.247checkers.com##:xpath(//script[contains(text(), '/www.247games.com/feature-lineup/FeatureLineup.')]):remove()
-! The following script should already be gone per the above rule.
-www.247checkers.com##script[src*="/www.247games.com/feature-lineup/FeatureLineup."]:remove()
-||www.247games.com/feature-lineup/FeatureLineup.v2.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!www.247solitaire.com##div:has(div):has-text(/Close Ad/):remove()
-www.247solitaire.com##+js(set-constant, loadAnalyticsData, noopFunc)
-www.247solitaire.com##+js(set-constant, adsStart, noopFunc)
-www.247solitaire.com##+js(abort-on-property-write, adsStart)
-www.247solitaire.com##+js(abort-on-property-read, adsStart)
-www.247solitaire.com##+js(set-constant, TIMEOUT, 0)
-!www.247solitaire.com##+js(set-constant, AdMob, {})
-!www.247solitaire.com##+js(set-constant, AdMob.enabled, false, end)
-www.247solitaire.com##+js(set-constant, AdMob.enabled, false, complete)
-!www.247solitaire.com##+js(set-constant, googletag, noopFunc)
-www.247solitaire.com##+js(abort-on-property-write, googletag)
-www.247solitaire.com##+js(abort-on-property-read, googletag)
-www.247solitaire.com##+js(set-constant, adUnits, [])
-www.247solitaire.com##+js(abort-on-property-write, adUnits)
-www.247solitaire.com##+js(abort-on-property-read, adUnits)
-www.247solitaire.com##+js(set-constant, initAdServer, noopFunc)
-www.247solitaire.com##+js(acs, initAdServer)
-www.247solitaire.com##+js(set-constant, adblock, false)
-www.247solitaire.com##+js(abort-on-property-write, adblock)
-www.247solitaire.com##+js(abort-on-property-read, adblock)
-www.247solitaire.com##+js(set-constant, adsEnabled, false)
-www.247solitaire.com##+js(abort-on-property-write, adsEnabled)
-www.247solitaire.com##+js(abort-on-property-read, adsEnabled)
-||www.247solitaire.com/js/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.247solitaire.com/js/support/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.247solitaire.com/js/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.247chess.com/js/support/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.247chess.com/js/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.247pinball.com/js/support/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.247pinball.com/js/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##div[class^="aspace-"]:has(div[id^="div-gpt-ad"]):remove()
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##div[id^="div-gpt-ad"]:remove()
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##div[class^="aspace-"]:has(div[id^="div-ad-space-"]):remove()
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##div[id^="div-ad-space-"]:remove()
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##div[id^="feature-ad"]:remove()
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##div[id="feature"]:style(max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; min-height: 99vh !important;)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##div[class="middle"]:style(max-width: 100% !important; width: 100% !important;)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##canvas[id="app-player-game-canvas"]:style(max-width: 100% !important; width: 100% !important; max-height: 100% !important; height: 100% !important;)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(saa, width, 100%, canvas[id="app-player-game-canvas"])
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(saa, height, 100%, canvas[id="app-player-game-canvas"])
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(aeld, contextmenu)
+# TODO: Only use the following two rules so long as no non-ad content is in them.
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##div[class="right"]:remove()
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##div[class="left"]:remove()
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, window.adLineup, noopFunc)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(aopr, window.adLineup)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(aopw, window.adLineup)
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, window.generateFeatureAdLineup, noopFunc, end)
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, window.generateFeatureAdLineup, noopFunc, complete)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, window.generateFeatureAdLineup, noopFunc)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(aopr, window.generateFeatureAdLineup)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(aopw, window.generateFeatureAdLineup)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, window.games247.FeatureAd, {})
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, window.games247.FeatureAd, {}, complete)
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, window.games247.FeatureAd, {}, end)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(acs, window.games247.FeatureAd)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, window.games247.ads, {})
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, window.games247.ads.loadBanner300x250, noopFunc)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, window.games247.ads.FeatureAd, noopFunc)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, adsBlocked, falseFunc)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, showad, noopFunc)
+! do not set or abort on googletag or gtag or the game will not load; reloading the page when it stalls on initial load also fixes this issue.
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com#@#+js(set-constant, gtag, noopFunc)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com#@#+js(set-constant, window.gtag, noopFunc)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com#@#+js(set-constant, window.googletag, {})
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com#@#+js(set-constant, googletag, {})
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(aopr, googletag)
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(aopw, googletag)
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, pbjs, {})
+! Removing the following scripts will prevent the game from loading 
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##script[data-interstitial-enabled-mobile="true"]:remove()
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##script[data-interstitial-enabled-desktop="true"]:remove()
+! The following rule accelerates 5 second countdown before gameplay
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(nano-stb, /.?/, 1000, 0.10)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##:xpath(//script[contains(text(), 'self.games247.FeatureAd.init()')]):remove()
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##:xpath(//script[contains(text(), '/www.247games.com/feature-lineup/FeatureLineup.')]):remove()
+! The following script should already be gone per the above rule.
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##script[src*="/www.247games.com/feature-lineup/FeatureLineup."]:remove()
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##div:has(div):has-text(/Close Ad/):remove()
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, loadAnalyticsData, noopFunc)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, adsStart, noopFunc)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(abort-on-property-write, adsStart)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(abort-on-property-read, adsStart)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, TIMEOUT, 0)
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, AdMob, {})
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, AdMob.enabled, false, end)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, AdMob.enabled, false, complete)
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, googletag, noopFunc)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(abort-on-property-write, googletag)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(abort-on-property-read, googletag)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, adUnits, [])
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(abort-on-property-write, adUnits)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(abort-on-property-read, adUnits)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, initAdServer, noopFunc)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(acs, initAdServer)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, adblock, false)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(abort-on-property-write, adblock)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(abort-on-property-read, adblock)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, adsEnabled, false)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(abort-on-property-write, adsEnabled)
+www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(abort-on-property-read, adsEnabled)
 ! Any one of the following three lines prevent the game from loading.
-!www.247solitaire.com##+js(set-constant, adLineupManualTimeout, noopFunc)
-!www.247solitaire.com##+js(acs, adLineupManualTimeout)
-!www.247solitaire.com##+js(set-constant, hideFeatureAd, trueFunc)
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, adLineupManualTimeout, noopFunc)
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(acs, adLineupManualTimeout)
+!www.247pinball.com,www.247checkers.com,www.247solitaire.com,www.247chess.com##+js(set-constant, hideFeatureAd, trueFunc)
 ||dsum.casalemedia.com/pbusermatch?origin=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pr-bh.ybp.yahoo.com/sync/casale/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||bydata-395154368.us-east-2.elb.amazonaws.com/topics/events$xhr,domain=www.247checkers.com|www.247chess.com|www.247solitaire.com|www.247games.com
-||pbjs-stream.bydata.com/topics/events$xhr,domain=www.247checkers.com|www.247chess.com|www.247solitaire.com|www.247games.com
+||bydata-395154368.us-east-2.elb.amazonaws.com/topics/events$xhr,domain=www.247checkers.com|www.247chess.com|www.247solitaire.com|www.247pinball.com|www.247games.com
+||pbjs-stream.bydata.com/topics/events$xhr,domain=www.247checkers.com|www.247chess.com|www.247solitaire.com|www.247pinball.com|www.247games.com
 ||d3ghrrxmwl58bu.cloudfront.net/247Games/bydataAnalytics.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||telemetry-tag.bydata.com/247Games/bydataAnalytics.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||telemetry-tag.bydata.com^*
-||c.amazon-adsystem.com/aax2/apstag.js$script,domain=www.247checkers.com|www.247chess.com|www.247solitaire.com|www.247games.com
+||c.amazon-adsystem.com/aax2/apstag.js$script,domain=www.247checkers.com|www.247chess.com|www.247solitaire.com|www.247pinball.com|www.247games.com
 ||games-lcc-d.openx.net^*
 geekflare.com##div[id^="adngin-"]:remove()
 www.royalapps.com##div[aria-label="cookieconsent"]:remove()
@@ -46097,25 +46238,6 @@ cnbc.com##span:remove-class(hidden)
 !||collector-26223.us.tvsquared.com^*
 ||collector-*.us.tvsquared.com^*
 ||8cmfzco0.micpn.com/p/js/1.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.theguardian.com##gu-island[name="StickyBottomBanner"]:remove()
-www.theguardian.com##gu-island[name="SetABTests"]:remove()
-www.theguardian.com##gu-island[name="SetAdTargeting"]:remove()
-www.theguardian.com##gu-island[name="ReaderRevenueDev"]:remove()
-www.theguardian.com##gu-island[name="Metrics"]:remove()
-www.theguardian.com##gu-island[name="SupportTheG"]:remove()
-www.theguardian.com##div[class*="ad-slot-container"]:remove()
-www.theguardian.com##div[class*="ad_unit"]:remove()
-www.theguardian.com##div[class*="text-ad"]:remove()
-www.theguardian.com##div[class*="textAd"]:remove()
-www.theguardian.com##div[class*="text_ad"]:remove()
-www.theguardian.com##div[class*="text-ads"]:remove()
-www.theguardian.com##div[class*="ad-text"]:remove()
-www.theguardian.com##div[class*="adSense"]:remove()
-www.theguardian.com##div[class*="adBlock"]:remove()
-www.theguardian.com##div[class*="adContent"]:remove()
-www.theguardian.com##div[class*="adBanner"]:remove()
-www.theatlantic.com##gpt-ad:remove()
-www.theatlantic.com##div[class^="ArticleInjector_clsAvoider__"]:remove()
 ||wwgkloetyyg.com^*
 ||janokroo.net^*
 hidranoid.tech##div[id^="wpgtr_stickyads_textcss_"]:remove()
@@ -46134,6 +46256,29 @@ hidranoid.tech##a[id="lite-start-sora-a"]:style(display: unset !important; curso
 snapinsta.storyy.shop##+js(acs, gtag)
 igram.storyy.shop##+js(acs, gtag)
 !igram.storyy.shop##input[class="gdm_btn1"]:remove-attr(onlick)
+igram.storyy.shop##img[src="logo.png"]:remove()
+igram.storyy.shop##section[class*="main-content"]:style(padding-top: 0px !important; padding-bottom: 0px !important;)
+igram.storyy.shop##div[class="container"]:style(margin-left: 0px !important; margin-right: 0px !important; padding-left: 0px !important; padding-right: 0px !important;)
+igram.storyy.shop##iframe[src^="https://embedv.net/e/"]:style(padding:0 !important; margin:0 !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important;  max-height: 100vh !important; height: 99vh !important; user-select: all !important; pointer-events: all !important;)
+igram.storyy.shop##+js(saa, height, 100%, iframe[src^="https://embedv.net/e/"])
+igram.storyy.shop##+js(saa, webkitallowfullscreen, true, iframe[src^="https://embedv.net/e/"])
+igram.storyy.shop##+js(saa, mozallowfullscreen, true, iframe[src^="https://embedv.net/e/"])
+igram.storyy.shop##+js(saa, allowfullscreen, true, iframe[src^="https://embedv.net/e/"])
+igram.storyy.shop##+js(saa, allowtransparency, true, iframe[src^="https://embedv.net/e/"])
+igram.storyy.shop##+js(saa, scrolling, no, iframe[src^="https://embedv.net/e/"])
+igram.storyy.shop##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="https://embedv.net/e/"])
+igram.storyy.shop##+js(saa, marginwidth, 0, iframe[src^="https://embedv.net/e/"])
+igram.storyy.shop##+js(saa, marginheight, 0, iframe[src^="https://embedv.net/e/"])
+! The following attributes are already set by default.
+igram.storyy.shop##+js(saa, width, 100%, iframe[src^="https://embedv.net/e/"])
+igram.storyy.shop##+js(saa, frameborder, 0, iframe[src^="https://embedv.net/e/"])
+www.terabox.app##iframe[id="iframe-ad"]:remove()
+||www.terabox.app/api/ad/getconfig?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.terabox.app/api/analytics?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.staticcc.com/fe-opera-static/node-static-v4/fe-webv4-main/js/ad.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.staticcc.com/fe-opera-static/node-static-v4/fe-webv4-main/js/videoAds.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.staticcc.com/fe-opera-static/node-static-v4/fe-webv4-main/js/video~videoAds.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.staticcc.com/fe-opera-static/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d2lzu2a5ishr7o.cloudfront.net^*
 ||d1wc0ojltqk24g.cloudfront.net^*
 ||ofitstefukste.org^*
@@ -46141,10 +46286,11 @@ igram.storyy.shop##+js(acs, gtag)
 !||greenfox.ink/d/lg.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||greenfox.ink/d/asyncjs.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||greenfox.ink^*
-new7.filepress.store##div[id^="beacon_"]:remove()
-new7.filepress.store##div[id="banner-reclam"]:remove()
-new7.filepress.store##+js(set-constant, trackBannerClick, noopFunc)
-new7.filepress.store##+js(acs, trackBannerClick)
+/^https?:new\d+\.filepress.store/##div[id^="beacon_"]:remove()
+/^https?:new\d+\.filepress.store/##div[id="banner-reclam"]:remove()
+/^https?:new\d+\.filepress.store/##+js(set-constant, trackBannerClick, noopFunc)
+/^https?:new\d+\.filepress.store/##+js(acs, trackBannerClick)
+||new*.filepress.store/js/Brrd.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vpnrice.com/a/p.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||vidhide.com/js/dnsads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 vidhidepro.com##div[id="adbd"]:remove()
@@ -49025,7 +49171,7 @@ vidplay.online##+js(no-setInterval-if, /_0x65bf0\(\)/)
 ||token.rubiconproject.com^*
 !||video-ads.rubiconproject.com/video/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||video-ads.rubiconproject.com^*
-!||fastlane.rubiconproject.com/a/api/fastlane.json$domain=www.247checkers.com|thebrighterside.news|www-thebrighterside-news.filesusr.com,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||fastlane.rubiconproject.com/a/api/fastlane.json$domain=www.247checkers.com|www.247chess.com|www.247solitaire.com|www.247pinball.com|www.247games.com|thebrighterside.news|www-thebrighterside-news.filesusr.com,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||fastlane.rubiconproject.com/a/api/fastlane.json$3p,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||masteraffiliates.gotrackier.com^*
 vipbox1.com,vipboxi.net##div[class="tallstreambanner"]:remove()
@@ -49859,6 +50005,7 @@ newatlas.com##+js(rna, img[loading="lazy"][data-src], data-src, src)
 ||forgivenessdeportdearly.com^*
 ||economiaeseguros.com^*
 ||www.toprevenuegate.com^*
+!||pl21608588.toprevenuegate.com^*
 !||pl21574782.toprevenuegate.com^*
 !||pl15821666.toprevenuegate.com^*
 !||pl20623807.toprevenuegate.com^*
@@ -50885,7 +51032,7 @@ romenewstribune-ga.newsmemory.com##+js(aopr, googleAnalyticsAccount4)
 romenewstribune-ga.newsmemory.com,www.unilad.com,www.newcdn.lol,vipbox1.com,blockedtv.xyz,rentreviews.xyz,liveru.sx,livetvsx.org,methstreams.com,thepostmillennial.com,freecomputerbooks.com,apk.support,playclassic.games,sflix.to,www.couchtuner.show,putlocker.pe,putlocker.sb,tennisonline.me,strikeout.im,strikeout.cc##+js(acs, /gtag\(|window\.dataLayer/)
 !healthyteeth.tips,jabbr.net,www.aroged.com,thinkkers.com,apkdone.com,apklit.com,apkloo.com,www.whatsmyip.org,net-informations.com,snakify.org,apkmos.com,www.anoopcnair.com,www.bestprog.net,blog.jongallant.com,www.csharp-examples.net,www.thecustomdroid.com,www.adbusbdriver.com,www.encodedna.com,www.w3resource.com,www.freecodecamp.org,wwww.techwalla.com,www.psdly.com,softhints.com,sbenny.com,www.androidblip.com,argudanmousosh1.ru,topclassactions.com,www.free-tutorials.us,www.tutsgalaxys.com,coursesghar.com,borncity.com,www.coursef.com,onvideo.org,freemagazines.top,www.linuxcompatible.org,www.ebooksyard.com,beebom.com,www.comss.ru,techtodown.com,modandroid.org,fileaxa.com,xapkmod.com,modxda.com,listoffreeware.com,lapelotita.com,dl.tech-story.net,gbplus.org,www.windowslatest.com,apkgods.net,apkcunk.com,techydino.net,www.hiapphere.com,www.apk4fun.com,cellularnews.com,ccm.net,fastclick.to,modgameapk.net,linux.how2shout.com,www.fresherslive.com,www.skylinewebcams.com,www.bleepingcomputer.com,www.breitbart.com,cardgames.io,pallabmobile.in,www.cpu-world.com,render-state.to,uvnc.com,d.tousecurity.com.www.websitedown.info,wooseotools.com,udemycourses.me,www.gametop.com,nullpk.com,cut-y.net,forum.videohelp.com,apkexit.com,downloadkai.top,www.babup.com,yuzu-emu.org,www.gamingonlinux.com,compress-pdf.kitomura.com##ins[data-ad-client]:remove()
 *##ins[data-ad-client]:remove()
-!linux.how2shout.com,www.fresherslive.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,cloud.rahim-soft.com,miui.rahim-soft.com,www.skylinewebcams.com,www.breitbart.com,www.247solitaire.com,www.real.discount,pallabmobile.in,www.cpu-world.com,render-state.to,woowebtools.com,uvnc.com,easyupload.io,www.softwareok.com,androidtop.net,modded-1.com,apkgk.com,www.rawstory.com,www.downloadsource.net,d.tousecurity.com,www.websitedown.info,wooseotools.com,centfile.com,hifi2007reviews.com,beamtic.com,www.gametop.com,nullpk.com,freeudemycourse.com,cut-y.net,baominh.tech,fastclick.to,xdarom.com,nullpress.net,www.apk4fun.com,doodrive.com,nulljungle.com,giga-down.com,proxfree.com,unblockvideos.com,webproxy.to,www.videounblocker.net,zend2.com,www.myipbanned.com,www.hidebux.com,www.unblock123.com,www.hideoxy.com,infinityfree.net,www.4everproxy.com,winscp.net,www.proxysite.com,nulleb.com,onlinecoursebay.com,www.gratisgames24.ch,www.ftuudemy.com,freevideotutorialsus.com,forum.videohelp.com,appvn.com,moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com,yuzu-emu.org,www.gamingonlinux.com,mybrowseraddon.com,mobmodapk.com,www.croxyproxy.com,proxyium.com,compress-pdf.kitomura.com,ftuapps.dev,playclassic.games,www.hiapphere.com,coursesghar.com##+js(set-constant, adsbygoogle, [])
+!linux.how2shout.com,www.fresherslive.com,miui.getpczone.com,cloud.getpczone.com,tech.getpczone.com,flash.getpczone.com,get.getpczone.com,uploadrar.com,cloud.rahim-soft.com,miui.rahim-soft.com,www.skylinewebcams.com,www.breitbart.com,www.247checkers.com|www.247chess.com|www.247solitaire.com|www.247pinball.com|www.247games.com,www.real.discount,pallabmobile.in,www.cpu-world.com,render-state.to,woowebtools.com,uvnc.com,easyupload.io,www.softwareok.com,androidtop.net,modded-1.com,apkgk.com,www.rawstory.com,www.downloadsource.net,d.tousecurity.com,www.websitedown.info,wooseotools.com,centfile.com,hifi2007reviews.com,beamtic.com,www.gametop.com,nullpk.com,freeudemycourse.com,cut-y.net,baominh.tech,fastclick.to,xdarom.com,nullpress.net,www.apk4fun.com,doodrive.com,nulljungle.com,giga-down.com,proxfree.com,unblockvideos.com,webproxy.to,www.videounblocker.net,zend2.com,www.myipbanned.com,www.hidebux.com,www.unblock123.com,www.hideoxy.com,infinityfree.net,www.4everproxy.com,winscp.net,www.proxysite.com,nulleb.com,onlinecoursebay.com,www.gratisgames24.ch,www.ftuudemy.com,freevideotutorialsus.com,forum.videohelp.com,appvn.com,moddroid.io,ubuntuhandbook.org,apkexit.com,downloadkai.top,www.babup.com,yuzu-emu.org,www.gamingonlinux.com,mybrowseraddon.com,mobmodapk.com,www.croxyproxy.com,proxyium.com,compress-pdf.kitomura.com,ftuapps.dev,playclassic.games,www.hiapphere.com,coursesghar.com##+js(set-constant, adsbygoogle, [])
 *##+js(set-constant, adsbygoogle, [])
 *##^script:has-text(/adcashLib\./):remove()
 *##:xpath(//script[contains(text(), 'adcashLib.')]):remove()
@@ -53557,6 +53704,60 @@ www.irishmirror.ie##div[id^="div-gpt-ad-"]:remove()
 ||d31uxzurj3z4fa.cloudfront.net^$3p
 ||agen-assets.ftstatic.com/display/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cds.connatix.com/p/*/player.ads.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||10b00e9529.ce3ff5f2d4.com^*
+||thermometerinconceivablewild.com^*
+||okaydisciplemeek.com^*
+||ak.naxadrug.com^*
+||warsabnormality.com^*
+||recordedthereby.com^*
+!||gn.metallcorrupt.com^*
+||metallcorrupt.com^*
+||listeamed.net/assets/js/download.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/if\(\!b5\)return null;/if(true)return null;/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/this\['onDevToolOpen'\]\(\)/null/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/b7\['onDevToolOpen'\]\(\)/null/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/'isDevToolOpened':ai/'isDevToolOpened':false/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/\['adblockDetectInit'\]\(\)/['noadblockDetectInit']()/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/\['customVast'\]\(\)/['nocustomVast']()/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/\['CustomAdSetting'\]/['noCustomAdSetting']/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/'vast'/'novast'/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/b6=\['disable-menu','disable-select','disable-copy','disable-cut','disable-paste','clear-log'\]/b6=['no1','no2','no3','no4','no5','no6']/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/\['AffiliateAdViewLevel'\]/['noAffiliateAdViewLevel']/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/'popad'/'nopopad'/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/\(window\[\w{2}\('0x1a3'\)\]='\/adblock'\)/null/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/aD();/null;/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/az=\['detectors','ondevtoolclose','ignore'\]/az=['no7','no8','no9']/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/'_openAd':/'null':/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||listeamed.net/assets/js/main.js$replace=/this\['adblock'\]/this['noadblock']/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+embedv.net,listeamed.net##html,body:style(overflow: auto !important;)
+embedv.net,listeamed.net##div[class*="video-container"]:style(left: 0px !important; right: 0px !important; padding:0 !important; margin:0 !important; border: none !important; border-width:0 !important; max-width: 100vw !important; width: 99vw !important; max-height: 100vh !important; height: 99vh !important; overflow:hidden !important; user-select: all !important; pointer-events: all !important;)
+embedv.net,listeamed.net##a[href^="https://ak.naxadrug.com/"]:remove()
+embedv.net,listeamed.net##+js(saa, webkitallowfullscreen, true, iframe[src^="//listeamed.net/e/"])
+embedv.net,listeamed.net##+js(saa, mozallowfullscreen, true, iframe[src^="//listeamed.net/e/"])
+embedv.net,listeamed.net##+js(saa, allowtransparency, true, iframe[src^="//listeamed.net/e/"])
+embedv.net,listeamed.net##+js(saa, allow, picture-in-picture; autoplay; fullscreen; encrypted-media; clipboard-write;, iframe[src^="//listeamed.net/e/"])
+embedv.net,listeamed.net##+js(saa, scrolling, yes, iframe[src^="//listeamed.net/e/"])
+! The following attributes are already set by the page.
+embedv.net,listeamed.net##+js(saa, width, 100%, iframe[src^="//listeamed.net/e/"])
+embedv.net,listeamed.net##+js(saa, height, 100%, iframe[src^="//listeamed.net/e/"])
+embedv.net,listeamed.net##+js(saa, frameborder, 0, iframe[src^="//listeamed.net/e/"])
+embedv.net,listeamed.net##+js(saa, allowfullscreen, true, iframe[src^="//listeamed.net/e/"])
+embedv.net,listeamed.net##+js(saa, marginwidth, 0, iframe[src^="//listeamed.net/e/"])
+embedv.net,listeamed.net##+js(saa, marginheight, 0, iframe[src^="//listeamed.net/e/"])
+embedv.net,listeamed.net##+js(set-constant, DD, noopFunc)
+embedv.net,listeamed.net##+js(acs, /DD\(\)/)
+embedv.net,listeamed.net##+js(set-constant, devToolDetector, noopFunc)
+embedv.net,listeamed.net##+js(acs, /devToolDetector\(\)/)
+embedv.net,listeamed.net##+js(no-setTimeout-if, /devToolDetector/)
+embedv.net,listeamed.net##+js(set-constant, nocontextmenu, noopFunc)
+embedv.net,listeamed.net##+js(acs, /nocontextmenu\(/)
+embedv.net,listeamed.net##+js(remove-node-text, script, /devToolDetector\(\)/gm)
+embedv.net,listeamed.net##+js(trusted-replace-node-text, script, /"AffiliateAdBlock":true/gm, "AffiliateAdBlock":false)
+embedv.net,listeamed.net##+js(trusted-replace-node-text, script, /debugger;/gm, null;)
+! TODO: Does the following rule prevent videos from playing?
+!embedv.net,listeamed.net##+js(noeval-if, /window.ADBLOCKER/)
+! TODO: The following rule may also stop needed or beneficial intervals.
+!embedv.net,listeamed.net##+js(no-setInterval-if, /function\(\)/)
 
 !Whitelisted
 ! The following bad filter is from AdGuard – Cookie Notices
@@ -53593,6 +53794,11 @@ www.irishmirror.ie##div[id^="div-gpt-ad-"]:remove()
 @@||cds.connatix.com/p/*/elLoader.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! TODO: unblock all third-party scripts from that URL?
 @@||cds.connatix.com/p/*/*.js$3p,script
+! The following rule is necessary for some website which have Cloudflare protection.
+!@@||challenges.cloudflare.com/cdn-cgi/challenge-platform/$domain=filepress.store,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+@@||challenges.cloudflare.com/cdn-cgi/challenge-platform/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+@@*$generichide,domain=challenges.cloudflare.com
+@@||new*.filepress.store/cdn-cgi/challenge-platform/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following is an exception for the div tag hosting the video player.
 www.pcguide.com#@#div[id^="cls-video-container"][class^="adthrive"]
 ! The following exception rule overrides the rule from the Fuck Fuckadblock: Mining list AND any other rules above to block matching domains with service-worker.js; TODO: need to block */server-worker.js from individual domains in rules using $important directive.
