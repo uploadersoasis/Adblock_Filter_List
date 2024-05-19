@@ -9680,7 +9680,6 @@ gamesresources.forumfree.it##body > .ads:nth-of-type(4):remove()
 !||omni.springserve.com/hb$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||omni.springserve.com^*
 ||www.torlock.gq/track.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||ads.twitter.com^*
 ||simple-cdn.s3.amazonaws.com/js/reach.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||monova.org/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||1306145884.rsc.cdn77.org/ads/saga/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -10500,8 +10499,6 @@ www.rlslog.net###contribusource242
 !||dbctr.gq/ddos_test$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||dbctr.gq^*
 ||entitlements.jwplayer.com^*
-!||static.ads-twitter.com/uwt.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||static.ads-twitter.com^*
 !||cdn-gl.imrworldwide.com/novms/js/2/nlsDcrLite510.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn-gl.imrworldwide.com/novms/js/2/ggcmb510.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn-gl.imrworldwide.com^*
@@ -13487,7 +13484,6 @@ yourdailydish.com##div[title*="mvp_ad_widget"]
 ||network.bazaarvoice.com/t.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||screencaptue-cdn.kampyle.com^*
 ||screencapture.kampyle.com^*
-||analytics.twitter.com^*
 ||okbiafbcvoqo.com^*
 ||www.okbiafbcvoqo.com^*
 !||wifewine.com/wp-content/plugins/autotrack-master/autotrack.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -17570,7 +17566,6 @@ linuxhint.com##.vce_adsense_wrapper:remove()
 ||torrentgalaxy.org/common/exs/exs.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hosoft-argeria.com^*
 ||track.approvedfornext.com^*
-||syndication.twitter.com/i/jot/syndication$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||jyahmckzsbh.com^*
 ||www.jyahmckzsbh.com^*
 stackoverflow.com##div[class^="clc-cp-lb"]:remove()
@@ -17822,7 +17817,6 @@ digg.com##.ad-container--originals-top
 ||www.tensitionschoo.club^*
 ||uploadev.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||api.aerisapi.com/batch/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||twitter.com/push_service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hnkkj0b-qwerty.wedeploy.io^*
 ||www.freewebhostingarea.com/images/poweredby.png$image
 ||kqlokjfrnz.com^*
@@ -26880,7 +26874,6 @@ nbyts.online##input[id="ab"]:remove()
 ||visitor.omnitagjs.com^*
 ||www.amgtomdcxvm.com^*
 ||www.ghsmfmjcicgup.com^*
-||twitter.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 exerin1982.pixnet.net##div[id^="div-gpt-ad-"]:remove()
 exerin1982.pixnet.net##div[id="pix-mib-unfold-ad"]:remove()
 exerin1982.pixnet.net##+js(abort-on-property-read, _atrk_opts)
@@ -30069,7 +30062,6 @@ hot4share.com##div[id="gdpr-cookie-notice"]:remove()
 ||t-mobile.com.ssl.d1.sc.omtrdc.net^*
 ||smetrics.t-mobile.com^*
 ||mov.t-mobile.com/p/cp/-1/track.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||twitter.com/i/csp_report$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 community.t-mobile.com##div[class*="cookiemodal"]:remove()
 community.t-mobile.com##div[class*="cookiebar"]:remove()
 !||pxl.jivox.com/tags/conv/pxjs.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -36639,8 +36631,10 @@ www.gamesindustry.biz##div[class^="advert"]:remove()
 www.gamesindustry.biz##+js(remove-attr, data-ads, body)
 www.pluralsightone.org##div[class="cookie-notification-wrapper"]:remove()
 www.skillshare.com##div[id="usercentrics-root"]:remove()
-||store.epicgames.com/epic-analytics-worker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.programiz.com##div[id="summer-sale-popup"]:remove()
+||store.epicgames.com/epic-analytics-worker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+store.epicgames.com##button[id="btn_age_continue"]:remove-attr(disabled)
+store.epicgames.com##+js(remove-attr, disabled, button[id="btn_age_continue"])
 ! remove() does not work on Brave's native adblocking
 outlook.live.com##a[href*="://windows.microsoft.com/outlook/ad-free-outlook"]:remove()
 outlook.live.com##img[src$="/resources/images/adbarmetrosprite.png"]:remove()
@@ -36805,9 +36799,40 @@ linuxtechlab.com##span[class*="adtester-container"]:remove()
 ||advice-ads.s3.amazonaws.com^*
 ||advertising-api-eu.amazon.com^*
 ||affiliationjs.s3.amazonaws.com^*
-||ads-api.twitter.com^*
 ||ads.reddit.com^*
+! The following four rules don't keep the profile page from being redirected if not logged in.
+!||api.twitter.com/1.1/onboarding/task.json?flow_name=login$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||api.x.com/1.1/onboarding/task.json?flow_name=login$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||abs.twimg.com/responsive-web/client-web/shared~bundle.AboutThisAd~bundle.NotMyAccount~bundle.MultiAccount~bundle.Articles~bundle.AudioSpacePeek~bundl.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||abs.twimg.com/responsive-web/client-web/shared~loader.DMDrawer~bundle.AccountAnalytics~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.BookmarkFolders~.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||static.ads-twitter.com/uwt.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||static.ads-twitter.com^*
+||ads-twitter.com^*
+||ads.twitter.com^*
+||ads.x.com^*
+||ads-api.twitter.com^*
+||ads-api.x.com^*
+||analytics.twitter.com^*
+||analytics.x.com^*
 ||advertising.twitter.com^*
+||advertising.x.com^*
+x.com,twitter.com##html,body:style(overflow: auto;)
+x.com,twitter.com##div[data-testid="BottomBar"]:remove()
+x.com,twitter.com##div[data-testid="mask"]:upward(1):remove()
+x.com,twitter.com##div[data-testid="mask"]:remove()
+!x.com,twitter.com##div[data-testid="mask"]:has(div[aria-labelledby="modal-header"][role="dialog"], input[id="tim_input"][name="ui_metrics"]):remove()
+x.com,twitter.com##div[aria-labelledby="modal-header"][role="dialog"]:has(input[id="tim_input"][name="ui_metrics"]):remove()
+x.com,twitter.com##div[class="css-175oi2r r-12vffkv"][style^="position: absolute; bottom: 0px; width: 100%;"]:remove()
+||twitter.com/i/js_inst?c_name=ui_metrics$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||x.com/i/js_inst?c_name=ui_metrics$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||twitter.com/i/csp_report$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||x.com/i/csp_report$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||twitter.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||x.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||twitter.com/push_service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||x.com/push_service_worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||syndication.twitter.com/i/jot/syndication$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||syndication.x.com/i/jot/syndication$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.windows7download.com##ins[data-ad-client]:upward(1):remove()
 www.windows7download.com##ins[data-ad-client]:remove()
 www.patreon.com##div[class="root__XMKIj bottomLeft__O0HMt"]:remove()
@@ -36984,7 +37009,6 @@ toolslick.com##div[id="tool-top-right-ad"]:remove()
 ||analytics-sg.tiktok.com^*
 ||ads-sg.tiktok.com^*
 ||analytics.pointdrive.linkedin.com^*
-||ads-twitter.com^*
 ||app.getsentry.com^*
 ||api.bugsnag.com^*
 ||app.bugsnag.com^*
@@ -46206,11 +46230,6 @@ www.sitepoint.com##script[id^="tapfiliate-"]:remove()
 www.sitepoint.com##script[id="gtm-script"]:remove()
 www.sitepoint.com##script[id="consent-script"]:remove()
 ||api-eu.mixpanel.com/track/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||twitter.com/i/js_inst?c_name=ui_metrics$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-! The following three rules don't keep the profile page from being redirected if not logged in.
-!||api.twitter.com/1.1/onboarding/task.json?flow_name=login$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||abs.twimg.com/responsive-web/client-web/shared~bundle.AboutThisAd~bundle.NotMyAccount~bundle.MultiAccount~bundle.Articles~bundle.AudioSpacePeek~bundl.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||abs.twimg.com/responsive-web/client-web/shared~loader.DMDrawer~bundle.AccountAnalytics~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.BookmarkFolders~.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||synchrobox.adswizz.com^*
 !||collect.rebelmouse.io/collector/v1/cwv$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||collect.rebelmouse.io^*
@@ -49854,6 +49873,9 @@ thehackernews.com##a[href="https://thehackernews.uk/freedom728"]:remove()
 thehackernews.com##a[href="https://thehackernews.uk/4BcJriH4"]:remove()
 thehackernews.com##a[rel*="sponsored"]:remove()
 thehackernews.com##div[class="pp-2 cf"]:has(center[class="cf"]):remove()
+thehackernews.com##div[class*="dog_two"]:has(center[class="cf"]):remove()
+thehackernews.com##div[id="rightbx"]:has(div[class*="sadfix"]):remove()
+thehackernews.com##div[class*="sadbar2"]:remove()
 thehackernews.com##section[class="pixpix cf"]:has(center[class="cf"]):remove()
 thehackernews.com##+js(aeld, load)
 thehackernews.com##+js(set-attr, img[class*="lazyload"][data-src], src, [data-src])
@@ -51754,12 +51776,6 @@ rapidcloud.cc##+js(remove-attr, disabled, button[id="downloadbtn"])
 rapidcloud.cc##div[class="download-btn mb-4"]:remove-attr(style)
 rapidcloud.cc##+js(remove-attr, style, div[class="download-btn mb-4"])
 rapidcloud.cc##button[id="downloadbtn"]:style(display: block !important;)
-twitter.com##html,body:style(overflow: auto;)
-twitter.com##div[data-testid="BottomBar"]:remove()
-twitter.com##div[data-testid="mask"]:upward(1):remove()
-twitter.com##div[data-testid="mask"]:remove()
-!twitter.com##div[data-testid="mask"]:has(div[aria-labelledby="modal-header"][role="dialog"], input[id="tim_input"][name="ui_metrics"]):remove()
-twitter.com##div[aria-labelledby="modal-header"][role="dialog"]:has(input[id="tim_input"][name="ui_metrics"]):remove()
 ||www.wozwmffiwpy.com^*
 ||www.wsfpwiih.com^*
 techcrunch.com##div[class*="ad-unit"]:remove()
@@ -53704,7 +53720,8 @@ www.irishmirror.ie##div[id^="div-gpt-ad-"]:remove()
 ||d31uxzurj3z4fa.cloudfront.net^$3p
 ||agen-assets.ftstatic.com/display/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cds.connatix.com/p/*/player.ads.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||10b00e9529.ce3ff5f2d4.com^*
+!||10b00e9529.ce3ff5f2d4.com^*
+||ce3ff5f2d4.com^*
 ||thermometerinconceivablewild.com^*
 ||okaydisciplemeek.com^*
 ||ak.naxadrug.com^*
@@ -53758,6 +53775,106 @@ embedv.net,listeamed.net##+js(trusted-replace-node-text, script, /debugger;/gm, 
 !embedv.net,listeamed.net##+js(noeval-if, /window.ADBLOCKER/)
 ! TODO: The following rule may also stop needed or beneficial intervals.
 !embedv.net,listeamed.net##+js(no-setInterval-if, /function\(\)/)
+electrek.co##div[class*="ad-container"]:remove()
+electrek.co##div[class="ad-disclaimer-container"]:remove()
+electrek.co##div[id^="div-gpt-ad-"]:remove()
+electrek.co##script[id^="jetpack-stats-js"]:remove()
+electrek.co##+js(set-constant, adSizes, {})
+electrek.co##+js(aopr, adSizes)
+electrek.co##+js(aopw, adSizes)
+electrek.co##+js(aopr, adsbygoogle)
+electrek.co##+js(aopw, adsbygoogle)
+||electrek.co/wp-content/themes/ninetofive/assets/js/adsbygoogle.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cordcuttersnews.com/wp-content/plugins/cookie-notice/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+cordcuttersnews.com##script[id^="cookie-notice-front-js"]:remove()
+cordcuttersnews.com##script[id^="google_gtagjs-js"]:remove()
+cordcuttersnews.com##link[id="cookie-notice-front-css"]:remove()
+cordcuttersnews.com##+js(acs, /freestar\.newAdSlots\(/)
+cordcuttersnews.com##div[data-freestar-ad]:remove()
+cordcuttersnews.com##div[id^="div-gpt-ad-hero"]:remove()
+www.linuxtoday.com##div[class*="wp-ads-"]:remove()
+www.linuxtoday.com##div[id="sticky-bottom"]:remove()
+www.linuxtoday.com##div[id^="wp-ads-"]:remove()
+www.linuxtoday.com##div[data-wp-ads-trackid]:remove()
+www.linuxtoday.com##div[data-wp-ads-trackbid]:remove()
+www.linuxtoday.com##script[id="wp-ads-tracking"]:remove()
+www.linuxtoday.com##+js(set-constant, window.advads_admin_bar_items, [])
+www.linuxtoday.com##+js(aopr, window.advads_admin_bar_items)
+www.linuxtoday.com##+js(aopw, window.advads_admin_bar_items)
+www.linuxtoday.com##+js(set-constant, advads_tracking_ads, {})
+www.linuxtoday.com##+js(aopr, advads_tracking_ads)
+www.linuxtoday.com##+js(aopw, advads_tracking_ads)
+www.linuxtoday.com##+js(set-constant, advads_tracking_urls, {})
+www.linuxtoday.com##+js(aopr, advads_tracking_urls)
+www.linuxtoday.com##+js(aopw, advads_tracking_urls)
+www.linuxtoday.com##+js(set-constant, advads_tracking_methods, {})
+www.linuxtoday.com##+js(aopr, advads_tracking_methods)
+www.linuxtoday.com##+js(aopw, advads_tracking_methods)
+www.linuxtoday.com##+js(set-constant, advads_tracking_parallel, {})
+www.linuxtoday.com##+js(aopr, advads_tracking_parallel)
+www.linuxtoday.com##+js(aopw, advads_tracking_parallel)
+www.linuxtoday.com##+js(set-constant, advads_tracking_linkbases, {})
+www.linuxtoday.com##+js(aopr, advads_tracking_linkbases)
+www.linuxtoday.com##+js(aopw, advads_tracking_linkbases)
+www.linuxtoday.com##+js(set-constant, advanced_ads_layer_settings, {})
+www.linuxtoday.com##+js(aopr, advanced_ads_layer_settings)
+www.linuxtoday.com##+js(aopw, advanced_ads_layer_settings)
+www.linuxtoday.com##+js(set-constant, advanced_ads_responsive, {})
+www.linuxtoday.com##+js(aopr, advanced_ads_responsive)
+www.linuxtoday.com##+js(aopw, advanced_ads_responsive)
+www.linuxtoday.com##+js(set-constant, advadsTracking, {})
+www.linuxtoday.com##+js(aopr, advadsTracking)
+www.linuxtoday.com##+js(aopw, advadsTracking)
+www.linuxtoday.com##+js(set-constant, advadsCfpInfo, {})
+www.linuxtoday.com##+js(aopr, advadsCfpInfo)
+www.linuxtoday.com##+js(aopw, advadsCfpInfo)
+www.linuxtoday.com##+js(set-constant, advadsCfpQueue, [])
+www.linuxtoday.com##+js(aopr, advadsCfpQueue)
+www.linuxtoday.com##+js(aopw, advadsCfpQueue)
+www.linuxtoday.com##+js(set-constant, advanced_ads_sticky_settings, {})
+www.linuxtoday.com##+js(aopr, advanced_ads_sticky_settings)
+www.linuxtoday.com##+js(aopw, advanced_ads_sticky_settings)
+www.linuxtoday.com##+js(set-constant, advads_items, {})
+www.linuxtoday.com##+js(aopr, advads_items)
+www.linuxtoday.com##+js(aopw, advads_items)
+www.linuxtoday.com##+js(set-constant, advadsCfpAd, noopFunc)
+www.linuxtoday.com##+js(aopr, advadsCfpAd)
+www.linuxtoday.com##+js(aopw, advadsCfpAd)
+www.linuxtoday.com##+js(set-constant, window.advanced_ads_ready, noopFunc)
+www.linuxtoday.com##+js(aopr, window.advanced_ads_ready)
+www.linuxtoday.com##+js(aopw, window.advanced_ads_ready)
+www.linuxtoday.com##+js(aopr, advadsProCfp)
+www.linuxtoday.com##+js(aopw, advadsProCfp)
+www.linuxtoday.com##+js(remove-node-text, script, /window\.googletag/gm)
+www.linuxtoday.com##+js(remove-node-text, script, /googletag\.pubads\(\)/gm)
+www.linuxtoday.com##script[id^="advanced-ads-"]:remove()
+www.linuxtoday.com##script[id^="advadsTracking"]:remove()
+www.linuxtoday.com##script[id^="advanced_ads_pro"]:remove()
+www.linuxtoday.com##script[id="wp-ads-ready"]:remove()
+!||www.linuxtoday.com/wp-content/plugins/advanced-ads-layer/public/assets/js/layer.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.linuxtoday.com/wp-content/plugins/advanced-ads-layer/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.linuxtoday.com/wp-content/plugins/advanced-ads-responsive/public/assets/js/script.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.linuxtoday.com/wp-content/plugins/advanced-ads-responsive/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.linuxtoday.com/wp-content/plugins/advanced-ads-sticky-ads/public/assets/js/sticky.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.linuxtoday.com/wp-content/plugins/advanced-ads-sticky-ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.linuxtoday.com/wp-content/plugins/advanced-ads-pro/assets/js/advanced-ads-pro.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.linuxtoday.com/wp-content/plugins/advanced-ads-pro/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.linuxtoday.com/wp-content/plugins/advanced-ads-tracking/public/assets/js/dist/delayed.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||www.linuxtoday.com/wp-content/plugins/advanced-ads-tracking/public/assets/js/dist/tracking.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.linuxtoday.com/wp-content/plugins/advanced-ads-tracking/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+pastelink.net##div[id="banner"][class^="ad"]:remove()
+pastelink.net##div[id="ad-container"]:remove()
+pastelink.net##div[class^="cookie-consent"]:remove()
+pastelink.net##div[id^="bsa-zone_"]:remove()
+pastelink.net##+js(aopr, bsa_optimize)
+pastelink.net##+js(aopw, bsa_optimize)
+pastelink.net##+js(aopr, window.optimize)
+pastelink.net##+js(aopw, window.optimize)
+www.ubuntumint.com##div[data-freestar-ad]:remove()
+www.ubuntumint.com##div[id="FreeStarVideoAdContainer"]:remove()
+www.ubuntumint.com##+js(aopr, freestar)
+www.ubuntumint.com##+js(aopw, freestar)
+www.ubuntumint.com##+js(remove-node-text, script, /freestar\.newAdSlots\(/gm)
 
 !Whitelisted
 ! The following bad filter is from AdGuard – Cookie Notices
