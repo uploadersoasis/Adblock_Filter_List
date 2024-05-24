@@ -345,13 +345,130 @@ sharedbit.net##.ilv:remove()
 !||loadr.exelator.com/load/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||loadr.exelator.com^*
 ||ds.bluecava.com^*
+! The following rule will remove all of the content from the page.
+!www.bikeradar.com##storefront-ad:remove()
+www.bikeradar.com##storefront-ad[class="header-ad"]:remove()
+www.bikeradar.com##storefront-element[type="ad"]:remove()
+www.bikeradar.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+www.bikeradar.com##img[class="loaded error"]:style(display: block !important;)
 !||www.gstatic.com/domainads/tracking/partner.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.gstatic.com/domainads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.waninkoko.info/track.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+d1lxz4vuik53pc.cloudfront.net##+js(abort-on-property-write, loggingManager)
+d1lxz4vuik53pc.cloudfront.net##+js(abort-on-property-read, loggingManager)
+luna.amazon.com##div[class^="ReactModal__Overlay"]:has(div[id="ftue_home_terms_and_conditions"]):remove()
+luna.amazon.com##div[data-portal-id="cookie-consent"]:remove()
+www.amazon.com###ape_OfferListing_ilm_All_iframe:remove()
+www.amazon.com##div[id="ad"]:has(div[class="creative-container"][aria-label="Sponsored Ad"]):remove()
+! TODO: The following three rules two do not work for some reason.
+!www.amazon.com##div[id="ad"]:has(div[aria-label^="Sponsored Ad"]):remove()
+!www.amazon.com##div[role="link"][aria-label^="Sponsored Ad"]:remove()
+!www.amazon.com##div[id="ad"]:has(div[role="link"]):remove()
+www.amazon.com##div[class*="_adLabelContainer_"]:remove()
+www.amazon.com##div[data-ad-feedback-label-id]:remove()
+www.amazon.com##div[data-ad-creative-list]:remove()
+www.amazon.com##div[data-ad-feedback-payload]:remove()
+www.amazon.com##div[data-ad-details]:remove()
+www.amazon.com##div[class*="_ad-feedback-"]:remove()
+www.amazon.com##div[class*="_ad-feedback-"]:remove()
+www.amazon.com##+js(abort-on-property-write, window.$ad)
+www.amazon.com##+js(abort-on-property-read, window.$ad)
+www.amazon.com##+js(abort-on-property-write, window.imageCreative)
+www.amazon.com##+js(abort-on-property-read, window.imageCreative)
+www.amazon.com##+js(set-constant, window.navHamburgerMetricLogger, noopFunc)
+www.amazon.com##+js(aeld, click, /window\.navHamburgerMetricLogger/) 
+www.amazon.com##+js(set-constant, adDivId, "")
+www.amazon.com##+js(set-constant, csaLatencyPlugin, noopFunc)
+www.amazon.com##+js(set-constant, updateViewableLatency, noopFunc)
+www.amazon.com##+js(set-constant, loggingManager, noopFunc)
+www.amazon.com##+js(abort-on-property-write, loggingManager)
+www.amazon.com##+js(abort-on-property-read, loggingManager)
+www.amazon.com##+js(abort-on-property-write, $ad)
+www.amazon.com##+js(abort-on-property-read, $ad)
+www.amazon.com##img[id="ape_impression"]:remove()
+www.amazon.com##img[id="ape_amzn_viewability"]:remove()
+www.amazon.com##img[id="ape_measurability"]:remove()
+www.amazon.com##img[id="ape_iab_viewability"]:remove()
+www.amazon.com##img[id="ape_groupm_viewability"]:remove()
+||aax-us-east-retail-direct.amazon.com/e/xsp/getAdj?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||aax-us-iad.amazon.com/e/xsp/imp?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||fls-na.amazon.com/1/batch/1/OE/$xhr,method=post
+||unagi-na.amazon.com/1/events/com.amazon.csm.nexusclient.prod$xhr,method=post
+||unagi.amazon.com/1/events/com.amazon.csm.csa.prod$xhr,method=post
+!||c.amazon-adsystem.com/bao-csm/forensics/a9-tq-forensics-incremental.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||c.amazon-adsystem.com/bao-csm/forensics/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.amazon.com/gp/product-ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.amazon.com/gp/yourstore/external/send-impressions.htm$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.amazon.com/gp/gateway-center-stage/ajax/record-impressions.htm$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.amazon.com/gp/deal/ajax/impressionTracker.html$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.amazon.com/empty.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.assoc-amazon.com/s/ads-common.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.assoc-amazon.com/s/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||atv-ps.amazon.com/cdp/usage/QualityCapped$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||atv-ps.amazon.com/cdp/usage/Clickstream?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||fls-na.amazon.com/1/prime-presentation-metrics/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||fls-na.amazon.com/1/action-impressions/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||m.media-amazon.com/images/G/01/csm/showads.v2.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||unagi.amazon.com/1/events/com.amazon.eel.SearchAutocompleteUIServiceMetrics.nexus$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||images-na.ssl-images-amazon.com/images/G/01/browser-scripts/site-wide-js-1.2.6-beacon/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||g-ecx.images-amazon.com/images/G/01/gno/beacon/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||images-na.ssl-images-amazon.com/images/G/01/advertising/dev/js/live/adSnippet.$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||z-ecx.images-amazon.com/images/G/01/browser-scripts/p13nlogger/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||advertising-api-eu.amazon.com^*
+||affiliationjs.s3.amazonaws.com^*
+||device-metrics-us.amazon.com^*
+||mads-eu.amazon.com^*
+! TODO: redirect the audioAdStarted to audioAdStopped instead of blocking it? audioAdStarted is never called if the source of the ad is blocked.
+!||*/api/audioAd$uritransform=/\/audioAd(Started|Error|Resumed|Paused)/\/audioAdStopped/,from=music.amazon.com,to=na.mesk.skill.music.a2z.com,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+/^https?:\/\/na\.mesk\.skill\.music\.a2z\.com\/api\/audioAd(Started|Error|Resumed|Paused)/$uritransform=/\/audioAd(Started|Error|Resumed|Paused)/\/audioAdStopped/,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||na.mesk.skill.music.a2z.com/api/audioAdStarted$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||na.mesk.skill.music.a2z.com/api/audioAdError$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||na.mesk.skill.music.a2z.com/api/audioAdResumed$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||na.mesk.skill.music.a2z.com/api/audioAdPaused$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||na.mesk.skill.music.a2z.com/api/audioAdStopped$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! TODO: The following rule just prevents Amazon from knowing that a disabled button was pressed?
+||na.mesk.skill.music.a2z.com/api/actionDenied$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||9edrkgf9qh.execute-api.us-west-2.amazonaws.com/default/MaestroLoggerV2$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! TODO: Does d8aqog0hzpkc8.cloudfront.net only host ads for Amazon music?
+||d8aqog0hzpkc8.cloudfront.net^$3p,image,domain=music.amazon.com
+! The following rule redirects the audio to a null file instead.
+||d8aqog0hzpkc8.cloudfront.net^$3p,media,redirect=noopmp3-0.1s,domain=music.amazon.com
+! The following two rules will remove buttons that lead to automatically purchasing a subscription
+music.amazon.com##div[class="detail-button-container"]:has(music-button:has-text(Try Amazon Music Unlimited)):remove()
+music.amazon.com##music-button[title="UPGRADE"][aria-label="UPGRADE"]:remove()
+! Enabling the next and previous buttons doesn't really help the free tier of Amazon Music as the button just displays a popup to purchase the premium subscription.
+music.amazon.com##music-button[id="nextButton"][class*="disabled"]:remove-class(disabled)
+music.amazon.com##+js(remove-class, disabled, #nextButton, stay)
+music.amazon.com##music-button[aria-label="Previous"][class*="disabled"]:remove-class(disabled)
+music.amazon.com##+js(remove-class, disabled, music-button[aria-label="Previous"][class*="disabled"], stay)
+music.amazon.com##music-button[id="transport-overlay-button"]:remove-attr(disabled)
+music.amazon.com##+js(remove-attr, disabled, #transport-overlay-button, stay)
+! userHash should be the {"level":"HD_MEMBER"} JSON so use the following format:
+music.amazon.com##+js(trusted-set-constant, userHash, {"value": {"level":"HD_MEMBER"}})
+! TODO: The values in the following four rules are either being overridden or are not being set although they appear to be set according to the logs.
+music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isRedhoodPlusMetricsEnabled", {"value": false})
+music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isAccentOutlineUpsellBadgeEnabled", {"value": false})
+music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isAnonymousFreeTierDialogEnabled", {"value": false})
+music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.weblabV2Enabled", {"value": true})
+! Sets these values in the in-line script instead.
+! TODO:  If using trailing comma's in the following rules, the comma's must be escaped in both the find AND replacement parameters.
+!        Do NOT use comma's since the script may reorder the items and the last one won't have a comma.
+music.amazon.com##+js(trusted-replace-node-text, script, /"isRedhoodPlusMetricsEnabled": true/gm, "isRedhoodPlusMetricsEnabled": false)
+music.amazon.com##+js(trusted-replace-node-text, script, /"isAnonymousFreeTierDialogEnabled": true/gm, "isAnonymousFreeTierDialogEnabled": false)
+music.amazon.com##+js(trusted-replace-node-text, script, /"isAccentOutlineUpsellBadgeEnabled": true/gm, "isAccentOutlineUpsellBadgeEnabled": false)
+music.amazon.com##+js(trusted-replace-node-text, script, /"weblabV2Enabled": false/gm, "weblabV2Enabled": true)
+music.amazon.com##+js(trusted-replace-node-text, script, /"isClientMetricsLambdaEnabled": true/gm, "isClientMetricsLambdaEnabled": false)
+! "AMF" is the free tier; "UNLIMITED_HD" is the paid tier.
+! Using the following rule to set the tier will prevent music from playing ("playback error" screen) if on the free tier, i.e. "AMF".
+! This one setting does change the shuffle button to a play button.
+! It also causes a music subscription to be started and charged if no free trial for the account.
+! the colon needs to be escaped in the following rules for some reason.
+!music.amazon.com##+js(trusted-replace-node-text, script, /"tier"\: "AMF"/gm, "tier": "UNLIMITED_HD")
+! Using the following rule to set the tier will prevent music from playing ("playback error" screen) if on the free tier, i.e. "AMF".
+!music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.tier, UNLIMITED_HD)
+! TODO: Finish and use one of the following rules to force the userHash value on an POST request?
+!music.amazon.com##+js(trusted-replace-outbound-text, , /\{"level":"FREE_MEMBER"\}/, {"level":"HD_MEMBER"})
+!music.amazon.com##+js(trusted-replace-outbound-text, , FREE_MEMBER, HD_MEMBER)
 ||bentoncourier.com/sites/default/files/Adams030711.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bentoncourier.com/sites/default/files/Bakers300x250Nov2012.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||bentoncourier.com/sites/default/files/Benton-Floral033111.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -682,8 +799,6 @@ www.shacknews.com/ads/blank.htm$document,subdocument,script,inline-script,font,i
 ||cgpeers.com/log.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||zpag.es/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||zpag.es/css/top_ad.css$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.assoc-amazon.com/s/ads-common.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.assoc-amazon.com/s/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ezinearticles.com/encrypt/blank.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads.turingts.com^*
 ||www.hellobar.com/hellobar*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -1454,7 +1569,6 @@ mediarouting.com/ads/landing/$document,subdocument,script,inline-script,font,inl
 ||n.pcads.ru^*
 ||pc.adonweb.ru^*
 ||st.pc.adonweb.ru^*
-||www.amazon.com/gp/gateway-center-stage/ajax/record-impressions.htm$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.zippytune.com/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||thebunsenburner.com/bottomads.htm$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||thebunsenburner.com/bottomads2.htm$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -1541,7 +1655,6 @@ mediarouting.com/ads/landing/$document,subdocument,script,inline-script,font,inl
 !||www.nbclosangeles.com/includes/ots_omniture_code.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.nbclosangeles.com/includes/ots_omniture_$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.nbclosangeles.com/includes/customOmnitureData.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||images-na.ssl-images-amazon.com/images/G/01/advertising/dev/js/live/adSnippet.$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||l2.visiblemeasures.com/log^*
 ||ads.rnmd.net^*
 ||locker.att.net/app/js/frameworks/webtrends/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -2336,7 +2449,6 @@ depositfiles.com###ads_z_frame:remove()
 ||www.zilliontoolkitusa.info^*
 !||dtym7iokkjlif.cloudfront.net/dough/1.0/shareaholic-analytics.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||*.cloudfront.net/dough/1.0/shareaholic-analytics.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.amazon.com/empty.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ads.ayads.co^*
 ||log.sitemeter.com^*
 ||scenelog.eu/cdn-cgi/l/chk_jschl$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -2572,7 +2684,6 @@ openfeint.openfeint.openfeint.ibsdl.apk.iandphone.net###fb813
 ||prosperent.com/affiliate/ad/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||prosperent.com/targeting/script^*
 ||prosperent.com/js/ad.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||z-ecx.images-amazon.com/images/G/01/browser-scripts/p13nlogger/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||imagec10.247realmedia.com/RealMedia/ads/Creatives/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||beacon.tracelytics.com^*
 ||j.theadsnet.com^*
@@ -3390,8 +3501,6 @@ photoshopdesigntutorials.com##.adsbygoogle:remove()
 ||adtgs.com/300x250/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tipsjagat.com/bnn/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||t.ad2387.com^*
-||atv-ps.amazon.com/cdp/usage/QualityCapped$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||atv-ps.amazon.com/cdp/usage/Clickstream?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||msn-pubnet.telemetryaudit.com/ts/*/blank.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||find.buzzuparticles.com/s.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||find.buzzuparticles.com^*
@@ -6376,7 +6485,6 @@ www.wired.com###prefooter > .flex-box.clearfix.site-container > .mob-order-2.fle
 ||arab-eng.org/e3lanat/Bannar_03.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||storage.googleapis.com/dfh/bnr003.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||storage.googleapis.com/dfh/9898.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.amazon.com/gp/deal/ajax/impressionTracker.html$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tracking.adfishmedia.com^*
 ||s.admtpmp124.com^*
 ||vm11-nl07.cityads.com^*
@@ -6596,7 +6704,6 @@ steffimariechen-1.deviantart.com###gmi-GPage > .gruser_top_slot > .top_wrapper >
 ||d.castplatform.com/api/mpup/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.media4searching.org^*
 ||www.place4traffic.org^*
-outlook.live.com###owaadbar:remove()
 ||trk.camptrkng.com^*
 ||strk.enlnks.com^*
 ||trk5zxc77.com^*
@@ -9315,8 +9422,6 @@ dropapk.com###mngez-wrapper > .mngez-container > .mngez-download1 > .mngez-downl
 ||letzonke.com^*
 ||tgcaptions.org/ad/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ox-d.mylikes.servedbyopenx.com^*
-||fls-na.amazon.com/1/prime-presentation-metrics/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||fls-na.amazon.com/1/action-impressions/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||engine.4chan-ads.org^*
 ||tracking.efreemobi.com^*
 ||rev.lanistaads.com^*
@@ -12391,7 +12496,6 @@ lenov.ru###MarketGid9333
 ||ijtozat.ru^*
 www.torrentfree.net##.well:nth-of-type(1)
 ||www.ipcounter.de/count_js.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||m.media-amazon.com/images/G/01/csm/showads.v2.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||d14qd3he45186l.cloudfront.net/ads-search32.html$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d14qd3he45186l.cloudfront.net/ads-search$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.skidrowcrack.com/adsense.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -17121,7 +17225,6 @@ download.cnet.com###mpu_top
 ||dh4q.amousinded.info^*
 deals.bestbuy.com##div[class="Ad_content"]:remove()
 deals.bestbuy.com##div[class="Ad_bottom"]:remove()
-www.amazon.com###ape_OfferListing_ilm_All_iframe:remove()
 thedroidguy.com###quads-ad6:remove()
 ||www.phonetransfer.org/wp-content/uploads/2018/10/spyzie-animation.gif$image
 ||predocontentdelivery.info^*
@@ -17327,7 +17430,6 @@ www.politico.com##div[class^="ad-slot"]:remove()
 ||mechangesee.club^*
 ||www.mechangesee.club^*
 uploadocean.com##div[id^="contentad"]:remove()
-outlook.live.com##._2mhQPCKFXGlBdoAPrGByBE:remove()
 ||ection.space^*
 ||www.ection.space^*
 !||pagead-googlehosted.l.google.com/safeframe/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -20359,7 +20461,6 @@ bjorn3d.com##div[id^="div-gpt-ad-"]
 thefpsreview.com##ins[class="adsbygoogle"]:remove()
 thefpsreview.com##div[class*="td-g-rec-id-custom_ad_"]:remove()
 www.xtube.com##.cnt > .removeAds:remove()
-outlook.live.com##._2qPmszDwBfYpF7PO9Mn3KN:remove()
 ||web.vortex.data.microsoft.com/collect/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mscom.demdex.net^*
 ||dc.ads.linkedin.com^*
@@ -24822,17 +24923,17 @@ myuploadedpremium.de##div[id="banner_ad"]:remove()
 ||spiteaside.com^*
 ||mwgol.com^*
 ||onepiece-api.de/ad_banner_4free.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-myuploadedpremium.de##div[id="babasbmsgx"]
+myuploadedpremium.de##div[id="babasbmsgx"]:remove()
 myuploadedpremium.de##ins[class="adsbygoogle"]:remove()
-myuploadedpremium.de##^script:has-text(banner_ad)
-myuploadedpremium.de##^script:has-text(atob('Lm1haW4tY29udGVudA=='))
+myuploadedpremium.de##^script:has-text(banner_ad):remove()
+myuploadedpremium.de##^script:has-text(atob('Lm1haW4tY29udGVudA==')):remove()
 ||tacklesuggestindoors.com^*
 ||hypermusk.com/dsp-stats/impression/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||socialbars-web2.com/sb/notifications/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||socialbars-web2.com^*
 !||web-bars.com/sb/notifications/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||web-bars.com^*
-myuploadedpremium.de##body > script:nth-child(22)
+myuploadedpremium.de##body > script:nth-child(22):remove()
 ||independentdespisedevolution.com^*
 ||pretencejailscore.com^*
 ||mypushz.com^*
@@ -24851,7 +24952,7 @@ myuploadedpremium.de##+js(abort-on-property-write, window.atob)
 ||fordlincolnbuyfordnow.mpeasylink.com^*
 !||js-cdn.dynatrace.com/jstag/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||js-cdn.dynatrace.com^*
-!||na.fps.ford.com/fps/api/personalization_1_8/get^*
+!||na.fps.ford.com/fps/api/personalization_1_8/get$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||na.fps.ford.com^*
 ||smetrics.ford.com^*
 ||ww2.mediamarketstream.com^*
@@ -24869,8 +24970,8 @@ rsload.net##a[href^="https://click.1k3web.net"]:remove()
 ||rsload.net/images5/dsramka.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||rsload.net/images5/2019-02-14-16-30-19.jpg$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||geelfone.xyz^*
-www.sadeempc.com##button:nth-of-type(2)
-www.sadeempc.com##button:nth-of-type(1)
+www.sadeempc.com##button:nth-of-type(2):remove()
+www.sadeempc.com##button:nth-of-type(1):remove()
 ||www.advinci.uno^*
 amistacx.com##div[id="catapult-cookie-bar"]:remove()
 ||kqaoe.ritishdeliv.top^*
@@ -24951,9 +25052,9 @@ www.binarytides.com##div[class^="display-ad-unit"]
 ||a.omappapi.com/app/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.apester.com/js/lib/adsbygoogle.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||a.omappapi.com/app/campaign-views/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-linuxize.com##div[class^="affiliate"]
-linuxize.com##span[class="ezoic-adpicker-ad"]
-!www.w10privacy.de##div[class="cc-content-parent"]
+linuxize.com##div[class^="affiliate"]:remove()
+linuxize.com##span[class="ezoic-adpicker-ad"]:remove()
+!www.w10privacy.de##div[class="cc-content-parent"]:remove()
 www.w10privacy.de##div[class^="cc-individual-cookie-settings"]:remove()
 flacplayer.ehubsoft.net##+js(abort-current-script, 'google_ad_client')
 flacplayer.ehubsoft.net##+js(set-constant, gadb, false)
@@ -24977,7 +25078,7 @@ www.quaddicted.com##div[aria-label="cookieconsent"]:remove()
 ||petchesa.net^*
 ||www.madratesforall.com^*
 ||manslaughteradministrationalarm.com^*
-www.emurom.net##div[id="altcontent"]
+www.emurom.net##div[id="altcontent"]:remove()
 www.gamersgate.com##div[aria-label="cookieconsent"]:remove()
 ||www.jyagyffnbysg.com^*
 ||jyagyffnbysg.com^*
@@ -26375,7 +26476,6 @@ nerdschalk.com###content_7_btf_wrapper:remove()
 nerdschalk.com###content_8_btf_wrapper:remove()
 nerdschalk.com###content_10_btf_wrapper:remove()
 nerdschalk.com###content_9_btf_wrapper:remove()
-outlook.live.com##aside[name="gdpr-banner"]:remove()
 ||nfl.com.ssl.d1.sc.omtrdc.net^*
 !www.nfl.com##div[class="adsbox pub300x250 pub300x250m pub728x90 text-ad textAd textad textads text-ads text-ad-links"]
 www.nfl.com##div[class*="pub300x"]:remove()
@@ -27069,9 +27169,44 @@ www.nulled-scripts.info##.tie-popup-container
 !||api.taboola.com/2.0/json/msn-msn-home/recommendations.notify-visible$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||api.taboola.com/2.0/json/msn-msn-home/recommendations.notify-$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||r.bing.com/rp/rms_pr.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||outlook.live.com/ows/beta/AdsTargetingOptOutController^*
-||outlook.live.com/search/api/v1/suggestions^*
-||arc.msn.com/v3/Delivery/Events/Impression^*
+||outlook.live.com/ows/beta/AdsTargetingOptOutController$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||outlook.live.com/search/api/v1/suggestions$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||outlook.live.com/ows/v1.0/OutlookOptions/AdsAggregate?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+outlook.live.com##div[data-animatable="true"]:has(div[class="Ogt7j"]):remove()
+outlook.live.com##div[class="Ogqyq"]:has(button[class="Soq5F"]:has-text(Upgrade to Microsoft 365 with)):remove()
+outlook.live.com##div[data-focuszone-id="FocusZone80"]:remove-attr(disableTextSelection)
+!outlook.live.com##span[class="z22gV"]:has-text(/It looks like you're using an ad blocker\. To maximize the space in your inbox, sign up for/i):remove()
+outlook.live.com##span[class="z22gV"]:remove()
+outlook.live.com##img[aria-label="Set your advertising preferences"]:upward(2):remove()
+outlook.live.com##img[aria-label="Set your advertising preferences"]:remove()
+outlook.live.com##div[class="GssDD"]:remove()
+outlook.live.com##+js(remove-class, disableTextSelection, body)
+outlook.live.com##div[class="full cJ3F3"]:remove()
+! remove() does not work on Brave's native adblocking
+outlook.live.com##a[href*="://windows.microsoft.com/outlook/ad-free-outlook"]:remove()
+outlook.live.com##img[src$="/resources/images/adbarmetrosprite.png"]:remove()
+! Brave does not have has-text(); -abp-contains() doesn't work either
+outlook.live.com##span:has-text(/It looks like you\'re using an ad blocker\./i):upward(3):remove()
+outlook.live.com##span:has-text(/It looks like you\'re using an ad blocker\./i):remove()
+!outlook.live.com##i[data-icon-name="Delete"]:has(div[class="_2Frh JMe1C"]):remove()
+outlook.live.com##div[class="_2Frh JMe1C"]:remove()
+outlook.live.com##div[class="Tovoi"]:upward(6):remove()
+!outlook.live.com##div[id="owaadbar0"]:remove()
+outlook.live.com##div[id^="owaadbar"]:upward(3):remove()
+outlook.live.com##div[id^="owaadbar"]:remove()
+outlook.live.com##div[aria-label="advertisement"]:remove()
+outlook.live.com##._2qPmszDwBfYpF7PO9Mn3KN:remove()
+outlook.live.com##._2mhQPCKFXGlBdoAPrGByBE:remove()
+outlook.live.com###owaadbar:remove()
+outlook.live.com##aside[name="gdpr-banner"]:remove()
+outlook.live.com##span[class="N3k7EN5vRGTrONWBPg250"]:remove()
+outlook.live.com##div[id="ReadingPaneContainerId"]:remove()
+outlook.live.com##div[class*="fbAdSubtitle"]:remove()
+outlook.live.com##div[class*="fbAdTitle"]:remove()
+outlook.live.com##div[class*="fbAdLink"]:remove()
+outlook.live.com##div[class*="fbAdBody"]:remove()
+outlook.live.com##div[class="full UsCOa"]:remove()
+||arc.msn.com/v3/Delivery/Events/Impression$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||arc.msn.com/v4/api/selection?placement=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||match.sharethrough.com/sync/v1?supply_id=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||match.sharethrough.com/universal/v1?supply_id=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -27097,22 +27232,22 @@ s0ft4pc.com##^script:has-text(DMCA)
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
 codingshiksha.com##script[data-ezscrex="false"]:remove()
 codingshiksha.com##style[id="admania-style-inline-css"]:remove()
-!codingshiksha.com##div[class^="admania-"]
-!codingshiksha.com##div[class="admania-sitecontainer"]
-codingshiksha.com##header[class^="admania-"]
-codingshiksha.com##div[class="admania_adblock_detector"]
-codingshiksha.com##div[class="admania_adb_enabledinner"]
-codingshiksha.com##div[class="admania_adb_enbtp"]
-codingshiksha.com##div[class="admania_adb_enbtm"]
-codingshiksha.com##span[class="ezoic-adpicker-ad"]
+!codingshiksha.com##div[class^="admania-"]:remove()
+!codingshiksha.com##div[class="admania-sitecontainer"]:remove()
+codingshiksha.com##header[class^="admania-"]:remove()
+codingshiksha.com##div[class="admania_adblock_detector"]:remove()
+codingshiksha.com##div[class="admania_adb_enabledinner"]:remove()
+codingshiksha.com##div[class="admania_adb_enbtp"]:remove()
+codingshiksha.com##div[class="admania_adb_enbtm"]:remove()
+codingshiksha.com##span[class="ezoic-adpicker-ad"]:remove()
 codingshiksha.com##div:style(visibility: visible !important;)
 codingshiksha.com##svg:style(overflow: scroll !important;)
-codingshiksha.com##div[id="himbzrqp-blanket"]
+codingshiksha.com##div[id="himbzrqp-blanket"]:remove()
 codingshiksha.com##span[class*="ezoic-ad"]:remove()
 codingshiksha.com##span[class*="adtester-container"]:remove()
-codingshiksha.com##div[class*="ezmob-footer"]
-codingshiksha.com##div[class*="ezo_ad"]
-codingshiksha.com##div[class="ezoic-adpicker-ad"]
+codingshiksha.com##div[class*="ezmob-footer"]:remove()
+codingshiksha.com##div[class*="ezo_ad"]:remove()
+codingshiksha.com##div[class="ezoic-adpicker-ad"]:remove()
 codingshiksha.com##+js(abort-on-property-read, __inScopeForCCPA)
 codingshiksha.com##+js(abort-on-property-write, __inScopeForCCPA)
 codingshiksha.com##+js(abort-on-property-read, __ez_dims)
@@ -27132,48 +27267,48 @@ codingshiksha.com##+js(set-constant, adUnitName, '')
 codingshiksha.com##+js(abort-on-property-read, ezouid)
 codingshiksha.com##+js(abort-on-property-write, ezouid)
 codingshiksha.com##+js(set-constant, ezouid, 0)
-codingshiksha.com##aside[class*="widget_admania_sticky_widgets"]
-codingshiksha.com##aside[class*="admania_sidebarsticky"]
-!codingshiksha.com##ins[class="adsbygoogle ezfound"]
-codingshiksha.com##ins[class^="adsbygoogle"]
+codingshiksha.com##aside[class*="widget_admania_sticky_widgets"]:remove()
+codingshiksha.com##aside[class*="admania_sidebarsticky"]:remove()
+!codingshiksha.com##ins[class="adsbygoogle ezfound"]:remove()
+codingshiksha.com##ins[class^="adsbygoogle"]:remove()
 livebook.manning.com##+js(set-constant, count, 1000)
 livebook.manning.com##*[id^="paywall-login"]:remove()
 livebook.manning.com##div[class*="inline-promo-container"]:remove()
 livebook.manning.com##div[class*="subscriptions-inline-banner"]:remove()
-devcenter.heroku.com##div[id="heroku-cookie-banner"]
-devcenter.heroku.com##div[class="heroku-cookie-banner"]
-www.theserverside.com##div[class="ad-wrapper ad-embedded"]
-www.theserverside.com##div[class="ad ad-mu"]
-!www.sciencealert.com##div[class="priad-1"]
-www.sciencealert.com##div[class^="priad"]
+devcenter.heroku.com##div[id="heroku-cookie-banner"]:remove()
+devcenter.heroku.com##div[class="heroku-cookie-banner"]:remove()
+www.theserverside.com##div[class="ad-wrapper ad-embedded"]:remove()
+www.theserverside.com##div[class="ad ad-mu"]:remove()
+!www.sciencealert.com##div[class="priad-1"]:remove()
+www.sciencealert.com##div[class^="priad"]:remove()
 ||www.medtargetsystem.com/beacon/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.sciencealert.com##^script:has-text(GoogleAnalytics)
-www.sciencealert.com##^script:has-text(adunit)
-www.sciencealert.com##div[class="trendmd-widget-cookie-notification"]
-www.sciencealert.com##div[class="priad-mobile-spacer"]
+www.sciencealert.com##^script:has-text(GoogleAnalytics):remove()
+www.sciencealert.com##^script:has-text(adunit):remove()
+www.sciencealert.com##div[class="trendmd-widget-cookie-notification"]:remove()
+www.sciencealert.com##div[class="priad-mobile-spacer"]:remove()
 ||www.profitabletrustednetwork.com^*
 ||furricity-nursubaru.xyz^*
 ||tracking.wpnetwork.eu^*
 ||www.americascardroom.eu/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www1.uploadship.com/dropapk.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.lifewire.com##div[class*="mntl-flexible-ad"]
-www.lifewire.com##div[class*="mntl-gpt-adunit"]
-!www.lifewire.com##div[class*="gpt"]
+www.lifewire.com##div[class*="mntl-flexible-ad"]:remove()
+www.lifewire.com##div[class*="mntl-gpt-adunit"]:remove()
+!www.lifewire.com##div[class*="gpt"]:remove()
 !The following blocks popup windows/tabs via javascript for specified website.
-rlslog.net##^script:has-text(window.open)
-store.substance3d.com##div[id="bannerCookie"]
-www.perlego.com##div[aria-label="cookie banner"]
+rlslog.net##^script:has-text(window.open):remove()
+store.substance3d.com##div[id="bannerCookie"]:remove()
+www.perlego.com##div[aria-label="cookie banner"]:remove()
 www.upload-4ever.com##+js(set-constant, remaining, 0)
 www.upload-4ever.com##+js(set-constant, timeout, 0)
 www.upload-4ever.com###downloadbtn:remove-attr(disabled)
 www.upload-4ever.com##button[id="downloadbtn"]:style(display:block !important;)
-ebookreader.best##div[id="cookieNotice"]
-bbooks.info##div[class*="cookiealert"]
+ebookreader.best##div[id="cookieNotice"]:remove()
+bbooks.info##div[class*="cookiealert"]:remove()
 ||stawhoph.com^*
 ||dan.coursebook.me/js/parking.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-paidshitforfree.com##^script:has-text(window.open)
-paidshitforfree.com##^script:has-text(JSON.parse)
-paidshitforfree.com##^script:has-text(atob)
+paidshitforfree.com##^script:has-text(window.open):remove()
+paidshitforfree.com##^script:has-text(JSON.parse):remove()
+paidshitforfree.com##^script:has-text(atob):remove()
 ||neegreez.com^*
 ||olouphoo.com^*
 ||paidshitforfree.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -27193,20 +27328,20 @@ paidshitforfree.com##^script:has-text(atob)
 ||popcashjs.b-cdn.net^*
 www.ovagames.com##+js(set-constant, adlinkfly_url, '')
 www.ovagames.com##+js(set-constant, adlinkfly_advert, 0)
-www.ovagames.com##^script:has-text(adlinkfly_)
-www.ovagames.com##^script:has-text(['length','charCodeAt','fromCharCode'])
+www.ovagames.com##^script:has-text(adlinkfly_):remove()
+www.ovagames.com##^script:has-text(['length','charCodeAt','fromCharCode']):remove()
 ||serve.adnetasia.com^*
 ||serve.bannertrack.net^*
 ||www.gadgethacks.com/ajax/keepalive/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cds.s5x3j6q5.hwcdn.net/* !prevents surverys from working
-sanfrancisco.cbslocal.com##div[class="cps-banner cps-container"]
-sanfrancisco.cbslocal.com##div[class="cps-content"]
+sanfrancisco.cbslocal.com##div[class="cps-banner cps-container"]:remove()
+sanfrancisco.cbslocal.com##div[class="cps-content"]:remove()
 ||d13pxqgp3ixdbh.cloudfront.net/assets/content_lockers/block.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 krembol.ga##+js(set-constant, logged_impression, true)
 ||yts.mx/y_is_ad.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ahedsply.com^*
 ||onesaimdew.com^*
-www.westerndigital.com##div[id="truste-consent-content"]
+www.westerndigital.com##div[id="truste-consent-content"]:remove()
 ||privatedownload258.club^*
 stfly.me##div[class="banner banner-336x280"]:remove()
 stfly.me###go-submit:remove-attr(disabled)
@@ -27401,14 +27536,13 @@ dailyuploads.net##button[id="downloadBtnClick"]:remove()
 dailyuploads.net##div[id="addLinkBtn"]:remove()
 dailyuploads.net##input[id="chkIsAdd"]:remove()
 dailyuploads.net##+js(remove-attr.js, checked, #chkIsAdd, stay)
-dailyuploads.net##^script:has-text(#downloadBtnClickOrignal)
-dailyuploads.net##^script:has-text(#downloadBtnClick)
-dailyuploads.net##^script:has-text(#addLinkBtn)
-!dailyuploads.net##^script:has-text(document.createElement('script'))
-dailyuploads.net##^script:has-text(document.createElement)
+dailyuploads.net##^script:has-text(#downloadBtnClickOrignal):remove()
+dailyuploads.net##^script:has-text(#downloadBtnClick):remove()
+dailyuploads.net##^script:has-text(#addLinkBtn):remove()
+!dailyuploads.net##^script:has-text(/document\.createElement\('script'\)/):remove()
+dailyuploads.net##^script:has-text(document.createElement):remove()
 dailyuploads.net##button[id="downloadBtnClickOrignal"]:style(display: block !important;)
 dailyuploads.net##button[class*="button-"][data-user="518"]:remove()
-outlook.live.com##span[class="N3k7EN5vRGTrONWBPg250"]:remove()
 zamunda.net##div[class^="gdprcookie"]:remove()
 ||advertere.zamunda.net^*
 ||o.actio.systems^*
@@ -28295,12 +28429,6 @@ linkspremium.download##div[aria-label="cookieconsent"]:remove()
 ! TODO:  ^script doesn't work with attributes since checked before DOM created?
 cbox.turkdown.com##script[src="advertisement.js"]:remove()
 cbox.turkdown.com##div[id="986qPMIlsmuWWBTCZXEeq"]:remove()
-bcvc.live##div[class*="adflex-"]:remove()
-bcvc.live##div[class="adflexbox"]:remove()
-bcvc.live##img[class*="adflex-b"]:remove()
-! TODO:  ^script doesn't work with attributes since checked before DOM created?
-!bcvc.live##script[src*="/punosy.best/"]:remove()
-!||punosy.best^*
 ||tny.so/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 tny.so##div[class="ad-banner"]:remove()
 !tny.so##iframe:remove()
@@ -33532,10 +33660,6 @@ www.ungeek.ph##div[id="div-gpt-ad-"]:remove()
 ||www.classcentral.com/webpack/analytics.$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.tlprxzujk.com^*
 ||tlprxzujk.com^*
-!outlook.live.com##div[id="owaadbar0"]:remove()
-outlook.live.com##div[id^="owaadbar"]:upward(3):remove()
-outlook.live.com##div[id^="owaadbar"]:remove()
-outlook.live.com##div[aria-label="advertisement"]:remove()
 ||res.cdn.office.net/owamail/*/resources/images/adbarmetrosprite.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||res.cdn.office.net/owamail/*/resources/images/nativeadicon_adsense.svg$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||res.cdn.office.net/owamail/*/resources/suiteux-shell/js/suiteux.shell.otellogging.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -33544,12 +33668,6 @@ outlook.live.com##div[aria-label="advertisement"]:remove()
 ||res.cdn.office.net/owamail/hashed-v1/scripts/owa.Analytics.m.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||js.monitor.azure.com/scripts/c/ms.shared.analytics.mectrl-3.gbl.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||js.monitor.azure.com/scripts/b/ai.2.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-outlook.live.com##div[class*="fbAdSubtitle"]:remove()
-outlook.live.com##div[class*="fbAdTitle"]:remove()
-outlook.live.com##div[class*="fbAdLink"]:remove()
-outlook.live.com##div[class*="fbAdBody"]:remove()
-outlook.live.com##div[class="full UsCOa"]:remove()
-||outlook.live.com/ows/v1.0/OutlookOptions/AdsAggregate?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||MDW-efz.ms-acdc.office.com/ows/v1.0/OutlookOptions/AdsAggregate?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||link4m.com/uploads/advertiser/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 link4m.com##a[href*="/ads-click/"]
@@ -34494,9 +34612,6 @@ shrinke.me##div[id="cookie-pop"]:remove()
 !shrinke.me##+js(nano-sib, function, *, 0.5)
 !||shrinke.me/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||xf1lenewma.com^*
-!||bcvc.xyz/prebid-ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||punosy.top^*
-||punosy.best^*
 ||cdn.unibots.in/headerbidding/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.jsdelivr.net/gh/unib0ts/unibots@latest/main/script/adScript.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.jsdelivr.net/gh/unib0ts/unibots@latest/main/script/adScriptTechmody.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -34580,10 +34695,6 @@ mobi2c.com###devozon-wait1:remove-attr(style)
 mobi2c.com##.content:remove-attr(style)
 mobi2c.com##div[id="devozon-wait1"]:style(display: none;)
 mobi2c.com##div[id="devozon-snp"]:style(display: block;)
-!bcvc.xyz##+js(acs, mtx_id)
-!bcvc.xyz##+js(aopr, mtx_id)
-!bcvc.xyz##+js(aopw, mtx_id)
-bcvc.xyz##+js(acs, bFzZsNLbns)
 ||jounaque.com^*
 ||log.ncaudienceexchange.com^*
 clk.asia##div[id="cookie-pop"]:remove()
@@ -36591,16 +36702,13 @@ www.codingem.com##span[class*="ezoic-ad"]:remove()
 www.codingem.com##span[class*="adtester-container"]:remove()
 ||track.mailerlite.com^*
 thispointer.com##ins[data-ad-client]:remove()
-thispointer.com##h2[class="widget-title"]:has-text(/Advertisements/i)
+thispointer.com##h2[class="widget-title"]:has-text(/Advertisements/i):remove()
 thispointer.com##+js(aopw, adsbygoogle )
 thispointer.com##+js(aopr, adsbygoogle )
 deadline.com##div[data-is-adhesion-ad]:remove()
 deadline.com##div[class*="rail-ads-"]:remove()
 deadline.com##div[class*="ad-text"]:remove()
 learn.pluralsight.com##div[class="cookie-notification-wrapper"]:remove()
-!outlook.live.com##i[data-icon-name="Delete"]:has(div[class="_2Frh JMe1C"]):remove()
-outlook.live.com##div[class="_2Frh JMe1C"]:remove()
-outlook.live.com##div[class="Tovoi"]:upward(6):remove()
 www.thefocus.news##div[data-ad-type]:remove()
 www.thefocus.news##iframe[src*="://pre.ads.justpremium.com/"]:remove()
 ||hereisthecity-d.openx.net^*
@@ -36635,12 +36743,6 @@ www.programiz.com##div[id="summer-sale-popup"]:remove()
 ||store.epicgames.com/epic-analytics-worker.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 store.epicgames.com##button[id="btn_age_continue"]:remove-attr(disabled)
 store.epicgames.com##+js(remove-attr, disabled, button[id="btn_age_continue"])
-! remove() does not work on Brave's native adblocking
-outlook.live.com##a[href*="://windows.microsoft.com/outlook/ad-free-outlook"]:remove()
-outlook.live.com##img[src$="/resources/images/adbarmetrosprite.png"]:remove()
-! Brave does not have has-text(); -abp-contains() doesn't work either
-outlook.live.com##span:has-text(/It looks like you\'re using an ad blocker./i):upward(3):remove()
-outlook.live.com##span:has-text(/It looks like you\'re using an ad blocker./i):remove()
 adblockplus.org##form[class="cookie cookieprompt"]:remove()
 adblockplus.org##div[id="cookiebar"]:remove()
 adblockplus.org##+js(remove-class, show-cookies-notice, body)
@@ -36727,13 +36829,6 @@ www.linuxcapable.com##div[id="top-article"]:remove()
 www.linuxcapable.com##div[class*="code-block-top-side-ads"]:remove()
 www.cpuid.com##div[class*="widget-advert"]:remove()
 www.cpuid.com##ins[data-ad-client]:remove()
-!outlook.live.com##span[class="z22gV"]:has-text(/It looks like you're using an ad blocker. To maximize the space in your inbox, sign up for/i):remove()
-outlook.live.com##span[class="z22gV"]:remove()
-outlook.live.com##img[aria-label="Set your advertising preferences"]:upward(2):remove()
-outlook.live.com##img[aria-label="Set your advertising preferences"]:remove()
-outlook.live.com##div[class="GssDD"]:remove()
-outlook.live.com##+js(remove-class, disableTextSelection, body)
-outlook.live.com##div[class="full cJ3F3"]:remove()
 www.ubackup.com##div[class="ensureCookie"]:remove()
 gparted.org##div[aria-label="cookieconsent"]:remove()
 ||download-msetup.org^*
@@ -36753,9 +36848,6 @@ www.how2shout.com##div[class="text-ads"]:remove()
 www.how2shout.com##div[class="adsbyvli"]:remove()
 www.how2shout.com##div[class*="box_ads_content_"]:remove()
 ||godpvqnszo.com^*
-fortune.com##+js(remove-class, paywallActive, div)
-fortune.com##+js(remove-class, paywall-selector, div)
-fortune.com##+js(remove-class, paywall, div)
 www.asrock.com##section[id="AcceptCookies"]:remove()
 !||turbobitnet1669361143305.delikatsov.com^*
 ||*.delikatsov.com^*
@@ -36797,8 +36889,6 @@ linuxtechlab.com##div[data-ad-slot]:remove()
 linuxtechlab.com##span[class*="ezoic-ad"]:remove()
 linuxtechlab.com##span[class*="adtester-container"]:remove()
 ||advice-ads.s3.amazonaws.com^*
-||advertising-api-eu.amazon.com^*
-||affiliationjs.s3.amazonaws.com^*
 ||ads.reddit.com^*
 ! The following four rules don't keep the profile page from being redirected if not logged in.
 !||api.twitter.com/1.1/onboarding/task.json?flow_name=login$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -41369,7 +41459,6 @@ android.gadgethacks.com##+js(acs, /gtag\(/)
 ||yoomoney.ru^*
 ||cdn.salamus1.lol/adpup/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ters-vod1.us-east-1.aiv-delivery.net/v1/ReportEvent?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||unagi.amazon.com/1/events/com.amazon.eel.SearchAutocompleteUIServiceMetrics.nexus$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 wooseotools.com##+js(set-constant, NWA50e, []) 
 wooseotools.com##+js(set-constant, _0xd7de50, []) 
 wooseotools.com##+js(set-constant, _0x319176, "") 
@@ -41639,13 +41728,11 @@ therokuchannel.roku.com##+js(aeld, contextmenu)
 ||lgad.cjpowercast.com.edgesuite.net^*
 ||lgsmartad.com^*
 ||ad.nettvservices.com^*
-||device-metrics-us.amazon.com^*
 ||log.internetat.tv^*
 ||hbbtv-track.redbutton.de^*
 ||adv.ettoday.net^*
 ||redbutton-adproxy-lb-prod.redbutton.de^*
 ! Amazon Fire TV
-||mads-eu.amazon.com^*
 ||mobileanalytics.us-east-1.amazonaws.com^*
 ||secure-eu.imrworldwide.com^*
 ||logs1409.xiti.com^*
@@ -41676,8 +41763,6 @@ an1.com##a[id="pre_download"]:remove-attr(onclick)
 an1.com##a[rel="sponsored nofollow"]:remove()
 an1.com##+js(no-setTimeout-if, /countdown/)
 ||ak.uncleffaan.com^*
-outlook.live.com##div[class="Ogqyq"]:has(button[class="Soq5F"]:has-text(Upgrade to Microsoft 365 with)):remove()
-outlook.live.com##div[data-focuszone-id="FocusZone80"]:remove-attr(disableTextSelection)
 www.tokplay.com.br##div[id="div_lgpd"]:remove()
 setsysteme.com##div[id="cm"]:remove()
 teratv.eitvcloud.com##div[id="div_lgpd"]:remove()
@@ -43217,7 +43302,18 @@ appoutlet.github.io##div[data-behaviour-link="#cookie-settings"]:remove()
 www.real.discount##+js(abort-on-property-write, adsbygoogle)
 www.real.discount##+js(abort-on-property-read, adsbygoogle)
 www.real.discount##div[class="card"]:remove()
-www.lightreading.com##div[class*="Ad_pos_300_"]:remove()
+www.lightreading.com##div[class*="Ad_pos_"]:remove()
+www.lightreading.com##div[class^="Ad "]:remove()
+www.lightreading.com##div[class*="ArticleBase-AdTop"]:remove()
+www.lightreading.com##div[class*="adsbox"]:remove()
+www.lightreading.com##div[class*="doubleclick"]:remove()
+www.lightreading.com##div[class*="ad-placement"]:remove()
+www.lightreading.com##div[class*="carbon-ads"]:remove()
+www.lightreading.com##+js(set-constant, window.NREUM, {})
+www.lightreading.com##+js(abort-on-property-write, window.NREUM)
+www.lightreading.com##+js(abort-on-property-read, window.NREUM)
+www.lightreading.com##+js(acs, /OptanonWrapper\(\)/)
+www.lightreading.com##+js(acs, /googletag\.pubads\(\)/)
 ||clouddecrease.com^*
 play.geforcenow.com##gfn-oobe:remove()
 play.geforcenow.com##div[id^="cdk-overlay-"][class*="dialogWelcome"]:remove()
@@ -43332,7 +43428,6 @@ www.ionos.com##div[id="cookieinfo-container"]:remove()
 !||hb.yellowblue.io/hb-multi$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hb.yellowblue.io^*
 ||i.liadm.com^*
-outlook.live.com##div[data-animatable="true"]:has(div[class="Ogt7j"]):remove()
 !||carrick-ui.advoncommerce.com/gw/api/track/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||carrick-ui.advoncommerce.com^*
 www.xda-developers.com##div[class*="honor-spon-banner"]:remove()
@@ -45090,6 +45185,7 @@ www.akamai.com##div[id="onetrust-consent-sdk"]:remove()
 ||www.overclock.net/js/vendor/intentiq/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.overclock.net##li[data-notice-id]:has-text(Enjoy ad-free browsing with Overclock.net Plus):remove()
 www.mechabreak.com##div[class*="index-cookie-"]:remove()
+||www.imdb.com/ads/idsync?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.imdb.com/video/imdb/vi3941640473/metrics_480p_flash$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.imdb.com/video/imdb/vi3941640473/metrics$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.imdb.com##.ad_fadein:remove()
@@ -46376,8 +46472,6 @@ easyupload.io##iframe[id="rufous-sandbox"]:remove()
 !||p333175.clksite.com^*
 ||p*.clksite.com^*
 ||knoherpo.xyz^*
-luna.amazon.com##div[class^="ReactModal__Overlay"]:has(div[id="ftue_home_terms_and_conditions"]):remove()
-luna.amazon.com##div[data-portal-id="cookie-consent"]:remove()
 ||camp.inc.com/ash.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mansueto.map.fastly.net/ash.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mansueto.map.fastly.net/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -49925,12 +50019,14 @@ methstreams.com##+js(saa, marginheight, 0, iframe[src^="https://nbastreamswatch.
 ||linkvertise.net/api/v1/redirect/link/*/countdown_impression$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||linkvertise.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||linkvertise.com/assets/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||linkvertise.com/assets/external/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !linkvertise.com,linkvertise.net##span[id="cookieconsent:desc"]:remove()
 linkvertise.com,linkvertise.net##div[aria-label="cookieconsent"]:remove()
 ! edit the script in the following rule to prevent adblocking
 !||linkvertise.com/main-es2015.f453cfc680cd904a73c0.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 linkvertise.com,linkvertise.net##lv-msnnewsfeed:remove()
 linkvertise.com,linkvertise.net##.cc-window:remove()
+linkvertise.com##div[_ngcontent-iph-c180][class="more-component__container--item ng-star-inserted"]:has(span[_ngcontent-iph-c36][class="lv-chip__text"]:has-text(Advertisement)):remove()
 linkvertise.com,linkvertise.net##div[class^="ad-dp"]:remove()
 linkvertise.com,linkvertise.net##div[id="headerTopAd"]:remove()
 linkvertise.com,linkvertise.net##div[id="advertise-block"]:remove()
@@ -49943,6 +50039,7 @@ linkvertise.com,linkvertise.net##^script:has-text(/checkForAdBlock/i):remove()
 !linkvertise.com,linkvertise.net##^script:has-text(/adsense/i):remove()
 ! +js(json-prune, <list of space-separated properties to remove>, <list of space-separated properties which must be all present for the pruning to occur>)
 linkvertise.com,linkvertise.net##+js(json-prune, data.meta.require_addon data.meta.require_captcha data.meta.require_notifications data.meta.require_og_ads data.meta.require_video data.meta.require_web)
+linkvertise.com,linkvertise.net##+js(set-constant, isAdBlockActive, false, stay)
 linkvertise.com,linkvertise.net##+js(set-constant, isAdBlockActive, false, stay)
 linkvertise.com,linkvertise.net##+js(aopr, isAdBlockActive)
 linkvertise.com,linkvertise.net##+js(aopw, isAdBlockActive)
@@ -53233,57 +53330,6 @@ filefox.cc##div[id="generate_dl"]:style(display: block !important;)
 ||errolandtessa.com^*
 !||tq.otbackstage2.online^*
 ||otbackstage2.online^*
-! TODO: redirect the audioAdStarted to audioAdStopped instead of blocking it? audioAdStarted is never called if the source of the ad is blocked.
-!||*/api/audioAd$uritransform=/\/audioAd(Started|Error|Resumed|Paused)/\/audioAdStopped/,from=music.amazon.com,to=na.mesk.skill.music.a2z.com,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-/^https?:\/\/na\.mesk\.skill\.music\.a2z\.com\/api\/audioAd(Started|Error|Resumed|Paused)/$uritransform=/\/audioAd(Started|Error|Resumed|Paused)/\/audioAdStopped/,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||na.mesk.skill.music.a2z.com/api/audioAdStarted$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||na.mesk.skill.music.a2z.com/api/audioAdError$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||na.mesk.skill.music.a2z.com/api/audioAdResumed$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||na.mesk.skill.music.a2z.com/api/audioAdPaused$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||na.mesk.skill.music.a2z.com/api/audioAdStopped$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-! TODO: The following rule just prevents Amazon from knowing that a disabled button was pressed?
-||na.mesk.skill.music.a2z.com/api/actionDenied$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||9edrkgf9qh.execute-api.us-west-2.amazonaws.com/default/MaestroLoggerV2$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-! TODO: Does d8aqog0hzpkc8.cloudfront.net only host ads for Amazon music?
-||d8aqog0hzpkc8.cloudfront.net^$3p,image,domain=music.amazon.com
-! The following rule redirects the audio to a null file instead.
-||d8aqog0hzpkc8.cloudfront.net^$3p,media,redirect=noopmp3-0.1s,domain=music.amazon.com
-! The following two rules will remove buttons that lead to automatically purchasing a subscription
-music.amazon.com##div[class="detail-button-container"]:has(music-button:has-text(Try Amazon Music Unlimited)):remove()
-music.amazon.com##music-button[title="UPGRADE"][aria-label="UPGRADE"]:remove()
-! Enabling the next and previous buttons doesn't really help the free tier of Amazon Music as the button just displays a popup to purchase the premium subscription.
-music.amazon.com##music-button[id="nextButton"][class*="disabled"]:remove-class(disabled)
-music.amazon.com##+js(remove-class, disabled, #nextButton, stay)
-music.amazon.com##music-button[aria-label="Previous"][class*="disabled"]:remove-class(disabled)
-music.amazon.com##+js(remove-class, disabled, music-button[aria-label="Previous"][class*="disabled"], stay)
-music.amazon.com##music-button[id="transport-overlay-button"]:remove-attr(disabled)
-music.amazon.com##+js(remove-attr, disabled, #transport-overlay-button, stay)
-! userHash should be the {"level":"HD_MEMBER"} JSON so use the following format:
-music.amazon.com##+js(trusted-set-constant, userHash, {"value": {"level":"HD_MEMBER"}})
-! TODO: The values in the following four rules are either being overridden or are not being set although they appear to be set according to the logs.
-music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isRedhoodPlusMetricsEnabled", {"value": false})
-music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isAccentOutlineUpsellBadgeEnabled", {"value": false})
-music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.isAnonymousFreeTierDialogEnabled", {"value": false})
-music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.weblabV2Enabled", {"value": true})
-! Sets these values in the in-line script instead.
-! TODO:  If using trailing comma's in the following rules, the comma's must be escaped in both the find AND replacement parameters.
-!        Do NOT use comma's since the script may reorder the items and the last one won't have a comma.
-music.amazon.com##+js(trusted-replace-node-text, script, /"isRedhoodPlusMetricsEnabled": true/gm, "isRedhoodPlusMetricsEnabled": false)
-music.amazon.com##+js(trusted-replace-node-text, script, /"isAnonymousFreeTierDialogEnabled": true/gm, "isAnonymousFreeTierDialogEnabled": false)
-music.amazon.com##+js(trusted-replace-node-text, script, /"isAccentOutlineUpsellBadgeEnabled": true/gm, "isAccentOutlineUpsellBadgeEnabled": false)
-music.amazon.com##+js(trusted-replace-node-text, script, /"weblabV2Enabled": false/gm, "weblabV2Enabled": true)
-music.amazon.com##+js(trusted-replace-node-text, script, /"isClientMetricsLambdaEnabled": true/gm, "isClientMetricsLambdaEnabled": false)
-! "AMF" is the free tier; "UNLIMITED_HD" is the paid tier.
-! Using the following rule to set the tier will prevent music from playing ("playback error" screen) if on the free tier, i.e. "AMF".
-! This one setting does change the shuffle button to a play button.
-! It also causes a music subscription to be started and charged if no free trial for the account.
-! the colon needs to be escaped in the following rules for some reason.
-!music.amazon.com##+js(trusted-replace-node-text, script, /"tier"\: "AMF"/gm, "tier": "UNLIMITED_HD")
-! Using the following rule to set the tier will prevent music from playing ("playback error" screen) if on the free tier, i.e. "AMF".
-!music.amazon.com##+js(trusted-set-constant, window.amznMusic.appConfig.tier, UNLIMITED_HD)
-! TODO: Finish and use one of the following rules to force the userHash value on an POST request?
-!music.amazon.com##+js(trusted-replace-outbound-text, , /\{"level":"FREE_MEMBER"\}/, {"level":"HD_MEMBER"})
-!music.amazon.com##+js(trusted-replace-outbound-text, , FREE_MEMBER, HD_MEMBER)
 !||global.telemetry.insights.video.a2z.com/Bootstrap/AV20180601
 ||global.telemetry.insights.video.a2z.com^*
 ! The following rule blocks Spotify audio ads.
@@ -53875,6 +53921,153 @@ www.ubuntumint.com##div[id="FreeStarVideoAdContainer"]:remove()
 www.ubuntumint.com##+js(aopr, freestar)
 www.ubuntumint.com##+js(aopw, freestar)
 www.ubuntumint.com##+js(remove-node-text, script, /freestar\.newAdSlots\(/gm)
+! The following three domains are used by bcvc.ink/bcvc.xyz/bcvc.live so do nto block them.
+!||pnsqsv.com^*
+!||punosy.top^*
+!||punosy.best^*
+!bcvc.ink,bcvc.xyz,bcvc.live##script[src*="/punosy.best/"]:remove()
+!bcvc.ink,bcvc.xyz,bcvc.live##+js(acs, mtx_id)
+!bcvc.ink,bcvc.xyz,bcvc.live##+js(aopr, mtx_id)
+!bcvc.ink,bcvc.xyz,bcvc.live##+js(aopw, mtx_id)
+!||bcvc.xyz/prebid-ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||bcvc.ink/prebid-ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||bcvc.ink/dist/js/po_v9.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! TODO: Use the following rule instead of wholesale blocking https://bcvc.ink/dist/js/po_v9.js?
+bcvc.ink,bcvc.xyz,bcvc.live##+js(set-constant, ad_url, "")
+bcvc.ink,bcvc.xyz,bcvc.live##+js(set-constant, _0x20834c, "")
+!||bcvc.ink/dist/js/atag.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! TODO: Use the following three rules instead of wholesale blocking https://bcvc.ink/dist/js/atag.js?
+bcvc.ink,bcvc.xyz,bcvc.live##+js(set-constant, adcashMacros, {})
+bcvc.ink,bcvc.xyz,bcvc.live##+js(set-constant, runAdblock, noopFunc)
+bcvc.ink,bcvc.xyz,bcvc.live##+js(set-constant, CTABPu, noopFunc)
+bcvc.ink,bcvc.xyz,bcvc.live##+js(set-constant, AdscoreInit, noopFunc)
+bcvc.ink,bcvc.xyz,bcvc.live##+js(set-constant, ImHuman, true)
+bcvc.ink,bcvc.xyz,bcvc.live##+js(set-constant, counter, 0)
+bcvc.ink,bcvc.xyz,bcvc.live##div[id="bvcontainerx"]:remove()
+bcvc.ink,bcvc.xyz,bcvc.live##+js(remove-node-text, script, /prebid-ads\.js/gm)
+bcvc.ink,bcvc.xyz,bcvc.live##div[class*="adflex-"]:remove()
+bcvc.ink,bcvc.xyz,bcvc.live##div[class="adflexbox"]:remove()
+bcvc.ink,bcvc.xyz,bcvc.live##img[class*="adflex-b"]:remove()
+||linkgo.tech/dist/js/m.min.js$replace=/let counter=5/let counter=0/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||workupload.com/file/$replace=/<style>\.download\{display\:none;\}<\/style>//gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rule is not necessary if the previous rule to remove the style definition works.
+workupload.com##*[class*="download"]:style(display: block !important;)
+workupload.com##span[class="ad-label"]:remove()
+workupload.com##div[id^="div-gpt-ad-"]:remove()
+workupload.com##div[class*="adBottom"]:remove()
+workupload.com##iframe[name="googlefcPresent"]:remove()
+workupload.com##+js(signalGooglefcPresent, noopFunc)
+workupload.com##+js(acs, /signalGooglefcPresent\(\)/)
+workupload.com##+js(remove-node-text, script, /window\.googletag/gm)
+workupload.com##+js(remove-node-text, script, /_paq\.push\(\[/gm)
+workupload.com##+js(acs, /_paq\.push\(/)
+!||t.workupload.com/matomo.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||t.workupload.com/matomo.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||t.workupload.com^*
+www.wsbtv.com##script[id="ads-targetting"]:remove()
+www.wsbtv.com##script[id="prebidScript"]:remove()
+www.wsbtv.com##script[id="gtmScript"]:remove()
+www.wsbtv.com##script[id="amzApstag"]:remove()
+! The following rule removes the entire web page.
+!www.wsbtv.com##div[class^="arcad_feature"]:remove()
+www.wsbtv.com##div[class*="arcad_feature_1X1ads"]:remove()
+www.wsbtv.com##div[class^="arcad ad-"]:remove()
+www.wsbtv.com##div[class="arcad_container"]:remove()
+www.wsbtv.com##iframe[id="omid_v1_present"]:remove()
+www.wsbtv.com##iframe[id="rufous-sandbox"]:remove()
+www.wsbtv.com##+js(remove-node-text, script, /window\.arcAdBids/gm)
+www.wsbtv.com##+js(set-constant, window.arcAdBids, {})
+www.wsbtv.com##+js(aopr, window.arcAdBids)
+www.wsbtv.com##+js(aopw, window.arcAdBids)
+||www.wsbtv.com/pf/resources/js/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+fortune.com##+js(remove-class, paywallActive, div)
+fortune.com##+js(remove-class, paywall-selector, div)
+fortune.com##+js(remove-class, paywall, div)
+fortune.com##iframe[title="fortune-gtm"]:remove()
+fortune.com##script[id="gtm"]:remove()
+fortune.com##div[class="sc-cff259a2-0 blUfXQ"]:has(div[id="Leaderboard0"]):remove()
+fortune.com##div[class="sc-43b83f9c-7 dEaCrX own"]:has(div[class="sc-6815f0ad-0 gMhYwB"]):remove()
+www.mtbr.com##+js(aopr, primis)
+www.mtbr.com##+js(aopw, primis)
+www.mtbr.com##div[id^="PrimisAcceptable"]:remove()
+www.mtbr.com##div[class*="california-banner-ad-container"]:remove()
+www.mtbr.com##div[class*="california-ad"]:remove()
+www.mtbr.com##div[class*="california-thread-ad"]:remove()
+www.mtbr.com##div[class*="california-sticky-footer-ad"]:remove()
+www.mtbr.com##div[class*="primis-wrapper"]:remove()
+www.mtbr.com##div[qid="thread-native-ad"]:remove()
+www.mtbr.com##div[id^="desktop-adhesion-ad"]:remove()
+www.mtbr.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+www.mtbr.com##+js(set-constant, window.adConfig, {})
+www.mtbr.com##+js(set-constant, window.adsJSON, {})
+www.mtbr.com##+js(aopr, window.adConfig)
+www.mtbr.com##+js(aopw, window.adConfig)
+www.mtbr.com##+js(aopr, window.adsJSON)
+www.mtbr.com##+js(aopw, window.adsJSON)
+www.mtbr.com##+js(aopr, adsJSON.pageLevelKVTargeting.revenueExp)
+www.mtbr.com##+js(aopw, adsJSON.pageLevelKVTargeting.revenueExp)
+!www.mtbr.com##+js(remove-node-text, script, /adsJSON\./gm)
+!www.mtbr.com##+js(remove-node-text, script, /window\.adsJSON/gm)
+www.mtbr.com##+js(remove-node-text, script, /adsJSON/gm)
+||www.mtbr.com/js/california/dist/ad_stack_hometalk.ts.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mtbr.com/js/california/dist/desktop-adhesion-close.ts.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mtbr.com/js/california/dist/header-gtm.ts.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mtbr.com/js/california/dist/marketplace-gtm.ts.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mtbr.com/js/california/dist/scroll-analytic.ts.*.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+velo.outsideonline.com##div[class*="-ad--prestitial"]:remove()
+velo.outsideonline.com##div[class*="js-ad"]:remove()
+velo.outsideonline.com##script[id="js_opt_id"]:remove()
+velo.outsideonline.com##script[id="js_pom_piano_article_prep"]:remove()
+velo.outsideonline.com##script[id="js_gpt_ad_vars"]:remove()
+velo.outsideonline.com##script[id="js_analytics_vars"]:remove()
+velo.outsideonline.com##script[id="js_gtm_id"]:remove()
+velo.outsideonline.com##script[id="js_jw_id"]:remove()
+velo.outsideonline.com##script[id="js_ad_tag"]:remove()
+velo.outsideonline.com##script[id="js_ad_mid_tag"]:remove()
+velo.outsideonline.com##style[id="prestitial-style"]:remove()
+velo.outsideonline.com##+js(aopr, ad_tag)
+velo.outsideonline.com##+js(aopw, ad_tag)
+velo.outsideonline.com##+js(aopr, primis)
+velo.outsideonline.com##+js(aopw, primis)
+velo.outsideonline.com##+js(aopr, gpt_ad_vars)
+velo.outsideonline.com##+js(aopw, gpt_ad_vars)
+velo.outsideonline.com##+js(aopr, analytics_vars)
+velo.outsideonline.com##+js(aopw, analytics_vars)
+velo.outsideonline.com##+js(aopr, ad_mid_tag)
+velo.outsideonline.com##+js(aopw, ad_mid_tag)
+www.bikeforums.net##div[class^="ad-placeholder-"]:remove()
+www.bikeforums.net##div[id^="gpt-adslot-"]:remove()
+www.bikeforums.net##+js(set-constant, initAdDisplay, noopFunc)
+singletrackworld.com##div[id^="ez-video-ad-container"]:remove()
+singletrackworld.com##div[id="ezmobfooter"]:remove()
+singletrackworld.com##link[id^="wpadverts-"]:remove()
+singletrackworld.com##span[id^="div-gpt-ad-"]:remove()
+singletrackworld.com##span[id^="ezoic-pub-ad-"]:remove()
+singletrackworld.com##script[id="donot-sell-form-js"]:remove()
+singletrackworld.com##script[id^="wpadverts-"]:remove()
+singletrackworld.com##+js(set-constant, productEzoicAds, noopFunc)
+singletrackworld.com##+js(acs, /productEzoicAds\(/)
+singletrackworld.com##+js(aopr, window.google_reactive_ads_global_state)
+singletrackworld.com##+js(aopw, window.google_reactive_ads_global_state)
+singletrackworld.com##+js(remove-node-text, script, /productEzoicAds\(/gm)
+singletrackworld.com##+js(aopr, ez_ad_units)
+singletrackworld.com##+js(aopw, ez_ad_units)
+singletrackworld.com##+js(remove-node-text, script, /ez_ad_units/gm)
+||singletrackworld.com/hb/uid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||singletrackworld.com/wp-content/plugins/wpadverts-mal/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||singletrackworld.com/wp-content/plugins/wpadverts/assets/js/search-places.js?ver=1.6.0
+||singletrackworld.com/wp-content/plugins/gdpr-framework/assets/js/block-list-and-search.js?ver=2.0.0
+www.independent.co.uk##div[data-ad-unit-path]:remove()
+www.independent.co.uk##div[id="top-banner-wrapper"]:remove()
+www.independent.co.uk##div[id^="taboola-mid-article-thumbnails-"]:remove()
+www.independent.co.uk##div[id="gallery_banner_adIndex"]:remove()
+www.independent.co.uk##div[id="gallery_mpu_sb_adIndex"]:remove()
+www.independent.co.uk##script[analytics-data]:remove()
+www.independent.co.uk##+js(set-constant, JSGlobals.adTargeting, false, complete)
+www.independent.co.uk##+js(set-constant, updateComscore, noopFunc)
+www.independent.co.uk##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+||cmpv2.independent.co.uk^*
+||pub.pixels.ai/wrap-independent-no-prebid-lib.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 
 !Whitelisted
 ! The following bad filter is from AdGuard – Cookie Notices
