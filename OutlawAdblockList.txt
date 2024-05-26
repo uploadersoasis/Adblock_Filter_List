@@ -1635,8 +1635,6 @@ mediarouting.com/ads/landing/$document,subdocument,script,inline-script,font,inl
 ||beap.adx.yahoo.com^*
 ||l6.yimg.com/av/moneyball/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||u2sb.interclick.com/beacon.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||news.yahoo.com/__perf_log_only/b.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||news.yahoo.com/__perf/b.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ad.yieldmanager.com/get-user-id^*
 ||ad.yieldmanager.com/csync^*
 ||ads.teamcoco.com^*
@@ -4012,8 +4010,6 @@ www.theguardian.com##+js(trusted-replace-node-text, script, /"confiantAdVerifica
 ||www.sheknows.com/js/siteCatalyst.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||beap.adss.yahoo.com/mbcsc$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||beap.adss.yahoo.com^*
-!||news.yahoo.com/__perf_log_only/freshness.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||news.yahoo.com/__perf_log_only/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdnk.interclick.com/beacon.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||secure.footprint.net/yieldmanager/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||highspeedtesting.com/adserver/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -27200,12 +27196,13 @@ outlook.live.com##._2mhQPCKFXGlBdoAPrGByBE:remove()
 outlook.live.com###owaadbar:remove()
 outlook.live.com##aside[name="gdpr-banner"]:remove()
 outlook.live.com##span[class="N3k7EN5vRGTrONWBPg250"]:remove()
-outlook.live.com##div[id="ReadingPaneContainerId"]:remove()
 outlook.live.com##div[class*="fbAdSubtitle"]:remove()
 outlook.live.com##div[class*="fbAdTitle"]:remove()
 outlook.live.com##div[class*="fbAdLink"]:remove()
 outlook.live.com##div[class*="fbAdBody"]:remove()
 outlook.live.com##div[class="full UsCOa"]:remove()
+! The following rule removes the container for reading opened email so do NOT use it.
+!outlook.live.com##div[id="ReadingPaneContainerId"]:remove()
 ||arc.msn.com/v3/Delivery/Events/Impression$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||arc.msn.com/v4/api/selection?placement=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||match.sharethrough.com/sync/v1?supply_id=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -29686,7 +29683,6 @@ xdarom.com##+js(aopw, mdp_deblocker)
 xdarom.com##+js(aopr, adsbygoogle)
 xdarom.com##+js(aopw, adsbygoogle)
 ||s.yimg.com/nn/lib/metro/g/myy/advertisement_$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||news.yahoo.com/_td_api/beacon/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||edgecast-vod.yimg.com/geminivideoads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.igorslab.de##div[id="cc-window"]:remove()
 business.vive.com##div[id="vive-cookie-notice"]:remove()
@@ -50492,12 +50488,18 @@ mail.yahoo.com##+js(set-constant, AppState.reduxState.ads.searchPlaAds, {})
 !mail.yahoo.com##button[tabindex="-1"]:has-text(Ad):upward(4):remove()
 ! The following rule blocks inline ads in the email message list, BUT it also prevents the UI from working properly.
 !||s.yimg.com/nq/nr/js/mail_app_es6_vendor_*.bundle.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||news.yahoo.com/__perf/b.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||news.yahoo.com/__perf_log_only/freshness.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||news.yahoo.com/__perf_log_only/b.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||news.yahoo.com/__perf_log_only/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||news.yahoo.com/_td_api/beacon/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 news.yahoo.com##.Ad-Container.Carousel.Pos-r.yom-ad.yom-ad-LREC:remove()
 news.yahoo.com##.rmx-ad:remove()
 news.yahoo.com##*[class*="native-ad-item"]:remove()
 news.yahoo.com##button[class*="collapse-button"]:remove()
 news.yahoo.com##div[class*="vp-adview-wrapper"]:remove()
 news.yahoo.com##div[id="act-adContent"]:remove()
+news.yahoo.com##div[id="sda-LDRB-iframe"]:remove()
 news.yahoo.com##ins[class="adsbygoogle"]:remove()
 news.yahoo.com##+js(aopr, adContent)
 news.yahoo.com##+js(aopw, adContent)
@@ -53944,11 +53946,12 @@ bcvc.ink,bcvc.xyz,bcvc.live##+js(set-constant, AdscoreInit, noopFunc)
 bcvc.ink,bcvc.xyz,bcvc.live##+js(set-constant, ImHuman, true)
 bcvc.ink,bcvc.xyz,bcvc.live##+js(set-constant, counter, 0)
 bcvc.ink,bcvc.xyz,bcvc.live##div[id="bvcontainerx"]:remove()
-bcvc.ink,bcvc.xyz,bcvc.live##+js(remove-node-text, script, /prebid-ads\.js/gm)
 bcvc.ink,bcvc.xyz,bcvc.live##div[class*="adflex-"]:remove()
 bcvc.ink,bcvc.xyz,bcvc.live##div[class="adflexbox"]:remove()
 bcvc.ink,bcvc.xyz,bcvc.live##img[class*="adflex-b"]:remove()
-||linkgo.tech/dist/js/m.min.js$replace=/let counter=5/let counter=0/gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following rule prevents the links from being displayed.
+!bcvc.ink,bcvc.xyz,bcvc.live##+js(remove-node-text, script, /prebid-ads\.js/gm)
+||bvmcdn.com/*/?type=banner&$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||workupload.com/file/$replace=/<style>\.download\{display\:none;\}<\/style>//gm,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! The following rule is not necessary if the previous rule to remove the style definition works.
 workupload.com##*[class*="download"]:style(display: block !important;)
