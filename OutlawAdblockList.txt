@@ -44827,13 +44827,14 @@ android-zone.ws##+js(set-attr, img[data-src], src, [data-src])
 ||apkpure.com/workbox-sw.prod.v*.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||apkpure.net/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||apkpure.net/workbox-sw.prod.v*.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! The following two rules remove the download button from the page.
 !m.apkpure.com,apkpure.net##div.ad-box:remove()
-apkpure.com,apkpure.net###policy-info:remove()
+!apkpure.com,apkpure.net##div[class*="ad-box"]:remove()
 apkpure.com,apkpure.net##div[class*="ad-adsense"]:remove()
-apkpure.com,apkpure.net##div[class*="ad-box"]:remove()
 apkpure.com,apkpure.net##div[class*="js-ad-slot"]:remove()
 apkpure.com,apkpure.net##div[id="policy-info"]:remove()
 apkpure.com,apkpure.net##ins[data-ad-client]:remove()
+apkpure.com,apkpure.net##+js(set-constant, window.dt_enable_adsense, false)
 !apkpure.com,apkpure.net##+js(set-constant, window.apkpureAdUnfilledConfig, {}, end)
 apkpure.com,apkpure.net##+js(set-constant, window.apkpureAdUnfilledConfig, {}, complete)
 apkpure.com,apkpure.net##+js(abort-on-property-read, window.apkpureAdUnfilledConfig)
