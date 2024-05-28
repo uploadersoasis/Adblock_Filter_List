@@ -25744,16 +25744,6 @@ programmersought.com###leftads1:remove()
 www.thegamer.com##.ad-zone-container:remove()
 ||d2sbzwmcg5amr3.cloudfront.net^*
 ||hinalwritis.fun^*
-!||zn5hsliyrlhlj7ndr-abcotv.siteintercept.qualtrics.com^*
-!||zn6qzq6caaucudesr-pluralsight.siteintercept.qualtrics.com^*
-||*-pluralsight.siteintercept.qualtrics.com^*
-!||zn_4slwdofs4ykbmhc-espn.siteintercept.qualtrics.com^*
-!||zn_4slwdofs4ykbmhc-espn.siteintercept.qualtrics.com/WRSiteInterceptEngine/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||zn_9nquvazst1xipkt-cbs.siteintercept.qualtrics.com^*
-!||zn_aah4vz47v491vlf-cbs.siteintercept.qualtrics.com^*
-!||zn_aah4vz47v491vlf-cbs.siteintercept.qualtrics.com/WRSiteInterceptEngine/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||*-cbs.siteintercept.qualtrics.com^*
-||*-espn.siteintercept.qualtrics.com^*
 ||neathsmik.top^*
 en.wikipedia.org##.frb-country-US.frb-rml-enabled.frb:remove()
 ||smetrics.aem.playstation.com^*
@@ -25781,11 +25771,6 @@ symless.com##div[aria-label="cookieconsent"]:remove()
 ||smetrics.usbank.com^*
 ||metrics.usbank.com^*
 ||usbank-app.quantummetric.com^*
-!||siteintercept.qualtrics.com/WRSiteInterceptEngine/Targeting.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||zn6vxkyqywaf9f1t7-usbank.siteintercept.qualtrics.com^*
-!||znetl1usg2hbqc7op-usbank.siteintercept.qualtrics.com^*
-||*-usbank.siteintercept.qualtrics.com^*
-||siteintercept.qualtrics.com^*
 ||www.usbank.com/js/omniture/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||pdx-col.eum-appdynamics.com/eumcollector/error.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pdx-col.eum-appdynamics.com/eumcollector/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -27776,7 +27761,6 @@ www.ios-repo-updates.com##.adsbygoogle
 www.solidfiles.com##a[class="remove"]
 www.keycdn.com##div[class="cookies-warning position-fixed"]
 www.dropboxforum.com##div[class^="lia-cookie-banner-alert"]
-||zn1amgis3tmt5gckb-dropbox.siteintercept.qualtrics.com^*
 www.tipsandtricks-hq.com##ins[class="adsbygoogle"]:remove()
 www.tipsandtricks-hq.com##+js(abort-on-property-read, adsbygoogle)
 www.tipsandtricks-hq.com##+js(abort-on-property-write, adsbygoogle)
@@ -30195,7 +30179,6 @@ community.t-mobile.com##div[class*="cookiebar"]:remove()
 !||pxl.jivox.com/tags/conv/pxre.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||pxl.jivox.com/tags/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.appdynamics.com/adrum/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||zn3edajdvgwonv9nr-tmobilecx.siteintercept.qualtrics.com^*
 onestore.nokia.com##div[class*="nokia-cookies-wrapper"]:remove()
 ||prize-winner-ol7e.live^*
 www.t-mobile.com##div[class*="cookie-modal"]:remove()
@@ -31502,12 +31485,15 @@ www.techwalla.com##div[class*="ad-desktop"]:remove()
 ccm.net##div[data-ad-link]:remove()
 ||attributora.com^*
 ||nsecurrent.com^*
+videocardz.com##*[class*="adtester-container"]:remove()
+videocardz.com##*[class*="ezoic-ad"]:remove()
+videocardz.com##div[id="header-ad"]:remove()
 videocardz.com##div[id="vc-maincontainer-ad"]:remove()
+videocardz.com##div[id="vc-maincontainer-midad"]:remove()
 videocardz.com##ins[class*="adsbygoogle"]:remove()
 videocardz.com##ins[class*="google-main-ad"]:remove()
-!Still need to set adblock_check to 1 and remove random node after #adb/div.adsbox.
-videocardz.com##*[class*="ezoic-ad"]:remove()
-videocardz.com##*[class*="adtester-container"]:remove()
+videocardz.com##script[id^="google_gtagjs-js"]:remove()
+videocardz.com##span[id^="ezoic-pub-ad-"]:remove()
 ||rldwideorga.com^*
 ||grangilo.net^*
 ||qdawavxvrcnkg.com^*
@@ -31528,7 +31514,7 @@ fastclick.to##+js(aopw, adsbygoogle)
 fastclick.to##+js(set-constant, _gaq, [])
 fastclick.to##+js(aopr, _gaq)
 fastclick.to##+js(aopw, _gaq)
-fastclick.to##inpur[id="adblock_detected"]:remove()
+fastclick.to##input[id="adblock_detected"]:remove()
 !fastclick.to##+js(no-setInterval-if, /^/)
 fastclick.to##+js(no-setInterval-if, /^function\(\)/)
 apk4k.fun##div[class="ad_spoiler"]:remove()
@@ -32932,8 +32918,6 @@ dotesports.com##div[class="proper-ad-unit"]:remove()
 ||chookamookla.com^*
 ||maalabaala.com^*
 ||redibidilidi.com^*
-!||zncydxfem8jrupnsj-qwebsite.siteintercept.qualtrics.com^*
-||*-qwebsite.siteintercept.qualtrics.com^*
 !||prebid.ioadx.com/bidRequest/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||prebid.ioadx.com^*
 ||mookiyooki.com^*
@@ -35379,14 +35363,13 @@ gfxtra.dirp.app##+js(trusted-replace-node-text, script, /^debugger;/gm, "")
 ! TODO: Really abort on debugger as that is what the debugger statement already does?
 gfxtra.dirp.app##+js(acs, /debugger;/)
 abc7news.com##div[data-ad-placeholder]:remove()
-||zn5hsliyrlhlj7ndr-abcotv.siteintercept.qualtrics.com^*
 www.jdsupra.com##div[id="cookiesModal"]:remove()
 ||rummaringp.pics^*
 ||oaksafta.com^*
 ||fiexpectthatmy.xyz^*
 ||dlooqrhebkjoh.cloudfront.net^*
 ||bmalbgbljljwc.com^*
-darksiders.pl##div[id="elGuestTerms"]
+darksiders.pl##div[id="elGuestTerms"]:remove()
 ||alfafile.net/img/buttons/HelpUkraine.jpg$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||whncourses.com/wp-content/plugins/deblocker/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 whncourses.com##*[id^="mdp-deblocker-"]:remove()
@@ -35398,12 +35381,12 @@ whncourses.com##+js(set-constant, disableTextSelection, noopFunc)
 whncourses.com##+js(set-constant, disableContextMenu, noopFunc)
 whncourses.com##+js(set-constant, disableHotKeys, noopFunc)
 whncourses.com##+js(set-constant, disableDeveloperTools, noopFunc)
-whncourses.com##script[id^="google_gtagjs"]
+whncourses.com##script[id^="google_gtagjs"]:remove()
 !whncourses.com##+js(remove-class, /wp-\w+-blur/, body)
 whncourses.com##body:remove-class(/wp-\w+-blur/)
 whncourses.com##*:style(filter: blur(0px) !important; -webkit-filter: blur(0px) !important;)
 ||pingback.giphy.com^*
-www.techwhoop.com##div[class*="ezo_ad"]
+www.techwhoop.com##div[class*="ezo_ad"]:remove()
 www.techwhoop.com##span[class*="ezoic-ad"]:remove()
 www.techwhoop.com##span[class*="adtester-container"]:remove()
 www.techwhoop.com##+js(aopr, ez_ad_units)
@@ -35419,8 +35402,8 @@ course9x.com##div[class="cookies-warning"]:remove()
 course9x.com##div[id="modal_blocker"]:remove()
 course9x.com##+js(nano-stb, , *, 0.01)
 course9x.com##div[class*="modal-backdrop"]:remove()
-magybu.net##div[id="cookie_notice"]
-magybu.net##div[id="sub-frame-error"]
+magybu.net##div[id="cookie_notice"]:remove()
+magybu.net##div[id="sub-frame-error"]:remove()
 ||c.srvpcn.com^*
 ||tutorialsplanet.net/wp-content/plugins/better-adsmanager/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||tutorialsplanet.net/wp-content/plugins/deblocker/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -36727,8 +36710,6 @@ pakstech.com##+js(aopr, window.isEZABL)
 pakstech.com##+js(aopw, __inScopeForCCPA)
 pakstech.com##+js(aopr, __inScopeForCCPA)
 pakstech.com##script[src*="/detroitchicago/"]:remove()
-!||zn3aqbinqfptmrq5w-citifeedback.siteintercept.qualtrics.com^*
-||*-citifeedback.siteintercept.qualtrics.com^*
 www.bestbuy.com##div[id^="shop-display-ad"]:remove()
 www.bestbuy.com##div[id*="shop-pushdown-ad"]:remove()
 ||assets.bbystatic.com/shop/display-ad/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -41805,6 +41786,7 @@ www.quora.com##div[class="qu-overflow--hidden"]:remove-class(qu-overflow--hidden
 www.quora.com##div[class="q-box qu-zIndex--inline_overlay"]:remove()
 www.quora.com##body[class="q-platform--desktop"]:style(overflow:scroll !important;)
 !||production-cmp.isgprivacy.cbsi.com/dist/optanon-$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||production-cmp.isgprivacy.cbsi.com/cps/shamanNotifier.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||production-cmp.isgprivacy.cbsi.com^*
 ! player-services.cbs.com/1.16.0/smart-tag/smart.tag.js handles video ads, but is that all?
 ||player-services.cbs.com/*/smart-tag/smart.tag.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -42452,20 +42434,14 @@ search.brave.com##div[id^="premium-promo"]:remove()
 ||chutneemunite.com^*
 !||d3nonv7jx74md4.cloudfront.net/installer/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d3nonv7jx74md4.cloudfront.net^*
-www.caiman.us##a[href*="://www.csdmotors.be"]
 www.caiman.us##a[href*="://www.csdmotors.be"]:remove()
-tumblr.com##div[id="glass-container"]
 tumblr.com##div[id="glass-container"]:remove()
-tumblr.com##div[class="TopeC"]
 tumblr.com##div[class="TopeC"]:remove()
-tumblr.com##div[class="follow-teaser"]
 tumblr.com##div[class="follow-teaser"]:remove()
 ||ads-alpha.ewscloud.com^*
-||zn4tjp6k5ql8j93rywvw-newsy.siteintercept.qualtrics.com^*
 !||hbx.media.net/bidexchange.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||kytesconge.com^*
 ||carmeleanurous.com^*
-uploadbuzz.cc##a[href*="://7starhd.toys/"]
 uploadbuzz.cc##a[href*="://7starhd.toys/"]:remove()
 www.winsoftware.de##div[id="mbmcookie"]:remove()
 www.winsoftware.de##ins[data-ad-client]:remove()
@@ -44899,9 +44875,6 @@ www.cnet.com##script[data-script-id="taboola_pixel"]:remove()
 www.cnet.com##script[id="boomr-if-as"]:remove()
 ||www.cnet.com/ext/cohesion/cdn/cohesion/cohesion-latest.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.cnet.com/ext/onetrust/consent/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-!||nbfkexqbr8elolwk-redventures.siteintercept.qualtrics.com^*
-!||znbfkexqbr8elolwk-redventures.siteintercept.qualtrics.com^*
-||*-redventures.siteintercept.qualtrics.com^*
 dlpure.com##script[id^="google_gtagjs-js"]:remove()
 !||mf.ryazabti.com^*
 ||ryazabti.com^*
@@ -45793,6 +45766,8 @@ pressreader.com##html,body:style(display:block;-moz-user-select: text !important
 /^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/articles\/GetArticle\?/$uritransform=/\?/?accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!&/,method=get|options,document,xhr
 ! The following line is necessary to eliminate the duplicate accessToken which will trigger a 505 status code error, and prevent text view from working.
 /^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/articles\/GetArticle\?/$uritransform=/&accessToken=KfV2efbeUtsd-Rz9VrbbkqK0il-gf8tt7RcW6rIj5cs6NDAjiLZ-BXnaFD92RQLrpx0bcAftxwDC4dm9jS6ZCjzwV_f8ZUF2MUaIenJDmy4!//,method=get|options,document,xhr
+! TODO: The following rule may only apply to ads and not unlocking.
+/^https?:\/\/ingress.pressreader.com(\.cdn\.cloudflare\.net)?\/services\/SponsorshipManager\/GetHotzoneStatus/$replace=/\{"Enabled":false\}/{"Enabled":true}/gm,method=get,document,xhr
 ||logs.pressreader.com^*
 !||cdn.blueconic.net/wehco.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.blueconic.net^*
@@ -54075,6 +54050,56 @@ www.independent.co.uk##+js(set-constant, updateComscore, noopFunc)
 www.independent.co.uk##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
 ||cmpv2.independent.co.uk^*
 ||pub.pixels.ai/wrap-independent-no-prebid-lib.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.cbssports.com##div[id="skybox-top-wrapper"]:remove()
+www.cbssports.com##div[id="fixed-skybox-placeholder"]:remove()
+!www.cbssports.com##+js(set-attr, img[data-lazy], src, [data-lazy])
+www.cbssports.com##+js(set-attr, img[data-lazy][src=""], src, [data-lazy])
+www.cbssports.com##iframe[id="rufous-sandbox"]:remove()
+www.cbssports.com##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+www.cbssports.com##script[id="googletag-script"]:remove()
+www.cbssports.com##script[id="bidbarrel"]:remove()
+www.cbssports.com##script[id="tealium-tag-7110"]:remove()
+www.cbssports.com##script[id="tealium-tag-3005"]:remove()
+www.cbssports.com##script[id="bb-cbsoptanon"]:remove()
+www.cbssports.com##+js(set-constant, loadAdmiralScript, noopFunc)
+!www.cbssports.com##+js(set-constant, cmp.ot.targetingAllowed, end)
+www.cbssports.com##+js(set-constant, cmp.ot.targetingAllowed, complete)
+www.cbssports.com##+js(set-constant, allowed, false)
+!||sportsfly.cbsistatic.com/fly-0703/bundles/sportsmediajs/js-build/utils/gambling.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||sportsfly.cbsistatic.com/fly-0703/bundles/sportsmediajs/js-build/managers/gambling-partner-brand-bar.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||sportsfly.cbsistatic.com/fly-*/bundles/sportsmediajs/js-build/utils/gambling.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||sportsfly.cbsistatic.com/fly-*/bundles/sportsmediajs/js-build/managers/gambling-partner-brand-bar.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||cdn.privacy.paramount.com/dist/optanon-v1.1.0.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||cdn.privacy.paramount.com^*
+!||znbfkexqbr8elolwk-redventures.siteintercept.qualtrics.com^*
+||*-redventures.siteintercept.qualtrics.com^*
+!||zn1amgis3tmt5gckb-dropbox.siteintercept.qualtrics.com^*
+||*-dropbox.siteintercept.qualtrics.com^*
+!||zn3aqbinqfptmrq5w-citifeedback.siteintercept.qualtrics.com^*
+||*-citifeedback.siteintercept.qualtrics.com^*
+!||zn3edajdvgwonv9nr-tmobilecx.siteintercept.qualtrics.com^*
+||*-tmobilecx.siteintercept.qualtrics.com^*
+!||zn4tjp6k5ql8j93rywvw-newsy.siteintercept.qualtrics.com^*
+||*-newsy.siteintercept.qualtrics.com^*
+!||zn5hsliyrlhlj7ndr-abcotv.siteintercept.qualtrics.com^*
+||*-abcotv.siteintercept.qualtrics.com^*
+!||zn6qzq6caaucudesr-pluralsight.siteintercept.qualtrics.com^*
+||*-pluralsight.siteintercept.qualtrics.com^*
+!||zn6vxkyqywaf9f1t7-usbank.siteintercept.qualtrics.com^*
+!||znetl1usg2hbqc7op-usbank.siteintercept.qualtrics.com^*
+||*-usbank.siteintercept.qualtrics.com^*
+||zn_4slwdofs4ykbmhc-espn.siteintercept.qualtrics.com/WRSiteInterceptEngine/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||zn_4slwdofs4ykbmhc-espn.siteintercept.qualtrics.com^*
+||*-espn.siteintercept.qualtrics.com^*
+!||zn_9nquvazst1xipkt-cbs.siteintercept.qualtrics.com^*
+!||zn_aah4vz47v491vlf-cbs.siteintercept.qualtrics.com^*
+!||zn_ed65ynwxvsuk9lf-cbs.siteintercept.qualtrics.com/WRSiteInterceptEngine/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||zn_ed65ynwxvsuk9lf-cbs.siteintercept.qualtrics.com^*
+||*-cbs.siteintercept.qualtrics.com^*
+!||zncydxfem8jrupnsj-qwebsite.siteintercept.qualtrics.com^*
+||*-qwebsite.siteintercept.qualtrics.com^*
+!||siteintercept.qualtrics.com/WRSiteInterceptEngine/Targeting.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||siteintercept.qualtrics.com^*
 
 !Whitelisted
 ! The following bad filter is from AdGuard – Cookie Notices
