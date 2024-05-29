@@ -2337,7 +2337,6 @@ depositfiles.com###ads_z_frame:remove()
 ||7c3ad1e1.info^*
 ||a698f611.info^*
 ||ad.dmg-mobile.com^*
-||p.liadm.com^*
 ||s3.rotaban.ru^*
 ||is.gd/mZfqza$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||is.gd/NARCOTRAIFCANTES$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -5821,6 +5820,7 @@ www.myce.com/media.ultrafastcdn.com/ads/$document,subdocument,script,inline-scri
 ||cdn.petametrics.com^*
 !||api.petametrics.com/__activity.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||api.petametrics.com^*
+||query.petametrics.com^*
 ||www.getgamers.eu/scripts/bt-go.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.getgamers.eu/scripts/pu.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.t-mobile.com/foresee/foresee-trigger.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -11798,9 +11798,6 @@ artmens.ru##.bannertop.entry-header
 ||netline-d.openx.net^*
 !||www.justduckthis.com/AF_TA/rel/index.cfm$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.justduckthis.com/AF_TA/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||d.liadm.com^*
-||c.liadm.com^*
-||b-code.liadm.com^*
 ||www.2013zone.com/fastdownload/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -38390,6 +38387,7 @@ puffer.stanford.edu##button[type="button"]:remove-attr(disabled)
 ||xyz123.online^*
 ||mebfylxqbhjbx.xyz^*
 ||hyvmflsclweae.xyz^*
+||js.appboycdn.com/web-sdk/5.2/service-worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||foxnews.demdex.net^*
 ||metrics.foxnews.com^*
 ||smetrics.foxnews.com^*
@@ -38400,14 +38398,20 @@ puffer.stanford.edu##button[type="button"]:remove-attr(disabled)
 !www.foxnews.com##:matches-path(/\/politics\/cartoons-slideshow/)
 ! must use data-src, NOT [data-src] in the following rule to get the value from data-src attribute for some reason
 ! TODO: use [src=""] or [!src] or img:not([src])&img[data-src] to only select image tags which don't have a source attribute already?
-!www.foxnews.com##+js(set-attr, img:not([src])&img[data-src], src, data-src)
-!www.foxnews.com##+js(set-attr, img[data-src], src, data-src)
+www.foxnews.com##+js(set-attr, img:not([src])&img[data-src], src, [data-src])
+!www.foxnews.com##+js(set-attr, img[data-src], src, [data-src])
 ! Don't need to remove current src attribute to rename other attribute to it
 !www.foxnews.com##+js(rna, img[data-src], data-src, src)
 ! blocking div[class*="ad-container"] prevents videos from being played
 !foxnews.com##div[class*="ad-container"]:remove()
 ! blocking div[class*="amp-ad"] prevents videos from being played
 !foxnews.com##div[class*="amp-ad"]:remove()
+www.foxnews.com##:matches-path(/\/politics\/cartoons-slideshow/) li[class^="intro-thumbnail"]:style(opacity: 100% !important;)
+!www.foxnews.com##:matches-path(/\/politics\/cartoons-slideshow/) li[class^="thumbnail-"]:style(opacity: 100% !important;)
+www.foxnews.com##:matches-path(/\/politics\/cartoons-slideshow/) li:matches-attr(class=/^thumbnail-\d+/):style(opacity: 100% !important;)
+www.foxnews.com##div[class^="ad-contain"]:remove()
+www.foxnews.com##div[class="ad-upper"]:remove()
+www.foxnews.com##div[class="ad-inner"]:remove()
 www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-container"]):remove()
 www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-h-"][class*="ad-w-"]):remove()
 www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="mobile-mw-ad-adh-dom"]):remove()
@@ -38495,6 +38499,8 @@ foxnews.com##+js(trusted-set-constant, data, {"value": {authenticated: true}})
 !||ad-tech-pyxis-2124195674.us-west-2.elb.amazonaws.com/pyxis/submit$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ad-tech-pyxis-2124195674.us-west-2.elb.amazonaws.com^*
 ||www.foxnews.com/feeds/p/ads/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.foxnews.com/static/strike/scripts/libs/google.funding.choices.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||static.foxnews.com/static/strike/scripts/libs/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.foxnews.com/static/isa/app/lib/VisitorAPI.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.foxnews.com/static/isa/app/lib/bing.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.foxnews.com/static/isa/app/lib/ccpa.opt.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -38503,8 +38509,6 @@ foxnews.com##+js(trusted-set-constant, data, {"value": {authenticated: true}})
 ||static.foxnews.com/static/leap/sites/fnc/metrics.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||j.sni.global.fastly.net/static/leap/sites/fbn/metrics.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.foxnews.com/static/leap/sites/fbn/metrics.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||static.foxnews.com/static/strike/scripts/libs/google.funding.choices.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||static.foxnews.com/static/strike/scripts/libs/prebid.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||static.foxnews.com/static/v/all/js/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! Blocking the following script may prevent the political cartoon slideshow from working @ foxnews
 ||static.foxnews.com/static/orion/scripts/core/base/app/modules/ad-strike.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -43258,7 +43262,6 @@ gamesnacks.com##div[class="sSVlic"]:remove()
 !||*.edge.permutive.app^*
 ! Do NOT put a ^ at end of regex as it does not work as it does on non-regex strings in rules.
 /^https?:\/\/[0-9a-f-A-F\-]+\.edge\.permutive\.app\/?\S*/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||query.petametrics.com^*
 !||hummingbird.mavencoalition.io/collect$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hummingbird.mavencoalition.io^*
 ||www.si.com/.bootscripts/webcomponents/ad.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -43402,7 +43405,6 @@ www.howtogeek.com##h3[class="bBWhhG"]:has-text(Something went wrong. Please disa
 www.ionos.com##div[id="cookieinfo-container"]:remove()
 !||hb.yellowblue.io/hb-multi$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||hb.yellowblue.io^*
-||i.liadm.com^*
 !||carrick-ui.advoncommerce.com/gw/api/track/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||carrick-ui.advoncommerce.com^*
 www.xda-developers.com##div[class*="honor-spon-banner"]:remove()
@@ -44238,6 +44240,12 @@ pagesix.com##script[class="wp-asset-manager ads"]:remove()
 ||waws-prod-blu-227-3bf0.eastus.cloudapp.azure.com/track/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||livepixel-production.bln.liveintent.com^*
 ||livepixel4-production.bln.liveintent.com^*
+||p.liadm.com^*
+||d.liadm.com^*
+||c.liadm.com^*
+||b-code.liadm.com^*
+||i.liadm.com^*
+||idx.liadm.com^*
 ||rp.liadm.com^*
 ||rp4.liadm.com^*
 !||www.pcworld.com/ads/adData$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -47583,7 +47591,6 @@ docs.merkulov.design##div[class="mdp-cookies-box"]:remove()
 ||bpjgiwzzmgjp.com^*
 ||esaidees.com^*
 ||tags.srv.stackadapt.com^*
-||idx.liadm.com^*
 ||www.miamiherald.com/zyo-sniblo/pdp.gif$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 www.miamiherald.com##div[id="ConnatixVideoAd"]:remove()
 www.miamiherald.com##div[class="RectangleAd"]:remove()
@@ -54100,6 +54107,67 @@ www.cbssports.com##+js(set-constant, allowed, false)
 ||*-qwebsite.siteintercept.qualtrics.com^*
 !||siteintercept.qualtrics.com/WRSiteInterceptEngine/Targeting.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||siteintercept.qualtrics.com^*
+||cdn-fallback.petametrics.com^*
+||cdn.petametrics.com^*
+||direct.adsrvr.org^*
+||sports-stats.athlonsports.com^*
+www.mensjournal.com##aside[data-ad-group]:remove()
+www.mensjournal.com##div[data-ad-group]:remove()
+www.mensjournal.com##aside[class*="--sticky-ad"]:remove()
+www.mensjournal.com##div[id^="ad-interstitial-"]:remove()
+www.mensjournal.com##div[id^="ad-adhesion-"]:remove()
+www.mensjournal.com##div[id^="ad-fixed_"]:remove()
+www.mensjournal.com##iframe[id^="goog_"]:remove()
+www.mensjournal.com##iframe[id^="arcframe"]:remove()
+!www.mensjournal.com##iframe[id="__exco_5128"]:remove()
+www.mensjournal.com##iframe[id^="__exco_"][style="display: none;"]:remove()
+www.mensjournal.com##iframe[style="display: none;"][title="Advertisement"]:remove()
+www.mensjournal.com##iframe[src^="https://acdn.adnxs.com/"]:remove()
+www.mensjournal.com##phoenix-ad:remove()
+www.mensjournal.com##phoenix-script[id="brand-metrics-installer"]:remove()
+www.mensjournal.com##phoenix-script[id="admiral-installer"]:remove()
+www.mensjournal.com##phoenix-script[script-id="liveIntentInit"]:remove()
+www.mensjournal.com##+js(trusted-replace-node-text, script, /'use-maven-distribution-prebid-analytics', true/gm, 'use-maven-distribution-prebid-analytics', false)
+www.mensjournal.com##+js(trusted-replace-node-text, script, /'use-ga-ga4', true/gm, 'use-ga-ga4', false)
+www.mensjournal.com##+js(trusted-replace-node-text, script, /"si-sportsbook":true/gm, "si-sportsbook":false)
+www.mensjournal.com##+js(trusted-replace-node-text, script, /"use-maven-distribution-prebid-analytics":true/gm, "use-maven-distribution-prebid-analytics":false)
+www.mensjournal.com##+js(trusted-replace-node-text, script, /"use-ga-ga4":true/gm, "use-ga-ga4":false)
+www.mensjournal.com##+js(trusted-replace-node-text, script, /this.statsApiHostname = 'sports-stats.athlonsports.com';/gm, this.statsApiHostname = '';)
+www.mensjournal.com##+js(aeld, floor)
+www.mensjournal.com##+js(set-constant, window.reportErrorToPetametrics, noopFunc)
+www.mensjournal.com##+js(aopr, window.phxCommerce['trackonomics'])
+www.mensjournal.com##+js(aopw, window.phxCommerce['trackonomics'])
+www.mensjournal.com##+js(aopr, phxAdvertisingQueue)
+www.mensjournal.com##+js(aopw, phxAdvertisingQueue)
+www.mensjournal.com##+js(aopr, phxAdServerQueue)
+www.mensjournal.com##+js(aopw, phxAdServerQueue)
+www.mensjournal.com##+js(aopr, phxAdAuctionQueue)
+www.mensjournal.com##+js(aopw, phxAdAuctionQueue)
+www.mensjournal.com##+js(aopr, adAuctionConfig)
+www.mensjournal.com##+js(aopw, adAuctionConfig)
+www.mensjournal.com##+js(set-constant, phxAdServerQueue, [])
+www.mensjournal.com##+js(set-constant, phxAdvertisingQueue, [])
+www.mensjournal.com##+js(set-constant, phxAdAuctionQueue, [])
+www.mensjournal.com##+js(set-constant, addComscoreTag, noopFunc)
+www.mensjournal.com##+js(set-constant, gdpr, false)
+www.mensjournal.com##+js(aopr, window.googleAnalyticsConfig)
+www.mensjournal.com##+js(aopw, window.googleAnalyticsConfig)
+www.mensjournal.com##+js(set-constant, window.googleAnalyticsConfig, {})
+www.mensjournal.com##+js(remove-node-text, script, /window\.googleAnalyticsConfig/gm)
+! The following three rules prevent the embedded videos from playing.
+!www.mensjournal.com##+js(aopr, window.phxPageTarget)
+!www.mensjournal.com##+js(aopw, window.phxPageTarget)
+!www.mensjournal.com##+js(remove-node-text, script, /"adUnitPath"/gm)
+www.mensjournal.com##+js(trusted-replace-node-text, script, /"adUnitPath":"\/[-\w]+[[-\w/]*"/gm, "adUnitPath":"")
+||www.mensjournal.com/.bootscripts/PhoenixGoogleAnalytics.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mensjournal.com/.bootscripts/analytics.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mensjournal.com/runtime/alpha.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mensjournal.com/runtime/webads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mensjournal.com/htdocs/js/admiral/init.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mensjournal.com/.bootscripts/webcomponents/ad.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.mensjournal.com/.bootscripts/webcomponents/embedTracking.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||collector.ex.co/main/events$method=post,xhr
+||collector.ex.co^*
 
 !Whitelisted
 ! The following bad filter is from AdGuard – Cookie Notices
