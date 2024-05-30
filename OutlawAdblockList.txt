@@ -25587,17 +25587,16 @@ atharori.net##+js(abort-on-property-write, optout_adfly)
 ||iir.ai/webroot/modern_theme/img/dwndbnr1.png$image
 ||name0fbestway.com^*
 ||tickmatureparties.com^*
-iir.ai##div[class="col-md-12 hidden"]
+iir.ai##div[class="col-md-12 hidden"]:remove()
 iir.ai###invisibleCaptchaShortlink:remove-attr(disabled)
 iir.ai###invisibleCaptchaShortlink:remove-attr(onclick)
 iir.ai###go-submit:remove-attr(disabled)
 iir.ai###go-submit:remove-attr(class)
-iir.ai##div[class="alert alert-danger"]
-!iir.ai##div[id="adtrue_tag_18696"]
-iir.ai##div[id^="adtrue_tag_"]
-iir.ai##div[class="banner-inner"]
-iir.ai##iframe[name="__cmpLocator"]
-||js.taplytics.com^*
+iir.ai##div[class="alert alert-danger"]:remove()
+!iir.ai##div[id="adtrue_tag_18696"]:remove()
+iir.ai##div[id^="adtrue_tag_"]:remove()
+iir.ai##div[class="banner-inner"]:remove()
+iir.ai##iframe[name="__cmpLocator"]:remove()
 !||bs.serving-sys.com/BurstingPipe/adServer.bs$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||bs.serving-sys.com/Serving^*
 ||bs.serving-sys.com^*
@@ -25645,13 +25644,13 @@ speed-down.org##+js(abort-on-property-read, _atrk_opts)
 speed-down.org##+js(abort-on-property-write, _atrk_opts)
 speed-down.org##input[name="adblock_detected"]:remove()
 speed-down.org##div[class="adsbox"]:remove()
-!used to set ablock_detected variable
-!speed-down.org##div[id="banner_ad"] !triggers adblock script
+!used to set ablock_detected variable; also triggers adblock script
+!speed-down.org##div[id="banner_ad"]:remove()
 speed-down.org##+js(set-constant, remaining, 0)
 speed-down.org##+js(set-constant, speed, 1)
-speed-down.org##div.download-option-btn:nth-of-type(2) > .btn-success.btn
-!speed-down.org##div.download-option-btn:nth-of-type(3) > .btn-success.btn
-speed-down.org###container > center > script:nth-child(18)
+speed-down.org##div.download-option-btn:nth-of-type(2) > .btn-success.btn:remove()
+!speed-down.org##div.download-option-btn:nth-of-type(3) > .btn-success.btn:remove()
+speed-down.org###container > center > script:nth-child(18):remove()
 speed-down.org##+js(abort-current-script, blockadblock)
 speed-down.org##+js(abort-on-property-read, blockadblock)
 speed-down.org##+js(abort-on-property-write, blockadblock)
@@ -25661,8 +25660,8 @@ speed-down.org##.downloadbtn:remove-attr(disabled)
 speed-down.org##.downloadbtn:style(display: inline !important;)
 speed-down.org##+js(set-constant, adblock_detected, 1)
 speed-down.org##input[id="adblock_detected"]:remove()
-speed-down.org##a[title="Download"]
-!speed-down.org##.btn-success.btn
+speed-down.org##a[title="Download"]:remove()
+!speed-down.org##.btn-success.btn:remove()
 www.decsoftutils.com##div[id="cookies-note"]:remove()
 ||only18adultgames.pro^*
 ||static.only18adultgames.pro^*
@@ -25803,17 +25802,17 @@ symless.com##div[aria-label="cookieconsent"]:remove()
 !||mpsnare.iesnare.com^*
 www.iovation.com##div[aria-label="cookieconsent"]:remove()
 ||www.gog.com/productcard/users/activity/log$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.pointdev.com##div[id="RGPD"]
-www.pointdev.com##div[id="download"]
-testhmd.com##div[class="argpd-footer"]
+www.pointdev.com##div[id="RGPD"]:remove()	
+www.pointdev.com##div[id="download"]:remove()
+testhmd.com##div[class="argpd-footer"]:remove()
 testhmd.com##div[class^="argpd-cookies"]:remove()
 !testhmd.com##div[class="argpd-cookies-bar"]:remove()
 about.fb.com##div[class^="gdprconsent-"]:remove()
-www.zellepay.com##div[id="onetrust-policy"]
-www.zellepay.com##div[class="ot-sdk-row"]
+www.zellepay.com##div[id="onetrust-policy"]:remove()
+www.zellepay.com##div[class="ot-sdk-row"]:remove()
 !||ads.arkansasonline.com^*
 !||ads.nwaonline.com^*
-www.st.com##div[class^="optanon-alert-box-wrapper"]
+www.st.com##div[class^="optanon-alert-box-wrapper"]:remove()
 developer.chrome.com##announcement-banner[class="cookie-banner hairline-top"]:remove()
 ||help.retailmenot.com/s/sfsites/auraAnalytics$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.kfuiprtjuqntp.com^*
@@ -38387,7 +38386,11 @@ puffer.stanford.edu##button[type="button"]:remove-attr(disabled)
 ||xyz123.online^*
 ||mebfylxqbhjbx.xyz^*
 ||hyvmflsclweae.xyz^*
-||js.appboycdn.com/web-sdk/5.2/service-worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||js.taplytics.com^*
+! TODO: The following rule may prevent videos @ foxnews.com from playing
+!||js.appboycdn.com/web-sdk/5.2/service-worker.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+! TODO: The following rule may prevent videos @ foxnews.com from playing
+!||v3.taplytics.com^*
 ||foxnews.demdex.net^*
 ||metrics.foxnews.com^*
 ||smetrics.foxnews.com^*
@@ -38404,15 +38407,17 @@ www.foxnews.com##+js(set-attr, img:not([src])&img[data-src], src, [data-src])
 !www.foxnews.com##+js(rna, img[data-src], data-src, src)
 ! blocking div[class*="ad-container"] prevents videos from being played
 !foxnews.com##div[class*="ad-container"]:remove()
+!www.foxnews.com##div[class^="ad-contain"]:remove()
+!www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-container"]):remove()
 ! blocking div[class*="amp-ad"] prevents videos from being played
 !foxnews.com##div[class*="amp-ad"]:remove()
 www.foxnews.com##:matches-path(/\/politics\/cartoons-slideshow/) li[class^="intro-thumbnail"]:style(opacity: 100% !important;)
 !www.foxnews.com##:matches-path(/\/politics\/cartoons-slideshow/) li[class^="thumbnail-"]:style(opacity: 100% !important;)
 www.foxnews.com##:matches-path(/\/politics\/cartoons-slideshow/) li:matches-attr(class=/^thumbnail-\d+/):style(opacity: 100% !important;)
-www.foxnews.com##div[class^="ad-contain"]:remove()
+www.foxnews.com##:matches-path(/\/entertainment\/hollywood-stars-who-died-/) li[class^="intro-thumbnail"]:style(opacity: 100% !important;)
+www.foxnews.com##:matches-path(/\/entertainment\/hollywood-stars-who-died-/) li:matches-attr(class=/^thumbnail-\d+/):style(opacity: 100% !important;)
 www.foxnews.com##div[class="ad-upper"]:remove()
 www.foxnews.com##div[class="ad-inner"]:remove()
-www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-container"]):remove()
 www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="ad-h-"][class*="ad-w-"]):remove()
 www.foxnews.com##div[class="sticky-pre-header"]:has(div[class*="mobile-mw-ad-adh-dom"]):remove()
 www.foxnews.com##header[class="article-header"]:style(padding-top: 0px !important; margin-bottom: 0px !important;)
@@ -44352,29 +44357,19 @@ www.outkick.com##div[class*="item-newsletter"]:remove()
 !||trackcmp.net^*
 !||trackcmp.net/visit^*
 ||trackcmp.net/t_prism_sitemessages.php?trackid=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.thessdreview.com##div[class="wp_bannerize Toshiba Right 300x600"]
 www.thessdreview.com##div[class="wp_bannerize Toshiba Right 300x600"]:remove()
-www.thessdreview.com##div[class="wp_bannerize Toshiba Leader 651x80"]
 www.thessdreview.com##div[class="wp_bannerize Toshiba Leader 651x80"]:remove()
-www.thessdreview.com##div[id^="ads300_250-widget-"]
 www.thessdreview.com##div[id^="ads300_250-widget-"]:remove()
 ||www.thessdreview.com/wp-content/uploads/2023/02/ssdreview_we_are_ready_for_next_webskin.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ! prevents links on background ads even if image is blocked
-www.thessdreview.com##a[class="background-cover"]
 www.thessdreview.com##a[class="background-cover"]:remove()
-||v3.taplytics.com^*
 !||ats.rlcdn.com/ats.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||ats.rlcdn.com^*
 ||wtop.com/advertisement.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-wtop.com##div[id^="div-adh-adhesion-"]
 wtop.com##div[id^="div-adh-adhesion-"]:remove()
-wtop.com##div[id="out-of-page-ad"]
 wtop.com##div[id="out-of-page-ad"]:remove()
-wtop.com##div[aria-label="Advertisement"]
 wtop.com##div[aria-label="Advertisement"]:remove()
-wtop.com##div[class^="ad__h"]
 wtop.com##div[class^="ad__h"]:remove()
-wtop.com##div[class*="ad-slot-wrapper"]
 wtop.com##div[class*="ad-slot-wrapper"]:remove()
 wtop.com##script[id="DFPLIGHT-js-extra"]:remove()
 wtop.com##+js(set-constant, _comscore, [])
@@ -54170,6 +54165,9 @@ www.mensjournal.com##+js(trusted-replace-node-text, script, /"adUnitPath":"\/[-\
 ||collector.ex.co^*
 
 !Whitelisted
+! The following two bad filters from uBlock filters – Unbreak prevent videos @ foxnews.com from playing.
+foxbusiness.com,foxnews.com#@#+js(set, Taplytics, {})
+foxbusiness.com,foxnews.com#@#+js(set, Taplytics.featureFlagEnabled, noopFunc)
 ! The following bad filter is from AdGuard – Cookie Notices
 !codeweavers.com#@##GDPR-alert
 ! The following bad filters are from uBlock filters – Quick fixes.
