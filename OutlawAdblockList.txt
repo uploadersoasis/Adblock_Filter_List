@@ -22038,6 +22038,14 @@ www.youtube.com##dom-if[class$="ytd-video-masthead-ad-v3-renderer"]:remove()
 www.youtube.com##iframe[class$="ytd-video-masthead-ad-primary-video-renderer"]:remove()
 www.youtube.com##ytd-compact-promoted-video-renderer[class*="ytd-in-feed-ad-layout-renderer"]:remove()
 www.youtube.com##ytd-display-ad-renderer:remove()
+www.youtube.com##div[id="ads-info-button"]:remove()
+! TODO: Use one of the following six rules to move the comments section to the left column, but none of them work.
+!www.youtube.com##+js(ica, div[id="below"], div[id="secondary-inner"])
+!www.youtube.com##+js(ica, div[id="below"], div[id="fixed-secondary"])
+!www.youtube.com##+js(ica, div[id="fixed-below"], div[id="secondary-inner"])
+!www.youtube.com##+js(ica, div[id="fixed-below"], div[id="fixed-secondary"])
+!www.youtube.com##+js(ica, div[id="bottom-grid"], div[id="secondary-inner"])
+!www.youtube.com##+js(ica, div[id="single-column-container"], div[id="secondary-inner"])
 ! The following removes the blue "context" box from some videos.
 www.youtube.com##ytd-info-panel-container-renderer[background="BLUE"]:remove()
 www.youtube.com##ytd-thumbnail[class$="ytd-video-masthead-ad-v3-renderer"]:remove()
@@ -22071,7 +22079,7 @@ www.youtube.com##+js(set-constant, window.google_ad_status, 1, stay)
 !||www.youtube.com/api/stats/watchtime?$document,subdocument,script,inline-script,inline-font,popup,popunder,other,image
 !||www.youtube.com/api/stats/playback?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/api/stats/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||www.youtube.com/get_midroll_info^*
+||www.youtube.com/get_midroll_info$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/get_video_info*&el=adunit$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/pagead/conversion/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.youtube.com/pagead/viewthroughconversion/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -30842,11 +30850,15 @@ wiki.manjaro.org##div[class*="mw-cookiewarning-"]:remove()
 clearlinux.org##div[class*="eu-cookie-"]:remove()
 www.cyberciti.biz##amp-ad:remove()
 www.cyberciti.biz##amp-analytics:remove()
-! removes images too
+! The following rule removes images too
 !www.cyberciti.biz##div[class*="amp-wp-"]:remove()
+! The following rule removes the main webpage content.
+!www.cyberciti.biz##div:has(ins[data-ad-client]):remove()
 www.cyberciti.biz##div[class*="amp-wp-"]:has-text(ADVERTISEMENT):remove()
 www.cyberciti.biz##div[class="tips_top_slot_1"]:has(amp-ad):remove()
 www.cyberciti.biz##small[class*="amp-wp-"]:remove()
+www.cyberciti.biz##ins[data-ad-client]:upward(1):remove()
+www.cyberciti.biz##ins[data-ad-client]:remove()
 www.consumercellular.com##div[class*="cookies-"]:remove()
 blog.desdelinux.net##div[id^="machete_cookie_"]:remove()
 blog.desdelinux.net##div[id^="wpfront-notification-bar"]:remove()
@@ -37101,9 +37113,6 @@ toolslick.com##div[id="tool-top-right-ad"]:remove()
 ||adtago.s3.amazonaws.com^*
 ||dlem1deojpcg7.cloudfront.net^*
 ||ctoziphius.com^*
-www.cyberciti.biz##div:has(ins[data-ad-client]):remove()
-www.cyberciti.biz##ins[data-ad-client]:upward(1):remove()
-www.cyberciti.biz##ins[data-ad-client]:remove()
 ||chematernicate.com^*
 ||toprecodeclub.com^*
 ||f.frequentvisitor.com^*
@@ -38793,8 +38802,10 @@ multiup.org,multiup.eu,multiup.io##form[action^="/en/mirror/"]:remove-attr(targe
 !||www.kroger.com/cdn/analyticsSender.worker.03d274ebd55d1bb4eef6.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.kroger.com/cdn/analyticsSender.worker.2ae728f59d53d7bcb0bc.js
 ||www.kroger.com/cdn/analyticsSender.worker.$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||www.kroger.com/cdn/qualtrics.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||www.kroger.com/ruxitagentjs_ICA27NVfghjqrtux_10257221222094147.js
 ||www.kroger.com/ruxitagentjs$script
+||www.kroger.com/sw.js$important,document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||ct.pinterest.com^$all,domain=kroger.com|www.fox.com
 ||ct.pinterest.com^*$domain=kroger.com|www.fox.com
 katv.com##+js(aopr, usPrivacyEnabled)
@@ -54163,6 +54174,11 @@ www.mensjournal.com##+js(trusted-replace-node-text, script, /"adUnitPath":"\/[-\
 ||www.mensjournal.com/.bootscripts/webcomponents/embedTracking.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||collector.ex.co/main/events$method=post,xhr
 ||collector.ex.co^*
+!||trk.clinch.co/trk?cid=$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||trk.clinch.co^*
+||www.adsensecustomsearchads.com/adsense/search/ads.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+www.adsensecustomsearchads.com##div[id="adBlock"]:remove()
+www.adsensecustomsearchads.com##div[class*="clicktrackedAd_js"]:remove()
 
 !Whitelisted
 ! The following two bad filters from uBlock filters – Unbreak prevent videos @ foxnews.com from playing.
