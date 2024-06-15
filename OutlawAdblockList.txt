@@ -24802,22 +24802,25 @@ ubuntudde.com##+js(abort-on-property-read, ai_js_code)
 ||ubuntudde.com/wp-content/plugins/ad-invalid-click-protector/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.aidjodlthdaxq.com^*
 ||aidjodlthdaxq.com^*
-scnlog.me##iframe[class="padPreload"]:remove()
+||scnlog.me/wp-content/themes/scnlog/js/pa.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||scnlog.me/analytics/piwik.$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||scnlog.me/analytics/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-scnlog.me##div.z9hqY8TBSowQ
-||scnlog.me/cdn-cgi/pe/bag2?r$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-scnlog.me##.post-764980.post.type-post.status-publish.format-standard.sticky.hentry.category-advertising
-scnlog.me##.at_a11y
-||scnlog.me/xmlrpc.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||scnlog.me/cdn-cgi/pe/bag2^*
+||scnlog.me/cdn-cgi/apps/head/oOeNXYuAlgjdygJugMEgBqaJzrM.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+!||scnlog.me/cdn-cgi/pe/bag2?r$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||scnlog.me/cdn-cgi/pe/bag2$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||scnlog.me/wp-content/cache/busting/google-tracking/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||scnlog.me/wp-content/cache/busting/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-||scnlog.me/cdn-cgi/apps/head/oOeNXYuAlgjdygJugMEgBqaJzrM.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||scnlog.me/xmlrpc.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+scnlog.me##head > script:nth-child(73):remove()
+scnlog.me##.post-764980.post.type-post.status-publish.format-standard.sticky.hentry.category-advertising:remove()
+scnlog.me##.at_a11y:remove()
+!scnlog.me##^script:inline(popads.net.js):remove()
+scnlog.me##+js(abort-current-script, atob)
+scnlog.me##+js(abort-current-script, charCodeAt)
+scnlog.me##+js(abort-on-property-read, charCodeAt)
 scnlog.me##+js(abort-on-property-read, 2318171)
 scnlog.me##+js(abort-current-script, 2318171)
 !scnlog.me##+js(popads.net.js)
-!scnlog.me##^script:inline(popads.net.js)
 scnlog.me##+js(abort-current-script, popundersPerIP)
 scnlog.me##+js(abort-on-property-read, c1.popads.net/pop.js)
 scnlog.me##+js(abort-current-script, c1.popads.net/pop.js)
@@ -24825,13 +24828,14 @@ scnlog.me##+js(abort-on-property-read, c2.popads.net/pop.js)
 scnlog.me##+js(abort-current-script, c2.popads.net/pop.js)
 scnlog.me##+js(abort-on-property-read, _paq)
 scnlog.me##+js(abort-current-script, _paq)
-scnlog.me##head > script:nth-child(73)
+scnlog.me##iframe[class="padPreload"]:remove()
+scnlog.me##div.z9hqY8TBSowQ:remove()
 !||d3mzokty951c5w.cloudfront.net/scripts/usb-admin-2.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||d3mzokty951c5w.cloudfront.net/images/vangular-google-analytics.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 !||d3mzokty951c5w.cloudfront.net/assets/vjs-signals.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||d3mzokty951c5w.cloudfront.net^*
 elements.heroku.com##div[id="heroku-cookie-banner"]:remove()
-www.heroku.com##span[class="salesforce-blue"]
+www.heroku.com##span[class="salesforce-blue"]:remove()
 www.heroku.com##div[id="heroku-cookie-banner"]:remove()
 www.heroku.com##div[class="heroku-cookie-banner"]:remove()
 www.heroku.com##div[class="general-info-banner"]:remove()
@@ -24883,7 +24887,7 @@ mirrorace.com,mirrorace.org##^script:has-text(/UIkit\[/):remove()
 ||mirrorace.org/m/undefined$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mirrorace.com/themes/mirrorace/assets/img/Jk37VcagIiqrKUtDsT1L.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||mirrorace.org/themes/mirrorace/assets/img/Jk37VcagIiqrKUtDsT1L.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.curve-digital.com##div[id="onetrust-banner-sdk"]
+www.curve-digital.com##div[id="onetrust-banner-sdk"]:remove()
 ||www.aqpjyujihpbggj.com^*
 ||aqpjyujihpbggj.com^*
 ||www.xlfhttdeordzp.com^*
@@ -24894,15 +24898,15 @@ www.curve-digital.com##div[id="onetrust-banner-sdk"]
 ||www.erevtljvo.com^*
 ||www.lutcdiimmeze.com^*
 ||www.zbdvvwpia.com^*
-www.cbr.com##div[class*="ad-zone-container"]
+www.cbr.com##div[class*="ad-zone-container"]:remove()
 ||hipfowlzeal.icu^*
 ||whimsoplynx.com^*
 !||caradstag.casa/cuid/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||caradstag.casa^*
-x1337x.ws##div[id*="ScriptRootC"]
-x1337x.ws##^script:has-text(ScriptRootC)
-domainr.com##a[href*="blacklivesmatter.com"]
-www.wired.com##.paywall-modal--paywall.paywall-modal
+x1337x.ws##div[id*="ScriptRootC"]:remove()
+x1337x.ws##^script:has-text(ScriptRootC):remove()
+domainr.com##a[href*="blacklivesmatter.com"]:remove()
+www.wired.com##.paywall-modal--paywall.paywall-modal:remove()
 ||ad.yieldlab.net^*
 ||b184.s240.meetrics.net
 !||cdn.adrtx.net/adrtxtag.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -25013,7 +25017,6 @@ amistacx.com##div[id="catapult-cookie-bar"]:remove()
 ||www.pqxadekhqotwkv.com^*
 ||pqxadekhqotwkv.com^*
 ||lqeevjgkjjwi.com^*
-scnlog.me##+js(abort-on-property-read, charCodeAt)
 www.freep.com##aside[aria-label="advertisement"]:remove()
 www.digitalocean.com##div[class="_panel_1nv7e_1"]:remove()
 askubuntu.com##div[id="js-gdpr-consent-banner"]:remove()
@@ -25361,8 +25364,6 @@ veronicageek.com##div[id="eu_cookie_law_widget-2"]:remove()
 ||flx808.lporirxe.com^*
 ||tesvitewbrl.com^*
 ||www.tesvitewbrl.com^*
-scnlog.me##+js(abort-current-script, atob)
-scnlog.me##+js(abort-current-script, charCodeAt)
 ||bltlly.com^*
 ||xtraserp.com^*
 ||aconosli.ga^*
@@ -27706,7 +27707,6 @@ www.kongregate.com##[class^="policy-bar"]
 ||1253578754.rsc.cdn77.org^*
 ||1939006693.rsc.cdn77.org^*
 charlieintel.com##.position-sticky:remove()
-||scnlog.me/wp-content/themes/scnlog/js/pa.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 nitroflare.com##div[id="popupContent"]:remove()
 !nitroflare.com###superbox-innerbox:remove()
 !nitroflare.com###superbox-container:remove()
@@ -33248,10 +33248,14 @@ www.gamedeveloper.com##+js(set-constant, isTargetingCookieSet, true)
 www.gamedeveloper.com##+js(set-constant, NREUM, {})
 www.gamedeveloper.com##+js(set-constant, NREUM.info, {})
 www.gamedeveloper.com##+js(aopr, NREUM.info)
-www.gamedeveloper.com##+js(aopw,NREUM.info)
+www.gamedeveloper.com##+js(aopw, NREUM.info)
 !www.gamedeveloper.com##+js(set-constant, googletag.pubads, noopFunc, end)
 !www.gamedeveloper.com##+js(set-constant, googletag.pubads, noopFunc, complete)
 www.gamedeveloper.com##+js(set-constant, googletag.pubads, noopFunc)
+www.gamedeveloper.com##+js(set-constant, OptanonWrapper, noopFunc)
+www.gamedeveloper.com##+js(remove-node-text, script, /gtm\.js/gm)
+www.gamedeveloper.com##+js(remove-node-text, script, /googletag\.pubads\(\)/gm)
+www.gamedeveloper.com##+js(acs, /googletag\.pubads\(\)/)
 www.encodedna.com##+js(aopr, _gaq)
 www.encodedna.com##+js(aopw, _gaq)
 www.lego.com##div[class^="CookieModal"]:remove()
@@ -33340,12 +33344,12 @@ www.t-mobile.com##div[id="phx-cookie-modal"]:remove()
 ||h-ups.online-metrix.net^*
 ||koalaups.com^*
 ||analytics.zinlab.com^*
-www.thenorthernecho.co.uk##iframe[id="rufous-sandbox"]
-www.thenorthernecho.co.uk##div[id="sp_message_container_525293"]
-www.thenorthernecho.co.uk##div[id="sp_message_iframe_525293"]
-www.thenorthernecho.co.uk##div[class*="leaderboard-ad"]
-www.thenorthernecho.co.uk##div[class*="dfp-ad"]
-www.thenorthernecho.co.uk##div[class*="mar-block-ad"]
+www.thenorthernecho.co.uk##iframe[id="rufous-sandbox"]:remove()
+www.thenorthernecho.co.uk##div[id="sp_message_container_525293"]:remove()
+www.thenorthernecho.co.uk##div[id="sp_message_iframe_525293"]:remove()
+www.thenorthernecho.co.uk##div[class*="leaderboard-ad"]:remove()
+www.thenorthernecho.co.uk##div[class*="dfp-ad"]:remove()
+www.thenorthernecho.co.uk##div[class*="mar-block-ad"]:remove()
 www.thenorthernecho.co.uk##script[id*="cookieBanner-"]:remove()
 !www.thenorthernecho.co.uk##body,html:style(overflow: auto)
 ||uatu.newsquestdigital.co.uk/collector.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -33370,8 +33374,8 @@ www.codemag.com##div[id^="div-gpt-ad-"]:remove()
 www.codemag.com##div[class*="advertisement"]:remove()
 www.codemag.com##div[class*="leaderboard-ad"]:remove()
 ||dooloust.net^*
-community.developer.visa.com##div[id="CookieReportsPanel"]
-developer.visa.com##div[id="CookieReportsPanel"]
+community.developer.visa.com##div[id="CookieReportsPanel"]:remove()
+developer.visa.com##div[id="CookieReportsPanel"]:remove()
 www.nextpit.com##div[id="sticky-footer-ad"]:remove()
 ||adengine.snigelweb.com^*
 www.anoopcnair.com##+js(aopr, adsbygoogle)
@@ -33443,9 +33447,9 @@ www.pythontutorial.net##iradsdiv:remove()
 www.i-programmer.info##div[id="iptop"]:remove()
 ||imp.pxf.io^*
 ||imp.i115008.net^*
-www.i-programmer.info##iframe[id^="dm-gpt-iframe-"]
-www.i-programmer.info##div[id^="div-gpt-ad"]
-apk4all.com##[href*="//mobileoffers-7-m-download.com/"]
+www.i-programmer.info##iframe[id^="dm-gpt-iframe-"]:remove()
+www.i-programmer.info##div[id^="div-gpt-ad"]:remove()
+apk4all.com##[href*="//mobileoffers-7-m-download.com/"]:remove()
 ||d1nubxdgom3wqt.cloudfront.net^*
 ||denknowled.xyz^*
 ||dinterperson.xyz^*
@@ -33467,7 +33471,7 @@ apk4all.com##[href*="//mobileoffers-7-m-download.com/"]
 ||torrent-protection.com^*
 ||gisttorn.com^*
 mspoweruser.com##div[id="ezmobfooter"]:remove()
-mspoweruser.com##div[class*="ezo_ad"]
+mspoweruser.com##div[class*="ezo_ad"]:remove()
 mspoweruser.com##+js(aopr, __inScopeForCCPA)
 mspoweruser.com##+js(aopw, __inScopeForCCPA)
 mspoweruser.com##+js(aopr, __ez_dims)
@@ -33689,11 +33693,11 @@ www.ungeek.ph##div[id="div-gpt-ad-"]:remove()
 ||js.monitor.azure.com/scripts/b/ai.2.min.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||MDW-efz.ms-acdc.office.com/ows/v1.0/OutlookOptions/AdsAggregate?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||link4m.com/uploads/advertiser/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-link4m.com##a[href*="/ads-click/"]
+link4m.com##a[href*="/ads-click/"]:remove()
 www.techiedelight.com##a[rel="nofollow"]:remove()
 makolyte.com##span[class*="ezoic-ad"]:remove()
 makolyte.com##span[class*="adtester-container"]:remove()
-makolyte.com##span[id^="ezoic-pub-ad-placeholder"]
+makolyte.com##span[id^="ezoic-pub-ad-placeholder"]:remove()
 makolyte.com##+js(aopw, ez_ad_units)
 makolyte.com##+js(aopr, ez_ad_units)
 ||demand.bidgear.com^*
@@ -34086,18 +34090,18 @@ coderslegacy.com##div[class*="ezo_ad"]:remove()
 www.amdrewards.com##div[id="onetrust-consent-sdk"]:remove()
 ||download.amd.com/js/analytics/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||www.kanxue.com/advertisement-request.htm$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-legacygames.com##div[id="cmplz-cookiebanner-container"]
-www.codingame.com##cg-cookies-banner
-www.codingame.com##*[class^="cg-cookies-banner"]
-www.squakenet.com##div[id="COOKIE"]
+legacygames.com##div[id="cmplz-cookiebanner-container"]:remove()
+www.codingame.com##cg-cookies-banner:remove()
+www.codingame.com##*[class^="cg-cookies-banner"]:remove()
+www.squakenet.com##div[id="COOKIE"]:remove()
 ||psairtoo.com^*
-www.paypal.com##div[class^="ccpaCookie"]
+www.paypal.com##div[class^="ccpaCookie"]:remove()
 www.heaven32.com##ins[data-ad-client]:remove()
-www.heaven32.com##div[data-ad-id]
+www.heaven32.com##div[data-ad-id]:remove()
 ||www.heaven32.com/download/wp-content/plugins/ads-for-wp/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
-www.heaven32.com##script[id^="adsforwp-ads-"]
-toolslib.net##div[aria-label="cookieconsent"]
-toolslib.net##script[data-ad-client]
+www.heaven32.com##script[id^="adsforwp-ads-"]:remove()
+toolslib.net##div[aria-label="cookieconsent"]:remove()
+toolslib.net##script[data-ad-client]:remove()
 toolslib.net##ins[data-ad-client]:remove()
 ||toolslib.net/assets/custom/img/placeholders/placeholder_1.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||toolslib.net/assets/custom/img/placeholders/placeholder_2.png$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
@@ -43719,93 +43723,93 @@ www.skylinewebcams.com##+js(no-setTimeout-if, /chg\(\)/)
 ||secondquaver.com^*
 ||fvcwqkkqmuv.com^*
 ||limurol.com^*
-send.cm##a[href*="//agacelebir.com/"]:remove()
-send.cm##a[href*="//pronunciationspecimens.com/"]:upward(1):remove()
-send.cm##a[href*="//pronunciationspecimens.com/"]:remove()
-send.cm##a[href*="//quiremuken.xyz/"]:remove()
-send.cm##a[href*="//supersedeforbes.com/"]:upward(1):remove()
-send.cm##a[href*="//supersedeforbes.com/"]:remove()
-send.cm##div[class*="increaserev"]:remove()
-send.cm##div[class="backdrop"]:remove()
-send.cm##div[class="moz-custom-content-container"]:remove()
-send.cm##div[data-aa-adunit]:remove()
-send.cm##div[id="biihh1t"]:remove()
-send.cm##div[id^="lwcn-cookie-notice-"]:remove()
-send.cm##div[style^="pointer-events: none; position: absolute; top: 0px; left: 0px;"][style$="z-index: 2147483647; pointer-events: auto;"]:remove()
-send.cm##i[class*="fa-file-download"]:remove()
-send.cm##iframe[style*="display: none;"]:remove()
-send.cm##iframe[style*="height: 1px;"][style*="width: 1px;"]:remove()
-send.cm##link[rel="preconnect"]:remove()
-send.cm##script[data-cf-beacon]:remove()
-send.cm##script[disable-devtool-auto]:remove()
-send.cm##video[id="vjsplayer"]:style(padding-top: 0% !important;)
-send.cm##+js(saa, x-webkit-airplay, allow, video[id="vjsplayer"])
-send.cm##video[id="vjsplayer"]:remove-class(disableremoteplayback)
-send.cm##+js(remove-attr, disableremoteplayback, video[id="vjsplayer"])
-send.cm##+js(saa, data-autoplay-mute-lock, false, video[id="vjsplayer"])
-send.cm##+js(saa, controls, true, video[id="vjsplayer"])
-send.cm##+js(saa, width, 100%, video[id="vjsplayer"])
-send.cm##+js(saa, height, 100%, video[id="vjsplayer"])
-send.cm##video[id="vjsplayer"]:remove-attr(disablepictureinpicture)
-send.cm##+js(remove-attr, disablepictureinpicture, video[id="vjsplayer"])
+send.cm,send.lc##a[href*="//agacelebir.com/"]:remove()
+send.cm,send.lc##a[href*="//pronunciationspecimens.com/"]:upward(1):remove()
+send.cm,send.lc##a[href*="//pronunciationspecimens.com/"]:remove()
+send.cm,send.lc##a[href*="//quiremuken.xyz/"]:remove()
+send.cm,send.lc##a[href*="//supersedeforbes.com/"]:upward(1):remove()
+send.cm,send.lc##a[href*="//supersedeforbes.com/"]:remove()
+send.cm,send.lc##div[class*="increaserev"]:remove()
+send.cm,send.lc##div[class="backdrop"]:remove()
+send.cm,send.lc##div[class="moz-custom-content-container"]:remove()
+send.cm,send.lc##div[data-aa-adunit]:remove()
+send.cm,send.lc##div[id="biihh1t"]:remove()
+send.cm,send.lc##div[id^="lwcn-cookie-notice-"]:remove()
+send.cm,send.lc##div[style^="pointer-events: none; position: absolute; top: 0px; left: 0px;"][style$="z-index: 2147483647; pointer-events: auto;"]:remove()
+send.cm,send.lc##i[class*="fa-file-download"]:remove()
+send.cm,send.lc##iframe[style*="display: none;"]:remove()
+send.cm,send.lc##iframe[style*="height: 1px;"][style*="width: 1px;"]:remove()
+send.cm,send.lc##link[rel="preconnect"]:remove()
+send.cm,send.lc##script[data-cf-beacon]:remove()
+send.cm,send.lc##script[disable-devtool-auto]:remove()
+send.cm,send.lc##video[id="vjsplayer"]:style(padding-top: 0% !important;)
+send.cm,send.lc##+js(saa, x-webkit-airplay, allow, video[id="vjsplayer"])
+send.cm,send.lc##video[id="vjsplayer"]:remove-class(disableremoteplayback)
+send.cm,send.lc##+js(remove-attr, disableremoteplayback, video[id="vjsplayer"])
+send.cm,send.lc##+js(saa, data-autoplay-mute-lock, false, video[id="vjsplayer"])
+send.cm,send.lc##+js(saa, controls, true, video[id="vjsplayer"])
+send.cm,send.lc##+js(saa, width, 100%, video[id="vjsplayer"])
+send.cm,send.lc##+js(saa, height, 100%, video[id="vjsplayer"])
+send.cm,send.lc##video[id="vjsplayer"]:remove-attr(disablepictureinpicture)
+send.cm,send.lc##+js(remove-attr, disablepictureinpicture, video[id="vjsplayer"])
 ! sets button[id="downloadbtn"] type to "submit"
-send.cm##+js(saa, type, submit, #downloadbtn)
+send.cm,send.lc##+js(saa, type, submit, #downloadbtn)
 ! sets the form id to F1 so the button will be associated with it
-send.cm##+js(saa, id, F1, form[name="F1"])
+send.cm,send.lc##+js(saa, id, F1, form[name="F1"])
 ! sets button[id="downloadbtn"] form attribute to the id of the download form
 ! TODO: is F1 always the form name?
-send.cm##+js(saa, form, F1, #downloadbtn)
-!send.cm##button[id="downloadbtn"]:remove-class(btn)
-!send.cm##+js(remove-class, btn, #downloadbtn, stay)
-send.cm##script[src*="/fvcwqkkqmuv.com/"]:remove()
-send.cm##script:remove-attr(onerror)
+send.cm,send.lc##+js(saa, form, F1, #downloadbtn)
+!send.cm,send.lc##button[id="downloadbtn"]:remove-class(btn)
+!send.cm,send.lc##+js(remove-class, btn, #downloadbtn, stay)
+send.cm,send.lc##script[src*="/fvcwqkkqmuv.com/"]:remove()
+send.cm,send.lc##script:remove-attr(onerror)
 ! This makes it close on pressing the download button everytime.
-!send.cm##+js(disable-newtab-links)
-!send.cm##+js(no-window-open-if, !/send\.cm/i, , , log, 1)
-send.cm##+js(remove-attr, class, #fileinfo, stay)
-send.cm##+js(set-constant, js, "")
-send.cm##+js(abort-current-inline-script, __CF$cv$params)
-send.cm##+js(set-constant, _paq, [])
-send.cm##+js(abort-on-property-read, _paq)
-send.cm##+js(abort-on-property-write, _paq)
-send.cm##+js(abort-on-property-read, /gtag\(/)
-send.cm##+js(abort-on-property-write, /gtag\(/)
-send.cm##+js(set-constant, elhlypd, noopFunc)
-send.cm##+js(acs, elhlypd)
-send.cm##+js(set-constant, nrlejw, noopFunc)
-send.cm##+js(acs, nrlejw)
-send.cm##+js(set-constant, _0xd965, noopFunc)
-send.cm##+js(set-constant, _0x2e4efe, [])
-send.cm##+js(acs, _0xd965)
-send.cm##+js(acs, 0x2e4efe)
-send.cm##+js(aopr, 0x2e4efe)
-send.cm##+js(aopw, 0x2e4efe)
-send.cm##+js(set-constant, FingerprintJS, noopFunc)
-send.cm##+js(acs, FingerprintJS)
-send.cm##+js(aopr, FingerprintJS)
-send.cm##+js(aopw, FingerprintJS)
-send.cm##+js(set-constant, ehcyns, noopFunc)
-send.cm##+js(set-constant, z3, [])
-send.cm##+js(abort-on-property-write, z3)
-send.cm##+js(abort-on-property-read, z3)
-send.cm##+js(aeld, error)
-send.cm##+js(aeld, click, /function\(n\)/)
-send.cm##:xpath(//script[contains(text(), '_0xd965')]):remove()
-send.cm##:xpath(//script[contains(text(), '_0x2e4efe')]):remove()
-send.cm##:xpath(//script[contains(text(), 'FingerprintJS')]):remove()
-send.cm##:xpath(//script[contains(text(), 'z3=')]):remove()
+!send.cm,send.lc##+js(disable-newtab-links)
+!send.cm,send.lc##+js(no-window-open-if, !/send\.cm/i, , , log, 1)
+send.cm,send.lc##+js(remove-attr, class, #fileinfo, stay)
+send.cm,send.lc##+js(set-constant, js, "")
+send.cm,send.lc##+js(abort-current-inline-script, __CF$cv$params)
+send.cm,send.lc##+js(set-constant, _paq, [])
+send.cm,send.lc##+js(abort-on-property-read, _paq)
+send.cm,send.lc##+js(abort-on-property-write, _paq)
+send.cm,send.lc##+js(abort-on-property-read, /gtag\(/)
+send.cm,send.lc##+js(abort-on-property-write, /gtag\(/)
+send.cm,send.lc##+js(set-constant, elhlypd, noopFunc)
+send.cm,send.lc##+js(acs, elhlypd)
+send.cm,send.lc##+js(set-constant, nrlejw, noopFunc)
+send.cm,send.lc##+js(acs, nrlejw)
+send.cm,send.lc##+js(set-constant, _0xd965, noopFunc)
+send.cm,send.lc##+js(set-constant, _0x2e4efe, [])
+send.cm,send.lc##+js(acs, _0xd965)
+send.cm,send.lc##+js(acs, 0x2e4efe)
+send.cm,send.lc##+js(aopr, 0x2e4efe)
+send.cm,send.lc##+js(aopw, 0x2e4efe)
+send.cm,send.lc##+js(set-constant, FingerprintJS, noopFunc)
+send.cm,send.lc##+js(acs, FingerprintJS)
+send.cm,send.lc##+js(aopr, FingerprintJS)
+send.cm,send.lc##+js(aopw, FingerprintJS)
+send.cm,send.lc##+js(set-constant, ehcyns, noopFunc)
+send.cm,send.lc##+js(set-constant, z3, [])
+send.cm,send.lc##+js(abort-on-property-write, z3)
+send.cm,send.lc##+js(abort-on-property-read, z3)
+send.cm,send.lc##+js(aeld, error)
+send.cm,send.lc##+js(aeld, click, /function\(n\)/)
+send.cm,send.lc##:xpath(//script[contains(text(), '_0xd965')]):remove()
+send.cm,send.lc##:xpath(//script[contains(text(), '_0x2e4efe')]):remove()
+send.cm,send.lc##:xpath(//script[contains(text(), 'FingerprintJS')]):remove()
+send.cm,send.lc##:xpath(//script[contains(text(), 'z3=')]):remove()
 ! remove in reverse order since would otherwise change the xpath of the nodes that follow
-!send.cm##:xpath(/html/body/script[13]):remove()
-!send.cm##:xpath(/html/body/script[20]):remove()
-!send.cm##:xpath(/html/body/script[12]):remove()
-!send.cm##:xpath(/html/body/script[11]):remove()
-!send.cm##:xpath(/html/body/script[8]):remove()
-!send.cm##:xpath(/html/body/script[7]):remove()
-!send.cm##:xpath(/html/body/script[3]):remove()
-!send.cm##:xpath(/html/body/script[1]):remove()
-!send.cm##:xpath(/html/body/script[5]):remove()
-!send.cm##:xpath(/html/head/script[23]):remove()
-!send.cm##:xpath(/html/head/script[4]):remove()
+!send.cm,send.lc##:xpath(/html/body/script[13]):remove()
+!send.cm,send.lc##:xpath(/html/body/script[20]):remove()
+!send.cm,send.lc##:xpath(/html/body/script[12]):remove()
+!send.cm,send.lc##:xpath(/html/body/script[11]):remove()
+!send.cm,send.lc##:xpath(/html/body/script[8]):remove()
+!send.cm,send.lc##:xpath(/html/body/script[7]):remove()
+!send.cm,send.lc##:xpath(/html/body/script[3]):remove()
+!send.cm,send.lc##:xpath(/html/body/script[1]):remove()
+!send.cm,send.lc##:xpath(/html/body/script[5]):remove()
+!send.cm,send.lc##:xpath(/html/head/script[23]):remove()
+!send.cm,send.lc##:xpath(/html/head/script[4]):remove()
 ! blocking popups sometimes causes tab to close on pressing download button
 !||send.cm^$3p,script,popup
 !||send.cm^$3p,script
@@ -51214,10 +51218,10 @@ romenewstribune-ga.newsmemory.com##+js(aopr, googleAnalyticsAccount4)
 !*##+js(abort-current-script, /JSON\.parse\(atob\('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='\)\)/)
 !*##+js(abort-current-script, /atob\('eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ=='\)/)
 *##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIjcm5fYWRfbmF0aXZlX2o1bXJxfCNybl9hZF9uYXRpdmVfemNpemUifQ==)
-!123chill.to,sportskart.click,embedstream.me,embedstreams.me,userupload.net,userupload.in,poscitechs.shop,dlhd.sx,www.foxebook.net,dood.wf,membed1.com,membednet,1stream.buzz,dooood.com,filecrypt.co,filecrypt.cc,filecrypt.to,www.up-4ever.net,www.up-4ever.org,clicknupload.*,clickndownload.*,send.cm,letsupload.org,letsupload.to,letsupload.io,cuervotv.me,www.niaomea.me,antenasport.ru,maxsport.one,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,web.stagatv.com,ww1.stagatv.com,cdn.stagatvfiles.com,putlocker.pe,putlocker.sb,mylivestream.pro,appvn.com,sflix.to,www.couchtuner.show,tennisonline.me,strikeout.im,strikeout.cc##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
-!123chill.to,sportskart.click,embedstream.me,embedstreams.me,userupload.net,userupload.in,poscitechs.shop,dlhd.sx,www.foxebook.net,dood.wf,membed1.com,membednet,1stream.buzz,dooood.com,filecrypt.co,filecrypt.cc,filecrypt.to,www.up-4ever.net,www.up-4ever.org,clicknupload.*,clickndownload.*,send.cm,letsupload.org,letsupload.to,letsupload.io,cuervotv.me,www.niaomea.me,antenasport.ru,maxsport.one,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,web.stagatv.com,ww1.stagatv.com,cdn.stagatvfiles.com,putlocker.pe,putlocker.sb,mylivestream.pro,appvn.com,sflix.to,www.couchtuner.show,tennisonline.me,strikeout.im,strikeout.cc##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
-!123chill.to,sportskart.click,embedstream.me,embedstreams.me,userupload.net,userupload.in,poscitechs.shop,dlhd.sx,www.foxebook.net,dood.wf,membed1.com,membednet,1stream.buzz,dooood.com,filecrypt.co,filecrypt.cc,filecrypt.to,www.up-4ever.net,www.up-4ever.org,clicknupload.*,clickndownload.*,send.cm,letsupload.org,letsupload.to,letsupload.io,cuervotv.me,www.niaomea.me,antenasport.ru,maxsport.one,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,web.stagatv.com,ww1.stagatv.com,cdn.stagatvfiles.com,putlocker.pe,putlocker.sb,mylivestream.pro,appvn.com,sflix.to,www.couchtuner.show,tennisonline.me,strikeout.im,strikeout.cc##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
-!123chill.to,sportskart.click,embedstream.me,embedstreams.me,userupload.net,userupload.in,poscitechs.shop,dlhd.sx,www.foxebook.net,dood.wf,membed1.com,membednet,1stream.buzz,dooood.com,filecrypt.co,filecrypt.cc,filecrypt.to,www.up-4ever.net,www.up-4ever.org,clicknupload.*,clickndownload.*,send.cm,letsupload.org,letsupload.to,letsupload.io,cuervotv.me,www.niaomea.me,antenasport.ru,maxsport.one,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,web.stagatv.com,ww1.stagatv.com,cdn.stagatvfiles.com,putlocker.pe,putlocker.sb,mylivestream.pro,appvn.com,sflix.to,www.couchtuner.show,tennisonline.me,strikeout.im,strikeout.cc##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIjcm5fYWRfbmF0aXZlX2o1bXJxfCNybl9hZF9uYXRpdmVfemNpemUifQ==)
+!123chill.to,sportskart.click,embedstream.me,embedstreams.me,userupload.net,userupload.in,poscitechs.shop,dlhd.sx,www.foxebook.net,dood.wf,membed1.com,membednet,1stream.buzz,dooood.com,filecrypt.co,filecrypt.cc,filecrypt.to,www.up-4ever.net,www.up-4ever.org,clicknupload.*,clickndownload.*,send.cm,send.lc,letsupload.org,letsupload.to,letsupload.io,cuervotv.me,www.niaomea.me,antenasport.ru,maxsport.one,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,web.stagatv.com,ww1.stagatv.com,cdn.stagatvfiles.com,putlocker.pe,putlocker.sb,mylivestream.pro,appvn.com,sflix.to,www.couchtuner.show,tennisonline.me,strikeout.im,strikeout.cc##:xpath(//script[contains(text(), 'eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==')]):remove()
+!123chill.to,sportskart.click,embedstream.me,embedstreams.me,userupload.net,userupload.in,poscitechs.shop,dlhd.sx,www.foxebook.net,dood.wf,membed1.com,membednet,1stream.buzz,dooood.com,filecrypt.co,filecrypt.cc,filecrypt.to,www.up-4ever.net,www.up-4ever.org,clicknupload.*,clickndownload.*,send.cm,send.lc,letsupload.org,letsupload.to,letsupload.io,cuervotv.me,www.niaomea.me,antenasport.ru,maxsport.one,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,web.stagatv.com,ww1.stagatv.com,cdn.stagatvfiles.com,putlocker.pe,putlocker.sb,mylivestream.pro,appvn.com,sflix.to,www.couchtuner.show,tennisonline.me,strikeout.im,strikeout.cc##^script:has-text(eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==):remove()
+!123chill.to,sportskart.click,embedstream.me,embedstreams.me,userupload.net,userupload.in,poscitechs.shop,dlhd.sx,www.foxebook.net,dood.wf,membed1.com,membednet,1stream.buzz,dooood.com,filecrypt.co,filecrypt.cc,filecrypt.to,www.up-4ever.net,www.up-4ever.org,clicknupload.*,clickndownload.*,send.cm,send.lc,letsupload.org,letsupload.to,letsupload.io,cuervotv.me,www.niaomea.me,antenasport.ru,maxsport.one,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,web.stagatv.com,ww1.stagatv.com,cdn.stagatvfiles.com,putlocker.pe,putlocker.sb,mylivestream.pro,appvn.com,sflix.to,www.couchtuner.show,tennisonline.me,strikeout.im,strikeout.cc##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIifQ==)
+!123chill.to,sportskart.click,embedstream.me,embedstreams.me,userupload.net,userupload.in,poscitechs.shop,dlhd.sx,www.foxebook.net,dood.wf,membed1.com,membednet,1stream.buzz,dooood.com,filecrypt.co,filecrypt.cc,filecrypt.to,www.up-4ever.net,www.up-4ever.org,clicknupload.*,clickndownload.*,send.cm,send.lc,letsupload.org,letsupload.to,letsupload.io,cuervotv.me,www.niaomea.me,antenasport.ru,maxsport.one,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,web.stagatv.com,ww1.stagatv.com,cdn.stagatvfiles.com,putlocker.pe,putlocker.sb,mylivestream.pro,appvn.com,sflix.to,www.couchtuner.show,tennisonline.me,strikeout.im,strikeout.cc##+js(abort-current-script, eyJhZGJsb2NrIjp7fSwiZXhjbHVkZXMiOiIjcm5fYWRfbmF0aXZlX2o1bXJxfCNybl9hZF9uYXRpdmVfemNpemUifQ==)
 *##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
 *##+js(acs, window.kkp4a5x5tv)
 *##+js(aopw, window.kkp4a5x5tv)
@@ -51225,11 +51229,11 @@ romenewstribune-ga.newsmemory.com##+js(aopr, googleAnalyticsAccount4)
 !*##+js(set-constant, window.kkp4a5x5tv, noopFunc, end)
 !*##+js(set-constant, window.kkp4a5x5tv, noopFunc, complete)
 *##+js(set-constant, window.kkp4a5x5tv, noopFunc)
-!s2watch.link,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,putlocker.pe,putlocker.sb,mylivestream.pro,sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc,cuervotv.me,www.niaomea.me,poscitechs.shop,dlhd.sx,sportskart.click,1rowsportz.info,rojatvdirecta.com,casadelfutbol.info,casadelfutbol.tv,123chill.to,membed1.com,membednet,1stream.buzz,filecrypt.co,filecrypt.cc,filecrypt.to,send.cm,ds2play.com,antenasport.ru,maxsport.one##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
-!s2watch.link,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,putlocker.pe,putlocker.sb,mylivestream.pro,sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc,cuervotv.me,www.niaomea.me,poscitechs.shop,dlhd.sx,sportskart.click,1rowsportz.info,rojatvdirecta.com,casadelfutbol.info,casadelfutbol.tv,123chill.to,membed1.com,membednet,1stream.buzz,filecrypt.co,filecrypt.cc,filecrypt.to,send.cm,ds2play.com,antenasport.ru,maxsport.one##+js(acs, window.kkp4a5x5tv)
-!s2watch.link,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,putlocker.pe,putlocker.sb,mylivestream.pro,sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc,cuervotv.me,www.niaomea.me,poscitechs.shop,dlhd.sx,sportskart.click,1rowsportz.info,rojatvdirecta.com,casadelfutbol.info,casadelfutbol.tv,123chill.to,membed1.com,membednet,1stream.buzz,filecrypt.co,filecrypt.cc,filecrypt.to,send.cm,ds2play.com,antenasport.ru,maxsport.one##+js(aopw, window.kkp4a5x5tv)
-!s2watch.link,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,putlocker.pe,putlocker.sb,mylivestream.pro,sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc,cuervotv.me,www.niaomea.me,poscitechs.shop,dlhd.sx,sportskart.click,1rowsportz.info,rojatvdirecta.com,casadelfutbol.info,casadelfutbol.tv,123chill.to,membed1.com,membednet,1stream.buzz,filecrypt.co,filecrypt.cc,filecrypt.to,send.cm,ds2play.com,antenasport.ru,maxsport.one##+js(aopr, window.kkp4a5x5tv)
-!s2watch.link,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,putlocker.pe,putlocker.sb,mylivestream.pro,sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc,cuervotv.me,www.niaomea.me,poscitechs.shop,dlhd.sx,sportskart.click,1rowsportz.info,rojatvdirecta.com,casadelfutbol.info,casadelfutbol.tv,123chill.to,membed1.com,membednet,1stream.buzz,filecrypt.co,filecrypt.cc,filecrypt.to,send.cm,ds2play.com,antenasport.ru,maxsport.one##+js(set-constant, window.kkp4a5x5tv, noopFunc)
+!s2watch.link,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,putlocker.pe,putlocker.sb,mylivestream.pro,sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc,cuervotv.me,www.niaomea.me,poscitechs.shop,dlhd.sx,sportskart.click,1rowsportz.info,rojatvdirecta.com,casadelfutbol.info,casadelfutbol.tv,123chill.to,membed1.com,membednet,1stream.buzz,filecrypt.co,filecrypt.cc,filecrypt.to,send.cm,send.lc,ds2play.com,antenasport.ru,maxsport.one##:xpath(//script[contains(text(), 'window.kkp4a5x5tv')]):remove()
+!s2watch.link,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,putlocker.pe,putlocker.sb,mylivestream.pro,sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc,cuervotv.me,www.niaomea.me,poscitechs.shop,dlhd.sx,sportskart.click,1rowsportz.info,rojatvdirecta.com,casadelfutbol.info,casadelfutbol.tv,123chill.to,membed1.com,membednet,1stream.buzz,filecrypt.co,filecrypt.cc,filecrypt.to,send.cm,send.lc,ds2play.com,antenasport.ru,maxsport.one##+js(acs, window.kkp4a5x5tv)
+!s2watch.link,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,putlocker.pe,putlocker.sb,mylivestream.pro,sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc,cuervotv.me,www.niaomea.me,poscitechs.shop,dlhd.sx,sportskart.click,1rowsportz.info,rojatvdirecta.com,casadelfutbol.info,casadelfutbol.tv,123chill.to,membed1.com,membednet,1stream.buzz,filecrypt.co,filecrypt.cc,filecrypt.to,send.cm,send.lc,ds2play.com,antenasport.ru,maxsport.one##+js(aopw, window.kkp4a5x5tv)
+!s2watch.link,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,putlocker.pe,putlocker.sb,mylivestream.pro,sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc,cuervotv.me,www.niaomea.me,poscitechs.shop,dlhd.sx,sportskart.click,1rowsportz.info,rojatvdirecta.com,casadelfutbol.info,casadelfutbol.tv,123chill.to,membed1.com,membednet,1stream.buzz,filecrypt.co,filecrypt.cc,filecrypt.to,send.cm,send.lc,ds2play.com,antenasport.ru,maxsport.one##+js(aopr, window.kkp4a5x5tv)
+!s2watch.link,crichdstreaming.com,crichd.info,stream.crichd.live,www.crichd.live,wwwstream.pro,tutlehd2.xyz,tutlehd3.xyz,fmovies.ps,alluc.co,putlocker.pe,putlocker.sb,mylivestream.pro,sflix.to,www.couchtuner.show,strikeout.im,strikeout.cc,cuervotv.me,www.niaomea.me,poscitechs.shop,dlhd.sx,sportskart.click,1rowsportz.info,rojatvdirecta.com,casadelfutbol.info,casadelfutbol.tv,123chill.to,membed1.com,membednet,1stream.buzz,filecrypt.co,filecrypt.cc,filecrypt.to,send.cm,send.lc,ds2play.com,antenasport.ru,maxsport.one##+js(set-constant, window.kkp4a5x5tv, noopFunc)
 *##+js(set-constant, __cfRLUnblockHandlers, 1)
 *##+js(abort-on-property-read, cli_cookiebar_settings)
 *##+js(abort-on-property-write, cli_cookiebar_settings)
@@ -54350,6 +54354,18 @@ www.nslookup.io##+js(remove-node-text, script, /window\.nitroAds/gm)
 www.nslookup.io##+js(acs, /window\.nitroAds/)
 xdaforums.com##div[data-freestar-ad]:remove()
 starborne.com##div > p:has-text(By clicking "Accept", you agree to our use of cookies.):upward(1):remove()
+||vxexrbbz.com^*
+||www.yoabphzl.com^*
+||yoabphzl.com^*
+!||ak.oobsaurt.net^*
+||oobsaurt.net^*
+!||brwst.cc/click.php$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||brwst.cc^*
+!||brwstrek.com/click?$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||brwstrek.com^*
+||www.getgx.net^*
+tubemp3.to##iframe[data-aa]:remove()
+||cognito-identity.eu-west-1.amazonaws.com^*
 
 !Whitelisted
 ! The following two bad filters from uBlock filters – Unbreak prevent videos @ foxnews.com from playing.
@@ -54360,8 +54376,9 @@ foxbusiness.com,foxnews.com#@#+js(set, Taplytics.featureFlagEnabled, noopFunc)
 ! The following bad filters are from uBlock filters – Quick fixes.
 @@*$generichide,from=financemonk.net,badfilter
 @@*$generichide,from=dropgalaxy.*,badfilter
-! The following bad filter is from uBlock filters – Unbreak.
+! The following bad filters are from uBlock filters – Unbreak.
 @@||ezodn.com/detroitchicago/$script,badfilter
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect-rule,from=gamedeveloper.com,badfilter
 ! The following bad filter is from AakList (Anti-Adblock Killer).
 @@/advertisement*.js$script,badfilter
 ! The uBlock filters – Unbreak rules list blocks all third-party access to connatix.com domains which also blocks the video player.
