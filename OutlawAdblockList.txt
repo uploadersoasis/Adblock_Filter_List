@@ -42394,9 +42394,14 @@ techraptor.net##div[id="nn_player"]:upward(1):remove()
 !techraptor.net##div[id="nn_player"]:remove()
 techraptor.net##div[class*="insticator-ads"]:remove()
 techraptor.net##div[id^="div-insticator-ad-"]:remove()
-||d3lcz8vpax4lo2.cloudfront.net/ads-code/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+techraptor.net##mv-ad-reporter:remove()
+techraptor.net##div[class^="ad-reporter-"]:remove()
+techraptor.net##div[class="mv-ad-box"]:remove()
+techraptor.net##iframe[name]:matches-attr(name=/^__\S+Locator$/):remove()
+techraptor.net##iframe[id="grow-login-iframe"]:remove()
 !||techraptor.net/sites/default/files/google_analytics/gtag.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||techraptor.net/sites/default/files/google_analytics/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
+||d3lcz8vpax4lo2.cloudfront.net/ads-code/$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.requestmetrics.com/agent/current/rm.js$document,subdocument,script,inline-script,font,inline-font,popup,popunder,other,image,xhr,ping,media,css
 ||cdn.requestmetrics.com^*
 ||event.instiengage.com^*
@@ -54366,6 +54371,9 @@ starborne.com##div > p:has-text(By clicking "Accept", you agree to our use of co
 ||www.getgx.net^*
 tubemp3.to##iframe[data-aa]:remove()
 ||cognito-identity.eu-west-1.amazonaws.com^*
+account.buildarocketboy.com##div[class^="fixed top-0 right-0 bottom-0 left-0 m-auto w-3/4 sm:w-1/2 md:w-1/3 h-96 z-10"] > div[class="items-center justify-around w-full bg-black p-4 pointer-events-auto mt-4 mx-auto mb-0 text-sm leading-none rounded-md"] > div[class="pb-4 text-white leading-5"]:has-text(We use functional and performance cookies to operate our website):upward(2):remove()
+app.grow.me##+js(remove-node-text, script, /gtag\(\)/gm)
+app.grow.me##+js(acs, /gtag\(/)
 
 !Whitelisted
 ! The following two bad filters from uBlock filters – Unbreak prevent videos @ foxnews.com from playing.
