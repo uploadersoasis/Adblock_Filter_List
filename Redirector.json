@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2024-06-05T13:52:56.710Z",
+    "createdAt": "2024-07-12T10:53:17.300Z",
     "redirects": [
         {
             "description": "Example redirect, try going to http://example.com/anywordhere",
@@ -1148,7 +1148,7 @@
             "exampleUrl": "https://track.adtraction.com/t/t?a=1578845458&as=1708256980&t=2&tk=1&url=https://www.gog.com/news/release_wolfenstein_enemy_territory_for_free_with_dedicated_gog_servers_and_bethesda_halloween_sale",
             "exampleResult": "https://www.gog.com/news/release_wolfenstein_enemy_territory_for_free_with_dedicated_gog_servers_and_bethesda_halloween_sale",
             "error": null,
-            "includePattern": "https?:\\/\\/track\\.adtraction\\.com\\/t\\/t\\?a=\\d+&as=\\d+&t=\\d&tk=\\d&url=(https?:\\/\\/.*)",
+            "includePattern": "https?:\\/\\/track\\.adtraction\\.com\\/t\\/t\\?a=\\d+&as=\\d+&t=\\d&tk=\\d&url=(https?:\\/\\/\\S+)",
             "excludePattern": "",
             "patternDesc": "Target Website (usually GOG.com)",
             "redirectUrl": "$1",
@@ -1159,8 +1159,38 @@
             "appliesTo": [
                 "main_frame",
                 "sub_frame",
+                "stylesheet",
                 "script",
-                "xmlhttprequest"
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "href.li Redirector",
+            "exampleUrl": "https://href.li/?https://streambtw.com/iframe/ch1.php",
+            "exampleResult": "https://streambtw.com/iframe/ch1.php",
+            "error": null,
+            "includePattern": "https?:\\/\\/([wW]{3}\\.)?href\\.li\\/\\?(https?:\\/\\/\\S+)",
+            "excludePattern": "",
+            "patternDesc": "Target Website",
+            "redirectUrl": "$2",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
+                "other"
             ]
         },
         {
@@ -1168,7 +1198,7 @@
             "exampleUrl": "https://2baksa.ws/go/go.php?url=https://up-load.io/1pedydqf320n",
             "exampleResult": "https://up-load.io/1pedydqf320n",
             "error": null,
-            "includePattern": "https?:\\/\\/([wW]{3}\\.)?2baksa\\.ws\\/go\\/go\\.php\\?url=(https?:\\/\\/.*)",
+            "includePattern": "https?:\\/\\/([wW]{3}\\.)?2baksa\\.ws\\/go\\/go\\.php\\?url=(https?:\\/\\/\\S+)",
             "excludePattern": "",
             "patternDesc": "Target Website (usually up-load.io)",
             "redirectUrl": "$2",
@@ -1179,8 +1209,13 @@
             "appliesTo": [
                 "main_frame",
                 "sub_frame",
+                "stylesheet",
                 "script",
-                "xmlhttprequest"
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
+                "other"
             ]
         },
         {
