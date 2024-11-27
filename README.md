@@ -18,40 +18,47 @@ and to assist in troubleshooting should the it need to be changed or removed in 
 NOTES:
 
     1.  The rules which utilize scriptlets which have "trusted" in the name,
-        such as "trusted-set-constant.js", "trusted-replace-node-text.js",
-        "trusted-set-cookie.js", "trusted-replace-fetch-response.js",
-        "trusted-replace-xhr-response.js", "trusted-click-element.js",
-        "trusted-set-local-storage-item.js", "trusted-set-session-storage-item.js",
-        "trusted-prune-inbound-object.js", "trusted-prune-outbound-object.js",
-        and "trusted-replace-argument.js", must also be listed under the
-        "My Filters" tab and not just in this list AND " user-" must be added
-        to the end of the "trustedListPrefixes" line on uBlock Origin's
-        "advanced settings" screen, e.g. "trustedListPrefixes ublock- user-".
+        such as "trusted-set-attr.js", "trusted-set-constant.js",
+        "trusted-replace-node-text.js", "trusted-set-cookie.js",
+        "trusted-replace-fetch-response.js", "trusted-replace-xhr-response.js",
+        "trusted-click-element.js", "trusted-set-local-storage-item.js",
+        "trusted-set-session-storage-item.js", "trusted-prune-inbound-object.js",
+        "trusted-prune-outbound-object.js", and "trusted-replace-argument.js",
+        must also be listed under the "My Filters" tab and not just in this list
+        AND " user-" must be added to the end of the "trustedListPrefixes" line
+        on uBlock Origin's "advanced settings" screen, e.g.
+        "trustedListPrefixes ublock- user-".
         The reason for this is these scriptlets have the "requiresTrust"
         property set to "true" in the scriptlets.js file.
 
     2.  The rules with the "replace=" directive after the URL also have the
-        "trusted" restrictions and therefore must also be listed under the
+        "trusted" restrictions, and therefore must also be listed under the
         "My Filters" tab and not just in this list.
 
     3.  Some of these rules utilize the add-on scriptlets like "replace attribute"
         (rpla) and "rename attribute" (rna) from the javascript @
-        https://raw.githubusercontent.com/uBlock-user/uBO-Scriptlets/master/scriptlets.js
+        https://raw.githubusercontent.com/uBlockO/uBO-Scriptlets/master/scriptlets.js
         so add that URL to the "userResourcesLocation" value in the advanced settings
         so that those rules will work.
         example.com##+js(rpla, [selector], oldattr, newattr, newvalue)  ! newvalue is optional but is "" by default.
         example.com##+js(rna, [selector], oldattr, newattr)  ! don't need to first remove existing attribute with same name
 
-    4.  Some of these rules utilize the "set attribute any value" (set-attr-any.js / saa) scriptlet 
-        from the javascript @ https://github.com/uploadersoasis/Adblock_Filter_List/raw/master/outlaw_scriptlets.js
-        so add that URL preceded by a space to the end of the "userResourcesLocation"
-        value in the advanced settings so that those rules will work.
+    4.  Many of these rules utilize the "trusted-set-attr" scriptlet now found in
+        uBlock Origin via https://github.com/gorhill/uBlock/commit/11ca4a39239478e35605ec072fca140ac4c70d3b
+        example.com##+js(trusted-set-attr, [selector], attribute, value)
+        Multiple attributes can be separated with | , but each attribute will be assigned the same value.
+        Value isn't type checked, but since this scriptlet uses function element.setAttribute(name, value)
+        to set the value, the value is always a string even without quotation marks.
+        This scriptlet runs once when the page loads then afterward on DOM mutations.
 
-    5.  Filters in this list block ads on YouTube.com.  This causes a black screen
-        to appear for each ad that would have otherwise played along with an
-        associated delay.
-        The video will play or continue to play after this pause.  The delay may
-        still be shorter than the ad(s) would have been.
+    5.  Rules in this list redirect normal YouTube video links to an embedded
+        version of the video which displays it in the entire page/tab rather than
+        on a normal YouTube page.
+        Another advantage of this is that standard Youtube ads are not run in
+        the embedded video player.
+        The downside of this though is that some videos, such as the free ad-supported
+        movies from Google Play, will not play in the embedded player, and it will
+        appear as if the video does not exist.
 
     6.  The countdown period of some file hosts has been removed or shortened.
         In some of these cases the countdown may not display, so press the
@@ -66,12 +73,12 @@ NOTES:
         filecr.com currently doesn't require the following script for the
         download button to work, but it did in the past.
         The script to activate the download button @ filecr.com is:
-javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
+ javascript:(function(){DD = document.querySelector("a.download_allow.download_allow.btn-primary_dark.full");downloadLink = document.createElement("input");downloadLink.type="submit";DD.appendChild(downloadLink);})();
 
     8.  Due to the way that Wikipedia's responsive website design currently
         works or rather doesn't work, these rules force a style suited to a
         1920 pixel width screen.  If your screen is a different size, adjust the
         three rules which set this style:
-wikipedia.org##html:style(width: 100vw !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
-wikipedia.org##div[class="mw-page-container"]:style(width: 100vw !important; height: 100vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
-wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 100vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important;)
+wikipedia.org##html:style(width: 99vw !important; height: 99vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
+wikipedia.org##div[class="mw-page-container"]:style(width: 99vw !important; height: 99vh !important; margin-left: 10px !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1510px !important; max-width: 1510px !important;)
+wikipedia.org##div[class="mw-content-container"]:style(width: 1190px !important; height: 99vh !important; margin-left: 0 !important; margin-right: 0 !important; padding-left: 0  !important; padding-right: 0 !important; min-width: 1190px !important; max-width: 1190px !important;)
