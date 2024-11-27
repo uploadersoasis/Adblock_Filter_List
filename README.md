@@ -54,7 +54,7 @@ NOTES:
     5.  Rules in this list redirect normal YouTube video links to an embedded
         version of the video which displays it in the entire page/tab rather than
         on a normal YouTube page.
-        Another advantage of this is that standard Youtube ads are not run in
+        Another advantage of this is that standard YouTube ads are not run in
         the embedded video player.
         The downside of this though is that some videos, such as the free ad-supported
         movies from Google Play, will not play in the embedded player, and it will
