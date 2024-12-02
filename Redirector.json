@@ -1,6 +1,6 @@
 {
     "createdBy": "Redirector v3.5.3",
-    "createdAt": "2024-07-12T10:53:17.300Z",
+    "createdAt": "2024-11-05T02:08:15.757Z",
     "redirects": [
         {
             "description": "Example redirect, try going to http://example.com/anywordhere",
@@ -174,6 +174,76 @@
                 "script",
                 "image",
                 "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "refer.ccbill.com URL Redirector",
+            "exampleUrl": "http://refer.ccbill.com/cgi-bin/clicks.cgi?CA=924994&PA=1677009&HTML=http://google.com",
+            "exampleResult": "http://google.com",
+            "error": null,
+            "includePattern": "https?:\\/\\/refer\\.ccbill\\.com\\/cgi\\-bin\\/clicks\\.cgi\\?(?:[CP]A=\\d+)?(?:&[CP]A=\\d+)?&?HTML=(\\S+)",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "image",
+                "object",
+                "xmlhttprequest"
+            ]
+        },
+        {
+            "description": "guce.engadget.com Redirector",
+            "exampleUrl": "https://guce.engadget.com/consent?brandType=nonEu&gcrumb=WowTsIE&lang=en-US&done=https%3A%2F%2Fwww.engadget.com%2Fentertainment%2Ftv-movies%2Fstar-wars-the-acolyte-isnt-getting-a-second-season-120033350.html",
+            "exampleResult": "https://www.engadget.com/entertainment/tv-movies/star-wars-the-acolyte-isnt-getting-a-second-season-120033350.html",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/guce\\.engadget\\.com\\/consent(?:[\\?&]brandType=nonEu)?(?:[\\?&]gcrumb=WowTsIE)?(?:[\\?&]lang=en-US)?[\\?&]done=(https?%3A%2F%2F[\\S\\/]+)$",
+            "excludePattern": "",
+            "patternDesc": "EasyList – Cookie Notices blocks guce.engadget.com so this rule is necessary to redirect to the URL in the query string",
+            "redirectUrl": "$2",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "adclick.g.doubleclick.net Redirector",
+            "exampleUrl": "https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssHQGFVNW3CcUku-4rI2SZQ2P0g-2xg3TZ5r2gpaj31PPKAvltZ3AE_z4_4w_fcNPscWSGXtcHKERZt-axN_6Q1kZLJAn_MrHXFcHS9IcBkg_Mj0Lm1uCUsWgfSUxvJqYJNJA1sUgXltcOGITmwxXG-VZb1vx63HCOJYyZYhmNUyJZfkFXb9zej3dDJeijhgqhV7TFRCuaz0D7IfdFInRH9QB-YL2yUI2gVWRSD0Hc7EjUXGHoEVFPkMS6iVaGXKMA97voU0-EAJCjmAeYqkD5W8-P7SE8camu4U1edZMKy1nmmxT-KxYfSdRiMcotBhK6yd63S9XJONKDbZluDmVoijuHlKjagSXLWrATVRQpA47vcO6RcE7Vv23xDjiUqjFsj4zZWxDrDTx3j3RpCiz2jXDc&sai=AMfl-YTOVCl9hk40shscLY0Fk3zsZa0FOhSbyOv3xfapsyofOOmgXvzQZEvluXyMx9p60Q6jNx0l4o8eXJfK&sig=Cg0ArKJSzKaf1JFc2I69&fbs_aeid=%5Bgw_fbsaeid%5D&adurl=https://www.afcu.org/spend-and-save/savings/certificates/%3Futm_source%3Dall%26utm_medium%3Dcampaign%26utm_campaign%3DCERT072023%26utm_content%3DURL",
+            "exampleResult": "https://www.afcu.org/spend-and-save/savings/certificates/?utm_source=all&utm_medium=campaign&utm_campaign=CERT072023&utm_content=URL",
+            "error": null,
+            "includePattern": "^(?:https?):\\/\\/adclick\\.g\\.doubleclick\\.net\\/pcs\\/click\\?[0-9a-zA-Z_&=%\\-]*adurl=(https?:[\\S\\/]+)$",
+            "excludePattern": "",
+            "patternDesc": "Redirects to the real destination since adclick.g.doubleclick.net is blocked iin my hosts file and in my uBlock Origin rules",
+            "redirectUrl": "$1",
+            "patternType": "R",
+            "processMatches": "urlDecode",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "object",
+                "xmlhttprequest",
+                "other"
             ]
         },
         {
@@ -390,6 +460,31 @@
             "patternType": "R",
             "processMatches": "noProcessing",
             "disabled": true,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame",
+                "stylesheet",
+                "script",
+                "image",
+                "imageset",
+                "object",
+                "xmlhttprequest",
+                "other"
+            ]
+        },
+        {
+            "description": "Wikisport URL redirect to current domain wikisport.best",
+            "exampleUrl": "https://wikisport.se/strm/23.php",
+            "exampleResult": "https://wikisport.best/strm/23.php",
+            "error": null,
+            "includePattern": "^(https?):\\/\\/([wW]{3}.)?wikisport\\.(?:se|me.click)\\/(\\S+)",
+            "excludePattern": "",
+            "patternDesc": "This rule is necessary because the current wikisport domain changes frequently, and the older domain names are used for embedded videos.",
+            "redirectUrl": "$1://$2wikisport.best/$3",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
             "grouped": false,
             "appliesTo": [
                 "main_frame",
